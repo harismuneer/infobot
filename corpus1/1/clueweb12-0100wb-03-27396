@@ -1,0 +1,517 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T09:21:28Z
+WARC-TREC-ID: clueweb12-0100wb-03-27396
+WARC-IP-Address: 108.35.242.36
+WARC-Payload-Digest: sha1:6Z6V7VLO7FRPDHYEQKUUVZYOY2SCB5BI
+WARC-Target-URI: http://www.annin.com/
+WARC-Record-ID: <urn:uuid:73e52723-7634-4685-a35e-f5af94127d98>
+Content-Type: application/http; msgtype=response
+Content-Length: 33579
+
+HTTP/1.1 200 OK
+Connection: close
+Date: Sun, 12 Feb 2012 09:19:08 GMT
+Server: Microsoft-IIS/6.0
+MicrosoftOfficeWebServer: 5.0_Pub
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Set-Cookie: ASPSESSIONIDCCRBDDTD=KKKDKLEDKAMJCLBDEAIKEDFN; path=/
+Cache-control: private
+
+
+<html>
+<head>
+<title>Annin Flagmakers - The oldest and largest manufacturer of flags in the United States.</title>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name="description" content>
+<meta name="keywords" content>
+<!-- v4.0 RC 03/27/2008-->
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+	function makeSelected()
+{
+				//get the id of the selected td
+				var selectedTdID = document.getElementById('hdnSelectedTdID').value;
+				//now get the selected TD
+				if (selectedTdID=="") return;
+
+				var selectedTD = document.getElementById(selectedTdID);
+				if (selectedTdID=="home") {selectedTD.style.visibility='hidden'}
+				else {
+				//now set the td's class to selected and roll overs to do nothing
+				selectedTD.className = 'selectedClass';
+				//next 2 lines may not work, in which case we'll have to make a mouseover/out function for the td that checks selected first
+				selectedTD.onmouseover='';
+				selectedTD.onmouseout='';}
+}
+</script>
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var userGuide = "";
+	function openGuide() {
+	if (userGuide) userGuide.close;
+	userGuide = open("catalog/page01.html","newBrowser","scrollbars=1,resizable=1,width=740,height=600,left=5,top=5,alwaysRaised=1");
+	userGuide.focus();
+	return;
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var userGuide2 = "";
+	function openGuide2() {
+	if (userGuide2) userGuide2.close;
+	userGuide2 = open("catalog_tailgating/page01.html","newBrowser","scrollbars=1,resizable=1,width=740,height=600,left=5,top=5,alwaysRaised=1");
+	userGuide2.focus();
+	return;
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var userGuide3 = "";
+	function openGuide3() {
+	if (userGuide3) userGuide3.close;
+	userGuide3 = open("../catalog_tailgating/page01.html","newBrowser","scrollbars=1,resizable=1,width=740,height=600,left=5,top=5,alwaysRaised=1");
+	userGuide3.focus();
+	return;
+}
+//-->
+</script>
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var userHistory = "";
+	function openHistory() {
+	if (userHistory) userHistory.close;
+	userHistory = open("history/page01.html","newBrowser","scrollbars=1,resizable=1,width=740,height=500,left=5,top=5,alwaysRaised=1");
+	userHistory.focus();
+	return;
+}
+//-->
+</script>
+
+
+<script language="JavaScript" type="text/JavaScript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+
+</script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language=javascript src="js/displaydate.js" type=text/javascript></script>
+<script type="text/JavaScript">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="makeSelected()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr align="left" valign="top">
+    <td class="bodyBG"><table width="916" height="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="AllContent">
+        <tr>
+          <td width="8" background="images/SS_left.gif">&nbsp;</td>
+          <td width="900" valign="top"><table width=900 border=0 cellpadding=0 cellspacing=0>
+              <tr>
+                <!---------------------------------- START MENUTOP ------------------------------------------>
+                                <TD height="21" align="right" class="MenuTop"><table height="21" border="0" cellpadding="0" cellspacing="0" class="MenuTop">
+                    <tr>
+					  <td width="60" align="center"></td>
+                      <td width="60" align="center" id=home onClick="window.location='index.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">HOME</td>
+                      <td width="80" align="center" id=history onClick="window.location='about.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">HISTORY</td>
+                      <td width="90" align="center" id=products onClick="window.location='products/all_products.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">PRODUCTS</td>
+                      <td width="60" align="center" id=news onClick="window.location='news.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">PRESS</td>
+                      <td width="60" align="center" id=faqs onClick="window.location='faqs.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">FAQs</td>
+                      <td width="110" align="center" id=testimonials onClick="window.location='testimonials.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">TESTIMONIALS </td>
+					  <td width="100" align="center" id=commercial onClick="window.location='resources_main.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">RESOURCES </td>
+                      <td width="120" align="center" id=retailers onClick="window.location='Search_locator.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">STORE LOCATOR</td>
+					  <td width="90" align="center" id=contact onClick="window.location='contact_us.asp'" onMouseOver="this.className='MenuTopOver'" onMouseOut="this.className='MenuTopOut'">CONTACT US </td>
+					  <td width="70" align="center" class="MenuTopSearch" id=search onClick="window.location='search.asp'" onMouseOver="this.className='MenuTopOverSearch'" onMouseOut="this.className='MenuTopOutSearch'">SEARCH </td>
+                    </tr>
+                  </table></TD>
+                <!----------------------------------- END MENUTOP ------------------------------------------->
+              </tr>
+              <tr>
+                <TD height="7" background="images/HOME_topbar_bottom_900x7.gif"></TD>
+              </tr>
+              <tr>
+                <TD width="900" height="96" vAlign="top" background="images/HOME_logo_900x96.gif">&nbsp;</TD>
+              </tr>
+              <tr>
+                <TD width="900" height="210" align="center" valign="top"><!---------------------------------- START ROTATE BLOCK ------------------------------------------>
+                  <iframe src="include/01.html"  width="900" height="210" marginheight="0" marginwidth="0" frameborder="0" title="" scrolling="no" id="rotatingblock">
+                  <!-- alternate content for non-supporting browsers -->
+                  </iframe>
+                  <script language="javascript" >   
+						var today = new Date();
+						frames['rotatingblock'].location.href="include/0"+(today.getDay() + 1)+".html";
+					 </script>
+                  <!---------------------------------- END ROTATE BLOCK ------------------------------------------></TD>
+              </tr>
+            </table>
+            <table width=900 height="300" border=0 cellpadding=0 cellspacing=0 class="bodyBlockHome">
+              <tr>
+                <td height="25" align="right" class="DateText"><script language="JavaScript" type="text/javascript">
+				<!--
+					WriteDate();
+				//-->
+				  </script>
+                  &nbsp;&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="100%" align="center" valign="top"><table width="865" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="left" valign="top" class="text"><table width="580" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><table width="580" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td height="35" valign="top" ><span class="homeheader"><strong>Annin Sponsors Marine Corps War Memorial</strong></span>&nbsp;</td>
+                                  <td width="205" rowspan="2" align="right" valign="top" style="padding-bottom: 10px; "><p class="bodyText"><a href="newsPR_1111_Marine_Corps_War_Memorial.asp"><img src="images/PHOTO_marine_corp_war_memorial_02.jpg" width="145" height="101" border="0"></a></p></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top"><span class="bodyText">Annin  Flagmakers is honored to be a corporate sponsor of the Marine Corps War  Memorial in Arlington , VA&hellip; <a href="newsPR_1111_Marine_Corps_War_Memorial.asp" target="_blank">Read More</a><br>
+                                    &nbsp; </span></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td style="padding-bottom: 15px; border-top: #CCCCCC solid 1px;"><span class="homeheader"><br>
+                              Annin Flagmakers Manufactures All Types of Flags <br>
+                              and Patriotic Decorations</span></td>
+                          </tr>
+                          <tr>
+                            <td><table width="579" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="290"><img src="images/HOME_marine_pat.jpg" width="290" height="205" border="0" usemap="#Map">
+                                    <map name="Map">
+                                      <area shape="rect" coords="126,152,275,187" href="products/cat_decorations.asp" alt="Marine &amp; Patriotic Decorations">
+                                      <area shape="rect" coords="14,152,112,187" href="products/cat_marine_flags.asp" alt="Marine &amp; Patriotic Decorations">
+                                    </map></td>
+                                  <td width="289"><img src="images/HOME_armed_forces.jpg" width="290" height="205" border="0" usemap="#Map2"></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td valign="top"><table width="580" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td width="255" rowspan="2" align="center" valign="top"><img src="images/HOME_un_people.jpg" width="235" height="435" border="0" usemap="#Map7"></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top"><p align="justify" class="bodyText">The American flag was less than fifty years old when Alexander Annin began making US flags for the merchant ships in his sail-making shop on the New York City waterfront in the 1820&rsquo;s. <br>
+                                      <br>
+                                      Since that time Annin Flagmakers has grown and prospered along with our nation, the <a href="about.asp">story of our company</a> is interwoven with the story of America itself:</p>
+                                    <div align="justify">
+                                      <ul>
+                                        <li class="bodyText"> It was an Annin flag that flew at the inauguration of President Zachary Taylor, starting an inaugural tradition that has continued through the inauguration of President George W. Bush. </li>
+                                        <li class="bodyText"> An Annin flag draped the coffin of President Abraham Lincoln on its journey from Washington D.C. to Springfield, Illinois. </li>
+                                        <li class="bodyText"> The U.S. Marines raised an Annin flag atop Mount Suribachi on Iwo Jima in 1945</li>
+                                        <li class="bodyText"> NASA selected an Annin flag to participate in Apollo 11&rsquo;s mission to the moon in 1969.</li>
+                                      </ul>
+                                    </div>
+                                    <p align="justify" class="bodyText">Today Annin Flagmakers is America&rsquo;s oldest and largest flag company, remaining heads and shoulders above any other U.S. flag manufacturing company in the United States. <br>
+                                      <br>
+                                      Annin Flagmakers is still family owned and operated and Annin attributes its longevity and success to its dedication to quality and service to its customers.   Annin hires the best workers, trains them and gives them the best materials and equipment to work with and from that, gets the best quality flags.</p></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2"><p class="bodyText"> As a founding member of the <a href="resources_links.asp">Flag Manufactures Association of America (FMAA)</a> Annin certifies that its American flags have been made in the USA of materials that are domestic in origin and that all processes in every step of its manufacture were completed in USA facilities with USA labor.</p>
+                                    <p><span class="bodyText">To learn more about Annin Flagmakers please visit our <a href="about.asp">History</a> pages.</span></p></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2">&nbsp;</td>
+                                </tr>
+                              </table>
+                              <table width="590" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td><img src="images/HOME_state.jpg" width="290" height="225" border="0" usemap="#Map3"></td>
+                                  <td><img src="images/HOME_historical.jpg" width="290" height="225" border="0" usemap="#Map4"></td>
+                                </tr>
+                                <tr>
+                                  <td><img src="images/HOME_custom.jpg" width="290" height="225" border="0" usemap="#Map5">
+                                    <map name="Map5">
+                                      <area shape="rect" coords="20,26,278,199" href="custom/cs_main.asp" alt="Custom Flags">
+                                    </map></td>
+                                  <td><img src="images/HOME_international.jpg" width="290" height="225" border="0" usemap="#Map6"></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td valign="top">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                      <td width="20" background="images/BG_dotted_line_02_20x4.gif">&nbsp;</td>
+                      <td align="left" valign="top"><table width="255" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td height="30" align="right" valign="bottom"><a href="Search_locator.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/BUTTON_click_to_buy_sm_ON.gif',0)"><img src="images/BUTTON_click_to_buy_sm_OFF.gif" name="Image20" width="134" height="21" border="0"></a><a href="Search_locator.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','images/BUTTON_click_to_buy_ON.gif',0)"></a></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td height="30" align="right" valign="bottom"><!--------------------- Google Search Insert ------------------------->
+                              <!-- Google CSE Search Box Begins  -->
+                              <form action="search.asp" id="cse-search-box" style="height:0">
+                                <div>
+                                  <input type="hidden" name="cx" value="008523757324745219303:ck7zrwevkla" />
+                                  <input type="hidden" name="cof" value="FORID:11" />
+                                  <input type="text" name="q" size="25" />
+                                  <input type="submit" name="sa" value="Search" />
+                                </div>
+                              </form>
+                              <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+                              <!-- Google CSE Search Box Ends -->
+                              <!-- Google Search Result Snippet Begins -->
+                              <div id="cse-search-results"></div>
+                              <script type="text/javascript">
+							  var googleSearchIframeName = "cse-search-results";
+							  var googleSearchFormName = "cse-search-box";
+							  var googleSearchFrameWidth = 600;
+							  var googleSearchDomain = "www.google.com";
+							  var googleSearchPath = "/cse";
+							</script>
+                              <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+                              <!-- Google Search Result Snippet Ends -->
+                              <!------------------ End Google Search Insert ------------------------></td>
+                          </tr>
+                          <tr>
+                            <td align="right" class="homeheader1" style="padding-bottom: 7px;"><a href="http://www.facebook.com/#!/Annin1847" target="_blank"><img src="images/ICON_find_us_facebook.png" alt="Click here to find us on Facebook" border="0"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="homeheader1" style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;">We Remember 9-11</td>
+                          </tr>
+                          <tr>
+                            <td><table width="255" border="0" cellpadding="0" cellspacing="0" >
+                                <tr>
+                                  <td width="140" height="65" valign="top"><p class="bodyText">View the 5-minute <br>
+                                      video of the 9/11 Remembrance Field of Honor at Battery Park<br>
+                                      <br>
+                                      <a href="media_video_111104_field_of_honor.asp">View the video</a></p></td>
+                                  <td align="right"><img src="images/PHOTO_NYC-911-2011_FieldofHonor_THUMB.jpg"></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;"><span class="homeheader1">Our Catalogs </span></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><span class="bodyText">Click <a href="catalog_main.asp">here</a> to
+                              view pages from Annin's  print catalogs.</span></td>
+                          </tr>
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;"><span class="homeheader1">Message from the Annin Family </span></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><span class="bodyText">Click <a href="downloads/LETTER_Message_from_the_Annin_Family.pdf" target="_blank">here</a> to
+                              view this letter.</span></td>
+                          </tr>
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>                          <tr>
+                            <td class="homeheader1" style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;">Press Releases</td>
+                          </tr>
+                          <tr>
+                            <td><table width="255" border="0" cellpadding="0" cellspacing="0" >
+                                <tr>
+                                  <td height="65" valign="top" class="bodyText">President Obama ends the War in Iraq on December 15th, 2011.  A father of a fallen soldier <a href="http://www.wtkr.com/news/wtkr-as-iraq-war-ends-father-of-fallen-soldier-remembers-his-sacrifice-20111215,0,3019632.story" target="_blank">remembers his son</a> with the creation of the <a href="http://www.annin.com/products/all_new_products.asp#honor">Honor and Remember Flag</a> and organization. </td>
+                                  <td align="right" valign="top"><a href="http://www.foxnews.com/on-air/fox-friends/index.html#/v/4634022/stars-and-stripes-forever/?playlist_id=86912?test=faces" target="_blank"><img src="images/ANNIN_press_links_honor_flag.png" width="66" height="45" border="0"></a></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top">&nbsp;</td>
+                                  <td align="right" valign="top">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td height="65" valign="top"><span class="bodyText">Annin Commemorates the 10th anniversary of September 11 with Free <br>
+                                    &ldquo;We  Remember&rdquo; streamers. <a href="products/prod_streamers.asp"><br>
+                                    Learn More</a></span></td>
+                                  <td align="right" valign="top"><img src="images/PHOTO_streamers_06.jpg" width="70"></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top">&nbsp;</td>
+                                  <td align="right" valign="top">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td width="170" height="65" valign="top"><span class="bodyText">Annin Flagmakers Supports the &lsquo;New York Says Thank You&rsquo; organization. <a href="http://www.foxnews.com/on-air/fox-friends/index.html#/v/4634022/stars-and-stripes-forever/?playlist_id=86912?test=faces" target="_blank">Watch the video  clip from Fox News</a> about the National 911 Flag and its visit to Annin Flagmakers for repair. </span></td>
+                                  <td align="right" valign="top"><a href="http://www.foxnews.com/on-air/fox-friends/index.html#/v/4634022/stars-and-stripes-forever/?playlist_id=86912?test=faces" target="_blank"><img src="images/ANNIN_press_links_fox.gif" width="66" height="50" border="0"></a></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top">&nbsp;</td>
+                                  <td valign="top">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td valign="top"><span class="bodyText">See Annin Flagmakers feature  on <a href="http://abcnews.go.com/WNT/video/american-flags-made-american-hands-13399912" target="_blank">Diane Sawyers World News &lsquo;Made in America Series&rsquo;. </a>This video was shot at our Coshocton, Ohio location.</span></td>
+                                  <td align="right" valign="top"><a href="http://abcnews.go.com/WNT/video/american-flags-made-american-hands-13399912" target="_blank"><img src="images/ANNIN_press_links_abc.gif" border="0"></a></td>
+                                </tr>
+                                <tr>
+                                  <td valign="top">&nbsp;</td>
+                                  <td align="right" valign="top">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td valign="top"><span class="bodyText">Annin Flagmakers has been chosen to be the official  flag maker for the Flag of Honor, Flag of Heroes Project.&nbsp; These flags have been created with the  sincerest intentions of honoring the victims of the terrorist attacks of  September 11, 2001.&nbsp; Our goals are to immortalize each individual victim,  to give comfort to the families left behind by knowing that their loved ones will  be forever honored and remembered and to create an enduring symbol, recognized  by the world, of the human sacrifice that occurred on that day in 2001. <a href="FlagofHonor/">Read More</a></span></td>
+                                  <td align="right" valign="top"><span class="bodyText"><img src="images/FLAG_SPOT_honor_heros_192.png" width="70" border="0"></span></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="homeheader1" style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;">USMC Flag</td>
+                          </tr>
+                          <tr>
+                            <td><table width="255" border="0" cellpadding="0" cellspacing="0" background="images/BG_usmc_logo_255x100.png">
+                                <tr>
+                                  <td width="170" height="65" valign="top"><span class="bodyText"> Annin Flagmakers is an official licensee of the 
+                                    United States Marine Corps (USMC). <a href="news_1102_usmc_flag.asp">More</a></span></td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="homeheader1" style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;">The Custom Shop </td>
+                          </tr>
+                          <tr>
+                            <td><span class="bodyText">Annin is proud to introduce &quot;<a href="custom/cs_main.asp">The
+                              Custom Shop</a>&quot;,
+                              a new commitment to our custom flag business.</span></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;"><span class="homeheader1">Resources </span></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><ul>
+                                <li class="bodyText"><a href="resources_instructions.asp">Instructions</a></li>
+                                <li class="bodyText"><a href="resources_etiquette.asp">Flag Etiquette</a></li>
+                                <li class="bodyText"><a href="resources_caring_for_flag.asp">Flag Care</a></li>
+                                <li class="bodyText"><a href="resources_download_images.asp">Free Downloads</a></li>
+                                <li class="bodyText"><a href="resources_links.asp">Patriotic Community</a></li>
+                              </ul></td>
+                          </tr>
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;"><span class="homeheader1">What's New? </span></td>
+                          </tr>
+                          <tr>
+                            <td align="left"><span class="bodyText">Click <a href="products/all_new_products.asp">here</a> to
+                              see our newest products.</span></td>
+                          </tr>
+                          <tr>
+                            <td align="left">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td class="homeheader1" style="border-top: #CCCCCC solid 1px; padding-bottom: 10px;">&nbsp;</td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td width="8" background="images/SS_right.gif">&nbsp;</td>
+        </tr>
+      </table>
+        </td>
+  </tr>
+  <tr>
+    <td height="20" valign="bottom"><table width="916" border="0" align="center" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td width="8" height="20" background="images/SS_left.gif">&nbsp;</td>
+          <!---------------------------------- Start Footer ------------------------------------------>
+                    <td bgcolor="#999999" class="Footer"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="40" colspan="2" background="images/BG_bottom_1x40_01.gif">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="60%" height="20" class="Footer">&nbsp;&copy;2011 Annin Flagmakers.
+                  All rights reserved. Design by <a href="http://www.concurrenttechnologies.com" target="_blank">Concurrent
+                  Technologies</a>&nbsp;</td>
+                <td width="40%" align="right" class="Footer"><a href="terms.asp">Terms of Use</a> | <a href="privacy.asp">Privacy</a> | <a href="site_map.asp">Site Map</a> | <a href="FileUpload/upload_file.aspx">Retailers Only</a>&nbsp;&nbsp;</td>
+              </tr>
+            </table></td>
+          <!---------------------------------- End Footer -------------------------------------------->
+          <td width="8" background="images/SS_right.gif">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <form>
+    <input type=hidden name="hdnSelectedTdID" id="hdnSelectedTdID" value="home"/>
+  </form>
+</table>
+<map name="Map2">
+  <area shape="rect" coords="70,146,240,185" href="products/cat_armed_forces_flags.asp" alt="Armed Forces Flags">
+</map>
+<map name="Map3">
+  <area shape="rect" coords="17,13,281,211" href="products/cat_flags_us.asp" alt="State Flags">
+</map>
+<map name="Map4">
+  <area shape="rect" coords="7,19,281,209" href="products/cat_flags_historical.asp" alt="Historical Flags">
+  <area shape="rect" coords="140,16,141,21" href="products/cat_flags_historical.asp">
+</map>
+<map name="Map6">
+  <area shape="rect" coords="12,11,280,205" href="products/cat_flags_international.asp" alt="International Flags">
+</map>
+<map name="Map7">
+  <area shape="rect" coords="38,413,191,428" href="products/cat_flags_international.asp">
+  <area shape="rect" coords="48,388,194,404" href="products/cat_usflag_guide.asp">
+</map>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9484572-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

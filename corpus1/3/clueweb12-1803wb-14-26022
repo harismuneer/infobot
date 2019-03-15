@@ -1,0 +1,1142 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-29T17:30:04Z
+WARC-TREC-ID: clueweb12-1803wb-14-26022
+WARC-Target-URI: http://nicolas-cage-actor.moviedost.com/
+WARC-Payload-Digest: sha1:376SF4ZYFM6XQEWFY6IX44KP4MIDEM2K
+WARC-IP-Address: 173.203.241.95
+WARC-Record-ID: <urn:uuid:0fc2e060-b4cc-48a7-aec9-479c80d4f6c2>
+Content-Type: application/http; msgtype=response
+Content-Length: 48662
+
+HTTP/1.1 200 OK
+Date: Sun, 29 Apr 2012 17:30:04 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.1.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nicolas Cage</title> 
+<link href="http://moviedost.com/css/style.css" rel="stylesheet" type="text/css" />
+<!--<link href="../css/style.css" rel="stylesheet" type="text/css" />-->
+<script>
+var Login = false;
+</script>
+
+<script language="javascript">
+//showBio('10657');
+function Trim(str){return str.replace(/^\s*|\s*$/g,"");}
+	// add to favs
+function SaveOpinion(val, type)
+{
+	
+var svid = 10657;
+LinkType = val;
+request.open('post', 'rad_ajax_fav_stars.php');
+request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+request.onreadystatechange = OpOutput; 
+request.send("svid="+svid+"&addType="+val+"&type="+type+"&ImgsPerRow=2&ImgCount=2");
+}
+
+
+function OpOutput()
+{
+	//var InfoReturn = request.responseText;
+	if(request.readyState == 4)
+	{
+		//alert(request.responseText);
+		document.getElementById("spFavs").innerHTML= request.responseText; 
+		document.getElementById("addfav").innerHTML="Added to your Favorite Actors";
+		document.getElementById("addfav1").innerHTML="Added to your Favorite Actors";
+	}else{
+		document.getElementById("addfav").innerHTML="Adding to your Favorite Actors list...";
+		document.getElementById("addfav1").innerHTML="Adding to your Favorite Actors list...";
+	}
+	//document.getElementById("addfav").innerHTML = request.responseText
+}
+		// star talk
+function replaceAll(oldStr,findStr,repStr) 
+{
+	var srchNdx = 0;  
+	var newStr = "";  
+	
+	while (oldStr.indexOf(findStr,srchNdx) != -1)  
+	{
+	newStr += oldStr.substring(srchNdx,oldStr.indexOf(findStr,srchNdx));
+	newStr += repStr;
+	srchNdx = (oldStr.indexOf(findStr,srchNdx) + findStr.length);
+	}
+	newStr += oldStr.substring(srchNdx,oldStr.length);
+	return newStr;
+}	
+
+
+function goLogin()
+{
+	window.location.replace('http://moviedost.com/join/login.php');
+}
+
+function chkLoginNews()
+{
+	if(Login==false)
+	{
+		alert("Please login to post");
+	}
+	if(Login==true)
+	{
+		window.location.replace("http://moviedost.com/news/post_news.php")
+	}
+}
+
+
+</script>
+<script type="text/javascript">
+	function createXMLHttpRequest(){
+		var xmlhttp = false;
+		
+		if(window.XMLHttpRequest){
+			xmlhttp = new XMLHttpRequest();
+			return xmlhttp;	
+		}
+		try{
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			return xmlhttp;	
+		}catch(e){
+			try{
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");	
+				return xmlhttp;
+			}catch(e1){}
+		}
+		
+		//object has not been created
+		return xmlhttp;
+	}
+	
+	function reportBC(id){
+		
+		var xmlObject = createXMLHttpRequest();
+		
+		xmlObject.open("GET", "BCreport.php?t=star&cid="+id, true);
+		xmlObject.onreadystatechange = function(){
+											if(xmlObject.readyState == 4){
+												//alert(xmlObject.responseText);
+												if(xmlObject.responseText == '1'){
+													document.getElementById('BCDiv'+id).innerHTML = "Your report has been saved.";
+												}else{
+													document.getElementById('BCDiv'+id).innerHTML = xmlObject.responseText;
+												}
+											}else{
+												document.getElementById('BCDiv'+id).innerHTML = "Saving your report...";
+											}
+										};
+		xmlObject.send(null);
+		
+	}
+</script>
+</head>
+
+<body>
+<script>
+
+function replaceAll(oldStr,findStr,repStr) 
+{
+  var srchNdx = 0;  
+                   
+  var newStr = "";  
+  while (oldStr.indexOf(findStr,srchNdx) != -1)  
+{
+    newStr += oldStr.substring(srchNdx,oldStr.indexOf(findStr,srchNdx));
+newStr += repStr;
+srchNdx = (oldStr.indexOf(findStr,srchNdx) + findStr.length);
+                       
+ }
+  newStr += oldStr.substring(srchNdx,oldStr.length);
+                           
+  return newStr;
+}
+
+
+
+var Brw = 0;
+function makeObject()
+{
+var x; 
+var browser = navigator.appName; 
+if(browser == "Microsoft Internet Explorer")
+{
+x = new ActiveXObject("Microsoft.XMLHTTP");
+Brw = 1;
+}else{
+x = new XMLHttpRequest();
+Brw = 2;
+}
+return x;
+}
+
+var request = makeObject();
+</script>
+<script src="http://moviedost.com/go/RVsuggest_search.js"></script>
+
+<script>
+var SecondUse = false;
+function GoSearch()
+{
+var sMas = document.frmSearch.sMas.value;
+var sLang = document.frmSearch.sLang.value;
+var txtSearch = document.frmSearch.txtSearch.value;
+txtSearch = replaceAll(txtSearch,"+","MD-AND-MD");
+txtSearch = replaceAll(txtSearch,"&","MD-AMPERSAND-MD");
+
+
+if(SecondUse == false)
+window.location.replace("http://moviedost.com/include/SDsearch_chk.php?txtSearch="+txtSearch+"&sMas="+sMas+"&sLang="+sLang);
+else 
+SugSong();
+}
+
+
+function Gov(val)
+{
+if(val == 4){
+document.getElementById("txtSearch2").style.display = "";document.getElementById("txtSearch").style.display = "none";}
+else{
+document.getElementById("txtSearch").style.display = "";document.getElementById("txtSearch2").style.display = "none";}
+}
+
+function Search_Video(e)
+{
+var key;
+if(window.event)key = window.event.keyCode;  else key = e.which; 
+
+if(key==13 ) //Enter
+{
+if(document.getElementById("txtSearch2").value == "" || document.getElementById("txtSearch2").value.length < 3)
+return false;
+
+var sLang = document.getElementById("sLang").value;
+var txtSearch2 = trimT(document.getElementById("txtSearch2").value);
+document.frmSearch.action = "http://moviedost.com/search/search_videos.php?txtSearch2="+txtSearch2+"&sLang="+sLang;
+document.frmSearch.submit();
+}	
+}
+</script>
+
+
+<link rel="SHORTCUT ICON" href="http://moviedost.com/images/favicon.ico"/><div style="background-color:#AC7666; width:99%; vertical-align:middle; padding: 5px;" align="center" >
+<div align="center"><a href="http://mealdeal.com" target="_blank"><img src="http://moviedost.com/mdac-imgs/728x90_joso_13.jpg" alt="JOSO JObs + SOcial Networking" width="728" height="90" border="0" /></a></div>
+</div>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="film" height="15"></td>
+  </tr>
+  <tr>
+    <td height="71" class="header_bg" style="padding-left: 70px;"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="251" height="71" align="left"><a href="http://moviedost.com" title="Movie Dost"><img src="http://moviedost.com/images/logo.gif" alt="MovieDost" width="257" height="57" border="0" /></a></td>
+       <td width="249" class="caption">&quot;<span class="bb">Dost</span>&quot; is a Hindi word for &quot;<span class="bb">Friend</span>&quot;</td>
+        <td width="425" valign="top" class="graytxt" style="padding-right:5px; line-height: 18px;">
+		<form name="frmSearch" method="post">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="right" class="graytxt"><a href='http://moviedost.com/join/login.php' class='wl'>Register</a>&nbsp; |&nbsp; <a href='http://moviedost.com/join/login.php?Rdc=aHR0cDovL25pY29sYXMtY2FnZS1hY3Rvci5tb3ZpZWRvc3QuY29tLw==' class='wl'>Login</a> </td>
+          </tr>
+		 
+		  <tr>
+            <td align="right">
+               
+ <select name="sMas" id="sMas" style="border:1px solid #CFCFCF;" onChange="document.getElementById('RvSearchSugDiv').style.display='none';Gov(this.value);">
+                <option value="1">Movies</option>
+                <option value="2">Songs</option>
+                <option value="3">Stars</option>
+				<option value="4">Videos</option>
+                  </select>
+				  
+				  <select name="sLang" id="sLang" style="border:1px solid #CFCFCF;" onChange="document.getElementById('RvSearchSugDiv').style.display='none';">
+              <option value="2" selected="selected">Hindi</option>
+              <option value="3" >Telugu</option>
+              <option value="6" >Tamil</option>
+              <option value="4" >Kannada</option>
+			  <option value="5" >Malayalam</option>
+			  <option value="7" >Bengali</option>
+			  <option value="1" >English</option>
+            </select>
+			
+			<input name="txtSearch2" id="txtSearch2" type="text" class="ibox1" style="border:1px solid #CFCFCF; display:none;" onKeyDown="Search_Video(event)" autocomplete="off">
+			
+              <input name="txtSearch" id="txtSearch" type="text" class="ibox1" style="border:1px solid #CFCFCF;" onKeyUp="Search_AjaxFun(this.value,event,document.getElementById('sLang').value,'RvSearchSugDiv',document.getElementById('sMas').value,this.id,'txtSearch','txtSearch');" onKeyDown="Search_KeyUpDownFun(0,0,1,event,'txtSearch','RvSearchSugDiv')" autocomplete="off" onFocus="SecondUse = false;">
+<span id="RvSearchSugDiv" style="position:absolute; left: 806px; top:55px;"></span>
+<!--<input type="button" name="Submit" value="Search" class="groovybutton" onclick="GoSearch();" />--></td>
+          </tr>
+		  
+		   <tr>
+            <td align="left" style="padding-top:3px;">
+<span id="SRFillFirst" style="display:none; position:absolute;"></span>
+          </td></tr>	
+     </table>
+		</form>
+		
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="54" valign="top" class="header_bg2" >
+		
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="5" bgcolor="#706c6d"><img src="../images/button_l.jpg" alt="" width="5" height="30" /></td>
+        <td height="30" align="left" bgcolor="#706c6d" class="wtxt"><div id="tabs">
+<ul id="tabs">
+    <li class="" ><a href="http://moviedost.com" title="Movie Dost">Home</a>    </li>
+    <li class="">
+    	<a href="http://moviedost.com/new-releases/movies" title="Movies">Movies</a>
+		<ul style="display:;">
+			<li><a href="http://moviedost.com/rate-movies/" title="Rate Lists">Rate movies</a></li>
+			<li><a href="http://moviedost.com/rm/all" title="Recently Rated Movies">Recently rated</a></li>
+			<li><a href="http://moviedost.com/new-releases/movies" title="New releases">New releases</a></li>
+			<li><a href="http://moviedost.com/movie-lists/all" title="Lists">Lists</a></li>
+			<li><a href="http://moviedost.com/quotes/all" title="Quotes">Quotes</a></li>
+			<li><a href="http://moviedost.com/favorite-quotes/" title="My fav quotes">My fav quotes</a></li>					
+            <li><a href="http://moviedost.com/quotes-by/" title="My quotes">My quotes</a></li>	
+            <li><a href="http://moviedost.com/movie-lists-by/" title="My movie lists">My movie lists</a></li>
+			<li><a href="http://moviedost.com/favorite-movies/" title="My fav movies">My fav movies</a></li>
+		</ul>
+    </li>
+	
+	<li class="selected">
+    	<a href="http://moviedost.com/stars/all-stars" title="Actors &amp; Actresses">Stars</a>
+    	<ul style="display:none;">
+		<!--<li><a href="http://moviedost.com/stars/popular-this-week" title="Recent fan clubs">Recent fan clubs</a></li>-->
+		<li><a href="http://moviedost.com/stars/all-stars" title="Stars">Stars</a></li>
+		<li><a href="http://moviedost.com/stars/actors" title="Actors">Actors</a></li>
+		<li><a href="http://moviedost.com/stars/actresses" title="Actresses">Actresses</a></li>
+		<li><a href="http://moviedost.com/stars/directors" title="Directors">Directors</a></li>
+		<li><a href="http://moviedost.com/stars/music-directors" title="Music directors">Music directors</a></li>
+		<li><a href="http://moviedost.com/stars/singers" title="Singers">Singers</a></li>
+		<li><a href="http://moviedost.com/stars/lyricists" title="Lyricists">Lyricists</a></li>
+		<li><a href="http://moviedost.com/stars/story-writers" title="Story writers">Story writers</a></li>
+<!--		<li><a href="http://moviedost.com/stars/editors" title="Editor">Editor</a></li>
+<li><a href="http://moviedost.com/stars/screenplay-writers" title="Screen play">Screen play</a></li>-->
+<li><a href="http://moviedost.com/favorite-stars/" title="My favorite stars">My fav stars</a></li>			
+		</ul> 
+    </li>
+	
+	 <li class="">
+    	<a href="http://moviedost.com/rs/all" title="All Songs">Songs</a>
+		<ul style="display:;">
+			<li><a href="http://moviedost.com/rate-songs/" title="Rate songs">Rate songs</a></li>
+			<li><a href="http://moviedost.com/rs/all" title="Recently Rated Songs">Recently rated</a></li>
+			<li><a href="http://moviedost.com/new-releases/songs" title="New releases">New releases</a></li>
+			<li><a href="http://moviedost.com/song-lists/all" title="Song Lists">Song lists</a></li>
+			<li><a href="http://moviedost.com/song-lists-by/" title="My song lists">My song lists</a></li>
+			<li><a href="http://moviedost.com/favorite-songs/" title="My favorite songs">My favorite songs</a></li>
+		</ul>
+    </li>
+	
+	  <li class="">
+    	<a href="http://moviedost.com/videos/all" title="Actors &amp; Actresses Videos">Videos</a>
+
+		<ul style="display:;">
+			<li><a href="http://moviedost.com/video/uploadvideo.php" title="Post a Video">Post a video</a></li>
+			<li><a href="http://moviedost.com/videos/all" title="All Videos">All videos</a></li>		
+			<li><a href="http://moviedost.com/rate-videos/" title="Rate videos">Rate videos</a></li>
+			<li><a href="http://moviedost.com/videos/all" title="Recently posted">Recently posted</a></li>
+			<!--<li><a href="#" title="Most viewed">Most viewed</a></li>-->
+			<li><a href="http://moviedost.com/video-lists/all" title="Video lists">Video lists</a></li>
+<li><a href="http://moviedost.com/video-lists-by/" title="My video lists">My video lists</a></li>			
+<li><a href="http://moviedost.com/favorite-videos/" title="My Favorites">My favorites</a></li>
+<li><a href="http://moviedost.com/videos-by/" title="I've Posted">I've posted</a></li>
+		</ul> 
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/actress-pics/top" title="Pictures">Pictures</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/photos/uploadphoto.php" title="Post a picture">Post a picture</a></li>		
+			<li><a href="http://moviedost.com/actress-pics/top" title="Top actresses">Top actresses</a></li>
+			<li><a href="http://moviedost.com/actor-pics/top" title="Top actors">Top actors</a></li>
+			<li><a href="http://moviedost.com/movie-pic/top" title="Top movies">Top movies</a></li>
+			<li><a href="http://moviedost.com/favorite-pics/" title="My favorites">My favorites</a></li>
+			<li><a href="http://moviedost.com/user-pics/" title="My pictures">My pictures</a></li>
+			<li><a href="http://moviedost.com/pics-by/" title="I've Posted">I've posted</a></li>
+		</ul>
+    </li>
+	
+    <li class="">
+    	<a href="http://moviedost.com/people/users.php" title="All people">People</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/people/users.php" title="Leader board">Leader board</a></li>
+<!--			<li><a href="http://moviedost.com/people/nearme.php" title="People near me">People near me</a></li>
+			<li><a href="http://moviedost.com/people/findme.php" title="Find a user">Find a user</a></li>
+-->			<li><a href="http://moviedost.com/find-friends/fri_find.php" title="Find friends">Find friends</a></li>
+	<li><a href="http://moviedost.com/pst/" title="People with Similar Taste (PST)">PST</a></li>
+			<li><a href="http://moviedost.com/friends/" title="My friends">My friends</a></li>
+			<li><a href="http://moviedost.com/crr/pend.php" title="Friend requests">Friend requests</a></li>
+			<li><a href="http://moviedost.com/find-friends/" title="Invite friends">Invite friends</a></li>
+		</ul>
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/discuss/" title="Discussion">Discuss</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/discuss-movies/all" title="Movies">Movies</a></li>
+			<li><a href="http://moviedost.com/discuss-stars/all" title="Stars">Stars</a></li>
+		</ul>
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/news/latest" title="News">News</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/news/post_news.php" title="Post News">Post news</a></li>			
+			<li><a href="http://moviedost.com/news/latest" title="Recent news">Recent news</a></li>
+			<li><a href="http://moviedost.com/news/popular" title="Popular news">Popular news</a></li>
+			<li><a href="http://moviedost.com/news-by/" title="I've posted">I've posted</a></li>			
+		</ul>
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/quiz" title="Quiz">Quiz</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/quiz" title="Non-Stop Quiz">Non-Stop Quiz</a></li>					
+			<li><a href="http://moviedost.com/ns-quiz/create-question" title="Post a question">Post a question</a></li>			
+			<li><a href="http://moviedost.com/ns-quiz-leaders/most-points" title="Leaderboard">Leaderboard</a></li>
+			<li><a href="http://moviedost.com/ns-quiz/" title="My Stats">My Stats</a></li>
+			<li><a href="http://moviedost.com/ns-quiz/my-questions" title="I've posted">I've posted</a></li>	
+			<li><a href="http://moviedost.com/user-quiz/view-leaders" title="User Quizzes">User Quizzes</a></li>
+			<li><a href="http://moviedost.com/user-quiz/create-quiz" title="Create a Quiz">Create a Quiz</a></li>
+			<li><a href="http://moviedost.com/recent-user-quizes/recent-quizzes" title="My Quizzes">My Quizzes</a></li>						
+		</ul>
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/wars/all" title="Wars">Star Wars</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/wars/create_battle.php" title="Create star war">Create star war</a></li>
+			<li><a href="http://moviedost.com/wars/all" title="Star wars">Star wars</a></li>
+			<li><a href="http://moviedost.com/wars/results" title="Star war results">Star war results</a></li>
+		</ul>
+    </li>
+	
+
+	<li class="">
+    	<a href="http://moviedost.com/movies-on-tv/all" title="Movies on TV">Movies on TV</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/movies-on-tv/all" title="All movies">All movies</a></li>
+			<li><a href="http://moviedost.com/movies-on-tv/date_filter.php" title="By language">By language</a></li>
+		</ul>
+    </li>
+	
+	<li class="">
+    	<a href="http://moviedost.com/#sb" title="Shout Box">Shout Box</a>&nbsp;<img src="http://moviedost.com/images/new.gif" />
+    </li>
+
+	
+	<li class="">
+    	<a href="http://moviedost.com/join/login.php" title="Your Details">My</a>
+    	<ul style="display:;">
+			<li><a href="http://moviedost.com/join/login.php" title="Profile">Profile</a></li>
+			<li><a href="http://moviedost.com/friends/" title="Friends">Friends</a></li>
+			<li><a href="http://moviedost.com/pst/" title="PST">PST</a></li>
+			<li><a href="http://moviedost.com/pings/" title="Pings">Pings</a></li>
+			<li><a href="http://moviedost.com/messages/inbox.php" title="Messages">Messages</a></li>
+			<li><a href="http://moviedost.com/ratings-by/" title="Ratings">Ratings</a></li>			
+			<li><a href="http://moviedost.com/lists-by/" title="Lists">Lists</a></li>
+			<li><a href="http://moviedost.com/join/login.php" title="Favorites">Favorites</a></li>
+			<li><a href="http://moviedost.com/wish-list/" title="Want to">Want to</a></li>
+			<li><a href="http://moviedost.com/account/email-settings" title="Email Settings">E-mail Settings</a></li>			
+		</ul>
+    </li>
+	
+</ul>
+
+</div>		</td>
+        <td width="5" align="right"><img src="../images/button_r.jpg" alt="" width="5" height="30" /></td>
+      </tr>
+      <tr>
+        <td height="24" colspan="2" width="100%" align="left">
+
+<div id="navigation">
+	<div class="bar clearfix">
+		<div class="links" id="dispSUBMENU" >		</div>
+	</div>
+</div></td>
+        <td align="right">&nbsp;</td>
+      </tr>
+</table>
+	</td>
+  </tr>
+</table>
+<script> document.getElementById("dispSUBMENU").innerHTML='<!--<a class="" href="http://moviedost.com/stars/popular-this-week" title="Recent fan clubs">Recent fan clubs</a> | --><a class="" href="http://moviedost.com/stars/all-stars" title="Stars">Stars</a> | <a class="selected" href="http://moviedost.com/stars/actors" title="Actors">Actors</a> | <a class="" href="http://moviedost.com/stars/actresses" title="Actresses">Actresses</a> | <a class="" href="http://moviedost.com/stars/directors" title="Directors">Directors</a> | <a class="" href="http://moviedost.com/stars/music-directors" title="Music directors">Music directors</a> | <a class="" href="http://moviedost.com/stars/singers" title="Singers">Singers</a> | <a class="" href="http://moviedost.com/stars/lyricists" title="Lyricists">Lyricists</a> | <a class="" href="http://moviedost.com/stars/story-writers" title="Story writers">Story writers</a> | <a class="" href="http://moviedost.com/favorite-stars/" title="My fav stars">My fav stars</a>';</script>
+
+<a name="Top"></a>
+
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="titlebg">
+  <tr>
+    <td height="48" colspan="3"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="5">&nbsp;</td>
+        <td width="610" style="padding-left: 10px;"><h1 class="h11">Nicolas Cage Actor</h1></td>
+        <td width="380" align="right" style="padding-right: 10px;"><span class="wb txt">Nicolas Cage Links</span> 	        <select size="1" onchange="window.location.href=this.value" style=" width:180px;">
+            <option selected="selected">Select</option>
+            <option value="http://nicolas-cage-actor.moviedost.com/">Nicolas Cage</option>
+            <option value="http://nicolas-cage-movies.moviedost.com/">Nicolas Cage Movies</option>
+            <option value="http://moviedost.com/star-pics/nicolas-cage">Nicolas Cage Pictures</option>
+            <option value="http://moviedost.com/star-videos/nicolas-cage">Nicolas Cage Videos</option>                 
+            <option value="http://moviedost.com/star-video-songs/nicolas-cage">Nicolas Cage Video Songs</option>
+            <option value="http://moviedost.com/star-discussion/nicolas-cage">Nicolas Cage Discussions</option>
+            <option value="http://moviedost.com/fan-club/nicolas-cage">Nicolas Cage Fans</option>
+            <option value="http://moviedost.com/star-news/nicolas-cage">Nicolas Cage News</option>
+            <option value="http://moviedost.com/user-quiz/view-leaders">Nicolas Cage Quiz</option>
+        </select>
+</td>
+        <td width="5" align="right">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="305" valign="top" bgcolor="#FFFFFF"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#fffcf3">
+      <tr>
+        <td width="5"><img src="http://moviedost.com/images/sin_t_l.jpg" alt="" width="5" height="5" /></td>
+        <td width="100%" bgcolor="#fdf9e6" class="logbtop"></td>
+        <td width="5"><img src="http://moviedost.com/images/sin_t_r.jpg" alt="" width="5" height="5" /></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" valign="top" bgcolor="#fdf9e6" class="logblr"><img src="http://moviedost.com/star_images/no_img_actor.jpg" alt="Nicolas Cage Poster" vspace="10"  title="Nicolas Cage Poster"/></td>
+      </tr>
+      <tr>
+        <td colspan="3" valign="top" bgcolor="#fdf9e6" class="logblr" style="padding-left: 20px;"></td>
+      </tr>
+      <tr>
+        <td><img src="http://moviedost.com/images/sin_b_l.jpg" alt="" width="5" height="5" /></td>
+        <td bgcolor="#fdf9e6" class="logbbot"></td>
+        <td><img src="http://moviedost.com/images/sin_b_r.jpg" alt="" width="5" height="5" /></td>
+      </tr>
+    </table></td>
+  </tr>
+      	<tr><td height="2"></td></tr>
+    	<tr><td><div style="text-align:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9821813529653534";
+/* 300x250 Image */
+google_ad_slot = "9360863847";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></td></tr>
+	  <tr>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class=" cube blue" >
+      <tr >
+        <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="91%" height="30"><h2>
+                Nicolas Cage                Movies as
+                Actor              </h2></td>
+              <td width="9%" class="curve peach">&nbsp;</td>
+            </tr>
+        </table></td>
+      </tr>
+            <tr>
+        <td class="peach cube_content pad"><ul class="list">
+            <li><a href="http://guarding-tess.moviedost.com/">Guarding Tess</a></li><li><a href="http://con-air.moviedost.com/">Con Air</a></li><li><a href="http://next.moviedost.com/">Next</a></li>        </ul></td>
+      </tr>
+            <tr>
+        <td align="right" class="peach cube_content graytxt" height="25" style="padding-right: 5px;" >More <a href="http://nicolas-cage-movies.moviedost.com/">Nicolas Cage Movies &raquo;</a></td>
+      </tr>
+      <tr>
+        <td  ><div class="cube_footer">
+            <div class="cube_tail"></div>
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+            <tr>
+            <td align="left">&nbsp;</td>
+          </tr>
+  <tr>
+    <td>            <script type="text/javascript">
+				function createXMLHttpRequest(){
+					var xmlhttp = false;
+					
+					if(window.XMLHttpRequest){
+						xmlhttp = new XMLHttpRequest();
+						return xmlhttp;	
+					}
+					try{
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+						return xmlhttp;	
+					}catch(e){
+						try{
+							xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");	
+							return xmlhttp;
+						}catch(e1){}
+					}
+					
+					//object has not been created
+					return xmlhttp;
+				}
+				var request = createXMLHttpRequest();
+				function joinFanClub(val, type)
+				{
+					
+					var svid = 10657;
+					LinkType = val;
+					request.open('post', 'rad_ajax_fav_stars.php');
+					request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+					request.onreadystatechange = joinFanClub_CB; 
+					request.send("svid="+svid+"&addType="+val+"&type="+type+"&ImgsPerRow=2&ImgCount=2");
+				}
+				
+				
+				function joinFanClub_CB()
+				{
+					//var InfoReturn = request.responseText;
+					if(request.readyState == 4)
+					{
+						if(document.getElementById("spFavs")) 	document.getElementById("spFavs").innerHTML= request.responseText; 
+						if(document.getElementById("addfav"))	document.getElementById("addfav").innerHTML="Added to your Favorite Actors";
+						if(document.getElementById("addfav1"))	document.getElementById("addfav1").innerHTML="Added to your Favorite Actors";
+					}else{
+						if(document.getElementById("addfav"))	document.getElementById("addfav").innerHTML="Adding to your Favorite Actors list...";
+						if(document.getElementById("addfav1"))	document.getElementById("addfav1").innerHTML="Adding to your Favorite Actors list...";
+					}
+				}
+			</script>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class=" cube blue" >
+      <tr >
+        <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="93%">
+			  
+			  			  <h2 >Nicolas Cage Fans</h2></td>
+              <td width="7%" class="curve">&nbsp;</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><span id="spFavs">
+                <table cellspacing="2" cellpadding="2" width="100%">
+                  <tr>
+                  </tr><tr>                                    <td align="center" valign="bottom"><a href="http://abhinav-sharma-profile.moviedost.com/" class="nameslink"><img src="http://moviedost.s3.amazonaws.com/pro-s-14869.jpg" class="image" title="Abhinav Sharma" alt="Abhinav Sharma" border="0" /></a><br />
+                        <a href="http://abhinav-sharma-profile.moviedost.com/" class="nameslink">Abhinav</a></td>
+                                                                        <td align="center" valign="bottom"><a href="http://zeeshan-mukhtar-profile.moviedost.com/" class="nameslink"><img src="http://moviedost.com/images/no_img.jpg" class="image" title="Zeeshan Mukhtar" alt="Zeeshan Mukhtar" border="0" /></a><br />
+                        <a href="http://zeeshan-mukhtar-profile.moviedost.com/" class="nameslink">Zeeshan</a></td>
+                                                      </tr>
+                </table>
+              </span></td>
+            </tr>
+            <tr>
+              <td height="10" colspan="2" align="right" valign="middle"></td>
+            </tr>
+            <tr>
+              <td  colspan="2" align="right" height="40" class="graytxt">More <a href="http://moviedost.com/fan-club/nicolas-cage">Nicolas Cage Fans &raquo;</a><br />
+                <span id="addfav"><a href="#" onclick="javascript: alert('Please login or register to join Fan Club. Thanks.');" class='orl'>Join Nicolas Cage Fan Club &raquo;</a></span><br /></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td  ><div class="cube_footer">
+            <div class="cube_tail"></div>
+        </div></td>
+      </tr>
+    </table>
+            </td>
+  </tr>
+            <tr>
+            <td align="left">&nbsp;</td>
+          </tr>
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class=" cube blue" >
+      <tr >
+        <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="93%"><h2>
+                Nicolas Cage                Quiz</h2></td>
+              <td width="7%" class="curve">&nbsp;</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+                        <tr>
+              <td colspan="2" align="center" style="line-height: 22px;">No
+                Nicolas Cage                Quizzes Yet</td>
+            </tr>
+                        <tr>
+              <td height="45" colspan="2" align="right" class="graytxt" >                <a href="http://moviedost.com/user-quiz/create-quiz">Post a  Quiz &raquo;</a></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td  ><div class="cube_footer">
+            <div class="cube_tail"></div>
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+            <tr>
+            <td align="left">&nbsp;</td>
+          </tr>
+  <tr>
+    <td></td>
+  </tr>
+  </table></td>
+    <td width="495" align="left" valign="top" bgcolor="#FFFFFF" style="padding-left: 5px;"><table width="98%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="5"><img src="http://moviedost.com/images/d_l.jpg" width="5" height="46" /></td>
+            <td width="100%" background="http://moviedost.com/images/d_bg.jpg" class="txt padleft" >                <h2 style="font-size: 13px; color: #666; line-height: 20px;"><span class="bb">Do you like Nicolas Cage?</span></h2>
+              <span id="addfav1">
+                <a href="Javascript: void(0);" onclick="javascript: alert('Please login to join fan club');" class="orl">Add Nicolas Cage to your Favorite Actors</a>              </span> </td>
+            <td width="5"><img src="http://moviedost.com/images/d_r.jpg" alt="" width="5" height="46" /></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="cube peach" >
+          <tr >
+            <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><h2>Nicolas Cage Videos</h2></td>
+                  <td width="31%" class="curve">&nbsp;</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                					<tr>
+                    	<td colspan="2" align="center">No Nicolas Cage Videos Yet<br />
+                        <a href="http://moviedost.com/video/uploadvideo.php">Post a Video </a></td>
+                    </tr>
+                                    <tr>
+                  <td colspan="2" align="right" class="graytxt" >More <a href="http://nicolas-cage-videos-v.moviedost.com"> Nicolas Cage Videos &raquo;</a><br />
+                    <a href="http://moviedost.com/video/uploadvideo.php">Post a Video &raquo;</a></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td  ><div class="cube_footer">
+                <div class="cube_tail"></div>
+            </div></td>
+          </tr>
+        </table></td>
+      </tr>
+            <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="cube peach">
+                  <tr>
+                    <td class="cube_header"><table width="100%" height="26px;" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td><h2> User Comments on Nicolas Cage</h2></td>
+                          <td  class="curve">&nbsp;</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        	<tr>
+                        	<td colspan="2" align="center">No Comments for Nicolas Cage Yet.</td>
+                        </tr>
+                                            <tr>
+                          <td colspan="2" align="right" class="graytxt" >More <a href="http://moviedost.com/star-comments/nicolas-cage">Comments on Nicolas Cage &raquo;</a><br />
+                          <a href="javascript: void(0);" onclick="javascript: alert('Please login to post a comment');">Post a Comment on Nicolas Cage &raquo;</a>
+                                                </td>
+                        </tr>                       
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><div class="cube_footer">
+                        <div class="cube_tail"></div></div></td>
+                  </tr>
+              </table></td>
+      </tr>
+            <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class=" cube peach" >
+          <tr >
+            <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="93%"><h2>
+                    Nicolas Cage                    News</h2></td>
+                  <td width="7%" class="curve">&nbsp;</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tbody>
+                      
+                      
+                               				<tr>
+                        <td colspan="2"><span style="padding:5px;"><center>No Nicolas Cage News Yet</center></span></td>
+                      </tr>
+                                            </tbody>  
+                    </table></td>
+                </tr>
+                <tr>
+                  <td colspan="2" valign="top" height="6"></td>
+                </tr>
+               
+                <tr>
+                  <td height="45" colspan="2" align="right" class="graytxt" >More <a href="http://moviedost.com/star-news/nicolas-cage">
+                    Nicolas Cage                    News &raquo;</a><br />
+                                        <a href="#" onclick="alert('Login required...!')">Post  News &raquo;</a>
+                    </td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td  ><div class="cube_footer">
+                <div class="cube_tail"></div>
+            </div></td>
+          </tr>
+        </table></td>
+      </tr>
+          	<tr><td height="2"></td></tr>
+    	<tr><td><div style="text-align:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9821813529653534";
+/* 336x280 Image */
+google_ad_slot = "5818386376";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></td></tr>
+	      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class=" cube peach" >
+          <tr >
+            <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="93%"><h2>
+                    Nicolas Cage                    Discussion</h2></td>
+                  <td width="7%" class="curve">&nbsp;</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+            	<td><ul class="list">
+                  <div align="center">
+                                    <tr>
+                  <td colspan="2" align="center" style="line-height: 22px;">No
+                    Nicolas Cage                    Discussions Yet</td>
+                </tr>
+                                <tr>
+                  <td colspan="2" align="right" class="graytxt" >More <a href="http://moviedost.com/star-discussion/nicolas-cage">
+                    Nicolas Cage                    Discussion &raquo;</a><br />
+                    <a href="http://moviedost.com/discuss-stars/new-topic">Post a  Discussion Topic &raquo;</a></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td  ><div class="cube_footer">
+                <div class="cube_tail"></div>
+            </div></td>
+          </tr>
+        </table></td>
+      </tr>
+          </table> </td>
+    <td width="200" valign="top" bgcolor="#FFFFFF" ><table width="98%" border="0" align="right" cellpadding="0" cellspacing="0">
+     <tr>
+        <td><div style="text-align:left;">
+                      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<script type="text/javascript"><!--
+google_ad_client = "pub-9821813529653534";
+/* MD-Right-LU */
+google_ad_slot = "5370196524";
+google_ad_width = 180;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></body>
+</html>
+        </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    
+            <tr>
+        <td><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0" class=" cube blue" >
+            <tr >
+              <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="96%" height="30" align="left"><h2 style="font-size:11px; font-weight:bold; color:#555;">Nicolas Cage Photos</h2></td>
+                    <td width="4%" class="curve">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+           
+            <tr>
+              <td class="peach cube_content pad"><table width="100%" border="0" align="center" cellpadding="2" cellspacing="2">
+      <!--<tr>
+        <td colspan="4" align="center" height="8"></td>
+      </tr>-->
+      <tr>
+        <td align="center" valign="middle" height="75" colspan="4" >No pictures for this star <br /><span><a href="http://moviedost.com/photos/uploadphoto.php" class="sl">Post a picture</a></span></td>      </tr>
+    </table></td>
+            </tr>
+            <tr>
+              <td height="25" align="right" class="peach cube_content graytxt " style="padding-right: 10px;"><span class="graytxt">More <a href="http://moviedost.com/star-pics/nicolas-cage">Nicolas Cage Photos &raquo;</a><br />
+                    <a href="http://moviedost.com/photos/uploadphoto.php">Post a Photo &raquo;</a></span></td>
+            </tr>
+           <tr>
+              <td  ><div class="cube_footer">
+                  <div class="cube_tail"></div>
+              </div></td>
+            </tr>
+        </table></td>
+      </tr>
+            <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="cube blue" >
+          <tr >
+            <td valign="top" class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="93%"><h2 style="font-size:11px; font-weight:bold; color:#555;">Nicolas Cage Video Songs</h2></td>
+                  <td width="7%" class="curve">&nbsp;</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="peach cube_content pad"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                  <td colspan="2" align="center">No
+                    Nicolas Cage                    Video Songs yet<br />
+                    <a href="http://moviedost.com/video/uploadvideo.php">Post a  Video  Song</a></td>
+                </tr>
+                                <tr>
+                  <td colspan="2" align="right" class="graytxt" >More <a href="http://nicolas-cage-video-songs-vs.moviedost.com"> Nicolas Cage Video Songs &raquo;</a><br />
+                    <a href="http://moviedost.com/video/uploadvideo.php">Post a  Video  Song &raquo;</a></td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td  ><div class="cube_footer">
+                <div class="cube_tail"></div>
+            </div></td>
+          </tr>
+        </table></td>
+      </tr>
+          	<tr><td height="2"></td></tr>
+    	<tr><td><div style="text-align:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9821813529653534";
+/* 160x600 Image */
+google_ad_slot = "2794204021";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></td></tr>
+	      <tr>
+        <td>&nbsp;</td>
+      </tr>
+       
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="cube blue">
+            <tr>
+              <td class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="97%"><h2 style="font-size:11px; font-weight:bold; color:#555;">
+                        Nicolas Cage                      Movies by Role</h2></td>
+                    <td width="3%" height="26" class="curve">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td class="peach cube_content pad" valign="top"><ul class="list">
+                                                      <li><a href="http://nicolas-cage-actor.moviedost.com/">Nicolas Cage Actor</a></li>
+                                                                                                                                                                                                                          
+              </ul></td>
+            </tr>
+            <tr>
+              <td><div class="cube_footer">
+                  <div class="cube_tail"></div>
+              </div></td>
+            </tr>
+        </table></td>
+      </tr>
+            <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0" class="cube blue">
+            <tr>
+              <td class="cube_header"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="95%"><h2 style="font-size:11px; font-weight:bold; color:#555;">
+                        Nicolas Cage                      Movies by Language</h2></td>
+                    <td width="5%" height="26" class="curve">&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td class="peach cube_content pad" valign="top"><ul class="list">
+                <li><a href="http://moviedost.com/english-movies-of/nicolas-cage">Nicolas Cage English Movies</a></li>
+                                </ul></td>
+            </tr>
+            <tr>
+              <td><div class="cube_footer">
+                  <div class="cube_tail"></div>
+              </div></td>
+            </tr>
+        </table></td>
+      </tr>
+     <!-- <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><div style="text-align:left;">
+                                          </div></td>
+      </tr>-->
+    </table></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF">&nbsp;</td>
+    <td align="left" valign="top" bgcolor="#FFFFFF" style="padding-left: 5px;">&nbsp;</td>
+    <td valign="top" bgcolor="#FFFFFF" >&nbsp;</td>
+  </tr>
+  <!--<tr>
+    <td colspan="3" valign="top">&nbsp;</td>
+  </tr>-->
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="40" align="center" bgcolor="#f1f2e0"><pre> <a href="http://moviedost.com">Movie Dost</a>  |    <a href="http://moviedost.com/docs/privacy_policy.php">Privacy Policy</a>   |  <a href="http://moviedost.com/docs/terms_conditions.php">Terms &amp; conditions</a>   |  &copy; copyright 2007 MovieDost.com</pre>
+	</td>
+  </tr>
+</table>
+
+<script>
+//Load Headers Ping - Javascript Dynamically	//Srinivas Ping 
+
+var SRloged = 0;
+
+
+if(SRloged == 1)
+{
+var SRInitTotal=0;
+
+var SRInitCur=1;
+var SRTotal=SRInitTotal;
+var SRCur=SRInitCur;
+var recArray=new Array();
+var currentrecId;
+
+var SRsendid=0;
+
+}
+//Srinivas Ping
+
+function loadHeadPing()
+{
+var script = document.createElement('script');	//Dynamic JS
+script.type = 'text/javascript';				//Dynamic JS
+script.src = 'ping_header.js'; //Dynamic JS source
+document.getElementsByTagName('head')[0].appendChild(script);  //Dynamic JS
+}
+
+
+if(SRloged == 1 && SRInitTotal != 0)
+{
+//Call Initial
+function SRFillFirstJ()
+{
+AjaxParameters='ptot='+SRInitTotal+'&MsgType='+0;
+request.open('post', 'ping_header.php');
+request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+request.onreadystatechange = SRBKFillFirstJ; 
+request.send(AjaxParameters);
+}
+
+function SRBKFillFirstJ()
+{
+document.getElementById('SRFillFirst').innerHTML = "<center><img src='http://moviedost.com/images/loading.gif' border='0' /> Loading Pings...</center>";
+
+var InfoReturn2 = request.responseText;
+if(request.readyState == 4)
+{	
+document.getElementById("SRFillFirst").innerHTML = InfoReturn2;	
+if(SRsendid=document.getElementById("SRHiddencurVal"))
+SRsendid=document.getElementById("SRHiddencurVal").value;
+}
+
+
+}
+
+SRFillFirstJ();	//call the div
+loadHeadPing();
+}
+</script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1892515-2");
+pageTracker._setDomainName("moviedost.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<script src="http://static.getclicky.com/28256.js" type="text/javascript"></script>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-00eFZEVQxF-_s"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-00eFZEVQxF-_s.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+</body>
+</html>

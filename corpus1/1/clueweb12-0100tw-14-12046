@@ -1,0 +1,768 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-13T01:21:14Z
+WARC-TREC-ID: clueweb12-0100tw-14-12046
+WARC-IP-Address: 66.39.118.182
+WARC-Payload-Digest: sha1:WMGJVERTJOTWMPEMSKFECZQCJBJB7ZTD
+WARC-Target-URI: http://www.uselectionatlas.org/
+WARC-Record-ID: <urn:uuid:b2f22950-1f3c-4a8c-8881-17f1ee88c8bf>
+Content-Type: application/http; msgtype=response
+Content-Length: 43224
+
+HTTP/1.1 200 OK
+Date: Mon, 13 Feb 2012 01:21:15 GMT
+Server: Apache/2.2.14
+Set-Cookie: uselectionatlas_firstvisit=2012-02-12; expires=Tue, 06-Nov-2012 02:14:35 GMT
+Set-Cookie: uselectionatlas_numvisits=1; expires=Tue, 06-Nov-2012 02:14:35 GMT
+Set-Cookie: uselectionatlas_lastvisit=2012-02-12; expires=Tue, 06-Nov-2012 02:14:35 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Dave Leip's Atlas of U.S. Presidential Elections</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="presidential, elections, us, of, results, election results by county, presidential elections, election of 1860, election results, presidential election results, primary, election, u.s., turnout, whitehouse, race, voting, primaries, 
+states, atlas, statistics, calculator, electoral college, united, vote, returns, national, data, history, voting, primary, Bush, Perot, Reagan, Clinton, Carter, Kennedy, Nixon, Johnson, Goldwater, Ford, Roosevelt, Lincoln, Bell, Douglas, 
+caucus, politics, Gore, Bush, Buchanan, Nader, 2000, maps, voter turnout, campaign, general, electoral, popular, candidates, parties, county, congress, 
+congressional district, congressional, elections, House, Senate, county, district, 1860, 1996, 1992, 1988, 1984, 1980, 1976, 1972, 1968, 1964, 1960, 1912, 2000, 2004, 2008, 2012
+1956, 1952, 1948, 1944, 1940, 1936, 1932, 1928, 1924, 1920, 1916, 1908, 1904, 1900, 1896, 1892, 1888, 1884, 1880, 1876, 1872, 1868, 1864, 1860" />
+
+<meta name="description" content="Detailed national results of US Presidential Elections from 1789 through 2000. State and county results from 1892 through 2000." />
+<meta name="author" content = "David Leip" />
+<meta name="copyright" content = "&copy; 2012 David Leip" />
+
+<link rel="stylesheet" type="text/css" href="CSS/style_atlas.css" />
+<link rel="stylesheet" type="text/css" href="CSS/style_blogads.css" />
+<style type="text/css">
+
+span#counter
+	{
+	text-align: center;
+	font-weight: bold;
+	border:1px solid #999;
+	background-color:#f5f5f5;
+	padding:7px 12px 5px 12px;
+	margin:5px 12px 5px 12px;
+   	}
+td#rightmenu {
+	border:none;
+	background-color:#f5f5f5;
+	padding:5px 12px 5px 12px;
+ 	margin:0; 
+ 	width:145px; 
+ 	vertical-align:top;
+	}
+td#form {
+	border-right:1px solid #999;
+	background-color:#f5f5f5;
+	padding:5px 12px 5px 12px;
+ 	margin:0; 
+ 	width:476px; 
+ 	vertical-align:top;
+	}
+td#google {
+	background-color:#f5f5f5;
+	border-right:1px solid #999;
+ 	margin:0; 
+ 	padding:0; 
+ 	vertical-align:top;
+ 	width:120px;
+	}
+ul.list	{
+	margin: 0px;
+	padding: 0 0 7px 20px;
+	}
+li {
+	padding: 2px 0 2px 0;
+	text-align:justify;
+	}
+h2	{ text-align:left; 
+	margin:12px 0 6px 0;
+	font-weight:700;
+	}
+
+a.menu
+	{
+	margin:0 5px;
+	}	
+</style>
+
+
+<script type="text/javascript">
+function quick_link() {
+  opt = document.forms.ql.quicklinks.options[document.forms.ql.quicklinks.selectedIndex].value;
+  top.location.href = opt;
+}
+
+</script>
+<script type="text/javascript" src="inc_js.js"></script>
+</head>
+
+<body>
+
+<div class="menu">
+<img id="leftbar" src="IMAGES/menubar_l.png" width="3" alt="" />
+<a class="menu" href="http://uselectionatlas.org/2012.php" title="Election 2012 Page">2012</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/RESULTS/" title="Presidential Election Results (Primary and General)">Election Results</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/INFORMATION/index.php" title="Election Information, including: Articles, History, Process, and Law">Election Information</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/WEBLOGS/" title="Atlas Weblogs">Weblogs</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/BOTTOM/guestbook.php?type=form" title="Sign the Guestbook!">Guestbook</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/BOTTOM/email.php" title="Send me Email!">Email</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/FORUM/index.php" title="Atlas Forum - Post and Read Messages, Ask and Answer Questions.">Forum</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/NEWS/index.php" title="Atlas News Aggregator">News</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/WIKI/" title="Atlas Wiki - Election and Atlas Community Information.">Wiki</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/BOTTOM/links.php" title="Links">Links</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/BOTTOM/siteinfo.php" title="Site Information - FAQ, Awards, Statistics, etc.">Site Info</a>
+<img src="IMAGES/divider.png" alt="" />
+<a class="menu" href="http://uselectionatlas.org/BOTTOM/store.php" title="The Atlas Store">Store</a>
+<img id="rightbar" src="IMAGES/menubar_r.png" width="3" alt="" /><br />
+</div>
+
+<div style="position:absolute; top:40px; left:10px; width:740px"><img src="IMAGES/banner.jpg" alt="banner" /></div>
+<div style="position:absolute; top:155px; left:10px; margin:0; padding:0; width:792px;">
+
+<table border="0" cellspacing="0" style="border:1px solid #999">
+<tr>
+
+
+<td id="google">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0109201992740905";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="3770880955";
+google_ad_type = "text";
+google_color_border = "999999";
+google_color_bg = "F5F5F5";
+google_color_link = "555555";
+google_color_url = "000099";
+google_color_text = "111111";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0109201992740905";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="3770880955";
+google_ad_type = "text";
+google_color_border = "999999";
+google_color_bg = "F5F5F5";
+google_color_link = "555555";
+google_color_url = "000099";
+google_color_text = "111111";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td>
+
+<td id="form">
+
+<!--
+
+<form name="ql" action="index.php">
+<h2>
+<select name="quicklinks" onchange = "quick_link()">
+ <option selected="selected" value="index.php">Quick Links</option>
+ <option value="http://uselectionatlas.org/TOOLS/evcalc.php">Electoral College Calculator</option>
+ <option value="http://uselectionatlas.org/BOTTOM/store_data.php">Purchase Election Data</option>
+ <option value="http://uselectionatlas.org/POLLS/">Polls</option>
+ <option value="http://uselectionatlas.org/PRED/">Predictions</option>
+ <option value="http://uselectionatlas.org/RESULTS/">Past Election Results</option>
+</select>
+</h2>
+</form>
+-->
+
+
+<hr />
+
+<h2>Top Picks: </h2>
+<ul style="margin:0">
+ <li><a href ="http://uselectionatlas.org/RESULTS/"><b>Extensive</b> Past Election Results Atlas (Maps &amp; Data) <b>since 1789</b></a></li>
+ <li><a href ="http://uselectionatlas.org/BOTTOM/store_data.php"><b>Quality Data Sets</b> compiled from Official Sources with FIPS</a></li>
+ <li><a href="TOOLS/evcalc.php" title="Electoral College Electoral Vote Calculator">Electoral College Calculator</a> - Experiment with electoral math.</li>
+ <li><a href="FORUM" title="Atlas Forum Discussion Board">The Atlas Forum Political Discussion Board</a></li>
+ <li><a href="/RESULTS/timeline.php?year=2012&f=1&off=0&elect=2">2012 Republican Primary Timeline</a></li>
+</ul>
+
+<hr />
+
+<table style="margin-right:auto;margin-left:auto;">
+<tr>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+ <td style="padding:0px 5px 2px 5px;vertical-align:top"><a style="font-size:32pt;" href = "2012.php"><b>Election 2012</b></a></td>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+</tr>
+</table>
+<!--
+<table style="margin-right:auto;margin-left:auto;">
+<tr><td colspan="3" class="ctr"><a style="font-size:18pt" href = "RESULTS/"><b>2012 General Election Results</b></a></td></tr>
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2012&amp;off=0&amp;elect=0&amp;f=0" title="2012 Presidential Election Results">President</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2012&amp;off=3&amp;elect=0&amp;f=0" title="2012 Senatorial Election Results">U.S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2012&amp;off=5&amp;elect=0&amp;f=0" title="2012 Gubernatorial Election Results">Governor</a></b></td>
+</tr>
+<tr>
+	<td><b><a href="RESULTS/" title="2012 Presidential Election Results"><img src="USPRESIDENT/GENERAL/pe2012.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2012&amp;off=3&amp;elect=0&amp;f=0" title="2012 Senatorial Election Results"><img src="USSENATE/GENERAL/se2012.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2012&amp;off=5&amp;elect=0&amp;f=0" title="2012 Gubernatorial Election Results"><img src="GOVERNOR/GENERAL/ge2012.png" alt="res map" style="width:150px" /></a></b></td>
+</tr>
+  <tr><td colspan="3" style="text-align:center"><a class="inline" href = "INFORMATION/ARTICLES/ElectionNight2012/pe2012elecnighttime.php">2012 General Election Night Timeline</a></td></tr>
+
+<tr><td colspan="3" class="ctr"><hr style="width:450px" /></td></tr>
+</table>
+<table style="margin-right:auto;margin-left:auto;">
+  <tr><td style="width:31px;padding:0"><a href ="http://uselectionatlas.org/BOTTOM/store_data.php"><img src="IMAGES/ICO/ico_data.gif" alt="icon" /></a></td>
+      <td><a href = "BOTTOM/store_data.php"><b>Buy 2012 County Data</b></a> (President, Senate, House, Governor)</td></tr>
+  <tr><td style="width:31px;padding:0"><img src="TOOLS/IMAGES/ico_uuorld.png" alt="" style="width:29px;padding:0" /></td>
+      <td style="vertical-align:middle">Map your data in 3D! Atlas Data support <a href = "http://uselectionatlas.org/TOOLS/uuorld.php">UUorld GIS</a></td></tr>
+  <tr><td style="width:31px;padding:0"><a href ="http://uselectionatlas.org/BOTTOM/store_data.php"><img src="IMAGES/ICO/ico_data.gif" alt="icon" /></a></td>
+      <td><a href ="http://uselectionatlas.org/BOTTOM/store_data.php">Buy <b>Election Data Sets</b> compiled from Official Sources with FIPS</a></td></tr>
+  <tr><td style="width:31px;padding:0"><a href="TOOLS/evcalc.php" title="Electoral College Electoral Vote Calculator"><img src="IMAGES/ICO/ico_calc.gif" alt="icon" /></a></td>
+      <td><a href="TOOLS/evcalc.php" title="Electoral College Electoral Vote Calculator">Electoral College <b>Calculator</b></a> - Experiment with electoral math.</td></tr>
+  <tr><td colspan="2" class="ctr"><hr style="width:450px" /></td></tr>
+</table>
+-->
+
+<table style="margin-left:auto;margin-right:auto">
+
+<tr><td colspan="3" class="ctr"><hr style="width:450px" /></td></tr>
+<tr>
+	<td class="ctr"><a style="font-size:22pt" href = "POLLS/"><b>Polls</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "PRED/"><b>Predictions</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "RESULTS/"><b>Results</b></a></td>
+</tr>
+    
+<tr>
+</tr>
+    
+<tr>
+
+	<td style="text-align:center"><b>General</b><br /><a href="POLLS/PRESIDENT/2012/polls.php" title="2012 U. S. Presidential Election Polls"><img src="POLLS/PRESIDENT/2012/poll2012P_sm.png" alt="poll map" /></a></td>
+	<td style="text-align:center"><b>General</b><br /><a href="PRED/PRESIDENT/2012/pred.php" title="2012 U. S. Presidential Predictions"><img src="PRED/PRESIDENT/2012/pred12PP.png" alt="pred map" style="width:150px" /></a></td>
+</tr>
+<tr>
+	<td style="text-align:center"><b>Primary</b><br /><a href="POLLS/PRESIDENT/2012R/polls.php" title="2012 U. S. Republican Primary Presidential Election Polls"><img src="POLLS/PRESIDENT/2012R/poll2012R_sm.png" alt="poll map" /></a></td>
+	<td style="text-align:center"><b>Primary</b><br /><a href="PRED/PRESIDENT/2012R/pred.php" title="2012 U. S. Republican Primary Presidential Predictions"><img src="PRED/PRESIDENT/2012R/pred12PRP.png" alt="pred map" style="width:150px" /></a></td>
+	<td class="ctr"><b><a href="RESULTS/national.php?year=2012&amp;off=0&amp;elect=2&amp;f=0" title="2012 Republican Primary Results">Republican Primary</a><br /><a href="RESULTS/national.php?year=2012&amp;off=0&amp;elect=2&amp;f=0" title="2012 Republican Primary Election Results"><img src="USPRESIDENT/PRIMARY/prim2012R.png" alt="res map" style="width:150px" /></a></b></td>
+</tr>
+        
+<!--
+<tr>
+	<td class="ctr"><a style="font-size:22pt" href = "POLLS/"><b>Polls</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "PRED/"><b>Predictions</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "ENDORSE/"><b>Endorse</b></a></td>
+</tr>
+    
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="POLLS/SENATE/2012/polls.php" title="2012 U. S. Senate Election Polls">U. S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="PRED/SENATE/2012/pred.php" title="2012 U. S. Senate Predictions">U. S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="ENDORSE/SENATE/2012/endorse.php" title="2012 Senatorial Endorsements">U. S. Senate</a></b></td>
+</tr>
+    
+<tr>
+	<td><b><a href="POLLS/SENATE/2012/polls.php" title="2012 U. S. Senate Election Polls"><img src="POLLS/SENATE/2012/poll2012S.png" alt="poll map" style="width:150px" /></a></b></td>
+	<td><b><a href="PRED/SENATE/2012/pred.php" title="2012 U. S. Senate Predictions"><img src="PRED/SENATE/2012/pred10SP.png" alt="pred map" style="width:150px" /></a></b></td>
+	<td><b><a href="ENDORSE/SENATE/2012/endorse.php" title="2012 Senatorial Endorsements"><img src="ENDORSE/SENATE/2012/end10SE.png" alt="end map" style="width:150px" /></a></b></td>
+</tr>
+    
+<tr>
+    <td class="ctr"><b><a href="POLLS/GOVERNOR/2012/polls.php" title="2012 Gubernatorial Election Polls">Governor</a></b></td>
+	<td class="ctr"><b><a href="PRED/GOVERNOR/2012/pred.php" title="2012 Gubernatorial Predictions">Governor</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="ENDORSE/GOVERNOR/2012/endorse.php" title="2012 Gubernatorial Endorsements">Governor</a></b></td>
+</tr>    
+<tr>
+    <td><b><a href="POLLS/GOVERNOR/2012/polls.php" title="2012 Gubernatorial Election Polls"><img src="POLLS/GOVERNOR/2012/poll2012G.png" alt="poll map" style="width:150px" /></a></b></td>
+	<td><b><a href="PRED/GOVERNOR/2012/pred.php" title="2012 Gubernatorial Predictions"><img src="PRED/GOVERNOR/2012/pred10GP.png" alt="pred map" style="width:150px" /></a></b></td>
+	<td><b><a href="ENDORSE/GOVERNOR/2012/endorse.php" title="2012 Gubernatorial Endorsements"><img src="ENDORSE/GOVERNOR/2012/end10GE.png" alt="end map" style="width:150px" /></a></b></td>
+</tr>
+-->    
+<tr><td colspan="3" style="text-align:center">(A <a href="note.html"><span style="font-size:14pt"><b>note</b></span></a> about <span style="color:#DD0000;font-size:14pt">Red</span> and <span style="color:#0000DD;font-size:14pt">Blue</span>)</td></tr>
+
+</table>
+
+<hr />
+
+<table style="margin-right:auto;margin-left:auto;">
+<tr>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+ <td style="padding:0px 5px 2px 5px;vertical-align:top"><a style="font-size:32pt;" href = "2010.php"><b>Election 2010</b></a></td>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+</tr>
+</table>
+
+<hr />
+
+<table style="margin-right:auto;margin-left:auto;">
+<tr><td colspan="3" class="ctr"><h1 style="padding:5px;margin:0"><b>2010 General Election Results</b></h1></td></tr>
+  <tr><td colspan="3"><a href = "BOTTOM/store_data.php"><b>Buy 2010 County Election Data</b></a> (Senate, Governor)</td></tr>
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2010&amp;off=3&amp;elect=0&amp;f=0" title="2010 Senatorial Election Results">U.S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2010&amp;off=5&amp;elect=0&amp;f=0" title="2010 Gubernatorial Election Results">Governor</a></b></td>
+</tr>
+<tr>
+	<td><b><a href="RESULTS/national.php?year=2010&amp;off=3&amp;elect=0&amp;f=0" title="2010 Senatorial Election Results"><img src="USSENATE/GENERAL/se2010.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2010&amp;off=5&amp;elect=0&amp;f=0" title="2010 Gubernatorial Election Results"><img src="GOVERNOR/GENERAL/ge2010.png" alt="res map" style="width:150px" /></a></b></td>
+</tr>
+
+
+</table>
+
+<hr />
+
+<table style="margin-right:auto;margin-left:auto;">
+<tr>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+ <td style="padding:0px 5px 2px 5px;vertical-align:top"><a style="font-size:32pt;" href = "2008.php"><b>Election 2008</b></a></td>
+ <td><img src="IMAGES/fan_sm.png" alt="fan" /></td>
+</tr>
+</table>
+
+<table style="margin-right:auto;margin-left:auto;">
+<tr><td colspan="3" class="ctr"><a style="font-size:18pt" href = "RESULTS/"><b>2008 General Election Results</b></a></td></tr>
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2008&amp;off=0&amp;elect=0&amp;f=0" title="2008 Presidential Election Results">President</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2008&amp;off=3&amp;elect=0&amp;f=0" title="2008 Senatorial Election Results">U.S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2008&amp;off=5&amp;elect=0&amp;f=0" title="2008 Gubernatorial Election Results">Governor</a></b></td>
+</tr>
+<tr>
+	<td><b><a href="RESULTS/" title="2008 Presidential Election Results"><img src="USPRESIDENT/GENERAL/pe2008.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2008&amp;off=3&amp;elect=0&amp;f=0" title="2008 Senatorial Election Results"><img src="USSENATE/GENERAL/se2008.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2008&amp;off=5&amp;elect=0&amp;f=0" title="2008 Gubernatorial Election Results"><img src="GOVERNOR/GENERAL/ge2008.png" alt="res map" style="width:150px" /></a></b></td>
+</tr>
+<tr>
+	<td colspan="3" style="vertical-align:middle"><a href = "http://uselectionatlas.org/RESULTS/countymap.php?year=2008&f=0&off=0&elect=0"><img style="width:150px" src="USPRESIDENT/GENERAL/pe2008USA_sm.png" />2008 Presidential Election Results by county</a></td></tr>
+  <tr><td colspan="3" style="text-align:center"><a class="inline" href = "INFORMATION/ARTICLES/ElectionNight2008/pe2008elecnighttime.php">2008 General Election Night Timeline</a></td></tr>
+
+<tr><td colspan="3" class="ctr"><hr style="width:450px" /></td></tr>
+</table>
+
+<table style="margin-right:auto;margin-left:auto;">
+  <tr><td style="width:31px;padding:0"><a href ="http://uselectionatlas.org/BOTTOM/store_data.php"><img src="IMAGES/ICO/ico_data.gif" alt="icon" /></a></td>
+      <td><a href = "BOTTOM/store_data.php"><b>Buy 2008 County Data</b></a> (President, Senate, House, Governor)</td></tr>
+  <tr><td style="width:31px;padding:0"><img src="TOOLS/IMAGES/ico_uuorld.png" alt="" style="width:29px;padding:0" /></td>
+      <td style="vertical-align:middle">Map your data in 3D! Atlas Data support <a href = "http://uselectionatlas.org/TOOLS/uuorld.php">UUorld GIS</a></td></tr>
+  <tr><td style="width:31px;padding:0"><a href ="http://uselectionatlas.org/BOTTOM/store_data.php"><img src="IMAGES/ICO/ico_data.gif" alt="icon" /></a></td>
+      <td><a href ="http://uselectionatlas.org/BOTTOM/store_data.php">Buy <b>Election Data Sets</b> compiled from Official Sources with FIPS</a></td></tr>
+  <tr><td style="width:31px;padding:0"><a href="TOOLS/evcalc.php" title="Electoral College Electoral Vote Calculator"><img src="IMAGES/ICO/ico_calc.gif" alt="icon" /></a></td>
+      <td><a href="TOOLS/evcalc.php" title="Electoral College Electoral Vote Calculator">Electoral College <b>Calculator</b></a> - Experiment with electoral math.</td></tr>
+  <tr><td colspan="2" class="ctr"><hr style="width:450px" /></td></tr>
+</table>
+
+<br />
+
+<table style="margin-left:auto;margin-right:auto">
+<!--
+<tr>
+	<td class="ctr"><a style="font-size:22pt" href = "POLLS/"><b>Polls</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "PRED/"><b>Predictions</b></a></td>
+	<td class="ctr"><a style="font-size:22pt" href = "MOCK/"><b>Mock</b></a></td>
+</tr>
+<tr>
+    <td class="ctr"><b><a href="POLLS/PRESIDENT/2008/pollsa.php" title="2008 General Election Polls for US President">President General </a></b></td>
+	<td class="ctr"><b><a href="PRED/PRESIDENT/2008/pred.php" title="2008 Presidential Election Predictions">President General</a></b></td>
+	<td class="ctr"><b><a href="MOCK/PRESIDENT/2008/mock.php" title="2008 Mock Presidential Election">President General</a></b></td>
+</tr>
+<tr>
+    <td><b><a href="POLLS/PRESIDENT/2008/pollsa.php" title="2008 General Election Polls"><img src="POLLS/PRESIDENT/2008/poll2008PO_sm.png" alt="poll map" /></a></b></td>
+	<td><b><a href="PRED/PRESIDENT/2008/pred.php" title="2008 Presidential Election Predictions"><img src="PRED/PRESIDENT/2008/pred08PP.png" alt="pred map" style="width:150px" /></a></b></td>
+	<td><b><a href="MOCK/PRESIDENT/2008/mock.php" title="2008 Mock Presidential Election"><img src="MOCK/PRESIDENT/2008/mock.png" alt="mock map" style="width:150px" /></a></b></td>
+</tr>
+    
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="POLLS/SENATE/2008/polls.php" title="2008 U. S. Senate Election Polls">U. S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="PRED/SENATE/2008/pred.php" title="2008 U. S. Senate Predictions">U. S. Senate</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="ENDORSE/SENATE/2008/endorse.php" title="2008 Senatorial Endorsements">U. S. Senate</a> <a href="ENDORSE/" title="Endorsements">(Endorsements)</a></b></td>
+</tr>
+    
+<tr>
+	<td><b><a href="POLLS/SENATE/2008/polls.php" title="2008 U. S. Senate Election Polls"><img src="POLLS/SENATE/2008/poll2008S.png" alt="poll map" style="width:150px" /></a></b></td>
+	<td><b><a href="PRED/SENATE/2008/pred.php" title="2008 U. S. Senate Predictions"><img src="PRED/SENATE/2008/pred08SP.png" alt="pred map" style="width:150px" /></a></b></td>
+	<td><b><a href="ENDORSE/SENATE/2008/endorse.php" title="2008 Senatorial Endorsements"><img src="ENDORSE/SENATE/2008/end08SE.png" alt="end map" style="width:150px" /></a></b></td>
+</tr>
+    
+<tr>
+    <td class="ctr"><b><a href="POLLS/GOVERNOR/2008/polls.php" title="2008 Gubernatorial Election Polls">Governor</a></b></td>
+	<td class="ctr"><b><a href="PRED/GOVERNOR/2008/pred.php" title="2008 Gubernatorial Predictions">Governor</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="ENDORSE/GOVERNOR/2008/endorse.php" title="2008 Gubernatorial Endorsements">Governor</a> <a href="ENDORSE/" title="Endorsements">(Endorsements)</a></b></td>
+</tr>    
+<tr>
+    <td><b><a href="POLLS/GOVERNOR/2008/polls.php" title="2008 Gubernatorial Election Polls"><img src="POLLS/GOVERNOR/2008/poll2008G.png" alt="poll map" style="width:150px" /></a></b></td>
+	<td><b><a href="PRED/GOVERNOR/2008/pred.php" title="2008 Gubernatorial Predictions"><img src="PRED/GOVERNOR/2008/pred08GP.png" alt="pred map" style="width:150px" /></a></b></td>
+	<td><b><a href="ENDORSE/GOVERNOR/2008/endorse.php" title="2008 Gubernatorial Endorsements"><img src="ENDORSE/GOVERNOR/2008/end08GE.png" alt="end map" style="width:150px" /></a></b></td>
+</tr>
+    
+<tr><td colspan="3" class="ctr"><hr style="width:450px" /></td></tr>
+-->
+
+<tr><td colspan="3" class="ctr"><a style="font-size:18pt" href = "RESULTS/"><b>2008 Presidential Primary Election Results</b></a></td></tr>
+<tr>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2008&amp;off=0&amp;elect=2&amp;f=0" title="2008 Republican Primary Results">Republican Primary</a></b></td>
+	<td class="ctr" style="width:150px"><b><a href="RESULTS/national.php?year=2008&amp;off=0&amp;elect=1&amp;f=0" title="2008 Democratic Primary Results">Democratic Primary</a></b></td>
+</tr>
+<tr>
+	<td><b><a href="RESULTS/national.php?year=2008&amp;off=0&amp;elect=2&amp;f=0" title="2008 Republican Primary Election Results"><img src="USPRESIDENT/PRIMARY/prim2008R.png" alt="res map" style="width:150px" /></a></b></td>
+	<td><b><a href="RESULTS/national.php?year=2008&amp;off=0&amp;elect=1&amp;f=0" title="2008 Democratic Primary Election Results"><img src="USPRESIDENT/PRIMARY/prim2008D.png" alt="res map" style="width:150px" /></a></b></td>
+</tr>
+<tr><td colspan="3" class="ctr"><hr style="width:450px" /></td></tr>
+</table>
+ <ul>
+  <li><a class="inline" href = "BOTTOM/store_data.php">2008 Primary Election Data</a> by county, town, state - includes delegate estimates and congressional district data (where available). </li>
+  <li><a class="inline" href = "USPRESIDENT/GENERAL/CAMPAIGN/2008/pe2008Candidates.php">2008 General Election Candidates and Ballot Status</a></li>
+ </ul>
+
+
+
+<!--
+<h2>Election 2007</h2>
+<ul>
+    <li><a href="RESULTS/national.php?f=0&amp;year=2007&amp;off=5" title="2007 Gubernatorial Election Results">2007 Gubernatorial Election Results</a></li>
+    <li><a href="PRED/GOVERNOR/2007/pred.php" title="2007 Gubernatorial Election Predictions">2007 Gubernatorial Predictions</a></li>
+    <li><a href="POLLS/GOVERNOR/2007/polls.php" title="2008 Gubernatorial Election Polls">2007 Gubernatorial Polls</a></li>
+ 	<li><a href="ENDORSE/GOVERNOR/2007/endorse.php" title="2007 User Endorsements - U.S. Governors">2007 Gubernatorial Endorsements</a></li>
+</ul>
+<br />
+-->
+
+<!--
+<a style="font-size:18pt;font-weight:700" href = "2006.php">Election 2006</a>
+<table style="margin-left:auto;margin-right:auto">
+<tr><td style="text-align:center;width:250px"><b>U.S. Senate</b></td><td style="text-align:center;width:250px"><b>Governors</b></td></tr>
+<tr><td style="text-align:center;"><a href = "RESULTS/national.php?year=2006&amp;off=3&amp;f=0"><img src="USSENATE/GENERAL/se2006.png" style="width:150px" alt="Senate Map" /></a></td>
+<td style="text-align:center;"><a href = "RESULTS/national.php?year=2006&amp;off=5&amp;f=0"><img src="GOVERNOR/GENERAL/ge2006.png" style="width:150px" alt="Governor Map" /></a></td></tr>
+<tr><td>
+-->
+
+<!--
+</td>
+</tr>
+</table>
+-->
+<!--
+<p><a href = "BOTTOM/store_data.php">Purchase preliminary 2006 Senate and Gubernatorial County Data Files</a></p>
+<table style="padding:0 0 0 5px">
+<tr><td style="width:200px;vertical-align:top"><b>Information</b>
+<ul class="list">
+	<li><a href="RESULTS/national.php?f=0&amp;off=5&amp;year=2006" title="Election 2006 Gubernatorial Election Results"><img src="IMAGES/ICO/ico_news.gif" alt="" /> Gubernatorial Results</a></li>
+	<li><a href="RESULTS/national.php?f=0&amp;off=3&amp;year=2006" title="Election 2006 Senatorial Election Results"><img src="IMAGES/ICO/ico_news.gif" alt="" /> Senatorial Results</a></li>
+    <li><a href="POLLS/GOVERNOR/2006/polls.php" title="Gubernatorial Polls for 2006"><img src="IMAGES/ICO/ico_polls.gif" alt="" /> Gubernatorial Polls</a></li>
+    <li><a href="POLLS/SENATE/2006/polls.php" title="Senate Polls for 2006"><img src="IMAGES/ICO/ico_polls.gif" alt="" /> Senatorial Polls</a></li>
+    <li><a href="CALENDAR/index.php" title="Election Calendar"><img src="IMAGES/ICO/ico_cal.gif" alt="" /> Election Calendar</a></li>
+    <li><a href="2006.php"><img src="IMAGES/ICO/ico_info.gif" alt="" /> Election 2006 Home</a></li>
+    <li><a href="NEWS/index.php"><img src="IMAGES/ICO/ico_news.gif" alt="" /> Election News</a></li>
+</ul>
+</td>
+<td style="vertical-align:top"><b>User-Interactive</b>
+<ul class="list">
+    <li style="white-space:nowrap"><a href="PRED/GOVERNOR/2006/pred.php" title="Governor's Race Predictions 2006 - Create your own maps!"><img src="IMAGES/ICO/ico_pred.gif" alt="" /> Gubernatorial&nbsp;Predictions</a></li>
+    <li><a href="PRED/SENATE/2006/pred.php" title="Senate Race Predictions 2006 - Create your own maps!"><img src="IMAGES/ICO/ico_pred.gif" alt="" /> Senatorial Predictions</a></li>
+    <li><a href="FORUM/index.php?board=10.0" title="Forum Discussion Topic for Gubernatorial Elections"><img src="IMAGES/ICO/ico_inter.gif" alt="" /> Gubernatorial Forum</a></li>
+    <li><a href="FORUM/index.php?board=11.0" title="Forum Discussion Topic for Congressional Elections"><img src="IMAGES/ICO/ico_inter.gif" alt="" /> Congressional Forum</a></li>
+    <li style="white-space:nowrap"><a href="ENDORSE/GOVERNOR/2006/endorse.php" title="2006 User Endorsements - U.S. Governors"><img src="IMAGES/ICO/ico_end.gif" alt="" /> Gubernatorial Endorsements</a></li>
+    <li><a href="ENDORSE/SENATE/2006/endorse.php" title="2006 User Endorsements - U.S. Senate"><img src="IMAGES/ICO/ico_end.gif" alt="" /> Senatorial Endorsements</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<br />
+<a style="font-size:18pt;font-weight:700;" href = "USPRESIDENT/GENERAL/CAMPAIGN/2004/">Election 2004</a>
+<table style="margin-left:auto;margin-right:auto;padding:0 0 0 5px">
+<tr>
+<td style="text-align:center;width:250px"><a href = "RESULTS/national.php?year=2004&amp;off=0&amp;elect=0&amp;f=0">2004 President<br /><img src="USPRESIDENT/GENERAL/NSmall/pe2004sm.png" alt="Presidential Map" /></a></td>
+<td style="text-align:center;width:250px"><a href = "RESULTS/national.php?year=2004&amp;off=3&amp;elect=0&amp;f=0">2004 Senate<br /><img src="USSENATE/GENERAL/NSmall/se2004sm.png" alt="Senate Map" /></a></td>
+</tr>
+</table>
+
+<table style="padding:0 0 0 5px">
+<tr><td colspan="2"><b>Purchase</b>
+<ul class="list">
+    <li><a href="BOTTOM/store_data.php">Election 2004 Voter Registration and Turnout County Data File!</a></li>
+    <li><a href="BOTTOM/store_data.php">Election 2004 President, Governor, and Senate County Data Files!</a></li>
+</ul>
+</td>
+</tr>
+<tr><td style="width:200px"><b>On-line Results</b>
+<ul class="list">
+	<li><a href="RESULTS/national.php?year=2004&amp;f=0&amp;off=0" title="Election 2004 Presidential Election Results">Presidential Results</a></li>
+	<li><a href="RESULTS/national.php?year=2004&amp;f=0&amp;off=3" title="Election 2004 Senatorial Election Results">Senatorial Results</a></li>
+	<li><a href="RESULTS/national.php?year=2004&amp;f=0&amp;off=5" title="Election 2004 Gubernatorial Election Results">Gubernatorial Results</a></li>
+    <li><a href="USPRESIDENT/pe2004USA_sm.html">National County Map</a></li>
+	<li><a href="INFORMATION/ARTICLES/ElectionNight2004/pe2004elecnighttime.php" title="2004 Timline">Election Night Timeline</a></li>
+</ul>
+</td>
+<td><b>Information &amp; User-Interactive</b>
+<ul class="list">
+    <li><a href="USPRESIDENT/GENERAL/CAMPAIGN/2004/pred04.php">2004 Presidential Predictions</a></li>
+    <li><a href="USPRESIDENT/GENERAL/CAMPAIGN/2004/polls.php">2004 Presidential Election Polls</a></li>
+    <li><a href="USPRESIDENT/GENERAL/CAMPAIGN/2004/mock04.php">2004 Mock Election!</a></li>
+    <li><a href="FORUM/index.php?board=5.0" title="Forum Discussion Topic for the 2004 Presidential Election">Presidential Elections 2004 Forum</a></li>
+	<li><a href="http://uselectionatlas.org/USPRESIDENT/GENERAL/CAMPAIGN/2004/index.php">Election 2004 Home</a></li>
+</ul>
+</td>
+</tr>
+</table>
+-->
+<h2>Past Election Results, Election Data, Tools</h2>
+ <div style="padding:0 0 0 5px">
+  <ul class="list">
+    <li><a href="TOOLS/evcalc.php?year=2004" title="Electoral College Electoral Vote Calculator">Electoral College Calculator</a> - Experiment with electoral math.</li>
+	<li><a href="RESULTS/index.html" title="Past Presidential, Gubernatorial, and Senatorial Election Results">Past Election Results (President, Governor, Senate)</a> - Data &amp; Maps!</li>
+	<li><a href="BOTTOM/store_data.php" title="Purchase Election Data">Election Data</a> - Purchase high-quality spreadsheets with FIPS codes.</li>
+	<li><a href="members.php" title="Atlas Membership Information">Atlas Membership</a> - Online access to even more maps and data!</li>
+  </ul>
+ </div>
+<h2>Atlas Community</h2>
+ <div style="padding:0 0 0 5px">
+  <ul class="list">
+    <li>The <a href="./WIKI/" title="Contribute your passions about elections to the WIKI">Atlas Wiki</a> - Send an <a href="BOTTOM/email.php">email</a> if you wish to contribute!</li>
+    <li><a href="FORUM/index.php" title="Atlas Discussion Board">Atlas Forum</a> - Discussions of Politics and Elections.</li>
+    <li><a href="FORUM/index.php#6">Fantasy Elections &amp; Government Forum</a> - Run for office!</li>
+    <li><a href="AFEWIKI/index.php/Main_Page" title="Fantasy Election WIKI">Atlasia Wiki</a> - The world of Atlasia.</li>
+    <li><a href="BOTTOM/site_pm.php">Community Political Matrix</a> - The Atlasia Political Landscape.</li>
+	<li><a href="BLOGM/index.php">Community Weblog</a></li>
+  </ul>
+ </div>
+<h2>Welcome!</h2>
+  <ul class="list">
+    <li>The Atlas is a free internet resource providing results of U.S. Presidential Elections to the world community.  Data
+           is collected from many official sources and presented here in one convenient location.  Site membership is now available
+           for those individuals or groups who desire greater levels of detail with regard to U.S. Presidential Elections.  See the
+           <a href="members.php">Members Info</a> page for more details.
+    </li>
+  </ul>
+<h2>Menu Guide</h2> 
+  <ul class="list">
+	 
+	 <li><a href="2006.php">2006:</a> provides information on the upcoming 2006 Gubernatorial and Senatorial Elections,
+	 including the <a href="POLLS/">2006 Gubernatorial and Senatorial Polls</a> as well as the <a
+	 href = "PRED/">2006 Predictions Pages</a>.<br /><br /></li>
+	 
+	 <li><a href="RESULTS/" title="Election Results">Election&nbsp;Results:</a> link directs the browser to detailed national
+	 results for the major and minor candidates for U.S. President in the general (November) presidential elections
+	 from 1789 through 2004. Individual year pages include candidates, parties, popular and electoral
+	 vote totals, maps, charts, and voter turnout (1932-2004).  Includes menus and hyperlinks to individual state results
+	 pages for the Presidential Elections from 1892 through 2004.  County-level maps and data are available for the
+	 elections from 1960 through 2004 (and prior to 1960 for <a href="member.php">members</a>).  The 2000 and 2004 pages also include the results maps for 
+	 President by U.S. Congressional District! (Also, a <a href="RESULTS/national.php?off=99&amp;f=0">no-frames page</a> for election data viewing.)<br />
+	 <br />
+	 The <a href="RESULTS/" title="Election Results">Election&nbsp;Results</a> link also directs the browser to detailed national and state-level
+	 results for the major candidates for U.S. President during the presidential primaries (at present, information is only available 
+	 for the 2000 and 2004 election cycles).  Election Results also include maps and data for Gubernatorial Elections (1998 through 2005)
+	 and U.S. Senate for 2004.<br /><br /></li>
+	 
+	 <li><a href = "INFORMATION/" title="Election Information">Election&nbsp;Information:</a> menu 
+	 directs the browser to election information including: historical details (such as election dates, electoral votes by state, the electoral college, etc.), 
+	 Presidential Election Law from the U.S. Constitution and United States Code, Articles, and a description of the election process.  Includes the very 
+	 popular <a href = "TOOLS/evcalc.php?year=2004" title="Electoral College Electoral Vote Calculator">Electoral College Calculator</a><br /><br /></li>
+	 
+	 <li><a href = "BOTTOM/store.php" title="Atlas Store">Store</a>: purchase Election Data and other goodies.</li>
+  </ul>
+
+
+<h2>Special Features</h2> 
+  <ul class="list">
+   	<li><a href = "GOVERNOR/PRIMARY/GE2000/ge2000MA_prim.html">2002 Massachusetts Primary Result!</a></li>
+  </ul>
+
+ 
+<br />
+<br />
+<a href="http://uselectionatlas.org/sphp.php"><img src="IMAGES/menubar_l.png" style="height:1px" /></a>
+
+<span id="counter">5,609,531</span> Site visits since January 24, 1999<br />
+
+<br />
+<br />
+
+</td>
+<td id="rightmenu">
+<b><span style="font-size:14pt;">Advertisements</span></b><br />
+<div style="	font-size:9pt;"><br /><a href='FORUM'>Discuss Politics on the Atlas Forum</a><br /><hr /><a href ='BOTTOM/store_data.php'><img src='IMAGES/data_sets.png' alt='Data Sets' /></a><br /><br /><a href = "http://uselectionatlas.org/ads.php"><i style="font-size:9pt">Advertise on the Atlas</i></a><br /></div><br />
+
+
+
+<script type="text/javascript" src="http://cache.blogads.com/807535626/feed.js"></script>
+<script type="text/javascript" src="http://cache.blogads.com/346526082/feed.js"></script>
+<br />
+
+<div style = "text-align:center">
+<p style="text-align:left"><b>Political Posters!</b></p>
+<a href="http://timeplots.com/potus/?a_aid=uselectionatlas"><img src="http://media.timeplots.com/a/150x200-potus-cabinet.jpg" alt="timeplots.com - for people who want the big picture" title="timeplots.com - for people who want the big picture"/ ></a>
+<br /><br />
+<a rel="external" href="http://www.historyshots.com/Parties/index.cfm?s=dlea"><img src="http://uselectionatlas.org/IMAGES/ADS/9494_PP2-Ad-6.jpg" alt = "" /><br />
+<span style="font-size:10pt">Election and History Posters from History Shots!</span></a><br />
+<span style="font-size:9pt"><i>Note: click will open in new window if pop-ups allowed</i></span><br /><br />
+
+</div>
+
+
+<h2>Buy Stuff</h2> 
+<div style="padding:0 5px">
+<p><a href = "BOTTOM/store_data.php">Election Data</a></p>
+<p><a href = "members.php?type=form">Become&nbsp;a&nbsp;Member</a></p>
+<p><a href = "http://www.cafepress.com/uselectionatlas">Merchandise</a></p>
+
+<!--
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<p>
+<input type="hidden" name="cmd" value="_xclick" />
+<input type="hidden" name="business" value="sales1@uselectionatlas.org" />
+<input type="hidden" name="no_note" value="1" />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="hidden" name="tax" value="0" />
+<input type="submit" name="submit" value="Donate" />
+</p>
+</form>
+-->
+
+<p style="text-align:left"><a href="http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;camp=1789&amp;tag=daveleipsatla-20&amp;creative=9325&amp;path=external-search%3Fsearch-type=ss%26keyword=%26index=books">Amazon.com</a><img src="http://www.assoc-amazon.com/e/ir?t=daveleipsatla-20&amp;l=ur2&amp;o=1" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></p>
+
+<!--
+<p><a href="http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;camp=1789&amp;tag=daveleipsatla-20&amp;creative=9325&amp;path=tg/browse/-/53">Political Books</a><img src="http://www.assoc-amazon.com/e/ir?t=daveleipsatla-20&amp;l=ur2&amp;o=1" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></p>
+<p><a href="http://www.amazon.com/exec/obidos/redirect?link_code=ur2&amp;camp=1789&amp;tag=daveleipsatla-20&amp;creative=9325&amp;path=tg/browse/-/9">History Books</a><img src="http://www.assoc-amazon.com/e/ir?t=daveleipsatla-20&amp;l=ur2&amp;o=1" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></p>
+-->
+</div>
+
+<!--
+<h2>Sponsored Links</h2> 
+<div style="padding:0 5px">
+<p><a href = "http://uspoliticsguide.com/">Political Blogs</a></p>
+</div>
+
+<br />
+-->
+
+<h2>Member&nbsp;Login</h2>
+<div style="padding:0 5px">
+
+<form method="post" action="http://uselectionatlas.org/login.php">
+<p><b>Username:</b><br />
+ <input type="text" name="username" size="16" />
+</p>
+<p><b>Password:</b><br />
+ <input type="password" name="password" size="16" />
+</p>
+<p>
+ <input type="submit" name="submit" value="Login" /> <a style="	font-size:10pt;" href="members.php" title="Information on Membership">Member Info</a>
+</p>
+</form>
+
+
+</div>
+
+<h2>Site&nbsp;Information</h2> 
+<div style="padding:0 5px">
+<p><a href="BOTTOM/about.php" title="About this site">About the Atlas</a></p>
+<p><a href="BOTTOM/awards.php" title="Site Awards!">Site Awards</a></p>
+<p><a href="BOTTOM/faq.php" title="Frequently Asked Questions">FAQ</a></p>
+<p><a href="BOTTOM/search.php" title="Search the Site">Search</a></p>
+</div>
+
+
+<p style = "text-align:center">
+<br /><br />
+
+<a href="http://timeplots.com/?a_aid=uselectionatlas"><img src="http://media.timeplots.com/a/150x200-potus-cabinet.jpg" alt="timeplots.com - for people who want the big picture" title="timeplots.com - for people who want the big picture"/ ></a>
+</p>
+</td>
+</tr>
+</table>
+
+<br />
+
+<div id="google_search">
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/custom">
+<table border="0" style="margin-left:auto;margin-right:auto">
+<tr><td valign="top" align="left">
+<!-- <a href="http://www.google.com/"><img src="http://www.google.com/logos/Logo_25wht.gif" alt="Google"></img></a> -->
+</td>
+<td>
+<input type="hidden" name="domains" value="uselectionatlas.org" />
+<input type="text" name="q" size="31" maxlength="255" value="" />
+<input type="submit" name="sa" value="Search" />
+</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked="checked" />
+Web
+</td>
+<td>
+<input type="radio" name="sitesearch" value="uselectionatlas.org" />
+uselectionatlas.org
+</td>
+<td>&nbsp;<a href = "BOTTOM/search.php"><span style="font-size:9pt"><i>more options</i></span></a>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<input type="hidden" name="client" value="pub-0109201992740905" />
+<input type="hidden" name="forid" value="1" />
+<input type="hidden" name="channel" value="4400025053" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="hidden" name="oe" value="UTF-8" />
+<input type="hidden" name="cof" value="GALT:#555555;GL:1;DIV:#999999;VLC:000099;AH:center;BGC:F5F5F5;LBGC:EEEEEE;ALC:000099;LC:000099;T:000000;GFNT:0000FF;GIMP:0000FF;LH:50;LW:388;L:http://uselectionatlas.org/IMAGES/banner_sm.jpg;S:http://;FORID:1;" />
+<input type="hidden" name="hl" value="en" />
+</td></tr>
+</table>
+</form>
+<!-- SiteSearch Google -->
+
+
+</div>
+
+<div id="bottom">
+
+<i>&copy; David Leip 2012 All Rights Reserved</i><br />
+
+ <p style="text-align:center">
+<!-- Begin Motigo Webstats counter code 
+<a id="mws365779" href="http://webstats.motigo.com/">
+<img width="80" height="15" border="0" alt="Free counter and web stats" src="http://m1.webstats.motigo.com/n80x15.gif?id=AAWU0wCo6_OCv3fCCKcZ7JZJ36Ng" /></a>
+<script src="http://m1.webstats.motigo.com/c.js?id=365779&amp;lang=EN&amp;i=3" type="text/javascript"></script>
+ End Motigo Webstats counter code -->
+
+  <a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+<!--  <a href="http://jigsaw.w3.org/css-validator/"><img style="width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a> -->
+ </p>
+
+</div>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-347045-1";
+urchinTracker();
+</script>
+</body>
+</html>
+

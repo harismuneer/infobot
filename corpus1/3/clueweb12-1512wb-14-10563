@@ -1,0 +1,913 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-18T11:20:44Z
+WARC-TREC-ID: clueweb12-1512wb-14-10563
+WARC-Target-URI: http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap27.htm
+WARC-Payload-Digest: sha1:UDGFPZB2VX522ZEXTFLXQ6UQLU4I7ZUC
+WARC-IP-Address: 202.141.160.11
+WARC-Record-ID: <urn:uuid:e1542d46-87f6-4077-b797-61869e9f14f9>
+Content-Type: application/http; msgtype=response
+Content-Length: 172525
+
+HTTP/1.1 200 OK
+Date: Wed, 18 Apr 2012 11:20:45 GMT
+Server: Apache/2.0.52 (Red Hat)
+Last-Modified: Wed, 12 Apr 2006 08:59:56 GMT
+ETag: "9b40740-2a0d2-104a7b00"
+Accept-Ranges: bytes
+Content-Length: 172242
+Connection: close
+Content-Type: text/html
+X-Pad: avoid browser bug
+
+<HTML><HEAD>
+
+<TITLE>Intro to Algorithms: CHAPTER 27: MAXIMUM FLOW</TITLE></HEAD><BODY BGCOLOR="#FFFFFF">
+
+
+<a href="partvii.htm"><img align=right src="../../images/next.gif" alt="Next Chapter" border=0></A>
+<a href="toc.htm"><img align=right src="../../images/toc.gif" alt="Return to Table of Contents" border=0></A>
+<a href="chap26.htm"><img align=right src="../../images/prev.gif" alt="Previous Chapter" border=0></A>
+
+
+<h1><a name="08f5_1890">CHAPTER 27: MAXIMUM FLOW<a name="08f5_1890"></h1><P>
+Just as we can model a road map as a directed graph in order to find the shortest path from one point to another, we can also interpret a directed graph as a &quot;flow network&quot; and use it to answer questions about material flows. Imagine a material coursing through a system from a source, where the material is produced, to a sink, where it is consumed. The source produces the material at some steady rate, and the sink consumes the material at the same rate. The &quot;flow&quot; of the material at any point in the system is intuitively the rate at which the material moves. Flow networks can be used to model liquids flowing through pipes, parts through assembly lines, current through electrical networks, information through communication networks, and so forth.<P>
+Each directed edge in a flow network can be thought of as a conduit for the material. Each conduit has a stated capacity, given as a maximum rate at which the material can flow through the conduit, such as 200 gallons of liquid per hour through a pipe or 20 amperes of electrical current through a wire. Vertices are conduit junctions, and other than the source and sink, material flows through the vertices without collecting in them. In other words, the rate at which material enters a vertex must equal the rate at which it leaves the vertex. We call this property &quot;flow conservation,&quot; and it is the same as Kirchhoff's Current Law when the material is electrical current.<P>
+<a name="08f5_188f">The maximum-flow problem is the simplest problem concerning flow networks. It asks, What is the greatest rate at which material can be shipped from the source to the sink without violating any capacity constraints? As we shall see in this chapter, this problem can be solved by efficient algorithms. Moreover, the basic techniques used by these algorithms can be adapted to solve other network-flow problems.<P>
+This chapter presents two general methods for solving the maximum-flow problem. Section 27.1 formalizes the notions of flow networks and flows, formally defining the maximum-flow problem. Section 27.2 describes the classical method of Ford and Fulkerson for finding maximum flows. An application of this method, finding a maximum matching in an undirected bipartite graph, is given in Section 27.3. Section 27.4 presents the preflow-push method, which underlies many of the fastest algorithms for network-flow problems. Section 27.5 covers the &quot;lift-to-front&quot; algorithm, a particular implementation of the preflow-push method that runs in time <I>O</I>(<I>V</I><SUP>3</SUP>). Although this algorithm is not the fastest algorithm known, it illustrates some of the techniques used in the asymptotically fastest algorithms, and it is reasonably efficient in practice.<P>
+
+
+
+
+
+<h1><a name="08f7_1892">27.1 Flow networks<a name="08f7_1892"></h1><P>
+<a name="08f7_1890"><a name="08f7_1891">In this section, we give a graph-theoretic definition of flow networks, discuss their properties, and define the maximum-flow problem precisely. We also introduce some helpful notation.<P>
+
+
+
+
+
+<h2>Flow networks and flows</h2><P>
+<a name="08f8_1892"><a name="08f8_1893"><a name="08f8_1894"><a name="08f8_1895">A <I><B>flow network</I> </B><I>G</I> = (<I>V</I>, <I>E</I>) is a directed graph in which each edge (<I>u,v</I>) <img src="../images/memof12.gif"> <I>E</I> has a nonnegative<B> </B><I><B>capacity</I> </B><I>c</I>(<I>u, v</I>) <img src="../images/gteq.gif"> 0. If (<I>u, v)</I> <img src="../images/notmem.gif"> <I>E,</I> we assume that <I>c</I>(<I>u, v</I>) = 0. We distinguish two vertices in a flow network: a <I><B>source</I></B> <I>s</I> and a <I><B>sink</I></B> <I>t</I>. For convenience, we assume that every vertex lies on some path from the source to the sink. That is, for every vertex <I>v </I><img src="../images/memof12.gif"> <I>V</I>, there is a path <img src="580_a.gif">. The graph is therefore connected, and |<I>E| </I><img src="../images/gteq.gif"> |<I>V</I>| - 1. Figure 27.1 shows an example of a flow network.<P>
+We are now ready to define flows more formally. Let <I>G</I> = (<I>V</I>,<I>E</I>) be a flow network (with an implied capacity function <I>c</I>). Let <I>s</I> be the source of the network, and let <I>t</I> be the sink. A <I><B>flow</I></B> in <I>G</I> is a real-valued function <I>f</I>: <I>V</I> x <I>V</I> <img src="../images/arrow12.gif"> <B>R</B> that satisfies the following three properties:<P>
+<a name="08f8_1896"><B>Capacity constraint: </B>For all <I>u</I>, <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, we require &acirc; (<I>u, v) </I><img src="../images/lteq12.gif"> <I>c</I>(<I>u, v</I>).<P>
+<a name="08f8_1897"><B>Skew symmetry: </B>For all <I>u, v</I> <img src="../images/memof12.gif"> <I>V</I>, we require &acirc; (<I>u, v</I>) = -&acirc; (<I>v, u</I>).<P>
+<a name="08f8_1898"><a name="08f8_1899"><B>Flow conservation: </B>For all <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>, <I>t</I>}, we require<P>
+<img src="580_b.gif"><P>
+<a name="08f8_189a"><a name="08f8_189b"><a name="08f8_189c">The quantity &acirc; (<I>u, v</I>), which can be positive or negative, is called the <I><B>net flow</I></B> from vertex <I>u</I> to vertex <I>v</I>. The <I><B>value</I></B> of a flow <I>f</I> is defined as<P>
+<img src="580_c.gif"><P>
+<h4><a name="08f8_189e">(27.1)<a name="08f8_189e"></sub></sup></h4><P>
+that is, the total net flow out of the source. (Here, the |<img src="../images/dot10.gif">| notation denotes flow value, not absolute value or cardinality.) In the <I><B>maximum-flow problem</I>,</B> we are given a flow network<I> G</I> with source <I>s </I>and sink <I>t</I>, and we wish to find a flow of maximum value from <I>s</I> to <I>t</I>.<P>
+Before seeing an example of a network-flow problem, let us briefly explore the three flow properties. The capacity constraint simply says that the net flow from one vertex to another must not exceed the given capacity. Skew symmetry says that the net flow from a vertex <I>u</I> to a vertex <I>v </I>is the negative of the net flow in the reverse direction. Thus, the net flow from a vertex to itself is 0, since for all <I>u</I> <img src="../images/memof12.gif"> <I>V,</I> we have &acirc; (<I>u, u</I>) = - <I>f</I> (<I>u,u</I>), which implies that &acirc; (<I>u, u</I>) = 0. The flow-conservation property says that the total net flow out of a vertex other than the source or sink is 0. By skew symmetry, we can rewrite the flow-conservation property as<P>
+<img src="581_b.gif"><P>
+for all <I>v</I> <img src="../images/memof12.gif"><I> V</I> - {<I>s, t</I>}. That is, the total net flow into a vertex is 0.<P>
+<img src="581_a.gif"><P>
+<h4><a name="08f8_189f">Figure 27.1 (a) A flow network G = (V, E) for the Lucky Puck Company's trucking problem. The Vancouver factory is the source s, and the Winnipeg warehouse is the sink t. Pucks are shipped through intermediate cities, but only c (u, v) crates per day can go from city u to city v. Each edge is labeled with its capacity. (b) A flow &acirc; in G with value |&acirc;| = 19. Only positive net flows are shown. If &acirc; (u, v) &gt; 0, edge (u, v) is labeled by &acirc; (u, v)/c(u, v). (The slash notation is used merely to separate the flow and capacity; it does not indicate division.) If &acirc; (u,v) <img src="../images/lteq12.gif"> 0, edge (u, v) is labeled only by its capacity.<a name="08f8_189f"></sub></sup></h4><P>
+Observe also that there can be no net flow between <I>u</I> and <I>v</I> if there is no edge between them. If neither (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I> nor (<I>v, u</I>) <I>E</I>, then <I>c</I>(<I>u, v</I>) = <I>c</I>(<I>v, u</I>) = 0. Hence, by the capacity constraint, &acirc;(<I>u, v</I>) <img src="../images/lteq12.gif"> 0 and &acirc; (<I>v, u</I>) <img src="../images/lteq12.gif"> 0. But since &acirc; (<I>u, v</I>) = - &acirc; (<I>v, u</I>), by skew symmetry, we have &acirc;(<I>u, v</I>) = &acirc;(<I>v, u</I>) = 0. Thus, nonzero net flow from vertex <I>u</I> to vertex <I>v </I>implies that (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I> or (<I>v, u</I>) <img src="../images/memof12.gif"> <I>E</I> (or both).<P>
+<a name="08f8_189d">Our last observation concerning the flow properties deals with net flows that are positive. The <I><B>positive net flow</I></B> entering a vertex <I>v</I> is defined by<P>
+<img src="581_c.gif"><P>
+<h4><a name="08f8_18a0">(27.2)<a name="08f8_18a0"></sub></sup></h4><P>
+The positive net flow leaving a vertex is defined symmetrically. One interpretation of the flow-conservation property is that the positive net flow entering a vertex other than the source or sink must equal the positive net flow leaving the vertex.<P>
+<P>
+
+
+
+
+
+
+
+<h2>An example of network flow</h2><P>
+A flow network can model the trucking problem shown in Figure 27.1. The Lucky Puck Company has a factory (source <I>s</I>) in Vancouver that  manufactures hockey pucks, and it has a warehouse (sink <I>t</I>) in Winnipeg that stocks them. Lucky Puck leases space on trucks from another firm to ship the pucks from the factory to the warehouse. Because the trucks travel over specified routes between cities and have a limited capacity, Lucky Puck can ship at most <I>c</I>(<I>u, v</I>) crates per day between each pair of cities <I>u </I>and <I>v</I> in Figure 27.1 (a). Lucky Puck has no control over these routes and capacities and so cannot alter the flow network shown in Figure 27.1(a). Their goal is to determine the largest number <I>p</I> of crates per day that can be shipped and then to produce this amount, since there is no point in producing more pucks than they can ship to their warehouse.<P>
+The rate at which pucks are shipped along any truck route is a flow. The pucks emanate from the factory at the rate of <I>p</I> crates per day, and <I>p </I>crates must arrive at the warehouse each day. Lucky Puck is not concerned with how long it takes for a given puck to get from the factory to the warehouse; they care only that <I>p</I> crates per day leave the factory and <I>p </I>crates per day arrive at the warehouse. The capacity constraints are given by the restriction that the flow &acirc;(<I>u, v</I>) from city <I>u </I>to city <I>v</I> to be at most <I>c</I>(<I>u, v</I>) crates per day. In a steady state, the rate at which pucks enter an intermediate city in the shipping network must equal the rate at which they leave; otherwise, they would pile up. Flow conservation is therefore obeyed. Thus, a maximum flow in the network determines the maximum number <I>p</I> of crates per day that can be shipped.<P>
+Figure 27.1(b) shows a possible flow in the network that is represented in a way that naturally corresponds to shipments. For any two vertices <I>u </I>and <I>v</I> in the network, the net flow &acirc;(<I>u, v</I>) corresponds to a shipment of &acirc;(<I>u, v</I>) crates per day from <I>u</I> to <I>v</I>. If &acirc;(<I>u, v</I>) is 0 or negative, then there is no shipment from <I>u</I> to <I>v</I>. Thus, in Figure 27.1(b), only edges with positive net flow are shown, followed by a slash and the capacity of the edge.<P>
+We can understand the relationship between net flows and shipments somewhat better by focusing on the shipments between two vertices. Figure 27.2(a) shows the subgraph induced by vertices <I>v</I><SUB>1</SUB> and <I>v</I><SUB>2</SUB> in the flow network of Figure 27.1. If Lucky Puck ships 8 crates per day from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2,</SUB> the result is shown in Figure 27.2(b): the net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> is 8 crates per day. By skew symmetry, we also say that the net flow in the reverse direction, from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>, is -8 crates per day, even though we do not ship any pucks from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. In general, the net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> is the number of crates per day shipped from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> minus the number per day shipped from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. Our convention for representing net flows is to show only positive net flows, since they indicate the actual shipments; thus, only an 8 appears in the figure, without the corresponding -8.<P>
+<img src="583_a.gif"><P>
+<h4><a name="08f9_189f">Figure 27.2 Cancellation. (a) Vertices v<SUB>1</SUB>, and v<SUB>2,</SUB> with c(v<SUB>1</SUB><FONT FACE="Times New Roman" SIZE=2>, v<SUB>2</SUB><FONT FACE="Times New Roman" SIZE=2>)</FONT></FONT> = 10 and c(v<SUB>2</SUB><FONT FACE="Times New Roman" SIZE=2>, v<SUB>1</SUB><FONT FACE="Times New Roman" SIZE=2> )</FONT></FONT> = 4. (b) How we indicate the net flow when 8 crates per day are shipped from v<SUB>1</SUB> to v<SUB>2</SUB>. (c) An additional shipment of 3 crates per day is made from v<SUB>2</SUB> to v<SUB>1</SUB>. (d) By cancelling flow going in opposite directions, we can represent the situation in (c) with positive net flow in one direction only. (e) Another 7 crates per day is shipped from v<SUB>2</SUB> to v<SUB>1</SUB>.<a name="08f9_189f"></sub></sup></h4><P>
+Now let's add another shipment, this time of 3 crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. One natural representation of the result is shown in Figure 27.2(c). We now have a situation in which there are shipments in both directions between <I>v</I><SUB>1</SUB> and <I>v</I><SUB>2</SUB>. We ship 8 crates per day from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> and 3 crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. What are the net flows between the two vertices? The net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> is 8 - 3 = 5 crates per day, and the net flow from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB> is 3 - 8 = -5 crates per day.<P>
+<a name="08f9_189e">The situation is equivalent in its result to the situation shown in Figure 27.2(d), in which 5 crates per day are shipped from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> and no shipments are made from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. In effect, the 3 crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB> are <I><B>cancelled</I> </B>by 3 of the 8 crates per day from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB>. In both situations, the net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> is 5 crates per day, but in (d), actual shipments are made in one direction only.<P>
+In general, cancellation allows us to represent the shipments between two cities by a positive net flow along at most one of the two edges between the corresponding vertices. If there is zero or negative net flow from one vertex to another, no shipments need be made in that direction. That is, any situation in which pucks are shipped in both directions between two cities can be transformed using cancellation into an equivalent situation in which pucks are shipped in one direction only: the direction of positive net flow. Capacity constraints are not violated by this transformation, since we reduce the shipments in both directions, and conservation constraints are not violated, since the net flow between the two vertices is the same.<P>
+Continuing with our example, let us determine the effect of shipping another 7 crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. Figure 27.2(e) shows the result using the convention of representing only  positive net flows. The net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> becomes 5 - 7 = -2, and the net flow from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB> becomes 7 - 5 = 2. Since the net flow from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB> is positive, it represents a shipment of 2 crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>. The net flow from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB> is -2 crates per day, and since the net flow is not positive, no pucks are shipped in this direction. Alternatively, of the 7 additional crates per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>, we can view 5 of them as cancelling the shipment of 5 per day from <I>v</I><SUB>1</SUB> to <I>v</I><SUB>2</SUB>, which leaves 2 crates as the actual shipment per day from <I>v</I><SUB>2</SUB> to <I>v</I><SUB>1</SUB>.<P>
+<img src="584_a.gif"><P>
+<h4><a name="08f9_18a0">Figure 27.3 Converting a multiple-source, multiple-sink maximum-flow problem into a problem with a single source and a single sink. (a) A flow network with five sources S = {s<SUB>1</SUB>, s<SUB>2</SUB>, s<SUB>3</SUB>, s<SUB>4</SUB>, s<SUB>5</SUB>} and three sinks T={t<SUB>1</SUB>, t<SUB>2</SUB>, t<SUB>3</SUB>}. (b) An equivalent single-source, single-sink flow network. We add a supersource s' and an edge with infinite capacity from s' to each of the multiple sources. We also add a supersink t' and an edge with infinite capacity from each of the multiple sinks to t'.<a name="08f9_18a0"></sub></sup></h4><P>
+<P>
+
+
+
+
+
+
+
+<h2>Networks with multiple sources and sinks</h2><P>
+<a name="08fa_189f"><a name="08fa_18a0"><a name="08fa_18a1">A maximum-flow problem may have several sources and sinks, rather than just one of each. The Lucky Puck Company, for example, might actually have a set of <I>m</I> factories {<I>s</I><SUB>1</SUB><I>, s</I><SUB>2</SUB>, . . . ,<I>s<SUB>m</I></SUB>} and a set of <I>n</I> warehouses {t<SUB>1</SUB><I>, t</I><SUB>2</SUB>, . . . , <I>t<SUB>n</I></SUB>}, as shown in Figure 27.3(a). Fortunately, this problem is no harder than ordinary maximum flow.<P>
+<a name="08fa_18a2"><a name="08fa_18a3">We can reduce the problem of determining a maximum flow in a network with multiple sources and multiple sinks to an ordinary maximum-flow problem. Figure 27.3(b) shows how the network from (a) can be converted to an ordinary flow network with only a single source and a single sink. We add a <I><B>supersource</I> </B><I>s</I> and add a directed edge (<I>s, s<SUB>i</I></SUB>) with capacity <I>c</I>(<I>s, s<SUB>i</I></SUB>) = <img src="../images/infin.gif"> for each <I>i </I>= 1, 2, . . . , <I>m</I>. We also create a new <I><B>supersink</I></B><I> t</I> and add a directed edge (<I>t<SUB>j</I></SUB>, <I>t</I>) with capacity <I>c</I>(<I>t<SUB>j</I></SUB>, <I>t</I>) = <img src="../images/infin.gif"> for each <I>i</I> = 1, 2, . . . , <I>n</I>. Intuitively, any flow in the network in (a) corresponds to a flow in the network in (b), and vice versa. The single source <I>s</I> simply provides as much flow as desired for the multiple sources <I>s<SUB>i</I></SUB>, and the single sink <I>t</I> likewise consumes as much flow as desired for the multiple sinks <I>t<SUB>i</I></SUB>. Exercise 27.1-3 asks you to prove formally that the two problems are equivalent.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Working with flows</h2><P>
+<a name="08fb_18a4"><a name="08fb_18a5">We shall be dealing with several functions (like <I>f</I>) that take as arguments two vertices in a flow network. In this chapter, we shall use an <I><B>implicit summation notation</I></B> in which either argument, or both, may be a <I>set</I> of vertices, with the interpretation that the value denoted is the sum of all possible ways of replacing the arguments with their members. For example, if <I>X </I>and <I>Y</I> are sets of vertices, then<P>
+<img src="585_a.gif"><P>
+As another example, the flow-conservation constraint can be expressed as the condition that <I>f</I>(<I>u</I>, <I>V</I>) = 0 for all <I>u</I> <img src="../images/memof12.gif"> <I>V</I> -{<I>s</I>, <I>t</I>}. Also, for convenience, we shall typically omit set braces when they would otherwise be used in the implicit summation notation. For example, in the equation <I>f</I>(<I>s</I>, <I>V </I>- <I>s</I>) = <I>f</I>(<I>s</I>, <I>V</I>), the term <I>V</I> - <I>s</I> means the set <I>V</I> - {<I>s</I>}.<P>
+The implicit set notation often simplifies equations involving flows. The following lemma, whose proof is left as Exercise 27.1-4, captures several of the most commonly occurring identities that involve flows and the implicit set notation.<P>
+<a name="08fb_18a6">Lemma 27.1<a name="08fb_18a6"><P>
+Let <I>G </I>= (<I>V</I>, <I>E</I>) be a flow network, and let <I>f</I> be a flow in <I>G</I>. Then, for <I>X </I><img src="../images/rgtubar.gif"> V <I>,</I><P>
+<pre><I>f</I>(<I>X</I>, <I>X</I>) = 0 .</sub></sup></pre><P>
+For X, Y <img src="../images/rgtubar.gif"> V ,<P>
+<pre><I>f</I>(<I>X</I>, <I>Y</I>) = -<I>f</I>(<I>Y</I>, <I>X</I>) .</sub></sup></pre><P>
+For <I>X</I>, <I>Y</I>, <I>Z </I><img src="../images/rgtubar.gif"><I> V </I>with <img src="585_b.gif">,<P>
+<pre><I>f</I>(<I>X</I> <img src="../images/wideu.gif"> <I>Y</I>, <I>Z</I>) = <I>f</I>(<I>X</I>, <I>Z</I>) + <I>f</I>(<I>Y</I>, <I>Z</I>)</sub></sup></pre><P>
+and<P>
+<pre><I>f</I>(<I>Z</I>, <I>X </I><img src="../images/wideu.gif"> Y<I>) = </I>f<I>(</I>Z<I>, </I>X<I>) + </I>f<I>(</I>Z<I>, </I>Y<I>) .      </I></sub></sup></pre><P>
+As an example of working with the implicit summation notation, we can prove that the value of a flow is the total net flow into the sink; that is,<P>
+<pre>|<I>f</I>|<I> </I>= <I>f</I>(<I>V</I>, <I>t</I>) .</sub></sup></pre><P>
+<h4><a name="08fb_18a7">(27.3)<a name="08fb_18a7"></sub></sup></h4><P>
+This is intuitively true, since all vertices other than the source and sink have a net flow of 0 by flow conservation, and thus the sink is the only other vertex that can have a nonzero net flow to match the source's nonzero net flow. Our formal proof goes as follows:<P>
+<pre>|<I>f</I>|  =  <I>f</I>(<I>s</I>, <I>V</I>)                    (by definition)</sub></sup></pre><P>
+<pre>=  <I>f</I>(<I>V</I>, <I>V</I>) - <I>f</I>(<I>V</I> - <I>s</I>, <I>V</I>)      (by Lemma 27.1)</sub></sup></pre><P>
+<pre>=  <I>f</I>(<I>V</I>, <I>V</I> - s)                (by Lemma 27.1)</sub></sup></pre><P>
+<pre>=  <I>f</I>(<I>V</I>, <I>t</I>) + <I>f</I>(<I>V</I>, <I>V</I> - <I>s</I> - <I>t</I>)  (by Lemma 27.1 )</sub></sup></pre><P>
+<pre>=  <I>f</I>(<I>V</I>, <I>t</I>)                    (by flow conservation) .</sub></sup></pre><P>
+Later in this chapter, we shall generalize this result (Lemma 27.5).<P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="08fc_18ae">Exercises<a name="08fc_18ae"></h2><P>
+<a name="08fc_18af">27.1-1<a name="08fc_18af"><P>
+Given vertices <I>u</I> and <I>v</I> in a flow network, where <I>c</I>(<I>u</I>, <I>v</I>) = 5 and <I>c</I>(<I>v</I>, <I>u</I>) = 8, suppose that 3 units of flow are shipped from <I>u</I> to <I>v</I> and 4 units are shipped from <I>v</I> to <I>u</I>. What is the net flow from <I>u</I> to <I>v</I>? Draw the situation in the style of Figure 27.2.<P>
+<a name="08fc_18b0">27.1-2<a name="08fc_18b0"><P>
+Verify each of the three flow properties for the flow <I>f</I> shown in Figure 27.1(b).<P>
+<a name="08fc_18b1">27.1-3<a name="08fc_18b1"><P>
+Extend the flow properties and definitions to the multiple-source, multiple-sink problem. Show that any flow in a multiple-source, multiple-sink flow network corresponds to a flow of identical value in the single-source, single-sink network obtained by adding a supersource and a supersink, and vice versa.<P>
+<a name="08fc_18b2">27.1-4<a name="08fc_18b2"><P>
+Prove Lemma 27.1.<P>
+<a name="08fc_18b3">27.1-5<a name="08fc_18b3"><P>
+For the flow network <I>G</I> = (<I>V</I>, <I>E</I>) and flow <I>f</I> shown in Figure 27.1(b), find a pair of subsets <I>X</I>, <I>Y</I> <img src="../images/rgtubar.gif"> <I>V </I>for which <I>f</I>(<I>X</I>, <I>Y</I>) = -<I>f</I>(<I>V</I> - <I>X</I>, <I>Y</I>). Then, find a pair of subsets <I>X</I>, <I>Y </I><img src="../images/rgtubar.gif"> V <I>for which </I>f<I>(</I>X<I>, </I>Y<I>) <img src="../images/noteq.gif"> - </I>f<I>(</I>V<I> - </I>X<I>, </I>Y<I>).</I><P>
+<a name="08fc_18b4">27.1-6<a name="08fc_18b4"><P>
+<a name="08fc_18a6"><a name="08fc_18a7">Given a flow network <I>G</I> = (<I>V</I>, <I>E</I>), let <I>f</I><SUB>1</SUB> and <I>f</I><SUB>2</SUB> be functions from <I>V</I> X <I>V </I>to <B>R</B>. The <I><B>flow sum</I></B> <I>f</I><SUB>1</SUB> + <I>f</I><SUB>2</SUB> is the function from <I>V</I> x <I>V </I>to <B>R</B> defined by<P>
+<pre>(<I>f</I><SUB>1</SUB> + <I>f</I><SUB>2</SUB>)(<I>u</I>, <I>v</I>) = <I>f</I><SUB>1</SUB>(<I>u</I>, <I>v</I>) + <I>f</I><SUB>2</SUB>(<I>u</I>, <I>v</I>)</sub></sup></pre><P>
+<h4><a name="08fc_18b5">(27.4)<a name="08fc_18b5"></sub></sup></h4><P>
+for all <I>u</I>, <I>v</I> <img src="../images/memof12.gif"> <I>V</I>. If <I>f</I><SUB>1</SUB> and <I>f</I><SUB>2</SUB> are flows in <I>G</I>, which of the three flow properties must the flow sum <I>f</I><SUB>1</SUB> + <I>f</I><SUB>2</SUB> satisfy, and which might it violate?<P>
+<a name="08fc_18b6">27.1-7<a name="08fc_18b6"><P>
+<a name="08fc_18a8"><a name="08fc_18a9">Let <I>f</I> be a flow in a network, and let <img src="../images/alpha12.gif"> be a real number. The <I><B>scalar flow product</I></B> <img src="../images/alpha12.gif"><I>f</I> is a function from <I>V</I> X <I>V</I> to <B>R</B> defined by<P>
+<pre>(<img src="../images/alpha12.gif"><I>f</I>)(<I>u</I>, <I>v</I>) = <img src="../images/alpha12.gif"> <img src="../images/dot10.gif"> <I>f</I>(<I>u</I>, <I>v</I>).</sub></sup></pre><P>
+Prove that the flows in a network form a convex set by showing that if <I>f</I><SUB>1 </SUB>and <I>f</I><SUB>2</SUB> are flows, then so is <img src="../images/alpha12.gif"><I>f</I><SUB>1</SUB> + (1 - <img src="../images/alpha12.gif">) <I>f</I><SUB>2</SUB> for all <img src="../images/alpha12.gif"> in the range 0 <img src="../images/lteq12.gif"> <img src="../images/alpha12.gif"> <img src="../images/lteq12.gif"> 1.<P>
+<a name="08fc_18b7">27.1-8<a name="08fc_18b7"><P>
+<a name="08fc_18aa">State the maximum-flow problem as a linear-programming problem.<P>
+<a name="08fc_18b8">27.1-9<a name="08fc_18b8"><P>
+<a name="08fc_18ab"><a name="08fc_18ac"><a name="08fc_18ad">The flow-network model introduced in this section supports the flow of one commodity; a <I><B>multicommodity flow network</I></B> supports the flow of <I>p </I>commodities between a set of <I>p</I> <I><B>source vertices</I></B> <I>S</I> = {<I>s</I><SUB>1</SUB>, <I>s</I><SUB>2</SUB>, . . .,<I>s</I><SUB>p</SUB>} and a set of <I>p</I> <I><B>sink vertices</I></B> <I>T</I> = {<I>t</I><SUB>1</SUB>, <I>t</I><SUB>2</SUB>, . . .,<I>t</I><SUB>p</SUB>}. The net flow of the <I>i</I>th commodity from <I>u</I> to <I>v</I> is denoted <I>f</I><SUB>i</SUB>(<I>u</I>, <I>v</I>). For the <I>i</I>th commodity, the only source is <I>s<SUB>i</I></SUB> and the only sink is <I>t<SUB>i</I></SUB>. There is flow conservation independently for each commodity: the net flow of each commodity out of each vertex is zero unless the vertex is the source or sink for the commodity. The sum of the net flows of all commodities from <I>u</I> to <I>v</I> must not exceed <I>c</I>(<I>u</I>, <I>v</I>), and in this way the commodity flows interact. The <I><B>value</I></B> of the flow of each commodity is the net flow out of the source for that commodity. The <I><B>total flow value</I></B> is the sum of the values of all <I>p</I> commodity flows. Prove that there is a polynomial-time algorithm that solves the problem of finding the maximum total flow value of a multicommodity flow network by formulating the problem as a linear program.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08fd_18b1">27.2 The Ford-Fulkerson method<a name="08fd_18b1"></h1><P>
+<a name="08fd_18ae"><a name="08fd_18af">This section presents the Ford-Fulkerson method for solving the maximum-flow problem. We call it a &quot;method&quot; rather than an &quot;algorithm&quot; because it encompasses several implementations with differing running times. The Ford-Fulkerson method depends on three important ideas that transcend the method and are relevant to many flow algorithms and problems: residual networks, augmenting paths, and cuts. These ideas are essential to the important max-flow min-cut theorem (Theorem 27.7), which characterizes the value of a maximum flow in terms of cuts of the flow network. We end this section by presenting one specific implementation of the Ford-Fulkerson method and analyzing its running time.<P>
+The Ford-Fulkerson method is iterative. We start with <I>f</I>(<I>u</I>, <I>v</I>) = 0 for all <I>u</I>,<I>v</I> <img src="../images/memof12.gif"> <I>V</I>, giving an initial flow of value 0. At each iteration, we increase the flow value by finding an &quot;augmenting path,&quot; which we can think of simply as a path from the source <I>s</I> to the sink <I>t</I> along which we can push more flow, and then augmenting the flow along this path. We repeat this process until no augmenting path can be found. The max-flow min-cut theorem will show that upon termination, this process yields a maximum flow.<P>
+<pre><a name="08fd_18b0">FORD-FULKERSON-METHOD(<I>G</I>, <I>s</I>, <I>t</I>)</sub></sup></pre><P>
+<pre>1  initialize flow <I>f</I> to 0</sub></sup></pre><P>
+<pre>2  <B>while</B> there exists an augmenting path <I>p</I></sub></sup></pre><P>
+<pre>3      <B>do</B> augment flow <I>f</I> along <I>p</I></sub></sup></pre><P>
+<pre>4  <B>return</B> <I>f</I></sub></sup></pre><P>
+
+
+
+
+
+<h2>Residual networks</h2><P>
+<a name="08fe_18b1"><a name="08fe_18b2">Intuitively, given a flow network and a flow, the residual network consists of edges that can admit more net flow. More formally, suppose that we have a flow network <I>G</I> = (<I>V</I>, <I>E</I>) with source <I>s</I> and sink <I>t</I>. Let <I>f</I> be a flow in <I>G</I>, and consider a pair of vertices <I>u</I>, <I>v</I> <img src="../images/memof12.gif"> <I>V</I>. The amount of <I>additional </I>net flow we can push from <I>u</I> to <I>v</I> before exceeding the capacity <I>c</I>(<I>u</I>, <I>v</I>) is the <I><B>residual capacity</I></B> of (<I>u</I>, <I>v</I>), given by<P>
+<pre><I>c<SUB>f</I></SUB>(<I>u</I>, <I>v</I>) = <I>c</I>(<I>u</I>, <I>v</I>) - <I>f</I>(<I>u</I>, <I>v</I>) .</sub></sup></pre><P>
+<h4><a name="08fe_18b7">(27.5)<a name="08fe_18b7"></sub></sup></h4><P>
+For example, if <I>c</I>(<I>u</I>, <I>v</I>) = 16 and <I>f</I>(<I>u</I>, <I>v</I>) = 11, then we can ship <I>c<SUB>f</I></SUB>(<I>u</I>, <I>v</I>) = 5 more units of flow before we exceed the capacity constraint on edge(<I>u</I>, <I>v</I>). When the net flow <I>f</I>(<I>u</I>, <I>v</I>) is negative, the residual capacity <I>c<SUB>f</I></SUB>(<I>u</I>, <I>v</I>) is greater than the capacity <I>c</I>(<I>u</I>, <I>v</I>). For example, if <I>c</I>(<I>u</I>, <I>v</I>) = 16 and <I>f</I>(<I>u</I>, <I>v</I>) = -4, then the residual capacity <I>c<SUB>f</I></SUB>(<I>u</I>, <I>v</I>) is 20. We can interpret this as follows. There is a net flow of 4 units from <I>v</I> to <I>u</I>, which we can cancel by pushing a net flow of 4 units from <I>u</I> to <I>v</I>. We can then push another 16 units from <I>u</I> to <I>v</I> before violating the capacity constraint on edge (<I>u</I>, <I>v</I>). We have thus pushed an additional 20 units of flow, starting with a net flow <I>f</I>(<I>u</I>, <I>v</I>) = -4, before reaching the capacity constraint.<P>
+<a name="08fe_18b3"><a name="08fe_18b4">Given a flow network <I>G</I> = (<I>V</I>, <I>E</I>) and a flow <I>f</I>, the <I><B>residual network</I></B> of <I>G</I> induced by <I>f</I> is <I>G<SUB>f</I></SUB> = (<I>V</I>, <I>E<SUB>f</I></SUB>), where<P>
+<pre><I>Ef</I> = {(<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>V </I>X<I> </I>V<I> : </I>c<SUB>f<I></SUB>(</I>u<I>, </I>v<I>) &gt; 0} .</I></sub></sup></pre><P>
+<a name="08fe_18b5"><a name="08fe_18b6">That is, as promised above, each edge of the residual network, or <I><B>residual edge</I></B>, can admit a strictly positive net flow. Figure 27.4(a) repeats the flow network <I>G</I> and flow <I>f</I> of Figure 27.1(b), and Figure 27.4(b) shows the corresponding residual network <I>G<SUB>f</I></SUB>.<P>
+Notice that (<I>u</I>, <I>v</I>) may be a residual edge in <I>E<SUB>f</I></SUB> even if it was not an edge in <I>E</I>. In other words, it may very well be the case that <img src="588_a.gif">. The residual network in Figure 27.4(b) includes several such edges not in the original flow network, such as (<I>v</I><SUB>1</SUB>, <I>s</I>) and (<I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>). Such an edge (<I>u</I>, <I>v</I>) appears in <I>G<SUB>f</I></SUB> only if (<I>v</I>, <I>u</I>) <img src="../images/memof12.gif"> <I>E</I> and there is positi<I>v</I>e net flow from <I>v</I> to <I>u</I>. Because the net flow <I>f</I>(<I>u</I>, <I>v</I>) from <I>u</I> to <I>v</I> is negative, <I>c<SUB>f</I></SUB>(<I>u</I>, <I>v</I>) = <I>c</I>(<I>u</I>, <I>v</I>) - <I>f</I>(<I>u</I>, <I>v</I>) is positive and (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> E<I><SUB>f</I></SUB>. Because an edge (<I>u</I>, <I>v</I>) can appear in a residual network only if at least one of (<I>u</I>, <I>v</I>) and (<I>v</I>, <I>u</I>) appears in the original network, we have the bound<P>
+<pre>|<I>E<SUB>f</I></SUB>|<img src="../images/lteq12.gif"> 2 |E| .</sub></sup></pre><P>
+<img src="589_a.gif"><P>
+<h4><a name="08fe_18b8">Figure 27.4 (a) The flow network G and flow f of Figure 27.1(b). (b) The residual network G<SUB>f </SUB>with augmenting path p shaded; its residual capacity is c<SUB>f</SUB>(p) = c(v<SUB>2</SUB>, v<SUB>3</SUB>) = 4. (c) The flow in G that results from augmenting along path p by its residual capacity 4. (d) The residual network induced by the flow in (c).<a name="08fe_18b8"></sub></sup></h4><P>
+Observe that the residual network <I>G<SUB>f</I></SUB> is itself a flow network with capacities given by <I>c<SUB>f</I></SUB>. The following lemma shows how a flow in a residual network relates to a flow in the original flow network.<P>
+<a name="08fe_18b9">Lemma 27.2<a name="08fe_18b9"><P>
+Let <I>G = </I>(<I>V, E</I>) be a flow network with source <I>s </I>and sink <I>t</I>, and let <I>f</I> be a flow in <I>G</I>. Let <I>G<SUB>f</I></SUB> be the residual network of <I>G</I> induced by <I>f</I>, and let <I>f</I>'<I><SUB> </SUB>be a flow in </I>G<SUB>f<I></SUB>. Then, the flow sum </I>f<I> + </I>f<I>'</I> defined by equation (27.4) is a flow in <I>G</I> with value |<I>f</I> + <I>f</I>'<I>|</I> = |<I>f</I>|<I> + |</I>f<I>'</I>|.<P>
+<I><B>Proof     </I></B>We must verify that skew symmetry, the capacity constraints, and  flow conservation are obeyed. For skew symmetry, note that for all <I>u, v </I><img src="../images/memof12.gif"> <I>V</I>, we have<P>
+<pre>(<I>f</I> + <I>f</I>')(<I>u</I>, <I>v</I>)  =  <I>f</I>(<I>u</I>, <I>v</I>) + <I>f</I>'(<I>u</I>, <I>v</I>)</sub></sup></pre><P>
+<pre>=  -<I>f</I>(<I>v</I>, <I>u</I>) - <I>f</I>'(<I>v</I>, <I>u</I>)</sub></sup></pre><P>
+<pre>=  -(<I>f</I>(<I>v</I>, <I>u</I>) + <I>f</I>'(<I>v</I>, <I>u</I>))</sub></sup></pre><P>
+<pre>=  -(<I>f</I> + <I>f</I>')(<I>v</I>, <I>u</I>).</sub></sup></pre><P>
+For the capacity constraints, note that <I>f</I>'(<I>u, v</I>) <img src="../images/lteq12.gif"> <I>c<SUB>f</I></SUB>(<I>u, v</I>) for all <I>u, v </I><img src="../images/memof12.gif"> <I>V</I>. By equation (27.5), therefore,<P>
+<pre>(<I>f</I> + <I>f</I>')(<I>u</I>, <I>v</I>)  =  <I>f</I>(<I>u</I>, <I>v</I>) + <I>f</I>'(<I>u</I>, <I>v</I>)</sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <I>f</I>(<I>u, v</I>) + (<I>c</I>(<I>u, v</I>) - <I>f</I>(<I>u, v</I>))</sub></sup></pre><P>
+<pre>=  <I>c</I>(<I>u, v</I>) .</sub></sup></pre><P>
+For flow conservation, note that for all <I>u </I><img src="../images/memof12.gif"> <I>V - {s, t</I>}, we have<P>
+<img src="590_a.gif"><P>
+Finally, we have<P>
+<img src="590_b.gif"><P>
+<P>
+
+
+
+
+
+
+
+<h2>Augmenting paths</h2><P>
+<a name="08ff_18b7"><a name="08ff_18b8">Given a flow network <I>G</I> = (<I>V, E</I>) and a flow <I>f</I>, an <B>augmenting path</B> <I>p</I> is a simple path from <I>s</I> to <I>t</I> in the residual network <I>G<SUB>f</I></SUB>. By the definition of the residual network, each edge (<I>u, v</I>) on an augmenting path admits some additional positive net flow from <I>u</I> to <I>v</I> without violating the capacity constraint on the edge.<P>
+<a name="08ff_18b9"><a name="08ff_18ba">The shaded path in Figure 27.4(b) is an augmenting path. Treating the residual network <I>G<SUB>f</I> </SUB>in the figure as a flow network, we can ship up to 4 units of additional net flow through each edge of this path without violating a capacity constraint, since the smallest residual capacity on this path is <I>c<SUB>f</I></SUB>(<I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>) = 4. We call the maximum amount of net flow that we can ship along the edges of an augmenting path <I>p</I> the <I><B>residual capacity</I></B> of <I>p</I>, given by<P>
+<pre><I>c<SUB>f</I></SUB>(<I>p</I>) = min{<I>c<SUB>f</I></SUB>(<I>u, v</I>): (<I>u, v</I>) is on <I>p</I>}.</sub></sup></pre><P>
+The following lemma, whose proof is left as Exercise 27.2-7, makes the above argument more precise.<P>
+<a name="08ff_18bb">Lemma 27.3<a name="08ff_18bb"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network, let &acirc; be a flow in <I>G</I>, and let <I>p</I> be an augmenting path in G<SUB>&acirc;</SUB>. Define a function &acirc;<I><SUB>p</I></SUB> : <I>V</I> x <I>V</I> <img src="../images/arrow12.gif"> <B>R</B> by<P>
+<img src="591_a.gif"><P>
+<h4><a name="08ff_18bc">(27.6)<a name="08ff_18bc"></sub></sup></h4><P>
+Then, &acirc;<I><SUB>p</I></SUB> is a flow in <I>G</I><SUB>&acirc;</SUB> with value |&acirc;<I><SUB>p</I></SUB>| = <I>c</I><SUB>&acirc;</SUB>(<I>p</I>) &gt; 0.      <P>
+The following corollary shows that if we add &acirc;<I><SUB>p</I></SUB> to &acirc;, we get another flow in <I>G</I> whose value is closer to the maximum. Figure 27.4(c) shows the result of adding &acirc;<I><SUB>p</I></SUB> in Figure 27.4(b) to &acirc; from Figure 27.4(a).<P>
+<a name="08ff_18bd">Corollary 27.4<a name="08ff_18bd"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network, let &acirc; be a flow in <I>G</I>, and let <I>p</I> be an augmenting path in G<SUB>&acirc;</SUB>. Let &acirc;<I><SUB>p</I></SUB> be defined as in equation (27.6). Define a function &acirc;' : <I>V</I> x <I>V</I> <img src="../images/arrow12.gif"> <B>R</B> by &acirc;' = &acirc; + &acirc;<I><SUB>p</I></SUB>. Then, &acirc;' is a flow in <I>G</I> with value | &acirc;' | =  | &acirc; | + |&acirc;<I><SUB>p</I></SUB>| &gt; | &acirc; |.<P>
+<I><B>Proof     </I></B>Immediate from Lemmas 27.2 and 27.3.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Cuts of flow networks</h2><P>
+The Ford-Fulkerson method repeatedly augments the flow along augmenting paths until a maximum flow has been found. The max-flow min-cut theorem, which we shall prove shortly, tells us that a flow is maximum if and only if its residual network contains no augmenting path. To prove this theorem, though, we must first explore the notion of a cut of a flow network.<P>
+<a name="0900_18bb"><a name="0900_18bc"><a name="0900_18bd"><a name="0900_18be">A <I><B>cut</I></B> (<I>S</I>, <I>T</I>) of flow network <I>G</I> = (<I>V</I>, <I>E</I>) is a partition of <I>V</I> into <I>S</I> and <I>T</I> = <I>V</I> - <I>S</I> such that <I>s</I> <img src="../images/memof12.gif"> <I>S</I> and <I>t</I> <img src="../images/memof12.gif"> <I>T</I>. (This definition is like the definition of &quot;cut&quot; that we used for minimum spanning trees in Chapter 24, except that here we are cutting a directed graph rather than an undirected graph, and we insist that <I>s</I> <img src="../images/memof12.gif"> <I>S</I> and <I>t</I> <img src="../images/memof12.gif"> <I>T</I>.) If <I>f</I> is a flow, then the <I><B>net flow</I></B> across the cut (<I>S</I>, <I>T</I>) is defined to be &acirc;(<I>S</I>, <I>T</I>). The <I><B>capacity</I></B> of the cut (<I>S</I>, <I>T</I>) is <I>c</I>(<I>S</I>, <I>T</I>).<P>
+Figure 27.5 shows the cut ({<I>s</I>, <I>v</I><SUB>l</SUB>, <I>v</I><SUB>2</SUB>}, {<I>v</I><SUB>3</SUB>, <I>v</I><SUB>4</SUB>, <I>t</I>}) in the flow network of Figure 27.1(b). The net flow across this cut is<P>
+<pre>&acirc;(<I>v</I><SUB>1</SUB>, <I>v</I><SUB>3</SUB>) + &acirc;(<I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>) + &acirc;(<I>v</I><SUB>2</SUB>, <I>v</I><SUB>4</SUB>)  =  12 + (-4) + 11</sub></sup></pre><P>
+<pre>=  19,</sub></sup></pre><P>
+and its capacity is<P>
+<pre><I>c</I>(<I>v</I><SUB>l</SUB>, <I>v</I><SUB>3</SUB>) + <I>c</I>(<I>v</I><SUB>2</SUB>, <I>v</I><SUB>4</SUB>)  =  12 + 14</sub></sup></pre><P>
+<pre>=  26.</sub></sup></pre><P>
+<img src="592_a.gif"><P>
+<h4><a name="0900_18c0">Figure 27.5 A cut (S, T) in the flow network of Figure 27.1(b), where S = {s, v<SUB>1</SUB>, v<SUB>2</SUB> } and T = {v<SUB>3</SUB>, v<SUB>4</SUB>, t}. The vertices in S are black, and the vertices in T are white. The net flow across (S, T) is &acirc;(S, T) = 19, and the capacity is c(S, T) = 26.<a name="0900_18c0"></sub></sup></h4><P>
+Observe that the net flow across a cut can include negative net flows between vertices, but that the capacity of a cut is composed entirely of non-negative values.<P>
+The following lemma shows that the value of a flow in a network is the net flow across any cut of the network.<P>
+<a name="0900_18c1">Lemma 27.5<a name="0900_18c1"><P>
+Let &acirc; be a flow in a flow network <I>G</I> with source <I>s</I> and sink <I>t</I>, and let (<I>S</I>, <I>T</I>) be a cut of <I>G</I>. Then, the net flow across (<I>S</I>, <I>T</I>) is &acirc;(<I>S</I>, <I>T</I>) = | &acirc; |.<P>
+<I><B>Proof     </I></B>Using Lemma 27.1 extensively, we have<P>
+<pre>&acirc;(<I>S</I>, <I>T</I>)  =  &acirc;(<I>S</I>, <I>V</I>) - &acirc;(<I>S</I>, <I>S</I>)</sub></sup></pre><P>
+<pre>=  &acirc;(<I>S</I>, <I>V</I>)</sub></sup></pre><P>
+<pre>=  &acirc;(<I>s</I>, <I>V</I>) + &acirc;(<I>S</I> - <I>s</I>, <I>V</I>)</sub></sup></pre><P>
+<pre>=  &acirc;(<I>s</I>, <I>V</I>)</sub></sup></pre><P>
+<pre>=  | &acirc; | .      </sub></sup></pre><P>
+An immediate corollary to Lemma 27.5 is the result we proved earlier--equation (27.3)--that the value of a flow is the net flow into the sink.<P>
+Another corollary to Lemma 27.5 shows how cut capacities can be used to bound the value of a flow.<P>
+<a name="0900_18c2">Corollary 27.6<a name="0900_18c2"><P>
+The value of any flow &acirc; in a flow network <I>G</I> is bounded from above by the capacity of any cut of <I>G</I>.<P>
+<I><B>Proof     </I></B>Let (<I>S</I>, <I>T</I>) be any cut of <I>G</I> and let &acirc; be any flow. By Lemma 27.5 and the capacity constraints,<P>
+<pre>|<I>&acirc;</I>|  =  <I>&acirc;</I>(<I>S</I>, <I>T</I>)</sub></sup></pre><P>
+<img src="593_a.gif"><P>
+We are now ready to prove the important max-flow min-cut theorem.<P>
+<a name="0900_18c3">Theorem 27.7<a name="0900_18c3"><P>
+<a name="0900_18bf">If &acirc; is a flow in a flow network <I>G</I> = (<I>V</I>, <I>E</I>) with source <I>s</I> and sink <I>t</I>, then the following conditions are equivalent:<P>
+1.     &acirc; is a maximum flow in <I>G</I>.<P>
+2.     The residual network <I>G</I><SUB>&acirc;</SUB> contains no augmenting paths.<P>
+3.     | &acirc; | = <I>c</I>(<I>S</I>, <I>T</I>) for some cut (<I>S</I>, <I>T</I>) of <I>G</I>.<P>
+<I><B>Proof     </I></B>(1) <img src="../images/rtbigar.gif"> (2): Suppose for the sake of contradiction that &acirc; is a maximum flow in <I>G</I> but that <I>G</I><SUB>&acirc;</SUB> has an augmenting path <I>p</I>. Then, by Corollary 27.4, the flow sum &acirc; + &acirc;<I><SUB>p</I></SUB>, where &acirc;<I><SUB>p</I></SUB> is given by equation (27.6), is a flow in <I>G</I> with value strictly greater than | &acirc; |, contradicting the assumption that &acirc; is a maximum flow.<P>
+(2) <img src="../images/rtbigar.gif"> (3): Suppose that <I>G</I><SUB>&acirc;</SUB> has no augmenting path, that is, that <I>G</I><SUB>&acirc; </SUB>contains no path from <I>s</I> to <I>t</I>. Define<P>
+<I>S</I> = {<I>v</I> <img src="../images/memof12.gif"> <I>V </I>: there exists a path from <I>s</I> to <img src="../images/upsil12.gif"><I></I> in <I>G</I><SUB>&acirc;</SUB>}<P>
+and <I>T</I> = <I>V</I> - <I>S</I>. The partition (<I>S</I>, <I>T</I>) is a cut: we have <I>s</I> <img src="../images/memof12.gif"> <I>S</I> trivially and <I>t</I> <img src="../images/notmem.gif"> <I>S</I> because there is no path from <I>s</I> to <I>T</I> in <I>G</I><SUB>&acirc;</SUB>. For each pair of vertices <I>u</I> and <I>v</I> such that <I>u</I> <img src="../images/memof12.gif"> <I>S</I> and <I>v</I> <img src="../images/memof12.gif"> <I>T</I>, we have &acirc;(<I>u</I>, <I>v</I>) = <I>c</I>(<I>u</I>, <I>v</I>), since otherwise (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I><SUB>&acirc;</SUB> and <I>v</I> is in set <I>S</I>. By Lemma 27.5, therefore, | &acirc; | = &acirc;(<I>S</I>, <I>T</I>) = <I>c</I>(<I>S</I>, <I>T</I>).<P>
+(3) <img src="../images/rtbigar.gif"> (1): By Corollary 27.6, | &acirc; | <img src="../images/lteq12.gif"> <I>c</I>(<I>S</I>, <I>T</I>) for all cuts (<I>S</I>, <I>T</I>). The condition | &acirc; | = <I>c</I>(<I>S</I>, <I>T</I>) thus implies that &acirc; is a maximum flow.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>The basic Ford-Fulkerson algorithm</h2><P>
+In each iteration of the Ford-Fulkerson method, we find <I>any</I> augmenting path <I>p</I> and augment flow &acirc; along <I>p</I> by the residual capacity c<SUB>&acirc;</SUB>(<I>p</I>). The following implementation of the method computes the maximum flow in a graph <I>G</I> = (<I>V</I>, <I>E</I>) by updating the net flow &acirc;[<I>u</I>, <I>v</I>] between each pair <I>u</I>, <I>v</I> of vertices that are connected by an edge.<SUP>1</SUP> If <I>u</I> and <I>v</I> are not connected by an edge in either direction, we assume implicitly that &acirc;[<I>u</I>, <I>v</I>] = 0. The code assumes that the capacity from <I>u</I> to <I>v</I> is provided by a constant-time function <I>c</I>(<I>u</I>, <I>v</I>), with <I>c</I>(<I>u</I>, <I>v</I>) = 0 if (<I>u</I>, <I>v</I>) <img src="../images/notmem.gif"> <I>E</I>. (In a typical implementation, <I>c</I>(<I>u</I>, <I>v</I>) might be derived from fields stored within vertices and their adjacency lists.) The residual capacity <I>c</I><SUB>&acirc;</SUB>(<I>u</I>, <I>v</I>) is computed in accordance with the formula (27.5). The expression c<SUB>&acirc;</SUB>(<I>p</I>) in the code is actually just a temporary variable that stores the residual capacity of the path <I>p</I>.<P>
+<SUP>1</SUP>We use square brackets when we treat an identifier--such as &acirc;--as a mutable field, and we use parentheses when we treat it as a function.<P>
+<pre><a name="0901_18c0">FORD-FULKERSON(<I>G</I>, <I>s</I>, <I>t</I>)</sub></sup></pre><P>
+<pre>1  <B>for</B> each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>2       <B>do</B> <I>&acirc;</I>[<I>u</I>, <I>v</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>3          <I>&acirc;</I>[<I>v</I>, <I>u</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>4  <B>while</B> there exists a path <I>p</I> from <I>s</I> to <I>t</I> in the residual network <I>G</I><SUB>&acirc;</sub></sup></pre><P>
+<pre>5      <B>do</B> <I>c</I><SUB>&acirc;</SUB>(<I>p</I>) <img src="../images/arrlt12.gif"> min {<I>c</I><SUB>&acirc;</SUB>(<I>u</I>, <I>v</I>) : (<I>u</I>, <I>v</I>) is in <I>p</I>}</sub></sup></pre><P>
+<pre>6         <B>for</B> each edge (<I>u</I>, <I>v</I>) in <I>p</I></sub></sup></pre><P>
+<pre>7             <B>do</B> <I>&acirc;</I>[<I>u</I>, <I>v</I>] <img src="../images/arrlt12.gif"> <I>&acirc;</I>[<I>u</I>, <I>v</I>]+<I>c</I><SUB>&acirc;</SUB>(<I>p</I>)</sub></sup></pre><P>
+<pre>8                <I>&acirc;</I>[<I>v</I>, <I>u</I>] <img src="../images/arrlt12.gif"> - <I>&acirc;</I>[<I>u</I>, <I>v</I>]</sub></sup></pre><P>
+The <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> algorithm simply expands on the <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKER</FONT>-<FONT FACE="Courier New" SIZE=2>SON</FONT>-<FONT FACE="Courier New" SIZE=2>METHOD</FONT> pseudocode given earlier. Figure 27.6 shows the result of each iteration in a sample run. Lines 1-3 initialize the flow &acirc; to 0. The <B>while</B> loop of lines 4-8 repeatedly finds an augmenting path <I>p</I> in <I>G</I><SUB>&acirc;</SUB> and augments flow &acirc; along <I>p</I> by the residual capacity <I>c</I><SUB>&acirc;</SUB>(<I>p</I>). When no augmenting paths exist, the flow &acirc; is a maximum flow.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Analysis of Ford-Fulkerson</h2><P>
+The running time of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> depends on how the augmenting path <I>p</I> in line 4 is determined. If it is chosen poorly, the algorithm might not even terminate: the value of the flow will increase with successive augmentations, but it need not even converge to the maximum flow value. If the augmenting path is chosen by using a breadth-first search (Section 23.2), however, the algorithm runs in polynomial time. Before proving this, however, we obtain a simple bound for the case in which the augmenting path is chosen arbitrarily and all capacities are integers.<P>
+Most often in practice, the maximum-flow problem arises with integral capacities. If the capacities are rational numbers, an appropriate scaling transformation can be used to make them all integral. Under this assumption, a straightforward implementation of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> runs in time <I>O</I>(<I>E</I> | &acirc;* |), where &acirc;* is the maximum flow found by the algorithm. The analysis is as follows. Lines 1-3 take time <img src="../images/bound.gif"><B>(<I>E</I>)</B>. The <B>while</B> loop of lines 4-8 is executed at most | &acirc;* | times, since the flow value increases by at least one unit in each iteration.<P>
+The work done within the <B>while</B> loop can be made efficient if we efficiently manage the data structure used to implement the network <I>G</I> = (<I>V</I>, <I>E</I>). Let us assume that we keep a data structure corresponding to a directed graph <I>G</I>' = (<I>V</I>, <I>E</I>'), where <I>E</I>' = {(<I>u</I>, <I>v</I>) : (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I> or (<I>v</I>, <I>u</I>) <img src="../images/memof12.gif"> <I>E</I>}. Edges in the network <I>G</I> are also edges in <I>G</I>', and it is therefore a simple matter to maintain capacities and flows in this data structure. Given a flow &acirc; on <I>G</I>, the edges in the residual network <I>G</I><SUB>&acirc;</SUB> consist of all edges (<I>u</I>, <I>v</I>) of <I>G</I>' such that <I>c</I>(<I>u</I>, <I>v</I>) - &acirc;[<I>u</I>, <I>v</I>] <img src="../images/noteq.gif"> 0. The time to find a path in a residual network is therefore <I>O</I>(<I>E</I>') = <I>O</I>(<I>E</I>) if we use either depth-first search or breadth-first search. Each iteration of the <B>while</B> loop thus takes <I>O</I>(<I>E</I>) time, making the total running time of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> <I>O</I>(<I>E</I> | &acirc;* |).<P>
+<img src="595_a.gif"><P>
+<h4><a name="0902_18c4">Figure 27.6 The execution of the basic Ford-Fulkerson algorithm. (a)-(d) Successive iterations of the while loop. The left side of each part shows the residual network G<SUB>&acirc;</SUB> from line 4 with a shaded augmenting path p. The right side of each part shows the new flow &acirc; that results from adding &acirc;<SUB>p</SUB> to &acirc;. The residual network in (a) is the input network G. (e) The residual network at the last while loop test. It has no augmenting paths, and the flow &acirc; shown in (d) is therefore a maximum flow.<a name="0902_18c4"></sub></sup></h4><P>
+<img src="596_a.gif"><P>
+<h4><a name="0902_18c5">Figure 27.7 (a) A flow network for which <FONT FACE="Courier New" SIZE=2>FORD-FULKERSON</FONT> can take <img src="../images/bound.gif">(E |&acirc;*|) time, where &acirc;* is a maximum flow, shown here with | &acirc;* | = 2,000,000. An augmenting path with residual capacity 1 is shown. (b) The resulting residual network. Another augmenting path with residual capacity 1 is shown. (c) The resulting residual network.<a name="0902_18c5"></sub></sup></h4><P>
+When the capacities are integral and the optimal flow value | &acirc;* | is small, the running time of the Ford-Fulkerson algorithm is good. Figure 27.7(a) shows an example of what can happen on a simple flow network for which | &acirc;* | is large. A maximum flow in this network has value 2,000,000: 1,000,000 units of flow traverse the path <I>s</I> <img src="../images/arrow12.gif"> <I>u</I> <img src="../images/arrow12.gif"> <I>t</I>, and another 1,000,000 units traverse the path <I>s</I> <img src="../images/arrow12.gif"> <I>v</I> <img src="../images/arrow12.gif"> <I>t</I>. If the first augmenting path found by <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> is <I>s</I> <img src="../images/arrow12.gif"> <I>u</I> <img src="../images/arrow12.gif"> <I>v </I><img src="../images/arrow12.gif"> <I>t</I>, shown in Figure 27.7(a), the flow has value 1 after the first iteration. The resulting residual network is shown in Figure 27.7(b). If the second iteration finds the augmenting path <I>s</I> <img src="../images/arrow12.gif"> <I>v</I> <img src="../images/arrow12.gif"> <I>u</I> <img src="../images/arrow12.gif"> <I>t</I>, as shown in Figure 27.7(b), the flow then has value 2. Figure 27.7(c) shows the resulting residual network. We can continue, choosing the augmenting path <I>s</I> <img src="../images/arrow12.gif"> <I>u</I> <img src="../images/arrow12.gif"> <I>v</I> <img src="../images/arrow12.gif"> <I>t</I> in the odd-numbered iterations and the augmenting path <I>s</I> <img src="../images/arrow12.gif"> <I>v</I> <img src="../images/arrow12.gif"> <I>u</I> <img src="../images/arrow12.gif"> <I>t</I> in the even-numbered iterations. We would perform a total of 2,000,000 augmentations, increasing the flow value by only 1 unit in each.<P>
+<a name="0902_18c1">The bound on <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> can be improved if we implement the computation of the augmenting path <I>p</I> in line 4 with a breadth-first search, that is, if the augmenting path is a <I>shortest</I> path from <I>s</I> to <I>t</I> in the residual network, where each edge has unit distance (weight). We call the Ford-Fulkerson method so implemented the <I><B>Edmonds-Karp algorithm.</I></B> We now prove that the Edmonds-Karp algorithm runs in <I>O</I>(<I>V E</I><SUP>2</SUP>) time.<P>
+The analysis depends on the distances to vertices in the residual network G<I><SUB>f</I></SUB>. The following lemma uses the notation <img src="../images/delta12.gif"><I></I><img src="../images/scrptf12.gif">(<I>u</I>, <I>v</I>) for the shortest-path distance from <I>u</I> to <I>v</I> in <I>G<SUB><FONT FACE="Courier New" SIZE=2>f</I></FONT></SUB> , where each edge has unit distance.<P>
+<a name="0902_18c6">Lemma 27.8<a name="0902_18c6"><P>
+If the Edmonds-Karp algorithm is run on a flow network <I>G</I> = (<I>V, E</I>) with source <I>s</I> and sink <I>t</I>, then for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>}, the shortest-path distance <img src="../images/delta12.gif"><I></I><img src="../images/scrptf12.gif">(<I>s</I>, <I>v</I>) in the residual network <I>G<SUB><FONT FACE="Courier New" SIZE=2>f</I></FONT></SUB> increases monotonically with each flow augmentation.<P>
+<I><B>Proof     </I></B>Suppose for the purpose of contradiction that for some vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>}, there is a flow augmentation that causes <img src="../images/delta12.gif"><I></I><img src="../images/scrptf12.gif">(<I>s, v</I>) to decrease. Let <I>f</I> be the flow just before the augmentation, and let <img src="../images/scrptf12.gif">' be the flow just afterward. Then,<P>
+<pre><img src="../images/delta12.gif"><SUB></SUB><img src="../images/scrptf12.gif">'<SUB>(<I>s</I>, <I>v</I>) &lt; <img src="../images/delta12.gif"></SUB><SUB><img src="../images/scrptf12.gif"></SUB>(<I>s</I>, <I>v</I>).</sub></sup></pre><P>
+We can assume without loss of generality that <img src="../images/delta12.gif"><I></I><img src="../images/scrptf12.gif">'(<I>s</I>, <I>v</I>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I></I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif">'</FONT>(<I>s, u</I>) for all vertices <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>} such that <img src="../images/delta12.gif"><I></I><img src="../images/scrptf12.gif">'(<I>s, u</I>) &lt; <img src="../images/delta12.gif"><I></I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT>(<I>s, u</I>). Equivalently, we can assume that for all vertices <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>},<P>
+<pre><img src="../images/delta12.gif"><I></I><SUB></SUB><img src="../images/scrptf12.gif">'<SUB>(<I>s, u</I>) &lt; <img src="../images/delta12.gif"><I></SUB><SUB><img src="../images/scrptf12.gif">'</SUB>(</I>s<I>, </I>v<I>) implies <img src="../images/delta12.gif"></I><SUB></SUB><img src="../images/scrptf12.gif"><SUB>(<I>s, u</I>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I></SUB><SUB><img src="../images/scrptf12.gif">'</SUB>(</I>s, u<I>).</I></sub></sup></pre><P>
+<h4><a name="0902_18c7">(27.7)<a name="0902_18c7"></sub></sup></h4><P>
+We now take a shortest path p' in G<img src="../images/scrptf12.gif">' of the form <img src="597_a.gif"> and consider the vertex <I>u</I> that precedes <I>v</I> on this path. We must have <img src="../images/delta12.gif"><I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></I>'</FONT><I><SUB>(</I>s, u<I>) = <img src="../images/delta12.gif"></I><img src="../images/scrptf12.gif"><I>'</I></SUB>(<I>s</I>, <I>v</I>) - 1 by Corollary 25.2, since (<I>u</I>, <I>v</I>) is an edge on p', which is a shortest path from <I>s</I> to <I>v</I>. By our assumption (27.7), therefore,<P>
+<pre><img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"><SUB>(</I>s, u<I>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"></I></SUB><SUB><img src="../images/scrptf12.gif"><I>'</I></SUB>(<I>s, u</I>) .</sub></sup></pre><P>
+With vertices <I>v</I> and <I>u</I> thus established, we can consider the net flow &acirc;<I> </I>from <I>u</I> to <I>v</I> before the augmentation of flow in <I>G</I><img src="../images/scrptf12.gif">. If &acirc;[<I>u</I>, <I>v</I>] &lt; <I>c</I>(<I>u</I>, <I>v</I>), then we have<P>
+<pre><img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"><SUB>(</I>s<I>, </I>v<I>)  <img src="../images/lteq12.gif">  <img src="../images/delta12.gif"></I></SUB><SUB><img src="../images/scrptf12.gif"></SUB>(<I>s, u</I>) + 1    (by Lemma 25.3)</sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">   <img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"></I>'<I><SUB>(</I>s<I>, </I>u<I>) + 1</I></sub></sup></pre><P>
+<pre>=   <img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"></I>'<I><SUB>(</I>s<I>, </I>v<I>) ,</I></sub></sup></pre><P>
+which contradicts our assumption that the flow augmentation decreases the distance from <I>s</I> to <I>v</I>.<P>
+Thus, we must have <img src="../images/scrptf12.gif">[<I>u</I>, <I>v</I>] = <I>c</I>(<I>u</I>, <I>v</I>), which means (<I>u</I>, <I>v</I>) <img src="../images/notmem.gif"> <I>E</I><img src="../images/scrptf12.gif"><SUB></SUB>. Now, the augmenting path <I>p</I> that was chosen in <I>G</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"><SUB></FONT></SUB> to produce <I>G</I><img src="../images/scrptf12.gif"><I>'<SUB></I></SUB> must contain the edge (<I>v</I>, <I>u</I>)<I> </I>in the direction from v to u<I>, </I>since (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"><I>'</I></FONT><SUB></SUB>, (by supposition) and (<I>u</I>, <I>v</I>) <img src="../images/notmem.gif"> <I>E</I><img src="../images/scrptf12.gif"><SUB></SUB> as we have just shown. That is, augmenting flow along the path <I>p</I> pushes flow <I>back</I> along (<I>u</I>, <I>v</I>), and <I>v</I> appears before <I>u</I> on <I>p</I>. Since <I>p </I>is a shortest path from <I>s</I> to <I>t</I>, its subpaths are shortest paths (Lemma 25.1), and thus we have <img src="../images/delta12.gif"><I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT><SUB>(</I>s, u<I>) = <img src="../images/delta12.gif"></I><img src="../images/scrptf12.gif"></SUB>(<I>s</I>, <I>v</I>) + 1. Consequently,<P>
+<pre><img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"><SUB>(</I>s<I>, </I>v<I>)  =  <img src="../images/delta12.gif"></I></SUB><SUB><img src="../images/scrptf12.gif"></SUB>(<I>s</I>, <I>u</I>) - 1</sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <img src="../images/delta12.gif"><I><SUB></I></SUB><img src="../images/scrptf12.gif"><SUB><I></SUB>'<SUB>(</I>s, u<I>) - 1</I></sub></sup></pre><P>
+<pre>=  <img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif">'(</I>s<I>, </I>v<I>) - 2</I></sub></sup></pre><P>
+<pre>&lt;  <img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif">'(</I>s<I>, </I>v<I>) ,</I></sub></sup></pre><P>
+which contradicts our initial assumption.      <P>
+The next theorem bounds the number of iterations of the Edmonds-Karp algorithm.<P>
+<a name="0902_18c8">Theorem 27.9<a name="0902_18c8"><P>
+If the Edmonds-Karp algorithm is run on a flow network <I>G</I> = (<I>V, E</I>) with source <I>s</I> and sink <I>t</I>, then the total number of flow augmentations performed by the algorithm is at most <I>O</I>(<I>V E</I>).<P>
+<a name="0902_18c2"><a name="0902_18c3"><I><B>Proof     </I></B>We say that an edge (<I>u</I>, <I>v</I>) in a residual network <I>G</I><img src="../images/scrptf12.gif"> is <I><B>critical</I></B> on an augmenting path <I>p</I> if the residual capacity of <I>p</I> is the residual capacity of (<I>u</I>, <I>v</I>), that is, if <I>c<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/scrptf12.gif"></FONT><I><SUB>(</I>p<I>) = </I>c<I><img src="../images/scrptf12.gif"></SUB>(</I>u<I>, </I>v<I>). </I>After we have augmented flow along an augmenting path, any critical edge on the path disappears from the residual network. Moreover, at least one edge on any augmenting path must be critical.<P>
+Let <I>u</I> and <I>v</I> be vertices in <I>V</I> that are connected by an edge in <I>E</I>. How many times can (<I>u</I>, <I>v</I>) be a critical edge during the execution of the Edmonds-Karp algorithm? Since augmenting paths are shortest paths, when (<I>u</I>, <I>v</I>) is critical for the first time, we have<P>
+<pre><img src="../images/delta12.gif"><I><SUB></SUB><img src="../images/scrptf12.gif"><SUB>(</I>s<I>, </I>v<I>) = <img src="../images/delta12.gif"></I></SUB><SUB><img src="../images/scrptf12.gif"></SUB>(<I>s</I>, <I>u</I>) + 1 .</sub></sup></pre><P>
+Once the flow is augmented, the edge (<I>u</I>, <I>v</I>) disappears from the residual network. It cannot reappear later on another augmenting path until after the net flow from <I>u</I> to <I>v</I> is decreased, and this only happens if (<I>v</I>, <I>u</I>) appears on an augmenting path. If <img src="../images/scrptf12.gif"><I>'</I> is the flow in <I>G</I> when this event occurs, then we have<P>
+<pre><img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif">'(</I>s, u<I>) = <img src="../images/delta12.gif"></I><img src="../images/scrptf12.gif"><I>'</I>(<I>s</I>, <I>v</I>) + 1.</sub></sup></pre><P>
+Since <img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif"><SUB>(</I>s<I>, </I>v<I>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"></I></SUB><FONT FACE="Courier New" SIZE=2><SUB><img src="../images/scrptf12.gif"></SUB>'</FONT>(s, <I>v</I>) by Lemma 27.8, we have<P>
+<pre><img src="../images/delta12.gif"><img src="../images/scrptf12.gif">'(<I>s</I>, <I>u</I>)  =  <img src="../images/delta12.gif"><img src="../images/scrptf12.gif">'(<I>s</I>, <I>v</I>) + 1</sub></sup></pre><P>
+<pre><img src="../images/gteq.gif">  <img src="../images/delta12.gif"><img src="../images/scrptf12.gif">(<I>s</I>, <I>v</I>) + 1</sub></sup></pre><P>
+<pre>=  <img src="../images/delta12.gif"><img src="../images/scrptf12.gif">(<I>s</I>, <I>u</I>) + 2.</sub></sup></pre><P>
+Consequently, from the time (<I>u</I>, <I>v</I>) becomes critical to the time when it next becomes critical, the distance of <I>u</I> from the source increases by at least 2. The distance of <I>u</I> from the source is initially at least 1, and until it becomes unreachable from the source, if ever, its distance is at most <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><I></I> - 2. Thus, (<I>u</I>, <I>v</I>) can become critical at most <I>O</I>(<I>V</I>) times. Since there are <I>O</I>(<I>E</I>) pairs of vertices that can have an edge between them in a residual graph, the total number of critical edges during the entire execution of the Edmonds-Karp algorithm is <I>O</I>(<I>V E</I>). Each augmenting path has at least one critical edge, and hence the theorem follows.      <P>
+Since each iteration of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT> can be implemented in <I>O</I>(<I>E</I>) time when the augmenting path is found by breadth-first search, the total running time of the Edmonds-Karp algorithm is <I>O</I>(<I>V E</I><SUP>2</SUP>). The algorithm of Section 27.4 gives a method for achieving an <I>O</I>(<I>V</I><SUP>2 </SUP><I>E</I>) running time, which forms the basis for the <I>O</I>(<I>V</I><SUP>3</SUP>)-time algorithm of Section 27.5.<P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="0903_18c5">Exercises<a name="0903_18c5"></h2><P>
+<a name="0903_18c6">27.2-1<a name="0903_18c6"><P>
+In Figure 27.1(b), what is the flow across the cut ({<I>s</I>, <I>v</I><SUB>2</SUB>, <I>v</I><SUB>4</SUB>} , {<I>v</I><SUB>1</SUB>, <I>v</I><SUB>3</SUB>, <I>t</I>})? What is the capacity of this cut?<P>
+<a name="0903_18c7">27.2-2<a name="0903_18c7"><P>
+Show the execution of the Edmonds-Karp algorithm on the flow network of Figure 27.1(a).<P>
+<a name="0903_18c8">27.2-3<a name="0903_18c8"><P>
+In the example of Figure 27.6, what is the minimum cut corresponding to the maximum flow shown? Of the augmenting paths appearing in the example, which two cancel flow that was previously shipped?<P>
+<a name="0903_18c9">27.2-4<a name="0903_18c9"><P>
+Prove that for any pair of vertices <I>u</I> and <I>v</I> and any capacity and flow functions <I>c</I> and <I>f</I>, we have <I>c</I><img src="../images/scrptf12.gif"><SUB> (<I>u</I>, <I>v</I>) + <I>c</I></SUB><FONT FACE="Courier New" SIZE=2><SUB><img src="../images/scrptf12.gif"></FONT></SUB>(<I>v</I>, <I>u</I>) = <I>c</I>(<I>u</I>, <I>v</I>) + <I>c</I>(<I>v</I>, <I>u</I>).<P>
+<a name="0903_18ca">27.2-5<a name="0903_18ca"><P>
+Recall that the construction in Section 27.1 that converts a multisource, multisink flow network into a single-source, single-sink network adds edges with infinite capacity. Prove that any flow in the resulting network has a finite value if the edges of the original multisource, multisink network have finite capacity.<P>
+<a name="0903_18cb">27.2-6<a name="0903_18cb"><P>
+Suppose that each source<I> s<SUB>i</I></SUB> in a multisource, multisink problem produces exactly <I>p<SUB>i</I></SUB> units of flow, so that <img src="../images/scrptf12.gif"><I></I>(<I>s<SUB>i</SUB>,V</I>) = <I>p<SUB>i</I></SUB>. Suppose also that each sink <I>t<SUB>j </I></SUB>consumes exactly <I>q<SUB>j</I></SUB> units, so that <img src="../images/scrptf12.gif"><I></I>(<I>V, t<SUB>j</I></SUB>) = <I>q<SUB>j</I></SUB>, where <img src="../images/sum14.gif"><I><SUB>i</SUB>p<SUB>i</I></SUB> = <img src="../images/sum14.gif"><I><SUB>j</SUB>q<SUB>j</I></SUB>. Show how to convert the problem of finding a flow <I>f</I> that obeys these additional constraints into the problem of finding a maximum flow in a single-source, single-sink flow network.<P>
+<a name="0903_18cc">27.2-7<a name="0903_18cc"><P>
+Prove Lemma 27.3.<P>
+<a name="0903_18cd">27.2-8<a name="0903_18cd"><P>
+Show that a maximum flow in a network <I>G = </I>(<I>V, E</I>) can always be found by a sequence of at most |<I>E</I>| augmenting paths. (<I>Hint</I>: Determine the paths <I>after</I> finding the maximum flow.)<P>
+<a name="0903_18ce">27.2-9<a name="0903_18ce"><P>
+<a name="0903_18c4">The <I><B>edge connectivity</I></B> of an undirected graph is the minimum number <I>k</I> of edge that must be removed to disconnect the graph. For example, the edge connectivity of a tree is 1, and the edge connectivity of a cyclic chain of vertices is 2. Show how the edge connectivity of an undirected graph <I>G = (V, E)</I> can be determined by running a maximum-flow algorithm on at most |<I>V</I>| flow network, each having <I>O</I>(<I>V</I>) vertices and <I>O</I>(<I>E</I>) edges.<P>
+<a name="0903_18cf">27.2-10<a name="0903_18cf"><P>
+Show that the Edmonds-Karp algorithm terminates after at most |<I>V| |E</I>| /4 iterations. <I>(Hint</I>: For any edge (<I>u, v</I>), consider how both <img src="../images/delta12.gif"><I></I>(<I>s, u</I>) and <img src="../images/delta12.gif"><I></I>(<I>u, t</I>) change between times at which (<I>u, v</I>) is critical.)<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="0904_18c9">27.3 Maximum bipartite matching<a name="0904_18c9"></h1><P>
+<a name="0904_18c5"><a name="0904_18c6"><a name="0904_18c7"><a name="0904_18c8">Some combinatorial problems can easily be cast as maximum-flow problems. The multiple-source, multiple-sink maximum-flow problem from Section 27.1 gave us one example. There are other combinatorial problems that seem on the surface to have little to do with flow networks, but can in fact be reduced to a maximum-flow problem. This section presents one such problem: finding a maximum matching in a bipartite graph (see Section 5.4). In order to solve this problem, we shall take advantage of an integrality property provided by the Ford-Fulkerson method. We shall also see that the Ford-Fulkerson method can be made to solve the maximum-bipartite-matching problem on a graph <I>G = (V, E</I>) in <I>O(V E)</I> time.<P>
+
+
+
+
+
+<h2>The maximum-bipartite-matching problem</h2><P>
+<a name="0905_18c9"><a name="0905_18ca"><a name="0905_18cb">Given an undirected graph <I>G = </I>(<I>V, E</I>), a <I><B>matching</I></B> is a subset of edges<I> M</I> <img src="../images/rgtubar.gif"> <I>E </I>such that for all vertices<I> v</I> <img src="../images/memof12.gif"> <I>V, </I>at most one edge of <I>M</I> is incident on <I>v</I>. We say that a vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I> is <I><B>matched</I></B> by matching <I>M</I> if some edge in <I>M </I>is incident on <I>v</I>; otherwise, <I>v</I> is <I><B>unmatched. </I></B>A<I><B> maximum matching</I></B> is a matching of maximum cardinality, that is, a matching <I>M </I>such that for any matching <I>M</I>', we have <I>|M</I>| <img src="../images/gteq.gif"> |<I>M</I>'|. In this section, we shall restrict our attention to finding maximum matchings in bipartite graphs. We assume that the vertex set can be partitioned into <I>V </I>=<I> L</I> <img src="../images/wideu.gif"> <I>R</I>, where<I> L </I>and <I>R</I> are disjoint and all edges in<I> E</I> go between <I>L</I> and <I>R</I>. Figure 27.8 illustrates the notion of a matching.<P>
+<img src="601_a.gif"><P>
+<h4><a name="0905_18cc">Figure 27.8 A bipartite graph G = (V, E) with vertex partition V = L <img src="../images/wideu.gif"> R. (a) A matching with cardinality 2. (b) A maximum matching with cardinality 3.<a name="0905_18cc"></sub></sup></h4><P>
+The problem of finding a maximum matching in a bipartite graph has many practical applications. As an example, we might consider matching a set <I>L</I> of machines with a set <I>R </I>of tasks to be performed simultaneously. We take the presence of edge (<I>u</I>, <I>v</I>) in <I>E</I> to mean that a particular machine <I>u </I><img src="../images/memof12.gif"> L<I> is capable of performing a particular task </I>v <I><img src="../images/memof12.gif"> R</I>. A maximum matching provides work for as many machines as possible.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Finding a maximum bipartite matching</h2><P>
+<a name="0906_18cc"><a name="0906_18cd">We can use the Ford-Fulkerson method to find a maximum matching in an undirected bipartite graph<I> G = </I>(<I>V, E</I>)<I> </I>in time polynomial in |<I>V</I>| and |<I>E</I>|. The trick is to construct a flow network in which flows correspond to matchings, as shown in Figure 27.9. We define the <I><B>corresponding flow network</I></B><I> G</I>' = (<I>V</I>'<I>, E</I>') for the bipartite graph<I> G</I> as follows. We let the sources <I>s</I> and sink <I>t</I> be new vertices not in <I>V</I>, and we let<I> V</I><I>'= V </I><img src="../images/wideu.gif"> {<I>s, t</I>}. If the vertex partition of <I>G</I> is <I>V </I>=<I> L</I> <img src="../images/wideu.gif"> <I>R</I>, the directed edges of<I> G</I><I>' </I>are given by<P>
+<pre><I>E</I>'  =  {(<I>s</I>, <I>u</I>): <I>u </I><img src="../images/memof12.gif"><I> L</I>}</sub></sup></pre><P>
+<pre><img src="../images/wideu.gif"> {(<I>u</I>, <I>v</I>): <I>u </I><img src="../images/memof12.gif"><I> L</I>, <I>v </I><img src="../images/memof12.gif"><I> R</I>, and (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>}</sub></sup></pre><P>
+<pre><img src="../images/wideu.gif"> {(<I>v</I>, <I>t</I>): <I>v </I><img src="../images/memof12.gif"><I> R</I>} .</sub></sup></pre><P>
+To complete the construction, we assign unit capacity to each edge in <I>E</I>'.<P>
+<a name="0906_18ce"><a name="0906_18cf">The following theorem shows that a maching in <I>G</I> corresponds directly to a flow in<I> G</I>'s corresponding flow network <I>G</I><I>'</I>. We say that a flow <img src="../images/scrptf12.gif"> on a flow network <I>G = </I>(<I>V, E</I>) is <I><B>integer-valued</I></B> if <img src="../images/scrptf12.gif"><I></I>(<I>u, v</I>)<I> </I>is an integer for all (<I>u, v</I>) <img src="../images/memof12.gif"> <I>V</I> <img src="../images/mult.gif"> <I>V</I>.<P>
+<img src="602_a.gif"><P>
+<h4><a name="0906_18d1">Figure 27.9 The flow network corresponding to a bipartite graph. (a) The bipartite graph G = (V, E) with vertex partition V = L <img src="../images/wideu.gif"> R from Figure 27.8. A maximum matching is shown by shaded edges. (b) The corresponding flow network G' with a maximum flow shown. Each edge has unit capcity. Shaded edges have a flow of 1, and all other edges carry no flow. The shaded edges from L to R correspond to those in a maximum matching of the bipartite graph.<a name="0906_18d1"></sub></sup></h4><P>
+<a name="0906_18d2">Lemma 27.10<a name="0906_18d2"><P>
+Let <I>G = </I>(<I>V, E</I>) be a bipartite graph with vertex partition<I> V = L </I><img src="../images/wideu.gif"><I> R</I>, and let <I>G</I><I>'= </I>(<I>V</I>', E<I>'</I>) be its corresponding flow network. If <I>M</I> is a matching in <I>G, </I>then there is an integer-valued flow <img src="../images/scrptf12.gif"><I></I> in <I>G</I>' with value |<I>&acirc;</I>| = |<I>M</I>|. Conversely, if <I>f</I> is an integer-valued flow in <I>G</I>', then there is a matching <I>M</I> in<I> G</I> with cardinality |<I>M| =</I> |&acirc;|.<P>
+<I><B>Proof     </I></B>We first show that a matching <I>M </I>in <I>G </I>corresponds to an integer-valued flow in <I>G</I>'. Define<I> f</I> as follows. If (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>M, </I>then <I>f</I>(<I>s, u</I>)<I> = f</I>(<I>u, v</I>)<I> = f</I>(<I>v, t</I>) = 1 and <I>f</I>(<I>u, s</I>)<I> = f</I>(<I>v, u</I>) = <I>f</I>(<I>t, v</I>) = -1. For all other edges (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>', we define<I> f</I>(<I>u, v</I>) = 0.<P>
+Intuitively, each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>M</I> corresponds to 1 unit of flow in <I>G</I>' that traverses the path <I>s </I><img src="../images/arrow12.gif"> u <I><img src="../images/arrow12.gif"> v </I><img src="../images/arrow12.gif"> <I><img src="../images/arrow12.gif"> t.</I> Moreover, the paths induced by edges in <I>m</I> are vertex-disjoint, except for <I>s</I> and<I> t.</I> To verify that <I>f</I> indeed satisfies skew symmetry, the capacity constraints, and flow conservation, we need only observe that <I>f</I> can be obtained by flow augmentation along each such path. The new flow across cut (<I>L </I><img src="../images/wideu.gif"><I> </I>{<I>s</I>}<I>, R</I> <img src="../images/wideu.gif"> {<I>t</I>}) is equal to |<I>M</I>|; thus, by Lemma 27.5, the value of the flow is |&acirc;| = |<I>M|.</I><P>
+To prove the converse, let <I>f </I>be an integer-valued flow in <I>G</I>' and let<P>
+<pre><I>M</I> = {(<I>u</I>, <I>v</I>):<I> u</I> <img src="../images/memof12.gif"><I> L</I>, <I>v</I> <img src="../images/memof12.gif"> <I>R</I>, and <I>f</I>(<I>u, v</I>)<I> </I>&gt; 0} .</sub></sup></pre><P>
+Each vertex <I>u </I><img src="../images/memof12.gif"><I> L</I> has only one entering edge, namely (<I>s, u</I>), and its capacity is 1. Thus, each<I> u</I> <img src="../images/memof12.gif"> <I>L </I>has at most one unit of positive net flow entering it. Since<I> f</I> is integer-valued, for each <I>u</I> <img src="../images/memof12.gif"> <I>L</I>, 1 unit of positive net flow enters <I>u</I> if and only if there is exactly one vertex <I>v</I> <img src="../images/memof12.gif"><I> R</I> such that <I>f</I>(<I>u</I>, <I>v</I>) = 1. Thus, at most one edge leaving each <I>u</I> <img src="../images/memof12.gif"> <I>L</I> carries positive net flow. A symmetric argument can be made for each <I>v</I> <img src="../images/memof12.gif"> <I>R</I>. The set <I>M </I>defined in the statement of the theorem is therefore a matching.<P>
+To see that |<I>M</I>| = |<I>f</I>|, observe that for every matched vertex <I>u</I> <img src="../images/memof12.gif"> <I>L</I>, we have <I>f</I>(<I>s, u</I>) = 1, and for every edge (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E - M</I>, we have <I>f</I>(<I>u,v</I>) = 0. Consequently, using Lemma 27.1, skew symmetry, and there being no edges from <I>L</I> to <I>t</I>, we obtain<P>
+<pre>|<I>M</I>|  =  <I>&acirc;</I>(<I>L,R</I>)</sub></sup></pre><P>
+<pre>=  <I>&acirc;</I>(<I>L</I>, <I>V</I>') - <I>&acirc;</I>(<I>L</I>,<I> L</I>) - <I>&acirc;</I>(<I>L</I>, <I>s</I>) - <I>&acirc;</I>(<I>L</I>, <I>t</I>)</sub></sup></pre><P>
+<pre>=  0 - 0 + <I>&acirc;</I>(<I>s</I>, <I>L</I>) - 0</sub></sup></pre><P>
+<pre>=  <I>&acirc;</I>(<I>s</I>, <I>V</I>')</sub></sup></pre><P>
+<pre>=  |<I>&acirc;</I>| .      </sub></sup></pre><P>
+It is intuitive that a maximum matching in a bipartite graph <I>G </I>corresponds to a maximum flow in its corresponding flow network <I>G'.</I> Thus, we can compute a maximum matching in <I>G</I> by running a maximum-flow algorithm on<I> G</I><I>'</I>. The only hitch in this reasoning is that the maximum-flow algorithm might return a flow in <I>G</I>' that consists of nonintegral amounts. The following theorem shows that if we use the Ford-Fulkerson method, this difficulty cannot arise.<P>
+<a name="0906_18d3">Theorem 27.11<a name="0906_18d3"><P>
+<a name="0906_18d0">If the capacity function <I>c</I> takes on only integral values, then the maximum flow &acirc; produced by the Ford-Fulkerson method has the property that |&acirc;| is integer-valued. Moreover, for all vertices <I>u</I> and <I>v</I>, the value of &acirc;(<I>u, v</I>) is an integer.<P>
+<I><B>Proof     </I></B>The proof is by induction on the number of iterations. We leave it as Exercise 27.3-2.      <P>
+We can now prove the following corollary to Lemma 27.10.<P>
+<a name="0906_18d4">Corollary 27.12<a name="0906_18d4"><P>
+The cardinality of a maximum matching in a bipartite graph <I>G</I> is the value of a maximum flow in its corresponding flow network <I>G</I><I>'<FONT FACE="Courier New" SIZE=2>.</I></FONT><P>
+<I><B>Proof     </I></B>We use the nomenclature from Lemma 27.10. Suppose that <I>M</I> is a maximum matching in <I>G</I> and that the corresponding flow <I>f</I> in <I>G</I>' is not maximum. Then there is a maximum flow <I>f'</I> in <I>G</I>' such that |<I>f</I>'| &gt; |<I>f</I>|. Since the capacities in <I>G</I>' are integer-valued, by Theorem 27.11, so is <I>f'</I>. Thus, <I>f'</I> corresponds to a matching <I>M'</I> in <I>G</I> with cardinality |<I>M</I><I>'</I>| = |<I>f</I>'| &gt; |<I>f</I>| = |<I>M</I>|, contradicting the maximality of <I>M</I>. In a similar manner, we can show that if <I>f</I> is a maximum flow in <I>G'</I>, its corresponding matching is a maximum matching on <I>G</I>.      <P>
+Thus, given a bipartite undirected graph <I>G</I>, we can find a maximum matching by creating the flow network <I>G'</I>, running the Ford-Fulkerson method, and directly obtaining a maximum matching <I>M</I> from the integer-valued maximum flow <I>f</I> found. Since any matching in a bipartite graph has cardinality at most min(<I>L, R</I>)<I> = O</I>(<I>V</I>), the value of the maximum flow in <I>G' is O</I>(<I>V</I>). We can therefore find a maximum matching in a bipartite graph in time <I>O</I>(<I>V E</I>).<P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="0907_18d6">Exercises<a name="0907_18d6"></h2><P>
+<a name="0907_18d7">27.3-1<a name="0907_18d7"><P>
+Run the Ford-Fulkerson algorithm on the flow network in Figure 27.9(b) and show the residual network after each flow augmentation. Number the vertices in <I>L</I> top to bottom from 1 to 5 and in <I>R</I> top to bottom from 6 to 9. For each iteration, pick the augmenting path that is lexicographically smallest.<P>
+<a name="0907_18d8">27.3-2<a name="0907_18d8"><P>
+Prove Theorem 27.11.<P>
+<a name="0907_18d9">27.3-3<a name="0907_18d9"><P>
+Let <I>G = </I>(<I>V, E</I>) be a bipartite graph with vertex partition <I>V = L </I><FONT FACE="Times New Roman" SIZE=3><img src="../images/wideu.gif"><I> R</I></FONT>, and let <I>G</I><I>'</I> be its corresponding flow network. Give a good upper bound on the length of any augmenting path found in <I>G</I>' during the execution of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT>.<P>
+<a name="0907_18da">27.3-4<a name="0907_18da"><P>
+<a name="0907_18d1"><a name="0907_18d2"><a name="0907_18d3">A <I><B>perfect matching </I></B>is a matching in which every vertex is matched. Let <I>G</I> = (<I>V, E</I>) be an undirected bipartite graph with vertex partition <I>V = L </I><img src="../images/wideu.gif"><I> R</I>, where |<I>L</I>| = |<I>R</I>|. For any <I>X </I><img src="../images/rgtubar.gif"><I> V</I>, define the <I><B>neighborhood</I></B><I> </I>of <I>X</I> as<P>
+<pre><I>N</I>(<I>X</I>)<I> = </I>{<I>y </I><img src="../images/memof12.gif"><I>V </I>:<I> </I>(<I>x, y</I>)<I> </I><img src="../images/memof12.gif"><I> E </I>for some<I> x </I><img src="../images/memof12.gif"><I> X</I>},</sub></sup></pre><P>
+that is, the set of vertices adjacent to some member of <I>X</I>. Prove <I><B>Hall's theorem</I>:</B> there exists a perfect matching in <I>G</I> if and only if |<I>A</I>|<I> </I><img src="../images/lteq12.gif"> <I></I>|<I>N</I>(<I>A</I>)| for every subset <I>A</I> <img src="../images/rgtubar.gif"> <I>L</I>.<P>
+<a name="0907_18db">27.3-5<a name="0907_18db"><P>
+<a name="0907_18d4"><a name="0907_18d5">A bipartite graph <I>G</I> = (<I>V</I>,<I> E</I>), where <I>V = L</I> <img src="../images/wideu.gif"><I></I> <I>R</I>, is <I><B>d-regular</I></B> if every vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I> has degree exactly <I>d</I>. Every<I> d-</I>regular bipartite graph has |<I>L</I>| = |<I>R</I>|. Prove that every <I>d-</I>regular bipartite graph has a matching of cardinality |<I>L</I>| by arguing that a minimum cut of the corresponding flow network has capacity |<I>L</I>|.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="0908_18dc">* 27.4 Preflow-push algorithms<a name="0908_18dc"></h1><P>
+<a name="0908_18d6"><a name="0908_18d7">In this section, we present the &quot;preflow-push&quot; approach to computing maximum flows. The fastest maximum-flow algorithms to date are preflow-push algorithms, and other flow problems, such as the minimum-cost flow problem, can be solved efficiently by preflow-push methods. This section introduces Goldberg's &quot;generic&quot; maximum-flow algorithm, which has a simple implementation that runs in <I>O</I>(<I>V</I><SUP>2</SUP><I> E</I>) time, thereby improving upon the <I>O</I>(<I>V E</I><SUP>2</SUP>) bound of the Edmonds-Karp algorithm. Section 27.5 refines the generic algorithm to obtain another preflow-push algorithm that runs in<I> O</I>(<I>V</I><SUP>3</SUP>) time<I>.</I><P>
+<a name="0908_18d8"><a name="0908_18d9"><a name="0908_18da">Preflow-push algorithms work in a more localized manner than the Ford-Fulkerson method. Rather than examine the entire residual network <I>G =</I> (<I>V, E</I>) to find an augmenting path, preflow-push algorithms work on one vertex at a time, looking only at the vertex's neighbors in the residual network. Furthermore, unlike the Ford-Fulkerson method, preflow-push algorithms do not maintain the flow-conservation property throughout their execution. They do, however, maintain a<I> <B>preflow</I></B>, which is a function <I>f </I>:<I> V </I>X<I> V </I><img src="../images/arrow12.gif"><I> <B>R</I></B> that satisfies skew symmetry, capacity constraints, and the following relaxation of flow conservation:<I> f</I>(<I>V, u</I>) <img src="../images/gteq.gif"> 0 for all vertices <I>u </I><img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>}. That is, the net flow into each vertex other than the source is nonnegative. We call the net flow into a vertex <I>u</I> the <I><B>excess flow</I></B> into <I>u</I>, given by<P>
+<pre><I>e</I>(<I>u</I>)<I> = f</I>(<I>V, u</I>) .</sub></sup></pre><P>
+<h4><a name="0908_18dd">(27.8)<a name="0908_18dd"></sub></sup></h4><P>
+<a name="0908_18db">We say that a vertex u <img src="../images/memof12.gif"> V - {s, t} is <B>overflowing</B> if e(u) &gt; 0.<P>
+We shall start this section by describing the intuition behind the preflow-push method. We shall then investigate the two operations employed by the method: &quot;pushing&quot; preflow and &quot;lifting&quot; a vertex. Finally, we shall present a generic preflow-push algorithm and analyze its correctness and running time.<P>
+
+
+
+
+
+<h2>Intuition</h2><P>
+The intuition behind the preflow-push method is probably best understood in terms of fluid flows: we consider a flow network <I>G</I> = (<I>V, E</I>) to be a system of interconnected pipes of given capacities. Applying this analogy to the Ford-Fulkerson method, we might say that each augmenting path in the network gives rise to an additional stream of fluid, with no branch points, flowing from the source to the sink. The Ford-Fulkerson method iteratively adds more streams of flow until no more can be added.<P>
+The generic preflow-push algorithm has a somewhat different intuition. As before, directed edges correspond to pipes. Vertices, which are pipe junctions, have two interesting properties. First, to accommodate excess flow, each vertex has an outflow pipe leading to an arbitrarily large reservoir that can accumulate fluid. Second, each vertex, its reservoir, and all its pipe connections are on a platform whose height increases as the algorithm progresses.<P>
+Vertex heights determine how flow is pushed: we only push flow downhill, that is, from a higher vertex to a lower vertex. There may be positive net flow from a lower vertex to a higher vertex, but operations that push flow always push it downhill. The height of the source is fixed at |<I>V</I>|, and the height of the sink is fixed at 0. All other vertex heights start at 0 and increase with time. The algorithm first sends as much flow as possible downhill from the source toward the sink. The amount it sends is exactly enough to fill each outgoing pipe from the source to capacity; that is, it sends the capacity of the cut (<I>s, V - s</I>). When flow first enters an intermediate vertex, it collects in the vertex's reservoir. From there, it is eventually pushed downhill.<P>
+It may eventually happen that the only pipes that leave a vertex <I>u</I> and are not already saturated with flow connect to vertices that are on the same level as <I>u </I>or are uphill from <I>u</I>. In this case, to rid an overflowing vertex <I>u </I>of its excess flow, we must increase its height--an operation called &quot;lifting&quot; vertex <I>u</I>. Its height is increased to one unit more than the height of the lowest of its neighbors to which it has an unsaturated pipe. After a vertex is lifted, therefore, there is at least one outgoing pipe through which more flow can be pushed.<P>
+Eventually, all the flow that can possibly get through to the sink has arrived there. No more can arrive, because the pipes obey the capacity constraints; the amount of flow across any cut is still limited by the capacity of the cut. To make the preflow a &quot;legal&quot; flow, the algorithm then sends the excess collected in the reservoirs of overflowing vertices back to the source by continuing to lift vertices to above the fixed height |<I>V</I>| of the source. (Shipping the excess back to the source is actually accomplished by canceling the flows that cause the excess.) As we shall see, once all the reservoirs have been emptied, the preflow is not only a &quot;legal&quot; flow, it is also a maximum flow.<P>
+<P>
+
+
+
+
+
+
+
+<h2>The basic operations</h2><P>
+<a name="090a_18dc">From the preceding discussion, we see that there are two basic operations performed by a preflow-push algorithm: pushing flow excess from a vertex to one of its neighbors and lifting a vertex. The applicability of these operations depends on the heights of vertices, which we now define precisely.<P>
+<a name="090a_18dd">Let <I>G</I> = (<I>V, E</I>) be a flow network with source <I>s</I> and sink <I>t</I>, and let<I> f</I> be a preflow in <I>G</I>. A function <I>h: V</I> <img src="../images/arrow12.gif"> <B>N</B> is a <I><B>height function</I></B><I> </I>if <I>h</I>(<I>s</I>) = |<I>V</I>|,<P>
+<pre><I>h</I>(<I>t</I>) = 0, and</sub></sup></pre><P>
+<pre><I>h</I>(<I>u</I>)<I> </I><img src="../images/lteq12.gif"><I> h</I>(<I>v</I>) + 1</sub></sup></pre><P>
+for every residual edge (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E<SUB>f</I></SUB> . We immediately obtain the following lemma.<P>
+<a name="090a_18e7">Lemma 27.13<a name="090a_18e7"><P>
+Let <I>G</I> = (<I>V, E</I>) be a flow network, let <I>f</I> be a preflow in <I>G</I>, and let <I>h</I> be a height function on <I>V</I>. For any two vertices <I>u, v</I> <img src="../images/memof12.gif"> <I>V</I>, if <I>h</I>(<I>u</I>)<I> &gt; h</I>(<I>v)</I> + 1, then (<I>u, v</I>) is not an edge in the residual graph.      <P>
+The basic operation <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(<I>u, v</I>) can be applied if <I>u</I> is an overflowing vertex, <I>c<SUB>f</SUB> </I>(<I>u, v</I>) &gt; 0, and <I>h</I>(<I>u</I>) = <I>h</I>(<I>v</I>) + 1. The pseudocode below updates the preflow <I>f</I> in an implied network <I>G</I> = (<I>V, E</I>). It assumes that the capacities are given by a constant-time function <I>c</I> and that residual capacities can also be computed in constant time given <I>c</I> and <I>f</I> . The excess flow stored at a vertex <I>u</I> is maintained as <I>e</I>[<I>u</I>], and the height of <I>u</I> is maintained as <I>h</I>[<I>u</I>]. The expression <I>d<SUB>f</I></SUB>(<I>u, v</I>) is a temporary variable that stores the amount of flow that can be pushed from <I>u</I> to <I>v</I>.<P>
+<pre><a name="090a_18de">PUSH(<I>u, v</I>)</sub></sup></pre><P>
+<pre>1  <img src="607_a.gif"> <B>Applies when</B>: <I>u</I> is overflowing, <I>c<SUB>f</SUB> </I>[<I>u, v</I>] &gt; 0, and <I>h</I>[<I>u</I>]<I> = h</I>[<I>v</I>] + 1.</sub></sup></pre><P>
+<pre>2  <img src="607_b.gif"> <B>Action:</B> Push <I>d<SUB>f</SUB> </I>(<I>u, v</I>) = min(<I>e</I>[<I>u</I>]<I>, c<SUB>f</I></SUB>(<I>u, v</I>)) units of flow</sub></sup></pre><P>
+<pre>from <I>u</I> to <I>v</I>.</sub></sup></pre><P>
+<pre>3  <I>d<SUB>f</I></SUB>(<I>u, v</I>) <img src="../images/arrlt12.gif"> min(<I>e</I>[<I>u</I>]<I>, c<SUB>f</I></SUB>(<I>u, v</I>))</sub></sup></pre><P>
+<pre>4  <I>f</I>[<I>u, v</I>]<I> </I><img src="../images/arrlt12.gif"><I> f</I>[<I>u, v</I>]<I> +d<SUB>f</I></SUB>(<I>u, v</I>)</sub></sup></pre><P>
+<pre>5  <I>f</I>[<I>v, u</I>]<I> </I><img src="../images/arrlt12.gif"><I> </I>- f<I>[</I>u, v<I>]</I></sub></sup></pre><P>
+<pre>6  <I>e</I>[<I>u</I>]<I> </I><img src="../images/arrlt12.gif"><I> e</I>[<I>u</I>]<I> </I>- <img src="../images/delta12.gif"><SUB><img src="../images/phicap12.gif"><I></SUB>(</I>u, v<I>)</I></sub></sup></pre><P>
+<pre>7  <I>e</I>[<I>v</I>]<I> </I><img src="../images/arrlt12.gif"><I> e</I>[<I>v</I>]<I> + d<SUB>f</I></SUB>(<I>u, v</I>)</sub></sup></pre><P>
+The code for P<FONT FACE="Courier New" SIZE=2>USH </FONT>operates as follows. Vertex <I>u</I> is assumed to have a positive excess <I>e</I>[<I>u</I>], and the residual capacity of (<I>u, v</I>) is positive. Thus, we can ship up to <I>d<SUB>f</I></SUB>(<I>u, v</I>) = min (<I>e</I>[<I>u</I>]<I>, c<SUB>f</I></SUB>(<I>u, v</I>)) units of flow from <I>u</I> to <I>v </I>without causing <I>e</I>[<I>u</I>] to become negative or the capacity <I>c</I>(<I>u, v</I>) to be exceeded. This value is computed in line 3. We move the flow from <I>u to v </I>by updating <I>f</I> in lines 4-5 and <I>e</I> in lines 6-7. Thus, if &acirc; is a preflow before <FONT FACE="Courier New" SIZE=2>PUSH</FONT> is called, it remains a preflow afterward. <P>
+Observe that nothing in the code for P<FONT FACE="Courier New" SIZE=2>USH </FONT>depends on the heights of <I>u</I> and <I>v</I>, yet we prohibit it from being invoked unless <I>h</I>[<I>u</I>]<I> = h</I>[<I>v</I>]<I> +</I> 1. Thus, excess flow is only pushed downhill by a height differential of 1. By Lemma 27.13, no residual edges exist between two vertices whose heights differ by more than 1, and thus there is nothing to be gained by allowing flow to be pushed downhill by a height differential of more than 1.<P>
+<a name="090a_18df"><a name="090a_18e0"><a name="090a_18e1"><a name="090a_18e2"><a name="090a_18e3">We call the operation <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(<I>u, v</I>) a <I><B>push</I></B> from <I>u</I> to <I>v</I>. If a push operation applies to some edge (<I>u, v</I>) leaving a vertex <I>u</I>, we also say that the push operation applies to <I>u</I>. It is a<I> <B>saturating push</I></B> if edge (<I>u, v</I>) becomes <I><B>saturated</I></B> (<I>c<SUB>f</SUB> </I>(<I>u, v</I>) = 0 afterward); otherwise, it is a <I><B>nonsaturating push</I></B><I>.</I> If an edge is saturated, it does not appear in the residual network.<P>
+<a name="090a_18e4"><a name="090a_18e5">The basic operation <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) applies if <I>u</I> is overflowing and if <I>c<SUB>f</SUB> </I>(<I>u, v</I>) &gt; 0 implies <I>h</I>[<I>u</I>]<I> </I><img src="../images/lteq12.gif"><I> h</I>[<I>v</I>] for all vertices <I>v</I>. In other words, we can lift an overflowing vertex <I>u</I> if for every vertex <I>v</I> for which there is residual capacity from <I>u</I> to <I>v</I>, flow cannot be pushed from <I>u</I> to <I>v</I> because <I>v</I> is not downhill from <I>u</I>. (Recall that by definition, neither the source<I> s</I> nor the sink <I>t</I> can be overflowing, so neither <I>s</I> nor <I>t</I> can be lifted.)<P>
+<pre><a name="090a_18e6">LIFT(<I>u</I>)</sub></sup></pre><P>
+<pre>1  <img src="608_a.gif"> <B>Applies when:</B> <I>u</I> is overflowing and for all <I>v </I><img src="../images/memof12.gif"> V<I>,</I></sub></sup></pre><P>
+<pre>(<I>u, v</I>) <img src="../images/memof12.gif"><I> </I>E<SUB>f<I></SUB> implies </I>h<I>[</I>u<I>] <img src="../images/lteq12.gif"> </I>h<I>[</I>v<I>].</I></sub></sup></pre><P>
+<pre>2  <img src="608_b.gif"> <B>Action:</B> Increase the height of <I>u</I>.</sub></sup></pre><P>
+<pre>3 <I> h</I>[<I>u</I>]<img src="../images/arrlt12.gif"> 1 + min {<I>h</I>[<I>v</I>]: (<I>u, v</I>)<I> </I><img src="../images/memof12.gif">E<SUB>f<I></SUB>}</I></sub></sup></pre><P>
+When we call the operation LIFT(<I>u</I>), we say that vertex <I>u</I> is <I><B>lifted</I></B>. It is important to note that when <I>u</I> is lifted, <I>E<SUB>f</I></SUB> must contain at least one edge that leaves <I>u</I>, so that the minimization in the code is over a nonempty set. This fact follows from the assumption that <I>u</I> is overflowing. Since <I>e</I>[<I>u</I>] &gt; 0, we have <I>e</I>[<I>u</I>]<I> = f </I>[<I>V, u</I>] &gt; 0, and hence there must be at least one vertex <I>v</I> such that &acirc;[<I>v, u</I>] &gt; 0. But then,<P>
+<pre><I>c</I><SUB>&acirc;</SUB> (<I>u</I>, <I>v</I>)  =  <I>c</I>(<I>u</I>, <I>v</I>) - <I>f</I>[<I>u</I>, <I>v</I>]</sub></sup></pre><P>
+<pre>=  <I>c</I>(<I>u</I>, <I>v</I>) + <I>f</I> [<I>v</I>, <I>u</I>]</sub></sup></pre><P>
+<pre>&gt;  0,</sub></sup></pre><P>
+which implies that (<I>u, v) </I><img src="../images/memof12.gif"><I> E<SUB>&acirc;</I></SUB>. The operation <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) thus gives <I>u</I> the greatest height allowed by the constraints on height functions.<P>
+<P>
+
+
+
+
+
+
+
+<h2>The generic algorithm</h2><P>
+<a name="090b_18e7"><a name="090b_18e8">The generic preflow-push algorithm uses the following subroutine to create an initial preflow in the flow network.<P>
+<pre><a name="090b_18e9">INITIALIZE-PREFLOW(<I>G</I>, <I>s</I>)</sub></sup></pre><P>
+<pre>1  <B>for</B> each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>2       <B>do</B> <I>h</I>[<I>u</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>3          <I>e</I>[<I>u</I>]<I> </I><img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>4  <B>for</B> each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>5       <B>do</B> <I>&acirc;</I>[<I>u</I>, <I>v</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>6          <I>&acirc;</I>[<I>v</I>, <I>u</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+<pre>7  <I>h</I>[<I>s</I>] <img src="../images/arrlt12.gif"> |<I>V</I>[<I>G</I>]|</sub></sup></pre><P>
+<pre>8  <B>for</B> each vertex <I>u</I> <img src="../images/memof12.gif"> <I>Adj</I>[<I>s</I>]</sub></sup></pre><P>
+<pre>9       <B>do</B> <I>&acirc;</I>[<I>s</I>, <I>u</I>] <img src="../images/arrlt12.gif"> <I>c</I>(<I>s</I>, <I>u</I>)</sub></sup></pre><P>
+<pre>10          <I>&acirc;</I>[<I>u</I>, <I>s</I>] <img src="../images/arrlt12.gif"> -<I>c</I>(<I>s</I>, <I>u</I>)</sub></sup></pre><P>
+<pre>11          <I>e</I>[<I>u</I>] <img src="../images/arrlt12.gif"> <I>c</I>(s, <I>u</I>)</sub></sup></pre><P>
+<pre>INITIALIZE-PREFLOW creates an initial preflow <I>&acirc;</I> defined by</sub></sup></pre><P>
+<img src="608_c.gif"><P>
+<h4><a name="090b_18eb">(27.9)<a name="090b_18eb"></sub></sup></h4><P>
+That is, each edge leaving the source is filled to capacity, and all other edges carry no flow. For each vertex <I>v</I> adjacent to the source, we initially have e[<I>v</I>] = <I>c</I>(<I>s, v)</I>. The generic algorithm also begins with an initial height function <I>h</I>, given by<P>
+<img src="609_a.gif"><P>
+This is a height function because the only edges (<I>u, v</I>) for which <I>h</I>[<I>u</I>] &gt; <I>h</I>[<I>v</I>] + 1 are those for which <I>u = s,</I> and those edges are saturated, which means that they are not in the residual network.<P>
+The following algorithm typifies the preflow-push method.<P>
+<pre><a name="090b_18ea">GENERIC-PREFLOW-PUSH(<I>G</I>)</sub></sup></pre><P>
+<pre>1  INITIALIZE-PREFLOW(<I>G</I>, <I>s</I>)</sub></sup></pre><P>
+<pre>2  <B>while</B> there exists an applicable push or lift operation</sub></sup></pre><P>
+<pre>3      <B>do</B> select an applicable push or lift operation and perform it</sub></sup></pre><P>
+After initializing the flow, the generic algorithm repeatedly applies, in any order, the basic operations wherever they are applicable. The following lemma tells us that as long as an overflowing vertex exists, at least one of the two operations applies.<P>
+<a name="090b_18ec">Lemma 27.14<a name="090b_18ec"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>, let <img src="../images/scrptf12.gif"> be a preflow, and let <I>h</I> be any height function for <img src="../images/scrptf12.gif">. If <I>u</I> is any overflowing vertex, then either a push or lift operation applies to it.<P>
+<I><B>Proof     </I></B>For any residual edge (<I>u, v</I>), we have <I>h</I>(<I>u</I>) <img src="../images/lteq12.gif"> <I>h</I>(<I>v</I>) + 1 because <I>h </I>is a height function. If a push operation does not apply to <I>u</I>, then for all residual edges (<I>u, v</I>), we must have <I>h</I>(<I>u</I>) &lt; <I>h</I>(<I>v</I>) + 1, which implies <I>h</I>(<I>u</I>)<I> </I><img src="../images/lteq12.gif"><I> h</I>(<I>v</I>) . Thus, a lift operation can be applied to <I>u</I>.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Correctness of the preflow-push method</h2><P>
+To show that the generic preflow-push algorithm solves the maximum-flow problem, we shall first prove that if it terminates, the preflow <img src="../images/scrptf12.gif"> is a maximum flow. We shall later prove that it terminates. We start with some observations about the height function <I>h</I>.<P>
+<a name="090c_0001">Lemma 27.15<a name="090c_0001"><P>
+During the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on a flow network <I>G</I> = (<I>V</I>, <I>E</I>), for each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I>, the height <I>h</I>[<I>u</I>] never decreases. Moreover, whenever a lift operation is applied to a vertex <I>u</I>, its height <I>h</I>[<I>u</I>] increases by at least 1.<P>
+<I><B>Proof     </I></B>Because vertex heights change only during lift operations, it suffices to prove the second statement of the lemma. If vertex <I>u</I> is lifted, then for all vertices <I>v</I> such that (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I><img src="../images/scrptf12.gif">, we have <I>h</I>[<I>u</I>] <img src="../images/lteq12.gif"> <I>h</I>[<I>v</I>]; this implies that <I>h</I>[<I>u</I>] &lt; 1 + min {<I>h</I>[<I>v</I>]: (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT>}, and so the operation must increase <I>h</I>[<I>u</I>].      <P>
+<a name="090c_0002">Lemma 27.16<a name="090c_0002"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>. During the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on <I>G</I>, the attribute <I>h</I> is maintained as a height function.<P>
+<I><B>Proof     </I></B>The proof is by induction on the number of basic operations performed. Initially, <I>h</I> is a height function, as we have already observed.<P>
+We claim that if <I>h</I> is a height function, then an operation <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) leaves <I>h</I> a height function. If we look at a residual edge (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I><img src="../images/scrptf12.gif"><I></I> that leaves <I>u</I>, then the operation LIFT(<I>u</I>) ensures that <I>h</I>[<I>u</I>] <img src="../images/lteq12.gif"> <I>h</I>[<I>v</I>] + 1 afterward. Now consider a residual edge (<I>w, u</I>) that enters <I>u</I>. By Lemma 27.15, <I>h</I>[<I>w</I>] <img src="../images/lteq12.gif"> <I>h</I>[<I>u</I>] + 1 before the operation LIFT(<I>u</I>) implies <I>h</I>[<I>w</I>] &lt; <I>h</I>[<I>u</I>] + 1 afterward. Thus, the operation LIFT(<I>u</I>) leaves <I>h</I> a height function.<P>
+Now, consider an operation <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(<I>u, v</I>). This operation may add the edge (<I>v, u</I>) to <I>E</I><img src="../images/scrptf12.gif">, and it may remove (<I>u, v</I>) from <I>E<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/scrptf12.gif"></FONT>. In the former case, we have <I>h</I>[<I>v</I>] = <I>h</I>[<I>u</I>] - 1, and so <I>h</I> remains a height function. In the latter case, the removal of (<I>u, v</I>) from the residual network removes the corresponding constraint, and <I>h</I> again remains a height function.      <P>
+The following lemma gives an important property of height functions.<P>
+<a name="090c_0003">Lemma 27.17<a name="090c_0003"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>, let <I>f</I> be a preflow in <I>G</I>, and let <I>h</I> be a height function on <I>V</I>. Then, there is no path from the source <I>s</I> to the sink <I>t</I> in the residual network <I>G</I><img src="../images/scrptf12.gif"><I><SUB>.</sub></I><P>
+<I><B>Proof     </I></B>Assume for the sake of contradiction that there is a path <I>p</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>0</SUB>, <I>v</I><SUB>1</SUB>, . . . , <I>v</I><SUB>k</SUB><img src="../images/wdrtchv.gif"> from <I>s</I> to <I>t</I> in <I>G</I><img src="../images/scrptf12.gif">,<I> </I>where <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>0</FONT></SUB> = <I>s</I> and <I>v<SUB><FONT FACE="Courier New" SIZE=2>k</I></FONT></SUB> = <I>t</I>. Without loss of generality, <I>p</I> is a simple path, and so <I>k</I> &lt; |<I>V</I>|. For <I>i</I> = 0, 1, . . . , <I>k</I> - 1, edge (<I>v<SUB><FONT FACE="Courier New" SIZE=2>i</I></FONT></SUB>, <I>v<SUB><FONT FACE="Courier New" SIZE=2>i </I>+ 1</FONT></SUB>) <img src="../images/memof12.gif"> <I>E</I><SUB><img src="../images/scrptf12.gif"></SUB><I>  </I>Because <I>h</I> is a height function, <I>h</I>(<I>v<SUB>i</I></SUB>) <img src="../images/lteq12.gif"> <I>h</I>(<I>v<SUB>i</I>+1</SUB>) + 1 for <I>i</I> = 0, 1, . . . , <I>k</I> - 1 . Combining these inequalities over path <I>p</I> yields <I>h</I>(<I>s</I>) <img src="../images/lteq12.gif"> <I>h</I>(<I>t</I>)<I> + k</I>. But because <I>h</I>(<I>t</I>) = 0, we have <I>h(s</I>) <img src="../images/lteq12.gif"> <I>k</I> &lt; |<I>V</I>| , which contradicts the requirement that <I>h(s</I>) = |<I>V</I>| in a height function.      <P>
+We are now ready to show that if the generic preflow-push algorithm terminates, the preflow it computes is a maximum flow.<P>
+<a name="090c_0004">Theorem 27.18<a name="090c_0004"><P>
+If the algorithm <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> terminates when run on a flow network <I>G</I> = (<I>V</I>, <I>E</I>) with source <I>s</I> and sink <I>t</I>, then the preflow <I>f</I> it computes is a maximum flow for <I>G</I>.<P>
+<I><B>Proof     </I></B>If the generic algorithm terminates, then each vertex in <I>V</I> - {<I>s, t</I>} must have an excess of 0, because by Lemmas 27.14 and 27.16 and the invariant that <img src="../images/scrptf12.gif"> is always a preflow, there are no overflowing vertices. Therefore, <img src="../images/scrptf12.gif"> is a flow. Because <I>h</I> is a height function, by Lemma 27.17 there is no path from <I>s</I> to <I>t</I> in the residual network <I>G</I><img src="../images/scrptf12.gif"><I>. </I>By the max-flow min-cut theorem, therefore, <img src="../images/scrptf12.gif"> is a maximum flow.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Analysis of the preflow-push method</h2><P>
+To show that the generic preflow-push algorithm indeed terminates, we shall bound the number of operations it performs. Each of the three types of operations--lifts, saturating pushes, and nonsaturating pushes--is bounded separately. With knowledge of these bounds, it is a straightforward problem to construct an algorithm that runs in <I>O</I>(<I>V</I><SUP>2 </SUP><I>E</I>) time. Before beginning the analysis, however, we prove an important lemma.<P>
+<a name="090d_18f0">Lemma 27.19<a name="090d_18f0"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>, and let <img src="../images/scrptf12.gif"> be a preflow in <I>G</I>. Then, for any overflowing vertex <I>u</I>, there is a simple path from <I>u</I> to <I>s</I> in the residual network <I>G</I><img src="../images/scrptf12.gif"><I><SUB></sub>.</I><P>
+<I><B>Proof     </I></B>Let <I>U</I> = {<I>v</I>: there exists a simple path from <I>u</I> to <I>v</I> in <I>G</I><img src="../images/scrptf12.gif">}, and suppose for the sake of contradiction that <I>s</I> <img src="../images/notmem.gif"> <I>U</I>. Let <img src="611_a.gif"><P>
+We claim for each pair of vertices <I>v</I> <img src="../images/memof12.gif"> <I>U</I> and <img src="611_b.gif"> that <img src="../images/scrptf12.gif">(<I>w, v</I>) <img src="../images/lteq12.gif"> 0. Why? If <img src="../images/scrptf12.gif">(<I>w, v</I>) &gt; 0, then <img src="../images/scrptf12.gif">(<I>v, w</I>) &lt; 0, which implies that <I>c</I><img src="../images/scrptf12.gif"><I>(</I>v, w<I>) = </I>c(v, w<I>) - </I><img src="../images/scrptf12.gif">(<I>v, w</I>) &gt; 0. Hence, there exists an edge (<I>v, w</I>) <img src="../images/memof12.gif"> <I>E<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/scrptf12.gif"></FONT><I></I>, and therefore a simple path of the form <img src="611_c.gif"> in <I>G</I><img src="../images/scrptf12.gif">, contradicting our choice of <I>w</I>.<P>
+Thus, we must have <img src="611_d.gif"> since every term in this implicit summation is nonpositive. Thus, from equation (27.8) and Lemma 27.1, we can conclude that<P>
+<img src="611_e.gif"><P>
+Excesses are nonnegative for all vertices in <I>V</I> - {<I>s</I>}; because we have assumed that <I>U</I> <img src="../images/rgtubar.gif"> <I>V</I> - {<I>s</I>}, we must therefore have <I>e</I>(<I>v</I>) = 0 for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>U</I>. In particular, <I>e</I>(<I>u</I>) = 0, which contradicts the assumption that <I>u</I> is overflowing.      <P>
+The next lemma bounds the heights of vertices, and its corollary bounds the number of lift operations that are performed in total.<P>
+<a name="090d_18f1">Lemma 27.20<a name="090d_18f1"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>. At any time during the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on <I>G</I>, we have <I>h</I>[<I>u</I>] <img src="../images/lteq12.gif"> 2 |<I>V</I>| - 1 for all vertices <I>u</I> <img src="../images/memof12.gif"> <I>V</I>.<P>
+<I><B>Proof     </I></B>The heights of the source <I>s</I> and the sink <I>t</I> never change because these vertices are by definition not overflowing. Thus, we always have <I>h</I>[<I>s</I>] = |<I>V</I>| and <I>h</I>[<I>t</I>] = 0.<P>
+Because a vertex is lifted only when it is overflowing, we can consider any overflowing vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>}. Lemma 27.19 tells us that there is a simple path <I>p</I> from <I>u</I> to <I>s</I> in <I>G</I><img src="../images/scrptf12.gif">. Let <I>p</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB><FONT FACE="Courier New" SIZE=2>0</FONT></SUB>, <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>1</FONT></SUB>, . . . , <I>v<SUB><FONT FACE="Courier New" SIZE=2>k</I></SUB><img src="../images/wdrtchv.gif"></FONT>, where <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>0</FONT></SUB> = <I>u</I>, <I>v<SUB><FONT FACE="Courier New" SIZE=2>k</I></FONT></SUB> = <I>s</I>, and <I>k</I> <img src="../images/lteq12.gif"> |<I>V</I>|<I></I> - 1 because <I>p</I> is simple. For <I>i</I> = 0, 1, . . . , <I>k</I> - 1, we have (<I>v<SUB><FONT FACE="Courier New" SIZE=2>i</I></FONT></SUB>, <I>v<SUB><FONT FACE="Courier New" SIZE=2>i </I>+ 1</FONT></SUB>) <img src="../images/memof12.gif"> <I>E<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/scrptf12.gif"></FONT>, and therefore, by Lemma 27.16, <I>h</I>[<I>v<SUB>i</I></SUB>] <img src="../images/lteq12.gif"> <I>h</I>[<I>v<SUB>i</I>+1</SUB>] + 1. Expanding these inequalities over path <I>p</I> yields <I>h</I>[<I>u</I>] = <I>h</I>[<I>v</I><SUB>0</SUB>] <img src="../images/lteq12.gif"> <I>h</I>[<I>v<SUB>k</I></SUB>] + <I>k</I> <img src="../images/lteq12.gif"> <I>h</I>[<I>s</I>] + (|V| - 1) = 2 |<I>V</I>|<I> - 1.      </I><P>
+<a name="090d_18f2">Corollary 27.21<a name="090d_18f2"><P>
+<a name="090d_18eb">Let <I>G</I> = (<I>V</I>, <I>E</I>) be a flow network with source <I>s</I> and sink <I>t</I>. Then, during the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on <I>G</I>, the number of lift operations is at most 2 |<I>V</I>|<I></I> - 1 per vertex and at most (2 |<I>V</I>|<I></I> - 1)(|<I>V</I>|<I></I> - 2) &lt; 2 |<I>V</I> |<SUP>2 </SUP>overall.<P>
+<I><B>Proof     </I></B>Only vertices in <I>V</I> - {<I>s, t</I>}, which number |<I>V</I>| - 2, may be lifted. Let <I>u</I> <img src="../images/memof12.gif"> <I>V </I>- {<I>s, t</I>}. The operation <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) increases <I>h</I>[<I>u</I>]. The value of <I>h</I>[<I>u</I>] is initially 0 and by Lemma 27.20 grows to at most 2 |<I>V</I>|<I></I> - 1. Thus, each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s, t</I>} is lifted at most 2 |<I>V</I>|<I></I> - 1 times, and the total number of lift operations performed is at most (2 |<I>V</I>| - 1)(|<I>V</I>| - 2) &lt; 2 |<I>V</I>|<SUP>2</SUP>.      <P>
+<a name="090d_18ec">Lemma 27.20 also helps us to bound the number of saturating pushes.<P>
+<a name="090d_18f3">Lemma 27.22<a name="090d_18f3"><P>
+During the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on any flow network <I>G = </I>(<I>V</I>, <I>E</I>), the number of saturating pushes is at most 2 |<I>V</I>| |<I>E</I>|.<P>
+<I><B>Proof     </I></B>For any pair of vertices <I>u, v</I> <img src="../images/memof12.gif"> <I>V</I>, consider the saturating pushes from <I>u</I> to <I>v</I> and from <I>v</I> to <I>u</I>. If there are any such pushes, at least one of (<I>u, v</I>) and (<I>v, u</I>) is actually an edge in <I>E</I>. Now, suppose that a saturating push from <I>u</I> to <I>v</I> has occurred. In order for another push from <I>u</I> to <I>v</I> to occur later, the algorithm must first push flow from <I>v</I> to <I>u</I>, which cannot happen until <I>h</I>[<I>v</I>] increases by at least 2. Likewise, <I>h</I>[<I>u</I>] must increase by at least 2 between saturating pushes from <I>v</I> to <I>u</I>.<P>
+Consider the sequence <I>A</I> of integers given by <I>h</I>[<I>u</I>] + <I>h</I>[<I>v</I>] for each saturating push that occurs between vertices <I>u</I> and <I>v</I>. We wish to bound the length of this sequence. When the first push in either direction between <I>u</I> and <I>v</I> occurs, we must have <I>h</I>[<I>u</I>] + <I>h</I>[<I>v</I>] <img src="../images/gteq.gif"> 1; thus, the first integer in <I>A</I> is at least 1. When the last such push occurs, we have <I>h</I>[<I>u</I>] + <I>h</I>[<I>v</I>] <img src="../images/lteq12.gif"> (2 |<I>V</I>| - 1) + (2 |<I>V</I>| - 2) = 4 |<I>V</I>| - 3 by Lemma 27.20; the last integer in <I>A</I> is thus at most 4 |<I>V</I>|<I></I> - 3. By the argument from the previous paragraph, at most every other integer can occur in <I>A.</I> Thus, the number of integers in <I>A</I> is at most ((4 |<I>V</I>| - 3) - 1)/2 + 1 = 2 |<I>V</I>|<I></I> - 1. (We add 1 to make sure that both ends of the sequence are counted.) The total number of saturating pushes between vertices <I>u</I> and <I>v</I> is therefore at most 2 |<I>V</I>| - 1. Multiplying by the number of edges gives a total number of saturating pushes of at most (2 |<I>V</I>| - 1) |<I>E</I>| &lt; 2 |<I>V</I>| |<I>E</I>|.      <P>
+<a name="090d_18ed"><a name="090d_18ee"><a name="090d_18ef">The following lemma bounds the number of nonsaturating pushes in the generic preflow-push algorithm.<P>
+<a name="090d_18f4">Lemma 27.23<a name="090d_18f4"><P>
+During the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on any flow network <I>G</I> = (<I>V, E</I>), the number of nonsaturating pushes is at most 4 <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><SUP>2</SUP> (<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> + <img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif">).<P>
+<I><B>Proof     </I></B>Define a potential function <img src="../images/phicap12.gif"> = <img src="../images/sum14.gif"><I><SUB>v</I></SUB><img src="../images/memof12.gif"><I>X</I> <I>h</I>[<I>v</I>], where<I> X</I> <img src="../images/rgtubar.gif"> <I>V </I>is the set of overflowing vertices. Initially, <img src="../images/phicap12.gif"> = 0. Observe that lifting a vertex <I>u</I> increases <img src="../images/phicap12.gif"> by at most 2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">, since the set over which the sum is taken is the same and <I>u</I> cannot be lifted by more than its maximum possible height, which, by Lemma 27.20, is at most 2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">. Also, a saturating push from a vertex <I>u</I> to a vertex <I>v</I> increases <img src="../images/phicap12.gif"> by at most 2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">, since no heights change and only vertex <I>v</I>, whose height is at most 2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">, can possibly become overflowing. Finally, observe that a nonsaturating push from <I>u</I> to <I>v</I> decreases <img src="../images/phicap12.gif"> by at least 1, since <I>u</I> is no longer overflowing after the push, <I>v</I> is overflowing afterward even if it wasn't beforehand, and <I>h</I>[<I>v</I>] - <I>h</I>[<I>u</I>] = - 1.<P>
+Thus, during the course of the algorithm, the total amount of increase in <img src="../images/phicap12.gif"> is constrained by Corollary 27.21 and Lemma 27.22 to be at most (2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">)(2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><SUP>2</SUP>) + (2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">)(2<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif">) = 4<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><SUP>2</SUP> (<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> + <img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif">). Since <img src="../images/phicap12.gif"> <img src="../images/gteq.gif"> 0, the total amount of decrease, and therefore the total number of nonsaturating pushes, is at most 4<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><SUP>2</SUP> (<img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> + <img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif">).      <P>
+We have now set the stage for the following analysis of the <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> procedure, and hence of any algorithm based on the preflow-push method.<P>
+<a name="090d_18f5">Theorem 27.24<a name="090d_18f5"><P>
+During the execution of <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on any flow network <I>G</I> = (<I>V, E</I>), the number of basic operations is <I>O</I>(<I>V</I><SUP>2 </SUP><I>E</I>).<P>
+<I><B>Proof     </I></B>Immediate from Corollary 27.21 and Lemmas 27.22 and 27.23.      <P>
+<a name="090d_18f6">Corollary 27.25<a name="090d_18f6"><P>
+There is an implementation of the generic preflow-push algorithm that runs in <I>O</I>(<I>V</I><SUP>2 </SUP><I>E</I>) time on any flow network <I>G</I> = (<I>V, E</I>).<P>
+<I><B>Proof     </I></B>Exercise 27.4-1 asks you to show how to implement the generic algorithm with an overhead of <I>O</I>(<I>V</I>) per lift operation and <I>O</I>(1) per push. The corollary then follows.      <P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="090e_18f2">Exercises<a name="090e_18f2"></h2><P>
+<a name="090e_18f3">27.4-1<a name="090e_18f3"><P>
+Show how to implement the generic preflow-push algorithm using <I>O</I>(<I>V</I>) time per lift operation and <I>O</I>(1) time per push, for a total time of <I>O</I>(<I>V</I><SUP>2 </SUP><I>E</I>).<P>
+<a name="090e_18f4">27.4-2<a name="090e_18f4"><P>
+Prove that the generic preflow-push algorithm spends a total of only <I>O</I>(<I>V E</I>) time in performing all the <I>O</I>(<I>V</I><SUP>2</SUP>) lift operations.<P>
+<a name="090e_18f5">27.4-3<a name="090e_18f5"><P>
+Suppose that a maximum flow has been found in a flow network <I>G = </I>(<I>V, E</I>) using a preflow-push algorithm. Give a fast algorithm to find a minimum cut in <I>G</I>.<P>
+<a name="090e_18f6">27.4-4<a name="090e_18f6"><P>
+<a name="090e_18f0"><a name="090e_18f1">Give an efficient preflow-push algorithm to find a maximum matching in a bipartite graph. Analyze your algorithm.<P>
+<a name="090e_18f7">27.4-5<a name="090e_18f7"><P>
+Suppose that all edge capacities in a flow network <I>G =</I> (<I>V, E</I>) are in the set {1, 2, . . . , <I>k</I>}. Analyze the running time of the generic preflow-push algorithm in terms of <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif">, <img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif">, and <I>k</I>. (<I>Hint</I>: How many times can each edge support a nonsaturating push before it becomes saturated?)<P>
+<a name="090e_18f8">27.4-6<a name="090e_18f8"><P>
+Show that line 7 of <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT> can be changed to<P>
+<pre><I>h</I>[<I>s</I>] <img src="../images/arrlt12.gif"> <img src="../images/sglvrt.gif"><I>V</I>[<I>G</I>]<img src="../images/sglvrt.gif"> - 2</sub></sup></pre><P>
+without affecting the correctness or asymptotic performance of the generic preflow-push algorithm.<P>
+<a name="090e_18f9">27.4-7<a name="090e_18f9"><P>
+Let <img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif"></I><SUB>(<I>u, v</I>)</SUB> be the distance (number of edges) from <I>u</I> to <I>v</I> in the residual network G<SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT><SUB></SUB>. Show that <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> maintains the properties that <I>h</I>[<I>u</I>] &lt; <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> implies <I>h</I>[<I>u</I>] <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I><img src="../images/scrptf12.gif"></I><SUB>(<I>u, t</I>)</SUB> and that <I>h</I>[<I>u</I>] <img src="../images/gteq.gif"> <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> implies <I>h</I>[<I>u</I>] - <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT></I><SUB>(<I>u, s</I>)</sub>.<P>
+<a name="090e_18fa">27.4-8<a name="090e_18fa"><P>
+As in the previous exercise, let <img src="../images/delta12.gif"><I> <img src="../images/scrptf12.gif"></I> <SUB>(<I>u</I>, <I>v</I>)</SUB> be the distance from <I>u</I> to <I>v</I> in the residual network G<SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"></FONT><SUB>. </SUB>Show how the generic preflow-push algorithm can be modified to maintain the property that <I>h</I>[<I>u</I>] &lt; <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> implies <I>h</I>[<I>u</I>] = <img src="../images/delta12.gif"><I> <img src="../images/scrptf12.gif"> </I><SUB>(<I>u</I>, <I>t</I>) </SUB>and that <I>h</I>[<I>u</I>] <img src="../images/gteq.gif"> <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> implies <I>h</I>[<I>u</I>] - <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> = <img src="../images/delta12.gif"><I> <SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif"> </I></FONT><SUB>(<I>u</I>, <I>s</I>)</SUB>. The total time that your implementation dedicates to maintaining this property should be <I>O</I>(<I>V E</I>).<P>
+<a name="090e_18fb">27.4-9<a name="090e_18fb"><P>
+Show that the number of nonsaturating pushes executed by <FONT FACE="Courier New" SIZE=2>GENERIC</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT>-<FONT FACE="Courier New" SIZE=2>PUSH</FONT> on a flow network <I>G</I> = (<I>V</I>, <I>E</I>) is at most 4 <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"><SUP>2</SUP> <img src="../images/sglvrt.gif"><I>E</I><img src="../images/sglvrt.gif"> for <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> <img src="../images/gteq.gif"> <I>4</I>.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="090f_18f5">* 27.5 The lift-to-front algorithm<a name="090f_18f5"></h1><P>
+<a name="090f_18f2"><a name="090f_18f3"><a name="090f_18f4">The preflow-push method allows us to apply the basic operations in any order at all. By choosing the order carefully and managing the network data structure efficiently, however, we can solve the maximum-flow problem faster than the<I> O</I>(<I>V<SUP>2</SUP>E</I>) bound given by Corollary 27.25. We shall now examine the lift-to-front algorithm, a preflow-push algorithm whose running time is <I>O</I>(<I>V<SUP>3</I></SUP>), which is asymptotically at least as good as <I>O</I>(<I>V<SUP>2</SUP>E</I>).<P>
+The lift-to-front algorithm maintains a list of the vertices in the network. Beginning at the front, the algorithm scans the list, repeatedly selecting an overflowing vertex <I>u</I> and then "discharging" it, that is, performing push and lift operations until <I>u</I> no longer has a positive excess. Whenever a vertex is lifted, it is moved to the front of the list (hence the name &quot;lift-to-front&quot;) and the algorithm begins its scan anew.<P>
+The correctness and analysis of the lift-to-front algorithm depend on the notion of "admissible" edges: those edges in the residual network through which flow can be pushed. After proving some properties about the network of admissible edges, we shall investigate the discharge operation and then present and analyze the lift-to-front algorithm itself.<P>
+
+
+
+
+
+<h2>Admissible edges and networks</h2><P>
+<a name="0910_18f5"><a name="0910_18f6"><a name="0910_18f7"><a name="0910_18f8"><a name="0910_18f9"><a name="0910_18fa">If <I>G = </I>(<I>V, E</I>)<I> </I>is a flow network with source <I>s</I> and sink  <I>t,</I> <img src="../images/scrptf12.gif"><SUB> </SUB>is a preflow in <I>G,</I> and<I> h </I>is a height function, then we say that<I> </I>(<I>u,v</I>)<I> </I>is an<I> <B>admissible edge</I></B> if<I> c</I><img src="../images/scrptf12.gif"><I></I> (<I>u, v</I>)<I> </I>&gt; 0 and<I> h</I>(<I>u</I>)<I> = h</I>(<I>v</I>)<I> +</I> 1. Otherwise, (<I>u, v</I>)<I> </I>is<I> <B>inadmissible.</I></B><I> </I>The<I> <B>admissible network </I></B><I>is G</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif">,<I>h = </I></FONT>(<I>V,E</I><img src="../images/scrptf12.gif">,<I>h<SUB></I></SUB>)<I><SUB><FONT FACE="Courier New" SIZE=2>, </I></FONT></SUB>where<I><SUB><FONT FACE="Courier New" SIZE=2> </I></FONT></SUB>E<SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/scrptf12.gif">,<I>h<SUB> </I></FONT></SUB>is the set of admissible edges.<P>
+The admissible network consists of those edges through which flow can be pushed. The following lemma shows that this network is a directed acyclic graph (dag).<P>
+<a name="0910_18fb">Lemma 27.26<a name="0910_18fb"><P>
+If <I>G</I> = (<I>V,E</I>) is a flow network, <img src="../images/scrptf12.gif"> is a preflow in <I>G</I>, and <I>h</I> is a height function on <I>G</I>, then the admissible network <I>G</I><img src="../images/scrptf12.gif">,<I>h</I><SUB> = (<I>V</I>,<I>E</I></SUB><FONT FACE="Courier New" SIZE=2><SUB><img src="../images/scrptf12.gif">,<I>h</I></FONT></SUB>) is acyclic.<P>
+<I><B>Proof     </I></B>The proof is by contradiction. Suppose that <I>G</I><img src="../images/scrptf12.gif">,<I>h</I> contains a cycle <I>p = (v<SUB><FONT FACE="Courier New" SIZE=2>0 </SUB>v<SUB>1</SUB>, . . ., v<SUB>k</SUB>), where v<SUB>0 = </SUB>v<SUB>k </I></FONT></SUB>and <I>k</I> &gt; 0. Since each edge in <I>p</I> is admissible, we have<I> h(v<SUB><FONT FACE="Courier New" SIZE=2>i-</I>1</SUB><I>) = h(v<SUB>i</SUB>)<SUB> +</I> </FONT></SUB>1 for<I> i = </I>1,2, . . .<I>, k. </I>Summing around the cycle gives<P>
+<img src="616_a.gif"><P>
+Because each vertex in cycle<I> p </I>appears once in each of the summations, we derive the contradiction that 0 = <I>k</I>.      <P>
+The next two lemmas show how push and lift operations change the admissible network.<P>
+<a name="0910_18fc">Lemma 27.27<a name="0910_18fc"><P>
+Let<I> G </I>= (<I>V,E</I>) be a flow network, let <img src="../images/scrptf12.gif"> be a preflow in <I>G</I>, and let <I>h</I> be a height function. If a vertex <I>u</I> is overflowing and (<I>u</I>, <I>v</I>) is an admissible edge, then <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(u, <I>v</I>) applies. The operation does not create any new admissible edges, but it may cause (u, <I>v</I>) to become inadmissible.<P>
+<I><B>Proof     </I></B>By the definition of an admissible edge, flow can be pushed from <I>u</I> to <I>v</I>. Since <I>u</I> is overflowing, the operation <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(<I>u</I>, <I>v</I>) applies. The only new residual edge that can be created by pushing flow from <I>u</I> to <I>v</I> is the edge (<I>v, u</I>). Since <I>h</I>(<I>v</I>) = <I>h</I>(<I>u</I>) - 1, edge (<I>v</I>, <I>u</I>) cannot become admissible. If the operation is a saturating push, then c<img src="../images/scrptf12.gif">(<I>u</I>, <I>v</I>) = 0 afterward and (<I>u</I>, <I>v</I>) becomes inadmissible.      <P>
+<a name="0910_18fd">Lemma 27.28<a name="0910_18fd"><P>
+Let <I>G</I> = (<I>V,E</I>) be a flow network, let <img src="../images/scrptf12.gif"> be a preflow in<I> G, </I>and let <I>h </I>be a height function. If a vertex <I>u</I> is overflowing and there are no admissible edges leaving <I>u</I>, then <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) applies. After the lift operation, there is at least one admissible edge leaving <I>u, </I>but there are no admissible edges entering <I>u.</I><P>
+<I><B>Proof     </I></B>If <I>u </I>is overflowing, then by Lemma 27.14, either a push or a lift operation applies to it. If there are no admissible edges leaving <I>u</I>, no flow can be pushed from <I>u</I> and <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) applies. After the lift operation,<I> h</I>[<I>u</I>] = 1 + min {<I>h</I>[<I>v</I>]: (<I>u,v</I>) <img src="../images/memof12.gif"> <I>E</I><img src="../images/scrptf12.gif"> }. Thus, if <img src="../images/upsil12.gif"><I></I> is a vertex that realizes the minimum in this set, the edge (<I>u</I>,<I>v</I>) becomes admissible. Hence, after the lift, there is at least one admissible edge leaving <I>u</I>.<P>
+To show that no admissible edges enter<I> u </I>after a lift operation, suppose that there is a vertex <I>v<B> </I></B>such that (<I>v</I>,u) is admissible. Then,<I> h</I>[<img src="../images/upsil12.gif"><I></I>] = <I>h</I>[<I>u</I>] + 1 after the lift, and therefore<I> h</I>[<img src="../images/upsil12.gif"><I></I>]<I><B> &gt; </I></B><I>h</I>[<I>u</I>]<I><B> +</I></B> 1 just before the lift. But by Lemma 27.13, no residual edges exist between vertices whose heights differ by more than 1. Moreover, lifting a vertex does not change the residual network. Thus, (<img src="../images/upsil12.gif"><I></I>,<I>u</I>) is not in the residual network, and hence it cannot be in the admissible network.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Neighbor lists</h2><P>
+<a name="0911_18fb">Edges in the lift-to-front algorithm are organized into "neighbor lists." Given a flow network<I> G =</I> (<I>V,E</I>)<I>,</I> the<I><B> neighbor list </I></B><I>N</I>[<I>u</I>]<I> </I>for a vertex<I> u </I><img src="../images/memof12.gif"><I> V </I>is a singly linked list of the neighbors of <I>u </I>in<I> G</I>. Thus, vertex <img src="../images/upsil12.gif"><I></I> appears in the list <I>N</I>[<I>u</I>]<I> </I>if (<I>u,</I><img src="../images/upsil12.gif"><I></I>) <img src="../images/memof12.gif"><I> E </I>or<I> (</I><img src="../images/upsil12.gif"><I>,u</I>)<I> </I><img src="../images/memof12.gif"><I> E. </I>The neighbor list <I>N</I>[<I>u</I>] contains exactly those vertices <img src="../images/upsil12.gif"><I> </I>for which there<I> </I>may be a residual edge (<I>u,</I><img src="../images/upsil12.gif"><I></I>)<I>.</I> The first vertex in <I>N</I>[<I>u</I>]<I> </I>is pointed to by <I>head </I>[<I>N</I>[<I>u</I>]]<I>.</I> The vertex following<I> </I><img src="../images/upsil12.gif"><I> </I>in<I> a </I>neighbor list is pointed to by <I>next-neighbor</I>[<img src="../images/upsil12.gif"><I></I>]<I>; </I>this pointer is <FONT FACE="Courier New" SIZE=2>NIL</FONT> if<I> </I><img src="../images/upsil12.gif"><I></I> is the last vertex in the neighbor list.<P>
+The lift-to-front algorithm cycles through each neighbor list in an arbitrary order that is fixed throughout the execution of the algorithm. For each vertex <I>u</I>, the field <I>current</I>[<I>u</I>] points to the vertex currently under consideration in <I>N</I>[<I>u</I>]. Initially, <I>current</I>[<I>u</I>] is set to head[<I>N</I>[<I>u</I>]].<P>
+<P>
+
+
+
+
+
+
+
+<h2>Discharging an overflowing vertex</h2><P>
+<a name="0912_18fc">An overflowing vertex <I>u</I> is <I><B>discharged </I></B>by pushing all of its excess flow through admissible edges to neighboring vertices, lifting <I>u</I> as necessary to cause edges leaving <I>u</I> to become admissible. The pseudocode goes as follows.<P>
+<pre><a name="0912_18fd">DISCHARGE(<I>u</I>)</sub></sup></pre><P>
+<pre>1  <B>while</B> <I>e</I>[<I>u</I>] &gt; 0</sub></sup></pre><P>
+<pre>2      <B>do</B> <img src="../images/upsil12.gif"><I> <img src="../images/arrlt12.gif"> </I>current<I>[</I>u<I>]</I></sub></sup></pre><P>
+<pre>3         <B>if</B> <img src="../images/upsil12.gif"><I> = NIL</I></sub></sup></pre><P>
+<pre>4            <B>then</B> LIFT(<I>u</I>)</sub></sup></pre><P>
+<pre>5                 <I>current</I>[<I>u</I>] <img src="../images/arrlt12.gif"> <I>head</I>[<I>N</I>[<I>u</I>]]</sub></sup></pre><P>
+<pre>6         <B>elseif</B> c<img src="../images/scrptf12.gif"> <SUB>(<I>u,</I><img src="../images/upsil12.gif"><I>)</SUB> &gt; 0 and</I> h<I>[</I>u<I>] = </I>h<I>[<img src="../images/upsil12.gif"></I>] + 1</sub></sup></pre><P>
+<pre>7           <B>then</B> PUSH(<I>u</I>,<img src="../images/upsil12.gif"><I>)</I></sub></sup></pre><P>
+<pre>8         <B>else </B><I>current</I>[<I>u</I>] <img src="../images/arrlt12.gif"> <I>next-neighbor</I>[<img src="../images/upsil12.gif"><I>]</I></sub></sup></pre><P>
+Figure 27.10 steps through several iterations of the<B> while </B>loop of lines 1-8, which executes as long as vertex <I>u </I>has positive excess. Each iteration performs exactly one of three actions, depending on the current vertex <img src="../images/upsil12.gif"><I></I> in the neighbor list<I> N</I>[<I>u</I>]<B>.</B><P>
+<img src="618_a.gif"><P>
+<h4><a name="0912_18fe">Figure 27.10 Discharging a vertex. It takes 15 iterations of the while loop of <FONT FACE="Courier New" SIZE=2>DISCHARGE<FONT FACE="Times New Roman" SIZE=2> to push all the excess flow from vertex y. Only the neighbors of y and edges entering or leaving y are shown. In each part, the number inside each vertex is its excess at the beginning of the first iteration shown in the part, and each vertex is shown at its height throughout the part. To the right is shown the neighbor list N[y] at the beginning of each iteration, with the iteration number on top. The shaded neighbor is current[y]. (a) Initially, there are 19 units of excess to push from y, and current[y] = s. Iterations 1, 2, and 3 just advance current[y], since there are no admissible edges leaving y. In iteration 4, current[y] = <FONT FACE="Courier New" SIZE=2>NIL<FONT FACE="Times New Roman" SIZE=2> (shown by the shading being below the neighbor list), and so y is lifted and current[y] is reset to the head of the neighbor list. (b) After lifting, vertex y has height 1. In iterations 5 and 6, edges (y, s) and (y, x) are found to be inadmissible, but 8 units of excess flow are pushed from y to z in iteration 7. Because of the push, current[y] is not advanced in this iteration. (c) Because the push in iteration 7 saturated edge (y, z), it is found inadmissible in iteration 8. In iteration 9, current[y] =<FONT FACE="Courier New" SIZE=2> NIL<FONT FACE="Times New Roman" SIZE=2>, and so vertex y is again lifted and current[y] is reset. (d) In iteration 10, (y, s) is inadmissible, but 5 units of excess flow are pushed from y to x in iteration 11. (e) Because current[y] was not advanced in iteration 11, iteration 12 finds (y, x) to be inadmissible. Iteration 13 finds (y, z) inadmissible, and iteration 14 lifts vertex y and resets current[y]. (f) Iteration 15 pushes 6 units of excess flow from y to s. (g) Vertex y now has no excess flow, and <FONT FACE="Courier New" SIZE=2>DISCHARGE<FONT FACE="Times New Roman" SIZE=2> terminates. In this example, <FONT FACE="Courier New" SIZE=2>DISCHARGE<FONT FACE="Times New Roman" SIZE=2> both starts and finishes with the current pointer at the head of the neighbor list, but in general this need not be the case.<a name="0912_18fe"></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></FONT></sub></sup></h4><P>
+<img src="619_a.gif"><P>
+1.     If <I>v</I> is <FONT FACE="Courier New" SIZE=2>NIL</FONT>, then we have run off the end of<I> N</I>[<I>u</I>]. Line 4 lifts vertex <I>u</I>, and then line 5 resets the current neighbor of <I>u</I> to be the first one in <I>N</I>[<I>u</I>]. (Lemma 27.29 below states that the lift operation applies in this situation.)<P>
+2.     If <I>v</I> is non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> and (<I>u</I>, <I>v</I>) is an admissible edge (determined by the test in line 6), then line 7 pushes some (or possibly all) of <I>u</I>'s excess to vertex <img src="../images/upsil12.gif"><I>.</I><P>
+3.     If <I>v</I> is non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> but (<I>u</I>, <I>v</I>) is inadmissible, then line 8 <I><B>advances</I></B> <I>current</I>[<I>u</I>] one position further in the neighbor list <I>N</I>[<I>u</I>].<P>
+Observe that if <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> is called on an overflowing vertex<I> u<B>, </I></B>then the last action performed by<I><B> </I></B><FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> must be a push from<I> u. </I>Why? The procedure terminates only when<I><B> </I></B><I>e</I>[<I>u</I>] becomes zero, and neither the lift operation nor the advancing of the pointer<I> current</I>[<I>u</I>] affects the value of <I>e</I>[<I>u</I>]<I><B>.</B></I><P>
+We must be sure that when <FONT FACE="Courier New" SIZE=2>PUSH</FONT> or <FONT FACE="Courier New" SIZE=2>LIFT</FONT> is called by <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT>, the operation applies. The next lemma proves this fact.<P>
+<a name="0912_18ff">Lemma 27.29<a name="0912_18ff"><P>
+If <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> calls <FONT FACE="Courier New" SIZE=2>PUSH</FONT>(<I>u, <FONT FACE="Courier New" SIZE=2>v</I></FONT>) in line 7,  then a push operation applies to (<I>u</I>, <I>v<B>)</I></B>. If <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> calls <FONT FACE="Courier New" SIZE=2>LIFT</FONT>(<I>u</I>) in line 4, then a lift operation applies to <I>u</I>.<P>
+<I><B>Proof     </I></B>The tests in lines 1 and 6 ensure that a push operation occurs only if the operation applies, which proves the first statement in the lemma.<P>
+To prove the second statement, according to the test in line 1 and Lemma 27.28, we need only show that all edges leaving <I>u</I> are inadmissible. Observe that as <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT>(<I>u</I>) is repeatedly called, the pointer <I>current</I>[<I>u</I>] moves down the list <I>N</I>[<I>u</I>]. Each "pass" begins at the head of <I>N</I>[<I>u</I>] and finishes with <I>current</I>[<I>u</I>] = <FONT FACE="Courier New" SIZE=2>NIL</FONT>, at which point <I>u</I> is lifted and a new pass begins. For the <I>current</I>[<I>u</I>] pointer to advance past a vertex <img src="../images/upsil12.gif"><I> <img src="../images/memof12.gif"></I> <I>N</I>[<I>u</I>] during a pass, the edge (<I>u</I>, <I>v</I>) must be deemed inadmissible by the test in line 6. Thus, by the time the pass completes, every edge leaving<I> u </I>has been determined to be inadmissible at some time during the pass. The key observation is that at the end of the pass, every edge leaving <I>u </I>is still inadmissible. Why? By Lemma 27.27, pushes cannot create any admissible edges, let alone one leaving <I>u</I>. Thus, any admissible edge must be created by a lift operation. But the vertex <I>u</I> is not lifted during the pass, and by Lemma 27.28, any other vertex <img src="../images/upsil12.gif"><I></I> that is lifted during the pass has no entering admissible edges. Thus, at the end of the pass, all edges leaving <I>u</I> remain inadmissible, and the lemma is proved.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>The lift-to-front algorithm</h2><P>
+In the lift-to-front algorithm, we maintain a linked list <I>L</I> consisting of all vertices in <I>V</I> - {<I>s, t</I>}. A key property is that the vertices in <I>L</I> are topologically sorted according to the admissible network. (Recall from Lemma 27.26 that the admissible network is a dag.)<P>
+The pseudocode for the lift-to-front algorithm assumes that the neighbor lists <I>N</I>[<I>u</I>] have already been created for each vertex <I>u</I>. It also assumes that <I>next</I>[<I>u</I>] points to the vertex that follows <I>u </I>in list <I>L </I>and that, as usual, <I>next</I>[<I>u</I>] = <FONT FACE="Courier New" SIZE=2>NIL</FONT> if <I>u</I> is the last vertex in the list.<P>
+<pre><a name="0913_18fe">LIFT-TO-FRONT(<I>G</I>, <I>s</I>, <I>t</I>)</sub></sup></pre><P>
+<pre>1  INITIALIZE-PREFLOW(<I>G</I>, <I>s</I>)</sub></sup></pre><P>
+<pre>2  <I>L</I> <img src="../images/arrlt12.gif"> <I>V</I>[<I>G</I>] - {<I>s</I>, <I>t</I>}, in any order</sub></sup></pre><P>
+<pre>3  <B>for</B> each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I>[<I>G</I>] - {<I>s</I>, <I>t</I>}</sub></sup></pre><P>
+<pre>4       <B>do</B> <I>current</I>[<I>u</I>] <img src="../images/arrlt12.gif"> <I>head</I>[<I>N</I>[<I>u</I>]]</sub></sup></pre><P>
+<pre>5  <I>u</I> <img src="../images/arrlt12.gif"> <I>head</I>[<I>L</I>]</sub></sup></pre><P>
+<pre>6  <B>while</B> <I>u</I> <img src="../images/noteq.gif"> NIL</sub></sup></pre><P>
+<pre>7      <B>do</B> <I>old</I>-<I>height</I> <img src="../images/arrlt12.gif"> <I>h</I>[<I>u</I>]</sub></sup></pre><P>
+<pre>8         DISCHARGE(<I>u</I>)</sub></sup></pre><P>
+<pre>9         <B>if</B> <I>h</I>[<I>u</I>] &gt; <I>old</I>-<I>height</I></sub></sup></pre><P>
+<pre>10            <B>then</B> move <I>u</I> to the front of list <I>L</I></sub></sup></pre><P>
+<pre>11         <I>u </I><img src="../images/arrlt12.gif"> <I>next</I>[<I>u</I>]</sub></sup></pre><P>
+The lift-to-front algorithm works as follows. Line 1 initializes the preflow and heights to the same values as in the generic preflow-push algorithm. Line 2 initializes the list <I>L</I> to contain all potentially overflowing vertices, in any order. Lines 3-4 initialize the <I>current</I> pointer of each vertex <I>u</I> to the first vertex in <I>u</I>'s neighbor list.<P>
+As shown in Figure 27.11, the <B>while</B> loop of lines 6-11 runs through the list <I>L</I>, discharging vertices. Line 5 makes it start with the first vertex in the list. Each time through the loop, a vertex <I>u</I> is discharged in line 8. If <I>u</I> was lifted by the <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> procedure, line 10 moves it to the front of list <I>L</I>. This determination is made by saving <I>u</I>'s height in the variable <I>old</I>-<I>height </I>before the discharge operation (line 7) and comparing this saved height to <I>u</I>'s height afterward (line 9). Line 11 makes the next iteration of the <B>while</B> loop use the vertex following <I>u</I> in list <I>L</I>. If <I>u</I> was moved to the front of the list, the vertex used in the next iteration is the one following <I>u</I> in its new position in the list.<P>
+To show that <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> computes a maximum flow, we shall show that it is an implementation of the generic preflow-push algorithm. First, observe that it only performs push and lift operation when they apply, since Lemma 27.29 guarantees that <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> only performs them when they apply. It remains to show that when <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> terminates, no basic operations apply. Observe that if <I>u </I>reaches the end of <I>L,</I> every vertex in <I>L </I>must have been discharged without causing a lift. Lemma 27.30, which we shall prove in a moment, states that the list <I>L </I>is maintained as a topological sort of the admissible network. Thus, a push operation causes excess flow to move to vertices further down the list (or to <I>s </I>or <I>t</I>). If the pointer <I>u </I>reaches the end of the list, therefore, the excess of every vertex is 0, and no basic operations apply.<P>
+<img src="622_a.gif"><P>
+<h4><a name="0913_18ff">Figure 27.11 The action of <FONT FACE="Courier New" SIZE=2>LIFT-TO-FRONT</FONT>. (a) A flow network just before the first iteration of the while loop. Initially, 26 units of flow leave source s. On the right is shown the initial list L = <img src="../images/lftwdchv.gif">x, y, z<img src="../images/wdrtchv.gif">, where initially u = x. Under each vertex in list L is its neighbor list, with the current neighbor shaded. Vertex x is discharged. It is lifted to height 1, 5 units of excess flow are pushed to y, and the 7 remaining units of excess are pushed to the sink t. Because x is lifted, it is moved to the head of L, which in this case does not change the structure of L. (b) After x, the next vertex in L that is discharged is y. Figure 27.10 shows the detailed action of discharging y in this situation. Because y is lifted, it is moved to the head of L. (c) Vertex x now follows y in L, and so it is again discharged, pushing all 5 units of excess flow to t. Because vertex x is not lifted in this discharge operation, it remains in place in list L. (d) Since vertex z follows vertex x in L, it is discharged. It is lifted to height 1 and all 8 units of excess flow are pushed to t. Because z is lifted, it is moved to the front of L. (e) Vertex y now follows vertex z in L and is therefore discharged. But because y has no excess, <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> immediately returns, and y remains in place in L. Vertex x is then discharged. Because it, too, has no excess, <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> again returns, and x remains in place in L. <FONT FACE="Courier New" SIZE=2>LIFT-TO-FRONT</FONT> has reached the end of list L and terminates. There are no overflowing vertices, and the preflow is a maximum flow.<a name="0913_18ff"></sub></sup></h4><P>
+<img src="623_a.gif"><P>
+<a name="0913_1900">Lemma 27.30<a name="0913_1900"><P>
+If we run <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> on a flow network <I>G </I>= (<I>V</I>,<I> E</I>) with source <I>s </I>and sink <I>t</I>, then each iteration of the <B>while</B> loop in lines 6-11 maintains the invariant that list <I>L </I>is a topological sort of the vertices in the admissible network <I>G</I><img src="../images/scrptf12.gif"><I>,</I>h<I><SUB> = (</I>V<I>,</I> E</SUB><FONT FACE="Courier New" SIZE=2><I><SUB><img src="../images/scrptf12.gif"></I>,<I>h</I></FONT></SUB>).<P>
+<I><B>Proof     </I></B>Immediately after <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>PREFLOW</FONT> has been run, <I>h</I>[<I>s</I>] = <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> and <I>h</I>[<I>v</I>] = 0 for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>}. Since <FONT FACE="Courier New" SIZE=2>|<I>V </I>|</FONT> <img src="../images/gteq.gif"> 2 (because it contains at least <I>s</I> and <I>t</I>), no edge can be admissible. Thus, <I>E</I><img src="../images/scrptf12.gif"><I>,</I>h =<img src="623_b.gif">, and any ordering of <I>V</I> - {<I>s</I>, <I>t</I>} is a topological sort of <I>G<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/scrptf12.gif"><I>,</I>h</FONT><I>.</I><P>
+We now show that the invariant is maintained by each iteration of the <B>while</B> loop. The admissible network is changed only by push and lift operations. By Lemma 27.27, push operations only make edges inadmissible. Thus, admissible edges can be created only by lift operations. After a vertex is lifted, however, Lemma 27.28 states that there are no admissible edges entering <I>u </I>but there may be admissible edges leaving <I>u</I>. Thus, by moving <I>u </I>to the front of <I>L,</I> the algorithm ensures that any admissible edges leaving <I>u </I>satisfy the topological sort ordering.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Analysis</h2><P>
+We shall now show that <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> runs in <I>O</I>(<I>V</I><SUP>3</SUP>) time on any flow network <I>G </I>= (<I>V</I>, <I>E</I>). Since the algorithm is an implementation of the generic preflow-push algorithm, we shall take advantage of Corollary 27.21, which provides an <I>O</I>(<I>V</I>) bound on the number of lift operations executed per vertex and an <I>O</I>(<I>V</I><SUP>2</SUP>) bound on the total number of lifts overall. In addition, Exercise 27.4-2 provides an <I>O</I>(<I>V E</I>) bound on the total time spent performing lift operations, and Lemma 27.22 provides an <I>O</I>(<I>V E</I>) bound on the total number of saturating push operations.<P>
+<a name="0914_0001">Theorem 27.31<a name="0914_0001"><P>
+The running time of <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> on any flow network <I>G </I>= (<I>V</I>, <I>E</I>) is <I>O</I>(<I>V</I><SUP>3</SUP>).<P>
+<I><B>Proof     </I></B>Let us consider a &quot;phase&quot; of the lift-to-front algorithm to be the time between two consecutive lift operations. There are <I>O</I>(<I>V</I><SUP>2</SUP>) phases, since there are <I>O</I>(<I>V</I><SUP>2</SUP>) lift operations. Each phase consists of at most <FONT FACE="Courier New" SIZE=2>|<I>V </I>| </FONT>calls to <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT>, which can be seen as follows. If <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> does not perform a lift operation, the next call to <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> is further down the list <I>L</I>, and the length of <I>L </I>is less than <FONT FACE="Courier New" SIZE=2>|<I>V </I>|</FONT>. If <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> does perform a lift, the next call to <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> belongs to a different phase. Since each phase contains at most <FONT FACE="Courier New" SIZE=2>|<I>V </I>|</FONT> calls to <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> and there are <I>O</I>(<I>V</I><SUP>2</SUP>) phases, the number of times <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> is called in line 8 of <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> is <I>O</I>(<I>V</I><SUP>3</SUP>). Thus, the total work performed by the <B>while</B> loop in <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT>, excluding the work performed within <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT>, is at most <I>O</I>(<I>V</I><SUP>3</SUP>).<P>
+We must now bound the work performed within <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> during the execution of the algorithm. Each iteration of the <B>while</B> loop within <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> performs one of three actions. We shall analyze the total amount of work involved in performing each of these actions.<P>
+We start with lift operations (lines 4-5). Exercise 27.4-2 provides an <I>O</I>(<I>V E</I>) time bound on all the <I>O</I>(<I>V</I><SUP>2</SUP>) lifts that are performed.<P>
+Now, suppose that the action updates the <I>current</I>[<I>u</I>] pointer in line 8. This action occurs <I>O</I>(degree(<I>u</I>)) times each time a vertex <I>u </I>is lifted, and <I>O</I>(<I>V</I> <img src="../images/dot10.gif"> degree(<I>u</I>)) times overall for the vertex. For all vertices, therefore, the total amount of work done in advancing pointers in neighbor lists is <I>O</I>(<I>V E</I>) by the handshaking lemma (Exercise 5.4-1).<P>
+The third type of action performed by <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> is a push operation (line 7). We already know that the total number of saturating push operations is <I>O</I>(<I>V E</I>). Observe that if a nonsaturating push is executed, <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT> immediately returns, since the push reduces the excess to 0. Thus, there can be at most one nonsaturating push per call to <FONT FACE="Courier New" SIZE=2>DISCHARGE</FONT>. As we have observed, D<FONT FACE="Courier New" SIZE=2>ISCHARGE </FONT>is called <I>O</I>(<I>V</I><SUP>3</SUP>) times, and thus the total time spent performing nonsaturating pushes is <I>O</I>(<I>V</I><SUP>3</SUP>).<P>
+The running time of <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> is therefore <I>O</I>(<I>V</I><SUP>3</SUP> + <I>V E</I>), which is <I>O(V</I><SUP>3</SUP>).      <P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="0915_1902">Exercises<a name="0915_1902"></h2><P>
+<a name="0915_1903">27.5-1<a name="0915_1903"><P>
+Illustrate the execution of <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-<FONT FACE="Courier New" SIZE=2>TO</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT> in the manner of Figure 27.11 for the flow network in Figure 27.1 (a). Assume that the initial ordering of vertices in <I>L</I> is <img src="../images/lftwdchv.gif"><I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>, <I>v</I><SUB>4</SUB><img src="../images/wdrtchv.gif"> and that the neighbor lists are<P>
+<pre><I>N</I>[<I>v</I><SUB>1</SUB>]  =  <img src="../images/lftwdchv.gif">s, <I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB><img src="../images/wdrtchv.gif"> ,</sub></sup></pre><P>
+<pre><I>N</I>[<I>v</I><SUB>2</SUB>]  =  <img src="../images/lftwdchv.gif">s, <I>v</I><SUB>1</SUB>, <I>v</I><SUB>3</SUB>, <I>v</I><SUB>4</SUB><img src="../images/wdrtchv.gif"> ,</sub></sup></pre><P>
+<pre><I>N</I>[<I>v</I><SUB>3</SUB>]  =  <img src="../images/lftwdchv.gif"><I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>, <I>v</I><SUB>4</SUB>, <I>t</I><img src="../images/wdrtchv.gif"> ,</sub></sup></pre><P>
+<pre><I>N</I>[<I>v</I><SUB>4</SUB>]  =  <img src="../images/lftwdchv.gif"><I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>, <I>t</I><img src="../images/wdrtchv.gif"><I> .</I></sub></sup></pre><P>
+<a name="0915_1904">27.5-2<a name="0915_1904"><P>
+<a name="0915_18ff"><a name="0915_1900"><a name="0915_1901">We would like to implement a preflow-push algorithm in which we maintain a first-in, first-out queue of overflowing vertices. The algorithm repeatedly discharges the vertex at the head of the queue, and any vertices that were not overflowing before the discharge but are overflowing afterward are placed at the end of the queue. After the vertex at the head of the queue is discharged, it is removed. When the queue is empty, the algorithm terminates. Show that this algorithm can be implemented to compute a maximum flow in <I>O</I>(<I>V</I><SUP>3</SUP>) time.<P>
+<a name="0915_1905">27.5-3<a name="0915_1905"><P>
+Show that the generic algorithm still works if <FONT FACE="Courier New" SIZE=2>LIFT</FONT> updates <I>h</I>[<I>u</I>] by simply computing <I>h</I>[<I>u</I>] <img src="../images/arrlt12.gif"> <I>h</I>[<I>u</I>] + 1. How does this change affect the analysis of <FONT FACE="Courier New" SIZE=2>LIFT</FONT>-T<FONT FACE="Courier New" SIZE=2>o</FONT>-<FONT FACE="Courier New" SIZE=2>FRONT</FONT>?<P>
+<a name="0915_1906">27.5-4<a name="0915_1906"><P>
+Show that if we always discharge a highest overflowing vertex, the preflow-push method can be made to run in <I>O</I>(<I>V<SUP>3</I></SUP>)<SUP> </SUP><FONT FACE="Times New Roman" SIZE=2>time.</FONT><P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="0916_190f">Problems<a name="0916_190f"></h1><P>
+<a name="0916_1910">27-1     Escape problem<a name="0916_1910"><P>
+<a name="0916_1902"><a name="0916_1903"><a name="0916_1904">An <I>n </I>x<I> n <B>grid</I></B> is an undirected graph consisting of <I>n</I> rows and <I>n</I> columns of vertices, as shown in Figure 27.12. We denote the vertex in the <I>i</I>th row and the <I>j</I>th column by (<I>i, j</I>). All vertices in a grid have exactly four neighbors, except for the boundary vertices, which are the points (<I>i, j</I>) for which <I>i = </I>1<I>, i = n, j = </I>1<I>, or j = n.</I><P>
+<img src="626_a.gif"><P>
+<h4><a name="0916_1911">Figure 27.12 Grids for the escape problem. Starting points are black, and other grid vertices are white. (a) A grid with an escape, shown by shaded paths. (b) A grid with no escape.<a name="0916_1911"></sub></sup></h4><P>
+Given <I>m </I><img src="../images/lteq12.gif"><I></I> <I>n</I><SUP>2 </SUP>starting points (<I>x</I><SUB>1</SUB>, <I>y</I><SUB>1</SUB>)<SUB>, </SUB>(<I>x</I><SUB>2</SUB>, <I>y</I><SUB>2</SUB>), . . . , (<I>x<SUB>m</I></SUB>, <I>y<SUB>m</I></SUB>) in the grid, the <I><B>escape problem</I></B> is to determine whether or not there are <I>m</I> vertex-disjoint paths from the starting points to any <I>m</I> different points on the boundary. For example, the grid in Figure 27.12(a) has an escape, but the grid in Figure 27.12(b) does not.<P>
+<I><B>a</I>.</B>     Consider a flow network in which vertices, as well as edges, have capacities. That is, the positive net flow entering any given vertex is subject to a capacity constraint. Show that determining the maximum flow in a network with edge and vertex capacities can be reduced to an ordinary maximum-flow problem on a flow network of comparable size.<P>
+<I><B>b</I></B>.     Describe an efficient algorithm to solve the escape problem, and analyze its running time.<P>
+<a name="0916_1912">27-2     Minimum path cover<a name="0916_1912"><P>
+<a name="0916_1905"><a name="0916_1906"><a name="0916_1907"><a name="0916_1908">A <I><B>path cover</I></B> of a directed graph <I>G</I> = (<I>V</I>, <I>E</I>) is a set <I>P</I> of vertex-disjoint paths such that every vertex in <I>V</I> is included in exactly one path in <I>P</I>. Paths may start and end anywhere, and they may be of any length, including 0. A <I><B>minimum path cover</I></B> of <I>G</I> is a path cover containing the fewest possible paths.<P>
+<I><B>a</I>.     </B>Give an efficient algorithm to find a minimum path cover of a directed acyclic graph <I>G = </I>(<I>V, E</I>). (<I>Hint</I>: Assuming that <I>V = </I>{1<I>, </I>2, <I>. . . , n</I>}, construct the graph <I>G</I>' = <I>(</I>V', E'<I>)</I>,<I> where</I><P>
+<pre><I>V</I>'  =  {<I>x</I><SUB>0</SUB>, <I>x</I><SUB>1</SUB>, . . . , <I>x</I><SUB>n</SUB>} <img src="../images/wideu.gif"> {<I>y</I><SUB>0, </SUB><I>y</I><SUB>1</SUB>, . . . , <I>y</I><SUB>n</SUB>} ,</sub></sup></pre><P>
+<pre><I>E</I>'  =  {(<I>x</I><SUB>0</SUB>, <I>x</I><SUB>i</SUB>) : <I>i</I> <img src="../images/memof12.gif"> <I>V</I>} <img src="../images/wideu.gif"> {(<I>y</I><SUB>i</SUB>,<SUB> </SUB><I>y</I><SUB>0</SUB>) : <I>i</I> <img src="../images/memof12.gif"> <I>V</I>} <img src="../images/wideu.gif"> {(<I>x</I><SUB>i</SUB>, <I>y</I><SUB>j</SUB>) : (<I>i</I>, <I>j</I>) <img src="../images/memof12.gif"> <I>E</I>} ,</sub></sup></pre><P>
+<pre>and run a maximum-flow algorithm.)</sub></sup></pre><P>
+<I><B>b</I>.</B>     Does your algorithm work for directed graphs that contain cycles? Explain.<P>
+<a name="0916_1913">27-3     Space shuttle experiments<a name="0916_1913"><P>
+Professor Spock is consulting for NASA, which is planning a series of space shuttle flights and must decide which commercial experiments to perform and which instruments to have on board each flight. For each flight, NASA considers a set <I>E = </I>{<I>E</I><SUB>1</SUB>, <I>E</I><SUB>2</SUB>, <I>. . . , E<SUB>m</I></SUB>} of experiments, and the commercial sponsor of experiment <I>E<SUB>j</I></SUB> has agreed to pay NASA <I>p<SUB>j</I></SUB> dollars for the results of the experiment. The experiments use a set<I> I = </I>{<I>I</I><SUB>1</SUB>, <I>I</I><SUB>2</SUB>, . . . , <I>I</I><SUB>n</SUB>} of instruments; each experiment <I>E<SUB>j</I></SUB> requires all the instruments in a subset <I>R<SUB>j </SUB></I><img src="../images/rgtubar.gif"><I> I</I>. The cost of carrying instrument <I>I<SUB>k</I></SUB> is <I>c<SUB>k</I></SUB> dollars. The professor's job is to find an efficient algorithm to determine which experiments to perform and which instruments to carry for a given flight in order to maximize the net revenue, which is the total income from experiments performed minus the total cost of all instruments carried.<P>
+Consider the following network <I>G</I>. The network contains a source vertex <I>s</I>, vertices <I>I</I><SUB>1</SUB>, <I>I<SUB>2</SUB>, . . . , I<SUB>n</I></SUB>, vertices <I>E</I><SUB>1</SUB>, <I>E</I><SUB>2</SUB><I>, . . . , E<SUB>m,</I></SUB> and a sink vertex <I>t.</I> For <I>k</I> = 1, 2 . . . , <I>n</I>, there is an edge (<I>s</I>, <I>I<SUB>k</I></SUB>) of capacity <I>c<SUB>k,</I></SUB> and for <I>j</I> = 1, 2, . . . , <I>m</I>, there is an edge (<I>E<SUB>j</SUB>, t</I>) of capacity <I>p<SUB>j</I></SUB>. For <I>k</I> = 1, 2, . . . , <I>n</I> and <I>j</I> = 1, 2, . . . , <I>m</I>, if <I>I<SUB>k</SUB> </I><img src="../images/memof12.gif"><I> R<SUB>j</I></SUB>, then there is an edge (<I>I<SUB>k</SUB>, E<SUB>j</I></SUB>) of infinite capacity.<P>
+<I><B>a.</I>     </B>Show that if <I>E<SUB>j</I></SUB> <img src="../images/memof12.gif"> <I>T</I> for a finite-capacity cut (<I>S</I>, <I>T</I>) of <I>G</I>, then <I>I<SUB>k</I></SUB> <img src="../images/memof12.gif"> <I>T</I> for each <I>I<SUB>k</I></SUB> <img src="../images/memof12.gif"> <I>R<SUB>j</sub></I>.<P>
+<I><B>b.</I>     </B>Show how to determine the maximum net revenue from the capacity of the minimum cut of <I>G</I> and the given <I>p<SUB>j</I></SUB> values.<P>
+<I><B>c.</I></B>     Give an efficient algorithm to determine which experiments to perform and which instruments to carry. Analyze the running time of your algorithm in terms of m, n, and <img src="627_a.gif">.<P>
+<a name="0916_1914">27-4     Updating maximum flow<a name="0916_1914"><P>
+<a name="0916_1909">Let <I>G = </I>(<I>V, E</I>) be a flow network with source <I>s</I>, sink <I>t</I>, and integer capacities. Suppose that we are given a maximum flow in <I>G.</I><P>
+a.     Suppose that the capacity of a single edge (<I>u, v) </I><img src="../images/memof12.gif"><I> E</I> is increased by 1. Give an <I>O</I>(<I>V + E</I>)-time algorithm to update the maximum flow.<P>
+<I><B>b</I>.</B>     Suppose that the capacity of a single edge (<I>u, v</I>)<I> </I><img src="../images/memof12.gif"><I> E</I> is decreased by 1. Give an <I>O</I>(<I>V + E</I>)-time algorithm to update the maximum flow.<P>
+<a name="0916_1915">27-5     Maximum flow by scaling<a name="0916_1915"><P>
+<a name="0916_190a"><a name="0916_190b">Let <I>G = </I>(<I>V, E</I>) be a flow network with source <I>s</I>, sink <I>t</I>, and an integer capacity <I>c(u, v</I>) on each edge (<I>u, v) </I><img src="../images/memof12.gif"><SUB> </SUB>E<I><SUB>. Let </I>C = <I></SUB>max</I><SUB>(u, v)<I></SUB><img src="../images/memof12.gif">E <SUB>c</SUB>(u, v</I>).<P>
+<I><B>a</I></B>.     Argue that a minimum cut of <I>G</I> has capacity at most C|E|.<P>
+<I><B>b</I></B>.     For a given number <I>K</I>, show that an augmenting path of capacity at least <I>K</I> can be found in <I>O</I>(<I>E</I>) time, if such a path exists.<P>
+The following modification of <FONT FACE="Courier New" SIZE=2>FORD</FONT>-<FONT FACE="Courier New" SIZE=2>FULKERSON</FONT>-<FONT FACE="Courier New" SIZE=2>METHOD</FONT> can be used to compute a maximum flow in <I>G</I>.<P>
+<pre><a name="0916_190c">MAX-FLOW-BY-SCALING(<I>G, s, t</I>)</sub></sup></pre><P>
+<pre>1  <I>C</I> <img src="../images/arrlt12.gif"> max<SUB>(<I>u</I>,<I>v</I>)</SUB><img src="../images/memof12.gif"> <I>E <SUB>c</I>(<I>u, v</I>)</sub></sup></pre><P>
+<pre>2  initialize flow <I>f</I> to 0</sub></sup></pre><P>
+<pre>3  <I>K </I><img src="../images/arrlt12.gif"> <I>2<SUP></SUP><img src="../images/hfbrdl12.gif">1g </I>C<I><SUP><img src="../images/hfbrdr12.gif"></I></sub></sup></pre><P>
+<pre>4  <B>while</B> <I>K</I> <img src="../images/gteq.gif"> 1</sub></sup></pre><P>
+<pre>5      <B>do while</B> there exists an augmenting path <I>p</I> of capacity at least <I>K</I></sub></sup></pre><P>
+<pre>6            <B>do</B> augment flow <I>f</I> along <I>p</I></sub></sup></pre><P>
+<pre>7         <I>K </I><img src="../images/arrlt12.gif"> K<I>/2</I></sub></sup></pre><P>
+<pre>8  <B>return</B> <I>f</I></sub></sup></pre><P>
+<I><B>c</I></B>.     Argue that <FONT FACE="Courier New" SIZE=2>MAX</FONT>-<FONT FACE="Courier New" SIZE=2>FLOW</FONT>-<FONT FACE="Courier New" SIZE=2>BY</FONT>-<FONT FACE="Courier New" SIZE=2>SCALING</FONT> returns a maximum flow.<P>
+<I><B>d</I>.</B>     Show that the residual capacity of a minimum cut of <I>G</I> is at most 2<I>K </I>|<I>E</I>|<I> </I>each time line 4 is executed.<P>
+<I><B>e</I></B>.     Argue that the inner <B>while</B> loop of lines 5-6 is executed <I>O</I>(<I>E</I>) times for each value of <I>K</I>.<P>
+<I><B>f</I></B>.     Conclude that <FONT FACE="Courier New" SIZE=2>MAX</FONT>-<FONT FACE="Courier New" SIZE=2>FLOW</FONT>-<FONT FACE="Courier New" SIZE=2>BY</FONT>-<FONT FACE="Courier New" SIZE=2>SCALING</FONT> can be implemented to run in <I><SUB>O</I>(<I>E</SUB><SUP>2 </I></SUP><SUB>1<I>g C</I>)</SUB> time.<P>
+<a name="0916_1916">27-6     Maximum flow with upper and lower capacity bounds<a name="0916_1916"><P>
+<a name="0916_190d"><a name="0916_190e">Suppose that each edge (<I>u, v</I>) in a flow network <I>G</I> = (<I>V, E</I>) has not only an upper bound <I>c</I>(<I>u, v</I>) on the net flow from <I>u</I> to <I>v</I>, but also a lower bound <I>b</I>(<I>u, v</I>). That is, any flow <I>f</I> on the network must satisfy <I>b</I>(<I>u, v</I>) <img src="../images/lteq12.gif"> <I>f</I>(<I>u, v</I>) <img src="../images/lteq12.gif"> <I>c</I>(<I>u, v</I>). It may be the case for such a network that no feasible flow exists.<P>
+<I><B>a</I>.</B>     Prove that if <I>f</I> is a flow on <I>G</I>, then |<I>f</I>| <img src="../images/lteq12.gif"> <I>c</I>(<I>S, T</I>) - <I>b</I>(<I>T, S</I>) for any cut (<I>S, T</I>) of <I>G.</I><P>
+<I><B>b</I>.</B>     Prove that the value of a maximum flow in the network, if it exists, is the minimum value of <I>c</I>(<I>S, T</I>) - <I>b(T, S</I>) over all cuts (<I>S, T</I>) of the network.<P>
+Let <I>G</I> = (<I>V, E</I>) be a flow network with upper and lower bound functions <I>c</I> and <I>b</I>, and let <I>s</I> and <I>t </I>be the source and sink of <I>G.</I> Construct the ordinary flow network <I>G' = </I>(<I>V', E</I>') with upper bound function <I>c</I>', source <I>s</I>', and sink <I>t</I>' as follows:<P>
+<pre><I>V</I>'  =  <I>V</I> <img src="../images/wideu.gif"> {<I>s</I>', <I>t</I>'} ,</sub></sup></pre><P>
+<pre><I>E</I>'  =  <I>E</I> <img src="../images/wideu.gif"> {(<I>s</I>', <I>v</I>) : <I>v</I> <img src="../images/memof12.gif"> <I>V</I>} <img src="../images/wideu.gif"> {(<I>u</I>, <I>t</I>') : <I>u</I> <img src="../images/memof12.gif"> <I>V</I>} <img src="../images/wideu.gif"> {(<I>s</I>, <I>t</I>),(<I>t</I>, <I>s</I>)} .</sub></sup></pre><P>
+We assign capacities to edges as follows. For each edge<I> </I>(<I>u, v</I>) <img src="../images/memof12.gif"><I> E</I>, we set c'(<I>u, v</I>)<I> = c</I>(<I>u, v</I>)<I> - b</I>(<I>u, v</I>). For each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I>, we set <I>c</I>'(<I>s</I>', <I>u</I>) = <I>b</I>(<I>V, u</I>) and <I>c'</I>(<I>u, t'</I>)<I> = b</I>(<I>u, V</I>). We also set c'(<I>s, t</I>)<I> = c'</I>(<I>t, s</I>)<I> = </I><img src="../images/infin.gif">.<P>
+<I><B>c</I>.</B>     Prove that there exists a feasible flow in <I>G</I> if and only if there exists a maximum flow in <I>G</I>' such that all edges into the sink <I>t'</I> are saturated.<P>
+<I><B>d</I>.</B>     Give an algorithm that finds a maximum flow in a network with upper and lower bounds or determines that no feasible flow exists. Analyze the running time of your algorithm.<P>
+<P>
+
+
+
+
+
+
+
+<h1>Chapter notes</h1><P>
+Even [65], Lawler [132], Papadimitriou and Steiglitz [154], and Tarjan [188] are good references for network flow and related algorithms. Goldberg, Tardos, and Tarjan [83] provide a nice survey of algorithms for network-flow problems.<P>
+<a name="0917_190f"><a name="0917_1910"><a name="0917_1911">The Ford-Fulkerson method is due to Ford and Fulkerson [71], who originated many of the problems in the area of network flow, including the maximum-flow and bipartite-matching problems. Many early implementations of the Ford-Fulkerson method found augmenting paths using breadth-first search; Edmonds and Karp [63] proved that this strategy yields a polynomial-time algorithm. Karzanov [119] developed the idea of preflows. The preflow-push method is due to Goldberg [82]. The fastest preflow-push algorithm to date is due to Goldberg and Tarjan [85], who achieve a running time of <I>O(V E </I>lg(<I>V<SUP>2</SUP>/E</I>)). The best algorithm to date for maximum bipartite matching, discovered by Hopcroft and Karp [101], runs in <img src="629_a.gif"> time.<P>
+<P>
+
+
+<P>
+<P>
+<center>Go to <a href="partvii.htm">Part VII</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back to <a href="toc.htm">Table of Contents</A>
+</P>
+</center>
+
+
+</BODY></HTML>

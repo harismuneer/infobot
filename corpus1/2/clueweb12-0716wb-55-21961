@@ -1,0 +1,149 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-08T15:02:39Z
+WARC-TREC-ID: clueweb12-0716wb-55-21961
+WARC-IP-Address: 64.90.51.44
+WARC-Payload-Digest: sha1:6PG3XVB6EMVKT4HOY2IURPR4NQEF5RK3
+WARC-Target-URI: http://gnjpc.com/calculators/y2006/calccgtax.php
+WARC-Record-ID: <urn:uuid:b9fa9ea3-4d7e-4fbb-b012-26eb6d60119d>
+Content-Type: application/http; msgtype=response
+Content-Length: 7096
+
+HTTP/1.1 200 OK
+Date: Thu, 08 Mar 2012 15:02:42 GMT
+Server: Apache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<HTML>
+<HEAD>
+   <META NAME="Author" CONTENT="Mark E. Gunnison">
+   <META NAME="KeyWords" CONTENT="Capital gains tax, taxes, income, income taxes, calculators, individual income tax, tax rate schedule">
+   <META NAME="Description" CONTENT="A capital gains income tax calculator">
+
+<SCRIPT LANGUAGE="JavaScript" SRC="scripts/calccgtax.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="scripts/calctax.js"></SCRIPT>	 
+<SCRIPT LANGUAGE="JavaScript" SRC="scripts/disclamer.js"></SCRIPT>	 
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+
+function printResults()
+{
+var married = 0;
+var taxableIncome = 0;
+var shortTermCG = 0;
+var longTermCG = 0;
+var federalTax = 0;
+var fiveYGain = 0;
+var print = 0;
+
+ 			 if (document.tax.status[0].checked)
+			 	  married = 0;
+			 else 
+			 	  married = 1
+				  
+			 if (document.taxAnswer.print.checked)
+			 	print = 1;
+			 
+ 			 taxableIncome = Math.round(document.tax.TaxableIncome.value);
+			 long28TermCG = Math.round(document.tax.Long28TermCG.value);
+			 section1250CG = Math.round(document.tax.Section1250CG.value);
+			 form4952 = Math.round(document.tax.Form4952.value);
+			 fiveYGain = Math.round(document.tax.FiveYGain.value);
+			 shortTermCG = Math.round(document.tax.ShortTermCG.value);
+			 longTermCG = Math.round(document.tax.LongTermCG.value);
+			 
+ 			 federalTax = calcFederalCGTax( taxableIncome, shortTermCG, longTermCG, fiveYGain, long28TermCG, section1250CG, form4952, married, print );
+			 	
+         document.taxAnswer.counter.value = federalTax;
+  
+
+}
+
+
+//-->
+</SCRIPT>
+	<TITLE>Capital Gains Tax Calculator</TITLE>
+	
+<LINK REL="SHORTCUT ICON" href="../../favicon.ico"><style type='text/css'>.indentmenu{font: bold 13px Arial; width: 100%; /*leave this value as is in most cases*/ overflow: hidden;}.indentmenu ul{margin: 0; padding: 0; float: left; width: 100%; /*width of menu*/border: 1px solid #564c66; /*dark purple border*/border-width: 1px 0; background: blue url(../../media/indentbgb.gif) center center repeat-x;}.indentmenu ul li{display: inline;}.indentmenu ul li a{float: left; color: white; /*text color*/padding: 5px 11px; text-decoration: none; border-right: 1px solid #564c66; /*dark purple divider between menu items*/}.indentmenu ul li a:visited{color: white;}.indentmenu ul li a:hover, .indentmenu ul li .current{color: white !important; /*text color of selected and active item*/padding-top: 6px; /*shift text down 1px for selected and active item*/padding-bottom: 4px; /*shift text down 1px for selected and active item*/background: blue url(../../media/indentbgb2.gif) center center repeat-x;}A {font:bold 'Century Gothic';}A {text-decoration:none;}A {color:Maroon;}A {font:bold;}A:hover {color:#A50000;text-decoration:underline;}A.off {text-decoration:underline;}A.off {color:green}BODY {background-color:'#FFFFFF';  margin: 0; padding: 0;}logo a:link img, a:visited img, a:hover img {border-style: none; text-decoration: none;}.Xwww {color:Navy;font-family:Copperplate Gothic;font-size:18pt}.Xmg {color:black;font-weight:bold;font-family:Copperplate Gothic Bold;font-size:20pt}.Xcpa {color:black;font-weight:bold; font-style:italic;font-family:Copperplate Gothic Bold;font-size:20pt}.Xcorp {letter-spacing:0px;color:black;font-family:CopprplGoth Bd BT;font-size:12pt;font-weight:normal}.Xname {color:green;font-family:Copperplate Gothic;font-size:20pt}</style>
+
+</HEAD>
+
+<BODY  topmargin="0">
+
+<TABLE  border='0' cellpadding='0' cellspacing='0' width='100%' bgcolor='0044ff'><TR><TD nowrap valign='top' rowspan='2' width='410'><table border='0' cellspacing='4'><TR><TD><SPAN class='logo'><a href='http://www.gnjpc.com/'><img src='../../GJ_logo_w1.gif' width='395' height='67' style='border-style: none' border='0'></a></SPAN><SPAN class='Xlink'><BR></SPAN></TD></TR></Table></TD><TD align='right' valign='top' nowrap><SPAN class='Xcorp'><font color='white'>Mark E. Gunnison, CPA<BR>Neil K. Johannes, LTP</font></SPAN></TD></TR><TR><TD valign='bottom' nowrap ><div class='indentmenu'><ul><li><a href='http://www.gnjpc.com/tax/'>Tax</a></li><li><a href='http://www.gnjpc.com/payroll/'>Payroll</a></li><li><a href='http://www.gnjpc.com/financials/'>Financials</a></li><li><a href='http://www.gnjpc.com/bookkeeping/'>Bookkeeping</a></li><li><a href='http://www.gnjpc.com/consulting/'>Consulting</a></li><li><a href='http://www.gnjpc.com/resources/'>Resources</a></li><li><a href='http://www.mgcpa.com/contact/'>Contact</a></li></ul></div></TD></TR><TR><TD colspan='2' ><img src='../../media/indentbg.gif' width='100%' height='3'></TD></TR></TABLE><SPAN class='Xlink'><A HREF="http://www.mgcpa.com">Home</A> > <A HREF="../index.php">Calculators</A> > <A HREF="index.php">2006</A> > Capital Gain</SPAN><BR>	
+
+<A NAME="Top"></A>
+<CENTER>
+<FONT FACE="Copperplate Gothic Bold" COLOR="green">
+<H2><b>Estimated</b> 2006 Capital Gains Tax Calculator</H2>
+</FONT>
+</CENTER>
+
+
+
+<CENTER>
+<FORM NAME="tax">
+<TABLE BORDER="0">
+<TR><TD COLSPAN="3"><HR></TD></TR>
+<TR>
+     <TD>Filing status</TD><TD><INPUT TYPE=RADIO NAME=status VALUE="Single" CHECKED>Single
+         <BR><INPUT TYPE=RADIO NAME=status VALUE="Maried">Married
+     </TD>
+</TR>
+
+<TR valign=top>
+     <TD><B> </B> Enter your taxable income (including gains)  </TD><TD><INPUT TYPE=TEXT NAME=TaxableIncome SIZE=10 MAXLENGTH=10></TD>
+<TD>
+<TR valign=top>
+     <TD><B> </B> Net 28% rate capital gain or -loss  </TD><TD><INPUT TYPE=TEXT NAME=Long28TermCG SIZE=10 MAXLENGTH=10></TD>
+<TD>
+<TR valign=top>
+     <TD><B> </B> Net unrecaptured section 1250 gain  </TD><TD><INPUT TYPE=TEXT NAME=Section1250CG SIZE=10 MAXLENGTH=10></TD>
+<TD>
+<TR valign=top>
+     <TD><B> </B> Enter amount from Form 4952, line 4e  </TD><TD><INPUT TYPE=TEXT NAME=Form4952 SIZE=10 MAXLENGTH=10></TD>
+<TD>
+<TR valign=top>
+     <TD><B> </B> Qualified 5-year gain from worksheet </TD><TD><INPUT TYPE=TEXT NAME=FiveYGain SIZE=10 MAXLENGTH=10></TD>
+<TD>
+<TR><TD colspan="2" ><HR></td></TR>
+<TR valign=top>
+     <TD><B> </B> Net short term capital gain or -loss  </TD><TD><INPUT TYPE=TEXT NAME=ShortTermCG SIZE=10 MAXLENGTH=10></TD>
+<TD>
+
+<TR valign=top>
+     <TD><B> </B> Net long term capital gain or -loss </TD><TD><INPUT TYPE=TEXT NAME=LongTermCG SIZE=10 MAXLENGTH=10></TD>
+</FORM>
+<TD>
+
+<form name="taxAnswer" >&nbsp; Tax = 
+<input a type="text" name="counter" size=8 value="">
+</TD></TR>
+
+<TR Valign=top><TD  COLSPAN="3"><HR></TD></TR>
+</TABLE>
+Print calculation to window 
+<INPUT TYPE=checkbox NAME=print >
+</FORM>
+
+<FORM>
+<INPUT TYPE="button" VALUE="Calculate" onClick=printResults()>
+</FORM>
+
+<A HREF="index.php">Return</A>
+<P>
+
+<FORM>
+<INPUT TYPE="button" VALUE="Disclamer" onClick=disclamer()>
+</FORM>
+
+</CENTER>
+Copyright &copy; 2006
+<BR><FONT SIZE="-2">Last modified 03/03/06 </FONT>
+
+
+<center><font size="-3"<BR><BR>Gunnison & Johannes, PC<BR> 4540 SW 110th Ave<BR> Beaverton, OR  97005<BR>503-646-5335<BR><BR></FONT></center></BODY>
+</HTML>

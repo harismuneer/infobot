@@ -1,0 +1,829 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-21T20:08:45Z
+WARC-TREC-ID: clueweb12-1611wb-15-25737
+WARC-IP-Address: 132.174.1.251
+WARC-Payload-Digest: sha1:ZJMOCHVKXCZ5UYIPSVFA75TZ7G6LG3AW
+WARC-Target-URI: http://cdm15017.contentdm.oclc.org/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South
+WARC-Record-ID: <urn:uuid:babc4a10-6cfd-46ad-88df-e80590ce9f27>
+Content-Type: application/http; msgtype=response
+Content-Length: 83088
+
+HTTP/1.1 200 OK
+Date: Sat, 21 Apr 2012 20:08:47 GMT
+Server: Apache
+X-Powered-By: PHP/5.3.3
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!--   
+CONTENTdm Version 4.3000.0    
+(c) DiMeMa, Inc. 2007 - All Rights Reserved
+//-->
+
+
+
+<!-- http://cdmfindap04pxdu:16038/!/search?query=%28ft%3ASouth%29 and (za:f3 or "128.2.207.79")&group=$group.pa.cp<ITEM><DB>$pa</DB><KEY>$cp</KEY><SORT>$sort$a0$a5</SORT></ITEM>&collection=/p15017coll13/&suggest=1&facet=1&maxfacet=10&rsum=&facetinitial=&rankboost=&proximity=strict&priority=normal&unanchoredphrases=1&maxres=20&firstres=0&rform=/!/null.htm //-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+<title>Hagley Digital Archives  Search Results</title>
+
+<style type="text/css">
+<!--
+
+.maintext
+	{
+	font-family:arial;
+	font-size:70%;
+	color:#000000;
+	}
+
+.maintextwhite
+	{
+	font-family:arial;
+	font-size:70%;
+	color:#ffffff;
+	}
+
+.smalltext
+	{
+	color:#000000;
+	font-family:arial;
+	font-size:65%;
+	}
+	
+.headertext
+	{
+	font-family:Arial,verdana;
+	font-size:140%;
+	color:#000000;
+	font-weight:bold;
+	letter-spacing:1.9pt;
+	margin-left: 13px;
+	}
+	
+.helpheading
+	{
+	font-family:arial;
+	font-size:140%;	
+	color:#000000;
+	font-weight:bold;	
+	}
+
+.helpsubheading
+	{
+	font-family:arial;
+	font-size:120%;	
+	color:#000000;
+	font-weight:bold;
+	}
+	
+.red
+	{
+	font-family:arial;
+	font-size:100%;
+	color:#990000;
+	}
+
+hr
+	{
+	color:#cccccc;
+	}	
+	
+.copyright
+	{
+	font-family:verdana;
+	font-size:70%;
+	color:#ffffff;
+	}
+	
+.copyrightavon
+	{
+	font-family:verdana;
+	font-size:70%;
+	color:#CCCCCC;
+	}
+a.copyrightavon
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#CCCCCC;
+	text-decoration:none;
+}
+	
+a.copyright
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#ffffff;
+	text-decoration:none;
+	}
+	
+a.copyright:hover
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#999999;
+	text-decoration:none;
+	}	
+
+.offstatus
+	{
+	color:#333333;
+	cursor:text;
+	}
+	
+a.offstatus
+	{
+	color:#333333;
+	cursor:text;
+	}	
+	
+a.offstatus:hover
+	{
+	color:#333333;
+	cursor:text;
+	}
+	
+a
+	{
+	font-family:arial;
+	font-size:100%;
+	color:#000000;
+	text-decoration:none;
+	}
+	
+a:hover
+	{
+	font-family:arial;
+	font-size:100%;
+	color:#999999;
+	text-decoration:none;
+	}
+
+.genmenu
+	{
+	font-family:geneva,verdana;
+	font-size:75%;
+	color:#000000;
+	font-weight:normal;
+	letter-spacing:1.1pt;
+	text-decoration:none;
+	}
+	
+a.genmenu
+	{
+	font-family:geneva,verdana;
+	font-size:100%;
+	color:#000000;
+	font-weight:normal;
+	letter-spacing:1.1pt;
+	text-decoration:none;
+	}
+	
+a.genmenu:hover
+	{
+	font-family:geneva,verdana;
+	font-size:100%;
+	color:#999999;
+	font-weight:normal;
+	letter-spacing:1.1pt;
+	text-decoration:none;
+	}
+
+
+	
+.submenu
+	{
+	font-family:verdana;
+	font-size:75%;
+	color:#000000;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+a.submenu
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#000000;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+a.submenu:hover
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#999999;
+	font-weight:normal;
+	text-decoration:none;
+	}
+
+.leftmenu
+	{
+	font-family:verdana;
+	font-size:70%;
+	color:#202020;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+a.leftmenu
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#202020;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+a.leftmenu:hover
+	{
+	font-family:verdana;
+	font-size:100%;
+	color:#999999;
+	font-weight:normal;
+	text-decoration:none;
+	}
+
+a.nonlink
+	{
+	font-family:arial;
+	font-size:100%;
+	color:#000000;
+	text-decoration:none;
+	}
+
+a.nonlink:hover
+	{
+	font-family:arial;
+	font-size:100%;
+	color:#000000;
+	text-decoration:none;
+	}	
+.asterix
+	{
+	color:#ff0000;
+	font-family:arial;
+	font-size:90%;
+	font-weight:bold;
+	}
+	
+.tdtext
+	{
+	text-align:left;
+	vertical-align:top;
+	}
+	
+.tdviewtext
+	{
+	text-align:left;
+	vertical-align:top;
+	}
+	
+.tdimage
+	{
+	border:1px dashed #ffffff;
+	background-color:#ffffff;
+	padding:5px;
+	}
+
+.tdfavimage
+	{	
+	border:1px none #ffffff;
+	background-color:;
+	padding:5px;
+	}
+	
+input
+	{
+	font-family:arial;
+	font-size:65%;
+	color:#000000;
+	background-color:#eeeeee;
+	}
+		
+input.buttons
+	{	
+	font-family:arial;
+	font-size:65%;
+	font-weight:normal;
+	background-color:#aaaaaa;
+	color:#ffffff;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:none;
+	cursor:hand;
+	}
+	
+input.searchbutton
+	{	
+	font-family:arial;
+	font-size:65%;
+	font-weight:normal;
+	background-color:#5b8eab;
+	color:#cccccc;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:none;
+	cursor:hand;
+	}
+
+input.norm
+	{	
+	font-family:arial;
+	font-size:65%;
+	font-weight:normal;
+	color:#ffffff;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:none;
+	cursor:hand;
+	}
+
+input.checkbox
+	{	
+	font-family:arial;
+	font-size:65%;
+	font-weight:normal;
+	color:#000000;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:none;
+	cursor:hand;
+	}
+	
+select
+	{
+	font-family:arial;
+	font-size:65%;
+	color:#000000;
+	background-color:#eeeeee;
+	}
+	
+a.item
+	{
+	color:#000000;
+	font-family:arial;
+	font-size:90%;
+	font-weight:normal;
+	text-decoration:none;
+	}
+
+a.item:hover
+	{
+	color:#999999;
+	font-family:arial;
+	font-size:90%;
+	font-weight:normal;
+	text-decoration:none;
+	}
+	
+.iframescroll
+	{
+	scrollbar-face-color:#cccccc;
+	scrollbar-highlight-color:#cccccc;
+	scrollbar-shadow-color:#cccccc;
+	scrollbar-arrow-color:#ffffff;
+	scrollbar-arrow-size:20px;
+	scrollbar-track-color:#ffffff;
+	scrollbar-darkshadow-color:#AAAAAA;
+	scrollbar-3Dlight-color:#EEEEEE;
+	}
+
+.highlightbox 
+{
+	border: none;
+	display:inline;
+}
+
+.transbox 
+{
+	border: 2px solid #ffff00;
+	background-color:#ffff00;
+	display:inline;
+	filter:alpha(opacity=20);
+	opacity:0.2;
+	-moz-opacity:0.2;
+}
+
+input.searchboxes
+	{
+	font-family:arial;
+	font-size:65%;
+	color:#000000;
+	background-color:#eeeeee;
+	width:200px;
+	}
+
+a.langlink
+	{
+	font-family:arial;
+	font-size:65%;
+	color:#dddddd;
+	font-weight:bold;
+	letter-spacing:1.1pt;
+	text-decoration:none;
+	}
+	
+a.langlink:hover
+	{
+	font-family:arial;
+	font-size:65%;
+	color:#ffffff;
+	font-weight:bold;
+	letter-spacing:1.1pt;
+	text-decoration:none;
+	}
+
+.res_submenu
+	{
+	font-family:arial;
+	font-size:70%;
+	color:S_RESULTS_SUB_FONT_COLOR;
+	text-decoration:none;
+	}
+	
+a.res_submenu
+	{
+	color:S_RESULTS_SUB_LINK_COLOR;
+	font-size:100%;
+	text-decoration:none;
+	}
+	
+a.res_submenu:hover
+	{
+	color:S_RESULTS_SUB_LINK_HOVER_COLOR;
+	font-size:100%;
+	text-decoration:none;
+	}
+	
+a.addfavoffstatus
+	{
+	color:S_ADD_FAV_OFFSTATUS;
+	cursor:text;
+	}	
+	
+a.addfavoffstatus:hover
+	{
+	color:S_ADD_FAV_OFFSTATUS;
+	cursor:text;
+	}	
+//-->
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// php definitions assigned to javascript variables for global.js
+var thisdomain = "cdm15017.contentdm.oclc.org";
+var error_cookies = "Cookies must be enabled for this functionality.";
+var page_bgColor = "#ffffff";
+var status_off = "#333333";
+var status_on = "#ff0000";
+var already_fav = "One or more of the items you selected has been added previously to My Favorites.";
+var too_many_fav = "The items selected cannot be added. The maximum number of items in My Favorites is limited to 100. Either delete existing items from My Favorites or add fewer items.";
+var prefs_saved = "Your preferences have been updated.";
+var added_fav = "Items have been added to My Favorites.";
+var max_fav = 100;
+var pad_height = 10;
+var head_height = 89;
+var bot_menu = 0;
+var fav_menu_width = 212;
+var doc_menu_width = 216;
+var doc_menu_height = 62;
+//-->
+</script>	  
+
+
+
+<script language="JavaScript" type="text/javascript" src="jscripts/global.js"></script>
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+document.cookie="SEARCH=dc<0>CISOSEARCHALL%3CSouth%3E;path=/";
+//-->
+</script>
+
+</head>
+
+<body marginwidth="0" topmargin="0" leftmargin="0" marginheight="0" bgcolor="#ffffff" onclick="isStatus()">
+
+<a name="pagetopper"></a>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td rowspan="20" bgcolor="#cccccc" width="2">&nbsp;</td>
+	<td>
+
+
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="#cccccc" width="100%">
+<tr>
+	<td><img src="images/spacer.gif" width="1" height="2" border="0" alt="" /></td>
+</tr>
+<tr>
+	<td>
+
+	<table cellpadding="1" cellspacing="0" border="0" width="100%">	
+	<tr>
+		<td rowspan="2" nowrap="nowrap"><img src="images/logo64.gif" width="108" height="80" alt="CONTENTdm" TITLE="CONTENTdm" /><img src="images/spacer.gif" width="5" height="1" border="0" alt="" /></td>
+		<td colspan="3" valign="top">
+
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%" bgcolor="#cccccc" title="global menu">
+
+
+<form name="bell" method="get" action="/dmscripts/admin/login.exe">
+	
+<tr>
+	<td align="left" style="border-bottom: 6px solid #cccccc;border-left: 6px solid #cccccc;border-top: 6px solid #cccccc" nowrap="nowrap"><span class="genmenu"><a class="genmenu" href="#content" title="Skip to content"><img src="images/spacer.gif" width="1" height="1" border="0" alt="Skip to content" /></a>&nbsp;<a class="genmenu" href="/index.php" title="Home">Hagley Digital Archives</a> | <a class="genmenu" href="browse.php?CISOROOT=/p15017coll13" title="Browse">Browse</a> | <a class="genmenu" href="search.php?CISOROOT=/p15017coll13" title="Advanced Search">Advanced Search</a> | <a class="genmenu" href="index_p15017coll13.php?CISOROOT=/p15017coll13" title="About">About</a> | <a href="/custom/FAQ.php">FAQ / Help</a> | <a href="/custom/purchase.php">Purchase Images</a> | <a href="http://www.hagley.org/library/home.html">Library Home</a>&nbsp;</span></td>
+	<td valign="bottom" align="right" style="border-top: 6px solid #cccccc;border-bottom: 6px solid #cccccc;border-right: 6px solid #cccccc" nowrap="nowrap"><span class="genmenu">
+
+
+	&nbsp;</span></td>
+
+	
+</tr>
+
+</form>
+
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" width="90%"><span class="headertext"><a href="http://digital.hagley.org/cdm4/index_p15017coll13.php?CISOROOT=/p15017coll13">Hagley Civil War Collection</a></span></td>
+		<td><img src="images/spacer.gif" width="1" height="48" border="0" alt="" /></td>
+		<td valign="top" align="right">		
+
+		<table cellpadding="0" cellspacing="0" border="0" bgcolor="#cccccc" align="right">
+		<tr>
+			<td align="right">
+			
+			<table cellpadding="2" cellspacing="0" border="0" bgcolor="#cccccc">		
+
+			<form name="simplesearchform" method="get" action="results.php" onsubmit="javascript:if(document.simplesearchform.CISOBOX1.value==''){alert('Enter a valid search term.');return false;}else{dmTextCookie(document.simplesearchform.CISOBOX1);return true;}">
+
+			<tr>
+				<td nowrap="nowrap" style="border-left: 6px solid #cccccc;border-top: 6px solid #cccccc;border-bottom: 6px solid #cccccc"><input type="hidden" name="CISOOP1" value="all" /><input type="text" value="" name="CISOBOX1" size="25" title="simple search field" /><input type="hidden" name="CISOFIELD1" value="CISOSEARCHALL" /><input type="hidden" name="CISOROOT" value="/p15017coll13" /></td><td style="border-top: 6px solid #cccccc;border-right: 6px solid #cccccc;border-bottom: 6px solid #cccccc"><input type="submit" value="Search" title="Search" class="searchbutton" /></td>
+			</tr>
+
+			</form>		
+
+			</table>
+		
+			</td>
+		</tr>
+		
+		
+		
+		</table>
+		
+		</td>
+	</tr>
+	</table>
+	
+	</td>
+</tr>
+<tr>
+	<td><img src="images/spacer.gif" width="1" height="2" border="0" alt="" /></td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+<tr>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc;border-left: S_RESULTS_SUB_BORDERpx solid #cccccc" width="5"><img src="images/spacer.gif" width="5" height="18" alt="" /></td>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc" nowrap="nowrap" width="70%"><span class="res_submenu">results <b>1</b>-<b>20</b> of <b>64</b> item(s)&nbsp;</span></td>
+	<td align="right" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc" nowrap="nowrap"><span class="res_submenu">
+
+page 1 of 4 : ( <span class="res_offstatus"><<</span> &#160;1&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,21" title="Go to page 2">2</a>&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,41" title="Go to page 3">3</a>&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,61" title="Go to page 4">4</a>&#160; <span class="res_offstatus">>></span> ) ::  <span class="res_offstatus">previous</span> : <a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,21" title="Next page">next</a>
+
+	</span></td>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc;border-right: S_RESULTS_SUB_BORDERpx solid #cccccc"><img src="images/spacer.gif" width="5" height="18" alt="" /></td>	
+</tr>
+</table>
+
+	</td>
+	<td rowspan="20" bgcolor="#cccccc" width="2">&nbsp;</td>
+</tr>
+
+<tr>
+	<td valign="top" align="left">
+	
+	<a name="content"></a>
+
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td align="left" valign="top">
+
+
+<!-- +++++++ >>> start content here +++++++ //-->
+<!-- +++++++ >>> start content here +++++++ //-->
+<!-- +++++++ >>> start content here +++++++ //-->
+
+
+<table cellpadding="3" cellspacing="0" border="0" width="100%">
+<tr>
+	<td align="left" nowrap="nowrap" style="border-bottom: 1px solid #cccccc"><span class="maintext"><b>Search results for:</b> <span class="red"><b>64</b></span> item(s) for: <span class="red"><b>South </b></span></td>
+	<td valign="top" align="left"  style="border-bottom: 1px solid #cccccc" nowrap="nowrap"></td>
+	<td align="left" style="border-bottom: 1px solid #cccccc" nowrap="nowrap">&nbsp;<input type="button" value="search again" title="Search again" class="buttons" onclick="javascript:history.back(0)" />&nbsp;</td>
+	<td align="right" width="80%"><span class="maintext">&nbsp;</span></td>
+</tr>
+</table>
+
+
+
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+	<td align="left" valign="top">
+
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td align="left" valign="top" style="border: 1px solid #cccccc">
+
+		<table cellpadding="3" cellspacing="0" border="0" width="100%" summary="Search results for">
+
+		<form name="searchResultsForm">
+
+		<input type="hidden" name="act" value="addtofav" />
+
+<tr>
+		<th class="tdtext"><span class="maintext">&nbsp;</span></th><th class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Image:</span></th><th class="tdtext" nowrap="nowrap" style="border-left: 8px solid #ffffff"><span class="maintext"> <a href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSORT=title|r" title="Reverse sort by Title"><img src="/cdm4/images/up_arrow.gif" width="9" height="9" border="0" alt="" /> Title:</a></span></th><th class="tdtext" nowrap="nowrap" style="border-left: 8px solid #ffffff"><span class="maintext"> <a href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSORT=subjec|f" title="Sort by Subject"> Subject:</a></span></th><th class="tdtext" nowrap="nowrap" style="border-left: 8px solid #ffffff"><span class="maintext"> <a href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSORT=descri|f" title="Sort by Description"> Description:</a></span></th></tr>
+		<tr>
+			<td colspan="5"><hr noshade size="1" color=#cccccc></td></tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|712" title="1st Mortar Battery, Morris Island " /><span class="maintext"> 1. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=712&CISOBOX=1&REC=1" title="1st Mortar Battery, Morris Island " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=712" width="80" height="51" border="0" alt="1st Mortar Battery, Morris Island " title="1st Mortar Battery, Morris Island " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=712&CISOBOX=1&REC=1" title="1st Mortar Battery, Morris Island " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">1st Mortar Battery, Morris Island </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina  </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|716" title="300 pounder, Captain Shaw, 3rd Regiment, left batteries " /><span class="maintext"> 2. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=716&CISOBOX=1&REC=2" title="300 pounder, Captain Shaw, 3rd Regiment, left batteries " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=716" width="80" height="51" border="0" alt="300 pounder, Captain Shaw, 3rd Regiment, left batteries " title="300 pounder, Captain Shaw, 3rd Regiment, left batteries " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=716&CISOBOX=1&REC=2" title="300 pounder, Captain Shaw, 3rd Regiment, left batteries " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">300 pounder, Captain Shaw, 3rd Regiment, left batteries </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|715" title="[300 pound Parrott after bursting of muzzle] " /><span class="maintext"> 3. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=715&CISOBOX=1&REC=3" title="[300 pound Parrott after bursting of muzzle] " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=715" width="80" height="51" border="0" alt="[300 pound Parrott after bursting of muzzle] " title="[300 pound Parrott after bursting of muzzle] " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=715&CISOBOX=1&REC=3" title="[300 pound Parrott after bursting of muzzle] " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">[300 pound Parrott after bursting of muzzle] </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|727" title="[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner " /><span class="maintext"> 4. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=727&CISOBOX=1&REC=4" title="[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=727" width="80" height="51" border="0" alt="[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner " title="[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=727&CISOBOX=1&REC=4" title="[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">[Fort] Sumpter, [Fort] Gregg, and part of [Fort] Wagner </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|726" title="[Morris Island, South Carolina] " /><span class="maintext"> 5. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=726&CISOBOX=1&REC=5" title="[Morris Island, South Carolina] " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=726" width="80" height="50" border="0" alt="[Morris Island, South Carolina] " title="[Morris Island, South Carolina] " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=726&CISOBOX=1&REC=5" title="[Morris Island, South Carolina] " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">[Morris Island, South Carolina] </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|714" title="&#34;Burst&#34; 100 pound Parrott " /><span class="maintext"> 6. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=714&CISOBOX=1&REC=6" title="&#34;Burst&#34; 100 pound Parrott " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=714" width="80" height="52" border="0" alt="&#34;Burst&#34; 100 pound Parrott " title="&#34;Burst&#34; 100 pound Parrott " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=714&CISOBOX=1&REC=6" title="&#34;Burst&#34; 100 pound Parrott " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">&#34;Burst&#34; 100 pound Parrott </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. Image is of a burst 100 pound Parrott rifle. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|710" title="&#34;Swamp Angel&#34; dismounted " /><span class="maintext"> 7. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=710&CISOBOX=1&REC=7" title="&#34;Swamp Angel&#34; dismounted " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=710" width="80" height="51" border="0" alt="&#34;Swamp Angel&#34; dismounted " title="&#34;Swamp Angel&#34; dismounted " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=710&CISOBOX=1&REC=7" title="&#34;Swamp Angel&#34; dismounted " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">&#34;Swamp Angel&#34; dismounted </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|728" title="Advance works, from the Beacon House " /><span class="maintext"> 8. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=728&CISOBOX=1&REC=8" title="Advance works, from the Beacon House " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=728" width="80" height="51" border="0" alt="Advance works, from the Beacon House " title="Advance works, from the Beacon House " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=728&CISOBOX=1&REC=8" title="Advance works, from the Beacon House " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Advance works, from the Beacon House </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|1926" title="Agricultural implements going South " /><span class="maintext"> 9. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=1926&CISOBOX=1&REC=9" title="Agricultural implements going South " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=1926" width="80" height="46" border="0" alt="Agricultural implements going South " title="Agricultural implements going South " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=1926&CISOBOX=1&REC=9" title="Agricultural implements going South " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Agricultural implements going South </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Patriotic envelopes; Patriotism; </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><nobr></nobr> </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|708" title="Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel " /><span class="maintext"> 10. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=708&CISOBOX=1&REC=10" title="Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=708" width="80" height="50" border="0" alt="Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel " title="Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=708&CISOBOX=1&REC=10" title="Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battery B, 3rd NY Artillery, &#34;Napoleon guns&#34;, Captain Ashcroft, 2nd parallel </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|707" title="Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel " /><span class="maintext"> 11. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=707&CISOBOX=1&REC=11" title="Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=707" width="80" height="50" border="0" alt="Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel " title="Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=707&CISOBOX=1&REC=11" title="Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battery B, four 12 pound Howitzers, Lieutenant Guy V. Henry, 2nd parallel </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|701" title="Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel " /><span class="maintext"> 12. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=701&CISOBOX=1&REC=12" title="Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=701" width="80" height="52" border="0" alt="Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel " title="Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=701&CISOBOX=1&REC=12" title="Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battery F, 3rd NY Artillery Sergeant P. Birchmeyer, 2nd parallel </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. The cannons shown in this image are Wiard guns. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|704" title="Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel " /><span class="maintext"> 13. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=704&CISOBOX=1&REC=13" title="Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=704" width="80" height="51" border="0" alt="Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel " title="Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=704&CISOBOX=1&REC=13" title="Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battery Meade, two 100 pound Parrotts, Sergeant George Woreen, 2nd parallel </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|696" title="Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, " /><span class="maintext"> 14. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=696&CISOBOX=1&REC=14" title="Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=696" width="80" height="50" border="0" alt="Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, " title="Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=696&CISOBOX=1&REC=14" title="Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battery Rosecrans, 3rd Regiment, Artillery Captain Joe J. Comstock, three 100 pounders, 1 dismounted, 2nd parallel </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|690" title="Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard " /><span class="maintext"> 15. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="document.php?CISOROOT=/p15017coll13&CISOPTR=690&REC=15" title="Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=690" width="80" height="61" border="0" alt="Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard " title="Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="document.php?CISOROOT=/p15017coll13&CISOPTR=690&REC=15" title="Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Battle of Port Royal, or The Bombardment of Forts Walker & Beauregard </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Campaigns & battles; Naval warfare; Naval prints; Government vessels; Military officers; Sheet music covers; Music </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Sheet music commemorating the U.S. Navy's successful attacks on Forts Walker and Beauregard at Port Royal, South Carolina, 7 November 1861. This attack was carried out by the South Atlantic Blockading Squadron under the command of Commodore Samuel Francis Du Pont. The Battle of Port Royal was one of the first major victories for U.S. military forces during the Civil War. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|729" title="Beach view of Morris Island, Ironsides in the distance " /><span class="maintext"> 16. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=729&CISOBOX=1&REC=16" title="Beach view of Morris Island, Ironsides in the distance " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=729" width="80" height="51" border="0" alt="Beach view of Morris Island, Ironsides in the distance " title="Beach view of Morris Island, Ironsides in the distance " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=729&CISOBOX=1&REC=16" title="Beach view of Morris Island, Ironsides in the distance " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Beach view of Morris Island, Ironsides in the distance </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Navies; Armored vessels </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. The ironclad U.S.S. New Ironsides is seen in the distance, in action against Confederate positions in Charleston Harbor. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|723" title="Beacon House, north side " /><span class="maintext"> 17. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=723&CISOBOX=1&REC=17" title="Beacon House, north side " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=723" width="80" height="51" border="0" alt="Beacon House, north side " title="Beacon House, north side " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=723&CISOBOX=1&REC=17" title="Beacon House, north side " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Beacon House, north side </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|721" title="Beacon House, south side " /><span class="maintext"> 18. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=721&CISOBOX=1&REC=18" title="Beacon House, south side " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=721" width="80" height="51" border="0" alt="Beacon House, south side " title="Beacon House, south side " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=721&CISOBOX=1&REC=18" title="Beacon House, south side " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Beacon House, south side </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|698" title="Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries " /><span class="maintext"> 19. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=698&CISOBOX=1&REC=19" title="Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=698" width="80" height="51" border="0" alt="Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries " title="Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=698&CISOBOX=1&REC=19" title="Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Captain Colwell, two 100 pound and one 200 pound Parrotts, left batteries </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Civil wars; Military facilities; Cannons; Artillery (Troops); Artillery (Weaponry); Forts & fortifications </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Second Battle of Fort Wagner Morris Island, South Carolina Location also known as Battery Wagner. </span></td></tr>
+				<tr>
+					<td colspan="5"><hr noshade size="1" color=#cccccc></td>
+				</tr><tr>
+		<td class="tdtext" nowrap="nowrap"><input type="checkbox" name="chk[]" value="/p15017coll13|679" title="Captain Percival Drayton (1812-1865), U.S. Navy " /><span class="maintext"> 20. </span></td><td class="tdimage" align="left" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=679&CISOBOX=1&REC=20" title="Captain Percival Drayton (1812-1865), U.S. Navy " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top"><img src="/cgi-bin/thumbnail.exe?CISOROOT=/p15017coll13&CISOPTR=679" width="63" height="80" border="0" alt="Captain Percival Drayton (1812-1865), U.S. Navy " title="Captain Percival Drayton (1812-1865), U.S. Navy " /></a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext"><a href="item_viewer.php?CISOROOT=/p15017coll13&CISOPTR=679&CISOBOX=1&REC=20" title="Captain Percival Drayton (1812-1865), U.S. Navy " onclick="dmSessCookie('refer','http%3A%2F%2Fcdm15017.contentdm.oclc.org%2Fcdm4%2Fresults.php%3FCISOOP1%3Dany%26CISOFIELD1%3DCISOSEARCHALL%26CISOROOT%3D%2Fp15017coll13%26CISOBOX1%3DSouth%26QUY%3D20%2C%7C%2Fp15017coll13+712+jp2+-1%7C%2Fp15017coll13+716+jp2+-1%7C%2Fp15017coll13+715+jp2+-1%7C%2Fp15017coll13+727+jp2+-1%7C%2Fp15017coll13+726+tif+-1%7C%2Fp15017coll13+714+jp2+-1%7C%2Fp15017coll13+710+tif+-1%7C%2Fp15017coll13+728+jp2+-1%7C%2Fp15017coll13+1926+jp2+-1%7C%2Fp15017coll13+708+tif+-1%7C%2Fp15017coll13+707+tif+-1%7C%2Fp15017coll13+701+jp2+-1%7C%2Fp15017coll13+704+jp2+-1%7C%2Fp15017coll13+696+tif+-1%7C%2Fp15017coll13+690+cpd+-1%7C%2Fp15017coll13+729+jp2+-1%7C%2Fp15017coll13+723+jp2+-1%7C%2Fp15017coll13+721+jp2+-1%7C%2Fp15017coll13+698+jp2+-1%7C%2Fp15017coll13+679+jp2+-1');dmSessCookie('DMDOCSTAT','CISOROOT=/p15017coll13')" target="_top">Captain Percival Drayton (1812-1865), U.S. Navy </a></span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Military officers; Navies; Blockades; Armored vessels </span></td><td class="tdtext" style="border-left: 8px solid #ffffff"><span class="maintext">Career Navy officer Percival Drayton served as a junior commander in the South Atlantic Blockading Squadron under Rear-Admiral Samuel Francis Du Pont and later as Fleet Captain of the West Gulf Blockading Squadron under Rear-Admiral David G. Farragut. </span></td>
+		</form>
+
+		</table>
+
+		</td>
+	</tr>
+	</table>
+
+	</td>
+</tr>
+
+</table>
+
+<!-- +++++++ <<< end content here +++++++ //-->
+<!-- +++++++ <<< end content here +++++++ //-->
+<!-- +++++++ <<< end content here +++++++ //-->
+
+
+		</td>
+	</tr>
+	</table>
+
+
+</td>
+</tr>
+
+<tr>
+	<td>
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+<tr>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc;border-left: S_RESULTS_SUB_BORDERpx solid #cccccc" width="5"><img src="images/spacer.gif" width="5" height="18" alt="" /></td>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc" nowrap="nowrap" width="70%"><span class="res_submenu">results <b>1</b>-<b>20</b> of <b>64</b> item(s)&nbsp;</span></td>
+	<td align="right" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc" nowrap="nowrap"><span class="res_submenu">
+
+page 1 of 4 : ( <span class="res_offstatus"><<</span> &#160;1&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,21" title="Go to page 2">2</a>&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,41" title="Go to page 3">3</a>&#160;&#160;<a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,61" title="Go to page 4">4</a>&#160; <span class="res_offstatus">>></span> ) ::  <span class="res_offstatus">previous</span> : <a class="res_submenu" href="/cdm4/results.php?CISOOP1=any&CISOFIELD1=CISOSEARCHALL&CISOROOT=/p15017coll13&CISOBOX1=South&CISOSTART=1,21" title="Next page">next</a>
+
+	</span></td>
+	<td align="left" style="border-top: S_RESULTS_SUB_BORDERpx solid #cccccc;border-bottom: S_RESULTS_SUB_BORDERpx solid #cccccc;border-right: S_RESULTS_SUB_BORDERpx solid #cccccc"><img src="images/spacer.gif" width="5" height="18" alt="" /></td>	
+</tr>
+</table>
+
+	<table cellpadding="0" cellspacing="0" border="0" bgcolor="#cccccc" width="100%">
+	<tr>
+		<td>
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td align="left"><img src="images/spacer.gif" width="1" height="18" alt="" /></td>
+	<td align="left"><span class="copyright"><a href="http://www.hagley.org/library/home.html">&copy; Hagley Museum and Library</a> | <a href="http://www.hagley.org/library/askhagley.html" target="_blank">Questions, comments, and corrections to research@hagley.org</a> | <a href="http://www.oclc.org/contentdm/">Site powered by ContentDM</a> </span></td>
+</tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1463680-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+		
+		
+
+		</td>
+	</tr>
+	</table>
+
+
+	</td>
+</tr>
+
+
+</table>
+
+</body>
+</html>

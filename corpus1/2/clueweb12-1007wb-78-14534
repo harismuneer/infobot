@@ -1,0 +1,507 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-18T03:45:09Z
+WARC-TREC-ID: clueweb12-1007wb-78-14534
+WARC-Target-URI: http://ipv6.navy.mil/navydata/bios/navybio.asp?bioID=19
+WARC-Payload-Digest: sha1:J7QBUT7J6RW5YHX7ADSLH37HRYRSOF3D
+WARC-IP-Address: 23.15.9.99
+WARC-Record-ID: <urn:uuid:e159691f-b791-4d24-a77a-7b8937785dd6>
+Content-Type: application/http; msgtype=response
+Content-Length: 22324
+
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+Header: US Navy
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Cache-Control: max-age=69801
+Expires: Sun, 18 Mar 2012 23:08:30 GMT
+Date: Sun, 18 Mar 2012 03:45:09 GMT
+Content-Length: 22064
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+<title>US Navy Biographies - ADMIRAL ROBERT F. WILLARD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../navy.css" rel="stylesheet" type="text/css">
+<SCRIPT type="text/javascript">
+<!--
+
+// Test for Microsoft Internet Explorer
+//-----------------------------------------------------------------------
+function isMSIE() 
+//-----------------------------------------------------------------------
+{
+	return (navigator.appVersion.indexOf("MSIE") != -1)
+}
+
+
+// Netscape CSS Bug Fix
+if (document.layers){
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	}
+	
+//-----------------------------------------------------------------------
+function reloadPage() 
+//-----------------------------------------------------------------------
+{
+	if (innerWidth != origWidth || innerHeight != origHeight)
+		location.reload();
+}
+	
+if (document.layers) onresize = reloadPage;	
+
+
+// Email Link Protection Functions
+var user;
+var domain;
+var suffix;
+var linktitle;
+
+// Show and Hide Functions
+//-----------------------------------------------------------------------
+function hide_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id;
+	
+	menu_id = document.getElementById(div_id);
+	
+	/* Hide the specified menu */
+	if (menu_id == null)
+	{
+		return;
+	}
+	else 
+	{
+		menu_id.className = 'hide';
+	}
+}
+
+//-----------------------------------------------------------------------
+function toggle_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id, old_value;
+	
+	menu_id = document.getElementById(div_id);
+	if (menu_id == null)
+		return;
+		
+	/* Retrive current class value */
+	old_value = menu_id.className;
+	
+	/* First hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+
+	/* set new class value */
+	if (old_value == 'hide')
+	{
+		menu_id.className = 'show';
+	}
+	else
+	{
+		menu_id.className = 'hide';	
+	}
+}	
+
+//-----------------------------------------------------------------------
+function show_all_menus()
+//-----------------------------------------------------------------------
+{
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'show';
+			}
+	}
+}	
+
+//-----------------------------------------------------------------------
+function toggle_display(div_id)
+//-----------------------------------------------------------------------
+{
+	var child;
+
+	/* Hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+	
+/*	child = document.all(window.event.srcElement.child);*/
+	child = document.getElementById(div_id);
+	
+	if (child == null)
+		return;
+	else
+	{
+		if (child.className == 'hide')
+		{
+			child.className = 'show';
+		}
+		else
+		{
+			child.className = 'hide';
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+		
+
+</head>
+
+<body bgcolor="#999999" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000033" link="#0066CC" vlink="#666666" alink="#666666" background="/images/body-tile.png">
+<!-- Masthead (logo, links, search) --> 
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+function clearText(theBox) {
+  theBox.value = "";
+}
+//-->
+</SCRIPT>
+<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+<style type="text/css">
+@import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #cccccc;
+}
+-->
+</style>
+<script language="JavaScript">
+function openwincno(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/cnopd.html', 'cno', properties);
+}
+</script>
+<script language="JavaScript">
+function openwin(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/radio.html', 'ahradio', properties);
+}
+</script>
+<table width=1000 height="50" border=0 align="center" cellpadding=0 cellspacing=0 bgcolor="#000033" style="background-image: url('/graphics/Navymil.png');background-position: right;background-repeat: no-repeat;">
+<form name=srchForm method=get action="http://search.dma.mil/search">
+  <tr>
+    <td width=725 height=50><a href="http://www.navy.mil"><img src="/images/bblank.gif" border=0 width=725 height=50 alt="Home Page"></a></td>
+        <td align=right>
+          <table border=0 cellpadding=0 cellspacing=1 width=265>
+            <tr>
+                  <td>&nbsp;<a href="http://www.navy.com" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Careers</strong></a></td>
+                  <td>&nbsp;<a href="/navydata/infoIndex.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Info&nbsp;Index</strong></a></td>
+                  <td>&nbsp;<a href="/about.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>About&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/submit/contacts.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Contact&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Home</strong></a>&nbsp;</td>
+            </tr>
+                <tr>
+                  <td align=center colspan=5><input maxlength=255 type=text name=q id=q value="Search Navy.mil" title="Search Navy.mil" style="height: 18px; width: 200px; font-size: 9px; font-weight: bold;" onFocus="clearText(this);">&nbsp;&nbsp;<input type=image src="/images/go_darkgray.gif" border=0 name=btnG alt="Submit"></td>
+                </tr>
+                <tr>
+                  <td align=center colspan=5><a href="/search/advanced_search.asp" style="font-size:11px; font-family:sans-serif; font-weight:regular; text-decoration:none; color:#FFFFFF"> >>> Advanced Search </a></td>
+                </tr>
+          </table>
+			<input type="hidden" name="client" value="navy_search">
+			<input type="hidden" name="proxystylesheet" value="navy_search">
+			<input type="hidden" name="output" value="xml_no_dtd">
+			<input type="hidden" name="site" id="site" value="navy_all">
+        </td>
+  </tr>
+</form>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <!-- Begin Standard USN Header Bar -->
+
+<style>
+        @import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var menu_ids = new Array('column2_menu','column3_menu','column4_menu','column5_menu','column6_menu');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CFDBE7">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="11%"><a href=""></a></td>
+<td width="11%"><a title="US Navy Today - for 508 viewers please click here then tab into the menu for this area"
+tabindex=200
+class="header_menu_item"
+href="javascript:void(0);"
+name="column2_menu_link"
+id="column2_menu_link"
+child="column2_menu"
+onclick="toggle_main_menu('column2_menu');">&nbsp;US Navy Today</a></td>
+
+<td width="11%"><a title="About the Navy - for 508 viewers please click here then tab into the menu for this area"
+tabindex=300
+class="header_menu_item"
+href="javascript:void(0);"
+name="column3_menu_link"
+id="column3_menu_link"
+child="column3_menu"
+onclick="toggle_main_menu('column3_menu');">&nbsp;About the Navy</a></td>
+
+<td width="11%"><a title="Navy Leadership - for 508 viewers please click here then tab into the menu for this area"
+tabindex=400
+class="header_menu_item"
+href="javascript:void(0);"
+name="column4_menu_link"
+id="column4_menu_link"
+child="column4_menu"
+onclick="toggle_main_menu('column4_menu');">&nbsp;Navy Leadership</a></td>
+
+<td width="11%"><a title="Media Resources - for 508 viewers please click here then tab into the menu for this area"
+tabindex=500
+class="header_menu_item"
+href="javascript:void(0);"
+name="column5_menu_link"
+id="column5_menu_link"
+child="column5_menu"
+onclick="toggle_main_menu('column5_menu');">&nbsp;Media Resources</a></td>
+
+<td width="11%"><a title="Links of Interest - for 508 viewers please click here then tab into the menu for this area"
+tabindex=600
+class="header_menu_item"
+href="javascript:void(0);"
+name="column6_menu_link"
+id="column6_menu_link"
+child="column6_menu"
+onclick="toggle_main_menu('column6_menu');">&nbsp;Links of Interest</a></td>
+
+<td width="17%"><a tabindex=700 class="header_menu_item" href="/navydata/infoIndex.asp">&nbsp;Information Index </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Column2 Menu Popup Items --->
+<div id="column2_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">US Navy Today:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=221 class="header_submenu_item" href="/navydata/navy_legacy_hr.asp?id=146">Status of the Navy </a></div>
+</td>
+<td width="330">
+<div><a tabindex=241 class="header_submenu_item" href="/links/alpha.asp">Navy Web Sites </a></div>
+</td>
+<td width="330">
+<div><a tabindex=261 class="header_submenu_item" href="/search/history_today.asp">Today in Naval History </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=290 href="javascript:void(0);" onclick="hide_main_menu('column2_menu');">Hide US Navy Today Menu</a></div>
+</div>
+</div>
+
+<!-- Column3 Menu Popup Items --->
+<div id="column3_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">About the Navy:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=321 class="header_submenu_item" href="/navydata/organization/org-top.asp">Navy Organization </a></div>
+</td>
+<td width="330">
+<div><a tabindex=341 class="header_submenu_item" href="/navydata/our_ships.asp">Our Ships </a></div>
+</td>
+<td width="330">
+<div><a tabindex=361 class="header_submenu_item" href="/navydata/fact.asp">Fact File </a></div>
+<div><a tabindex=362 class="header_submenu_item" href="/navydata/faq.asp">FAQ (Got a Question?) </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=390 href="javascript:void(0);" onclick="hide_main_menu('column3_menu');">Hide About the Navy Menu</a></div>
+</div>
+</div>
+
+<!-- Column4 Menu Popup Items --->
+<div id="column4_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Navy Leadership:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=421 class="header_submenu_item" href="/secnav/index.asp">Secretary of the Navy </a></div>
+<div><a tabindex=422 class="header_submenu_item" href="/navydata/bios/bio_list.asp">Biographies </a></div>
+</td>
+<td width="330">
+<div><a tabindex=441 class="header_submenu_item" href="/cno/index.asp">Chief of Naval Operations </a></div>
+<div><a tabindex=442 class="header_submenu_item" href="/navydata/ccklist.asp">Leadership Tools </a></div>
+</td>
+<td width="330">
+<div><a tabindex=461 class="header_submenu_item" href="/cnp/index.asp">Chief of Naval Personnel </a></div>
+<div><a tabindex=462 class="header_submenu_item" href="/mcpon/index.asp">Master Chief Petty Officer of the Navy </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=490 href="javascript:void(0);" onclick="hide_main_menu('column4_menu');">Hide Navy Leadership Menu</a></div>
+</div>
+</div>
+
+<!-- Column5 Menu Popup Items --->
+<div id="column5_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Media Resources:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=521 class="header_submenu_item" href="/view_photos_top.asp">Photo Gallery </a></div>
+<div><a tabindex=522 class="header_submenu_item" href="/view_galleries.asp">Eye on the Fleet Featured Gallery </a></div>
+<div><a tabindex=523 class="header_submenu_item" href="/view_videos.asp?vtype=5">All Hands Television Archive </a></div>
+<div><a tabindex=524 class="header_submenu_item" href="/podcast/podcast.asp">Podcasts and RSS Feeds </a></div>
+<div><a tabindex=525 class="header_submenu_item" href="/view_videos.asp">Video Gallery </a></div>
+<div><a tabindex=526 class="header_submenu_item" href="/view_flash_gallery.asp">Everyday in the Navy Archive </a></div>
+</td>
+<td width="330">
+<div><a tabindex=541 class="header_submenu_item" href="/navydata/cnopList.asp">CNO Podcast </a></div>
+<div><a tabindex=542 class="header_submenu_item" href="/navydata/mcponplist.asp">MCPON Podcast </a></div>
+<div><a tabindex=543 class="header_submenu_item" href="/view_videos.asp?vtype=6">All Hands Update Archive </a></div>
+<div><a tabindex=544 class="header_submenu_item" href="/view_webads.asp">Web Ad Gallery </a></div>
+<div><a tabindex=545 class="header_submenu_item" href="/view_printads.asp">Print Ad Gallery </a></div>
+</td>
+<td width="330">
+<div><a tabindex=561 class="header_submenu_item" href="/navydata/radioList.asp">All Hands Radio Archive </a></div>
+<div><a tabindex=562 class="header_submenu_item" href="/allhands.asp">All Hands Magazine </a></div>
+<div><a tabindex=563 class="header_submenu_item" href="/view_ggphotos.asp">Graphics Gallery </a></div>
+<div><a tabindex=564 class="header_submenu_item" href="/view_ahhphotos.asp">All Hands Photo Gallery </a></div>
+<div><a tabindex=565 class="header_submenu_item" href="https://service.govdelivery.com/service/multi_subscribe.html?code=USNAVYDMA" target=new>Subscribe/Unsubscribe to Navy News </a></div>
+<div><a tabindex=566 class="header_submenu_item" href="/photo_submit.asp">How to Submit a Photo to Navy Visual News </a></div>
+<div><a tabindex=567 class="header_submenu_item" href="/submit/index.asp">How to Submit a Story to Navy.mil </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=590 href="javascript:void(0);" onclick="hide_main_menu('column5_menu');">Hide Media Resources Menu</a></div>
+</div>
+</div>
+
+<!-- Column6 Menu Popup Items --->
+<div id="column6_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Links of Interest:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=621 class="header_submenu_item" href="http://www.npc.navy.mil/ReferenceLibrary/Publications/ShiftColors/" target=new>Shift Colors-Navy Retiree Newsletter </a></div>
+<div><a tabindex=622 class="header_submenu_item" href="/navco/">Navy Office of Community Outreach </a></div>
+<div><a tabindex=623 class="header_submenu_item" href="https://navyfamily.navy.mil/cas/login?service=https%3A%2F%2Fnavyfamily.navy.mil%2F" target=new>Affected Navy Family Assistance </a></div>
+<div><a tabindex=624 class="header_submenu_item" href="http://www.nmcrs.org/" target=new>Navy / Marine Corps Relief </a></div>
+<div><a tabindex=625 class="header_submenu_item" href="http://www.militaryonesource.com/skins/MOS/home.aspx" target=new>Military One Source </a></div>
+</td>
+<td width="330">
+<div><a tabindex=641 class="header_submenu_item" href="http://www.history.navy.mil/ " target=new>Naval History & Heritage Command </a></div>
+<div><a tabindex=642 class="header_submenu_item" href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx" target=new>Navy Personnel Command </a></div>
+<div><a tabindex=643 class="header_submenu_item" href="https://www.nko.navy.mil" target=new>Navy Knowledge Online </a></div>
+<div><a tabindex=644 class="header_submenu_item" href="http://www.pentagonchannel.mil/" target=new>Pentagon Channel </a></div>
+<div><a tabindex=645 class="header_submenu_item" href="/navyenterprise/">Navy Enterprise </a></div>
+</td>
+<td width="330">
+<div><a tabindex=661 class="header_submenu_item" href="https://www.navyreserve.navy.mil" target=new>Navy Reserve </a></div>
+<div><a tabindex=662 class="header_submenu_item" href="http://www.usmc.mil/" target=new>US Marine Corps </a></div>
+<div><a tabindex=663 class="header_submenu_item" href="http://www.uscg.mil/" target=new>US Coast Guard </a></div>
+<div><a tabindex=664 class="header_submenu_item" href="http://www.af.mil/" target=new>Air Force </a></div>
+<div><a tabindex=665 class="header_submenu_item" href="http://www.army.mil/" target=new>Army </a></div>
+<div><a tabindex=666 class="header_submenu_item" href="http://www.defense.gov" target=new>Defense.gov </a></div>
+<div><a tabindex=667 class="header_submenu_item" href="http://www.jcs.mil" target=new>Joint Chiefs of Staff </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=690 href="javascript:void(0);" onclick="hide_main_menu('column6_menu');">Hide Links of Interest Menu</a></div>
+</div>
+</div>
+
+<!-- End of Standard US Navy Header Bar -->
+
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#FFFFFF" width="14" height=50 background="/images/navy_mil/blank.gif"></td>
+    <td colspan=2 bgcolor="#FFFFFF" valign="top" style=news width=686><br>
+<p style="text-align:center"><IMG SRC="../images/bio-head.gif" WIDTH=360 alt="Navy Flag Officer Biography">
+</p>
+
+<p align=center style="font-family: Times; font-size: 14pt; font-weight: bold; color: #042572">
+<h1 style='font-family:Times; font-size:14pt; font-weight:bold; color:#042572; margin:0px; text-align:center'>Admiral Robert F. Willard</h1><h2 style='font-family:Times; font-size:14pt; font-weight:bold; color:#042572; margin:0px; text-align:center'>Commander, U.S. Pacific Command</h2>
+</p>
+<table width=98% cellspacing=5 cellpadding=0 border=0>
+<tr>
+<td style="font-family: Times; font-size: 11pt">
+
+  <img align=right src="/media/bio/thumbnails/thumb_willardfourstar.jpg" border=0 alt="Admiral Robert F. Willard">
+<p><br>
+	Adm. Robert F. Willard is the Commander, U.S. Pacific Command, Camp H.M. Smith, Hawaii.<br /><br>
+	Willard is a Los Angeles native and a 1973 graduate of the United States Naval Academy. He has a Master&rsquo;s degree in Engineering Management from Old Dominion University and is an MIT Seminar XXI alumnus.<br /><br>
+	An F-14 aviator, Willard served in a variety of west coast fighter squadrons; VF-24, VF-124, VF-2, and VF-51 aboard the aircraft carriers USS <em>Constellation</em>, USS <em>Ranger</em>, USS <em>Kitty Hawk </em>and USS <em>Carl Vinson</em>. He was operations officer and executive officer of Navy Fighter Weapons School (TOPGUN) and aerial coordinator for the movie. He later commanded the Screaming Eagles of Fighter Squadron 51.<br /><br>
+	Following nuclear-power training, Willard served as executive officer of USS <em>Carl Vinson </em>(CVN 70), commanded the amphibious flagship USS <em>Tripoli</em> (LPH 10) in the Persian Gulf during Operation <em>Vigilant Warrior </em>for which Tripoli received a Navy Unit Commendation and commanded the aircraft carrier USS <em>Abraham Lincoln </em>(CVN 72).<br /><br>
+	As a flag officer, Willard twice served on the Joint Staff, was deputy and chief of staff for U.S. Pacific Fleet at Pearl Harbor, Hawaii, commanded Carrier Group Five aboard USS <em>Kitty Hawk </em>(CV 63) and commanded the U.S. 7th Fleet in Yokosuka, Japan. In March 2005, Willard became the 34th vice chief of naval operations; in May 2007, he assumed command of the U.S. Pacific Fleet; and on October 19, 2009, he became the commander, U.S. Pacific Command, Camp H.M. Smith, Hawaii.<br /><br>
+	Willard&rsquo;s decorations include the Defense Distinguished Service Medal, Distinguished Service Medal, Legion of Merit and various other awards.</p><br>
+
+</td>
+</tr>
+<tr><td style="font-family: Times; font-style: italic; font-size: 12pt; color: #afafaf">
+Updated: 
+3 May 2010
+</td></tr>
+</table>
+<hr width=95%>
+<br><br>
+    </td>
+	<td bgcolor="#FFFFFF" height=50 width="14"></td>
+    <td background="/images/bg_cccccc.gif" align=center valign="top" width="300">
+	  <table border=0 width=280 cellpadding=0 cellspacing=0>
+		<tr><td>&nbsp;</td></tr>
+	    <tr><td align=center class=menudark><a href='bio.asp?bioID=19' class=menudark><img border=0 src='/images/navy_mil/icon_print.gif' alt='Printer Friendly View of Biography'> Printer Friendly View of Biography</a><br><br>
+
+		<a href='/media/bio/hi_res/willardfourstar.jpg' target=new class=menudark>Download Official Photo</a><br><br>
+
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+		
+	  </table>
+	</td>
+  </tr>
+</table>
+</body>
+</html>

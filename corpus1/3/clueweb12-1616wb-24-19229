@@ -1,0 +1,386 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-23T01:18:59Z
+WARC-TREC-ID: clueweb12-1616wb-24-19229
+WARC-Target-URI: http://sharethe.tv/movies/people/nicolas-cage
+WARC-Payload-Digest: sha1:YZNNIGCGRAN6LV4FMU27X4UJHXBGQAAG
+WARC-IP-Address: 75.101.163.44
+WARC-Record-ID: <urn:uuid:4c438750-8c89-4293-ad6a-929f96455ca1>
+Content-Type: application/http; msgtype=response
+Content-Length: 19458
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 23 Apr 2012 01:19:01 GMT
+Content-Type: text/html; charset=utf-8
+Connection: close
+Etag: "bc1ce192688e129b9d0d34679a7a0c7c"
+X-Ua-Compatible: IE=Edge,chrome=1
+X-Runtime: 1.184301
+Set-Cookie: _mediashare_session=BAh7ByIQX2NzcmZfdG9rZW4iMXVmcmVkZ1RVWEZYUHp0UjFvM0xiRGYrYTU2UEN2dHR3NGQ0YmtBKytxSzQ9Ig9zZXNzaW9uX2lkIiU1MWQwNWM1ZTFhYzBlMjcxYjI0ZTc1NzRlZTg3MzRkZA%3D%3D--08bbac3c7878cfb58d0fc7414cb6e550d2e41171; path=/; HttpOnly
+Cache-Control: max-age=0, private, must-revalidate
+Content-Length: 18861
+X-Varnish: 629421901
+Age: 0
+Via: 1.1 varnish
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="description" content="" />
+		<link rel="index" title="ShareThe.TV" href="http://sharethe.tv" /> 
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <title>Nicolas Cage | ShareThe.TV</title>
+    <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="ufredgTUXFXPztR1o3LbDf+a56PCvttw4d4bkA++qK4="/>
+    <link href="/stylesheets/style.css?1317441457" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/coin-slider-styles.css?1317441456" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/tipsy.css?1317441457" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/anythingslider.css?1317441456" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery.min.js?1317441456" type="text/javascript"></script>
+<script src="/javascripts/rails.js?1317441456" type="text/javascript"></script>
+<script src="/javascripts/application.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/jquery-ui.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/jquery.tipsy.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/coin-slider.min.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/class.horinaja.jquery.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/jquery.anythingslider.min.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/rails.validations.js?1317441456" type="text/javascript"></script>
+    <script src="/javascripts/jquery.expander.js?1317441456" type="text/javascript"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-2960497-8']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+  </head>
+  <body>
+		<script type='text/javascript'>
+  //<![CDATA[
+    $(function() {
+      $("#searchbox").autocomplete({
+        minLength: 2,
+        autoFocus: true,
+        source: "/movies/search.json",
+        focus: function(event, ui) {
+          return false;
+        },
+        select: function(event, ui) {
+          $("#searchbox").val(ui.item.movie.title);
+          $("#movie_id").val(ui.item.movie.id);
+          $("#searchform").submit();
+          return false;
+        }
+      })
+      .data("autocomplete")._renderItem = function(ul, item) {
+        return $("<li></li>")
+            .data("item.autocomplete", item)
+            .append("<a class=\"auto-link\"><img src=" + item.movie.poster + " height=\"54\" width=\"40\" alt=" + item.movie.title + " /><span><strong>" + item.movie.title + "</strong> (" + item.movie.year + ")</span></a>")
+            .appendTo(ul);
+      };
+    });
+  //]]>
+</script>
+
+<div id='header'>
+<h1>
+<a href="/">ShareThe.TV</a>
+</h1>
+<ul id='jsddm'>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/help">Help</a></li>
+<li><a href="/signin">Login</a></li>
+<li class='last'><a href="/signup">Register</a></li>
+
+</ul>
+</div>
+<div id='page_title'>
+<div id='page_title_container'>
+<div id='title_divider'>
+<h1>
+<span>
+Nicolas Cage
+</span>
+</h1>
+</div>
+<div id='title_description'>
+
+</div>
+<div id='search'>
+<form action='/movies/search' id='searchform'>
+<input id='searchbox' name='s' onblur="if(this.value.length == 0) this.value= 'Search';" onclick="if(this.value == 'Search') this.value='';" type='text' value='Search'>
+<input id='searchsubmit' src='/images/search.gif' type='image' value='Search'>
+<input id="movie_id" name="movie_id" type="hidden" />
+</form>
+</div>
+</div>
+</div>
+
+	  <div id="container_sub">
+  <div class="container_box">
+    <div id="content">
+      <div class="column-container">
+          <a href="/movies/people/nicolas-cage"><img alt="Nicolas Cage" class="cast-profile" src="http://s3.amazonaws.com/prod.sharethetv/profiles/494/medium/profile.jpg?1291076871" /></a>
+        <ul>
+	        <li>
+<a href="/movies/kick-ass-2010" title="Kick-Ass (2010)"><img alt="Kick-Ass (2010)" src="http://s3.amazonaws.com/prod.sharethetv/posters/31/thumb/poster.jpg?1291076875" /></a>
+</li>
+<li>
+<a href="/movies/national-treasure-2004" title="National Treasure (2004)"><img alt="National Treasure (2004)" src="http://s3.amazonaws.com/prod.sharethetv/posters/147/thumb/poster.jpg?1291077416" /></a>
+</li>
+<li>
+<a href="/movies/national-treasure-book-of-secrets-2007" title="National Treasure: Book of Secrets (2007)"><img alt="National Treasure: Book of Secrets (2007)" src="http://s3.amazonaws.com/prod.sharethetv/posters/148/thumb/poster.jpg?1291077418" /></a>
+</li>
+<li>
+<a href="/movies/bangkok-dangerous-2008" title="Bangkok Dangerous (2008)"><img alt="Bangkok Dangerous (2008)" src="http://s3.amazonaws.com/prod.sharethetv/posters/237/thumb/poster.jpg?1291077712" /></a>
+</li>
+<li>
+<a href="/movies/ghost-rider-2007" title="Ghost Rider (2007)"><img alt="Ghost Rider (2007)" src="http://s3.amazonaws.com/prod.sharethetv/posters/278/thumb/poster.jpg?1291077829" /></a>
+</li>
+<li>
+<a href="/movies/knowing-2009" title="Knowing (2009)"><img alt="Knowing (2009)" src="http://s3.amazonaws.com/prod.sharethetv/posters/306/thumb/poster.jpg?1291077922" /></a>
+</li>
+<li>
+<a href="/movies/the-ant-bully-2006" title="The Ant Bully (2006)"><img alt="The Ant Bully (2006)" src="http://s3.amazonaws.com/prod.sharethetv/posters/386/thumb/poster.jpg?1291078122" /></a>
+</li>
+<li>
+<a href="/movies/the-wicker-man-2006" title="The Wicker Man (2006)"><img alt="The Wicker Man (2006)" src="http://s3.amazonaws.com/prod.sharethetv/posters/412/thumb/poster.jpg?1291078187" /></a>
+</li>
+<li>
+<a href="/movies/the-sorcerers-apprentice-2010" title="The Sorcerer's Apprentice (2010)"><img alt="The Sorcerer's Apprentice (2010)" src="http://s3.amazonaws.com/prod.sharethetv/posters/461/thumb/poster.jpg?1291078319" /></a>
+</li>
+<li>
+<a href="/movies/adaptation-2002" title="Adaptation. (2002)"><img alt="Adaptation. (2002)" src="http://s3.amazonaws.com/prod.sharethetv/posters/564/thumb/poster.jpg?1291093318" /></a>
+</li>
+<li>
+<a href="/movies/astro-boy-2009" title="Astro Boy (2009)"><img alt="Astro Boy (2009)" src="http://s3.amazonaws.com/prod.sharethetv/posters/701/thumb/poster_4369.?1298306711" /></a>
+</li>
+<li>
+<a href="/movies/the-bad-lieutenant-port-of-call-new-orleans-2009" title="The Bad Lieutenant: Port of Call New Orleans (2009)"><img alt="The Bad Lieutenant: Port of Call New Orleans (2009)" src="http://s3.amazonaws.com/prod.sharethetv/posters/771/thumb/poster.jpg?1291122492" /></a>
+</li>
+<li>
+<a href="/movies/g-force-2009" title="G-Force (2009)"><img alt="G-Force (2009)" src="http://s3.amazonaws.com/prod.sharethetv/posters/858/thumb/poster.jpg?1291122649" /></a>
+</li>
+<li>
+<a href="/movies/gone-in-sixty-seconds-2000" title="Gone in Sixty Seconds (2000)"><img alt="Gone in Sixty Seconds (2000)" src="http://s3.amazonaws.com/prod.sharethetv/posters/861/thumb/poster.jpg?1291122656" /></a>
+</li>
+<li>
+<a href="/movies/wild-at-heart-1990" title="Wild at Heart (1990)"><img alt="Wild at Heart (1990)" src="http://s3.amazonaws.com/prod.sharethetv/posters/1058/thumb/poster.jpg?1291123430" /></a>
+</li>
+<li>
+<a href="/movies/con-air-1997" title="Con Air (1997)"><img alt="Con Air (1997)" src="http://s3.amazonaws.com/prod.sharethetv/posters/1270/thumb/poster.jpg?1291133992" /></a>
+</li>
+<li>
+<a href="/movies/windtalkers-2002" title="Windtalkers (2002)"><img alt="Windtalkers (2002)" src="http://s3.amazonaws.com/prod.sharethetv/posters/1436/thumb/poster.jpg?1291134357" /></a>
+</li>
+<li>
+<a href="/movies/8mm-1999" title="8MM (1999)"><img alt="8MM (1999)" src="http://s3.amazonaws.com/prod.sharethetv/posters/1541/thumb/poster.jpg?1291166084" /></a>
+</li>
+<li>
+<a href="/movies/lord-of-war-2005" title="Lord of War (2005)"><img alt="Lord of War (2005)" src="http://s3.amazonaws.com/prod.sharethetv/posters/1858/thumb/poster.jpg?1291173643" /></a>
+</li>
+<li>
+<a href="/movies/face-off-1997" title="Face Off (1997)"><img alt="Face Off (1997)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2190/thumb/poster.jpg?1291196930" /></a>
+</li>
+<li>
+<a href="/movies/the-rock-1996" title="The Rock (1996)"><img alt="The Rock (1996)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2343/thumb/poster_1.?1309491385" /></a>
+</li>
+<li>
+<a href="/movies/the-weather-man-2005" title="The Weather Man (2005)"><img alt="The Weather Man (2005)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2621/thumb/poster.jpg?1291200937" /></a>
+</li>
+<li>
+<a href="/movies/vampires-kiss-1988" title="Vampire's Kiss (1988)"><img alt="Vampire's Kiss (1988)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2644/thumb/poster.jpg?1291200982" /></a>
+</li>
+<li>
+<a href="/movies/next-2007" title="Next (2007)"><img alt="Next (2007)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2757/thumb/poster.jpg?1291243573" /></a>
+</li>
+<li>
+<a href="/movies/matchstick-men-2003" title="Matchstick Men (2003)"><img alt="Matchstick Men (2003)" src="http://s3.amazonaws.com/prod.sharethetv/posters/2983/thumb/poster.jpg?1291226271" /></a>
+</li>
+<li>
+<a href="/movies/sonny-2003" title="Sonny (2003)"><img alt="Sonny (2003)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3210/thumb/poster.jpg?1291228931" /></a>
+</li>
+<li>
+<a href="/movies/leaving-las-vegas-1995" title="Leaving Las Vegas (1995)"><img alt="Leaving Las Vegas (1995)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3653/thumb/poster_30862.?1291616616" /></a>
+</li>
+<li>
+<a href="/movies/it-could-happen-to-you-1994" title="It Could Happen to You (1994)"><img alt="It Could Happen to You (1994)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3794/thumb/poster_30862.?1291616885" /></a>
+</li>
+<li>
+<a href="/movies/city-of-angels-1998" title="City of Angels (1998)"><img alt="City of Angels (1998)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3901/thumb/poster_1.?1306908595" /></a>
+</li>
+<li>
+<a href="/movies/the-family-man-2000" title="The Family Man (2000)"><img alt="The Family Man (2000)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3908/thumb/poster_15214.?1291630132" /></a>
+</li>
+<li>
+<a href="/movies/moonstruck-1987" title="Moonstruck (1987)"><img alt="Moonstruck (1987)" src="http://s3.amazonaws.com/prod.sharethetv/posters/3989/thumb/poster_24152.?1291637632" /></a>
+</li>
+<li>
+<a href="/movies/world-trade-center-2006" title="World Trade Center (2006)"><img alt="World Trade Center (2006)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4011/thumb/poster_24152.?1291637677" /></a>
+</li>
+<li>
+<a href="/movies/fire-birds-1990" title="Fire Birds (1990)"><img alt="Fire Birds (1990)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4018/thumb/poster_7298.?1291646432" /></a>
+</li>
+<li>
+<a href="/movies/valley-girl-1983" title="Valley Girl (1983)"><img alt="Valley Girl (1983)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4126/thumb/poster_14639.?1291687384" /></a>
+</li>
+<li>
+<a href="/movies/raising-arizona-1987" title="Raising Arizona (1987)"><img alt="Raising Arizona (1987)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4386/thumb/poster_23554.?1291843407" /></a>
+</li>
+<li>
+<a href="/movies/snake-eyes-1998" title="Snake Eyes (1998)"><img alt="Snake Eyes (1998)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4648/thumb/poster_25993.?1291950590" /></a>
+</li>
+<li>
+<a href="/movies/the-life-of-david-gale-2003" title="The Life of David Gale (2003)"><img alt="The Life of David Gale (2003)" src="http://s3.amazonaws.com/prod.sharethetv/posters/4658/thumb/poster_23360.?1291958808" /></a>
+</li>
+<li>
+<a href="/movies/trapped-in-paradise-1994" title="Trapped In Paradise (1994)"><img alt="Trapped In Paradise (1994)" src="http://s3.amazonaws.com/prod.sharethetv/posters/5142/thumb/poster_25176.?1292129394" /></a>
+</li>
+<li>
+<a href="/movies/shadow-of-the-vampire-2000" title="Shadow of the Vampire (2000)"><img alt="Shadow of the Vampire (2000)" src="http://s3.amazonaws.com/prod.sharethetv/posters/5817/thumb/poster_27597.?1292354252" /></a>
+</li>
+<li>
+<a href="/movies/kiss-of-death-1995" title="Kiss of Death (1995)"><img alt="Kiss of Death (1995)" src="http://s3.amazonaws.com/prod.sharethetv/posters/5832/thumb/poster_27597.?1292354291" /></a>
+</li>
+<li>
+<a href="/movies/captain-corellis-mandolin-2001" title="Captain Corelli's Mandolin (2001)"><img alt="Captain Corelli's Mandolin (2001)" src="http://s3.amazonaws.com/prod.sharethetv/posters/7329/thumb/poster_4922.?1292526848" /></a>
+</li>
+<li>
+<a href="/movies/christmas-carol-the-movie-2001" title="Christmas Carol: The Movie (2001)"><img alt="Christmas Carol: The Movie (2001)" src="/images/posters/missing_thumb.png?1317441456" /></a>
+</li>
+<li>
+<a href="/movies/bringing-out-the-dead-1999" title="Bringing Out The Dead (1999)"><img alt="Bringing Out The Dead (1999)" src="http://s3.amazonaws.com/prod.sharethetv/posters/8320/thumb/poster_5366.?1292691556" /></a>
+</li>
+<li>
+<a href="/movies/rumble-fish-1983" title="Rumble Fish (1983)"><img alt="Rumble Fish (1983)" src="http://s3.amazonaws.com/prod.sharethetv/posters/8523/thumb/poster_8127.?1292699795" /></a>
+</li>
+<li>
+<a href="/movies/birdy-1984" title="Birdy (1984)"><img alt="Birdy (1984)" src="http://s3.amazonaws.com/prod.sharethetv/posters/8725/thumb/poster_19196.?1292709400" /></a>
+</li>
+<li>
+<a href="/movies/red-rock-west-1993" title="Red Rock West (1993)"><img alt="Red Rock West (1993)" src="http://s3.amazonaws.com/prod.sharethetv/posters/9437/thumb/poster_26404.?1292727310" /></a>
+</li>
+<li>
+<a href="/movies/peggy-sue-got-married-1986" title="Peggy Sue Got Married (1986)"><img alt="Peggy Sue Got Married (1986)" src="http://s3.amazonaws.com/prod.sharethetv/posters/9809/thumb/poster_2735.?1292762066" /></a>
+</li>
+<li>
+<a href="/movies/drive-angry-3d-2011" title="Drive Angry 3D (2011)"><img alt="Drive Angry 3D (2011)" src="http://s3.amazonaws.com/prod.sharethetv/posters/12882/thumb/poster_20702.?1293227450" /></a>
+</li>
+<li>
+<a href="/movies/zandalee-1991" title="Zandalee (1991)"><img alt="Zandalee (1991)" src="http://s3.amazonaws.com/prod.sharethetv/posters/15180/thumb/poster_1786.?1294701467" /></a>
+</li>
+<li>
+<a href="/movies/amos-andrew-1993" title="Amos &amp; Andrew (1993)"><img alt="Amos &amp; Andrew (1993)" src="http://s3.amazonaws.com/prod.sharethetv/posters/15738/thumb/poster_16751.?1295133957" /></a>
+</li>
+<li>
+<a href="/movies/season-of-the-witch-2011" title="Season of the Witch (2011)"><img alt="Season of the Witch (2011)" src="http://s3.amazonaws.com/prod.sharethetv/posters/15955/thumb/poster_8486.?1301412199" /></a>
+</li>
+<li>
+<a href="/movies/the-cotton-club-1984" title="The Cotton Club (1984)"><img alt="The Cotton Club (1984)" src="http://s3.amazonaws.com/prod.sharethetv/posters/16159/thumb/poster_6295.?1295381599" /></a>
+</li>
+<li>
+<a href="/movies/honeymoon-in-vegas-1992" title="Honeymoon in Vegas (1992)"><img alt="Honeymoon in Vegas (1992)" src="http://s3.amazonaws.com/prod.sharethetv/posters/18530/thumb/poster_21517.?1296624120" /></a>
+</li>
+<li>
+<a href="/movies/deadfall-1993" title="Deadfall (1993)"><img alt="Deadfall (1993)" src="http://s3.amazonaws.com/prod.sharethetv/posters/18817/thumb/poster_30521.?1296865346" /></a>
+</li>
+<li>
+<a href="/movies/guarding-tess-1994" title="Guarding Tess (1994)"><img alt="Guarding Tess (1994)" src="http://s3.amazonaws.com/prod.sharethetv/posters/18959/thumb/poster_6142.?1296998316" /></a>
+</li>
+<li>
+<a href="/movies/racing-with-the-moon-1984" title="Racing with the Moon (1984)"><img alt="Racing with the Moon (1984)" src="http://s3.amazonaws.com/prod.sharethetv/posters/20024/thumb/poster_1283.?1297665992" /></a>
+</li>
+<li>
+<a href="/movies/industrial-symphony-no-1-the-dream-of-the-brokenhearted-1990" title="Industrial Symphony No. 1: The Dream of the Brokenhearted (1990)"><img alt="Industrial Symphony No. 1: The Dream of the Brokenhearted (1990)" src="http://s3.amazonaws.com/prod.sharethetv/posters/20763/thumb/poster_9392.?1298326001" /></a>
+</li>
+<li>
+<a href="/movies/the-best-of-times-1981" title="The Best of Times (1981)"><img alt="The Best of Times (1981)" src="http://s3.amazonaws.com/prod.sharethetv/posters/27470/thumb/poster_1.?1307369491" /></a>
+</li>
+<li>
+<a href="/movies/time-to-kill-1989" title="Time to Kill (1989)"><img alt="Time to Kill (1989)" src="http://s3.amazonaws.com/prod.sharethetv/posters/32672/thumb/poster_1.?1319046792" /></a>
+</li>
+<li>
+<a href="/movies/trespass-2011" title="Trespass (2011)"><img alt="Trespass (2011)" src="http://s3.amazonaws.com/prod.sharethetv/posters/32808/thumb/poster_1.?1319268045" /></a>
+</li>
+<li>
+<a href="/movies/ghost-rider-spirit-of-vengeance-2012" title="Ghost Rider: Spirit of Vengeance (2012)"><img alt="Ghost Rider: Spirit of Vengeance (2012)" src="http://s3.amazonaws.com/prod.sharethetv/posters/36234/thumb/poster_1.?1327018646" /></a>
+</li>
+<li>
+<a href="/movies/seeking-justice-2011" title="Seeking Justice (2011)"><img alt="Seeking Justice (2011)" src="http://s3.amazonaws.com/prod.sharethetv/posters/36294/thumb/poster_1.?1327172150" /></a>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<div id='footer'>
+<div id='footer_container'>
+<div id='footer_container_float'>
+<div class='footer_links_box'>
+<h3>Browse</h3>
+<ul>
+<li>
+<a href='/about'>About</a>
+</li>
+<li>
+<a href='/help'>Help</a>
+</li>
+<li>
+<a href='mailto:info@sharethe.tv'>Contact Us</a>
+</li>
+</ul>
+</div>
+<div class='footer_links_box'>
+<h3>Discover</h3>
+<ul>
+<li>
+<a href='/movies'>Movies</a>
+</li>
+<li>
+<a href='/users'>Users</a>
+</li>
+</ul>
+</div>
+<div class='footer_links_box'>
+<h3>Legal</h3>
+<ul>
+<li>
+<a href='/privacy'>Privacy Policy</a>
+</li>
+<li>
+<a href='/terms'>Terms of Use</a>
+</li>
+</ul>
+</div>
+<div id='footer_contact'>
+<h3>Contact Information</h3>
+<p>
+Your comments and suggestions are welcome.  Please email us at
+<a href="mailto:info@sharethe.tv">info@sharethe.tv</a>
+</p>
+<a href='http://twitter.com/sharethetv'>
+<img alt='Twitter' src='/images/social/twitter.png'>
+</a>
+<a href='http://www.facebook.com/pages/ShareTheTV/124256134309058'>
+<img alt='Facebook' src='/images/social/facebook.png'>
+</a>
+</div>
+</div>
+<div id='footer_copyright'>
+Copyright &copy; 2010-2011 ShareThe.TV. All Rights Reserved.  All user collections
+are for entertainment purposes only.
+</div>
+</div>
+</div>
+
+  </body>
+</html>

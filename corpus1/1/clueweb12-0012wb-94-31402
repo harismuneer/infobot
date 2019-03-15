@@ -1,0 +1,1637 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T04:05:20Z
+WARC-TREC-ID: clueweb12-0012wb-94-31402
+WARC-IP-Address: 66.147.244.166
+WARC-Payload-Digest: sha1:NV54IZUBMYJ5BII7FMHOLGITQZZ2MMMK
+WARC-Target-URI: http://www.bbhq.com/lyrics.htm
+WARC-Record-ID: <urn:uuid:65112e84-5f1a-4b81-b558-d7853b206d71>
+Content-Type: application/http; msgtype=response
+Content-Length: 109509
+
+HTTP/1.1 200 OK
+Date: Sun, 12 Feb 2012 04:05:24 GMT
+Server: Apache
+Accept-Ranges: bytes
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<HTML>   <!-- ---  lyrics.htm  guitarnotes.com   01/01/07; 12/15/08; 11/15/09    ---  -->
+<script language="javascript">
+    jmstatmsg = ""
+</script>
+
+<!--    rev. 100811,  isexp: ?  -- didset: N --  diddel: N -- isact:  ? -- didfind: N -- callcnt: 0  -----  -->
+<script language="JavaScript">      // <!--      javascript 09/13/11
+    jmbrstat = "?"
+    jexpdate = ""
+    jmtype = "?"
+    jmisact = "?"
+// end of js        -->
+</script>
+<head>
+<link rel="stylesheet" type="text/css" href="txt/bbhqcss.css" />
+
+<title>BBHQ: Music Room Lyrics  </title>
+<META NAME="description" CONTENT="Lyrics to hundreds of songs of the Baby Boomer Generation: 1955-1975">
+<META NAME="keywords" CONTENT="karaoke, Beatles, Simon & Garfunkel, Shirelles, Four Seasons, Peter Paul & Mary, Paul Anka, Rolling Stones, song titles, song words, sing-along, Mamas & Papas, Dave Clark 5, Kenny Rogers, Platters, Drifters, John Denver, Chicago, CTA, Everly Brothers, Neil Sedaka, Melanie, Neil Diamond, Eagles, Supremes, fifites, sixties, seventies, 50s, 60s, 70s, oldies, lyrics">
+<basefont size="4">
+<SCRIPT LANGUAGE="JavaScript">   // <!--
+if (top != self) {
+    top.location = self.location;
+}
+mcflg = 0
+if (getc("mcode"))    {
+    mcflg = 1
+    tmp = getc("mcode")
+    if (tmp.length != 13)        {
+        dcookie = "mcode=; expires=Mon, 01 Jan 2001 01:00:00 GMT; path=/; domain=.bbhq.com"
+    }
+}
+//
+function getc(cname) {          // 4 times
+    var dc = document.cookie;
+    var prefix = cname + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else  {
+        begin += 2;
+    }
+    var end = document.cookie.indexOf(";", begin);
+    if (end == -1) end = dc.length;
+    rtn = unescape(dc.substring(begin + prefix.length, end));
+    nrtn = parseFloat(rtn)      // or NaN if not numeric
+    return unescape(dc.substring(begin + prefix.length, end));
+}
+//  search coding:
+var NS4 = (navigator.appName.indexOf("Netscape") >= 0 && parseFloat(navigator.appVersion) >= 4) ? 1 : 0;
+var IE4 = (document.all);
+var win = this;    // Page to search
+var n   = 0;
+// Set up keypress event capturing
+if (NS4)
+  document.captureEvents(Event.KEYPRESS);
+document.onkeypress = getKey;
+
+function findinpage(str) {
+  var txt, i, found;
+  if (str == "")
+    return false;
+// Find next occurence of the given string on the page, wrap around to the start of the page if necessary.
+  if (NS4) {
+// Look for match starting at the current point. If not found, rewind back to the first match.
+    if (!win.find(str))
+      while(win.find(str, false, true))
+        n++;
+    else
+      n++;
+    if (n == 0)
+        alert("Sorry; we could not find "+str+".");
+  }
+//
+  if (IE4) {
+    txt = win.document.body.createTextRange();
+// Find the nth match from the top of the page.
+    for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
+      txt.moveStart("character", 1);
+      txt.moveEnd("textedit");
+    }
+    if (found) {        // mark it and scroll it into view.
+      txt.moveStart("character", -1);
+      txt.findText(str);
+      txt.select();
+      txt.scrollIntoView();
+      n++;
+    }
+// Otherwise, start over at the top of the page and find first match.
+    else {
+      if (n > 0) {
+        n = 0;
+        findinpage(str);
+      }
+      else
+        alert("Sorry; we could not find "+str+".");
+    }
+  }
+  return false;
+}
+function getKey(e) {
+  var key;
+// Check for the ENTER key.
+  if ((IE4 && event.keyCode == 13) || (NS4 && e.which == 13)) {
+    findinpage(document.forms["search"].string.value);
+    return false;
+  }
+}
+// -------------------
+rtn = 0
+nrtn = 0
+function cntreq(songid)  {
+    var expdate = new Date()
+    expdate.setTime(expdate.getTime() + (1 * (24 * 60 * 60 * 1000)))
+    var testcook = "testcook=lyrics; expires=" + expdate.toGMTString() + "; path=/;  domain=.bbhq.com"
+    document.cookie = testcook;
+    if (document.cookie.length == 0 && mcflg == 0)    {
+        alert("Your Internet browser is not configured to accept cookies.  You must accept cookies in order to view lyrics ay BBHQ.\n\n(See our Internet Primer for more information on cookies.)")
+        return
+    }
+//
+    var cnt = 0
+    if (getc("cklcnt"))   {      // is already there?
+        cnt = nrtn
+    }
+    cnt = cnt + 1
+    setc("cklcnt",cnt)
+    if (getc("cklcnt"))     {
+        document.lyrform.songid.value = songid
+        document.lyrform.usercnt.value = cnt
+        document.lyrform.submit()
+    } else {    // did not write it
+        alert("Your Internet browser is not configured to accept cookies.  You must accept cookies in order to view lyrics ay BBHQ.\n\n(See our Internet Primer for more information on cookies.)")
+        return
+    }
+}
+// end of cntreq
+//  ===================================================
+var now = new Date()
+var cdate = new Date()
+mm = cdate.getMonth() + 1
+dd = cdate.getDate()
+yy = cdate.getYear()
+min = cdate.getMinutes()
+sec = cdate.getSeconds()
+if (mm < 10)    {
+    mm = "0" + mm
+}
+if (dd < 10)    {
+    dd = "0" + dd
+}
+var mmddyy = "" + mm + dd + yy
+//
+function setc(name,value) {         // once
+    var exp = new Date()
+    curdate = exp
+    exp.setTime(exp.getTime() + 5000 * 24 * 60 * 60 * 1000)
+    var cdate = new Date()
+    var curcookie = name + "=" + escape(value) + "; expires=" + exp.toGMTString() + "; path=/; domain=.bbhq.com"
+    document.cookie = curcookie;
+}
+function remdr()    {
+    if (mcflg == 0) {
+        scrhgt = screen.height
+        scrwid = screen.width
+        leftpos = (screen.width * .5) - 200
+        self.name = "lyrics"
+        msgwind1 = open("txt/mstease.htm","teaswind", "toolbar=no,height=300,width=400,titlebar=no,scrollbars=no,resizable=no,screenX="+leftpos+",screenY=100,left="+leftpos+",top=100")
+        return
+    }
+}
+//   jslib has help alert
+// end of js  -->
+</SCRIPT>
+<SCRIPT language="JavaScript" SRC="txt/jslib.js"></SCRIPT>
+</head>
+<BODY topmargin="0" onLoad="remdr()" leftmargin="5" marginwidth="5" marginheight="0" style="margin: 5px">
+<center><a href="http://wireless.amazon.com/b/684177011/?_encoding=UTF8&tag=babyboomerheadqu&linkCode=ur2&camp=1789&creative=9325" target=_blank>
+<img src="sitegr/amawireless.jpg" width=950 height=30 border=0></a></center>
+<MAP NAME="navmap">     <!-- synced 12/09/11  -->
+<AREA SHAPE=RECT COORDS="0,0, 190,23" HREF="merchmrt.htm">
+<AREA SHAPE=RECT COORDS="0,25, 190,50" HREF="lyrics.htm">
+<AREA SHAPE=RECT COORDS="0,50, 190,75" HREF="pp&a.htm">
+<AREA SHAPE=RECT COORDS="191,0, 570,40" HREF="index.htm">
+<AREA SHAPE=RECT COORDS="207,50, 282,75" HREF="askdj.htm">
+<AREA SHAPE=RECT COORDS="283,40, 484,75" HREF="trivcon1.htm">
+<AREA SHAPE=RECT COORDS="485,50, 559,75" HREF="music.htm">
+<AREA SHAPE=RECT COORDS="570,0, 645,37" HREF="jukebox.php">
+<AREA SHAPE=RECT COORDS="570,38,645,75" HREF="merchmrt.htm#timcap">
+<AREA SHAPE=default HREF=index.htm>
+</MAP>
+<center>
+<table name=t1 width=950 border=0><tr><td>      <!-- 1 -->
+    <a href="newmbr.htm"><img src="sitegr/logo-mh.jpg" border=0 width=160 height=140></a></td>
+    <td>
+    <table name=t2 border=4 cellpadding=0 align=center cellspacing=0 width=768 style="margin: 0px;">    <!-- big table -->
+    <tr>
+    <td bgcolor="#F1AB03"  colspan=4><center><img src="sitegr/navbutn5.gif" ISMAP usemap="#navmap"  alt="  Click to go to other BBHQ pages  " border=0 width=645 height=75></center></td>
+    <td bgcolor="#F1AB03"><center>
+        <a href="http://www.amazon.com/b?node=5174&tag=babyboomerheadqu&camp=15385&creative=332393&linkCode=ur1&adid=0V7JXT5DVN044YJBWV7E&&ref-refURL=" target=_blank><img src="sitegr/ama125x80.jpg" width=125 height=080 border=0></a></center>
+    </td>
+    </tr>
+    <script language="JavaScript" type="text/javascript">      //  <!--
+    function xgetc(cname) {
+        var xthecookie = document.cookie;
+        var prefix = cname + "=";
+        var begin = xthecookie.indexOf("; " + prefix);
+        if (begin == -1) {
+            begin = xthecookie.indexOf(prefix);
+            if (begin != 0) return null;
+        } else  {
+            begin += 2;
+        }
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) end = xthecookie.length;
+        rtn = unescape(xthecookie.substring(begin + prefix.length, end));
+        nrtn = parseFloat(rtn)
+        return nrtn
+    }
+    var date1 = xgetc("firstdte")
+    currdate = new Date()
+    xsec = currdate.getSeconds()
+    banrmsg = "The BBHQ Time Capsule Report:</font> a personalized, verbal snapshot of any day in the 20th century. &nbsp; &nbsp; <a href=\"#\" onClick=\"return showwind(1,500,450)\"><img src=\"sitegr/moreinfo.gif\" border=0 width=160 height=20></a>\n"
+    if (xsec > 10) {
+        banrmsg = "BBHQ Pictures, Posters & Autographs:</font> memorabilia from the boomer years. &nbsp; &nbsp; <a href=\"pp&a.htm\" ><img src=\"sitegr/moreinfo.gif\" border=0 width=160 height=20></a>\n"
+    }
+    if (xsec > 20) {
+        row2msg = "With over 400 pages at BBHQ.... wander around; take your time."
+        banrmsg = "Unlimited boomer trivia:</font> TV, music, movies, boomer events.... <a href='newmbr.htm' >Click here</a> for info.\n"
+    }
+    if (xsec > 30) {
+        banrmsg = xsec + " </font><font color=red>The BBHQ Monthy Trivia Contest</font> winner selects any prize from our Treasure Chest. <a href=\"trivcon1.htm\" >Click here</a> to see what you can win.\n"
+    }
+    if (xsec > 40) {
+        banrmsg = "</font>Great gifts for boomers: <a href=\"merchmrt.htm\" >Click here</a> to shop from home.\n"
+    }
+    if (xsec > 50) {
+        banrmsg = "</font>Listen to the song; view the lyrics at the same time at the <a href=\"jukebox.php\">BBHQ JukeBox</a>.\n"
+    }
+    // -->
+    </script>
+    <tr>
+    <td width=20%>
+        <script language="javascript" type="text/javascript">    //  <!--
+        cu = '"contact us"'
+        function gothere(form) {
+            if (form.dropsel.options[form.dropsel.selectedIndex].value == "privacy")      {
+                showwind(6,450,600)
+                return false
+            }
+            if (form.dropsel.options[form.dropsel.selectedIndex].value == "thisday")      {
+                showwind(7,500,600)
+                return false
+            }
+            if (form.dropsel.options[form.dropsel.selectedIndex].value != "nogo")      {
+                top.location=(form.dropsel.options[form.dropsel.selectedIndex].value) ;
+            } else {
+                alert("That won't work; please try again.");
+            }
+            return false
+        }
+        //  -->
+        </script>
+        <FORM NAME="myform1" STYLE="display: inline;">
+        <span style="font-family: verdana,sans-serif; font-weight: normal; color: #666666"></span>
+        <SELECT NAME="dropsel" onChange="gothere(this.form)" style="font-family:arial;font-size:0.71em;">
+            <OPTION VALUE="nogo" SELECTED>All About BBHQ</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="index.htm" >BHBQ Home Page</OPTION>
+            <OPTION VALUE="menu.htm" >Main Menu</OPTION>
+            <OPTION VALUE="bbhqfaq.htm" >Frequently Asked Ques.</OPTION>
+            <OPTION VALUE="email.htm" >Contact Us</OPTION>
+            <OPTION VALUE="bomrcrew.htm" >Meet the Boomer Crew</OPTION>
+            <OPTION VALUE="examstry.htm" >Exam Story</OPTION>
+            <OPTION VALUE="tour.htm" >Tour the web site</OPTION>
+            <OPTION VALUE="techdoc.htm" >BBHQ Tech Doc</OPTION>
+            <OPTION VALUE="menu.htm" >Site Map</OPTION>
+            <OPTION VALUE="privacy">Privacy Statement</OPTION>
+            <OPTION VALUE="ratecard.htm" >Advertising Rate Card</OPTION>
+        </SELECT>
+        </form>
+    </td>
+    <td width=20%>
+        <FORM NAME="myform2" STYLE="display: inline;">
+        <span style="font-family: verdana,sans-serif; font-weight: normal; color: #666666"></span>
+        <SELECT NAME="dropsel" onChange="gothere(this.form)" style="font-family:arial;font-size:0.71em;">
+            <OPTION VALUE="nogo" SELECTED>Stats & Resources</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="index.htm" >BHBQ Home Page</OPTION>
+            <OPTION VALUE="whatsabm.htm" >What's a Boomer?</OPTION>
+            <OPTION VALUE="bomrstat.htm" >Boomer Stats</OPTION>
+            <OPTION VALUE="merchmrt.htm#transsvc" >Media Transfer Services</OPTION>
+            <OPTION VALUE="famousb.htm" >300 Famous Boomers</OPTION>
+            <OPTION VALUE="bomrgenx.htm" >Boomers, Xers & Beyond</OPTION>
+            <OPTION VALUE="signin.php?caller=navbutn" >School Registry</OPTION>
+            <OPTION VALUE="signin.php?caller=navbutn" >Enter & Sign In</OPTION>
+            <OPTION VALUE="shhs.htm" >Shaker Heights HS</OPTION>
+            <OPTION VALUE="prices.htm" >Prices: Then & Now</OPTION>
+            <OPTION VALUE="thisday" >This Day in History</OPTION>
+            <OPTION VALUE="reunion.htm" >Reunion Central</OPTION>
+            <OPTION VALUE="cgi-bin/pnutlnch.pl" >Peanut Gallery BB</OPTION>
+            <OPTION VALUE="library.htm" >The BBHQ Library</OPTION>
+            <OPTION VALUE="intprimr.htm" >Internet Primer</OPTION>
+            <OPTION VALUE="teachgde.php" >BBHQ Teachers' Guide</OPTION>
+            <OPTION VALUE="radio.htm" >Oldies Radio Stations</OPTION>
+            <OPTION VALUE="bbtop100.htm" >Top 100 Oldies</OPTION>
+            <OPTION VALUE="ontheweb.htm" >Only on the Web</OPTION>
+            <OPTION VALUE="brushup.php" >Brush Up Your Webster</OPTION>
+            <OPTION VALUE="visiprof.htm" >BBHQ Visitor Profile</OPTION>
+            <OPTION VALUE="amalink.htm" >Amazon recommendations</OPTION>
+        </SELECT>
+        </form>
+    </td>
+    <td width=20%>
+        <FORM NAME="myform3" STYLE="display: inline;">
+        <span style="font-family: verdana,sans-serif; font-weight: normal; color: #666666"></span>
+        <SELECT NAME="dropsel" onChange="gothere(this.form)" style="font-family:arial;font-size:0.71em;">
+            <OPTION VALUE="nogo" SELECTED>Terrific Trivia</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="trivcon1.htm" >Monthy Trivia Contest</OPTION>
+            <OPTION VALUE="trivia.htm" >The Trivia Library</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="nogo">Trivia for Everyone:</OPTION>
+            <OPTION VALUE="bbexams.htm" >BB Qualifying Exams</OPTION>
+            <OPTION VALUE="sixquz.htm" >The 60s Quiz</OPTION>
+            <OPTION VALUE="sevquz.htm" >The 70s Quiz</OPTION>
+            <OPTION VALUE="civquiz.htm" >Great American Civics Quiz</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="nogo">Trivia for Members:</OPTION>
+            <OPTION VALUE="moviequz.php" >The Boomer Movie Quiz</OPTION>
+            <OPTION VALUE="namegame.php" >The Name Game</OPTION>
+            <OPTION VALUE="cgi-bin/wstlnch.pl" >Who Said That?</OPTION>
+            <OPTION VALUE="cgi-bin/nttlnch.pl" >Name That Tune</OPTION>
+            <OPTION VALUE="nttjvfrm.php" >Name That Tune - 70s Edition</OPTION>
+            <OPTION VALUE="wht1.php" >What's in a Number?</OPTION>
+            <OPTION VALUE="wht2.php" >What's in a Number? - R&R</OPTION>
+        </SELECT>
+        </form>
+    </td>
+    <td width=20%>
+        <FORM NAME="myform4" STYLE="display: inline;">
+        <span style="font-family: verdana,sans-serif; font-weight: normal; color: #666666"></span>
+        <SELECT NAME="dropsel" onChange="gothere(this.form)" style="font-family:arial;font-size:0.71em;">
+            <OPTION VALUE="nogo" SELECTED>Boomer Memories & Stories</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="merchmrt.htm#timcap" >BBHQ Time Capsule</OPTION>
+            <OPTION VALUE="thisweek.htm" >This week's essay</OPTION>
+            <OPTION VALUE="thennnow.htm" >Then & Now</OPTION>
+            <OPTION VALUE="wheniwas.php" >When I was a Kid</OPTION>
+            <OPTION VALUE="bomrdvds.htm" >Boomer DVDs</OPTION>
+            <OPTION VALUE="bomrtv1.php?caller=navbutn" >Prime Time TV</OPTION>
+            <OPTION VALUE="2themoon.htm" >The First Moon Landing</OPTION>
+            <OPTION VALUE="woodstok.htm" >Woodstock Remembered</OPTION>
+            <OPTION VALUE="vietnam.htm" >Vietnam - from a distance</OPTION>
+            <OPTION VALUE="thisday" >This Day in History</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="nogo">Stories of the Chicowitz:</OPTION>
+            <OPTION VALUE="midlife1.htm" >Midlife Crisis</OPTION>
+            <OPTION VALUE="whysingl.htm" >Why am I Still Single?</OPTION>
+            <OPTION VALUE="tooltime.htm" >Tool Time with Chicowitz</OPTION>
+            <OPTION VALUE="surgery1.htm" >The Plastic Surgery Saga</OPTION>
+            <OPTION VALUE="princess.htm" >My Little Girl, Princess</OPTION>
+            <OPTION VALUE="countrym.htm" >Chicowitz Goes Country</OPTION>
+            <OPTION VALUE="dentist.htm" >A Trip to the Dentist</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="bomresay.htm" >120 other stories</OPTION>
+            <OPTION VALUE="bbhqarch.htm" >Even more: the archives</OPTION>
+        </SELECT>
+        </form>
+    </td>
+    <td width=20%>
+        <FORM NAME="myform5" STYLE="display: inline;">
+        <span style="font-family: verdana,sans-serif; font-weight: normal; color: #666666">
+        </span>
+        <SELECT NAME="dropsel" onChange="gothere(this.form)" style="font-family:arial;font-size:0.71em;">
+            <OPTION VALUE="nogo" SELECTED>60s & 70s</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="boomeryr.htm" >Boomer Years</OPTION>
+            <OPTION VALUE="fashion.htm" >What We Wore</OPTION>
+            <OPTION VALUE="prices.htm" >Prices of Stuff</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="sixties.htm" >60s Home Page</OPTION>
+            <OPTION VALUE="sixties2.php?caller=navbutn" >60s Summary</OPTION>
+            <OPTION VALUE="sixquz.htm" >The 60s Quiz</OPTION>
+            <OPTION VALUE="nogo">&#160;</OPTION>
+            <OPTION VALUE="seventez.htm" >70s Home Page</OPTION>
+            <OPTION VALUE="sevente2.htm" >70s Summary</OPTION>
+            <OPTION VALUE="sevquz.htm" >The 70s Quiz</OPTION>
+        </SELECT>
+        </form>
+    </td>
+    </tr>
+    </table>    <!-- end of 2 -->
+
+    <table name=t3 width=099% align=center bgcolor="#0000FF"><tr><td><center>
+    <style type="text/css">
+    <!--
+    a.white:link {color: #FFFFFF; font-weight: bold; text-decoration: none}
+    a.white:active {color: #FFFFFF; font-weight: bold; text-decoration: none}
+    a.white:visited {color: #FFFFFF; font-weight: bold; text-decoration: none}
+    a.white:hover {color: #FFFFFF; font-weight: bolder; text-decoration: none}
+    -->
+    </style>
+    <a href="thisweek.htm" onmouseover="return overlib('In this episode of &ldquo;To Tell the Truth,&rdquo; I describe several purported examples from a recent exhibit appearing in the main atrium of The Guggenheim. The items depict real persons and objects, shown in full-size, in an extremely odd and often macabre settings. Your task here is to determine which of our pictures tell the truth about the exhibits, and which may come from my deep, dark, demented imagination.', TEXTSIZE, '18px', CAPTION, 'To Tell the Truth - The Guggenheim Episode -- Click to read the story', HAUTO);" onmouseout="return nd();" style="text-decoration:none;font-family:arial;color:#FFFFFF;font-weight:bold">This week's story: To Tell the Truth - The Guggenheim Museum Edition -- Click here</a>
+    </center>
+    </td></tr></table>
+    <table name=t4 border=0 cellpadding=0 align=center cellspacing=0 width=768 bgcolor="#C0C0C0" style="margin-top: 0px;"><tr><td width=100%><font face="verdana" size=2>
+    <a href="JavaScript: alert('We do not allow popup ads at BBHQ. However, many of our features use popup windows in order to facilitate navigation and make things work smoothly.\n\nPlease disable any popup blockers you may be using.\n\nYou should also make certain that your computer accepts cookies from our site.\n\nGot questions? Click the ' + cu + ' link to ask us.\n\nThanks.')">about popups</a> |
+    <a href="email.htm" >contact us</a> | <a href="bbhqfaq.htm" >FAQ</a> | <a href="newmbr.htm" >member services</a> |
+    <a href="#" onClick="return showwind(2,450,600)">newsletter subscription</a> | <a href="thisweek.htm" >this week's essay</a> | <a href="#" onClick="return showwind(5,400,600)">site navigation</a>
+    </font></td></tr></table>
+</td></tr></table>      <!-- end 1 -->
+<script language="JavaScript" type="text/javascript">  //   <!--
+function showwind(parm,xwid,xhgt)  {
+	var imywidth;
+	var imyheight;
+	windwidth = xwid
+	windhgt =  xhgt
+	imywidth = (window.screen.width/2) - ((windwidth/2) + 10);
+	imyheight = (window.screen.height/2) - ((windhgt/2) + 20);
+    if (parm == 1)  var win2 = window.open("thisday/tcrpt1.htm","popwin","toobar=no,height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no")
+	if (parm == 2)	var win2 = window.open("txt/jokesub2.php?caller=navbutn","jokewind","height="+windhgt+",width="+windwidth+",resizable=no,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no")
+	if (parm == 3)	var win2 = window.open("txt/navtips.php","navwind","height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no");
+	if (parm == 4)	var win2 = window.open("txt/mbrform.htm","mbrwind","height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no");
+	if (parm == 5)	var win2 = window.open("txt/navtips2.php","navwind2","height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no");
+	if (parm == 6)	var win2 = window.open("txt/privacy.htm","privwind","height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no");
+	if (parm == 7)	var win2 = window.open("thisday/timcapsl.php","tcwind","height="+windhgt+",width="+windwidth+",resizable=yes,left=" + imywidth + ",top=" + imyheight + ",screenX=" + imywidth + ",screenY=" + imyheight + ",scrollbars=yes,titlebar=no");
+	return false
+}
+usercnt = xgetc("pgcnt")
+if (usercnt == null)	{	  usercnt = 0 }
+usercnt = usercnt + 1
+if (usercnt > 5000)    {  usercnt = 100 }
+var ythecookie = "pgcnt=" + escape(usercnt) + "; expires=Mon, 31 Dec 2012 10:00:00 GMT; path=/;  domain=.bbhq.com"
+document.cookie = ythecookie;
+if (date1 == null)    {
+	expx = currdate
+	mmx = currdate.getMonth() + 1
+	mmx = mmx.toString()
+	if (mmx.length == 1) { mmx = "0" + mmx}
+	ddx = currdate.getDate().toString()
+	if (ddx.length == 1) { ddx = "0" + ddx}
+	mmddyyx = mmx + ddx + currdate.getFullYear().toString().substring(2,4)
+	expx.setTime(currdate.getTime() + 990000000000)
+	var zthecookie = "firstdte=" + mmddyyx + "; expires=" + expx.toGMTString() + "; path=/; domain=.bbhq.com"
+	document.cookie = zthecookie;
+}
+//var ovlib = "onmouseover=\"return overlib('This year&rsquo;s best Christmas album: 15 classics in Michael Buble&rsquo;s wonderful, unique style.<br>&#36;12 - CD or downloadable MP3s', BGCOLOR, '#008000', CAPTION, 'Michael Buble Christmas -- Click for more info', HAUTO);\" onmouseout=\"return nd();\" "
+//var buble = "<a href=\"http://www.amazon.com/exec/obidos/ASIN/B005H0IW6W/babyboomerheadqu\" " + ovlib + "target=_blank><img src=\"xmas11/xmas-buble.jpg\" width=139 height=095 border=0></a>"
+//var banr2 = "<a href=\"http://www.amazon.com/?&tag=babyboomerheadqu&creative=397325&camp=211173&link_code=ur1&adid=0THRMZPFC6V3YSBPEN71\" target=_blank><img src=\"sitegr/amaxmas-banner.jpg\" width=728 height=090 border=0></a>&nbsp;" + buble
+//if (xsec > 20) { banr2 = "<a href=\"http://www.amazon.com/b?ie=UTF8&node=237796011&tag=babyboomerheadqu&camp=217333&creative=400913&linkCode=ur1&adid=1T2GEKHX6B2M9A7641YQ&&ref-refURL=\" target=_blank><img src=\"sitegr/amaxmas-banner2.jpg\" width=734 height=095 border=0></a>&nbsp;" + buble}
+//if (xsec > 40) { banr2 = "<a href=\"http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000440771&tag=babyboomerheadqu&camp=217345&creative=400621&linkCode=ur1&adid=175G0JVJVB4A0ZZ8Q7X4&&ref-refURL=\" target=_blank><img src=\"sitegr/amaxmas-banner3.jpg\" width=468 height=060 border=0></a>&nbsp;" + buble}
+//document.write(banr2)
+// -->
+</script></center>
+
+
+<SCRIPT LANGUAGE="JavaScript">    //  <!--
+reqcnt = 0
+function reqlyr()   {
+    reqcnt = reqcnt + 1
+    if (reqcnt == 1)        {
+        alert("Our request lyrics feature offers you a chance to ask us to add lyrics to songs in our collection that we do not yet have. We cannot send you lyrics via e-mail, but if the song you request was a top-40 hit in the U.S., we may be able to add it to our collection.")
+    }
+    if (confirm('Did you check to see if we already have the lyrics?\n\nClick "OK" if you have, "Cancel" if you have not.'))  {
+        if(confirm('Are you sure? Many of the requests we receive are for songs already in our collection.\n\nClick "OK" if you are sure, "Cancel" if you are not.'))    {
+            msgwind2 = open("txt/reqlyr.php","reqwind", "toolbar=no,height=400,width=500,titlebar=no,scrollbars=yes,resizable=yes,screenX=00,screenY=050,left=00,top=050")
+            return
+        }
+    }
+    return
+}
+//
+// end of js  -->
+</SCRIPT>
+
+<table width=100% cellpadding=5><tr>
+<td width=220 valign=top>
+    <script language="Javascript">    <!--   Newsletter Subscription
+    function nltip()    {
+        line1 = "We want to keep you coming back to BBHQ; we'd like to send you our weekly newsletter. Here's the deal:\n\n"
+        line2 = "As a subscriber, we'll send you an e-mail every Monday morning; the e-mail will include the following:\n" ;
+        line3 = "      Our Joke of the Week - 60 seconds of good, clean fun;\n "
+        line4 = "      An inspirational quotation;\n"
+        line5 = "      A tip from our \"Brush Up Your Webster\" series;\n"
+        line6 = "      Questions and tips for our prize-laden Monthy Trivia Contest;\n"
+        line7 = "      Lyrics You Can Share - a few lines from a great boomer song;\n"
+        line8 = "      An excerpt from Hershel's latest essay;\n"
+        line9 = "      News and samples of the latest features at BBHQ;\n"
+        line10 = "     Links to various pages at BBHQ.\n\n"
+        line11 = "We will NOT hit you with any spam or extra e-mail; we will never provide your name or e-mail address to ANYBODY. Of course, you can cancel at any time.\n\n"
+        line12 = "(To change your address, first unsubscribe from the old address, and then Subscribe using the new one; or, use our E-mail (Contact Us) page to do it in one step.)\n\n";
+        line13 = "Please join us for the fun! We really want you as a 'regular'; that's all. "
+        alert(line1+line2+line3+line4+line5+line6+line7+line8+line9+line10+line11+line12+line13)
+        return
+    }
+//
+    function valnl()    {
+        if (document.jsubform.jemail.value.length == 0) {
+            alert("You did not enter an e-mail address; that won't work.")
+            document.jsubform.jemail.focus()
+            return false
+        }
+        if (document.jsubform.jemail.value.length < 3) {
+            alert("The email address you entered is too short; please try again.")
+            document.jsubform.jemail.focus()
+            return false
+        }
+        if (document.jsubform.jemail.value.indexOf("@") == -1)   {
+            alert("The e-mail address does not have an \"@\" symbol in it; please try again. ")
+            document.jsubform.jemail.focus()
+            return false
+        }
+        if (document.jsubform.sub[0].checked == true && document.jsubform.fname.value.length == 0)    {
+            alert("We need your first name, just so we can address your e-mail properly.")
+            document.jsubform.fname.focus()
+            return false
+        }
+        msgwind3 = open("txt/jokesubs.php","jsubwind", "toolbar=no,height=300,width=350,titlebar=no,scrollbars=yes,resizable=yes,screenX=00,screenY=050,left=00,top=050")
+        return false
+    }
+    //  -->
+    </script>
+        <form name=jsubform method=post action="txt/jokesubs.php" onSubmit="return valnl()">
+        <center><table width=220 border=2 cellpadding=9><tr><td><font size=2><b>
+            &nbsp; &nbsp; &nbsp; &nbsp; <font color="#00009C">The BBHQ Newsletter</font><br>
+            <img src="sitegr/spacer.gif" height=10 width=10 border=0><br>
+            <input type=radio name=sub checked value="S">Subscribe &nbsp;
+            <input type=radio name=sub value="U">Unsubscribe<br>
+            <input type=hidden name=source value="LY">
+            <img src="sitegr/spacer.gif" height=05 width=10 border=0><br>
+            First name: <input type=text name=fname size=8 maxlength=12><br>
+            <img src="sitegr/spacer.gif" height=05 width=10 border=0><br>
+            E-mail: <input type=text name=jemail size=15 maxlength=45><p>
+            <center><input type=button value="What's this?" onClick="nltip()">&nbsp; &nbsp;
+                    <input type=submit value="Submit"></center>
+        </b></font></td></tr>
+        </table></center><p>
+        </form><p>
+</td>
+<td valign=middle width=45%><font size=4><b><center>
+    <font color="#00009C"><font size=5>The BBHQ Music Room:<br>Lyrics to Our Favorite Songs</font></center></b></font><p>
+<center><b><i>Baby Boomer HeadQuarters: www.bbhq.com<br>A Whole Lot More Than Just Lyrics!</i></b></center><br>
+</font>
+</td>
+<td width=25% align=right>
+    <script language="JavaScript">          //  <!--
+    function showmbr()  {
+        self.name = "lyrics"
+        msgwind4 = open("txt/mbrform.htm","mbrwind", "toolbar=no,height=450,width=450,titlebar=no,scrollbars=yes,resizable=yes,screenX=00,screenY=050,left=00,top=050")
+        return
+    }
+    function login()  {
+        scrhgt = screen.height
+        scrwid = screen.width
+        leftpos = (screen.width * .5) - 200
+        self.name = "lyrics"
+        msgwind5 = open("txt/login.php","loginwind", "toolbar=no,height=550,width=450,titlebar=no,scrollbars=yes,resizable=yes,screenX="+leftpos+",screenY=030,left="+leftpos+",top=030")
+        return
+    }
+//
+    vstat = getc("mcode")
+    vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatn.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+    if (vstat == null)  {
+        vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatn.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+    } else {
+        vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatn.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><p>\n"
+        if (vstat.substring(11,12) == "B") vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatb.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+        if (vstat.substring(11,12) == "P") vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatp.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+        if (vstat.substring(11,12) == "T") vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstatt.gif\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+        if (vstat.substring(11,12) == "O") vstatimg = "<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrstato.jpg\"  width=70 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n"
+        if (vstat.substring(11,12) == "p" || vstat.substring(11,12) == "o" || vstat.substring(11,12) == "b" || vstat.substring(11,12) == "t" )     {
+//                  delete if in process
+            dcookie = "mcode=" + "; expires=Mon, 01 Jan 2001 01:00:00 GMT; path=/; domain=.bbhq.com"
+            document.cookie = dcookie;
+        }
+    }
+    document.write("<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrsvc.gif\"  width=070 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n")
+    document.write(vstatimg)
+    if (mcflg == 0)  {
+        document.write("<a href=\"Javascript: login()\"><img src=\"sitegr/login.jpg\"  width=068 height=020 border=0 alt=\" Alternative login for members \"></a><br>\n") ;
+    }
+    if (jmbrstat == "A")    { jmstatmsg = "<font size=2>expires: " + jexpdate + "</font><br>\n"  }
+    if (jmbrstat == "E")    { jmstatmsg = "<font size=2>your membership<br>expired on " + jexpdate + "</font><br>\n" }
+    if (jmstatmsg != null)  { document.write(jmstatmsg) }
+    //   -->
+    </script>
+
+</td>
+</tr>
+</table>
+
+<table width=100%><tr>
+        <td>
+            <a href="pp&a.htm"><img src="sitegr/pp&atease.gif" width=100 height=126 border=0 alt="Click here for great pictures, posters & autographs"></a>
+        </td>
+        <td>
+        <table width=100% border=2><tr><td>
+            <table width=100% align=center border=0 cellpadding=9><tr>
+                <td valign=top>
+                <font color=red size=4><b><i>Purchasing a BBHQ Membership Gift
+                Certificate is an easy way to give a unique gift to the boomers
+                in your life. Click the treasure chest to order one right now.</i></b></font>
+                </td>
+                <td valign=top><a href="mbrgc1.php"><img src="sitegr/treasurechest2.gif" alt=" A Gift Certificate for BBHQ Member Services " border=0 width=080 height=045></a></td>
+             </tr>
+            </table>
+        </td></tr></table>
+        </td>
+</tr></td></table><p>
+
+<!-- main table - 1 row; 2 columns  -->
+<table border="0" width=100% cellpadding="09" cellspacing ="00">  <!-- - main table - 1 row; 2 columns - -->
+<tr>
+<td width=50% valign="top">         <!-- - left column - -->
+    <table width=100% border=5><tr><td>        <!-- - for border - -->
+    <table width=100% bgcolor="00FFFF" border="0" cellpadding="5" cellspacing ="0">
+        <tr><td bgcolor="#C0C0C0"><font size=3 face="arial" color="#000000">
+            <center>
+            <b>TAKE ME THERE:</b>
+            </center></font>
+        </td></tr>
+        <tr><td>
+            &nbsp;
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="index.htm">BBHQ Home Page</a>
+            </font>
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="#view">View Lyrics to a Song</a>
+            </font>
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="javascript:reqlyr()">Request Lyrics to a Song</a>
+            </font>
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="cgi-bin/lyrics.pl?zcorr">
+                                Add (or Correct) Lyrics to a Song</a>
+            </font>
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="oldzvaul.htm">The Oldies Vault: 4,000 Songs</a><br>
+                &nbsp; &nbsp; &nbsp; <a href="oldzvaul.htm">Who sang what song?  Find out here</a>
+            </font>
+        </td></tr>
+        <tr><td><font size=2 face="arial">
+            &nbsp; &nbsp; <a href="music.htm">Return to the Music Room Entrance</a>
+            </font>
+        </td></tr>
+        <tr><td>
+            &nbsp;
+        </td></tr>
+    </table>
+    </td></tr></table>      <!-- - end of border table - -->
+
+<p>
+
+
+
+
+</td>
+<td width="50%" bgcolor="#FFFFFF" valign="top">        <!-- - right column - -->
+<font size="4">
+We have a collection of lyrics to some of the best and most interesting
+songs of the 50s, 60s, and early and mid 70s.  Our purpose is to
+bring back some memories, perhaps settle a few bets, and allow your kids
+to compare the words of our songs to the lyrics of what passes for rock
+today.<p>
+
+BBHQ members have unlimited access to our lyrics collection.<p>
+
+<center>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" id="Player_6615ba50-1172-497b-91b2-3fdf6d8307a5"  WIDTH="160px" HEIGHT="400px">
+
+<PARAM NAME="movie" VALUE="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fbabyboomerheadqu%2F8009%2F6615ba50-1172-497b-91b2-3fdf6d8307a5&Operation=GetDisplayTemplate">
+<PARAM NAME="quality" VALUE="high">
+<PARAM NAME="bgcolor" VALUE="#FFFFFF">
+<PARAM NAME="allowscriptaccess" VALUE="always">
+<embed src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fbabyboomerheadqu%2F8009%2F6615ba50-1172-497b-91b2-3fdf6d8307a5&Operation=GetDisplayTemplate" id="Player_6615ba50-1172-497b-91b2-3fdf6d8307a5" quality="high" bgcolor="#ffffff" name="Player_6615ba50-1172-497b-91b2-3fdf6d8307a5"allowscriptaccess="always"  type="application/x-shockwave-flash" align="middle" height="400px" width="160px">
+</embed>
+</OBJECT>
+
+<NOSCRIPT><A HREF="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fbabyboomerheadqu%2F8009%2F6615ba50-1172-497b-91b2-3fdf6d8307a5&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>
+</center>
+<p>
+
+
+
+</font>
+</td>       <!-- -------  end of right column ------ -->
+
+<td valign=top width=140>
+
+<!-- -----  promotbl ----- -->
+<table width=140 cellpadding=9 border=1><tr><td><font size=3><b>
+<a href="cgi-bin/otblnch.pl?mB0001GOHHU">
+<img src="music/oldfriends.jpg" ALT=" Old Friends Live on Stage (Deluxe Edition) (2 CD/1 DVD) " border="0" width=141 height=130></a><br>
+"Old Friends Live on Stage (Deluxe Edition) (2 CD/1 DVD),"
+55 songs: 2 CDs and a DVD from their 2003 concert tour.<br>
+<a href="cgi-bin/otblnch.pl?mB000679N8W">Click here</a> to order this great
+collection.<p>
+
+<hr width=80% size=3><p>
+
+<center><a href="mrch1.php?caller=bnf" target=_top>
+<img src="otb/boomersnf.jpg" width=100 height=160 border=1>
+</a></center><br>
+Nothing serious here. This is just a short series
+of observations and ruminations of a delightful boomer.
+Yep; this book will make most of us, especially those of us who grew up
+in the 60s, feel right at home. This will make a great gift for any
+boomer in your life.
+<a href="mrch1.php?caller=bnf" target=_top>Click here</a> to make it yours.<p>
+</b></font></td></tr>
+</table>
+<!-- ------  promotbl  ------ -->
+
+</td>
+
+</tr>
+</table><p>
+
+
+We've got some of the classics, some of the silly ones, and a few from the 90s that have the boomer spirit.  (But don't expect to find anything by Puff Daddy or the Spice Girls here.)  So if you want to capture the "flavor" of what was on our mind back then, turn off the radio, sit back, and take a trip back in time...<p>
+In order to be a hit (in my book), a song has to have a good beat.  You can't appreciate many of the songs from our youth without listening to them. In some cases, the words to a hit song - all by themselves - sound downright goofy. (Consider Buddy Holly's <b><i>Peggy Sue</b></i>: "Peggy Sue... Peggy Sue... pretty, pretty, pretty Peggy Sue. Oh, Peggy... my Peggy Sue.") And some of my favorites are instrumentals; you can hum along and tap your foot, but there are no words to Mason Williams' "Classical Gas."<p>
+But sometimes the lyrics alone were enough to make a song memorable. This section of BBHQ shows why.<p>
+We have lyrics to over 750 songs (although our Oldies Vault contains the names of more than 4,000 songs).  You can request the lyrics to a song that is not in our collection; we're adding more every month. And you can provide lyrics to your favorite songs; if it was a top-40 hit in the U.S., we'll add it to our collection.<p>
+<hr width=80% size=5 noshade><p>
+<pre>
+
+</pre>
+
+
+<a name="view">&nbsp;</a>
+
+<table border=0 width=100%><tr>
+<td width=25%>
+    <A HREF="http://www.amazon.com/exec/obidos/redirect-home/babyboomerheadqu?tag-id=babyboomerheadqu" target=_blank>
+    <img src="sitegr/amasrch2.gif" BORDER="0" HEIGHT="90" WIDTH="120" alt=" Amazon.com has it all! " target=_blank></A>
+</td>
+<td width=50%>
+    <center><font color="#00009C" size=5>View the Lyrics to a Song</font></center><p>
+    <script language="JavaScript">
+        if (vstat == "0")   { document.write("<center><font color=\"#00009C\" size=4>BBHQ members have unlimited access to our Lyrics Section</font></center><p>") }
+    </script>
+</td>
+
+<td width=25% align=right>
+    <script language="JavaScript">
+        document.write("<a href=\"Javascript: showmbr()\"><img src=\"sitegr/mbrsvc.gif\"  width=070 height=040 border=0 alt=\" Click for for membership info \"></a><br>\n")
+        document.write(vstatimg)
+        if (mcflg == 0)  {
+            document.write("<a href=\"Javascript: login()\"><img src=\"sitegr/login.jpg\"  width=068 height=020 border=0 alt=\" Alternative login for members \"></a><br>\n") ;
+        }
+        if (jmbrstat == "A")    { jmstatmsg = "<font size=2>exp. date: " + jexpdate + "</font><br>\n"  }
+        if (jmbrstat == "E")    { jmstatmsg = "<font size=2>your membership<br>expired on " + jexpdate + "</font><br>\n" }
+        if (jmstatmsg != null)  { document.write(jmstatmsg) }
+    </script>
+</td>
+</tr></table>
+<p>
+
+<font size=3><b>
+BBHQ members have unlimited access to our lyrics collection.<p>
+
+If you know what you're looking for.... well, you'll know it when you see it.  But if you're looking for lyrics that defined the boomer years, check out the ones with this symbol: * before the title. They set the tone for our youth.<p>
+<form name="search" onSubmit="return findinpage(this.string.value)">
+We have lyrics to over 750 songs; they are listed below, alphabetically by song title. Scroll down to see the list. Scan the list and click the title to view the lyrics. Or, enter part of the song or artist's name here and click "Find" to search for the song title on this page:
+<nobr><font size=3><input name="string" type="text" size=20 onChange="n = 0;"></font>
+<input type="submit" value="Find"></nobr> &nbsp; &nbsp;
+<input type=button value="Help on find" onClick="fndhelp()">
+</form>
+</font></b><p>
+
+
+<center><font size=5 color="#00009C"><b><i>The BBHQ Lyrics Collection</i></b></font></center><p>
+
+<table width=95% align=center cellspacing=01 cellpadding=03 border=0>
+     <tr>     <td valign=top>
+<a href="JavaScript: cntreq('16cand')">16 Candles - Crests</a><br>
+<a href="JavaScript: cntreq('16tons')">16 Tons - Tennessee Ernie Ford</a><br>
+<a href="JavaScript: cntreq('19thnb')">19th Nervous Breakdown - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('25or6')">25 or 6 to 4 - Chicago</a> <br>
+<a href="JavaScript: cntreq('50ways')">50 Ways to Leave Your Lover - Paul Simon</a><br>
+<a href="JavaScript: cntreq('59bridge')">(The) 59th Street Bridge Song (Feelin' Groovy) - Harper's Bizarre/Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('500miles')">500 Miles - Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('96tears')">96 Tears - Question Mark & the Mysterians</a><br>
+<a href="JavaScript: cntreq('ahorse')">A Horse with No Name - America</a><br>
+<a href="JavaScript: cntreq('littbit')">A Little Bit Me, a Little Bit You - Monkees</a><br>
+<a href="JavaScript: cntreq('abraham')">Abraham, Martin, and John - Dion</a> <br>
+<a href="JavaScript: cntreq('ahab')">Ahab, the Arab - Ray Stevens</a><br>
+<a href="JavaScript: cntreq('aintnomo')">Ain't No Mountain High Enough - Diana Ross</a> <br>
+<a href="JavaScript: cntreq('aintnowo')">Ain't No Woman Like the One I Got - Four Tops</a><br>
+<a href="JavaScript: cntreq('ainttoo')">Ain't too Proud to Beg - Temptations</a><br>
+<a href="JavaScript: cntreq('alices')">Alice's Restaurant - Arlo Guthrie</a><br>
+<a href="JavaScript: cntreq('allalone')">All Alone am I - Brenda Lee</a><br>
+<a href="JavaScript: cntreq('alliever')">All I Ever Need is You - Sonny & Cher</a><br>
+<a href="JavaScript: cntreq('allihave')">All I Have to do is Dream - Everly Brothers</a><br>
+<a href="JavaScript: cntreq('alliknow')">All I Know - Art Garfunkel</a> <br>
+<a href="JavaScript: cntreq('allinfam')">"All in the Family" theme</a><br>
+<a href="JavaScript: cntreq('alleyoop')">Alley Oop - Hollywood Argyles</a><br>
+<a href="JavaScript: cntreq('aloneag')">Alone Again, Naturally - Gilbert O'Sullivan</a><br>
+<a href="JavaScript: cntreq('alongcam')">Along Came Jones - Coasters</a><br>
+<a href="JavaScript: cntreq('alongc')">Along Comes Mary - Association</a><br>
+<a href="JavaScript: cntreq('always&')">Always and Forever - Heatwave</a><br>
+<a href="JavaScript: cntreq('alwayson')">Always on My Mind - Willie Nelson</a><br>
+<a href="JavaScript: cntreq('america')">America - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('lfamer')">America - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('amerpie')">American Pie - Don McLean</a> <br>
+<a href="JavaScript: cntreq('amertune')">American Tune - Paul Simon</a> <br>
+<a href="JavaScript: cntreq('amerwoma')">American Woman - Guess Who</a><br>
+<a href="JavaScript: cntreq('andilov2')">And I Love Her - Beatles</a><br>
+<a href="JavaScript: cntreq('andilove')">And I Love You So - Perry Como</a><br>
+<a href="JavaScript: cntreq('angelof')">Angel of the Morning - Marilee Rush</a><br>
+<a href="JavaScript: cntreq('angelon')">Angel on My Shoulder - Shelby Flint</a><br>
+<a href="JavaScript: cntreq('angiebab')">Angie Baby - Helen Reddy</a><br>
+<a href="JavaScript: cntreq('annies')">Annie's Song - John Denver</a><br>
+<a href="JavaScript: cntreq('another')">Another Saturday Night - Sam Cooke/Cat Stevens/James Taylor</a> <br>
+<a href="JavaScript: cntreq('aprlove')">April Love - Pat Boone</a><br>
+<a href="JavaScript: cntreq('aquarius')">Aquarius/Let the Sun Shine - Fifth Dimension</a> <br>
+<a href="JavaScript: cntreq('areyou')">Are You Lonesome Tonight? - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('at17')">At Seventeen - Janis Ian</a><br>
+<a href="JavaScript: cntreq('atthehop')">At the Hop - Danny and the Juniors</a><br>
+<a href="JavaScript: cntreq('babyblu')">Baby Blue - Badfinger</a><br>
+<a href="JavaScript: cntreq('babydont')">Baby Don't Go - Sonny & Cher</a><br>
+<a href="JavaScript: cntreq('babyl')">Baby Love - Supremes</a><br>
+<a href="JavaScript: cntreq('babyimyr')">Baby I'm Yours - Barbara Lewis</a><br>
+<a href="JavaScript: cntreq('babyrain')">Baby, the Rain Must Fall - Glenn Yarbrough</a><br>
+<a href="JavaScript: cntreq('backhome')">Back Home Again - John Denver</a><br>
+<a href="JavaScript: cntreq('badbad')">Bad Bad Leroy Brown - Jim Croce</a> <br>
+<a href="JavaScript: cntreq('badmoon')">Bad Moon Rising - Creedence Clearwater Revival</a><br>
+<a href="JavaScript: cntreq('ballof')">Ball of Confusion (That's What the World is Today) - Temptations</a><br>
+<a href="JavaScript: cntreq('greenber')">Ballad of the Green Berets - Ssgt. Barry Sadler</a><br>
+<a href="JavaScript: cntreq('barbara')">Barbara Ann - Beach Boys</a><br>
+<a href="JavaScript: cntreq('battle')">Battle of New Orleans - Johnny Horton</a><br>
+<a href="JavaScript: cntreq('beatgoes')">(The) Beat Goes On - Sonny and Cher</a><br>
+<a href="JavaScript: cntreq('bnoise')">Beautiful Noise - Neil Diamond</a> <br>
+<a href="JavaScript: cntreq('belinme')">Believe in Me - Dan Fogelberg</a><br>
+<a href="JavaScript: cntreq('beepbeep')">Beep Beep - Playmates</a><br>
+<a href="JavaScript: cntreq('bernadet')">Bernadette - Four Tops</a><br>
+<a href="JavaScript: cntreq('betcha')">Betcha' by Golly, Wow - Stylistics</a><br>
+<a href="JavaScript: cntreq('beverly')">Beverly Hillbillies Theme Song - Flatt & Skrugs</a><br>
+<a href="JavaScript: cntreq('beyondc')">Beyond the Sea - Bobby Darin</a> <br>
+<a href="JavaScript: cntreq('bigbad')">Big Bad John - Jimmy Dean</a><br>
+<a href="JavaScript: cntreq('biggirls')">Big Girls Don't Cry - Four Seasons</a><br>
+<a href="JavaScript: cntreq('blinded')">Blinded by the Light - Manfred Mann's Earth Band</a><br>
+<a href="JavaScript: cntreq('blowin')">Blowin' in the Wind - Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('blubayou')">Blue Bayou - Roy Orbison/Linda Ronstadt</a><br>
+<a href="JavaScript: cntreq('bluemoon')">Blue Moon - Marcels</a><br>
+<a href="JavaScript: cntreq('born2be')">Born to be Wild - Steppenwolf</a>  <br>
+<a href="JavaScript: cntreq('borntoo')">Born Too Late - Ponytails</a><br>
+<a href="JavaScript: cntreq('bobbysg')">Bobby's Girl - Marcie Blane</a><br>
+<a href="JavaScript: cntreq('both')">Both Sides Now - Judy Collins</a>  <br>
+<a href="JavaScript: cntreq('bornfree')">Born Free - Andy Williams</a><br>
+<a href="JavaScript: cntreq('brandy')">Brandy (You're a Fine Girl) - Looking Glass</a><br>
+<a href="JavaScript: cntreq('breaking')">Breaking Up is Hard to Do - Neil Sedaka</a><br>
+<a href="JavaScript: cntreq('bridge')">Bridge over Troubled Water - Simon & Garfunkel</a> <br>
+<a href="JavaScript: cntreq('brotherl')">Brother Love's Traveling Salvation Show - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('browneye')">Brown Eyed Girl - Van Morrison</a><br>
+<a href="JavaScript: cntreq('buildme')">Build Me Up Buttercup - Foundations</a>  <br>
+<a href="JavaScript: cntreq('busstop')">Bus Stop - Hollies</a>  <br>
+<a href="JavaScript: cntreq('byebye')">Bye Bye Love - Everly Brothers</a><br>
+<a href="JavaScript: cntreq('ccrider')">C. C. Rider (Jenny Take a Ride) - Fats Domino/Mitch Ryder</a><br>
+<a href="JavaScript: cntreq('calgirl')">Calendar Girl - Neil Sedaka</a>  <br>
+<a href="JavaScript: cntreq('calif')">California Dreamin' - Mamas & Papas</a>  <br>
+<a href="JavaScript: cntreq('calgirls')">California Girls - Beach Boys</a>  <br>
+<a href="JavaScript: cntreq('callmei')">Call Me Irresponsible - Frank Sinatra</a><br>
+<a href="JavaScript: cntreq('candlein')">Candle in the Wind - Elton John</a><br>
+<a href="JavaScript: cntreq('canthelp')">Can't Help Myself - Four Tops</a>  <br>
+<a href="JavaScript: cntreq('canttake')">Can't Take My Eyes Off of You - Frankie Valli</a><br>
+<a href="JavaScript: cntreq('caramia')">Cara Mia - Jay and the Americans</a>  <br>
+<a href="JavaScript: cntreq('catchwnd')">Catch the Wind - Donovan</a><br>
+<a href="JavaScript: cntreq('catsin')">Cat's in the Cradle - Harry Chapin</a>  <br>
+<a href="JavaScript: cntreq('celebrat')">Celebrate - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('chancesr')">Chances Are - Johnny Mathis</a><br>
+<a href="JavaScript: cntreq('changesin')">Changes in Attitudes - Jimmy Buffett</a><br>
+<a href="JavaScript: cntreq('chantily')">Chantilly Lace - Big Bopper</a><br>
+<a href="JavaScript: cntreq('charlieb')">Charlie Brown - Coasters</a><br>
+<a href="JavaScript: cntreq('cherish')">Cherish - Association</a> <br>
+<a href="JavaScript: cntreq('cherrych')">Cherry, Cherry - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('chipmunk')">(The) Chipmunk Song - Chipmunks/David Seville</a><br>
+<a href="JavaScript: cntreq('chugalug')">Chug-a-Lug - Roger Miller</a><br>
+<a href="JavaScript: cntreq('circle')">(All My Life's a) Circle - Harry Chapin</a><br>
+<a href="JavaScript: cntreq('cindysbd')">Cindy's Birthday - Johnny Crawford</a><br>
+<a href="JavaScript: cntreq('cityofno')">(The) City of New Orleans - Arlo Guthrie</a><br>
+<a href="JavaScript: cntreq('close2u')">Close to You - Carpenters</a><br>
+<a href="JavaScript: cntreq('coconut')">Coconut - Nilsson</a><br>
+<a href="JavaScript: cntreq('colourmy')">Colour My World - Chicago</a> height=17 border=0></a><br>
+<a href="JavaScript: cntreq('comeabit')">Come a Little Bit Closer - Jay and the Americans</a><br>
+<a href="JavaScript: cntreq('comeback')">Come Back When You Grow Up - Bobby Vee</a><br>
+<a href="JavaScript: cntreq('comemond')">Come Monday - Jimmy Buffett</a><br>
+<a href="JavaScript: cntreq('cometog')">Come Together - Beatles</a><br>
+<a href="JavaScript: cntreq('convoy')">Convoy - C.W. McCall</a><br>
+<a href="JavaScript: cntreq('cudihave')">Could I have this Dance - Anne Murray</a><br>
+<a href="JavaScript: cntreq('coulditb')">Could it be I'm Falling in Love - Spinners</a><br>
+<a href="JavaScript: cntreq('coward')">Coward of the County - Kenny Rogers</a><br>
+<a href="JavaScript: cntreq('crack')">Cracklin' Rosie - Neil Diamond</a>  <br>
+<a href="JavaScript: cntreq('creeque')">Creeque Alley - Mamas & Papas</a><br>
+<a href="JavaScript: cntreq('crokrock')">Crocodile Rock - Elton John</a> <br>
+<a href="JavaScript: cntreq('cruel')">Cruel War - Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('crying')">Crying - Roy Orbinsin/Jay & the Americans/Don McLean</a><br>
+<a href="JavaScript: cntreq('crysblue')">Crystal Blue Persuasion - Tommy James & the Shondells</a><br>
+<a href="JavaScript: cntreq('cupid')">Cupid - Sam Cooke</a><br>
+<a href="JavaScript: cntreq('cycles')">Cycles - Frank Sinatra</a><br>
+<a href="JavaScript: cntreq('dadoron')">Da Doo Ron Ron - Crystals</a><br>
+<a href="JavaScript: cntreq('daisy')">Daisy a Day - Jed Strunk</a><br>
+<a href="JavaScript: cntreq('dancmid')">Dancing in the Moonlight - King Harvest</a><br>
+<a href="JavaScript: cntreq('daniel')">Daniel - Elton John</a><br>
+<a href="JavaScript: cntreq('dangme')">Dang Me - Roger Miller</a> <br>
+<a href="JavaScript: cntreq('dangl')">Dangling Conversation - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('dannysso')">Danny's Song - Anne Murray</a><br>
+<a href="JavaScript: cntreq('dawnofc')">Dawn of Correction - Spokesmen</a><br>
+<a href="JavaScript: cntreq('winerose')">Days of Wine and Roses - Andy Williams</a><br>
+<a href="JavaScript: cntreq('dec63')">December, '63 (Oh, What a Night) - Four Seasons</a><br>
+<a href="JavaScript: cntreq('dedicate')">(This is) Dedicated to the One I Love - Mamas and the Papas</a><br>
+<a href="JavaScript: cntreq('deltad')">Delta Dawn - Helen Reddy</a><br>
+<a href="JavaScript: cntreq('desider')">Desiderata - Les Crane</a><br>
+<a href="JavaScript: cntreq('destiny')">Destiny - Jim Brickman</a><br>
+<a href="JavaScript: cntreq('devilor')">Devil or Angel - Bobby Vee</a><br>
+<a href="JavaScript: cntreq('devilga')">Devil Went Down to Georgia - Charlie Daniels Band</a><br>
+<a href="JavaScript: cntreq('devilblu')">Devil with the Blue Dress On - Mitch Ryder</a><br>
+<a href="JavaScript: cntreq('devoted2')">Devoted to You - Everly Brothers/Carly Simon, James Taylor</a><br>
+<a href="JavaScript: cntreq('diana')">Diana - Paul Anka</a> <br>
+<a href="JavaScript: cntreq('diary')">Diary - Bread</a><br>
+<a href="JavaScript: cntreq('makemind')">Did You ever have to Make Up Your Mind? - Lovin' Spoonful</a><br>
+<a href="JavaScript: cntreq('differ')">Different Drum - Linda Ronstadt</a> <br>
+<a href="JavaScript: cntreq('dingling')">My Ding-a-Ling - Chuck Berry</a><br>
+<a href="JavaScript: cntreq('dothat')">Do that to Me One More Time - Captain and Tennille</a>  <br>
+<a href="JavaScript: cntreq('doyoube')">Do You Believe in Magic? - Lovin' Spoonful</a><br>
+<a href="JavaScript: cntreq('sanjose')">Do You Know the Way to San Jose? - Dionne Warwick</a><br>
+<a href="JavaScript: cntreq('douluvme')">Do You Love Me? - Contours/Dave Clark Five</a><br>
+<a href="JavaScript: cntreq('doyoure')">Do You Remember These? - Statler Brothers</a>  <br>
+<a href="JavaScript: cntreq('doyouwan')">Do You Want to Know a Secret - Beatles</a><br>
+<a href="JavaScript: cntreq('doesany')">Does Anybody Really Know What Time it Is? - Chicago</a><br>
+<a href="JavaScript: cntreq('doesyour')">Does Your Chewing Gum Lose its Flavor... - Lonnie Donegan</a><br>
+<a href="JavaScript: cntreq('donna')">Donna - Ritchie Valens</a><br>
+<a href="JavaScript: cntreq('dontbcr')">Don't be Cruel - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('dontgobr')">Don't Go Breaking My Heart - Elton John/Kiki Dee</a><br>
+<a href="JavaScript: cntreq('dontrain')">Don't Let the Rain Come Down (Crooked Little Man) - Serendipity Singers</a><br>
+<a href="JavaScript: cntreq('dontlet')">Don't Let the Sun Catch You Crying - Gerry & the Pacemakers</a>  <br>
+<a href="JavaScript: cntreq('dontlet2')">Don't Let the Sun Go Down on Me - Elton John</a><br>
+<a href="JavaScript: cntreq('dontsay')">Don't Say You Don't Remember - Beverly Bremers</a><br>
+<a href="JavaScript: cntreq('dontslep')">Don't Sleep in the Subway - Petula Clark</a>  <br>
+<a href="JavaScript: cntreq('dontthnk')">Don't Think Twice, it's All Right - Bob Dylan/PP&M/Wonder Who</a> <br>
+<a href="JavaScript: cntreq('dontwant')">Don't Want to Love You - Delbert McClinton</a> <br>
+<a href="JavaScript: cntreq('downinth')">Down in the Boondocks - Billy Joe Royal</a><br>
+<a href="JavaScript: cntreq('downon')">Down on the Corner - Creedence Clearwater Revival</a><br>
+<a href="JavaScript: cntreq('downtown')">Downtown - Petula Clark</a><br>
+<a href="JavaScript: cntreq('drembaby')">Dream Baby - Roy Orbison</a><br>
+<a href="JavaScript: cntreq('dreaml')">Dream Lover - Bobby Darin</a> <br>
+<a href="JavaScript: cntreq('dreamal')">Dream a Little Dream of Me - Mama Cass Elliot</a> <br>
+<a href="JavaScript: cntreq('dreamin')">Dreamin' - Johnny Burnette</a><br>
+<a href="JavaScript: cntreq('dukeearl')">Duke of Earl - Gene Chandler</a> <br>
+<a href="JavaScript: cntreq('dustin')">Dust in the Wind - Kansas</a> <br>
+<a href="JavaScript: cntreq('earthang')">Earth Angel - Penguins</a><br>
+<a href="JavaScript: cntreq('ebbtide')">Ebb Tide - Righteous Brothers</a><br>
+<a href="JavaScript: cntreq('elpaso')">El Paso - Marty Robbins</a>  <br>
+<a href="JavaScript: cntreq('erigby')">Eleanor Rigby - Beatles</a><br>
+<a href="JavaScript: cntreq('elusiveb')">Elusive Butterfly - Bob Lind</a><br>
+<a href="JavaScript: cntreq('endofwld')">(The) End of the World - Skeeter Davis</a><br>
+<a href="JavaScript: cntreq('eveof')">Eve of Destruction - Barry McGuire</a><br>
+<a href="JavaScript: cntreq('everybody')">Everybody Loves Somebody - Dean Martin</a><br>
+<a href="JavaScript: cntreq('evergone')">Everyone's Gone to the Moon - Jonathan King</a><br>
+<a href="JavaScript: cntreq('everybsb')">Everybody's Somebody's Fool - Connie Francis</a><br>
+<a href="JavaScript: cntreq('evilways')">Evil Ways - Santana</a><br>
+<a href="JavaScript: cntreq('ferry')">Ferry 'Cross the Mersey - Gerry & the Pacemakers</a> <br>
+<a href="JavaScript: cntreq('fire')">Fire - Crazy World of Arthur Brown</a><br>
+<a href="JavaScript: cntreq('firerain')">Fire and Rain - James Taylor</a>  <br>
+<a href="JavaScript: cntreq('firstime')">(The) First Time Ever I Saw Your Face - Roberta Flack</a><br>
+<a href="JavaScript: cntreq('fiveocw')">Five O'Clock World - Vogues</a><br>
+<a href="JavaScript: cntreq('foolhill')">Fool on the Hill - Beatles</a><br>
+<a href="JavaScript: cntreq('forall')">For all We Know - Carpenters</a><br>
+<a href="JavaScript: cntreq('fortheg')">For the Good Times - Ray Price</a><br>
+<a href="JavaScript: cntreq('forlovin')">For Lovin' Me - Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('foronce')">For Once in My Life - Stevie Wonder</a>  <br>
+<a href="JavaScript: cntreq('iloveyou')">(I Love You) For Sentimental Reasons - Nat Cole</a><br>
+<a href="JavaScript: cntreq('forwhat')">For What It's Worth - Buffalo Springfield</a><br>
+<a href="JavaScript: cntreq('4yourp')">For Your Precious Love - Jerry Butler & the Impressions</a><br>
+<a href="JavaScript: cntreq('forever')">Forever in Blue Jeans - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('forevery')">Forever Young - Rod Stewart</a><br>
+<a href="JavaScript: cntreq('forgethm')">Forget Him - Bobby Rydell</a><br>
+<a href="JavaScript: cntreq('forgiven')">Forgiveness (the Heart of the Matter) - Don Henley</a><br>
+<a href="JavaScript: cntreq('fromme')">From Me to You - Beatles</a><br>
+<a href="JavaScript: cntreq('funfun')">Fun, Fun, Fun - Beach Boys</a>  <br>
+<a href="JavaScript: cntreq('gambler')">(The) Gambler - Kenny Rogers</a><br>
+<a href="JavaScript: cntreq('gardenp')">Garden Party - Rick Nelson</a><br>
+<a href="JavaScript: cntreq('gentleon')">Gentle On My Mind - Glen Campbell</a><br>
+<a href="JavaScript: cntreq('georgia')">Georgia On My Mind - Ray Charles</a>  <br>
+<a href="JavaScript: cntreq('getajob')">Get a Job - Silhouettes</a>  <br>
+<a href="JavaScript: cntreq('getover')">Get Over It! - Eagles</a><br>
+<a href="JavaScript: cntreq('gilligan')">Gilligan's Isle (the Ballad of) - Wellingtons</a><br>
+<a href="JavaScript: cntreq('gimmedat')">Gimme Dat Ding - Pipkins</a><br>
+<a href="JavaScript: cntreq('gonow')">Go Now! - Moody Blues</a><br>
+<a href="JavaScript: cntreq('godbless')">God Bless the USA - Lee Greenwood</a> <br>
+<a href="JavaScript: cntreq('goodnite')">Goodnight My Love - Paul Anka</a><br>
+<a href="JavaScript: cntreq('gnsweet')">Goodnight, Sweetheart, Goodnight - McGuire Sisters/Spaniels</a><br>
+<a href="JavaScript: cntreq('goodvibs')">Good Vibrations - Beach Boys</a> <br>
+<a href="JavaScript: cntreq('yellowbr')">Goodbye Yellow Brick Road - Elton John</a><br>
+<a href="JavaScript: cntreq('greatbal')">Great Balls of Fire - Jerry Lee Lewis</a> <br>
+<a href="JavaScript: cntreq('greatpre')">(The) Great Pretender - Platters</a><br>
+<a href="JavaScript: cntreq('greeneye')">Green-Eyed Lady - Sugarloaf</a><br>
+<a href="JavaScript: cntreq('greenfld')">Greenfields - Brothers Four</a> <br>
+<a href="JavaScript: cntreq('grenrivr')">Green River - Creedence Clearwater Revival</a><br>
+<a href="JavaScript: cntreq('groovyki')">(A) Groovy Kind of Love - Mindbenders</a><br>
+<a href="JavaScript: cntreq('gypsies')">Gypsies, Tramps and Thieves - Cher</a><br>
+<a href="JavaScript: cntreq('hair')">Hair - Cowsills</a><br>
+<a href="JavaScript: cntreq('hangon')">Hang on Sloopy - McCoys</a><br>
+<a href="JavaScript: cntreq('hankpank')">Hanky Panky - Tommy James and the Shondells</a><br>
+<a href="JavaScript: cntreq('handyman')">Handy Man - Jimmy Jones/Del Shannon/James Taylor</a>  <br>
+<a href="JavaScript: cntreq('happen')">(The) Happening - Supremes</a> <br>
+<a href="JavaScript: cntreq('sweet16')">Happy Birthday Sweet Sixteen - Neil Sedaka</a><br>
+<a href="JavaScript: cntreq('happyend')">Happy Endings - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('happyt')">Happy Together - Turtles</a><br>
+<a href="JavaScript: cntreq('harddays')">(A) Hard Day's Night - Beatles</a><br>
+<a href="JavaScript: cntreq('harperva')">Harper Valley PTA - Jeannie C. Riley</a><br>
+<a href="JavaScript: cntreq('havei')">Have I Told You Lately - Rod Stewart</a><br>
+<a href="JavaScript: cntreq('havufor')">Have You Forgotten? - Darryl Worley</a><br>
+<a href="JavaScript: cntreq('haveyou')">Have You Never Been Mellow? - Olivia Newton-John</a><br>
+<a href="JavaScript: cntreq('havingmy')">(You're) Having My Baby - Paul Anka/Odia Coates</a><br>
+<a href="JavaScript: cntreq('hatsoff')">Hat's Off to Larry - Del Shannon</a><br>
+<a href="JavaScript: cntreq('seenrain')">Have You ever Seen the Rain? - Creedence Clearwater Revival</a><br>
+<a href="JavaScript: cntreq('ainthvy')">He Ain't Heavy, He's My Brother - Hollies</a>  <br>
+<a href="JavaScript: cntreq('hesareb')">He's a Rebel - Crystals</a><br>
+<a href="JavaScript: cntreq('hello')">Hello Again - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('hellomary')">Hello, Mary Lou - Ricky Nelson</a> <br>
+<a href="JavaScript: cntreq('hellom')">Hello Muddah, Hello Faddah - Allen Sherman</a><br>
+<a href="JavaScript: cntreq('helpmer')">Help Me Rhonda - Beach Boys</a><br>
+<a href="JavaScript: cntreq('hesso')">He's So Fine - Chiffons</a><br>
+<a href="JavaScript: cntreq('heyj')">Hey Jude - Beatles</a> <br>
+<a href="JavaScript: cntreq('heypaula')">Hey Paula - Paul & Paula</a><br>
+<a href="JavaScript: cntreq('heythere')">Hey there Lonely Girl - Eddie Holman</a><br>
+<a href="JavaScript: cntreq('highhope')">High Hopes - Frank Sinatra</a><br>
+<a href="JavaScript: cntreq('hittherd')">Hit the Road - Ray Charles</a>  <br>
+<a href="JavaScript: cntreq('holdme')">Hold Me, Thrill Me, Kiss Me - Mel Carter</a><br>
+<a href="JavaScript: cntreq('homeward')">Homeward Bound - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('honey')">Honey - Bobby Goldsboro</a><br>
+<a href="JavaScript: cntreq('hookedon')">Hooked on a Feeling - B. J. Thomas/Blue Swede</a> <br>
+<a href="JavaScript: cntreq('hotrod')">Hot Rod Lincoln - Commander Cody</a><br>
+<a href="JavaScript: cntreq('house')">House of the Rising Sun - Animals</a>  <br>
+<a href="JavaScript: cntreq('howsweet')">How Sweet it Is (to be Loved by You) - James Taylor</a><br>
+<a href="JavaScript: cntreq('hungry')">Hungry - Paul Revere & the Raiders</a><br>
+<a href="JavaScript: cntreq('hurtso')">Hurt So Bad - Lettermen/Little Anthony & the Imperials</a><br>
+<a href="JavaScript: cntreq('rock')">I Am a Rock - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('iami')">I Am, I Said - Neil Diamond</a>  <br>
+<a href="JavaScript: cntreq('iamwoman')">I Am Woman - Helen Reddy</a><br>
+<a href="JavaScript: cntreq('ibelieve')">I Believe - Frankie Laine/Lettermen/Jimmy Durante</a><br>
+<a href="JavaScript: cntreq('icansee')">I Can See for Miles - Who</a><br>
+<a href="JavaScript: cntreq('cant')">I Can't Help Falling in Love with You - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('icants')">I Can't Stop Loving You - Ray Charles</a><br>
+<a href="JavaScript: cntreq('dontknow')">I Don't Know Why I Love You But I Do - Clarence "Frogman" Henry</a><br>
+<a href="JavaScript: cntreq('igetarou')">I Get Around - Beach Boys</a><br>
+<a href="JavaScript: cntreq('igocrazy')">I Go Crazy - Paul Davis</a><br>
+<a href="JavaScript: cntreq('igotanam')">I Got a Name - Jim Croce</a><br>
+<a href="JavaScript: cntreq('igotrhy')">I Got Rhythm - Happenings</a><br>
+<a href="JavaScript: cntreq('igotyou')">I Got You, Babe - Sonny & Cher</a>  <br>
+<a href="JavaScript: cntreq('ihearas')">I Hear a Symphony - Supremes</a>  <br>
+<a href="JavaScript: cntreq('ihearu')">I Hear You Knockin' - Dave Edmunds</a><br>
+<a href="JavaScript: cntreq('grapvine')">I Heard it through the Grapevine - Gladys Knight/Marvin Gaye</a><br>
+<a href="JavaScript: cntreq('ihonest')">I Honestly Love You - Olivia Newton-John</a><br>
+<a href="JavaScript: cntreq('outthere')">I Know You're Out There Somewhere - Moody Blues</a><br>
+<a href="JavaScript: cntreq('ilovehow')">I Love How You Love Me - Paris Sisters/Bobby Vinton</a><br>
+<a href="JavaScript: cntreq('ineedto')">I Need to be in Love - Carpenters</a><br>
+<a href="JavaScript: cntreq('ionlyw')">I Only Want to be with You - Dusty Springfield</a> <br>
+<a href="JavaScript: cntreq('isawher')">I Saw Her Again - Mamas and the Papas</a><br>
+<a href="JavaScript: cntreq('isawhers')">I Saw Her Standing There - Beatles</a><br>
+<a href="JavaScript: cntreq('iwanna')">I Want to Hold Your Hand - Beatles</a>  <br>
+<a href="JavaScript: cntreq('iwant2b')">I Want to be Wanted - Brenda Lee</a><br>
+<a href="JavaScript: cntreq('iwantu')">I Want You - Bob Dylan</a><br>
+<a href="JavaScript: cntreq('iwillsu')">I Will Survive - Gloria Gaynor</a><br>
+<a href="JavaScript: cntreq('wontlast')">I Won't Last a Day Without You - Carpenters</a><br>
+<a href="JavaScript: cntreq('if')">If - Bread</a><br>
+<a href="JavaScript: cntreq('ifi')">If I Could Reach You - Fifth Dimension</a><br>
+<a href="JavaScript: cntreq('ificudtu')">If I Could Turn Back Time - Cher</a><br>
+<a href="JavaScript: cntreq('ififell')">If I Fell - Beatles</a><br>
+<a href="JavaScript: cntreq('ifihad')">If I Had a Hammer - Trini Lopez/Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('ifiwere')">If I Were a Carpenter - Bobby Darin/Four Tops/Johnny Cash</a><br>
+<a href="JavaScript: cntreq('ifucud')">If You Could Read My Mind - Gordon Lightfoot</a><br>
+<a href="JavaScript: cntreq('ifyougo')">If You Go Away - Rod McKuen</a><br>
+<a href="JavaScript: cntreq('ifyoukn')">If You Know What I Mean - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('ifuleav')">If You Leave Me Now - Chicago</a><br>
+<a href="JavaScript: cntreq('ifureal')">If You Really Love Me - Stevie Wonder</a><br>
+<a href="JavaScript: cntreq('ifyou')">If You Wanna Be Happy - Jimmy Soul</a><br>
+<a href="JavaScript: cntreq('waitamil')">I'd Wait a Million Years - Grass Roots</a>  <br>
+<a href="JavaScript: cntreq('illcatch')">I'll Catch the Sun - Rod McKuen</a><br>
+<a href="JavaScript: cntreq('illfoll')">I'll Follow the Sun - Beatles</a><br>
+<a href="JavaScript: cntreq('illhave2')">I'll Have to Say I Love You in a Song - Jim Croce</a><br>
+<a href="JavaScript: cntreq('illnever')">I'll Never Fall In Love Again - Dionne Warwick</a><br>
+<a href="JavaScript: cntreq('imabe')">I'm a Believer - Monkees</a><br>
+<a href="JavaScript: cntreq('imgonna')">I'm Gonna Knock on Your Door - Eddie Hodges</a><br>
+<a href="JavaScript: cntreq('henry')">I'm Henry VIII, I Am - Herman's Hermits</a>  <br>
+<a href="JavaScript: cntreq('justa')">I'm Just a Singer in a Rock 'n Roll Band <nobr>- Moody Blues</a> height=17 border=0></nobr><br>
+<a href="JavaScript: cntreq('imsorry')">I'm Sorry - Brenda Lee</a><br>
+<a href="JavaScript: cntreq('ivebeen')">I've Been this Way Before - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('imagine')">Imagine - John Lennon</a><br>
+<a href="JavaScript: cntreq('inmylife')">In My Life - Beatles/Judy Collins</a><br>
+<a href="JavaScript: cntreq('inmyroom')">In My Room - Beach Boys</a><br>
+<a href="JavaScript: cntreq('midhour')">In the Midnight Hour - Wilson Pickett</a><br>
+<a href="JavaScript: cntreq('inthest')">In the Still of the Night - Five Satins</a><br>
+<a href="JavaScript: cntreq('inthes')">In the Summertime - Mungo Jerry</a><br>
+<a href="JavaScript: cntreq('intheyr')">In the Year 2525 - Zager & Evans</a><br>
+<a href="JavaScript: cntreq('incense')">Incense and Peppermints - Strawberry Alarm Clock</a><br>
+<a href="JavaScript: cntreq('isthat')">Is That all There Is? - Peggy Lee</a><br>
+<a href="JavaScript: cntreq('itaintme')">It Ain't Me Babe - Turtles/Bob Dylan</a><br>
+<a href="JavaScript: cntreq('ithurts2')">It Hurts to be in Love - Gene Pitney</a><br>
+<a href="JavaScript: cntreq('almostli')">It Was Almost Like a Song - Ronnie Milsap</a><br>
+<a href="JavaScript: cntreq('allin')">It's All in the Game - Tommy Edwards</a> <br>
+<a href="JavaScript: cntreq('itsget')">It's Getting Better - Mama Cass Elliot</a><br>
+<a href="JavaScript: cntreq('itsgonna')">It's Going to Take Some Time - Carpenters</a><br>
+<a href="JavaScript: cntreq('itsmypar')">It's My Party - Lesley Gore</a> <br>
+<a href="JavaScript: cntreq('itsonly')">It's Only Make Believe - Conway Twitty/Glenn Campbell</a><br>
+<a href="JavaScript: cntreq('its2late')">It's Too Late - Carole King</a><br>
+<a href="JavaScript: cntreq('itsyb')">Itsy Bitsy, Teenie Weenie, Yellow Polka-Dot Bikini - Brian Hyland</a>  <br>
+<a href="JavaScript: cntreq('jailhous')">Jailhouse Rock - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('jennifer')">Jennifer Juniper - Donovan</a>  <br>
+<a href="JavaScript: cntreq('jimmymac')">Jimmy Mack - Martha and the Vandellas</a><br>
+<a href="JavaScript: cntreq('johnny')">Johnny Angel - Shelly Fabres</a><br>
+<a href="JavaScript: cntreq('johnnybg')">Johnny B. Goode - Chuck Berry</a><br>
+<a href="JavaScript: cntreq('joyworld')">Joy to the World - Three Dog Night</a>  <br>
+<a href="JavaScript: cntreq('jumpin')">Jumpin' Jack Flash - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('judyin')">Judy in Disguise - John Fred & His Fabulous Playboys</a><br>
+<a href="JavaScript: cntreq('judzturn')">Judy's Turn to Cry - Lesley Gore</a><br>
+<a href="JavaScript: cntreq('justlike')">Just Like a Woman - Bob Dylan</a><br>
+<a href="JavaScript: cntreq('justmy')">Just My Imagination - Temptations</a><br>
+<a href="JavaScript: cntreq('justunme')">Just You 'n Me - Chicago</a><br>
+<a href="JavaScript: cntreq('keepball')">Kansas City - Wilbert Harrison</a><br>
+<a href="JavaScript: cntreq('keepball')">Keep the Ball Rolling - Jay and the Techniques</a><br>
+<a href="JavaScript: cntreq('kyrain')">Kentucky Rain - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('keylargo')">Key Largo (We Had it All) - Bertie Higgins</a><br>
+<a href="JavaScript: cntreq('killing')">Killing Me Softly with His Song - Roberta Flack</a><br>
+<a href="JavaScript: cntreq('kingroad')">King of the Road - Roger Miller</a><br>
+<a href="JavaScript: cntreq('kingtut')">King Tut - Steve Martin</a><br>
+<a href="JavaScript: cntreq('kisses')">Kisses Sweeter than Wine - Jimmy Rodgers/Weavers</a><br>
+<a href="JavaScript: cntreq('kodach')">Kodachrome - Paul Simon</a><br>
+<a href="JavaScript: cntreq('lady')">Lady - Kenny Rogers</a>  <br>
+<a href="JavaScript: cntreq('ladytram')">Lady is a Tramp - Frank Sinatra</a><br>
+<a href="JavaScript: cntreq('ladywill')">Lady Willpower - Gary Puckett/Union Gap</a><br>
+<a href="JavaScript: cntreq('lastkiss')">Last Kiss - J. Frank Wilson</a><br>
+<a href="JavaScript: cntreq('laughlau')">Laugh Laugh - Beau Brummels</a><br>
+<a href="JavaScript: cntreq('laurie')">Laurie (Strange Things Happen) - Dickey Lee</a><br>
+<a href="JavaScript: cntreq('laylady')">Lay Lady Lay - Bob Dylan</a> <br>
+<a href="JavaScript: cntreq('layla')">Layla - Eric Clapton</a><br>
+<a href="JavaScript: cntreq('lazyday')">Lazy Day - Spanky & Our Gang</a><br>
+<a href="JavaScript: cntreq('leadband')">Leader of the Band - Dan Fogelberg</a><br>
+<a href="JavaScript: cntreq('leaderof')">Leader of the Pack - Shangri-Las</a><br>
+<a href="JavaScript: cntreq('leaves')">Leaves that are Green - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('leavin')">Leavin' on a Jet Plane - Peter, Paul, and Mary</a> <br>
+<a href="JavaScript: cntreq('leanon')">Lean on Me - Bill Withers</a><br>
+<a href="JavaScript: cntreq('letit')">Let it Be - Beatles</a> <br>
+<a href="JavaScript: cntreq('letitbme')">Let it Be Me - Everly Brothers</a><br>
+<a href="JavaScript: cntreq('letshang')">Let's Hang On - Four Seasons</a><br>
+<a href="JavaScript: cntreq('letslive')">Let's Live for Today - Grass Roots</a><br>
+<a href="JavaScript: cntreq('letstwi')">Let's Twist Again - Chubby Checker</a><br>
+<a href="JavaScript: cntreq('libertyv')">(The Man Who Shot) Liberty Valance - Gene Pitney</a><br>
+<a href="JavaScript: cntreq('liferock')">Life is a Rock (but the Radio Rolled Me) - Reunion</a><br>
+<a href="JavaScript: cntreq('litemyf')">Light My Fire - Doors</a> <br>
+<a href="JavaScript: cntreq('lightnin')">Lightnin' Strikes - Lou Christie</a><br>  <!-- -- get - -->
+<a href="JavaScript: cntreq('likears')">Like a Rolling Stone - Bob Dylan</a><br>
+<a href="JavaScript: cntreq('lionsl')">(The) Lion Sleeps Tonight - Tokens</a> <br>
+<a href="JavaScript: cntreq('lipstick')">Lipstick on Your Collar - Connie Francis</a><br>
+<a href="JavaScript: cntreq('litlbox')">Little Boxes - Pete Seeger</a> <br>
+<a href="JavaScript: cntreq('litldarl')">Little Darling - Diamonds</a><br>
+<a href="JavaScript: cntreq('littleom')">Little Ole Man - Bill Cosby</a><br>
+<a href="JavaScript: cntreq('littleth')">Little Things Mean a Lot - Kitty Kallen</a><br>
+<a href="JavaScript: cntreq('longwind')">(The) Long and Winding Road - Beatles</a><br>
+<a href="JavaScript: cntreq('longcool')">Long Cool Woman - Hollies</a><br>
+<a href="JavaScript: cntreq('looklove')">(The) Look of Love - Sergio Mendes/Lesley Gore/Dionne Warwick</a><br>
+<a href="JavaScript: cntreq('longlong')">Long Long Time - Linda Ronstadt</a>  <br>
+<a href="JavaScript: cntreq('longer')">Longer - Dan Fogelberg<br>
+<a href="JavaScript: cntreq('longest')">(The) Longest Time - Billy Joel<br>
+<a href="JavaScript: cntreq('lookthru')">Look through any Window - Hollies</a><br>
+<a href="JavaScript: cntreq('lokthrue')">Looking through the Eyes of Love - Gene Pitney</a><br>
+        </td>    <td valign=top>
+
+<a href="JavaScript: cntreq('lookin')">Lookin' Out My Back Door - Creedence Clearwater Revival</a> <br>
+<a href="JavaScript: cntreq('louie')">Louie, Louie - Kingsmen</a>  <br>
+<a href="JavaScript: cntreq('lovechld')">Love Child - Diana Ross & the Supremes</a><br>
+<a href="JavaScript: cntreq('lovegroz')">Love Grows (Where My Rosemary Goes) - Edison Lighthouse</a>  <br>
+<a href="JavaScript: cntreq('loveherm')">Love Her Madly - Doors</a><br>
+<a href="JavaScript: cntreq('luvisall')">Love is All Around - Troggs</a><br>
+<a href="JavaScript: cntreq('loveblue')">Love is Blue - Paul Mauriat/Andy Williams</a>  <br>
+<a href="JavaScript: cntreq('lovehere')">Love is Here - Supremes</a><br>
+<a href="JavaScript: cntreq('lovemedo')">Love Me Do - Beatles</a><br>
+<a href="JavaScript: cntreq('loveme')">Love Me Tender - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('lovemewa')">Love Me with all Your Heart - Ray Charles Singers</a><br>
+<a href="JavaScript: cntreq('lovep')">Love Potion Number 9 - Coasters/Searchers</a>  <br>
+<a href="JavaScript: cntreq('lovesben')">Love's Been Good to Me - Frank Sinatra</a><br>
+<a href="JavaScript: cntreq('loversc')">Lover's Concerto - Toys</a><br>
+<a href="JavaScript: cntreq('lovinyou')">Lovin' You - Minnie Riperton</a><br>
+<a href="JavaScript: cntreq('lucille')">Lucille - Kenny Rogers</a><br>
+<a href="JavaScript: cntreq('lucyinsk')">Lucy in the Sky with Diamonds - Elton John</a><br>
+<a href="JavaScript: cntreq('lyineyes')">Lyin' Eyes - Eagles</a><br>
+<a href="JavaScript: cntreq('mackknif')">Mack the Knife - Bobby Darin</a>  <br>
+<a href="JavaScript: cntreq('maggie')">Maggie May - Rod Stewart</a>  <br>
+<a href="JavaScript: cntreq('magiccar')">Magic Carpet Ride - Steppenwolf</a><br>
+<a href="JavaScript: cntreq('magictou')">(You've Got the) Magic Touch - Platters</a><br>
+<a href="JavaScript: cntreq('lovestay')">Make Love Stay - Dan Fogelberg</a><br>
+<a href="JavaScript: cntreq('makeyour')">Make Your Own Kind of Music - Mama Cass Elliot</a><br>
+<a href="JavaScript: cntreq('mamasaid')">Mama Said There'd be Days Like This - Shirelles</a><br>
+<a href="JavaScript: cntreq('mamatold')">Mama Told Me Not to Come - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('mandy')">Mandy - Barry Manilow</a>  <br>
+<a href="JavaScript: cntreq('margar')">Margaritaville - Jimmy Buffett</a>  <br>
+<a href="JavaScript: cntreq('maybeino')">Maybe I Know - Lesley Gore</a><br>
+<a href="JavaScript: cntreq('meandbob')">Me & Bobby McGee - Janis Joplin</a>  <br>
+<a href="JavaScript: cntreq('meandmrs')">Me & Mrs. Jones - Billy Paul</a><br>
+<a href="JavaScript: cntreq('mellowye')">Mellow Yellow - Donovan</a>  <br>
+<a href="JavaScript: cntreq('themenin')">The Men in My Little Girl's Life - Mike Douglas<br>
+<a href="JavaScript: cntreq('mercedes')">Mercedes Benz - Janis Joplin</a><br>
+<a href="JavaScript: cntreq('midnitea')">Midnight at the Oasis - Maria Muldaur</a><br>
+<a href="JavaScript: cntreq('midnite')">Midnight Confessions - Grass Roots</a> <br>
+<a href="JavaScript: cntreq('midtrain')">Midnight Train to Georgia - Gladys Knight & the Pips</a>  <br>
+<a href="JavaScript: cntreq('miracles')">Miracles - Jefferson Starship</a><br>
+<a href="JavaScript: cntreq('misty')">Misty - Johnny Mathis/Ray Stevens</a><br>
+<a href="JavaScript: cntreq('monalisa')">Mona Lisa - Nat King Cole</a><br>
+<a href="JavaScript: cntreq('mondmond')">Monday, Monday - Mamas & the Papas</a><br>
+<a href="JavaScript: cntreq('monster')">Monster - Steppenwolf</a><br>
+<a href="JavaScript: cntreq('monsterm')">Monster Mash - Bobby Boris Pickett</a><br>
+<a href="JavaScript: cntreq('modyrivr')">Moody River - Pat Boone</a><br>
+<a href="JavaScript: cntreq('moonriv')">Moon River - Henry Mancini/Andy Williams</a> <br>
+<a href="JavaScript: cntreq('moonshad')">Moon Shadow - Cat Stevens</a>  <br>
+<a href="JavaScript: cntreq('more2day')">More Today than Yesterday - Spiral Starecase</a><br>
+<a href="JavaScript: cntreq('morning')">Morning Has Broken - Cat Stevens</a>  <br>
+<a href="JavaScript: cntreq('motherlh')">Mother's Little Helper - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('mrblue')">Mr. Blue - Fleetwoods</a>  <br>
+<a href="JavaScript: cntreq('mrboja')">Mr. Bojangles - Nitty Gritty Dirt Band</a>  <br>
+<a href="JavaScript: cntreq('mrcuster')">(Please) Mr. Custer - Larry Verne</a><br>
+<a href="JavaScript: cntreq('mrdie')">Mr. Dieingly Sad - Critters</a><br>
+<a href="JavaScript: cntreq('mrlonely')">Mr. Lonely - Bobby Vinton</a><br>
+<a href="JavaScript: cntreq('mrsbrown')">Mrs. Brown You've Got a Lovely Daughter - Herman's Hermits</a>  <br>
+<a href="JavaScript: cntreq('mrsrob')">Mrs. Robinson - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('sandman')">Mr. Sandman - Chordettes</a><br>
+<a href="JavaScript: cntreq('mrtamb')">Mr. Tambourine Man - Byrds</a><br>
+<a href="JavaScript: cntreq('mta')">MTA - Kingston Trio</a><br>
+<a href="JavaScript: cntreq('myboomer')">My Boomerang Won't Come Back - Charlie Drake</a><br>
+<a href="JavaScript: cntreq('myboyf')">My Boyfriend's Back - Angels</a><br>
+<a href="JavaScript: cntreq('colorbk')">My Coloring Book - Kitty Kallen</a><br>
+<a href="JavaScript: cntreq('mycup')">My Cup Runneth Over - Ed Ames</a><br>
+<a href="JavaScript: cntreq('mydad')">My Dad - Paul Petersen</a><br>
+<a href="JavaScript: cntreq('myeyesad')">My Eyes Adored You  - Frankie Valli</a><br>
+<a href="JavaScript: cntreq('mylove')">My Love - Petula Clark</a><br>
+<a href="JavaScript: cntreq('mygirl')">My Girl - Temptations</a> <br>
+<a href="JavaScript: cntreq('myguy')">My Guy - Mary Wells</a><br>
+<a href="JavaScript: cntreq('myprayer')">My Prayer - Platters</a> <br>
+<a href="JavaScript: cntreq('myspeca')">My Special Angel - Vogues/Bobby Helms/Malcomb Vaughan</a><br>
+<a href="JavaScript: cntreq('mysweet')">My Sweet Lady - John Denver/Cliff DeYoung</a><br>
+<a href="JavaScript: cntreq('mysweetl')">My Sweet Lord - George Harrison</a><br>
+<a href="JavaScript: cntreq('myway')">My Way - Paul Anka/Sinatra/Elvis</a> <br>
+<a href="JavaScript: cntreq('namegame')">(The) Name Game - Shirley Ellis</a><br>
+<a href="JavaScript: cntreq('natwoman')">(You Make Me Fell Like A) Natural Woman - Aretha Franklin/Carole King</a><br>
+<a href="JavaScript: cntreq('naturboy')">Nature Boy - Nat King Cole</a><br>
+<a href="JavaScript: cntreq('navyblue')">Navy Blue - Diane Renay</a><br>
+<a href="JavaScript: cntreq('nextdoor')">Next Door to an Angel - Neil Sedaka</a><br>
+<a href="JavaScript: cntreq('nevrbeen')">Never Been to Spain - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('nevermy')">Never My Love - Association</a>  <br>
+<a href="JavaScript: cntreq('newyork')">New York, New York - Frank Sinatra</a>  <br>
+<a href="JavaScript: cntreq('nitechic')">(The) Night Chicago Died - Paper Lace</a><br>
+<a href="JavaScript: cntreq('nightsin')">Nights in White Satin - Moody Blues</a>  <br>
+<a href="JavaScript: cntreq('nonosong')">(The) No No Song - Ringo Starr</a><br>
+<a href="JavaScript: cntreq('nosugar')">No Sugar Tonight - Guess Who</a><br>
+<a href="JavaScript: cntreq('notime')">No Time - Guess Who</a>  <br>
+<a href="JavaScript: cntreq('nobodyd')">Nobody Does it Better - Carly Simon</a><br>
+<a href="JavaScript: cntreq('north2al')">North to Alaska - Johnny Horton</a><br>
+<a href="JavaScript: cntreq('obladi')">Ob-La-Di, Ob-La-Da - Beatles</a><br>
+<a href="JavaScript: cntreq('ode2bj')">Ode to Billie Joe - Bobby Gentry</a><br>
+<a href="JavaScript: cntreq('ohlord')">Oh Lord, It's Hard to be Humble - Mac Davis</a>  <br>
+<a href="JavaScript: cntreq('opretty')">Oh, Pretty Woman - Roy Orbison</a>  <br>
+<a href="JavaScript: cntreq('olddays')">Old Days - Chicago</a> <br>
+<a href="JavaScript: cntreq('oldfash')">Old Fashioned Love Song - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('oldman')">(The) Old Man - John McDermott</a> <br>
+<a href="JavaScript: cntreq('oldtime')">Old Time Rock n' Roll - Bob Seeger</a><br>
+<a href="JavaScript: cntreq('ontherod')">On the Road Again - Willie Nelson</a><br>
+<a href="JavaScript: cntreq('onefine')">One Fine Day - Chiffons</a>  <br>
+<a href="JavaScript: cntreq('onefinem')">One Fine Morning - Lighthouse</a><br>
+<a href="JavaScript: cntreq('1inamil')">One in a Million - Platters</a><br>
+<a href="JavaScript: cntreq('onelessb')">One Less Bell to Answer - Fifth Dimension</a><br>
+<a href="JavaScript: cntreq('oneis')">One (is the Loneliest Number) - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('onetin')">One Tin Soldier - Coven</a><br>
+<a href="JavaScript: cntreq('onlyin')">Only in America - Jay & the Americans</a><br>
+<a href="JavaScript: cntreq('onlygood')">Only the Good Die Young - Billy Joel</a><br>
+<a href="JavaScript: cntreq('onlythel')">Only the Lonely (Know How I Feel) - Roy Orbison</a> <br>
+<a href="JavaScript: cntreq('onlylove')">Only Love Can Break a Heart - Gene Pitney</a><br>
+<a href="JavaScript: cntreq('onlyyou')">Only You - Platters</a><br>
+<a href="JavaScript: cntreq('operator')">Operator (That's Not the Way it Feels) - Jim Croce</a><br>
+<a href="JavaScript: cntreq('ourday')">Our Day Will Come - Ruby & the Romantics</a><br>
+<a href="JavaScript: cntreq('ourhouse')">Our House - Crosby, Stills, & Nash</a><br>
+<a href="JavaScript: cntreq('overyou')">Over You - Gary Puckett/Union Gap</a><br>
+<a href="JavaScript: cntreq('paintit')">Paint it Black - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('palomabl')">Paloma Blanca - George Baker Selection</a><br>
+<a href="JavaScript: cntreq('partridg')">Partridge Family Theme (Come On Get Happy) - Partridge Family</a><br>
+<a href="JavaScript: cntreq('passkiss')">Passionate Kisses - Mary Chapin Carpenter</a><br>
+<a href="JavaScript: cntreq('patches2')">Patches - Clarence Carter</a><br>
+<a href="JavaScript: cntreq('patches')">Patches - Dickie Lee</a><br>
+<a href="JavaScript: cntreq('peacetr')">Peace Train - Cat Stevens</a><br>
+<a href="JavaScript: cntreq('peaceful')">Peaceful Easy Feeling - Eagles</a><br>
+<a href="JavaScript: cntreq('peplgot')">People Got to be Free - Rascals</a>  <br>
+<a href="JavaScript: cntreq('perhapsl')">Perhaps Love - John Denver</a><br>
+<a href="JavaScript: cntreq('pianom')">Piano Man - Billy Joel</a> <br>
+<a href="JavaScript: cntreq('poapril')">Pieces of April - Three Dog Night</a><br>
+<a href="JavaScript: cntreq('piedpipr')">(The) Pied Piper - Crispian St. Peters</a><br>
+<a href="JavaScript: cntreq('pilotalk')">Pillow Talk - Sylvia</a><br>
+<a href="JavaScript: cntreq('pinballw')">Pinball Wizard - Who</a><br>
+<a href="JavaScript: cntreq('pinkshoe')">Pink Shoe Laces - Dodie Stevens</a><br>
+<a href="JavaScript: cntreq('playme')">Play Me - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('mrsun')">Please Mr. Sun - Tommy Edwards</a> <br>
+<a href="JavaScript: cntreq('promises')">Promises - Eric Clapton</a> <br>
+<a href="JavaScript: cntreq('proudm')">Proud Mary - CCR/Ike & Tina Turner</a><br>
+<a href="JavaScript: cntreq('puff')">Puff the Magic Dragon - Peter, Paul & Mary</a> <br>
+<a href="JavaScript: cntreq('puppyluv')">Puppy Love - Paul Anka/Donny Osmond</a><br>
+<a href="JavaScript: cntreq('flyingppe')">Purple People Eater - Sheb Wooley</a><br>
+<a href="JavaScript: cntreq('putyurhe')">Put Your Head on My Shoulder - Paul Anka</a> <br>
+<a href="JavaScript: cntreq('question')">Question - Moody Blues</a><br>
+<a href="JavaScript: cntreq('rightth')">Right Thing to Do - Carly Simon</a><br>
+<a href="JavaScript: cntreq('ragdoll')">Rag Doll - Four Seasons</a><br>
+<a href="JavaScript: cntreq('rainbow')">Rainbow Connection - Kermit the Frog</a><br>
+<a href="JavaScript: cntreq('rainydaz')">Rainy Days & Mondays - Carpenters</a>  <br>
+<a href="JavaScript: cntreq('rainynte')">Rainy Night in Georgia - Brook Benton</a><br>
+<a href="JavaScript: cntreq('reachout')">Reach Out (I'll Be There) - Four Tops</a> <br>
+<a href="JavaScript: cntreq('redwine')">Red Red Wine - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('redr')">Red Rubber Ball - the Cyrkle</a><br>
+<a href="JavaScript: cntreq('reelin')">Reelin' in the Years - Steely Dan</a> <br>
+<a href="JavaScript: cntreq('respect')">Respect - Aretha Franklin</a>  <br>
+<a href="JavaScript: cntreq('return2')">Return to Sender - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('rhythmr')">Rhythm of the Rain - Cascades</a><br>
+<a href="JavaScript: cntreq('rockrolh')">Rock and Roll Heaven - Righteous Brothers</a><br>
+<a href="JavaScript: cntreq('rockrund')">Rock Around the Clock - Bill Haley and the Comets</a><br>
+<a href="JavaScript: cntreq('rockme')">Rock Me - Steppenwolf</a><br>
+<a href="JavaScript: cntreq('rockon')">Rock On - David Essex</a><br>
+<a href="JavaScript: cntreq('rocketmn')">Rocket Man - Elton John</a><br>
+<a href="JavaScript: cntreq('rose')">Rose - Glenn Yarbrough</a><br>
+<a href="JavaScript: cntreq('therose')">(The) Rose - Bette Midler</a><br>
+<a href="JavaScript: cntreq('rosesare')">Roses are Red - Bobby Vinton</a><br>
+<a href="JavaScript: cntreq('rubrball')">Rubber Ball - Bobby Vee</a><br>
+<a href="JavaScript: cntreq('ruby')">Ruby Don't Take Your Love to Town - Kenny Rogers</a><br>
+<a href="JavaScript: cntreq('rubytues')">Ruby Tuesday - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('runfor')">Run for the Roses - Dan Fogelberg</a><br>
+<a href="JavaScript: cntreq('runa')">Runaround Sue - Dion</a> <br>
+<a href="JavaScript: cntreq('runaway')">Runaway - Del Shannon</a>  <br>
+<a href="JavaScript: cntreq('sadmovez')">Sad Movies (Always make Me Cry) - Sue Thompson</a><br>
+<a href="JavaScript: cntreq('sameold')">Same Old Lang Syne - Dan Fogelberg</a><br>
+<a href="JavaScript: cntreq('sanfranc')">San Franciscan Nights - Eric Burdon & the Animals  height=17 border=0></a><br>
+<a href="JavaScript: cntreq('sanfrans')">San Francisco (Wear Some Flowers in Your Hair) - Scott McKenzie</a><br>
+<a href="JavaScript: cntreq('satis')">Satisfaction - Rolling Stones</a> <br>
+<a href="JavaScript: cntreq('savethe')">Save the Last Dance for Me - Drifters</a> <br>
+<a href="JavaScript: cntreq('scar')">Scarborough Fair/Canticle - Simon & Garfunkel</a><br>
+<a href="JavaScript: cntreq('sealedwi')">Sealed With a Kiss - Brian Hyland</a> <br>
+<a href="JavaScript: cntreq('seasons')">Seasons in the Sun - Terry Jacks</a><br>
+<a href="JavaScript: cntreq('lilclown')">See the Funny Little Clown - Bobby Goldsboro</a><br>
+<a href="JavaScript: cntreq('seeuins')">See You in September - Happenings</a><br>
+<a href="JavaScript: cntreq('sendin')">Send in the Clowns - Judy Collins/Frank Sinatra</a>  <br>
+<a href="JavaScript: cntreq('sgtpepr')">Sgt. Pepper's Lonely Hearts Club Band - Beatles</a> <br>
+<a href="JavaScript: cntreq('shadows')">Shadows in the Moonlight - Anne Murray</a><br>
+<a href="JavaScript: cntreq('sheloves')">She Loves You - Beatles</a>  <br>
+<a href="JavaScript: cntreq('sherry')">Sherry - Four Seasons</a><br>
+<a href="JavaScript: cntreq('shesnot')">She's Not There - Zombies/Santana</a><br>
+<a href="JavaScript: cntreq('shoopsh')">(The) Shoop Shoop Song (It's in His Kiss) - Betty Everett/Cher</a><br>
+<a href="JavaScript: cntreq('signtime')">Sign of the Times - Petula Clark</a><br>
+<a href="JavaScript: cntreq('signs')">Signs - 5 Man Electrical Band</a><br>
+<a href="JavaScript: cntreq('silence')">Silence is Golden - Tremeloes</a><br>
+<a href="JavaScript: cntreq('silhou')">Silhouettes - Rays/Herman's Hermits</a> <br>
+<a href="JavaScript: cntreq('silylove')">Silly Love Songs - Paul McCartney & Wings</a><br>
+<a href="JavaScript: cntreq('sinceid')">Since I Don't Have You - Skyliners</a><br>
+<a href="JavaScript: cntreq('sincei')">Since I Fell for You - Lenny Welch</a><br>
+<a href="JavaScript: cntreq('16reason')">Sixteen Reasons - Connie Stevens</a><br>
+<a href="JavaScript: cntreq('slipslid')">Slip Sliding Away - Paul Simon</a><br>
+<a href="JavaScript: cntreq('smokeget')">Smoke Gets in Your Eyes - Platters</a><br>
+<a href="JavaScript: cntreq('snoopy')">Snoopy vs. the Red Baron - Royal Guardsmen</a><br>
+<a href="JavaScript: cntreq('sofar')">So Far Away - Carole King</a><br>
+<a href="JavaScript: cntreq('somuch')">So Much in Love - Tymes</a><br>
+<a href="JavaScript: cntreq('softlyas')">Softly as I Leave You - Frank Sinatra/Matt Monro</a><br>
+<a href="JavaScript: cntreq('somebody')">Somebody to Love  - Jefferson Airplane</a><br>
+<a href="JavaScript: cntreq('sstupid')">Something Stupid - Frank/Nancy Sinatra</a><br>
+<a href="JavaScript: cntreq('somewwt')">Sometimes when We Touch - Dan Hill</a><br>
+<a href="JavaScript: cntreq('somewher')">Somewhere My Love (Lara's Theme) - Ray Conniff</a><br>
+<a href="JavaScript: cntreq('song')">Song for the Asking - Simon & Garfunkel</a> <br>
+<a href="JavaScript: cntreq('sooneror')">Sooner or Later - Grass Roots</a><br>
+<a href="JavaScript: cntreq('souland')">Soul & Inspiration - Righteous Brothers</a><br>
+<a href="JavaScript: cntreq('soulman')">Soul Man - Blues Brothers</a><br>
+<a href="JavaScript: cntreq('sounds')">Sound of Silence - Simon & Garfunkel</a> <br>
+<a href="JavaScript: cntreq('speedoo')">Speedoo - Cadillacs</a> <br>
+<a href="JavaScript: cntreq('spiders')">Spiders & Snakes - Jim Stafford</a><br>
+<a href="JavaScript: cntreq('spiritin')">Spirit in the Sky - Norman Greenbaum</a><br>
+<a href="JavaScript: cntreq('splishsp')">Splish Splash - Bobby Darin</a><br>
+<a href="JavaScript: cntreq('stairway')">Stairway to Heaven - Led Zeppelin</a>  <br>
+<a href="JavaScript: cntreq('standby')">Stand by Me - Ben E. King</a> <br>
+<a href="JavaScript: cntreq('standing')">Standing in the Shadows of Love - Four Tops</a><br>
+<a href="JavaScript: cntreq('stayawh')">Stay Awhile - Bells</a><br>
+<a href="JavaScript: cntreq('stewball')">Stewball - Peter, Paul & Mary</a><br>
+<a href="JavaScript: cntreq('stilcraz')">Still Crazy after all These Years - Paul Simon</a><br>
+<a href="JavaScript: cntreq('stilthe1')">Still the One - Orleans</a><br>
+<a href="JavaScript: cntreq('stondluv')">Stoned Love - Supremes</a><br>
+<a href="JavaScript: cntreq('stoneds')">Stoned Soul Picnic - Fifth Dimension</a><br>
+<a href="JavaScript: cntreq('stopname')">Stop! in the Name of Love - Supremes</a><br>
+<a href="JavaScript: cntreq('stranger')">Stranger in Paradise - Tony Bennett/Tony Martin</a><br>
+<a href="JavaScript: cntreq('strangon')">Stranger on the Shore - Mr. Acker Bilk/Andy Williams</a><br>
+<a href="JavaScript: cntreq('strangers')">Strangers in the Night - Frank Sinatra</a>  <br>
+<a href="JavaScript: cntreq('subterr')">Subterrainian Homesick Blues - Bob Dylan</a><br>
+<a href="JavaScript: cntreq('sugarsug')">Sugar Sugar - Archies</a><br>
+<a href="JavaScript: cntreq('suitejud')">Suite: Judy Blue Eyes - Crosby, Stills & Nash</a><br>
+<a href="JavaScript: cntreq('sumrcity')">Summer in the City - Lovin' Spoonful</a> <br>
+<a href="JavaScript: cntreq('sumrsong')">(A) Summer Song - Chad & Jeremy</a> <br>
+<a href="JavaScript: cntreq('summerft')">Summer (the First Time) - Bobby Goldsboro</a><br>
+<a href="JavaScript: cntreq('summert')">Summertime, Summertime - Jamies</a><br>
+<a href="JavaScript: cntreq('sunshinl')">Sunshine, Lollipops and Rainbows - Lesley Gore</a><br>
+<a href="JavaScript: cntreq('sunshou')">Sunshine on My Shoulders - John Denver</a><br>
+<a href="JavaScript: cntreq('sunshines')">Sunshine Superman - Donovan</a><br>
+<a href="JavaScript: cntreq('surfinus')">Surfin' U.S.A. - Beach Boys</a> <br>
+<a href="JavaScript: cntreq('suspic')">Suspicion - Terry Stafford</a><br>
+<a href="JavaScript: cntreq('suspmind')">Suspicious Minds - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('sweetcar')">Sweet Caroline - Neil Diamond</a>  <br>
+<a href="JavaScript: cntreq('swhitch')">Sweet Hitch-Hiker - Creedence Clearwater Revival</a><br>
+<a href="JavaScript: cntreq('sweetno')">Sweet Nothin's - Brenda Lee</a><br>
+<a href="JavaScript: cntreq('swettalk')">Sweet Talkin' Guy - Chiffons</a><br>
+<a href="JavaScript: cntreq('takegood')">Take Good Care of My Baby - Bobby Vee</a><br>
+<a href="JavaScript: cntreq('takeit')">Take it Easy - Eagles</a> <br>
+<a href="JavaScript: cntreq('takeit2')">Take it to the Limit - Eagles</a><br>
+<a href="JavaScript: cntreq('takemeho')">Take Me Home, Country Roads - John Denver</a><br>
+<a href="JavaScript: cntreq('tammy')">Tammy - Debbie Reynolds</a><br>
+<a href="JavaScript: cntreq('tapestry')">Tapestry - Carole King</a> <br>
+<a href="JavaScript: cntreq('taxi')">Taxi - Harry Chapin</a><br>
+<a href="JavaScript: cntreq('teach')">Teach Your Children - Crosby Stills & Nash</a><br>
+<a href="JavaScript: cntreq('tearsin')">Tears in Heaven - Eric Clapton</a><br>
+<a href="JavaScript: cntreq('tearson')">Tears on My Pillow - Little Anthony and the Imperials</a><br>
+<a href="JavaScript: cntreq('teenager')">Teenager in Love - Dion</a><br>
+<a href="JavaScript: cntreq('telllaur')">Tell Laura I Love Her - Ray Peterson</a><br>
+<a href="JavaScript: cntreq('tempte')">Temptation Eyes - Grass Roots</a> <br>
+<a href="JavaScript: cntreq('thankgod')">Thank God I'm a Country Boy - John Denver</a><br>
+<a href="JavaScript: cntreq('thanklrd')">Thank the Lord for the Night Time - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('thatllbe')">That'll be the Day - Buddy Holly</a><br>
+<a href="JavaScript: cntreq('thatswhat')">That's What Friends are For - Dionne Warwick</a><br>
+<a href="JavaScript: cntreq('theamer')">The Americans - Gordon Sinclair</a><br>
+<a href="JavaScript: cntreq('boxer')">The Boxer - Simon & Garfunkel</a>  <br>
+<a href="JavaScript: cntreq('theend')">The End - Earl Grant</a><br>
+<a href="JavaScript: cntreq('thegift')">The Gift - Jim Brickman</a><br>
+<a href="JavaScript: cntreq('thelett')">The Letter - Box Tops</a><br>
+<a href="JavaScript: cntreq('therain')">The Rain, the Park, and Other Things - Cowsills</a><br>
+<a href="JavaScript: cntreq('3bells')">The Three Bells - Browns</a><br>
+<a href="JavaScript: cntreq('thetimes')">The Times, They are A-Changin' - Bob Dylan</a><br>
+<a href="JavaScript: cntreq('kindhush')">There's a Kind of Hush - Herman's Hermits</a><br>
+<a href="JavaScript: cntreq('thezeyes')">These Eyes - Guess Who</a><br>
+<a href="JavaScript: cntreq('thencame')">Then Came You - Dionne Warwick/Spinners</a>  <br>
+<a href="JavaScript: cntreq('thenyou')">Then You can Tell Me Goodbye - Casinos</a><br>
+<a href="JavaScript: cntreq('mountain')">There is a Mountain - Donovan</a><br>
+<a href="JavaScript: cntreq('thesebot')">These Boots are Made for Walking - Nancy Sinatra</a><br>
+<a href="JavaScript: cntreq('theyre')">They're Coming to Take Me Away, Ha-Haaaaa - Napoleon XIV</a><br>
+<a href="JavaScript: cntreq('think')">Think - Aretha Franklin</a><br>
+<a href="JavaScript: cntreq('thisdoor')">This Door Swings Both Ways - Herman's Hermits</a><br>
+<a href="JavaScript: cntreq('thisgirl')">This Girl is a Woman Now - Gary Puckett & the Union Gap</a><br>
+<a href="JavaScript: cntreq('thisisw')">This I Swear - Skyliners</a><br>
+<a href="JavaScript: cntreq('magicm')">This Magic Moment - Jay and the Americans</a><br>
+<a href="JavaScript: cntreq('thisold')">This Old Heart of Mine - Rod Stewart with Ronald Isley</a><br>
+<a href="JavaScript: cntreq('lazycrzy')">Those Lazy Hazy Crazy Days of Summer - Nat King Cole</a><br>
+<a href="JavaScript: cntreq('thosewer')">Those Were the Days - Mary Hopkin</a><br>
+<a href="JavaScript: cntreq('thruyear')">Through the Years - Kenny Rogers</a><br>
+<a href="JavaScript: cntreq('ticketto')">Ticket to Ride - Beatles</a>  <br>
+<a href="JavaScript: cntreq('tillthere')">Till There was You - Beatles</a><br>
+<a href="JavaScript: cntreq('timeina')">Time in a Bottle - Jim Croce</a> <br>
+<a href="JavaScript: cntreq('timeison')">Time is on My Side - Rolling Stones</a><br>
+<a href="JavaScript: cntreq('timeofs')">Time of the Season - Zombies</a><br>
+<a href="JavaScript: cntreq('timewont')">Time Won't Let Me - Outsiders</a><br>
+<a href="JavaScript: cntreq('timesof')">Times of Your Life - Paul Anka</a><br>
+<a href="JavaScript: cntreq('tinman')">Tin Man - America</a><br>
+<a href="JavaScript: cntreq('toknow')">To Know Him is to Love Him - Teddy Bears</a><br>
+<a href="JavaScript: cntreq('tosir')">To Sir with Love - Lulu</a><br>
+<a href="JavaScript: cntreq('topofthe')">Top of the World - Carpenters</a>  <br>
+<a href="JavaScript: cntreq('tornbet')">Torn Between Two Lovers - Mary MacGregor</a><br>
+<a href="JavaScript: cntreq('touchme')">Touch Me - Doors</a><br>
+<a href="JavaScript: cntreq('tragedy')">Tragedy - Fleetwoods</a><br>
+<a href="JavaScript: cntreq('travelin')">Travelin' Man - Ricky Nelson</a><br>
+<a href="JavaScript: cntreq('truelove')">True Love Ways - Buddy Holly and the Crickets</a>  <br>
+<a href="JavaScript: cntreq('turnarou')">Turn Around - Jimmy Rogers/Kingston Trio/Jimmy Rogers</a><br>
+<a href="JavaScript: cntreq('turn')">Turn, Turn, Turn - Byrds</a><br>
+<a href="JavaScript: cntreq('twilite')">Twilight Time - Platters</a><br>
+<a href="JavaScript: cntreq('twist')">(The) Twist - Chubby Checker</a><br>
+<a href="JavaScript: cntreq('2outof3')">Two Out of Three Ain't Bad - Meatloaf</a><br>
+<a href="JavaScript: cntreq('unchain')">Unchained Melody - Righteous Brothers</a> <br>
+<a href="JavaScript: cntreq('underbd')">Under the Boardwalk - Drifters</a><br>
+<a href="JavaScript: cntreq('undun')">Undun - Guess Who</a><br>
+<a href="JavaScript: cntreq('unforget')">Unforgettable - Nat King Cole (and others)</a><br>
+<a href="JavaScript: cntreq('unicorn')">(The) Unicorn - Irish Rovers</a><br>
+<a href="JavaScript: cntreq('unitedwe')">United We Stand - Brotherhood of Man</a> <br>
+<a href="JavaScript: cntreq('uponthe')">Up on the Roof - Drifters/James Taylor</a> <br>
+<a href="JavaScript: cntreq('vacation')">Vacation - Connie Francis</a><br>
+<a href="JavaScript: cntreq('vehicle')">Vehicle - Ides of March</a> <br>
+<a href="JavaScript: cntreq('venus')">Venus - Frankie Avalon</a> <br>
+<a href="JavaScript: cntreq('venusin')">Venus in Blue Jeans - Jimmy Clanton</a> <br>
+<a href="JavaScript: cntreq('vincent')">Vincent - Don McLean</a><br>
+<a href="JavaScript: cntreq('vivalv')">Viva, Las Vegas - Elvis Presley</a><br>
+<a href="JavaScript: cntreq('walkon')">Walk Away - Matt Monro</a><br>
+<a href="JavaScript: cntreq('walkaway')">Walk Away, Renee - Left Banke</a>  <br>
+<a href="JavaScript: cntreq('walkonby')">Walk on By - Dionne Warwick</a><br>
+<a href="JavaScript: cntreq('wanderer')">(The) Wanderer - Dion</a><br>
+<a href="JavaScript: cntreq('war')">War - Edwin Starr</a><br>
+<a href="JavaScript: cntreq('watchsg')">Watching Scotty Grow - Bobby Goldsboro</a><br>
+<a href="JavaScript: cntreq('youlook')">(The) Way You Look Tonight - Letterman</a><br>
+<a href="JavaScript: cntreq('wearyour')">Wear Your Love Like Heaven - Donovan</a><br>
+<a href="JavaScript: cntreq('justbegn')">We've Only Just Begun - Carpenters</a><br>
+<a href="JavaScript: cntreq('weddings')">Wedding Song (There is Love) - Paul Stookey</a><br>
+<a href="JavaScript: cntreq('whataday')">What a Day for a Daydream - Lovin' Spoonful</a><br>
+<a href="JavaScript: cntreq('whata')">What a Wonderful World - Louis Armstrong</a> <br>
+<a href="JavaScript: cntreq('whatbeco')">What Becomes of the Broken-Hearted? - Jimmy Ruffin</a><br>
+<a href="JavaScript: cntreq('whatthe')">What the World Needs Now - Jackie DeShannon</a><br>
+<a href="JavaScript: cntreq('whenam')">When a Man Loves a Woman - Percy Sledge/Michael Bolton</a><br>
+<a href="JavaScript: cntreq('whenidre')">When I Dream - Crystal Gayle</a><br>
+<a href="JavaScript: cntreq('whenifal')">When I Fall in Love - Nat King Cole</a><br>
+<a href="JavaScript: cntreq('whenim')">When I'm Sixty-Four - Beatles</a> <br>
+<a href="JavaScript: cntreq('whnineed')">When I Need You - Leo Sayer</a><br>
+<a href="JavaScript: cntreq('whenwill')">When Will I be Loved - Everly Brothers/Linda Ronstadt</a><br>
+<a href="JavaScript: cntreq('whenyour')">When You're in Love with a Beautiful Woman - Dr. Hook</a><br>
+<a href="JavaScript: cntreq('wheredid')">Where Did Our Love Go? - Supremes</a><br>
+<a href="JavaScript: cntreq('wherethe')">Where the Boys Are - Connie Francis</a><br>
+<a href="JavaScript: cntreq('whiteon')">White on White - Danny Williams</a><br>
+<a href="JavaScript: cntreq('whiterab')">White Rabbit - Jefferson Airplane</a>  <br>
+<a href="JavaScript: cntreq('whiter')">Whiter Shade of Pale - Procol Harum</a>  <br>
+<a href="JavaScript: cntreq('whossorr')">Who's Sorry Now - Connie Francis</a><br>
+<a href="JavaScript: cntreq('whydof')">Why do Fools Fall in Love? - Frankie Lyman & the Teenagers/Diana Ross/Gale Storm</a><br>
+<a href="JavaScript: cntreq('still')">Will You Love Me Tomorrow - Shirelles/Carole King</a> <br>
+<a href="JavaScript: cntreq('wildthng')">Wild Thing - Troggs</a><br>
+<a href="JavaScript: cntreq('windbe')">Wind Beneath My Wings - Bette Midler</a><br>
+<a href="JavaScript: cntreq('windy')">Windy - Association</a><br>
+<a href="JavaScript: cntreq('wishinn')">Wishin' and Hopin' - Dusty Springfield</a>  <br>
+<a href="JavaScript: cntreq('witchy')">Witchy Woman - Eagles</a><br>
+<a href="JavaScript: cntreq('wold')">W*O*L*D - Harry Chapin</a><br>
+<a href="JavaScript: cntreq('woman')">Woman, Woman - Gary Puckett & the Union Gap</a> <br>
+<a href="JavaScript: cntreq('wonderof')">(The) Wonder of You - Elvis Presley</a>  <br>
+<a href="JavaScript: cntreq('wonderwld')">Wonderful World - Sam Cooke/Herman's Hermits/James Taylor</a>  <br>
+<a href="JavaScript: cntreq('woodstok')">Woodstock - Crosby, Stills, Nash & Young</a><br>
+<a href="JavaScript: cntreq('woolyb')">Wooly Bully - Sam the Sham & the Pharaohs</a>  <br>
+<a href="JavaScript: cntreq('words')">Words - Bee Gees<br>
+<a href="JavaScript: cntreq('wordsof')">Words of Love - Mamas & Papas</a>  <br>
+<a href="JavaScript: cntreq('worldw')">(A) World Without Love - Peter & Gordon</a><br>
+<a href="JavaScript: cntreq('worst')">(The) Worst That Could Happen - Brooklyn Bridge</a> <br>
+<a href="JavaScript: cntreq('benice')">Wouldn't it be Nice - Beach Boys</a><br>
+<a href="JavaScript: cntreq('wreckof')">(The) Wreck of the Edmund Fitzgerald - Gordon Lightfoot</a><br>
+<a href="JavaScript: cntreq('yakety')">Yakety Yak - Coasters</a><br>
+<a href="JavaScript: cntreq('yellows')">Yellow Submarine - Beatles</a><br>
+<a href="JavaScript: cntreq('yesready')">Yes, I'm Ready - Barbara Mason</a><br>
+<a href="JavaScript: cntreq('yester')">Yesterday - Beatles</a><br>
+<a href="JavaScript: cntreq('yeswhen')">Yesterday When I was Young - Roy Clark</a><br>
+<a href="JavaScript: cntreq('yesom')">Yesterday Once More - Carpenters</a><br>
+<a href="JavaScript: cntreq('yessongs')">Yesterday's Songs - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('ymca')">Y.M.C.A. - Village People</a><br>
+<a href="JavaScript: cntreq('youdidnt')">You Didn't Have to be so Nice - Lovin' Spoonful</a><br>
+<a href="JavaScript: cntreq('uandme')">You and Me Against the World - Helen Reddy</a><br>
+<a href="JavaScript: cntreq('ursobeau')">You Are So Beautiful - Joe Cocker</a>  <br>
+<a href="JavaScript: cntreq('youare')">You Are the Only Song - Harry Chapin</a><br>
+<a href="JavaScript: cntreq('youcanh')">You Can't Hurry Love - Supremes</a> height=17 border=0></a><br>
+<a href="JavaScript: cntreq('youdont')">You Don't Bring Me Flowers Any More - Neil Diamond</a><br>
+<a href="JavaScript: cntreq('youdonth')">You Don't Have to Say You Love Me - Dusty Springfield</a><br>
+<a href="JavaScript: cntreq('udontno')">You Don't Know Me - Ray Charles</a><br>
+<a href="JavaScript: cntreq('youdonto')">You Don't Own Me - Lesley Gore</a><br>
+<a href="JavaScript: cntreq('youlight')">You Light Up My Life - Debbie Boone</a><br>
+<a href="JavaScript: cntreq('umakeme')">You Make Me Feel Brand New - Stylistics</a><br>
+<a href="JavaScript: cntreq('uneeded')">You Needed Me - Anne Murray</a><br>
+<a href="JavaScript: cntreq('usendme')">You Send Me - Sam Cooke</a><br>
+<a href="JavaScript: cntreq('uwereon')">You Were On My Mind - We Five</a> <br>
+<a href="JavaScript: cntreq('youlnevr')">You'll Never Walk Alone - Lettermen</a><br>
+<a href="JavaScript: cntreq('youngirl')">Young Girl - Gary Puckett/Union Gap</a> <br>
+<a href="JavaScript: cntreq('yoursong')">Your Song - Elton John</a> <br>
+<a href="JavaScript: cntreq('yourmama')">Your Mama Don't Dance - Loggins & Messina</a><br>
+<a href="JavaScript: cntreq('wildest')">Your Wildest Dream - Moody Blues</a><br>
+<a href="JavaScript: cntreq('youreinm')">You're in My Heart - Rod Stewart</a><br>
+<a href="JavaScript: cntreq('youre16')">You're Sixteen - Johnny Burnett/Ringo Starr</a> <br>
+<a href="JavaScript: cntreq('youreso')">You're So Vain - Carly Simon</a><br>
+<a href="JavaScript: cntreq('afriend')">You've Got a Friend  - Carole King/James Taylor</a><br>
+<a href="JavaScript: cntreq('youvlost')">You've Lost that Loving Feeling - Righteous Brothers</a><br>
+<a href="JavaScript: cntreq('youvmade')">You've Made Me so Very Happy - Blood, Sweat & Tears</a><br>
+         </td>
+     </tr>
+</table><p>
+
+
+<hr width=80% size=3 noshade><p>
+
+
+<a href="#top">Back to the top</a></center><p>
+Source of our lyrics:<p>
+
+Experience has taught us that there may be several versions of the lyrics
+to a song:<br>
+
+&nbsp; &nbsp; 1. The version, as penned by the song writer.<br>
+&nbsp; &nbsp; 2. The version in the artist's songbook and/or liner notes to an album.<br>
+&nbsp; &nbsp; 3. The first popular version to make it as a (single) hit.<br>
+&nbsp; &nbsp; 4. The first popular version, as recorded on an album. (i.e. Charlie Daniels
+Band's "Devil Went Down to Georgia" -- the single and album versions are
+different.)<br>
+&nbsp; &nbsp; 5. Versions recorded by other artists or re-recorded by the original
+artist.<br>
+&nbsp; &nbsp; 6. Versions passed down by the masses (i.e. "Louie, Louie")<p>
+
+Yes, versions 2, 3 and 4 may be slightly different.<p>
+
+At BBHQ, we always try to show number 3, since that is the version that most
+of us remember.<p>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+<form name=lyrform method=post action="sholyr.php"><input type=hidden name=songid value="yy"><input type=hidden name=usercnt value=0><input type=hidden name=caldfrom value="lyrics"></form>
+<FONT SIZE=2 face="arial">rev. 11/14/11</font><p>
+</body></html>

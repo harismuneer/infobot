@@ -1,0 +1,261 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-01T10:08:55Z
+WARC-TREC-ID: clueweb12-1218wb-35-00714
+WARC-IP-Address: 174.37.121.248
+WARC-Payload-Digest: sha1:DD35SNDKNPLALNB3D76VRMZRSTZRNYZS
+WARC-Target-URI: http://www.pbpindiantribe.com/news.aspx?id=770
+WARC-Record-ID: <urn:uuid:3fd00e7f-c36f-46a1-b461-4222dac28ad9>
+Content-Type: application/http; msgtype=response
+Content-Length: 20399
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-Powered-By: UrlRewriter.NET 2.0.0
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+Date: Sun, 01 Apr 2012 10:07:58 GMT
+Connection: close
+Content-Length: 20121
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Tribal Member Back from Afghanistan Thanks Tribe With a Flag 
+</title><link href="assets/css/reset-fonts-grids.css" rel="stylesheet" type="text/css" /><link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 7]>
+	<link href="assets/css/ie6.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+<script language="JavaScript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+   var arVersion = navigator.appVersion.split("MSIE")
+   var version = parseFloat(arVersion[1])
+   if ((version >= 5.5) && (document.body.filters)) 
+   {
+      for(var i=0; i<document.images.length; i++)
+      {
+         var img = document.images[i]
+         var imgName = img.src.toUpperCase()
+         if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+         {
+            var imgID = (img.id) ? "id='" + img.id + "' " : ""
+            var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+            var imgStyle = "display:inline-block;" + img.style.cssText 
+            if (img.align == "left") imgStyle = "float:left;" + imgStyle
+            if (img.align == "right") imgStyle = "float:right;" + imgStyle
+            if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+            img.outerHTML = strNewHTML
+            i = i-1
+         }
+      }
+   }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+	<script type="text/javascript" language="javascript" src="assets/js/AC_RunActiveContent.js"></script><script type="text/javascript" language="javascript" src="assets/js/flashobject.js"></script></head>
+<body>
+	<form name="aspnetForm" method="post" action="/news.aspx?id=770" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTM3NDUzMzM4MA9kFgJmD2QWAmYPZBYCAgMPZBYCAgkPZBYGAgEPZBYEAgMPFgIeBFRleHQFDEN1cnJlbnQgTmV3c2QCBQ9kFgQCAQ8PFgIeCkhhc0NvbnRlbnRnZBYCZg9kFgICAQ9kFgICAQ88KwAKAQAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQCAWQWAmYPZBYGZg8PFgIeB1Zpc2libGVoZGQCAQ9kFgJmD2QWBgIBD2QWAmYPFQE9VHJpYmFsIE1lbWJlciBCYWNrIGZyb20gQWZnaGFuaXN0YW4gVGhhbmtzIFRyaWJlIFdpdGggYSBGbGFnIGQCAg8VBDw8c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5pbWdjb250YWluZXIge2Rpc3BsYXk6bm9uZTt9PC9zdHlsZT4ADk1hcmNoIDMxLCAyMDEylxE8UCBzdHlsZT0iTUFSR0lOOiAwaW4gMGluIDEwcHQiIGNsYXNzPU1zb05vcm1hbCBhbGlnbj1jZW50ZXI+PEZPTlQgZmFjZT1DYWxpYnJpPjxJTUcgYm9yZGVyPTAgYWx0PSJIb2xseSBKb2huc29uIFRDIHBob3RvLmpwZyIgc3JjPSIvdXBsb2FkL2ltZy9Ib2xseSUyMEpvaG5zb24lMjBUQyUyMHBob3RvL0hvbGx5JTIwSm9obnNvbiUyMFRDJTIwcGhvdG8uanBnIiB3aWR0aD00MDAgaGVpZ2h0PTE3Mj48L0ZPTlQ+PC9QPg0KPFAgc3R5bGU9Ik1BUkdJTjogMGluIDBpbiAxMHB0IiBjbGFzcz1Nc29Ob3JtYWwgYWxpZ249anVzdGlmeT48Rk9OVCBmYWNlPUNhbGlicmk+KDxTVFJPTkc+TCB0byBSKSBKYW5jaXRhIFdhcnJpbmd0b24sIEppbSBQb3R0ZXIsIENhcnJpZSBPJ1Rvb2xlLCBOb2FoIFdhaHF1YWhib3Noa3VrLCBIb2xseSBKb2huc29uLCBTdGV2ZSBPcnRpeiwgSnVuaW9yIFdhaHdlb3R0ZW4sIEpveWNlIEd1ZXJyZXJvLCBIb3dhcmQgT2xpdmVyLCBEZWJiaWUgSm9obnNvbiBhbmQgQXVkcmV5IE9saXZlci4gPC9TVFJPTkc+PC9GT05UPjwvUD4NCjxQIHN0eWxlPSJNQVJHSU46IDBpbiAwaW4gMTBwdCIgY2xhc3M9TXNvTm9ybWFsPjxGT05UIGZhY2U9Q2FsaWJyaT5NQVlFVFRBOjxTUEFOIHN0eWxlPSJtc28tc3BhY2VydW46IHllcyI+Jm5ic3A7IDwvU1BBTj5TZW5pb3IgQWlybWFuIEhvbGx5IEpvaG5zb24gYW5kIG1lbWJlcnMgb2YgaGVyIGZhbWlseSBwcmVzZW50ZWQgYW4gQW1lcmljYW4gZmxhZyB0byBUcmliYWwgQ291bmNpbCB5ZXN0ZXJkYXkgdG8gdGhhbmsgdGhlIFBCUE4gZm9yIHN1cHBvcnRpbmcgSm9obnNvbiB3aGlsZSBzaGUgd2FzIG9uIGEgdG91ciBpbiBBZmdoYW5pc3Rhbi48U1BBTiBzdHlsZT0ibXNvLXNwYWNlcnVuOiB5ZXMiPiZuYnNwOyBDaHJpc3RtYXMgY2FyZSBwYWNrYWdlcyBoYXZlIGJlZW4gc2VudCB0byB0cmliYWwgbWVtYmVycyB3aG8gYXJlIGluIGFjdGl2ZSBtaWxpdGFyeSBzZXJ2aWNlIGZvciB0aGUgbGFzdCB0aHJlZSB5ZWFycy4mbmJzcDsgPC9TUEFOPjwvRk9OVD48L1A+DQo8UCBzdHlsZT0iTUFSR0lOOiAwaW4gMGluIDEwcHQiIGNsYXNzPU1zb05vcm1hbD48Rk9OVCBmYWNlPUNhbGlicmk+VGhlIGZsYWcgc2hlIGdhdmUgdG8gdGhlIHRyaWJlIGhhcyBzcGVjaWFsIHNpZ25pZmljYW5jZS48U1BBTiBzdHlsZT0ibXNvLXNwYWNlcnVuOiB5ZXMiPiZuYnNwOyA8L1NQQU4+Sm9obnNvbiBzYWlkIHRoYXQgc2hlIHJlcXVlc3RlZCB0aGF0IGl0IGJlIGZsb3duIG9uIE1hcmNoIDE0IGluIGhvbm9yIG9mIHRoZSB0cmliZSBvbiBhIEMgMTMwIGFpcnBsYW5lIHNoZSB3YXMgb24gZHVyaW5nIGEgYnVuZGxlcyBtaXNzaW9uIG92ZXIgQWZnaGFuaXN0YW4uPFNQQU4gc3R5bGU9Im1zby1zcGFjZXJ1bjogeWVzIj4mbmJzcDsgPC9TUEFOPjxTUEFOIHN0eWxlPSJtc28tc3BhY2VydW46IHllcyI+Jm5ic3A7PC9TUEFOPjwvRk9OVD48L1A+DQo8UCBzdHlsZT0iTUFSR0lOOiAwaW4gMGluIDEwcHQiIGNsYXNzPU1zb05vcm1hbD48Rk9OVCBmYWNlPUNhbGlicmk+Sm9obnNvbiwgZnJvbSBUb3Bla2EsIGhhcyBiZWVuIGluIHRoZSBLYW5zYXMgQWlyIE5hdGlvbmFsIEd1YXJkIGZvciB0aHJlZSB5ZWFycyBhbmQgaXMgYmFzZWQgd2l0aCB0aGUgRm9yYmVzIEZpZWxkIEFpciBOYXRpb25hbCBHdWFyZCAxOTA8U1VQPnRoPC9TVVA+IEFSVy48U1BBTiBzdHlsZT0ibXNvLXNwYWNlcnVuOiB5ZXMiPiZuYnNwOyZuYnNwOyA8L1NQQU4+U2hlIHdhcyBpbiBBZmdoYW5pc3RhbiBmb3IgdGhlIHBhc3Qgc2l4IG1vbnRocyBhbmQgcmV0dXJuZWQgaG9tZSBNYXJjaCAyOC48U1BBTiBzdHlsZT0ibXNvLXNwYWNlcnVuOiB5ZXMiPiZuYnNwOyA8L1NQQU4+QWNjb21wYW55aW5nIGhlciBvbiBoZXIgdmlzaXQgd2l0aCBUcmliYWwgQ291bmNpbCB3YXMgaGVyIG1vdGhlciwgRGViYmllIEpvaG5zb24sIEF1ZHJleSBPbGl2ZXIsIGF1bnQsIGFuZCBHcmFuZGZhdGhlciBIb3dhcmQgT2xpdmVyLjxTUEFOIHN0eWxlPSJtc28tc3BhY2VydW46IHllcyI+Jm5ic3A7IDwvU1BBTj5IZXIgZ3JhbmRtb3RoZXIgaXMgTWVsdmVuZSBPbGl2ZXIsIHdobyB3YXMgbm90IHBob3RvZ3JhcGhlZC4gPFNQQU4gc3R5bGU9Im1zby1zcGFjZXJ1bjogeWVzIj4mbmJzcDs8L1NQQU4+PFNQQU4gc3R5bGU9Im1zby1zcGFjZXJ1bjogeWVzIj4mbmJzcDs8L1NQQU4+PC9GT05UPjwvUD5kAgMPFgIfAAUtPGEgaHJlZj0iIyIgb25jbGljaz0iaGlzdG9yeS5nbygtMSkiPkJhY2s8L2E+ZAICDw8WAh8EaGRkAgMPFgIfBGhkAgUPFgIfAwIGFgwCAQ9kFgICAQ8PFgQfAAU9VHJpYmFsIE1lbWJlciBCYWNrIGZyb20gQWZnaGFuaXN0YW4gVGhhbmtzIFRyaWJlIFdpdGggYSBGbGFnIB4LTmF2aWdhdGVVcmwFES9uZXdzLmFzcHg/aWQ9NzcwZGQCAg9kFgICAQ8PFgQfAAVCVHdvIFBCUE4gVGVlbnMgdG8gU2hvdyBGaWxtcyBhdCBIYXNrZWxsIEZpbG0gRmVzdGl2YWwgVGhpcyBXZWVrZW5kHwUFES9uZXdzLmFzcHg/aWQ9NzY5ZGQCAw9kFgICAQ8PFgQfAAU9RmlyZWtlZXBlciBHb2xmIENvdXJzZSBNYWpvciBTcG9uc29yIG9mIE5DQUEgRmluYWwgRm91ciBHdWlkZR8FBREvbmV3cy5hc3B4P2lkPTc2OGRkAgQPZBYCAgEPDxYEHwAFE0dhcmRlbmluZyBXb3Jrc2hvcCAfBQURL25ld3MuYXNweD9pZD03NjdkZAIFD2QWAgIBDw8WBB8ABTNGbGFzaGJhY2s6ICBGaXJla2VlcGVyIEdvbGYncyBGaW5hbCBGb3VyIFNraW5zIEdhbWUfBQURL25ld3MuYXNweD9pZD03NjZkZAIGD2QWAgIBDw8WBB8ABRFTcHJpbmcgb24gdGhlIFJleh8FBREvbmV3cy5hc3B4P2lkPTc2NWRkAgkPFgIfAwIFFgoCAQ9kFgQCAQ8PFgQfBQUbL2V2ZW50LWNhbGVuZGFyLmFzcHg/aWQ9MzA0HwAFFkVhc3RlciBFZ2ctU3RyYXZhZ2FuemFkZAICDxUBB0FwcmlsIDdkAgIPZBYEAgEPDxYEHwUFGy9ldmVudC1jYWxlbmRhci5hc3B4P2lkPTMwNh8ABSpLYW5zYW5zIE9wdGltaXppbmcgSGVhbHRoIFByb2dyYW0gQ2xhc3NlcyBkZAICDxUBF1R1ZXNkYXlzLCBBcHJpbCAzLU1heSA4ZAIDD2QWBAIBDw8WBB8FBRsvZXZlbnQtY2FsZW5kYXIuYXNweD9pZD0zMDcfAAUdU3Rvcm0gU3BvdHRlciBUcmFpbmluZyBDbGFzcyBkZAICDxUBCEFwcmlsIDE4ZAIED2QWBAIBDw8WBB8FBRsvZXZlbnQtY2FsZW5kYXIuYXNweD9pZD0zMTIfAAVAVXJnZW50IFRvcGVrYSBWQSBNZWV0aW5nIGZvciBWaWV0bmFtIFZldGVyYW5zIEFib3V0IEFnZW50IE9yYW5nZWRkAgIPFQEHQXByaWwgMWQCBQ9kFgQCAQ8PFgQfBQUbL2V2ZW50LWNhbGVuZGFyLmFzcHg/aWQ9MzE1HwAFOkdvdmVybm1lbnQgQ2VudGVyIGFuZCBIZWFsdGggQ2VudGVyIENsb3NlZCBmb3IgR29vZCBGcmlkYXlkZAICDxUBB0FwcmlsIDZkGAMFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRhjdGwwMCRjdGwwMCRTZWFyY2hCdXR0b24FWWN0bDAwJGN0bDAwJE1haW5QbGFjZUhvbGRlciRCb2R5Q29udGVudFBsYWNlSG9sZGVyJEJvZHlDb250ZW50UGxhY2VIb2xkZXIkbmV3c0xpc3QkbXZNb2RlDw9kAgFkBVxjdGwwMCRjdGwwMCRNYWluUGxhY2VIb2xkZXIkQm9keUNvbnRlbnRQbGFjZUhvbGRlciRCb2R5Q29udGVudFBsYWNlSG9sZGVyJG5ld3NMaXN0JGZ2QXJ0aWNsZQ8UKwAHZGRkZGQWAAIBZAHcG5J3F0FyDNtI1eNyY51h59cN" />
+
+
+<script src="/ScriptResource.axd?d=OVXWtnDV_fwipdRq_GgJt8V7fRpwGQU9CepF1uWSm6jiVTpmWJkJY1_G742IMISkNPDOm72fJnbnRYKsGc3K1SBFVyB91ozetyd2mM_BexKJ_L-H9Pbv40R4BmJc7OV62-Kf3D68zEIAjYzdBN7QkLKbHC-hOmpgzUATugNy70eODrWh0&amp;t=633785223168004505" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKRjqGMDQKtsYfHAgLt8PqaCTgsF431eoH1LImF16GMStZSJd7J" />
+		
+		<div id="doc2" class="yui-t2">
+			<div id="logo"><a href="./"><img src="assets/images/logo.png" id="ctl00_ctl00_Img1" /></a></div>
+			<div id="hd">
+				<div class="main">
+					<div id="ctl00_ctl00_SearchPanel" class="search">
+	
+						<table>
+							<tr>
+								<td><strong>Search</strong></td>
+								<td><input name="ctl00$ctl00$SearchQuery" type="text" id="ctl00_ctl00_SearchQuery" style="margin: 0 5px;" /></td>
+								<td><input type="image" name="ctl00$ctl00$SearchButton" id="ctl00_ctl00_SearchButton" src="assets/images/button_go.gif" border="0" /></td>
+							</tr>
+						</table>
+					
+</div>
+					<div class="title">
+						Welcome to the official site of Prairie Band Potawatomi Nation
+					</div>
+				</div>
+				<div class="nav">
+					<ul><li><a href="default.aspx">Home</a></li><li><a href="news-and-press.aspx">News &amp; Press</a></li><li><a href="event-calendar.aspx">Events Calendar</a></li><li><a href="links.aspx">Links</a></li><li><a href="faqs.aspx">FAQs</a></li><li><a href="contact-us.aspx">Contact Us</a></li></ul>
+				</div>
+			</div>
+			<div id="bd">
+				<div id="yui-main">
+					<div class="yui-b">
+						
+						<div class="yui-ge">
+							<div class="yui-u first content-main">
+								<div class="centercontent">
+									
+	<div style="background-color: White;padding: 0px 3px 0px 3px;">
+		<div id="breadcrumbs">
+			<ul><li><a href="default.aspx">Home</a></li><li><a href="news-and-press.aspx">News &amp; Press</a></li><li>Current News</li></ul>
+		</div>
+	</div>
+	<div class="content">
+		<h1>Current News</h1>
+		
+	<UL class=horizontalnav>
+		<LI class=first>Current News</LI>
+		<LI><A href="press-release.aspx">Press Releases</A></LI>
+		<LI><A href="archives.aspx">News and Press Archives</A></LI>
+		<LI><A href="gambottek.aspx">Gambottek</A></LI>
+	</UL>
+	<DIV class=clear></DIV>
+	
+    <table cellspacing="0" border="0" id="ctl00_ctl00_MainPlaceHolder_BodyContentPlaceHolder_BodyContentPlaceHolder_newsList_fvArticle">
+	<tr>
+		<td colspan="2">
+				<h2 id="ctl00_ctl00_MainPlaceHolder_BodyContentPlaceHolder_BodyContentPlaceHolder_newsList_fvArticle_hgcTitle">Tribal Member Back from Afghanistan Thanks Tribe With a Flag </h2>
+				<div class="imgcontainer">
+				    <style type="text/css">.imgcontainer {display:none;}</style>
+				    <div class="imgcaption"></div>
+				</div>
+				<span class="articledate">March 31, 2012 - </span>
+				<P style="MARGIN: 0in 0in 10pt" class=MsoNormal align=center><FONT face=Calibri><IMG border=0 alt="Holly Johnson TC photo.jpg" src="/upload/img/Holly%20Johnson%20TC%20photo/Holly%20Johnson%20TC%20photo.jpg" width=400 height=172></FONT></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal align=justify><FONT face=Calibri>(<STRONG>L to R) Jancita Warrington, Jim Potter, Carrie O'Toole, Noah Wahquahboshkuk, Holly Johnson, Steve Ortiz, Junior Wahweotten, Joyce Guerrero, Howard Oliver, Debbie Johnson and Audrey Oliver. </STRONG></FONT></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><FONT face=Calibri>MAYETTA:<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Senior Airman Holly Johnson and members of her family presented an American flag to Tribal Council yesterday to thank the PBPN for supporting Johnson while she was on a tour in Afghanistan.<SPAN style="mso-spacerun: yes">&nbsp; Christmas care packages have been sent to tribal members who are in active military service for the last three years.&nbsp; </SPAN></FONT></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><FONT face=Calibri>The flag she gave to the tribe has special significance.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Johnson said that she requested that it be flown on March 14 in honor of the tribe on a C 130 airplane she was on during a bundles mission over Afghanistan.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></FONT></P>
+<P style="MARGIN: 0in 0in 10pt" class=MsoNormal><FONT face=Calibri>Johnson, from Topeka, has been in the Kansas Air National Guard for three years and is based with the Forbes Field Air National Guard 190<SUP>th</SUP> ARW.<SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN>She was in Afghanistan for the past six months and returned home March 28.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Accompanying her on her visit with Tribal Council was her mother, Debbie Johnson, Audrey Oliver, aunt, and Grandfather Howard Oliver.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Her grandmother is Melvene Oliver, who was not photographed. <SPAN style="mso-spacerun: yes">&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></FONT></P>
+				<div class="clear"></div>
+				<a href="#" onclick="history.go(-1)">Back</a>
+      </td>
+	</tr>
+</table>
+  
+	
+
+	</div>
+
+								</div>
+							</div>
+							<div class="yui-u content-right">
+								<div class="box">
+									
+
+<div style="background:url(upload/banner/headerBG.gif) repeat-x; height:25px; width:100%; "><h6 style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#FFFFFF; text-transform:uppercase;"><strong>Firekeeper Course</strong></h6>
+</div>
+<a href="http://firekeepergolf.com" target="_blank"><img src="upload/banner/golf_02.jpg" /></a>
+<p style="font-family:Arial, Helvetica, sans-serif; font-size:11px; margin:5px 5px 5px 5px;">Firekeeper Golf Course, <a href="http://firekeepergolf.com" target="_blank">tour the course here</a></p>
+
+
+								</div>
+								<div class="box" style="clear: both;">
+									<h6>News</h6>
+									<div class="content">
+										<ul class="news">
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl01_hlView" href="/news.aspx?id=770">Tribal Member Back from Afghanistan Thanks Tribe With a Flag </a>
+												</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl02_hlView" href="/news.aspx?id=769">Two PBPN Teens to Show Films at Haskell Film Festival This Weekend</a>
+												</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl03_hlView" href="/news.aspx?id=768">Firekeeper Golf Course Major Sponsor of NCAA Final Four Guide</a>
+												</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl04_hlView" href="/news.aspx?id=767">Gardening Workshop </a>
+												</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl05_hlView" href="/news.aspx?id=766">Flashback:  Firekeeper Golf's Final Four Skins Game</a>
+												</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_NewsRepeater_ctl06_hlView" href="/news.aspx?id=765">Spring on the Rez</a>
+												</li>
+											</ul>
+										<p align="right"><a href="news-and-press.aspx" id="ctl00_ctl00_MainPlaceHolder_A1"><img src="assets/images/button_morenews.png" id="ctl00_ctl00_MainPlaceHolder_Img3" alt="More News" /></a></p>
+									</div>
+								</div>
+								<div class="box">
+									<h6>Community</h6>
+									<div class="content">
+										<ul class="news">
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_EventsRepeater_ctl01_hlView" href="/event-calendar.aspx?id=304">Easter Egg-Stravaganza</a>
+												<br />
+												April 7</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_EventsRepeater_ctl02_hlView" href="/event-calendar.aspx?id=306">Kansans Optimizing Health Program Classes </a>
+												<br />
+												Tuesdays, April 3-May 8</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_EventsRepeater_ctl03_hlView" href="/event-calendar.aspx?id=307">Storm Spotter Training Class </a>
+												<br />
+												April 18</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_EventsRepeater_ctl04_hlView" href="/event-calendar.aspx?id=312">Urgent Topeka VA Meeting for Vietnam Veterans About Agent Orange</a>
+												<br />
+												April 1</li>
+											
+												<li>
+												<a id="ctl00_ctl00_MainPlaceHolder_EventsRepeater_ctl05_hlView" href="/event-calendar.aspx?id=315">Government Center and Health Center Closed for Good Friday</a>
+												<br />
+												April 6</li>
+											</ul>
+										<p align="right"><a href="event-calendar.aspx" id="ctl00_ctl00_MainPlaceHolder_A2"><img src="assets/images/button_morevents.png" id="ctl00_ctl00_MainPlaceHolder_Img4" alt="More Events" /></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="sidebar" class="yui-b">
+					<div class="content">
+						<ul><li><a href="our-history-and-culture.aspx">Our History &amp; Culture</a></li><li><a href="government.aspx">Government</a></li><li><a href="tribal-administration.aspx">Tribal Administration</a></li><li><a href="tribal-services.aspx">Tribal Services</a></li><li><a href="member-services.aspx">Member Services</a></li><li><a href="community-services.aspx">Community Services</a></li><li><a href="health-center-information.aspx">Health Center Information</a></li><li><a href="education-and-childrens-programs.aspx">Education &amp; Children's Programs</a></li><li><a href="housing.aspx">Housing</a></li><li><a href="gaming.aspx">Gaming</a></li><li><a href="economic-development.aspx">Economic Development</a></li><li><a href="employment-main.aspx">Employment</a></li><li><a href="potawatomi-news.aspx">Potawatomi News</a></li><li><a href="veterans.aspx">Veterans</a></li><li><a href="https://community.pbpindiantribe.com/browse.php">Tribal Member Login</a></li></ul>
+					</div>
+				</div>
+			</div>
+			<div id="ft">
+				<div class="stripe1"></div>
+				<div class="yui-g stripe2">
+					<div class="yui-u first">
+						<strong>Prairie Band Potawatomi Nation Government Center</strong><br />
+						16281 Q Road, Mayetta KS 66509-8970<br />
+						(785) 966-4000 <a href="mailto:info@pbpnation.org">info@pbpnation.org</a>
+					</div>
+					<div class="yui-u alignright">
+						<strong>Copyright &copy; 2009 Prairie Band of Potawatomi Nation</strong><br />
+						Any problems with this site please notify our <a href="mailto:benj@pbpnation.org">webmaster</a><br />
+						Brought to life by: <a target="_blank" href="http://www.rinteractive.net/">rhythm interactive, inc. a full service interactive agency</a>.
+					</div>
+				</div>
+				<div class="nav">
+					<ul><li><a href="./">Home</a></li><li><a href="our-history-and-culture.aspx">Our History &amp; Culture</a></li><li><a href="government.aspx">Government</a></li><li><a href="tribal-administration.aspx">Tribal Administration</a></li><li><a href="tribal-services.aspx">Tribal Services</a></li><li><a href="member-services.aspx">Member Services</a></li><li><a href="community-services.aspx">Community Services</a></li><li><a href="health-center-information.aspx">Health Center Information</a></li><li><a href="education-and-childrens-programs.aspx">Education &amp; Children's Programs</a></li><li><a href="housing.aspx">Housing</a></li><li><a href="gaming.aspx">Gaming</a></li><li><a href="economic-development.aspx">Economic Development</a></li><li><a href="employment-main.aspx">Employment</a></li><li><a href="potawatomi-news.aspx">Potawatomi News</a></li><li><a href="veterans.aspx">Veterans</a></li><li><a href="https://community.pbpindiantribe.com/browse.php">Tribal Member Login</a></li><li><a href="news-and-press.aspx">News &amp; Press</a></li><li><a href="event-calendar.aspx">Events Calendar</a></li><li><a href="links.aspx">Links</a></li><li><a href="faqs.aspx">FAQs</a></li><li><a href="contact-us.aspx">Contact Us</a></li><li><a href="terms-and-condition.aspx">Terms and Conditions</a></li><li><a href="privacy-statement.aspx">Privacy Statement</a></li><li><a href="search.aspx">Search</a></li><li><a href="site-map.aspx">Site Map</a></li></ul>
+				</div>
+			</div>
+		</div>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>

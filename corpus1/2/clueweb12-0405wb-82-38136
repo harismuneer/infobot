@@ -1,0 +1,632 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-28T17:06:49Z
+WARC-TREC-ID: clueweb12-0405wb-82-38136
+WARC-Target-URI: http://trance.nu/v4/lyrics/1772/Holden__Thompson-Nothing
+WARC-Payload-Digest: sha1:GY6AHSUKTBWU3HIKWILCTZ7B3HEYLST6
+WARC-IP-Address: 31.209.176.9
+WARC-Record-ID: <urn:uuid:f1211eae-0b72-4547-b8f3-c831cba2e638>
+Content-Type: application/http; msgtype=response
+Content-Length: 27015
+
+HTTP/1.1 200 OK
+Date: Tue, 28 Feb 2012 17:06:49 GMT
+Server: Apache/2.2.14 (Ubuntu)
+X-Powered-By: PHP/5.3.8-ZS5.5.0 ZendServer/5.0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Trance.nu | Lyrics For Holden & Thompson - Nothing</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="verify-v1" content="ilABWfUx5TcgOlceI7Mam8NVRY15kOKT4YjPrpFA+8A=" />
+	<link rel="shortcut icon" href="/v4/_themes/tnuv4/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="/v4/_themes/tnuv4/css/style.css" type="text/css" />
+	
+	<!--[if IE]>
+	<link rel="stylesheet" href="/v4/_themes/tnuv4/css/style_ie.css" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="/v4/_themes/tnuv4/css/lightbox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/v4/_themes/tnuv4/css/search.css" type="text/css" />
+	
+ 	<script type="text/javascript" src="/v4/_themes/tnuv4/js/prototype.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/js/scriptaculous.js?load=effects,builder"></script>
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript" src="/v4/_themes/tnuv4/js/lightbox2/lightbox.js"></script>
+	<!-- end lightbox scripts -->
+	
+	<script type="text/javascript" src="/v4/_themes/tnuv4//melodica/jsolait/jsolait.js"></script>
+	<script type="text/javascript">jsolait.baseURI="/v4/_themes/tnuv4//melodica/jsolait/";</script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/melodica/melodica.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/melodica/melodica_status.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/menu.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/omgx.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/utils.js"></script>
+	<script type="text/javascript" src="/v4/_themes/tnuv4/overlib.js"></script>
+
+	
+	
+	<script type="text/javascript">
+	<!--
+	function openWindow(theURL,winName,features) { //v2.0
+	  window.open(theURL,winName,features);
+	}
+
+	function BrowserSniffer() {
+		if (navigator.userAgent.indexOf("Opera")!=-1 && document.getElementById) type="OP";		//Opera
+		else if (document.all) type="IE";														//Internet Explorer e.g. IE4 upwards
+		else if (document.layers) type="NN";													//Netscape Communicator 4
+		else if (!document.all && document.getElementById) type="MO";							//Mozila e.g. Netscape 6 upwards
+		else type = "IE";		//I assume it will not get here
+		
+		return type;
+	}
+	
+	function ShowLayer(id, action){
+		type = BrowserSniffer();
+		if (type=="IE") eval("document.all." + id + ".style.visibility='" + action + "'");
+		if (type=="NN") eval("document." + id + ".visibility='" + action + "'");
+		if (type=="MO" || type=="OP") eval("document.getElementById('" + id + "').style.visibility='" + action + "'");
+	}
+	
+	function checkStatusLayer(id){
+		type = BrowserSniffer();
+		if (type=="IE") { 
+			layerType = "document.all." + id + ".style.visibility";
+			return layerType;
+		} else if (type=="NN") {
+			layerType = "document." + id + ".visibility";
+			return layerType;
+		} else if (type=="MO" || type=="OP") {
+			layerType = ("document.getElementById('" + id + "').style.visibility");
+			return layerType;
+		}
+	}
+	
+	function handleEnter (field, event) {
+		var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+		if (keyCode == 13) {
+			layerStatus = checkStatusLayer('uiSearch');
+			if(eval(layerStatus) == "visible") {
+				return true;
+			} else {
+				ShowLayer('uiSearch','visible');
+			}
+			return false;
+		} 
+		else
+		return true;
+	}
+  
+  function checkSearch () {
+    if(document.frmSearch.search_string.value != "") {
+      return true;  
+    } else {
+      alert('Please define a search-string');
+      return false;
+    }
+  }
+	addLoadEvent(omgResizeImage);
+	//-->
+	</script>
+	
+
+
+
+</head>
+
+<body>
+<div id="site">
+	<div id="container">
+		<div id="top">
+			<div id="topLogo">
+	<a href="/v4/start/"><img src="/v4/_themes/tnuv4/img/pixel.gif" alt="trance.nu version 4" width="166" height="52" border="0" /></a>
+</div>
+<div id="topContent" >
+	<div class="content-title-top-normal">Logged in as <b>Guest, please <a href="/v4/register/" class="link-nodisplay" style="color:white;"><i>register</i></a></b> | <b>28 February 2012 - 18:06:49 (796) GMT 1</b></div>
+	<table cellspacing="0" cellpadding="0" id="topStats">
+		<tr>
+			<td width="85">
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tr>
+						<td align="left" class="content-title-top-small">Users online:</td>
+						<td align="right" class="content-title-top-small"><b>0</b></td>
+					</tr>
+											<tr>
+							<td align="left" class="content-title-top-small">&nbsp;</td>
+							<td align="right" class="content-title-top-small"><b></b></td>
+						</tr>
+									</table>
+			</td>
+			<td width="10">&nbsp;
+			</td>
+			<td width="85">
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tr>
+						<td align="left" class="content-title-top-small">Guests online:</td>
+						<td align="right" class="content-title-top-small"><b>471</b></td>
+					</tr>
+					<tr>
+						<td align="left" class="content-title-top-small">Total online:</td>
+						<td align="right" class="content-title-top-small"><b>471</b></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="topContentIcons" >
+	<table width="750" cellspacing="0" border="0" cellpadding="0" style="margin-top:2px;" >
+		<tr>
+			<td width="153"><img src="/v4/_themes/tnuv4/img/icons/guestbook_off_33x33.gif" border="0" alt="Guestbook" /><br /><span class="content-title-top-icons-inactive">Guestbook</span></td>
+			<!--<td width="153"><img src="/v4/_themes/tnuv4/img/icons/forum_off_33x33.gif" border="0" alt="Forum replies" /><br /><span class="content-title-top-icons-inactive">Notification</span></td>-->
+			<td width="153"><img src="/v4/_themes/tnuv4/img/icons/forum_off_33x33.gif" border="0" alt="Events" /><br /><span class="content-title-top-icons-inactive">Notification</span></td>
+			<td width="153"><img src="/v4/_themes/tnuv4/img/icons/messages_off_33x33.gif" border="0" alt="Messages" /><br /><span class="content-title-top-icons-inactive">Messages</span></td>
+			<td><a href="https://market.android.com/details?id=nu.tommie.inbrowser"><img src ="/v4/_themes/tnuv4/assets/inbrowser_banner_2.png" width="468" height="60" border="0" style=""></a></td>
+		</tr>
+	</table>
+</div>
+		</div>
+			
+<div id="containNav">
+	<div id="navigation">
+		<div id="navItems">
+																		<a href="/v4/start/" class="mainNavItem" id="m_index">Trance.nu</a>
+																											<a href="/v4/news/" class="mainNavItem" id="m_news">News</a>
+																											<a href="/v4/reviews/" class="mainNavItem" id="m_reviews">Reviews</a>
+																											<a href="/v4/interviews/" class="mainNavItem" id="m_interviews">Interviews</a>
+																											<a href="/v4/mypage/community/" class="mainNavItem" id="m_mypage_community">Community</a>
+																											<a href="/v4/faq/" class="mainNavItem" id="m_faq">Faq</a>
+																											<a href="/v4/lyrics/" class="mainNavItemOn" id="m_lyrics">Lyrics</a>
+																											<a href="/v4/forum/" class="mainNavItem" id="m_forum">Forum</a>
+																						
+								</div>
+	</div>	
+	<div id="subnavigation">
+					<div id="sub_m_index">
+																				<a href="/v4/start/" class="subNavItem">Front Page</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/pages/trance-nu" class="subNavItem">About</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/pages/advertise" class="subNavItem">Advertise</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/pages/history" class="subNavItem">History</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/pages/tnu-v4-info" class="subNavItem">v4 info</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/donations/" class="subNavItem">Donations</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/asot/" class="subNavItem">ASOT</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/toplist/" class="subNavItem">Top List</a>
+												</div>
+					<div id="sub_m_news">
+																				<a href="/v4/news/" class="subNavItem">All News</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/news/artists/" class="subNavItem">Artists</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/news/labels/" class="subNavItem">Labels</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/news/parties/" class="subNavItem">Parties</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/news/trance.nu/" class="subNavItem">Trance.nu</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/news/misc/" class="subNavItem">Misc</a>
+												</div>
+					<div id="sub_m_reviews">
+																				<a href="/v4/reviews/" class="subNavItem">All Reviews</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/reviews/singles/" class="subNavItem">Singles</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/reviews/albums/" class="subNavItem">Albums</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/reviews/parties/" class="subNavItem">Parties</a>
+												</div>
+					<div id="sub_m_interviews">
+											</div>
+					<div id="sub_m_mypage_community">
+																				<a href="/v4/mypage/" class="subNavItem">MyPage</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/activity/" class="subNavItem">Activity</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/friends/" class="subNavItem">Friends</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/gallery/" class="subNavItem">Gallery</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/karma/" class="subNavItem">Karma</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/scrobbler/" class="subNavItem">Scrobbler</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/backtrack/" class="subNavItem">Backtrack</a>
+												</div>
+					<div id="sub_m_faq">
+											</div>
+					<div id="sub_m_lyrics" class="subNavActive">
+																				<a href="/v4/lyrics/" class="subNavItem">List Lyrics</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/lyrics/add" class="subNavItem">Add Lyrics</a>
+												</div>
+					<div id="sub_m_forum">
+																				<a href="/v4/forum/search.php" class="subNavItem">Search</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/forum/search.php?search_id=newposts" class="subNavItem">New Posts</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/forum/viewtopic.php?t=103936" class="subNavItem">Forum Rules</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/forum/groupcp.php" class="subNavItem">Usergroups</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/forum/watched_topics.php" class="subNavItem">Watched Topics</a>
+												</div>
+					<div id="sub_m_mypage_edit">
+																				<a href="/v4/mypage/edit/profile" class="subNavItem">Edit Profile</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/edit/presentation" class="subNavItem">Edit Presentation</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/edit/settings" class="subNavItem">MyPage Settings</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/edit/portrait" class="subNavItem">Edit Portrait</a>
+														<span class="subNavDivider">|</span>											<a href="/v4/mypage/edit/username" class="subNavItem">Change Username</a>
+												</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+<!--
+omgInit();
+-->
+</script>
+
+<div class="clearsub">&nbsp;</div>
+		<div id="content">
+															<div class="l1">
+<div class="sidebar" style="padding:4px;">
+	<table cellspacing=0>
+		<tr>
+			<td class="list-title"><img src="/v4/_themes/tnuv4/img/subarrow.gif" class="forumicon">&nbsp;<a href="/v4/lyrics/edit/1772" class="link-nodisplay" style="color: #2C384D;">Edit Lyric</a></td>
+		</tr>
+		<tr>
+			<td class="list-title"><img src="/v4/_themes/tnuv4/img/subarrow.gif" class="forumicon"><a href="#revs" class="link-nodisplay" style="color: #2C384D;">&nbsp;Revisions (1)</td>
+		</tr>
+	</table>
+</div>
+<span class="mypage-profile-title">Holden & Thompson<br />
+<i>Nothing</i></span><br />
+<br />
+
+ 
+<span class="content-article-body">Don't you know it's gone too wrong,<BR /> early warning.<BR /> How could it have come to this?<BR /> We're dying trying.<BR /> <BR /> It's a long way down,<BR /> but no one in this crowd<BR /> can stop me hitting the ground.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling?<BR /> <BR /> Tell me there is more than this<BR /> rocky morning.<BR /> Cause you’ve got the best there is<BR /> and I want nothing.<BR /> <BR /> It's a long way down<BR /> but no one in this crowd<BR /> can stop me hitting the ground.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling.<BR /> <BR /> Tell me there is more than this<BR /> rocky morning.<BR /> Cause you’ve got the best there is<BR /> and I want nothing.<BR /> <BR /> Nothing to hold the falling.<BR /> <BR /> So how can I<BR /> survive this sinking feeling.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling.<BR /> <BR /> Cause now I've got<BR /> nothing to hold the falling.<BR /> So how can I<BR /> survive this sinking feeling.</span>
+<br />
+<br />
+<div class="hr"></div>
+
+<span class="list-title">Submitted by:</span>
+
+	<table>
+	<tr>
+	<td>
+			<a href="/v4/mypage/69893" class="link-nodisplay"><img src="http://img.trance.nu/?width=27&url=http://trance.nu/v4/_themes/tnuv4/assets/portraits/9aa9d473af3fb9becfa73341d0c1ed60.jpg" border="0" align="center" alt="VanFearson" style="border: 1px solid black;" /></a><td>
+		<td valign="absmiddle"><a href="/v4/mypage/69893" class="link-nodisplay"><span class="mypage-profile-title">VanFearson</span></a><br><a href="/v4/lyrics/submitter/69893">See more submissions by VanFearson</a></td>
+	</tr>
+	</table>
+<br />
+<div class="hr"></div>
+<div><span class="list-title">Permanent link (use this if you want to link this content):</span></div>
+				<div><a href="/perm/lyrics/1772">http://trance.nu/perm/lyrics/1772</a></div>
+
+<br />
+<div class="hr"></div>
+<span class="list-title">Last edit by:</span>
+<br />VanFearson on 20/11 01:32:51 | <a href="/v4/lyrics/edit/1772" class="link-nodisplay" style="color: #2C384D;"><b>Edit</b></a><br /><br>
+<a name="revs"><span class="list-title">Revisions:</span>
+<br />
+<TABLE cellspacing="0" cellPadding="2" width="100%" border=0>
+		     <TR>
+	         <td width="1" valign="left"><a href="/v4/lyrics/revisions/1227124809/1772" class="link-nodisplay" style="color: #2C384D;">1227124809</a></td>
+	         <TD valign="left">| &nbsp;Edited by <a href="/v4/mypage/1" class="link-nodisplay" style="color: #2C384D;"><b>Tommie</b></a> on 19/11 21:00:09</TD>
+	     </TR>
+
+</table>
+<br /><br />
+
+</div>
+
+<div id="right">
+			<div class="r2">
+	      <div class="box-header"><h2>
+Current poll
+</h2></div>
+<div class="box-body">
+	
+	<script type="text/javascript">
+	<!--
+	function check_poll(obj)
+	{
+		var i;
+		for(i = 0; i < obj.length; i++) {
+			if(obj[i].checked) return true;
+		}
+		return false;
+	}
+	// -->
+	</script>
+	
+	<form action="/v4/lyrics/1772/Holden__Thompson-Nothing" method="post">
+	<input type="hidden" name="poll_id" value="122" />
+
+
+
+
+				<div>Hypothetically,how much would you be willing to pay per month for unlimited access to music through your favorite online music store?</div>
+	<br />
+	<table>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1623" id="poll1623" /> </td>
+			<td><label for="poll1623">Less than 4€</label></td>
+		</tr>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1624" id="poll1624" /> </td>
+			<td><label for="poll1624">5-7€</label></td>
+		</tr>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1625" id="poll1625" /> </td>
+			<td><label for="poll1625">8-10€</label></td>
+		</tr>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1626" id="poll1626" /> </td>
+			<td><label for="poll1626">11-13€</label></td>
+		</tr>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1627" id="poll1627" /> </td>
+			<td><label for="poll1627">14€ or more</label></td>
+		</tr>
+			<tr>
+			<td><input type="radio" name="poll_option" value="1628" id="poll1628" /> </td>
+			<td><label for="poll1628">don't like the subscription idea</label></td>
+		</tr>
+		</table>
+	<br />
+			
+	<table width="10" cellpadding="2">
+	<tr>
+		
+		<td align="left">
+						<input type="submit" name="poll_prev" value="Prev." class="submit" />
+					</td>
+		<td align="right">
+												<input type="submit" name="poll_submit" value="Vote" class="submit" onclick="return check_poll(this.poll_option);" />
+									</td>
+
+	</tr>
+	</table>
+
+</form>
+
+
+</div>
+			</div>
+			<div class="r4">
+        <div class="box-header"><h2>Search trance.nu</h2></div>
+<form action="/v4/index.php?kid=search" id="search" method="post" name="frmSearch">
+<div class="box-body">
+	<table border="0" cellpadding="0" cellspacing="2" align="center">
+		<tr>
+			<td colspan="2" style="color: #FF3333;"></td>
+		</tr>
+		<tr>
+			<td valign="middle"><input class="search" type="text" name="search_string" value="" onkeypress="return handleEnter(this, event)" /></td><td valign="middle"><input type="button" value="Search" name="doSearch" onclick="ShowLayer('uiSearch','visible');" class="submitsearch" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+	</table>						
+	
+</div>
+<div id="uiSearch">
+	<table border="0" cellpadding="0" cellspacing="3" align="left">
+				<tr>
+			<td width="100%"><input name="searchModule[1]" type="checkbox" id="search_module_1" />&nbsp;<label for="search_module_1">news</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[2]" type="checkbox" id="search_module_2" />&nbsp;<label for="search_module_2">reviews</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[3]" type="checkbox" id="search_module_3" />&nbsp;<label for="search_module_3">articles</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[4]" type="checkbox" id="search_module_4" />&nbsp;<label for="search_module_4">pages</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[5]" type="checkbox" id="search_module_5" />&nbsp;<label for="search_module_5">faq</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[6]" type="checkbox" id="search_module_6" />&nbsp;<label for="search_module_6">users</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[7]" type="checkbox" id="search_module_7" checked="checked" />&nbsp;<label for="search_module_7">lyrics</label></td>
+		</tr>
+				<tr>
+			<td width="100%"><input name="searchModule[8]" type="checkbox" id="search_module_8" />&nbsp;<label for="search_module_8">interviews</label></td>
+		</tr>
+				<tr>
+			<td valign="middle" colspan="2">Order By:</td>
+		
+		</tr>
+		<tr>
+			<td valign="middle"><input type="radio" value="1" name="searchOrder" id="search_bydate" /> <label for="search_bydate">Date</label></td>
+			<td valign="middle"><input type="radio" value="2" name="searchOrder" id="search_byscore" checked="checked" /> <label for="search_byscore">Score</label></td>
+		</tr>
+		<tr>
+			<td valign="middle"><input type="button" value="Abort" onclick="ShowLayer('uiSearch','hidden');" name="doSearch" class="submitsearch" /></td>
+			<td valign="middle"><input type="submit" value="Go!" name="doSearch" onclick="return checkSearch();" class="submitsearch" /></td>
+		</tr>
+	</table>
+</div>
+</form>
+<div class="hr-right-small"></div>
+				<script type="text/javascript">
+	
+	function doForgotPassword () {
+		location.href = '/v4/index.php?kid=forgotpass';
+	}
+	
+</script>
+
+<div class="box-header"><h2>Login or <i><a href="/v4/register/"><font color="#2C384D">Register</font></a></i></h2></div>
+<div class="box-body-content">
+	<form action="/v4/lyrics/1772/Holden__Thompson-Nothing" id="login" method="post">
+	<table border="0" cellpadding="0" cellspacing="2" align="center">
+		<tr>
+			<td colspan="2" style="color: #FF3333;"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input id="uname" type="text" name="login_uname" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input id="pass" type="password" name="login_pass" /></td>
+		</tr>
+		<tr>
+			<td valign="middle" width="100" style="padding-top:5px; padding-bottom:5px;">Autologin: </td>
+			<td valign="middle" align="center"><input type="checkbox" name="remember" /></td>
+		</tr>
+		<tr>
+			<td align="left" valign="middle"><input type="button" onclick="javascript:doForgotPassword();" value="Forgot?" name="login_submit" class="submitleft" align="left" /></td>
+			<td align="right" valign="middle"><input type="submit" value="Login" name="login_submit" class="submit" /></td>
+		</tr>
+	</table>						
+	</form>
+</div>
+			</div>
+			<div class="r1">
+	      <div class="box-header">
+	      	<h2>Related Lyrics</h2>
+	      </div>
+	      <div class="box-body-content">
+
+	        <div class="forum">
+						<table width="95%" class="forum" align="middle">
+															 
+								<tr class="forumitem">
+									<td><a href="/v4/lyrics/1179/Holden__Thompson-Nothing_Hiver__Hammer_Remix" class="list">Holden & Thompson - Nothing (Hiver & Hammer Remix)</a></td>
+								</tr>
+																							 
+								<tr class="forumitem">
+									<td><a href="/v4/lyrics/1645/Holden__Thompson-Come_To_Me_Amateur_Guitar_Mix" class="list">Holden & Thompson - Come To Me (Amateur Guitar...</a></td>
+								</tr>
+																																				</table>
+	        </div>
+	      </div>
+      </div>
+	    <div class="hr-right"></div>
+	    <div class="r1-ads">
+        
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-6069131577115989");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-6069131577115989", "Trance_ROS_300x250");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+
+<!-- ca-pub-6069131577115989/Trance_ROS_300x250 -->
+<script type='text/javascript'>
+GA_googleFillSlot("Trance_ROS_300x250");
+</script>
+
+
+
+      </div>
+	    <div class="hr-right"></div>
+						<div class="hr-right"></div>
+			<div class="r1">
+	      <div class="box-header">
+	      	<h2>Latest forum threads</h2>
+	      </div>
+	      <div class="box-body-content">
+
+	        <div class="forum">
+	          <table width="97%" class="forum" align="center">
+	              <!--
+	              <tr>
+	                <td><h4>Thread</h4> </td>
+	                <td align="center"><h4>Age</h4></td>
+	              </tr>
+	              --> 
+	              
+	          
+	          </table>
+
+	        </div>
+	      </div>
+	    </div>
+	    
+			<div class="hr-right"></div>
+			<div class="r1">
+	      <div class="box-header">
+	      	<h2>Latest off-topic threads</h2>
+	      </div>
+	      <div class="box-body-content">
+
+	        <div class="forum">
+	          <table width="97%" class="forum" align="center">
+	              
+	          
+	          </table>
+
+	        </div>
+	      </div>
+	    </div>  
+
+	   <div class="hr-right"></div>
+	   <div class="r1-ads">
+	   	<a href="/v4/toplist" class="link-nodisplay">
+		  	<img src="/v4/_themes/tnuv4/assets/images/frontimages/top_15_hook.jpg" style="border: 1px solid black;" border="0" alt="" />
+			</a>
+		</div>
+	    <div class="r3">
+        	    	<div class="box-header">
+	      		<h2>Get Published!</h2>
+	  	</div>
+	  	<div class="box-body">
+	  		<img src="/v4/_themes/tnuv4//img/send_content.jpg" alt="" />
+	  		<b>Do you have content</b> such as news or reviews? Or perhaps interested in an Interview? Email:
+<br>
+<b>submissions [at] trance.nu</b>
+<br>
+Looking to advertise?
+<br>
+<b><a href="http://trance.nu/v4/pages/advertise">Click Here</a></b>
+		</div>
+
+	    </div>
+			<div class="r3">
+        <div class="box-header">
+  <h2> Competitions</h2>
+</div>
+<div class="box-body-mypage">
+
+
+   <dl>
+		<dt>Currently no competitions</dt>
+		<dd> </dd>
+  </dl>
+
+<!--
+
+  <dl>
+    <dt>Twisted/Tidy Addict Comp</dt>
+    <dd> Dates: 11/01- 28/01 <br /> Prizes: Pair Tickets/CD <br /> Enter Competition</dd>
+
+    <dt>Twisted/Tidy Addict Comp</dt>
+    <dd> Dates: 11/01- 28/01 <br /> Prizes: Pair Tickets/CD <br /> <a href="/v4/news/lyxdama-testar-news">Enter Competition</a></dd>
+  </dl>
+-->
+</div> 
+				
+			</div>
+		</div>
+											</div>
+
+		<!-- footer -->
+				<div id="footer">
+		<br />	
+		<span style="padding-top:15px;"><strong>&nbsp;Copyright &copy; 1998 - 2008 trance.nu. All rights reserved.<br />&nbsp;<small><a href="/">Trance.nu</a> is run and maintained by Tommie Podzemski, Kevin Turner and the Trance.nu Staff. Running smoothly on <i><a href="/v4/pages/tnu-v4-info">omgApi</a> 1.1.0 "Its about time!"</i>.</small></strong></span>
+		</div>		
+	</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-56539-3";
+urchinTracker();
+</script>
+
+</div>
+
+</body>
+</html>
+
+

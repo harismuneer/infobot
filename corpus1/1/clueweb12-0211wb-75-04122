@@ -1,0 +1,431 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-18T16:09:31Z
+WARC-TREC-ID: clueweb12-0211wb-75-04122
+WARC-Target-URI: http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/
+WARC-Payload-Digest: sha1:SD5WKAKVTPUWME73MY3TX7LJ5EMO5JA7
+WARC-IP-Address: 66.240.200.84
+WARC-Record-ID: <urn:uuid:60dd4cdf-d7b5-499f-bb4c-292b6e6580cd>
+Content-Type: application/http; msgtype=response
+Content-Length: 83511
+
+HTTP/1.1 200 OK
+Date: Sat, 18 Feb 2012 16:10:16 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.1.6
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Pragma" content="no-cache" />
+   <link rel="stylesheet" href="http://www.realclearpolitics.com/epolls/styles/epoll.css" type="text/css" />
+	 <link rel="stylesheet" href="http://www.realclearpolitics.com/epolls/styles/map.css" type="text/css" />
+	 <link rel="stylesheet" type="text/css" media="print" href="http://www.realclearpolitics.com/epolls/styles/print.css" />
+   
+   <title>RealClearPolitics - Electoral Map</title>
+   <script type="text/javascript" src="/fsrscripts/triggerParams.js"></script> 
+<script type="text/javascript" src="/fsrscripts/stdLauncher.js"></script>
+<script type="text/javascript">Poll();</script>
+   <style type="text/css">
+   
+		.changes { font: 12px "Times New Roman", Times, serif; margin-top: 10px; float: left; width: 594px; clear: both; border: 1px solid #666; padding: 2px; }
+		.full-changes { border: 0; margin-top: 5px; }
+		.changes table { width: 594px; border-collapse: collapse; padding: 3px; }
+		.changes table th { background: #444; color: #fff; padding: 4px 5px; }
+		.changes table td { text-align: center; padding: 3px; }
+		.changes table td.leaning_obama { font-weight: bold; color: #8080FF; }
+		.changes table td.solid_obama { font-weight: bold; color: #0000FF; }
+		.changes table td.leaning_mccain { font-weight: bold; color: #FF8080; }
+		.changes table td.solid_mccain { font-weight: bold; color: #FF0000; }
+		.changes table td.toss_up { font-weight: bold; color: #606060; }
+   		ul#map-nav li a { font-size: 1.1em; font-weight: bold; padding: 10px 0; }
+		p#last-ten-elections { border: 1px solid #606060; margin: 0 0 -1px 0; float:left; width: 592px; text-align: center; background: #eee; color: #444; padding: 3px; }
+   		p#last-ten-elections a.on { font-weight: bold; }
+		#map-legend2 { border-bottom: 0; background: none; border-top: 0; }
+		#map-legend2 div.candidate { background: none; }
+		#map-legend2 div.candidate span { letter-spacing: -1px; }
+		#map-legend2 div p.candidate-name { letter-spacing: -1px; } 
+		p#map-help { text-align: center; font: 1em Arial, Helvetica, sans-serif; padding: 2px 2px 0 2px; display: inline; color: #444; float: left; width: 594px; border-left: 1px solid #606060; border-right: 1px solid #606060; border-top: 0px solid #606060; margin: -5px 0 0 0; }
+   		.data th { cursor: pointer; }
+		#polling-data-chart tr.alt { background: #f5f5f5; }
+		#tools a { background: #eee url(../images/checkbox-off.gif) no-repeat 5px center; border: none; font-weight: bold; padding: 3px 6px 3px 21px;}
+		#tools a.on { background: #eee url(../images/checkbox-on.gif) no-repeat 5px center; color: #cc0000; }
+		#tools2 { padding-bottom: 0; }
+		#tools { padding-left: 10px; }
+		#tools p { border: 1px #666 solid; background: #eee; margin: 3px; float: left; clear: both; }
+   </style>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//configuration
+OAS_url = 'http://ads.forbes.com/RealMedia/ads/'; 
+if(typeof OAS_sitepage=="undefined"){
+OAS_sitepage = "realclearpolitics.com/pollselection";
+}
+else{
+if(OAS_sitepage.length == 0){
+OAS_sitepage = "realclearpolitics.com/pollselection";
+}
+}
+if(typeof OAS_listpos=="undefined"){
+OAS_listpos = "BigBanner,LeftBottom,x110,RightMiddle";
+}
+else{
+if(OAS_listpos.length == 0){
+OAS_listpos = "BigBanner,LeftBottom,x110,RightMiddle";
+}
+}
+OAS_query = '';
+OAS_target = '_top';
+if(typeof OAS_query_addition != 'undefined' && OAS_query_addition.length>0) {
+        if(OAS_query.length>0 && OAS_query.charAt(0)=='?') OAS_query += '&'+OAS_query_addition;
+        else OAS_query = '?'+OAS_query_addition;
+}
+//end of configuration
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+function OAS_NORMAL(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" BORDER=0></A>');
+}
+function OAS_RICH(pos) {
+  document.write('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" TARGET=' + OAS_target + '>');
+  document.write('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + OAS_query + '" BORDER=0></A>');
+}
+//-->
+
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1 || navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
+  OAS_version = 10;
+if (OAS_version >= 11)
+  document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + OAS_query + '"><\/SCRIPT>');
+//-->
+
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('');
+function OAS_AD(pos) {
+  if (OAS_version >= 11)
+    OAS_RICH(pos);
+  else
+    OAS_NORMAL(pos);
+}
+//-->
+</SCRIPT>
+<script type="text/javascript" src="http://www.realclearpolitics.com/epolls/scripts/common.js"></script>
+<script type="text/javascript">
+addEvent(window, 'load', init2);
+function init2(){
+	fgetAllDataTables();
+	hoverNav();
+			
+}
+</script>
+<script type="text/javascript" src="http://www.realclearpolitics.com/epolls/scripts/alter-shading.js"></script>
+</head>
+<body>
+<!-- SiteCatalyst code version: H.14.
+Copyright 1997-2007 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="http://www.realclearpolitics.com/omniture.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://forbesrcpdev.112.2O7.net/b/ss/forbesrcpdev/1/H.14--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.14. -->
+
+<div id="container">
+<div id="masthead">
+<div id="page-header">
+   <div id="page-header-logo"><a href="/"><img src="/dev/mt-static/images/logo-sub.gif" border="0" height="126" width="180" alt="RealClearPolitics"></a></div>
+
+<div id="page-header-ad"><div id="ad-leaderboardtag"><img src="/dev/mt-static/images/leaderboard_tag.gif" alt="Advertisement" width="18" height="90" /></div>
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('BigBanner');
+//-->
+</SCRIPT>
+</div>
+
+</div><script type="text/javascript" src="http://www.realclearpolitics.com/js_incls/inner-topnavmenu.js"></script>
+<style>
+/* ----------------------------- NAVIGATION ------------------------------------------ */
+.inavcontainer{margin: 0px; background-color: #000000; width:990px; height:24px; display: inline; padding: 0px; float: left; }
+.inavcontainer ul{border: 0; margin: 0; padding: 0; list-style-type: none; text-align: center; float: left; }
+.inavcontainer ul li{display: block; float: left; text-align: center; padding: 0; margin: 0; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.inavcontainer ul li a{font-family: Verdana, Arial, Helvetica, sans-serif; float: left; text-align:center; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: bold; letter-spacing: .05em; padding:5px 5px 5px 3px; line-height:14px;}
+.inavcontainer ul li a:hover{font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #CC0000; float: left;	text-align:center; color: #FFFFFF; text-decoration: none; font-size: 11px; font-weight: bold; letter-spacing: .05em; padding:5px 5px 5px 3px; }
+.inavcontainer a:active{background: #c60; color: #fff; }
+.inavcontainer li#active a{background: #c60; border: 1px solid #c60; color: #fff; }
+.inavcontainer ul#sub{border: 0; margin: 0; padding: 0; list-style-type: none; text-align: center; float: right; text-transform: none;}	
+.inavcontainer a.nav8:hover {background-color:#6E9A39;}
+.inavcontainer a.nav9:hover {background-color:#003399;}
+
+/* ------------------------SUB NAV STYLES ------------------------------------------------- */
+.subnavcontainer 		{position:relative; margin:0px; padding:0px; height:0px; clear:both;}
+.subnavbg 			{position:absolute; top:0px; left:0px; width:989px; height:24px; background-color:#cc0000; z-index:100;  border-bottom:1px solid #000; border-right:1px solid #000;} /*filter:alpha(opacity=80);-moz-opacity:.80;opacity:.80; */
+.subnavcontainer iframe	{position:absolute; top:-32px; left:750px; font-size:10px; text-align:right; z-index:120; color:#fff; background:none;}
+.subnav 			{position:absolute; top:3px; left:0px; z-index:140; } 
+.clear {clear:both;}
+.links_navcontainer{margin: 0px 0px 0px 0px; width:100%; height:24px; display: block; padding: 0px 0px 0px 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold; color: #FFFFFF; clear: both; }
+.links_navcontainer ul{	border: 0; margin: 0; padding: 0; list-style-type: none; text-align: center; float: left; }
+.links_navcontainer ul li{ display: block; float: left; text-align: center; padding: 0; margin: 0; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.links_navcontainer ul li a{ font-family: Verdana, Arial, Helvetica, sans-serif; float: left; text-align:center; color: #FFFFFF; text-decoration: none; font-size: 10px; font-weight:bold; letter-spacing: .05em; padding:2px 5px 3px 5px; line-height:14px;}
+.links_navcontainer ul li a:hover{font-family: Verdana, Arial, Helvetica, sans-serif; float: left; text-align:center; text-decoration: underline; font-size: 10px; letter-spacing: .05em; padding:2px 5px 3px 5px; color:#ffffff;}
+.links_navcontainer li#active a{background: #c60; border: 1px solid #c60; color: #fff; }
+</style>
+
+<div class="inavcontainer" id="inavcontainer">
+            <ul><li id="linav10"><a href="http://www.realclearpolitics.com" id="nav10">Home</a></li><li id="linav1"><a href="" id="nav1" onmouseover="showsub2(1);" onmouseout="hidesub(1);">Inside RCP</a></li><li><a href="http://www.realclearpolitics.com/polls/" id="nav2" onmouseover="showsub2(2);" onmouseout="hidesub(2);">Polls</a></li><li><a href="http://www.realclearpolitics.com/video_log/" id="nav3">Videos</a></li><li><a href="http://www.realclearpolitics.com/topic/" id="nav4" onmouseover="showsub2(4);" onmouseout="hidesub(4);">Issues</a></li><li><a href="http://comments.realclearpolitics.com/home/" id="nav5">Comments</a></li><li><a href="http://www.realclearpolitics.com/links.html" id="nav6" onmouseover="showsub2(6);" onmouseout="hidesub(6);">Links</a></li><li><a href="http://www.realclearworld.com" id="nav7">World</a></li><li><a href="http://www.realclearmarkets.com" id="nav8" class="nav8">Markets</a></li><li><a href="http://www.realclearsports.com" id="nav9" class="nav9">Sports</a></li></ul>
+        </div>
+        <div class="subnavcontainer" id="subnavcontainer">
+            <div class="subnavbg" id="subnavbg1" style="display:none;" onmouseover="showsub2(1);" onmouseout="hidesub(1);" ></div>
+            <div class="subnavbg" id="subnavbg2" style="display:none;" onmouseover="showsub2(2);" onmouseout="hidesub(2);"></div>            
+            <div class="subnavbg" id="subnavbg4" style="display:none;" onmouseover="showsub2(4);" onmouseout="hidesub(4);"></div>         
+            <div class="subnavbg" id="subnavbg6" style="display:none;" onmouseover="showsub2(6);" onmouseout="hidesub(6);"></div>
+                      
+            <div class="subnav" id="subnav1" style="display:none;" onmouseover="showsub2(1);" onmouseout="hidesub(1);">
+                <div class="links_navcontainer" id="sub_nav_1">
+                    <ul>
+                        <li><a href="http://www.realclearpolitics.com/blog/">RCP Blog</a></li>
+                        <li><a href="http://www.realclearpolitics.com/horseraceblog/">HorseRaceBlog</a></li>
+                        <li><a href="http://www.realclearpolitics.com/politics_nation/">PoliticsNation</a></li>
+                        <li><a href="http://www.realclearpolitics.com/cross_tabs/">Cross-Tabs</a></li>
+                        <li><a href="http://www.realclearpolitics.com/transcripts_speeches">Transcripts &amp; Speeches</a></li>
+                        <li><a href="http://www.realclearpolitics.com/best_of_the_blogs/">Best of The Blogs</a></li>
+                        <li><a href="http://www.realclearpolitics.com/news/">News</a></li>
+                        <li><a href="http://fantasy08.realclearpolitics.com/aav2/menu.jsp">Fantasy '08</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subnav" id="subnav2" style="display:none;" onmouseover="showsub2(2);" onmouseout="hidesub(2);">
+                <div class="links_navcontainer" id="sub_nav_2">
+                    <ul>
+                        <li><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/index.html">President</a></li>
+                        <li><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/senate.html">Senate</a></li>
+                        <li><a href="http://www.realclearpolitics.com/polls/#rcp-avg-904">Job Approval</a></li>
+                        <li><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/index.html">Latest Polls</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subnav" id="subnav4" style="display:none;" onmouseover="showsub2(4);" onmouseout="hidesub(4);">
+                <div class="links_navcontainer" id="sub_nav_4">
+                    <ul>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=a">A</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=b">B</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=c">C</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=d">D</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=e">E</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=f">F</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=g">G</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=h">H</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=i">I</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=j">J</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=k">K</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=l">L</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=m">M</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=n">N</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=o">O</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=p">P</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=q">Q</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=r">R</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=s">S</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=t">T</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=u">U</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=v">V</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=w">W</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=x">X</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=y">Y</a></li>
+                        <li><a href="http://www.realclearpolitics.com/topic/?letter=z">Z</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subnav" id="subnav6" style="display:none;" onmouseover="showsub2(6);" onmouseout="hidesub(6);">
+                <div class="links_navcontainer" id="sub_nav_6" >
+                    <ul>
+                        <li><a href="http://www.realclearpolitics.com/links.html#newspapers">Newspapers</a></li>
+                        <li><a href="http://www.realclearpolitics.com/links.html#magazines">Magazines</a></li>
+                        <li><a href="http://www.realclearpolitics.com/links.html#columnists">Columnists &amp; Blogs</a></li>
+                        <li><a href="http://www.realclearpolitics.com/links.html#electronic">Electronic Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div></div><div id="gamma"><div id="leftbox-latest"><span class="sidebar-header">Electoral Battle</span><div id="poll_sidebar"><p><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><strong><a class="sidebar" href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/">RealClearPolitics Map</a></strong><br /><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><a href="http://www.realclearpolitics.com/epolls/election_2008/electoral_count.html"><strong><span class="sidebar">RCP State-by-State Changes</span></strong></a><br /><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><a href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/?map=10"><strong><span class="sidebar">Map With No Toss Up States</span></strong></a><br /><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><a href="http://www.realclearpolitics.com/epolls/election_2008/electoral_count_no_toss_ups.html"><strong><span class="sidebar">State Changes w/No Toss Ups</span></strong></a><br /><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><a href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/?map=1"><strong><span class="sidebar">Create Your Own Map</span></strong></a><br /><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong><a href="http://www.realclearpolitics.com/Presidential_04/RCP_Electoral_Count_Final.html"><strong><span class="sidebar">2004 RCP Electoral Map</span></strong></a><br /><strong><a class="sidebar" href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/?map=10"></a></strong></p></div></div><div id="leftbox-latest"><span class="sidebar-header">National Polls</span><div id="poll_sidebar"><p><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/epolls/2008/president/us/general_election_mccain_vs_obama-225.html">Obama (D) vs. McCain (R)<br /></a></strong><a href="http://www.realclearpolitics.com/epolls/2008/president/us/general_election_mccain_vs_obama-225.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><strong>Favorability: <a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html">Obama</a> | <a href="http://www.realclearpolitics.com/epolls/2008/president/us/mccain_favorableunfavorable-642.html">McCain</a></strong><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><br /></a></strong><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_vs_mccain_with_barr_nader-957.html">Nat'l Polls (w/Barr, Nader)</a></strong><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><strong><br /></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/index.html"><strong>Latest State &amp; National Polls</strong></a><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><a href="http://www.realclearpolitics.com/Presidential_04/chart3way.html"><strong>2004 Bush vs. Kerry Chart</strong></a><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><a href="http://www.realclearpolitics.com/bush_vs_kerry_sbys.html"><strong>2004 RCP Battleground Avgs</strong></a><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a></p></div></div><div id="leftbox-latest"><span class="sidebar-header">State Polls</span><div id="poll_sidebar"><table class="president-grid " border="0">
+<tbody>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html">AL</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/hi/hawaii_mccain_vs_obama-598.html">HI</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html">MA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html">NM</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html">SD</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html">AK</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/id/idaho_mccain_vs_obama-600.html">ID</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html">MI</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html">NY</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html">TN</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html">AZ</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html">IL</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html">MN</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html">NC</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html">TX</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html">AR</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html">IN</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html">MS</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nd/north_dakota_mccain_vs_obama-618.html">ND</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ut/utah_mccain_vs_obama-635.html">UT</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html">CA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html">IA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html">MO</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html">OH</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html">VA</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html">CO</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ks/kansas_mccain_vs_obama-555.html">KS</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html">MT</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ok/oklahoma_mccain_vs_obama-620.html">OK</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/vt/vermont_mccain_vs_obama-630.html">VT</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html">CT</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html">KY</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ne/nebraska_mccain_vs_obama-616.html">NE</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html">OR</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html">WA</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/de/delaware_mccain_vs_obama-594.html">DE</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/la/louisiana_mccain_vs_obama-606.html">LA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html">NV</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html">PA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html">WV</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html">FL</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html">ME</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html">NH</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ri/rhode_island_mccain_vs_obama-622.html">RI</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html">WI</a></td>
+</tr>
+<tr>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html">GA</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/md/maryland_mccain_vs_obama-610.html">MD</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html">NJ</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html">SC</a></td>
+<td><a href="http://www.realclearpolitics.com/epolls/2008/president/wy/wyoming_mccain_vs_obama-634.html">WY</a></td>
+</tr>
+</tbody>
+</table></div></div><div id="leftbox-latest"><span class="sidebar-header">Battle for Senate</span><div id="poll_sidebar"><p><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/epolls/2008/senate/ak/alaska_senate-562.html"><strong><span>A</span></strong></a><strong><span><a href="http://www.realclearpolitics.com/epolls/2008/senate/ak/alaska_senate-562.html">K</a>,
+<a href="http://www.realclearpolitics.com/epolls/2008/senate/co/colorado_senate-556.html">CO</a>,</span></strong><strong><span> <a href="http://www.realclearpolitics.com/epolls/2008/senate/ga/georgia_senate-302.html">GA</a>,</span></strong><strong><span> <a href="http://www.realclearpolitics.com/epolls/2008/senate/ky/kentucky_senate-917.html">KY</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/la/louisiana_senate-565.html">LA</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/me/maine_senate-564.html">ME</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/mn/minnesota_senate-257.html">MN</a>,<br /> <a href="http://www.realclearpolitics.com/epolls/2008/senate/ms/mississippi_senate_special-911.html">MS</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/ne/nebraska_senate-920.html">NE</a></span></strong><strong><span>, </span></strong><strong><span><a href="http://www.realclearpolitics.com/epolls/2008/senate/nh/new_hampshire_senate-354.html">NH</a></span></strong><strong><span>,</span></strong> <strong><a href="http://www.realclearpolitics.com/epolls/2008/senate/nj/new_jersey_senate-585.html">NJ</a></strong><strong><span>,</span></strong> <strong><span><a href="http://www.realclearpolitics.com/epolls/2008/senate/nm/new_mexico_senate-561.html">NM</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/nc/north_carolina_senate-910.html">NC</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/or/oregon_senate-566.html">OR</a>, <a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html">VA<br /></a></span></strong><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><a href="http://www.realclearpolitics.com/epolls/election_2008/battle_for_congress.html"><strong><span>All Senate Races</span></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/senate.html"><strong><span>Latest Senate Polls</span></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><a href="http://www.realclearpolitics.com/epolls/writeup/2006_senate_realclearpolitics_poll_averages-63.html"><strong><span>2006 RCP Sen Avgs &amp; Results</span></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a></p></div></div><div id="leftbox-latest"><span class="sidebar-header">Battle for House</span><div id="poll_sidebar"><p><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><span><a href="http://www.realclearpolitics.com/epolls/2008/house/battle_for_the_house_of_representatives.html">RCP Ratings</a> | <a href="http://www.realclearpolitics.com/epolls/election_2008/battle_for_congress.html">Top  50 Races</a></span></strong><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><span><a href="http://www.realclearpolitics.com/epolls/other/generic_congressional_vote-901.html">Generic Congressional Ballot</a></span></strong><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/house.html"><strong><span>Latest House Polls</span></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><a href="http://www.realclearpolitics.com/epolls/writeup/election_2006_key_house_results-55.html"><strong><span>Key 2006 House Results</span></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/senate/va/virginia_senate-537.html"><br /></a></p></div></div><div id="leftbox-latest"><span class="sidebar-header">Governor Races</span><div id="poll_sidebar"><p><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/governor/in/indiana_governor-937.html"><strong><a href="http://www.realclearpolitics.com/epolls/2008/governor/in/indiana_governor-937.html">Indiana</a></strong></a><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><strong><br /></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/governor/mo/missouri_governor-385.html"><strong><a href="http://www.realclearpolitics.com/epolls/2008/governor/mo/missouri_governor-385.html">Missouri</a></strong></a><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><strong><a href="http://www.realclearpolitics.com/epolls/2008/governor/nc/north_carolina_governor-582.html">North Carolina</a></strong><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a><a href="http://www.realclearpolitics.com/epolls/2008/president/us/obama_favorableunfavorable-643.html"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></strong></a><strong><a href="http://www.realclearpolitics.com/epolls/2008/governor/wa/washington_governor-584.html">Washington</a></strong><a href="http://www.realclearpolitics.com/epolls/other/congressional_job_approval-903.html"><br /></a></p></div></div><div id="leftbox-latest"><span class="sidebar-header">Nomination Results</span><div id="poll_sidebar"><div><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/democratic_delegate_count.html">Democratic Delegate Count<br /></a></strong><a href="http://www.realclearpolitics.com/epolls/2008/president/democratic_delegate_count.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/dem_results.html">Final Democratic Results</a></strong></a><a href="http://www.realclearpolitics.com/epolls/2008/president/republican_delegate_count.html"><strong><br /></strong></a><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/epolls/2008/president/democratic_vote_count.html"><strong>Democratic Popular Vote<br /></strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/republican_delegate_count.html">Republican Delegate Count<br /></a></strong><a href="http://www.realclearpolitics.com/epolls/2008/president/republican_delegate_count.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/gop_results.html">Final Republican Results</a></strong></a><br /><a href="http://www.realclearpolitics.com/epolls/2008/president/democratic_vote_count.html"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /></a><strong><a href="http://www.realclearpolitics.com/epolls/2008/president/republican_vote_count.html">Republican Popular Vote</a></strong><a href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_democratic_primary-638.html"><strong><br /></strong></a></div></div></div><div id="leftbox-latest"><span class="sidebar-header">RCP Election 2004 & 2006</span><div id="poll_sidebar"><div id="poll_sidebar"><strong>RealClearPolitics 2006</strong></div>
+<div id="poll_sidebar"><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/epolls/writeup/2006_senate_realclearpolitics_poll_averages-63.html"><strong>RCP Sen Avgs &amp; Results</strong></a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><a href="http://www.realclearpolitics.com/epolls/writeup/election_2006_governor_scorecard-62.html">RCP Gov Avgs &amp; Results<br /></a></strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/epolls/2006/house/us/generic_congressional_ballot-22.html"><strong>RCP Final Generic Avg</strong></a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><strong><a href="http://www.realclearpolitics.com/epolls/writeup/election_2006_key_house_results-55.html">Key House Results</a></strong></div>
+<div id="poll_sidebar"><strong>RealClearPolitics 2004</strong><br /></div>
+<div id="poll_sidebar"><strong><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/bush_vs_kerry.html">Final RCP Poll Average</a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/Presidential_04/chart3way.html">Final Bush-Kerry Graph</a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/Presidential_04/RCP_Electoral_Count_Final.html">Final Electoral Projection</a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/Presidential_04/2004_County_Results_Final.html">Map of Results by County</a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/bush_vs_kerry_sbys.html">Battleground State Avgs</a><br /><img src="http://www.realclearpolitics.com/mt-static/images/arrow_black.gif" border="0" alt="" width="7" height="10" /><a href="http://www.realclearpolitics.com/Senate.html">RCP Senate Averages</a></strong></div></div></div>
+
+<div id="ad-home-left-box">
+
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('LeftBottom');
+//-->
+</SCRIPT>
+
+</div>
+
+
+<div id="ad-home-left-box">
+
+<a href="http://www.npr.org/templates/topics/topic.php?topicId=1102"><img src="/images/npr_election_promo.jpg" border="0"></a>
+
+</div>
+
+</div><div id="alpha"><ul id="title-navigation"><li class="firstTitleElement">Election 2008</li><li><a href="http://www.realclearpolitics.com/epolls/2008/president/us/general_election_mccain_vs_obama-225.html" class="noBg">National RCP Average</a></li><li><a href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/">Electoral Maps</a></li><li><a href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/#data">Battleground States</a></li><li><a href="http://www.realclearpolitics.com/epolls/2008/latestpolls/index.html">Latest Polls</a></li></ul><p id="email-link"><a href="javascript:void window.open('/sendpage/friend.php?id=http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain/?map=22&js=on','','width=500,height=475,scrollbars=no');">Email This Page to a Friend</a> | <a href="javascript:void('0');" onclick="window.print()">Print This Page</a></p><h2 id="main-poll-title">RealClearPolitics Electoral College</h2><p class="ut">(270 Electoral Votes Needed To Win)</p><ul id="map-nav"><li><a href="?map=22" style="width: 200px;"  class="on" >Final Electoral Map</a></li><li><a href="?map=5" style="width: 200px;" >RealClear Electoral Count</a></li><li><a href="?map=10" style="width: 198px;" >No Toss Up States</a></li></ul><p id="last-ten-elections">Last Ten Elections:&nbsp; <a href="?map=11" >2004</a> | <a href="?map=12" >2000</a> | <a href="?map=13" >1996</a> | <a href="?map=15" >1992</a> | <a href="?map=16" >1988</a> | <a href="?map=17" >1984</a> | <a href="?map=18" >1980</a> | <a href="?map=19" >1976</a> | <a href="?map=20" >1972</a> | <a href="?map=21" >1968</a></p><div id="map-legend2" class="no-column"><div class="candidate"><span style="color:#0000ff;">Obama/Biden 365</span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff0000;">McCain/Palin 173</span></div></div><div id="map-data"><div id="current-map"><div class="maps" id="map-22"><!-- amline script--><script type="text/javascript" src="http://www.realclearpolitics.com/epolls/scripts/swfobject.js"></script><div id="flashcontent"><strong>You need to upgrade your Flash Player</strong></div><script type="text/javascript">var so = new SWFObject("http://www.realclearpolitics.com/epolls/maps/ammap.swf", "ammap", "594", "445", "8", "#FFFFFF");so.addVariable("path", "http://www.realclearpolitics.com/epolls/maps/");so.addVariable("settings_file", escape("http://www.realclearpolitics.com/epolls/maps/5_settings.xml"));so.addVariable("data_file", escape("http://www.realclearpolitics.com/epolls/maps/2008_final.xml"));so.addVariable("preloader_color", "#999999");so.write("flashcontent");</script><!-- end of amline script --></div></div></div><div id="polling-data-chart"><a name="data"></a><table><tr><td class="heading" style="background: #444;">Obama 278, McCain 132, Toss Ups 128 &nbsp;|&nbsp; <a style="color: #fff;" href="http://www.realclearpolitics.com/epolls/maps/obama_vs_mccain_custom/?map=10">No Toss Ups: Obama 338, McCain 200</a></td></tr><tr><td style=" background: #fff;"><img src="../images/dem-solid.gif" alt="" /> Solid Obama &nbsp;&nbsp;&nbsp; <img src="../images/dem-leaning.gif" alt="" /> Leaning Obama &nbsp;&nbsp;&nbsp; <img src="../images/gop-solid.gif" alt="" /> Solid McCain &nbsp;&nbsp;&nbsp; <img src="../images/gop-leaning.gif" alt="" /> Leaning McCain &nbsp;&nbsp;&nbsp; <img src="../images/toss-up.gif" alt="" /> Toss Up &nbsp;&nbsp;&nbsp; (Click Header to Sort)</td></tr></table><table class="data sortable"><tr><th style="width: 110px;" class="noCenter divide">State</th><th style="width: 71px;">Obama (D)</th><th style="width: 71px;">McCain (R)</th><th style="width: 84px;" class="spread sorttable_numeric">RCP Average</th><th style="width: 84px;" class="divide sorttable_nosort">RCP Status</th><th style="width: 84px;" class="sorttable_numeric">2004</th><th style="width: 84px;" class="sorttable_numeric">2000</th></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html">Florida (27)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html"><strong>49.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html">47.2</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html"><span class="dem">Obama +1.8</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/fl/florida_mccain_vs_obama-418.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +5.0</span></td><td><span class="rep" style="color: #ff0000">Bush +0.1</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html">North Carolina (15)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html">48.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html"><strong>48.4</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html"><span class="rep">McCain +0.4</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nc/north_carolina_mccain_vs_obama-334.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +12.4</span></td><td><span class="rep" style="color: #ff0000">Bush +12.8</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html">Missouri (11)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html">47.8</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html"><strong>48.5</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html"><span class="rep">McCain +0.7</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mo/missouri_mccain_vs_obama-545.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +7.2</span></td><td><span class="rep" style="color: #ff0000">Bush +3.3</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html">Indiana (11)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html">46.4</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html"><strong>47.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html"><span class="rep">McCain +1.4</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/in/indiana_mccain_vs_obama-604.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +20.7</span></td><td><span class="rep" style="color: #ff0000">Bush +15.7</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html">Georgia (15)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html">45.8</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html"><strong>49.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html"><span class="rep">McCain +4.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ga/georgia_mccain_vs_obama-596.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +16.6</span></td><td><span class="rep" style="color: #ff0000">Bush +11.7</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html">Montana (3)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html">45.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html"><strong>48.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html"><span class="rep">McCain +3.8</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mt/montana_mccain_vs_obama-614.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +20.5</span></td><td><span class="rep" style="color: #ff0000">Bush +25.0</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html">Arizona (10)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html">45.8</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html"><strong>49.3</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html"><span class="rep">McCain +3.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/az/arizona_mccain_vs_obama-570.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +10.5</span></td><td><span class="rep" style="color: #ff0000">Bush +6.3</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html">Virginia (13)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html"><strong>50.2</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html">45.8</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html"><span class="dem">Obama +4.4</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/va/virginia_mccain_vs_obama-551.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +8.2</span></td><td><span class="rep" style="color: #ff0000">Bush +8.1</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html">Ohio (20)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html"><strong>48.8</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html">46.3</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html"><span class="dem">Obama +2.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/oh/ohio_mccain_vs_obama-400.html"><img src="../images/toss-up.gif" /> Toss Up</a></td><td><span class="rep" style="color: #ff0000">Bush +2.1</span></td><td><span class="rep" style="color: #ff0000">Bush +3.5</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html">Colorado (9)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html"><strong>50.8</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html">45.3</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html"><span class="dem">Obama +5.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/co/colorado_mccain_vs_obama-546.html"><img src="../images/dem-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +4.7</span></td><td><span class="rep" style="color: #ff0000">Bush +8.4</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html">Nevada (5)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html"><strong>50.3</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html">43.8</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html"><span class="dem">Obama +6.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nv/nevada_mccain_vs_obama-252.html"><img src="../images/dem-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +2.6</span></td><td><span class="rep" style="color: #ff0000">Bush +3.5</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html">Pennsylvania (21)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html"><strong>51.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html">43.7</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html"><span class="dem">Obama +7.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/pa/pennsylvania_mccain_vs_obama-244.html"><img src="../images/dem-leaning.gif" /> Leaning</a></td><td><span class="dem" style="color: #0000ff">Kerry +2.5</span></td><td><span class="dem" style="color: #0000ff">Gore +4.2</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html">New Mexico (5)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html"><strong>50.3</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html">43.0</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html"><span class="dem">Obama +7.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nm/new_mexico_mccain_vs_obama-448.html"><img src="../images/dem-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +0.7</span></td><td><span class="dem" style="color: #0000ff">Gore +0.1</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html">South Dakota (3)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html">42.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html"><strong>50.3</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html"><span class="rep">McCain +8.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sd/south_dakota_mccain_vs_obama-626.html"><img src="../images/gop-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +21.5</span></td><td><span class="rep" style="color: #ff0000">Bush +22.7</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html">West Virginia (5)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html">42.4</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html"><strong>51.4</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html"><span class="rep">McCain +9.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wv/west_virginia_mccain_vs_obama-632.html"><img src="../images/gop-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +12.9</span></td><td><span class="rep" style="color: #ff0000">Bush +6.3</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html">Arkansas (6)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html">43.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html"><strong>52.3</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html"><span class="rep">McCain +9.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ar/arkansas_mccain_vs_obama-592.html"><img src="../images/gop-leaning.gif" /> Leaning</a></td><td><span class="rep" style="color: #ff0000">Bush +9.7</span></td><td><span class="rep" style="color: #ff0000">Bush +5.4</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html">Minnesota (10)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html"><strong>51.6</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html">41.8</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html"><span class="dem">Obama +9.8</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mn/minnesota_mccain_vs_obama-550.html"><img src="../images/dem-leaning.gif" /> Leaning</a></td><td><span class="dem" style="color: #0000ff">Kerry +3.5</span></td><td><span class="dem" style="color: #0000ff">Gore +2.4</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html">New Hampshire (4)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html"><strong>52.8</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html">42.2</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html"><span class="dem">Obama +10.6</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nh/new_hampshire_mccain_vs_obama-195.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +1.3</span></td><td><span class="rep" style="color: #ff0000">Bush +1.3</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html">South Carolina (8)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html">43.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html"><strong>53.0</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html"><span class="rep">McCain +10.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/sc/south_carolina_mccain_vs_obama-624.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +17.1</span></td><td><span class="rep" style="color: #ff0000">Bush +15.9</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html">Wisconsin (10)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html"><strong>52.8</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html">41.8</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html"><span class="dem">Obama +11.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wi/wisconsin_mccain_vs_obama-549.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +0.4</span></td><td><span class="dem" style="color: #0000ff">Gore +0.2</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html">Mississippi (6)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html">39.3</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html"><strong>50.7</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html"><span class="rep">McCain +11.4</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ms/mississippi_mccain_vs_obama-612.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +19.6</span></td><td><span class="rep" style="color: #ff0000">Bush +16.9</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html">Iowa (7)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html"><strong>54.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html">38.7</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html"><span class="dem">Obama +15.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ia/iowa_mccain_vs_obama-209.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +0.7</span></td><td><span class="dem" style="color: #0000ff">Gore +0.3</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html">New Jersey (15)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html"><strong>54.5</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html">39.0</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html"><span class="dem">Obama +15.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/nj/new_jersey_mccain_vs_obama-250.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +6.7</span></td><td><span class="dem" style="color: #0000ff">Gore +15.8</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html">Oregon (7)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html"><strong>55.3</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html">39.7</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html"><span class="dem">Obama +15.6</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/or/oregon_mccain_vs_obama-548.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +4.2</span></td><td><span class="dem" style="color: #0000ff">Gore +0.5</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html">Washington (11)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html"><strong>53.7</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html">40.7</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html"><span class="dem">Obama +13.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/wa/washington_mccain_vs_obama-576.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +8.2</span></td><td><span class="dem" style="color: #0000ff">Gore +5.5</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html">Michigan (17)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html"><strong>52.5</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html">39.0</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html"><span class="dem">Obama +13.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/mi/michigan_mccain_vs_obama-553.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +3.4</span></td><td><span class="dem" style="color: #0000ff">Gore +5.2</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html">Maine (4)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html"><strong>54.4</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html">38.8</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html"><span class="dem">Obama +15.6</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/me/maine_mccain_vs_obama-608.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +9.0</span></td><td><span class="dem" style="color: #0000ff">Gore +5.1</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html">Texas (34)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html">40.5</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html"><strong>53.5</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html"><span class="rep">McCain +13.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tx/texas_mccain_vs_obama-628.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +22.9</span></td><td><span class="rep" style="color: #ff0000">Bush +21.3</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html">California (55)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html"><strong>58.7</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html">34.3</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html"><span class="dem">Obama +24.4</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ca/california_mccain_vs_obama-558.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +9.9</span></td><td><span class="dem" style="color: #0000ff">Gore +11.8</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html">Massachusetts (12)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html"><strong>57.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html">35.7</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html"><span class="dem">Obama +21.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ma/massachusetts_mccain_vs_obama-575.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +25.1</span></td><td><span class="dem" style="color: #0000ff">Gore +27.3</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html">Kentucky (8)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html">41.0</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html"><strong>54.5</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html"><span class="rep">McCain +13.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ky/kentucky_mccain_vs_obama-578.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +19.9</span></td><td><span class="rep" style="color: #ff0000">Bush +15.1</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html">Alaska (3)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html">41.3</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html"><strong>55.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html"><span class="rep">McCain +14.5</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ak/alaska_mccain_vs_obama-640.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +25.6</span></td><td><span class="rep" style="color: #ff0000">Bush +30.9</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html">Connecticut (7)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html"><strong>55.3</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html">36.0</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html"><span class="dem">Obama +19.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ct/connecticut_mccain_vs_obama-527.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +10.3</span></td><td><span class="dem" style="color: #0000ff">Gore +17.5</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html">New York (31)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html"><strong>62.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html">32.3</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html"><span class="dem">Obama +29.7</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/ny/new_york_mccain_vs_obama-343.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +18.3</span></td><td><span class="dem" style="color: #0000ff">Gore +25.0</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html">Tennessee (11)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html">38.8</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html"><strong>52.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html"><span class="rep">McCain +14.0</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/tn/tennessee_mccain_vs_obama-572.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +14.3</span></td><td><span class="rep" style="color: #ff0000">Bush +3.9</span></td></tr><tr class=""><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html">Alabama (9)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html">33.5</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html"><strong>56.8</strong></a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html"><span class="rep">McCain +23.3</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/al/alabama_mccain_vs_obama-557.html"><img src="../images/gop-solid.gif" /> Solid</a></td><td><span class="rep" style="color: #ff0000">Bush +25.7</span></td><td><span class="rep" style="color: #ff0000">Bush +14.9</span></td></tr><tr class=" alt"><td class="noCenter divide"><a href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html">Illinois (21)</a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html"><strong>59.0</strong></a></td><td><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html">34.3</a></td><td class="spread"><a href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html"><span class="dem">Obama +24.7</span></a></td><td class="divide noCenter"><a style="color: #000;" href="http://www.realclearpolitics.com/epolls/2008/president/il/illinois_mccain_vs_obama-602.html"><img src="../images/dem-solid.gif" /> Solid</a></td><td><span class="dem" style="color: #0000ff">Kerry +10.4</span></td><td><span class="dem" style="color: #0000ff">Gore +12.0</span></td></tr></table></div></div>
+               <div id="beta">
+                                   <div id="registerbox""><a class="home-dates"  href="/login">Login</a> <span class="footer"> | </span> <a class="home-dates"  href="/members">Register</a> <span class="footer"> | </span>
+
+ <a class="home-dates" href="/rss">RSS</a>
+</div>                   
+
+     <div id="search-box">
+                           <form method="get" action="/search">
+                                                     <input id="search" name="query" size="15" class="big" value="SEARCH RCP" onFocus="if(!this.emptied) { this.value = ''; this.emptied = 1; }"/>   <input type="image" src="/dev/mt-static/images/arrow_search.gif" align="top"/>
+                           </form>
+                     </div>
+   <div id="right-wide-skyscraper">
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('RightMiddle');
+//-->
+</SCRIPT>
+</div> 
+
+<div id="right-wide-skyscraper">
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('x110');
+//-->
+</SCRIPT>
+</div> 
+
+         </div>
+               <div id="footer">
+   <a class="footer" href="/about.html">About Us |</a> <a class="footer" href="/contact.html">Contact |</a> <a class="footer" href="/advertise.html">Advertise  |</a> <a class="footer" href="/privacy.html">Privacy Policy  </a>  <span class="legal">   &nbsp; &nbsp; &nbsp; &nbsp;  &copy; RealClearPolitics 2008</span>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-31527-1";
+urchinTracker();
+</script>
+         </div>
+
+      </div>
+<script type="text/javascript" src="http://www.realclearpolitics.com/epolls/scripts/sorttable.js"></script>
+</body>
+</html>

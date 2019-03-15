@@ -1,0 +1,3054 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-09T09:34:24Z
+WARC-TREC-ID: clueweb12-1900tw-53-20555
+WARC-IP-Address: 64.7.195.91
+WARC-Payload-Digest: sha1:K2FJXXWB2W3EORFZ5QUK73VWSVCE5YYL
+WARC-Target-URI: http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day
+WARC-Record-ID: <urn:uuid:b323250b-0d14-41bd-aec6-e690bb6fa94e>
+Content-Type: application/http; msgtype=response
+Content-Length: 164459
+
+HTTP/1.1 200 OK
+Date: Wed, 09 May 2012 09:34:24 GMT
+Server: Apache/2.2.3 (Red Hat)
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.11
+ETag: f2b841a86a992b5d8b4ddf256daa1136
+Expires: Wed, 09 May 2012 09:34:25 GMT
+Age: 1
+Cache-Control: must-revalidate, private, max-age=10
+X-UA-Compatible: IE=Edge,chrome=1
+X-Runtime: 0.625684
+X-Rack-Cache: miss
+Set-Cookie: event_landing_page=false; path=/
+Set-Cookie: page_url=http%3A%2F%2Fwww.allvoices.com%2Fcontributed-news%2F12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day; path=/
+Set-Cookie: masalav2_session_id=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTljOWE0OTQ2NDI3OWNhMGRiYTExYjJiZWUwZWM4YjY0BjsAVA%3D%3D--b64654f7ea759cb59d10a2744d6c096423369087; path=/; HttpOnly
+Set-Cookie: save_images_id=; path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT
+Set-Cookie: person_id=; path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT
+Last-Modified: Wed, 09 May 2012 09:34:25 GMT
+Content-Length: 163399
+Status: 200
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en">
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+	
+
+<script src="http://cache6.allvoices.com/javascripts/ckeditor/ckeditor.js" type="text/javascript"></script>
+
+
+	 <!-- %age: nil -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23110725-1']);
+	  _gaq.push(['_trackPageview']);
+	  //_gaq.push(['_trackPageLoadTime']);
+	  //_gaq.push(['_trackSocial', socialNetwork, socialAction]);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+        <script>
+
+/**
+ * Namespace.
+ * @type {Object}.
+ */
+var _ga = _ga || {};
+
+
+/**
+ * Ensure global _gaq Google Analytics queue has been initialized.
+ * @type {Array}
+ */
+var _gaq = _gaq || [];
+
+
+/**
+ * Tracks social interactions by iterating through each tracker object
+ * of the page, and calling the _trackSocial method. This function
+ * should be pushed onto the _gaq queue. For details on parameters see
+ * http://code.google.com/apis/analytics/docs/gaJS/gaJSApiSocialTracking.html
+ * @param {string} network The network on which the action occurs.
+ * @param {string} socialAction The type of action that happens.
+ * @param {string} opt_target Optional text value that indicates the
+ *     subject of the action.
+ * @param {string} opt_pagePath Optional page (by path, not full URL)
+ *     from which the action occurred.
+ * @return a function that iterates over each tracker object
+ *    and calls the _trackSocial method.
+ * @private
+ */
+_ga.getSocialActionTrackers_ = function(
+    network, socialAction, opt_target, opt_pagePath) {
+  return function() {
+    var trackers = _gat._getTrackers();
+    for (var i = 0, tracker; tracker = trackers[i]; i++) {
+      tracker._trackSocial(network, socialAction, opt_target, opt_pagePath);
+    }
+  };
+};
+
+
+/**
+ * Tracks Facebook likes, unlikes and sends by suscribing to the Facebook
+ * JSAPI event model. Note: This will not track facebook buttons using the
+ * iframe method.
+ * @param {string} opt_pagePath An optional URL to associate the social
+ *     tracking with a particular page.
+ */
+_ga.trackFacebook = function(opt_pagePath) {
+  try {
+    if (FB && FB.Event && FB.Event.subscribe) {
+      FB.Event.subscribe('edge.create', function(opt_target) {
+        _gaq.push(_ga.getSocialActionTrackers_('facebook', 'like',
+            opt_target, opt_pagePath));
+      });
+      FB.Event.subscribe('edge.remove', function(opt_target) {
+        _gaq.push(_ga.getSocialActionTrackers_('facebook', 'unlike',
+            opt_target, opt_pagePath));
+      });
+      FB.Event.subscribe('message.send', function(opt_target) {
+        _gaq.push(_ga.getSocialActionTrackers_('facebook', 'send',
+            opt_target, opt_pagePath));
+      });
+    }
+  } catch (e) {}
+};
+
+
+/**
+ * Handles tracking for Twitter click and tweet Intent Events which occur
+ * everytime a user Tweets using a Tweet Button, clicks a Tweet Button, or
+ * clicks a Tweet Count. This method should be binded to Twitter click and
+ * tweet events and used as a callback function.
+ * Details here: http://dev.twitter.com/docs/intents/events
+ * @param {object} intent_event An object representing the Twitter Intent Event
+ *     passed from the Tweet Button.
+ * @param {string} opt_pagePath An optional URL to associate the social
+ *     tracking with a particular page.
+ * @private
+ */
+_ga.trackTwitterHandler_ = function(intent_event, opt_pagePath) {
+  var opt_target; //Default value is undefined
+  if (intent_event && intent_event.type == 'tweet' ||
+          intent_event.type == 'click') {
+    if (intent_event.target.nodeName == 'IFRAME') {
+      opt_target = _ga.extractParamFromUri_(intent_event.target.src, 'url');
+    }
+    var socialAction = intent_event.type + ((intent_event.type == 'click') ?
+        '-' + intent_event.region : ''); //append the type of click to action
+    _gaq.push(_ga.getSocialActionTrackers_('twitter', socialAction, opt_target,
+        opt_pagePath));
+  }
+};
+
+/**
+ * Binds Twitter Intent Events to a callback function that will handle
+ * the social tracking for Google Analytics. This function should be called
+ * once the Twitter widget.js file is loaded and ready.
+ * @param {string} opt_pagePath An optional URL to associate the social
+ *     tracking with a particular page.
+ */
+_ga.trackTwitter = function(opt_pagePath) {
+  intent_handler = function(intent_event) {
+    _ga.trackTwitterHandler_(intent_event, opt_pagePath);
+  };
+
+  //bind twitter Click and Tweet events to Twitter tracking handler
+  twttr.events.bind('click', intent_handler);
+  twttr.events.bind('tweet', intent_handler);
+};
+
+
+/**
+ * Extracts a query parameter value from a URI.
+ * @param {string} uri The URI from which to extract the parameter.
+ * @param {string} paramName The name of the query paramater to extract.
+ * @return {string} The un-encoded value of the query paramater. undefined
+ *     if there is no URI parameter.
+ * @private
+ */
+_ga.extractParamFromUri_ = function(uri, paramName) {
+  if (!uri) {
+    return;
+  }
+  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+  var params = regex.exec(uri);
+  if (params != null) {
+    return unescape(params[1]);
+  }
+  return;
+};
+
+</script>
+
+
+	<meta name="robots" content="index,follow">
+	<!-- Begin comScore Tag -->
+	        <script>
+	          var _comscore = _comscore || [];
+	          _comscore.push({ c1: "2", c2: "8572396" });
+	          (function() {
+	            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+	            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+	            el.parentNode.insertBefore(s, el);
+	          })();
+	        </script>
+	        <noscript>
+	          <img src="http://b.scorecardresearch.com/p?c1=2&c2=8572396&cv=2.0&cj=1" />
+	        </noscript>
+	  <!-- End comScore Tag -->
+	
+	<script type="text/javascript">
+	  var fb_divs = new Array();
+	  var fb_div_layouts = new Array();
+	  var FACEBOOK_CONNECT = null;
+	 function facebookButtonsLoad() {
+		for(i=0; i < fb_divs.length;i++){
+			var fb_code = "<iframe style=\"border: medium none; overflow: hidden; height: 24px; width: 450px;\" src=\"http://www.facebook.com/plugins/like.php?href=" + escape(document.URL) +"&amp;api_key=&amp;layout=" + fb_div_layouts[i] + "&amp;show_faces=false&amp;width=70&amp;action=like&amp;colorscheme=light&amp;height=20\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:70px; height:20px;\" allowTransparency=\"true\" ></iframe>";
+		  		$("#" + fb_divs[i] ).html(fb_code);
+		}
+	}
+	</script>
+		<!-- Place this tag in your head or just before your close body tag -->
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <link rel="icon" type="image/png" href="http://cache6.allvoices.com/favicon.ico" />
+
+    
+
+
+        <link rel="alternate" title="RSS" type="application/rss+xml" />
+
+
+
+
+	<title>USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day  </title>
+	
+
+	
+	<link href="http://cache6.allvoices.com/assets/min_report-1ba434dbf3f8ebad98373736a5fe0462.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="http://cache4.allvoices.com/assets/jquery-incl-7d20ebc314d2e8bf8b7e893ddb50812f.css" media="screen" rel="stylesheet" type="text/css" />
+	  <link href="http://widgets.twimg.com/j/2/widget.css" media="screen" rel="stylesheet" type="text/css" />
+
+	
+    <link href="http://cache2.allvoices.com/assets/print_only-abb771ad866ae2902072d64182d33f5b.css" media="print" rel="stylesheet" type="text/css" />
+	
+	
+	
+   	
+		
+		<script type="text/javascript">
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement("script");
+    gads.async = true;
+    gads.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+    var node =document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(gads, node);
+   })();
+</script>
+<script type="text/javascript">
+  googletag.cmd.push(function() {
+    googletag.pubads().set("adsense_background_color", "FFFFFF");
+  });
+</script>
+<script>
+  googletag.cmd.push(function() {
+	
+    googletag.defineSlot("/1066621/av_static_leaderboard", [728, 90], "google_ad_av_static_leaderboard").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_static_leaderboard_btf", [728, 90], "google_ad_av_static_leaderboard_btf").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_static_mid_rect", [300, 250], "google_ad_av_static_mid_rect").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_static_mid_rect_btf", [300, 250], "google_ad_av_static_mid_rect_btf").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_report_uge_undef_mid_rect_comments", [300, 250], "google_ad_av_report_uge_undef_mid_rect_comments").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_report_uge_undef_mid_rect_centre", [300, 250], "google_ad_av_report_uge_undef_mid_rect_centre").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_adbld_report_uge_right_mid_rect", [300, 250], "google_ad_av_adbld_report_uge_right_mid_rect").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/av_adbld_report_uge_center_wide_rect", [300, 250], "google_ad_av_adbld_report_uge_center_wide_rect").addService(googletag.pubads()); 
+	
+    googletag.defineSlot("/1066621/image_player_ad", [300, 250], "google_ad_image_player_ad").addService(googletag.pubads()); 
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+	
+
+
+    <script type="text/javascript" src="http://api.recaptcha.net/js/recaptcha_ajax.js"></script>
+    <script type="text/javascript" language="javascript">var recaptcha_pub_key ='6LfO5AYAAAAAAJntlXxtIbkFipKlE9jKMKGMD49R'; </script>
+    <script src="http://cache4.allvoices.com/assets/application-6e78f7f8cd9d6185a129b59c52d93d20.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+      set_ckeditor(true);
+    </script>
+    
+	
+      <script src="http://widgets.twimg.com/j/2/widget.js" type="text/javascript"></script>
+
+    
+    
+	<!-- Meta tags start here-->
+	<meta name='keywords' content="USS Carl Vinson News, Anzac Day News, r&R News, warship News, Nimitz-class nuclear powered carrier News, Osama bin Laden News, Rear Admiral Thomas Shannon News, Humanitarian" /><meta name='description' content=" USS Carl Vinson has docked in Freemantle just ahead of ANZAC Day and would be there in Perth for a period of 5-days to carry out R&amp;amp;R as reported" />    <meta property="og:title" content="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day  "/>
+    <meta property="fb_title" content="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day  "/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:site_name" content="Allvoices"/>
+    <meta property="og:url" content="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day"/>
+    <meta property="og:image" content="http://www.allvoices.com/images/landing_page_logo.png"/>
+    <meta property="fb:app_id" content="129198347115424"/>
+    <link rel="image_src" href="http://www.allvoices.com/images/landing_page_logo.png" />
+
+	
+	<meta http-equiv="Content-Language" content="en-gb" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="fb:app_id" content="129198347115424" />
+	<meta name="copyright" content="Copyright Allvoices, Inc 2008-2012. All rights reserved."/>
+	
+	
+     <meta name="category" content="Humanitarian"/> 
+    
+     <meta name="publish_date" content="Tuesday, 24 April 2012 19:13:50 PDT"/> 
+     <meta name="original-source" content="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day"/> 
+    
+
+
+
+		<meta name="verify-v1" content="q61azBOD0KnkY9lJ3bAq6sfbje0mH/mXye5Jzv5A1Pw=" />
+		<meta name="msvalidate.01" content="9C1FA1A3B2965841F5CFA5780E4995DD" />
+		<meta name="y_key" content="0d516ebcfa2aecd9" />
+
+
+  <meta name="alexaVerifyID" content="_gxL8s5Nzap2PSpaE9TnajzsnxI" />
+  
+
+	
+	
+	<script>
+	/* Global configuration for Ajax requests */
+	jQuery.ajaxSetup({
+	   timeout: 30000
+	});
+	</script>
+
+          
+</head>
+
+<body id="body1"  onload="jsLoaded();">
+<div class="OUTBRAIN" data-src="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" data-widget-id="AR_3" data-ob-template="allvoices" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+		<div class="popupDialogWindow" id="popupDialogWindow"></div>
+   <script type="text/javascript">
+    var jsLoaded = function(){
+		//facebookButtonsLoad() ;
+	};
+	
+  </script>
+  	  <div id="fb-root"></div>
+	  <script>
+	    window.fbAsyncInit = function() {
+	    FB.init({appId: '129198347115424', status: true, cookie: true, xfbml: true});
+                  /* All the events registered */
+	          FB.Event.subscribe('auth.login', function(response) {
+				block_refresh=true;
+	           // do something with response
+	            facebook_login_graph_api();
+                    
+	          });
+	
+	          FB.getLoginStatus(function(response) {
+	            if (response.authResponse) {
+	                 // logged in and connected user, someone you know
+	                 //login();
+	             }
+	          });
+	          FB.Event.subscribe('edge.create', function(href, widget) {
+				block_refresh=true;
+	            m = /([^\/]+)\/(\d+)-\D+$/.exec(href);
+	            if(m && m.length >=3 ) {
+	              save_share("Event", m[2], "FacebookLike");
+	            }
+	            //Log.info('You liked ' + href, widget);
+	          });
+	    };
+           (function() {
+             var e = document.createElement('script'); e.async = true;
+             e.src = document.location.protocol +
+               '//connect.facebook.net/en_US/all.js';
+             document.getElementById('fb-root').appendChild(e);
+           }());
+
+	  </script>
+
+       
+  <!-- %age: nil -->
+    
+    <script type="text/javascript">
+    <!--
+        
+  
+    //-->
+    </script>
+
+
+<!--[if lte IE 6]>
+  <iframe src="http://www.browserupgrade.info/ie6-upgrade/?lang=en&title=www.allvoices.com&fx3=true&more-info-at=http://www.browserupgrade.info" frameborder="no" style="height: 81px; width: 100%; border: none;"></iframe>
+<![endif]-->
+
+<noscript>
+    <iframe src="http://www.allvoices.com/javascript_required" frameborder="0" class="noScriptFrame"> </iframe>
+</noscript>
+
+
+
+	<div id="wrapper">
+        
+
+		
+
+
+<!-- facebook_connect box shell -->
+<!-- is this even used still? -->
+<div id="popupFacebookConnectBox" class="popupForm popupFormLogin" style="display: none;"></div>
+
+<!-- activation box shell -->
+<div id="popupActivationBox" class="popupForm popupFormLogin"  style="display: none;">
+  
+  <div class="popupFormArrow"> </div>
+  <div class="popupFormContentHolder" id="popupActivationBoxContent">
+          <div class="ajaxArrowSpinner popupWaitSpinner">Loading activation form...</div>
+  </div>
+  
+</div>
+
+<!-- login box shell -->
+<div id="popupLoginBox" class="popupForm popupFormLogin" style=" z-index: 1000; display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupLoginBoxContent">
+            <div class="ajaxArrowSpinner popupWaitSpinner">Loading login form...</div>
+    </div>
+</div>
+
+<!-- signup box shell -->
+<div id="popupRegisterBox" class="popupForm popupFormRegister" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupRegisterBoxContent">
+            <div class="ajaxArrowSpinner popupWaitSpinner">Loading sign up form...</div>
+    </div>
+</div>
+             
+<!-- resend activation email box shell -->
+<div id="popupResendActivationEmailBox" class="popupForm popupFormActivation" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupResendActivationEmailBoxContent">
+        <div class="ajaxArrowSpinner popupWaitSpinner">Loading activation form...</div>
+    </div>
+</div>
+
+<!-- forgot password box shell -->
+<div id="popupForgotPasswordBox" class="popupForm popupFormLogin" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupForgotPasswordBoxContent">
+        <div class="ajaxArrowSpinner popupWaitSpinner">Loading password form...</div>
+    </div>
+</div>
+
+<!-- incentive enroll  box shell -->
+<div id="popupIncentiveEnroll" class="popupForm popupFormLogin" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupIncentiveEnrollContent">
+        <div class="ajaxArrowSpinner popupWaitSpinner">Loading new incentive enroll form...</div>
+    </div>
+</div>
+
+<!-- list contacts shell -->
+<div id="popupListContactsBox" class='popupForm popupFormContacts' style="display: none;">
+
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupListContactsBoxContent">
+        <div class="ajaxArrowSpinner popupWaitSpinner">Loading invite contacts form...</div>
+    </div>
+
+</div>
+
+<!-- invite contacts shell -->
+<!-- why do we always load this box? -->
+<div id="popupInviteContactsBox" class="popupForm popupFormContacts" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupInviteContactsBoxContent">
+        
+<div class="popupFormHeading">Invite your friends</div>
+
+<a class="popupFormClose" href="#" onclick="this.parentNode.parentNode.hide(); return false;"><img alt="Cancel" height="15" src="http://cache2.allvoices.com/assets/clear.png" width="14" /></a>
+
+<div id='sendInvitationErrorMessage' style="display: none;" class="popupFormError"></div>
+
+<div id='invalidEmailErrorMsg' style="display: none;"></div>
+
+
+<div class="popupFormContent">
+
+	<div class="popupFormIntro">
+        <p><span>Please enter an optional message below, check the friends you want to invite, hit "Send Invitation," and you're done!</span></p>
+    </div>
+    
+	<div id="inviteContacts" class="popupContactList">
+		<form accept-charset="UTF-8" action="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/related_people?action=event_updated&amp;controller=event&amp;html%5Bid%5D=inviteContact&amp;html%5Bname%5D=inviteContact&amp;html%5Bonsubmit%5D=if+%28%24%28%27skipSendInvite%27%29.value%21%3D%27yes%27+%26%26+%21hasSelectedContact%28%27%27%2C+%24%28%27contactsCheckAll%27%29%29%29+%7B+showNoContactSelected%28%27%27%29%3Breturn+false%3B%7D&amp;html%5Bstyle%5D=display%3Anone%3B&amp;remote=true&amp;url%5Baction%5D=post_registration_process&amp;url%5Bcontroller%5D=user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Id/6Q1nck/XB6pQ5d6J99PK/gPLFJOLbU4LLtrLqO4E=" /></div>
+			 <p>Personal Message (optional):</p>
+			 <p><textarea name="personal_message" rows="5" cols="35" id="personal_message">I've become a citizen journalist on Allvoices.com, the fastest growing grassroots news network. Sign up, become my fan and join me in changing the face of online news!</textarea></p>
+
+			 <input type="hidden" name="concatenatedContacts" id="concatenatedContacts" value=""/>
+			 <input type="hidden" name="hiddenInviterEmail" id="hidden_inviter_email" value=""/>
+			 <input type="hidden" name="skipSendInvite" id="skipSendInvite" value=""/>
+			 <input type="hidden" name="hiddenNetworkUserName" id="hidden_network_user_name" value=""/>
+			 
+            <div class="contactsTableHeading" id="contactsTableHeading">
+                <span>Select Friends</span>
+
+                <a href="#" onclick="$('popupInviteContactsBox').hide();$('popupListContactsBox').show();resetContactsForm(id);">Start Again</a>
+
+                <label for="contactsCheckAll"><input id="contactsCheckAll" type="checkbox" onclick="toggleAllContacts(this);" /> Select All/None</label>
+            </div>
+
+            <div class="contactsWrapper" id="contactsScroll">
+                <div  class="thumbs">
+                    <div id="contactsTable" class="contactsTable"> </div>
+                </div>
+
+                <div class="scrollArrows" style="display: none;">
+                    <div class="scrollUp"> </div>
+                    <div class="scrollDown"> </div>
+                </div>
+
+                <div class="scroll" style="display: none;">
+                    <div class="scrollButton"> </div>
+                </div>
+            </div>
+
+            <div class="popupContactListButtons">
+                	<a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  rel="nofollow" title="Skip">
+                            <span><span >Skip</span></span><button onclick="$('skipSendInvite').value='yes';" type="submit" name="skip">&nbsp;</button></a>
+                <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  rel="nofollow" title="Send Invitation">
+                            <span><span >Send Invitation</span></span><button onclick="$('contactsSpinner3').show();" type="submit" name="sendInvite">&nbsp;</button></a>
+            </div>
+
+            <div id="contactsSpinner3" class="ajaxArrowSpinner" style="display: none;">
+	            Please wait while we finish your registration and invite your contacts...
+	        </div>
+	
+        </form>
+	</div>
+</div>
+<div class="clearFix">&nbsp;</div>
+
+    </div>
+</div>
+
+<!-- thanks for contacts shell -->
+<div id="popupThanksForInvitingContactsBox" class="popupForm popupFormContacts" style="display: none;">
+    <div class="popupFormArrow"> </div>
+    <div class="popupFormContentHolder" id="popupThanksForInvitingContactsBoxContent">
+        <div class="ajaxArrowSpinner popupWaitSpinner">Loading thanks screen...</div>        
+    </div>
+</div>
+
+	<!-- loading Facebook connect form to create new user account -->
+	<div id="popupFacebookConnectCreateAccount" class="popupForm popupFormRegister" style="display: none;">
+	    <div class="popupFormArrow"> </div>
+        <div class="popupFormContentHolder" id="popupFacebookConnectCreateAccountContent">
+            <div class="ajaxArrowSpinner popupWaitSpinner">Wait while we create your account...</div>
+        </div>
+	</div>
+
+        <div id="popupTwitterConnectCreateAccount" class="popupForm popupFormRegister" style="display: none;">
+	    <div class="popupFormArrow"> </div>
+        <div class="popupFormContentHolder" id="popupFacebookConnectCreateAccountContent">
+            <div class="ajaxArrowSpinner popupWaitSpinner">Wait while we create your account...</div>
+        </div>
+	</div>
+        
+
+    <div id="popupTopicBoosterBox" class="popupForm popupFormBoosterInline" style="display: none;">
+        <div class="popupFormArrow"> </div>
+        <div class="popupFormContentHolder" id="popupTopicBoosterBoxContent">
+            <div class="ajaxArrowSpinner popupWaitSpinner">Wait while we load the booster form...</div>
+        </div>
+	</div>
+        <div class="pageLeader">
+            	<a class="pageLogo" title="Home" href="/" rel="nofollow" onclick="reset_app_data();"><img alt="Home" height="31" src="http://cache2.allvoices.com/assets/clear.png" width="221" /></a>
+              <img alt="Local to Global News" class="pageTagLine" height="12" src="http://cache2.allvoices.com/assets/clear.png" width="176" />
+                
+
+            <input type="hidden" id="redirectUrl" name="redirectUrl" value=""/>
+            <input type="hidden" id="loggedIn" name="loggedIn" value="0"/>
+
+            
+            <div onclick="$('#redirectUrl').val('/post_event');showLoginBox($(this));return false;" title="Report Your News" class="reportBtn"  
+                 id='report_your_news_top'>&nbsp;</div>
+                 
+              <!--<div class="facebookConnect" id="facebookConnectButton"><fb:login-button onclick="showBox('');" onlogin="create_check_facebook_connect_user(this);" perms="email" length="short"></fb:login-button></div>-->
+              <div class="facebookConnect" id="facebookConnectButton">
+                <fb:login-button button_version="1" length="xlong" size ="large" data-scope="email,user_checkins">&nbsp;Connect&nbsp;</fb:login-button>
+                
+              </div>
+              <!--
+              <div style="float:right;padding-right: 8px;padding-top: 7px;">
+                <a href="/user/generate_twitter_signin_button">  <img src="/assets/twitter/twitter_button.gif"></img> </a>
+              </div>
+              -->
+            <div class="pageLeaderLinks">
+
+                <div id="loginLogoutLinks" style="padding-right:10px;">
+                  
+                    <a href="/static/help" title="Help">Help</a> |
+                        <a onClick="showLoginBox($('#loginAllvoices')); return false;" id="loginAllvoices" href="#">Login</a> | 
+                        <a href="#" id="joinAllvoices" onclick="showRegisterBox($('#joinAllvoices'));; return false;">Join</a>
+                </div>
+
+
+            </div>
+                        <div class="leaderAdWrapper">
+                              <a href="/register_now"><img alt="Sign up now!" class="takeTheTour" height="90" src="http://cache2.allvoices.com/assets/clear.png" title="Sign up now!" width="264" /></a>
+                                       	  		
+	<div id="google_ad_av_static_leaderboard"  class="globalAdLeaderBoard">
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+      googletag.display('google_ad_av_static_leaderboard');
+    });
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+                        </div>
+        </div>
+
+			
+
+
+
+            <div class="mainNav" >
+                    
+<ul class="navButtons" id="navigationList">
+		<li class="navItem">
+          <a href="/" id="nav_1" >All</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/political-news" id="nav_2" >Politics</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/sports-news" id="nav_3" >Sports</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/entertainment-news" id="nav_4" >Entertainment</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/business-news" id="nav_5" >Business</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/technology-news" id="nav_6" >Science &amp; Technology</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/disasters-news" id="nav_7" >Conflict &amp; Tragedy</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/odd-news" id="nav_8" >Odd</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/your-story" id="nav_9" >Your Story</a>
+        </li>
+          <li class="sep">|</li>
+
+		<li class="navItem">
+          <a href="/health-news" id="nav_10" >Health</a>
+        </li>
+          <li class="sep">|</li>
+
+            <li  id="more_link_li" class="navItem"><a href="#" id="nav_10"  onmouseover="showHoverContext('bottomRight', $(this), '',-6,0,'true', '', 'navMoreCats', 'hoverContextNoBorder'); enableNavigationHover('navigationListMore'); "
+                   onmouseout="hideHoverContext();">More</a></li>
+            <li id="navMoreCats" class="hoverContent"><ul id="navigationListMore" class="navButtons navMoreCats">
+		<li class="navItem">
+          <a href="/travel-news" id="nav_11" >Travel</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/green-news" id="nav_12" >Green</a>
+        </li>
+
+		<li class="navItem selected">
+          <a href="/humanitarian-news" id="nav_13" >Humanitarian</a>
+        </li>
+
+        	<script type="text/javascript">$('#more_link_li').attr('class', 'navItem selected');</script>
+		<li class="navItem">
+          <a href="/causes-news" id="nav_14" >Causes</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/obituaries-news" id="nav_15" >Obituaries</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/arts-culture-news" id="nav_16" >Arts &amp; Culture</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/funny-news" id="nav_17" >Funny</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/lifestyle-news" id="nav_18" >Life Style</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/spirituality-religion-news" id="nav_19" >Spirituality &amp; Religion</a>
+        </li>
+
+		<li class="navItem">
+          <a href="/education-news" id="nav_20" >Education</a>
+        </li>
+
+            </ul></li>
+</ul>
+
+<script type="text/javascript">
+<!--
+     enableNavigationHover("navigationList");
+//-->
+</script>
+              
+                <form accept-charset="UTF-8" action="/search/quicksearch" class="navSearch" data-remote="true" id="quickSearchForm" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Id/6Q1nck/XB6pQ5d6J99PK/gPLFJOLbU4LLtrLqO4E=" /></div>
+			        <input type="hidden" name="search_url" id="search_url" value=""/>
+					<input type="hidden" name="partner_name"  value=""/>
+			        <input class="searchButton" src="http://cache2.allvoices.com/assets/clear.png" tabindex="2" type="image" value="Search" />
+
+			        <input tabindex="1" type="text" class="searchBoxAjax" name="search_box" id="search_box" value="Location or Keyword..." onclick="this.value='';" onkeyup="$('#location_search_auto_complete').hide();"/>
+			        <span id="location_search_wait" class="searchBoxSpin" style="display:none;" title="Please wait while we search for your location..."><img alt="" height="16" src="http://cache6.allvoices.com/assets/ajax/ajax-location.gif" width="16" /></span>
+
+			        <div id="location_search_auto_complete" class="locationSearchFound" style="display: none;">
+	                </div>
+			        <div id="no_location" class="locationSearchNone" style="display: none;"><span>There is no such location.</span></div>
+
+                                </form>
+            <script type="text/javascript">
+            $('#quickSearchForm').submit(function() {
+              $('#location_search_wait').show();
+            });
+            </script>
+
+                
+		    </div>
+            <div class="mainNav" style="padding:0px;width:1008px;">
+  <div class="clearFix"></div>
+  <style type="text/css">
+    .nav-table {
+      width:100%; text-color:white;border-spacing:0px;
+    }
+    .nav-table tr {
+      margin:0;padding:0;height:25px;line-height: 25px;
+    }
+    .nav-table td {
+      padding:0;margin:0;border:1px solid white;color:white;text-align: center;font-size:13px;background:#2B0073;
+    }
+    .nav-table td:hover {
+      background:#007635;
+      cursor:pointer;
+    }
+    .nav-table tr td a {
+      cursor:pointer;
+      color:white;
+    }
+    .nav-table tr td a:hover {
+      text-decoration:none;
+    }
+  </style>
+</div>
+        
+		
+
+    
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      twttr.events.bind('tweet', function(event) {
+      	page_url = window.location.pathname;
+      	m = /([^\/]+)\/(\d+)-(.+$)/.exec(page_url);
+        if(m && m.length >=3 ) {
+          save_share("Event", m[2], "ReTweet");
+          window.location.reload();
+        }
+      });
+    });
+  </script>
+  
+  
+
+
+<!-- "previous page" action -->
+<a class="prev browse lefts" id="scroll_left" onclick="trackAction('Scrolling Hot Stories Previous','Contributed Event');return true;"></a>
+
+<!-- root element for scrollable -->
+<div class="scrollable" style="width:900px;;height:150px;;">
+   <!-- root element for the items -->
+   <div class="items">
+
+      <!-- 1-3 -->
+
+      <div class="scrollwindow" style="width:900px;">
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12112173-us-government-reports-58-billion-budget-surplus-in-april-2012-first-time-since-2008" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="U.S. government reports $58 billion budget surplus in April 2012: First time since 2008"><img alt="U.S. government reports $58 billion budget surplus in April 2012: First time since 2008" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/events/120/75/81093650-us-government.jpg" title="U.S. government reports $58 billion budget surplus in April 2012: First time since 2008" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="U.S. government reports $58 billion budget surplus in April 2012: First time since 2008" href="/contributed-news/12112173-us-government-reports-58-billion-budget-surplus-in-april-2012-first-time-since-2008" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >U.S. government reports $58 billion budget surplus in...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12114202-israels-early-election-cancelled-as-netanyahu-mofaz-unite-to-form-government" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Israel's early election cancelled as Netanyahu, Mofaz unite to form government"><img alt="Israel's early election cancelled as Netanyahu, Mofaz unite to form government" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/events/120/75/92255364-israels-early.jpg" title="Israel's early election cancelled as Netanyahu, Mofaz unite to form government" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Israel's early election cancelled as Netanyahu, Mofaz unite to form government" href="/contributed-news/12114202-israels-early-election-cancelled-as-netanyahu-mofaz-unite-to-form-government" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Israel's early election cancelled as Netanyahu, Mofaz...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12107896-obamas-secret-weapon-for-debates-against-romney-john-kerry" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Obama’s secret weapon for debates against Romney: John Kerry"><img alt="Obama’s secret weapon for debates against Romney: John Kerry" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/events/120/75/92239788-obamas-secret.jpg" title="Obama’s secret weapon for debates against Romney: John Kerry" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Obama’s secret weapon for debates against Romney: John Kerry" href="/contributed-news/12107896-obamas-secret-weapon-for-debates-against-romney-john-kerry" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Obama’s secret weapon for debates against Romney: John...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12109444-pink-slime-controversy-leads-to-the-closure-of-three-plants" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="'Pink slime' controversy leading to closure of three plants"><img alt="'Pink slime' controversy leading to closure of three plants" class="thumb" height="75" src="http://img.allvoices.com/thumbs/events/120/75/91172543-pink-slime.jpg" title="'Pink slime' controversy leading to closure of three plants" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="'Pink slime' controversy leading to closure of three plants" href="/contributed-news/12109444-pink-slime-controversy-leads-to-the-closure-of-three-plants" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >'Pink slime' controversy leading to closure of three...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Library bans popular novel Fifty Shades of Grey for being too risque: what do you say? "><img alt="Library bans popular novel Fifty Shades of Grey for being too risque: what do you say? " class="thumb" height="75" src="http://img2.allvoices.com/thumbs/events/120/75/92251906-library-bans.jpg" title="Library bans popular novel Fifty Shades of Grey for being too risque: what do you say? " width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Library bans popular novel Fifty Shades of Grey for being too risque: what do you say? " href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Library bans popular novel Fifty Shades of Grey for...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12109729-angry-bird-developer-rovio-to-hit-the-stock-market" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Angry Bird developer Rovio to hit the stock market"><img alt="Angry Bird developer Rovio to hit the stock market" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/events/120/75/85879684-angry-bird.jpg" title="Angry Bird developer Rovio to hit the stock market" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Angry Bird developer Rovio to hit the stock market" href="/contributed-news/12109729-angry-bird-developer-rovio-to-hit-the-stock-market" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Angry Bird developer Rovio to hit the stock market</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:900px;">
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12112204-interpol-issues-red-notice-for-arrest-of-iraqi-vice-president" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Interpol issues ‘Red Notice’ for arrest of Iraqi vice president"><img alt="Interpol issues ‘Red Notice’ for arrest of Iraqi vice president" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/events/120/75/92252108-interpol-issues.jpg" title="Interpol issues ‘Red Notice’ for arrest of Iraqi vice president" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Interpol issues ‘Red Notice’ for arrest of Iraqi vice president" href="/contributed-news/12112204-interpol-issues-red-notice-for-arrest-of-iraqi-vice-president" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Interpol issues ‘Red Notice’ for arrest of Iraqi vice...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12115551-where-the-jobs-are-vocational-and-community-colleges-take-the-lead" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Where the jobs are:  Vocational and community colleges take the lead"><img alt="Where the jobs are:  Vocational and community colleges take the lead" class="thumb" height="75" src="http://img.allvoices.com/thumbs/events/120/75/92260552-where-the.jpg" title="Where the jobs are:  Vocational and community colleges take the lead" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Where the jobs are:  Vocational and community colleges take the lead" href="/contributed-news/12115551-where-the-jobs-are-vocational-and-community-colleges-take-the-lead" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Where the jobs are:  Vocational and community colleges...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12112947-senate-blocks-bill-that-would-have-prevented-student-loan-rates-to-double" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="U.S. Senate blocks student loan bill that would have stopped rate increases"><img alt="U.S. Senate blocks student loan bill that would have stopped rate increases" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/events/120/75/92252682-us-senate.jpg" title="U.S. Senate blocks student loan bill that would have stopped rate increases" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="U.S. Senate blocks student loan bill that would have stopped rate increases" href="/contributed-news/12112947-senate-blocks-bill-that-would-have-prevented-student-loan-rates-to-double" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >U.S. Senate blocks student loan bill that would have...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12113992-china-al-jazeera-closes-beijing-english-language-bureau-after-reporter-expelled" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="China: Al Jazeera closes Beijing English language bureau after reporter expelled"><img alt="China: Al Jazeera closes Beijing English language bureau after reporter expelled" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/events/120/75/92254946-china-jazeera.jpg" title="China: Al Jazeera closes Beijing English language bureau after reporter expelled" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="China: Al Jazeera closes Beijing English language bureau after reporter expelled" href="/contributed-news/12113992-china-al-jazeera-closes-beijing-english-language-bureau-after-reporter-expelled" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >China: Al Jazeera closes Beijing English language...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12112169-zimmerman-absent-for-his-arraignment-lawyer-pleads-not-guilty-on-his-behalf" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin shooting"><img alt="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin shooting" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/events/120/75/92251411-zimmerman-absent.jpg" title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin shooting" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin shooting" href="/contributed-news/12112169-zimmerman-absent-for-his-arraignment-lawyer-pleads-not-guilty-on-his-behalf" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Zimmerman absent as lawyer enters not guilty plea in...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12110989-republican-austerity-plan-just-as-bad-for-us-as-europe" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Republican austerity plan: Just as bad for US as Europe"><img alt="Republican austerity plan: Just as bad for US as Europe" class="thumb" height="75" src="http://img.allvoices.com/thumbs/events/120/75/92247989-republican-austerity.jpg" title="Republican austerity plan: Just as bad for US as Europe" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Republican austerity plan: Just as bad for US as Europe" href="/contributed-news/12110989-republican-austerity-plan-just-as-bad-for-us-as-europe" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Republican austerity plan: Just as bad for US as...</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:900px;">
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal baby"><img alt="Kate Middleton's mum Carole confirms: Kate and Will ready for royal baby" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/events/120/75/92247762-kate-middletons.jpg" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal baby" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal baby" href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Kate Middleton's mum Carole confirms: Kate and Will...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12107961-john-travolta-sued-over-alleged-sexual-assault-charges" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="John Travolta sued over alleged sexual assault charges"><img alt="John Travolta sued over alleged sexual assault charges" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/events/120/75/88236001-john-travolta.jpg" title="John Travolta sued over alleged sexual assault charges" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="John Travolta sued over alleged sexual assault charges" href="/contributed-news/12107961-john-travolta-sued-over-alleged-sexual-assault-charges" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >John Travolta sued over alleged sexual assault...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12107960-julia-orayen-former-playboy-playmate-steals-the-show-at-mexican-debate-video" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Julia Orayen, former Playboy Playmate, steals the show at Mexican presidential debate (Video)"><img alt="Julia Orayen, former Playboy Playmate, steals the show at Mexican presidential debate (Video)" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/events/120/75/92239914-julia-orayen.jpg" title="Julia Orayen, former Playboy Playmate, steals the show at Mexican presidential debate (Video)" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Julia Orayen, former Playboy Playmate, steals the show at Mexican presidential debate (Video)" href="/contributed-news/12107960-julia-orayen-former-playboy-playmate-steals-the-show-at-mexican-debate-video" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Julia Orayen, former Playboy Playmate, steals the show...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12111322-green-jobs-and-the-obama-administration-the-future-is-now" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Green jobs and the Obama Administration: The future is now"><img alt="Green jobs and the Obama Administration: The future is now" class="thumb" height="75" src="http://img.allvoices.com/thumbs/events/120/75/92247973-green-jobs.jpg" title="Green jobs and the Obama Administration: The future is now" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Green jobs and the Obama Administration: The future is now" href="/contributed-news/12111322-green-jobs-and-the-obama-administration-the-future-is-now" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Green jobs and the Obama Administration: The future is...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12109942-anders-breiviks-babylike-brain-an-intelek-international-study-of-psychopathy" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Anders Breivik's baby-like brain: an Intelek International study of psychopathy"><img alt="Anders Breivik's baby-like brain: an Intelek International study of psychopathy" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/events/120/75/92124602-anders-breiviks.jpg" title="Anders Breivik's baby-like brain: an Intelek International study of psychopathy" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Anders Breivik's baby-like brain: an Intelek International study of psychopathy" href="/contributed-news/12109942-anders-breiviks-babylike-brain-an-intelek-international-study-of-psychopathy" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Anders Breivik's baby-like brain: an Intelek...</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    
+<div class="relatedUserReport3">
+        <a href="/contributed-news/12114607-of-devils-dustand-profits" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" rel="nofollow" title="Of Devils &amp; Dust...and profits?"><img alt="Of Devils &amp; Dust...and profits?" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/events/120/75/92256989-devils-amp.jpg" title="Of Devils &amp; Dust...and profits?" width="120" /></a>
+
+
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Of Devils &amp; Dust...and profits?" href="/contributed-news/12114607-of-devils-dustand-profits" onclick="trackAction('Scrolling Hot Stories','Contributed Event');return true;" >Of Devils & Dust...and profits?</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+   </div>
+
+</div>
+
+<!-- "next page" action -->
+<a class="next browse rights" id="scroll_right" onclick="trackAction('Scrolling Hot Stories Next','Contributed Event');return true;"></a>
+
+<script>
+// execute your scripts when the DOM is ready. this is mostly a good habit
+jQuery(function() {
+	// initialize scrollable
+	jQuery(".scrollable").scrollable({circular: true});
+
+});
+</script>
+
+
+
+
+<div class="eventPage userEvent">
+
+    <div class="eventLanding">
+
+        <div class="left">
+          
+          <div id="awardDiv" class="eventByLine">
+            <div class="eventByLineLeft">
+              <div id="div_processing_spinner_award" class="ajaxArrowSpinner" style="display: none;">
+                              Please wait while we process your request..
+                     </div>
+              <div id="errorDiv" style="background-color: blue; color: white; font-size: 16px; display: none">
+              </div>
+              <div id="successDiv" style="background-color: green; color: white; font-size: 16px; display: none">
+              </div>
+            </div>
+          </div>          
+          
+                
+
+        <h1 class="eventTitle">USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day</h1>
+
+        <div class="eventByLine">
+            <div class="eventByLineLeft" style="width:290px;">
+
+                <div class="eventFrom">
+                        
+
+	<a href="/Australia/Western-Australia/Perth" title="Perth"><span class="geoloc">Perth</span></a><span> : </span>
+	<a href="/Australia" title="Australia"><span class="geoloc">Australia</span></a>
+		
+
+                    | Apr 24, 2012 at  7:13 PM PDT
+                </div>
+
+                    <div class="eventBy">
+                        By <a href="/users/prabirghose" title="prabirghose" rel="author" onclick="trackAction('Reported By','Contributed Event');return true;">prabirghose</a>
+							<a href="/compose/prabirghose" rel="nofollow" title="Send a private message to prabirghose" class="pmIcon pmIconSprite" onclick="$('#redirectUrl').val('/compose/prabirghose');showLoginBox($(this));return false;"><img alt="send a private message" height="8" src="http://cache2.allvoices.com/assets/clear.png" width="10" /></a>
+
+						
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                     
+                    </div>
+				<div class="eventBy">
+				
+				</div>
+                <div class="eventBy">
+					
+				</div>
+				<div class="eventBy">
+				</div>
+				
+				
+				
+            </div>
+
+            <div class="eventByLineRight" style="width:320px;">
+
+                    <div class="eventRate">
+                        <a href="javascript:;" class="rateUp" id="rateUp12010658"
+                            onclick="showLoginBox($('#rateUp12010658'));"
+                            rel="nofollow">2</a>
+                        <a href="javascript:;" class="rateDown" id="rateDown12010658"
+                            onclick="showLoginBox($('#rateDown12010658'));"
+                            rel="nofollow">0</a>
+                    </div>
+                    
+                    <div id="fbLike_1"  style="overflow: visible;" class="eventLike" ></div>
+<script>
+fb_divs.push( "fbLike_1"); 
+fb_div_layouts.push("button_count");
+</script>
+                    <div id="eventRetweetNew" style="top:10px;float:right;width:95px;">
+                      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="allvoices">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                      <script>
+                        twttr.events.bind('click', function(event){
+                          if (event.region=='tweet')
+                          {
+                            save_share('Event', '12010658', 'ReTweet');
+                          }
+
+                        });
+                      </script>
+                    </div> 
+                    
+                    <script>
+                      function plusone_callback(jsonParam) {
+                        if(jsonParam.state=="on") {
+                        	save_share('Event', '12010658', 'GooglePlus');
+                        } else {
+							//Case when -1(first link and then unlink) by person
+                        }
+                      }
+                    </script>
+                    <div class="eventRetweet" style="width:60px;height:25px;"><g:plusone size="small" callback="plusone_callback"></g:	one></div>
+
+                    <div class="eventViews">
+                        Views: 391
+                    </div>
+
+            </div>
+
+      <div style ="clear:both;">
+</div>
+
+        </div>
+
+
+
+
+
+    <div id="eventSummaryHolderTemp">
+          <div class="clearFix">&nbsp;</div>
+          <div class="eventSummary" id="eventSummary">
+                <div class="eventSummaryImgContainer"><img alt="A sailor looks out from a deck of the USS Carl Vinson aircraft carrier" height="111" src="http://img.allvoices.com/thumbs/event/111/111/88109372-sailor-looks.jpg" title="A sailor looks out from a deck of the USS Carl Vinson aircraft carrier" width="111" /></div><p> USS Carl Vinson has docked in Freemantle just ahead of ANZAC Day and would be there in Perth for a period of 5-days to carry out R&amp;R as reported in perthnow of 25th April 2012.</p> <p> R&amp;R in military language means &lsquo;Rest and Relaxation&rsquo;.</p> <p> The warship, a Nimitz-class nuclear powered carrier, had taken the body of Osama bin Laden out to sea and carries a total of 4700 American sailors.</p> <p> The massive contraption which weighs 95,000 tons has completed 30-years of its stipulated 50-years life and is 1092 feet long and 252 feet wide.</p> <p> Its area of flight deck is 4.5 acres and it can accommodate up to 75 aircraft at a time.</p> <p> In the words of Rear Admiral Thomas Shannon, the commanding officer &ndash; the USS Carl Vinson is deployed as a strike group which has to be ready to tackle any contingency, at any time and at any location in the world.</p> <p> When asked about the role played by USS Carl Vinson in the case of demise of Osama bin Laden, he declined to make any comment.</p> 
+          </div>
+         
+    </div>
+	
+	
+
+
+    
+  <div id="newEventMediaWidgetTemp" class="newEventMediaWidget">
+    <div class="prevBtn"> <a  rel="nofollow" href="/contributed-news/12010658/content/88132817-michigan-state-spartans-wood-goes-to-the-basket-against-north-carolina-tar-heels-at-the-ncaa-carrier-classic-men-s-college-basketball-game-on-the-deck-of-the-aircraft-carrier-uss-carl-vinson" onclick="trackAction('Image Back','Contributed Event');return true;"><img src="/assets/clear.png" alt="Back" width="63" height="24" /></a> </div>
+    
+    <div class="imgCounter"> 1 of 24 </div>  
+
+    <div class="nextBtn"> <a rel="nofollow" href="/contributed-news/12010658/content/88109372-a-sailor-looks-out-from-a-deck-of-the-uss-carl-vinson-aircraft-carrier"  onclick="trackAction('Image Next','Contributed Event');return true;"><img src="/assets/clear.png" alt="Next" width="62" height="24" /></a> </div>
+
+    <div id="event_contents" class="mainImage"> 
+        <img alt="The U.S. Navy's USS Carl Vinson aircraft carrier is seen in Hong Kong waters" height="480" src="http://img2.allvoices.com/thumbs/image/609/480/89268838-the-us.jpg" title="The U.S. Navy's USS Carl Vinson aircraft carrier is seen in Hong Kong waters" width="609" />
+    </div>
+    <div class="imgSummary centerText">
+    	The U.S. Navy's USS Carl Vinson aircraft carrier is seen in Hong Kong waters
+    </div>
+  
+  </div>
+        <script type="text/javascript">
+        <!--
+            // preload the next image to speed it along
+            $(document).ready(function(){ 
+                var NextImg = new Image(609, 480);
+                NextImg.src = "http://img3.allvoices.com/thumbs/event/609/480/88109372-sailor-looks.jpg";
+            });
+        //-->
+        </script>
+
+
+
+
+    
+      
+        
+      
+       
+
+    <div id="eventSummaryHolder" class="eventSummaryHolder"></div>
+    <script type="text/javascript">
+    <!--
+          moveEventSummary('eventSummaryHolder');
+    //-->
+    </script>
+
+
+      
+      	<div class="reporterDetails">
+      		prabirghose is based in Nāshik, Maharashtra, India,
+      		and is an Anchor for Allvoices.
+            	<div class="starRating">
+            		<div class="title">Report Credibility</div>
+            		<div class="cover"></div>
+            		<div class="progress" style="width: 91.0px;"></div>
+            	</div>
+      	</div>
+
+	<div class="clearFix">&nbsp;</div>
+	<div class="clearFix">&nbsp;</div>
+
+        <ul class="eventShare" style="overflow:visible; z-index:10001;">
+    <li>
+      <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?print=true" rel="nofollow" title="Print"><img alt="Clear" class="printIcon" height="16" src="http://cache2.allvoices.com/assets/clear.png" width="17" /></a>
+    </li>
+    <li><span>Share:</span></li>
+    <li class="mail">
+    	<a onclick="('report-form-Event-12010658').hide;if($('answer_email_form_error_12010658')){$('answer_email_form_error_12010658').html('');}show_share_content_email_form(12010658,'Event','http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day','event_emails_form_12010658', undefined,'new', '', '', false); save_share('Event', '12010658', 'Internal'); return false;" class="blink" href="javascript:;" title="Share" rel="nofollow"><img alt="Share" class="mailIconBig" height="9" src="http://cache2.allvoices.com/assets/clear.png" width="11" /></a>
+		<img alt="Wait..." class="hiddenWait" height="16" id="event_share_button" src="http://cache5.allvoices.com/assets/ajax/arrow-spinner-blue.gif" style="display:none;" title="Wait.." width="16" />
+	</li>
+	<li>
+        <a class="digg" title="Post this to Digg" target="_blank" rel="nofollow"
+            onclick="save_share('Event', '12010658', 'Digg');"
+            href="http://digg.com/submit?url=http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day&amp;title=&amp;bodytext=%250D%250A%2509USS%2520Carl%2520Vinson%2520has%2520docked%2520in%2520Freemantle%2520just%2520ahead%2520of%2520ANZAC%2520Day%2520and%2520would%2520be%2520there%2520in%2520Perth%2520f...">
+           <img alt="Clear" class="diggIcon" height="16" src="http://cache2.allvoices.com/assets/clear.png" width="18" /></a>
+    </li>
+    <li>
+        <a title="Post this to Reddit" target="_blank" rel="nofollow"
+           onclick="save_share('Event', '12010658', 'Reddit');"
+           href="http://www.reddit.com/submit?url=http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day&amp;title=">
+           <img alt="Clear" class="redditIcon" height="16" src="http://cache2.allvoices.com/assets/clear.png" width="17" /></a>
+    </li>
+        <li>
+            <a title="Post this to Facebook" target="_blank" rel="nofollow"
+               onclick="save_share('Event', '12010658', 'Facebook');"
+               href="http://www.facebook.com/share.php?u=http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day&amp;t=">
+               <img alt="Clear" class="facebIcon" height="16" src="http://cache2.allvoices.com/assets/clear.png" width="16" /></a>
+        </li>
+    <li>                        
+        <a title="Post this to StumbleUpon" target="_blank" rel="nofollow"
+           onclick="save_share('Event', '12010658', 'StumbleUpon');"
+           href="http://www.stumbleupon.com/submit?url=http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day&amp;title=&amp;newcomment=%0D%0A%09USS%20Carl%20Vinson%20has%20docked%20in%20Freemantle%20just%20ahead%20of%20ANZAC%20Day%20and%20would%20be%20there%20in%20Perth%20f...">
+           <img alt="Clear" class="stumbleIcon" height="16" src="http://cache2.allvoices.com/assets/clear.png" width="16" /></a>
+    </li>
+    <li id="retweetBottom">
+      <div id="eventRetweetNewBottom" style="float:left;">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="allvoices">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          <script>
+            twttr.events.bind('click', function(event){
+              if (event.region=='tweet')
+              {
+                save_share('Event', '12010658', 'ReTweet');
+              }
+
+            });
+          </script>
+      </div>
+      </li>
+    <li class="shareLike"><div id="fbLike_2"  style=";overflow: visible;" width='280' ></div>
+<script>
+fb_divs.push( "fbLike_2"); 
+fb_div_layouts.push("standard");
+</script></li>
+</ul>
+
+<div style="clear:both;">&nbsp;</div>
+
+
+            <ul class="eventShare eventShareBorder">
+
+                    <li class="credDisplay">
+                        
+<span class="credibility">
+    Credibility
+
+            <img alt="" class="credImg5" height="11" src="http://cache2.allvoices.com/assets/clear.png" width="51" />
+</span>
+
+                    </li>
+				<li>
+                            <a href="#" onclick="return false;" class="reachLink" rel="nofollow"
+                onmouseover="showHoverContext('bottomLeft', $(this), '',-175,1,'', '','globalReachreach12010658');"
+                onmouseout="hideHoverContext();">
+                        <img alt="" height="13" src="http://cache2.allvoices.com/assets/clear.png" title="" width="13" /> Reach</a>
+
+                </li>
+                <li>
+                    
+                </li>
+
+                <li>
+                    <a id="flagEventLink" title="Report Abuse" class="reportAbuse" href="javascript:;"
+                       onclick="var cssClassName= ($(this).hasClass('reportAbuse') ) ? 'reportAbuseWait' : 'reportAbuse';$(this).addClass(cssClassName);  if($('#email-form-12010658').length>0){$('#email-form-12010658').hide();} tog_abuse_form(12010658,'Event','');trackAction('Report Abuse','Contributed Event');return false;" rel="nofollow">
+                        <img alt="Wait..." class="hiddenWait" height="16" id="abuseSpinner" src="http://cache3.allvoices.com/assets/ajax/arrow-spinner-red.gif" title="Wait.." width="16" />
+                        <img alt="Flag" class="flagIcon" height="17" src="http://cache2.allvoices.com/assets/clear.png" title="Flag" width="31" />
+                    </a>
+                </li>
+
+            </ul>
+
+            
+        <div id="globalReachreach12010658" style="display: none;">
+            <div class="featurePopup">
+                <div class="popupTitle">Global Reach</div>
+                <div class="popupSubtitle">This report's viewers come from the following
+                    countries:</div>
+                <ul class="popupList">
+                        <li>Australia (62.7%)</li>
+                        <li>United States of America (30.5%)</li>
+                        <li>India (4.7%)</li>
+                        <li>United Kingdom (0.9%)</li>
+                        <li>2 other countries (0.4%)</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+            <div class="eventBtnsForm">
+                <div id='report-form-Event-12010658' style='display:none;'> </div>
+                <div id="event_emails_form_12010658"> </div>
+             </div>
+
+		  		<div class="linkList">
+			<span>READ MORE:</span>
+			<a href="/tags/uss-carl-vinson" class="">USS Carl Vinson</a>, <a href="/tags/anzac-day" class="">Anzac Day</a>, <a href="/tags/warship" class="">warship</a>, <a href="/tags/nimitz-class-nuclear-powered-carrier" class="">Nimitz-class nuclear powered carrier</a>, <a href="/tags/rear-admiral-thomas-shannon" class="">Rear Admiral Thomas Shannon</a>, <a href="/humanitarian-news" class="">humanitarian-news</a>
+		</div>
+	
+          
+          <div class="linkList">
+              <span>More News From:</span>
+              
+
+	<a href="/Australia/Western-Australia/Perth" title="Perth"><span class="geoloc">Perth</span></a><span> : </span>
+	<a href="/Australia" title="Australia"><span class="geoloc">Australia</span></a>
+		
+
+          </div>
+
+			<div class="clearFix">&nbsp;</div>
+          
+                        <div style="border-top: #E5E5DF 0px solid; margin: 10px 0px 10px 0px">
+                         <div style="border-top: #E5E5DF 0px solid; margin: 30px 0px 10px 0px;border:0px;padding:0" class="comment_ad_box">
+<span style="text-align:left;margin:0;font-size:10px;text-transform:none" class="mid_article_ad_label">Advertisement</span>
+<iframe style="overflow: hidden;" frameborder="0" scrolling="no" hspace="0" vspace="0" marginheight="0" marginwidth="0" width="605" height="190" src="http://web.adblade.com/impsc.php?cid=1503-3290318333&output=html"></iframe>
+</div>
+
+			</div>
+                        <div style="border-top: #E5E5DF 4px solid; margin: 10px 0px 10px 0px"></div>
+                        <div class="OUTBRAIN" data-src="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" data-widget-id="AR_1" data-ob-template="allvoices" ></div>
+                        <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+			<div class="clearFix">&nbsp;</div>
+								
+                
+<div id="event_comments" >
+
+  <div class="commentsOpenHide">
+    <a href="#parent_comment_div" class="rightSide" rel="nofollow" title="Comments">Post a Comment</a>
+    <a href="#" id="commentListCount" onclick="return toggleCommentsList(this);; return false;">Comments: 2</a>
+
+  </div>
+  <div id="event_comments" class="commentsWrapper">
+
+    <div id="comments_list" class="comments">
+        <div id = "new_comment_909571">
+  <div class = "comment depth0">
+
+    
+		<input type="hidden" id="comment_909571_commentable_type" value="Event"/>
+    	<input type="hidden" id="comment_909571_commentable_id" value="12010658"/>
+    	<input type="hidden" id="comment_909571_parent_id" value=""/>
+    	<input type="hidden" id="comment_909571_content_id" value=""/>
+    <div class = "commentBy " id = "comment_909571">
+      <div class="rightSide">
+            <a href="#" onclick="commentReply(909571); return false;" rel="nofollow">Reply</a>
+      </div>
+      <span>Posted By</span>
+      <span>
+          <a href="/users/NadeemIftekhar" class="userImage2" rel="nofollow">
+            <img alt="NadeemIftekhar" height="35" src="http://img4.allvoices.com/thumbs/users/35/35/493746-nadeemiftekhar.jpg" title="NadeemIftekhar" width="35" />
+</a>      </span>
+      <span>
+          <a href="/users/NadeemIftekhar" rel="nofollow">NadeemIftekhar</a>
+        |
+        14 days
+        ago
+      </span>
+    </div>
+    <div class="summary" id = "comm_text_909571">
+        This massive machine is a giant indeed! Rated.
+    </div>
+    <div id = "edit_reply_909571" style = 'display:none'>
+    </div>
+  </div>
+</div>
+​    
+        <div id = "new_comment_909577">
+  <div class = "comment depth1">
+
+    
+		<input type="hidden" id="comment_909577_commentable_type" value="Event"/>
+    	<input type="hidden" id="comment_909577_commentable_id" value="12010658"/>
+    	<input type="hidden" id="comment_909577_parent_id" value="909571"/>
+    	<input type="hidden" id="comment_909577_content_id" value=""/>
+    <div class = "commentBy commentByOwner" id = "comment_909577">
+      <div class="rightSide">
+            <a href="#" onclick="commentReply(909577); return false;" rel="nofollow">Reply</a>
+      </div>
+      <span>Reply By</span>
+      <span>
+          <a href="/users/prabirghose" class="userImage2" rel="nofollow">
+            <img alt="prabirghose" height="35" src="http://img.allvoices.com/thumbs/users/35/35/16950-prabirghose.jpg" title="prabirghose" width="35" />
+</a>      </span>
+      <span>
+          <a href="/users/prabirghose" rel="nofollow">prabirghose</a>
+        |
+        14 days
+        ago
+      </span>
+    </div>
+    <div class="summary" id = "comm_text_909577">
+        thanks for the comments as well as the rating  ...
+    </div>
+    <div id = "edit_reply_909577" style = 'display:none'>
+    </div>
+  </div>
+</div>
+​    
+    </div>
+  </div>
+</div>
+<div id="parent_comment_div" class="commentsFormWrapper">
+      <div id="div_comment_form" class="inlineCommentForm">
+  <div id = 'commentError' style = 'display:none'>
+  </div>
+  <form accept-charset="UTF-8" action="/comments" class="new_comment" id="comment_post" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Id/6Q1nck/XB6pQ5d6J99PK/gPLFJOLbU4LLtrLqO4E=" /></div>
+    <input id="comment_commentable_id" name="comment[commentable_id]" type="hidden" value="12010658" />
+    <input id="comment_commentable_type" name="comment[commentable_type]" type="hidden" value="Event" />
+    <input id="comment_content_id" name="comment[content_id]" type="hidden" />
+    <input id="comment_parent_id" name="comment[parent_id]" type="hidden" />
+    <input id="comment_id" name="comment_id" type="hidden" />
+    <input id="active_comment_div" name="active_comment_div" type="hidden" value="div_comment_form" />
+    <input id="parent_root" name="parent_root" type="hidden" />
+    <div id="form_table">
+      <div id="commentFormMsg" class="commentFormMsg">Enter your comment below</div>
+      <div id="comment_div">
+        <div id="commentText">
+          <textarea cols="0" id="comment_comment" name="comment[comment]" rows="0"></textarea>
+        </div>
+        <p id="buttons" class="buttons">
+          <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  id="postcomment_button" rel="nofollow" style="opacity: 0.3;" title="Add Your Comment">
+                            <span><span >Add Your Comment</span></span><button type="submit" id="postcomment" disabled="disabled">&nbsp;</button></a>
+          <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  id="editcomment_button" rel="nofollow" style="display:none" title="Save Changes">
+                            <span><span >Save Changes</span></span><button type="submit" id="editcomment">&nbsp;</button></a>
+          <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  id="cancelcomment_button" rel="nofollow" style="display:none" title="Cancel">
+                            <span><span >Cancel</span></span><button onclick="commentReset();return false;" type="button" id="cancelcomment">&nbsp;</button></a>
+        </p>
+        <input type="hidden" id="save_comment_msg" name="save_comment_msg" value="Please wait while we save your comment..." />
+<input type="hidden" id="delete_comment_msg" name="delete_comment_msg" value="Please wait while we delete your comment..." />
+
+<div class="ajaxArrowSpinner" id="form_spinner_display" style="display: none;">
+</div>
+      </div>
+    </div>
+</form></div>
+<script type="text/javascript" >
+  $(document).ready(function() {
+  	  $('#postcomment').removeAttr("disabled");
+      $('#postcomment_button').removeAttr("style");
+      
+      $('#postcomment').click( function() {
+      ga_track_event('event','image_player_click','/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day');
+      return submitComment($('#comment_post'));
+      });
+	$('#editcomment').click( function() {
+      ga_track_event('event','image_player_click','/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day');
+      return submitComment($('#comment_post'));
+      });
+
+  });
+</script>
+​
+</div>
+
+               
+			<div class="comment_ad"> 
+			<div class="comment_ad_box">
+				<span class="mid_article_ad_label">Advertisement</span>
+					  		
+	<div id="google_ad_av_report_uge_undef_mid_rect_comments"  class="globalAdLargeRect">
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+      googletag.display('google_ad_av_report_uge_undef_mid_rect_comments');
+    });
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+			</div>
+			</div>
+			<div class="clearFix">&nbsp;</div>
+            <div class="eventLandingContent">
+                <!-- Display Related Contributors -->
+                <!-- Display News Stories -->
+                            <div id="eventNewsStories" class="contentBox contentBoxNewsEvent">
+                                <div class="contentBoxHeading">
+                                    <h2>News Stories</h2>
+                                </div>
+                                    <div class="contentBoxInner ">
+                                        <div class="clearFix">&nbsp;</div>
+                                        
+                                          <div class="newsStoriesFilters">
+                                            <a class="selected" href="?storiesFilter=relevant#eventNewsStories" rel="nofollow"  onclick="trackAction('News Stories','Contributed Event');return true;" >Relevant</a> |
+                                            <a  href="?storiesFilter=recent#eventNewsStories" rel="nofollow"  onclick="trackAction('News Stories','Contributed Event');return true;" >Recent</a> |
+                                            <a  href="?storiesFilter=oldest#eventNewsStories" rel="nofollow" onclick="trackAction('News Stories','Contributed Event');return true;" >Oldest</a>
+                                          </div>
+                                        
+
+                                          
+<ul class="newsStories">
+
+        <li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+           <h3 class="newsStoryHeading"><a href="http://www.perthnow.com.au/news/bin-laden-burial-warship-to-arrive-wa/story-e6frg12c-1226336245545" rel="nofollow" target="_blank"  onclick="trackAction('News Stories','Contributed Event');return true;" >Thousands of US sailors arrive on USS Carl Vinson ahead of Anzac Day | Perth Now</a></h3>
+
+           <div class="newsStoryDetails">
+               <span>Submitted By:</span> <a href="/users/prabirghose" title="prabirghose" rel="nofollow"  onclick="trackAction('News Stories','Contributed Event');return true;" >prabirghose</a>
+                | 14 days ago
+           </div>
+           <div class="newsStorySummary">A VISITING US Navy admiral has declared Americas relationship with Australia as "absolute key' in the continuing war on terrorism after his supercarrier arrived in Fremantle today. 
+
+
+
+
+
+
+
+
+
+</div>
+        </li>
+
+
+
+
+
+                                              
+
+	
+				
+				
+                
+                
+
+
+<li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+   <h3 class="newsStoryHeading">
+		
+				    <a href="http://www.telegraphindia.com/1120429/jsp/frontpage/story_15432138.jsp" onclick="trackAction('News Stories','Contributed Event');return true;" rel="nofollow" target="_blank">Delhi scales down US war games</a>
+   </h3>
+
+   <div class="newsStoryDetails">
+        Telegraph India
+
+   </div>
+
+		<div class="newsStorySummary">The Centre recently turned down an air force request to participate in the war games with the US navy in the Bay of Bengal that concluded last week. The seven-day Malabar 2012 exercise involved the American and Indian navies. The Centre's move...</div>
+
+</li>
+
+				
+				
+                
+                
+
+
+<li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+   <h3 class="newsStoryHeading">
+		
+				    <a href="http://www.abc.net.au/news/2012-04-24/american-sailors-arrive-in-fremantle/3968902" onclick="trackAction('News Stories','Contributed Event');return true;" rel="nofollow" target="_blank">Thousands of American sailors arrive in Fremantle</a>
+   </h3>
+
+   <div class="newsStoryDetails">
+        Australian Broadcasting Corporation
+
+   </div>
+
+		<div class="newsStorySummary">The aircraft carrier USS Carl Vinson and the guided missile cruiser USS Bunker Hill have been deployed since November and have been aiding US forces in the Middle East as well as taking part in an exercise with the Indian Navy. The port visit will...</div>
+
+</li>
+
+				
+				
+                
+                
+
+
+<li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+   <h3 class="newsStoryHeading">
+		
+				    <a href="http://www.thesun.co.uk/sol/homepage/news/4282803/Osama-Bin-Ladens-wives-are-kicked-out-of-Pakistan.html?OTC-RSS&amp;ATTR=News" onclick="trackAction('News Stories','Contributed Event');return true;" rel="nofollow" target="_blank">Osama Bin Laden's wives are kicked out of Pakistan</a>
+   </h3>
+
+   <div class="newsStoryDetails">
+        The Sun UK
+
+   </div>
+
+		<div class="newsStorySummary">Bin Laden's wives and kids were finally deported from Pakistan last night  almost a year after the terror boss was hunted down and killed by the US. The al-Qaeda chief's three widows and 11 other family members were put on a plane to Saudi Arabia...</div>
+
+</li>
+
+				
+				
+                
+                
+
+
+<li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+   <h3 class="newsStoryHeading">
+		
+				    <a href="http://news.smh.com.au/breaking-news-national/chinese-power-cant-be-contained-smith-20120427-1xpw6.html" onclick="trackAction('News Stories','Contributed Event');return true;" rel="nofollow" target="_blank">Chinese power can't be contained: Smith</a>
+   </h3>
+
+   <div class="newsStoryDetails">
+        Sydney Morning Herald
+
+   </div>
+
+		<div class="newsStorySummary">Mr Smith said contrary to the view America was trying to shore up its defences or exert its waning influence, a strong US presence in the Asia-Pacific region was needed for ongoing peace and prosperity. "The United States' ongoing engagement, indeed...</div>
+
+</li>
+
+				
+				
+                
+                
+
+
+<li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+   <h3 class="newsStoryHeading">
+		
+				    <a href="http://www.asharq-e.com/news.asp?section=1&amp;id=29429" onclick="trackAction('News Stories','Contributed Event');return true;" rel="nofollow" target="_blank">Saudi Arabia accepts Bin Laden's family on "humanitarian" grounds - Source</a>
+   </h3>
+
+   <div class="newsStoryDetails">
+        Al Sharq Al Awsat
+
+   </div>
+
+		<div class="newsStorySummary">Five members of the Bin Laden family had been sentenced to 45-days imprisonment on 2 April for illegally entering Pakistan; the entire Bin Laden family had been scheduled to be deported from the country last week following the end of the sentence but...</div>
+
+</li>
+
+
+</ul>
+
+
+                                            <div class="readMore"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/stories" title="More Related Stories"  onclick="trackAction('News Stories','Contributed Event');return true;" >More Related Stories</a></div>
+                                    </div>
+                            </div>
+                <!-- Display Blogs -->
+                            <div class="contentBox contentBoxNewsEvent">
+                                <div class="contentBoxHeading">
+                                    <h2>Blogs</h2>
+                                </div>
+                                    <div class="contentBoxInner ">
+                                        <div class="clearFix">&nbsp;></div>
+
+                                          
+<ul class="newsStories">
+       
+       
+
+
+            <li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+               <h3 class="newsStoryHeading">
+						<a href="http://area599.blogspot.com/2012/04/thousands-of-us-sailors-arrive-on-uss.html" onclick="trackAction('Blogs','Contributed Event');return true;" rel="nofollow" target="_blank" title="AREA599: Thousands of US sailors arrive on USS Carl Vinson ...">AREA599: Thousands of US sailors arrive on USS Carl Vinson ...</a>
+			   </h3>
+               <div class="newsStoryDetails">
+                   area599.blogspot.com
+
+               </div>
+               <div class="newsStorySummary">The sailors, fresh from exercises with the Indian Navy, will arrive overnight in Gage Roads sea channel, just off Fremantle port, aboard the aircraft carrier, the USS Carl Vinson, and guided missile cruiser, the USS Bunker Hill. The two ships, in </div>
+            </li>
+
+       
+       
+
+
+            <li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+               <h3 class="newsStoryHeading">
+						<a href="http://maritimesecurity.asia/free-2/u-s-pacific-command/us-sailors-keen-to-stand-with-aussies-the-australian/" onclick="trackAction('Blogs','Contributed Event');return true;" rel="nofollow" target="_blank" title="US Sailors Keen to Stand with Aussies (The Australian ...">US Sailors Keen to Stand with Aussies (The Australian ...</a>
+			   </h3>
+               <div class="newsStoryDetails">
+                   maritimesecurity.asia
+
+               </div>
+               <div class="newsStorySummary">MORE than 5000 sailors from the aircraft carrier USS Carl Vinson have arrived in Fremantle, where a contingent will march in Perth&#39;s Anzac Day parade today to “stand beside” Australia in commemoration of wars past and present.</div>
+            </li>
+
+       
+       
+
+
+            <li class="newsStory" onmouseover="this.className = 'newsStory shade'" onmouseout="this.className = 'newsStory'">
+               <h3 class="newsStoryHeading">
+						<a href="http://submarinersworld.blogspot.com/2012/04/us-navy-ships-visit-perth-for-anzac-day.html" onclick="trackAction('Blogs','Contributed Event');return true;" rel="nofollow" target="_blank" title="Submariners World: US navy ships visit Perth for Anzac Day">Submariners World: US navy ships visit Perth for Anzac Day</a>
+			   </h3>
+               <div class="newsStoryDetails">
+                   submarinersworld.blogspot.com
+
+               </div>
+               <div class="newsStorySummary">The 95000-tonne aircraft carrier USS Carl Vinson and guided-missile cruiser USS Bunker Hill will berth in Fremantle on Tuesday, while fast combat support ship USS Bridge will arrive at HMAS Stirling in Rockingham. Submarine USS Michigan arrived at </div>
+            </li>
+
+</ul>
+
+
+                                    </div>
+                            </div>
+
+                <!-- Display Images -->
+				<!-- Display Images -->
+                            <div class="contentBox contentBoxUserEvent">
+                                <div class="contentBoxHeading">
+                                	<h2>Images</h2>
+                                </div>
+                                    <div class="contentBoxInner ">
+                                        <div class="clearFix">&nbsp;></div>
+                                             
+
+
+
+
+<div class="clearFix">&nbsp;</div>
+<div class="mediaThumbs">
+    <ul class="mediaThumbsInner">
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268838" title="The U.S. Navy's USS Carl ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="The U.S. Navy's USS Carl Vinson aircraft carrier is seen in Hong Kong waters" class="" height="111" src="http://img.allvoices.com/thumbs/image/111/111/89268838-the-us.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268838" title="The U.S. Navy's USS Carl ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">The U.S. Navy's USS Carl ...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">The U.S. Navy's USS Carl ...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268838" rel="nofollow">www.reuters.com</a></div>
+                        <div class="popupSummary">The U.S. Navy's USS Carl Vinson aircraft carrier is seen in Hong Kong ...</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/88109372" title="A sailor looks out from a deck ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="A sailor looks out from a deck of the USS Carl Vinson aircraft carrier" class="" height="111" src="http://img2.allvoices.com/thumbs/image/111/111/88109372-sailor-looks.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/88109372" title="A sailor looks out from a deck ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">A sailor looks out from a deck ...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">A sailor looks out from a deck ...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/88109372" rel="nofollow">www.afp.com</a></div>
+                        <div class="popupSummary">A sailor looks out from a deck of the USS Carl Vinson aircraft carrier</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268837" title="Rear Admiral Thomas K. Shannon,..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="Rear Admiral Thomas K. Shannon,commander of Carrier Strike Group One meets local journalists onboard the U.S. aircraft carrier USS Carl Vinson aircraft in Hong Kong" class="" height="111" src="http://img3.allvoices.com/thumbs/image/111/111/89268837-rear-admiral.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268837" title="Rear Admiral Thomas K. Shannon,..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">Rear Admiral Thomas K. Shannon,...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">Rear Admiral Thomas K. Shannon,...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268837" rel="nofollow">www.reuters.com</a></div>
+                        <div class="popupSummary">Rear Admiral Thomas K. Shannon,commander of Carrier Strike Group One meets ...</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268836" title="A sailor gives hand signals on ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="A sailor gives hand signals on the fight deck of the U.S. aircraft carrier USS Carl Vinson aircraft in Hong Kong" class="" height="111" src="http://img4.allvoices.com/thumbs/image/111/111/89268836-sailor-gives.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268836" title="A sailor gives hand signals on ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">A sailor gives hand signals on ...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">A sailor gives hand signals on ...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/89268836" rel="nofollow">www.reuters.com</a></div>
+                        <div class="popupSummary">A sailor gives hand signals on the fight deck of the U.S. aircraft carrier ...</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/68342609" title="Nimitz-class aircraft carrier ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="Nimitz-class aircraft carrier USS Carl Vinson (CVN 70) along the coast of Haiti" class="" height="111" src="http://img.allvoices.com/thumbs/image/111/111/68342609-nimitzclass-aircraft.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/68342609" title="Nimitz-class aircraft carrier ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">Nimitz-class aircraft carrier ...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">Nimitz-class aircraft carrier ...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/68342609" rel="nofollow">www.afp.com</a></div>
+                        <div class="popupSummary">Nimitz-class aircraft carrier USS Carl Vinson (CVN 70) along the coast of ...</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            <li class="mediaThumbImgSmall">
+                <div class="thumbBG" onmouseover="showHoverContext('bottomLeft', $(this));" onmouseout="hideHoverContext();">
+                    <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/80111202" title="The USS Carl Vinson has ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;"><img alt="The USS Carl Vinson has arrived in Haiti" class="" height="111" src="http://img2.allvoices.com/thumbs/image/111/111/80111202-the-uss.jpg" width="111" /></a><span> </span></div>
+				<h3 class="thumbTitle"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/80111202" title="The USS Carl Vinson has ..." target="_self"   onclick="trackAction('Related Images','Contributed Event');return true;">The USS Carl Vinson has ...</a></h3>
+                <div class="thumbBy"></div>
+				
+                <div class="hoverContent">
+                    <div class="mediaThumbSmallPopup">
+                        <div class="popupTitle">The USS Carl Vinson has ...</div>
+                        <div class="popupBy">Image Source: <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/image/80111202" rel="nofollow">www.afp.com</a></div>
+                        <div class="popupSummary">The USS Carl Vinson has arrived in Haiti</div>
+						
+
+                        
+                    </div>
+                </div>
+            </li>
+    </ul>
+</div>
+
+
+
+                                            <div class="readMore"><a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/images" title="More Related Images"  onclick="trackAction('Related Images','Contributed Event');return true;">More Related Images</a></div>
+                                    </div>
+                            </div>
+                <!-- Display Videos -->
+                    <div class="contentBox contentBoxUserEvent">
+  <h2 class="contentBoxHeading">More  From  Perth</h2>
+  <div class="contentBoxInner">
+    
+
+
+<!-- "previous page" action -->
+<a class="prev browse lefts" id="scroll_left" onclick="trackAction('Scrolling Hot Stories Previous','Mainstream Event');return true;"></a>
+
+<!-- root element for scrollable -->
+<div class="scrollable" style="width:500px;;height:211px;;">
+   <!-- root element for the items -->
+   <div class="items">
+
+      <!-- 1-3 -->
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day"><img alt="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" class="thumb" height="111" src="http://img.allvoices.com/thumbs/image/111/111/89268838-uss-warship.jpg" title="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/12001672-grab-these-60-best-free-web-design-apps-for-your-android-device" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="Grab These 60 Best FREE Web Design Apps For Your Android Device"><img alt="Grab These 60 Best FREE Web Design Apps For Your Android Device" class="thumb" height="111" src="http://img2.allvoices.com/thumbs/image/111/111/75828335-grab-these.jpg" title="Grab These 60 Best FREE Web Design Apps For Your Android Device" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Grab These 60 Best FREE Web Design Apps For Your Android Device" href="/contributed-news/12001672-grab-these-60-best-free-web-design-apps-for-your-android-device" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Grab These 60 Best FREE Web Design Apps For Your Android Device</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/11967030-ben-hollioakes-england-kit-and-memorabilia-partially-recovered-after-being-stolen-from-parents-house-in-perth" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="Ben Hollioake's England kit and memorabilia partially recovered after being stolen from parents' house in Perth"><img alt="Ben Hollioake's England kit and memorabilia partially recovered after being stolen from parents' house in Perth" class="thumb" height="111" src="http://img3.allvoices.com/thumbs/image/111/111/91696319-ben-hollioakes.jpg" title="Ben Hollioake's England kit and memorabilia partially recovered after being stolen from parents' house in Perth" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Ben Hollioake's England kit and memorabilia partially recovered after being stolen from parents' house in Perth" href="/contributed-news/11967030-ben-hollioakes-england-kit-and-memorabilia-partially-recovered-after-being-stolen-from-parents-house-in-perth" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Ben Hollioake's England kit and memorabilia partially recovered after being stolen from parents' house in Perth</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/11910095-the-story-of-ian-usher-the-man-who-wanted-to-do-100-things-in-100-days" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="The story of Ian Usher – the man who wanted to do 100 things in 100 days"><img alt="The story of Ian Usher – the man who wanted to do 100 things in 100 days" class="thumb" height="111" src="http://img4.allvoices.com/thumbs/image/111/111/91491513-the-story.jpg" title="The story of Ian Usher – the man who wanted to do 100 things in 100 days" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="The story of Ian Usher – the man who wanted to do 100 things in 100 days" href="/contributed-news/11910095-the-story-of-ian-usher-the-man-who-wanted-to-do-100-things-in-100-days" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >The story of Ian Usher – the man who wanted to do 100 things in 100 days</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Cheap Paintings" href="/contributed-news/11907511-cheap-paintings" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Cheap Paintings</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Ottawa Home Care" href="/contributed-news/11907485-ottawa-home-care" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Ottawa Home Care</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="All about SEO Perth services" href="/contributed-news/11901182-all-about-seo-perth-services" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >All about SEO Perth services</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Finding Right Digital agency for the business" href="/contributed-news/11901148-finding-right-digital-agency-for-the-business" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Finding Right Digital agency for the business</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/11901111-all-about-red-sea-liveaboards" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="All about red sea liveaboards"><img alt="All about red sea liveaboards" class="thumb" height="111" src="http://img.allvoices.com/thumbs/image/111/111/90168328-all-about.jpg" title="All about red sea liveaboards" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="All about red sea liveaboards" href="/contributed-news/11901111-all-about-red-sea-liveaboards" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >All about red sea liveaboards</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/11901040-decisions-to-be-made-while-going-for-heli-skiing" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="Decisions to be made while going for heli skiing"><img alt="Decisions to be made while going for heli skiing" class="thumb" height="111" src="http://img2.allvoices.com/thumbs/image/111/111/91462396-decisions-made.jpg" title="Decisions to be made while going for heli skiing" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Decisions to be made while going for heli skiing" href="/contributed-news/11901040-decisions-to-be-made-while-going-for-heli-skiing" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Decisions to be made while going for heli skiing</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="All about heli skiing" href="/contributed-news/11901002-all-about-heli-skiing" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >All about heli skiing</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+		    <div class="relatedUserReport2">
+      
+ <a href="/contributed-news/11900932-finding-ideal-meeting-rooms-perth" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" rel="nofollow" title="Finding ideal meeting rooms Perth"><img alt="Finding ideal meeting rooms Perth" class="thumb" height="111" src="http://img4.allvoices.com/thumbs/image/111/111/91462234-finding-ideal.jpg" title="Finding ideal meeting rooms Perth" width="111" /></a>
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Finding ideal meeting rooms Perth" href="/contributed-news/11900932-finding-ideal-meeting-rooms-perth" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Finding ideal meeting rooms Perth</a>
+	</h3>
+</div>
+</div>
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+		    <div class="relatedUserReport2">
+      
+<div class="content">
+   <h3 class="thumbTitle">
+	<a title="Find ideal office space for you" href="/contributed-news/11900367-find-ideal-office-space-for-you" onclick="trackAction('Scrolling Hot Stories','Mainstream Event');return true;" >Find ideal office space for you</a>
+	</h3>
+</div>
+</div>
+
+
+
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+
+
+      </div>
+
+      <div class="scrollwindow" style="width:500px;">
+
+
+
+
+
+      </div>
+
+   </div>
+
+</div>
+
+<!-- "next page" action -->
+<a class="next browse rights" id="scroll_right" onclick="trackAction('Scrolling Hot Stories Next','Mainstream Event');return true;"></a>
+
+<script>
+// execute your scripts when the DOM is ready. this is mostly a good habit
+jQuery(function() {
+	// initialize scrollable
+	jQuery(".scrollable").scrollable({circular: true});
+
+});
+</script>
+
+
+  </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="right">
+
+
+
+          
+				  		
+	<div id="google_ad_av_static_mid_rect"  class="globalAdLargeRect">
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+      googletag.display('google_ad_av_static_mid_rect');
+    });
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+			
+            
+				
+<div class="actionBox">
+  <div class="actionBoxInner">
+    <a id="report_your_news_right" href="/post_event" onclick="$('#redirectUrl').val('/post_event');showLoginBox($(this));return false;" class="actionButton" rel="nofollow"  ><img alt="Report Your News" height="27" src="http://cache2.allvoices.com/assets/clear.png" width="176" /></a>
+    <span class="actionQuestion">Got a similar story?<br />Add it to the network!</span> 
+    <div class="actionDetails">
+		  <p class="plusIcon">
+              <img alt="" height="11" src="http://cache2.allvoices.com/assets/clear.png" width="11" />
+              Or add related content to this report</p>
+      <p class="links">
+        <a href="/add_news_story/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel" rel="nofollow" onclick="$('#redirectUrl').val('/add_news_story/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel');showLoginBox($(this));return false;" title="Add A News Story" >News Stories</a> | <a href="/add_blog_link/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel" rel="nofollow" onclick="$('#redirectUrl').val('/add_blog_link/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel');showLoginBox($(this));return false;" title="Add A Blog Post" >Blogs</a> | <a href="/upload_images/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel" rel="nofollow" onclick="$('#redirectUrl').val('/upload_images/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel');showLoginBox($(this));return false;" title="Upload Images" >Images</a> | <a href="/upload_videos/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel" rel="nofollow" onclick="$('#redirectUrl').val('/upload_videos/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day?ref=addpanel');showLoginBox($(this));return false;" title="Upload Videos" >Videos</a> | 
+				<a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/comments#parent_comment_div" title="Comments" rel="nofollow">Comments</a>
+			</p>
+      <p class="cell" style="display:none;">
+        <img alt="Cell phones" class="phoneIconLarge" height="28" src="http://cache2.allvoices.com/assets/clear.png" title="Cell phones" width="18" />
+        Cell phones use report code: <a href="#cellphone_options" class="phoneLink" rel="nofollow" onclick="RedBox.showInline('div_phone_option');return false;">@12010658</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+	      
+      	<div class="clearFix">&nbsp;</div>
+          <div class="contentBox contentBoxGrey" style="width: 334px;border:1px solid #A9A9A9;">
+            <a href="/adtech"><img alt="Adtech-334" src="http://cache4.allvoices.com/assets/adtech/adtech-334-287b374aed97bb5a505f0be6a47d8b99.jpg" /></a>
+          </div>
+         <div class="contentBox contentBoxGrey" style="width: 334px;"><a href="/election2012"><img alt="Tap_logo_330_103" src="http://cache3.allvoices.com/assets/american_pundit/TAP_Logo_330_103-a77fcbd075b4ee0c790efb7c7390c84e.jpg" style="width:334px" /></a></div>
+     	 
+  
+    <div class="contentBox contentBoxGrey">
+      <h2 class="contentBoxHeading">Cartoons of The Day</h2>
+      <div class="contentBoxInner">
+        <div class="popImages mediaThumbs bigThumb">
+          <ul class="mediaThumbsInner">
+          
+              
+                <li class="clearLine"> </li>
+              
+                <li class="mediaThumbImgLarge">
+                <div class="thumbBG">
+                  <a href="/cartoons/c/92259893-france's-new-president" title="France's New President" target="_self" rel="nofollow" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;"  ><img alt="France's New President" class="" height="111" src="http://img4.allvoices.com/thumbs/image/111/111/92259893-frances-new.jpg" width="111" /></a>
+                  <span> </span>
+                </div>  
+                <div class="thumbTitle">
+                  <a href="/cartoons/c/92259893-france's-new-president" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;" title="France's New President">France's New President</a>
+                </div>
+              </li>
+          
+              
+              
+                <li class="mediaThumbImgLarge">
+                <div class="thumbBG">
+                  <a href="/cartoons/c/92259892-postal-debt" title="Postal Debt" target="_self" rel="nofollow" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;"  ><img alt="Postal Debt" class="" height="111" src="http://img.allvoices.com/thumbs/image/111/111/92259892-postal-debt.jpg" width="111" /></a>
+                  <span> </span>
+                </div>  
+                <div class="thumbTitle">
+                  <a href="/cartoons/c/92259892-postal-debt" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;" title="Postal Debt">Postal Debt</a>
+                </div>
+              </li>
+          
+              
+                <li class="clearLine"> </li>
+              
+                <li class="mediaThumbImgLarge">
+                <div class="thumbBG">
+                  <a href="/cartoons/c/92259891-biden-comfortable-with-gay-marriage" title="Biden comfortable with gay marriage" target="_self" rel="nofollow" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;"  ><img alt="Biden comfortable with gay marriage" class="" height="111" src="http://img2.allvoices.com/thumbs/image/111/111/92259891-biden-comfortable.jpg" width="111" /></a>
+                  <span> </span>
+                </div>  
+                <div class="thumbTitle">
+                  <a href="/cartoons/c/92259891-biden-comfortable-with-gay-marriage" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;" title="Biden comfortable with gay marriage">Biden comfortable with gay marriage</a>
+                </div>
+              </li>
+          
+              
+              
+                <li class="mediaThumbImgLarge">
+                <div class="thumbBG">
+                  <a href="/cartoons/c/92259890-sendak-send-off" title="Sendak Send off" target="_self" rel="nofollow" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;"  ><img alt="Sendak Send off" class="" height="111" src="http://img3.allvoices.com/thumbs/image/111/111/92259890-sendak-send.jpg" width="111" /></a>
+                  <span> </span>
+                </div>  
+                <div class="thumbTitle">
+                  <a href="/cartoons/c/92259890-sendak-send-off" onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;" title="Sendak Send off">Sendak Send off</a>
+                </div>
+              </li>
+            <li class="tabPaging">
+              <div class="moreLink"><a href="/cartoons"  onclick="trackAction('Cartoon Of The Day','Contributed Event');return true;">See More Cartoons &raquo;</a></div>
+            </li>    
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+            <div style="border: 1px solid #A9A9A9;width: 334px;float: left;height: 250px;">
+        <a href="/write_now" rel="nofollow" title="American Pundit">
+            <img alt="Advertise_american_pundit_335_250" height="250" src="http://cache3.allvoices.com/assets/american_pundit/advertise_american_pundit_335_250-024daa73b39befb5b659c0e9938711cb.png" width="334" />
+            </a>
+            </div>
+            <div style="clear: both; padding-bottom:8px;"></div>
+		  
+			   <input id="event_id" name="event_id" type="hidden" value="12010658" />
+<input id="page_type" name="page_type" type="hidden" value="Event" />
+<input id="twitter_terms" name="twitter_terms" type="hidden" value="perth carl" />
+<div class="twitterWidgetWrapper" style="display: ">
+  <div id="twitterWidgetHeader">
+  </div>
+  <div class="twitterWidgetWrapperInner">
+    <div id="twtr-search-widget">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var TwitterStreamInstance;
+  $(document).ready(function() {
+  TwitterStreamInstance = new TwitterStream();
+  });
+</script>
+			 <div class="contentBox contentBoxUserEvent">
+  <h2 class="contentBoxHeading">Most Viewed Reports</h2>
+  <div class="contentBoxInner">
+    
+<ul class="relatedNewsReports">
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12114829-18-die-in-early-dawn-fire-in-butuan" rel="nofollow" title="18 Die in Early Dawn Fire in Butuan"><img alt="18 Die in Early Dawn Fire in Butuan" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/image/100/75/92258737-die-early.jpg" title="18 Die in Early Dawn Fire in Butuan" width="100" /></a>
+    <p class="report"><a title="18 Die in Early Dawn Fire in Butuan" href="/contributed-news/12114829-18-die-in-early-dawn-fire-in-butuan" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12114829-18-die-in-early-dawn-fire-in-butuan');trackAction('Most Viewed','Contributed Event');return true;">18 Die in Early Dawn Fire in Butuan</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/jhazzme" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">jhazzme</a>
+         | about 9 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" rel="nofollow" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..."><img alt="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/92247762-kate-middletons.jpg" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." width="100" /></a>
+    <p class="report"><a title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby');trackAction('Most Viewed','Contributed Event');return true;">Kate Middleton's mum Carole confirms: Kate and Will ready for royal ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/NinaRai" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">NinaRai</a>
+         | about 18 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12112173-us-government-reports-58-billion-budget-surplus-in-april-2012-first-time-since-2008" rel="nofollow" title="U.S. government reports $58 billion budget surplus in April 2012: ..."><img alt="U.S. government reports $58 billion budget surplus in April 2012: ..." class="thumb" height="75" src="http://img4.allvoices.com/thumbs/image/100/75/81093650-us-government.jpg" title="U.S. government reports $58 billion budget surplus in April 2012: ..." width="100" /></a>
+    <p class="report"><a title="U.S. government reports $58 billion budget surplus in April 2012: ..." href="/contributed-news/12112173-us-government-reports-58-billion-budget-surplus-in-april-2012-first-time-since-2008" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12112173-us-government-reports-58-billion-budget-surplus-in-april-2012-first-time-since-2008');trackAction('Most Viewed','Contributed Event');return true;">U.S. government reports $58 billion budget surplus in April 2012: ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VoiceforHope" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">VoiceforHope</a>
+         | about 16 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12109942-anders-breiviks-babylike-brain-an-intelek-international-study-of-psychopathy" rel="nofollow" title="Anders Breivik's baby-like brain: an Intelek International study of ..."><img alt="Anders Breivik's baby-like brain: an Intelek International study of ..." class="thumb" height="75" src="http://img.allvoices.com/thumbs/image/100/75/92124602-anders-breiviks.jpg" title="Anders Breivik's baby-like brain: an Intelek International study of ..." width="100" /></a>
+    <p class="report"><a title="Anders Breivik's baby-like brain: an Intelek International study of ..." href="/contributed-news/12109942-anders-breiviks-babylike-brain-an-intelek-international-study-of-psychopathy" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12109942-anders-breiviks-babylike-brain-an-intelek-international-study-of-psychopathy');trackAction('Most Viewed','Contributed Event');return true;">Anders Breivik's baby-like brain: an Intelek International study of ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/Poeticjazztice" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">Poeticjazztice</a>
+         | about 21 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction" rel="nofollow" title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..."><img alt="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." class="thumb" height="75" src="http://img2.allvoices.com/thumbs/image/100/75/0-remarks-against.jpg" title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." width="100" /></a>
+    <p class="report"><a title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." href="/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction');trackAction('Most Viewed','Contributed Event');return true;">TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/dhreff" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">dhreff</a>
+         | about 21 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" rel="nofollow" title="Library bans popular novel Fifty Shades of Grey for being too risque: ..."><img alt="Library bans popular novel Fifty Shades of Grey for being too risque: ..." class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/92251906-library-bans.jpg" title="Library bans popular novel Fifty Shades of Grey for being too risque: ..." width="100" /></a>
+    <p class="report"><a title="Library bans popular novel Fifty Shades of Grey for being too risque: ..." href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say');trackAction('Most Viewed','Contributed Event');return true;">Library bans popular novel Fifty Shades of Grey for being too risque: ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 14 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12112169-zimmerman-absent-for-his-arraignment-lawyer-pleads-not-guilty-on-his-behalf" rel="nofollow" title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin ..."><img alt="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin ..." class="thumb" height="75" src="http://img4.allvoices.com/thumbs/image/100/75/92251411-zimmerman-absent.jpg" title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin ..." width="100" /></a>
+    <p class="report"><a title="Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin ..." href="/contributed-news/12112169-zimmerman-absent-for-his-arraignment-lawyer-pleads-not-guilty-on-his-behalf" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12112169-zimmerman-absent-for-his-arraignment-lawyer-pleads-not-guilty-on-his-behalf');trackAction('Most Viewed','Contributed Event');return true;">Zimmerman absent as lawyer enters not guilty plea in Trayvon Martin ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 15 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes" rel="nofollow" title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..."><img alt="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." class="thumb" height="75" src="http://img.allvoices.com/thumbs/image/100/75/92247754-maurice-sendak.jpg" title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." width="100" /></a>
+    <p class="report"><a title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." href="/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes');trackAction('Most Viewed','Contributed Event');return true;">Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/MichelleDevlin" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">MichelleDevlin</a>
+         | about 19 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video" rel="nofollow" title="Troubling trend: teens getting drunk drinking hand sanitizers (video)"><img alt="Troubling trend: teens getting drunk drinking hand sanitizers (video)" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/image/100/75/92247867-troubling-trend.jpg" title="Troubling trend: teens getting drunk drinking hand sanitizers (video)" width="100" /></a>
+    <p class="report"><a title="Troubling trend: teens getting drunk drinking hand sanitizers (video)" href="/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video');trackAction('Most Viewed','Contributed Event');return true;">Troubling trend: teens getting drunk drinking hand sanitizers (video)</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 17 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12110989-republican-austerity-plan-just-as-bad-for-us-as-europe" rel="nofollow" title="Republican austerity plan: Just as bad for US as Europe"><img alt="Republican austerity plan: Just as bad for US as Europe" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/92247989-republican-austerity.jpg" title="Republican austerity plan: Just as bad for US as Europe" width="100" /></a>
+    <p class="report"><a title="Republican austerity plan: Just as bad for US as Europe" href="/contributed-news/12110989-republican-austerity-plan-just-as-bad-for-us-as-europe" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12110989-republican-austerity-plan-just-as-bad-for-us-as-europe');trackAction('Most Viewed','Contributed Event');return true;">Republican austerity plan: Just as bad for US as Europe</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/itobin53" class="userName" rel="nofollow" onclick="trackAction('Most Viewed','Contributed Event');return true;">itobin53</a>
+         | about 18 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+</ul>
+
+
+  </div>
+</div>
+			 <div class="contentBox contentBoxUserEvent">
+  <h2 class="contentBoxHeading">Most Commented Reports</h2>
+  <div class="contentBoxInner">
+    
+<ul class="relatedNewsReports">
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction" rel="nofollow" title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..."><img alt="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/0-remarks-against.jpg" title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." width="100" /></a>
+    <p class="report"><a title="TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ..." href="/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12110079-tv-remarks-against-raymart-and-claudine-sorry-said-tulfo-brothers-a-reaction');trackAction('Most Commented','Contributed Event');return true;">TV remarks against Raymart and Claudine sorry said, Tulfo brothers: A ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/dhreff" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">dhreff</a>
+         | about 21 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111322-green-jobs-and-the-obama-administration-the-future-is-now" rel="nofollow" title="Green jobs and the Obama Administration: The future is now"><img alt="Green jobs and the Obama Administration: The future is now" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/image/100/75/92247973-green-jobs.jpg" title="Green jobs and the Obama Administration: The future is now" width="100" /></a>
+    <p class="report"><a title="Green jobs and the Obama Administration: The future is now" href="/contributed-news/12111322-green-jobs-and-the-obama-administration-the-future-is-now" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111322-green-jobs-and-the-obama-administration-the-future-is-now');trackAction('Most Commented','Contributed Event');return true;">Green jobs and the Obama Administration: The future is now</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/DavaCastillo" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">DavaCastillo</a>
+         | about 18 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes" rel="nofollow" title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..."><img alt="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." class="thumb" height="75" src="http://img.allvoices.com/thumbs/image/100/75/92247754-maurice-sendak.jpg" title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." width="100" /></a>
+    <p class="report"><a title="Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ..." href="/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12110697-maurice-sendak-dead-at-83-where-the-wild-things-are-beloved-author-and-illustrator-passes');trackAction('Most Commented','Contributed Event');return true;">Maurice Sendak dead at 83: 'Where The Wild Things Are' beloved author ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/MichelleDevlin" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">MichelleDevlin</a>
+         | about 19 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12115247-scholar-claims-he-has-found-barrack-obamas-real-father" rel="nofollow" title="Scholar Claims He Has Found Barrack Obama’s REAL Father"><img alt="Scholar Claims He Has Found Barrack Obama’s REAL Father" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/image/100/75/92259993-scholar-claims.jpg" title="Scholar Claims He Has Found Barrack Obama’s REAL Father" width="100" /></a>
+    <p class="report"><a title="Scholar Claims He Has Found Barrack Obama’s REAL Father" href="/contributed-news/12115247-scholar-claims-he-has-found-barrack-obamas-real-father" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12115247-scholar-claims-he-has-found-barrack-obamas-real-father');trackAction('Most Commented','Contributed Event');return true;">Scholar Claims He Has Found Barrack Obama’s REAL Father</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/mhatter99" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">mhatter99</a>
+         | about 8 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" rel="nofollow" title="Library bans popular novel Fifty Shades of Grey for being too risque: ..."><img alt="Library bans popular novel Fifty Shades of Grey for being too risque: ..." class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/92251906-library-bans.jpg" title="Library bans popular novel Fifty Shades of Grey for being too risque: ..." width="100" /></a>
+    <p class="report"><a title="Library bans popular novel Fifty Shades of Grey for being too risque: ..." href="/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12113005-florida-library-bans-popular-novel-fifty-shades-of-grey-for-being-too-risque-what-do-you-say');trackAction('Most Commented','Contributed Event');return true;">Library bans popular novel Fifty Shades of Grey for being too risque: ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 14 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111052-libya-unpaid-rebels-surround-and-attack-government-headquarters" rel="nofollow" title="Libya: Unpaid rebels surround and attack government headquarters"><img alt="Libya: Unpaid rebels surround and attack government headquarters" class="thumb" height="75" src="http://img4.allvoices.com/thumbs/image/100/75/87569064-libya-unpaid.jpg" title="Libya: Unpaid rebels surround and attack government headquarters" width="100" /></a>
+    <p class="report"><a title="Libya: Unpaid rebels surround and attack government headquarters" href="/contributed-news/12111052-libya-unpaid-rebels-surround-and-attack-government-headquarters" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111052-libya-unpaid-rebels-surround-and-attack-government-headquarters');trackAction('Most Commented','Contributed Event');return true;">Libya: Unpaid rebels surround and attack government headquarters</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/northsunm32" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">northsunm32</a>
+         | about 19 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" rel="nofollow" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..."><img alt="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." class="thumb" height="75" src="http://img.allvoices.com/thumbs/image/100/75/92247762-kate-middletons.jpg" title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." width="100" /></a>
+    <p class="report"><a title="Kate Middleton's mum Carole confirms: Kate and Will ready for royal ..." href="/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111051-kate-middletons-mum-carole-confirms-kate-and-will-ready-for-a-baby');trackAction('Most Commented','Contributed Event');return true;">Kate Middleton's mum Carole confirms: Kate and Will ready for royal ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/NinaRai" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">NinaRai</a>
+         | about 19 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video" rel="nofollow" title="Troubling trend: teens getting drunk drinking hand sanitizers (video)"><img alt="Troubling trend: teens getting drunk drinking hand sanitizers (video)" class="thumb" height="75" src="http://img2.allvoices.com/thumbs/image/100/75/92247867-troubling-trend.jpg" title="Troubling trend: teens getting drunk drinking hand sanitizers (video)" width="100" /></a>
+    <p class="report"><a title="Troubling trend: teens getting drunk drinking hand sanitizers (video)" href="/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12111111-new-troubling-trend-teens-getting-drunk-drinking-hand-sanitizers-video');trackAction('Most Commented','Contributed Event');return true;">Troubling trend: teens getting drunk drinking hand sanitizers (video)</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 17 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12112434-us-education-get-a-degree-cnd-food-stamps-too" rel="nofollow" title="U.S. Education: Get a degree and food stamps too"><img alt="U.S. Education: Get a degree and food stamps too" class="thumb" height="75" src="http://img3.allvoices.com/thumbs/image/100/75/0-us-education.jpg" title="U.S. Education: Get a degree and food stamps too" width="100" /></a>
+    <p class="report"><a title="U.S. Education: Get a degree and food stamps too" href="/contributed-news/12112434-us-education-get-a-degree-cnd-food-stamps-too" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12112434-us-education-get-a-degree-cnd-food-stamps-too');trackAction('Most Commented','Contributed Event');return true;">U.S. Education: Get a degree and food stamps too</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/northsunm32" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">northsunm32</a>
+         | about 16 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+  <li onmouseout="this.className = 'relatedNewsReport'" onmouseover="this.className = 'relatedNewsReport shade'" class="relatedNewsReport">
+        <a href="/contributed-news/12109830-bank-of-america-showdown-in-nyc-tuesday-as-the-99-percent-stepup-their-protests" rel="nofollow" title="Bank Of America showdown in NYC Tuesday as the 99 percent step-up ..."><img alt="Bank Of America showdown in NYC Tuesday as the 99 percent step-up ..." class="thumb" height="75" src="http://img4.allvoices.com/thumbs/image/100/75/92245149-bank-america.jpg" title="Bank Of America showdown in NYC Tuesday as the 99 percent step-up ..." width="100" /></a>
+    <p class="report"><a title="Bank Of America showdown in NYC Tuesday as the 99 percent step-up ..." href="/contributed-news/12109830-bank-of-america-showdown-in-nyc-tuesday-as-the-99-percent-stepup-their-protests" onclick="ga_track_event('event','mostpop-widget','/contributed-news/12109830-bank-of-america-showdown-in-nyc-tuesday-as-the-99-percent-stepup-their-protests');trackAction('Most Commented','Contributed Event');return true;">Bank Of America showdown in NYC Tuesday as the 99 percent step-up ...</a></p>
+
+
+
+
+      <p class="user"><span class="by">By: </span><a href="/users/VeronicaRoberts" class="userName" rel="nofollow" onclick="trackAction('Most Commented','Contributed Event');return true;">VeronicaRoberts</a>
+         | about 20 hours ago
+        </p>
+      <div class="clearFix">&nbsp;</div>
+  </li>
+</ul>
+
+
+  </div>
+</div>
+            
+            	  		
+	<div id="google_ad_av_static_mid_rect_btf"  class="globalAdLargeRect">
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+      googletag.display('google_ad_av_static_mid_rect_btf');
+    });
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+        </div>
+
+		
+    </div>
+
+    <div class="heading">
+    <div class="headingText">
+    		<a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" rel="nofollow">Contributor Report</a>
+        
+    </div>
+   
+    <ul class="topTabs">
+        <li  >
+          <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/stories" class="tab" 
+				 
+	            title="News Stories - USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" >
+	            <span >News Stories: 17</span>
+	            <span class="cap"> </span>
+	        </a>
+	        
+    		</li>
+        <li  >
+          <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/blogs" class="tab" 
+				 
+	            title="Blogs - USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" >
+	            <span >Blog Posts: 3</span>
+	            <span class="cap"> </span>
+	        </a>
+	        
+    		</li>
+        <li  >
+          <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/videos" class="tab" 
+				 rel="nofollow" 
+	            title="Videos - USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" >
+	            <span >Videos: 0</span>
+	            <span class="cap"> </span>
+	        </a>
+	        
+    		</li>
+        <li  >
+          <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/images" class="tab" 
+				 
+	            title="Images - USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" >
+	            <span >Images: 24</span>
+	            <span class="cap"> </span>
+	        </a>
+	        
+    		</li>
+        <li  >
+          <a href="/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day/comments" class="tab" 
+				 rel="nofollow" 
+	            title="Comments - USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day" >
+	            <span id="comments_span">Comments: 2</span>
+	            <span class="cap"> </span>
+	        </a>
+	        	<div style="display:none;" id="comment_count">2</div>
+	        
+    		</li>
+		<!-- ADD EVENT SCORE METRICS TAB HEADER -->
+		<!-- END EVENT SCORE METRICS TAB HEADER -->
+    </ul>
+</div>
+
+
+</div>
+
+<!-- comment form -->
+<style type="text/css">
+form div.wordcount {
+    margin-left: 110px;
+}
+</style>
+<div class="siteEditFormRedBox" id="div_phone_option" style="display: none;">
+    <div class="siteEditForm smsInfo">
+
+        <div class="siteEditFormHeader">SMS and MMS Your Voice to allvoices</div>
+
+        <ul class="eventOptions">
+
+            <li>If you want to add your voice and contribute to this existing news event, use the event code
+                (Event Code: @12010658), that you will find on each news event page, as the first word of the
+                SMS or MMS message followed by a space then add your contribution (text, image or video). For example:
+                <em>@12010658 This is an amazing video of Greg Norman hitting a hole-in-one in Sydney, Australia.</em>
+                The first word of the message should be @12010658 (event code), to make sure the system attaches
+                your voice to the right news event.</li>
+
+            <li>Phone numbers to send SMS your voice are:
+                
+                <ul>
+                    <li><strong>International</strong> – (<a href="/report-news-via-your-cellphone" title="SMS Coverage">Please check the SMS coverage table</a>)<br/>
+                        +45 609 910280, +61 427 229537 or +44 780 0000352</li>
+                    <li><strong>United States SMS Short Code</strong><br/>
+                        VOICES (864237)</li>
+                    <li>For videos and images, use mms@allvoices.com or report@allvoices.com</li>
+                </ul>
+
+            </li>
+
+            <li>To report news via SMS or MMS check out
+                <a href="/report-news-via-your-cellphone" title="SMS Coverage">the following link for instructions</a>.</li>
+        </ul>
+
+        <p class="siteEditFormButtons">
+            <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  rel="nofollow" title="Close">
+                            <span><span >Close</span></span><button onclick="RedBox.close();return false;" type="button">&nbsp;</button></a>
+        </p>
+
+    </div>
+</div>
+
+
+
+
+<div id="create_event_opts" class="inviteFriendsPopup" style="display:none;">
+    <div class="popupClose"><a href="#" rel="nofollow" onclick="RedBox.close(); RedBox.showSelectBoxes();return false;">[ Close Window ]</a></div>
+    <div class="inviteFriendsPopupHeader">Welcome to your news event page</div>
+    <p>You have created the news event “USS warship Carl Vinson docks in Freemantle ahead of ANZAC Day” and it can be found at:<br />
+        <a href="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" title="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" class="blink">http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day</a>.</p>
+    <div class="inviteFriendsForm">
+        
+
+<div id="invite_progress_bar" style="display: none;" class="ajaxArrowSpinner">
+    Please wait while we send your shared content</div>
+<div id="invite_success_msg" style="display:none;" class="ajaxArrowSpinnerSuccess">
+    Your news report has been shared successfully</div>
+
+<div id="div_invite_friend">
+
+    <div class="inviteFriendsPopupSubHeader">Invite your friends</div>
+    <!-- Enter your friends email addresses separated by commas in the share with field below.  -->
+    <form id="form_invite_friend" name="form_invite_friend" action="/content/send_event_invitation/12010658"
+          method="post" onsubmit="new Ajax.Request('/content/send_event_invitation/12010658', {asynchronous:true, evalScripts:true, onComplete:function(request){hideDiv('invite_progress_bar');if (dialogbox_response_eval('div_invite_friend','error prohibited this content from being shared',request.responseText,'')){$('invite_success_msg').show();}else{$('div_invite_friend').show();}}, onLoading:function(request){hideDiv('div_invite_friend');showDiv('invite_progress_bar');hideDiv('email_form_part_257122');}, parameters:get_all_email_address()
+            }); return false;">
+
+        <input type="hidden" value="http://www.allvoices.com/contributed-news/12010658-uss-warship-carl-vinson-docks-in-freemantle-ahead-of-anzac-day" name="page_url" id="page_url"/>
+        <input type="hidden" value="Event" name="content_type" id="content_type"/>
+
+        
+        <div class="siteEditForm">
+            <div class="fieldSet"><label>Share With:</label>
+                <textarea onclick="if(this.value=='Enter email addresses separated by commas'){this.value='';}" id="invite_email_address" name="invite_email_address" rows="2" cols="0" style="width:430px;">Enter email addresses separated by commas</textarea>
+            </div>
+
+            <div class="fieldSet"><label>Your Message:</label>
+                <textarea id="invite_message" name="invite_message" class="textArea" rows="2" cols="0" style="width:430px;">Take a look at my news report on allvoices.com!</textarea>
+            </div>
+
+            <p class="siteEditFormButtons">
+                <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  id="share_button" rel="nofollow" title="Share">
+                            <span><span >Share</span></span><button onclick="$('div_invite_friend').hide();return validate_invite_friend($('invite_email_address').value,'div_invite_friend','width:400px;');" type="submit" name="share" id="share">&nbsp;</button></a>
+                <a href="javascript:;" class="graphicBtnSmall greenGraphicBtnSmall"  rel="nofollow" title="Close">
+                            <span><span >Close</span></span><button onclick="RedBox.close();return false;" type="submit">&nbsp;</button></a>
+            </p>
+        </div>
+
+    </form>
+</div>
+
+    </div>
+
+ </div>
+
+
+
+
+ 		<div class="clearFix" id="empty_div_before_footer_ad">&nbsp;</div>
+
+        		  		
+	<div id="google_ad_av_static_leaderboard_btf"  class="globalAdFooter">
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+      googletag.display('google_ad_av_static_leaderboard_btf');
+    });
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+        <div class="hoverContextBox" id="hoverContextBox" style="display: none;" onmouseover="pauseHoverContextHide()" onmouseout="hideHoverContext()"> </div>
+        <div id="credToolTipMsg" style="display: none;">This <strong><em>beta</em></strong> report credibility rating is intended to help our community sort through uncensored citizen media reports.  For more information, see the <a href="http://www.allvoices.com/help/report_credibilty">Report Credibility</a> section in our <a href="http://www.allvoices.com/help/">FAQ</a></div>
+
+
+        
+
+<div class="siteMapWrapper" id="siteMapWrapper">
+    <h2>Sitemap</h2>    
+    <div class="siteMapSections">
+        <div class="siteMapSection">
+            <h3>Site Links</h3>
+            <ul>
+                <li><a href="http://www.allvoices.com" onclick="reset_app_data();" rel="nofollow" title="Home">Home</a></li> 
+ 				<li><a href="http://www.allvoices.com" title="User Events">Contributed Reports</a></li> 
+                <li><a href="/mainstream-news" title="Mainstream News">Mainstream News</a></li>
+                <li><a href="" title="All News">All News</a></li>
+                <li><a href="/people" title="People">People</a></li>
+                <li><a href="/contributors" title="Contributors">Contributors</a></li>
+                <li><a href="/images" title="Images">Images</a></li>
+                <li><a href="/videos" title="Videos">Videos</a></li>
+                <!--<li><a href="/q_and_a" title="Questions">News Questions</a></li>-->
+                <li><a href="/cartoons" title="Cartoons">Cartoons</a></li>
+                <li><a href="/feeds" rel="nofollow"  title="RSS Feeds">RSS Feeds</a><br/></li>
+                <li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <div class="siteMapSection">
+            <h3>Site Topics</h3>
+            <ul>
+                    <li><a title="All"  href="/" >All</a></li>
+                    <li><a title="Politics"  href="/political-news" >Politics</a></li>
+                    <li><a title="Sports"  href="/sports-news" >Sports</a></li>
+                    <li><a title="Entertainment"  href="/entertainment-news" >Entertainment</a></li>
+                    <li><a title="Business"  href="/business-news" >Business</a></li>
+                    <li><a title="Science &amp; Technology"  href="/technology-news" >Science &amp; Technology</a></li>
+                    <li><a title="Conflict &amp; Tragedy"  href="/disasters-news" >Conflict &amp; Tragedy</a></li>
+                    <li><a title="Odd"  href="/odd-news" >Odd</a></li>
+                    <li><a title="Your Story"  href="/your-story" >Your Story</a></li>
+                    <li><a title="Health"  href="/health-news" >Health</a></li>
+                    <li><a title="Travel"  href="/travel-news" >Travel</a></li>
+                    <li><a title="Green"  href="/green-news" >Green</a></li>
+                    <li><a title="Humanitarian"  href="/humanitarian-news" class='active_link'>Humanitarian</a></li>
+                    <li><a title="Causes"  href="/causes-news" >Causes</a></li>
+                    <li><a title="Obituaries"  href="/obituaries-news" >Obituaries</a></li>
+                    <li><a title="Arts &amp; Culture"  href="/arts-culture-news" >Arts &amp; Culture</a></li>
+                    <li><a title="Funny"  href="/funny-news" >Funny</a></li>
+                    <li><a title="Life Style"  href="/lifestyle-news" >Life Style</a></li>
+                    <li><a title="Spirituality &amp; Religion"  href="/spirituality-religion-news" >Spirituality &amp; Religion</a></li>
+                    <li><a title="Education"  href="/education-news" >Education</a></li>
+            </ul>
+        </div>
+
+        <div class="siteMapSection">
+            <h3>Contributions</h3>
+            <ul>
+                <li><a href="/post_event" rel="nofollow" title="Report Your News" onclick="$('#redirectUrl').val('/post_event');showLoginBox($(this));return false;">Report Your News</a><br/><br/></li>
+                <li><a href="/leader_board">User Leader Board</a><br/><br/></li>
+                <li style="font-family:arial,helvetica,sans-serif;">Add your voice and contribute via your cellphone - check out how to <a href="/report-news-via-your-cellphone" title="Report News via Your Cellphone">Report News via Your Cellphone</a><br/><br/></li>
+                <li><a href="/blog_widget" rel="nofollow" title="Blog Widget">Blog Widget</a></li>
+                <li><a href="/widget-for-blog-owner" rel="nofollow" title="Widget for Blog Owner">Widget for Blog Owner</a><br/><br/></li>
+                <li><a href="/election2012" title="American Pundit">American Pundit</a><br/><br/></li>
+                 <li><a href="/adtech" title="ad:tech Coverage">ad:tech Coverage</a><br/><br/></li>
+            </ul>
+        </div>
+
+        <div class="siteMapSection">
+            <h3>Help and Accounts</h3>
+            <ul>
+                <li><a href="/help"  rel="nofollow" title="Help">Help</a><br/><br/></li>
+            </ul>
+        </div>
+
+        <div class="siteMapSection">
+            <h3>Administrative</h3>
+            <ul>
+                <li><a href="http://www.allvoices.com" onclick="reset_app_data();" rel="nofollow" title="Home">Home</a></li> 
+                <li><a href="/about"  rel="nofollow" title="About us">About us</a></li>
+                <li><a href="/team" rel="nofollow" title="Team">Team</a></li>
+                <li><a href="/terms"  rel="nofollow" title="Terms of Use">Terms of Use</a></li>
+                <li><a href="/privacy"  rel="nofollow" title="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="/contact"  rel="nofollow" title="Contact Us">Contact Us</a><br/><br/></li>
+                <li><a href="/press"  rel="nofollow" title="Press">Press</a></li>
+                <li><a href="/partners"  rel="nofollow" title="Partners">Partners</a></li>
+                <li><a href="/incentive" title="Incentive Program">Incentive Program</a></li>
+                <li><a href="/healthplan" title="Health Plan">Health Plan</a></li>
+                <li><a href="http://allvoices.wordpress.com" title="Blog" target="_blank" rel="nofollow">Blog</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="footerCopyRights" id="footerCopyRights"><br/>Use of this site is governed by our <a href="/terms" rel="nofollow" >Terms of Use Agreement</a> and <a href="/privacy" rel="nofollow" >Privacy Policy</a>.<br/><br/>&copy; Allvoices, Inc 2008-2012. All rights reserved.</div>
+
+
+    
+<script type="text/javascript">
+<!--
+    function changeTourButtons(id) {
+        if(document.getElementById('tourBtn' +id)) {
+            var clicked = document.getElementById('tourBtn' +id);
+            var list = clicked.parentNode.parentNode.getElementsByTagName("LI");
+
+            for(i = 0; i < 5; i++) {
+                if(list[i]) {
+                    list[i].className = "";
+                }
+
+                var liId = i+1;
+                if(document.getElementById('tourLeft' + liId)) {
+                    document.getElementById('tourLeft' + liId).style.display = "none";
+                }
+                if(document.getElementById('tourRight' + liId)) {
+                    document.getElementById('tourRight' + liId).style.display = "none";
+                }
+            }
+
+            clicked.parentNode.className = "selected";
+
+            if(document.getElementById('tourLeft' + id)) {
+                document.getElementById('tourLeft' + id).style.display = "";
+            }
+            if(document.getElementById('tourRight' + id)) {
+                document.getElementById('tourRight' + id).style.display = "";
+            }
+        }
+    }
+//-->
+</script>
+
+<div id="tourWrapper" class="tourWrapper" style="display: none;">
+   <div class="tourWait">Please wait a moment while the tour loads...</div>
+</div>
+
+
+    
+
+
+
+
+	</div>
+	
+	<script src="http://ad.allvoices.com/mint/?js" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+<!--//
+	$(function() {
+	  loadBox();
+	});
+
+
+
+//-->
+</script>
+
+
+       <script type="text/javascript">
+       document.getElementById('fbLike_1').innerHTML = '<fb:like href=""  layout="button_count"  show_faces="false"></fb:like>';
+       </script>
+       <script type="text/javascript">
+       document.getElementById('fbLike_2').innerHTML = '<fb:like href=""  send="true" show_faces="false"></fb:like>';
+       </script>
+
+
+<script>
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    // Setup a callback to track once the script loads.
+    twitterWidgets.onload = _ga.trackTwitter;
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+</script>
+<script>
+	 var block_refresh = false; 
+	setTimeout("triggerRefresh();",(180000));
+</script>
+
+<script>    
+      var track_user_activity = false;
+</script>
+      <script language="JavaScript" src="http://edge.aperture.displaymarketplace.com/displayscript.js?liveconclientID=4707285357632&PageID=12010658&rand=1336556065">
+      </script>
+      <noscript>
+      <img src="http://aperture.displaymarketplace.com/audmeasure.gif?liveconclientID=4707285357632&PageID=12010658&EventType=view&rand=1336556065" height="1" width="1"border="0" />
+      </noscript>
+      <img src="http://aperture.displaymarketplace.com/audmeasure.gif?liveconclientID=4707285357632&PageID=12&EventType=view&rand=1336556065" height="1" width="1" border="0"/>
+
+
+
+
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<script type="text/javascript">_ga.trackFacebook();</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/32/eum/rum.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","e35302c4b3",74151,"dgwKFkBXVAgDSktURlANEE1XTl0KEmcRQVRUFwEG",0,621,new Date().getTime(),"","","","",""])</script></body>
+  
+</html>

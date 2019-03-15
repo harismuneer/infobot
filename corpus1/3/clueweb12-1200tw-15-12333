@@ -1,0 +1,1627 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-27T12:47:04Z
+WARC-TREC-ID: clueweb12-1200tw-15-12333
+WARC-Target-URI: http://www.straitstimes.com/BreakingNews/World/Story/STIStory_782148.html
+WARC-Payload-Digest: sha1:AG72LRHNJL67MJFYXZF7ZNGIREHXQFRR
+WARC-IP-Address: 23.15.7.34
+WARC-Record-ID: <urn:uuid:046298c6-67bf-4e5c-a516-2b5cc98a3bb2>
+Content-Type: application/http; msgtype=response
+Content-Length: 76525
+
+HTTP/1.0 200 OK
+Server: Sun-ONE-Web-Server/6.1
+Content-Type: text/html
+Expires: Tue, 27 Mar 2012 12:47:05 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 27 Mar 2012 12:47:05 GMT
+Connection: close
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta  name="ROBOTS" content="NOARCHIVE">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+		
+			<title>Tiny puppy in California could be world's smallest</title>
+	
+					<meta name="title" content="Tiny puppy in California could be world's smallest" /> 
+		<meta name="description" content=" SACRAMENTO, California (AP) - A puppy named after one of the worlds biggest pop stars could set the worlds record for tiniest dog. " /> 
+					<link rel="image_src" href="/STI/STIMEDIA/image/20120327/beyoncepuppy-apt.jpg" />
+				
+	    	    	<link href="/STI/STIMEDIA/2011/style/bn_story.cssi" rel="stylesheet" type="text/css" />
+		
+				
+		<script type="text/javascript" src="/STI/STIMEDIA/2011/js/common.js"></script>
+	
+	<link rel='shortcut icon' href='/STI/STIMEDIA/common/favicon.ico'>
+	<link rel="apple-touch-icon" href="/STI/STIMEDIA/common/57-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/STI/STIMEDIA/common/72-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/STI/STIMEDIA/common/114-iphone4.png" />
+					<script>
+var d_names = new Array("Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday");
+var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+function getURLParam(strParamName) {
+    var strReturn = "";
+    var strHref = window.location.href;   
+    if ( strHref.indexOf("?") > -1 ){
+            var strQueryString = strHref.substr(strHref.indexOf("?"));
+            var aQueryString = strQueryString.split("&");
+            for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+                    if (aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+                            var aParam = aQueryString[iParam].split("=");
+                            strReturn = aParam[1];
+                            break;
+                    }
+            }
+    }
+    return strReturn;
+}
+
+function generateNavBar(type){
+	var nav_item_str="";
+
+	for(i=1;i<type.length;i++){
+	  if (type[i].Class == ""){
+			if(type[i].Name == "School Pocket Money Fund")
+			{
+				nav_item_str=nav_item_str+'<li> <a href="'+type[i].Link+'" style="height:28px; line-height:125%;">'+type[i].Name+'</a></li>';
+			}
+			else
+			{
+				nav_item_str=nav_item_str+'<li> <a href="'+type[i].Link+'">'+type[i].Name+'</a></li>';
+			}
+  		}else {
+	  		nav_item_str=nav_item_str+'<li class="'+type[i].Class+'"> <a href="'+type[i].Link+'">'+type[i].Name+'</a></li>';
+  		}
+	}
+	
+	var nav_item_header="";
+	
+	if (type[0].Link!=""){
+		nav_item_header='<a href="'+type[0].Link+'" class="drop">'+type[0].Name+'</a>';
+		
+	}else {
+		nav_item_header='<a class="drop">'+type[0].Name+'</a>';
+	}
+	
+var nav_str=nav_item_header+'<div class="dropdown_1column"><div class="col_1"><ul class="greybox">'+nav_item_str+'</ul></div></div>';
+      
+    return nav_str;
+}
+
+function generateFooterItem(type){
+	var nav_footer_item = "";
+	var last_item_count=type.length;
+	
+	for(i=0;i<last_item_count;i++){
+	
+	    if (!type[i].footer)
+	      continue;
+	    
+	      if (i > 0){
+			nav_footer_item=nav_footer_item+" &#8226; ";
+		}
+	        
+		if (type[i].Link!=""){
+			nav_footer_item=nav_footer_item+'<a href="'+type[i].Link+'">'+type[i].Name+'</a>';
+		}else {
+			
+			nav_footer_item=nav_footer_item+'<a >'+type[i].Name+'</a>';
+		}
+		
+		if (i==0){
+			nav_footer_item=nav_footer_item+": ";
+		}
+		
+	}
+	 nav_footer_item=nav_footer_item+"<br />";
+	 
+	 return nav_footer_item;
+}
+
+function chkSearch(searchfrm)
+{
+var inputString = searchfrm.q.value;
+
+if(inputString=="Search StraitsTimes.com"){
+alert("Please do not leave your first search field empty.");
+return false;
+} else {
+
+var messageIndex = "STI";
+var selectedValue = messageIndex;
+searchfrm.method ="POST";
+searchfrm.action ="/vgn-ext-templating/sti/SearchPage.jsp";
+searchfrm.submit();
+
+}
+
+}
+function getCommenDate(){
+	 var d = new Date();
+	 d.setDate(d.getDate()-1);
+	 var mth=d.getMonth()+1;
+	 if (mth < 10)
+		 mth="0"+mth;
+	 var date = d.getDate();
+	 if(date < 10)
+		date = "0" + date;
+	 return (d.getFullYear()+""+mth+""+date+"T00:00:00");
+}
+
+var vgnpdateparam=getURLParam('vgnpdate');
+var vgnpreviewparam=getURLParam('vgnpreview');
+var homeurl="http://www.straitstimes.com";
+</script>
+			
+		
+								
+		<script type="text/javascript">		
+	var pageinfo = {};
+			pageinfo.hidden_displayMastDate="Tuesday, 27 March 2012 ";		
+				pageinfo.hidden_launchDate="20120327";
+							pageinfo.hidden_section_name='Breaking News';
+						pageinfo.url='http://www.straitstimes.com/BreakingNews/World/Story/STIStory_782148.html';			
+					pageinfo.p_COTag="STI-BREAK";
+	    	    pageinfo.articleid="782148";
+		    	    		pageinfo.GALaunchDate="March 27, 2012 Tuesday ";
+    	    	    		pageinfo.facebookAbstract=" SACRAMENTO, California (AP) - A puppy named after one of the worlds biggest pop stars could set the worlds record for tiniest dog. ";
+    		 	   		pageinfo.adtag="bn_world_story";
+   	
+	var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11908285-1']);
+	if (pageinfo.GALaunchDate){
+	  _gaq.push(['_setCustomVar', 1,'Launchdate',pageinfo.GALaunchDate,3]);
+	  _gaq.push(["_setCustomVar", 2,"Abstract", pageinfo.facebookAbstract,3]);
+           }
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>		
+					
+<!-- Begin comScore Tag -->
+<script>
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+<script>
+COMSCORE.beacon({c1:2,c2:6288331,c3:"",c4:"",c5:"",c6:"",c15:""});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6288331&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+	<!-- Dennis -->
+	<script language='JavaScript' type='text/javascript' src='/STI/STIFILES/media_ads/adscripts2.js'></script>			
+	<!---Dennis--->
+</head>
+<body>		
+						<script>document.write("<iframe width='0' height='0' src='http://www.straitstimes.com/Prime+News/clear.gif?"+new Date().getTime()+"' frameborder='no' style='display: none;'></iframe>");</script> 
+<!--start of utility bar-->
+<div id="utilWrap">
+  <div id="util">
+    <div class="float-left"><a href="http://www.sph.com.sg"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/sphWebsite.png" alt="Sph Website" /></a></div>
+    <div class="float-right">
+      <div class="util_Date" id="span_displayMastHead"></div><div class="util_Updated">Last updated at 8.26 pm</div>
+      <div class="util_Reader"><a href="/STI/STIMEDIA/sp/reader/streader.html">Reader</a></div>
+      <div class="util_Epaper"><a class="EP">E-paper</a></div>
+      <script language='javascript'> 
+	var user=jQuery.cookie("HTTP_user_id");
+	var luser="";
+	if (user!=null) {
+		luser=user.toLowerCase();
+		if (luser == "anonymous" || luser == "anonymous|anonymous") {
+			window.location= p_logoutLink;
+		}
+	}
+    if(user != null && user !=0 && luser!=null && luser != "anonymous" && luser != "anonymous|anonymous") {
+	    document.writeln('<div class="util_Login">');
+		document.writeln("Hello, ");		
+		if(user ==0) {
+			// do nothing
+		} else {
+			document.writeln(user);
+			document.writeln("</div>");
+		}
+		//http://soet.asia1.com.sg/sub/updateinformation.action?userId=' + user + '
+		//http://www.straitstimes.com/EditAccountPage.html
+		document.writeln('<div class="util_Subscribe"><a href="http://subst.asiaone.com/sub/updateinformation.action">My Account</a></div>');		
+		document.writeln('<div class="util_Subscribe"><a href="http://sphauth.asiaone.com/amserver/UI/Logout?logoutdest=http://www.straitstimes.com">Log Out</a></div> ');
+	} else {
+		document.writeln('<div class="util_Login"><a href="http://sphreg.asiaone.com/RegAuth2/stpLogin.html?goto=http://www.straitstimes.com/vgn-ext-templating/sti/common/STIRedirect.jsp?dlink='+location.href+'" onclick="jQuery.colorbox({width:\'522px\',height:\'330px\', href:\'/STI/STIFILES/ssi/2011/login/login-in-form.html\',scrolling:false});return false;">Log in</a></div>');
+		document.writeln('<div class="util_Subscribe"><a href="http://www.stsubscribe.com.sg/">Subscribe</a></div>');
+	}
+	//document.writeln("</table>")
+   </script>
+    </div>
+  </div>
+</div>
+<!--end of utility bar-->
+
+<div id="leaderboardWrap">
+  <div id="leaderboard">
+  <div class="float-left">
+  
+
+ 
+			
+		
+			
+					<!--start of leaderboard-->
+			<script language="JavaScript1.1" src="http://adtag.asiaone.com/tag/st/js/st_bn_world_story_lb.js"></script>
+
+				
+		
+        		 
+		
+							</div>
+		<div class="float-right">
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.st701banner { width:222px; overflow:hidden; background:#FFFFFF; }
+.st701banner img { border:none; }
+.st701-clearboth { clear:both; height:0; }
+.st701-nav { width:220px; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#333333; border:solid 1px #dfe3e6; text-transform:uppercase; line-height:100%; }
+.st701-nav ul, .st701-nav ul li { margin:0; padding:0; }
+.st701-nav li { float:left; list-style:none outside none; height:21px; }
+.st701-nav a { display:block; height:16px; text-align:center; padding:5px 0 0 0; background:url(http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st701-nav-bkgrd.gif) bottom repeat-x #FFFFFF; }
+.st701-nav a:link, .st701-nav a:active, .st701-nav a:visited { color:#333333; text-decoration:none; }
+.st701-nav a:hover { color:#000000; text-decoration:underline; }
+.st701-jobs { border-left:solid 6px #009ddc; width:40px; }
+.st701-cars { border-left:solid 6px #cc0000; width:42px; }
+.st701-property { border-left:solid 6px #669900; width:68px; }
+.st701-class { border-left:solid 6px #ff9900; width:46px; }
+</style>
+</head>
+
+<body>
+<!-- ST701 BANNER start -->
+<div class="st701banner">
+    <div><a href="http://www.st701.com/?utm_source=StraitsTimes&utm_medium=Header&utm_campaign=SPH" target="_blank"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st701-stjobs-main.gif" alt="STJOBS.sg" width="222" height="67" border="0" /></a></div>	
+    <div class="st701-nav">
+        <ul>
+        <li><a href="http://www.stjobs.sg/?utm_source=StraitsTimes&utm_medium=Header&utm_campaign=SPH" target="_blank" class="st701-jobs">Jobs</a></li>
+        <li><a href="http://cars.st701.com/?utm_source=StraitsTimes&utm_medium=Header&utm_campaign=SPH" target="_blank" class="st701-cars">Cars</a></li>
+        <li><a href="http://property.st701.com/?utm_source=StraitsTimes&utm_medium=Header&utm_campaign=SPH" target="_blank" class="st701-property">Property</a></li>
+        <li><a href="http://shops.st701.com/?utm_source=StraitsTimes&utm_medium=Header&utm_campaign=SPH" target="_blank" class="st701-class">Shops</a></li>
+        </ul>
+        <div class="st701-clearboth"></div>
+    </div>
+</div>
+<!-- ST701 BANNER ends -->
+</body>
+</html>
+			
+		<!--
+		<img width="222" height="90" border="0" usemap="#Map2" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st701rightear.gif">
+		<map id="Map2" name="Map2">
+		  <area title="Singapore Classifieds at ST701" target="_blank" href="http://www.st701.com/" coords="0,0,221,66" shape="rect">
+		  <area title="Search for jobs at ST701 JOBS" target="_blank" href="http://jobs.st701.com/?utm_source=StraitsTimes&utm_medium=Banner&utm_campaign=SPH" coords="1,67,43,89" shape="rect">
+		  <area title="Search for cars at ST701 CARS" target="_blank" href="http://cars.st701.com/?utm_source=StraitsTimes&utm_medium=Banner&utm_campaign=SPH" coords="44,67,93,89" shape="rect">
+		  <area title="Search for property at ST701 PROPERTY" target="_blank" href="http://property.st701.com/?utm_source=StraitsTimes&utm_medium=Banner&utm_campaign=SPH" coords="94,67,168,89" shape="rect">
+		  <area title="Search for products and services at ST701 SHOPS" target="_blank" href="http://shops.st701.com/?utm_source=StraitsTimes&utm_medium=Banner&utm_campaign=SPH" coords="169,67,221,89" shape="rect">
+		</map>
+		-->
+		
+		</div>
+	  
+		<div class="clear0px">&nbsp;</div>
+	</div>
+</div>
+<!--start of st-->
+<div id="stWrap">
+	<div id="st">
+		<div class="float-right" style="height:30px; margin:12px 0pt 0pt; width: 334px;">
+		<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<div></div>
+<div class="weather"><a href="/Weather/weather_forecast.html">Singapore weather</a><div class="low">25°C</div>&nbsp;-
+   <div class="high">32°C</div>
+</div>
+		<form name="searchformtop" onSubmit="return chkSearch(document.searchformtop);" >
+			<fieldset class="search">
+			<input name="q"  type="text" class="graybox" value="Search StraitsTimes.com" onclick="this.value='';jQuery(this).removeClass();jQuery(this).addClass('box');"/>
+			<button class="btn" title="Submit Search"  type="Submit">Search</button>
+			</fieldset>
+		</form>
+		<!-- End Search Field Item -->
+		</div>
+		<div class="clear1px">&nbsp;</div>
+	</div>
+</div>
+<!--end of st-->
+
+
+<!--start of nav-->
+<div id="navWrap">
+	<div id="nav">
+		<!--start of mega navigation-->
+		<ul id="menu" style="width: 960px;">
+			<div class="menuhome" ><a id="home_link">&nbsp;</a></div>
+			<li id="header_navbar_bn"></li>      
+
+			<!-- End Breaking News Item -->
+			<li id="header_navbar_prem"></li>      
+			<!-- End Premium Item -->
+			<li><a href="http://www.straitstimes.com/STI/STIMEDIA/sp/stsite/section-razorTV.html" class="drop">Razor TV</a>
+			<div class="dropdown_1column">
+			  <div class="col_1">
+				<ul class="greybox">
+					  <li> <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/stsite/section-razorTV.html" target="_blank" >Top Stories</a> </li>
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/news/" target="_blank" >News</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/currentaffairs/" target="_blank" >Current Affairs</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/entertainment/" target="_blank" >Entertainment</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/lifestyle/" target="_blank" >Lifestyle</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/lifestyle/Food/" target="_blank" >Food</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/lifestyle/fashion/" target="_blank" >Fashion</a> </li> 
+					  <li> <a href="http://www.razor.tv/site/servlet/segment/main/most_popular" target="_blank" >Popular</a> </li> 
+				</ul>
+			  </div>
+			</div>
+			</li>
+			<!-- End Razor TV Item -->
+			<li><a href="http://www.straitstimes.com/STI/STIMEDIA/sp/stsite/section-stomp.html" class="drop">Stomp</a>
+			<div class="dropdown_1column">
+			  <div class="col_1">
+				<ul class="greybox">
+					  <li> <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/stsite/section-stomp.html" target="_blank" >What's Hot</a> </li>
+					  <li> <a href="http://club.stomp.com.sg/clubstomp" target="_blank" >Club Stomp</a> </li> 
+					  <li> <a href="http://talkback.stomp.com.sg/forums/index.php" target="_blank" >Talkback</a> </li> 
+					  <li> <a href="http://www.stomp.com.sg/isayyousay/" target="_blank" >I Say, You Say</a> </li> 
+					  <li> <a href="http://youthphoria.stomp.com.sg/" target="_blank" >Youthphoria</a> </li> 
+					  <li> <a href="http://thecourtroom.stomp.com.sg/courtroom" target="_blank" >Court Room</a> </li> 
+					  <li> <a href="http://www.stomp.com.sg/asklibby/" target="_blank" >Ask Libby</a></li> 
+					  <li> <a href="http://getai.stomp.com.sg/getai/" target="_blank" >Getai A-go-go</a> </li> 
+					  <li> <a href="http://www.stomp.com.sg/lovein/" target="_blank" >Love Stories</a> </li> 
+					  <li> <a href="http://diy.stomp.com.sg/" target="_blank" >DIY Video</a> </li> 
+					  <li> <a href="http://reallife.stomp.com.sg/reallife/" target="_blank" >Reallife.sg</a> </li> 
+					  <li> <a href="http://www.stomp.com.sg/heygoondus/" target="_blank" >Hey Goondus!</a> </li>
+				</ul>
+			  </div>
+			</div>
+			</li>
+			<!-- End Stomp Item -->
+			<li id="header_navbar_community"></li>
+			<!-- End Community Item -->
+			<li id="header_navbar_multimedia"></li>      
+			<!-- End Multimedia Item -->		
+			<li id="header_navbar_features"></li>      
+			<!-- End Features Item -->
+			<li id="header_navbar_projects"></li>            
+			<!-- End Projects Item -->
+
+			<li><a class="drop" href="http://www.st701.com/">Classifieds</a>
+			<div class="dropdown_1column">
+			  <div class="col_1">
+				<ul class="greybox">
+					<li> <a href="http://www.straitstimes.com/STI/mnt/html/st701/jobs/">Jobs</a> </li>
+					<li> <a href="http://www.straitstimes.com/STI/mnt/html/st701/cars/">Cars</a> </li>
+					<li> <a href="http://www.straitstimes.com/STI/mnt/html/st701/property/">Property</a> </li>
+					<li> <a href="http://www.straitstimes.com/STI/mnt/html/st701/shops/">Shops</a> </li>
+				</ul>
+			  </div>
+			</div>
+			</li>      	  
+			<li>
+			<a class="drop" href="#">Microsites</a>
+			<div class="dropdown_1column align_right">
+			  <div class="col_1">
+				<ul class="greybox">
+					<li><a href="/Parliament/Parliament.html">Parliament</a></li>
+					<li><a href="/Motoring/Motoring.html">Motoring</a></li>
+				</ul>
+			  </div>
+			</div>
+			</li>
+		</ul>
+
+
+		<!--End .social-->
+		<!--end of mega navigation-->
+		<div class="clear1px">&nbsp;</div>
+	</div>
+</div>
+<!--end of nav-->			
+				
+		
+	
+
+				<script>
+	var xmlHttp;
+	function srvTime(){
+		try {
+			//FF, Opera, Safari, Chrome
+			xmlHttp = new XMLHttpRequest();
+		}
+		catch (err1) {
+			//IE
+			try {
+				xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+			}
+			catch (err2) {
+				try {
+					xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+				}
+				catch (eerr3) {
+					//AJAX not supported, use CPU time.
+					alert("AJAX not supported");
+				}
+			}
+		}
+		xmlHttp.open('HEAD',window.location.href.toString(),false);
+		xmlHttp.setRequestHeader("Content-Type", "text/html");
+		xmlHttp.send('');
+		return xmlHttp.getResponseHeader("Date");
+	}
+
+	
+	//var date = new Date(st);
+	
+	
+	
+	if (pageinfo.hidden_launchDate) {
+		navdate = pageinfo.hidden_launchDate;
+		jQuery("#span_displayMastHead").text(pageinfo.hidden_displayMastDate);
+		epaper_date = navdate.substring(0, 4) + "-" + navdate.substring(4, 6) + "-" + navdate.substring(6, 8);
+	} else {
+		var st = srvTime();
+		var today = new Date(st);
+		var month = today.getMonth() + 1
+		var year = today.getFullYear()
+		var day = today.getDate()
+		var day_of_week = today.getDay();
+
+		if (day < 10)
+			day = "0" + day
+		if (month < 10)
+			month = "0" + month
+
+		navdate = year + "" + month + "" + day;
+		epaper_date = year + "-" + month + "-" + day;
+		// form the display mast date for services page
+		var curr_mastdate = d_names[day_of_week] + ", " + day + " " + m_names[month - 1] + " " + year;
+		jQuery("#span_displayMastHead").text(curr_mastdate);
+	}
+
+	//form link
+	//for epaper link
+	jQuery("a[class='EP']").attr("href", "http://epaper.straitstimes.com/fvx/fvx.php?param=" + epaper_date);
+
+	var display_day = jQuery("div.util_Date").text();
+	var display_day_array = display_day.split(",");
+
+	//set the masthead pic
+
+	if (display_day_array[0] == "Sunday"
+			&& pageinfo.hidden_section_name.indexOf('The<span class=\"big\">Big</span>Story') < 0) {
+		jQuery("#st").attr("id", "suntimes");
+		jQuery("#suntimes div.float-right")
+				.before(
+						'<div class="w370"><a href="http://www.straitstimes.com"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/theSundayTimesL.gif"></a></div>');
+	} else {
+		if (pageinfo.hidden_section_name) {
+			if (pageinfo.hidden_section_name == "Home") {
+				jQuery("#st div.float-right")
+						.before(
+								'<div class="float-left"><a href="'+homeurl+'/Home.html"><img width="360" height="47" border="0" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/theStraitsTimes.gif"></a></div>');
+			} else if (pageinfo.hidden_section_name == "razor") {
+
+				jQuery("#st div.float-right")
+						.before(
+								'<div class="float-left"><a href="http://www.straitstimes.com"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st.gif"></a><a href="http://www.razor.tv"><img border="0" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/mastRazor.png"></a></div><div class="pageSection" id="pageSectiondiv">Videos</div>');
+
+			} else if (pageinfo.hidden_section_name == "stomp") {
+
+				jQuery("#st div.float-right")
+						.before(
+								'<div class="float-left"><a href="http://www.straitstimes.com"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st.gif"></a><a href="http://www.stomp.com.sg"><img border="0" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/mastStomp.png"></a></div><div class="pageSection" id="pageSectiondiv">Citizen Journalism</div>');
+
+			} else {
+
+				jQuery("#st div.float-right")
+						.before(
+								'<div class="float-left"><a href="http://www.straitstimes.com"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/st.gif"></a></div><div class="pageSection" id="pageSectiondiv"></div>');
+
+				jQuery("#pageSectiondiv").html(pageinfo.hidden_section_name);
+			}
+		}
+	}
+
+	//for the rest
+	bnnavlink = homeurl + "/BreakingNews/to_be_rep" + "_" + navdate + ".html";
+
+	var navbar = {
+		"BN" : [ {
+			"Name" : "Breaking News",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Breaking+News"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Singapore",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Singapore/Singapore"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "SE Asia",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "SE%2BAsia/SE%2BAsia"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Asia",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Asia/Asia"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "World",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "World/World"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Money",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Money/Money"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Sports",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Sport/Sport"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Technology",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Tech%2Band%2BScience/Tech%2Band%2BScience"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Lifestyle",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Lifestyle/Lifestyle"),
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Asia News Network",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "ANN/ANN"),
+			"Class" : "",
+			"footer" : false
+		}, {
+			"Name" : "All",
+			"Link" : bnnavlink.replace(/to_be_rep/g, "Breaking+News"),
+			"Class" : "",
+			"footer" : false
+		}, {
+			"Name" : "Photo galleries",
+			"Link" : "http://photos.straitstimes.com",
+			"Class" : "pg",
+			"footer" : true
+		} ],
+
+		"PremWeekdays" : [ {
+			"Name" : "Premium",
+			"Link" : homeurl + "/Premium/Premium_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Prime",
+			"Link" : homeurl + "/Prime+News/Prime+News_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Singapore",
+			"Link" : homeurl + "/Singapore/Singapore_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Asia",
+			"Link" : homeurl + "/Asia/Asia_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "World",
+			"Link" : homeurl + "/World/World_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Money",
+			"Link" : homeurl + "/Money/Money_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Sports",
+			"Link" : homeurl + "/Sports/Sports_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Life!",
+			"Link" : homeurl + "/Life%2521/Life%2521_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Insight",
+			"Link" : homeurl + "/Insight/Insight.html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Review",
+			"Link" : homeurl + "/Review/Review_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Forum Letters",
+			"Link" : homeurl + "/ST+Forum/ST+Forum_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "All",
+			"Link" : homeurl + "/Premium/Premium_All_" + navdate + ".html",
+			"Class" : "",
+			"footer" : false
+		} ],
+		"PremSunday" : [ {
+			"Name" : "Premium",
+			"Link" : homeurl + "/Premium/Premium_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "News",
+			"Link" : homeurl + "/News/News_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Invest",
+			"Link" : homeurl + "/Invest/Invest_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Think",
+			"Link" : homeurl + "/Think/Think_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Sports",
+			"Link" : homeurl + "/Sports/Sports_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Lifestyle",
+			"Link" : homeurl + "/Lifestyle/Lifestyle_" + navdate + ".html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "All",
+			"Link" : homeurl + "/Premium/Premium_All_" + navdate + ".html",
+			"Class" : "",
+			"footer" : false
+		}
+
+		],
+		"Community" : [ {
+			"Name" : "Community",
+			"Link" : "#",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Blogs",
+			"Link" : "http://blogs.straitstimes.com",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Forum Letters",
+			"Link" : homeurl + "/ST+Forum/ST+Forum.html",
+			"Class" : "",
+			"footer" : true
+		}
+		],
+		"Multimedia" : [ {
+			"Name" : "Multimedia",
+			"Link" : "#",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Through the Lens",
+			"Link" : homeurl + "/ttl",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "News in Pictures",
+			"Link" : homeurl + "/News+In+Pictures/News+In+Pictures.html",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Infographics",
+			"Link" : homeurl + "/Features/Infographics/Infographics.html",
+			"Class" : "",
+			"footer" : true
+		}
+
+		],
+		"Features" : [ {
+			"Name" : "Features",
+			"Link" : "#",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Global Perspectives",
+			"Link" : homeurl + "/Project_Syndicate/Project_Syndicate.html",
+			"Class" : "",
+			"footer" : true
+		}	
+		],	
+		"Projects" : [ {
+			"Name" : "Projects",
+			"Link" : "#",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "Childaid",
+			"Link" : homeurl + "/childaid",
+			"Class" : "",
+			"footer" : true
+		}, {
+			"Name" : "School Pocket Money Fund",
+			"Link" : homeurl + "/spmf/School+Pocket+Money+Fund.html",
+			"Class" : "",
+			"footer" : true
+		} ],
+		"Home" : [ {
+			"Name" : "Home",
+			"Link" : homeurl + "/Home_" + navdate + ".html",
+			"Class" : ""
+		} ]
+
+	}
+
+	var webspecialarray = {
+		"spmf" : [ {
+			"url" : homeurl + "/spmf/School+Pocket+Money+Fund.html",
+			"img_src" : "http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/webspecialIconForSPMF.gif",
+			"img_width" : "114",
+			"img_height" : "190",
+			"img_alt" : "School Pocket Money Fund image"
+		} ]
+	}
+
+	jQuery("#header_navbar_bn").html(generateNavBar(navbar.BN));
+
+	if (display_day_array[0] == "Sunday") {
+		jQuery("#header_navbar_prem").html(generateNavBar(navbar.PremSunday));
+	} else {
+		jQuery("#header_navbar_prem").html(generateNavBar(navbar.PremWeekdays));
+	}
+	jQuery("#header_navbar_community").html(generateNavBar(navbar.Community));
+	jQuery("#header_navbar_multimedia").html(generateNavBar(navbar.Multimedia));
+	jQuery("#header_navbar_features").html(generateNavBar(navbar.Features));
+	jQuery("#header_navbar_projects").html(generateNavBar(navbar.Projects));
+	jQuery("#home_link").attr("href", navbar.Home[0].Link);
+</script>			
+	<!--start of main--> 
+<div id="main"> 
+  <ul id='crumbs'> <li><a href='http://www.straitstimes.com'>Home</a></li><li><a href='/Breaking%2BNews/Breaking%2BNews_20120327.html'>Breaking News</a></li><li><a href='/Breaking%2BNews/World/World_20120327.html'>World</a></li><li><a>Story</a></li></ul> 
+  <div class="clear1px">&nbsp;</div> 
+  <!--close .crumbs--> 
+  <div class="w710 mr10"> 
+    <div class="panel mb10"> 		
+      <!--start of story--> 
+      <div class="story"> 		
+         <div id="storycontent">
+		        <!--close .kicker, if any-->
+        <h1>					Tiny puppy in California could be world's smallest
+						</h1>
+		        <div class="clearall">&nbsp;</div> 
+        <div class="storyLeft"> 
+          <div class="storyActions"> 
+			<div class="published">Published on Mar 27, 2012</div>
+			<ul id="btn_pe_navlist">
+              <li id="btn_pe_print"><a href="/print/BreakingNews/World/Story/STIStory_782148.html"></a></li>
+              <li id="btn_pe_email"><a href="javascript:void(0);" onclick="sendemail('/vgn-ext-templating/v/index.jsp?vgnextoid=17fac6fd279a9010VgnVCM1000000a35010aRCRD&vgnvcmid=a342ad4267156310VgnVCM100000430a0a0aRCRD&vgnorgchannel=173dfcb3bcc1b110VgnVCM100000350a0a0aRCRD');return false;"></a></li>
+            </ul>
+			
+            <div class="clearall">&nbsp;</div> 
+            <div id="story_sharing_tool"></div>						
+			<div class="clearall">&nbsp;</div> 
+			<div class="webspecial" style="display:none;" id="webspecial-div">  </div> 
+			<div class="purchase"><a href="http://www.businesstimes.com.sg/newspost"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/newspost.gif" />Purchase this article for republication</a></div> 
+			<div class="clearall">&nbsp;</div> 
+			<div class="purchase"><a href="http://www.photobank.com.sg/"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/photobank.gif" />Buy SPH photos</a></div>
+			<div class="clearall">&nbsp;</div>
+			<div class="clearall">&nbsp;</div>
+			<div id="random_img_container"></div>
+          </div> 
+        </div> 
+        <!--close .storyLeft--> 
+        <div class="storyRight" > 
+          <!--start of story image, if any-->
+		 
+							<div class="sizeL"> 
+					<img src="/STI/STIMEDIA/image/20120327/beyoncepuppy-ap.jpg" />
+										<div class="caption">Female Dachshund mix named Beyonce lies on top of an iPhone in El Dorado Hills, California, in this March 10, 2012 photo. The puppy named after one of the world's biggest pop stars could set the world's record for tiniest dog. -- PHOTO: AP / El Dorado DOG Photography, Lisa Van Dyke</div>
+									</div>
+			          <!--end of story image, if any--> 
+		  
+		<!-- storyAds:start -->
+									<div class="storyIMU">
+					<script language="JavaScript1.1" src="http://adtag.asiaone.com/tag/st/js/st_bn_world_imu.js"></script>
+				</div>	
+							<!-- storyAds:end -->
+		  
+		  
+						
+          <!--start of story text--> 
+          												<p>SACRAMENTO, California (AP) - A puppy named after one of the world's biggest pop stars could set the world's record for tiniest dog. </p> 
+
+
+		  																					<p>Animal rescuers in Northern California say the female Dachshund mix, named Beyonce, was so small at birth that she could fit into a spoon. At two weeks, she's about the size of a business card. </p> 
+
+
+		  												<p>The Grace Foundation, based in El Dorado County, says animal control picked up Beyonce's pregnant mother, and she gave birth to a litter of five on March 8. </p> 
+
+
+		  												  								<p>Beyonce was the last one delivered, and was born without a heartbeat. Veterinarians managed to revive her through chest compressions and mouth-to-mouth resuscitation. </p> 
+
+
+		  
+		  
+						
+		<script language='javascript'> 
+		var subrenderfile="/Subscription/Breaking+News/World/Story/STIStory_782148.html";
+		</script>
+		<div id="subhtmldiv"></div>
+		<script language='javascript'>
+if(document.domain=="sph.straitstimes.com" || ( user != null && user !=0 && luser!=null && luser != "anonymous" && luser != "anonymous|anonymous")) {	
+	jQuery("#subhtmldiv").html("Loading...Please wait....");
+	jQuery.ajax({
+		url: subrenderfile,
+		async: false,
+		success: function(msg){
+jQuery("#subhtmldiv").html( msg );
+		}
+		});	
+	} else {
+		document.writeln('<div class="clearall">&nbsp;</div><h5>TO READ THE FULL STORY...</h5><div style="width:177px; margin:12px auto; height:24px;"><a class="sbutton" style="width:54px; float:left; margin:0 10px 0 0;" href="http://sphreg.asiaone.com/RegAuth2/stpLogin.html?goto=http://www.straitstimes.com/vgn-ext-templating/sti/common/STIRedirect.jsp?dlink='+location.href+'" onclick="jQuery.colorbox({width:\'522px\',height:\'330px\', href:\'/STI/STIFILES/ssi/2011/login/login-in-form.html\',scrolling:false});return false;"><span>Log in</span></a> <a class="sbutton" style="width:76px; float:left; margin:0;" href="http://www.stsubscribe.com.sg/"><span>Subscribe</span></a></div>');
+	}
+</script>
+
+		
+						
+		
+		  <div class="clearall">&nbsp;</div>		   
+		  		   <div class="clearall">&nbsp;</div>
+		  <div id="facebook_like_container"></div> 
+		  <div id="google-ads"><script language="JavaScript1.1" src="http://adtag.asiaone.com/tag/st/js/st_google_bottom.js"></script></div>
+          <!--end of story text--> 
+       	
+      <!--end of story--> 
+      <!--start of comments--> 
+	          <div class="comments">     <script language="javascript">  
+	var disqus_shortname = 'thestraitstimes';	
+	var disqus_identifier = disqus_shortname+'625340151';
+	var disqus_url = 'http://www.straitstimes.com/BreakingNews/World/Story/STIStory_782148.html';	
+  </script>
+    				 <script language="javascript">  
+    var disqus_config = null;	
+	var ldapemail = jQuery.cookie("HTTP_mail");	
+	var usercookie_exist= false;
+	var isLoginToDisqus = jQuery.cookie("disqus_login");
+	var ssologout = "http://sphauth.asiaone.com/amserver/UI/Logout?logoutdest="+location.href;
+	
+	if (user != null && user !=0 && luser!=null && luser != "anonymous" && luser != "anonymous|anonymous"){
+		usercookie_exist=true;
+	}
+	
+	//alert(user);
+	//alert(isLoginToDisqus);
+	//case 1 : If user log into ST and he is not logged into ST yet, always do SSO
+	if (isLoginToDisqus != "true" && usercookie_exist) {
+		//alert("case 1");
+  //console.log("case 1:If user log into ST and he is not logged into ST yet, always do SSO");
+   			jQuery.ajax( {
+   				'type' : 'GET',
+   				'url' : '/vgn-ext-templating/createSSO',
+   				'cache' : false,
+   				'data' : 'id=' + user + '&username=' + user + '&email=' + ldapemail + '&logout=false',
+   				'success' : function(jsonData) {
+	   				//alert('id=' + user + '&username=' + user + '&email=' + ldapemail + '&logout=false');
+	   				//alert(jsonData);
+   					if(jsonData.response.error != 1){
+   						disqus_config = function () {
+   							this.page.remote_auth_s3 = jsonData.response.message + ' ' + jsonData.response.hmac + ' ' + jsonData.response.timestamp;
+   							this.page.api_key = jsonData.response.public_key;   							
+   							this.sso = {
+   						         logout:  ssologout  						       
+   								};
+   						}
+   						jQuery.cookie('disqus_login', 'true');
+   					}
+   			  					
+   					callDisqus();
+   				
+   				}
+   			});
+   			
+		}
+	//case 2:If user log into ST and disqus already, no need to do SSO
+	else if (isLoginToDisqus == "true" && usercookie_exist) 
+		{
+			//alert("case 2");
+		//console.log("case 2:If user log into ST and disqus already, no need to do SSO");
+		
+		disqus_config = function () {
+			this.sso = {logout:  ssologout};};	
+			callDisqus();
+
+	
+	
+		}
+	//case 3: if user log out from ST but do not log out from disqus
+	else if (isLoginToDisqus != null && !usercookie_exist) {
+		//alert("case 3");
+		//console.log("case 3:if user log out from ST but do not log out from disqus");
+		jQuery.ajax( {
+			'type' : 'GET',
+			'url' : '/vgn-ext-templating/createSSO',
+			'cache' : false,
+			'data' : 'id=' + user + '&username=' + user + '&email=' + ldapemail + '&logout=true',
+			'success' : function(jsonData) {
+				
+				if(jsonData.response.error != 1){
+					disqus_config = function () {
+							this.page.remote_auth_s3 = jsonData.response.message + ' ' + jsonData.response.hmac + ' ' + jsonData.response.timestamp;
+							this.page.api_key = jsonData.response.public_key;
+
+							this.sso = {
+									name:   "straitstimes",
+						          button:  "http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/disqusST.png",
+						          icon:     "http://www.straitstimes.com/STI/STIMEDIA/common/favicon.ico",
+						          url:        "http://www.straitstimes.com/STI/STIFILES/ssi/2011/login/login-in-form-full.html",
+						         logout:  ssologout,
+						          width:   "480",
+						          height:  "250"
+								};
+						}
+					jQuery.cookie('disqus_login', null);
+					
+					callDisqus();
+				}
+			
+			}
+		});
+	}
+	//case 4: if user never log into both ST and disqus
+	else {
+		//alert("case4");
+		//console.log("case 4:if user never log into both ST and disqus");
+		disqus_config = function () {
+			this.sso = {
+				    	name:   "straitstimes",
+				          button:  "http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/disqusST.png",
+				          icon:     "http://www.straitstimes.com/STI/STIMEDIA/common/favicon.ico",
+				          url:        "http://www.straitstimes.com/STI/STIFILES/ssi/2011/login/login-in-form-full.html",
+				          logout:  ssologout,
+				          width:   "480",
+				          height:  "250"
+				};
+		};	
+		
+		callDisqus();
+	}
+	
+	
+
+
+
+function callDisqus(){
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+}
+
+</script>
+<noscript>
+Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<div id="disqus_thread"></div>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>			
+		
+</div>	      
+	       </div>
+	  <!--end of comments--> 
+     <div class="clearall">&nbsp;</div> 
+      </div> <!--close .storyRight-->
+	  	  	  
+	  </div>
+				
+				</div>			
+		 			<script>
+var top_story_array = [    '782172'   ,    '782181'   ,    '782179'   ,    '782243'   ,    '782203'   ,    '782236'   ,    '782231'   ,    '782239'   ,    '782205'   ,    '782207'    ];
+</script>
+<a onclick="this.blur(); return true;" href="javascript:void();" class="sbanner" id="story_top_banner" style="display:none;"><span>More Top Stories</span></a>
+	
+<div class="panelx" id="story_top_content"  style="display:none;">
+      			  <div class="itemTopStory mr10"><a href="/BreakingNews/Singapore/Story/STIStory_782172.html">
+						<img src="/STI/STIMEDIA/image/20120327/btopuggol-alphoonsuschernm.jpg" width="100" alt="HDB to launch bumper crop of 8,000 flats: Khaw"/>
+			        <h4>HDB to launch bumper crop of 8,000 flats: Khaw</h4>
+        </a></div>
+					  			  <div class="itemTopStory mr10"><a href="/BreakingNews/Singapore/Story/STIStory_782181.html">
+						<img src="/STI/STIMEDIA/image/20120327/lee-reutersm.jpg" width="100" alt="PM Lee calls on IAEA to strengthen links with region"/>
+			        <h4>PM Lee calls on IAEA to strengthen links with region</h4>
+        </a></div>
+					  			  <div class="itemTopStory mr10"><a href="/BreakingNews/Singapore/Story/STIStory_782179.html">
+						<img src="/STI/STIMEDIA/image/20120327/jurongm.jpg" width="100" alt="New mall in Jurong on track to open next year"/>
+			        <h4>New mall in Jurong on track to open next year</h4>
+        </a></div>
+					  			  <div class="itemTopStory mr10"><a href="/BreakingNews/Singapore/Story/STIStory_782243.html">
+						<img src="/STI/STIMEDIA/image/20120327/dragonboat-dbsm.jpg" width="100" alt="Int'l dragon boat competition returning to Singapore shores"/>
+			        <h4>Int'l dragon boat competition returning to Singapore shores</h4>
+        </a></div>
+					  			  <div class="itemTopStory mr10"><a href="/BreakingNews/Lifestyle/Story/STIStory_782203.html">
+						<img src="/STI/STIMEDIA/image/20120327/trans-afpm.jpg" width="100" alt="Transgender model cut from Canada Miss Universe"/>
+			        <h4>Transgender model cut from Canada Miss Universe</h4>
+        </a></div>
+					  			  <div class="itemTopStory mr10"><a href="/BreakingNews/World/Story/STIStory_782236.html">
+						<img src="/STI/STIMEDIA/image/20120327/ann-reutersm.jpg" width="100" alt="Syria accepts Annan peace plan: Spokesman"/>
+			        <h4>Syria accepts Annan peace plan: Spokesman</h4>
+        </a></div>
+					  				      <div class="itemTopStory"><a href="/BreakingNews/Singapore/Story/STIStory_782231.html">
+						<img src="/STI/STIMEDIA/image/20120326/ppts2m.jpg" width="100" alt="Singapore women beat Chinese Taipei at World Championships"/>
+			        <h4>Singapore women beat Chinese Taipei at World Championships</h4>
+        </a></div>
+			  					  					  					        <div class="clear1px">&nbsp;</div>
+    </div>
+		
+	
+	
+	
+				
+	  </div> 
+  <div class="w240">  
+					<!--div class="skyscraper mb10"-->    			    
+			
+    		<!--/div-->
+				
+		<div class="panelTopOtherStories"> 
+			<div class="stabrow"> 
+				<div class="float-left"><a id="prevstory" class="sbutton" style="width:66px;margin:0 0 0 0;" href="javascript:void;" onclick="this.blur(); return true;"><span>Previous</span></a></div>
+				<div class="float-right"><a id="nextstory" class="sbutton" style="width:42px;margin:0 0 0 0;" href="javascript:void;" onclick="this.blur(); return true;"><span>Next</span></a></div>
+			</div> 
+			<div class="clear1px">&nbsp;</div> 
+		</div>
+		 <a class="sbanner" href="#" onclick="this.blur(); return true;"><span>World</span></a>     <div class="panelx mb10" id="storyindex">	      <div class="headline">         <h6>8:08 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782249.html" title="">Russia's Medvedev tells Romney to 'use head'</a></p>       </div>	      <div class="headline">         <h6>7:59 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782248.html" title="">50,000 'used student visa loophole to work in Britain'</a></p>       </div>	      <div class="headline">         <h6>6:46 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782236.html" title="">Syria accepts Annan peace plan: Spokesman</a></p>       </div>	      <div class="headline">         <h6>6:31 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782229.html" title="">Ex-allies seek distance from Strauss-Kahn after sex charges</a></p>       </div>	      <div class="headline">         <h6>6:28 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782228.html" title="">Sarkozy, families demand shooting footage not be broadcast</a></p>       </div>	      <div class="headline">         <h6>6:22 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782227.html" title="">British student jailed for offensive tweets about footballer</a></p>       </div>	      <div class="headline">         <h6>5:41 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782223.html" title="">Exclusion zone around North Sea platform after gas leak</a></p>       </div>	      <div class="headline">         <h6>5:26 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782221.html" title="">Medvedev mocked over 'I transmit to Vladimir' gaffe</a></p>       </div>	      <div class="headline">         <h6>5:19 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782220.html" title="">Poland ex-spy boss 'charged over alleged CIA secret prison'</a></p>       </div>	      <div class="headline">         <h6>5:13 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782214.html" title="">More deaths in Syria as Annan pushes for peace in China</a></p>       </div>	      <div class="headline">         <h6>4:23 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782204.html" title="">S.Africa thief asks for job at house wearing owner's clothes</a></p>       </div>	      <div class="headline">         <h6>4:13 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782200.html" title="">Al-Jazeera considers broadcasting French gunman videos</a></p>       </div>	      <div class="headline">         <h6>3:33 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782190.html" title="">Australia asylum-seekers fall, bucking global trend</a></p>       </div>	      <div class="headline">         <h6>3:55 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782197.html" title="">'Ghost ship' off Canada heralds arrival of tsunami debris</a></p>       </div>	      <div class="headline">         <h6>3:53 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782196.html" title="">Summit pledges strong action against nuke terrorism</a></p>       </div>	      <div class="headline">         <h6>3:33 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782189.html" title="">Spain sees gamble in vision of Las Vegas-style resort</a></p>       </div>	      <div class="headline">         <h6>3:20 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782187.html" title="">Pope calls for 'open society' at Cuba mass</a></p>       </div>	      <div class="headline">         <h6>12:30 PM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782166.html" title="">Obama hits back in Russia 'hot mike' row</a></p>       </div>	      <div class="headline">         <h6>11:45 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782160.html" title="">Elaborate funeral bids farewell to late Tongan king</a></p>       </div>	      <div class="headline">         <h6>11:20 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782158.html" title="">Obama proposes ex-Bush official as envoy to Iraq</a></p>       </div>	      <div class="headline">         <h6>10:44 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782153.html" title="">Assange runs for Australia Senate as 'libertarian'</a></p>       </div>	      <div class="headline">         <h6>10:05 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782148.html" title="">Tiny puppy in California could be world's smallest</a></p>       </div>	      <div class="headline">         <h6>10:01 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782147.html" title="">World's security depends on nuclear summit: Obama</a></p>       </div>	      <div class="headline">         <h6>9:53 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782149.html" title="">Lufthansa cancels around 400 flights on Tuesday</a></p>       </div>	      <div class="headline">         <h6>9:51 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782146.html" title="">Aggressive US parents force egg hunt cancellation</a></p>       </div>	      <div class="headline">         <h6>9:38 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782145.html" title="">'Pink slime' ire prompts key beef producer to close plants</a></p>       </div>	      <div class="headline">         <h6>8:40 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782136.html" title="">Hungarian rows canoe across Atlantic Ocean</a></p>       </div>	      <div class="headline">         <h6>8:37 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782135.html" title="">Lightning kills 4 family members in Amazon</a></p>       </div>	      <div class="headline">         <h6>8:33 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782134.html" title="">As pressure builds, Santorum shows a dark side</a></p>       </div>	      <div class="headline">         <h6>8:29 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782132.html" title="">Nato, Afghans work against 'insider' attacks: General</a></p>       </div>	      <div class="headline">         <h6>8:18 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782130.html" title="">US eyes missile-defence shields for Asia, Middle East</a></p>       </div>	      <div class="headline">         <h6>8:02 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782128.html" title="">Princess Diana's home Kensington Palace reopens to public</a></p>       </div>	      <div class="headline">         <h6>7:56 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782126.html" title="">United Nations expert quits Syria rights investigation</a></p>       </div>	      <div class="headline">         <h6>7:37 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782125.html" title="">Romney, endorsements in hand, hits out at Santorum</a></p>       </div>	      <div class="headline">         <h6>7:31 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782123.html" title="">British PM admits hosting donors in cash-for-access row</a></p>       </div>	      <div class="headline">         <h6>6:29 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782085.html" title="">France's Strauss-Kahn charged in prostitution vice ring</a></p>       </div>	      <div class="headline">         <h6>7:09 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782114.html" title="">Syria imposes travel ban on men under 42: Reports</a></p>       </div>	      <div class="headline">         <h6>7:04 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782111.html" title="">eBay bans sorbitol sales after Italian death</a></p>       </div>	      <div class="headline">         <h6>7:02 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782110.html" title="">5 corpses recovered from Italian cruise ship wreck</a></p>       </div>	      <div class="headline">         <h6>6:55 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782104.html" title="">Rancorous health care debate outside top US court</a></p>       </div>	      <div class="headline">         <h6>6:53 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782102.html" title="">Obama drops role as daughter's basketball adviser</a></p>       </div>	      <div class="headline">         <h6>6:49 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782099.html" title="">BP oil spill sullied sea floor coral: Study</a></p>       </div>	      <div class="headline">         <h6>6:46 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782095.html" title="">US World Bank pick launches global charm offensive</a></p>       </div>	      <div class="headline">         <h6>6:46 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782096.html" title="">Republicans pounce on Obama plea to Russia for 'space'</a></p>       </div>	      <div class="headline">         <h6>6:43 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782093.html" title="">Syrian forces on offensive as Annan pursues peace</a></p>       </div>	      <div class="headline">         <h6>6:39 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782091.html" title="">US Supreme Court opens health care reform case</a></p>       </div>	      <div class="headline">         <h6>6:34 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782088.html" title="">UN's Ban praises 'statesmanlike' departure by Senegal leader</a></p>       </div>	      <div class="headline">         <h6>6:28 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782083.html" title="">US soldier killed at Afghan police checkpoint: Official</a></p>       </div>	      <div class="headline">         <h6>6:26 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782082.html" title="">Toulouse gunman to be buried in Algeria, father wants to sue</a></p>       </div>	      <div class="headline">         <h6>6:21 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_782076.html" title="">French police have videos shooter made of Toulouse killings</a></p>       </div>	      <div class="headline">         <h6>6:00 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_781906.html" title="">Flourishing wine industry adapts to Italy's crisis times</a></p>       </div>	      <div class="headline">         <h6>6:00 AM</h6>          <p><a href="/BreakingNews/World/Story/STIStory_781892.html" title="">Obama rewards top campaign donors with White House visits</a></p>       </div>		</div>	<div class="clear1px">&nbsp;</div>		
+
+		
+		<a class="sbanner" href="javascript:void(0);" onclick="this.blur(); return true;"><span>Most Popular</span></a>
+		
+		<div class="panelx mb10">
+			<div class="mostPopular">
+				<ol>
+											<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781820.html">StarHub unveils price plan for Euro 2012 matches</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781861.html">National Bonus of 1.6 months for political appointment holders</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781837.html">Final semester scholarship benefits revoked for China NUS student</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781761.html">Centipede bite leads to loss of lower leg for man</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781775.html">Body of man found in waters off Sentosa</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781828.html">Calls for Singapore consultant to be removed from UN convention</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781756.html">Singaporeans first in new P1 registration rule</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781843.html">Former teacher jailed for molesting students</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/Singapore/Story/STIStory_781808.html">3 major bus stops upgraded to accommodate more buses at once</a></li>
+<li><a href="http://www.straitstimes.com/BreakingNews/TechandScience/Story/STIStory_781800.html">Too much, too little sleep linked to heart woes: Study</a></li>
+			
+									</ol>
+			</div>
+		</div> 
+		
+						<a href="http://www.straitstimes.com/The-Big-Story/The-Big-Story-2/The-Big-Story-2_20111109.html"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/bsimage/bigstory_sia.png" style="width:240px;" /></a>
+				
+					<div id="story-all-channel-div">
+
+</div>			
+		      
+							<style>
+#storyNav   { border:1px solid #ddd; width:100%; border-left: none; border-right:none; float:left; font-weight:bold; font-size:11px; margin-bottom: 10px;}
+#storyNav .prev {width:48%; float:left; text-align:left; padding:12px 3px; }
+    #storyNav .prev a img   {margin: -5px 6px -5px 0; float:left;}
+#storyNav .next {width:100%;float:right; text-align:right;padding:12px 3px; color:#777; font-weight:normal; font-size:11px;}
+    #storyNav .next a {font-weight:bold;}
+    #storyNav .next a img   {margin: -5px 0 -5px 6px; float:right;}
+    #storyNav .next .sub    {font-weight:normal; color:#888;text-align:right; float:right;}
+    .pageSectionRed {color:#b83422; background-image:url(http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/slash.png); background-repeat:no-repeat; background-position:0 6px; padding:0 0 0 21px; margin:0 0 0 6px;}	
+	.pageSectionRed a:link, .pageSectionRed a:visited {color:#b83422;}
+	.pageSectionRed a:hover, .pageSectionRed a:active {color:#999;}
+	
+.imageOver{
+    background:url(http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/magnifyplusw.png) no-repeat;  
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;   
+}	
+</style>
+
+<script type="text/javascript">
+	// story changes
+	var title = jQuery.trim($('#main').find('h1').text());
+	$('div.headline, #storyindex li').each(function() { 
+		var t = $.trim($(this).find('a').text());
+		if(t == title) {
+			var node = $(this).next().find('a');
+			if(node.text() && jQuery.trim(node.text()) != '') {
+				var html = '<div id="storyNav"><div class="next">NEXT STORY:  <a href="' + node.attr('href') + '">' + node.text() + '<img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/nipRight.png"></a></div></div>';
+				$(html).insertBefore($('#facebook_like_container'));
+			}
+			return false;
+		}
+	});
+	
+	// section name process
+	$('#crumbs li').each(function() {
+		var txt = jQuery.trim($(this).text());
+		if(txt == 'Breaking News' || txt == 'Premium') {
+			var name = '<span class="pageSectionRed">' + $(this).next().html() + '</span>';
+			$('#pageSectiondiv').html($('#pageSectiondiv').text() + name);
+			return false;
+		}
+	});
+	
+	// colorbox for media	
+	if(!$('#pic-rotator-img').length) {
+		$('div.sizeL').find('img:first').attr('id', 'pic-rotator-img');
+	}
+	
+	if($('#pic-rotator-info').length) {
+		$('#pic-rotator-info img').each(function() { $(this).wrap($('<a></a>').attr('rel', 'cbxgrp').addClass('cbx')
+			.attr('href', $(this).attr('src').replace('.jpg', 'e.jpg')).attr('title', $(this).next().html()));});
+	} else {
+		if($('#pic-rotator-img').length) {
+			$('#pic-rotator-img').wrap($('<a></a>').addClass('cbx').attr('title', $('#pic-rotator-img').next().text()).attr('href', $('#pic-rotator-img').attr('src').replace('.jpg', 'e.jpg')));
+		}
+	}
+	
+	if(!$('#pic-caption').length) {
+		$('div.sizeL').find('div.caption:first').attr('id', 'pic-caption');
+	}
+	
+	if($('#pic-rotator-img').length) { 
+		$('#pic-rotator-img').css('cursor', 'pointer').hover(function() {
+			$('.storyRight div.sizeL').css('position', 'relative').prepend('<span style="position: absolute; top: 20px; left: 20px; width: 40px; height: 40px; cursor: pointer; " class="imageOver"></span>');
+		}).mouseout(function() {
+			$('.storyRight div.sizeL').find('span.imageOver').remove();
+		}).click(function() {
+			var src = $(this).attr('src');
+			$('#pic-rotator-info img').each(function() {
+				if($(this).attr('src').indexOf(src) >= 0) {
+					$(this).closest('a').trigger('click');
+					return false;
+				}
+			});
+		});
+	}
+	
+	$('a.cbx').colorbox({scrolling:false, onComplete: function() {
+		$("#cboxTitle").hide();
+		var element = $(this).colorbox.element(); 
+		var title = $(element).attr("title"); 
+		$("<div style='line-height: 16px; padding: 5px;'>"+title+"</div>").insertAfter("#cboxPhoto"); 
+		$(this).colorbox.resize(); 
+		$('#cboxCurrent').text($('#cboxCurrent').text().replace('image', 'Image'));
+		//_rsEvent(pageinfo.url,pageinfo.p_COTag);
+		if(pageinfo.p_COTag!="STI-SUNDAY" && pageinfo.p_COTag!="STI"){
+		_rsEvent("StoryImage","ST-NIP");
+		}else if(pageinfo.p_COTag=="STI-BREAK"){
+		 _rsEvent("StoryImage","ST-NIP");
+		}else{
+			_rsEvent(pageinfo.url,pageinfo.p_COTag);
+		}
+	}});
+	
+
+	var kickers = $('div.kicker');
+	if(kickers.length) {
+		var k = $(kickers[0]);
+		if(k.parent()[0].tagName == 'A') {
+			k.parent().replaceWith(k);
+		}
+	}
+	
+	var selected_div;
+	var prev_div;	
+	var next_div;
+	var loc;
+	
+  	if (pageinfo.hidden_section_name=='Breaking News' || pageinfo.hidden_section_name=='Parliament' || pageinfo.hidden_section_name=='Forum Letters'){
+		selected_div = jQuery("#storyindex div.headline p a[href*="+pageinfo.articleid+"]").parent().parent();  	
+		prev_div = selected_div.prevAll("div.headline:first");
+		next_div = selected_div.nextAll("div.headline");	
+		
+  	} else {
+	  	selected_div = jQuery("#storyindex li a[href*="+pageinfo.articleid+"]").parent();	
+		prev_div = selected_div.prevAll("li:first");
+		next_div = selected_div.nextAll("li");			
+  	}
+	
+	selected_div.css("font-weight", "bold");
+	
+	if (prev_div.text() == ''){
+		jQuery("#prevstory").hide();
+	}
+	if (next_div.text() == ''){
+		jQuery("#nextstory").hide();
+	}
+	
+		
+	
+  jQuery("#prevstory").click(function() {
+    if (pageinfo.hidden_section_name=='Breaking News' || pageinfo.hidden_section_name=='Parliament' || pageinfo.hidden_section_name=='Forum Letters'){
+	    loc=prev_div.children("p").children("a").attr("href");
+    }else{
+	    loc=prev_div.children("a").attr("href");	 
+    }		   
+	 location.href=loc;	  			  	  
+	  return false;
+   
+	});
+  
+   jQuery("#nextstory").click(function() {	
+    if (pageinfo.hidden_section_name=='Breaking News' || pageinfo.hidden_section_name=='Parliament' || pageinfo.hidden_section_name=='Forum Letters'){
+	    loc=next_div.children("p").children("a").attr("href");
+    }else{
+	    loc=next_div.children("a").attr("href");
+    }	
+		
+	
+	location.href=loc;
+	   
+	return false;
+	});	
+
+   if (jQuery("#photoGallery_storypage").length){
+	  jQuery("a[rel='photoGallery']").colorbox({onComplete: function() {jQuery("#cboxTitle").hide();jQuery("<div class='colorboxcaption'>"+jQuery(this).colorbox.element().attr("title")+"</div>").insertAfter("#cboxPhoto");jQuery(this).colorbox.resize();
+	  if(pageinfo.p_COTag=="STI-BREAK"){
+		 _rsEvent("StoryImage","ST-NIP");
+	 } else {_rsEvent(pageinfo.url,pageinfo.p_COTag);}}});	  
+   }
+
+   
+
+   function sendemail(sendlink) {
+    	if ( user != null && user !=0 && luser!=null && luser != "anonymous" && luser != "anonymous|anonymous"){
+   	    	jQuery.colorbox({innerWidth:"480px",innerHeight:"550px",href:sendlink,scrolling:false});jQuery("#cboxClose").hide();
+    	}else {
+    		jQuery.colorbox({width:'522px',height:'330px', href:'/STI/STIFILES/ssi/2011/login/login-in-form.html',scrolling:false});
+    	}
+    
+    return false;
+    
+	};
+ 
+//for top story listing
+    if (typeof(top_story_array) != "undefined" && jQuery.inArray(pageinfo.articleid,top_story_array) != -1){
+    	
+		jQuery("#story_top_banner").show();
+		if (jQuery("#story_top_content div a[href*="+pageinfo.articleid+"]").length)
+			{
+			
+			jQuery("#story_top_content div a[href*="+pageinfo.articleid+"]").parent().hide(); 
+			
+			if (jQuery.inArray(pageinfo.articleid,top_story_array)==6){
+				jQuery("#story_top_content div.itemTopStory:nth-child(6)").removeClass("mr10");
+			}
+			jQuery("#story_top_content").show();}
+			else {
+				
+			jQuery("#story_top_content div.itemTopStory:last").hide();
+			jQuery("#story_top_content div.itemTopStory:nth-child(6)").removeClass("mr10");
+
+
+			jQuery("#story_top_content").show();
+			
+
+}
+		
+
+		
+    }
+   
+
+
+   if (jQuery("#facebook_like_container").length){
+	   jQuery("#facebook_like_container").html("<iframe src='http://www.facebook.com/plugins/like.php?href="+pageinfo.url+"&amp;layout=standard&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;height=80' scrolling='no' frameborder='0' style='border:none; overflow:hidden; ' allowTransparency='true'></iframe>").css('height', 80);
+   }
+
+  if (jQuery("#story_sharing_tool").length){
+
+  var story_tool_html='<a href="http://twitter.com/share" class="twitter-share-button" data-url="'+pageinfo.url+'" data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"><\/script><div class="clearall">&nbsp;</div><div style="margin:0px 0px 0px 25px;"><a name="fb_share" type="box_count" share_url="'+pageinfo.url+'" href="http://www.facebook.com/sharer.php" >Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"><\/script></div><div class="clearall">&nbsp;</div><div class="google1"><g:plusone></g:plusone></div><div class="clearall">&nbsp;</div><div class="linkedIn"><script type="text/javascript" src="http://platform.linkedin.com/in.js"><\/script><script type="in/share" data-counter="top"><\/script></div>';
+      
+   jQuery("#story_sharing_tool").html(story_tool_html);
+   
+  	
+
+    if (pageinfo.spimgtype){	
+     //webspecial image handling
+    if (webspecialarray[pageinfo.spimgtype]){
+//    	alert(webspecialarray[pageinfo.spimgtype][0].url);
+    	var spimghtml = '<a href="'+webspecialarray[pageinfo.spimgtype][0].url+'"><img src="'+webspecialarray[pageinfo.spimgtype][0].img_src+'" width="'+webspecialarray[pageinfo.spimgtype][0].img_width+'"  height="'+webspecialarray[pageinfo.spimgtype][0].img_height+'" alt="'+webspecialarray[pageinfo.spimgtype][0].img_alt+'"\/><\/a>';
+jQuery("#webspecial-div").html(spimghtml);
+jQuery("#webspecial-div").show();
+    	
+    	
+    }
+    	
+    }	
+  }
+   
+
+		
+
+if (pageinfo.adtag){
+   if (pageinfo.adtag=="pe_asia_story" || pageinfo.adtag=="bn_asia_story"){
+     var theImages = new Array() // do not change this
+theImages[0] = '/STI/STIFILES/countryicons/cty_ayosdito.jpg'
+theImages[1] = '/STI/STIFILES/countryicons/cty_berniaga.gif'
+theImages[2] = '/STI/STIFILES/countryicons/cty_mudah.gif'
+theImages[3] = '/STI/STIFILES/countryicons/cty_panduan.gif'
+theImages[4] = '/STI/STIFILES/countryicons/cty_sou.gif'
+theImages[5] = '/STI/STIFILES/countryicons/cty_dinkos.gif'
+
+// Set the links to be used for the images
+var theLink = new Array()
+theLink[0] = 'http://www.ayosdito.ph'
+theLink[1] = 'http://www.berniaga.com'
+theLink[2] = 'http://www.mudah.my'
+theLink[3] = 'http://www.701panduan.com'
+theLink[4] = 'http://www.701sou.com'
+theLink[5] = 'http://www.dinkos.com.au'
+	
+
+// do not edit anything below this line
+
+var j = 0
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+ preBuffer[i] = new Image()
+ preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+
+jQuery("#random_img_container").html('<a target="_blank" href="'+theLink[whichImage]+'"><img src="'+theImages[whichImage]+'" border="0"></a>'); 
+   }
+}
+</script>			
+			
+		 
+  </div> 
+   						
+	    
+  <div class="clearall">&nbsp;</div> 
+</div> 
+<!--end of main--> 
+
+	  
+		</div>
+
+
+ 
+				<!--start of footer-->
+  <div id="footer"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2012/subscribeFooter.gif" width="960px" height="60px" alt="sph subscription" border="0" usemap="#Map3" class="subscribeBanner" />
+<map name="Map3" id="Map3"><area shape="rect" coords="495,38,574,57" href="http://www.stsubscribe.com.sg/" />
+<area shape="rect" coords="790,17,950,57" href="http://www.straitstimes.com/STI/STIMEDIA/sp/android/" />
+<area shape="rect" coords="615,17,775,57" href="http://itunes.apple.com/app/the-straits-times/id301065357?mt=8" />
+</map>
+    <div class="w170">
+      <div class="mb10">
+        <h2>Search The Straits Times</h2>
+        <form name="searchform" onSubmit="return chkSearch(document.searchform);" >
+          <fieldset class="search">
+          <input name="q" type="text" class="box" />
+          <button class="btn" type="Submit" title="Submit Search" >Search</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="archive mb10">
+        <h2>Archive</h2>
+        
+
+        	
+
+		
+	<table cellpadding="3" cellspacing="3" class="cal">
+	<tr>
+		<td align="center" class="calDay">S</td>
+		<td align="center" class="calDay">M</td>
+		<td align="center" class="calDay">T</td>
+		<td align="center" class="calDay">W</td>
+		<td align="center" class="calDay">T</td>
+		<td align="center" class="calDay">F</td>
+		<td align="center" class="calDay">S</td>
+	</tr>
+							
+					<tr>
+		
+			<td id="calendar" align="center" class="calDateNotAvail">18</td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">19</td>
+																
+							
+		
+			<td id="calendar7" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120320.html?a=1'>20</a></td>
+																
+							
+		
+			<td id="calendar6" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120321.html?a=1'>21</a></td>
+																
+							
+		
+			<td id="calendar5" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120322.html?a=1'>22</a></td>
+																
+							
+		
+			<td id="calendar4" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120323.html?a=1'>23</a></td>
+																
+							
+		
+			<td id="calendar3" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120324.html?a=1'>24</a></td>
+					</tr>
+																	
+							
+					<tr>
+		
+			<td id="calendar2" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120325.html?a=1'>25</a></td>
+																
+							
+		
+			<td id="calendar1" align="center" class="calDateAvail"><a href='http://www.straitstimes.com/Home_20120326.html?a=1'>26</a></td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">27</td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">28</td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">29</td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">30</td>
+											
+		
+			<td id="calendar" align="center" class="calDateNotAvail">31</td>
+					</tr>
+							</table>
+ </div>
+      <div class="followst">
+        <h2>Follow ST</h2>
+      <div class="followst"><img width="147" height="30" border="0" usemap="#Map" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/footer/icons4.png" alt="twitter,facebook,rss,newsletter icon"/>
+<map id="Map" name="Map">
+  <area href="http://twitter.com/stcom" coords="0,0,32,32" shape="rect" title="twitetr">
+<area href="http://www.facebook.com/TheStraitsTimes" coords="38,0,70,32" shape="rect" title="facebook"><area href="http://www.straitstimes.com/STI+On+The+Go/RSS+News+Feed/RSS+News+Feed.html" coords="78,0,108,32" shape="rect" title="RSS"><area href="http://subst.asiaone.com/sub/updateinformation.action" coords="116,0,146,32" shape="rect" title="Newsletter"></map></div>
+      </div>
+    </div>
+    <div class="quicklinks">
+      <h2>ST Sections</h2>
+      
+                   
+      
+      <script type="text/javascript"> 
+      	document.write(generateFooterItem(navbar.BN));
+      	if (display_day_array[0]=="Sunday"){
+			document.write(generateFooterItem(navbar.PremSunday));
+		}else {
+			document.write(generateFooterItem(navbar.PremWeekdays));
+	   }
+      </script>
+      
+                 
+     
+      <script type="text/javascript"> 
+        document.write(generateFooterItem(navbar.Community));
+		document.write(generateFooterItem(navbar.Multimedia));
+      	document.write(generateFooterItem(navbar.Features));
+        //document.write(generateFooterItem(navbar.Projects));
+      </script>
+       <a>Projects</a> &#8226; <a href="http://www.straitstimes.com/childaid/">Childaid</a> &#8226; <a href="http://www.straitstimes.com/spmf/School+Pocket+Money+Fund.html">School Pocket Money Fund</a> &#8226; <a href="http://www.straitstimes.com/Parliament/Parliament.html">Parliament</a>
+      <h2>News Products</h2>
+      &#8226;	<script type="text/javascript"> document.write("<a class='EP' href='http://epaper.straitstimes.com/fvx/fvx.php?param="+epaper_date+"'>E-paper</a>"); </script> &#8226;	 <a href="http://www.straitstimes.com/mobile">iPhone</a> &#8226;	 <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/android/">Android</a> &#8226;	 <a href="javascript:window.open('/vgn-ext-templating/sti/nasetup.jsp',%20'services',%20'width=1024,%20height=660,%20scrollbars=1');%20void('');">News Alert</a><br />
+      <div class="clear1px">&nbsp;</div>
+      <h2>Customer Care</h2>
+      &#8226;	 <a href="http://www.stsubscribe.com.sg/">Subscribe</a>  &#8226;	 <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/html/customercare/customercare.html?id=0">About Us</a> &#8226; <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/html/customercare/customercare.html?id=1">Advertise</a> &#8226;	 <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/html/customercare/customercare.html?id=2">FAQ</a> &#8226; <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/html/customercare/ipadcustomercare.html">Mobile app FAQ</a> &#8226; <a href="http://www.straitstimes.com/STI/STIMEDIA/sp/html/customercare/customercare.html?id=3">Contact Us</a> </div>
+    <!--end .quicklinks-->
+    <div class="sphwebsites">
+      <h2>SPH Websites</h2>
+      <ul>
+       <li style="width:250px;"><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_bt.gif" align="left"/><a href="http://www.businesstimes.com.sg/"> The Business Times</a> | <a href="http://btstocks.asiaone.com/">BT Stocks</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_razor.gif" align="left"/><a href="http://www.razor.tv">RazorTV</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_stomp.gif" align="left"/><a href="http://www.stomp.com.sg/">STOMP</a></li>
+      <li style="width:250px;"><a href="http://www.st701.com/?utm_source=StraitsTimes&utm_medium=Footer&utm_campaign=SPH"><img align="left" src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_701.gif"></a><a href="http://www.stjobs.sg/?utm_source=StraitsTimes&utm_medium=Footer&utm_campaign=SPH ">Jobs</a> | <a href="http://property.st701.com/?utm_source=StraitsTimes&utm_medium=Footer&utm_campaign=SPH">Property</a> | <a href="http://cars.st701.com/?utm_source=StraitsTimes&utm_medium=Footer&utm_campaign=SPH ">Cars</a> | <a href="http://shops.st701.com/?utm_source=StraitsTimes&utm_medium=Footer&utm_campaign=SPH">Shops</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_spmf.gif" align="left"/><a href="http://www.straitstimes.com/spmf/School+Pocket+Money+Fund.html">School Pocket Money Fund</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_ann.gif" align="left"/><a href="http://www.asianewsnet.net/">Asia News Network</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_a1.gif" align="left"/><a href="http://www.asiaone.com">AsiaOne</a></li>
+      <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_zb.gif" align="left"/><a href="http://www.zaobao.com">Zaobao</a></li>
+	  <li><img src="http://www.straitstimes.com/STI/STIMEDIA/sp/2010/images/footer_ico_913.gif" align="left"/><a onclick="window.open('http://www.streamingradio.asia/radio913/player.php#djnow','video','scrollbars=no, width=760, height=525');" href="javascript://">Radio 91.3</a></li>      
+	  </ul>
+    </div>
+    <!--end .sphwebsites-->
+    <div class="clearall">&nbsp;</div>
+    <div class="copyright">
+    <div class="copyrightLeft">Copyright &copy; 2012 Singapore Press Holdings Ltd. Co. Regn No. 198402868E. All rights reserved.</div>
+    <div class="copyrightRight"> <a href="javascript://" onclick="window.open('http://sph.com.sg/legal/website_tnc.html','video','scrollbars=yes, width=852, height=525');">Terms &amp; Conditions</a></div>
+  </div>
+
+  </div>
+<!--end of footer-->
+<!-- form link -->
+
+<!-- end of form link -->			
+	
+<!-- START Nielsen//NetRatings SiteCensus V5.3 STI-BREAK -->
+<script>
+var _rsCI="sg-sph"; /* client ID */
+var _rsCG=pageinfo.p_COTag; /* content group */
+var _rsDN="//secure-sg.imrworldwide.com/"; /* data node */
+var _rsDT=1; /* to turn on whether to get the document title, 0=off 1=on */
+var _rsSE=1; /* to turn on surveys, 0=off 1=on */
+var _rsSM=0.1; /* maxumum survey rate, 1.0=100% */
+var _rsSS=500; /* sample size */
+var _rsCL=0; /* link overlay, 0=off 1=on */
+document.write('<scr'+'ipt type="text/javascript" src="'+_rsDN+'v53.js"></scr'+'ipt>');
+</script>
+<noscript>
+<div>
+<img src="//secure-sg.imrworldwide.com/cgi-bin/m?ci=sg-sph&amp;cg=STI-BREAK" alt=""/>
+
+</noscript>
+<!-- END Nielsen//NetRatings SiteCensus V5.3 -->
+
+
+<script language='JavaScript' type='text/javascript' src='/STI/STIFILES/media_ads/adscripts3.js'></script>	
+
+
+</body>
+</html>
+
+
+
+
+	<!-- track dependencies -->
+	
+
+

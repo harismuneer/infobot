@@ -1,0 +1,313 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-25T11:26:17Z
+WARC-TREC-ID: clueweb12-1114wb-72-16114
+WARC-Target-URI: http://wn.anglican.org.nz/electoral_college_process_update/index
+WARC-Payload-Digest: sha1:RWIDPOAGGZFPJZS26NY7V5SY4AJ3VPRY
+WARC-IP-Address: 203.89.201.60
+WARC-Record-ID: <urn:uuid:a0e2f4e9-f3ae-4d15-9221-7802911250ac>
+Content-Type: application/http; msgtype=response
+Content-Length: 42034
+
+HTTP/1.1 200 OK
+Connection: close
+Date: Sun, 25 Mar 2012 11:26:01 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 41793
+
+<html>
+<head><title id="title">Anglican Diocese of Wellington, New Zealand. As a Christian faith community we worship, we witness, we teach, we serve, we care.</title>
+<meta name="description" content="" id="description" />
+
+<base href="http://wn.anglican.org.nz/" />
+
+<script type="text/javascript">
+ wsfe={
+ enableAjax:false,// set up the enableajax flag
+ templateid:5,// record the current template on the client
+ shopuid:'',// initialise the shop uid variable, if any
+ version:'2012.01.37376.0',// the current build version
+ globalBucket:'global/',// the location of global files
+ assetsBucket:'files/', // the location of site asset files
+ GAID:'UA-17757777-43' // Google Analytics tracking id
+ };
+</script>
+<script type="text/javascript" src="global/script/wsfe.js?v=2012.01.37376.0"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="global/script/site_search.js?v=2012.01.37376.0"></script>
+<!-- ### ENSURE SEARCH FORM IN TEMPLATE HAS FORM NAME AS "search_form" ### -->
+<script type="text/javascript" src="global/script/milonic_src.js?v=2012.01.37376.0"></script>	
+<script type="text/javascript" src="global/script/mmenudom.js?v=2012.01.37376.0"></script>
+<script type="text/javascript" src="files/scripts/imagefade.js?v=2012.01.37376.0"></script>
+<script language="javascript" src="files/scripts/formchecker_WM.js?v=2012.01.37376.0"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function validateForm() {
+ var count = 0;
+ var msg = "";
+
+
+
+
+ for (i = 1; i <= 76; i++) {
+ if (document.fm.elements[i].value.search(/^[0-9.]*$/) == -1 || document.fm.elements[i].value == "") {
+ count = 1;
+ msg = msg + "\n" + document.fm.elements[i].name;
+ }
+ else if ((i > 76) && (count == 0)) {
+ }
+ }
+ for (i = 1; i <= 76; i++) {
+ if (document.fm.elements[i].value.search(/^[0-9.]*$/) == -1 || document.fm.elements[i].value == "") {
+ alert("PLEASE FILL IN THE FOLLOWING FIELD(S) CORRECTLY \n " + msg);
+ document.fm.elements[i].focus();
+ return (false);
+ }
+
+ }
+
+if (document.forms[1].Parish_Name.value == "") {
+		 alert("Please enter your parish name.");
+		 return false;
+	 }
+
+	 else if (document.forms[1].phone.value == "") {
+		 alert("Please enter your phone number.");
+		 return false;
+	 }
+
+	 else if (document.forms[1].Name.value == "") {
+	 alert("Please enter your name.");
+	 return false;
+	 }
+	 else if (document.forms[1].Email.value == "") {
+	 alert("Please enter your email.");
+	 return false;
+	 } 
+
+ else {
+ document.forms[1].submit();
+ }
+
+
+
+}
+//-->
+</script>
+<style type="text/css">
+body { margin:0px; padding:0px; background:#fff url(files/images/Graphics/bg.gif) repeat-x; }
+</style>
+<link rel="Shortcut Icon" href="files/images/graphics/favicon.ico">
+<link rel="STYLESHEET" type="text/css" href="files/css/mainStyle.css?token=7FA24CF6-7E35-43A1-81FE-FCB16C7A4AC5">
+<link rel="STYLESHEET" type="text/css" href="files/css/contentStyle.css?token=7FA24CF6-7E35-43A1-81FE-FCB16C7A4AC5">
+<script>WindowOtherOnLoad = (window.onload) ? window.onload : new Function;window.onload = InitWindow;</script></head>
+<body style="margin:0px; padding:0px; background:#fff url(files/images/Graphics/bg.gif) repeat-x;">
+<table cellpadding="0" cellspacing="0" width="760" align="center">
+<tr>
+<td colspan="2" id="searchbar">
+<div class="wrap">
+	<div id="search">
+		<form method="post" action="search" name="search_form" style="padding:0px; margin:0px;">
+		<input type="hidden" name="searchby" value="content" CHECKED>
+		<input type="hidden" name="searchby" value="file" CHECKED>
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+		<td><input type="text" name="srchWords" size="15" value="Search This Site" onFocus="javascript:this.value='';" class="searchfield"></td>
+		<td><a href="javascript:Search()"><img src="files/images/Graphics/bt_search.gif" width="47" height="19" border="0"></a></td>
+		</tr>
+		</table>
+		</form>
+	</div>
+	<div id="topphotos"> 
+	<script type="text/javascript">
+		//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+		new fadeshow(fadeimages, 183, 127, 0, 4000, 1, "R");
+		</script></div>
+	
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="hdr">
+<div class="wrap">
+	<a href=""><img src="files/images/Graphics/logo_anglicandio2.jpg" width="74" height="118" id="logo"></a>
+	<div id="hdrtextwhite">Anglican Diocese of Wellington</div>
+	<div id="hdrtextyellow">As a Christian faith community <br>we worship, we witness, we teach, we serve, we care.</div>
+</div>
+</td>
+</tr>
+<tr><td colspan="2" id="gradyellow">&nbsp;</td></tr>
+<tr><td colspan="2" id="gradred"><img src="files/images/Graphics/BLANK.GIF" width="1" height="5"></td></tr>
+<tr>
+<td valign="top" id="navcell">
+<img src="files/images/Graphics/nav_top2.gif" width="164" height="21" style="display:block;">
+<div id="nav">
+<script type="text/javascript">var wmUrl = {sr:"https://wnanglicanorgnz.sites.acclipse.com/", isr:"http://wn.anglican.org.nz/" };</script><script type="text/javascript" src="milonic.ashx?siteid=2962cb10-e3ed-4a3d-abf9-3cbd8b4176ef&amp;templateid=5&amp;navid=32&amp;v=9468d7e3-77cc-4fa6-9660-a2ac11d2a9ee"></script><script type="text/javascript">drawMenus();</script><noscript><ul><li><a href="http://wn.anglican.org.nz/home">Home</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington">Bishop of Wellington</a><ul><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters">Letters</a><ul><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/march_2012">March 2012</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/february_2012">February 2012</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/december_2011">December 2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/november">November 2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/october_2011">October 2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/september_2011">September 2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/august_2011">August 2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/july_11">July 11</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/may_11">May - June 11</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/april_11">April 11</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/march_11">March 11</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/february_11">February 11</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/letters/january_11">January 11</a></li></ul></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/archive_letters">Archive Letters</a><ul><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/archive_letters/letters_2010">Letters 2010</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/archive_letters/letters_2009">Letters 2009</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/archive_letters/letters_2008">Letters 2008</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/archive_letters/letters_2007">Letters 2007</a></li></ul></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/sermons">Sermons</a><ul><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/sermons/christmas_2011">Christmas 2011</a></li></ul></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge">Bishops Charge</a><ul><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge/bishops_charge_synod_2011">2011</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge/bishops_charge_synod_2010">2010</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge/bishops_charge_synod_2009">2009</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge/bishops_charge_synod_2008">2008</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_charge/bishop_s_charge_synod_2007">2007</a></li></ul></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/bishops_pastoral_letters">Bishops Pastoral Letters</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/role_of_a_bishop">Role of a Bishop</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/lambeth_conference">Lambeth Conference</a></li><li><a href="http://wn.anglican.org.nz/bishop_of_wellington/cathedral_of_st_paul">Cathedral of St Paul</a></li></ul></li><li><a href="http://wn.anglican.org.nz/electoral_college_process_update">Electoral College Process Update</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre">Anglican Centre</a><ul><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church">About the Anglican Church</a><ul><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/history_of_the_diocese">History of the Diocese</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/vision_of_diocese">Vision of Diocese</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/mission_council">Mission Council</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/ministry_group">Ministry Group</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/management_committee">Management Committee</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/about_the_anglican_church/synod">Synod</a></li></ul></li><li><a href="http://wn.anglican.org.nz/anglican_centre/anglican_centre_staff">Anglican Centre Staff</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/vicar_general">Vicar General</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/archdeacons">Archdeacons</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/handbooks_and_manuals">Handbooks and Manuals</a><ul><li><a href="http://wn.anglican.org.nz/anglican_centre/handbooks_and_manuals/canons_resolutions_standing_orders">Manual of Diocesan Canons, Resolutions and Standing Orders</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/handbooks_and_manuals/administration_handbook">Administration Handbook</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/handbooks_and_manuals/treasurers_handbook">Treasurers Handbook</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/handbooks_and_manuals/yearbook">Year Book</a></li></ul></li><li><a href="http://wn.anglican.org.nz/anglican_centre/property_and_insurance">Property and Insurance</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/pandemic_protocols">Pandemic Protocols</a></li><li><a href="http://wn.anglican.org.nz/anglican_centre/trusts">Trusts</a><ul><li><a href="http://wn.anglican.org.nz/anglican_centre/trusts/closing_dates_2011">Closing dates 2011</a></li></ul></li></ul></li><li><a href="http://wn.anglican.org.nz/cathedral_of_st_paul">Cathedral of St Paul</a><ul><li><a href="http://wn.anglican.org.nz/cathedral_of_st_paul/about_the_cathedral">About the Cathedral</a></li><li><a href="http://wn.anglican.org.nz/cathedral_of_st_paul/news">News</a></li></ul></li><li><a href="http://wn.anglican.org.nz/parishes___churches">Parishes &amp; Churches</a><ul><li><a href="http://wn.anglican.org.nz/parishes___churches/hutt_valley">Hutt Valley</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/porirua_kapiti">Porirua/Kapiti</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/manawatu">Manawatu</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/wairarapa">Wairarapa</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/wanganui_plateau">Wanganui/Plateau</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/wellington_city">Wellington City</a></li><li><a href="http://wn.anglican.org.nz/parishes___churches/wellington_north">Wellington North</a></li></ul></li><li><a href="http://wn.anglican.org.nz/happenings">What's Happening in the Diocese</a><ul><li><a href="http://wn.anglican.org.nz/happenings/rural">Rocking Rural Community</a></li><li><a href="http://wn.anglican.org.nz/happenings/taita-pomare">Taita-Pomare</a></li><li><a href="http://wn.anglican.org.nz/happenings/stokes-valley">Who Let the Dogs out?</a></li><li><a href="http://wn.anglican.org.nz/happenings/a_rocha">A Rocha</a></li><li><a href="http://wn.anglican.org.nz/happenings/divergent_thinkers">Divergent Thinkers</a></li><li><a href="http://wn.anglican.org.nz/happenings/eketahuna">Eketahuna</a></li><li><a href="http://wn.anglican.org.nz/happenings/domg_-_kagera_">DOMG - Kagera</a></li><li><a href="http://wn.anglican.org.nz/happenings/world_in_union">World in Union</a></li><li><a href="http://wn.anglican.org.nz/happenings/karori">Karori</a></li><li><a href="http://wn.anglican.org.nz/happenings/mission_to_seafarers">Mission to Seafarers</a></li><li><a href="http://wn.anglican.org.nz/happenings/wellington_city_mission">Wellington City Mission</a></li><li><a href="http://wn.anglican.org.nz/happenings/childrens_day_cook-off">Childrens Day Cook-off</a></li><li><a href="http://wn.anglican.org.nz/happenings/st_luke_s_wadestown">St Luke's Wadestown</a></li><li><a href="http://wn.anglican.org.nz/happenings/mercy_mission">Mercy Mission</a></li><li><a href="http://wn.anglican.org.nz/happenings/head_shaving_for_canteen">Head Shaving for Canteen</a></li><li><a href="http://wn.anglican.org.nz/happenings/tokomaru">Tokomaru School</a></li><li><a href="http://wn.anglican.org.nz/happenings/tumeke_taita">Tumeke Taita Takes Bronze</a></li><li><a href="http://wn.anglican.org.nz/happenings/ruapehu_100">Ruapehu celebrates 100 years!</a></li><li><a href="http://wn.anglican.org.nz/happenings/christmas_at_taita">Christmas at Taita</a></li></ul></li><li><a href="http://wn.anglican.org.nz/anglican_resource_centre">Resource Centre</a><ul><li><a href="http://wn.anglican.org.nz/anglican_resource_centre/advent_resources">Advent Resources</a></li><li><a href="http://wn.anglican.org.nz/anglican_resource_centre/news_from_the_resource_centre">News from the Resource Centre</a></li><li><a href="http://wn.anglican.org.nz/anglican_resource_centre/preaching_books">Preaching Books</a></li><li><a href="http://wn.anglican.org.nz/anglican_resource_centre/year_a_resources">Year A Resources</a></li></ul></li><li><a href="http://wn.anglican.org.nz/young_persons_office">Young Persons Office</a><ul><li><a href="http://wn.anglican.org.nz/young_persons_office/children">Children</a></li><li><a href="http://wn.anglican.org.nz/young_persons_office/youth">Youth</a></li><li><a href="http://wn.anglican.org.nz/young_persons_office/news">News</a><ul><li><a href="http://wn.anglican.org.nz/young_persons_office/news/ypo_feb_12">YPO Mar 12</a></li></ul></li><li><a href="http://wn.anglican.org.nz/young_persons_office/i_care_parenting">i-care parenting</a></li></ul></li><li><a href="http://wn.anglican.org.nz/ministry">Ministry</a><ul><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry">Ordained Ministry</a><ul><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/ministry_discernment">Ministry Discernment</a></li><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/ordinations_2011">Ordinations 2011</a></li><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/ordinations_2010">Ordinations 2010</a></li><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/ordinations_2009">Ordinations 2009</a></li><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/ordinations_2008">Ordinations 2008</a></li><li><a href="http://wn.anglican.org.nz/ministry/ordained_ministry/theological_colleges">Theological Colleges</a></li></ul></li><li><a href="http://wn.anglican.org.nz/ministry/lay_ministry">Lay Ministry</a><ul><li><a href="http://wn.anglican.org.nz/ministry/lay_ministry/llm_forms">LLM Forms</a></li><li><a href="http://wn.anglican.org.nz/ministry/lay_ministry/llm_training">LLM Training</a></li></ul></li><li><a href="http://wn.anglican.org.nz/ministry/mutual_ministry">Mutual Ministry</a></li><li><a href="http://wn.anglican.org.nz/ministry/ministry_development">Ministry Development News</a><ul><li><a href="http://wn.anglican.org.nz/ministry/ministry_development/thinking_about_study">Thinking about Study</a></li></ul></li><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology">Wgtn Institute of Theology</a><ul><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology/wit_library">WIT Library</a></li><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology/news">News</a></li><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology/genesis_-_seminar_papers">Genesis - Seminar Papers</a></li><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology/luke___seminar_papers">Luke - Seminar Papers</a></li><li><a href="http://wn.anglican.org.nz/ministry/wgtn_institute_of_theology/paul___seminar_papers">Paul - Seminar Papers</a></li></ul></li></ul></li><li><a href="http://wn.anglican.org.nz/mission">Mission</a><ul><li><a href="http://wn.anglican.org.nz/mission/mission_council">Mission Council News</a></li><li><a href="http://wn.anglican.org.nz/mission/assn_of_anglican_women">Assn of Anglican Women (AAW)</a></li><li><a href="http://wn.anglican.org.nz/mission/hospital_chaplaincies">Hospital Chaplaincies</a></li><li><a href="http://wn.anglican.org.nz/mission/overseas_mission">Overseas Mission</a></li><li><a href="http://wn.anglican.org.nz/mission/wellington_city_mission">Wellington City Mission</a></li></ul></li><li><a href="http://wn.anglican.org.nz/worship___prayer">Worship &amp; Prayer</a><ul><li><a href="http://wn.anglican.org.nz/worship___prayer/parishes">Parishes</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/prayer">Prayer</a><ul><li><a href="http://wn.anglican.org.nz/worship___prayer/prayer/diocesan_prayer_diary">Diocesan Prayer Diary</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/prayer/earthquake_prayer">Prayer after an Earthquake</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/prayer/creeds">Creeds</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/prayer/weekly_cathedral_prayers">Weekly Cathedral Prayers</a></li></ul></li><li><a href="http://wn.anglican.org.nz/worship___prayer/special_services">Special Services</a><ul><li><a href="http://wn.anglican.org.nz/worship___prayer/special_services/easter">Easter</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/special_services/christmas">Christmas</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/special_services/constitution_te_pouhere_sunday">Constitution Te Pouhere Sunday</a></li><li><a href="http://wn.anglican.org.nz/worship___prayer/special_services/great_thanksgivings">Great Thanksgivings</a></li></ul></li><li><a href="http://wn.anglican.org.nz/worship___prayer/deepening_spirituality">Deepening Spirituality</a></li></ul></li><li><a href="http://wn.anglican.org.nz/caring">Caring</a><ul><li><a href="http://wn.anglican.org.nz/caring/organisations">Organisations</a></li><li><a href="http://wn.anglican.org.nz/caring/prayer">Prayer</a></li></ul></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools">Education and Church Schools</a><ul><li><a href="http://wn.anglican.org.nz/education_and_church_schools/wgtn_institute_of_theology">Wgtn Institute of Theology</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools">Church Schools</a><ul><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/chilton_st_james">Chilton St James</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/hadlow_preparatory_school">Hadlow Preparatory School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/huntley_school">Huntley School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/hutt_international_boys_school">Hutt International Boys School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/nga_tawa_diocesan_school">Nga Tawa Diocesan School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/rathkeale_college">Rathkeale College</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/samuel_marsden_collegiate_school">Samuel Marsden Collegiate School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/st_georges_preparatory_school">St Georges Preparatory School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/st_marks_church_school">St Marks Church School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/st_matthews_collegiate_school">St Matthews Collegiate School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/wanganui_collegiate_school">Wanganui Collegiate School</a></li><li><a href="http://wn.anglican.org.nz/education_and_church_schools/church_schools/wellesley_college">Wellesley College</a></li></ul></li></ul></li><li><a href="http://wn.anglican.org.nz/news">News</a><ul><li><a href="http://wn.anglican.org.nz/news/thursday_bulletins">Thursday Bulletins</a><ul><li><a href="http://wn.anglican.org.nz/news/thursday_bulletins/this_week">This week</a></li><li><a href="http://wn.anglican.org.nz/news/thursday_bulletins/last_week">Last week</a></li><li><a href="http://wn.anglican.org.nz/news/thursday_bulletins/archive">Archive</a></li></ul></li><li><a href="http://wn.anglican.org.nz/news/bishops_news">Bishops News</a></li><li><a href="http://wn.anglican.org.nz/news/linkwell">LinkWell</a></li><li><a href="http://wn.anglican.org.nz/news/vacancies">Vacancies</a><ul><li><a href="http://wn.anglican.org.nz/news/vacancies/diocese_of_wellington">Diocese of Wellington</a></li><li><a href="http://wn.anglican.org.nz/news/vacancies/others">Other Vacancies</a></li><li><a href="http://wn.anglican.org.nz/news/vacancies/provincial">Provincial</a></li></ul></li></ul></li><li><a href="http://wn.anglican.org.nz/events">Events</a><ul><li><a href="http://wn.anglican.org.nz/events/calendar">Calendar</a></li><li><a href="http://wn.anglican.org.nz/events/2011_ordination">2011 Ordinations</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011">Synod 2011</a><ul><li><a href="http://wn.anglican.org.nz/events/synod_2011/election___appointment_info">Election &amp; Appointment info</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011/synod_information">Synod Information</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011/communion_covenant">Communion Covenant</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011/bishops_charge">Bishops Charge</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011/synod_linkwell">Synod LinkWell</a></li><li><a href="http://wn.anglican.org.nz/events/synod_2011/synod_minutes">Synod Minutes</a></li></ul></li><li><a href="http://wn.anglican.org.nz/events/archive_events">Archive Events</a><ul><li><a href="http://wn.anglican.org.nz/events/archive_events/synod_2010">Synod 2010</a><ul><li><a href="http://wn.anglican.org.nz/events/archive_events/synod_2010/bishops_charge">Bishops Charge</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/synod_2010/synod_linkwell">Synod LinkWell</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/synod_2010/synod_minutes">Synod Minutes</a></li></ul></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008">Sesqui 2008</a><ul><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/history">History</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/pilgrimage_study">Pilgrimage Study</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/sesqui_inaugural_service">Sesqui Inaugural Service</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/waitangi_day_sermon">Waitangi Day Sermon</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/waitangi_day_photos">Waitangi Day Photos</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/kapiti_sesqui_day">Kapiti Sesqui Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/wanganui_sesqui_events">Wanganui Sesqui events</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/ohariu_sesqui_day">Ohariu Sesqui Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/sesqui_woven_crosses">Sesqui Woven Crosses</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/wairarapa_sesqui_events">Wairarapa Sesqui events</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/belmont_sesqui_events">Belmont Sesqui events</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/manawatu_sesqui_day">Manawatu Sesqui Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/back_to_church_sunday">Back to Church Sunday</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/wellington_west_sesqui_day">Wellington West Sesqui Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/wellington_east_sesqui_day">Wellington East Sesqui Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/all_saints_day">All Saints Day</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/sesqui_2008/all_saints_day_sermon">All Saints Day Sermon</a></li></ul></li><li><a href="http://wn.anglican.org.nz/events/archive_events/dr_barbara_brown_taylor_visit">Dr Barbara Brown Taylor Visit</a></li><li><a href="http://wn.anglican.org.nz/events/archive_events/crouch_touch">Crouch, Touch, Pause... ENGAGE</a></li></ul></li></ul></li><li><a href="http://wn.anglican.org.nz/resources">Resources</a><ul><li><a href="http://wn.anglican.org.nz/resources/fundraising">Fundraising</a><ul><li><a href="http://wn.anglican.org.nz/resources/fundraising/news">News</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/index">Fundraising Ideas</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_1">Module 1</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_2">Module 2</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_3">Module 3</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_4">Module 4</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_5">Module 5</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_6">Module 6</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_7">Module 7</a></li><li><a href="http://wn.anglican.org.nz/resources/fundraising/module_8">Module 8</a></li></ul></li><li><a href="http://wn.anglican.org.nz/resources/liturgy">Liturgy</a></li><li><a href="http://wn.anglican.org.nz/resources/selwyn_centres">Selwyn Centres</a></li><li><a href="http://wn.anglican.org.nz/resources/forms">Diocesan Forms</a></li><li><a href="http://wn.anglican.org.nz/resources/links">Helpful Links</a></li><li><a href="http://wn.anglican.org.nz/resources/glossary">Glossary</a></li></ul></li><li><a href="http://wn.anglican.org.nz/professional_standards">Professional Standards</a><ul><li><a href="http://wn.anglican.org.nz/professional_standards/code_of_ethics">Code of Ethics</a></li><li><a href="http://wn.anglican.org.nz/professional_standards/code_of_conduct">Code of Conduct</a></li><li><a href="http://wn.anglican.org.nz/professional_standards/complaints_procedure">Complaints Procedure</a></li><li><a href="http://wn.anglican.org.nz/professional_standards/title_d">Title D</a></li></ul></li><li><a href="http://wn.anglican.org.nz/contact_us">Contact Us</a><ul><li><a href="http://wn.anglican.org.nz/contact_us/contact_us">Contact Details</a></li><li><a href="http://wn.anglican.org.nz/contact_us/where_are_we">Where are we</a></li></ul></li></ul></noscript>
+</div>
+<div id="leftarea"><P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P></div>
+<div id="bottomlogo" align="center"><a href="anglican_logo_meaning"><img src="files/images/Graphics/logo_anglican.gif" width="79" height="87"></a></div>
+</td>
+<td valign="top" id="content"><span class="bcrumbs" id="bcrumbs_217"><a href="" name="breadcrumbs">Home</a>&nbsp;&gt;&nbsp;<a href="http://wn.anglican.org.nz/electoral_college_process_update" name="breadcrumbs">Electoral College Process Update</a></span><br><br><div id="ws.dynamiccontent" style="border:0;margin:0;padding:0;"><strong><span class="Header"><img alt="" src="files/images/content/Genericimages/wlg-dio-logo.jpg" style="float: right;" />Electoral College Process Update </span>&nbsp;<br />
+</strong><strong><span style="color: #2f5897;"><br />
+</span></strong>Copies of articles are below having either been published in the Thursday Bulletin or been emailed directly to everyone on the Diocesan email distribution lists:<br />
+<br />
+<ul>
+ <li><a href="electoral_college_process_update/index#ab">Bishop Tom announces his intent to retire</a> &nbsp; &nbsp;<span class="SmallText">29 Jul 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/index#vg">A Message from the Vicar General</a> &nbsp; <span class="SmallText">22 Sep 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/update_no1">Update 1</a> &nbsp; <span class="SmallText">20 Oct 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/update_2">Update 2</a><span class="SmallText">&nbsp; &nbsp;01 Nov 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/update_no_3">Update 3<span style="font-size: 10px;">&nbsp;</span></a><span style="font-size: 10px;"> &nbsp;08 Dec 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/call_for_nominations">Advert for Nominations for the 11th Bishop of Wellington</a>&nbsp; &nbsp;<span class="SmallText">15 Dec 11<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/update_9feb">Update from the Diocesan Registrar and Administrator</a> <span class="SmallText">&nbsp;23 Feb 12<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/update_9feb">Update from the Diocesan Registrar and Administrator</a>&nbsp;<span class="SmallText">&nbsp;2 Mar 12&nbsp;<br />
+ <br />
+ </span></li>
+ <li><a href="electoral_college_process_update/index#el7">Update from the Diocesan Registrar and Administrator</a> &nbsp;<span class="SmallText">08 Mar 12</span></li>
+</ul>
+<div><span style="text-align: -webkit-auto;">
+<div style="text-align: -webkit-auto;"><strong><span style="font-size: 13px; color: #6076b4;"><br />
+</span></strong></div>
+</span></div>
+<blockquote style="border: none;margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;"><blockquote style="border: none;margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+<div><span style="text-align: -webkit-auto;">
+<div style="text-align: -webkit-auto;"><strong><span style="font-size: 13px; color: #6076b4;">Electoral College Prayer</span></strong></div>
+</span></div>
+</blockquote></blockquote>
+<div><strong>&nbsp;&nbsp;&nbsp;</strong><br style="text-align: -webkit-auto;" />
+</div>
+<blockquote style="border: none;margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; border-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">
+<div><blockquote class="webkit-indent-blockquote" style="border: none; text-align: -webkit-auto; border-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;"><em>God of all wisdom, patience and compassion; we come before you as a Diocese to seek your guidance as we work through the process of nominating our new Bishop. May our hearts, ears and eyes be open to listen, hear and be led by your Holy Spirit. Help us to lay aside our own desires and ambitions that true discernment can prevail and that the person you are calling will emerge. In all we do, may the name of your Son Jesus be glorified.</em></blockquote></div>
+<div><blockquote class="webkit-indent-blockquote" style="border: none; text-align: -webkit-auto; border-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 40px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;"><em>Amen</em></blockquote></div>
+</blockquote>
+<br />
+<span style="font-size: 14px; color: #2f5897;"><strong>E<a name="el7"></a><a name="9feb"></a><a name="elc"></a>lectoral College Process Update from the Diocesan Registrar and Administrator</strong></span><strong><hr />
+</strong><strong><br />
+</strong>Follow the link for more information regarding the Retreat and Worship, Date and Location of the Electoral College, Summons to the Electoral College<span style="color: #2f5897;"><strong><br style="text-align: -webkit-auto;" />
+<br style="text-align: -webkit-auto;" />
+</strong></span><a href="electoral_college_process_update/update_08mar">Update 8 March &nbsp;&gt;</a>&nbsp;<span style="color: #2f5897;"><strong><br />
+<br />
+<br />
+</strong></span><strong><span style="font-size: 14px; color: #2f5897;">E<a name="9feb"></a><a name="elc"></a>lectoral College Process Update from the Diocesan Registrar and Administrator</span></strong><strong><hr />
+</strong><strong><br />
+</strong>Follow the link for more information regarding the Retreat and Worship, Date and Location of the Electoral College, Summons to the Electoral College.<br style="text-align: -webkit-auto; font-family: arial, verdana, helvetica, sans-serif;" />
+<br style="text-align: -webkit-auto; font-family: arial, verdana, helvetica, sans-serif;" />
+<span style="text-align: -webkit-auto;"><a href="electoral_college_process_update/update_01mar">Update 2 March &nbsp;&gt;</a><br />
+<div style="text-align: -webkit-auto;"><br />
+<strong><span><span style="font-size: 13px; color: #6076b4;"><br />
+</span><span style="font-size: 14px; color: #2f5897;">Electoral College Call for Nominations&nbsp;</span></span></strong><br />
+</div>
+</span><span style="color: #2f5897;"><strong><span style="font-size: 14px;"><hr />
+</span></strong></span><span style="font-size: 14px; color: #2f5897;"><strong><br />
+</strong></span><strong>Electoral College nominations for the 11th Bishop of Wellington, New Zealand.</strong><br />
+<br />
+As a result of the announcement of the retirement of our Diocesan Bishop, The Rt Rev Dr Thomas J Brown, the Anglican Diocese of Wellington is preparing for its Electoral College which will be held in March 2012.<br />
+<br />
+<a href="electoral_college_process_update/call_for_nominations">read more &nbsp;&gt;</a><br />
+<br />
+<span style="color: #2f5897;"><strong><br />
+<span style="font-size: 14px;">
+Update 3: &nbsp; 8 December 2011</span><hr style="font-size: 14px;" />
+</strong></span><strong><span style="color: #2f5897;"><strong><span style="color: #2f5897;"><br />
+</span></strong></span>To all in the Diocese of Wellington </strong><br />
+Greetings in the name of the Lord<br />
+<br />
+Thank you to everyone who took part in the three Regional meetings that were held last month. Over 170 members of the Diocese were present. We hope you found the time worthwhile as you participated in the preparations for nominating our next Bishop. Those of you who are ... &nbsp; <a href="electoral_college_process_update/update_no_3">read more &nbsp;&gt;</a><br />
+<strong><span style="color: #2f5897;"><strong><span style="color: #2f5897;"><br />
+<br />
+</span><span style="font-size: 14px;">U<a name="2"></a>pdate 2: &nbsp; 1 November 2011</span><hr />
+</strong></span></strong><br style="text-align: -webkit-auto;" />
+<strong>
+To all in the Diocese of Wellington</strong>&nbsp;<br style="text-align: -webkit-auto;" />
+<br style="text-align: -webkit-auto;" />
+This is a reminder of the pre Electoral Synod Regional Gatherings....<br />
+<br />
+The suggested format is as follows:<br />
+<ul>
+ <li>Welcome and prayer&nbsp;</li>
+ <li>Small group Bible Study (1 Timothy 3:1-7)&nbsp;</li>
+ <li>Consideration of the role of Bishop from ANZPB page 913</li>
+ <li>Discussion related to these questions:<br />
+ <ul>
+ <li>What are the gifts and qualities we are looking for in the person we nominate to be our Bishop?</li>
+ <li>What do you want to know about a candidate that will help you make a decision?</li>
+ <li>What are some of the questions you would want the candidates to respond to?</li>
+ </ul>
+ </li>
+</ul>
+Please bring the ..... &nbsp;<a href="electoral_college_process_update/update_2">read more &nbsp;&gt;</a><br />
+<strong><span style="color: #2f5897;"><br />
+<br />
+</span><span style="font-size: 14px; color: #2f5897;">U<a name="1"></a>pdate 1: &nbsp;20 October 2011</span></strong><hr />
+<br />
+The first issue of Electoral College Process Update has been sent to everyone on our email distribution lists. If you haven't received a copy, or if you know of other people who will be interested in receiving these updates, please&nbsp;<a href="mailto:karen@wn.ang.org.nz?subject=Electoral%20College%20Process%20Update%20request%20via%20the%20Diocesan%20website">email</a>&nbsp;with their name and email address.&nbsp;<br />
+<br />
+<strong style="text-align: -webkit-auto;">To all in the Diocese of Wellington&nbsp;</strong><br style="text-align: -webkit-auto;" />
+<br style="text-align: -webkit-auto;" />
+Grace to you and peace from God our Father and the Lord Jesus Christ<br style="text-align: -webkit-auto;" />
+<br style="text-align: -webkit-auto;" />
+St Paul began his letters with these and similar words and so I greet you on behalf of the Wellington Electoral College Arrangements Committee. We were appointed at the recent Diocesan Synod to&nbsp;.... &nbsp; <a href="electoral_college_process_update/update_no1">read more &nbsp; &gt;</a><br />
+<strong><span style="color: #2f5897;"><br />
+<br />
+</span><span style="font-size: 14px; color: #2f5897;">A<a name="vg"></a> Message from the Vicar General &nbsp; </span></strong><span class="SmallText">22 September 11</span><hr />
+<br />
+<strong><span style="color: #6076b4;">Episcopal Matters</span><br />
+</strong><br />
+As Bishop Tom is away this week practising what he preaches in<em>&nbsp;Wearing Purple 1.4 Don't Stop Fly Fishing,</em>&nbsp;I thought this edition of the Bulletin was a good opportunity to convey to the wider Diocese the significant dates shared and appointments made at Synod last weekend. A timeline was presented by the Chancellor which outlined the important stages of our journey ahead as Bishop Tom concludes his ministry as our Bishop and as we prepare to nominate to the wider Church his replacement.&nbsp;<br />
+<br />
+The known dates are:...... &nbsp;<a href="electoral_college_process_update/vicar_general_message">read more &nbsp;&gt;</a><br />
+<br />
+Members of the Electoral College Arrangements Committee appointed by Synod are: .... &nbsp; <a href="electoral_college_process_update/vicar_general_message">read more &nbsp;&gt;</a><br />
+<br />
+<strong><br />
+<strong><span style="font-size: 14px; color: #2f5897;">A<a name="ab"></a>nnouncement from the Bishop</span></strong><span style="color: #2f5897;">&nbsp; </span></strong><span class="SmallText">29 July 11</span><strong><hr style="color: #2f5897;" />
+</strong><br />
+Dear Friends,<br />
+<br />
+With the support of the Primate who has accepted my request to retire, I now wish to inform you that I shall conclude my role as the tenth Bishop of Wellington in March 2012, effectively completing my duties at the end of February.<br />
+<br />
+The sabbatical time we were privileged to have enable me to..... &nbsp; &nbsp; <a href="electoral_college_process_update/bishop_retiring">read more &nbsp;&gt;</a><br />
+<strong><span style="color: #2f5897;"><br />
+<br />
+<br />
+<br />
+<span style="font-size: 14px;"><br />
+</span></span></strong></div><br><br><br><P align=center><EM>No reira waiho ko te aroha o Te Matua Kaha Rawa hei korowai mou.<BR>May the love of Almighty God enfold you!</EM></P></td>
+</tr>
+<tr><td id="navcellbtm">&nbsp;</td><td id="footer"><a style="cursor: pointer; text-decoration: underline;" title="View Printer Friendly Page." onclick="window.open(document.location+'?print=1','','');">Print this page</a><span style="color: #363647;">&nbsp;&nbsp; |&nbsp;&nbsp; <a href="contact_us">Contact Us</a></span>&nbsp;&nbsp; | &nbsp; <a href="site_map">Site Map</a>&nbsp;<br />
+<br />
+<span style="font-size: 11px;">
+Copyright Anglican Diocese of Wellington 2006 - 2012 &nbsp; |&nbsp; <span style="font-size: 11px;">Charities Commission Registration Number CC31568</span></span><br />
+<br />
+<span style="font-size: 10px;">
+Developed &amp; Managed by <a href="mailto:info@unltd.co.nz">Williams Unlimited</a>&nbsp;</span></td></tr>
+</table>
+</body>
+</html>

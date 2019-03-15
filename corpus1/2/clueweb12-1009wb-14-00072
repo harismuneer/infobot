@@ -1,0 +1,345 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-18T13:30:55Z
+WARC-TREC-ID: clueweb12-1009wb-14-00072
+WARC-Target-URI: http://www.emmetlabs.com/pair/Charlie-Sheen_2321/Nicolas-Cage_1838
+WARC-Payload-Digest: sha1:3JSZEDPZPSR2IZ2KVDTV7A562XU7MLMS
+WARC-IP-Address: 67.23.44.120
+WARC-Record-ID: <urn:uuid:a5746dd3-5d1c-4aa9-b1ee-0b996d87e750>
+Content-Type: application/http; msgtype=response
+Content-Length: 14477
+
+HTTP/1.1 200 OK
+Date: Sun, 18 Mar 2012 13:32:06 GMT
+Server: Mongrel 1.1.5
+Status: 200 OK
+ETag: "69065f5ffa92c4b8cc6edf966782f10e"
+X-Runtime: 0.42002
+Content-Type: text/html; charset=utf-8
+Content-Length: 14067
+Cache-Control: private, max-age=0, must-revalidate
+Set-Cookie: _emmet_session_id=39bbb0eb550cfea83e84a031374066dc; path=/
+Via: 1.0 emmetlabs.com
+Vary: Accept-Encoding
+Connection: close
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Charlie Sheen
+      &
+      Nicolas Cage
+       | Emmet Labs
+    </title>
+    <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="/javascripts/prototype.js?1252012870" type="text/javascript"></script>
+    <script src="/javascripts/effects.js?1252012870" type="text/javascript"></script>
+    <script src="/javascripts/swfobject.js?1252012870" type="text/javascript"></script>
+    <script src="/javascripts/application.js?1252012870" type="text/javascript"></script>
+    <script src="/javascripts/controls.js?1252012870" type="text/javascript"></script>
+    <link href="/stylesheets/compiled/screen.css?1252012921" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/compiled/print.css?1252012921" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]> 
+      <link href="/stylesheets/compiled/ie.css?1252012921" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]> 
+      <link href="/stylesheets/compiled/ie6.css?1252012921" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript">
+      //<![CDATA[
+        onload_functions = []
+        
+        function execute_onload_functions() {
+          for (var i = 0; i < onload_functions.length; i++) {
+            onload_functions[i]();
+          }
+        }
+        window.onload = execute_onload_functions;
+      //]]>
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+        var current_request = null;
+        function ajaxRequest(url, callback) {
+          if (current_request) {
+            current_request.transport.abort();
+          }
+          current_request = new Ajax.Request(url, {asynchronous:true, evalScripts:true, method:'get'});
+        }    
+        function amazon_search(directed_relationship_id) {
+          ajaxRequest('/amazon_search_results/' + directed_relationship_id);
+        }
+        var relationship_id = 6673;
+        function notify_structure_changed() {
+          ajaxRequest("/relationships/" + relationship_id + ".js");
+        }
+        function edit_article(has_text) {
+          if (has_text) new Effect.Fade('article_readonly', {duration:0.3});
+          new Effect.Appear(has_text ? 'article_editable' : 'article', {duration: 0.3, delay: 0.3});
+          setTimeout('$("relationship_article_text").focus();', 650)
+        }
+        function unedit_article(has_text) {
+          new Effect.Fade(has_text ? 'article_editable' : 'article', {duration: 0.3});
+          if (has_text) new Effect.Appear('article_readonly', {duration:0.3, delay: 0.3});
+        }
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div id="hdr">
+          <div id="l">
+            <a href="/" class="logo">Emmet Labs</a>
+          </div>
+          <div id="r">
+            <div id="nav">
+              <ol>
+                <li class="first"><a href="/people">Explore People</a></li>
+                <li><a href="/stories/new">Become a Contributor</a></li>
+              </ol>
+            </div>
+            <div id="links">
+              <a href="/login">Sign In</a>
+            </div>
+            <div id="form">
+        <form action="/search_results" id="find" method="get">
+                <fieldset>
+                  <input class="text" id="search_query" name="search_query" onblur="if (this.value==&quot;&quot;) {this.value=&quot;Find interesting people&hellip;&quot;;}" onclick="if (this.value==&quot;Find interesting people&hellip;&quot;) {this.value=&quot;&quot;;}" tabindex="1" type="text" value="Find interesting people&hellip;" />
+                  <input class="secondary" name="commit" tabindex="2" type="submit" value="Search" />
+                </fieldset>
+        </form>
+            </div>
+          </div>
+        </div>
+        <div class="notice"></div>
+        
+        <div style="width: 950; height: 250" id="flashcontent"><strong>You need to upgrade your Flash Player and enable Javascript to use this site</strong></div><script type="text/javascript">
+        		      // <![CDATA[
+                   var so = new SWFObject('/flash/WanderApp.swf', 'EmmetFlashApp', '950', '250', '9', '#ffffff');
+                   so.addVariable("xmlURL", "/pair/Charlie-Sheen_2321/Nicolas-Cage_1838.xml");
+                   so.addVariable("bgcolor", "0xffffff");
+                   so.write("flashcontent");
+               		// ]]>
+                 </script>
+        <div id="directed_relationship">
+          <div id="permalink"><a href="/pair/Charlie-Sheen_2321/Nicolas-Cage_1838" class="edit">Permalink</a></div>
+          <div id="directed_relationship_title"><h1>Charlie Sheen &amp; Nicolas Cage</h1></div>
+          <div id="primary_column">
+            <div class="notice access">
+              <p>
+                Welcome to Emmet. Please
+                <a href="/login">login</a>
+                or
+                <a href="/login">register</a>
+                to contribute to this page.
+              </p>
+            </div>
+            <div id="summary">
+              <div class="editable" id="summary_field_readonly">
+                <div class="bd">
+                  <p>
+                    The two worked together in the 1993 movie "Deadfall".
+                  </p>
+                </div>
+              </div>
+            </div>
+            <script type='text/javascript'>
+              //<![CDATA[
+                function update_summary_characters_remaining_relationship_summary() {
+                  if ($('summary_error_relationship_summary')) $('summary_error_relationship_summary').hide();
+                  var remaining = 150 - ($('relationship_summary')).value.length;
+                  var message = remaining < 0 ? '<span class = "error">Too many characters (150 maximum)</span>' : remaining + ' characters remaining';
+                  $('summary_countdown_relationship_summary').innerHTML = message;
+                }
+              //]]>
+            </script>
+            <div id="article">
+              <div class="editable" id="article_readonly">
+                <div class="hd">
+                  <h2>Story</h2>
+                </div>
+                <div class="bd">
+                </div>
+              </div>
+            </div>
+            <a name="story_revisions_anchor"></a>
+            <div class="editable active" id="article_revisions" style="display: none">
+              <div class="bd">
+                <h3>Revisions</h3>
+                <div id="revisions">
+                  <ol>
+                    
+                  </ol>
+                </div>
+                <div id="revision"></div>
+              </div>
+              <div class="ft">
+                <a class="tertiary cancel" href="#" onclick="new Effect.SlideUp('article_revisions', {duration: 0.3}); return false;">Done</a>
+              </div>
+            </div>
+            <div class="editable" id="relationship_comments">
+              <div class="hd">
+                <h2>Discussion</h2>
+              </div>
+              <div id="relationship_comments_field_readonly">
+                <div class="bd">
+                  <p class="new">
+                  </p>
+                </div>
+              </div>
+              <div id="relationship_comments_field_errors">
+              </div>
+            </div>
+            <div id="photos">
+              <div class="editable" id="photos_readonly">
+                <div class="hd">
+                  <h2>Pictures</h2>
+                </div>
+                <div class="bd">
+                </div>
+              </div>
+              <script type="text/javascript">
+                //<![CDATA[
+                  function show_edit_photos() {
+                    if ($('photos_editable').style.display !='none') return;
+                    if ($('photo_error_message')) new Effect.Fade('photo_error_message', {duration: 0.3});
+                    new Effect.Fade("photos_readonly", {duration: 0.15});
+                    new Effect.SlideDown("photos_editable", {duration: 0.3});
+                    setTimeout('$("photo_file_field").focus();', 650);
+                    if(typeof photo_action_ids=="object") {
+                      photo_action_ids.each(function(photo_action_id) {
+                        if ($(photo_action_id))
+                          new Effect.Appear(photo_action_id, {duration: 0.3})
+                      });
+                    }
+                  }
+                  function edit_photo_comment(photo_id) {
+                    new Effect.Fade("photo_comment_" + photo_id + "_readonly", {duration: 0.3});
+                    new Effect.Appear("photo_comment_" + photo_id + "_editable", {duration: 0.3, delay: 0.3});
+                    setTimeout('$("photo_comment_' + photo_id + '_field").focus();', 1000);
+                  }
+                //]]>
+              </script>
+            </div>
+            <iframe height="0" name="photo_upload_iframe" style="display:none" width="0"></iframe>
+            <div id="bibliography">
+              <div class="editable" id="bibliography_field_readonly">
+                <div class="hd">
+                  <h2>References</h2>
+                </div>
+                <div class="bd">
+                  <p class="new">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="directed_relationship_categories_field">
+              <div class="editable" id="directed_relationship_categories_readonly">
+                <div class="hd">
+                  <h2>Relationship</h2>
+                </div>
+                <div class="bd">
+                  <ol>
+                    <li class="people">
+                      <strong class="first">Charlie Sheen</strong>
+                      <span>
+                        Professional:
+                        colleague
+                      </span>
+                      <strong>Nicolas Cage</strong>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="secondary_column">
+            <div id="primary_photo">
+            </div>
+            <div id="synopses">
+              <div class="synopsis">
+                <div class="box">
+                  <h3>Charlie Sheen</h3>
+                  <ul>
+                    <li class="milestone">b. Sep 3, 1965, New York City, New York, U.S.</li>
+                    <li class="milestone"></li>
+                  </ul>
+                  <p class="summary">American film and television actor known for his roles in Platoon, Wall Street, Scary Movie 3 and 4 and Two and a Half Men. Currently winning.</p>
+                  <ol>
+                    <li><a href="/network/Charlie-Sheen_2321" class="network">View Network</a></li>
+                    <li><a href="/people/Charlie-Sheen_2321" class="profile">View Profile</a></li>
+                  </ol>
+                </div>
+              </div>
+              <div class="synopsis">
+                <div class="box">
+                  <h3>Nicolas Cage</h3>
+                  <ul>
+                    <li class="milestone">b. Jan 7, 1964, Long Beach, California, U.S.</li>
+                    <li class="milestone"></li>
+                  </ul>
+                  <p class="summary">American actor known for his roles in Leaving Las Vegas, City of Angels, Adaptation, Gone in 60 Seconds and National Treasure.</p>
+                  <ol>
+                    <li><a href="/network/Nicolas-Cage_1838" class="network">View Network</a></li>
+                    <li><a href="/people/Nicolas-Cage_1838" class="profile">View Profile</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div id="amazon_ads">
+              <div id="finding_related">
+                <div class="spinner" id="amazon_spinner"></div>
+                <p>Finding related books & DVDs on Amazon.com&hellip;</p>
+              </div>
+            </div>
+            <script type="text/javascript">
+              //<![CDATA[
+                onload_functions.push(function() { amazon_search(13227); });
+              //]]>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div id="ftr">
+        <div id="top">
+          <a href="/" class="logo">Emmet Labs</a>
+        </div>
+        <div id="bottom">
+          <ol>
+            <li><a href="/pages/Be-Nice-Don-t-Steal-Tell-The-Truth">Be Nice Don't Steal Tell The Truth</a></li>
+            <li><a href="/pages/Write-Stories">Write Stories</a></li>
+            <li><a href="/pages/Privacy">Privacy</a></li>
+            <li><a href="/pages/Terms-of-Service">Terms of Service</a></li>
+            <li><a href="/pages/A-Writer-s-Manifesto">A Writer's Manifesto</a></li>
+            <li><a href="mailto:feedback@emmetlabs.com">Feedback</a></li>
+            <li>Copyright &copy; 2009 Emmet Labs</li>
+          </ol>
+          <div id="sub">
+            <ol>
+              <li><a href="/company">Company</a></li>
+              <li><a href="/team">Team</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="http://blog.emmetlabs.com">Blog</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        //<![CDATA[
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+      </script>
+      <script type="text/javascript">
+        //<![CDATA[
+          try {
+            var pageTracker = _gat._getTracker("UA-7455885-1");
+            pageTracker._trackPageview();
+          } catch(err) {}
+        //]]>
+      </script>
+    </div>
+  </body>
+</html>

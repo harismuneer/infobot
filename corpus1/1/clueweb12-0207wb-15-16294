@@ -1,0 +1,1316 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-17T07:25:10Z
+WARC-TREC-ID: clueweb12-0207wb-15-16294
+WARC-Target-URI: http://www.pru.co.uk/investments/guide/taxation/
+WARC-Payload-Digest: sha1:7LKJGGUUUWJPOXDXAI5SCTVKURRRCALZ
+WARC-IP-Address: 80.247.53.64
+WARC-Record-ID: <urn:uuid:1e9357b9-9c0e-4bf9-9192-bbfab7f9ab41>
+Content-Type: application/http; msgtype=response
+Content-Length: 31564
+
+HTTP/1.1 200 OK
+Server: Apache/2.0.44
+Date: Fri, 17 Feb 2012 07:25:13 GMT
+Content-type: text/html
+Last-modified: Tue, 10 Jan 2012 05:45:15 GMT
+Content-length: 31327
+Etag: "7a5f-4f0bd06b"
+Accept-ranges: bytes
+Connection: close
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+
+	<head>
+
+<title>
+Investment and tax - Investments - Prudential UK
+
+		</title>
+
+<meta NAME="WT.sp" CONTENT="saveinvest"  />
+
+		<meta http-equiv="Content-Language" content="en-gb" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<meta name="keywords" content="tax on savings, ISAs, tax man, taxpayer, capital gains tax, accumulated income, interest, onshore, offshore" />
+
+		<meta name="description" content="Different investments have different tax treatment. Read the Prudentail guide to find out more about how the tax man treats some investments." />
+
+		<meta name="author" content="tax on savings, ISAs, tax man, taxpayer, capital gains tax, accumulated income, interest, onshore, offshore" />
+
+		<meta name="WT.ti" content="Investment and tax" />
+
+<meta http-equiv="Content-Language" content="en-gb" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/newscreeny.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/sifry.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/print.css" media="print" />
+
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/ie.css" media="all" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/ie7.css" media="all" /><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/include_files/techfiles/stylesheets/newie6.css" media="all" /><![endif]-->
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1.4.2");
+google.load("swfobject", "2.1");
+</script>
+
+
+
+<script type="text/javascript">
+
+			function Get_Cookie( check_name ) {
+
+			// first we'll split this cookie up into name/value pairs
+
+			// note: document.cookie only returns name=value, not the other components
+
+				var a_all_cookies = document.cookie.split( ';' );
+
+				var a_temp_cookie = '';
+
+				var cookie_name = '';
+
+				var cookie_value = '';
+
+				var b_cookie_found = false; // set boolean t/f default f
+
+				for ( i = 0; i < a_all_cookies.length; i++ ){
+
+					// now we'll split apart each name=value pair
+
+					a_temp_cookie = a_all_cookies[i].split( '=' );
+
+					// and trim left/right whitespace while we're at it
+
+					cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+
+					// if the extracted name matches passed check_name
+
+					if ( cookie_name == check_name ){
+
+						b_cookie_found = true;
+
+						// we need to handle case where cookie has no value but exists (no = sign, that is):
+
+						if ( a_temp_cookie.length > 1 ){
+
+							cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+
+						}
+
+						// note that in cases where cookie is initialized but no value, null is returned
+
+						return cookie_value;
+
+						break;
+
+					}
+
+					a_temp_cookie = null;
+
+					cookie_name = '';
+
+				}
+
+				if ( !b_cookie_found ){
+
+					return null;
+
+				}
+
+			}
+
+		</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" ></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="/include_files/techfiles/javascript/jquery.easing.1.3.js" ></script>
+
+
+
+<script type="text/javascript" src="/include_files/techfiles/javascript/functions2.js"></script>
+	
+	<script type="text/javascript" src="/include_files/techfiles/javascript/sifr.js"></script>
+
+		<script type="text/javascript" src="/include_files/techfiles/javascript/sifr-config.js"></script>
+
+		<script type="text/javascript" src="/javascript/AC_RunActiveContent.js"></script>
+
+		<script type="text/javascript" src="/include_files/techfiles/javascript/dhtmltooltip.js"></script>
+
+		<script type="text/javascript" src="/include_files/techfiles/javascript/clearfield.js"></script>
+
+		<script type="text/javascript">
+
+			function submitForm(list){
+
+				location.href=list.options[list.selectedIndex].value
+
+			}
+
+			function submitForm(list){
+
+				location.href=list.options[list.selectedIndex].value
+
+			}
+
+<!--
+
+			var locallink=false;
+
+			var strCookValue=getCookie("Redesign_Exit_Survey_cookie");
+
+			function setupLinks(){
+
+				var j=0;
+
+				for (var i=0;i<document.links.length;i++){
+
+					document.links[i].onclick = function(){ locallink = true };
+
+				} 
+
+			}
+
+			function checkExit(){
+
+				var strCookValue=getCookie("Redesign_Exit_Survey_cookie");
+
+				if (!locallink){
+
+					if(strCookValue!="y" && campaign_param!="1"){
+
+						var expireDate = new Date()
+
+						expireDate.setDate(expireDate.getDate()+90)
+
+						document.cookie = 'Redesign_Exit_Survey_cookie=y;expires='+expireDate.toGMTString()+ ';path=/';	
+
+						//PRU_JSopenUrl( 'http://filestore.xmr3.com/137887/11474658/20080211tcfsurvey/form.htm ', 700, 800, 'resizable=yes, scrollbars=yes, toolbar=yes' );	
+
+						//PRU_JSopenUrl( 'http://filestore.xmr3.com/137887/11474658/20080211tcfsurvey/form.htm ', 700, 800, 'resizable=yes, scrollbars=yes, toolbar=yes' );	
+
+						//window.open('http://ps3.silverpop.com/prudential_uk/webforms/137887/11474658/20080211tcfsurvey/form.htm');
+
+					}
+
+				}
+
+			}
+
+// -->
+
+			function getCookie(name) {
+
+				var dc = document.cookie;
+
+				var prefix = name + "=";
+
+				var begin = dc.indexOf("; " + prefix);
+
+				if (begin == -1) {
+
+					begin = dc.indexOf(prefix);
+
+					if (begin != 0) return null;
+
+				} else {
+
+					begin += 2;
+
+				}
+
+				var end = document.cookie.indexOf(";", begin);
+
+				if (end == -1)
+
+					end = dc.length;
+
+				return unescape(dc.substring(begin + prefix.length, end));
+
+			}
+
+		</script>
+
+  
+
+
+	</head>
+
+
+
+
+<body 
+
+onload="setupLinks();" onunload="checkExit();">
+
+
+<div class="page">
+
+    <div class="shortcuts">
+        <ul>
+        <li><a href="#skip-content" accesskey="1">Skip to content</a></li>
+        <li><a href="#skip-nav" accesskey="2">Skip to navigation</a></li>
+	<li><a href="#skip-content" accesskey="1">Skip to content</a></li>
+        <li><a href="#skip-nav" accesskey="2">Skip to navigation</a></li>
+	<li><a accesskey="H" href="/"></a></li>
+	<li><a accesskey="P" href="/pensions_annuities/"></a></li>
+	<li><a accesskey="E" href="/equity_release/"></a></li>
+	<li><a accesskey="V" href="/investments/"></a></li>
+	<li><a accesskey="I" href="/insurance_protection/"></a></li>
+	<li><a accesskey="C" href="/existing_customers/"></a></li>
+	<li><a accesskey="G" href="/guides_tools/"></a></li>
+        </ul>
+    </div>
+
+
+
+       
+
+	<div class="header clear">
+    	<a href="/" class="logo"><img src="/imagefiles/news/background/logo.gif" width="283" height="57" alt="Homee - Retirement has more potential with Prudential" /></a>
+        
+        <div class="tools">
+	        <ul>
+    	        <li class="first" ><a href="/guides_tools/" class="first">Guides, tools &amp; events</a></li>
+                <li><a href="/contact_us/">Contact us</a></li>
+                <li ><a href="/find_an_adviser/" class="last">Find an adviser</a></li>
+
+            </ul>
+            
+      </div>
+        <!--tools-->
+  </div>
+    <!--header-->
+
+
+
+
+<!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: Investment and tax
+URL of the webpage where the tag is expected to be placed: http://www.pru.co.uk/investments/guide/taxation/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 01/29/2010
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2626324;type=annui658;cat=inves101;ord=1;num=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+</script>
+<noscript>
+<iframe src="http://fls.doubleclick.net/activityi;src=2626324;type=annui658;cat=inves101;ord=1;num=1?" width="1" height="1" frameborder="0"></iframe>
+</noscript>
+
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+
+		
+
+
+ 
+
+                
+    
+
+
+
+
+
+
+    
+    
+	<div class="navigation">
+    	
+      <div class="padding clear">
+        	
+            <a id="skip-nav" name="skip-nav"></a>
+        <div class="nav-links clear">
+
+		<ul class="clear">
+                    <li class="first"><a href="/"  
+
+                     ><span>Home</span></a></li>
+
+
+
+                    <li><a href="/pensions_annuities/" >
+
+                    <span>Pensions &amp; Annuities</span></a></li>
+
+		<li><a href="/investments/" 
+
+                     class="selected" 
+
+                    >
+
+                    <span>Investments</span></a></li>
+
+		<li><a href="/insurance_protection/" >
+
+                    <span>Insurance</span></a></li>
+
+		<li><a href="/funds/" >
+
+                    <span>Funds
+                    </span></a></li>
+
+		<li><a href="/existing_customers/" >
+
+                    <span>Existing customers</span></a></li>
+                  
+                    
+                </ul>
+
+
+
+
+   
+                
+                <div id="searcharea">
+        <!--				<form method="get" class="headerform" name="search" action="http://search.pru.co.uk/search.html"> -->
+					<form method="get" class="clear" name="search" action="http://search.pru.co.uk/search.html">		
+<!--						<label style="font-size:12px">Site search</label> <span class="input-left"></span> -->
+              <span class="input-left"></span>
+              <input type="text" class="text" id="search" name="qt" value="Site search" onfocus="clearText(this)" onblur="clearText(this)" />
+<!--						<input alt="Search" type="text" name="qt" class="text" size="17" maxlength="1000" onfocus="clearValue(this)" /> -->
+						<span class="input-right"></span>
+						<input class="global_go" type='image' src="/imagefiles/backgroundimages/btn-go02.gif" id='topsearch' alt ="Go"/>
+						<input type="hidden" name="charset" value="iso-8859-1" />
+						<input type="hidden" name="qp" value="" />
+						<input type="hidden" name="qs" value="" />
+						<input type="hidden" name="st" value="0" />
+						<input type="hidden" name="col" value="pru" />
+						<input type="hidden" name="nh" value="10" />
+						<input type="hidden" name="rf" value="0" />
+						<input type="hidden" name="lk" value="1" />						
+					</form>
+
+
+
+
+
+
+
+
+        
+        </div>
+        </div>
+        
+        
+      </div>
+   
+</div>
+  <!-- Navigation ends-->
+  
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+$(document).ready(function() {
+						   
+	$('#table_series1 tr:odd').addClass('odd');
+
+  $('a#button_series1').click(function() {
+    $('#table_series1').slideDown(0);
+	$('#table_series3').slideUp(0);
+	$('#list_series1').addClass('tab_on', 0);
+	$('#list_series1').removeClass('tab_off', 0);
+	$('#list_series3').addClass('tab_off', 0);
+	$('#list_series3').removeClass('tab_on', 0);
+	$('#table_series3 tr:odd').removeClass('odd');
+	$('#table_series1 tr:odd').addClass('odd');
+    return false;
+  });
+  
+    $('a#button_series3').click(function() {
+    $('#table_series3').slideDown(0);
+	$('#table_series1').slideUp(0);
+	$('#list_series1').addClass('tab_off', 0);
+	$('#list_series1').removeClass('tab_on', 0);
+	$('#list_series3').addClass('tab_on', 0);
+	$('#list_series3').removeClass('tab_off', 0);
+	$('#table_series1 tr:odd').removeClass('odd');
+	$('#table_series3 tr:odd').addClass('odd');
+    return false;
+  });
+  
+});
+</script>
+	
+
+
+<!--navigation-->
+	<div class="container clear">
+
+
+
+	 <div class="content-wrapper">
+
+
+
+		
+
+
+
+
+
+<!--KKN 29th March 2011 v7.0-->
+
+
+    	<ol class="breadcrumb clear">
+    		 <li class="first"><a href='/'>Home</a> </li>
+    		 <li><a href='/investments/'>Investments</a></li><li><a href='/investments/guide/'>Investment guide</a></li><li><font color='red'>Investment and tax</font></li>
+        </ol> 
+            
+            <a id="skip-subnav" name="skip-subnav"></a>
+            <div class="subnav">
+            	<div class="top">
+                    <div class="inner">
+ 
+
+              
+ 
+
+
+
+<h2>Investments</h2>
+
+
+	
+
+	
+
+	
+
+
+<ul><li><a href='/investments/isa/' >ISA</a>
+			
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+</li> 
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+<li><a href='/investments/bonds/' >Investment bonds</a>
+			
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+</li> 
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+<li class='open'><a href='/investments/guide/' >Investment guide</a>
+			
+			
+			
+			<ul><li class='first'><a href='/investments/guide/planning_basics/' >Investment planning - the basics</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li><a href='/investments/guide/tips/' >How to invest - tips for successful saving</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li><a href='/investments/guide/risk_reward/' >Where to invest - balancing risk and reward</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li><a href='/investments/guide/funds/' >Investment funds</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li><a href='/investments/guide/cash/' >Why invest in shares not just cash?</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li class='open'><a href='/investments/guide/taxation/'  class='selected'>Investment and tax</a>
+
+	
+
+
+						
+
+
+
+</li>
+	
+			
+			
+			<li class='final'><a href='/investments/guide/estate_planning/' >Estate planning</a></li></ul>
+	
+			
+</li> 
+
+
+
+	
+
+	
+
+	
+
+
+<li><a href='/investments/guide_oeic_ut/' >OEICs/Unit Trusts</a>
+			
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+</li> 
+
+
+</ul>
+                    </div>
+                    <!--inner-->
+            	</div>
+                <!--top-->
+            </div>
+            <!--subnav-->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+ <a id="skip-content" name="skip-content"></a>
+
+            <div class="content">
+
+            	<h1 class="heading-1">Investment and tax</h1>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+                <div id="flash">
+                <img src="/image/402608/417544/investment_and_tax.jpg" alt="Investment and tax"> 
+              </div>
+		        <p>Different investments have different tax treatment. Read our brief guide below to find out more about how the tax man treats some investments. If you'd like more detailed information please speak to a <a href="/find_an_adviser"/>financial adviser</a>. There may be a charge for financial advice.</p>
+<p> The following is based on our understanding, as at March 2011, of current taxation, legislation and HM Revenue &amp; Customs practice, all of which are subject to change without notice. The impact of taxation (and any tax relief) depends on individual circumstances.</p> 
+<h2>Beat tax on savings</h2>
+<p>If you or your partner is a non-taxpayer, make sure you are not paying unnecessary tax on bank and savings accounts. Avoid the automatic 20% tax deduction on interest by completing form R85 from your bank or product provider or reclaim it using form R40 from HM Revenue &amp; Customs. </p>
+<h2>Individual Savings Accounts (ISAs)</h2>
+<p>You pay no personal income tax or capital gains tax on any growth in an ISA, or when you take your money out. You can save up to £10,680 per person in the 2011/12 tax year in an ISA. <a href="/investments/isa/">Find out more about ISAs</a>.</P>
+<P>If you invest in a stocks and shares ISA, any dividends you receive are paid net, with a 10% tax credit.  There is no further tax liability.</P>
+
+<p>Please be aware that the impact of taxation (and any tax reliefs) depends on individual circumstances. Information about tax rules is based upon our current understanding, and is liable to change in the future.</p>
+<h2>Consider National Savings &amp; Investments</h2>
+<p>You can shelter money in a tax-efficient way within this government-backed savings institution. For details on Premium Bonds, Index-linked Savings Certificates and Fixed Interest Savings Certificates, go to the <a href="http://www.nsandi.com/" target="_blank">National Savings &amp; Investments</a> website. </p>
+<h2>Unit Trusts and Open Ended Investment Companies (OEICs)</h2>
+<p>With a <a href="/investments/guide_oeic_ut/">Unit Trust or OEIC</a> your money is pooled with other investors' money and can be invested in a range of sectors and assets such as stocks and shares, bonds or property.</p>
+<ul>
+<li>Dividend income from OEICS and unit trusts invested in shares<br>If your fund is invested in shares then any dividend income that is paid to you (or accumulated within the fund if it is reinvested) carries a 10% tax credit. If you are a basic rate or non taxpayer, there is no further income tax liability. Higher rate taxpayers have a total liability of 32.5% on dividend income and the tax credit reduces this to 22.5%, while the additional rate taxpayers have a total liability of 42.5% reduced to 32.5% after tax credit is applied. 
+<li>Higher rate taxpayer example<br>
+This is how the tax works for a higher rate taxpayer.<br><br>
+
+<ul><li>Net dividend is &pound;90.<br>
+<li>Gross dividend is &pound;100 (includes the 10% tax credit).<br>
+<li>Less 32.5% (&pound;32.50) higher rate tax on the gross amount of &pound;100 equals a net dividend of &pound;67.50.<br>
+<li>Tax due is &pound;32.50, less 10% tax credit (&pound;10) equals &pound;22.50.</li></ul>
+<br>
+<li>Interest from fixed interest funds<br>
+Any interest paid out from fixed interest funds (these are funds that invest for example in corporate bonds and gilts, or cash) is treated differently to income from funds invested in shares.</P>
+<p>Income is paid net of 20% tax. So for example if interest of &pound;100 had been generated, you would receive a net payment of &pound;80.</p>
+<table width="100%" border="1" cellspacing="0" class="colour-1" summary="" cellpadding="0">
+<tr> 
+<th width="20%" scope="col" class="first">Taxpayer</th>
+<th width="20%" scope="col">Interest paid net of tax</th>
+<th width="30%" scope="col">Reclaim tax</th>
+<th width="30%" scope="col" class="last">Further payment required</th>
+</tr>
+<tr> 
+<td width="20%" class="first">Non taxpayer</td>
+<td width="20%">20%</td>
+<td width="30%">Yes, you can reclaim the 20% tax paid.</td>
+<td width="30%" class="last">No</td>
+</tr>
+<tr> 
+<td width="20%" class="first">Basic rate taxpayer</td>
+<td width="20%">20%</td>
+<td width="30%">No you cannot reclaim the tax.</td>
+<td width="30%" class="last">No</td>
+</tr>
+<tr> 
+<td width="20%" class="first">Higher rate taxpayer</td>
+<td width="20%">20%</td>
+<td width="30%">No you cannot reclaim the tax.</td>
+<td width="30%" class="last">Yes, a further 20% tax payment required.</td>
+</tr><tr> 
+<td width="20%" class="first">Additional rate taxpayer</td>
+<td width="20%">20%</td>
+<td width="30%">No you cannot reclaim the tax.</td>
+<td width="30%" class="last">Yes, a further 30% tax payment required.</td>
+</tr>
+</table>
+<li>Capital gains tax<br>No capital gains tax is paid on the growth in your money from the investments held within the fund, but when you sell, you may have to pay capital gains tax. <br>
+<br>
+Bear in mind that you have a personal capital gains tax allowance that can help you limit any potential tax liability. Any gains over this allowance are taxed at 18%, regardless of whether you are an additional, higher or basic rate taxpayer. 
+<li>Accumulated income<br>
+Accumulated income is interest or dividend payments which are not taken but instead reinvested into your fund. Even though they are reinvested they still count as income and are subject to the same tax rules as for dividend income and interest.</li>
+</ul>
+<h2>Investment bonds (insurance / life assurance bonds)</h2>
+<strong>Onshore investment bonds</strong>
+<p>
+Investment bonds have a different tax treatment from other investments. This can lead to some valuable tax planning opportunities for individuals.
+<ul><li>There is no personal liability to capital gains tax or basic rate income tax on proceeds from your bonds. This is because the fund itself is subject to tax, equivalent to basic rate tax. </li>
+<li> You can withdraw up to 5% each year of the amount you have paid into your bond without paying any immediate tax on it. This allowance is cumulative so any unused part of this 5% limit can be carried forward to future years (although the total cannot be greater than 100% of the amount paid in). </li>
+<li>If you are a higher or additional rate taxpayer now but know that you will become a basic rate taxpayer later (perhaps when you retire for example) then you might consider deferring any withdrawal from the bond (in excess of the accumulated 5% allowances) until that time. If you do this, you will not need to pay tax on any gains from your bond.</li></ul>
+
+<h2>Onshore investment bond considerations</h2>
+Certain events during the lifetime of your bond may trigger a potential income tax liability:</li>
+<ul><li>Death (except terminal illness claims under Prudential Investment Bond or Flexible Investment Plan).</li>
+<li>Some transfers of legal ownership of part or all of the bond.</li>
+<li>On the maturity of the bond (except whole of life policies).</li>
+<li>On full or final cashing in of your bond.</li>
+<li>If you withdraw more than the cumulative 5% annual allowance. Tax liability is calculated on the amount withdrawn above the 5%.</p> </li></ul>
+<p> If you are a higher or additional rate taxpayer or the profit (gain) from your bond takes you into a higher or additional rate tax position as a result of any of the above events then you may have an income tax liability. </p>
+<p>As you are presumed to have paid basic rate tax, the amount you would liable for is the difference between the basic rate and higher or additional rate tax.<br>
+<br>The events may also affect your eligibility for certain tax credits.</p>
+<p>The taxation of life assurance investment bonds held by UK corporate investors changed from 1 April 2008. The bonds fall under different legislation and corporate investors are no longer able to withdraw 5% of their investment each year and defer the tax on this until the bond ends.</p>
+<h2>Offshore investment bonds</h2>
+Offshore investment bonds are similar to UK investment bonds above but there is one main difference.</p>
+<p>With an onshore bond tax is payable on gains made by the underlying investment, whereas with an offshore bond no income or capital gains tax is payable on the underlying investment. However, there may be an element of withholding tax that cannot be recovered.</p>
+<p>The lack of tax on the underlying investment means that potentially it can grow faster than one that is taxed. Note that tax may be payable on a chargeable event at a basic, higher or additional rate tax as appropriate.</p>
+<p>Remember that the value of your fund can fluctuate and you may not get back your original investment. </p>
+<p>For more information read about the <a href="/investments/bonds/international/offshore_tax/">tax benefits of offshore bonds</a>.</p>
+<h2>UK shares and taxation</h2>
+<p>If you own shares directly in a company you may be liable to tax.</p>
+<ul>
+<li>Dividends<br>
+Any income (dividends) you receive from your shares carries a 10% tax credit. Higher rate taxpayers have a total liability of 32.5% on dividend income and the tax credit reduces this to 22.5%, while the 50% additional rate taxpayers have a total liability of 42.5% reduced to 32.5% after tax credit is applied. <br>
+<li>Additional rate taxpayer example<br>This is how the tax works for an additional rate taxpayer.<br><br>
+<ul><li>Net dividend is &pound;90.
+<li>Gross dividend is &pound;100 (includes the 10% tax credit).<br>
+<li>Less 42.5% (&pound;42.50) higher rate tax on the gross amount of &pound;100 equals a net dividend of &pound;57.50.<br>
+<li>Tax due is &pound;42.50, less 10% tax credit (&pound;10) equals &pound;32.50.</li></ul>
+<li>Sales of shares<br>When you sell shares you may be liable to capital gains tax on any gains you may make. You have a yearly allowance, above which any gains are liable to 18% tax. Special rules apply to working out your gains or losses - <a href="http://www.hmrc.gov.uk/taxon/buying-shares.htm">find out more</a>.</li></ul>
+<h2>Make the most of your personal income allowances</h2>
+<p>If you have a non-earning spouse, or civil partner, you can switch income-earning investments to help your tax bill. Everyone up to age 65 has a personal allowance of &pound;7,475 in the 2011/12 tax year, rising to &pound;9,940 between the ages of 65 and 74 and &pound;10,090 at 75 and over. This means you can earn this amount without paying tax.</p>
+<h2>Use capital gains tax allowances wisely </h2>
+<p>Everyone can make up to a certain amount of profit each year from selling an investment or property without paying tax. Think about switching investments to a spouse's or civil partner's name to take advantage of both of your allowances.</p>
+<h2>Speak to a specialist</h2>
+<p>This page is intended as a brief overview of investment and taxation and not as advice. Taxation on investments can be complex so we recommend you speak to a tax specialist or a <a href="/find_an_adviser/">financial adviser</a>. There may be a charge for financial advice.</p>       	  	
+
+     
+
+         
+
+   
+	
+
+
+	  
+
+
+
+
+
+
+
+
+
+ 
+
+<!-- First Feature Box --> 
+
+
+
+
+	
+	  
+
+	  
+
+
+
+
+
+
+
+
+ 
+  
+	
+	  
+
+	  	
+
+
+
+
+
+
+	
+	<!-- Sub Text box 2--> 
+
+ 
+
+
+	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+	<!-- General download box-->
+
+
+ 
+
+   	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+<!-- General table box-->	
+
+	
+ 
+
+ 
+	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+<!-- Feature bullet List-->		
+
+ 
+	
+
+	 	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+<!-- Features-->
+
+
+ 	
+
+	 	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+ 
+<!-- bottom Left & Right Boxes-->
+	
+		
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+ <!-- How to apply--> 
+
+ 
+    
+
+     	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+ 
+<!-- Bottom Box-->  
+
+	  	
+	  
+
+	  	
+
+
+
+
+
+
+	
+
+ 
+
+<!-- Bottom Box-->  
+
+	  	
+	  	
+
+	  	
+
+
+
+
+
+
+	
+
+<!-- General table box-->	
+
+
+
+	
+ 
+
+ 		
+	  	
+
+
+
+<!-- AddThis Button BEGIN -->
+
+
+<br><a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=prudential" target="_blank" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=prudential"></script><br><br>
+
+<!-- AddThis Button END -->
+
+
+	</div>
+
+
+
+
+
+</div>
+
+
+	
+
+
+
+ 
+ <div class="additional">
+        
+			<div class="clear">
+
+
+  
+
+
+
+
+
+
+
+		
+
+               	
+
+                          <h2>Email us</h2><ul class="links"><li><a href="/contact_us/prumail/">Send us an email</a></li></ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Need financial advice?</h2><ul class="links"><li><a href="/find_an_adviser/">Find an adviser</a></li></ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Confused about investments</h2>
+<ul class="links">
+<li><a href="/pdf/investments/PTPB10027.pdf" target=_blank>Download our investments booklet</a></li>
+<li><a href="/pdf/investments/INVM11241.pdf" target=_blank>Download our glossary of investments terms</a></li>
+</ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Existing customers</h2>
+<p>
+Do you need to review your plan or policy with us?</p>
+<ul class="links"><li>
+<a href="/existing_customers/">Review your plan</a> </li></ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Investment tools</h2>
+<ul class="links">
+<!--<li><a href="/retirement_calculator/" target=_blank>Retirement Calculator</a>-->
+<li><a href="/guides_tools/calcs/income_tax/" target=_blank>Income Tax Calculator</a> </li>
+<li><a href="/guides_tools/calcs/budget/" target=_blank>Budget Planner</a>
+</li></ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Funds</h2>
+<ul class="links"><li>
+<a href="/funds/">Funds prices and information</a>
+</li></ul>
+		
+			
+
+
+		
+                
+      
+
+		
+
+               	
+
+                          <h2>Related links</h2>
+<ul class="links">
+<li><a href="/investments/guide/estate_planning/">Estate planning</a>
+<li><a href="/investments/guide/taxation/">Investment and tax</a>
+</li></ul>
+		
+			
+
+
+		
+                
+       
+
+</div>
+ <!--padding-->
+
+</div>
+<!--additional-->
+
+</div>
+	
+<!--container--> 
+   
+
+
+
+	 
+ 
+ 
+ 
+
+ 	<!--FOOTER-->
+
+<div class="footer">
+	  <div class="col1">
+    	<h4>About</h4>
+    	<ul class="clear">
+       
+	<li ><a href="/about_us/">About us</a></li> 
+	<li  ><a href="/careers/">Careers</a></li>  
+           
+        </ul>
+
+        <ul class="clear">
+
+        <li  ><a href="/press_centre/">Press centre</a></li>
+	<li  ><a href="/about_us/complaints_data/">Complaints data</a></li> 
+        </ul>
+        
+        
+        
+      </div>
+       
+       <div class="col2">
+       <h4>Website Information</h4>
+    	<ul class="clear">
+	<li  ><a href="/privacy_security/">Security</a></li>
+        <li ><a href="/legal/">Legal</a></li>
+	<li ><a href="/guides_tools/glossary/">Glossary</a></li>
+            
+      
+           
+        </ul>
+        <ul class="clear">
+          <li  ><a href="/sitemap/">Site Map</a></li>
+          <li ><a href="/accessibility/">Accessibility</a></li>
+           
+      
+        </ul>
+        
+       </div>
+       
+      <div class="col3">
+    	<h4>Other Prudential Websites</h4>
+    	<ul class="clear">
+	    <li><a href="http://www.pruadviser.co.uk/" target="_blank">Pruadviser (for financial advisers only)</a></li>
+	    <li><a href="http://www.prudential.co.uk/" target="_blank">Prudential PLC</a></li>	
+   	    <li><a href="http://www.prudential-international.com/" target="_blank">Prudential International</a></li>
+         
+           
+        </ul>
+        <ul class="clear">
+	   <li ><a href="/employers/">Employers & Trustees</a></li>
+     <li ><a href="/advisers/">Corporate Advisers</a></li>
+
+
+        </ul>
+        
+        
+   </div>
+      
+      
+       <p>&copy; Prudential <script type="text/javascript">
+
+var d = new Date();
+
+document.write(d.getFullYear());
+
+
+    </script> </p>
+
+</div>
+</div>
+
+
+
+    <!--footer-->
+
+    
+  <!--page--> <!-- START OF SmartSource Data Collector TAG --> 	<!-- Copyright (c) 1996-2008 WebTrends Inc.  All rights reserved. --> 	<!-- Version: 1.1.1 --> 	<!-- Created: 6/9/2008 8:44:34 AM --> 		<script src="/include/techfiles/javascript/wtinit.js" type="text/javascript"></script> 		<script type="text/javascript">WT.srch=getCookie("wtPaidSearch"); 		if(null==WT.srch){ 		WT.srch=0; 		} 		</script> 		<script src="/include/techfiles/javascript/wtbase.js" type="text/javascript"></script> 		<noscript> 		<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://www9.pru.co.uk/dcskukg63fbaiw46upkx5cgyk_3w2g/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=1.1.1"/></div> 		</noscript> 	<!-- END OF SmartSource Data Collector TAG --> <!-- Google Tags --> <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> </script>  <script type="text/javascript"> _uacct = "UA-1529969-1"; urchinTracker(); </script>                             </body> </html> 

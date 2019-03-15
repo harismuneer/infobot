@@ -1,0 +1,1145 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-01T05:24:18Z
+WARC-TREC-ID: clueweb12-1806wb-82-30494
+WARC-IP-Address: 50.22.81.189
+WARC-Payload-Digest: sha1:QF5QYS6POWDFH6XTKDPYYIJKVR2UM3SZ
+WARC-Target-URI: http://www.poetandpoem.com/lyric_poems.html
+WARC-Record-ID: <urn:uuid:3f75de79-5e89-4f3c-866e-d4c23a9b609a>
+Content-Type: application/http; msgtype=response
+Content-Length: 77524
+
+HTTP/1.1 200 OK
+Date: Tue, 01 May 2012 05:24:18 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<TITLE>Famous lyric Poems | lyric Verses | best lyric Poems</TITLE>
+<meta name="KEYWORDS" content="famous lyric poems, lyric verses, best lyric verses, lyric poem, short lyric poems, funny lyric poem, funny lyric poetry, short lyric love poems, famous love poems, sweet lyric poems, sweet love poems, sweet funny lyric poems, short lyric poems for kids, sad lyric poem, funny love poems, famous short lyric poems, free lyric poetry website, lyric poem search, published lyric poems, find lyric poems, printable lyric poems ">
+<meta name="description" content="Here you will find a collection of Famous lyric Poems, Short lyric Poems, lyric Verses, great lyric poems, Search and Find lyric Poems">
+<meta name="copyright" content="Copyright © 2011 PoetAndPoem.com. All Rights Reserved.">
+<meta name="author" content="PoetAndPoem.com">
+<meta name="email" content="admin@poetandpoem.com">
+<meta name="Distribution" content="Global">
+<meta name="Rating" content="General">
+<meta name="Robots" content="INDEX,FOLLOW">
+<meta name="Revisit-after" content="7 Days">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/widget.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="css/jquery-1.1.4.pack.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+function showLoader(){
+//$('.search-background').fadeIn(200);
+}
+function hideLoader(){
+//$('#sub_cont').fadeIn(1500);
+//$('.search-background').fadeOut(200);
+};
+$('#poem_title').keyup(function(e) {
+if(e.keyCode == 13) {
+showLoader();
+if(jQuery.trim($("#poem_title").val())==''){alert('Please enter search value.');}else{
+$('#searchcont').fadeIn(1500);
+$('#searchajtitle').html('Search Result - '+$("#poem_title").val());
+$('#searchajtxt').html('You have searched for poem titles containing "'+$("#poem_title").val()+'". Please find below the list of poems having "'+$("#poem_title").val()+'" in their poem title. plesae click on the poem title to browse the poem'); 
+$.ajax({
+type: "POST",
+url: "search_poem.php",
+data: "val="+jQuery.trim($("#poem_title").val()),
+success: function(msg){
+ $("#searchcont").html(msg).hide().fadeIn('slow');
+}
+});
+}return false;
+}
+ });
+$('#poem_title').keyup(function() {
+if(jQuery.trim($("#poem_title").val())!='') {
+$('#searchcont').fadeIn(1500);
+$('#searchajtitle').html('Search Result - '+$("#poem_title").val());
+$('#searchajtxt').html('You have searched for poem titles containing "'+$("#poem_title").val()+'". Please find below the list of poems having "'+$("#poem_title").val()+'" in their poem title. plesae click on the poem title to browse the poem'); 
+$.ajax({
+type: "POST",
+url: "search_poem.php",
+data: "val="+jQuery.trim($("#poem_title").val()),
+success: function(msg){
+ $("#searchcont").html(msg).hide().fadeIn('slow');
+}
+});
+}
+return false;
+});
+
+$("#search_first").submit(function(){
+showLoader();
+if(jQuery.trim($("#poem_title").val())==''){alert('Please enter search value.');}else{
+$('#searchcont').fadeIn(1500);
+$('#searchajtitle').html('Search Result - '+$("#poem_title").val());
+$('#searchajtxt').html('You have searched for poem titles containing "'+$("#poem_title").val()+'". Please find below the list of poems having "'+$("#poem_title").val()+'" in their poem title. plesae click on the poem title to browse the poem'); 
+$.ajax({
+type: "POST",
+url: "search_poem.php",
+data: "val="+jQuery.trim($("#poem_title").val()),
+success: function(msg){
+ $("#searchcont").html(msg).hide().fadeIn('slow');
+}
+});
+}
+return false;
+});
+ 
+$("#search_second").submit(function(){
+showLoader();
+if(jQuery.trim($("#poem_title").val())==''){alert('Please enter search value.');}else{
+$('#searchcont').fadeIn(1500);
+$('#searchajtitle').html('Search Result - '+$("#poem_title").val());
+$('#searchajtxt').html('You have searched for poem titles containing "'+$("#poem_title").val()+'". Please find below the list of poems having "'+$("#poem_title").val()+'" in their poem title. plesae click on the poem title to browse the poem'); 
+
+$.ajax({
+type: "POST",
+url: "search_poem.php",
+data: "val="+jQuery.trim($("#poem_title").val()),
+success: function(msg){
+ $("#searchcont").html(msg).hide().fadeIn('slow');
+}
+});
+}
+return false;
+});
+ 
+
+$("#search_third").submit(function(){
+showLoader();
+if(jQuery.trim($("#poem_title").val())==''){alert('Please enter search value.');}else{
+$('#searchcont').fadeIn(1500);
+$.ajax({
+type: "POST",
+url: "search_poem.php",
+data: "val="+jQuery.trim($("#poem_title").val()),
+success: function(msg){
+ $("#searchcont").html(msg).hide().fadeIn('slow');
+}
+});
+}
+return false;
+});
+});
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script language="javascript" src="includes/kalakar.js"></script>
+<script language="javascript">
+<!--
+function valform(thisform)
+{
+if(trimString(thisform.search_key.value)=="")
+	{
+		alert("Please enter keyword to be searched");
+		thisform.search_key.focus();
+		return false;
+	}
+}
+-->
+</script>
+
+
+<style type="text/css">
+<!--
+.style2 {color: #FF0000}
+.a_link
+{ color:#990033;}
+-->
+</style>
+<link rel="stylesheet" href="paging.css" type="text/css" />
+</head>
+
+<body onload="MM_preloadImages('images/audiofiles_hover.gif','images/classical-poet_hover.gif','images/job_hover.gif','images/lyrics_hover.gif','images/modern-poet_hover.gif','images/musician_hover.gif','images/poem_hover.gif','images/singer_hover.gif','images/videofiles_hover.gif','images/quotation_hover.gif')">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-8557314-2";
+</script>
+<script language="javascript" src="includes/kalakar.js"></script>
+<script  type="text/javascript">
+	function popup(){
+		window.open('tell_a_friend.php', 'tellafriend_script','scrollbars=1,statusbar=1,resizable=1,width=400,height=510');
+	}
+</script>
+<script language="javascript">
+/*function valform(thisform)
+{
+if(trimString(thisform.search_key.value)=="")
+	{
+		alert("Please enter keyword to be searched");
+		thisform.search_key.focus();
+		return false;
+	}
+}*/
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 10px;
+	color: #999999;
+}
+-->
+</style>
+
+<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="1024" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="1024" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top" class="head_bg"><form name="searchform" action="search.php" method="post" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="347" height="146" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="10" height="54" align="left" valign="top"></td>
+                    <td height="54" align="left" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td width="10" height="72" align="left" valign="top"></td>
+                    <td height="72"></td>
+                  </tr>
+                  <tr>
+                    <td width="10" height="20" align="left" valign="top"></td>
+                    <td height="20" align="left" valign="top"></td>
+                  </tr>
+                </table></td>
+                <td width="270" height="146" align="left" valign="top"></td>
+                <td width="407" height="146" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="407" height="17" align="left" valign="top"><div align="right" class="style3">
+                      <h1 class="style7  style1"><span class="style11">Famous Poets and Poems | Short Love Poems | Best Quatations | English Lyrics Website</span></h1>
+                    </div></td>
+                  </tr>
+                  <tr>
+                    <td width="407" height="33" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="28" height="33" align="left" valign="middle"><a href="/"><img src="images/home.gif" alt="poets and poems" width="28" height="33" border="0" /></a></td>
+                        <td width="57" height="33" align="left" valign="middle" class="head_menu"><a href="/" class="head_menu">HOME</a></td>
+                        <td width="23" height="33" align="left" valign="middle"><a href="contactus.php"><img src="images/contact.gif" alt="poet website" width="23" height="33" border="0" /></a></td>
+                        <td width="108" height="33" align="left" valign="middle" class="head_menu"><a href="contactus.php" class="head_menu">CONTACT US</a></td>
+                        <td width="25" height="33" align="left" valign="middle"><a href="login.php"><img src="images/login.jpg" alt="login to poet and poem" width="25" height="33" border="0" /></a></td>
+                        <td width="151" height="33" align="left" valign="middle" class="head_menu">
+												<a href="login.php" class="head_menu">LOGIN</a>
+												<span class="or">or</span> <a href="signup.php" class="head_menu">SIGN UP</a>
+												
+						 </td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                <tr>
+                    <td width="407" height="21" align="center" valign="top"  class="side_navactive">
+										
+					</td>
+                  </tr>
+                  <tr>
+                    <td width="407" height="40" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="141" height="40" align="left" valign="top"></td>
+                        <td width="226" height="40" align="left" valign="middle" class="search"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="37" height="20" align="left" valign="top"></td>
+                            <td width="5" height="20" align="left" valign="middle"><input name="search_key" type="text" class="search_2" value="" /></td>
+                            <td width="5" height="20" align="left" valign="top"></td>
+                            <td width="43" height="20" align="left" valign="middle" class="head_menu"><a href="javascript:document.searchform.submit();" class="head_menu">GO</a></td>
+                          </tr>
+                        </table></td>
+                        <td width="25" height="40" align="left" valign="top"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td width="407" height="15" align="right" valign="top" style="padding-right:50px;">
+										</td>
+                  </tr>
+                  <tr>
+                    
+                  </tr>
+                </table></td>
+              </tr>
+            </table>
+			
+			
+			</form>
+			
+			
+			
+			</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                
+                <td width="92" height="34" align="left" valign="top">
+								<a href="poets.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','images/modern-poet_hover.gif',1)"><img src="images/modern-poet.gif" alt="modern poets" name="Image7" width="91" height="34" border="0" id="Image7" /></a>
+								</td>
+                <td width="93" height="34" align="left" valign="top">
+								
+				<a href="musicians.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/musician_hover.gif',1)" ><img src="images/musician.gif" alt="musicians" name="Image8" width="114" height="34" border="0" id="Image8" /></a>
+			
+								</td>
+                <td width="121" height="34" align="left" valign="top">
+								<a href="singers.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','images/singer_hover.gif',1)" ><img src="images/singer.gif" alt="singers" name="Image9" width="105" height="34" border="0" id="Image9" /></a>
+			
+								</td>
+                <td width="84" height="34" align="left" valign="top">
+								<a href="poem_poetry_collection.php"  >
+				<img src="images/poem_hover.gif" alt="poem & poetry collection" name="Image10" width="69" height="34" border="0" id="Image10" />
+								</td>
+                <td width="89" height="34" align="left" valign="top">
+				
+								<a href="english_lyrics.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','images/lyrics_hover.gif',1)"><img src="images/lyrics.gif" alt="song lyrics" name="Image11" width="97" height="34" border="0" id="Image11" /></a>
+								</td>
+                <td width="126" height="34" align="left" valign="top">
+								<a href="quatation_poetlist.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/quotation_hover.gif',1)"><img src="images/quotation.gif" alt="quotations" name="Image12" width="126" height="34" border="0" id="Image12" /></a>
+								</td>
+                <td width="123" height="34" align="left" valign="top">
+				
+								<a href="audiofiles.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','images/audiofiles_hover.gif',1)"><img src="images/audiofiles.gif" alt="performance audios" name="Image13" width="123" height="34" border="0" id="Image13" /></a>
+								</td>
+                <td width="70" height="34" align="left" valign="top">
+								<a href="videofiles.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','images/videofiles_hover.gif',1)"><img src="images/videofiles.gif"  alt="performance videos" name="Image14" width="123" height="34" border="0" id="Image14" /></a>
+								</td>
+
+
+
+
+
+<td width="70" height="34" align="left" valign="top">
+								<a href="job.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','images/job_hover.gif',1)"><img src="images/job.gif"  alt="poet or musician jobs" name="Image15" width="70" height="34" border="0" id="Image15" /></a>
+								</td>
+
+<td width="125" height="34" align="left" valign="top">
+								<a href="classical_poet_biographies.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','images/classical-poet_hover.gif',1)"><img src="images/classical-poet.gif"  alt="classical poets" name="Image15" width="106" height="34" border="0" id="Image15" /></a>
+								</td>
+
+
+              </tr>
+
+
+
+
+
+
+                
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>      <tr>
+        <td align="left" valign="top" class="middle_bg"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" >
+       
+          <tr>
+            <td height="5" align="left" valign="top"></td>
+            <td height="5" align="left" valign="top"></td>
+            <td height="5" align="left" valign="top"></td>
+            <td height="5" align="left" valign="top"></td>
+            <td height="5" align="left" valign="top"></td>
+          </tr>
+
+          <tr>
+            <td width="227" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" >
+              <tr>
+                <td width="227" align="left" valign="top" class="side_box_px"> 
+<script type="text/javascript">
+function showUser(str)
+{
+if (str=="")
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","get_poet.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top" class="side_box"><table width="93%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="210" height="5" align="left" valign="top"></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                           
+                              <tr>
+                                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td width="37" height="40" align="right" valign="middle"><img src="images/arrow.jpg" alt="list of poems" width="27" height="24" border="0" /></td>
+                                    <td width="173" height="40" align="left" valign="middle" class="side_nav"><a href="poem_poetry_collection.php" class="side_nav">Browse by Poem Title</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="37" height="25" align="right" valign="middle"><img src="images/arrow.jpg" alt="list of poems" width="27" height="24" border="0" /></td>
+                                    <td width="173" height="25" align="left" valign="middle" class="side_nav"><span class="side_nav">Browse by Poem Type</span></td>
+                                  </tr>
+								  <tr>
+								  	<td colspan="2" align="left">
+									<div style="margin-left:47px;">
+									  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>poem types</title>
+</head>
+
+<body>
+<script type="text/javascript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<form name="form" id="form">
+<select name="poem_type" id="poem_type" onchange="MM_jumpMenu('parent',this,0)">
+
+<option value="<ahref="/poems/wind/"title=_poems.html"><ahref="/poems/wind/"title=</option> <option value="africa_poems.html">Africa</option> <option value="alone_poems.html">Alone</option> <option value="america_poems.html">America</option> <option value="angel_poems.html">Angel</option> <option value="anger_poems.html">Anger</option> <option value="animal_poems.html">Animal</option> <option value="anniversary_poems.html">Anniversary</option> <option value="april_poems.html">April</option> <option value="august_poems.html">August</option> <option value="autumn_poems.html">Autumn</option> <option value="baby_poems.html">Baby</option> <option value="ballad_poems.html">Ballad</option> <option value="beach_poems.html">Beach</option> <option value="beautiful_poems.html">Beautiful</option> <option value="beauty_poems.html">Beauty</option> <option value="believe_poems.html">Believe</option> <option value="birth_poems.html">Birth</option> <option value="brother_poems.html">Brother</option> <option value="butterfly_poems.html">Butterfly</option> <option value="candy_poems.html">Candy</option> <option value="car_poems.html">Car</option> <option value="carpe_diem_poems.html">Carpe diem</option> <option value="cat_poems.html">Cat</option> <option value="change_poems.html">Change</option> <option value="child_poems.html">Child</option> <option value="childhood_poems.html">Childhood</option> <option value="children_poems.html">Children</option> <option value="chocolate_poems.html">Chocolate</option> <option value="christmas_poems.html">Christmas</option> <option value="city_poems.html">City</option> <option value="concrete_poems.html">Concrete</option> <option value="courage_poems.html">Courage</option> <option value="crazy_poems.html">Crazy</option> <option value="culture_poems.html">Culture</option> <option value="dance_poems.html">Dance</option> <option value="dark_poems.html">Dark</option> <option value="daughter_poems.html">Daughter</option> <option value="death_poems.html">Death</option> <option value="depression_poems.html">Depression</option> <option value="despair_poems.html">Despair</option> <option value="destiny_poems.html">Destiny</option> <option value="discrimination_poems.html">Discrimination</option> <option value="dog_poems.html">Dog</option> <option value="dream_poems.html">Dream</option> <option value="education_poems.html">Education</option> <option value="elegy_poems.html">Elegy</option> <option value="epic_poems.html">Epic</option> <option value="evil_poems.html">Evil</option> <option value="fairy_poems.html">Fairy</option> <option value="faith_poems.html">Faith</option> <option value="family_poems.html">Family</option> <option value="farewell_poems.html">Farewell</option> <option value="fate_poems.html">Fate</option> <option value="father_poems.html">Father</option> <option value="fear_poems.html">Fear</option> <option value="fire_poems.html">Fire</option> <option value="fish_poems.html">Fish</option> <option value="fishing_poems.html">Fishing</option> <option value="flower_poems.html">Flower</option> <option value="fog_poems.html">Fog</option> <option value="food_poems.html">Food</option> <option value="football_poems.html">Football</option> <option value="freedom_poems.html">Freedom</option> <option value="friend_poems.html">Friend</option> <option value="frog_poems.html">Frog</option> <option value="fun_poems.html">Fun</option> <option value="funeral_poems.html">Funeral</option> <option value="funny_poems.html">Funny</option> <option value="future_poems.html">Future</option> <option value="girl_poems.html">Girl</option> <option value="god_poems.html">God</option> <option value="golf_poems.html">Golf</option> <option value="graduate_poems.html">Graduate</option> <option value="greed_poems.html">Greed</option> <option value="green_poems.html">Green</option> <option value="grief_poems.html">Grief</option> <option value="guitar_poems.html">Guitar</option> <option value="haiku_poems.html">Haiku</option> <option value="hair_poems.html">Hair</option> <option value="happiness_poems.html">Happiness</option> <option value="happy_poems.html">Happy</option> <option value="hate_poems.html">Hate</option> <option value="hear_poems.html">Hear</option> <option value="heart_poems.html">Heart</option> <option value="heaven_poems.html">Heaven</option> <option value="hero_poems.html">Hero</option> <option value="history_poems.html">History</option> <option value="holocaust_poems.html">Holocaust</option> <option value="home_poems.html">Home</option> <option value="honesty_poems.html">Honesty</option> <option value="hope_poems.html">Hope</option> <option value="horse_poems.html">Horse</option> <option value="house_poems.html">House</option> <option value="howl_poems.html">Howl</option> <option value="humor_poems.html">Humor</option> <option value="hunting_poems.html">Hunting</option> <option value="husband_poems.html">Husband</option> <option value="identity_poems.html">Identity</option> <option value="innocence_poems.html">Innocence</option> <option value="inspiration_poems.html">Inspiration</option> <option value="irony_poems.html">Irony</option> <option value="isolation_poems.html">Isolation</option> <option value="january_poems.html">January</option> <option value="journey_poems.html">Journey</option> <option value="joy_poems.html">Joy</option> <option value="july_poems.html">July</option> <option value="june_poems.html">June</option> <option value="justice_poems.html">Justice</option> <option value="kiss_poems.html">Kiss</option> <option value="laughter_poems.html">Laughter</option> <option value="life_poems.html">Life</option> <option value="light_poems.html">Light</option> <option value="london_poems.html">London</option> <option value="lonely_poems.html">Lonely</option> <option value="loss_poems.html">Loss</option> <option value="lost_poems.html">Lost</option> <option value="love_poems.html">Love</option> <option value="lust_poems.html">Lust</option> <option value="lyric_poems.html">Lyric</option> <option value="magic_poems.html">Magic</option> <option value="marriage_poems.html">Marriage</option> <option value="memory_poems.html">Memory</option> <option value="mentor_poems.html">Mentor</option> <option value="metaphor_poems.html">Metaphor</option> <option value="mirror_poems.html">Mirror</option> <option value="mom_poems.html">Mom</option> <option value="money_poems.html">Money</option> <option value="moon_poems.html">Moon</option> <option value="mother_poems.html">Mother</option> <option value="murder_poems.html">Murder</option> <option value="music_poems.html">Music</option> <option value="narrative_poems.html">Narrative</option> <option value="nature_poems.html">Nature</option> <option value="night_poems.html">Night</option> <option value="ocean_poems.html">Ocean</option> <option value="october_poems.html">October</option> <option value="ode_poems.html">Ode</option> <option value="pain_poems.html">Pain</option> <option value="paris_poems.html">Paris</option> <option value="passion_poems.html">Passion</option> <option value="peace_poems.html">Peace</option> <option value="people_poems.html">People</option> <option value="pink_poems.html">Pink</option> <option value="poem_poems.html">Poem</option> <option value="poetry_poems.html">Poetry</option> <option value="poverty_poems.html">Poverty</option> <option value="power_poems.html">Power</option> <option value="prejudice_poems.html">Prejudice</option> <option value="pride_poems.html">Pride</option> <option value="purple_poems.html">Purple</option> <option value="rain_poems.html">Rain</option> <option value="rainbow_poems.html">Rainbow</option> <option value="rape_poems.html">Rape</option> <option value="raven_poems.html">Raven</option> <option value="red_poems.html">Red</option> <option value="remember_poems.html">Remember</option> <option value="respect_poems.html">Respect</option> <option value="retirement_poems.html">Retirement</option> <option value="river_poems.html">River</option> <option value="romance_poems.html">Romance</option> <option value="romantic_poems.html">Romantic</option> <option value="rose_poems.html">Rose</option> <option value="running_poems.html">Running</option> <option value="sad_poems.html">Sad</option> <option value="school_poems.html">School</option> <option value="sea_poems.html">Sea</option> <option value="september_poems.html">September</option> <option value="shopping_poems.html">Shopping</option> <option value="sick_poems.html">Sick</option> <option value="sile_poems.html">Sile</option> <option value="silence_poems.html">Silence</option> <option value="silver_poems.html">Silver</option> <option value="simile_poems.html">Simile</option> <option value="sister_poems.html">Sister</option> <option value="sky_poems.html">Sky</option> <option value="sleep_poems.html">Sleep</option> <option value="smart_poems.html">Smart</option> <option value="smile_poems.html">Smile</option> <option value="snake_poems.html">Snake</option> <option value="snow_poems.html">Snow</option> <option value="soldier_poems.html">Soldier</option> <option value="solitude_poems.html">Solitude</option> <option value="sometimes_poems.html">Sometimes</option> <option value="son_poems.html">Son</option> <option value="song_poems.html">Song</option> <option value="sonnet_poems.html">Sonnet</option> <option value="sorrow_poems.html">Sorrow</option> <option value="sorry_poems.html">Sorry</option> <option value="spring_poems.html">Spring</option> <option value="star_poems.html">Star</option> <option value="strength_poems.html">Strength</option> <option value="success_poems.html">Success</option> <option value="suicide_poems.html">Suicide</option> <option value="summer_poems.html">Summer</option> <option value="sun_poems.html">Sun</option> <option value="sunset_poems.html">Sunset</option> <option value="sunshine_poems.html">Sunshine</option> <option value="swimming_poems.html">Swimming</option> <option value="sympathy_poems.html">Sympathy</option> <option value="teacher_poems.html">Teacher</option> <option value="television_poems.html">Television</option> <option value="thanks_poems.html">Thanks</option> <option value="tiger_poems.html">Tiger</option> <option value="time_poems.html">Time</option> <option value="today_poems.html">Today</option> <option value="together_poems.html">Together</option> <option value="travel_poems.html">Travel</option> <option value="tree_poems.html">Tree</option> <option value="trust_poems.html">Trust</option> <option value="truth_poems.html">Truth</option> <option value="valentine_poems.html">Valentine</option> <option value="war_poems.html">War</option> <option value="warning_poems.html">Warning</option> <option value="water_poems.html">Water</option> <option value="weather_poems.html">Weather</option> <option value="wedding_poems.html">Wedding</option> <option value="wind_poems.html">Wind</option> <option value="winter_poems.html">Winter</option> <option value="woman_poems.html">Woman</option> <option value="women_poems.html">Women</option> <option value="work_poems.html">Work</option> <option value="world_poems.html">World</option> 
+</select>
+</form>
+
+</body>
+</html>
+									</div>
+									</td>
+								  </tr>
+                                  <tr>
+                                    <td width="37" height="25" align="right" valign="middle"><img src="images/arrow.jpg" alt="short poems list" width="27" height="24" border="0" /></td>
+                                    <td width="173" height="25" align="left" valign="middle" class="side_nav"><a href="famous_short_poems.php" class="side_nav">Short Poems</a></td>
+                                  </tr>
+		  <tr>
+                                    <td width="37" height="25" align="right" valign="middle"><img src="images/arrow.jpg" alt="short poem types" width="27" height="24" border="0" /></td>
+                                    <td width="173" height="25" align="left" valign="middle" class="side_nav"><span class="side_nav">Browse by Short Poem Type</span></td>
+                                  </tr>
+								  <tr>
+								  	<td colspan="2" align="left">
+									<div style="margin-left:47px;">
+									  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>poem types</title>
+</head>
+
+<body>
+<script type="text/javascript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<form name="form" id="form">
+<select name="poem_type" id="poem_type" onchange="MM_jumpMenu('parent',this,0)">
+<option value="" selected="selected"></option>
+<option value="short_alone_poems_list.html">Alone</option> <option value="short_angel_poems_list.html">Angel</option> <option value="short_autumn_poems_list.html">Autumn</option> <option value="short_baby_poems_list.html">Baby</option> <option value="short_beach_poems_list.html">Beach</option> <option value="short_beautiful_poems_list.html">Beautiful</option> <option value="short_beauty_poems_list.html">Beauty</option> <option value="short_believe_poems_list.html">Believe</option> <option value="short_birth_poems_list.html">Birth</option> <option value="short_brother_poems_list.html">Brother</option> <option value="short_butterfly_poems_list.html">Butterfly</option> <option value="short_candy_poems_list.html">Candy</option> <option value="short_car_poems_list.html">Car</option> <option value="short_cat_poems_list.html">Cat</option> <option value="short_change_poems_list.html">Change</option> <option value="short_child_poems_list.html">Child</option> <option value="short_childhood_poems_list.html">Childhood</option> <option value="short_children_poems_list.html">Children</option> <option value="short_christmas_poems_list.html">Christmas</option> <option value="short_city_poems_list.html">City</option> <option value="short_crazy_poems_list.html">Crazy</option> <option value="short_dance_poems_list.html">Dance</option> <option value="short_dark_poems_list.html">Dark</option> <option value="short_daughter_poems_list.html">Daughter</option> <option value="short_death_poems_list.html">Death</option> <option value="short_despair_poems_list.html">Despair</option> <option value="short_dog_poems_list.html">Dog</option> <option value="short_dream_poems_list.html">Dream</option> <option value="short_elegy_poems_list.html">Elegy</option> <option value="short_evil_poems_list.html">Evil</option> <option value="short_faith_poems_list.html">Faith</option> <option value="short_family_poems_list.html">Family</option> <option value="short_farewell_poems_list.html">Farewell</option> <option value="short_fate_poems_list.html">Fate</option> <option value="short_father_poems_list.html">Father</option> <option value="short_fear_poems_list.html">Fear</option> <option value="short_fire_poems_list.html">Fire</option> <option value="short_fish_poems_list.html">Fish</option> <option value="short_fishing_poems_list.html">Fishing</option> <option value="short_flower_poems_list.html">Flower</option> <option value="short_fog_poems_list.html">Fog</option> <option value="short_freedom_poems_list.html">Freedom</option> <option value="short_friend_poems_list.html">Friend</option> <option value="short_frog_poems_list.html">Frog</option> <option value="short_fun_poems_list.html">Fun</option> <option value="short_funeral_poems_list.html">Funeral</option> <option value="short_future_poems_list.html">Future</option> <option value="short_girl_poems_list.html">Girl</option> <option value="short_god_poems_list.html">God</option> <option value="short_graduate_poems_list.html">Graduate</option> <option value="short_greed_poems_list.html">Greed</option> <option value="short_green_poems_list.html">Green</option> <option value="short_grief_poems_list.html">Grief</option> <option value="short_haiku_poems_list.html">Haiku</option> <option value="short_hair_poems_list.html">Hair</option> <option value="short_happiness_poems_list.html">Happiness</option> <option value="short_happy_poems_list.html">Happy</option> <option value="short_hate_poems_list.html">Hate</option> <option value="short_heart_poems_list.html">Heart</option> <option value="short_heaven_poems_list.html">Heaven</option> <option value="short_history_poems_list.html">History</option> <option value="short_home_poems_list.html">Home</option> <option value="short_hope_poems_list.html">Hope</option> <option value="short_horse_poems_list.html">Horse</option> <option value="short_house_poems_list.html">House</option> <option value="short_husband_poems_list.html">Husband</option> <option value="short_innocence_poems_list.html">Innocence</option> <option value="short_joy_poems_list.html">Joy</option> <option value="short_justice_poems_list.html">Justice</option> <option value="short_kiss_poems_list.html">Kiss</option> <option value="short_laughter_poems_list.html">Laughter</option> <option value="short_life_poems_list.html">Life</option> <option value="short_light_poems_list.html">Light</option> <option value="short_london_poems_list.html">London</option> <option value="short_lonely_poems_list.html">Lonely</option> <option value="short_loss_poems_list.html">Loss</option> <option value="short_lost_poems_list.html">Lost</option> <option value="short_love_poems_list.html">Love</option> <option value="short_lust_poems_list.html">Lust</option> <option value="short_magic_poems_list.html">Magic</option> <option value="short_marriage_poems_list.html">Marriage</option> <option value="short_memory_poems_list.html">Memory</option> <option value="short_mirror_poems_list.html">Mirror</option> <option value="short_money_poems_list.html">Money</option> <option value="short_moon_poems_list.html">Moon</option> <option value="short_mother_poems_list.html">Mother</option> <option value="short_murder_poems_list.html">Murder</option> <option value="short_music_poems_list.html">Music</option> <option value="short_nature_poems_list.html">Nature</option> <option value="short_night_poems_list.html">Night</option> <option value="short_ocean_poems_list.html">Ocean</option> <option value="short_october_poems_list.html">October</option> <option value="short_ode_poems_list.html">Ode</option> <option value="short_pain_poems_list.html">Pain</option> <option value="short_paris_poems_list.html">Paris</option> <option value="short_passion_poems_list.html">Passion</option> <option value="short_peace_poems_list.html">Peace</option> <option value="short_people_poems_list.html">People</option> <option value="short_poem_poems_list.html">Poem</option> <option value="short_poetry_poems_list.html">Poetry</option> <option value="short_poverty_poems_list.html">Poverty</option> <option value="short_power_poems_list.html">Power</option> <option value="short_pride_poems_list.html">Pride</option> <option value="short_purple_poems_list.html">Purple</option> <option value="short_rain_poems_list.html">Rain</option> <option value="short_rainbow_poems_list.html">Rainbow</option> <option value="short_red_poems_list.html">Red</option> <option value="short_remember_poems_list.html">Remember</option> <option value="short_respect_poems_list.html">Respect</option> <option value="short_river_poems_list.html">River</option> <option value="short_romantic_poems_list.html">Romantic</option> <option value="short_rose_poems_list.html">Rose</option> <option value="short_running_poems_list.html">Running</option> <option value="short_sad_poems_list.html">Sad</option> <option value="short_school_poems_list.html">School</option> <option value="short_sea_poems_list.html">Sea</option> <option value="short_september_poems_list.html">September</option> <option value="short_sick_poems_list.html">Sick</option> <option value="short_silence_poems_list.html">Silence</option> <option value="short_silver_poems_list.html">Silver</option> <option value="short_sister_poems_list.html">Sister</option> <option value="short_sky_poems_list.html">Sky</option> <option value="short_sleep_poems_list.html">Sleep</option> <option value="short_smart_poems_list.html">Smart</option> <option value="short_smile_poems_list.html">Smile</option> <option value="short_snake_poems_list.html">Snake</option> <option value="short_snow_poems_list.html">Snow</option> <option value="short_soldier_poems_list.html">Soldier</option> <option value="short_solitude_poems_list.html">Solitude</option> <option value="short_sometimes_poems_list.html">Sometimes</option> <option value="short_son_poems_list.html">Son</option> <option value="short_song_poems_list.html">Song</option> <option value="short_sorrow_poems_list.html">Sorrow</option> <option value="short_sorry_poems_list.html">Sorry</option> <option value="short_spring_poems_list.html">Spring</option> <option value="short_star_poems_list.html">Star</option> <option value="short_strength_poems_list.html">Strength</option> <option value="short_suicide_poems_list.html">Suicide</option> <option value="short_summer_poems_list.html">Summer</option> <option value="short_sun_poems_list.html">Sun</option> <option value="short_sunset_poems_list.html">Sunset</option> <option value="short_sunshine_poems_list.html">Sunshine</option> <option value="short_swimming_poems_list.html">Swimming</option> <option value="short_teacher_poems_list.html">Teacher</option> <option value="short_thanks_poems_list.html">Thanks</option> <option value="short_tiger_poems_list.html">Tiger</option> <option value="short_time_poems_list.html">Time</option> <option value="short_today_poems_list.html">Today</option> <option value="short_together_poems_list.html">Together</option> <option value="short_travel_poems_list.html">Travel</option> <option value="short_tree_poems_list.html">Tree</option> <option value="short_trust_poems_list.html">Trust</option> <option value="short_truth_poems_list.html">Truth</option> <option value="short_war_poems_list.html">War</option> <option value="short_warning_poems_list.html">Warning</option> <option value="short_water_poems_list.html">Water</option> <option value="short_weather_poems_list.html">Weather</option> <option value="short_wind_poems_list.html">Wind</option> <option value="short_winter_poems_list.html">Winter</option> <option value="short_woman_poems_list.html">Woman</option> <option value="short_women_poems_list.html">Women</option> <option value="short_work_poems_list.html">Work</option> <option value="short_world_poems_list.html">World</option> 
+</select>
+</form>
+
+</body>
+</html>
+									</div>
+									</td>
+								  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+						  
+						                            <tr><td height="10"></td></tr>
+                          <tr>
+                            <td width="210" height="140" align="center" valign="middle" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;"><a href="artistdetails.php?artid=1095"><img src="photo/large/743779411.jpg" alt="Featured Artist" border="3" class="bbredercolor" /></a></td>
+                          </tr>
+                          <tr>
+                            <td width="210" height="30" align="center" valign="middle" class="botm_head">Featured Artist</td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top" class="george">
+                              <table width="95%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center"><span class="george">Faye <br />
+Writing</span></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="210" height="15" align="left" valign="top"></td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="middle"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td width="210" height="48" align="center" valign="middle" class="leftnav_bg"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="center" valign="top" ><span class="leftnav_text111">Choose Life Event</span></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td width="210" height="48" align="center" valign="middle" class="leftnav_bg"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="center" valign="top" ><span class="leftnav_text111">Operation Family</span></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td width="210" height="48" align="left" valign="middle" class="leftnav_bg"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                      <td align="center" valign="top" ><span class="leftnav_text111">Surviving all of Life's Trials</span></td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+							
+                            </table></td>
+                          </tr>                            <tr>
+                            <td width="210" align="center" valign="top" >
+				<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                      <td bgcolor="white" align="center" valign="top" >
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FPoet-and-Poem%2F171598842907752&width=200&colorscheme=light&show_faces=true&border_color&stream=false&header=true&height=200" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:200px;" allowTransparency="true"></iframe>
+
+					</td>
+                                    </tr>
+				    <tr>
+                                      <td align="left" height="5" valign="top" >
+		     		      </td>
+                                    </tr>
+		    		    <tr>
+                                      <td align="left" valign="top" > <div class="box_abt blue_abt poems-about_abt" style="width:200px;">
+				
+	<div class="header_abt">
+	<h2 class="title_abt">Poems About</h2>
+	<div class="tab_abt narrow_abt"></div>
+	</div> <!-- .header_abt -->
+				
+	<div class="content_abt">
+							
+		<ul >
+			<li><a href="love_poems.html" title="Famous Love Poems">Famous Love Poems</a></li>
+			<li><a href="life_poems.html" title="Famous Life Poems">Famous Life Poems</a></li>
+			<li><a href="sad_poems.html" title="Famous Sad Poems">Famous Sad Poems</a></li>
+			<li><a href="heart_poems.html" title="Famous Heart Poems">Famous Heart Poems</a></li>							
+			<li><a href="world_poems.html" title="Famous World Poems">Famous World Poems</a></li>
+			<li><a href="romance_poems.html" title="Famous Romance Poems">Famous Romance Poems</a></li>
+			<li><a href="time_poems.html" title="Famous Time Poems">Famous Time Poems</a></li>
+			<li><a href="rain_poems.html" title="Famous Rain Poems">Famous Rain Poems</a></li>									
+			<li><a href="red_poems.html" title="Famous Red Poems">Famous Red Poems</a></li>
+			<li><a href="famous_work_poems.html" title="Famous Work Poems">Famous Work Poems</a></li>
+			<li><a href="sun_poems.html" title="Famous Sun Poems">Famous Sun Poems</a></li>
+			<li><a href="dark_poems.html" title="Famous Dark Poems">Famous Dark Poems</a></li>
+			<li><a href="summer_poems.html" title="Famous Summer Poems">Famous Summer Poems</a></li>
+			<li><a href="fire_poems.html" title="Famous Fire Poems">Famous Fire Poems</a></li>
+			<li><a href="farewell_poems.html" title="Famous Farewell Poems">Famous Farewell Poems</a></li>
+			<li><a href="hate_poems.html" title="Famous Hate Poems">Famous Hate Poems</a></li>
+			<li><a href="wind_poems.html" title="Famous Wind Poems">Famous Wind Poems</a></li>
+			<li><a href="ocean_poems.html" title="Famous Ocean Poems">Famous Ocean Poems</a></li>
+		</ul>
+	</div> <!-- .content -->
+				
+	<div class="footer_abt">
+		<a title="More Topics" class="more-link_abt" href="poem_poetry_collection.php">More Topics »</a>										</div> <!-- .footer -->
+	</div>
+
+								     		      </td>
+                                    </tr>				    
+                                </table>
+			    </td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table>                    
+                      </td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td width="227"><img src="images/side_box_btm.jpg" alt="side_box_btm" width="227" height="7" /></td>
+              </tr>
+            </table></td><!--
+            <td width="5" align="left" valign="top"></td>
+            <td width="550" align="left" valign="top" class="tdbgcol" style="padding-left:5px;padding-top:5px;" height="600"></td>
+
+            <td width="5" align="left" valign="top" ></td>-->
+            <td width="795" align="left" valign="top" class="tdbgcol" style="padding-left:0px;padding-top:0px;">
+
+<!--code for google search -->
+				<!--   middle work start  -->
+		<script type="text/javascript"><!--
+            
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>                
+<div style="width:790px; height:auto; float:left; padding-left:5px;">
+	
+    <div style="height:700; float:right; width:300px;">
+		<div style="height:250px; width:300px; margin:0; padding:0;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-1658719967468087";
+/* 300x250, created 5/31/11 */
+google_ad_slot = "5520373523";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	
+            
+        </div>
+<div style="float:right; width:227px; height:auto; margin-right:-2px;"> 
+   			
+<style>
+ul
+{ margin:0; padding:0; margin-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+ul li
+{list-style-type: square; line-height:20px;}
+ul li a
+{ text-decoration:none; color:#FFF;}
+</style>
+<script language="javascript">
+function showobject1(st1)
+{
+document.getElementById(st1).style.visibility="visible";
+
+}
+function showobject2(st1)
+{
+document.getElementById(st1).style.visibility="visible";
+
+}
+function hideobject1(st1)
+{
+document.getElementById(st1).style.visibility="hidden";
+
+}
+function hideobject2(st1)
+{
+document.getElementById(st1).style.visibility="hidden";
+
+}
+function albumdetails(st)
+{
+	window.open('album_details.php?albid='+st,'Album','height=250,width=400,scrollbars=yes,resize=no,menubar=no,toolbar=no');
+}
+function albumdetails1(st)
+{
+	window.open('album_details.php?albid='+st,'Album','height=250,width=400,scrollbars=yes,resize=no,menubar=no,toolbar=no');
+}
+</script>
+<div style="width:227px; float:right;"  class="side_box">
+<table width="227" border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                      <td align="center" valign="top" >
+					  <table width="93%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        
+						
+						
+						
+                        <tr>
+                          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            							
+							  <tr>
+                                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">	    									
+									
+                                    <tr>
+                                      <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td width="210" height="2" align="left" valign="top"></td>
+                                        </tr>
+                                        <tr>
+                                          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+											                                              <td width="105" height="81" align="center" valign="top" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;"><a href="artistdetails.php?artid=1097"><img src="photo/thumb/774.jpg" width="90" height="78"    border="3" class="bbredercolor"/></a></td>
+											                                                <td width="105" height="81" align="center" valign="top" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;"><a href="artistdetails.php?artid=1089"><img src="photo/thumb/773.png" width="90" height="78"    border="3" class="bbredercolor"/></a></td>
+											  
+											                                              </tr>
+                                          </table></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="middle" class="botm_head">Registered Users</td>
+                                        </tr>
+                                        
+                                      </table></td>
+                                    </tr>
+									
+									
+                                </table></td>
+                              </tr>  							                                 <tr>
+                                <td width="210" height="140" align="center" valign="middle"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td width="210" height="1" align="left" valign="top"></td>
+                                  </tr>
+								  
+								 
+                                  <tr>
+                                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+										                                          <td width="100" height="74" align="center" valign="top" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;"> <div id="ffsq" style="position:absolute;visibility:hidden; background-color:#ffffff; border:#969696;"  > 
+                           <table width="200"  cellpadding="2" cellspacing="0"  >
+						 
+						  
+						  <tr><td  class="inner_text">A selection of 10 best poems</td></tr> 
+                          </table>
+                        </div><a href="javascript:albumdetails('1074')" ><img src="album/1074.jpg" width="90" height="78"   border="3" class="bbredercolor"/></a></td>
+						                                          <td width="100" height="74" align="center" valign="top" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;"><div id="ffs1" style="position:absolute;visibility:hidden; background-color:#ffffff; border:#969696;" > 
+                           <table width="200"  cellpadding="2" cellspacing="0"  >
+						 
+						  
+						  <tr><td  class="inner_text">srishaa</td></tr> 
+                          </table>
+                        </div><a href="javascript:albumdetails1('289')"><img src="album/1853813965.jpg" width="90" height="78"   border="3" class="bbredercolor"/></a></td>
+						                                        </tr>
+                                    </table></td>
+                                  </tr>
+								  
+								
+                                  <tr>
+                                    <td align="center" valign="middle" class="botm_head">Featured Album</td>
+                                  </tr>
+								  
+                                  <tr>
+                                    <td width="210" height="2" align="left" valign="top"></td>
+                                  </tr>
+				  
+                                </table>                                 </td>
+                              </tr>
+                              
+							    							
+							  
+                              
+                              
+                          </table></td>
+                        </tr>
+						
+						
+						
+						
+						
+                      </table>                                                               
+                        </td>
+                    </tr>
+                </table>
+                
+                <div style="width:220px; float:right; height:560px; color:#FFFFFF; margin-top:10px;">
+                	<center><b><font face="verdana" size="2" class="botm_head">Latest Poems Submited</font></b></center>
+					<div style="padding-top:10px;">
+                    <marquee behavior="scroll" direction="down" height="200px" scrollamount="2" onMouseOver="this.stop();" onMouseOut="this.start();" scrolldelay="0">
+						<ul>
+							<li><a href="40161_poem_Behind_The_Gates_Of_The_Wealthy.html" title="Behind The Gates Of The Wealthy">Behind The Gates Of The Wealthy</a></li>
+								<li><a href="40160_poem_The_Faun_Sees_Snow_for_the_First_Time.html" title="The Faun Sees Snow for the First Time">The Faun Sees Snow for the First Time</a></li>
+								<li><a href="40158_poem_Milk_For_The_Duck.html" title="Milk For The Duck">Milk For The Duck</a></li>
+								<li><a href="40150_poem_My_Epitaph.html" title="My Epitaph">My Epitaph</a></li>
+								<li><a href="40134_poem_Whitelight.html" title="Whitelight">Whitelight</a></li>
+								<li><a href="40133_poem_White_Shoulders.html" title="White Shoulders">White Shoulders</a></li>
+								<li><a href="40117_poem_Ianthes_Troubles.html" title="Ianthes Troubles">Ianthes Troubles</a></li>
+								<li><a href="40083_poem_Silent_Noon.html" title="Silent Noon">Silent Noon</a></li>
+								<li><a href="40066_poem_To_a_Lady_with_an_Unruly_and_Ill-mannered_Dog_Who_Bit_several_Persons_of_Importance.html" title="To a Lady with an Unruly and Ill-mannered Dog Who Bit several Persons of Importance">To a Lady with an Unruly and Ill-mannered Dog Who Bit several Persons of Importance</a></li>
+								<li><a href="40006_poem_Presence_of_Mind.html" title="Presence of Mind">Presence of Mind</a></li>
+														</ul>
+					</marquee>
+<table>
+<tr><td width=5%></td></tr>
+<tr><td width=95% valign="bottom" align="left" class="botm_head"> <div class="box_abt blue_abt poems-about_abt" style="width:200px;">				
+	<div class="header_abt">
+		<h2 class="title_abt">Short Poems On</h2>
+	<div class="tab_abt narrow_abt"></div>
+	</div> <!-- .header_abt -->
+				
+	<div class="content_abt">
+					
+		<ul type="square" >
+			<li><a href="short_love_poems_list.html" title="Short Love Poems">Short Love Poems</a></li>
+			<li><a href="short_car_poems_list.html" title="Short Car Poems">Short Car Poems</a></li>
+			<li><a href="short_children_poems_list.html" title="Short Children Poems">Short Children Poems</a></li>
+			<li><a href="short_friend_poems_list.html" title="Short Friend Poems">Short Friend Poems</a></li>
+			<li><a href="short_life_poems_list.html" title="Short Life Poems">Short Life Poems</a></li>
+			<li><a href="short_mother_poems_list.html" title="Short Mother Poems">Short Mother Poems</a></li>
+			<li><a href="short_child_poems_list.html" title="Short Child Poems">Short Child Poems</a></li>
+			<li><a href="short_nature_poems_list.html" title="Short Nature Poems">Short Nature Poems</a></li>
+			<li><a href="short_beautiful_poems_list.html" title="Short Beautiful Poems">Short Beautiful Poems</a></li>
+			<li><a href="short_death_poems_list.html" title="Short Death Poems">Short Death Poems</a></li>
+			<li><a href="short_heart_poems_list.html" title="Short Heart Poems">Short Heart Poems</a></li>
+			<li><a href="short_women_poems_list.html" title="Short Women Poems">Short Women Poems</a></li>
+									
+		</ul>
+	</div> <!-- .content -->
+				
+	<div class="footer_abt">
+		<a title="More Topics" class="more-link_abt" href="famous_short_poems.php">More Topics »</a></div> <!-- .footer -->
+</div>
+
+		</td></tr>
+</table>
+
+                    				</div>
+	</div>
+	
+                
+</div>
+				
+				        </div>            
+	</div>
+
+
+	<span style="color:#990033; font-weight:bold; font-family:'Times New Roman', Times, serif; font-size:18px; float:left; margin-bottom:10px;"><h1><font size="4">Famous Lyric Poems / Lyric Verses</font></h1></span>
+	<table width="480" style="margin-bottom:10px;">
+	<form name="search_first" id="search_first" method="post" >
+	<tr>
+	<td><strong>Search By Poem Title</strong></td>
+	<td><input type="text" name="poem_title" size="35"   id="poem_title" />&nbsp;<input name="submit" type="submit" style="border:0; background:#990033; color:#FFF; padding:2px 3px; font-weight:bold;" onclick="MM_validateForm('poem_title','','R');return document.MM_returnValue"   value="Search" /></td>
+	</tr>
+	</form>
+	</table>
+			<table width="480" style="margin-top:10px;">
+			<tr>
+				<td class="inner_text" id="searchajtxt">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1658719967468087";
+/* PP_LINK_UNIT_468x15 */
+google_ad_slot = "3476426357";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				Welcome to PoetandPoem.com!<br>We have a great collection of <b>famous lyric Poems / Verses</b>. Our selection of <b>lyric Poetry</b> focuses on poems that are about lyric and easy to comprehend. In addition to <b>lyric Poems</b> of famous poets, there is a huge collection of other unique poems in our website.<br>Here you will find List of poems with theme as lyric and also funny poems. Click on the poem title below to browse through the lyric Poems both from famous poets and those submitted in our site. You can search and find famous lyric Poems using the ajax based search.				</td>
+			</tr>
+
+			<tr>
+				<td>
+				<table> 
+					<tr> 
+						<td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1658719967468087";
+/* 300x250, created 5/31/11 */
+google_ad_slot = "5520373523";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+						</td>
+						<td align="left">
+						<br>
+						<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+						<br>
+						<div class="fb-like" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+						<br>
+						<!-- Place this tag where you want the +1 button to render -->
+						<g:plusone size="small" annotation="inline" width="120"></g:plusone>
+
+						<!-- Place this render call where appropriate -->
+						<script type="text/javascript">
+  						(function() {
+    						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    						po.src = 'https://apis.google.com/js/plusone.js';
+    						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  						})();
+						</script>
+<br><br>
+<br><a href=long_lyric_poems_list.html>Long lyric poems</a><br><br>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1658719967468087";
+/* PP_LINK_UNIT_160x90 */
+google_ad_slot = "0821020371";
+google_ad_width = 160;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+        
+<div id="searchcont">
+
+<div style="width:490px; float:left; color:#990033; min-height:400px; font-family:Arial, Helvetica, sans-serif; font-size:12px;line-height:30px;">
+
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="2580_poem_Lines_in_Praise_of_the_Lyric_Club_Banquet.html" title="Lines in Praise of the Lyric Club Banquet"><span class="inner_text">Lines in Praise of the Lyric Clu</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="13904_poem_A_Lyric_Day.html" title="A Lyric Day"><span class="inner_text">A Lyric Day</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="8493_poem_Lyric_of_Love_to_Leah.html" title="Lyric of Love to Leah"><span class="inner_text">Lyric of Love to Leah</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="13678_poem_Two_Lyrics_From_Kilroy's_Carnival:_A_Masque.html" title="Two Lyrics From Kilroy's Carnival: A Masque"><span class="inner_text">Two Lyrics From Kilroy's Carniva</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="38347_poem_A_Lyric_to_Mirth.html" title="A Lyric to Mirth"><span class="inner_text">A Lyric to Mirth</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="936_poem_The_Ballad_Of_The_Brand.html" title="The Ballad Of The Brand"><span class="inner_text">The Ballad Of The Brand</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="1052_poem_Cleon.html" title="Cleon"><span class="inner_text">Cleon</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="1439_poem_Wealth.html" title="Wealth"><span class="inner_text">Wealth</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="1664_poem_Ainsi_Va_le_Monde.html" title="Ainsi Va le Monde"><span class="inner_text">Ainsi Va le Monde</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="2364_poem_An_Ode_in_Time_of_Hesitation.html" title="An Ode in Time of Hesitation"><span class="inner_text">An Ode in Time of Hesitation</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="2495_poem_Symphonic_Studies_(After_Schumann).html" title="Symphonic Studies (After Schumann)"><span class="inner_text">Symphonic Studies (After Schuman</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="4080_poem_Night.html" title="Night"><span class="inner_text">Night</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="4529_poem_Bayswater.W..html" title="Bayswater.W."><span class="inner_text">Bayswater.W.</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="4748_poem_Turns_and_Movies:_Rose_and_Murray.html" title="Turns and Movies: Rose and Murray"><span class="inner_text">Turns and Movies: Rose and Murra</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="4808_poem_AN_ODE_FOR_BEN_JONSON.html" title="AN ODE FOR BEN JONSON"><span class="inner_text">AN ODE FOR BEN JONSON</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="5961_poem_Temora_-_Book_VII.html" title="Temora - Book VII"><span class="inner_text">Temora - Book VII</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="7269_poem_Epilogue.html" title="Epilogue"><span class="inner_text">Epilogue</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="8371_poem_May_Day.html" title="May Day"><span class="inner_text">May Day</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="11692_poem_On_the_Lady_Elizabeth,_and_Count_Palatine_Being_Married_on_St._Valentine's_Day.html" title="On the Lady Elizabeth, and Count Palatine Being Married on St. Valentine's Day"><span class="inner_text">On the Lady Elizabeth, and Count</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="11831_poem_Morning_along_Shore.html" title="Morning along Shore"><span class="inner_text">Morning along Shore</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="12554_poem_Among_the_Pines.html" title="Among the Pines"><span class="inner_text">Among the Pines</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="12614_poem_AN_ODE_TO_SIR_CLIPSBY_CREW.html" title="AN ODE TO SIR CLIPSBY CREW"><span class="inner_text">AN ODE TO SIR CLIPSBY CREW</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="13393_poem_Ave!_(An_Ode_for_the_Shelley_Centenary,_1892).html" title="Ave! (An Ode for the Shelley Centenary, 1892)"><span class="inner_text">Ave! (An Ode for the Shelley Cen</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="14946_poem_Compensation.html" title="Compensation"><span class="inner_text">Compensation</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="19885_poem_A_Grammarian's_Funeral_Shortly_after_the_Revival_of_Learnin.html" title="A Grammarian's Funeral Shortly after the Revival of Learnin"><span class="inner_text">A Grammarian's Funeral Shortly a</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="20240_poem_The_Sea_to_the_Shore.html" title="The Sea to the Shore"><span class="inner_text">The Sea to the Shore</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="22635_poem_Invita_Minerva.html" title="Invita Minerva"><span class="inner_text">Invita Minerva</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="1658_poem_On_an_Anniversary.html" title="On an Anniversary"><span class="inner_text">On an Anniversary</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="5837_poem_On_Being_Human.html" title="On Being Human"><span class="inner_text">On Being Human</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="8266_poem_Cocoon_For_A_Skeleton.html" title="Cocoon For A Skeleton"><span class="inner_text">Cocoon For A Skeleton</span></a>
+	</ul></div>
+		<div style="width:245px; float:left; _padding:7px 0; line-height:30px;"><ul type="square"><li>
+	<a href="13452_poem_A_Summer_Day.html" title="A Summer Day"><span class="inner_text">A Summer Day</span></a>
+	</ul></div>
+	
+<!--<div style="float:right; width:490px;"></div>-->
+
+</div>		
+
+   
+    
+    <div style="float:right; width:490px;"></div>
+    </div> 
+   
+<div style="width:728px; height:90px; float:right;">
+   <script type="text/javascript"><!--
+google_ad_client = "pub-1658719967468087";
+/* 728x90, created 6/1/11 */
+google_ad_slot = "1242770500";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+   </div>    
+</div>
+                
+
+                <!--   middle work end  -->
+                
+            </td>
+
+          </tr>
+        </table></td>
+      </tr>
+       
+ 
+ <tr>
+        <td align="left" valign="top" class="footer"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="10" align="left" valign="middle"></td>
+            <td width="344" height="10" align="left" valign="middle"></td>
+          </tr>
+          <tr>
+            <td width="685" height="20" align="left" valign="top" class="side_nav"><a href="poets.php" class="side_nav">Modern Poet</a><span class="botm_head"> |</span>  <a href="musicians.php" class="side_nav">Musicians</a><span class="botm_head"> |</span>  <a href="singers.php" class="side_nav">Singers</a><span class="botm_head"> | </span><a href="poem_poetry_collection.php" class="side_nav">Poem</a><span class="botm_head"> |</span>  <a href="english_lyrics.php" class="side_nav">Lyrics</a><span class="botm_head"> | </span><a href="quatations.php" class="side_nav">Quatation</a><span class="botm_head"> | </span><a href="audiofiles.php" class="side_nav">Audio File</a><span class="botm_head"> | </span><a href="videofiles.php" class="side_nav">Video File</a><span class="botm_head"> |</span>  <a href="job.php" class="side_nav">Job</a><span class="botm_head"> |</span>  <a href="classical_poet.php" class="side_nav">Classical Poet</a></td>
+            <td width="344" align="right" valign="right" class="side_nav"><a href="javascript:popup()" class="side_nav">Tell A Friend About This Site</a></td>
+          </tr>
+          <tr>
+            <td width="685" align="middle" valign="top" class="copy">
+  (c) Poems and Lyrics listed in this site are the property of their respective owners. All information has been reproduced here for educational and informational purposes for the benefit of the site visitors, and is provided at no charge.. <br>
+&copy; 2011-2012 www.poetandpoem.com. All rights reserved			
+
+            <td align="middle" width="344"><!-- BEGIN INLIVE CODE -- Inlive need of AddFreestats button code! WWW.ADDFREESTATS.com-->
+<SCRIPT language="javascript" src="http://www9.addfreestats.com/cgi-bin/countnow.cgi?usr=00922099&type=0">
+</SCRIPT>
+<noscript>
+<a href="http://www.addfreestats.com">Web Stats</a></noscript>
+<!-- END inlive CODE -->
+<!-- ADDFREESTATS.COM AUTOCODE V4.0 -->
+<script type="text/javascript">
+<!--
+var AFS_Account="00922099";
+var AFS_Tracker="auto";
+var AFS_Server="www9";
+var AFS_Page="DetectName";
+var AFS_Url="DetectUrl";
+// -->
+</script>
+<script type="text/javascript" src="http://www9.addfreestats.com/cgi-bin/afstrack.cgi?usr=00922099">
+</script>
+<noscript>
+<a href="http://www.addfreestats.com" >
+<img src="http://www9.addfreestats.com/cgi-bin/connect.cgi?usr=00922099Pauto" border=0 alt="AddFreeStats.com Free Web Stats!">Web Stats</a>
+</noscript>
+<!-- ENDADDFREESTATS.COM AUTOCODE V4.0  -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8557314-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+var infolink_pid = 23329;
+var infolink_wsid = 4;
+</script>
+<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script></td>
+          </tr>
+	  <tr>
+            <td width="685" align="center" valign="bottom" class="copy"></td> 			
+
+            <td width="344"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+	  
+</body>
+</html>
+
+
+

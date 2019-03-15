@@ -1,0 +1,227 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-16T23:09:29Z
+WARC-TREC-ID: clueweb12-1001wb-45-26799
+WARC-Target-URI: http://pine.cs.yale.edu/pinewiki/MaxFlow
+WARC-Payload-Digest: sha1:ZYI5NSVWCWRDVVWFIV5JYLOX2EIIGN6N
+WARC-IP-Address: 128.36.229.174
+WARC-Record-ID: <urn:uuid:590bb7cb-bc47-491c-9429-89fd8e36bb43>
+Content-Type: application/http; msgtype=response
+Content-Length: 30504
+
+HTTP/1.1 200 OK
+Date: Fri, 16 Mar 2012 23:09:29 GMT
+Server: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.8r DAV/2 mod_fastcgi/2.4.2 SVN/1.6.17
+Vary: Cookie,User-Agent,Accept-Language
+Content-Length: 30230
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>MaxFlow - Pinewiki</title>
+<script type="text/javascript" src="/moin_static194/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static194/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static194/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static194/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static194/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static194/modernized/css/msie.css">
+<![endif]-->
+
+
+
+
+
+<link rel="Start" href="/pinewiki/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="/pinewiki/MaxFlow?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/pinewiki/MaxFlow?action=print">
+<link rel="Appendix" title="badtour.png" href="/pinewiki/MaxFlow?action=AttachFile&amp;do=view&amp;target=badtour.png">
+<link rel="Appendix" title="residualGraph.png" href="/pinewiki/MaxFlow?action=AttachFile&amp;do=view&amp;target=residualGraph.png">
+<link rel="Appendix" title="residualGraph2.png" href="/pinewiki/MaxFlow?action=AttachFile&amp;do=view&amp;target=residualGraph2.png">
+<link rel="Search" href="/pinewiki/FindPage">
+<link rel="Index" href="/pinewiki/TitleIndex">
+<link rel="Glossary" href="/pinewiki/WordIndex">
+<link rel="Help" href="/pinewiki/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/pinewiki/MaxFlow">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="/pinewiki/FrontPage"><img src="http://pine.cs.yale.edu/small-adversary.png" alt="PineWiki">PineWiki</a></div>
+<div id="username"><a href="/pinewiki/MaxFlow?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a class="backlink" href="/pinewiki/MaxFlow?action=fullsearch&amp;value=linkto%3A%22MaxFlow%22&amp;context=180" rel="nofollow" title="Click to do a full-text search for this title">MaxFlow</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="/pinewiki/CS223">CS223</a></li><li class="wikilink"><a href="/pinewiki/CS469">CS469</a></li><li class="wikilink"><a href="/pinewiki/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="/pinewiki/FindPage">FindPage</a></li><li class="wikilink"><a href="/pinewiki/HelpContents">HelpContents</a></li><li class="current"><a href="/pinewiki/MaxFlow">MaxFlow</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/pinewiki/MaxFlow?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/pinewiki/MaxFlow?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/pinewiki/MaxFlow">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line862">Start with a directed graph where each edge uv has a <em>capacity</em> c<sub>uv</sub> that represents how much <em>flow</em> can be carried by that edge (measured, for example, in gallons of sewage per minute; edges that aren't in the graph have capacity zero).  Suppose the flow comes in at a source node s and leaves at a sink node t.  How much flow can be pumped through the graph? <span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line862">Formally, a <em>flow</em> on a directed graph is a function f on pairs of vertices such that <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><ul><li><p class="line862">For any vertices u and v, f<sub>uv</sub> = -f<sub>vu</sub>.  This says that the net flow in one direction is the negative of the net flow in the other. <span class="anchor" id="line-6"></span></li><li><p class="line862">For any vertices u and v, f<sub>uv</sub> &#8804; c<sub>uv</sub>.  This says that the flow along some edge does not exceed that edge's capacity. <span class="anchor" id="line-7"></span></li><li><p class="line862">For any vertex u except s or t, the sum over all of its neighbors v of f<sub>uv</sub> is zero (i.e., &#8721;<sub>v</sub> f<sub>uv</sub> = 0).  This says that flow is neither created nor destroyed at intermediate nodes; instead, it enters the graph at s (for which &#8721;<sub>v</sub> f<sub>sv</sub> &#8805; 0) and leaves it at t (for which &#8721;<sub>v</sub> f<sub>tv</sub> &#8804; 0). <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span></li></ul><p class="line862">A <strong>maximum flow</strong> is a flow that maximizes &#8721;<sub>v</sub> f<sub>sv</sub>.  The maximum flow problem is to find a maximum flow given an input graph G, its capacities c<sub>uv</sub>, and the source and sink nodes s and t. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line867">
+<h1 id="Applications">1. Applications</h1>
+<span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><dl><dt>Plumbing</dt><dd>After succeeding to the British crown, you inherit a 16th-century Scottish castle with an elaborate plumbing system that has accumulated pipes, junctions, cross-pipes, shunts, one-way valves, sluiceways, bypasses, and clogs over four centuries.  You'd like to know if it is safe to install a modern American shower booth with a 2.5 gallon/minute showerhead, or if this will eventually overflow the historic bathtub of James VI/James I.  The answer to this problem depends on the solution to maximum flow for the graph representing the plumbing system. <span class="anchor" id="line-14"></span></dd><dt>Traffic engineering</dt><dd>Godzilla is on the march, and you have three hours to evacuate Tokyo.  Can you do it?  If you can write down a graph with an edge for each road and a vertex for each intersection, this is the same as the plumbing problem, with cars replacing graywater. <span class="anchor" id="line-15"></span></dd><dt>Matching</dt><dd><p class="line862">You have n widgets to put in n boxes, but the widgets and boxes are highly individualized and not all widgets will fit in all boxes.  Given as input a table that specifies which widgets and boxes can go together, find some way to fit all n widgets one to a box.  This is a special case of the <a class="nonexistent" href="/pinewiki/AssignmentProblem">AssignmentProblem</a> and can be solved by running max-flow on an appropriately-constructed graph. <span class="anchor" id="line-16"></span></dd><dt>Public health</dt><dd><p class="line862">Reanimated zombies infected by a virus from outer space are spreading from the meteor impact site at s along a road network represented by a directed graph toward your 16th-century Scottish castle at t.  Your advisors tell you it costs c<sub>uv</sub> British pounds to blockade road uv.  You'd like to find a cheapest set of roads to blockade to keep the zombies away from your new home.  This can be solved by exploiting a connection between maximum flows and minimum cuts (described below), where a minimum s-t cut is the cheapest set of edges that separate s from t. <span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></dd></dl><p class="line867">
+<h1 id="The_Fold-Fulkerson_Flow_Flusher">2. The Fold-Fulkerson Flow Flusher</h1>
+<span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line862">The simplest, though not the most efficient, of the many algorithms that are known for finding max flows is due to Ford and Fulkerson.  The essential idea is that any flow that is not maximum can be improved by adjusting flows along some <em>augmenting path</em>, which will be a path that may include both edges in the graph with unused capacity and backwards edges with some flow on them already.  This path is found by performing a search in a <em>residual graph</em> which is derived from the original graph G and the flow f, by the rule that edge uv in G<sub>f</sub> has capacity c<sub>uv</sub> - f<sub>uv</sub>.  We think of an edge uv as appearing in G<sub>f</sub> just in case this residual capacity c<sub>uv</sub> - f<sub>uv</sub> is greater than zero.<sup><a href="#fnref-e9b1cd1f231f2384c4c6684f60b5f63639c83069" id="fndef-e9b1cd1f231f2384c4c6684f60b5f63639c83069-0">1</a></sup>  By finding a path from s to t in G<sub>f</sub>, we have found a sequence of edges with unused capacity; by increasing the flow along this path, we increase the total s-t flow without exceeding the capacity constraints.  The algorithm repeats this process until no such augmenting paths exist. <span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line862">{{{<a class="nonexistent" href="/pinewiki/FordFulkerson">FordFulkerson</a>(G) <span class="anchor" id="line-23"></span><ul><li style="list-style-type:none">set f[u,v] = 0 for all pairs of vertices u and v <span class="anchor" id="line-24"></span>set g[u,v] = c(u,v) for all edges uv in G <span class="anchor" id="line-25"></span>set g[u,v] = 0 for all pairs of vertices u and v where uv is not an edge <span class="anchor" id="line-26"></span>while true do <span class="anchor" id="line-27"></span><ul><li style="list-style-type:none">if there exists an path s, v1, v2, ..., vk, t  <span class="anchor" id="line-28"></span><ul><li style="list-style-type:none"><p class="line862">where g[v, v'] &gt; 0 for each pair of adjacent vertices <span class="anchor" id="line-29"></span>v, v' in the path, <span class="anchor" id="line-30"></span></li></ul>then <span class="anchor" id="line-31"></span><ul><li style="list-style-type:none">// augment <span class="anchor" id="line-32"></span>increase f[v,v'] by min g[v,v'] for each such pair v,v' <span class="anchor" id="line-33"></span>decrease g[v,v'] by min g[v,v'] for each such pair v,v' <span class="anchor" id="line-34"></span></li></ul>else <span class="anchor" id="line-35"></span><ul><li style="list-style-type:none">// no further improvement possible <span class="anchor" id="line-36"></span>return f <span class="anchor" id="line-37"></span></li></ul></li></ul></li></ul><p class="line874">}}} <span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span><p class="line862">Note that because f<sub>vu</sub> = -f<sub>uv</sub>, G<sub>f</sub> may contain some edges that are not in G; these correspond to the reverse of edges in G that have some flow on them already.  It may seem odd to think that we can increase the total flow by sending flow backwards across an edge in the graph, because the problem doesn't allow us to send flow backwards across edges.  But what we are really doing when we send flow across some reversed edge vu is canceling out some of the flow from u to v; this cancellation has the effect of decreasing the amount of flow leaving u and increasing the amount of flow leaving v, which is exactly the same as if we really were sending more flow across some new edge vu. <span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><p class="line867"><img alt="residualGraph.png" class="attachment" src="/pinewiki/MaxFlow?action=AttachFile&amp;do=get&amp;target=residualGraph.png" title="residualGraph.png" /> <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><p class="line874">For example, the picture above shows a flow on a graph G (on top), where each edge is labeled with flow/capacity.  The residual graph is shown on the bottom; graph edges are shown in black and reversed edges are shown in blue.  There is an s-t path in the residual graph that goes through s,b,a,t; the flow on this augmenting path can be increased by 2, since this is the minimum unused capacity of any edge on the path.  The effect of performing this increase is to raise the flow on sb to 2, turn off the flow on ab, and raise the flow on at to 2---this redirects the sa flow across at and uses the capacity formerly needed to carry this flow across bt for 2 new units of flow coming out of sb.  The result is a new flow and a new residual graph shown below. <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><p class="line867"><img alt="residualGraph2.png" class="attachment" src="/pinewiki/MaxFlow?action=AttachFile&amp;do=get&amp;target=residualGraph2.png" title="residualGraph2.png" /> <span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span><p class="line874">The residual graph now has more edges, because some of the edges in G are only partially used.  But there is no path from s to t, so the Ford-Fulkerson algorithm stops, and returns the current flow as its claimed maximum.  In the next section, we show that whenever Ford-Fulkerson stops, it has indeed found the maximum flow. <span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><p class="line867">
+<h1 id="Max-flows_and_min-cuts">3. Max-flows and min-cuts</h1>
+<span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><p class="line862">To show that no better flow exists that found by Ford-Fulkerson, we'll show that the Ford-Fulkerson flow uses the full capacity of every edge in some s-t <strong>cut</strong>, where an s-t cut is defined by a partition of the vertices into two sets S and T where s is in S and t is in T, and the edges in the cut are all edges that cross the partition, i.e., all edges uv with u in S and v in T. <span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span><p class="line862">Let f' be the final flow produced by the Ford-Fulkerson algorithm, and define S as the set of all vertices reachable from s in the final residual graph G<sub>f'</sub>, and T as the set of all vertices not in S.  Consider some edge uv in the original that crosses the cut; i.e. that has u in S and v in T.  Because u is reachable from s in G<sub>f'</sub> and v is not, uv cannot appear as an edge in G<sub>f</sub>.  This means that c<sub>uv</sub> - f'<sub>uv</sub> = 0 and that uv is <strong>saturated</strong>---it has no leftover capacity to use.  Since this is true for any such edge, the final flow f saturates all edges that cross the cut. <span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><p class="line862">This fact is enough to show that f' is a maximum flow.  Consider any other flow f, and recall that f<sub>uv</sub> = -f<sub>vu</sub> by definition; so for any set A, &#8721;<sub>u in A, v in A</sub> f<sub>uv</sub> = 0, because every edge appears once as f<sub>uv</sub> and once as f<sub>vu</sub>.  Now compute <span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span><ul><li style="list-style-type:none"><p class="line891">&#8721;<sub>u in S, v in G</sub> f<sub>uv</sub> <span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><p class="line862">= &#8721;<sub>u in S, v in S</sub> f<sub>uv</sub> + &#8721;<sub>u in S, v in T</sub> f<sub>uv</sub> <span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span><p class="line862">= &#8721;<sub>u in S, v in T</sub> f<sub>uv</sub>. <span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span></li></ul><p class="line874">This shows that the total net outflow from all nodes in S equals the total flow across the S-T cut.  But we also know that the total net outflow from any node in V-{s,t} is zero, so <span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span><ul><li style="list-style-type:none"><p class="line891">&#8721;<sub>u in S, v in G</sub> f<sub>uv</sub> <span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><p class="line862">= &#8721;<sub>v in G</sub> f<sub>sv</sub> + &#8721;<sub>u in S-s, v in G</sub> f<sub>uv</sub> <span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><p class="line862">= &#8721;<sub>v in G</sub> f<sub>sv</sub>. <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span></li></ul><p class="line874">So the size of the flow equals the flow across the cut.  But this is limited by the capacity of the cut, which is the sum of the capacities of the S-T edges: <span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><ul><li style="list-style-type:none"><p class="line891">&#8721;<sub>v in G</sub> f<sub>sv</sub> <span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><p class="line862">= &#8721;<sub>u in S, v in T</sub> f<sub>uv</sub> <span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span><p class="line891">&#8804; &#8721;<sub>u in S, v in T</sub> c<sub>uv</sub> <span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><p class="line862">= &#8721;<sub>u in S, v in T</sub> f'<sub>uv</sub> <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span><p class="line862">= &#8721;<sub>v in G</sub> f<sub>sv</sub>. <span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span></li></ul><p class="line874">We've shown a couple of things here.  The first is that the size of any s-t flow is bounded by the capacity of any s-t cut, and in particular that the size of the max flow is less than or equal to the capacity of the min cut.  The second is that the size of any s-t flow is less than or equal to the size of the Ford-Fulkerson flow, which shows that the Ford-Fulkerson flow is maximum. <span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><p class="line874">But we've shown something else about max flows and min cuts.  Because the Ford-Fulkerson flow saturates some cut, its size equals the capacity of some cut---so the size of the maximum flow is at least as big as the size of the minimum cut.  Since we already showed it's no bigger, they must be equal.  This gives the <span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><dl><dt>Max-flow min-cut theorem</dt><dd>In any graph G with capacities, the maximum size of any s-t flow equals the minimum capacity of any s-t cut. <span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span></dd></dl><p class="line874">A consequence of the max-flow min-cut theorem and the analysis above is that finding a maximum flow also finds a minimum cut, by constructing S and T as above.  This solves the zombie-diversion problem mentioned previously. <span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><p class="line867">
+<h1 id="Running_time_of_Ford-Fulkerson">4. Running time of Ford-Fulkerson</h1>
+<span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><p class="line862">Each iteration of Ford-Fulkerson takes O(E) time to find an augmenting path (G<sub>f</sub> has at least E and at most 2E edges, so the time is O(V+2E) = O(E+E) = O(E)).  Each iteration also increases the flow by at least 1, assuming all capacities are integers.  So the maximum number of iterations equals the highest capacity K of any cut in the graph which is bounded by EU where U is the highest edge capacity, giving a running time of O(E<sup>2</sup> U). <span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><p class="line862">It turns out that if one is particularly foolish in choosing augmenting paths, &#920;(EU) is in fact the worst-case number of iterations.  A simple example of what can go wrong is depicted below, with the steadily increasing flows shown from top to bottom in the left-hand column and the corresponding residual graphs and augmenting paths (in red) shown on the right.  With each augmentation the flow increases by exactly 1 as the algorithm changes its mind about whether to use the middle edge; it takes 200 augmentations before the algorithm terminates, even though choosing the high-capacity top and bottom paths at the start could finish in 2. <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><p class="line867"><img alt="badtour.png" class="attachment" src="/pinewiki/MaxFlow?action=AttachFile&amp;do=get&amp;target=badtour.png" title="badtour.png" /> <span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><p class="line862">But this bad outcome can be avoided by choosing a shortest augmenting path at each step using <a href="/pinewiki/BreadthFirstSearch">BreadthFirstSearch</a>.  The resulting special case of Ford-Fulkerson is known as Edmonds-Karp after the researchers who proved that it worked.  The essential idea of the proof is to show that any edge that is saturated can only reappear in G<sub>f</sub> with its source vertex more distant from s than it used to be.  It follows that edge edge can be saturated only O(V) times, and since each augmenting path saturates at least one edge, the number of iterations is at most O(VE).  This gives a total running time of O(VE<sup>2</sup>).  (See <a href="/pinewiki/CormenEtAl">CormenEtAl</a> section 26.2 if you care about the details.) <span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><p class="line862">The max-flow/min-cut problem has been studied very extensively, and still better algorithms exist.  The fastest currently known algorithm runs in approximately O(min(E<sup>3/2</sup>, V<sup>2/3</sup>E)) time, ignoring logarithmic terms; it is due to Goldberg and Rao.<sup><a href="#fnref-393eefbac45016b832c21bbeddbbdcee1993be5c" id="fndef-393eefbac45016b832c21bbeddbbdcee1993be5c-1">2</a></sup> <span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><p class="line867">
+<h1 id="Integer_solutions_and_maximum_matchings">5. Integer solutions and maximum matchings</h1>
+<span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><ul><li>Note that all flows found by FF are integral. <span class="anchor" id="line-107"></span></li><li>Reduction of maximum matching to max-flow. <span class="anchor" id="line-108"></span></li><li><p class="line862">What about maximum-weight matching?  O(V<sup>3</sup>) <em>Hungarian method</em> described in <a class="nonexistent" href="/pinewiki/PapadimitriouSteiglitz">PapadimitriouSteiglitz</a> Chapter 11. <span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span></li></ul><p class="line867"><hr /><p class="line874"> <span class="anchor" id="line-111"></span><a href="/pinewiki/CategoryAlgorithmNotes">CategoryAlgorithmNotes</a> <span class="anchor" id="line-112"></span>Volume  <span class="anchor" id="line-113"></span><div class="footnotes"><ol><li><p><a id="fnref-e9b1cd1f231f2384c4c6684f60b5f63639c83069"></a><span class="anchor" id="line-1-1"></span>Or, equivalently, if it's nonzero, since it can never be less.  (<a href="#fndef-e9b1cd1f231f2384c4c6684f60b5f63639c83069-0">1</a>)</li><li><p><a id="fnref-393eefbac45016b832c21bbeddbbdcee1993be5c"></a><span class="anchor" id="line-1-2"></span>Andrew V. Goldberg and Satish Rao.  Beyond the flow decomposition barrier.  Journal of the ACM, 45:783-797, 1998.  (<a href="#fndef-393eefbac45016b832c21bbeddbbdcee1993be5c-1">2</a>)</li></ol></div><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">MaxFlow  (last edited 2007-12-25 23:42:19 by <span title="??? @ localhost[127.0.0.1]">localhost</span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-91687-4");
+pageTracker._trackPageview();
+</script>
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/pinewiki/MaxFlow?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/pinewiki/MaxFlow?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/pinewiki/MaxFlow">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br /></li><li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

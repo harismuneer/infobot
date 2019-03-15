@@ -1,0 +1,1208 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-13T05:26:00Z
+WARC-TREC-ID: clueweb12-0904wb-11-19510
+WARC-Target-URI: http://www.livingartsministries.org/lamp_songs/songbook.php
+WARC-Payload-Digest: sha1:SI4K2Y5YB6CT5Y4KAAEBASMIK5X5S6YJ
+WARC-IP-Address: 38.113.244.44
+WARC-Record-ID: <urn:uuid:b21036a7-b554-49b4-b643-8608fd3c0b2a>
+Content-Type: application/http; msgtype=response
+Content-Length: 75739
+
+HTTP/1.1 200 OK
+Date: Tue, 13 Mar 2012 05:26:05 GMT
+Server: Apache/2.2.17 (Unix) mod_ssl/2.2.17 OpenSSL/0.9.8j FrontPage/5.0.2.2635 mod_jk/1.2.27 mod_fastcgi/2.4.6 PHP/5.3.5 mod_perl/2.0.4 Perl/v5.8.8
+X-Powered-By: PHP/5.3.5
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+	<title>LAMP Songs - Songbook</title>
+	
+	<link rel="Stylesheet" href="../lam_css/lam_master.css" type="text/css">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="author" content="Doug Gregan">
+	<meta name="description" content="Download the LAMP Songs Publishing songbook &#8220;Unto You, Oh Lord&#8221;, music, chord sheets, and overheads.">
+	<meta name="keywords" content= "doug gregan, caroline gregan, lam enotes, lam newsletter, lam prayer band, living arts ministries, lamp songs, lamp tracts, booklamps, streetlamps, why christ?, lam, christian worship, worship music, lam worship band, unto you oh lord, songbook, sheet music, chord sheets, overheads, praise and worship">
+<script type="text/javascript" language="Javascript">
+<!--
+var lyric = new Array(29);
+	lyric[1] = "lyrics/asimple_lyric.html";
+	lyric[2] = "lyrics/bc_lyric.html";
+	lyric[3] = "lyrics/btl_lyric.html";
+	lyric[4] = "lyrics/cc_lyric.html";
+	lyric[5] = "lyrics/epom_lyric.html";
+	lyric[6] = "lyrics/gmhs_lyric.html";
+	lyric[7] = "lyrics/his_lyric.html";
+	lyric[8] = "lyrics/icat_lyric.html";
+	lyric[9] = "lyrics/inav_lyric.html";
+	lyric[10] = "lyrics/iwlyl_lyric.html";
+	lyric[11] = "lyrics/igpy_lyric.html";
+	lyric[12] = "lyrics/ieis_lyric.html";
+	lyric[13] = "lyrics/jiml_lyric.html";
+	lyric[14] = "lyrics/nfij_lyric.html";
+	lyric[15] = "lyrics/nol_lyric.html";
+	lyric[16] = "lyrics/na_lyric.html";
+	lyric[17] = "lyrics/pyhitrp_lyric.html";
+	lyric[18] = "lyrics/sishp_lyric.html";
+	lyric[19] = "lyrics/sayt_lyric.html";
+	lyric[20] = "lyrics/tn_lyric.html";
+	lyric[21] = "lyrics/tpb_lyric.html";
+	lyric[22] = "lyrics/tt_lyric.html";
+	lyric[23] = "lyrics/tghn_lyric.html";
+	lyric[24] = "lyrics/uyol_lyric.html";
+	lyric[25] = "lyrics/wsaag_lyric.html";
+	lyric[26] = "lyrics/ycm_lyric.html";
+	lyric[27] = "lyrics/yolo_lyric.html";
+	lyric[28] = "lyrics/ylr_lyric.html";
+	lyric[29] = "lyrics/improv_lyric.html";
+	
+ 
+//-->
+</script>
+<!--     Begin PHP Includes     -->
+
+<link rel="shortcut icon" href="http://www.livingartsministries.org/images/favicon.ico" />
+<!-- Preload Script -->
+<script type="text/javascript">
+<!--
+if (navigator.appName == "Netscape") {
+document.write('<link rel="Stylesheet" href="http://www.livingartsministries.org/lam_css/lam_master.css" type="text/css">')
+
+}
+
+else {
+if (navigator.appName == "Microsoft Internet Explorer") {
+document.write('<link rel="Stylesheet" href="http://www.livingartsministries.org/lam_css/lam_master.css" type="text/css">');
+}
+
+else {
+document.write('<link rel="Stylesheet" href="http://www.livingartsministries.org/lam_css/lam_master.css" type="text/css">');
+}
+}
+
+/*
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		lam_base_over_words = newImage("http://www.livingartsministries.org/images/lam_base_over01.jpg");
+		lam_base_over_music = newImage("http://www.livingartsministries.org/images/lam_base_over02.jpg");
+		lam_base_over_min = newImage("http://www.livingartsministries.org/images/lam_base_over03.jpg");
+		word_over = newImage("http://www.livingartsministries.org/images/word_over.jpg");
+		music_over = newImage("http://www.livingartsministries.org/images/music_over.jpg");
+		ministry_over = newImage("http://www.livingartsministries.org/images/ministry_over.jpg");
+		email_over = newImage("http://www.livingartsministries.org/images/email_over.jpg");
+		preloadFlag = true;
+	}
+}
+*/
+
+// Declare Global variables
+	var newsLocation
+	newsLocation = "http://www.livingartsministries.org/rt_headlines.html";
+	var spurgLocation = "http://www.livingartsministries.org/spurgeon.html";
+	var verseLocation = "http://www.livingartsministries.org/lam_php/verse.php";
+	var stepsLocation = "http://www.livingartsministries.org/steps/steps1.html";
+	var prayerLocation = "http://www.livingartsministries.org/prayer_req/request_form.html";
+	var newsletterLocation = "http://www.livingartsministries.org/lam_php/signup.php";
+	
+		/*     PopUp window function    
+	function popUp(myLocation) {
+		//alert(myLocation);
+		popWindow = window.open(myLocation,"","height=575,width=380",",toolbar=no,location=no,directories=no,status=no,scrollbars=yes,menubar=no,resizable=no")
+
+		popWindow.location.href=myLocation;
+		if (popWindow.opener == null) popWindow.opener = self;
+	}*/
+
+function popUp(url, width, height)
+{
+settings=
+"toolbar=no,location=no,directories=no,"+
+"status=no,menubar=no,scrollbars=yes,"+
+"resizable=no,width="+width+",height="+height;
+
+MyNewWindow=window.open(url,"",settings);
+}
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+if(timerRunning)
+clearTimeout(timerID);
+timerRunning = false;
+}
+function showtime () {
+var now = new Date();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+var seconds = now.getSeconds()
+var timeValue = "" + ((hours >12) ? hours -12 :hours)
+if (timeValue == "0") timeValue = 12;
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+timeValue += (hours >= 12) ? " P.M." : " A.M."
+document.clock.face.value = timeValue;
+timerID = setTimeout("showtime()",1000);
+timerRunning = true;
+}
+function startclock() {
+stopclock();
+showtime();
+}
+// End -->
+
+// -->
+</script>
+<!-- End Preload Script -->
+</head>
+<body bgcolor="#FFFFFF" onload="startclock();">
+
+<!--         Pick Random Masthead Image         -->
+<!-- Begin Navigation Bar HTML --><div align="center" id="masthead" style="background-image: url(/images/lam_nav_bg3.jpg); background-color: #000000;
+background-repeat: no-repeat; background-position: top center;">
+<table border="0" width="640" cellspacing="0" cellpadding="0" align="center">
+<tr>
+	<td width="640" height="140" align="left" valign="bottom">
+	&#160;	
+	</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<!--     Start Unique Navigation Information     -->
+	<tr><td class="navbar" colspan="4" align="left" height="28">
+			<span class="wht12b">
+			&nbsp;<a class="nav" href="http://www.livingartsministries.org/index.php" title="LAM Home Page">Home</a>
+&nbsp;|&nbsp;&nbsp;<a class="nav" href="../lam_news.php" title="LAM News &amp; Updates">News</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;<a class="nav" href="../keeper_project.php" title="Find information about The Tsunami Keeper Project here.">Keeper Project</a>
+&nbsp;&nbsp;|&nbsp;<a class="nav" href="index.php" title="LAMP Songs">LAMP Songs</a>
+&nbsp;|&nbsp;<!--  Active Page  --> <span style="color: #ffcc33">Songbook</span>
+&nbsp;|&nbsp;<a class="nav" href="lam_worship_band.php" title="About the LAM Worship Band">LAM Worship Band</a>&nbsp;</span>
+
+		</td>
+	</tr>
+</table>
+</div>
+<!--     End Unique Navigation Information     -->
+
+<!--     Start the Content DIV Tag     -->
+<div id="content">
+
+
+<a name="top_of_page"></a>
+<div align="center">
+<img src="../images/songbook_head.jpg" alt="songbook_head.jpg" width="361" height="108" border="0" align="middle"><br>
+</div>
+<div style="float:left; width: 130px; height: 193px; border: 1px solid #ffcc33; margin: 7px;">
+<div align="center" class="wht12b" style="background-color: #ffcc33; width: 100%;">
+DOWNLOAD
+</div>
+<p align="left" class="blk10b" style="margin: 4px;">
+<a href="songbook/unto_you.pdf" title="Download &#8220;Unto You, Oh Lord.&#8221;"><img src="../images/cover_web_sm.jpg" alt="cover_web_sm.jpg" width="126" height="156" border="0" align="middle"></a>
+<br>
+</p>
+<div align="center" class="wht12b" style="width: 100%; background-color: #ffcc33;">
+SONGBOOK</div>
+</div>
+<p class="blk12p" style="align: justify; margin-left: 5%; margin-right: 3%;">
+<em>The first publication from <span class="red12b">LAMP Songs Publishing</span> is here!</em> <b>&#8220;Unto You, Oh Lord&#8221;</b> is a collection of 28 songs of adoration, consecration, repentance, commitment, and most of all, worship and praise. Our desire is to serve and give freely to the Body of Christ, therefore we have made the entire songbook available free of charge.  Complete Song Demos, Lyrics, Sheet Music, Chord Sheets, and Overhead Masters posted online for you to download. 
+<br><br>
+To download the entire printable songbook, click the cover graphic to the left. Otherwise, download what you'd like from the list of songs below. Everything here has been prepared in the PDF format and requires the free <a href="http://www.adobe.com/products/acrobat/readstep2.html" title="Download the free Adobe Acrobat Reader" target="_blank">Adobe Acrobat Reader</a> to use. If you have any problems downloading or listening to these files, please contact us and we will try to assist you.
+<br><br>
+If you are interested in a free printed and bound copy of the songbook, please send us an <a href="http://www.livingartsministries.org/contact.php" title="Write us to request a printed copy of the songbook.">email or postal mail</a> request and we will gladly send you one. We thank you for your interest in the songbook and Living Arts Ministries. We pray that God would truly bless you as you sing and share this music.
+</p>
+
+<br><br>
+<span class="red12b" style="font-style: italic;">Click on the desired file type under the <img src="../images/listen_icon.gif" width="24" height="24" border="0" align="middle"> icon to hear the songs.</span><br>
+<span class="red10b">(Slower connections can Right-Click and Save file/Target as...)<br>Now available in MP3 and Windows Media formats!
+</span>
+<br>
+<a href="http://www.adobe.com/products/acrobat/readstep2.html" target="_blank"><img src="/images/get_adobe_reader.gif" alt="get_adobe_reader.gif" title="Download the free Adobe Acrobat Reader" width="88" height="31" border="0" align="middle"></a>
+
+
+<br><br>
+<table style="background-color: transparent;" border="1" bordercolor="#ffcccc" width="95%" cellspacing="0" cellpadding="0" align="center">
+
+	<!--        A Simple Song        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/asimples.mp3" title="A Simple Song - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/asimples.wma" title="A Simple Song - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[1],375,500);" class="toolbox2" title="A Simple Song"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/asimples_music.pdf" title="A Simple Song" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/asimples_cs.pdf" title="A Simple Song" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/asimples_oh.pdf" title="A Simple Song" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> A Simple Song (<span class="blk10b">4.1mb|2.1mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Be Careful        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/bc.mp3" title="Be Careful - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/bc.wma" title="Be Careful - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[2],375,500);" class="toolbox2" title="Be Careful"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/bc_music.pdf" title="Be Careful" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/bc_cs.pdf" title="Be Careful" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/bc_oh.pdf" title="Be Careful" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Be Careful (<span class="blk10b">3.9mb|1.9mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        Bless The Lord        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/btl.mp3" title="Bless The Lord - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/btl.wma" title="Bless The Lord - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[3],375,500);" class="toolbox2" title="Bless The Lord"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/btl_music.pdf" title="Bless The Lord" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/btl_cs.pdf" title="Bless The Lord" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/btl_oh.pdf" title="Bless The Lord" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Bless The Lord (<span class="blk10b">2.2mb|1.1mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Celebrate Christ        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/cc.mp3" title="Celebrate Christ - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/cc.wma" title="Celebrate Christ - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[4],375,500);" class="toolbox2" title="Celebrate Christ"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/cc_music.pdf" title="Celebrate Christ" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/cc_cs.pdf" title="Celebrate Christ" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/cc_oh.pdf" title="Celebrate Christ" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Celebrate Christ (<span class="blk10b">4.1mb|2.1mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        Every Part Of Me        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/epom.mp3" title="Every Part Of Me - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/epom.wma" title="Every Part Of Me - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[5],375,500);" class="toolbox2" title="Every Part Of Me"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/epom_music.pdf" title="Every Part Of Me" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/epom_cs.pdf" title="Every Part Of Me" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/epom_oh.pdf" title="Every Part Of Me" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Every Part Of Me (<span class="blk10b">5.5mb|2.8mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Good Morning, Holy Spirit        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/gmhs.mp3" title="Good Morning, Holy Spirit - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/gmhs.wma" title="Good Morning, Holy Spirit - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[6],375,500);" class="toolbox2" title="Good Morning, Holy Spirit"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/gmhs_music.pdf" title="Good Morning, Holy Spirit" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/gmhs_cs.pdf" title="Good Morning, Holy Spirit" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/gmhs_oh.pdf" title="Good Morning, Holy Spirit" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Good Morning, Holy Spirit (<span class="blk10b">4.0mb|2.0mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Here I Stand        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/his.mp3" title="Here I Stand - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/his.wma" title="Here I Stand - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[7],375,500);" class="toolbox2" title="Here I Stand"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/his_music.pdf" title="Here I Stand" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/his_cs.pdf" title="Here I Stand" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/his_oh.pdf" title="Here I Stand" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Here I Stand (<span class="blk10b">4.1mb|2.1mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        I Count All Things        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/icat.mp3" title="I Count All Things - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/icat.wma" title="I Count All Things - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[8],375,500);" class="toolbox2" title="I Count All Things"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/icat_music.pdf" title="I Count All Things" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/icat_cs.pdf" title="I Count All Things" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/icat_oh.pdf" title="I Count All Things" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> I Count All Things (<span class="blk10b">4.3mb|2.2mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        I Need A Visitation        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/inav.mp3" title="I Need A Visitation - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/inav.wma" title="I Need A Visitation - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[9],375,500);" class="toolbox2" title="I Need A Visitation"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/inav_music.pdf" title="I Need A Visitation" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/inav_cs.pdf" title="I Need A Visitation" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/inav_oh.pdf" title="I Need A Visitation" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> I Need A Visitation (<span class="blk10b">4.1mb|2.1mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        I Will Love You, Lord        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/iwlyl.mp3" title="I Will Love You, Lord - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/iwlyl.wma" title="I Will Love You, Lord - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[10],375,500);" class="toolbox2" title="I Will Love You, Lord"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/iwlyl_music.pdf" title="I Will Love You, Lord" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/iwlyl_cs.pdf" title="I Will Love You, Lord" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/iwlyl_oh.pdf" title="I Will Love You, Lord" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> I Will Love You, Lord (<span class="blk10b">2.7mb|1.3mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        I&#8217;m Gonna Praise You        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/igpy.mp3" title="I&#8217;m Gonna Praise You - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/igpy.wma" title="I&#8217;m Gonna Praise You - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[11],375,500);" class="toolbox2" title="I&#8217;m Gonna Praise You"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/igpy_music.pdf" title="I&#8217;m Gonna Praise You" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/igpy_cs.pdf" title="I&#8217;m Gonna Praise You" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/igpy_oh.pdf" title="I&#8217;m Gonna Praise You" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> I&#8217;m Gonna Praise You (<span class="blk10b">2.5mb|1.3mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        In Everything I See        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/ieis.mp3" title="In Everything I See - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/ieis.wma" title="In Everything I See - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[12],375,500);" class="toolbox2" title="In Everything I See"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/ieis_music.pdf" title="In Everything I See" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/ieis_cs.pdf" title="In Everything I See" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/ieis_oh.pdf" title="In Everything I See" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> In Everything I See (<span class="blk10b">3.8mb|1.9mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Jesus Is My Lord        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/jiml.mp3" title="Jesus Is My Lord - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/jiml.wma" title="Jesus Is My Lord - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[13],375,500);" class="toolbox2" title="Jesus Is My Lord"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/jiml_music.pdf" title="Jesus Is My Lord" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/jiml_cs.pdf" title="Jesus Is My Lord" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/jiml_oh.pdf" title="Jesus Is My Lord" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Jesus Is My Lord (<span class="blk10b">3.3mb|1.7mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        No Fear In Jesus        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/nfij.mp3" title="No Fear In Jesus - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/nfij.wma" title="No Fear In Jesus - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[14],375,500);" class="toolbox2" title="No Fear In Jesus"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/nfij_music.pdf" title="No Fear In Jesus" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/nfij_cs.pdf" title="No Fear In Jesus" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/nfij_oh.pdf" title="No Fear In Jesus" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> No Fear In Jesus (<span class="blk10b">3.5mb|1.8mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        No Other Love        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/nol.mp3" title="No Other Love - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/nol.wma" title="No Other Love - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[15],375,500);" class="toolbox2" title="No Other Love"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/nol_music.pdf" title="No Other Love" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/nol_cs.pdf" title="No Other Love" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/nol_oh.pdf" title="No Other Love" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> No Other Love (<span class="blk10b">4.2mb|2.1mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Not Ashamed        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/na.mp3" title="Not Ashamed - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/na.wma" title="Not Ashamed - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[16],375,500);" class="toolbox2" title="Not Ashamed"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/na_music.pdf" title="Not Ashamed" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/na_cs.pdf" title="Not Ashamed" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/na_oh.pdf" title="Not Ashamed" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Not Ashamed (<span class="blk10b">4.8mb|2.5mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Put Your Heart In The Right Place        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/pyhitrp.mp3" title="Put Your Heart In The Right Place - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/pyhitrp.wma" title="Put Your Heart In The Right Place - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[17],375,500);" class="toolbox2" title="Put Your Heart In The Right Place"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/pyhitrp_music.pdf" title="Put Your Heart In The Right Place" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/pyhitrp_cs.pdf" title="Put Your Heart In The Right Place" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/pyhitrp_oh.pdf" title="Put Your Heart In The Right Place" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Put Your Heart In The Right Place (<span class="blk10b">3.2mb|1.6mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        So, I&#8217;ll Sing His Praise        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/sishp.mp3" title="So, I&#8217;ll Sing His Praise - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/sishp.wma" title="So, I&#8217;ll Sing His Praise - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[18],375,500);" class="toolbox2" title="So, I&#8217;ll Sing His Praise"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/sishp_music.pdf" title="So, I&#8217;ll Sing His Praise" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/sishp_cs.pdf" title="So, I&#8217;ll Sing His Praise" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/sishp_oh.pdf" title="So, I&#8217;ll Sing His Praise" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> So, I&#8217;ll Sing His Praise (<span class="blk10b">2.6mb|1.3mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Standing At Your Throne        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/sayt.mp3" title="Standing At Your Throne - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/sayt.wma" title="Standing At Your Throne - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[19],375,500);" class="toolbox2" title="Standing At Your Throne"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/sayt_music.pdf" title="Standing At Your Throne" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/sayt_cs.pdf" title="Standing At Your Throne" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/sayt_oh.pdf" title="Standing At Your Throne" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Standing At Your Throne (<span class="blk10b">4.0mb|2.0mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        The Need        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/tn.mp3" title="The Need - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/tn.wma" title="The Need - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[20],375,500);" class="toolbox2" title="The Need"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/tn_music.pdf" title="The Need" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/tn_cs.pdf" title="The Need" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/tn_oh.pdf" title="The Need" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> The Need (<span class="blk10b">4.3mb|2.2mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        The Precious Blood        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/tpb.mp3" title="The Precious Blood - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/tpb.wma" title="The Precious Blood - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[21],375,500);" class="toolbox2" title="The Precious Blood"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/tpb_music.pdf" title="The Precious Blood" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/tpb_cs.pdf" title="The Precious Blood" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/tpb_oh.pdf" title="The Precious Blood" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> The Precious Blood (<span class="blk10b">4.4mb|2.2mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        The Treasure        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/tt.mp3" title="The Treasure - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/tt.wma" title="The Treasure - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[22],375,500);" class="toolbox2" title="The Treasure"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/tt_music.pdf" title="The Treasure" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/tt_cs.pdf" title="The Treasure" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/tt_oh.pdf" title="The Treasure" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> The Treasure (<span class="blk10b">2.7mb|1.4mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        To Glorify His Name        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/tghn.mp3" title="To Glorify His Name - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/tghn.wma" title="To Glorify His Name - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[23],375,500);" class="toolbox2" title="To Glorify His Name"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/tghn_music.pdf" title="To Glorify His Name" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/tghn_cs.pdf" title="To Glorify His Name" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/tghn_oh.pdf" title="To Glorify His Name" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> To Glorify His Name (<span class="blk10b">2.1mb|1.0mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        Unto You, Oh Lord        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/unto_you1.mp3" title="Unto You, Oh Lord - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/unto_you1.wma" title="Unto You, Oh Lord - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[24],375,500);" class="toolbox2" title="Unto You, Oh Lord"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/uyol_music.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/uyol_cs.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/uyol_oh.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Unto You, Oh Lord (<span class="blk10b">6.9mb|3.5mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        Unto You, Oh Lord        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/unto_you2.mp3" title="Unto You, Oh Lord - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/unto_you2.wma" title="Unto You, Oh Lord - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[24],375,500);" class="toolbox2" title="Unto You, Oh Lord"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/uyol_music.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/uyol_cs.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/uyol_oh.pdf" title="Unto You, Oh Lord" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Unto You, Oh Lord<span class="blk10b"> - Version #2</span> (<span class="blk10b">5.9mb|3.0mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        We Serve An Awesome God        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/wsaag.mp3" title="We Serve An Awesome God - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/wsaag.wma" title="We Serve An Awesome God - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[25],375,500);" class="toolbox2" title="We Serve An Awesome God"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/wsaag_music.pdf" title="We Serve An Awesome God" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/wsaag_cs.pdf" title="We Serve An Awesome God" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/wsaag_oh.pdf" title="We Serve An Awesome God" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> We Serve An Awesome God (<span class="blk10b">2.8mb|1.4mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        You Chose Me        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/ycm.mp3" title="You Chose Me - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/ycm.wma" title="You Chose Me - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[26],375,500);" class="toolbox2" title="You Chose Me"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/ycm_music.pdf" title="You Chose Me" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/ycm_cs.pdf" title="You Chose Me" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/ycm_oh.pdf" title="You Chose Me" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> You Chose Me (<span class="blk10b">5.4mb|1.9mb</span>) 
+		<br><span class="blk10b">Solo Demonstration Recording</span>
+		</td>
+	</tr>
+	
+	<!--        You Only Live Once        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/yolo.mp3" title="You Only Live Once - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/unto_you2.wma" title="You Only Live Once - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[27],375,500);" class="toolbox2" title="You Only Live Once"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/yolo_music.pdf" title="You Only Live Once" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/yolo_cs.pdf" title="You Only Live Once" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/yolo_oh.pdf" title="You Only Live Once" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> You Only Live Once (<span class="blk10b">2.0mb|1.0mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        Your Love Reaches        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/ylr_norm.mp3" title="Your Love Reaches - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/ylr_norm.wma" title="Your Love Reaches - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[28],375,500);" class="toolbox2" title="Your Love Reaches"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/ylr_music.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/ylr_cs.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/ylr_oh.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Your Love Reaches (<span class="blk10b">5.6mb|2.0mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+	
+	<!--        Your Love Reaches        -->
+	<tr align="center" valign="bottom">
+		<td align="center" height="50" width="150" valign="bottom">
+		<img src="../images/listen_icon.gif" width="24" height="24" border="0" border="0" align="bottom"><br>
+		<a href="../music_files/ylr_long.mp3" title="Your Love Reaches - MP3 Format" class="toolbox2">MP3</a><span class="red10b"> | </span><a href="../music_files/ylr.wma" title="Your Love Reaches - Windows Media Format" class="toolbox2">WMA</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="javascript:popUp(lyric[28],375,500);" class="toolbox2" title="Your Love Reaches"><img src="../images/lyric_icon.gif" width="24" height="24" border="0" align="middle" title="Click to see the lyrics"><br>
+		Lyric</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="sheetmusic/ylr_music.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/music_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the music"><br>
+		Music</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="chord_sheets/ylr_cs.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/chord_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the chordsheet"><br>
+		Chord</a>
+		</td>
+		<td align="center" valign="bottom">
+		<a href="overheads/ylr_oh.pdf" title="Your Love Reaches" class="toolbox2"><img src="../images/overhead_icon.gif" width="24" height="24" border="0" align="middle" title="Click to download the overhead"><br>
+		Overhead</a>
+		</td>
+		<td  align="left" width="60%" valign="bottom" class="red12b">
+		<img src="../images/wht_pix_bg.gif" width="15" height="30"  border="0" align="left"> Your Love Reaches <span class="blk10b"> - Long</span> (<span class="blk10b">9.7mb|4.9mb</span>) 
+		<br><span class="red10b">LAM Worship Band!</span>
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+
+<span class="red10b"><a href="#top_of_page">Return to Top</a></span>
+<br>
+<br>
+<br>
+<!--     Footer PHP Include (Inside the Content Tag now)     -->
+ 
+
+<!--     Endthe Content DIV Tag     -->
+</div>
+<!--    Toolbox and Close HTMl Tag    -->
+<!--     Begin LAM Toolbox     -->
+<div id="margin_bar" >
+<div id="toolbox" style="background-image: url(http://www.livingartsministries.org/images/toolbox_bg.gif); background-repeat: no-repeat;">
+<div align="center" class="wht14b" style="color: #ffcc33; margin-bottom: 10px;">Quick Resources
+<form name="clock" style="margin: 0px; padding: 0px;">
+<span class="wht10b" style="color: #ffcc33;">
+<script language="JavaScript1.2">
+var months=new Array(13);
+months[1]="January";
+months[2]="February";
+months[3]="March";
+months[4]="April";
+months[5]="May";
+months[6]="June";
+months[7]="July";
+months[8]="August";
+months[9]="September";
+months[10]="October";
+months[11]="November";
+months[12]="December";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+if (year < 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+document.write("<center>" + lmonth + " ");
+document.write(date + ", " + year + "<\/center>");
+</script>
+&nbsp;
+<input type="text" name="face" size=13 value="" style="color: #ffcc33; background-color: #000000; font-size: 10px; font-weight: bold; border-width: 0px">
+</span></form>
+</div>
+<div align="left" class="wht10b" style="margin-left: 10px;">
+<span style="color: #ffcc33;">&raquo; </span><a href="http://www.livingartsministries.org/contact.php" class="toolbox" style=" margin-top:5px;">Contact Us</a><br>
+<span style="color: #ffcc33;">&raquo; </span><a href="#" onClick="popUp(prayerLocation, 375, 625); return false" name="lam_prayer" title="Submit Your Prayer Requests" target="_blank" class="toolbox" style=" margin-top:5px;">Your Prayer Requests</a><br>
+<span style="color: #ffcc33;">&raquo; </span><a href= "#" onClick="popUp(stepsLocation, 375, 575); return false" title="Steps to Peace with God" class="toolbox" style=" margin-top:5px; margin=bottom: 5px;">Steps to Peace w&frasl; God</a><br>
+<span class="wht11b"><span style="color: #ffcc33;">&raquo; </span> Encouragement!</span><br>
+<span class="wht11b" style="margin-left: 8px">- <a href= "#" onClick="popUp(verseLocation, 375, 400); return false" title="Scripture Verse" class="toolbox">Scripture Verse</a></span><br>
+<span class="wht11b" style="margin-left: 8px">- <a href= "#" onClick="popUp(spurgLocation, 375, 500); return false" title="Spurgeon Morning and Evening" class="toolbox">Devotional</a></span><br>
+<!-- Religion Today Script  -->
+<span style="color: #ffcc33;">&raquo; </span><a href= "#" onClick="popUp(newsLocation, 375, 500); return false" title="Religion Today  Headlines" class="toolbox"  style="margin-top:5px;">Religion Today&trade; News<br></a>
+<!-- BEGIN BIBLEGATEWAY.COM SEARCH FORM -->
+<form action="http://www.biblegateway.com/cgi-bin/bible" method="get" style="margin: 0px; padding: 0px;">
+<span style="color: #ffcc33;">&raquo; </span><a href="http://www.biblegateway.com" class="toolbox"  title="Bible Gateway" target="_blank"  style="margin-top:5px;">Search the Bible</a>
+<input class="formsize" style="font-size: 10px; margin-top:4px;" type="text" name="search" size="23" value="Search by Keyword" onBlur="if(this.value==''){this.value='Search by Keyword';}" onFocus="if(this.value=='Search by Keyword'){this.value='';}" style="font: normal 10px Arial, Helvetica, sans-serif">
+<input type="submit" name="Submit" value="Go" style="font: normal 10px Arial, Helvetica, sans-serif">
+<br><input class="formsize" style="font-size: 10px; margin-top:4px;" type="text" name="passage" size="23" value="Search by Reference" onBlur="if(this.value==''){this.value='Search by Reference';}" onFocus="if(this.value=='Search by Reference'){this.value='';}" style="font: normal 10px Arial, Helvetica, sans-serif">
+<input type="submit" name="Submit" value="Go" style="font: normal 10px Arial, Helvetica, sans-serif">
+<br>
+<center>
+<a href="http://www.biblegateway.com/help/webmaster_tools/form.php" class="toolbox" style="font: bold 9px Arial, Helvetica, sans-serif; color: #ffffff; background: transparent;">
+Include this form on your page
+</a>
+</form>
+
+</center>
+<!-- END BIBLEGATEWAY.COM SEARCH FORM -->
+<!-- BEGIN CROSSSEARCH.COM SEARCH FORM -->
+<form name="CrossSearch" action="http://www.crosssearch.com/cgi-bin/search" method="POST" style="margin: 0px; padding: 0px;">
+<span style="color: #ffcc33;">&raquo; </span><a href="http://www.crosssearch.com/" class="toolbox" target="_blank" title="CrossSearch"  style="margin-top:5px;">CrossSearch</a>
+<input style="font-size: 10px;" type="text" size="23" value="Search Christian Web" name="s"
+class="formsize" style="font: normal 10px Arial, Helvetica, sans-serif"  onBlur="if(this.value==''){this.value='Search Christian Web';}" onFocus="if(this.value=='Search Christian Web'){this.value='';}">
+<input type="submit" name="optional" value="Go" style="font: normal 10px Arial, Helvetica, sans-serif">
+<br>
+</form>
+<!-- END CROSSSEARCH.COM SEARCH FORM -->
+
+<br>
+
+<!--     Newsletter Section     -->
+<div align="center">
+
+<p class="wht10b" style="text-align: center; margin-top: 0px; margin-left:3px; margin-right: 10px;">
+
+ <span style="color: #cc3333;">Living Arts Ministries</span><br>is a faith-based ministry that relies entirely on freewill offerings. <br><span class="wht12b" style="color: #000000;"><em>Click to Read more...</em>
+</span><br>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIH0QYJKoZIhvcNAQcEoIIHwjCCB74CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCSJ47NAg5bi3TGIiVoO5StQLcQAHn9ClnkBy8hzcgcYWePLrNPRkQ7YBf1SrBsj3l7JL65ZpKOUpad1l0VjlRtokdH99qNeufewC4Dsi9lcF9XxSM1UE13MsnctBFCe0xOAd02VRX6pvkOQHr+b3wYe0eLJPVLQ66fIN58Tv+zxTELMAkGBSsOAwIaBQAwggFNBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECM+1ApCqhDipgIIBKKnqNhu2gd1BEiVOpcAIDIveF/NjGr0FFJjoawj7EG3tXceXb+FFU7unBGCNwtwFSyqZsTBAUbYcPqC51uF8tRgPTIKs2Y/7dTIyUiUSVEXPjP9gSRXmO2JACp5y0kGuSfJLmc8dpTXa7SFGyhZrLRF0xEcCuDXSQdeYcYihgWyp7NJPPQxyBP3QPjHAQ5lHIn9Qtoo7Au22vJqSdAyobkTeohDXleKMv3n9uVx3P81m6RY1YShrFmMEZji9tJCmhLfmdNkrmQh7+mViUnlnBwyMDsXBgo1IxuS5FoQfUIPzRKPTtUa50/gtcQL7aHA5jSaqnYimUV3IKdbJp2KoHCkodbQa2+XRFQLCBR4eTtDH1C4P4c5IgbLKVQKhZG+MzMyy+A/sycZdoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMDUwNDI5MDQyODIwWjAjBgkqhkiG9w0BCQQxFgQUvN99Y7ezuxvXPd/1W6eo0Z9OeHswDQYJKoZIhvcNAQEBBQAEgYC/Sgw6AzCa39B/H9W0mvfXXpv4aJgdKUq+erYmH9u2ngQQzAewwi519OxRFsKN7TBPQXrGqsNfwkU9BlSxY0+HeoA1VrCDo6+xucSHm5inUOgkBt5/z6na29981ogmQ7YXGHUs4xTz4QHeESMwqRU1NVKScqhwjAdhB1OTw9UQRQ==-----END PKCS7-----
+">
+</form>
+<span style="color: #ffcc33;"><em>God bless you!</em>
+</span>
+</p>
+</div>
+<br>
+
+
+</div>
+</div>
+<div align="center" class="blk10b">
+BibleGateway Search and CrossSearch are provided by:<br>
+<a href="http://www.gospelcom.net/" name="gospelcom" title="www.gospelcom.net" target="_blank" class="nothing"><img src="http://www.livingartsministries.org/images/gospelcom.gif" alt="Gospelcom.net" width="149" height="45" border="0" align="middle"></a>
+<br><br><br>
+<!--
+<a href="http://www.exxit.org/" title="eXXit - Escape from Pornography" target="_blank"><img src="http://www.livingartsministries.org/images/exxit.gif" alt="eXXit - Escape from Pornography" width="145" height="116" border="0" align="middle"></a>
+-->

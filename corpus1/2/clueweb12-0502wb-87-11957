@@ -1,0 +1,1897 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-01T23:43:40Z
+WARC-TREC-ID: clueweb12-0502wb-87-11957
+WARC-Target-URI: http://www.lyriczz.com/songs/s-88.html
+WARC-Payload-Digest: sha1:NEXBHUFDMPWJRVE7EQARIP6J7LDMOKWP
+WARC-IP-Address: 64.131.74.249
+WARC-Record-ID: <urn:uuid:7d2cf3d1-cc28-49dd-bebf-f5e6ffb3793d>
+Content-Type: application/http; msgtype=response
+Content-Length: 115259
+
+HTTP/1.1 200 OK
+Date: Thu, 01 Mar 2012 23:43:44 GMT
+Server: Apache/1.3.42 (Unix) PHP/5.3.2 mod_log_bytes/1.2 mod_bwlimited/1.4 mod_auth_passthrough/1.8 FrontPage/5.0.2.2635 mod_ssl/2.8.31 OpenSSL/0.9.7a
+X-Powered-By: PHP/5.3.2
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Song Lyrics: S - page 88</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="Song Lyrics for an S, such as Front Line Assembly - Surface Patterns lyrics, Incubus - Surface To Air lyrics, Slipknot - Surfacing lyrics and more." />
+<meta name="keywords" content="lyrics,music,songs" />
+<link href="http://www.lyriczz.com/style.css" rel="stylesheet" type="text/css" />
+
+<!-- START main submenu script -->
+<link href="http://www.lyriczz.com/include/submenu/p7exp.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.lyriczz.com/include/submenu/p7exp.js"></script>
+
+
+
+<!--[if lte IE 7]>
+<style>
+#menuwrapper, #p7menubar ul a {height: 1%;}
+a:active {width: auto;}
+</style>
+<![endif]-->
+
+<!-- END main submenu script -->
+
+
+ <script type="text/javascript" src="http://www.lyriczz.com/js/jquery.js"></script>
+  <script type="text/javascript" src="http://www.lyriczz.com/js/suggest.js"></script>
+  <script type="text/javascript">
+  <!--
+  $(document).ready(function()
+  {
+    //hide the all of the element with class msg_body
+    $(".msg_body").hide();
+    //toggle the componenet with class msg_body
+    $(".msg_head").click(function()
+    {
+      $(this).next(".msg_body").slideToggle(600);
+    });
+    //$("#inputText").focus();
+	
+	
+	$('#inputText').each(function(){
+
+	this.value = $(this).attr('title');
+	$(this).addClass('textLabel');
+
+	$(this).focus(function(){
+		if(this.value == $(this).attr('title')) {
+			this.value = '';
+			$(this).removeClass('textLabel');
+		}
+	});
+
+	$(this).blur(function(){
+		if(this.value == '') {
+			this.value = $(this).attr('title');
+			$(this).addClass('textLabel');
+		}
+	});
+});
+
+  });
+  //-->
+  </script>
+  <script type="text/javascript">
+  <!--
+  function sval(a)
+    {
+     document.getElementById("searchtype").value = a;
+    }
+  //-->
+  </script>
+  <link rel="stylesheet" type="text/css" href="http://www.lyriczz.com/css/srch_style.css" />
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="http://www.lyriczz.com/css/srch_ie.css" />
+  <![endif]-->
+	<!-- START analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28140316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+	<!-- END analytics -->
+  
+
+</head>
+<body onLoad="P7_ExpMenu()"  onclick="emptySuggestions();" >
+<div id="header">
+ <a class="home_link" href="http://www.lyriczz.com"><img alt="Lyrics" title="Lyrics" src="http://www.lyriczz.com/images/lyrics.jpg"/></a>
+	<div id="menuwrapper"  style="margin-top: -14px;" >
+					<div id="searchTips">Tip: wait a moment for suggestions.</div>
+			<br style="clear:both;"/>
+				<ul id="p7menubar">
+			<li class="left"><a class="trigger" href="http://www.lyriczz.com">Lyrics</a>
+			<ul>
+				<li><a href="http://www.lyriczz.com/top100.php">Popular lyrics</a></li>
+				<li><a href="http://www.lyriczz.com/latest.php">New Lyrics </a></li>
+			</ul>
+			</li>
+			<li class="right"><a class="trigger" href="http://www.lyriczz.com/chartzz.php">Chartzz</a>
+				<ul>
+					<li><a href="http://www.lyriczz.com/chart_usa.php">USA Chart</a></li>
+					<li><a href="http://www.lyriczz.com/chart_uk.php">UK Chart</a></li>
+					<li><a href="http://www.lyriczz.com/chart_nl.php">Netherlands Chart</a></li>
+				</ul>
+			</li>
+		</ul>
+					<div id="searchBoxContainer" class="">
+				<input type="text" id="inputText" onfocus="resetCurrentLi();" autocomplete="off" onkeyup="handleInput(event);" class="inputText" size="50" title="Search by Artist or Song" name="search" />
+
+				<input id="srchButton" type="image" src="http://www.lyriczz.com/images/search.jpg" value="Enter search criteria" onclick="handleInput({keyCode: 13});">
+				<br style="clear:both;"/>
+			</div>		
+				<br class="clearit">
+				<div id="suggestions" style="display: block"> </div>
+			</div>
+</div>
+<div id="content_wrapper">
+
+
+<div id="content">
+
+ <div id="middle_area"> 
+  <div style="text-align:left;">
+   <div style='font-size: 15px; font-weight: bold;'>Artist Name:  <a href='http://www.lyriczz.com/artist/1-1.html'>#</a>  <a href='http://www.lyriczz.com/artist/a-1.html'>A</a>  <a href='http://www.lyriczz.com/artist/b-1.html'>B</a>  <a href='http://www.lyriczz.com/artist/c-1.html'>C</a>  <a href='http://www.lyriczz.com/artist/d-1.html'>D</a>  <a href='http://www.lyriczz.com/artist/e-1.html'>E</a>  <a href='http://www.lyriczz.com/artist/f-1.html'>F</a>  <a href='http://www.lyriczz.com/artist/g-1.html'>G</a>  <a href='http://www.lyriczz.com/artist/h-1.html'>H</a>  <a href='http://www.lyriczz.com/artist/i-1.html'>I</a>  <a href='http://www.lyriczz.com/artist/j-1.html'>J</a>  <a href='http://www.lyriczz.com/artist/k-1.html'>K</a>  <a href='http://www.lyriczz.com/artist/l-1.html'>L</a>  <a href='http://www.lyriczz.com/artist/m-1.html'>M</a>  <a href='http://www.lyriczz.com/artist/n-1.html'>N</a>  <a href='http://www.lyriczz.com/artist/o-1.html'>O</a>  <a href='http://www.lyriczz.com/artist/p-1.html'>P</a>  <a href='http://www.lyriczz.com/artist/q-1.html'>Q</a>  <a href='http://www.lyriczz.com/artist/r-1.html'>R</a>  <a href='http://www.lyriczz.com/artist/s-1.html'>S</a>  <a href='http://www.lyriczz.com/artist/t-1.html'>T</a>  <a href='http://www.lyriczz.com/artist/u-1.html'>U</a>  <a href='http://www.lyriczz.com/artist/v-1.html'>V</a>  <a href='http://www.lyriczz.com/artist/w-1.html'>W</a>  <a href='http://www.lyriczz.com/artist/x-1.html'>X</a>  <a href='http://www.lyriczz.com/artist/y-1.html'>Y</a>  <a href='http://www.lyriczz.com/artist/z-1.html'>Z</a> </div>
+   <div style='font-size: 15px; font-weight: bold;'>Song Title:  <a href='http://www.lyriczz.com/songs/1-1.html'>#</a>  <a href='http://www.lyriczz.com/songs/a-1.html'>A</a>  <a href='http://www.lyriczz.com/songs/b-1.html'>B</a>  <a href='http://www.lyriczz.com/songs/c-1.html'>C</a>  <a href='http://www.lyriczz.com/songs/d-1.html'>D</a>  <a href='http://www.lyriczz.com/songs/e-1.html'>E</a>  <a href='http://www.lyriczz.com/songs/f-1.html'>F</a>  <a href='http://www.lyriczz.com/songs/g-1.html'>G</a>  <a href='http://www.lyriczz.com/songs/h-1.html'>H</a>  <a href='http://www.lyriczz.com/songs/i-1.html'>I</a>  <a href='http://www.lyriczz.com/songs/j-1.html'>J</a>  <a href='http://www.lyriczz.com/songs/k-1.html'>K</a>  <a href='http://www.lyriczz.com/songs/l-1.html'>L</a>  <a href='http://www.lyriczz.com/songs/m-1.html'>M</a>  <a href='http://www.lyriczz.com/songs/n-1.html'>N</a>  <a href='http://www.lyriczz.com/songs/o-1.html'>O</a>  <a href='http://www.lyriczz.com/songs/p-1.html'>P</a>  <a href='http://www.lyriczz.com/songs/q-1.html'>Q</a>  <a href='http://www.lyriczz.com/songs/r-1.html'>R</a>  <a href='http://www.lyriczz.com/songs/s-1.html'>S</a>  <a href='http://www.lyriczz.com/songs/t-1.html'>T</a>  <a href='http://www.lyriczz.com/songs/u-1.html'>U</a>  <a href='http://www.lyriczz.com/songs/v-1.html'>V</a>  <a href='http://www.lyriczz.com/songs/w-1.html'>W</a>  <a href='http://www.lyriczz.com/songs/x-1.html'>X</a>  <a href='http://www.lyriczz.com/songs/y-1.html'>Y</a>  <a href='http://www.lyriczz.com/songs/z-1.html'>Z</a> </div>
+  </div>
+  <br />
+  <div style="text-align:left;">
+   <!-- START Leaderboard banner -->
+	<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "728x90,468x60";
+	//--></script>
+	<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/lyricsbaycom/LyricZZcom/tags.js"></script>
+   
+   <!-- END Leaderboard banner -->
+  </div> 
+  <br />
+  
+  <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f061b433e387269"></script>
+<!-- AddThis Button END -->
+
+<br />
+  <h1 class='cb_title'>Song Lyrics for an S</h1>
+<div style="width:580px;">
+  <span class='nums'>&laquo; <a href='http://www.lyriczz.com/songs/s-87.html'>Previous</a> <a href='http://www.lyriczz.com/songs/s-1.html'> 1 </a><a href='http://www.lyriczz.com/songs/s-2.html'> 2 </a><a href='http://www.lyriczz.com/songs/s-3.html'> 3 </a><a href='http://www.lyriczz.com/songs/s-4.html'> 4 </a><a href='http://www.lyriczz.com/songs/s-5.html'> 5 </a><a href='http://www.lyriczz.com/songs/s-6.html'> 6 </a><a href='http://www.lyriczz.com/songs/s-7.html'> 7 </a><a href='http://www.lyriczz.com/songs/s-8.html'> 8 </a><a href='http://www.lyriczz.com/songs/s-9.html'> 9 </a><a href='http://www.lyriczz.com/songs/s-10.html'> 10 </a><a href='http://www.lyriczz.com/songs/s-11.html'> 11 </a><a href='http://www.lyriczz.com/songs/s-12.html'> 12 </a><a href='http://www.lyriczz.com/songs/s-13.html'> 13 </a><a href='http://www.lyriczz.com/songs/s-14.html'> 14 </a><a href='http://www.lyriczz.com/songs/s-15.html'> 15 </a><a href='http://www.lyriczz.com/songs/s-16.html'> 16 </a><a href='http://www.lyriczz.com/songs/s-17.html'> 17 </a><a href='http://www.lyriczz.com/songs/s-18.html'> 18 </a><a href='http://www.lyriczz.com/songs/s-19.html'> 19 </a><a href='http://www.lyriczz.com/songs/s-20.html'> 20 </a><a href='http://www.lyriczz.com/songs/s-21.html'> 21 </a><a href='http://www.lyriczz.com/songs/s-22.html'> 22 </a><a href='http://www.lyriczz.com/songs/s-23.html'> 23 </a><a href='http://www.lyriczz.com/songs/s-24.html'> 24 </a><a href='http://www.lyriczz.com/songs/s-25.html'> 25 </a><a href='http://www.lyriczz.com/songs/s-26.html'> 26 </a><a href='http://www.lyriczz.com/songs/s-27.html'> 27 </a><a href='http://www.lyriczz.com/songs/s-28.html'> 28 </a><a href='http://www.lyriczz.com/songs/s-29.html'> 29 </a><a href='http://www.lyriczz.com/songs/s-30.html'> 30 </a><a href='http://www.lyriczz.com/songs/s-31.html'> 31 </a><a href='http://www.lyriczz.com/songs/s-32.html'> 32 </a><a href='http://www.lyriczz.com/songs/s-33.html'> 33 </a><a href='http://www.lyriczz.com/songs/s-34.html'> 34 </a><a href='http://www.lyriczz.com/songs/s-35.html'> 35 </a><a href='http://www.lyriczz.com/songs/s-36.html'> 36 </a><a href='http://www.lyriczz.com/songs/s-37.html'> 37 </a><a href='http://www.lyriczz.com/songs/s-38.html'> 38 </a><a href='http://www.lyriczz.com/songs/s-39.html'> 39 </a><a href='http://www.lyriczz.com/songs/s-40.html'> 40 </a><a href='http://www.lyriczz.com/songs/s-41.html'> 41 </a><a href='http://www.lyriczz.com/songs/s-42.html'> 42 </a><a href='http://www.lyriczz.com/songs/s-43.html'> 43 </a><a href='http://www.lyriczz.com/songs/s-44.html'> 44 </a><a href='http://www.lyriczz.com/songs/s-45.html'> 45 </a><a href='http://www.lyriczz.com/songs/s-46.html'> 46 </a><a href='http://www.lyriczz.com/songs/s-47.html'> 47 </a><a href='http://www.lyriczz.com/songs/s-48.html'> 48 </a><a href='http://www.lyriczz.com/songs/s-49.html'> 49 </a><a href='http://www.lyriczz.com/songs/s-50.html'> 50 </a><a href='http://www.lyriczz.com/songs/s-51.html'> 51 </a><a href='http://www.lyriczz.com/songs/s-52.html'> 52 </a><a href='http://www.lyriczz.com/songs/s-53.html'> 53 </a><a href='http://www.lyriczz.com/songs/s-54.html'> 54 </a><a href='http://www.lyriczz.com/songs/s-55.html'> 55 </a><a href='http://www.lyriczz.com/songs/s-56.html'> 56 </a><a href='http://www.lyriczz.com/songs/s-57.html'> 57 </a><a href='http://www.lyriczz.com/songs/s-58.html'> 58 </a><a href='http://www.lyriczz.com/songs/s-59.html'> 59 </a><a href='http://www.lyriczz.com/songs/s-60.html'> 60 </a><a href='http://www.lyriczz.com/songs/s-61.html'> 61 </a><a href='http://www.lyriczz.com/songs/s-62.html'> 62 </a><a href='http://www.lyriczz.com/songs/s-63.html'> 63 </a><a href='http://www.lyriczz.com/songs/s-64.html'> 64 </a><a href='http://www.lyriczz.com/songs/s-65.html'> 65 </a><a href='http://www.lyriczz.com/songs/s-66.html'> 66 </a><a href='http://www.lyriczz.com/songs/s-67.html'> 67 </a><a href='http://www.lyriczz.com/songs/s-68.html'> 68 </a><a href='http://www.lyriczz.com/songs/s-69.html'> 69 </a><a href='http://www.lyriczz.com/songs/s-70.html'> 70 </a><a href='http://www.lyriczz.com/songs/s-71.html'> 71 </a><a href='http://www.lyriczz.com/songs/s-72.html'> 72 </a><a href='http://www.lyriczz.com/songs/s-73.html'> 73 </a><a href='http://www.lyriczz.com/songs/s-74.html'> 74 </a><a href='http://www.lyriczz.com/songs/s-75.html'> 75 </a><a href='http://www.lyriczz.com/songs/s-76.html'> 76 </a><a href='http://www.lyriczz.com/songs/s-77.html'> 77 </a><a href='http://www.lyriczz.com/songs/s-78.html'> 78 </a><a href='http://www.lyriczz.com/songs/s-79.html'> 79 </a><a href='http://www.lyriczz.com/songs/s-80.html'> 80 </a><a href='http://www.lyriczz.com/songs/s-81.html'> 81 </a><a href='http://www.lyriczz.com/songs/s-82.html'> 82 </a><a href='http://www.lyriczz.com/songs/s-83.html'> 83 </a><a href='http://www.lyriczz.com/songs/s-84.html'> 84 </a><a href='http://www.lyriczz.com/songs/s-85.html'> 85 </a><a href='http://www.lyriczz.com/songs/s-86.html'> 86 </a><a href='http://www.lyriczz.com/songs/s-87.html'> 87 </a><b> 88 </b><a href='http://www.lyriczz.com/songs/s-89.html'> 89 </a><a href='http://www.lyriczz.com/songs/s-90.html'> 90 </a><a href='http://www.lyriczz.com/songs/s-91.html'> 91 </a><a href='http://www.lyriczz.com/songs/s-92.html'> 92 </a> <a href='http://www.lyriczz.com/songs/s-89.html'><b>Next</b></a> &raquo;</span><br /><div style='width:580px;'><div class='mnu-row1'>
+						<a class='songs1' title="Front Line Assembly - Surface Patterns lyrics" href='http://www.lyriczz.com/lyrics/front-line-assembly/159475-surface-patterns/'>
+							<strong>Front Line Assembly</strong>
+						</a>
+						<a class='songs2' title="Front Line Assembly - Surface Patterns lyrics" href='http://www.lyriczz.com/lyrics/front-line-assembly/159475-surface-patterns/'>
+							<strong> - Surface Patterns lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Incubus - Surface To Air lyrics" href='http://www.lyriczz.com/lyrics/incubus/182260-surface-to-air/'>
+							<strong>Incubus</strong>
+						</a>
+						<a class='songs2' title="Incubus - Surface To Air lyrics" href='http://www.lyriczz.com/lyrics/incubus/182260-surface-to-air/'>
+							<strong> - Surface To Air lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Slipknot - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/slipknot/17784-surfacing/'>
+							<strong>Slipknot</strong>
+						</a>
+						<a class='songs2' title="Slipknot - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/slipknot/17784-surfacing/'>
+							<strong> - Surfacing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="David Usher - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/david-usher/35309-surfacing/'>
+							<strong>David Usher</strong>
+						</a>
+						<a class='songs2' title="David Usher - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/david-usher/35309-surfacing/'>
+							<strong> - Surfacing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Trust Company - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/trust-company/103791-surfacing/'>
+							<strong>Trust Company</strong>
+						</a>
+						<a class='songs2' title="Trust Company - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/trust-company/103791-surfacing/'>
+							<strong> - Surfacing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Candice Alley - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/candice-alley/128516-surfacing/'>
+							<strong>Candice Alley</strong>
+						</a>
+						<a class='songs2' title="Candice Alley - Surfacing lyrics" href='http://www.lyriczz.com/lyrics/candice-alley/128516-surfacing/'>
+							<strong> - Surfacing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Slipknot - Surfacing (Live Version) lyrics" href='http://www.lyriczz.com/lyrics/slipknot/17817-surfacing-%28live-version%29/'>
+							<strong>Slipknot</strong>
+						</a>
+						<a class='songs2' title="Slipknot - Surfacing (Live Version) lyrics" href='http://www.lyriczz.com/lyrics/slipknot/17817-surfacing-%28live-version%29/'>
+							<strong> - Surfacing (Live Version) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beach Boys - Surfer Girl lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4253-surfer-girl/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Surfer Girl lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4253-surfer-girl/'>
+							<strong> - Surfer Girl lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Home Grown - Surfer Girl lyrics" href='http://www.lyriczz.com/lyrics/home-grown/113649-surfer-girl/'>
+							<strong>Home Grown</strong>
+						</a>
+						<a class='songs2' title="Home Grown - Surfer Girl lyrics" href='http://www.lyriczz.com/lyrics/home-grown/113649-surfer-girl/'>
+							<strong> - Surfer Girl lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beach Boys - Surfers Rule lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4252-surfers-rule/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Surfers Rule lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4252-surfers-rule/'>
+							<strong> - Surfers Rule lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Beach Boys - Surfin lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4251-surfin/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Surfin lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4251-surfin/'>
+							<strong> - Surfin lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Forgotten Rebels - Surfin On Heroin lyrics" href='http://www.lyriczz.com/lyrics/forgotten-rebels/160673-surfin-on-heroin/'>
+							<strong>Forgotten Rebels</strong>
+						</a>
+						<a class='songs2' title="Forgotten Rebels - Surfin On Heroin lyrics" href='http://www.lyriczz.com/lyrics/forgotten-rebels/160673-surfin-on-heroin/'>
+							<strong> - Surfin On Heroin lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Beach Boys - Surfin Safari lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4250-surfin-safari/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Surfin Safari lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4250-surfin-safari/'>
+							<strong> - Surfin Safari lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Marion Raven - Surfin The Sun lyrics" href='http://www.lyriczz.com/lyrics/marion-raven/49571-surfin-the-sun/'>
+							<strong>Marion Raven</strong>
+						</a>
+						<a class='songs2' title="Marion Raven - Surfin The Sun lyrics" href='http://www.lyriczz.com/lyrics/marion-raven/49571-surfin-the-sun/'>
+							<strong> - Surfin The Sun lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mott The Hoople - Surfin Uk lyrics" href='http://www.lyriczz.com/lyrics/mott-the-hoople/165717-surfin-uk/'>
+							<strong>Mott The Hoople</strong>
+						</a>
+						<a class='songs2' title="Mott The Hoople - Surfin Uk lyrics" href='http://www.lyriczz.com/lyrics/mott-the-hoople/165717-surfin-uk/'>
+							<strong> - Surfin Uk lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beach Boys - Surfin USA lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4249-surfin-usa/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Surfin USA lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4249-surfin-usa/'>
+							<strong> - Surfin USA lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ramones - Surfin' Bird lyrics" href='http://www.lyriczz.com/lyrics/ramones/69070-surfinand-039%3B-bird/'>
+							<strong>Ramones</strong>
+						</a>
+						<a class='songs2' title="Ramones - Surfin' Bird lyrics" href='http://www.lyriczz.com/lyrics/ramones/69070-surfinand-039%3B-bird/'>
+							<strong> - Surfin' Bird lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="The Cramps - Surfin' Bird lyrics" href='http://www.lyriczz.com/lyrics/the-cramps/77467-surfinand-039%3B-bird/'>
+							<strong>The Cramps</strong>
+						</a>
+						<a class='songs2' title="The Cramps - Surfin' Bird lyrics" href='http://www.lyriczz.com/lyrics/the-cramps/77467-surfinand-039%3B-bird/'>
+							<strong> - Surfin' Bird lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Aaron Carter - Surfin' USA lyrics" href='http://www.lyriczz.com/lyrics/aaron-carter/20023-surfinand-039%3B-usa/'>
+							<strong>Aaron Carter</strong>
+						</a>
+						<a class='songs2' title="Aaron Carter - Surfin' USA lyrics" href='http://www.lyriczz.com/lyrics/aaron-carter/20023-surfinand-039%3B-usa/'>
+							<strong> - Surfin' USA lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Pennywise - Surfin' Usa lyrics" href='http://www.lyriczz.com/lyrics/pennywise/77498-surfinand-039%3B-usa/'>
+							<strong>Pennywise</strong>
+						</a>
+						<a class='songs2' title="Pennywise - Surfin' Usa lyrics" href='http://www.lyriczz.com/lyrics/pennywise/77498-surfinand-039%3B-usa/'>
+							<strong> - Surfin' Usa lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Go-betweens - Surfing Magazines lyrics" href='http://www.lyriczz.com/lyrics/go-betweens/83023-surfing-magazines/'>
+							<strong>Go-betweens</strong>
+						</a>
+						<a class='songs2' title="Go-betweens - Surfing Magazines lyrics" href='http://www.lyriczz.com/lyrics/go-betweens/83023-surfing-magazines/'>
+							<strong> - Surfing Magazines lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Midnight Oil - Surfing With A Spoon lyrics" href='http://www.lyriczz.com/lyrics/midnight-oil/179063-surfing-with-a-spoon/'>
+							<strong>Midnight Oil</strong>
+						</a>
+						<a class='songs2' title="Midnight Oil - Surfing With A Spoon lyrics" href='http://www.lyriczz.com/lyrics/midnight-oil/179063-surfing-with-a-spoon/'>
+							<strong> - Surfing With A Spoon lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ungu - Surgamu lyrics" href='http://www.lyriczz.com/lyrics/ungu/45276-surgamu/'>
+							<strong>Ungu</strong>
+						</a>
+						<a class='songs2' title="Ungu - Surgamu lyrics" href='http://www.lyriczz.com/lyrics/ungu/45276-surgamu/'>
+							<strong> - Surgamu lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Jack Off Jill - Surgery lyrics" href='http://www.lyriczz.com/lyrics/jack-off-jill/111932-surgery/'>
+							<strong>Jack Off Jill</strong>
+						</a>
+						<a class='songs2' title="Jack Off Jill - Surgery lyrics" href='http://www.lyriczz.com/lyrics/jack-off-jill/111932-surgery/'>
+							<strong> - Surgery lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Queensryche - Surgical Strike lyrics" href='http://www.lyriczz.com/lyrics/queensryche/105959-surgical-strike/'>
+							<strong>Queensryche</strong>
+						</a>
+						<a class='songs2' title="Queensryche - Surgical Strike lyrics" href='http://www.lyriczz.com/lyrics/queensryche/105959-surgical-strike/'>
+							<strong> - Surgical Strike lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lymphatic Phlegm - Surgical Suppression Of The Extremities By Abnormalities On The Basic lyrics" href='http://www.lyriczz.com/lyrics/lymphatic-phlegm/175848-surgical-suppression-of-the-extremities-by-abnormalities-on-the-basic/'>
+							<strong>Lymphatic Phlegm</strong>
+						</a>
+						<a class='songs2' title="Lymphatic Phlegm - Surgical Suppression Of The Extremities By Abnormalities On The Basic lyrics" href='http://www.lyriczz.com/lyrics/lymphatic-phlegm/175848-surgical-suppression-of-the-extremities-by-abnormalities-on-the-basic/'>
+							<strong> - Surgical Suppression Of The Extremities By Abnormalities On The Basic lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Veer - Surili Akhiyon Waale lyrics" href='http://www.lyriczz.com/lyrics/veer/173630-surili-akhiyon-waale/'>
+							<strong>Veer</strong>
+						</a>
+						<a class='songs2' title="Veer - Surili Akhiyon Waale lyrics" href='http://www.lyriczz.com/lyrics/veer/173630-surili-akhiyon-waale/'>
+							<strong> - Surili Akhiyon Waale lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ajattara - Surman Henki lyrics" href='http://www.lyriczz.com/lyrics/ajattara/117625-surman-henki/'>
+							<strong>Ajattara</strong>
+						</a>
+						<a class='songs2' title="Ajattara - Surman Henki lyrics" href='http://www.lyriczz.com/lyrics/ajattara/117625-surman-henki/'>
+							<strong> - Surman Henki lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Uhrilehto - Surman Kylmä Kutso lyrics" href='http://www.lyriczz.com/lyrics/uhrilehto/138991-surman-kylm%C3%A4-kutso/'>
+							<strong>Uhrilehto</strong>
+						</a>
+						<a class='songs2' title="Uhrilehto - Surman Kylmä Kutso lyrics" href='http://www.lyriczz.com/lyrics/uhrilehto/138991-surman-kylm%C3%A4-kutso/'>
+							<strong> - Surman Kylmä Kutso lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Alas - Surmounting The Masses lyrics" href='http://www.lyriczz.com/lyrics/alas/133384-surmounting-the-masses/'>
+							<strong>Alas</strong>
+						</a>
+						<a class='songs2' title="Alas - Surmounting The Masses lyrics" href='http://www.lyriczz.com/lyrics/alas/133384-surmounting-the-masses/'>
+							<strong> - Surmounting The Masses lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Barcode - Surpreme lyrics" href='http://www.lyriczz.com/lyrics/barcode/140352-surpreme/'>
+							<strong>Barcode</strong>
+						</a>
+						<a class='songs2' title="Barcode - Surpreme lyrics" href='http://www.lyriczz.com/lyrics/barcode/140352-surpreme/'>
+							<strong> - Surpreme lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Semisonic - Surprise lyrics" href='http://www.lyriczz.com/lyrics/semisonic/60406-surprise/'>
+							<strong>Semisonic</strong>
+						</a>
+						<a class='songs2' title="Semisonic - Surprise lyrics" href='http://www.lyriczz.com/lyrics/semisonic/60406-surprise/'>
+							<strong> - Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Luscious Jackson - Surprise lyrics" href='http://www.lyriczz.com/lyrics/luscious-jackson/99934-surprise/'>
+							<strong>Luscious Jackson</strong>
+						</a>
+						<a class='songs2' title="Luscious Jackson - Surprise lyrics" href='http://www.lyriczz.com/lyrics/luscious-jackson/99934-surprise/'>
+							<strong> - Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="We Are Scientists - Surprise lyrics" href='http://www.lyriczz.com/lyrics/we-are-scientists/102148-surprise/'>
+							<strong>We Are Scientists</strong>
+						</a>
+						<a class='songs2' title="We Are Scientists - Surprise lyrics" href='http://www.lyriczz.com/lyrics/we-are-scientists/102148-surprise/'>
+							<strong> - Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Jars Of Clay - Surprise lyrics" href='http://www.lyriczz.com/lyrics/jars-of-clay/112294-surprise/'>
+							<strong>Jars Of Clay</strong>
+						</a>
+						<a class='songs2' title="Jars Of Clay - Surprise lyrics" href='http://www.lyriczz.com/lyrics/jars-of-clay/112294-surprise/'>
+							<strong> - Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kings Of Convenience - Surprise Ice lyrics" href='http://www.lyriczz.com/lyrics/kings-of-convenience/111475-surprise-ice/'>
+							<strong>Kings Of Convenience</strong>
+						</a>
+						<a class='songs2' title="Kings Of Convenience - Surprise Ice lyrics" href='http://www.lyriczz.com/lyrics/kings-of-convenience/111475-surprise-ice/'>
+							<strong> - Surprise Ice lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Rolling Stones - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/rolling-stones/9944-surprise%2C-surprise/'>
+							<strong>Rolling Stones</strong>
+						</a>
+						<a class='songs2' title="Rolling Stones - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/rolling-stones/9944-surprise%2C-surprise/'>
+							<strong> - Surprise, Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Starting Line - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/starting-line/59937-surprise%2C-surprise/'>
+							<strong>Starting Line</strong>
+						</a>
+						<a class='songs2' title="Starting Line - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/starting-line/59937-surprise%2C-surprise/'>
+							<strong> - Surprise, Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Agent 51 - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/agent-51/115568-surprise%2C-surprise/'>
+							<strong>Agent 51</strong>
+						</a>
+						<a class='songs2' title="Agent 51 - Surprise, Surprise lyrics" href='http://www.lyriczz.com/lyrics/agent-51/115568-surprise%2C-surprise/'>
+							<strong> - Surprise, Surprise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="John Lennon - Surprise, Surprise (sweet Bird Of Paradox) lyrics" href='http://www.lyriczz.com/lyrics/john-lennon/112895-surprise%2C-surprise-%28sweet-bird-of-paradox%29/'>
+							<strong>John Lennon</strong>
+						</a>
+						<a class='songs2' title="John Lennon - Surprise, Surprise (sweet Bird Of Paradox) lyrics" href='http://www.lyriczz.com/lyrics/john-lennon/112895-surprise%2C-surprise-%28sweet-bird-of-paradox%29/'>
+							<strong> - Surprise, Surprise (sweet Bird Of Paradox) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Dance Gavin Dance - Surprise! I'm From Cuba, Everyone Has One Brain lyrics" href='http://www.lyriczz.com/lyrics/dance-gavin-dance/149926-surprise%21-iand-039%3Bm-from-cuba%2C-everyone-has-one-brain/'>
+							<strong>Dance Gavin Dance</strong>
+						</a>
+						<a class='songs2' title="Dance Gavin Dance - Surprise! I'm From Cuba, Everyone Has One Brain lyrics" href='http://www.lyriczz.com/lyrics/dance-gavin-dance/149926-surprise%21-iand-039%3Bm-from-cuba%2C-everyone-has-one-brain/'>
+							<strong> - Surprise! I'm From Cuba, Everyone Has One Brain lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Faith No More - Surprise! You're Dead! lyrics" href='http://www.lyriczz.com/lyrics/faith-no-more/74666-surprise%21-youand-039%3Bre-dead%21/'>
+							<strong>Faith No More</strong>
+						</a>
+						<a class='songs2' title="Faith No More - Surprise! You're Dead! lyrics" href='http://www.lyriczz.com/lyrics/faith-no-more/74666-surprise%21-youand-039%3Bre-dead%21/'>
+							<strong> - Surprise! You're Dead! lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Billy Joel - Surprises lyrics" href='http://www.lyriczz.com/lyrics/billy-joel/5063-surprises/'>
+							<strong>Billy Joel</strong>
+						</a>
+						<a class='songs2' title="Billy Joel - Surprises lyrics" href='http://www.lyriczz.com/lyrics/billy-joel/5063-surprises/'>
+							<strong> - Surprises lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ayumi Hamasaki - Surreal lyrics" href='http://www.lyriczz.com/lyrics/ayumi-hamasaki/92595-surreal/'>
+							<strong>Ayumi Hamasaki</strong>
+						</a>
+						<a class='songs2' title="Ayumi Hamasaki - Surreal lyrics" href='http://www.lyriczz.com/lyrics/ayumi-hamasaki/92595-surreal/'>
+							<strong> - Surreal lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ambeon - Surreal lyrics" href='http://www.lyriczz.com/lyrics/ambeon/119338-surreal/'>
+							<strong>Ambeon</strong>
+						</a>
+						<a class='songs2' title="Ambeon - Surreal lyrics" href='http://www.lyriczz.com/lyrics/ambeon/119338-surreal/'>
+							<strong> - Surreal lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Erasure - Surreal lyrics" href='http://www.lyriczz.com/lyrics/erasure/126204-surreal/'>
+							<strong>Erasure</strong>
+						</a>
+						<a class='songs2' title="Erasure - Surreal lyrics" href='http://www.lyriczz.com/lyrics/erasure/126204-surreal/'>
+							<strong> - Surreal lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Vanishing Point - Surreal lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138711-surreal/'>
+							<strong>Vanishing Point</strong>
+						</a>
+						<a class='songs2' title="Vanishing Point - Surreal lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138711-surreal/'>
+							<strong> - Surreal lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Alchemist - Surreality lyrics" href='http://www.lyriczz.com/lyrics/alchemist/133447-surreality/'>
+							<strong>Alchemist</strong>
+						</a>
+						<a class='songs2' title="Alchemist - Surreality lyrics" href='http://www.lyriczz.com/lyrics/alchemist/133447-surreality/'>
+							<strong> - Surreality lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="All Saints - Surrender lyrics" href='http://www.lyriczz.com/lyrics/all-saints/2235-surrender/'>
+							<strong>All Saints</strong>
+						</a>
+						<a class='songs2' title="All Saints - Surrender lyrics" href='http://www.lyriczz.com/lyrics/all-saints/2235-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Laura Pausini - Surrender lyrics" href='http://www.lyriczz.com/lyrics/laura-pausini/11944-surrender/'>
+							<strong>Laura Pausini</strong>
+						</a>
+						<a class='songs2' title="Laura Pausini - Surrender lyrics" href='http://www.lyriczz.com/lyrics/laura-pausini/11944-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Elvis Presley - Surrender lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/15151-surrender/'>
+							<strong>Elvis Presley</strong>
+						</a>
+						<a class='songs2' title="Elvis Presley - Surrender lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/15151-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="U2 - Surrender lyrics" href='http://www.lyriczz.com/lyrics/u2/16244-surrender/'>
+							<strong>U2</strong>
+						</a>
+						<a class='songs2' title="U2 - Surrender lyrics" href='http://www.lyriczz.com/lyrics/u2/16244-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Leann Rimes - Surrender lyrics" href='http://www.lyriczz.com/lyrics/leann-rimes/19153-surrender/'>
+							<strong>Leann Rimes</strong>
+						</a>
+						<a class='songs2' title="Leann Rimes - Surrender lyrics" href='http://www.lyriczz.com/lyrics/leann-rimes/19153-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ashlee Simpson - Surrender lyrics" href='http://www.lyriczz.com/lyrics/ashlee-simpson/26216-surrender/'>
+							<strong>Ashlee Simpson</strong>
+						</a>
+						<a class='songs2' title="Ashlee Simpson - Surrender lyrics" href='http://www.lyriczz.com/lyrics/ashlee-simpson/26216-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Amazon - Surrender lyrics" href='http://www.lyriczz.com/lyrics/amazon/26454-surrender/'>
+							<strong>Amazon</strong>
+						</a>
+						<a class='songs2' title="Amazon - Surrender lyrics" href='http://www.lyriczz.com/lyrics/amazon/26454-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Barlow Girl - Surrender lyrics" href='http://www.lyriczz.com/lyrics/barlow-girl/27992-surrender/'>
+							<strong>Barlow Girl</strong>
+						</a>
+						<a class='songs2' title="Barlow Girl - Surrender lyrics" href='http://www.lyriczz.com/lyrics/barlow-girl/27992-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Bellefire - Surrender lyrics" href='http://www.lyriczz.com/lyrics/bellefire/28207-surrender/'>
+							<strong>Bellefire</strong>
+						</a>
+						<a class='songs2' title="Bellefire - Surrender lyrics" href='http://www.lyriczz.com/lyrics/bellefire/28207-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Billy Talent - Surrender lyrics" href='http://www.lyriczz.com/lyrics/billy-talent/29084-surrender/'>
+							<strong>Billy Talent</strong>
+						</a>
+						<a class='songs2' title="Billy Talent - Surrender lyrics" href='http://www.lyriczz.com/lyrics/billy-talent/29084-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Calling - Surrender lyrics" href='http://www.lyriczz.com/lyrics/calling/31948-surrender/'>
+							<strong>Calling</strong>
+						</a>
+						<a class='songs2' title="Calling - Surrender lyrics" href='http://www.lyriczz.com/lyrics/calling/31948-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kasey Chambers - Surrender lyrics" href='http://www.lyriczz.com/lyrics/kasey-chambers/32544-surrender/'>
+							<strong>Kasey Chambers</strong>
+						</a>
+						<a class='songs2' title="Kasey Chambers - Surrender lyrics" href='http://www.lyriczz.com/lyrics/kasey-chambers/32544-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Depeche Mode - Surrender lyrics" href='http://www.lyriczz.com/lyrics/depeche-mode/35824-surrender/'>
+							<strong>Depeche Mode</strong>
+						</a>
+						<a class='songs2' title="Depeche Mode - Surrender lyrics" href='http://www.lyriczz.com/lyrics/depeche-mode/35824-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Diana Ross - Surrender lyrics" href='http://www.lyriczz.com/lyrics/diana-ross/36498-surrender/'>
+							<strong>Diana Ross</strong>
+						</a>
+						<a class='songs2' title="Diana Ross - Surrender lyrics" href='http://www.lyriczz.com/lyrics/diana-ross/36498-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Evanescence - Surrender lyrics" href='http://www.lyriczz.com/lyrics/evanescence/50706-surrender/'>
+							<strong>Evanescence</strong>
+						</a>
+						<a class='songs2' title="Evanescence - Surrender lyrics" href='http://www.lyriczz.com/lyrics/evanescence/50706-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Blake Lewis - Surrender lyrics" href='http://www.lyriczz.com/lyrics/blake-lewis/53170-surrender/'>
+							<strong>Blake Lewis</strong>
+						</a>
+						<a class='songs2' title="Blake Lewis - Surrender lyrics" href='http://www.lyriczz.com/lyrics/blake-lewis/53170-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Lee Ann Womack - Surrender lyrics" href='http://www.lyriczz.com/lyrics/lee-ann-womack/57229-surrender/'>
+							<strong>Lee Ann Womack</strong>
+						</a>
+						<a class='songs2' title="Lee Ann Womack - Surrender lyrics" href='http://www.lyriczz.com/lyrics/lee-ann-womack/57229-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Simple Plan - Surrender lyrics" href='http://www.lyriczz.com/lyrics/simple-plan/65689-surrender/'>
+							<strong>Simple Plan</strong>
+						</a>
+						<a class='songs2' title="Simple Plan - Surrender lyrics" href='http://www.lyriczz.com/lyrics/simple-plan/65689-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Zebrahead - Surrender lyrics" href='http://www.lyriczz.com/lyrics/zebrahead/67415-surrender/'>
+							<strong>Zebrahead</strong>
+						</a>
+						<a class='songs2' title="Zebrahead - Surrender lyrics" href='http://www.lyriczz.com/lyrics/zebrahead/67415-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Gary Moore - Surrender lyrics" href='http://www.lyriczz.com/lyrics/gary-moore/78859-surrender/'>
+							<strong>Gary Moore</strong>
+						</a>
+						<a class='songs2' title="Gary Moore - Surrender lyrics" href='http://www.lyriczz.com/lyrics/gary-moore/78859-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Roxette - Surrender lyrics" href='http://www.lyriczz.com/lyrics/roxette/92456-surrender/'>
+							<strong>Roxette</strong>
+						</a>
+						<a class='songs2' title="Roxette - Surrender lyrics" href='http://www.lyriczz.com/lyrics/roxette/92456-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kylie Minogue - Surrender lyrics" href='http://www.lyriczz.com/lyrics/kylie-minogue/96183-surrender/'>
+							<strong>Kylie Minogue</strong>
+						</a>
+						<a class='songs2' title="Kylie Minogue - Surrender lyrics" href='http://www.lyriczz.com/lyrics/kylie-minogue/96183-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Roger Taylor - Surrender lyrics" href='http://www.lyriczz.com/lyrics/roger-taylor/108233-surrender/'>
+							<strong>Roger Taylor</strong>
+						</a>
+						<a class='songs2' title="Roger Taylor - Surrender lyrics" href='http://www.lyriczz.com/lyrics/roger-taylor/108233-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lasgo - Surrender lyrics" href='http://www.lyriczz.com/lyrics/lasgo/110663-surrender/'>
+							<strong>Lasgo</strong>
+						</a>
+						<a class='songs2' title="Lasgo - Surrender lyrics" href='http://www.lyriczz.com/lyrics/lasgo/110663-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Gloria Estefan - Surrender lyrics" href='http://www.lyriczz.com/lyrics/gloria-estefan/130606-surrender/'>
+							<strong>Gloria Estefan</strong>
+						</a>
+						<a class='songs2' title="Gloria Estefan - Surrender lyrics" href='http://www.lyriczz.com/lyrics/gloria-estefan/130606-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Vanishing Point - Surrender lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138737-surrender/'>
+							<strong>Vanishing Point</strong>
+						</a>
+						<a class='songs2' title="Vanishing Point - Surrender lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138737-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Billy Crawford - Surrender lyrics" href='http://www.lyriczz.com/lyrics/billy-crawford/143345-surrender/'>
+							<strong>Billy Crawford</strong>
+						</a>
+						<a class='songs2' title="Billy Crawford - Surrender lyrics" href='http://www.lyriczz.com/lyrics/billy-crawford/143345-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Four Star Mary - Surrender lyrics" href='http://www.lyriczz.com/lyrics/four-star-mary/160824-surrender/'>
+							<strong>Four Star Mary</strong>
+						</a>
+						<a class='songs2' title="Four Star Mary - Surrender lyrics" href='http://www.lyriczz.com/lyrics/four-star-mary/160824-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Linda Davis - Surrender lyrics" href='http://www.lyriczz.com/lyrics/linda-davis/172874-surrender/'>
+							<strong>Linda Davis</strong>
+						</a>
+						<a class='songs2' title="Linda Davis - Surrender lyrics" href='http://www.lyriczz.com/lyrics/linda-davis/172874-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Michael Sweet - Surrender lyrics" href='http://www.lyriczz.com/lyrics/michael-sweet/179524-surrender/'>
+							<strong>Michael Sweet</strong>
+						</a>
+						<a class='songs2' title="Michael Sweet - Surrender lyrics" href='http://www.lyriczz.com/lyrics/michael-sweet/179524-surrender/'>
+							<strong> - Surrender lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Javine - Surrender (your Love) lyrics" href='http://www.lyriczz.com/lyrics/javine/126762-surrender-%28your-love%29/'>
+							<strong>Javine</strong>
+						</a>
+						<a class='songs2' title="Javine - Surrender (your Love) lyrics" href='http://www.lyriczz.com/lyrics/javine/126762-surrender-%28your-love%29/'>
+							<strong> - Surrender (your Love) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dishwalla - Surrender The Crown lyrics" href='http://www.lyriczz.com/lyrics/dishwalla/37945-surrender-the-crown/'>
+							<strong>Dishwalla</strong>
+						</a>
+						<a class='songs2' title="Dishwalla - Surrender The Crown lyrics" href='http://www.lyriczz.com/lyrics/dishwalla/37945-surrender-the-crown/'>
+							<strong> - Surrender The Crown lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Geri Halliwell - Surrender Your Groove lyrics" href='http://www.lyriczz.com/lyrics/geri-halliwell/79162-surrender-your-groove/'>
+							<strong>Geri Halliwell</strong>
+						</a>
+						<a class='songs2' title="Geri Halliwell - Surrender Your Groove lyrics" href='http://www.lyriczz.com/lyrics/geri-halliwell/79162-surrender-your-groove/'>
+							<strong> - Surrender Your Groove lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Angel Dust - Surrender? lyrics" href='http://www.lyriczz.com/lyrics/angel-dust/120694-surrender%3F/'>
+							<strong>Angel Dust</strong>
+						</a>
+						<a class='songs2' title="Angel Dust - Surrender? lyrics" href='http://www.lyriczz.com/lyrics/angel-dust/120694-surrender%3F/'>
+							<strong> - Surrender? lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Alanis Morissette - Surrendering lyrics" href='http://www.lyriczz.com/lyrics/alanis-morissette/1595-surrendering/'>
+							<strong>Alanis Morissette</strong>
+						</a>
+						<a class='songs2' title="Alanis Morissette - Surrendering lyrics" href='http://www.lyriczz.com/lyrics/alanis-morissette/1595-surrendering/'>
+							<strong> - Surrendering lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="John Frusciante - Surrogate People lyrics" href='http://www.lyriczz.com/lyrics/john-frusciante/78628-surrogate-people/'>
+							<strong>John Frusciante</strong>
+						</a>
+						<a class='songs2' title="John Frusciante - Surrogate People lyrics" href='http://www.lyriczz.com/lyrics/john-frusciante/78628-surrogate-people/'>
+							<strong> - Surrogate People lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="American Hi-fi - Surround lyrics" href='http://www.lyriczz.com/lyrics/american-hi-fi/98072-surround/'>
+							<strong>American Hi-fi</strong>
+						</a>
+						<a class='songs2' title="American Hi-fi - Surround lyrics" href='http://www.lyriczz.com/lyrics/american-hi-fi/98072-surround/'>
+							<strong> - Surround lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Scott Stapp - Surround Me lyrics" href='http://www.lyriczz.com/lyrics/scott-stapp/40097-surround-me/'>
+							<strong>Scott Stapp</strong>
+						</a>
+						<a class='songs2' title="Scott Stapp - Surround Me lyrics" href='http://www.lyriczz.com/lyrics/scott-stapp/40097-surround-me/'>
+							<strong> - Surround Me lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Charly Mcclain - Surround Me With Love lyrics" href='http://www.lyriczz.com/lyrics/charly-mcclain/148839-surround-me-with-love/'>
+							<strong>Charly Mcclain</strong>
+						</a>
+						<a class='songs2' title="Charly Mcclain - Surround Me With Love lyrics" href='http://www.lyriczz.com/lyrics/charly-mcclain/148839-surround-me-with-love/'>
+							<strong> - Surround Me With Love lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Graduate - Surround Yourself lyrics" href='http://www.lyriczz.com/lyrics/graduate/85564-surround-yourself/'>
+							<strong>Graduate</strong>
+						</a>
+						<a class='songs2' title="Graduate - Surround Yourself lyrics" href='http://www.lyriczz.com/lyrics/graduate/85564-surround-yourself/'>
+							<strong> - Surround Yourself lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Chantal Kreviazuk - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/chantal-kreviazuk/32576-surrounded/'>
+							<strong>Chantal Kreviazuk</strong>
+						</a>
+						<a class='songs2' title="Chantal Kreviazuk - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/chantal-kreviazuk/32576-surrounded/'>
+							<strong> - Surrounded lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dream Theater - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/dream-theater/37296-surrounded/'>
+							<strong>Dream Theater</strong>
+						</a>
+						<a class='songs2' title="Dream Theater - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/dream-theater/37296-surrounded/'>
+							<strong> - Surrounded lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="H2o - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/h2o/85174-surrounded/'>
+							<strong>H2o</strong>
+						</a>
+						<a class='songs2' title="H2o - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/h2o/85174-surrounded/'>
+							<strong> - Surrounded lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Codename: Rocky - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/codename%3A-rocky/146566-surrounded/'>
+							<strong>Codename: Rocky</strong>
+						</a>
+						<a class='songs2' title="Codename: Rocky - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/codename%3A-rocky/146566-surrounded/'>
+							<strong> - Surrounded lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Fold - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/fold/160328-surrounded/'>
+							<strong>Fold</strong>
+						</a>
+						<a class='songs2' title="Fold - Surrounded lyrics" href='http://www.lyriczz.com/lyrics/fold/160328-surrounded/'>
+							<strong> - Surrounded lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Silversun Pickups - Surrounded (or Spiraling) lyrics" href='http://www.lyriczz.com/lyrics/silversun-pickups/104585-surrounded-%28or-spiraling%29/'>
+							<strong>Silversun Pickups</strong>
+						</a>
+						<a class='songs2' title="Silversun Pickups - Surrounded (or Spiraling) lyrics" href='http://www.lyriczz.com/lyrics/silversun-pickups/104585-surrounded-%28or-spiraling%29/'>
+							<strong> - Surrounded (or Spiraling) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Tales Of Darknord - Surrounded By Darkness lyrics" href='http://www.lyriczz.com/lyrics/tales-of-darknord/137562-surrounded-by-darkness/'>
+							<strong>Tales Of Darknord</strong>
+						</a>
+						<a class='songs2' title="Tales Of Darknord - Surrounded By Darkness lyrics" href='http://www.lyriczz.com/lyrics/tales-of-darknord/137562-surrounded-by-darkness/'>
+							<strong> - Surrounded By Darkness lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Godgory - Surrounded By Dreams lyrics" href='http://www.lyriczz.com/lyrics/godgory/83342-surrounded-by-dreams/'>
+							<strong>Godgory</strong>
+						</a>
+						<a class='songs2' title="Godgory - Surrounded By Dreams lyrics" href='http://www.lyriczz.com/lyrics/godgory/83342-surrounded-by-dreams/'>
+							<strong> - Surrounded By Dreams lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Sympathy - Surrounded By The Dead lyrics" href='http://www.lyriczz.com/lyrics/sympathy/136859-surrounded-by-the-dead/'>
+							<strong>Sympathy</strong>
+						</a>
+						<a class='songs2' title="Sympathy - Surrounded By The Dead lyrics" href='http://www.lyriczz.com/lyrics/sympathy/136859-surrounded-by-the-dead/'>
+							<strong> - Surrounded By The Dead lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Bob Marley - Survival lyrics" href='http://www.lyriczz.com/lyrics/bob-marley/5450-survival/'>
+							<strong>Bob Marley</strong>
+						</a>
+						<a class='songs2' title="Bob Marley - Survival lyrics" href='http://www.lyriczz.com/lyrics/bob-marley/5450-survival/'>
+							<strong> - Survival lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Lloyd Banks - Survival lyrics" href='http://www.lyriczz.com/lyrics/lloyd-banks/24644-survival/'>
+							<strong>Lloyd Banks</strong>
+						</a>
+						<a class='songs2' title="Lloyd Banks - Survival lyrics" href='http://www.lyriczz.com/lyrics/lloyd-banks/24644-survival/'>
+							<strong> - Survival lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Madonna - Survival lyrics" href='http://www.lyriczz.com/lyrics/madonna/25266-survival/'>
+							<strong>Madonna</strong>
+						</a>
+						<a class='songs2' title="Madonna - Survival lyrics" href='http://www.lyriczz.com/lyrics/madonna/25266-survival/'>
+							<strong> - Survival lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Yes - Survival lyrics" href='http://www.lyriczz.com/lyrics/yes/62897-survival/'>
+							<strong>Yes</strong>
+						</a>
+						<a class='songs2' title="Yes - Survival lyrics" href='http://www.lyriczz.com/lyrics/yes/62897-survival/'>
+							<strong> - Survival lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Moody Blues - Survival lyrics" href='http://www.lyriczz.com/lyrics/moody-blues/109643-survival/'>
+							<strong>Moody Blues</strong>
+						</a>
+						<a class='songs2' title="Moody Blues - Survival lyrics" href='http://www.lyriczz.com/lyrics/moody-blues/109643-survival/'>
+							<strong> - Survival lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Fountains Of Wayne - Survival Car lyrics" href='http://www.lyriczz.com/lyrics/fountains-of-wayne/78309-survival-car/'>
+							<strong>Fountains Of Wayne</strong>
+						</a>
+						<a class='songs2' title="Fountains Of Wayne - Survival Car lyrics" href='http://www.lyriczz.com/lyrics/fountains-of-wayne/78309-survival-car/'>
+							<strong> - Survival Car lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Busta Rhymes - Survival Hungry lyrics" href='http://www.lyriczz.com/lyrics/busta-rhymes/5827-survival-hungry/'>
+							<strong>Busta Rhymes</strong>
+						</a>
+						<a class='songs2' title="Busta Rhymes - Survival Hungry lyrics" href='http://www.lyriczz.com/lyrics/busta-rhymes/5827-survival-hungry/'>
+							<strong> - Survival Hungry lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="69 Boyz - Survival of Da Fittest lyrics" href='http://www.lyriczz.com/lyrics/69-boyz/715-survival-of-da-fittest/'>
+							<strong>69 Boyz</strong>
+						</a>
+						<a class='songs2' title="69 Boyz - Survival of Da Fittest lyrics" href='http://www.lyriczz.com/lyrics/69-boyz/715-survival-of-da-fittest/'>
+							<strong> - Survival of Da Fittest lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="C-Murder - Survival Of The Fittest ft. Gotti lyrics" href='http://www.lyriczz.com/lyrics/c-murder/5878-survival-of-the-fittest/'>
+							<strong>C-Murder</strong>
+						</a>
+						<a class='songs2' title="C-Murder - Survival Of The Fittest ft. Gotti lyrics" href='http://www.lyriczz.com/lyrics/c-murder/5878-survival-of-the-fittest/'>
+							<strong> - Survival Of The Fittest ft. Gotti lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Biohazard - Survival Of The Fittest lyrics" href='http://www.lyriczz.com/lyrics/biohazard/143658-survival-of-the-fittest/'>
+							<strong>Biohazard</strong>
+						</a>
+						<a class='songs2' title="Biohazard - Survival Of The Fittest lyrics" href='http://www.lyriczz.com/lyrics/biohazard/143658-survival-of-the-fittest/'>
+							<strong> - Survival Of The Fittest lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Mobb Deep - Survival Of The Fittest lyrics" href='http://www.lyriczz.com/lyrics/mobb-deep/166634-survival-of-the-fittest/'>
+							<strong>Mobb Deep</strong>
+						</a>
+						<a class='songs2' title="Mobb Deep - Survival Of The Fittest lyrics" href='http://www.lyriczz.com/lyrics/mobb-deep/166634-survival-of-the-fittest/'>
+							<strong> - Survival Of The Fittest lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mobb Deep - Survival Of The Fittest 2003 lyrics" href='http://www.lyriczz.com/lyrics/mobb-deep/166635-survival-of-the-fittest-2003/'>
+							<strong>Mobb Deep</strong>
+						</a>
+						<a class='songs2' title="Mobb Deep - Survival Of The Fittest 2003 lyrics" href='http://www.lyriczz.com/lyrics/mobb-deep/166635-survival-of-the-fittest-2003/'>
+							<strong> - Survival Of The Fittest 2003 lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ja Rule - Survival Of The Illest Intro 1 lyrics" href='http://www.lyriczz.com/lyrics/ja-rule/10493-survival-of-the-illest-intro-1/'>
+							<strong>Ja Rule</strong>
+						</a>
+						<a class='songs2' title="Ja Rule - Survival Of The Illest Intro 1 lyrics" href='http://www.lyriczz.com/lyrics/ja-rule/10493-survival-of-the-illest-intro-1/'>
+							<strong> - Survival Of The Illest Intro 1 lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ja Rule - Survival Of The Illest Intro 2 lyrics" href='http://www.lyriczz.com/lyrics/ja-rule/10494-survival-of-the-illest-intro-2/'>
+							<strong>Ja Rule</strong>
+						</a>
+						<a class='songs2' title="Ja Rule - Survival Of The Illest Intro 2 lyrics" href='http://www.lyriczz.com/lyrics/ja-rule/10494-survival-of-the-illest-intro-2/'>
+							<strong> - Survival Of The Illest Intro 2 lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Fury In The Slaughterhouse - Survival Shake lyrics" href='http://www.lyriczz.com/lyrics/fury-in-the-slaughterhouse/158995-survival-shake/'>
+							<strong>Fury In The Slaughterhouse</strong>
+						</a>
+						<a class='songs2' title="Fury In The Slaughterhouse - Survival Shake lyrics" href='http://www.lyriczz.com/lyrics/fury-in-the-slaughterhouse/158995-survival-shake/'>
+							<strong> - Survival Shake lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Nine Inch Nails - Survivalism lyrics" href='http://www.lyriczz.com/lyrics/nine-inch-nails/80897-survivalism/'>
+							<strong>Nine Inch Nails</strong>
+						</a>
+						<a class='songs2' title="Nine Inch Nails - Survivalism lyrics" href='http://www.lyriczz.com/lyrics/nine-inch-nails/80897-survivalism/'>
+							<strong> - Survivalism lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="David Bowie - Survive lyrics" href='http://www.lyriczz.com/lyrics/david-bowie/7927-survive/'>
+							<strong>David Bowie</strong>
+						</a>
+						<a class='songs2' title="David Bowie - Survive lyrics" href='http://www.lyriczz.com/lyrics/david-bowie/7927-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Jimmy Buffett - Survive lyrics" href='http://www.lyriczz.com/lyrics/jimmy-buffett/31581-survive/'>
+							<strong>Jimmy Buffett</strong>
+						</a>
+						<a class='songs2' title="Jimmy Buffett - Survive lyrics" href='http://www.lyriczz.com/lyrics/jimmy-buffett/31581-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dope - Survive lyrics" href='http://www.lyriczz.com/lyrics/dope/37590-survive/'>
+							<strong>Dope</strong>
+						</a>
+						<a class='songs2' title="Dope - Survive lyrics" href='http://www.lyriczz.com/lyrics/dope/37590-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Rise Against - Survive lyrics" href='http://www.lyriczz.com/lyrics/rise-against/44523-survive/'>
+							<strong>Rise Against</strong>
+						</a>
+						<a class='songs2' title="Rise Against - Survive lyrics" href='http://www.lyriczz.com/lyrics/rise-against/44523-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Daiki Kasho - Survive lyrics" href='http://www.lyriczz.com/lyrics/daiki-kasho/57754-survive/'>
+							<strong>Daiki Kasho</strong>
+						</a>
+						<a class='songs2' title="Daiki Kasho - Survive lyrics" href='http://www.lyriczz.com/lyrics/daiki-kasho/57754-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Hall and Oates - Survive lyrics" href='http://www.lyriczz.com/lyrics/hall-and-oates/59791-survive/'>
+							<strong>Hall and Oates</strong>
+						</a>
+						<a class='songs2' title="Hall and Oates - Survive lyrics" href='http://www.lyriczz.com/lyrics/hall-and-oates/59791-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Gabrielle - Survive lyrics" href='http://www.lyriczz.com/lyrics/gabrielle/60108-survive/'>
+							<strong>Gabrielle</strong>
+						</a>
+						<a class='songs2' title="Gabrielle - Survive lyrics" href='http://www.lyriczz.com/lyrics/gabrielle/60108-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Auryn - Survive lyrics" href='http://www.lyriczz.com/lyrics/auryn/93199-survive/'>
+							<strong>Auryn</strong>
+						</a>
+						<a class='songs2' title="Auryn - Survive lyrics" href='http://www.lyriczz.com/lyrics/auryn/93199-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lacuna Coil - Survive lyrics" href='http://www.lyriczz.com/lyrics/lacuna-coil/132519-survive/'>
+							<strong>Lacuna Coil</strong>
+						</a>
+						<a class='songs2' title="Lacuna Coil - Survive lyrics" href='http://www.lyriczz.com/lyrics/lacuna-coil/132519-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Daryl Hall - Survive lyrics" href='http://www.lyriczz.com/lyrics/daryl-hall/150880-survive/'>
+							<strong>Daryl Hall</strong>
+						</a>
+						<a class='songs2' title="Daryl Hall - Survive lyrics" href='http://www.lyriczz.com/lyrics/daryl-hall/150880-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Disbelief - Survive lyrics" href='http://www.lyriczz.com/lyrics/disbelief/156120-survive/'>
+							<strong>Disbelief</strong>
+						</a>
+						<a class='songs2' title="Disbelief - Survive lyrics" href='http://www.lyriczz.com/lyrics/disbelief/156120-survive/'>
+							<strong> - Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Destruction - Survive To Die lyrics" href='http://www.lyriczz.com/lyrics/destruction/154417-survive-to-die/'>
+							<strong>Destruction</strong>
+						</a>
+						<a class='songs2' title="Destruction - Survive To Die lyrics" href='http://www.lyriczz.com/lyrics/destruction/154417-survive-to-die/'>
+							<strong> - Survive To Die lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Trick Daddy - Survivin the Drought ft. Deuce Poppi lyrics" href='http://www.lyriczz.com/lyrics/trick-daddy/13409-survivin-the-drought/'>
+							<strong>Trick Daddy</strong>
+						</a>
+						<a class='songs2' title="Trick Daddy - Survivin the Drought ft. Deuce Poppi lyrics" href='http://www.lyriczz.com/lyrics/trick-daddy/13409-survivin-the-drought/'>
+							<strong> - Survivin the Drought ft. Deuce Poppi lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Powderfinger - Surviving lyrics" href='http://www.lyriczz.com/lyrics/powderfinger/106534-surviving/'>
+							<strong>Powderfinger</strong>
+						</a>
+						<a class='songs2' title="Powderfinger - Surviving lyrics" href='http://www.lyriczz.com/lyrics/powderfinger/106534-surviving/'>
+							<strong> - Surviving lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Krabathor - Surviving On Arrogance lyrics" href='http://www.lyriczz.com/lyrics/krabathor/135862-surviving-on-arrogance/'>
+							<strong>Krabathor</strong>
+						</a>
+						<a class='songs2' title="Krabathor - Surviving On Arrogance lyrics" href='http://www.lyriczz.com/lyrics/krabathor/135862-surviving-on-arrogance/'>
+							<strong> - Surviving On Arrogance lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Neil Diamond - Surviving The Life lyrics" href='http://www.lyriczz.com/lyrics/neil-diamond/36041-surviving-the-life/'>
+							<strong>Neil Diamond</strong>
+						</a>
+						<a class='songs2' title="Neil Diamond - Surviving The Life lyrics" href='http://www.lyriczz.com/lyrics/neil-diamond/36041-surviving-the-life/'>
+							<strong> - Surviving The Life lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Crisis - Surviving The Siren lyrics" href='http://www.lyriczz.com/lyrics/crisis/144524-surviving-the-siren/'>
+							<strong>Crisis</strong>
+						</a>
+						<a class='songs2' title="Crisis - Surviving The Siren lyrics" href='http://www.lyriczz.com/lyrics/crisis/144524-surviving-the-siren/'>
+							<strong> - Surviving The Siren lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Nas - Surviving The Times lyrics" href='http://www.lyriczz.com/lyrics/nas/50389-surviving-the-times/'>
+							<strong>Nas</strong>
+						</a>
+						<a class='songs2' title="Nas - Surviving The Times lyrics" href='http://www.lyriczz.com/lyrics/nas/50389-surviving-the-times/'>
+							<strong> - Surviving The Times lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="10cc - Survivor lyrics" href='http://www.lyriczz.com/lyrics/10cc/567-survivor/'>
+							<strong>10cc</strong>
+						</a>
+						<a class='songs2' title="10cc - Survivor lyrics" href='http://www.lyriczz.com/lyrics/10cc/567-survivor/'>
+							<strong> - Survivor lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Destiny's Child - Survivor lyrics" href='http://www.lyriczz.com/lyrics/destinyand-039%3Bs-child/12673-survivor/'>
+							<strong>Destiny's Child</strong>
+						</a>
+						<a class='songs2' title="Destiny's Child - Survivor lyrics" href='http://www.lyriczz.com/lyrics/destinyand-039%3Bs-child/12673-survivor/'>
+							<strong> - Survivor lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Joe Budden - Survivor ft. Kiyamma Griffin lyrics" href='http://www.lyriczz.com/lyrics/joe-budden/31477-survivor/'>
+							<strong>Joe Budden</strong>
+						</a>
+						<a class='songs2' title="Joe Budden - Survivor ft. Kiyamma Griffin lyrics" href='http://www.lyriczz.com/lyrics/joe-budden/31477-survivor/'>
+							<strong> - Survivor ft. Kiyamma Griffin lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Fifteen - Survivor lyrics" href='http://www.lyriczz.com/lyrics/fifteen/161285-survivor/'>
+							<strong>Fifteen</strong>
+						</a>
+						<a class='songs2' title="Fifteen - Survivor lyrics" href='http://www.lyriczz.com/lyrics/fifteen/161285-survivor/'>
+							<strong> - Survivor lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Destiny's Child - Survivor (Remix) ft. Da Brat lyrics" href='http://www.lyriczz.com/lyrics/destinyand-039%3Bs-child/12674-survivor-%28remix%29/'>
+							<strong>Destiny's Child</strong>
+						</a>
+						<a class='songs2' title="Destiny's Child - Survivor (Remix) ft. Da Brat lyrics" href='http://www.lyriczz.com/lyrics/destinyand-039%3Bs-child/12674-survivor-%28remix%29/'>
+							<strong> - Survivor (Remix) ft. Da Brat lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Rise Against - Survivor Guilt lyrics" href='http://www.lyriczz.com/lyrics/rise-against/181935-survivor-guilt/'>
+							<strong>Rise Against</strong>
+						</a>
+						<a class='songs2' title="Rise Against - Survivor Guilt lyrics" href='http://www.lyriczz.com/lyrics/rise-against/181935-survivor-guilt/'>
+							<strong> - Survivor Guilt lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Phil Collins - Survivors lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11352-survivors/'>
+							<strong>Phil Collins</strong>
+						</a>
+						<a class='songs2' title="Phil Collins - Survivors lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11352-survivors/'>
+							<strong> - Survivors lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Collin Raye - Survivors lyrics" href='http://www.lyriczz.com/lyrics/collin-raye/146416-survivors/'>
+							<strong>Collin Raye</strong>
+						</a>
+						<a class='songs2' title="Collin Raye - Survivors lyrics" href='http://www.lyriczz.com/lyrics/collin-raye/146416-survivors/'>
+							<strong> - Survivors lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Levellers - Survivors lyrics" href='http://www.lyriczz.com/lyrics/levellers/171019-survivors/'>
+							<strong>Levellers</strong>
+						</a>
+						<a class='songs2' title="Levellers - Survivors lyrics" href='http://www.lyriczz.com/lyrics/levellers/171019-survivors/'>
+							<strong> - Survivors lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Exit - Susan lyrics" href='http://www.lyriczz.com/lyrics/exit/157303-susan/'>
+							<strong>Exit</strong>
+						</a>
+						<a class='songs2' title="Exit - Susan lyrics" href='http://www.lyriczz.com/lyrics/exit/157303-susan/'>
+							<strong> - Susan lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Bright Eyes - Susan Miller Rag lyrics" href='http://www.lyriczz.com/lyrics/bright-eyes/69462-susan-miller-rag/'>
+							<strong>Bright Eyes</strong>
+						</a>
+						<a class='songs2' title="Bright Eyes - Susan Miller Rag lyrics" href='http://www.lyriczz.com/lyrics/bright-eyes/69462-susan-miller-rag/'>
+							<strong> - Susan Miller Rag lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Elvis Presley - Susan When She Tried lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18978-susan-when-she-tried/'>
+							<strong>Elvis Presley</strong>
+						</a>
+						<a class='songs2' title="Elvis Presley - Susan When She Tried lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18978-susan-when-she-tried/'>
+							<strong> - Susan When She Tried lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Eels - Susan's House lyrics" href='http://www.lyriczz.com/lyrics/eels/73527-susanand-039%3Bs-house/'>
+							<strong>Eels</strong>
+						</a>
+						<a class='songs2' title="Eels - Susan's House lyrics" href='http://www.lyriczz.com/lyrics/eels/73527-susanand-039%3Bs-house/'>
+							<strong> - Susan's House lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ricky Martin - Susana lyrics" href='http://www.lyriczz.com/lyrics/ricky-martin/17725-susana/'>
+							<strong>Ricky Martin</strong>
+						</a>
+						<a class='songs2' title="Ricky Martin - Susana lyrics" href='http://www.lyriczz.com/lyrics/ricky-martin/17725-susana/'>
+							<strong> - Susana lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Elton John - Susie (Dramas) lyrics" href='http://www.lyriczz.com/lyrics/elton-john/15956-susie-%28dramas%29/'>
+							<strong>Elton John</strong>
+						</a>
+						<a class='songs2' title="Elton John - Susie (Dramas) lyrics" href='http://www.lyriczz.com/lyrics/elton-john/15956-susie-%28dramas%29/'>
+							<strong> - Susie (Dramas) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Blondie - Susie And Jeffrey lyrics" href='http://www.lyriczz.com/lyrics/blondie/29462-susie-and-jeffrey/'>
+							<strong>Blondie</strong>
+						</a>
+						<a class='songs2' title="Blondie - Susie And Jeffrey lyrics" href='http://www.lyriczz.com/lyrics/blondie/29462-susie-and-jeffrey/'>
+							<strong> - Susie And Jeffrey lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beach Boys - Susie Cincinnati lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4248-susie-cincinnati/'>
+							<strong>Beach Boys</strong>
+						</a>
+						<a class='songs2' title="Beach Boys - Susie Cincinnati lyrics" href='http://www.lyriczz.com/lyrics/beach-boys/4248-susie-cincinnati/'>
+							<strong> - Susie Cincinnati lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Rolling Stones - Susie Q lyrics" href='http://www.lyriczz.com/lyrics/rolling-stones/9945-susie-q/'>
+							<strong>Rolling Stones</strong>
+						</a>
+						<a class='songs2' title="Rolling Stones - Susie Q lyrics" href='http://www.lyriczz.com/lyrics/rolling-stones/9945-susie-q/'>
+							<strong> - Susie Q lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Nas - Suspect lyrics" href='http://www.lyriczz.com/lyrics/nas/7049-suspect/'>
+							<strong>Nas</strong>
+						</a>
+						<a class='songs2' title="Nas - Suspect lyrics" href='http://www.lyriczz.com/lyrics/nas/7049-suspect/'>
+							<strong> - Suspect lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Daniel Powter - Suspect lyrics" href='http://www.lyriczz.com/lyrics/daniel-powter/20033-suspect/'>
+							<strong>Daniel Powter</strong>
+						</a>
+						<a class='songs2' title="Daniel Powter - Suspect lyrics" href='http://www.lyriczz.com/lyrics/daniel-powter/20033-suspect/'>
+							<strong> - Suspect lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Method Man - Suspect Chin Music ft. Street Life lyrics" href='http://www.lyriczz.com/lyrics/method-man/110252-suspect-chin-music/'>
+							<strong>Method Man</strong>
+						</a>
+						<a class='songs2' title="Method Man - Suspect Chin Music ft. Street Life lyrics" href='http://www.lyriczz.com/lyrics/method-man/110252-suspect-chin-music/'>
+							<strong> - Suspect Chin Music ft. Street Life lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Chasing Victory - Suspects, Alibis And Partners In Crime lyrics" href='http://www.lyriczz.com/lyrics/chasing-victory/148945-suspects%2C-alibis-and-partners-in-crime/'>
+							<strong>Chasing Victory</strong>
+						</a>
+						<a class='songs2' title="Chasing Victory - Suspects, Alibis And Partners In Crime lyrics" href='http://www.lyriczz.com/lyrics/chasing-victory/148945-suspects%2C-alibis-and-partners-in-crime/'>
+							<strong> - Suspects, Alibis And Partners In Crime lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kelis - Suspended lyrics" href='http://www.lyriczz.com/lyrics/kelis/9372-suspended/'>
+							<strong>Kelis</strong>
+						</a>
+						<a class='songs2' title="Kelis - Suspended lyrics" href='http://www.lyriczz.com/lyrics/kelis/9372-suspended/'>
+							<strong> - Suspended lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Matt Nathanson - Suspended lyrics" href='http://www.lyriczz.com/lyrics/matt-nathanson/107587-suspended/'>
+							<strong>Matt Nathanson</strong>
+						</a>
+						<a class='songs2' title="Matt Nathanson - Suspended lyrics" href='http://www.lyriczz.com/lyrics/matt-nathanson/107587-suspended/'>
+							<strong> - Suspended lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Mortal Sin - Suspended Animation lyrics" href='http://www.lyriczz.com/lyrics/mortal-sin/165914-suspended-animation/'>
+							<strong>Mortal Sin</strong>
+						</a>
+						<a class='songs2' title="Mortal Sin - Suspended Animation lyrics" href='http://www.lyriczz.com/lyrics/mortal-sin/165914-suspended-animation/'>
+							<strong> - Suspended Animation lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Job For A Cowboy - Suspended By The Throat lyrics" href='http://www.lyriczz.com/lyrics/job-for-a-cowboy/134996-suspended-by-the-throat/'>
+							<strong>Job For A Cowboy</strong>
+						</a>
+						<a class='songs2' title="Job For A Cowboy - Suspended By The Throat lyrics" href='http://www.lyriczz.com/lyrics/job-for-a-cowboy/134996-suspended-by-the-throat/'>
+							<strong> - Suspended By The Throat lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kate Bush - Suspended In Gaffa lyrics" href='http://www.lyriczz.com/lyrics/kate-bush/69905-suspended-in-gaffa/'>
+							<strong>Kate Bush</strong>
+						</a>
+						<a class='songs2' title="Kate Bush - Suspended In Gaffa lyrics" href='http://www.lyriczz.com/lyrics/kate-bush/69905-suspended-in-gaffa/'>
+							<strong> - Suspended In Gaffa lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Group Home - Suspended In Time lyrics" href='http://www.lyriczz.com/lyrics/group-home/87761-suspended-in-time/'>
+							<strong>Group Home</strong>
+						</a>
+						<a class='songs2' title="Group Home - Suspended In Time lyrics" href='http://www.lyriczz.com/lyrics/group-home/87761-suspended-in-time/'>
+							<strong> - Suspended In Time lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Circa Survive - Suspending Disbelief lyrics" href='http://www.lyriczz.com/lyrics/circa-survive/58876-suspending-disbelief/'>
+							<strong>Circa Survive</strong>
+						</a>
+						<a class='songs2' title="Circa Survive - Suspending Disbelief lyrics" href='http://www.lyriczz.com/lyrics/circa-survive/58876-suspending-disbelief/'>
+							<strong> - Suspending Disbelief lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Circa Survive - Suspending Disbelief lyrics" href='http://www.lyriczz.com/lyrics/circa-survive/71245-suspending-disbelief/'>
+							<strong>Circa Survive</strong>
+						</a>
+						<a class='songs2' title="Circa Survive - Suspending Disbelief lyrics" href='http://www.lyriczz.com/lyrics/circa-survive/71245-suspending-disbelief/'>
+							<strong> - Suspending Disbelief lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lights - Suspension lyrics" href='http://www.lyriczz.com/lyrics/lights/181512-suspension/'>
+							<strong>Lights</strong>
+						</a>
+						<a class='songs2' title="Lights - Suspension lyrics" href='http://www.lyriczz.com/lyrics/lights/181512-suspension/'>
+							<strong> - Suspension lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Gwen Stefani - Suspension Without Suspense lyrics" href='http://www.lyriczz.com/lyrics/gwen-stefani/14663-suspension-without-suspense/'>
+							<strong>Gwen Stefani</strong>
+						</a>
+						<a class='songs2' title="Gwen Stefani - Suspension Without Suspense lyrics" href='http://www.lyriczz.com/lyrics/gwen-stefani/14663-suspension-without-suspense/'>
+							<strong> - Suspension Without Suspense lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Elvis Presley - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18979-suspicion/'>
+							<strong>Elvis Presley</strong>
+						</a>
+						<a class='songs2' title="Elvis Presley - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18979-suspicion/'>
+							<strong> - Suspicion lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ellie Campbell - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/ellie-campbell/32014-suspicion/'>
+							<strong>Ellie Campbell</strong>
+						</a>
+						<a class='songs2' title="Ellie Campbell - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/ellie-campbell/32014-suspicion/'>
+							<strong> - Suspicion lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Rem - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/rem/92896-suspicion/'>
+							<strong>Rem</strong>
+						</a>
+						<a class='songs2' title="Rem - Suspicion lyrics" href='http://www.lyriczz.com/lyrics/rem/92896-suspicion/'>
+							<strong> - Suspicion lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Affliction - Suspicion And Distrust lyrics" href='http://www.lyriczz.com/lyrics/affliction/132990-suspicion-and-distrust/'>
+							<strong>Affliction</strong>
+						</a>
+						<a class='songs2' title="Affliction - Suspicion And Distrust lyrics" href='http://www.lyriczz.com/lyrics/affliction/132990-suspicion-and-distrust/'>
+							<strong> - Suspicion And Distrust lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Bush - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/bush/5757-suspicious-minds/'>
+							<strong>Bush</strong>
+						</a>
+						<a class='songs2' title="Bush - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/bush/5757-suspicious-minds/'>
+							<strong> - Suspicious Minds lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Elvis Presley - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18980-suspicious-minds/'>
+							<strong>Elvis Presley</strong>
+						</a>
+						<a class='songs2' title="Elvis Presley - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/elvis-presley/18980-suspicious-minds/'>
+							<strong> - Suspicious Minds lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Gareth Gates - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/gareth-gates/40313-suspicious-minds/'>
+							<strong>Gareth Gates</strong>
+						</a>
+						<a class='songs2' title="Gareth Gates - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/gareth-gates/40313-suspicious-minds/'>
+							<strong> - Suspicious Minds lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ronan Keating - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/ronan-keating/111152-suspicious-minds/'>
+							<strong>Ronan Keating</strong>
+						</a>
+						<a class='songs2' title="Ronan Keating - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/ronan-keating/111152-suspicious-minds/'>
+							<strong> - Suspicious Minds lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Fine Young Cannibals - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/fine-young-cannibals/161452-suspicious-minds/'>
+							<strong>Fine Young Cannibals</strong>
+						</a>
+						<a class='songs2' title="Fine Young Cannibals - Suspicious Minds lyrics" href='http://www.lyriczz.com/lyrics/fine-young-cannibals/161452-suspicious-minds/'>
+							<strong> - Suspicious Minds lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Fury In The Slaughterhouse - Suspicious Signs lyrics" href='http://www.lyriczz.com/lyrics/fury-in-the-slaughterhouse/158996-suspicious-signs/'>
+							<strong>Fury In The Slaughterhouse</strong>
+						</a>
+						<a class='songs2' title="Fury In The Slaughterhouse - Suspicious Signs lyrics" href='http://www.lyriczz.com/lyrics/fury-in-the-slaughterhouse/158996-suspicious-signs/'>
+							<strong> - Suspicious Signs lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Darkwell - Suspiria lyrics" href='http://www.lyriczz.com/lyrics/darkwell/150696-suspiria/'>
+							<strong>Darkwell</strong>
+						</a>
+						<a class='songs2' title="Darkwell - Suspiria lyrics" href='http://www.lyriczz.com/lyrics/darkwell/150696-suspiria/'>
+							<strong> - Suspiria lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Phil Collins - Sussudio lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11353-sussudio/'>
+							<strong>Phil Collins</strong>
+						</a>
+						<a class='songs2' title="Phil Collins - Sussudio lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11353-sussudio/'>
+							<strong> - Sussudio lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ol Dirty Bastard - Sussudio lyrics" href='http://www.lyriczz.com/lyrics/ol-dirty-bastard/52319-sussudio/'>
+							<strong>Ol Dirty Bastard</strong>
+						</a>
+						<a class='songs2' title="Ol Dirty Bastard - Sussudio lyrics" href='http://www.lyriczz.com/lyrics/ol-dirty-bastard/52319-sussudio/'>
+							<strong> - Sussudio lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Greenwheel - Sustain You lyrics" href='http://www.lyriczz.com/lyrics/greenwheel/114121-sustain-you/'>
+							<strong>Greenwheel</strong>
+						</a>
+						<a class='songs2' title="Greenwheel - Sustain You lyrics" href='http://www.lyriczz.com/lyrics/greenwheel/114121-sustain-you/'>
+							<strong> - Sustain You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Alarum - Sustained Connection lyrics" href='http://www.lyriczz.com/lyrics/alarum/133366-sustained-connection/'>
+							<strong>Alarum</strong>
+						</a>
+						<a class='songs2' title="Alarum - Sustained Connection lyrics" href='http://www.lyriczz.com/lyrics/alarum/133366-sustained-connection/'>
+							<strong> - Sustained Connection lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Callalily - Susundan lyrics" href='http://www.lyriczz.com/lyrics/callalily/61917-susundan/'>
+							<strong>Callalily</strong>
+						</a>
+						<a class='songs2' title="Callalily - Susundan lyrics" href='http://www.lyriczz.com/lyrics/callalily/61917-susundan/'>
+							<strong> - Susundan lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Rikki - Suteki Da Ne lyrics" href='http://www.lyriczz.com/lyrics/rikki/51283-suteki-da-ne/'>
+							<strong>Rikki</strong>
+						</a>
+						<a class='songs2' title="Rikki - Suteki Da Ne lyrics" href='http://www.lyriczz.com/lyrics/rikki/51283-suteki-da-ne/'>
+							<strong> - Suteki Da Ne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="In Team - Sutera Kasih lyrics" href='http://www.lyriczz.com/lyrics/in-team/51379-sutera-kasih/'>
+							<strong>In Team</strong>
+						</a>
+						<a class='songs2' title="In Team - Sutera Kasih lyrics" href='http://www.lyriczz.com/lyrics/in-team/51379-sutera-kasih/'>
+							<strong> - Sutera Kasih lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dan Fogelberg - Sutter's Mill lyrics" href='http://www.lyriczz.com/lyrics/dan-fogelberg/150051-sutterand-039%3Bs-mill/'>
+							<strong>Dan Fogelberg</strong>
+						</a>
+						<a class='songs2' title="Dan Fogelberg - Sutter's Mill lyrics" href='http://www.lyriczz.com/lyrics/dan-fogelberg/150051-sutterand-039%3Bs-mill/'>
+							<strong> - Sutter's Mill lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Queens Of The Stone Age - Suture Up Your Future lyrics" href='http://www.lyriczz.com/lyrics/queens-of-the-stone-age/54528-suture-up-your-future/'>
+							<strong>Queens Of The Stone Age</strong>
+						</a>
+						<a class='songs2' title="Queens Of The Stone Age - Suture Up Your Future lyrics" href='http://www.lyriczz.com/lyrics/queens-of-the-stone-age/54528-suture-up-your-future/'>
+							<strong> - Suture Up Your Future lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Paula Cole - Suwannee Jo lyrics" href='http://www.lyriczz.com/lyrics/paula-cole/179790-suwannee-jo/'>
+							<strong>Paula Cole</strong>
+						</a>
+						<a class='songs2' title="Paula Cole - Suwannee Jo lyrics" href='http://www.lyriczz.com/lyrics/paula-cole/179790-suwannee-jo/'>
+							<strong> - Suwannee Jo lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Weezer - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/weezer/3249-suzanne/'>
+							<strong>Weezer</strong>
+						</a>
+						<a class='songs2' title="Weezer - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/weezer/3249-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="The Opposites - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/the-opposites/22139-suzanne/'>
+							<strong>The Opposites</strong>
+						</a>
+						<a class='songs2' title="The Opposites - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/the-opposites/22139-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Leonard Cohen - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/leonard-cohen/33388-suzanne/'>
+							<strong>Leonard Cohen</strong>
+						</a>
+						<a class='songs2' title="Leonard Cohen - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/leonard-cohen/33388-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Neil Diamond - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/neil-diamond/36009-suzanne/'>
+							<strong>Neil Diamond</strong>
+						</a>
+						<a class='songs2' title="Neil Diamond - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/neil-diamond/36009-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Plan B - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/plan-b/49889-suzanne/'>
+							<strong>Plan B</strong>
+						</a>
+						<a class='songs2' title="Plan B - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/plan-b/49889-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Unwritten Law - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/unwritten-law/54888-suzanne/'>
+							<strong>Unwritten Law</strong>
+						</a>
+						<a class='songs2' title="Unwritten Law - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/unwritten-law/54888-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Lisa Stansfield - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/lisa-stansfield/172070-suzanne/'>
+							<strong>Lisa Stansfield</strong>
+						</a>
+						<a class='songs2' title="Lisa Stansfield - Suzanne lyrics" href='http://www.lyriczz.com/lyrics/lisa-stansfield/172070-suzanne/'>
+							<strong> - Suzanne lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Murs - Suzanne Vega ft. Slug lyrics" href='http://www.lyriczz.com/lyrics/murs/164450-suzanne-vega/'>
+							<strong>Murs</strong>
+						</a>
+						<a class='songs2' title="Murs - Suzanne Vega ft. Slug lyrics" href='http://www.lyriczz.com/lyrics/murs/164450-suzanne-vega/'>
+							<strong> - Suzanne Vega ft. Slug lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Extreme - Suzi Wants Her All Day What? lyrics" href='http://www.lyriczz.com/lyrics/extreme/73689-suzi-wants-her-all-day-what%3F/'>
+							<strong>Extreme</strong>
+						</a>
+						<a class='songs2' title="Extreme - Suzi Wants Her All Day What? lyrics" href='http://www.lyriczz.com/lyrics/extreme/73689-suzi-wants-her-all-day-what%3F/'>
+							<strong> - Suzi Wants Her All Day What? lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Guano Apes - Suzie lyrics" href='http://www.lyriczz.com/lyrics/guano-apes/87844-suzie/'>
+							<strong>Guano Apes</strong>
+						</a>
+						<a class='songs2' title="Guano Apes - Suzie lyrics" href='http://www.lyriczz.com/lyrics/guano-apes/87844-suzie/'>
+							<strong> - Suzie lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ben Harper - Suzie Blue lyrics" href='http://www.lyriczz.com/lyrics/ben-harper/16148-suzie-blue/'>
+							<strong>Ben Harper</strong>
+						</a>
+						<a class='songs2' title="Ben Harper - Suzie Blue lyrics" href='http://www.lyriczz.com/lyrics/ben-harper/16148-suzie-blue/'>
+							<strong> - Suzie Blue lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Creedence Clearwater Revival - Suzie Q lyrics" href='http://www.lyriczz.com/lyrics/creedence-clearwater-revival/129861-suzie-q/'>
+							<strong>Creedence Clearwater Revival</strong>
+						</a>
+						<a class='songs2' title="Creedence Clearwater Revival - Suzie Q lyrics" href='http://www.lyriczz.com/lyrics/creedence-clearwater-revival/129861-suzie-q/'>
+							<strong> - Suzie Q lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Caesars - Suzy Creamcheese lyrics" href='http://www.lyriczz.com/lyrics/caesars/129387-suzy-creamcheese/'>
+							<strong>Caesars</strong>
+						</a>
+						<a class='songs2' title="Caesars - Suzy Creamcheese lyrics" href='http://www.lyriczz.com/lyrics/caesars/129387-suzy-creamcheese/'>
+							<strong> - Suzy Creamcheese lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ramones - Suzy Is A Headbanger lyrics" href='http://www.lyriczz.com/lyrics/ramones/64153-suzy-is-a-headbanger/'>
+							<strong>Ramones</strong>
+						</a>
+						<a class='songs2' title="Ramones - Suzy Is A Headbanger lyrics" href='http://www.lyriczz.com/lyrics/ramones/64153-suzy-is-a-headbanger/'>
+							<strong> - Suzy Is A Headbanger lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Golden Earring - Suzy Lunacy (mental Rock) lyrics" href='http://www.lyriczz.com/lyrics/golden-earring/83799-suzy-lunacy-%28mental-rock%29/'>
+							<strong>Golden Earring</strong>
+						</a>
+						<a class='songs2' title="Golden Earring - Suzy Lunacy (mental Rock) lyrics" href='http://www.lyriczz.com/lyrics/golden-earring/83799-suzy-lunacy-%28mental-rock%29/'>
+							<strong> - Suzy Lunacy (mental Rock) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kampfar - Svart Og Vondt lyrics" href='http://www.lyriczz.com/lyrics/kampfar/136056-svart-og-vondt/'>
+							<strong>Kampfar</strong>
+						</a>
+						<a class='songs2' title="Kampfar - Svart Og Vondt lyrics" href='http://www.lyriczz.com/lyrics/kampfar/136056-svart-og-vondt/'>
+							<strong> - Svart Og Vondt lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div></div><span class='nums'>&laquo; <a href='http://www.lyriczz.com/songs/s-87.html'>Previous</a> <a href='http://www.lyriczz.com/songs/s-1.html'> 1 </a><a href='http://www.lyriczz.com/songs/s-2.html'> 2 </a><a href='http://www.lyriczz.com/songs/s-3.html'> 3 </a><a href='http://www.lyriczz.com/songs/s-4.html'> 4 </a><a href='http://www.lyriczz.com/songs/s-5.html'> 5 </a><a href='http://www.lyriczz.com/songs/s-6.html'> 6 </a><a href='http://www.lyriczz.com/songs/s-7.html'> 7 </a><a href='http://www.lyriczz.com/songs/s-8.html'> 8 </a><a href='http://www.lyriczz.com/songs/s-9.html'> 9 </a><a href='http://www.lyriczz.com/songs/s-10.html'> 10 </a><a href='http://www.lyriczz.com/songs/s-11.html'> 11 </a><a href='http://www.lyriczz.com/songs/s-12.html'> 12 </a><a href='http://www.lyriczz.com/songs/s-13.html'> 13 </a><a href='http://www.lyriczz.com/songs/s-14.html'> 14 </a><a href='http://www.lyriczz.com/songs/s-15.html'> 15 </a><a href='http://www.lyriczz.com/songs/s-16.html'> 16 </a><a href='http://www.lyriczz.com/songs/s-17.html'> 17 </a><a href='http://www.lyriczz.com/songs/s-18.html'> 18 </a><a href='http://www.lyriczz.com/songs/s-19.html'> 19 </a><a href='http://www.lyriczz.com/songs/s-20.html'> 20 </a><a href='http://www.lyriczz.com/songs/s-21.html'> 21 </a><a href='http://www.lyriczz.com/songs/s-22.html'> 22 </a><a href='http://www.lyriczz.com/songs/s-23.html'> 23 </a><a href='http://www.lyriczz.com/songs/s-24.html'> 24 </a><a href='http://www.lyriczz.com/songs/s-25.html'> 25 </a><a href='http://www.lyriczz.com/songs/s-26.html'> 26 </a><a href='http://www.lyriczz.com/songs/s-27.html'> 27 </a><a href='http://www.lyriczz.com/songs/s-28.html'> 28 </a><a href='http://www.lyriczz.com/songs/s-29.html'> 29 </a><a href='http://www.lyriczz.com/songs/s-30.html'> 30 </a><a href='http://www.lyriczz.com/songs/s-31.html'> 31 </a><a href='http://www.lyriczz.com/songs/s-32.html'> 32 </a><a href='http://www.lyriczz.com/songs/s-33.html'> 33 </a><a href='http://www.lyriczz.com/songs/s-34.html'> 34 </a><a href='http://www.lyriczz.com/songs/s-35.html'> 35 </a><a href='http://www.lyriczz.com/songs/s-36.html'> 36 </a><a href='http://www.lyriczz.com/songs/s-37.html'> 37 </a><a href='http://www.lyriczz.com/songs/s-38.html'> 38 </a><a href='http://www.lyriczz.com/songs/s-39.html'> 39 </a><a href='http://www.lyriczz.com/songs/s-40.html'> 40 </a><a href='http://www.lyriczz.com/songs/s-41.html'> 41 </a><a href='http://www.lyriczz.com/songs/s-42.html'> 42 </a><a href='http://www.lyriczz.com/songs/s-43.html'> 43 </a><a href='http://www.lyriczz.com/songs/s-44.html'> 44 </a><a href='http://www.lyriczz.com/songs/s-45.html'> 45 </a><a href='http://www.lyriczz.com/songs/s-46.html'> 46 </a><a href='http://www.lyriczz.com/songs/s-47.html'> 47 </a><a href='http://www.lyriczz.com/songs/s-48.html'> 48 </a><a href='http://www.lyriczz.com/songs/s-49.html'> 49 </a><a href='http://www.lyriczz.com/songs/s-50.html'> 50 </a><a href='http://www.lyriczz.com/songs/s-51.html'> 51 </a><a href='http://www.lyriczz.com/songs/s-52.html'> 52 </a><a href='http://www.lyriczz.com/songs/s-53.html'> 53 </a><a href='http://www.lyriczz.com/songs/s-54.html'> 54 </a><a href='http://www.lyriczz.com/songs/s-55.html'> 55 </a><a href='http://www.lyriczz.com/songs/s-56.html'> 56 </a><a href='http://www.lyriczz.com/songs/s-57.html'> 57 </a><a href='http://www.lyriczz.com/songs/s-58.html'> 58 </a><a href='http://www.lyriczz.com/songs/s-59.html'> 59 </a><a href='http://www.lyriczz.com/songs/s-60.html'> 60 </a><a href='http://www.lyriczz.com/songs/s-61.html'> 61 </a><a href='http://www.lyriczz.com/songs/s-62.html'> 62 </a><a href='http://www.lyriczz.com/songs/s-63.html'> 63 </a><a href='http://www.lyriczz.com/songs/s-64.html'> 64 </a><a href='http://www.lyriczz.com/songs/s-65.html'> 65 </a><a href='http://www.lyriczz.com/songs/s-66.html'> 66 </a><a href='http://www.lyriczz.com/songs/s-67.html'> 67 </a><a href='http://www.lyriczz.com/songs/s-68.html'> 68 </a><a href='http://www.lyriczz.com/songs/s-69.html'> 69 </a><a href='http://www.lyriczz.com/songs/s-70.html'> 70 </a><a href='http://www.lyriczz.com/songs/s-71.html'> 71 </a><a href='http://www.lyriczz.com/songs/s-72.html'> 72 </a><a href='http://www.lyriczz.com/songs/s-73.html'> 73 </a><a href='http://www.lyriczz.com/songs/s-74.html'> 74 </a><a href='http://www.lyriczz.com/songs/s-75.html'> 75 </a><a href='http://www.lyriczz.com/songs/s-76.html'> 76 </a><a href='http://www.lyriczz.com/songs/s-77.html'> 77 </a><a href='http://www.lyriczz.com/songs/s-78.html'> 78 </a><a href='http://www.lyriczz.com/songs/s-79.html'> 79 </a><a href='http://www.lyriczz.com/songs/s-80.html'> 80 </a><a href='http://www.lyriczz.com/songs/s-81.html'> 81 </a><a href='http://www.lyriczz.com/songs/s-82.html'> 82 </a><a href='http://www.lyriczz.com/songs/s-83.html'> 83 </a><a href='http://www.lyriczz.com/songs/s-84.html'> 84 </a><a href='http://www.lyriczz.com/songs/s-85.html'> 85 </a><a href='http://www.lyriczz.com/songs/s-86.html'> 86 </a><a href='http://www.lyriczz.com/songs/s-87.html'> 87 </a><b> 88 </b><a href='http://www.lyriczz.com/songs/s-89.html'> 89 </a><a href='http://www.lyriczz.com/songs/s-90.html'> 90 </a><a href='http://www.lyriczz.com/songs/s-91.html'> 91 </a><a href='http://www.lyriczz.com/songs/s-92.html'> 92 </a> <a href='http://www.lyriczz.com/songs/s-89.html'><b>Next</b></a> &raquo;</span></div>   
+<!-- START bottom ad area
+  <div id="bottom_ad_area">    
+  </div>  
+END bottom ad area -->
+ </div>
+ <div id="left_bar" >
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+     <div class="left_bar_box_heading_container"><h1 class="left_bar_box_heading"><a href="chartzz.php" title="Top Music Charts">Top Music Charts</a></h1></div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content">
+     <br />
+     <a href="http://www.lyriczz.com/chart_usa.php" title="USA Song Lyrics Chart">
+      <img width="22" height="16" alt="USA music lyrics charts" src="http://www.lyriczz.com/img/chartusasmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_usa.php" title="USA Song Lyrics Chart"><strong>USA Lyrics Chart</strong></a>
+     <br />
+     <a href="http://www.lyriczz.com/chart_uk.php" title="UK Music Lyrics Chart">
+      <img width="22" height="16" alt="UK music lyrics charts" src="http://www.lyriczz.com/img/chartuksmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_uk.php" title="UK Music Lyrics Chart"><strong>UK Lyrics Chart</strong></a>
+     <br />
+     <a href="http://www.lyriczz.com/chart_nl.php" title="Netherlands Lyrics Chart">
+      <img width="22" height="16" alt="Netherlands music lyrics charts" src="http://www.lyriczz.com/img/chartnlsmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_nl.php" title="Netherlands Lyrics Chart"><strong>Netherlands Lyrics</strong></a>
+     <br />
+    </div>   
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left"></div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+    <div class="left_bar_box_heading_container"><h2 class="left_bar_box_heading">Song Lyrics</h2></div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content"> 
+     <!-- Previous third party search was here -->
+	<br />
+	 &raquo; <a href="http://www.lyriczz.com/request.php" rel="nofollow"><strong>Request Lyrics</strong></a><br/>
+	 &raquo; <a href="http://www.lyriczz.com/submit.php" rel="nofollow"><strong>Submit Lyrics</strong></a>
+    </div>
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left"></div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+
+
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+    <div class="left_bar_box_top_middle">Linkzz</div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content">
+     <br />
+&raquo; <a href="http://www.jango.com" title="Listen to free music on Jango Internet Radio!" target="_blank">Free Music</a><br />
+&raquo; <a href="http://www.fruitylyrics.com" target="_blank" title="lyrics &#252;bersetzung - traduction - traduzione - &#1087;&#1077;&#1088;&#1077;&#1074;&#1086;&#1076; for all songs">Fruity Song Lyrics</a><br />
+&raquo; <a href="http://www.lyricsbay.com" target="_blank">Lyrics</a><br />
+&raquo; <a href="http://www.allthelyrics.com" target="_blank">All song lyrics</a><br />
+&raquo; <a href="http://www.lyricsreg.com" target="_blank">Lyricsreg</a><br />
+&raquo; <a href="http://www.lyred.com" target="_blank">Lyred</a><br />
+&raquo; <a href="http://www.musicloversgroup.com" title="Videos and Lyrics" target="_blank">Videos and Lyrics</a><br />
+&raquo; <a href="http://www.lyricspy.com" target="_blank">Lyricspy</a><br />
+&raquo; <a href="http://www.asklyrics.com/" target="_blank">Ask Lyrics</a><br />
+&raquo; <a href="http://www.lyricsspot.com/" target="_blank">Lyrics Spot.com</a><br />
+&raquo; <a href="http://www.songs-lyrics.net" target="_blank">Songs Lyrics</a><br />    </div>
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left">
+	<br />
+	<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "160x600,120x600";
+	//--></script>
+	<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/lyricsbaycom/LyricZZcom/tags.js"></script>
+
+
+	</div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+  
+ </div> 
+<!-- <div id="right_bar">
+ </div> --> 
+ <div style="height:15px;"></div> 
+</div>
+</div> 
+<div id="footer">
+ <br />
+ <a href="http://www.lyriczz.com/mission.php" title="Our Mission">Mission</a> -
+ <a href="http://www.lyriczz.com/disclaimer.php">Disclaimer</a> -
+ <a href="http://www.lyriczz.com/contact.php" rel="nofollow">Contact</a> -
+ <a href="http://www.lyriczz.com" title="Lyrics"><strong>Lyrics</strong></a><br />
+ Want to advertise on LyricZZ.com? Send us <a href="http://www.lyriczz.com/contact.php" rel="nofollow">a message</a>!<br />
+ All <b>Lyrics</b> Found on this site are property of their respective owners<br />
+ &copy; 2012 - Lyriczz.com 
+</div>
+
+
+</body>
+</html>

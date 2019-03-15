@@ -1,0 +1,409 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-29T02:19:58Z
+WARC-TREC-ID: clueweb12-0407wb-58-12059
+WARC-IP-Address: 82.138.79.148
+WARC-Payload-Digest: sha1:EYKXH46GNXY2PF4FAMWH3A5JCZSMJNQ3
+WARC-Target-URI: http://www.filmfestivals.com/ffs/film/film3.cfg
+WARC-Record-ID: <urn:uuid:58cabbd1-3abc-4ae3-aafc-7130980456af>
+Content-Type: application/http; msgtype=response
+Content-Length: 22266
+
+HTTP/1.1 200 OK
+Date: Wed, 29 Feb 2012 00:52:44 GMT
+Server: Apache
+Last-Modified: Wed, 08 Aug 2001 21:50:11 GMT
+ETag: "58063-55df-b9f6eac0"
+Accept-Ranges: bytes
+Content-Length: 21983
+Connection: close
+Content-Type: text/plain; charset=iso-8859-1
+X-Pad: avoid browser bug
+
+reg;---------------------------------------------------------------
+; Configuration file : films
+;---------------------------------------------------------------
+
+[Global]
+
+DBName=wip:1998
+JDBCType=1
+UserName=wip2000
+Password=wip2000
+
+[SearchFilm]
+;Search a film with key word or country
+HTMLPageModel=$(CfgPath)/list_film.htm
+NoResultPage=$(CfgPath)/noresult.htm
+SQL=$(SQL)
+ResultSQL=$(SQL)
+NoResultSQL=$(SQL)
+PersistentInfos=$(SQL)
+StartRow=0
+StepRow=10
+action=GeneralOperation
+
+[SearchFilmFr]
+;Search a film with key word or country
+HTMLPageModel=$(CfgPath)/list_filmfr.htm
+NoResultPage=$(CfgPath)/noresult_film.htm
+SQL=$(SQL)
+ResultSQL=$(SQL)
+NoResultSQL=$(SQL)
+PersistentInfos=$(SQL)
+StartRow=0
+StepRow=10
+action=GeneralOperation
+
+[ListFilm]
+
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/list_film.htm
+;NoResultPage=$(CfgPath)/list_film.htm
+NoResultPage=__lastErrSQL.html
+FailurePage=__lastErrSQL.html
+SQL=$(SQL)
+ResultSQL=$(SQL)
+NoResultSQL=$(SQL)
+PersistentInfos=$(SQL)
+
+[ListFilmFr]
+
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/list_filmfr.htm
+;NoResultPage=$(CfgPath)/list_filmfr.htm
+NoResultPage=__lastErrSQL.html
+FailurePage=__lastErrSQL.html
+SQL=$(SQL)
+ResultSQL=$(SQL)
+NoResultSQL=$(SQL)
+PersistentInfos=$(SQL)
+
+[SimpleListFilm]
+;Lists all film by alphabetical order
+HTMLPageModel=$(CfgPath)/list_film.htm
+NoResultPage=$(CfgPath)/noresult_film.htm
+SQL=select film_num,film_titleus,film_director from film order by film_titleus
+ResultSQL=$(SQL)
+NoResultSQL=$(SQL)
+PersistentInfos=$(SQL)
+StartRow=0
+StepRow=10
+action=GeneralOperation
+
+
+[ShowFilm]
+;Visualise a film
+HTMLPageModel=$(CfgPath)/detail_film2.htm
+NoResultPage=$(CfgPath)/noresult_film.htm
+;SQL=select film.film_num,film.film_titel,fest.fest_ddd,fest.fest_ddm,fest.fest_ddy,fest.fest_dfd,fest.fest_dfm,fest.fest_dfy,fest.fest_adr1,fest.fest_adr2,fest.fest_cp,fest.fest_tel,fest.fest_fax,fest.fest_web,fest.fest_dfid,fest.fest_dfim,fest.fest_dfiy,fest.fest_dir,fest.fest_dirmail,fest.fest_prog,fest.fest_progmail,fest.fest_com,fest.fest_commail,fest.fest_press,fest.fest_presmail,fest.fest_webmail,fest.fest_pub,fest.fest_march,fest.fest_comp,fest.fest_ville,fest.fest_comment,fest.fest_url,pays.pays_nom from fest,pays where fest.fest_pays=pays.pays_num AND fest.fest_num=$(id)
+;ok film seulement SQL=select film_title,film_titleus,film_titlefr,film_time,film_lang,film_autre_lang,film_num_cust,film_web,film_dateday,film_datemonth,film_dateyear,film_director,film_screenplay,film_editing,film_photographer,film_music,film_costume,film_decor,film_act1,film_act2,film_act3,film_act4,film_act5,film_urlffs,film_poster,film_photo,film_video,film_the_dist,film_tv_dist,film_vid_dist,film_itl_dist,film_int_dist,film_des,film_pro from film where film_num =$(id)
+SQL=select film.film_title,film.film_titleus,film.film_titlefr,film.film_time,film.film_lang,film.film_autre_lang,film.film_num_cust,film.film_web,film.film_dateday,film.film_datemonth,film.film_dateyear,film.film_director,film.film_screenplay,film.film_editing,film.film_photographer,film.film_music,film.film_costume,film.film_decor,film.film_act1,film.film_act2,film.film_act3,film.film_act4,film.film_act5,film.film_urlffs,film.film_poster,film.film_photo,film.film_video,film.film_the_dist,film.film_tv_dist,film.film_vid_dist,film.film_itl_dist,film.film_int_dist,film.film_des,film.film_dir_schools,film.film_dir_biography,film.film_budget_range,film.film_actual_budget,film.film_reels,film.film_prodyear,film.film_snd,film.film_format,film.film_format_ratio,film.film_video_2,film.film_video_type,film.film_agent,customer.cus_name,customer.cus_comp,customer.cus_mail,pays.pays_nom from film,customer,pays where film.film_num=$(id) and customer.cus_num=film.film_num_cust and pays.pays_num=customer.cus_country
+PersistentInfos=$(id)
+action=RecordModel
+
+[NewFilm]
+
+action=RecordModel
+SQL=select cus_num,cus_comp,cus_name from customer where cus_num=$(v_cus_num)
+;SQL=select cus_comp,cus_name from customer where cus_num=&(id)
+HTMLPageModel=$(CfgPath)/add_film3.htm
+;ajouter ci-dessous customer et select cus_name,cus_comp from customer where cus_num=?????
+JoinedSQLTabs=theme_film;cat
+CodeTableSQLs=select themf_num,themf_us from theme_film order by themf_us$select cat_num,cat_us from cat order by cat_us
+
+[NewFilm_avec_select]
+
+action=RecordModel
+SQL=select cus_num,cus_comp,cus_name from customer where cus_num=1
+;SQL=select cus_comp,cus_name from customer where cus_num=&(id)
+HTMLPageModel=$(CfgPath)/add_film_avec_select.htm
+;ajouter ci-dessous customer et select cus_name,cus_comp from customer where cus_num=?????
+JoinedSQLTabs=theme_film;cat
+CodeTableSQLs=select themf_num,themf_us from theme_film order by themf_us$select cat_num,cat_us from cat order by cat_us
+
+[AddFilm]
+;ajout d'un film dans la base
+action=AddRecord
+ResultSQL=select film_num,film_titleus from film where film_num=@UniqueReturnedID
+;NoResultSQL=select film_num,film_titel,film_urlffs from film where film_num=@UniqueReturnedID
+SQLTab=film
+HTMLPageModel=$(CfgPath)/okform_film.htm
+NoResultPage=$(CfgPath)/noform_film.htm
+FailurePage=$(CfgPath)/noform_film.htm
+film:UniqueReturnedID=film_num
+;UniqueRecordCol=film_num
+ColumnsList=film_title;film_titleus;film_titlefr;film_time;film_lang;film_autre_lang;film_num_cust;film_web;film_dateday;film_datemonth;film_dateyear;film_cat;film_theme_film;film_director;film_screenplay;film_editing;film_photographer;film_music;film_costume;film_decor;film_act1;film_act2;film_act3;film_act4;film_act5;film_urlffs;film_poster;film_photo;film_video;film_the_dist;film_tv_dist;film_vid_dist;film_itl_dist;film_int_dist;film_des;film_pro;film_dir_schools;film_dir_biography;film_budget_range;film_actual_budget;film_reels;film_prodyear;film_snd;film_format;film_format_ratio;film_video_2;film_video_type;film_agent
+
+film_num:Type=1
+film_time:Type=1
+film_num_cust:Type=1
+film_country:Type=1
+film_cat:Type=1
+film_theme_film:Type=1
+film_the_dist:Type=1
+film_tv_dist:Type=1
+film_vid_dist:Type=1
+film_itl_dist:Type=1
+film_int_dist:Type=1
+film_num_cust=$(VNumCust)
+
+film_video:Type=1
+film_video_2:Type=1
+film_format:Type=1
+film_budget_range:Type=1
+film_actual_budget:Type=1
+film_snd:Type=1
+film_prodyear:Type=1
+film_reels:Type=1
+
+
+[NewCust]
+;Load the page to add a contact in the customer table 
+SQL=select pays_num from pays where pays_num=1 
+action=RecordModel
+HTMLPageModel=$(CfgPath)/add_contact3.htm
+JoinedSQLTabs=pays
+CodeTableSQLs=select * from pays order by pays_nom
+
+
+[AddCust]
+;Action to add a new customer in the customer table
+action=AddRecord
+ResultSQL=select cus_num,cus_comp,cus_name,cus_code,cus_pass from customer where cus_num=@UniqueReturnedID
+;NoResultSQL=
+SQLTab=customer
+HTMLPageModel=$(CfgPath)/okform_cust3.htm
+NoResultPage=$(CfgPath)/noform_cust.htm
+FailurePage=$(CfgPath)/noform_cust.htm
+customer:UniqueReturnedID=cus_num
+;UniqueRecordCol=cus_num
+ColumnsList=cus_name;cus_first;cus_comp;cus_adr;cus_adr2;cus_city;cus_state;cus_zip;cus_country;cus_tel;cus_fax;cus_mail;cus_mail_pays;cus_ip;cus_code;cus_pass;cus_type
+cus_num:Type=1
+cus_country:Type=1
+cus_type:Type=1
+cus_type=1
+
+[ValAccess]
+;Access validation for a customer record with code and password 
+SQL=select cus_num,cus_comp,cus_name from customer where cus_code='$(Inscrip)' and cus_pass ='$(Password)'
+ResultSQL=select cus_num,cus_comp,cus_name from customer where cus_code='$(Inscrip)' and cus_pass ='$(Password)'
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/add_film3.htm
+NoResultPage=$(CfgPath)/noaccess_cust.htm
+FailurePage=$(CfgPath)/noaccess_cust.htm
+JoinedSQLTabs=theme_film;cat
+CodeTableSQLs=select themf_num,themf_us from theme_film order by themf_us$select cat_num,cat_us from cat order by cat_us
+
+[ModifCust]
+;Access validation to modify a customer record with code and password 
+SQL=select * from customer where cus_code='$(Inscrip)' and cus_pass ='$(Password)'
+ResultSQL=select * from customer where cus_code='$(Inscrip)' and cus_pass ='$(Password)'
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/modif_contact.htm
+NoResultPage=$(CfgPath)/noaccess_cust.htm
+FailurePage=$(CfgPath)/noaccess_cust.htm
+JoinedSQLTabs=pays
+
+[ModifCustRecord]
+;Action to modify a customer in the customer table
+action=ModifyRecord
+;ResultSQL=select cus_num,cus_comp,cus_name,cus_code,cus_pass from customer where cus_num=@UniqueReturnedID
+ResultSQL=select cus_num,cus_comp,cus_name,cus_code,cus_pass from customer where cus_num=$(cus_num)
+;NoResultSQL=
+SQLTab=customer
+HTMLPageModel=$(CfgPath)/okform_cust3.htm
+NoResultPage=$(CfgPath)/noform_cust.htm
+FailurePage=$(CfgPath)/noform_cust.htm
+customer:UniqueReturnedID=cus_num
+RecordID=cus_num
+;UniqueRecordCol=cus_num
+ColumnsList=cus_name;cus_first;cus_comp;cus_adr;cus_adr2;cus_city;cus_state;cus_zip;cus_country;cus_tel;cus_fax;cus_mail;cus_mail_pays;cus_ip;cus_code;cus_pass;cus_type
+
+
+[ModifAccessFilm]
+;Access validation to the list of film records with code and password 
+SQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus from customer, film where customer.cus_code='$(Inscrip)' and customer.cus_pass ='$(Password)' and customer.cus_num = film.film_num_cust
+ResultSQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus from customer, film where customer.cus_code='$(Inscrip)' and customer.cus_pass ='$(Password)' and customer.cus_num = film.film_num_cust
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/modif_choice_film3.htm
+NoResultPage=$(CfgPath)/noaccess_film.htm
+FailurePage=$(CfgPath)/noaccess_film.htm
+
+[ModifFilm]
+;Modification of a film record protected by code and password check.
+SQL=select film.film_num,film.film_title,film.film_titleus,film.film_titlefr,film.film_time,film.film_theme_film,film.film_cat,film.film_lang,film.film_autre_lang,film.film_num_cust,film.film_web,film.film_dateday,film.film_datemonth,film.film_dateyear,film.film_director,film.film_screenplay,film.film_editing,film.film_photographer,film.film_music,film.film_costume,film.film_decor,film.film_act1,film.film_act2,film.film_act3,film.film_act4,film.film_act5,film.film_urlffs,film.film_poster,film.film_photo,film.film_video,film.film_the_dist,film.film_tv_dist,film.film_vid_dist,film.film_itl_dist,film.film_int_dist,film.film_des,film.film_pro,film.film_dir_schools,film.film_dir_biography,film.film_budget_range,film.film_actual_budget,film.film_reels,film.film_prodyear,film.film_snd,film.film_format,film.film_format_ratio,film.film_video_2,film.film_video_type,film.film_agent from film, customer where film.film_num =$(film_num) and customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and customer.cus_num = film.film_num_cust
+ResultSQL=select film.film_num,film.film_title,film.film_titleus,film.film_titlefr,film.film_time,film.film_theme_film,film.film_cat,film.film_lang,film.film_autre_lang,film.film_num_cust,film.film_web,film.film_dateday,film.film_datemonth,film.film_dateyear,film.film_director,film.film_screenplay,film.film_editing,film.film_photographer,film.film_music,film.film_costume,film.film_decor,film.film_act1,film.film_act2,film.film_act3,film.film_act4,film.film_act5,film.film_urlffs,film.film_poster,film.film_photo,film.film_video,film.film_the_dist,film.film_tv_dist,film.film_vid_dist,film.film_itl_dist,film.film_int_dist,film.film_des,film.film_pro,film.film_dir_schools,film.film_dir_biography,film.film_budget_range,film.film_actual_budget,film.film_reels,film.film_prodyear,film.film_snd,film.film_format,film.film_format_ratio,film.film_video_2,film.film_video_type,film.film_agent from film, customer where film.film_num =$(film_num) and customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and customer.cus_num = film.film_num_cust
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/modif_film3.htm
+NoResultPage=$(CfgPath)/noaccess_film.htm
+FailurePage=$(CfgPath)/noaccess_film.htm
+JoinedSQLTabs=theme_film;cat
+CodeTableSQLs=select themf_num,themf_us from theme_film order by themf_us$select cat_num,cat_us from cat order by cat_us
+
+[ModifFilmRecord]
+;Action to modify a film in the film table
+action=ModifyRecord
+ResultSQL=select film_num,film_titleus from film where film_num=$(film_num)
+;NoResultSQL=select film_num,film_titel,film_urlffs from film where film_num=
+SQLTab=film
+HTMLPageModel=$(CfgPath)/okform_film.htm
+NoResultPage=$(CfgPath)/noform_film.htm
+FailurePage=$(CfgPath)/noform_film.htm
+film:UniqueReturnedID=film_num
+RecordID=film_num
+;UniqueRecordCol=film_num
+ColumnsList=film_title;film_titleus;film_titlefr;film_time;film_lang;film_autre_lang;film_num_cust;film_web;film_dateday;film_datemonth;film_dateyear;film_cat;film_theme_film;film_director;film_screenplay;film_editing;film_photographer;film_music;film_costume;film_decor;film_act1;film_act2;film_act3;film_act4;film_act5;film_urlffs;film_poster;film_photo;film_video;film_the_dist;film_tv_dist;film_vid_dist;film_itl_dist;film_int_dist;film_des;film_pro;film_dir_schools;film_dir_biography;film_budget_range;film_actual_budget;film_reels;film_prodyear;film_snd;film_format;film_format_ratio;film_video_2;film_video_type;film_agent
+
+
+[RegisterFilm]
+;Modification of a film record protected by code and password check.
+SQL=select film.film_num,film.film_title,film.film_titleus,film.film_titlefr,film.film_time,film.film_theme_film,film.film_cat,film.film_lang,film.film_autre_lang,film.film_num_cust,film.film_web,film.film_dateday,film.film_datemonth,film.film_dateyear,film.film_director,film.film_screenplay,film.film_editing,film.film_photographer,film.film_music,film.film_costume,film.film_decor,film.film_act1,film.film_act2,film.film_act3,film.film_act4,film.film_act5,film.film_urlffs,film.film_poster,film.film_photo,film.film_video,film.film_the_dist,film.film_tv_dist,film.film_vid_dist,film.film_itl_dist,film.film_int_dist,film.film_des,film.film_pro from film, customer where film.film_num =$(film_num) and customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and customer.cus_num = film.film_num_cust
+ResultSQL=select film.film_num,film.film_title,film.film_titleus,film.film_titlefr,film.film_time,film.film_theme_film,film.film_cat,film.film_lang,film.film_autre_lang,film.film_num_cust,film.film_web,film.film_dateday,film.film_datemonth,film.film_dateyear,film.film_director,film.film_screenplay,film.film_editing,film.film_photographer,film.film_music,film.film_costume,film.film_decor,film.film_act1,film.film_act2,film.film_act3,film.film_act4,film.film_act5,film.film_urlffs,film.film_poster,film.film_photo,film.film_video,film.film_the_dist,film.film_tv_dist,film.film_vid_dist,film.film_itl_dist,film.film_int_dist,film.film_des,film.film_pro from film, customer where film.film_num =$(film_num) and customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and customer.cus_num = film.film_num_cust
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/modif_film.htm
+NoResultPage=$(CfgPath)/noaccess_film.htm
+FailurePage=$(CfgPath)/noaccess_film.htm
+JoinedSQLTabs=theme_film;cat
+CodeTableSQLs=select themf_num,themf_us from theme_film order by themf_us$select cat_num,cat_us from cat order by cat_us
+
+
+[RegAccessFilm2]
+;Access validation to the list of film records with code and password 
+SQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus from customer, film where customer.cus_code='$(Inscrip)' and customer.cus_pass ='$(Password)' and customer.cus_num = film.film_num_cust
+ResultSQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus from customer, film where customer.cus_code='$(Inscrip)' and customer.cus_pass ='$(Password)' and customer.cus_num = film.film_num_cust
+;action=RecordModel
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/reg_choice_film2.htm
+NoResultPage=$(CfgPath)/noaccess_film.htm
+FailurePage=$(CfgPath)/noaccess_film.htm
+
+[RegAccessFestival2]
+;Access validation to the list of festival records with code and password 
+SQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus, fest.fest_num,fest.fest_nom from customer,film, fest where customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and film.film_num = $(film_num) and fest.fest_points=1
+ResultSQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus, fest.fest_num,fest.fest_nom from customer,film, fest where customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and film.film_num = $(film_num) and fest.fest_points=1
+action=GeneralOperation
+HTMLPageModel=$(CfgPath)/reg_choice_fest2.htm
+NoResultPage=$(CfgPath)/noaccess_film.htm
+FailurePage=$(CfgPath)/noaccess_film.htm
+
+[NewRegistration2]
+
+ResultSQL=select ord_num  from orders where ord_num=@UniqueReturnedID
+action=RecordModel;AddTablesRecords
+ListOutputPage=@;http
+ListSQLTabs=customer;orders
+ListColumnsList=nothing$proo_num_product;proo_num_producer;proo_pro_des;proo_qty;proo_price;proo_total
+ListSQL=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass, film.film_num,film.film_titleus,film.film_time, fest.fest_num,fest.fest_nom from customer,film, fest where customer.cus_code='$(cus_code)' and customer.cus_pass ='$(cus_pass)' and film.film_num = $(film_num) and fest.fest_num=$(fest_num)
+;select ord_num  from orders where ord_num=@UniqueReturnedID
+
+HTMLPageModel=$(CfgPath)/reg_form2.htm
+NoResultPage=$(CfgPath)/reg_form2.htm
+FailurePage=__lastErrSQL.html
+
+TablesList=orders;pro_ordered
+orders:UniqueReturnedID=ord_num
+orders:ColumnsList=ord_num_cust;ord_amount;ord_day;ord_month;ord_year
+ord_num:Type=1
+ord_num_cust:Type=1
+ord_amount:Type=1
+ord_tax:Type=1
+ord_total_amount:Type=1
+ord_shipping:Type=1
+ord_validated:Type=1
+ord_paied:Type=1
+ord_day:Type=1
+ord_month:Type=1
+ord_year:Type=1
+;ord_num_cust=-1
+
+pro_ordered:UniqueLinkedID=proo_num_order
+pro_ordered:UniqueReturnedID=proo_num
+proo_num:Type=1
+proo_num_order:Type=1
+proo_num_product:Type=1
+proo_num_producer:Type=1
+proo_num_taxes:Type=1
+proo_tax_amount:Type=1
+proo_qty:Type=1
+proo_price:Type=1
+proo_total:Type=1
+
+
+[AddRegistration2]
+
+;add a film in the registration database
+action=AddRecord
+ResultSQL=select reg_num from registration where reg_num=@UniqueReturnedID
+JDBCType=1
+UserName=wip2000
+Password=wip2000
+DBName=wip:1998
+SQLTab=registration
+JoinedSQLTabs=customer;film;fest;orders
+CodeTableSQLs=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass,customer.cus_mail from customer where customer.cus_code='$(cus_code)' and customer.cus_pass='$(cus_pass)';select film.film_num,film.film_titleus,film.film_time from film where film.film_num = $(film_num) ; select fest.fest_num,fest.fest_nom from fest where fest.fest_num=$(fest_num) ; select orders.ord_num, orders.ord_day, orders.ord_month, orders.ord_year from orders where orders.ord_num=$(ord_num)
+HTMLPageModel=$(CfgPath)/okform_reg2.htm
+NoResultPage=$(CfgPath)/noform_reg.htm
+FailurePage=$(CfgPath)/noform_reg.htm
+registration:UniqueReturnedID=reg_num
+ColumnsList=reg_name;reg_dd;reg_dm;reg_dy;reg_film_num;reg_fest_num;reg_other_fest;reg_other_selected;reg_other_awards;reg_other_awardlist;reg_introducer_type;reg_introducer_name;reg_ord_num
+reg_num:Type=1
+reg_dd:Type=1
+reg_dm:Type=1
+reg_dy:Type=1
+reg_film_num:Type=1
+reg_fest_num:Type=1
+reg_other_fest:Type=1
+reg_other_selected:Type=1
+reg_other_awards:Type=1
+reg_introducer_type:Type=1
+reg_ord_num:Type=1
+
+[ModifyRegistrationRecord]; a terminer
+
+;add a film in the registration database
+action=ModifyRecord
+ResultSQL=select reg_num from registration where reg_num=@UniqueReturnedID
+JDBCType=1
+UserName=wip2000
+Password=wip2000
+DBName=wip:1998
+SQLTab=registration
+JoinedSQLTabs=customer;film;fest;orders
+CodeTableSQLs=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass,customer.cus_mail from customer where customer.cus_code='$(cus_code)' and customer.cus_pass='$(cus_pass)';select film.film_num,film.film_titleus,film.film_time from film where film.film_num = $(film_num) ; select fest.fest_num,fest.fest_nom from fest where fest.fest_num=$(fest_num) ; select orders.ord_num, orders.ord_day, orders.ord_month, orders.ord_year from orders where orders.ord_num=$(ord_num)
+HTMLPageModel=$(CfgPath)/okform_reg2.htm
+NoResultPage=$(CfgPath)/noform_reg.htm
+FailurePage=$(CfgPath)/noform_reg.htm
+registration:UniqueReturnedID=reg_num
+ColumnsList=reg_name;reg_dd;reg_dm;reg_dy;reg_film_num;reg_fest_num;reg_other_fest;reg_other_selected;reg_other_awards;reg_other_awardlist;reg_introducer_type;reg_introducer_name;reg_ord_num
+reg_num:Type=1
+reg_dd:Type=1
+reg_dm:Type=1
+reg_dy:Type=1
+reg_film_num:Type=1
+reg_fest_num:Type=1
+reg_other_fest:Type=1
+reg_other_selected:Type=1
+reg_other_awards:Type=1
+reg_introducer_type:Type=1
+reg_ord_num:Type=1
+
+
+[ModiReg]
+;Modify a film in the registration database
+action=ModifyRecord
+ResultSQL=select reg_num from registration where reg_num=@UniqueReturnedID
+SQLTab=registration
+JoinedSQLTabs=customer;film;fest
+;JoinedSQLTabs=film;fest
+CodeTableSQLs=select customer.cus_num,customer.cus_comp,customer.cus_name,customer.cus_code,customer.cus_pass from customer where customer.cus_code='$(cus_code)' and customer.cus_pass='$(cus_pass)';select film.film_num,film.film_titleus from film where film.film_num = $(film_num) ; select fest.fest_num,fest.fest_nom from fest where fest.fest_num=$(fest_num)
+HTMLPageModel=$(CfgPath)/okform_reg.htm
+NoResultPage=$(CfgPath)/noform_reg.htm
+FailurePage=$(CfgPath)/noform_reg.htm
+registration:UniqueReturnedID=reg_num
+ColumnsList=reg_name;reg_dd;reg_dm;reg_dy;reg_film_num;reg_fest_num;reg_other_fest;reg_other_selected;reg_other_awards;reg_other_awardlist;reg_introducer_type;reg_introducer_name

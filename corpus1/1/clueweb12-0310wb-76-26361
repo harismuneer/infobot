@@ -1,0 +1,707 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-24T11:20:03Z
+WARC-TREC-ID: clueweb12-0310wb-76-26361
+WARC-Target-URI: http://letras.kboing.com.br/kelly-clarkson/i-will-survive/
+WARC-Payload-Digest: sha1:6CCGSC3E4SNVH24P2KDXNNBXGOIOX22M
+WARC-IP-Address: 208.70.188.11
+WARC-Record-ID: <urn:uuid:abd3a31b-cb87-43c2-a901-bae761c3f61f>
+Content-Type: application/http; msgtype=response
+Content-Length: 74526
+
+HTTP/1.1 200 OK
+Date: Fri, 24 Feb 2012 11:20:04 GMT
+Server: Apache
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>I Will Survive - Kelly Clarkson (letra e vídeo) no Kboing</title>
+<meta name='description' content='Kelly Clarkson - I Will Survive (letra e vídeo da música) para ouvir e criar sua playlist'>
+<meta name='keywords' content='I Will Survive Kelly Clarkson letra, musica, I Will Survive letra, video, letras de músicas, I Will Survive, letras, vídeos'>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta name="robots" content="index,follow" />
+<meta http-equiv="content-language" content="pt-BR" />
+<link rel="canonical" href="/kelly-clarkson/i-will-survive/"><link href="http://imagens.kboing.com.br/letras/css/letras2011v02_min.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]><link href="http://imagens.kboing.com.br/letras/css/letras-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<script src="http://imagens.kboing.com.br/letras/js/jqueryletras.js"></script>
+<script type="text/javascript" src="http://webvideos.kboing.com.br/swfobject.js"></script>
+<script src="http://imagens.kboing.com.br/letras/js/letras_jsv19.min.js"></script>
+
+
+<style type="text/css">
+	.sprite-art{background:url(http://imagens.kboing.com.br/letras/sprite/4f466da53e46b.jpg) no-repeat;}
+</style>
+
+<script>
+
+////////////////////////////////////////////////
+// REDIRECIONAMENTO #!
+////////////////////////////////////////////////
+
+	var href = location.href;
+
+	if (!href.match(/\/#!\//)) {
+		href = location.protocol + '//' + location.hostname + '#!';
+
+		if (location.pathname != '' && location.pathname != '/') {
+			href += location.pathname + location.search
+			
+		} else {
+			href += '/home' + location.search
+		}
+		location.href = href;
+	}
+
+</script>
+
+</head>
+
+<body>
+	<div class="falsebody">
+	<div id="page">
+
+	<div id="topo">
+    	<h1><a href="/" id="logo" class="homelink">Letras de m&uacute;sicas</a></h1>
+        
+        <ul id="menu-principal">
+        	<li><a href="/" class="homelink">home</a></li>
+        	<li><a href="/top-artistas.html">top artistas</a></li>
+        	<li><a href="/top-musicas.html">top letras</a></li>
+        	<li><a href="http://www.kboing.com.br/musicas/" target="_blank">músicas</a></li>
+        	<li><a href="/novidades.html">novidades</a></li>
+            <li><a href="http://www.kboing.com.br/noticias/" target="_blank">not&iacute;cias</a></li>
+        </ul>
+        
+        <div id="bar-menu">
+        	<div id="bx-menu">
+            	<strong><a href="javascript:void(0);" onclick="ligasuggest('artista');return false;" class="noclick">artista</a></strong>
+                <strong><a href="javascript:void(0);" onclick="ligasuggest('música');return false;" class="noclick">música</a></strong>
+                <strong><a href="javascript:void(0);" onclick="ligasuggest('trecho');return false;" class="noclick">trecho</a></strong>
+                <strong class="ult"><a href="javascript:void(0);" onclick="ligasuggest('geral');return false;" class="noclick busca-sel">geral</a></strong>
+                
+                    <form id="form-busca" name="formulario" onSubmit="return buSeSubHome(this);">
+                            <input type="text" class="cx-busca" name="q" id="q" onkeyup="SuggestKbo(this,event);" autocomplete="off" />
+                            <input type="submit" id="bt-busca" value="" title="BUSCAR" />
+                    </form>
+             <div id="nav-art"> 
+             	<span>artistas &raquo;</span>
+                <ul id="lst-artista">
+                    <li><a href="/letra/a/" title="artistas começados com a letra A">A</a></li>
+                    <li><a href="/letra/b/" title="artistas começados com a letra B">B</a></li>
+                    <li><a href="/letra/c/" title="artistas começados com a letra C">C</a></li>
+                    <li><a href="/letra/d/" title="artistas começados com a letra D">D</a></li>
+                    <li><a href="/letra/e/" title="artistas começados com a letra E">E</a></li>
+                    <li><a href="/letra/f/" title="artistas começados com a letra F">F</a></li>
+                    <li><a href="/letra/g/" title="artistas começados com a letra G">G</a></li>
+                    <li><a href="/letra/h/" title="artistas começados com a letra H">H</a></li>
+                    <li><a href="/letra/i/" title="artistas começados com a letra I">I</a></li>
+                    <li><a href="/letra/j/" title="artistas começados com a letra J">J</a></li>
+                    <li><a href="/letra/k/" title="artistas começados com a letra K">K</a></li>
+                    <li><a href="/letra/l/" title="artistas começados com a letra L">L</a></li>
+                    <li><a href="/letra/m/" title="artistas começados com a letra M">M</a></li>
+                    <li><a href="/letra/n/" title="artistas começados com a letra N">N</a></li>
+                    <li><a href="/letra/o/" title="artistas começados com a letra O">O</a></li>
+                    <li><a href="/letra/p/" title="artistas começados com a letra P">P</a></li>
+                    <li><a href="/letra/q/" title="artistas começados com a letra Q">Q</a></li>
+                    <li><a href="/letra/r/" title="artistas começados com a letra R">R</a></li>
+                    <li><a href="/letra/s/" title="artistas começados com a letra S">S</a></li>
+                    <li><a href="/letra/t/" title="artistas começados com a letra T">T</a></li>
+                    <li><a href="/letra/u/" title="artistas começados com a letra U">U</a></li>
+                    <li><a href="/letra/v/" title="artistas começados com a letra V">V</a></li>
+                    <li><a href="/letra/w/" title="artistas começados com a letra W">W</a></li>
+                    <li><a href="/letra/x/" title="artistas começados com a letra X">X</a></li>
+                    <li><a href="/letra/y/" title="artistas começados com a letra Y">Y</a></li>
+                    <li><a href="/letra/z/" title="artistas começados com a letra Z">Z</a></li>
+                    <li><a href="/letra/!/" title="artistas começados com números">0/9</a></li>
+                </ul>
+             </div>
+            </div>
+            
+            <div id="logando">
+              <div id="boxLoging">
+            	<strong id="img_log">&nbsp;</strong>
+                <form id="loginmyid" name="loginmyid">
+                	<div class="cx-logando">
+                    	<label for="nome-user">e-mail</label><input type="text" name="nome-user" id="nome-user" class="log-dados" />
+                    </div>
+                    <div class="cx-logando">
+                    	<label for="senha-user">senha</label><input type="password" name="senha-user" id="senha-user" class="log-dados" />
+                    </div>
+                    <input type="submit" value="entrar" class="bt-enter" />
+                </form>
+                <div id="cadsen">
+                    <a href="/myid/cadastro.html" class="cadastre">cadastrar-se</a><span class="cs-pont">&nbsp;</span>
+                    <a href="javascript:void(0);" id="esqueciminhasenha" class="noclick">esqueci minha senha</a>
+                </div>
+            </div>
+
+                <div id="bx_conf_user" style="display:none">
+                	<img src="http://imagens.kboing.com.br/kboing/imagens/sem-foto.jpg" width="115" height="74" alt="" class="img_user" id="imguserlogin" />
+                    	<i id="nome_user"></i>
+                		<ul id="conf_user">
+                        	<li id="conf_user_nav"><a href="javascript:void(0);" id="bt_nav" class="noclick">minhas configura&ccedil;&otilde;es</a>
+                            	<ul>
+                                	<li><a href="" id="linkplaylist">minhas playlists</a></li>
+                                    <li><a href="" id="linkfavoritos">favoritos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="javascript:void(0);" onclick="sairPainel();return false;" class="noclick" style="float:right; color:#fff;">sair</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+	<div id="contentpage">
+    <div id="content">
+
+<SPAN ID="isee1" STYLE="position:absolute;width:0px;height:0px;top:-5px;visibility:hidden"><IMG SRC="http://a0.kboing-com-br.hst.isee1.net/" WIDTH="1" HEIGHT="1" BORDER="0"></SPAN>
+
+    <div id="breadcrumb">
+    	<a href="/">p&aacute;gina inicial</a> <span class="prox">&nbsp;</span>
+    	<a href="/letra/K/">K</a> <span class="prox">&nbsp;</span>
+    	<a href="/kelly-clarkson/">Kelly Clarkson</a> <span class="prox">&nbsp;</span>
+        I Will Survive
+    </div>
+
+    <div id="topo-publ">
+        <div id="cont-dir-top">
+            
+            <div id="artista-container">
+                <h1>I Will Survive</h1>
+                <h2><a href="/kelly-clarkson/">Kelly Clarkson</a></h2>
+                    <div id="art-ft">    
+                        <a class="artista-fotos" href="/kelly-clarkson/fotos/"><img src="http://www.kboing.com.br/fotos/imagens/4dbaa2f82f930-tb.jpg" alt="fotos" width="115" height="74" alt="" /></a>
+                    </div>
+             </div>
+
+             <div id="lyric">
+             	 <div class="traducao">
+                        <span>Traduzir letra para:</span>
+                            <ul>
+                                <li><a href="/kelly-clarkson/i-will-survive/traducao.html" onclick="traducao('/kelly-clarkson/i-will-survive/');return false;" class="noclick"><img src="http://imagens.kboing.com.br/letras/imagens/portugues.gif" width="16" height="11" alt="tradução" /></a></li>
+                            </ul>
+                         </div> 
+
+
+             	<strong class="tit-mus">I Will Survive</strong>
+                <a href="/kelly-clarkson/">Kelly Clarkson</a>
+
+
+                   <div id="lyric-edit">      
+                         <div class="lyric-music">
+At first I was afraid, I was petrified,<br>
+Kept thinking I could never live without you by my side<br>
+But then I spent so many nights thinking how you did me wrong<br>
+And I grew strong<br>
+And I learned how to get along<br>
+And so you're back<br>
+From outer space<br>
+I just walked in to find you here with that sad look upon your face<br>
+I should have changed that stupid lock<br>
+I should have made you leave your key<br>
+If I'd known for just one second<br>
+You'd be back to bother me<br>
+<br>
+Go on now go<br>
+Walk out the door<br>
+Just turn around now<br>
+Cause your not welcome anymore<br>
+Weren't you the one who tried to hurt me with goodbye?<br>
+Did you think I'd crumble?<br>
+Did you think I'd lay down and die?<br>
+Oh no not I<br>
+I will survive!<br>
+Oh as long as I know how to love I know I'll stay alive<br>
+I've got all my life to live, I've got all my love to give<br>
+I'll survive<br>
+I will survive, hey hey<br>
+<br>
+(Musical interlude)<br>
+<br>
+It took all the strength I had not to fall apart<br>
+Kept trying hard to mend the pieces of my broken heart<br>
+And I spent oh so many nights just feeling sorry for myself<br>
+I used to cry<br>
+But now I hold my head up high<br>
+And you see me<br>
+Somebody new<br>
+I'm not that chained little person still in love with you<br>
+And so you felt like droppin' in<br>
+And just expect me to be free<br>
+Well now I'm savin' all my lovin' for someone who's lovin' me<br>
+<br>
+Oh now go<br>
+Walk out the door<br>
+Just turn around now<br>
+Cause your not welcome anymore<br>
+Weren't you the one who tried to hurt me with goodbye?<br>
+Did you think I'd crumble?<br>
+Did you think I'd lay down and die?<br>
+Oh no not I<br>
+I will survive!<br>
+Oh as long as I know how to love I know I'll stay alive<br>
+I've got all my life to live, I've got all my love to give<br>
+I'll survive<br>
+I will survive <br>
+Oooh !<br>
+<br>
+Now go<br>
+Walk out the door<br>
+Just turn around now<br>
+Cause your not welcome anymore<br>
+Weren't you the one who tried to hurt me with goodbye?<br>
+Did you think I'd crumble?<br>
+Did you think I'd lay down and die?<br>
+Oh no not I<br>
+I will survive!<br>
+Oh as long as I know how to love I know I'll stay alive<br>
+I've got all my life to live, I've got all my love to give<br>
+I'll survive<br>
+I will survive <br>
+<br>
+I will survive !
+
+                         </div>
+                         
+                         <div class="lyric-trad">
+<!-- aqui traducao -->
+                         </div>
+                   </div>      
+                   <a href="javascript:void(0);" onclick="buscaVDOpg('play');return false;" class="lnk_tocapl noclick">abrir vídeo no player</a> 
+                   <a href="javascript:void(0);" onclick="buscaVDOpg('stop');return false;" class="lnk_abrepl noclick">adicionar no player</a>
+             </div>
+
+             			<ul id="lyric-config">
+                         	<li><a href="javascript:void(0);" id="diminuiLetra" class="config-menos noclick" title="diminuir a fonte"></a></li>
+                            <li><a href="javascript:void(0);" id="aumentaLetra" class="config-mais noclick" title="aumentar a fonte"></a></li>
+                            <li><a href="javascript:void(0);" onclick="favoritarLetra();return false;" class="config-fav noclick" title="favoritar letra"></a></li>
+                            <li><a href="javascript:void(0);" onclick="adicionarLetra(538311);return false;" class="config-addplay noclick" title="adicionar a playlist"></a></li>
+                            <li><a href="#" onclick="buscaVDOpg('play');return false;" class="config-play noclick" title="abrir vídeo no player"></a></li>
+                            <li><a href="#" onclick="buscaVDOpg('stop');return false;" class="config-play_add noclick" title="adicionar vídeo no player"></a></li>
+                            <li><a href="/kelly-clarkson/i-will-survive/imprimir.html" onclick="imprimir('/kelly-clarkson/i-will-survive/');return false;" class="config-print noclick" title="imprimir letra"></a></li>
+                            <!-- <li><a href="#" class="config-enviar" title="enviar por e-mail"></a></li>
+                            <li><a href="#" class="config-corrigir noclick" title="corrigir letra"></a></li> -->
+                            <li><a href="javascript:void(0);" onclick="compartilhaLetra('orkut');return false;" class="config-orkut noclick" title="compartilhar no orkut"></a></li>
+                            <li><a href="javascript:void(0);" onclick="compartilhaLetra('facebook');return false;" class="config-face noclick" title="compartilhar no facebook"></a></li>
+                            <li><a href="javascript:void(0);" onclick="compartilhaLetra('twitter');return false;" class="config-twit noclick" title="compartilhar no twitter"></a></li>
+                            <li><a href="http://www.kboing.com.br/musicas/" target="_blank" class="config-kbo noclick"><img src="http://imagens.kboing.com.br/letras/imagens/mini-k.gif" width="16" height="16" alt="músicas"></a></li>
+                         </ul>
+
+             <div id="info-art">
+                <a href="javascript:void(0);" onclick="Estilos();return false;" class="noclick">Estilos</a>: Pop/Rock, Pop, Romântico<br />
+                <a href="http://www.kellyclarkson.com" target="_blank">Site Oficial</a>         
+             </div>
+
+    	     <ul id="menu-art">
+                <li><a href="http://www.kboing.com.br/kelly-clarkson/" target="_blank" class="ico-mus">m&uacute;sicas</a></li>
+                <li><a href="/kelly-clarkson/" class="ico-let">letras</a></li>
+                <li><a href="/kelly-clarkson/fotos/" class="ico-fot">fotos</a></li>
+                <li><a href="/kelly-clarkson/videos/" onclick="buscaVDOSpg();return false;" class="ico-vid noclick">v&iacute;deos</a></li>
+                <li><a href="http://ads.kboing.com.br/ofertalink.php?tipo=dvd&txt=Kelly+Clarkson" target="_blank" class="ico-dvd">DVDs</a></li>
+                <li><a href="http://ads.kboing.com.br/ofertalink.php?tipo=cd&txt=Kelly+Clarkson" target="_blank" class="ico-cd">CDs</a></li>
+                <li><a href="http://www.kboing.com.br/karaoke/karaoke_busca.php?pg=0&cat=karaoke&lb=0&palavra=Kelly+Clarkson" target="_blank" class="ico-kar">karaok&ecirc;</a></li>
+             </ul>
+
+<div class="redesocial" style="position:absolute;top:5px;left:440px">
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html#url=http%3A%2F%2Fletras.kboing.com.br%2Fkelly-clarkson%2Fi-will-survive%2F&amp;text=Letra e v&iacute;deo de I Will Survive - Kelly Clarkson no Letras do Kboing&amp;via=sitekboing&amp;related=sitekboing" style="width:100px; height:21px; border:none; overflow:hidden;"></iframe>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fletras.kboing.com.br%2Fkelly-clarkson%2Fi-will-survive%2F&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+<span id="bplus"><g:plusone size="medium" href="http://letras.kboing.com.br/kelly-clarkson/i-will-survive/"></g:plusone></span>
+<img src="http://letras.kboing.com.br/internas/cl.php?ia=kelly-clarkson&im=538311" width="1" height="1" border="0" />
+</div>
+
+<form id="qualpgestou" name="qualpgestou">
+<input type="hidden" id="pgatual" name="pgatual" value="letra" />
+<input type="hidden" id="ytidpg" name="ytidpg" value="" />
+<input type="hidden" id="ytidrecomenda" name="ytidrecomenda" value="WW3xbGuBU50" />
+</form>
+
+        </div>
+        
+
+        <div id="publ-lateral">
+        	<span class="publtit">Publicidade</span>
+		<div id="ppikbo"></div>
+        </div>
+
+
+    </div>
+
+    <div id="list-mus-inter">
+    	<span class="link-list"><span></span>letras de <strong>Kelly Clarkson</strong></span>
+   			 <div class="abas-ordena">
+                <span>mais acessadas:</span> 
+<a href="/kelly-clarkson/mr-know-it-all/"><b>Mr. Know It All</b></a> <a href="/kelly-clarkson/because-of-you/"><b>Because Of You</b></a> <a href="/kelly-clarkson/what-doesnt-kill-you-stronger/"><b>What Doesn't Kill You (Stronger)</b></a> <a href="/kelly-clarkson/breakaway/"><b>Breakaway</b></a> <a href="/kelly-clarkson/i-do-not-hook-up/"><b>(I Do Not) Hook Up</b></a> 
+             </div>
+             
+             <div class="bx-listas">
+                <ul class="listagens">
+<li class="cor1"><i>1.</i> <a href="/kelly-clarkson/i-do-not-hook-up/"><b>(I Do Not) Hook Up</b></a></li><li><i>2.</i> <a href="/kelly-clarkson/you-make-me-feel-like-a-natural-woman/"><b>(You Make Me Feel Like A) Natural Woman</b></a></li><li class="cor1"><i>3.</i> <a href="/kelly-clarkson/a-little-more-time-a-little-less-over/"><b>A Little More Time, a Little Less Over</b></a></li><li><i>4.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48314/" onclick="AbreNPL('kelly-clarkson',48314,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="A Moment Like This" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/a-moment-like-this/"><b>A Moment Like This</b></a></li><li class="cor1"><i>5.</i> <a href="/kelly-clarkson/a-whole-new-world/"><b>A Whole New World</b></a></li><li><i>6.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48315/" onclick="AbreNPL('kelly-clarkson',48315,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Addicted" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/addicted/"><b>Addicted</b></a></li><li class="cor1"><i>7.</i> <a href="/kelly-clarkson/after-the-love/"><b>After The Love</b></a></li><li><i>8.</i> <a href="/kelly-clarkson/aint-no-mountain-high-enough/"><b>Ain't No Mountain High Enough</b></a></li><li class="cor1"><i>9.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017044/" onclick="AbreNPL('kelly-clarkson',1017044,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="All I Ever Wanted" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/all-i-ever-wanted/"><b>All I Ever Wanted</b></a></li><li><i>10.</i> <a href="/kelly-clarkson/all-i-know/"><b>All I Know</b></a></li><li class="cor1"><i>11.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097238/" onclick="AbreNPL('kelly-clarkson',1097238,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Alone" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/alone/"><b>Alone</b></a></li><li><i>12.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017045/" onclick="AbreNPL('kelly-clarkson',1017045,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Already Gone" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/already-gone/"><b>Already Gone</b></a></li><li class="cor1"><i>13.</i> <a href="/kelly-clarkson/amame/"><b>Amame</b></a></li><li><i>14.</i> <a href="/kelly-clarkson/angel/"><b>Angel</b></a></li><li class="cor1"><i>15.</i> <a href="/kelly-clarkson/anymore/"><b>Anymore</b></a></li><li><i>16.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-41903/" onclick="AbreNPL('kelly-clarkson',41903,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Anytime" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/anytime/"><b>Anytime</b></a></li><li class="cor1"><i>17.</i> <a href="/kelly-clarkson/at-last/">At Last</a></li><li><i>18.</i> <a href="/kelly-clarkson/ave-maria/"><b>Ave Maria</b></a></li><li class="cor1"><i>19.</i> <a href="/kelly-clarkson/byl/">BYL</a></li><li><i>20.</i> <a href="/kelly-clarkson/back-again-feat-kalan-porter/"><b>Back Again (feat. Kalan Porter)</b></a></li><li class="cor1"><i>21.</i> <a href="/kelly-clarkson/bad-bitch/">Bad Bitch</a></li><li><i>22.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000884/" onclick="AbreNPL('kelly-clarkson',1000884,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Be Still" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/be-still/"><b>Be Still</b></a></li><li class="cor1"><i>23.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48316/" onclick="AbreNPL('kelly-clarkson',48316,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Beautiful Disaster" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/beautiful-disaster/"><b>Beautiful Disaster</b></a></li><li><i>24.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-50785/" onclick="AbreNPL('kelly-clarkson',50785,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Because Of You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/because-of-you/"><b>Because Of You</b></a></li><li class="cor1"><i>25.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48317/" onclick="AbreNPL('kelly-clarkson',48317,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Before Your Love" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/before-your-love/"><b>Before Your Love</b></a></li><li><i>26.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48318/" onclick="AbreNPL('kelly-clarkson',48318,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Behind These Hazel Eyes" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/behind-these-hazel-eyes/"><b>Behind These Hazel Eyes</b></a></li><li class="cor1"><i>27.</i> <a href="/kelly-clarkson/bleed-for-me/">Bleed For Me</a></li><li><i>28.</i> <a href="/kelly-clarkson/blue-christmas/">Blue Christmas</a></li><li class="cor1"><i>29.</i> <a href="/kelly-clarkson/boonapalist/">Boonapalist</a></li><li><i>30.</i> <a href="/kelly-clarkson/breakaway/"><b>Breakaway</b></a></li><li class="cor1"><i>31.</i> <a href="/kelly-clarkson/breakaway/">Breakaway</a></li><li><i>32.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097239/" onclick="AbreNPL('kelly-clarkson',1097239,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Breaking Your Own Heart" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/breaking-your-own-heart/"><b>Breaking Your Own Heart</b></a></li><li class="cor1"><i>33.</i> <a href="/kelly-clarkson/brighter-star/">Brighter Star</a></li><li><i>34.</i> <a href="/kelly-clarkson/call-me/"><b>Call Me</b></a></li><li class="cor1"><i>35.</i> <a href="/kelly-clarkson/call-me/">Call Me</a></li><li><i>36.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000885/" onclick="AbreNPL('kelly-clarkson',1000885,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Can I Have a Kiss" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/can-i-have-a-kiss/"><b>Can I Have a Kiss</b></a></li><li class="cor1"><i>37.</i> <a href="/kelly-clarkson/can-we-go-back/">Can We Go Back</a></li><li><i>38.</i> <a href="/kelly-clarkson/chivas/">Chivas</a></li><li class="cor1"><i>39.</i> <a href="/kelly-clarkson/cigarettes/">Cigarettes</a></li><li><i>40.</i> <a href="/kelly-clarkson/close-your-eyes/">Close Your Eyes</a></li><li class="cor1"><i>41.</i> <a href="/kelly-clarkson/come-back-to-me/"><b>Come Back To Me</b></a></li><li><i>42.</i> <a href="/kelly-clarkson/come-here/">Come Here</a></li><li class="cor1"><i>43.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017046/" onclick="AbreNPL('kelly-clarkson',1017046,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Cry" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/cry/"><b>Cry</b></a></li><li><i>44.</i> <a href="/kelly-clarkson/cryin/">Cryin'</a></li><li class="cor1"><i>45.</i> <a href="/kelly-clarkson/crystal-baller/">Crystal Baller</a></li><li><i>46.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097240/" onclick="AbreNPL('kelly-clarkson',1097240,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Dark Side" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/dark-side/"><b>Dark Side</b></a></li><li class="cor1"><i>47.</i> <a href="/kelly-clarkson/did-you/">Did You</a></li><li><i>48.</i> <a href="/kelly-clarkson/dirty-little-secret/">Dirty Little Secret</a></li><li class="cor1"><i>49.</i> <a href="/kelly-clarkson/does-he-love-you/">Does He Love You</a></li><li><i>50.</i> <a href="/kelly-clarkson/dont/"><b>Don't</b></a></li><li class="cor1"><i>51.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097241/" onclick="AbreNPL('kelly-clarkson',1097241,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Don't Be a Girl About It" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/dont-be-a-girl-about-it/">Don't Be a Girl About It</a></li><li><i>52.</i> <a href="/kelly-clarkson/dont-leave-me-feat-kalan-porter/">Don't Leave Me (feat. Kalan Porter)</a></li><li class="cor1"><i>53.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017047/" onclick="AbreNPL('kelly-clarkson',1017047,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Don't Let Me Stop You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/dont-let-me-stop-you/">Don't Let Me Stop You</a></li><li><i>54.</i> <a href="/kelly-clarkson/dont-play-that-song/">Don't Play That Song</a></li><li class="cor1"><i>55.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-45197/" onclick="AbreNPL('kelly-clarkson',45197,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Don't Waste Your Time" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/dont-waste-your-time/">Don't Waste Your Time</a></li><li><i>56.</i> <a href="/kelly-clarkson/donat-let-me-stop-you/">DonÂ’t Let Me Stop You</a></li><li class="cor1"><i>57.</i> <a href="/kelly-clarkson/donat-let-me-stop-you/">DonÂ’t Let Me Stop You</a></li><li><i>58.</i> <a href="/kelly-clarkson/dreams-can-come-true/">Dreams Can Come True</a></li><li class="cor1"><i>59.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097243/" onclick="AbreNPL('kelly-clarkson',1097243,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Einstein" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/einstein/"><b>Einstein</b></a></li><li><i>60.</i> <a href="/kelly-clarkson/empty-as-i-am/">Empty As I Am</a></li><li class="cor1"><i>61.</i> <a href="/kelly-clarkson/empty-handed/">Empty Handed</a></li><li><i>62.</i> <a href="/kelly-clarkson/every-little-bit/">Every Little Bit</a></li><li class="cor1"><i>63.</i> <a href="/kelly-clarkson/fading/">Fading</a></li><li><i>64.</i> <a href="/kelly-clarkson/far-from-home/">Far From Home</a></li><li class="cor1"><i>65.</i> <a href="/kelly-clarkson/fed-up/">Fed Up</a></li><li><i>66.</i> <a href="/kelly-clarkson/forever-part-of-me/">Forever Part of Me</a></li><li class="cor1"><i>67.</i> <a href="/kelly-clarkson/free-your-mind/">Free Your Mind</a></li><li><i>68.</i> <a href="/kelly-clarkson/game-over/"><b>Game Over</b></a></li></ul><ul class="listagens"><li class="cor1"><i>69.</i> <a href="/kelly-clarkson/go/">Go</a></li><li><i>70.</i> <a href="/kelly-clarkson/go-versao-completa/"><b>Go (versão completa)</b></a></li><li class="cor1"><i>71.</i> <a href="/kelly-clarkson/god-bless-the-usa/">God Bless The Usa</a></li><li><i>72.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-41343/" onclick="AbreNPL('kelly-clarkson',41343,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Gone" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/gone/"><b>Gone</b></a></li><li class="cor1"><i>73.</i> <a href="/kelly-clarkson/hand-me-downs/">Hand Me Downs</a></li><li><i>74.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000886/" onclick="AbreNPL('kelly-clarkson',1000886,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Haunted" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/haunted/">Haunted</a></li><li class="cor1"><i>75.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48319/" onclick="AbreNPL('kelly-clarkson',48319,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Hear Me" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/hear-me/">Hear Me</a></li><li><i>76.</i> <a href="/kelly-clarkson/heaven/"><b>Heaven</b></a></li><li class="cor1"><i>77.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097244/" onclick="AbreNPL('kelly-clarkson',1097244,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Hello" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/hello/"><b>Hello</b></a></li><li><i>78.</i> <a href="/kelly-clarkson/here-i-am/"><b>Here I Am</b></a></li><li class="cor1"><i>79.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000887/" onclick="AbreNPL('kelly-clarkson',1000887,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Hole" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/hole/">Hole</a></li><li><i>80.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097245/" onclick="AbreNPL('kelly-clarkson',1097245,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Honestly" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/honestly/"><b>Honestly</b></a></li><li class="cor1"><i>81.</i> <a href="/kelly-clarkson/how-i-feel/">How I Feel</a></li><li><i>82.</i> <a href="/kelly-clarkson/i-believe-in-miracles/"><b>I Believe In Miracles</b></a></li><li class="cor1"><i>83.</i> <a href="/kelly-clarkson/i-believe-in-you-and-me/"><b>I Believe In You And Me</b></a></li><li><i>84.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017048/" onclick="AbreNPL('kelly-clarkson',1017048,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="I Do Not Hook Up" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/i-do-not-hook-up/">I Do Not Hook Up</a></li><li class="cor1"><i>85.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097246/" onclick="AbreNPL('kelly-clarkson',1097246,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="I Forgive You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/i-forgive-you/">I Forgive You</a></li><li><i>86.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000888/" onclick="AbreNPL('kelly-clarkson',1000888,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="I Hate Myself For Losing You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/i-hate-myself-for-losing-you/">I Hate Myself For Losing You</a></li><li class="cor1"><i>87.</i> <a href="/kelly-clarkson/i-lost-my-heart/"><b>I Lost My Heart</b></a></li><li><i>88.</i> <a href="/kelly-clarkson/i-surrender/">I Surrender</a></li><li class="cor1"><i>89.</i> <a href="/kelly-clarkson/i-want-you/">I Want You</a></li><li><i>90.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017049/" onclick="AbreNPL('kelly-clarkson',1017049,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="I Want You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/i-want-you/"><b>I Want You</b></a></li><li class="cor1"><i>91.</i> <a href="/kelly-clarkson/i-will-survive/"><b>I Will Survive</b></a></li><li><i>92.</i> <a href="/kelly-clarkson/i-wish-i-could-be-lonely-instead/">I Wish I Could Be Lonely Instead</a></li><li class="cor1"><i>93.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1100664/" onclick="AbreNPL('kelly-clarkson',1100664,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="I'll Be Home for Christmas" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/ill-be-home-for-christmas/"><b>I'll Be Home for Christmas</b></a></li><li><i>94.</i> <a href="/kelly-clarkson/im-an-ugly-girl/">I'm An Ugly Girl</a></li><li class="cor1"><i>95.</i> <a href="/kelly-clarkson/im-gonna-wish-upon-a-star/">I'm Gonna Wish Upon A Star</a></li><li><i>96.</i> <a href="/kelly-clarkson/im-moving-on/">I'm Moving On</a></li><li class="cor1"><i>97.</i> <a href="/kelly-clarkson/im-not-the-only-one/"><b>I'm Not The Only One</b></a></li><li><i>98.</i> <a href="/kelly-clarkson/if-i-cant-have-you/">If I Can't Have You</a></li><li class="cor1"><i>99.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017050/" onclick="AbreNPL('kelly-clarkson',1017050,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="If I Can't Have You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/if-i-cant-have-you/"><b>If I Can't Have You</b></a></li><li><i>100.</i> <a href="/kelly-clarkson/if-i-canat-have-you/">If I CanÂ’t Have You</a></li><li class="cor1"><i>101.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1018571/" onclick="AbreNPL('kelly-clarkson',1018571,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="If No One Will Listen" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/if-no-one-will-listen/">If No One Will Listen</a></li><li><i>102.</i> <a href="/kelly-clarkson/impossible/">Impossible</a></li><li class="cor1"><i>103.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017051/" onclick="AbreNPL('kelly-clarkson',1017051,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Impossible" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/impossible/"><b>Impossible</b></a></li><li><i>104.</i> <a href="/kelly-clarkson/infatuation/">Infatuation</a></li><li class="cor1"><i>105.</i> <a href="/kelly-clarkson/inner-strength/">Inner Strength</a></li><li><i>106.</i> <a href="/kelly-clarkson/inner-strength/">Inner Strength</a></li><li class="cor1"><i>107.</i> <a href="/kelly-clarkson/inner-strength/">Inner Strength</a></li><li><i>108.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000889/" onclick="AbreNPL('kelly-clarkson',1000889,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Irvine" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/irvine/">Irvine</a></li><li class="cor1"><i>109.</i> <a href="/kelly-clarkson/irvinechivas/">Irvine/Chivas</a></li><li><i>110.</i> <a href="/kelly-clarkson/its-raining-men/">It's Raining Men</a></li><li class="cor1"><i>111.</i> <a href="/kelly-clarkson/jesus/">Jesus</a></li><li><i>112.</i> <a href="/kelly-clarkson/jesus-oh-what-a-wonderful-child/"><b>Jesus Oh What a Wonderful Child</b></a></li><li class="cor1"><i>113.</i> <a href="/kelly-clarkson/judas/"><b>Judas</b></a></li><li><i>114.</i> <a href="/kelly-clarkson/just-missed-the-train/">Just Missed The Train</a></li><li class="cor1"><i>115.</i> <a href="/kelly-clarkson/just-words/">Just Words</a></li><li><i>116.</i> <a href="/kelly-clarkson/ka-ching/">Ka-ching!</a></li><li class="cor1"><i>117.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097247/" onclick="AbreNPL('kelly-clarkson',1097247,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Let Me Down" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/let-me-down/">Let Me Down</a></li><li><i>118.</i> <a href="/kelly-clarkson/listen-to-your-heart/"><b>Listen To Your Heart</b></a></li><li class="cor1"><i>119.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017052/" onclick="AbreNPL('kelly-clarkson',1017052,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Long Shot" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/long-shot/">Long Shot</a></li><li><i>120.</i> <a href="/kelly-clarkson/love-feat-kalan-porter/"><b>Love (feat. Kalan Porter)</b></a></li><li class="cor1"><i>121.</i> <a href="/kelly-clarkson/low/">Low</a></li><li><i>122.</i> <a href="/kelly-clarkson/madness/">Madness</a></li><li class="cor1"><i>123.</i> <a href="/kelly-clarkson/maybe/">Maybe</a></li><li><i>124.</i> <a href="/kelly-clarkson/maybe-ill-get-it-right/"><b>Maybe I'll Get It Right</b></a></li><li class="cor1"><i>125.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48320/" onclick="AbreNPL('kelly-clarkson',48320,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Miss Independent" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/miss-independent/">Miss Independent</a></li><li><i>126.</i> <a href="/kelly-clarkson/miss-independent-long-version/">Miss Independent (Long Version)</a></li><li class="cor1"><i>127.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1091027/" onclick="AbreNPL('kelly-clarkson',1091027,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Mr. Know It All" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/mr-know-it-all/"><b>Mr. Know It All</b></a></li><li><i>128.</i> <a href="/kelly-clarkson/mrs-right/">Mrs. Right</a></li><li class="cor1"><i>129.</i> <a href="/kelly-clarkson/my-favorite-mistake/">My Favorite Mistake</a></li><li><i>130.</i> <a href="/kelly-clarkson/my-grown-up-christmas-list/">My Grown Up Christmas List</a></li><li class="cor1"><i>131.</i> <a href="/kelly-clarkson/my-last-broken-heart/"><b>My Last Broken Heart</b></a></li><li><i>132.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1011937/" onclick="AbreNPL('kelly-clarkson',1011937,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="My Life Would Suck Without You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/my-life-would-suck-without-you/"><b>My Life Would Suck Without You</b></a></li><li class="cor1"><i>133.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-43172/" onclick="AbreNPL('kelly-clarkson',43172,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Never Again" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/never-again/"><b>Never Again</b></a></li><li><i>134.</i> <a href="/kelly-clarkson/no-bad-news/">No Bad News</a></li><li class="cor1"><i>135.</i> <a href="/kelly-clarkson/no-way-no-how/"><b>No Way No How</b></a></li><li><i>136.</i> <a href="/kelly-clarkson/not-today/">Not Today</a></li></ul><ul class="listagens"><li class="cor1"><i>137.</i> <a href="/kelly-clarkson/number-one-feat-kalan-porter/"><b>Number One (feat. Kalan Porter)</b></a></li><li><i>138.</i> <a href="/kelly-clarkson/oh-holy-night/">Oh Holy Night</a></li><li class="cor1"><i>139.</i> <a href="/kelly-clarkson/old-man/">Old Man</a></li><li><i>140.</i> <a href="/kelly-clarkson/one-minute/">One Minute</a></li><li class="cor1"><i>141.</i> <a href="/kelly-clarkson/one-voice/">One Voice</a></li><li><i>142.</i> <a href="/kelly-clarkson/one-day/">One day</a></li><li class="cor1"><i>143.</i> <a href="/kelly-clarkson/open-arms/">Open Arms</a></li><li><i>144.</i> <a href="/kelly-clarkson/poison-candy/">Poison Candy</a></li><li class="cor1"><i>145.</i> <a href="/kelly-clarkson/queen-of-the-night/">Queen Of The Night</a></li><li><i>146.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1018572/" onclick="AbreNPL('kelly-clarkson',1018572,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Ready" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/ready/">Ready</a></li><li class="cor1"><i>147.</i> <a href="/kelly-clarkson/respect/">Respect</a></li><li><i>148.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1017053/" onclick="AbreNPL('kelly-clarkson',1017053,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Save You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/save-you/">Save You</a></li><li class="cor1"><i>149.</i> <a href="/kelly-clarkson/shelter/">Shelter</a></li><li><i>150.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-50904/" onclick="AbreNPL('kelly-clarkson',50904,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Since U Been Gone" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/since-u-been-gone/"><b>Since U Been Gone</b></a></li><li class="cor1"><i>151.</i> <a href="/kelly-clarkson/so-far-apart/">So Far Apart</a></li><li><i>152.</i> <a href="/kelly-clarkson/so-he-says/">So He Says</a></li><li class="cor1"><i>153.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-83131/" onclick="AbreNPL('kelly-clarkson',83131,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Sober" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/sober/"><b>Sober</b></a></li><li><i>154.</i> <a href="/kelly-clarkson/some-kind-of-miracle/">Some Kind of Miracle</a></li><li class="cor1"><i>155.</i> <a href="/kelly-clarkson/special-love/">Special Love</a></li><li><i>156.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097248/" onclick="AbreNPL('kelly-clarkson',1097248,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Standing In Front of You" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/standing-in-front-of-you/">Standing In Front of You</a></li><li class="cor1"><i>157.</i> <a href="/kelly-clarkson/stronger-what-doesnt-kill-you-nicky-romero-radio-mix/"><b>Stronger (What Doesn't Kill You) [Nicky Romero Radio Mix]</b></a></li><li><i>158.</i> <a href="/kelly-clarkson/stuff-like-that-there/">Stuff Like That There</a></li><li class="cor1"><i>159.</i> <a href="/kelly-clarkson/summer-nights-feat-kalan-porter-e-s-club7/">Summer Nights (feat. Kalan Porter & S Club7)</a></li><li><i>160.</i> <a href="/kelly-clarkson/take-me-away-feat-kalan-porter/"><b>Take Me Away (feat. Kalan Porter)</b></a></li><li class="cor1"><i>161.</i> <a href="/kelly-clarkson/take-my-breath-away-feat-kalan-porter/"><b>Take My Breath Away (feat. Kalan Porter)</b></a></li><li><i>162.</i> <a href="/kelly-clarkson/thankful/">Thankful</a></li><li class="cor1"><i>163.</i> <a href="/kelly-clarkson/thats-the-way-i-like/">That's The Way I Like</a></li><li><i>164.</i> <a href="/kelly-clarkson/thats-what-friends-are-for/">That's What Friends Are For</a></li><li class="cor1"><i>165.</i> <a href="/kelly-clarkson/the-day-we-fell-apart/">The Day We Fell Apart</a></li><li><i>166.</i> <a href="/kelly-clarkson/the-luv-the-bounce/">The Luv (The Bounce)</a></li><li class="cor1"><i>167.</i> <a href="/kelly-clarkson/the-star-spangled-banner/">The Star Spangled Banner</a></li><li><i>168.</i> <a href="/kelly-clarkson/the-story/">The Story</a></li><li class="cor1"><i>169.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097249/" onclick="AbreNPL('kelly-clarkson',1097249,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="The Sun Will Rise" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/the-sun-will-rise/"><b>The Sun Will Rise</b></a></li><li><i>170.</i> <a href="/kelly-clarkson/the-trouble-with-love-is/">The Trouble With Love Is</a></li><li class="cor1"><i>171.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097250/" onclick="AbreNPL('kelly-clarkson',1097250,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="The War Is Over" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/the-war-is-over/">The War Is Over</a></li><li><i>172.</i> <a href="/kelly-clarkson/think-twice/">Think Twice</a></li><li class="cor1"><i>173.</i> <a href="/kelly-clarkson/tienes-un-amigo/"><b>Tienes Un Amigo</b></a></li><li><i>174.</i> <a href="/kelly-clarkson/timeless/">Timeless</a></li><li class="cor1"><i>175.</i> <a href="/kelly-clarkson/tip-of-my-tongue/">Tip Of My Tongue</a></li><li><i>176.</i> <a href="/kelly-clarkson/to-make-you-feel-my-love/">To Make You Feel My Love</a></li><li class="cor1"><i>177.</i> <a href="/kelly-clarkson/turn-back-the-hands-of-time-feat-kalan-porter/">Turn Back The Hands Of Time (feat. Kalan Porter)</a></li><li><i>178.</i> <a href="/kelly-clarkson/u-r-ripping-us-apart/">U R Ripping Us Apart</a></li><li class="cor1"><i>179.</i> <a href="/kelly-clarkson/up-to-the-moutain/">Up To The Moutain</a></li><li><i>180.</i> <a href="/kelly-clarkson/vacation/">Vacation</a></li><li class="cor1"><i>181.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-41145/" onclick="AbreNPL('kelly-clarkson',41145,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Walk Away" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/walk-away/"><b>Walk Away</b></a></li><li><i>182.</i> <a href="/kelly-clarkson/walk-on-by/">Walk On By</a></li><li class="cor1"><i>183.</i> <a href="/kelly-clarkson/what-doesnt-kill-you-stronger/">What Doesn't Kill You (Stronger)</a></li><li><i>184.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1095178/" onclick="AbreNPL('kelly-clarkson',1095178,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="What Doesn't Kill You (Stronger)" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/what-doesnt-kill-you-stronger/"><b>What Doesn't Kill You (Stronger)</b></a></li><li class="cor1"><i>185.</i> <a href="/kelly-clarkson/what-hurts-the-most-feat-rascal-flatts/">What Hurts The Most (Feat. Rascal Flatts)</a></li><li><i>186.</i> <a href="/kelly-clarkson/what-if-feat-kalan-porter/">What If (feat. Kalan Porter)</a></li><li class="cor1"><i>187.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000890/" onclick="AbreNPL('kelly-clarkson',1000890,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="What's Up Lonely" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/whats-up-lonely/">What's Up Lonely</a></li><li><i>188.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48321/" onclick="AbreNPL('kelly-clarkson',48321,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Where Is Your Heart" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/where-is-your-heart/">Where Is Your Heart</a></li><li class="cor1"><i>189.</i> <a href="/kelly-clarkson/where-you-are-feat-kalan-porter/">Where You Are (feat. Kalan Porter)</a></li><li><i>190.</i> <a href="/kelly-clarkson/why/">Why</a></li><li class="cor1"><i>191.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097251/" onclick="AbreNPL('kelly-clarkson',1097251,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Why Don't You Try" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/why-dont-you-try/">Why Don't You Try</a></li><li><i>192.</i> <a href="/kelly-clarkson/why-you-wanna-bring-me-down/">Why You Wanna Bring Me Down</a></li><li class="cor1"><i>193.</i> <a href="/kelly-clarkson/whyyawannabringmedown/">Whyyawannabringmedown</a></li><li><i>194.</i> <a href="/kelly-clarkson/with-a-little-bit-of-luck/">With a Little Bit Of Luck</a></li><li class="cor1"><i>195.</i> <a href="/kelly-clarkson/without-you/"><b>Without You</b></a></li><li><i>196.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1000891/" onclick="AbreNPL('kelly-clarkson',1000891,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="Yeah" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/yeah/">Yeah</a></li><li class="cor1"><i>197.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1097252/" onclick="AbreNPL('kelly-clarkson',1097252,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="You Can't Win" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/you-cant-win/">You Can't Win</a></li><li><i>198.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-48322/" onclick="AbreNPL('kelly-clarkson',48322,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="You Found Me" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/you-found-me/"><b>You Found Me</b></a></li><li class="cor1"><i>199.</i>  <a href="http://www.kboing.com.br/kelly-clarkson/1-1096658/" onclick="AbreNPL('kelly-clarkson',1096658,1); return false;" class="noclick"><img src="http://imagens.kboing.com.br/kboing/imagens/play.gif" alt="You Love Me" align="absmiddle" border="0" WIDTH="14" HEIGHT="14"></a> <a href="/kelly-clarkson/you-love-me/"><b>You Love Me</b></a></li><li><i>200.</i> <a href="/kelly-clarkson/you-thought-wrong/">You Thought Wrong</a></li><li class="cor1"><i>201.</i> <a href="/kelly-clarkson/you-thought-wrong-featuring-tamyra-gray/">You Thought Wrong (featuring Tamyra Gray)</a></li><li><i>202.</i> <a href="/kelly-clarkson/youll-never-walk-alone/"><b>You'll Never Walk Alone</b></a></li><li class="cor1"><i>203.</i> <a href="/kelly-clarkson/youre-all-i-need/">You're All I Need</a></li><li><i>204.</i> <a href="/kelly-clarkson/your-love/">Your Love</a></li></ul><ul class="listagens">
+                </ul>
+             </div>
+       </div>
+
+<form id="fomrdns" name="formdns">
+<input type="hidden" id="artistaPg" name="artistaPg" value="Kelly Clarkson" />
+<input type="hidden" id="musicaPg" name="musicaPg" value="I Will Survive" />
+<input type="hidden" id="dnsLetra" name="dnsLetra" value="/kelly-clarkson/i-will-survive/" />
+<input type="hidden" id="id_bd_letra" name="id_bd_letra" value="538311" />
+</form>
+
+   <div id="tops-interna">
+    	
+        <div class="content-tops" id="top-mus">
+        	<div class="head-top"><img src="http://imagens.kboing.com.br/letras/imagens/top-musicas1.png" width="139" height="32" alt="top letras" />
+            	<h2><a href="/top-musicas.html">letras</a></h2>
+            </div>
+            	<ul class="tops">
+
+                    <li>
+                    	<a href="/paula-fernandes/nao-precisa-part-victor-e-leo/"><span class="bordas"><span class="sprite-art a1"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Não Precisa (part. Victor e Leo)</strong></a><br />
+                        <a href="/paula-fernandes/" class="art-top">Paula Fernandes</a> <i>1</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/patati-patata/se-voce-quer-sorrir/"><span class="bordas"><span class="sprite-art a2"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Se você quer sorrir</strong></a><br />
+                        <a href="/patati-patata/" class="art-top">Patati e Patata</a> <i>2</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/michel-telo/ai-se-eu-te-pego/"><span class="bordas"><span class="sprite-art a3"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Ai Se Eu Te Pego</strong></a><br />
+                        <a href="/michel-telo/" class="art-top">Michel Teló</a> <i>3</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/lady-gaga/you-and-i/"><span class="bordas"><span class="sprite-art a4"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Yoü And I</strong></a><br />
+                        <a href="/lady-gaga/" class="art-top">Lady Gaga</a> <i>4</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/daddy-kall/danca-kuduro-part-latino/"><span class="bordas"><span class="sprite-art a5"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Dança Kuduro (part. Latino)</strong></a><br />
+                        <a href="/daddy-kall/" class="art-top">Daddy Kall</a> <i>5</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/adele/someone-like-you/"><span class="bordas"><span class="sprite-art a6"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Someone Like You</strong></a><br />
+                        <a href="/adele/" class="art-top">Adele</a> <i>6</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/james-morrison/i-wont-let-you-go/"><span class="bordas"><span class="sprite-art a7"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">I Won't Let You Go</strong></a><br />
+                        <a href="/james-morrison/" class="art-top">James Morrison</a> <i>7</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/bruno-mars/talking-to-the-moon/"><span class="bordas"><span class="sprite-art a8"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Talking To The Moon</strong></a><br />
+                        <a href="/bruno-mars/" class="art-top">Bruno Mars</a> <i>8</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/avioes-do-forro-musicas/pensou-que-eu-ia-chorar-por-voce/"><span class="bordas"><span class="sprite-art a9"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Pensou Que Eu Ia Chorar Por Você</strong></a><br />
+                        <a href="/avioes-do-forro-musicas/" class="art-top">Aviões do Forró</a> <i>9</i>
+                    </li>
+			
+                    <li>
+                    	<a href="/avril-lavigne/wish-you-were-here/"><span class="bordas"><span class="sprite-art a10"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Wish You Were Here</strong></a><br />
+                        <a href="/avril-lavigne/" class="art-top">Avril Lavigne</a> <i>10</i>
+                    </li>
+			                </ul>
+        </div>
+        
+        <div class="content-tops" id="top-art">
+        	<div class="head-top"><img src="http://imagens.kboing.com.br/letras/imagens/top-artistas.png" width="149" height="32" alt="top artistas" />
+            	<h2><a href="/top-artistas.html">artistas</a></h2>
+            </div>
+            	<ul class="tops">
+
+                   <li>
+                    	<a href="/paula-fernandes/"><span class="bordas"><span class="sprite-art m1"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Paula Fernandes</strong></a><br /><br />
+                        <small>500045 exibi&ccedil;&otilde;es na semana</small>
+                        <i>1</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/luan-santana/"><span class="bordas"><span class="sprite-art m2"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Luan Santana</strong></a><br /><br />
+                        <small>281680 exibi&ccedil;&otilde;es na semana</small>
+                        <i>2</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/aline-barros/"><span class="bordas"><span class="sprite-art m3"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Aline Barros</strong></a><br /><br />
+                        <small>277978 exibi&ccedil;&otilde;es na semana</small>
+                        <i>3</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/jorge-mateus/"><span class="bordas"><span class="sprite-art m4"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Jorge e Mateus</strong></a><br /><br />
+                        <small>271557 exibi&ccedil;&otilde;es na semana</small>
+                        <i>4</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/gusttavo-lima/"><span class="bordas"><span class="sprite-art m5"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Gusttavo Lima</strong></a><br /><br />
+                        <small>252243 exibi&ccedil;&otilde;es na semana</small>
+                        <i>5</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/patati-patata/"><span class="bordas"><span class="sprite-art m6"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Patati e Patata</strong></a><br /><br />
+                        <small>221933 exibi&ccedil;&otilde;es na semana</small>
+                        <i>6</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/patati-patata/"><span class="bordas"><span class="sprite-art m7"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Patati Patatá</strong></a><br /><br />
+                        <small>221933 exibi&ccedil;&otilde;es na semana</small>
+                        <i>7</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/michel-telo/"><span class="bordas"><span class="sprite-art m8"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Michel Teló</strong></a><br /><br />
+                        <small>196792 exibi&ccedil;&otilde;es na semana</small>
+                        <i>8</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/bruno-mars/"><span class="bordas"><span class="sprite-art m9"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Bruno Mars</strong></a><br /><br />
+                        <small>187368 exibi&ccedil;&otilde;es na semana</small>
+                        <i>9</i>
+                    </li>
+			
+                   <li>
+                    	<a href="/exaltasamba-musicas/"><span class="bordas"><span class="sprite-art m10"></span></span><img src="http://imagens.kboing.com.br/letras/imagens/seta.png" width="15" height="16" alt="" class="imgseta" /> <strong class="n-art">Exaltasamba</strong></a><br /><br />
+                        <small>184566 exibi&ccedil;&otilde;es na semana</small>
+                        <i>10</i>
+                    </li>
+			                </ul>
+        </div>
+        
+    <div id="toplist3">    
+        <div class="publgoo">
+        	<i>Publicidade</i>
+        	<iframe name="publi300250" id="publi300250" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" align="center" width="300" height="250"></iframe>
+        </div>
+        
+         <div class="content-tops" id="top-twit">
+		<iframe title="" style="width: 300px; height: 40px;" class="twitter-follow-button" src="http://platform.twitter.com/widgets/follow_button.html#_=1312313101115&amp;align=&amp;button=blue&amp;id=twitter_tweet_button_0&amp;lang=pt&amp;link_color=&amp;screen_name=letraskboing&amp;show_count=false&amp;show_screen_name=&amp;text_color=" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fletraskboing&amp;width=295&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23fff&amp;stream=false&amp;header=false&amp;height=400" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:295px; height:400px;" allowTransparency="true"></iframe>
+         </div>
+        </div>
+    </div>
+      
+    
+	<div id="pub-superb"><iframe id="publisuperbanner" name="publisuperbanner" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" align="center" width="728" height="90" allowtransparency="true"></iframe></div>
+    </div>  
+   </div>   
+    
+        <div id="rodape">
+        	<a href="http://www.kboingnetworksdobrasil.com.br/" id="logo-rdp" class="noclick" title="kboing">&nbsp;</a>
+                <ul id="bxs-rdp">
+                	<li>
+                    	<span id="rdp-site"></span>
+                    	<ul>
+                            <li><a href="/myid/cadastro.html">cadastre-se</a></li>
+                            <li><a href="/top-musicas.html">top letras</a></li>
+                            <li><a href="/top-artistas.html">top artistas</a></li>
+                            <li><a href="http://www.kboing.com.br/promocoes/" target="_blank">promo&ccedil;&otilde;es</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                     	<span id="rdp-canais"></span>
+                    	<ul>
+                            <li><a href="http://www.kboing.com.br/musicas/" target="_blank">músicas</a></li>
+                            <li><a href="http://chat.kboing.com.br/" target="_blank">chat</a></li>
+                            <li><a href="http://webvideos.kboing.com.br/" target="_blank">webvideos</a></li>
+                            <li><a href="http://radios.kboing.com.br/" target="_blank">rádios</a></li>
+                            <li><a href="http://games.kboing.com.br/" target="_blank">games</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                     	<span id="rdp-sociais"></span>
+                        <ul id="rod-sociais">
+                        	<li><a href="http://twitter.com/letraskboing/" target="_blank"><img src="http://imagens.kboing.com.br/letras/imagens/twitter.png" width="54" height="54" alt="twitter letras" /></a></li>
+                            <li><a href="http://www.facebook.com/letraskboing/" target="_blank"><img src="http://imagens.kboing.com.br/letras/imagens/facebook.png" width="54" height="54" alt="facebook letras" /></a></li>
+                        </ul>
+                     </li>
+                </ul>
+                <p><a href="http://www.kboing.com.br/aviso-legal.html" target="_blank">Aviso Legal - Pol&iacute;tica de Privacidade</a></p>
+        </div>
+        
+
+    	<div id="bars_tk">
+    	<div id="bar_terra">
+			<iframe id="barraterratopo" frameborder="no" scrolling="no" width="941" height="24" allowtransparency="true"></iframe>
+        </div>
+        <div id="bar_kbo">
+        	     <ul id="menu_nav">
+                    <li id="logo_bar"><a href="http://www.kboing.com.br/" target="_blank" class="btn_nav"><img src="http://imagens.kboing.com.br/letras/imagens/bar_logo.png" width="58" height="19" alt="Kboing" /></a></li>
+                    <li><a href="http://www.kboing.com.br/musicas/" target="_blank" class="btn_nav">músicas</a></li>
+                    <li><a href="http://letras.kboing.com.br/" target="_blank" class="btn_nav">letras de músicas</a></li>
+                    <li><a href="http://radios.kboing.com.br/" target="_blank" class="btn_nav">rádios</a></li>
+                    <li><a href="http://chat.kboing.com.br/" target="_blank" class="btn_nav">chat</a></li>
+                    <li><a href="http://games.kboing.com.br/" target="_blank" class="btn_nav">games</a></li>
+                    <li><a href="http://emoticons.kboing.com.br/" target="_blank" class="btn_nav">emoticons</a></li>
+                    <li><a href="http://webvideos.kboing.com.br/" target="_blank" class="btn_nav">webvideos</a></li>
+                    <li><a href="http://www.kboing.com.br/papeldeparede/" target="_blank" class="btn_nav">papel de parede</a></li>
+                   </ul>
+        </div>
+	</div>
+
+		 
+	</div>  
+
+<div style="height:24px;width:120px; position:absolute;top:145px; left:50%;overflow:hidden; margin-left:-492px;">
+<iframe src="http://www.facebook.com/plugins/like.php?href=facebook.com%2Fletraskboing&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;font=verdana&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowTransparency="true"></iframe>
+</div>
+	</div> 
+
+
+
+<!-- PALYER COMECA AQUI -->
+<div id="pl-static" style="bottom:-91px;">
+	<div id="pl_menu_vd">
+    	<div id="pl_bx_video">
+        	<div id="controls_vdo">
+                <span id="vd_desce"></span>
+                <span id="vd_move"></span>
+                <div id="vd_control">
+                	<div id="vd_quali"></div>
+			<span id="vd_diminui"></span><span id="vd_aumenta"></span><span id="vd_tela"></span>
+		</div>
+                </div>
+
+          <div id="pl_video"></div>
+        </div>
+    	<div id="pl_menu">
+        	<div id="pl_mus"><strong></strong> <span></span></div>
+            <span class="mostra_plst"></span>
+            <span id="pl_top_r">
+            	<span id="pl_excl" class="tooltip" desc="Limpar playlist"></span>
+                <span id="pl_save" class="tooltip" desc="Salvar playlist"></span>
+                <span class="sobe_vdo tooltip" desc="Mostrar vídeo"></span>
+            </span>
+        </div>
+        <div id="pl_plst">
+        	<span id="plst_tras"></span>
+         <div id="bx_vdo_plst">
+            <ul id="vdo_plst">
+
+            </ul>
+         </div>
+            <span id="plst_frente"></span>
+        </div>
+<div id="bx_pl_rolagem"><div id="pl_rolagem" style="display:none"></div></div>
+    </div>
+</div> <!-- pl_static -->    
+
+ <div id="bx_pl_controls">  
+    <div id="pl_vdo_controls">
+    	<div id="pl_controls">   
+    		<span id="pl_play"></span> 
+            <span id="pl_vdo_ant"></span>
+            <span id="pl_vdo_prox"></span>
+            <span id="pl_vdo_alea"></span> 
+            <span id="pl_vdo_rep" class="rep_on on"></span>
+            <div id="vd_volume">
+            <span id="pl_volume"></span>
+                <div id="volume"></div>
+            </div>
+        </div>
+
+      <div id="bg_timeline">
+        <div id="slider-range-min">
+        	<div id="loader" style="width:0%"><div id="loading_vdo"></div></div>
+        </div>
+      </div>
+
+        <div id="pl_total_time">
+        	<span id="timeAtual">00:00</span>&nbsp;/&nbsp;<span id="timeTotal">00:00</span> 
+        </div>
+        </div>
+
+    </div>
+
+
+<ul id="opt_primeiro" class="pl_opt_nav">
+	<li class="op_mais"><span></span>Compartilhar</li>
+	<li class="op_menos" id="add_plst"><span></span>Adicionar à playlist</li>
+    <li  style="border:none;" id="add_fav"><span></span>Adicionar à favoritas</li>
+</ul>
+<ul id="pl_opt_compart" class="pl_opt_nav">
+  <li id="facebook"><span></span>Facebook</li>
+  <li id="twitter"><span></span>Twitter</li>
+
+  <li id="orkut" style="border:none;"><span></span>Orkut</li>
+</ul>
+
+<ul id="painel_compart" class="pl_opt_nav">
+	<li id="faceCompart"><span></span>Facebook</li>
+	<li id="twitCompart"><span></span>Twitter</li>
+    <li id="orkutCompart" style="border:none;"><span></span>Orkut</li>
+</ul>
+
+
+<!-- MODAL FOTO CADASTRO -->
+<b id="foto_modal" style="display:none;"></b>
+<div id="modal_avatar" class="bx_modal" style="width:790px;z-index:990;margin-left:-400px;display:none;position:absolute;z-index:999999">
+	<span class="m_sup_esq">
+    	<span class="tit_m"></span>
+    </span>
+    <div class="inf_esq">
+        <div class="content_m">
+        	<strong class="m_tit">EDITE SUA FOTO</strong>
+            	<p class="m_desc">Se você quiser recortar a sua foto, basta arrastar a caixa de corte para a região desejada e usar os cantos para aumentar ou diminuir a área de corte. Você também pode usar a foto original.<br /><br /></p>
+                <div style="width:740px;height:100%; display:inline-block; margin-bottom:10px;">
+                   <div style="float:left;width:620px;">
+                    	<center id="imgpreview"> </center>
+                    </div>
+                	<div style="width:115px;height:74px;overflow:hidden;border:solid 1px #e2e2e2;"> 
+				<img src="" id="preview" style="height:115px;width:74px;" />
+			 </div> 
+		</div> 
+               <div class="cad-campo m_botoes">
+                    <a href="#" class="m_btn noclick" id="avatarnaorecortar">usar foto original</a>
+		    <a href="#" class="m_btn noclick" id="avatarrecortar">recortar foto</a>
+               </div>
+            </div>
+        </div>
+        <a class="m_fechar noclick" id="fechamodalavatar"></a>
+</div> 
+
+<b id="fundoModal" style="display:none;"></b>
+
+    	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{"parsetags": "explicit",lang: "pt-BR"}</script>
+
+<script type="text/javascript" language="javascript">
+<!--//
+	var terra_info_service = "ParBR_300155";
+	var terra_info_channel = "br.diversao.musica";
+	var terra_info_type = "www";
+	var terra_info_id = "page";
+	var terra_stats_idCrtfc = 300155;
+	var terra_stats_uv_c = "kboing";
+//-->
+</script>
+<script type="text/javascript" charset="iso-8859-1" language="javascript" src="http://stf.terra.com.br/metrics/js/br/contentpar.js"></script>
+
+	<script type="text/javascript">
+	<!--
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-347067-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	//-->
+	</script>
+
+</body>
+</html>

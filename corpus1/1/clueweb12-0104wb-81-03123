@@ -1,0 +1,774 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-13T06:53:07Z
+WARC-TREC-ID: clueweb12-0104wb-81-03123
+WARC-Target-URI: http://www.cs.trinity.edu/~joldham0/3352/finances/project-2000Apr10/
+WARC-Payload-Digest: sha1:SMHXQ2RRGPHRGO4RG5ZU75ZFGZNL3PBZ
+WARC-IP-Address: 131.194.71.168
+WARC-Record-ID: <urn:uuid:40a8930e-b8c8-455e-bd83-18368155fead>
+Content-Type: application/http; msgtype=response
+Content-Length: 27280
+
+HTTP/1.1 200 OK
+Date: Mon, 13 Feb 2012 06:53:07 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Thu, 07 Feb 2002 17:18:42 GMT
+ETag: "551872a-6983-44062080"
+Accept-Ranges: bytes
+Content-Length: 27011
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Accumulation and Withdrawal Program Specification1</TITLE>
+<META NAME="description" CONTENT="Accumulation and Withdrawal Program Specification1">
+<META NAME="keywords" CONTENT="project-2000Apr10">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="project-2000Apr10.css">
+</HEAD>
+<BODY >
+
+<H1 ALIGN=CENTER>Accumulation and Withdrawal Program Specification<A NAME="tex2html2"
+ HREF="#foot115"><SUP>1</SUP></A></H1>
+<P ALIGN=CENTER><STRONG><A NAME="tex2html3"
+ HREF="http://www.cs.trinity.edu/~joldham0">Jeffrey&nbsp;D. Oldham</A></STRONG></P>
+<BR><P ALIGN=CENTER><I>Date:</I> 2000 Apr&nbsp;18</P>
+<P ALIGN=LEFT></P>
+
+<P>
+We sketch the withdrawal and accumulation program specification,
+outlining its input, output, and computation.
+
+<P>
+
+<H1><A NAME="SECTION00010000000000000000">
+Revisions</A>
+</H1>
+
+<P>
+2000Apr27: Added age to C++ program input specification.
+	   Added specification of C++ program's output.
+
+<P>
+2000Apr25: Added financial target inflation boolean to the input.
+
+<P>
+2000Apr18: Changed the monthly modification specification from
+proportional splitting to a 50%/50% split between capital
+appreciation and income return.  Rationale: Proportional splitting is
+hard to specify if one return rate is positive and one is negative.
+Suggestions for a more realistic arrangement are solicited.
+
+<P>
+2000Apr18: Added input specification for the C++ program to the end of
+Section&nbsp;<A HREF="project-2000Apr10.html#outline-section">2</A>.
+
+<P>
+
+<H1><A NAME="SECTION00020000000000000000">&#160;</A>
+<A NAME="outline-section">&#160;</A>
+<BR>
+Program Outline
+</H1>
+
+<P>
+The program consists of three separate pieces:
+<UL>
+<LI>a WWW interface taking input from the user and displaying the
+results,
+<LI>a CGI program checking the input for correct values, invoking
+the underlying program, and sending its results as a WWW page, and
+<LI>the withdrawal and accumulation program using historical data to 
+determine the probability of reaching one's financial goal.
+</UL>
+<P>
+Throughout the specification, we note possible features for future
+versions of the program.  We need not program these for this version.
+
+<P>
+
+<H1><A NAME="SECTION00030000000000000000">
+Input</A>
+</H1>
+
+<P>
+We specify the input from the user's point of view, i.e., what the WWW 
+interface provides.  The user needs to specify
+<UL>
+<LI>the monetary amounts,
+<LI>time periods,
+<LI>asset allocations, and
+<LI>tax information.
+</UL>
+<P>
+
+<H2><A NAME="SECTION00031000000000000000">
+Monetary Amounts</A>
+</H2>
+
+<P>
+The user should specify the monetary amounts:
+<DL>
+<DT><STRONG>initial amount:</STRONG>
+<DD>the initial amount of money to invest.  For the 
+withdrawal problem, this is the monetary amount of investments.  A
+default value of $0 will ease input for the accumulation problem.
+<DT><STRONG>increment amount:</STRONG>
+<DD>the amount of money to invest every time
+period.  A negative amount indicates a periodic withdrawal.  A default 
+value of $100 might be nice.
+<DT><STRONG>increment inflation:</STRONG>
+<DD>a boolean indicating whether the increment 
+amount should be inflated by the Consumer Price Index&nbsp;(CPI).  A value
+of true indicates the increment amount should be increased every month
+by the monthly CPI.  A value of false indicates the amount should
+remain unchanged during the entire simulation.  A default value of
+true will ease input for the withdrawal problem.
+<DT><STRONG>financial target:</STRONG>
+<DD>the desired ending amount of money.  For the
+withdrawal problem, this is probably $0, i.e., the ending amount of
+money is at least $0.  A default value of $0 will ease input for the 
+withdrawal problem.
+<DT><STRONG>financial target inflation:</STRONG>
+<DD>a boolean indicating whether the
+desired ending amount of money should be inflated by the CPI.  For the
+withdrawal problem, the financial target is probably $0 so the
+boolean's value is moot.  For the accumulation problem, specifying a
+true value will indicate the financial target is specified in current
+dollars and a false value will indicate the target is in future
+dollars.  A default value of true will ease input.
+</DL>All monetary amounts should be rounded to the nearest dollar.
+Only the increment amount may be negative.
+
+<P>
+
+<H2><A NAME="SECTION00032000000000000000">
+Time Periods</A>
+</H2>
+
+<P>
+The user should specify the time periods:
+<DL>
+<DT><STRONG>time frame:</STRONG>
+<DD>the length of time to invest the money.  A default
+value of twenty-five years may ease input for the withdrawal problem.
+<DT><STRONG>increment time period:</STRONG>
+<DD>the length of time between periodic
+investments.  At the end of each increment time period, the increment
+amount (inflated if appropriate) is added to the investment.  The time
+frame need not be a multiple of the increment time period.  A default
+value of twelve months may ease input.
+</DL>Time periods must have positive length.  Since we will use monthly
+historical data, the smallest unit for time periods should be one
+month.  The WWW page designers should produce the clearest interface
+permitting time periods up to the nearest month.
+
+<P>
+In an advanced version, we may permit specifying the range of
+historical data to use.  For example, users might specify simulating
+using post-WWII data only.
+
+<P>
+The initial money is assumed to be invested at the beginning of the
+time frame.  The first increment occurs at the end of the first time
+period.  All investments are sold at the end of the time frame.  For
+example, consider a time frame of twenty-three years starting in 1926
+with an increment time period of five years.  The initial investment
+is made 1926 Jan&nbsp;01.  Incremental investments occur on the last day of 
+1930, 1935, 1940, and 1945.  The entire investment is sold on the last 
+day of&nbsp;1948.
+
+<P>
+
+<H2><A NAME="SECTION00033000000000000000">
+Asset Allocations</A>
+</H2>
+
+<P>
+The user should specify the desired asset allocation.  Every
+rebalancing time period, assets are sold or purchased to move the
+investment back to the desired allocation.
+
+<P>
+Some users may wish to specify a fixed asset allocation, choosing
+among the following assets:
+<DL>
+<DT><STRONG>large company stocks:</STRONG>
+<DD>stocks of the largest U.S.-based
+companies.  For recent years, this is just the S&amp;P 500.
+<DT><STRONG>long-term government bonds:</STRONG>
+<DD>bonds usually with a twenty-year
+maturity invested in the U.S. federal government.
+<DT><STRONG>intermediate-term government bonds:</STRONG>
+<DD>bonds with at least a
+five-year maturity invested in the U.S. federal government.
+<DT><STRONG>U.S. Treasury bills:</STRONG>
+<DD>in financial jargon, ``cash.''  This is
+invested in the shortest period risk-free U.S. government debt with at
+least one month in maturity.  As cash, the bills provide no capital
+appreciation.
+</DL>The asset allocations should be specified as integral percentages
+totalling to&nbsp;100.  Default values of 
+<!-- MATH: $(60, 0, 30, 10)$ -->
+(60, 0, 30, 10) might ease user
+input.
+
+<P>
+Alternatively, the user could specify one of three age-dependent
+formulae:
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">strategy</TD>
+<TD ALIGN="CENTER">stock allocation</TD>
+<TD ALIGN="CENTER">LT government bond allocation</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">conservative</TD>
+<TD ALIGN="CENTER">
+<!-- MATH: $\min(125-\text{age},100)$ -->
+min(125 - age, 100)</TD>
+<TD ALIGN="CENTER">remainder</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">moderate</TD>
+<TD ALIGN="CENTER">
+<!-- MATH: $\min(135-\text{age},100)$ -->
+min(135 - age, 100)</TD>
+<TD ALIGN="CENTER">remainder</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">aggressive</TD>
+<TD ALIGN="CENTER">
+<!-- MATH: $\min(145-\text{age},100)$ -->
+min(145 - age, 100)</TD>
+<TD ALIGN="CENTER">remainder</TD>
+</TR>
+</TABLE>
+<P>
+Thus, the user should also supply a starting age.
+
+<P>
+The historical data for small company stocks and long-term corporate
+bonds does not provide separate capital appreciation and income
+returns so we omit these asset classes from our simulation.  An
+advanced version might include small company stock data, assuming no
+income return.  An advanced version computing for tax-free
+accumulation or withdrawal might also include long-term corporate
+bonds.
+
+<P>
+
+<H2><A NAME="SECTION00034000000000000000">
+Tax Information</A>
+</H2>
+
+<P>
+The program will simulate investment growth in either a tax-free or a
+taxable account, as specified by the user.  If the investment is held
+in a taxable account, the user should specify:
+<DL>
+<DT><STRONG>long-term capital gains tax rate:</STRONG>
+<DD>the tax rate for
+long-term capital gains.  For simplicity, the long-term capital gains
+tax rate is applied to any asset held (strictly) longer than one year,
+while the short-term rate is applied for any asset held twelve months
+or less.  For simplicity, the short-term rate equals the ordinary
+income tax rate.  The rate must be in the range [0, 100]. A default
+value of 20, i.e., a rate of 20%, might ease user input.
+<DT><STRONG>ordinary income tax rate:</STRONG>
+<DD>the tax rate for short-term
+capital gains, dividends, and ordinary income.  The rate must be in
+the range [0, 100].  A default value of 28, i.e., a rate of 28%
+might ease user input.
+<DT><STRONG>holding time period for assets:</STRONG>
+<DD>the length of time to hold an
+asset before it is sold.  For example, the user could specify all
+stocks and bonds are held for five years and then sold.
+Alternatively, we could have specified an average annual turnover
+rate, i.e., what fraction of the portfolio is sold every year.
+</DL>
+<P>
+The program assumes:
+<UL>
+<LI>All investments are sold at the end of the time frame with the
+appropriate taxes paid.
+<LI>All taxes are paid when an asset is sold even if this is during
+the middle of the calendar year.
+<LI>Selling assets at a loss does not incur any taxes, but the loss
+does not reduce the taxes on income or future year's taxes.
+</UL>
+<P>
+A future version might use historical tax information to 1)&nbsp;provide
+more accurate calculations and 2)&nbsp;show whether market returns and tax
+rates are correlated.  It may also incorporate the actual historical
+capital gains tax rules, which have varied through time.
+
+<P>
+
+<H2><A NAME="SECTION00035000000000000000">
+Sensitivity Analysis</A>
+</H2>
+
+<P>
+The WWW page need not ask the user for sensitivity analysis input.  A
+future version may require input.
+
+<P>
+The underlying computation should support modifying the historical
+monthly return rates by a given fixed percentage.  A positive number
+indicates exceeding historical return rates, while a (more likely)
+negative number indicates not attaining the historical rates.  For
+assets with return rates specified separately as capital appreciation
+and income returns, the percentage should be split evenly.
+
+<P>
+As an aside, the annual modification amount&nbsp;<I>M</I> technically depends on
+the monthly returns according to the formula:
+
+<!-- MATH: \begin{displaymath}
+M \approx m\left(\frac{1}{1+r_{\text{\scriptsize jan}}} + \ldots +
+\frac{1}{1+r_{\text{\scriptsize dec}}}\right),
+\end{displaymath} -->
+
+<P></P>
+<DIV ALIGN="CENTER">
+<I>M</I> <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\displaystyle \approx$">
+<I>m</I><IMG
+ WIDTH="21" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\displaystyle \left(\vphantom{\frac{1}{1+r_{\text{\scriptsize jan}}} + \ldots +
+\frac{1}{1+r_{\text{\scriptsize dec}}}}\right.$"><IMG
+ WIDTH="69" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\displaystyle {\frac{1}{1+r_{\text{\scriptsize jan}}}}$">
++...+ <IMG
+ WIDTH="70" HEIGHT="58" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\displaystyle {\frac{1}{1+r_{\text{\scriptsize dec}}}}$">
+<IMG
+ WIDTH="21" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\displaystyle \left.\vphantom{\frac{1}{1+r_{\text{\scriptsize jan}}} + \ldots +
+\frac{1}{1+r_{\text{\scriptsize dec}}}}\right)$">,
+</DIV><P></P>
+where <I>m</I> is the monthly modification amount.  For our purposes, we
+will approximate this formula as <I>M</I> = 12<I>m</I>.
+
+<P>
+
+<H2><A NAME="SECTION00036000000000000000">
+C++ Program Input Specification</A>
+</H2>
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="c++-program-input">&#160;</A><A NAME="57">&#160;</A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+C++ Program Input Specification</CAPTION>
+<TR><TD><IMG
+ WIDTH="556" HEIGHT="957"
+ SRC="img7.gif"
+ ALT="\begin{table}\small
+\begin{tabularx}{\textwidth}{XXl} \hline
+initial investment ...
+...& string \\
+file of inflation data & string \\ \hline
+\end{tabularx}\end{table}"></TD></TR>
+</TABLE>
+</DIV>
+<BR>
+<P>
+The C++ program's input should be read from the command-line
+arguments.  See Table&nbsp;<A HREF="project-2000Apr10.html#c++-program-input">1</A>.  Note that either the
+choice of the age-varying asset allocation formula and the age xor the
+fixed asset allocations are specified in the input.  Also, the tax
+rates are omitted if taxes are not being computed.  Collin and I
+decided to omit the database file names.  The C++ program and not the
+CGI program will probably know their location.
+
+<P>
+Craig recommends that all input processing be performed inside some
+function to modularize the code.
+
+<P>
+
+<H1><A NAME="SECTION00040000000000000000">
+Output</A>
+</H1>
+
+<P>
+The withdrawal and accumulation program produces the probability of
+meeting or exceeding the financial goal and also produces the average
+and standard deviation of the time frames' investment amounts.  The
+probability, specified as the ratio of time frames meeting or
+exceeding the goal to the number of time frames, should be displayed
+as an integral percentage with maximum value&nbsp;100%.  To avoid
+misleading the user, the average and standard deviation should perhaps
+be rounded to three significant digits.
+
+<P>
+Probabilities should be displayed assuming
+<UL>
+<LI>the user's investment actually attains the historical rate data,
+<LI>the user's investment has a monthly modification amount of
+-0.03%, and
+<LI>the user's investment has a monthly modification amount of -0.10%.
+</UL>
+<P>
+A future version might display histograms of the ending amounts.
+
+<P>
+
+<H2><A NAME="SECTION00041000000000000000">
+Output from the Computation Program</A>
+</H2>
+
+<P>
+For one set of input, the C++ program will produce the following
+output all on one line.
+<UL>
+<LI>an integer indicating success, i.e., 0, or failure, i.e., a
+nonnegative integer not 0,
+<LI>the probability of success as an integer in the range [0, 100],
+<LI>the average ending investment value as a nonnegative integer
+with three significant digits,
+<LI>the standard deviation of the ending investment value as a
+nonnegative integer with three significant digits.
+</UL>
+<P>
+
+<H1><A NAME="SECTION00050000000000000000">
+Computation</A>
+</H1>
+
+<P>
+First, we will describe a computation without capital gains taxes.
+Then, we will revise the computation to incorporate capital gains
+taxes.
+
+<P>
+
+<H2><A NAME="SECTION00051000000000000000">
+Dealing with the Historical Data</A>
+</H2>
+
+<P>
+The program should compute the probability of success and the average
+and standard deviation over all time frames.  So that the historical
+return data need not be repeatedly read from disk, it could be read
+into STL vectors.  Secondly, this data might be packaged in a class
+with a function returning the historical rate for a specified asset,
+year, month, and income or capital appreciation.  Using such a class
+will hopefully avoid indexing problems.
+
+<P>
+A statistics class accumulating the probability of success, the
+average, and the standard deviation could ease collecting this data.
+Its constructor could take the desired target.  Every time an
+additional piece of data is computed, a class member function could be
+invoked.  Its destructor could print the statistics.
+
+<P>
+In the text below, we will concentrate on determining the final
+investment value for a particular time frame.  We will assume the
+program will loop through all possible time frames.
+
+<P>
+
+<H2><A NAME="SECTION00052000000000000000">
+Tax-free Accumulation and Withdrawal</A>
+</H2>
+
+<P>
+To compute the final tax-free accumulation or withdrawal amount,
+useful values include
+<DL>
+<DT><STRONG>total investment value:</STRONG>
+<DD>the total value of all investments at
+any particular time
+<DT><STRONG>current asset allocation:</STRONG>
+<DD>a mapping from asset type to the
+percentage invested in the particular asset.  For example, stocks
+could form 0.60 fraction of the total investment.  It might be useful
+to make a C++ asset allocation class.  This class could include the
+person's age if appropriate.
+<DT><STRONG>increment amount:</STRONG>
+<DD>the amount to increment the investment.  This 
+amount is inflated if specified by the user.
+<DT><STRONG>months until incrementing:</STRONG>
+<DD>the number of months until the
+investment should be incremented.
+<DT><STRONG>months until finish:</STRONG>
+<DD>the number of months until the time frame ends.
+</DL>
+<P>
+The steps to perform at the time frame's beginning include:
+<DL COMPACT>
+<DT>1.
+<DD>Set the initial asset allocation.
+<DT>2.
+<DD>Set the total investment value and the increment value to the
+appropriate values.
+<DT>3.
+<DD>Set the months until incrementing and the months until finishing 
+to the appropriate values.
+</DL>
+<P>
+The steps to perform at the end of each month and beginning of the
+next month include:
+<DL COMPACT>
+<DT>1.
+<DD>Increase the investment in each asset by the asset's return that 
+month.
+
+<!-- MATH: \begin{displaymath}
+\text{monthly rate} = \text{capital appreciation} +
+\text{income rate} + \text{monthly modification}
+\end{displaymath} -->
+
+<P></P>
+<DIV ALIGN="CENTER">
+monthly rate = capital appreciation + income rate + monthly modification
+</DIV><P></P>
+<DT>2.
+<DD>Inflate the increment amount if appropriate.
+<DT>3.
+<DD>If the investment should be incremented, increase its value and
+reset the number of months until the next increment.
+<DT>4.
+<DD>Decrement the number of months until the time frame ends.
+<DT>5.
+<DD>Update the asset allocation according to the formula if
+using an age-dependent formula.
+</DL>
+<P>
+When the simulation of this time frame ends, record the total
+investment's worth.
+
+<P>
+
+<H2><A NAME="SECTION00053000000000000000">
+Taxed Accumulation and Withdrawal</A>
+</H2>
+
+<P>
+(This presentation is different that that discussed in class Thursday,
+13&nbsp;April.  I conjecture this approach is more precise than the
+approximation discussed in class.)
+
+<P>
+Taxes on income could easily be incorporated by modifying the monthly
+return rate to pay taxes monthly.  Taxes on appreciated assets are
+more complicated because the capital gains tax due is the product of
+the increase in the asset's value and the capital gains tax rate.
+Thus, we will need to remove the basis of all purchased assets subject 
+to capital appreciation.
+
+<P>
+
+<H3><A NAME="SECTION00053100000000000000">
+Values and Data Structures</A>
+</H3>
+
+<P>
+Useful values and data structures include
+<DL>
+<DT><STRONG>current asset allocation:</STRONG>
+<DD>a mapping from asset type to the
+percentage invested in the particular asset.  For example, stocks
+could form 0.60 fraction of the total investment.  It might be useful
+to make a C++ asset allocation class.  This class could include the
+person's age if appropriate.
+<DT><STRONG>increment amount:</STRONG>
+<DD>the amount to increment the investment.  This 
+amount is inflated if specified by the user.
+<DT><STRONG>months until incrementing:</STRONG>
+<DD>the number of months until the
+investment should be incremented.
+<DT><STRONG>months until finish:</STRONG>
+<DD>the number of months until the time frame ends.
+</DL>
+<P>
+For each asset subject to capital gains, we should record the month of
+each purchase, its purchase price, and its current value.  When the
+difference between the current month and a purchase's date equals the
+asset holding time period, that purchase should be sold.  Each month's
+purchases is added to the other end of the queue.  Recording the total
+value of each asset simplifies some calculations.  Cash, i.e.,
+U.S. Treasury bills, are not subject to capital appreciation.
+
+<P>
+The steps to perform at the time frame's beginning include:
+<DL COMPACT>
+<DT>1.
+<DD>Set the initial asset allocation.
+<DT>2.
+<DD>For each asset, purchase the appropriate amount of assets.
+<DT>3.
+<DD>Set the increment value to the appropriate value.
+<DT>4.
+<DD>Set the months until incrementing and the months until finishing 
+to the appropriate values.
+</DL>
+<P>
+
+<H3><A NAME="SECTION00053200000000000000">
+Each Month's Computation</A>
+</H3>
+
+<P>
+The steps to perform at the end of each month and the beginning of the 
+next month mimic the actions a human investor would perform.
+<DL COMPACT>
+<DT>1.
+<DD>Income from each asset is computed using the assets' income
+return rate and the user's ordinary income tax rate.  For example, the 
+income from the large company stock holding is the product of
+<UL>
+<LI>the total large company stock value,
+<LI>the stock income return rate plus a proportion of the monthly
+  modification amount, and
+<LI>one minus the ordinary income tax rate.
+  </UL>Since this income is received as cash, this income is added to the
+U.S. Treasury bill asset, but be sure to compute the income on the
+U.S. Treasury bill asset first.
+<DT>2.
+<DD>Asset values are increased by the capital appreciation rate.
+That is, the current values of all assets are multiplied by the asset's
+capital appreciation return rate plus a proportion of the monthly
+modification amount.
+<DT>3.
+<DD>Asset purchases held for the entire asset holding period are
+sold and capital gains taxes are paid.  The amount received equals the 
+asset's current value.  The capital gains tax equals the product of
+the capital gains tax rate and the difference between the asset's
+current value and its purchase price.  If the difference is negative,
+the tax is zero.  Proceeds are paid in cash so they are added to the
+U.S. Treasury bill asset.
+<DT>4.
+<DD>Inflate the increment amount if appropriate.
+<DT>5.
+<DD>If the investment should be incremented, increase the Treasury
+bill asset and reset the number of months until the next increment.
+<DT>6.
+<DD>Decrement the number of months until the time frame ends.
+<DT>7.
+<DD>Update the asset allocation according to the formula if
+using an age-dependent formula.
+<DT>8.
+<DD>Redistribute the assets to meet the asset allocation.  The
+presence of capital gains taxes complicates this calculation.
+</DL>
+<P>
+
+<H3><A NAME="SECTION00053300000000000000">
+Reallocating Assets in the Presence of Capital Gains Taxes</A>
+</H3>
+
+<P>
+Overallocated assets, i.e., assets exceeding their allocation, should
+be sold to purchase underallocated assets.  Purchasing assets incurs
+no penalties, while selling assets requires paying capital gains
+taxes.  The amount of capital gains taxes to pay depends on each
+purchase's initial price.
+
+<P>
+A series of formula manipulations yields a set of linear equations to
+solve.  Underallocated assets are omitted from the linear equations.
+Assume assets types 1,&nbsp;2, and&nbsp;3 are overallocated.  Let <I>A</I><SUB>i</SUB> be the
+desired asset allocation fraction, e.g., 0.60, for each type&nbsp;<I>i</I>.  Let
+<I>a</I><SUB>i</SUB> represent the total dollar amount invested in the asset.  Let
+<I>t</I> represent the total dollar amount in all assets.  Let <I>g</I><SUB>i</SUB>represent the marginal capital gains tax rate for the oldest purchase
+in asset type&nbsp;<I>i</I>.  For example, suppose the initial price of the
+oldest purchase may have been $100, its current value is $150, and
+the capital gains tax rate is 20%.<A NAME="tex2html5"
+ HREF="#foot92"><SUP>2</SUP></A>  The marginal
+capital gains tax rate is the ratio of the tax paid if all of the
+purchase is sold to the purchase's value, i.e., the ratio of
+
+<!-- MATH: $0.20 * \max(0,150-100)$ -->
+0.20*max(0, 150 - 100) and&nbsp;150.  Let <I>f</I><SUB>i</SUB> represent the fraction of
+the asset to sell.
+
+<P>
+Solve this set of linear equations for&nbsp;<I>f</I><SUB>i</SUB>.
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{equation*}
+\setcounter{MaxMatrixCols}{3}
+\begin{bmatrix}
+(A_1 - 1)(1-g_1)a_1	& A_1 (1-g_2)a_2	& A_1 (1-g_3)a_3 \\
+A_2(1-g_1)a_1		& (1-A_2) (1-g_2)a_2	& A_2 (1-g_3)a_3 \\
+A_3(1-g_1)a_1		& A_3 (1-g_2)a_2	& (1-A_3) (1-g_3)a_3
+\end{bmatrix}
+\setcounter{MaxMatrixCols}{1}
+\begin{bmatrix}
+f_1 \\f_2 \\f_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+A_1 t - a_1 \\
+A_2 t - a_2 \\
+A_3 t - a_3
+\end{bmatrix}
+\end{equation*} -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="512" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$\displaystyle \begin{bmatrix}(A_1 - 1)(1-g_1)a_1 & A_1 (1-g_2)a_2 & A_1 (1-g_3)...
+... (1-g_3)a_3 \\ A_3(1-g_1)a_1 & A_3 (1-g_2)a_2 & (1-A_3) (1-g_3)a_3\end{bmatrix}$"><IMG
+ WIDTH="47" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\displaystyle \begin{bmatrix}f_1 \\ f_2 \\ f_3\end{bmatrix}$">
+= <IMG
+ WIDTH="99" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\displaystyle \begin{bmatrix}A_1 t - a_1 \\ A_2 t - a_2 \\ A_3 t - a_3\end{bmatrix}$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<P>
+Among all the assets with <I>f</I><SUB>i</SUB><I>a</I><SUB>i</SUB> greater than the oldest purchase's
+current value, sell the asset with the smallest marginal capital gains
+tax rate so minimize the tax paid.  If this occurs, form a new set of
+linear equations and repeat the calculation.  Finally, all the <I>f</I><SUB>i</SUB><I>a</I><SUB>i</SUB> products are less than or equal to asset's oldest purchases'
+current values, sell <I>f</I><SUB>i</SUB><I>a</I><SUB>i</SUB> from each asset, adding the money to the 
+U.S. Treasury bill asset.  Then purchase underallocated assets using
+cash from the U.S. Treasury bill asset.  The previously overallocated
+asset amounts should remain unchanged.
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<DT><A NAME="foot115">... Specification</A><A NAME="foot115"
+ HREF="project-2000Apr10.html#tex2html2"><SUP>1</SUP></A>
+<DD>&#169;2000
+<A NAME="tex2html1"
+ HREF="mailto:oldham@cs.trinity.edu">Jeffrey&nbsp;D.
+Oldham </A>.
+All rights reserved.  This document may not be redistributed in any form
+without the express permission of the author.
+
+<DT><A NAME="foot92">...%.</A><A NAME="foot92"
+ HREF="project-2000Apr10.html#tex2html5"><SUP>2</SUP></A>
+<DD>Use the ordinary income
+tax rate if the asset was held twelve months or less.
+
+</DL>
+<BR><HR>
+<ADDRESS>
+<I></I>
+<BR><I>2000-04-28</I>
+</ADDRESS>
+</BODY>
+</HTML>

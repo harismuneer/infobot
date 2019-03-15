@@ -1,0 +1,310 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-21T15:23:57Z
+WARC-TREC-ID: clueweb12-1609wb-99-28275
+WARC-Target-URI: http://www.ulimana.com/research/benefits-of-chocolate-and-raw-cacao/
+WARC-Payload-Digest: sha1:YGHGFLB2FLLRK6RJ6V56RUAARFFVQ2OL
+WARC-IP-Address: 75.127.125.116
+WARC-Record-ID: <urn:uuid:0031aeab-893e-4e9b-8b96-8eb3f18cd54b>
+Content-Type: application/http; msgtype=response
+Content-Length: 23357
+
+HTTP/1.1 200 OK
+Date: Sat, 21 Apr 2012 15:24:07 GMT
+Server: Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635
+X-Powered-By: PHP/5.3.10
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+X-Pingback: http://www.ulimana.com/xmlrpc.php
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+    <!-- JQuery -->
+	<script type="text/javascript" src="http://www.ulimana.com/scripts/jquery-1.4.2.min.js"></script>
+
+	<!-- Colorbox -->
+	<link type="text/css" media="screen" rel="stylesheet" href="http://www.ulimana.com/scripts/colorbox/colorbox.css" />
+	<script type="text/javascript" src="http://www.ulimana.com/scripts/colorbox/jquery.colorbox-min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$(".colorbox").colorbox({ iframe: true, innerWidth: 660, innerHeight: 740, opacity: 0.6 });
+		});
+
+	</script>
+	<!-- Colorbox ends -->
+
+
+    <!-- Shadowbox -->
+    <link rel="stylesheet" type="text/css" href="http://www.ulimana.com/scripts/shadowbox/shadowbox.css">
+    <script type="text/javascript" src="http://www.ulimana.com/scripts/shadowbox/shadowbox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Shadowbox.init();
+        });
+    </script>
+    <!-- Shadowbox ends -->
+
+	<meta charset="UTF-8" />
+	<title>
+	Benefits of Chocolate and Raw Cacao | UliMana Organic Raw Chocolate Truffles	</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://www.ulimana.com/wp-content/themes/ulimana/style.css" />
+	<link rel="pingback" href="http://www.ulimana.com/xmlrpc.php" />
+
+
+<!-- Jquery Cycles -->
+
+<script type="text/javascript" src="http://www.ulimana.com/scripts/cycle/jquery.cycle.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#cycles').cycle({ fx: 'fade', speed: '500', timeout: '5000', pager: '#pager', pagerAnchorBuilder: pagerLinks });
+
+		function pagerLinks(ind, el) {
+			return '<a href="#"></a>';
+		}
+
+		//Cycles Pause/Resume
+		$('.pause a').click(function () { $('#cycles').cycle('pause'); $('.pause').hide(); $('.resume').show(); });
+		$('.resume a').click(function () { $('#cycles').cycle('resume'); $('.resume').hide(); $('.pause').show(); }); 
+
+
+	});
+</script>
+
+<!-- Jquery Cycles ends -->
+
+    <script type="text/javascript">
+	
+		$(document).ready(function () {
+			$('#menu-item-81, .sub-nav').hover(
+            function () { $('.sub-nav').show(); },
+            function () { $('.sub-nav').hide(); }
+        );
+
+		});
+	
+</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="UliMana Organic Raw Chocolate Truffles &raquo; Feed" href="http://www.ulimana.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UliMana Organic Raw Chocolate Truffles &raquo; Comments Feed" href="http://www.ulimana.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UliMana Organic Raw Chocolate Truffles &raquo; Benefits of Chocolate and Raw Cacao Comments Feed" href="http://www.ulimana.com/research/benefits-of-chocolate-and-raw-cacao/feed/" />
+	<!-- Shopp dynamic catalog styles -->
+	<style type="text/css">
+	#shopp ul.products li.product { width: 33%; } /* For grid view */
+	</style>
+	<!-- END Shopp dynamic catalog styles -->
+<link rel='stylesheet' id='shopp.catalog-css'  href='http://www.ulimana.com/wp-content/plugins/shopp/core/ui/styles/catalog.css?ver=1.1.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='shopp-css'  href='http://www.ulimana.com/wp-content/themes/ulimana/shopp/shopp.css?ver=1.1.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='shopp.colorbox-css'  href='http://www.ulimana.com/wp-content/plugins/shopp/core/ui/styles/colorbox.css?ver=1.1.9' type='text/css' media='screen' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.ulimana.com/wp-content/plugins/contact-form-7/styles.css?ver=3.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.ulimana.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.ulimana.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://www.ulimana.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ulimana.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ulimana.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='UliMana Organic Raw Chocolate Truffles' href='http://www.ulimana.com/' />
+<link rel='up' title='Research' href='http://www.ulimana.com/research/' />
+<link rel='prev' title='Contact Us' href='http://www.ulimana.com/contact-us/' />
+<link rel='next' title='Coconut Oil Benefits' href='http://www.ulimana.com/research/coconut-oil-benefits/' />
+<meta name="generator" content="WordPress 3.2.1" />
+		
+<link rel='alternate' type="application/rss+xml" title="UliMana Organic Raw Chocolate Truffles Catalog Products RSS Feed" href="http://www.ulimana.com/products/category/catalog/feed/" />
+
+
+
+</head>
+
+<body class="page page-id-53 page-child parent-pageid-9 page-template page-template-template-inner-php">
+<div id="wrapper" class="hfeed">
+
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="logo"><a href="http://www.ulimana.com/"><img src="http://www.ulimana.com/images/structure/ulimana-logo.png" alt="Ulimana"></a></div>
+                <div id="header-info">
+					<a class="facebook" href="https://www.facebook.com/ulimana" target="_blank"></a>
+					<a class="twitter" href="http://twitter.com/#!/UliMana" target="_blank"></a>
+					
+                    <div id="phone"><p>(828) 713-3469 </p></div>
+                    <div id="customer-service"><a class="shopping-bag" href="http://www.ulimana.com/products/cart/">0 Items in Shopping Bag</a><div class="text-spacer">|</div><a class="checkout" href="http://www.ulimana.com/checkout/">Checkout</a></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="nav-wrapper">
+            <div id="nav">
+								<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-24"><a href="http://www.ulimana.com/">Home</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://www.ulimana.com/products/">Products</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-23"><a href="http://www.ulimana.com/research/">Research</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://www.ulimana.com/about-us/">About Us</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://www.ulimana.com/testimonials/">Testimonials</a></li>
+<li id="menu-item-19" class="last menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://www.ulimana.com/contact-us/">Contact Us</a></li>
+</ul></div>            </div>
+        </div>
+
+	<div id="content-wrapper">
+            <div id="content">
+
+<div id="column-right" class="inner">
+
+  <div class="content-padding">
+    <div class="padding">  
+    <div id="post-53" class="post-53 page type-page status-publish hentry">
+    <h1 class="entry-title">Benefits of Chocolate and Raw Cacao</h1>
+      <div class="entry-content">
+        <p><a href="http://www.ulimana.com/research/">Back to Research</a></p>
+<p>Graph designed from information gathered at Natural News: Examining the Properties of Chocolate and Cacao for Health. Source: Source: US department of Agriculture/Journal of American Chemical Society and Brunswick Laboratories MA, USA</p>
+<h3>Antioxidant rating (ORAC), per 100g</h3>
+<p><img src="http://www.ulimana.com/images/research-graph.png" alt="Antioxidant rating ORAC" /></p>
+<h4><a href="http://www.nature.com/jcbfm/journal/v30/n12/full/jcbfm201053a.html" target="_blank">The flavanol (−)-epicatechin prevents stroke damage through the Nrf2/HO1 pathway</a></h4>
+<p>This study in the Journal of Cerebral Blood Flow and Metabolism indicates that the flavanols found in cacao may be helpful in preventing additional neural damage in the case of a stroke. This could indicate a protective function for the flavanols found in cacao, as cocoa was specifically used as part of the trial.</p>
+<h4><a href="http://consumer.healthday.com/Article.asp?AID=638860" target="_blank">Ingredient in Dark Chocolate Could Guard Against Stroke</a></h4>
+<p>Additional details on the neuro-benefits of cocoa and more layman&#8217;s terms about the latest research from the Journal of Cerebral Blood Flow &#038; Metabolism.</p>
+<h4><a href="http://ajcn.cnfindpark.cn/cgi/content/abstract/88/1/58" target="_blank">Dark Chocolate and Cacao on Endothelial Function</a></h4>
+<p>This study in the American Journal of Clinical Nutrition shows that heart health is increased by consumption of cacao. Blood pressure is reduced, and endothelial function improved in overweight adults.</p>
+<h4><a href="http://www.naturalnews.com/024769.html" target="_blank">Improve Your Health and Well-Being with Raw Chocolate</a></h4>
+<p>&#8220;Chocolate contains more magnesium than any other food. Magnesium is the number one mineral deficiency in the west. It is the most powerful stress relieving mineral. It also relaxes the muscles and builds strong bones and teeth.&#8221; What more do you need?</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1360667/?tool=pubmed" target="_blank">Chocolate and Prevention of Cardiovascular Disease: A Systematic Review</a></h4>
+<p>Chocolate again scores well in a literature review for protective effects against heart disease. From the article published in Nutrition &#038; Metabolism (Jan 3, 2006,) &#8220;The body of short-term randomized feeding trials suggests cocoa and chocolate may exert beneficial effects on cardiovascular risk via effects on lowering blood pressure, anti-inflammation, anti-platelet function, higher HDL, decreased LDL oxidation&#8221; and &#8220;Meanwhile, the large body of prospective studies of flavonoids suggests the flavonoid content of chocolate may reduce risk of cardiovascular mortality. Our updated meta-analysis indicates that intake of flavonoids may lower risk of CHD mortality&#8221;.</p>
+<h4><a href="http://archinte.ama-assn.org/cgi/content/short/166/4/411" target="_blank">Cocoa Intake, Blood Pressure, and Cardiovascular Mortality</a></h4>
+<p>Another study, from the Archives of Internal Medicine February 2006.</p>
+<h4><a href="http://www.cienciateca.com/chocolate%20antioxidante.pdf" target="_blank">Plasma antioxidants from chocolate: Dark chocolate may offer its consumers health benefits the milk variety cannot match.</a></h4>
+<p>Chocolate has been shown to have excellent antioxidant levels. ORAC (Oxygen Radical Absorbance Capacity) values of dark chocolate (13,120 per 100 grams) exceed those of prunes (5, 700); blueberries (2,400), strawberries (1,540) and spinach (1,260). Adding milk to chocolate does not help, in fact, it seems to block the activity of the phytochemicals responsible for the powerful antioxidant capacity of cacao. The August 28, 2003 issue of the journal Nature has a great article discussing the power of dark chocolate, of which, cacao is the key ingredient.</p>
+<h4><a href="http://www.naturalnews.com/033515_chocolate_heart_disease.html" target="_blank">Chocolate and cocoa polyphenols vindicated in the war against heart disease</a></h4>
+<p>Researchers from the University of Cambridge in England have finally published solid evidence to demonstrate the consumption of chocolate is associated with improved heart and vascular health. Writing in the prestigious BMJ (British Medical Journal), Dr. Oscar Franco and his team determined several factors including diet, exercise, body weight control and lifestyle changes could help reduce the risk of heart disease, a condition expected to claim the lives of nearly 24 million people worldwide by the year 2030. The study authors found that the antioxidant and anti-inflammatory properties of cocoa from chocolate consumption could reduce heart disease risk by one-third and could also reduce the risk of sudden death from a heart attack and stroke incidence.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/14640573?dopt=Citation" target="_blank">Cocoa has more phenolic phytochemicals and a higher antioxidant capacity than teas and red wine.</a></h4>
+<p>Cacao, &#8216;the food of the gods&#8217; has received considerable attention lately as it has been found to contain one of the highest levels of antioxidants on the planet, exceeding red wine, green tea, and other exotic fruits and vegetables. Recently published in the peer-reviewed Journal of Agricultural Food Chemistry (December 3, 2003) is an article titled &#8220;Cocoa has more phenolic phytochemicals and a higher antioxidant capacity than teas and red wine&#8221;.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/15755830?dopt=Abstract" target="_blank">Administration of dark chocolate is followed by significant increase in insulin sensitivity and a decrease in blood pressure.</a></h4>
+<p>Cacao is showing benefits for reduction in blood pressure and greater insulin sensitivity in healthy persons. In an article titled &#8220;Short-term administration of dark chocolate is followed by a significant increase in insulin sensitivity and a decrease in blood pressure in healthy persons&#8221; published in the American Journal of Clinical Nutrition, March 2005, insulin sensitivity was improved almost 12% in 15 test subjects given dark chocolate and systolic blood pressure dropped almost 6% among the same group.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/15777537?dopt=Abstract" target="_blank">Suppressive effects of cacao polyphenols on LDL oxidation and the development of atherosclerosis in rabbits.</a></h4>
+<p>More testing shows that the antioxidant effects of cacao are helpful in arteriosclerosis. Testing with laboratory rabbits showed, &#8220;The antioxidative effect of Cacao Liquor Polyphenols was superior to those of the well-known antioxidative substances, vitamin C, vitamin E and probucol.&#8221; Arteriosclerosis, April 2005.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/15223075?dopt=Abstract" target="_blank">Flavanol-rich cocoa drink lowers free radical oxidative damage in humans.</a></h4>
+<p>Cacao may help lower the oxidative stress of strenuous activities &#8211; thus helping athletes to recover. Recent research &#8220;conclude[s] that dietary flavanols, using cocoa drink as example, can lower the plasma level of F(2)-isoprostanes, indicators of in vivo lipid peroxidation.&#8221; Free Radical Biological Medicine, August 2004.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/15087264?dopt=Abstract" target="_blank">Chocolate&#8217;s polyphenols on bowel health, antioxidant activity, and hydroxyl radical production.</a></h4>
+<p>Free radical decreases have been noticed in subjects eating chocolate. In one trial there was a 16% drop in the amount of expelled free-radicals, indicating a higher antioxidant level in the subjects taking chocolate. Found in Nutr. Cancer, Vol 47, Iss 2, 2003.</p>
+<h4><a href="http://www.ncbi.nlm.nih.gov/pubmed/14709774?dopt=Abstract" target="_blank">Ingestion of proanthocyanidins from cacao inhibits diabetes-induced cataract formation.</a></h4>
+<p>The procyanidin found in Cacao have also been shown to inhibit cataract formation in diabetic lab rats. Experimental Biological Medicine, January, 2004.</p>
+<h4><a href="http://www.naturalnews.com/033463_chocolate_heart_disease.html" target="_blank">Scientists announce amazing findings: chocolate offers huge protection from heart disease and stroke</a></h4>
+<p>All regular readers of NaturalNews know that researchers have discovered chocolate (especially the organic, not junked up with additives and sugar type) contains phytochemicals which appear to promote good health. But no one has had much of a clue about the specifics of some of those benefits on the cardiovascular system &#8212; until now. Scientists at the European Society of Cardiology Congress currently underway in Paris just announced that chocolate provides huge protection from heart disease as well as stroke.</p>
+                      </div><!-- .entry-content -->
+ 
+  </div>
+  <!-- #post-## -->
+
+     </div>
+  </div>
+
+</div>  
+  
+
+<div id="column-left">
+                
+                    <div id="side-nav">
+                      
+                        <div class="tab-bar">
+                          <div class="leaf"></div>
+                          <h3>SHOP BY FLAVOR</h3>
+                        </div>
+                        <div class="tabs-wide">
+                            <ul>
+                              <li><a class="red" href="http://www.ulimana.com/products/category/flavor/goji-cherry-truffles/">Goji Cherry Truffles</a></li>
+                              <li><a class="yellow" href="http://www.ulimana.com/products/category/flavor/cacao-nib-truffles/">Cacao Nib Truffles</a></li>
+                              <li><a class="orange" href="http://www.ulimana.com/products/category/flavor/mayan-raw-truffles/">Mayan Raw Truffles</a></li>
+                              <li><a class="orange-brown" href="http://www.ulimana.com/products/category/flavor/coco-nectar-truffles/">Coco Nectar Truffles</a></li>
+                              <li><a class="violet" href="http://www.ulimana.com/products/category/flavor/dark-cacao-raw-truffles/">Dark Cacao Raw Truffles</a></li>
+                              <li><a class="green" href="http://www.ulimana.com/products/category/flavor/peppermint-raw-truffles/">Peppermint Raw Truffles</a></li>
+                              <li><a class="blue" href="http://www.ulimana.com/products/category/flavor/coconut-raw-truffles/">Coconut Raw Truffles</a></li>
+                              <li><a class="red-brown" href="http://www.ulimana.com/products/category/flavor/hemp-raw-truffles/">Hemp Raw Truffles</a></li>
+                              <li><a class="purple" href="http://www.ulimana.com/products/category/flavor/tulsi-tea-truffles/">Tulsi Tea Truffles</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-bar">
+                          <span class="leaf"></span>
+                          <h3>Specialty Treats</h3>
+                        </div>
+                        <div class="tabs-wide">
+                          <ul>
+                              <li><a class="brown" href="http://www.ulimana.com/products/category/flavor/mannas-spreads/">Manas & Spreads</a></li>                                   
+                              
+                              <li><a class="yellow" href="http://www.ulimana.com/products/category/flavor/lemon-fig-drops/">Lemon Fig Drops</a></li>
+                              <li><a class="red" href="http://www.ulimana.com/products/category/flavor/chia-moon-drops/">Chia Moon Drops</a></li>
+                              
+                            </ul>
+                        </div>
+                        <div class="tab-bar">
+                          <div class="leaf"></div>
+                          <h3>SHOP BY PRICE</h3>
+                        </div>
+
+                        <div class="tabs-small">
+                            <ul>
+                              <li><a href="http://www.ulimana.com/products/category/price/15-and-up/">$15 and Up</a></li>
+                              <li><a href="http://www.ulimana.com/products/category/price/under-10/">Under $10</a></li>
+                              <li><a href="http://www.ulimana.com/products/category/price/sampler-packs/">Sampler Packs</a></li>
+                            </ul>
+                        </div>
+                    
+                                        <div class="side-offer"><img src="http://www.ulimana.com/images/free-shipping.png" alt="Free Standard Shipping" /></div>                    
+                    <div class="side-offer"><br />
+                      <div class="subscribe">
+                        <div class="subscribe">
+                          <p>Sign up for our Newsletter!</p>
+
+
+
+                          <form action="http://sharphue.createsend.com/t/r/s/cikiuj/" method="post" id="subForm">
+                            <input type="text" name="cm-cikiuj-cikiuj" id="cikiuj-cikiuj"  class="email-address">
+                            <input class="signup-btn" src="http://www.ulimana.com/images/structure/signup-btn.png" type="image">
+                          </form>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                                        
+                </div> <!-- end #column-left -->
+
+
+		</div><!-- #content -->
+    </div><!-- #content-wrapper -->
+
+	<div id="footer" role="contentinfo">
+        <div id="footer-left">
+        
+        <div class="payment-icons">                        
+                        <img src="/~sweetiqu/images/payment-icons/paypal.gif" />
+                                            
+                    </div>
+        </div>
+        <div id="footer-right"><p>Copyright &copy; 2012 Ulimana. All Rights Reserved. <a href="http://www.sharphue.com" target="_blank">Web Design</a> by Sharp Hue, Inc.</p></div>
+    </div> 
+
+
+<script type='text/javascript' src='http://www.ulimana.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.ulimana.com/wp-content/plugins/contact-form-7/scripts.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://www.ulimana.com/?sjsl=colorbox,shopp,catalog,cart&amp;c=1&amp;ver=98239bb061a58639408323699680ad0e'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sjss = {cp: "1",c: "$",p: "2",t: ",",d: ".",g: "3",nocache: "",REQUIRED_FIELD: "Your %s is required.",INVALID_EMAIL: "The e-mail address you provided does not appear to be a valid address.",MIN_LENGTH: "The %s you entered is too short. It must be at least %d characters long.",PASSWORD_MISMATCH: "The passwords you entered do not match. They must match in order to confirm you are correctly entering the password you want to use.",REQUIRED_CHECKBOX: "%s must be checked before you can proceed."};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3494884-1");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

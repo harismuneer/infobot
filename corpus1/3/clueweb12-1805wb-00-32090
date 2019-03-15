@@ -1,0 +1,344 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-30T11:22:26Z
+WARC-TREC-ID: clueweb12-1805wb-00-32090
+WARC-IP-Address: 204.3.153.210
+WARC-Payload-Digest: sha1:G5LL4C5C4GICWTY44L4ZXGQITWJLV73I
+WARC-Target-URI: http://marcjlane.com/index.php?src=news&submenu=Media&srctype=detail&category=Speeches%20and%20Presentations&refno=261
+WARC-Record-ID: <urn:uuid:d542d28b-de0c-4424-8c73-783e421b2912>
+Content-Type: application/http; msgtype=response
+Content-Length: 33317
+
+HTTP/1.1 200 OK
+Date: Mon, 30 Apr 2012 11:22:29 GMT
+Server: Apache/2.2.21 (Unix) PHP/5.2.17 with Suhosin-Patch mod_ssl/2.2.17 OpenSSL/1.0.0g mod_apreq2-20051231/2.6.0 mod_perl/2.0.5 Perl/v5.8.9
+X-Powered-By: PHP/5.2.17
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+X-Empowered-By: Freedom/7.2
+Connection: close
+Content-Type: text/html
+
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Marc J. Lane Wealth Group - Speeches and Presentations</title>
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<script type="text/javascript" src="/freedom_html/common/ulmenu.js"></script>
+<script type="text/javascript" src="graphics/swfobject.js"></script>
+<link href="graphics/stylesheet_redesign.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="graphics/stylesheet_redesign_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 7]>
+<link href="graphics/stylesheet_redesign_ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="/graphics/js/jquery-1.3.2.min.js"></script>
+<link href="graphics/js/shadowbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="graphics/js/shadowbox.js"></script>
+<script type="text/javascript" src="/graphics/js/init.js"></script>
+
+<script type="text/javascript">
+
+// Heinle's function for retrieving a cookie.
+function getCookie(name){
+  var cname = name + "=";
+  var dc = document.cookie;
+  if (dc.length > 0) {
+    begin = dc.indexOf(cname);
+    if (begin != -1) {
+      begin += cname.length;
+      end = dc.indexOf(";", begin);
+      if (end == -1) end = dc.length;
+        return unescape(dc.substring(begin, end));
+    }
+  }
+  return null;
+}
+
+// An adaptation of Dorcht's function for setting a cookie.
+function setCookie(name, value, expires, path, domain, secure) {
+  document.cookie = name + "=" + escape(value) +
+  ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
+  ((path == null) ? "" : "; path=" + path) +
+  ((domain == null) ? "" : "; domain=" + domain) +
+  ((secure == null) ? "" : "; secure");
+}
+
+// An adaptation of Dorcht's function for deleting a cookie.
+function delCookie (name,path,domain) {
+  if (getCookie(name)) {
+    document.cookie = name + "=" +
+    ((path == null) ? "" : "; path=" + path) +
+    ((domain == null) ? "" : "; domain=" + domain) +
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+  }
+}
+
+var firstCall = true;
+
+function changeFontsize(fSize, increment) {
+  if (firstCall) {
+    firstCall = false;
+    if (increment != "")
+      changeFontsize('14', '');
+  }
+  if (document.getElementsByTagName) {
+    tags = new Array ( "p", "li", "h2", "h3", "h4", "h5", "h6" );
+    for (j=0; j<tags.length; j++) {
+      var getElement = document.getElementsByTagName(tags[j]);
+      var eachElement, currentFontSize, fontIncrease, newFontSize;
+      for (i=0; i<getElement.length; i++) {
+        eachElement = getElement[i];
+        if (increment != "") {
+          currentFontSize = parseInt(eachElement.style.fontSize);
+          fontIncrease = parseInt(increment);
+          newFontSize = currentFontSize + fontIncrease;
+          }
+        else if (fSize != "")
+          newFontSize = parseInt(fSize);
+        if (tags[j] == "li")
+          eachElement.style.lineHeight = Math.round(newFontSize*1.2) + "px";
+        else
+          eachElement.style.lineHeight = Math.round(newFontSize*1.5) + "px";
+        if (fSize != "") {
+          switch(tags[j]) {
+          case "h2": newFontSize += 3; break;
+          case "h3": newFontSize += 2; break;
+          case "h4": newFontSize += 1; break;
+          case "h5": newFontSize += 1; break;
+          case "h6": newFontSize += 1;
+          }
+        }
+        eachElement.style.fontSize = newFontSize + "px";
+        setCookie('fontSize', newFontSize);
+      }
+    }
+  }
+}
+
+</script>
+</head>
+
+<body onload="initULMenu('menu_redesign'); if (getCookie('fontSize')) changeFontsize(getCookie('fontSize'), '');">
+
+<!-- Google Analytics code placed in header for RSS link tracking -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4720753-10");
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6348107-2");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<div id="container"> 
+ 
+  <div class="menu">
+  <div id="menu_redesign">
+ <ul class="menu_redesign">
+   <li class="item1"><a class="first"  href="index.php?submenu=About&amp;src=gendocs&amp;ref=AboutUs&amp;category=Main">About Us</a>
+   <ul>
+     <li class="item1"><a class="first"  href="index.php?submenu=About_Overview&amp;src=gendocs&amp;ref=Overview&amp;category=About">Overview</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=About_Overview&amp;src=gendocs&amp;ref=LegalSolutions&amp;category=About_Overview">Legal Solutions</a></li>
+       <li class="item2"><a  href="index.php?submenu=About_Overview&amp;src=gendocs&amp;ref=WealthManagement&amp;category=About_Overview">Wealth Management</a></li>
+       <li class="item3"><a  href="index.php?submenu=About_Overview&amp;src=gendocs&amp;ref=RiskManagement&amp;category=About_Overview">Risk Management</a></li>
+       <li class="item4"><a class="last"  href="index.php?submenu=About_Overview&amp;src=gendocs&amp;ref=SocialEntrepreneurship&amp;category=About_Overview">Social Entrepreneurship</a></li>
+     </ul>
+    </li>
+     <li class="item2"><a  href="index.php?submenu=About_Staff&amp;src=gendocs&amp;ref=Professionals&amp;category=About">Our Professionals</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=About_Staff&amp;submenu=About_Staff&amp;src=directory&amp;view=staff_profiles_lister_attorneys">Attorneys at Law</a></li>
+       <li class="item2"><a  href="index.php?submenu=About_Staff&amp;submenu=About_Staff&amp;src=directory&amp;view=staff_profiles_lister_professionals">Financial Professionals</a></li>
+       <li class="item3"><a class="last"  href="index.php?submenu=About_Staff&amp;submenu=About_Staff&amp;src=directory&amp;view=staff_profiles_lister_operations">Operations</a></li>
+     </ul>
+    </li>
+     <li class="item3"><a class="last"  href="index.php?submenu=About_Founder&amp;src=gendocs&amp;ref=AboutOurFounder&amp;category=About">About Our Founder</a></li>
+   </ul>
+  </li>
+   <li class="item2"><a  href="index.php?submenu=Capabilities&amp;src=gendocs&amp;ref=Capabilities&amp;category=Main">Capabilities</a>
+   <ul>
+     <li class="item1"><a class="first"  href="index.php?submenu=Capabilities_Individual&amp;src=gendocs&amp;ref=ForIndividuals&amp;category=Capabilities">For Individuals</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=Capabilities_Individual&amp;src=gendocs&amp;ref=WealthPlanning&amp;category=Capabilities_Individual">Wealth Planning</a></li>
+       <li class="item2"><a  href="index.php?submenu=Capabilities_Individual&amp;src=gendocs&amp;ref=CharitablePlanning&amp;category=Capabilities_Individual">Charitable Planning</a></li>
+       <li class="item3"><a  href="index.php?submenu=Capabilities_Individual&amp;src=gendocs&amp;ref=ElderLawTrustsLTCDisability&amp;category=Capabilities_Individual">Elder Law/Trusts/Long-Term Care/Disability Planning</a></li>
+       <li class="item4"><a class="last"  href="index.php?submenu=Capabilities_Individual&amp;src=gendocs&amp;ref=RiskManagementInd&amp;category=Capabilities_Individual">Risk Management</a></li>
+     </ul>
+    </li>
+     <li class="item2"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=ForBusinesses&amp;category=Capabilities">For Businesses</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=BusinessDesignandOrganization&amp;category=Capabilities_Business">Business Design and Organization</a></li>
+       <li class="item2"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=TaxPlanning&amp;category=Capabilities_Business">Tax Planning</a></li>
+       <li class="item3"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=AssetProtectionPlanning&amp;category=Capabilities_Business">Asset Protection Planning</a></li>
+       <li class="item4"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=BusinessSuccessionPlanning&amp;category=Capabilities_Business">Business Succession Planning</a></li>
+       <li class="item5"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=CorporateGovernanceCompliance&amp;category=Capabilities_Business">Corporate Governance/Compliance</a></li>
+       <li class="item6"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=IntellectualPropertyProtection&amp;category=Capabilities_Business">Intellectual Property Protection</a></li>
+       <li class="item7"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=CorporateFinancialPlanning&amp;category=Capabilities_Business">Corporate Financial Planning</a></li>
+       <li class="item8"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=CompensationPlanning&amp;category=Capabilities_Business">Compensation Planning</a></li>
+       <li class="item9"><a  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=ExecutiveFinancialPlanning&amp;category=Capabilities_Business">Executive Financial Planning</a></li>
+       <li class="item10"><a class="last"  href="index.php?submenu=Capabilities_Business&amp;src=gendocs&amp;ref=RiskManagementBus&amp;category=Capabilities_Business">Risk Management</a></li>
+     </ul>
+    </li>
+     <li class="item3"><a  href="index.php?submenu=Capabilities_Nonprofit&amp;src=gendocs&amp;ref=ForNonprofitOrganizations&amp;category=Capabilities">For Nonprofit Organizations</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=Capabilities_Nonprofit&amp;src=gendocs&amp;ref=OrganizationandStructure&amp;category=Capabilities_Nonprofit">Organization and Structure</a></li>
+       <li class="item2"><a  href="index.php?submenu=Capabilities_Nonprofit&amp;src=gendocs&amp;ref=ExemptOrganizations&amp;category=Capabilities_Nonprofit">Exempt Organizations</a></li>
+       <li class="item3"><a  href="index.php?submenu=Capabilities_Nonprofit&amp;src=gendocs&amp;ref=FiduciaryResponsibilities&amp;category=Capabilities_Nonprofit">Fiduciary Responsibilities</a></li>
+       <li class="item4"><a class="last"  href="index.php?submenu=Capabilities_Nonprofit&amp;src=gendocs&amp;ref=RiskManagementNPO&amp;category=Capabilities_Nonprofit">Risk Management</a></li>
+     </ul>
+    </li>
+     <li class="item4"><a class="last"  href="index.php?submenu=Social_Enterprises&amp;src=gendocs&amp;ref=SocialEnterprises&amp;category=Capabilities">For Social Enterprises</a>
+     <ul>
+       <li class="item1"><a class="first last"  href="index.php?submenu=Social_Enterprises&amp;src=gendocs&amp;ref=L3C&amp;category=Capabilities">L3C</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+   <li class="item3"><a  href="index.php?submenu=L3C&amp;submenu=Social_Enterprises&amp;src=gendocs&amp;ref=L3C&amp;category=Capabilities">L3C</a></li>
+   <li class="item4"><a  href="index.php?submenu=Events&amp;src=events">Events</a></li>
+   <li class="item5"><a  href="http://marcjlane.com/index.php?submenu=Media&amp;submenu=Media&amp;src=gendocs&amp;ref=books&amp;category=Media">Books</a></li>
+   <li class="menuItemHighlight item6"><a class="current"  href="index.php?submenu=Media&amp;src=gendocs&amp;ref=Media&amp;category=Main">Media</a>
+   <ul>
+     <li class="item1"><a class="first"  href="index.php?submenu=Media&amp;submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Press%20Releases">Press Releases</a></li>
+     <li class="item2"><a  href="index.php?submenu=Media&amp;submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Articles">Articles</a></li>
+     <li class="item3"><a  href="index.php?submenu=Media&amp;submenu=Media&amp;src=gendocs&amp;ref=books&amp;category=Media">Recent Books</a></li>
+     <li class="item4"><a  href="index.php?submenu=Media&amp;submenu=Media&amp;src=news&amp;srctype=lister&amp;category=In%20the%20News">In the News</a></li>
+     <li class="item5"><a  href="index.php?submenu=Media&amp;submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Speeches%20and%20Presentations">Speeches and Presentations</a></li>
+     <li class="item6"><a class="last"  href="index.php?submenu=Media_LaneReport&amp;src=gendocs&amp;ref=LaneReport&amp;category=Media">The Lane Report</a>
+     <ul>
+       <li class="item1"><a class="first"  href="index.php?submenu=Media_LaneReport&amp;src=news&amp;srctype=lister&amp;srctype=lane_reports_recent">Recent Lane Reports</a></li>
+       <li class="item2"><a class="last"  href="index.php?submenu=Media_LaneReport&amp;submenu=Media_LaneReport&amp;src=news&amp;srctype=lane_reports_archives">Older Lane Reports</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+   <li class="item7"><a  href="http://advocacyinvesting.com" onclick="window.open(this.href,'_blank'); return false;">Advocacy Investing</a></li>
+   <li class="item8"><a  href="https://www2.netxview.com/mini2/home.htm" onclick="window.open(this.href,'_blank'); return false;">Login</a></li>
+   <li class="item9"><a class="last"  href="index.php?submenu=Contact&amp;src=gendocs&amp;ref=ContactInfo&amp;category=Main">Contact Info</a></li>
+ </ul>
+</div>
+  </div><!-- /menu -->
+	  
+   <div id="header">
+     <table cellpadding="0" cellspacing="0" border="0" width="898" align="center"><tr><td style="background-color: #fff;" align="center">
+     <a href="index.php?src="><img src="graphics/redesign/logo_mjl_wealth_group.gif" alt="Marc J Lane Wealth Group" border="0" /></a>
+     </td>
+     <td width="500">
+	<div id="flashcontent1"><img src="clientuploads/flash/MarcJLane_home.jpg" /></div><script type="text/javascript">
+	var so = new SWFObject("clientuploads/flash/MarcJLane_home.swf", "MarcJLane_home", "500", "180", "7", "#ffffff");
+	so.addParam("wmode", "opaque");
+	so.write("flashcontent1");
+	</script>
+     </td></tr></table>
+     <img src="graphics/redesign/bar_mid.jpg" alt="midbar" width="900" height="26" border="0" />
+   </div><!-- /header -->
+   <div id="contentLeft">
+      <!-- left column -->
+      <div class="submenu_title">Media</div>
+      <div id="submenu_media">
+ <ul class="submenu_media">
+   <li class="item1"><a class="first"  href="index.php?submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Press%20Releases">Press Releases</a></li>
+   <li class="item2"><a  href="index.php?submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Articles">Articles</a></li>
+   <li class="item3"><a  href="index.php?submenu=Media&amp;src=gendocs&amp;ref=books&amp;category=Media">Recent Books</a></li>
+   <li class="item4"><a  href="index.php?submenu=Media&amp;src=news&amp;srctype=lister&amp;category=In%20the%20News">In the News</a></li>
+   <li class="item5"><a  href="index.php?submenu=Media&amp;src=news&amp;srctype=lister&amp;category=Speeches%20and%20Presentations">Speeches and Presentations</a></li>
+   <li class="item6"><a class="last"  href="index.php?submenu=Media_LaneReport&amp;src=gendocs&amp;ref=LaneReport&amp;category=Media">The Lane Report</a></li>
+ </ul>
+</div>
+         </div><!-- /contentLeft -->
+   <div id="contentRight">
+     <!-- Accrisoft Freedom v/7 Apr 30, 2012 --><h1>"The Taxpayer Relief Act of '97: The Income Tax Opportunities"</h1>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="newsSubHeadline">November 19, 1997 Ritz-Carlton Hotel, Chicago, IL</td></tr><tr><td class="newsSpacer">&nbsp;</td></tr>
+<tr><td class="newsPublished">Published Wednesday, November 19, 1997</td></tr></table>
+<br />
+<div class="newsBody">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="2" valign="top">
+<p><span style="color: #000000; font-size: 14pt;"><strong>Speech by Marc J. Lane<br /> </strong></span><span style="color: #000000;">President, The Law Offices of Marc J. Lane, A Professional Corporation.<br /> All rights reserved. No Part may be duplicated without written consent. <br /> <br /> </span></p>
+<hr /><span style="color: #000000;"><br /> </span><br />According to Microsoft's 1997 Annual Report, Bill Gates owns 270,797,000 shares. Microsoft closed yesterday at $134, down 7/8. So, by my calculations, Bill Gates' net worth is something more than $36 billion. That's more than Ireland's gross domestic product or Proctor &amp; Gamble's annual revenue.
+<p>&nbsp;</p>
+<p>What does this have to do with you and me? Well I can tell you with some authority that the strategic implications of the Taxpayer Relief Act of 1997 are of enormous interest and importance to Bill Gates and, assuming he has more margin for error in his personal financial planning than at least some of us do, we should be at least equally eager to learn about the new law and how we can benefit from it.</p>
+<p>For people who are trying to protect and build wealth, the environment does not appear to be a particularly hospitable one. We're still suffering from the Asian contagion, in fact, another sell off was experienced in Tokyo yesterday and it has now spread to Latin America. We may also be importing an unhealthy case of deflation from the Far East. Saddam Hussein is up to his very provocative, old tricks again. The new paradigm notwithstanding, our earlier irrational exuberance seems to be taking its toll. The President is showing the first signs of lame duck disease, his fast-tract trade bill initiative having been rejected soundly, in fact, by 78% of his own party's House members. And as that would indicate, organized labor is galvanizing an increasingly effective protectionist bloc in Congress. And corporate profits may be squeezed.</p>
+<p>Yet, as most of you already know, our clients are risk-averse and we take great care to ensure that our clients' portfolios are protected on the downside. And, throughout this afternoon's program, we'll touch on some of the techniques and strategies we've developed to protect principal while capturing targeted market opportunities. Over time, we're confident that cyclical and political market pressures and the nervousness we see will abate. And we see that our economy is, after all, extraordinarily healthy. We are enjoying a 3% growth rate, inflation is at a very benign level of about 2% and we probably haven't yet seen the bottom of the interest rate cycle. As far as international issues are concerned, most commentators agree that the engine of our economy is not global mercantilism, but rather entrepreneurial innovation. So, just as the Far East was not responsible for the run-up in stock values, it ought not to be looked to as the culprit for any market correction or adjustment. Today, however, is a day for tax talk.</p>
+<p>The centerpiece of the new tax law is the reduction in the capital-gain tax rate -- which is enormously bullish for investment -- or, more accurately, for some investments. We'll get to that.</p>
+<p>Many economists would love to see the capital-gain tax eliminated in its entirety, arguing that there is simply no logic behind any type of tax on capital gains. Capital gain is literally the appreciation in the value of an existing asset. If you buy something at $15 and sell it at $25, you've got a $10 capital gain. And, of course, the value of an asset is the discounted present value of that asset's cash flow, after tax. So, a capital gain can be said to represent the increase in that after-tax cash flow. Accordingly, capital gains have already been reduced by all future taxes. It has already suffered from a huge negative tax effect and any capital gain tax really represents double taxation -- or so these economists argue.</p>
+<p>The other point worth mentioning is that the capital gains tax rate is and always has been applied to nominal capital gains, not real capital gains. So, if you have an increase in the value of an asset due only to inflation, you'll still pay taxes on the inflation-driven increase in value. When inflation rates come down -- as they have dramatically -- that too reduces the tax rate on real capital gains. So, in a sense, we've been doubly blessed by the capital-gain tax reduction.</p>
+<p>For example, let's suppose you have a real return of 5% and inflation of 5%. At the old capital-gain tax rate, 28%, the effective tax rate would have been 56%, if we took into account that it actually taxes both economic appreciation and inflation. By reducing inflation from 5% to 2%, as our economy now has, the effective tax rate on real capital gains is cut to about 39%. And then, by dropping the tax rate from 28% to 20%, as Congress has now done, the effective rate, including the impact of inflation, is 28% -- really down by half of what it was.</p>
+<p>Of course, the value of any asset increases when you cut taxes on the asset's return. So, an asset that's tied to a corporation's destiny especially benefits now when a company pays its owners in capital gains rather than interest payments on debt or dividends on equity. Having said that, I want to be very careful to point out that, when we recommend stocks or evaluate stocks, we very analytically look at the dividend-paying pattern of the company whose stock is being considered for purchase. Stocks, after all, have total return components including both dividend yield and appreciation. And, historically dividends have represented an important ingredient in total return. Dividends are also a very strong indicator of company stability and they are a good predictor of stock appreciation in its own right. So, although the new tax law change really sees its greatest action in the disparity between ordinary income and capital gain -- or we might say dividend and interest vs. capital gain, we do not dismiss dividends as an important factor to consider in investment decision-making.</p>
+<p>Congress was smart in announcing in May that any gain on the sale of a capital asset would qualify for a lower rate. Investors wouldn't have to wait until the new law was passed to complete any discretionary transactions.</p>
+<p>Any sale after May 7, 1997 qualifies for the new, lower rate of 20%, rather than the previous 28%. (An even lower rate, 10%, is only available to people in the 15% income tax bracket). Collectibles are still taxed at 28% and there is a 25% recapture of depreciation on real estate.</p>
+<p>But Congress also extended the period that assets must be held to qualify for the lower rate. There are three holding periods: less than 12 months, the profit is taxed at the highest individual rate because the gain is deemed to be short term; 12 to 18 months, gains are taxed at the old 28% rate; and 18 months or more, gains are taxed at the new 20% rate.</p>
+<p>But what about taxpayers who, after May 7, sold assets they'd held for more than 12 but less than 18 months? Congress didn't forget them. Investors who sold assets after May 7 but before July 28 need to have held those assets for only one year to qualify for the 20% rate.</p>
+<p>And what about this 18% rate you may have heard about? It's only available for assets held five years or more and purchased after January 1, 2001. There is a lot of time for us to plan and a lot of time for Congress to rethink its position.</p>
+<p>The IRS has already issued a notice that it will act as though a technical corrections bill before Congress is law. That bill would net 28% and 20% gains and losses against one another in a more convoluted way than you'll want to hear about this evening.</p>
+<p>So, year-end tax planning is going to be especially challenging for investors. There are, in fact, about 20 different phase-out ranges and calculation methods for different tax deductions and credits, including at least five created by the new law.</p>
+<p>Moreover, one of the better year-end tax strategies for deferring income has basically been eliminated. "Selling short against the box" has the owner of an appreciated financial instrument selling a similar instrument without closing the transaction until the next year. But no longer can such taxable gains be deferred. There are some complicated hedging transactions still available for very sophisticated investors, but year-end deferrals are generally history.</p>
+<p>Going forward, what does the capital-gain rate reduction mean for your investing? Well, you'll hear more today and when we sit down with you as part of our regular account review. But, for now let me identify four areas worth looking at:</p>
+<blockquote>
+<p>1.If there are concentrations of highly-appreciated securities in your portfolio, you may want to consider reducing those concentrations and further diversifying your investments. As the extended bull market has helped all our clients' equities grow, they may now represent an inappropriately outsized portion of your holdings. Lower capital-gains tax rates make it easier to take some gains and reposition. Of course, we'll work with you individually to see that your asset allocation -- that is, your unique counter-balanced mix of investments from different asset classes -- continues to be right for you and that the specific investments we select pass the tough value, growth and quality screens we've developed.</p>
+<p>2.You should re-evaluate the relative after-tax advantages of tax-deferred and tax-exempt investments vs. taxable investments. We'll help you here, too.</p>
+<p>3.Reduced capital-gains tax should favor financial assets, such as stocks, over "hard" assets, such as collectibles, which as I said continue to be taxed at the 28% rate.</p>
+<p>4.Growth-oriented investments will generally enjoy higher after-tax returns than income-oriented investments. Now, of course, we always recommend a significant, and typically "laddered", fixed-income commitment. Laddering mitigates reinvestment risk and a fixed-income commitment serves as a buffer against market volatility. It's also a way to park cash where it can earn a decent yield, where it can be managed for total return and where it can await market opportunities to buy suitable stocks "on sale", upon a dip or correction.</p>
+</blockquote>
+<p>Finally, a word about a special capital asset that gets special treatment under the new law -- your home.</p>
+<p>Effective May 6, 1997, up to $250,000 of profit on the sale of a principal residence -- or $500,000 for married taxpayers filing a joint return -- is altogether excluded from income. This is instead of all of the rollovers we used to have. The law only requires that the taxpayer has owned and used his home as a principal residence for at least two of the last five years. That's probably old news for you. What you may not be aware of is just how powerfully the exclusion can work for you. It can turn prior years' gains into tax-free profit, create refund opportunities and transform deferred income into tax-free profit.</p>
+<p>Let's take an example or two:</p>
+<p>Suppose you and your spouse sold your Winnetka home many years ago at a profit of $30,000 and immediately purchased your Lake Forest home for $100,000. Your tax basis in your Lake Forest home is $70,000, that is your $100,000 cost less your $30,000 deferred gain. Now, if you sell your Lake Forest home for $450,000, you'll realize $380,000 of gain (the sale price of $450,000 less your $70,000 basis) -- all of it tax-free, even though $30,000 of it represents deferred gain from a previous home sale.</p>
+<p>What's more, a "tacking" rule for home-sale rollovers may make it possible to turn a taxable sale on a former residence into a tax refund under prior law and a tax-free sale under the new law. Suppose, for example, you and your spouse retired and sold your Wilmette home in 1996 for $350,000, realizing a gain of $225,000 You moved into a rented home in Hilton Head, not intending to buy a replacement home, electing instead to use the prior lawís $125,000 once- in-a-lifetime exclusion, and you paid $28,000 in tax on your remaining gain -- that is, 28% of $100,000. Now, you change your mind and buy a condo in South Seas Plantation for $300,000.</p>
+<p>First, the old law applies and you can defer tax on the rest of your gain. This is a rollover available until the new law took effect. You can file an amended return for '96 and claim a refund of the $28,000 you paid. And here's the trick -- when you sell your new home, after you've lived there for two years or more, the deferred tax on the '96 sale would be transformed into tax-free profit. Now, the law's got other tricks and traps, of course -- all of which we'll be happy to talk with you about when they become relevant for you.</p>
+</td>
+</tr>
+</tbody>
+</table><div style="position:relative;white-space:nowrap;padding-top:20px"><div style="position:absolute;left:0px"></div><div style="position:absolute;right:0px"></div></div></div>
+<br />
+<a href="javascript:void(0)" class="eventBigLink" onclick="window.open('http://www.marcjlane.com/index.php?src=sendpage&amp;direct=y&amp;subject=%22The%20Taxpayer%20Relief%20Act%20of%20%2797%3A%20The%20Income%20Tax%20Opportunities%22&amp;url=http%3A%2F%2Fwww.marcjlane.com%2Findex.php%3Fsrc%3Dnews%26submenu%3DMedia%26srctype%3Ddetail%26category%3DSpeeches%2520and%2520Presentations%26refno%3D261','popup','width=600,height=500,resizable=yes'); return false;">Send this page to a friend</a>
+<br /><br />
+<a href="index.php?src=news&amp;submenu=Media&amp;srctype=lister&amp;view=news_lister">Show Other Stories</a><br /><br />
+   </div><!-- /contentRight -->
+   <!--div id="subfooter">
+     <img src="graphics/redesign/WealthLogo_BG.jpg" alt="logo" width="198" height="50" class="logo_bg" />
+   </div-->
+      <div id="footer">
+    <p style="float:right;">
+    <span class="resize">Text size <a href="javascript:changeFontsize('', '1');" title="Increase the text size">A</a> <a href="javascript:changeFontsize('', '-1');" title="Decrease the text size">a</a></span> | 
+    <a href="index.php?src=" class="menuPipeLink">Home</a>
+<span class="menuPipe"> | </span><a href="index.php?src=gendocs&amp;ref=PrivacyPolicy&amp;category=Main" class="menuPipeLink">Privacy Policy</a>
+<span class="menuPipe"> | </span><a href="index.php?src=gendocs&amp;ref=TrademarkGuidelines&amp;category=Main" class="menuPipeLink">Trademark Guidelines</a>
+<span class="menuPipe"> | </span><a href="index.php?src=gendocs&amp;ref=disclosures&amp;category=Disclosures" class="menuPipeLink">Disclosures/Terms of Use</a>
+<span class="menuPipe"> | </span><a href="sitemap.php" class="menuPipeLink" target="_blank">Site Map</a>
+    </p>
+    <form method="get" action="index.php" style="margin:0;" id="search_box_form"><div style="display:none;"><input type="hidden" name="src" value="search" /><input type="hidden" name="search_id" value="search" /></div><table border="0" cellpadding="0" cellspacing="0" class="searchBoxTable">
+<tr><td class="searchBoxText">Enter your search:&nbsp;</td><td nowrap="nowrap" valign="middle">
+<input type="text" name="search_this" value="" size="12" onfocus="this.select()" class="searchBoxInput" />&nbsp;
+<a href="javascript:document.getElementById('search_box_form').submit()" class="searchBoxSubmitLink">
+<img src="graphics/config/go.gif" style="border:0" alt="Submit Search" /></a>
+</td></tr></table>
+</form>    </div><!-- /footer -->
+    <div class="copyright">
+	<p>Copyright © 2008-2012 The Law Offices of Marc J. Lane, a Professional Corporation.&nbsp; All rights reserved.&nbsp;</p>
+<p>"Advocacy Investing", "Promoting Your Own Values", "SRI Open Forum", "Your Profit. Your Passion. Your Power.", "The Next Generation of Socially Responsible Investing", and "Advocacy Avatar" are trademarks of Marc J. Lane Investment Management, Inc. (Member <a href="http://www.sipc.org/pdf/HSPY_English_2010%20FINAL.pdf" target="_blank">SIPC)</a> registered in the U.S. Patent and Trademark Office and may be registered in certain jurisdictions. "Protecting Today's Wealth. Building Tomorrow's." and the Marc J. Lane Wealth Group logo are trademarks of The Law Offices of Marc J. Lane, a Professional Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain jurisdictions. "Marc J. Lane Wealth Group" is a trademark of The Law Offices of Marc J. Lane, a Professional Corporation and may be registered in certain jurisdictions.</p>	</div>
+</div><!-- /container_home -->
+
+</body>
+</html>

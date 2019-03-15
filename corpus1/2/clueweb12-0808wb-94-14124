@@ -1,0 +1,1077 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-10T08:36:49Z
+WARC-TREC-ID: clueweb12-0808wb-94-14124
+WARC-Target-URI: http://dogfurniture.us/sku-O_198hFLOQ2XTyyh5GoHm1A==-p-It%27s-a-Dog%27s-World%3A-The-Savvy-Guide-to-Four-Legged-Living.html
+WARC-Payload-Digest: sha1:JAIMTOEOZZA3QAJLWUTGHZTQKFM7BYLL
+WARC-IP-Address: 50.21.189.178
+WARC-Record-ID: <urn:uuid:efef24c9-a24a-4630-a0fb-27bd5dabf249>
+Content-Type: application/http; msgtype=response
+Content-Length: 147359
+
+HTTP/1.1 200 OK
+Date: Sat, 10 Mar 2012 08:36:56 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.17
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!--One of three files called by index.php to initialize everything (functions, site-code, site-template)-->        
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Dog Beds | It's a Dog's World: The Savvy Guide to Four-Legged Living | O_198hFLOQ2XTyyh5GoHm1A==</title>
+<meta name="keywords"  content="It's a Dog's World: The Savvy Guide to Four-Legged Living,Dog Beds,O_198hFLOQ2XTyyh5GoHm1A=="/>
+<meta name="description"  content="Welcome to Dog Beds, home of the It's a Dog's World: The Savvy Guide to Four-Legged Living,Dog Beds,O_198hFLOQ2XTyyh5GoHm1A=="/>
+<link href="http://www.netdeals.us/sites-data/style-green.css" rel="stylesheet" type="text/css" />
+<link href="http://www.netdeals.us/sites-data/shared-style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.netdeals.us/sites-data/qanda-shared-style.css" rel="stylesheet" type="text/css" />
+<link rel="canonical" href="http://www.dogfurniture.us/" />
+<link rel="shortcut icon" href="http://www.netdeals.us/sites-data/images/favicon.ico" />
+
+
+<!-- Start Analytics for Universal Analytics Account -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27125541-1']);
+  _gaq.push(['_setDomainName', 'netsavings.us']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics for Universal Analytics Account -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">
+var is_quaternary = false;
+var quaternary_id = -1;
+var login_error = '';
+var default_ask_text = 'What\'s the best brand of Dog Beds?';
+function replace_default(element, focused)
+{
+	var askBox = $(element);
+	if(!focused)
+	{
+		askBox.addClass('input-blurred');
+		if(askBox.val() == '')
+		{
+			askBox.val(default_ask_text);
+		}
+	}
+	else
+	{
+		askBox.removeClass('input-blurred');
+		if(askBox.val() == default_ask_text)
+		{
+			askBox.val('');
+		}
+	}
+}
+</script>
+<script type="text/javascript" src="http://www.netdeals.us/sites-data/functions.js"></script>
+</head>
+<body>
+<div id="login-dialog" style="display:none;background-color:#fff">
+	<form action="http://www.havethefloor.com/broker-login.php" method="get">
+		<input type="text" name="login-email" /><br />
+		<input type="password" name="login-password" /><br />
+		<input type="hidden" name="login-domain-id" value="115" />
+		<input type="submit" value="Login" />
+	</form>
+</div><div id="answer-dialog" class="generic-dialog">
+	<div class="padding">
+		<div class="holder">
+			<span id="response"></span>
+			<br />
+			<div class="row">
+				<span class="left-column">Email me the answer</span>
+				<span class="right-column">
+		
+					<input type="text" id="user-email" name="user-email" />
+					<input class="button" type="button" onclick="addEmail()" value="Go" />
+					<br /><span id="email-response"></span>
+				</span>
+			</div>
+			<div class="row">
+				<span class="left-column">I don't need an answer</span>
+				<span class="right-column">
+					<a href="javascript:void(0)" class="left-column" onclick="closeModal()">
+						<div style="width:50px;float:left;">
+							Close 
+						</div>
+						<div style="float:left;margin-top:2px;">
+							<img src="http://www.netdeals.us/sites-data/images/down_vote.png" border="0" />
+						</div>
+					</a>
+				</span>
+			</div>
+			
+			<div class="row">
+				<span class="left-column">Bookmark this site:</span>
+				<span class="right-column">
+					<div class="addthis_toolbox addthis_default_style">
+						<a href="http://addthis.com/bookmark.php?v=250" class="addthis_button_compact"></a>
+						<span class="addthis_separator"> </span>
+						<a class="addthis_button_twitter"></a>    
+						<a class="addthis_button_googlebuzz"></a>
+						<a class="addthis_button_email"></a>
+						<span class="addthis_separator"> </span>
+						<a class="addthis_button_facebook_like"></a>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+</div><div id="signup-dialog" class="generic-dialog" style="width:660px">
+	<div class="padding">
+		<div class="holder">
+			<div id="signup-response"></div>
+			<div style="width:50%;float:left">
+				<div style="padding:10px;padding-right:0px">
+					<span style="font-size:large;margin-bottom:10px">Returning Users: Log in</span><br />
+					<form action="http://www.havethefloor.com/broker-login.php" method="get">					
+					<table>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name="login-email" /></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="login-password" /></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<a href="javascript:void(0)" onclick="forgotPassword()">Forgot password?</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="hidden" name="login-domain-id" value="115" />
+								<input type="submit" value="Log in" />
+							</td>
+						</tr>
+					</table>
+					</form>
+				</div>
+			</div>
+			<div style="width:50%;float:left">
+				<div style="padding:10px">
+					<span style="font-size:large;margin-bottom:10px">New users: Sign up</span><br />
+					<table>
+						<tr>
+							<td>Full Name:</td>
+							<td><input type="text" id="signup-name" name="signup-name" /></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" id="signup-email" name="signup-email" /></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" id="signup-password" name="signup-password" /></td>
+						</tr>
+						<!--//<tr>
+							<td>Confirm Password:</td>
+							<td><input type="password" /></td>
+						</tr>//-->
+						<tr>
+							<td colspan="2"><input type="button" value="Sign up" onclick="registerUser('signup')" /></td>
+						</tr>
+					</table>				
+				</div>
+			</div>
+			<div style="clear:both"></div>	
+		</div>
+	</div>
+	<div style="height:20px;background-color:#e9e9e9;line-height:20px;text-align:right;padding-right:7px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;">
+		<a href="javascript:void(0)" onclick="$('#signup-dialog').fadeOut(200)">Close</a>
+	</div>
+</div><div id="forgot-dialog" class="generic-dialog">
+	<div class="padding">
+		<div class="holder">
+			<div id="forgot-response"></div>
+			<br />
+			<span style="font-size:large;margin-bottom:10px">Forgot your password?</span><br />
+			Enter your e-mail address below to have a password reset code sent to your inbox.<br />
+			<br />
+			E-mail address: <input type="text" id="forgot-email" name="forgot-email" />
+			<input type="button" value="Go" onclick="resetPassword()" />
+		</div>
+	</div>
+	<div style="height:20px;background-color:#e9e9e9;line-height:20px;text-align:right;padding-right:7px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;">
+		<a href="javascript:void(0)" onclick="$('#forgot-dialog').fadeOut(200)">Close</a>
+	</div>
+</div><!-- outer container, holds full section and 2 shadows-->
+<table width="1039" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+	  	<!-- container, holds left shadow and body, but not right shadow-->
+		<td width="20" class="leftshadow"> 
+		</td>
+		
+		<!-- Mike moved while attacking the <table hell> that this was -->
+		<td width="995" style="padding:0px 2px;">
+		
+			<div class="site-container" style="width:995px;">  <!-- start outer container for this inner-site-template file -->
+				<!-- Including Logo & Nav Bar -->
+				<div>  <!-- opening div for header -->
+	<!--header elements, including logo, search box & navigation bar-->        
+	<!--Needs work:  logic of nav bar, to not leave blank nav buttons, ie wickerporchswings.us-->        
+	
+		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+	  <tr>
+		<td>
+		
+			<div style="width:760px;float:left;">
+			
+				<!--logo or text version of logo-->        
+				<a href="/index.php" title="Dog Beds">
+					<!-- LOGO HOLDER -->
+					<div style="float:left;width:340px;display:block;cursor:pointer;"> <!-- Removed width="300"-->     
+					
+						<!-- IF A CUSTOM LOGO EXISTS -->
+													<img src="http://www.netdeals.us/sites-data/images/logo-dog-furniture-us.jpg" title="Dog Beds" alt="Dog Beds" border="0" width="300" height="62" />
+
+						  <!-- END AUTO-GENERATE LOGO -->
+					</div> <!-- END LOGO HOLDER -->
+				</a> <!-- END LOGO LINK-->
+				
+		 
+		 
+				<div class="header-tagline" style="float:left;width:300px;padding-top:17px;">
+					<img src="http://www.netdeals.us/sites-data/images/cursive-tagline-3.png" border="0" />
+				</div>
+			</div>
+	
+			<div style="width:200px;float:right;text-align:right; padding-top:8px; margin-right:5px;border: 0px solid grey;">
+				<!--//<div style="font-size:12px;color:grey;padding-right:7px;">
+					Brought to you by:
+				</div>
+				<div>
+					<a href="http://www.netsavings.us" target="_blank" title="NetSavings.us - Home Furnshings, Decor, and more">
+						<img src="http://www.netdeals.us/sites-data/images/logo-net-savings-us.jpg" width="130px" border="0" />
+					</a>
+				</div>//-->
+				<div style="font-size:12px;color:grey;padding-right:7px;">
+					<a href="javascript:void(0)" onclick="showSignUp()">Login</a> or <a href="javascript:void(0)" onclick="showSignUp()">Sign Up</a>				</div>	
+	<!-- 
+				Questions? Call &nbsp;<br />
+				1-888-850-0410 &nbsp;
+	 -->
+			</div>
+	  
+		</td>
+	  </tr>
+	  
+	  <tr>
+		<td><table width="100%" border="0" cellspacing="1" cellpadding="0">
+		  <tr>
+			<td class="seperator">&nbsp;</td>
+		  </tr>
+		</table></td>
+	  </tr>
+
+	  
+	  <tr>
+		<td><table width="100%" border="0" cellspacing="1" cellpadding="0">
+		  <tr>
+			
+	  <!--Start navigation bar, does each of 6 fields, converts to upper case, puts hyphens in links out...problem, too much repeat code-->            
+	
+			<!--Home Tab-->
+			<td class="topnavigationbar"><a href="/index.php" title="Home">HOME</a></td>
+			
+			
+			        
+			
+			
+			
+			
+			
+						<td class="topnavigationbar"><a href="7574-pillow-dog-beds-dog-furniture.php" title="PILLOW DOG BEDS dog furniture">
+			
+			PILLOW DOG BEDS			 </a></td>
+									<td class="topnavigationbar"><a href="7575-dog-crates-dog-furniture.php" title="DOG CRATES dog furniture">
+			
+			DOG CRATES			 </a></td>
+									<td class="topnavigationbar"><a href="7576-dog-exercise-pens-dog-furniture.php" title="DOG EXERCISE PENS dog furniture">
+			
+			DOG EXERCISE PENS			 </a></td>
+									<td class="topnavigationbar"><a href="7577-nesting-dog-beds-dog-furniture.php" title="NESTING DOG BEDS dog furniture">
+			
+			NESTING DOG BEDS			 </a></td>
+																																																																																																        
+			
+			<!--  End of 2, start of 3-->
+			
+	
+	
+			
+	   			
+			
+			
+				          
+				 
+				 
+		  <!-- was the end took #3 & #4 and replicated them...to create #5 & #6...below.  now we have 6 of them-->
+		  
+		   			
+
+			
+			<!--Community Q&A Tab-->
+			<td class="topnavigationbar">
+				<div style="float:left;">
+					<a href="/community-q-and-a.php" title="Community Q&amp;A">COMMUNITY Q&amp;A *NEW*</a>
+				</div>
+			</td>
+			
+					      
+				 
+				 
+		  </tr>
+		</table></td>
+	  </tr>
+	</table>
+</div>  <!-- closing div for header -->				
+				<!-- Blue bkgd wave, search and add this-->
+				
+
+<!-- Begin Content Header Module -->
+<div id="content-header">
+
+	<!-- BEGIN SEARCH MODULE-->					
+	<div id="product-search-module">
+	
+		<!-- BEGIN BLUE SEARCH BANNER, CONTENT HEADER -->					
+		<div class="blue-banner">  
+			<!-- Holds both the Icon & Title, providing padding using margins -->
+			<div class="title-holder">
+				<!-- icon -->
+				<div class="icon">
+					<img src="http://www.netdeals.us/sites-data/images/search-icon.png" height="25px" border="0" />				
+				</div>
+				<!-- Title -->
+				<div class="title">
+					Product Search
+				</div>
+			</div>	
+		</div>	 <!--  END -->	
+		
+		
+		<!-- ASK / SEARCH QUESTIONS, BEGIN -->
+		<div class="search-ask-bar">  	
+			<form action="index.php" method="get">
+				<input type="text" class="search-ask-input" id="search" name="search" autocomplete="off" style="width:124px" />
+				<input type="hidden" name="search_id" value="0a5c8d8cdca727d37997a33df2593430" />	
+				<input type="submit" class="search-ask-button" value="Search" style="border:0" />  			
+			</form>
+		</div>		
+		<!--  END ASK / SEARCH QUESTIONS -->	
+		
+		<!-- BEGIN SEARCH CONTENT...TOP & RECENT -->					
+		<div class="text-container">  		
+			<!-- 1st MODULE, TOP QUESTIONS -->
+			<div class="searches-holder">
+				<!-- HEADING TEXT-->
+				<div class="heading-text">
+					Recent Searches:
+				</div>
+				
+				<!-- TOP QUESTIONS, LOOPING THROUGH ARRAY -->
+				<div class="question-links"><div>
+						<a href="index.php?search=ruff+wear&search_id=78cb423a32b4e7a4126aad75cf3dbe21&no_log" title="" class="question-links">ruff wear</a>
+					</div><div>
+						<a href="index.php?search=-1%5C%27&search_id=78cb423a32b4e7a4126aad75cf3dbe21&no_log" title="" class="question-links">-1'</a>
+					</div><div>
+						<a href="index.php?search=cat+crate&search_id=78cb423a32b4e7a4126aad75cf3dbe21&no_log" title="" class="question-links">cat crate</a>
+					</div></div>			</div>
+		</div>
+		
+		
+	</div>  <!-- End Search Module -->					
+
+
+
+	<!--  BEGIN Q&A MODULE -->					
+	<div id="qanda-module">  		
+	
+		<!-- BEGIN BLUE Q&A BANNER, CONTENT HEADER -->					
+		<div class="blue-banner">  		
+			<!-- icon -->
+			<div class="icon">
+				<img src="http://www.netdeals.us/sites-data/images/qanda-icon.png" height="25px" border="0" />				
+			</div>
+			<!-- Title -->
+			<div class="title">
+				Dog Beds Community:  Ask a question or share your wisdom!
+			</div>			
+		</div>		<!-- END BLUE Q&A BANNER, CONTENT HEADER -->
+
+		<!-- ASK / SEARCH QUESTIONS, BEGIN -->					
+		<div class="search-ask-bar">  
+			<input type="text" class="search-ask-input" id="user-question-top" name="user-question-top" autocomplete="off" style="width:625px" onfocus="replace_default(this, 1)" onblur="replace_default(this, 0)" />
+			<input class="search-ask-button" type="button" onclick="askQuestion('user-question-top')" value="Ask" />  			
+		</div>		<!--  END ASK / SEARCH QUESTIONS -->
+		
+		
+		
+		<!-- BEGIN QUESTION CONTENT...TOP & RECENT -->					
+		<div class="text-container">  		
+			<!-- 1st MODULE, TOP QUESTIONS -->
+			<div class="questions-holder">
+				<!-- HEADING TEXT-->
+				<div class="heading-text">
+					Top Questions:
+				</div>
+				
+				<!-- TOP QUESTIONS, LOOPING THROUGH ARRAY -->
+				<div class="question-links"><div>
+						<a href="/question-605-what-is-the-best-way-to-remove-dog-hair-from-furniture-dog-furniture.php" title="what is the best way to remove dog hair from furniture?" class="question-links">what is the best way to remove dog hair from furniture?</a>
+					</div><div>
+						<a href="/question-603-how-do-you-keep-a-dog-off-the-furniture-dog-furniture.php" title="How do you keep a dog off the furniture?" class="question-links">How do you keep a dog off the furniture?</a>
+					</div><div>
+						<a href="/question-604-how-do-you-make-a-dog-stop-licking-furniture-dog-furniture.php" title="How do you make a dog stop licking furniture?" class="question-links">How do you make a dog stop licking furniture?</a>
+					</div></div><div class="view-more-link">
+				<a class="grey" href="/community-q-and-a-dog-furniture.php">
+					View More...
+				</a>
+			</div>				
+			</div>
+			<!-- VERTICAL SPACER -->
+			<div class="vertical-spacer">
+			</div>
+			
+			<!-- 2nd MODULE, RECENT QUESTIONS-->
+			<div class="questions-holder">
+				<!-- HEADING TEXT-->
+				<div class="heading-text">
+					Recent Questions:
+				</div>
+				
+				<!-- TOP QUESTIONS, LOOPING THROUGH ARRAY -->
+				<div class="question-links"><div>
+						<a href="/question-612-whats-good-to-put-furniture-for-my-dog-wont-bite-dog-furniture.php" title="Whats good to put furniture for my dog wont bite?" class="question-links">Whats good to put furniture for my dog wont bite?</a>
+					</div><div>
+						<a href="/question-611-how-to-keep-a-dog-off-the-furniture-dog-furniture.php" title="How to keep a dog off the furniture?" class="question-links">How to keep a dog off the furniture?</a>
+					</div><div>
+						<a href="/question-610-does-dog-off-furniture-spray-really-work-dog-furniture.php" title="Does dog off furniture spray really work?" class="question-links">Does dog off furniture spray really work?</a>
+					</div></div><div class="view-more-link">
+				<a class="grey" href="/community-q-and-a-dog-furniture.php">
+					View More...
+				</a>
+			</div>				
+			</div>  <!-- END 2nd MODULE, RECENT QUESTIONS-->
+			
+		</div>		<!--  END QUESTION CONTENT...TOP & RECENT -->					
+	</div>	
+	<!--  END -->	
+	
+</div>			
+<!-- End Content Module -->
+				
+				<!-- Core Shopping Template:  Left Col + Product Views -->
+				
+	<!-- Left Col + Main Section Container-->
+	<div style="width:995px;">
+		<div style="width:150px;float:left;">
+			
+	<div class="categorytitles">
+	    Specials
+    </div>
+
+	<div style="height:55px;margin:10px 0px 0px 10px;">
+		<div style="width: 70px;float:left;">
+			<a href="/best-sellers-dog-furniture.php">
+				<img src="http://www.netdeals.us/sites-data/images/best-seller-micro.png" alt="deals" border="0" width="62" height="45" />
+			</a>
+		</div>
+	
+		<div style="width: 60px;float:left;margin: -6px 0px 0px 3px;">
+			<a href="price-0-150.php" title="Dog Beds Sale" class="leftlinks">
+			  	<img src="http://www.netdeals.us/sites-data/images/discount-sale.png" alt="discount sale & deals" border="0" width="44" height="44" />
+			</a>
+		</div>
+	</div>		
+
+
+    <div class="categorytitles">
+    	Price Range
+    </div>
+
+	<div style="margin:8px 0px 2px 0px;">
+        <div><a class='dollar-signs' href="price-0-150.php" >
+<img src="http://www.netdeals.us/sites-data/images/dollars-cheap.png" alt="deals" border="0"/>
+</a></div><div><a class='dollar-signs' href="price-150-350.php">
+<img src="http://www.netdeals.us/sites-data/images/dollars-good-price.png" alt="deals" border="0"/>
+</a></div><div><a class='dollar-signs' style='padding-right:2px;' href="price-350-10000.php">
+<img src="http://www.netdeals.us/sites-data/images/dollars-high-quality.png" alt="deals" border="0"/>
+</a></div>        
+        <a href="/price-view-all-products.php" title="Dog Beds Store, View All" class="leftlinks" style="clear:left;">
+        	<div style="margin: 3px 0px 4px 0px;">View All (New)</div>
+        </a>
+    </div>
+
+
+ <div class="categorytitles">Categories
+ </div>
+
+
+<div style="margin: 10px 0px 10px 0px;"> 
+
+	<a class="leftlinks" href="/7574-pillow-dog-beds-dog-furniture.php" title="Pillow Dog Beds" >
+		<div class="leftlinksholder">
+			Pillow Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7575-dog-crates-dog-furniture.php" title="Dog Crates" >
+		<div class="leftlinksholder">
+			Dog Crates		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7576-dog-exercise-pens-dog-furniture.php" title="Dog Exercise Pens" >
+		<div class="leftlinksholder">
+			Dog Exercise Pens		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7577-nesting-dog-beds-dog-furniture.php" title="Nesting Dog Beds" >
+		<div class="leftlinksholder">
+			Nesting Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7578-matspads-dog-furniture.php" title="Mats/Pads" >
+		<div class="leftlinksholder">
+			Mats/Pads		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7579-wood-dog-houses-dog-furniture.php" title="Wood Dog Houses" >
+		<div class="leftlinksholder">
+			Wood Dog Houses		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7580-indoor-dog-houses-dog-furniture.php" title="Indoor Dog Houses" >
+		<div class="leftlinksholder">
+			Indoor Dog Houses		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7581-dog-training-pads-dog-furniture.php" title="Dog Training Pads" >
+		<div class="leftlinksholder">
+			Dog Training Pads		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7582-dog-house-doors-dog-furniture.php" title="Dog House Doors" >
+		<div class="leftlinksholder">
+			Dog House Doors		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7583-orthopedic-dog-beds-dog-furniture.php" title="Orthopedic Dog Beds" >
+		<div class="leftlinksholder">
+			Orthopedic Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7584-dog-stairs-dog-furniture.php" title="Dog Stairs" >
+		<div class="leftlinksholder">
+			Dog Stairs		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7585-plaquesnameplates-dog-furniture.php" title="Plaques/Nameplates" >
+		<div class="leftlinksholder">
+			Plaques/Nameplates		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7586-plastic-dog-houses-dog-furniture.php" title="Plastic Dog Houses" >
+		<div class="leftlinksholder">
+			Plastic Dog Houses		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7587-vehicle-accessories-dog-furniture.php" title="Vehicle Accessories" >
+		<div class="leftlinksholder">
+			Vehicle Accessories		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7588-heatingcooling-dog-furniture.php" title="Heating/Cooling" >
+		<div class="leftlinksholder">
+			Heating/Cooling		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7589-rolling-pet-carriers-dog-furniture.php" title="Rolling Pet Carriers" >
+		<div class="leftlinksholder">
+			Rolling Pet Carriers		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7590-travel-pet-carriers-dog-furniture.php" title="Travel Pet Carriers" >
+		<div class="leftlinksholder">
+			Travel Pet Carriers		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7591-outdoor-dog-beds-dog-furniture.php" title="Outdoor Dog Beds" >
+		<div class="leftlinksholder">
+			Outdoor Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7592-dog-toys-dog-furniture.php" title="Dog Toys" >
+		<div class="leftlinksholder">
+			Dog Toys		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7593-dog-kennels-dog-furniture.php" title="Dog Kennels" >
+		<div class="leftlinksholder">
+			Dog Kennels		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7594-dog-clothing-dog-furniture.php" title="Dog Clothing" >
+		<div class="leftlinksholder">
+			Dog Clothing		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7595-dog-collars-leashes-dog-furniture.php" title="Dog Collars & Leashes" >
+		<div class="leftlinksholder">
+			Dog Collars & Leashes		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7596-travel-accessories-dog-furniture.php" title="Travel Accessories" >
+		<div class="leftlinksholder">
+			Travel Accessories		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7597-for-the-dog-lover-dog-furniture.php" title="For the Dog Lover" >
+		<div class="leftlinksholder">
+			For the Dog Lover		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7598-crate-kennel-accessories-dog-furniture.php" title="Crate & Kennel Accessories" >
+		<div class="leftlinksholder">
+			Crate & Kennel Accessories		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7599-insulated-dog-houses-dog-furniture.php" title="Insulated Dog Houses" >
+		<div class="leftlinksholder">
+			Insulated Dog Houses		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7600-pet-throws-dog-furniture.php" title="Pet Throws" >
+		<div class="leftlinksholder">
+			Pet Throws		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7601-heated-dog-beds-dog-furniture.php" title="Heated Dog Beds" >
+		<div class="leftlinksholder">
+			Heated Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7602-house-dog-doors-dog-furniture.php" title="House Dog Doors" >
+		<div class="leftlinksholder">
+			House Dog Doors		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7603-classic-pet-carriers-dog-furniture.php" title="Classic Pet Carriers" >
+		<div class="leftlinksholder">
+			Classic Pet Carriers		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7604-dry-dog-food-dog-furniture.php" title="Dry Dog Food" >
+		<div class="leftlinksholder">
+			Dry Dog Food		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7605-dog-carriers-dog-furniture.php" title="Dog Carriers" >
+		<div class="leftlinksholder">
+			Dog Carriers		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7606-designer-dog-beds-dog-furniture.php" title="Designer Dog Beds" >
+		<div class="leftlinksholder">
+			Designer Dog Beds		</div>
+	</a>
+		
+  
+	<a class="leftlinks" href="/7607-dog-bed-cots-dog-furniture.php" title="Dog Bed Cots" >
+		<div class="leftlinksholder">
+			Dog Bed Cots		</div>
+	</a>
+		
+     <!-- End for loop through each category-->          
+</div>
+
+
+    <div class="categorytitles">
+    	Other Stores
+    </div>
+
+	<div>
+		<div style="margin:18px 0px 0px 0px;"><div class="logo-small-holder"><a href='http://rabbithutchesgalore.com' class='logo-related-link' title='Rabbit Hutches' target='_blank'>  
+				
+					<!-- IF A CUSTOM ICON EXISTS FOR AUTO-LOGO -->
+											<div class="logo-icon-small"> 							
+							<img src="http://www.netdeals.us/sites-data/images/logo-icons/rabbit-hutches-galore-com.png" title="" alt="" border="0" width="25" />
+						</div>
+					 <!-- END AUTO ICON FROM BARS -->
+					
+					<div class="logo-new-small">RabbitHutches</div>
+								</a></div><div class="logo-small-holder"><a href='http://designerdogbeds.us' class='logo-related-link' title='Designer Dog Beds' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-designer-dog-beds-us.jpg" title="Designer Dog Beds" alt="" width="150" border="0" />
+		
+								</a></div><div class="logo-small-holder"><a href='http://dogfurniture.us' class='logo-related-link' title='Dog Beds' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-dog-furniture-us.jpg" title="Dog Beds" alt="" width="150" border="0" />
+		
+								</a></div><div class="logo-small-holder"><a href='http://dogcarrierbags.com' class='logo-related-link' title='Dog Carrier Bags' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-dog-carrier-bags-com.jpg" title="Dog Carrier Bags" alt="" width="150" border="0" />
+		
+								</a></div><div class="logo-small-holder"><a href='http://largebirdcages.us' class='logo-related-link' title='Large Bird Cages' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-large-bird-cages-us.jpg" title="Large Bird Cages" alt="" width="150" border="0" />
+		
+								</a></div><div class="logo-small-holder"><a href='http://largedogbed.us' class='logo-related-link' title='Large Dog Beds' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-large-dog-bed-us.jpg" title="Large Dog Beds" alt="" width="150" border="0" />
+		
+								</a></div><div class="logo-small-holder"><a href='http://decorativebirdcages.us' class='logo-related-link' title='Decorative Bird Cages' target='_blank'>				<img src="http://www.netdeals.us/sites-data/images/logo-decorative-bird-cages-us.jpg" title="Decorative Bird Cages" alt="" width="150" border="0" />
+		
+								</a></div></div>	</div>
+
+	<div style="height:110px;padding-top:14px;">
+		<div id="ad1" style="position:relative"></div><br />
+	</div>
+	
+    <div style="margin:15px 0px 5px 10px;"><!--height:620px;-->
+        <!--Start adsense-->    
+                <!-- <div id="ad2" style="position: relative"></div> -->
+            </div>
+					
+		</div>
+		
+		<!-- Main Section -->
+		<div class="main-products-container">
+			<!-- main logic for what's displayed on page of website
+			if it's brand new visitor, show the home page stuff, if particular sku
+			then display that product's page, everything else, show the products page-->
+		   
+			
+
+<!-- Container of main image, comparison & Description-->
+<div style="margin:0px 0px 0px 3px;border: 1px solid #E2E4E2;overflow: auto;background-color: whiteSmoke;">
+		
+		
+  <!-- Product Name -->
+<!-- 
+	<div style="margin:0px 0px 5px 0px;">
+		<h3 class="producttitle" style="margin: 5px 0px 0px 5px;>
+			<a rel="nofollow" href="http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=96443&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=_198hFLOQ2XTyyh5GoHm1A%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0345514459%2Fref%3Dasc_df_03455144591931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0345514459&linkin_id=8064391&Issdt=120310033656&searchID=p6.074297a2515b2c3d2736&DealName=It%27s+a+Dog%27s+World%3A+The+Savvy+Guide+to+Four-Legged+Living&dlprc=19.0&crn=&istrsmrc=1&isathrsl=0&AR=1&NG=1&NDP=1&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-ss11&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=90&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=" target="_blank">
+				It's a Dog's World: The Savvy Guide to Four-Legged Living			</a> 
+		</h3>
+	</div>
+ -->
+
+
+	<!-- Product Image + Comparison -->			
+	<div style="overflow:auto;height:540px;">  <!-- Image & Comparison Container -->
+	
+
+	<a rel="nofollow" href="http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=96443&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=_198hFLOQ2XTyyh5GoHm1A%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0345514459%2Fref%3Dasc_df_03455144591931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0345514459&linkin_id=8064391&Issdt=120310033656&searchID=p6.074297a2515b2c3d2736&DealName=It%27s+a+Dog%27s+World%3A+The+Savvy+Guide+to+Four-Legged+Living&dlprc=19.0&crn=&istrsmrc=1&isathrsl=0&AR=1&NG=1&NDP=1&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-ss11&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=90&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=" title="It's a Dog's World: The Savvy Guide to Four-Legged Living" target="_blank">				
+		<div class="individual-product-container-indiv-product-page" style="float:left;">
+
+			<div class="product-name-indiv-product-page">
+				It's a Dog's World: The Savvy Guide to Four-Legged Living			</div>
+
+			<!--Image + Link -->
+				<img width="400" src="http://di107.shopping.com/images/di/5f/31/39/3868464c4f5132585479796835476f486d3141-400x400-0-0.jpg?p=p6.074297a2515b2c3d2736&a=1&c=1&l=8064391&t=120310033656&r=1" alt="" class="product-image-indiv-product-page" title=""/>
+			
+			<!-- Buy now button & Price -->			
+			<div class="details-row-indiv-product-page" style="font-size:12px;border: 0px solid grey;">			
+				<div style="float:left;height:20px;margin-top:8px;border: 0px solid grey;">
+					<div class="price-label">Lowest Price:</div>
+					<div class="price-red">			
+						$19.00				
+					</div>
+				</div>
+				
+				<div class="details-container-indiv-product-page">
+					<div class="details-image-indiv-product-page">
+						<img style="width:80px;" src="http://www.netdeals.us/sites-data/images/more-details.png" width="80px" border="0"/>
+					</div>						
+					<!-- store name -->
+					<div class="store-name-indiv-product-page"> @Amazon</div>	
+				</div>
+			</div>
+			
+		</div>
+	</a>
+
+
+
+	  <!-- Comparison Module, Vertical -->	
+		<div class="comparison-container-indiv-product-page">
+			<!--MIKE COMMENT: START SHOPPING.COM CODE-->
+				<div class="producttitle"> &nbsp;As compared to...</div>
+				<div>
+					<div><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' target=_blank class="product-comparison-title-blue" rel="nofollow"><div class="price-comparison-table"><div class="price-comparison-rows"><div class="price-comparison-images" style='float:left;'><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' target=_blank class="product-comparison-title-blue" rel="nofollow"><img src='http://di2.shopping.com/images/pi/9c/b8/fd/2049771007-200x200-0-0.jpg?p=p11.2f7f4fe0c1becf837936&a=2&c=1&l=8064391&t=120310033656&r=1' border='0' width='100' alt='Consumer Dummies - Dogs All-in-one for Dummies' title='Consumer Dummies - Dogs All-in-one for Dummies'></a></div><div><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' target=_blank class="product-comparison-title-blue" rel="nofollow" title='Consumer Dummies - Dogs All-in-one for Dummies'>Consumer Dummies - Dogs All-in-one for Dummies</a><BR><div class="price-compare">$26.32</div><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' target=_blank class="item-name" rel="nofollow"><span class="itemname"></span><div class="itemname"><i></i></div><div style="float:right;"><img src="http://www.netdeals.us/sites-data/images/more-details.png" width="71px" border="0"/></div></a></div></div></div></a></div><div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow"><div class="price-comparison-table"><div class="price-comparison-rows"><div class="price-comparison-images" style='float:left;'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow"><img src='http://di109.shopping.com/images/di/78/77/43/394474616c706148696359464541774d6c4a67-400x400-0-0.jpg?p=p11.2f7f4fe0c1becf837936&a=1&c=1&l=8064391&t=120310033656&r=2' border='0' width='100' alt='Cake: A Savvy Gal's Guide to the Sweet Life' title='Cake: A Savvy Gal's Guide to the Sweet Life'></a></div><div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow" title='Cake: A Savvy Gal's Guide to the Sweet Life'>Cake: A Savvy Gal's Guide to the Sweet Life</a><BR><div class="price-compare">$19.95</div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="item-name" rel="nofollow"><span class="itemname">Are you living someone else's version of your life? If so, t...</span><div class="itemname"><i>Amazon</i></div><div style="float:right;"><img src="http://www.netdeals.us/sites-data/images/more-details.png" width="71px" border="0"/></div></a></div></div></div></a></div><div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow"><div class="price-comparison-table"><div class="price-comparison-rows"><div class="price-comparison-images" style='float:left;'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow"><img src='http://di102.shopping.com/images/di/4c/6f/66/5033563735385f65796743454d72346e486a77-400x400-0-0.jpg?p=p11.2f7f4fe0c1becf837936&a=1&c=1&l=8064391&t=120310033656&r=3' border='0' width='100' alt='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'></a></div><div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="product-comparison-title-blue" rel="nofollow" title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'>Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World</a><BR><div class="price-compare">$1.00</div><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033656&searchID=p11.2f7f4fe0c1becf837936&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=2&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc15&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' target=_blank class="item-name" rel="nofollow"><span class="itemname">How to Live Large Every Day and Kick Butt Along the Way!  Â ...</span><div class="itemname"><i>Amazon Marketplace</i></div><div style="float:right;"><img src="http://www.netdeals.us/sites-data/images/more-details.png" width="71px" border="0"/></div></a></div></div></div></a></div>				</div>
+			<!--MIKE COMMENT: END SHOPPING.COM CODE-->
+		</div>
+		
+		<!--Save for Later-->
+			<div style="float:right;width:auto;margin:25px 15px 10px 5px;height:30px;border: 0px solid black;">
+				<!-- Save for Later -->					
+				<div style="float:left;margin:0px 10px 0px 0px;width:auto;">
+					<b>Save for later:</b>
+				</div>
+				
+				<div style="float:left;padding:5px 0px 5px 10px;width:120px;background-color:white;border: 0px solid whitesmoke;">
+					<!-- AddThis Button BEGIN -->
+					<span class="addthis_toolbox addthis_default_style">
+					<a class="addthis_button_email"></a>
+					<a class="addthis_button_print"></a>
+					<a class="addthis_button_favorites"></a>
+					<!--<span class="addthis_separator">|</span>-->
+					<a class="addthis_button_facebook"></a>
+					<!--<a class="addthis_button_myspace"></a>
+					<a class="addthis_button_twitter"></a>
+					<a class="addthis_button_delicious"></a>-->
+					<a class="addthis_button_compact"></a>
+					</span>
+					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=homesupplyguy"></script>
+					<!-- AddThis Button END -->
+				</div>
+			</div>	
+		
+		
+	</div>   <!-- Close Image & Comparison -->
+	
+
+	
+	
+	<div style="clear:left;margin:15px 10px 8px 10px;font-size:14px;color:grey;border: 1px solid white; padding: 5px;">
+	  <!-- Product Description -->
+		<strong> Product Description: </strong>				
+		Let?s face it, fellow dog lover: Your pets are like your children (with fur). Pets bring endless joy to our lives: When we?re down, they lift our spirits. <br /><br />When they?re sick, we?re sick at heart. We let them have the run of the house and sleep on our beds?but the unconditional love and loyalty they give back is so wonderful that we want them to have the best of everything.     Now Wendy Diamond, pet-lifestyle expert and avid animal rescue advocate, has written a sassy yet practical guide to help you and your four-legged family member live a happy, healthy, and fulfilling life together. <br /><br />Written with her beloved Maltese, Lucky, It?s a Dog?s World shows dog moms and dog dads how to get their precious pooches from shaggy to chic and offers savvy breed-specific advice on a variety of topics you may never have considered for your pet, including: ? puppercise?keep Fido fit with fun puppy exercises, from the traditional to the more modern (?doga,? anyone?), that are tailored for each breed?s unique needs  ? doggie diet tips?the lowdown on the dog chow that packs the biggest nutritional punch, the trick on organic treats, foods to avoid, and such yummy (in your dog?s opinion) recipes as doggie meatloaf? home, sweet dog home?smart choices for flooring and furniture, avoiding hidden household hazards,  litter training, and a few tools that keep everyday pet messes to a minimum? travel tips?including the ideal dog carriers, paw-blic transportation, the most accommodating airlines, hotel petiquette, and the best destinations? paw-ty with your pooch?having fun with other furry friends at Mutt Makeovers® and bark mitzvahs, plus hosting your own Yappy Hour® with signature puptails (to benefit your local Humane Society) ? choosing Mr. (or Ms.) Ruff?finding a dog well suited to you and your family, from spunky sporting dogs to hypoallergenic hounds? here comes the groom?bathing secrets, pawdicures, and dental health? fashion sense?keep it classy and comfortable, from fetching couture trends and snazzy doggie bags to casual dog-park wear for you and your pooch? and of course the pet lifestyle is about much more than just designer doggie duds?learn what you need to know about helping other dogs in need through fostering, donating, or adopting     Complete with ?Dear Lucky? letters from other dogs and tips for humans from the doggie perspective, this fun and entertaining guide is for anyone whose life has blissfully gone to the dogs. From the Hardcover edition.. <br /><br />					<strong>Rating: 3.43</strong>&nbsp;&nbsp;<img src="http://img.shopping.com/sc/mr/sdc_checks_35.gif" />
+				<!-- Best Seller -->	
+		<!-- <span style="float: right;">
+						</span> -->
+	</div>		
+	
+	
+</div>  <!-- End container -->
+
+
+<div class="producttitle" style="margin-top:10px;">
+	Other products you might like:
+</div>
+
+<!-- Shopping.com API big widget -->
+<div id="grid-four-col-container">
+	<div class='individual-product-container'><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Consumer Dummies - Dogs All-in-one for Dummies' rel="nofollow"><div class='product-four-image'><img src='http://di2.shopping.com/images/pi/9c/b8/fd/2049771007-200x200-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=2&c=1&l=8064391&t=120310033657&r=1' border='0' width='180px;' height='180px;' alt='Consumer Dummies - Dogs All-in-one for Dummies' title='Consumer Dummies - Dogs All-in-one for Dummies'></div></a><a href='http://www.shopping.com/Book_Dogs_All_in_one_for_Dummies_Consumer_Dummies/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Consumer Dummies - Dogs All-in-one for Dummies' rel="nofollow"><div class='product-name'>Consumer Dummies - Dogs All-in-one for Dummies</div></a><div class='details-row'><div class='price-red'>$26.32</div><div class='more-details-holder'><a href='/sku-P2049771007-p-Consumer-Dummies---Dogs-All-in-one-for-Dummies.html' title='Consumer Dummies - Dogs All-in-one for Dummies'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-P2049771007-p-Consumer-Dummies---Dogs-All-in-one-for-Dummies.html' title='Consumer Dummies - Dogs All-in-one for Dummies'>Consumer Dummies - Dogs All-in-one for Dummies<br /></a></div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Cake: A Savvy Gal's Guide to the Sweet Life' rel="nofollow"><div class='product-four-image'><img src='http://di109.shopping.com/images/di/78/77/43/394474616c706148696359464541774d6c4a67-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=2' border='0' width='180px;' height='180px;' alt='Cake: A Savvy Gal's Guide to the Sweet Life' title='Cake: A Savvy Gal's Guide to the Sweet Life'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=xwC9DtalpaHicYFEAwMlJg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1934606316%2Fref%3Dasc_df_19346063161928030%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1934606316&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Cake%3A+A+Savvy+Gal%27s+Guide+to+the+Sweet+Life&dlprc=19.95&crn=&istrsmrc=1&isathrsl=0&AR=2&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=1&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Cake: A Savvy Gal's Guide to the Sweet Life' rel="nofollow"><div class='product-name'>Cake: A Savvy Gal's Guide to the Sweet Life</div></a><div class='details-row'><div class='price-red'>$19.95</div><div class='more-details-holder'><a href='/sku-OxwC9DtalpaHicYFEAwMlJg==-p-Cake%3A-A-Savvy-Gal%27s-Guide-to-the-Sweet-Life.html' title='Cake: A Savvy Gal's Guide to the Sweet Life'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OxwC9DtalpaHicYFEAwMlJg==-p-Cake%3A-A-Savvy-Gal%27s-Guide-to-the-Sweet-Life.html' title='Cake: A Savvy Gal's Guide to the Sweet Life'>Cake: A Savvy Gal's Guide to the Sweet Life<br /></a>Are you living someone else's version of your life? If so, then it's time to design your own recipe for the sweet life y...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' rel="nofollow"><div class='product-four-image'><img src='http://di102.shopping.com/images/di/4c/6f/66/5033563735385f65796743454d72346e486a77-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=3' border='0' width='180px;' height='180px;' alt='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=LofP3V758_eygCEMr4nHjw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931553%3Fsmid%3DA2BEC17BIF29NV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=1.0&crn=&istrsmrc=0&isathrsl=0&AR=3&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=2&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' rel="nofollow"><div class='product-name'>Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World</div></a><div class='details-row'><div class='price-red'>$1.00</div><div class='more-details-holder'><a href='/sku-OLofP3V758_eygCEMr4nHjw==-p-Unstoppable-in-Stilettos%3A-A-Girl%27s-Guide-to-Living-Tall-in-a-Small-World.html' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OLofP3V758_eygCEMr4nHjw==-p-Unstoppable-in-Stilettos%3A-A-Girl%27s-Guide-to-Living-Tall-in-a-Small-World.html' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'>Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World<br /></a>How to Live Large Every Day and Kick Butt Along the Way!  Â How does a girl who was originally predicted to live a wheel...</div></span></div></div></div><div class='individual-product-container'><a href='http://www.shopping.com/Book_Oooh_My_Dog_Manuel_Goossens/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Manuel Goossens - Oooh My Dog!' rel="nofollow"><div class='product-four-image'><img src='' border='0' width='180px;' height='180px;' alt='Manuel Goossens - Oooh My Dog!' title='Manuel Goossens - Oooh My Dog!'></div></a><a href='http://www.shopping.com/Book_Oooh_My_Dog_Manuel_Goossens/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Manuel Goossens - Oooh My Dog!' rel="nofollow"><div class='product-name'>Manuel Goossens - Oooh My Dog!</div></a><div class='details-row'><div class='price-red'>$13.17</div><div class='more-details-holder'><a href='/sku-P2051234398-p-Manuel-Goossens---Oooh-My-Dog%21.html' title='Manuel Goossens - Oooh My Dog!'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-P2051234398-p-Manuel-Goossens---Oooh-My-Dog%21.html' title='Manuel Goossens - Oooh My Dog!'>Manuel Goossens - Oooh My Dog!<br /></a></div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=ZktkPzfZ5FmVISK0x00Qzw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=10.91&crn=&istrsmrc=1&isathrsl=0&AR=5&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=3&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' rel="nofollow"><div class='product-four-image'><img src='http://di103.shopping.com/images/di/5a/6b/74/6b507a665a35466d5649534b30783030517a77-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=5' border='0' width='180px;' height='180px;' alt='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=ZktkPzfZ5FmVISK0x00Qzw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0757315143%2Fref%3Dasc_df_07573151431931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0757315143&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Unstoppable+in+Stilettos%3A+A+Girl%27s+Guide+to+Living+Tall+in+a+Small+World&dlprc=10.91&crn=&istrsmrc=1&isathrsl=0&AR=5&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=3&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World' rel="nofollow"><div class='product-name'>Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World</div></a><div class='details-row'><div class='price-red'>$10.91</div><div class='more-details-holder'><a href='/sku-OZktkPzfZ5FmVISK0x00Qzw==-p-Unstoppable-in-Stilettos%3A-A-Girl%27s-Guide-to-Living-Tall-in-a-Small-World.html' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OZktkPzfZ5FmVISK0x00Qzw==-p-Unstoppable-in-Stilettos%3A-A-Girl%27s-Guide-to-Living-Tall-in-a-Small-World.html' title='Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World'>Unstoppable in Stilettos: A Girl's Guide to Living Tall in a Small World<br /></a>How to Live Large Every Day and Kick Butt Along the Way!  Â How does a girl who was originally predicted to live a wheel...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=1v08smBDiMgFz_jOzVp-Ww%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0425227847%2Fref%3Dasc_df_04252278471931537%3Fsmid%3DAFWH6S46LNFKP%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0425227847&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Love+is+a+Four-Legged+Word&dlprc=1.5&crn=&istrsmrc=0&isathrsl=0&AR=6&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=4&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Love is a Four-Legged Word' rel="nofollow"><div class='product-four-image'><img src='http://di109.shopping.com/images/di/31/76/30/38736d4244694d67467a5f6a4f7a56702d5777-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=6' border='0' width='180px;' height='180px;' alt='Love is a Four-Legged Word' title='Love is a Four-Legged Word'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=1v08smBDiMgFz_jOzVp-Ww%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0425227847%2Fref%3Dasc_df_04252278471931537%3Fsmid%3DAFWH6S46LNFKP%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0425227847&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Love+is+a+Four-Legged+Word&dlprc=1.5&crn=&istrsmrc=0&isathrsl=0&AR=6&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=4&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Love is a Four-Legged Word' rel="nofollow"><div class='product-name'>Love is a Four-Legged Word</div></a><div class='details-row'><div class='price-red'>$1.50</div><div class='more-details-holder'><a href='/sku-O1v08smBDiMgFz_jOzVp-Ww==-p-Love-is-a-Four-Legged-Word.html' title='Love is a Four-Legged Word'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O1v08smBDiMgFz_jOzVp-Ww==-p-Love-is-a-Four-Legged-Word.html' title='Love is a Four-Legged Word'>Love is a Four-Legged Word<br /></a>For readers who loved Pug Hill-a charming romantic comedy debut novel about matchmaking and a millionaire mutt. Romance ...</div></span></div></div></div><div class='individual-product-container'><a href='http://www.shopping.com/Book_The_Yard_Dog_Sheldon_Russell/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Sheldon Russell - The Yard Dog' rel="nofollow"><div class='product-four-image'><img src='' border='0' width='180px;' height='180px;' alt='Sheldon Russell - The Yard Dog' title='Sheldon Russell - The Yard Dog'></div></a><a href='http://www.shopping.com/Book_The_Yard_Dog_Sheldon_Russell/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Sheldon Russell - The Yard Dog' rel="nofollow"><div class='product-name'>Sheldon Russell - The Yard Dog</div></a><div class='details-row'><div class='price-red'>$19.12</div><div class='more-details-holder'><a href='/sku-P2048062933-p-Sheldon-Russell---The-Yard-Dog.html' title='Sheldon Russell - The Yard Dog'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-P2048062933-p-Sheldon-Russell---The-Yard-Dog.html' title='Sheldon Russell - The Yard Dog'>Sheldon Russell - The Yard Dog<br /></a>Assigned to security work at a German POW camp in Oklahoma, a disillusioned Hook Runyon and his moonshiner sidekick, Run...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=lrCLMlNWEb2XnW80R_arvQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0821385453%2Fref%3Dasc_df_08213854531931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0821385453&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=A+Guide+to+the+World+Bank&dlprc=24.95&crn=&istrsmrc=1&isathrsl=0&AR=8&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=5&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='A Guide to the World Bank' rel="nofollow"><div class='product-four-image'><img src='http://di111.shopping.com/images/di/6c/72/43/4c4d6c4e57456232586e573830525f61727651-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=8' border='0' width='180px;' height='180px;' alt='A Guide to the World Bank' title='A Guide to the World Bank'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=lrCLMlNWEb2XnW80R_arvQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0821385453%2Fref%3Dasc_df_08213854531931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0821385453&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=A+Guide+to+the+World+Bank&dlprc=24.95&crn=&istrsmrc=1&isathrsl=0&AR=8&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=5&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='A Guide to the World Bank' rel="nofollow"><div class='product-name'>A Guide to the World Bank</div></a><div class='details-row'><div class='price-red'>$24.95</div><div class='more-details-holder'><a href='/sku-OlrCLMlNWEb2XnW80R_arvQ==-p-A-Guide-to-the-World-Bank.html' title='A Guide to the World Bank'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OlrCLMlNWEb2XnW80R_arvQ==-p-A-Guide-to-the-World-Bank.html' title='A Guide to the World Bank'>A Guide to the World Bank<br /></a>The World Bank Group is one of the world's largest sources of  funding and knowledge for developing countries. Its missi...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=i6p8-XOteIXsM0DHkoT9gQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0743222318%2Fref%3Dasc_df_07432223181931553%3Fsmid%3DA2VTGR0W05A7RO%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0743222318&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Pawprints+of+History%3A+Dogs+and+the+Course+of+Human+Events&dlprc=4.29&crn=&istrsmrc=0&isathrsl=0&AR=9&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=6&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Pawprints of History: Dogs and the Course of Human Events' rel="nofollow"><div class='product-four-image'><img src='http://di107.shopping.com/images/di/69/36/70/382d584f74654958734d3044486b6f54396751-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=9' border='0' width='180px;' height='180px;' alt='The Pawprints of History: Dogs and the Course of Human Events' title='The Pawprints of History: Dogs and the Course of Human Events'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=i6p8-XOteIXsM0DHkoT9gQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0743222318%2Fref%3Dasc_df_07432223181931553%3Fsmid%3DA2VTGR0W05A7RO%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0743222318&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Pawprints+of+History%3A+Dogs+and+the+Course+of+Human+Events&dlprc=4.29&crn=&istrsmrc=0&isathrsl=0&AR=9&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=6&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Pawprints of History: Dogs and the Course of Human Events' rel="nofollow"><div class='product-name'>The Pawprints of History: Dogs and the Course of Human Events</div></a><div class='details-row'><div class='price-red'>$4.29</div><div class='more-details-holder'><a href='/sku-Oi6p8-XOteIXsM0DHkoT9gQ==-p-The-Pawprints-of-History%3A-Dogs-and-the-Course-of-Human-Events.html' title='The Pawprints of History: Dogs and the Course of Human Events'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-Oi6p8-XOteIXsM0DHkoT9gQ==-p-The-Pawprints-of-History%3A-Dogs-and-the-Course-of-Human-Events.html' title='The Pawprints of History: Dogs and the Course of Human Events'>The Pawprints of History: Dogs and the Course of Human Events<br /></a>The Pawprints of History shines a new light on a favorite subject -- the relationship between humans and their four-legg...</div></span></div></div></div><div class='individual-product-container'><a href='http://www.shopping.com/Book_How_to_Speak_Zombie_A_Guide_for_the_Living_Steve_Mockus/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Steve Mockus - How to Speak Zombie: A Guide for the Living' rel="nofollow"><div class='product-four-image'><img src='http://di2.shopping.com/images/pi/18/05/0d/2049480495-200x200-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=2&c=1&l=8064391&t=120310033657&r=10' border='0' width='180px;' height='180px;' alt='Steve Mockus - How to Speak Zombie: A Guide for the Living' title='Steve Mockus - How to Speak Zombie: A Guide for the Living'></div></a><a href='http://www.shopping.com/Book_How_to_Speak_Zombie_A_Guide_for_the_Living_Steve_Mockus/prices~linkin_id-8064391' style='cursor:pointer;cursor:hand;' target='_blank' title='Steve Mockus - How to Speak Zombie: A Guide for the Living' rel="nofollow"><div class='product-name'>Steve Mockus - How to Speak Zombie: A Guide for the Living</div></a><div class='details-row'><div class='price-red'>$11.44</div><div class='more-details-holder'><a href='/sku-P2049480495-p-Steve-Mockus---How-to-Speak-Zombie%3A-A-Guide-for-the-Living.html' title='Steve Mockus - How to Speak Zombie: A Guide for the Living'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-P2049480495-p-Steve-Mockus---How-to-Speak-Zombie%3A-A-Guide-for-the-Living.html' title='Steve Mockus - How to Speak Zombie: A Guide for the Living'>Steve Mockus - How to Speak Zombie: A Guide for the Living<br /></a></div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=4QwFr1xYGfK0sOUUICObvQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0517708752%2Fref%3Dasc_df_05177087521931553%3Fsmid%3DASYDZOX0HKBSE%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0517708752&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+with+Dogs%3A+Collections+and+Traditions%2C+At+Home+and+Afield&dlprc=141.46&crn=&istrsmrc=0&isathrsl=0&AR=11&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=7&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=541&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living with Dogs: Collections and Traditions, At Home and Afield' rel="nofollow"><div class='product-four-image'><img src='http://di107.shopping.com/images/di/34/51/77/467231785947664b30734f555549434f627651-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=11' border='0' width='180px;' height='180px;' alt='Living with Dogs: Collections and Traditions, At Home and Afield' title='Living with Dogs: Collections and Traditions, At Home and Afield'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=4QwFr1xYGfK0sOUUICObvQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0517708752%2Fref%3Dasc_df_05177087521931553%3Fsmid%3DASYDZOX0HKBSE%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0517708752&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+with+Dogs%3A+Collections+and+Traditions%2C+At+Home+and+Afield&dlprc=141.46&crn=&istrsmrc=0&isathrsl=0&AR=11&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=7&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=541&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living with Dogs: Collections and Traditions, At Home and Afield' rel="nofollow"><div class='product-name'>Living with Dogs: Collections and Traditions, At Home and Afield</div></a><div class='details-row'><div class='price-red'>$141.46</div><div class='more-details-holder'><a href='/sku-O4QwFr1xYGfK0sOUUICObvQ==-p-Living-with-Dogs%3A-Collections-and-Traditions%2C-At-Home-and-Afield.html' title='Living with Dogs: Collections and Traditions, At Home and Afield'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O4QwFr1xYGfK0sOUUICObvQ==-p-Living-with-Dogs%3A-Collections-and-Traditions%2C-At-Home-and-Afield.html' title='Living with Dogs: Collections and Traditions, At Home and Afield'>Living with Dogs: Collections and Traditions, At Home and Afield<br /></a>Man's relationship with the world of dogs is not only universal, but also frequently all-encompassing, influencing how w...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=OPCQzg0ZrEB13CH2B9QNxQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0740757431%2Fref%3Dasc_df_07407574311931537%3Fsmid%3DA2E8L0E8G9VTFN%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0740757431&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+with+a+Black+Dog%3A+His+Name+Is+Depression&dlprc=2.99&crn=&istrsmrc=0&isathrsl=0&AR=12&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=8&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living with a Black Dog: His Name Is Depression' rel="nofollow"><div class='product-four-image'><img src='http://di106.shopping.com/images/di/4f/50/43/517a67305a72454231334348324239514e7851-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=12' border='0' width='180px;' height='180px;' alt='Living with a Black Dog: His Name Is Depression' title='Living with a Black Dog: His Name Is Depression'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=OPCQzg0ZrEB13CH2B9QNxQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0740757431%2Fref%3Dasc_df_07407574311931537%3Fsmid%3DA2E8L0E8G9VTFN%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0740757431&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+with+a+Black+Dog%3A+His+Name+Is+Depression&dlprc=2.99&crn=&istrsmrc=0&isathrsl=0&AR=12&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=8&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living with a Black Dog: His Name Is Depression' rel="nofollow"><div class='product-name'>Living with a Black Dog: His Name Is Depression</div></a><div class='details-row'><div class='price-red'>$2.99</div><div class='more-details-holder'><a href='/sku-OOPCQzg0ZrEB13CH2B9QNxQ==-p-Living-with-a-Black-Dog%3A-His-Name-Is-Depression.html' title='Living with a Black Dog: His Name Is Depression'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OOPCQzg0ZrEB13CH2B9QNxQ==-p-Living-with-a-Black-Dog%3A-His-Name-Is-Depression.html' title='Living with a Black Dog: His Name Is Depression'>Living with a Black Dog: His Name Is Depression<br /></a>One in four women and one in six men will suffer from depression at least once in their life. Few are immune. It was the...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=IeGPxAf1HaeBAMyUUfjLbg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1434326373%2Fref%3Dasc_df_14343263731931229%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1434326373&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Your+Personal+Guide+to+%22Dog+Whispering%22%3A+%26+%22Helping+Dogs+with+People+Problems%22&dlprc=24.99&crn=&istrsmrc=1&isathrsl=0&AR=13&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=9&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' rel="nofollow"><div class='product-four-image'><img src='http://di111.shopping.com/images/di/49/65/47/507841663148616542414d795555666a4c6267-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=13' border='0' width='180px;' height='180px;' alt='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=IeGPxAf1HaeBAMyUUfjLbg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1434326373%2Fref%3Dasc_df_14343263731931229%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1434326373&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Your+Personal+Guide+to+%22Dog+Whispering%22%3A+%26+%22Helping+Dogs+with+People+Problems%22&dlprc=24.99&crn=&istrsmrc=1&isathrsl=0&AR=13&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=9&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' rel="nofollow"><div class='product-name'>Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"</div></a><div class='details-row'><div class='price-red'>$24.99</div><div class='more-details-holder'><a href='/sku-OIeGPxAf1HaeBAMyUUfjLbg==-p-Your-Personal-Guide-to-%22Dog-Whispering%22%3A-%26-%22Helping-Dogs-with-People-Problems%22.html' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OIeGPxAf1HaeBAMyUUfjLbg==-p-Your-Personal-Guide-to-%22Dog-Whispering%22%3A-%26-%22Helping-Dogs-with-People-Problems%22.html' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'>Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"<br /></a>If you have ever wanted to learn more about the concepts and training principles of the "Dog Whispering" world, this "gu...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=HOnwPphGbhQbOq7-_0C_GA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0316966207%2Fref%3Dasc_df_03169662071931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0316966207&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Walkin%27+the+Dog&dlprc=33.19&crn=&istrsmrc=1&isathrsl=0&AR=14&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=2000627203&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=10&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=1&code=&acode=91&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Walkin' the Dog' rel="nofollow"><div class='product-four-image'><img src='http://di104.shopping.com/images/di/48/4f/6e/7750706847626851624f71372d5f30435f4741-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=14' border='0' width='180px;' height='180px;' alt='Walkin' the Dog' title='Walkin' the Dog'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=HOnwPphGbhQbOq7-_0C_GA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0316966207%2Fref%3Dasc_df_03169662071931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0316966207&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Walkin%27+the+Dog&dlprc=33.19&crn=&istrsmrc=1&isathrsl=0&AR=14&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=2000627203&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=10&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=1&code=&acode=91&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Walkin' the Dog' rel="nofollow"><div class='product-name'>Walkin' the Dog</div></a><div class='details-row'><div class='price-red'>$33.19</div><div class='more-details-holder'><a href='/sku-OHOnwPphGbhQbOq7-_0C_GA==-p-Walkin%27-the-Dog.html' title='Walkin' the Dog'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OHOnwPphGbhQbOq7-_0C_GA==-p-Walkin%27-the-Dog.html' title='Walkin' the Dog'>Walkin' the Dog<br /></a>Socrates Fortlow, an ex-convict forced to define his own morality in a lawless world, confronts wrongs that most people ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=NLqkIDJXRI3BsbdMqQkFoQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076463%2Fref%3Dasc_df_15540764631931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1554076463&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=13.22&crn=&istrsmrc=1&isathrsl=0&AR=15&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=11&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-four-image'><img src='http://di103.shopping.com/images/di/4e/4c/71/6b49444a58524933427362644d71516b466f51-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=15' border='0' width='180px;' height='180px;' alt='Exploring the World Of Wolves' title='Exploring the World Of Wolves'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=NLqkIDJXRI3BsbdMqQkFoQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076463%2Fref%3Dasc_df_15540764631931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1554076463&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=13.22&crn=&istrsmrc=1&isathrsl=0&AR=15&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=11&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-name'>Exploring the World Of Wolves</div></a><div class='details-row'><div class='price-red'>$13.22</div><div class='more-details-holder'><a href='/sku-ONLqkIDJXRI3BsbdMqQkFoQ==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-ONLqkIDJXRI3BsbdMqQkFoQ==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'>Exploring the World Of Wolves<br /></a>The wild, wary gray wolf.  The largest wild member of the dog family, the gray wolf stalks much larger mammals, such as ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=6TI7emV2gmwAclVFKCuX7w%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1434326373%2Fref%3Dasc_df_14343263731931313%3Fsmid%3DA2EGAH7V5DDGPU%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1434326373&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Your+Personal+Guide+to+%22Dog+Whispering%22%3A+%26+%22Helping+Dogs+with+People+Problems%22&dlprc=17.55&crn=&istrsmrc=0&isathrsl=0&AR=16&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=12&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' rel="nofollow"><div class='product-four-image'><img src='http://di109.shopping.com/images/di/36/54/49/37656d5632676d7741636c56464b4375583777-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=16' border='0' width='180px;' height='180px;' alt='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=6TI7emV2gmwAclVFKCuX7w%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1434326373%2Fref%3Dasc_df_14343263731931313%3Fsmid%3DA2EGAH7V5DDGPU%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1434326373&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Your+Personal+Guide+to+%22Dog+Whispering%22%3A+%26+%22Helping+Dogs+with+People+Problems%22&dlprc=17.55&crn=&istrsmrc=0&isathrsl=0&AR=16&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=12&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"' rel="nofollow"><div class='product-name'>Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"</div></a><div class='details-row'><div class='price-red'>$17.55</div><div class='more-details-holder'><a href='/sku-O6TI7emV2gmwAclVFKCuX7w==-p-Your-Personal-Guide-to-%22Dog-Whispering%22%3A-%26-%22Helping-Dogs-with-People-Problems%22.html' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O6TI7emV2gmwAclVFKCuX7w==-p-Your-Personal-Guide-to-%22Dog-Whispering%22%3A-%26-%22Helping-Dogs-with-People-Problems%22.html' title='Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"'>Your Personal Guide to "Dog Whispering": & "Helping Dogs with People Problems"<br /></a>If you have ever wanted to learn more about the concepts and training principles of the "Dog Whispering" world, this "gu...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=XVafSdcOpU_dx6LaRMRKBg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076552%2Fref%3Dasc_df_15540765521931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1554076552&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=6.95&crn=&istrsmrc=1&isathrsl=0&AR=17&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=13&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-four-image'><img src='http://di103.shopping.com/images/di/58/56/61/665364634f70555f6478364c61524d524b4267-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=17' border='0' width='180px;' height='180px;' alt='Exploring the World Of Wolves' title='Exploring the World Of Wolves'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=XVafSdcOpU_dx6LaRMRKBg%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076552%2Fref%3Dasc_df_15540765521931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1554076552&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=6.95&crn=&istrsmrc=1&isathrsl=0&AR=17&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=13&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-name'>Exploring the World Of Wolves</div></a><div class='details-row'><div class='price-red'>$6.95</div><div class='more-details-holder'><a href='/sku-OXVafSdcOpU_dx6LaRMRKBg==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OXVafSdcOpU_dx6LaRMRKBg==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'>Exploring the World Of Wolves<br /></a>The wild, wary gray wolf.  The largest wild member of the dog family, the gray wolf stalks much larger mammals, such as ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=gUN6GCNOR_CL9_qbc9JnpQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0316966207%2Fref%3Dasc_df_03169662071931553%3Fsmid%3DA16FKNX1IB0RPW%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0316966207&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Walkin%27+the+Dog&dlprc=1.17&crn=&istrsmrc=0&isathrsl=0&AR=18&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=2000627203&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=14&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Walkin' the Dog' rel="nofollow"><div class='product-four-image'><img src='http://di107.shopping.com/images/di/67/55/4e/3647434e4f525f434c395f716263394a6e7051-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=18' border='0' width='180px;' height='180px;' alt='Walkin' the Dog' title='Walkin' the Dog'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=gUN6GCNOR_CL9_qbc9JnpQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0316966207%2Fref%3Dasc_df_03169662071931553%3Fsmid%3DA16FKNX1IB0RPW%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0316966207&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Walkin%27+the+Dog&dlprc=1.17&crn=&istrsmrc=0&isathrsl=0&AR=18&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=2000627203&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=14&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Walkin' the Dog' rel="nofollow"><div class='product-name'>Walkin' the Dog</div></a><div class='details-row'><div class='price-red'>$1.17</div><div class='more-details-holder'><a href='/sku-OgUN6GCNOR_CL9_qbc9JnpQ==-p-Walkin%27-the-Dog.html' title='Walkin' the Dog'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OgUN6GCNOR_CL9_qbc9JnpQ==-p-Walkin%27-the-Dog.html' title='Walkin' the Dog'>Walkin' the Dog<br /></a>Socrates Fortlow, an ex-convict forced to define his own morality in a lawless world, confronts wrongs that most people ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=lwLE3TVbASgrqUl7TbzdSw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2FB003E7EZUC%2Fref%3Dasc_df_B003E7EZUC1931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3DB003E7EZUC&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=World+Wide+Search%3A+The+Savvy+Christian%27s+Guide+to+Online+Dating&dlprc=5.2&crn=&istrsmrc=1&isathrsl=0&AR=19&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=15&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='World Wide Search: The Savvy Christian's Guide to Online Dating' rel="nofollow"><div class='product-four-image'><img src='http://di111.shopping.com/images/di/6c/77/4c/45335456624153677271556c3754627a645377-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=19' border='0' width='180px;' height='180px;' alt='World Wide Search: The Savvy Christian's Guide to Online Dating' title='World Wide Search: The Savvy Christian's Guide to Online Dating'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=lwLE3TVbASgrqUl7TbzdSw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2FB003E7EZUC%2Fref%3Dasc_df_B003E7EZUC1931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3DB003E7EZUC&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=World+Wide+Search%3A+The+Savvy+Christian%27s+Guide+to+Online+Dating&dlprc=5.2&crn=&istrsmrc=1&isathrsl=0&AR=19&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=15&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='World Wide Search: The Savvy Christian's Guide to Online Dating' rel="nofollow"><div class='product-name'>World Wide Search: The Savvy Christian's Guide to Online Dating</div></a><div class='details-row'><div class='price-red'>$5.20</div><div class='more-details-holder'><a href='/sku-OlwLE3TVbASgrqUl7TbzdSw==-p-World-Wide-Search%3A-The-Savvy-Christian%27s-Guide-to-Online-Dating.html' title='World Wide Search: The Savvy Christian's Guide to Online Dating'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OlwLE3TVbASgrqUl7TbzdSw==-p-World-Wide-Search%3A-The-Savvy-Christian%27s-Guide-to-Online-Dating.html' title='World Wide Search: The Savvy Christian's Guide to Online Dating'>World Wide Search: The Savvy Christian's Guide to Online Dating<br /></a>Find a Soul-Deep Relationship Online.In todayâ€™s fast-paced world, singles are turning to the Internet in the hopes of ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=mFHx4XMRNYszcc1sFcxKrw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0968700829%2Fref%3Dasc_df_09687008291930796%3Fsmid%3DA3FOFKS400GIOL%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0968700829&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Face+in+the+Window%3A+A+Guide+to+Professional+Dog+Walking&dlprc=11.85&crn=&istrsmrc=0&isathrsl=0&AR=20&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=16&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Face in the Window: A Guide to Professional Dog Walking' rel="nofollow"><div class='product-four-image'><img src='http://di107.shopping.com/images/di/6d/46/48/7834584d524e59737a636331734663784b7277-100x100-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=20' border='0' width='180px;' height='180px;' alt='The Face in the Window: A Guide to Professional Dog Walking' title='The Face in the Window: A Guide to Professional Dog Walking'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=mFHx4XMRNYszcc1sFcxKrw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0968700829%2Fref%3Dasc_df_09687008291930796%3Fsmid%3DA3FOFKS400GIOL%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0968700829&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Face+in+the+Window%3A+A+Guide+to+Professional+Dog+Walking&dlprc=11.85&crn=&istrsmrc=0&isathrsl=0&AR=20&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=16&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Face in the Window: A Guide to Professional Dog Walking' rel="nofollow"><div class='product-name'>The Face in the Window: A Guide to Professional Dog Walking</div></a><div class='details-row'><div class='price-red'>$11.85</div><div class='more-details-holder'><a href='/sku-OmFHx4XMRNYszcc1sFcxKrw==-p-The-Face-in-the-Window%3A-A-Guide-to-Professional-Dog-Walking.html' title='The Face in the Window: A Guide to Professional Dog Walking'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OmFHx4XMRNYszcc1sFcxKrw==-p-The-Face-in-the-Window%3A-A-Guide-to-Professional-Dog-Walking.html' title='The Face in the Window: A Guide to Professional Dog Walking'>The Face in the Window: A Guide to Professional Dog Walking<br /></a>The demand for dog walking and home boarding services is booming and many are looking for a second career and additional...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=VJEJnbMMpZIs7jdVETpzyw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0793806704%2Fref%3Dasc_df_07938067041931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0793806704&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=High-Energy+Dogs%3A+A+Practical+Guide+to+Living+With+Energetic+and+Driven+Canines&dlprc=13.29&crn=&istrsmrc=1&isathrsl=0&AR=21&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=17&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines' rel="nofollow"><div class='product-four-image'><img src='http://di106.shopping.com/images/di/56/4a/45/4a6e624d4d705a4973376a64564554707a7977-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=21' border='0' width='180px;' height='180px;' alt='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines' title='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=VJEJnbMMpZIs7jdVETpzyw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0793806704%2Fref%3Dasc_df_07938067041931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0793806704&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=High-Energy+Dogs%3A+A+Practical+Guide+to+Living+With+Energetic+and+Driven+Canines&dlprc=13.29&crn=&istrsmrc=1&isathrsl=0&AR=21&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=17&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines' rel="nofollow"><div class='product-name'>High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines</div></a><div class='details-row'><div class='price-red'>$13.29</div><div class='more-details-holder'><a href='/sku-OVJEJnbMMpZIs7jdVETpzyw==-p-High-Energy-Dogs%3A-A-Practical-Guide-to-Living-With-Energetic-and-Driven-Canines.html' title='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OVJEJnbMMpZIs7jdVETpzyw==-p-High-Energy-Dogs%3A-A-Practical-Guide-to-Living-With-Energetic-and-Driven-Canines.html' title='High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines'>High-Energy Dogs: A Practical Guide to Living With Energetic and Driven Canines<br /></a>Many of the most popular dog breeds, including Labrador Retrievers, German Shepherds, Shetland Sheepdogs, Australian She...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=VrQxnK6NO7q12sjOSVUZ8A%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1601060343%2Fref%3Dasc_df_16010603431931553%3Fsmid%3DA4I8L2NP2V57G%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1601060343&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Savvy+Convert%27s+Guide+to+Choosing+a+Religion&dlprc=49.95&crn=&istrsmrc=0&isathrsl=0&AR=22&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=18&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=541&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Savvy Convert's Guide to Choosing a Religion' rel="nofollow"><div class='product-four-image'><img src='http://di108.shopping.com/images/di/56/72/51/786e4b364e4f37713132736a4f5356555a3841-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=22' border='0' width='180px;' height='180px;' alt='The Savvy Convert's Guide to Choosing a Religion' title='The Savvy Convert's Guide to Choosing a Religion'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=VrQxnK6NO7q12sjOSVUZ8A%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1601060343%2Fref%3Dasc_df_16010603431931553%3Fsmid%3DA4I8L2NP2V57G%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1601060343&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Savvy+Convert%27s+Guide+to+Choosing+a+Religion&dlprc=49.95&crn=&istrsmrc=0&isathrsl=0&AR=22&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=18&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=541&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Savvy Convert's Guide to Choosing a Religion' rel="nofollow"><div class='product-name'>The Savvy Convert's Guide to Choosing a Religion</div></a><div class='details-row'><div class='price-red'>$49.95</div><div class='more-details-holder'><a href='/sku-OVrQxnK6NO7q12sjOSVUZ8A==-p-The-Savvy-Convert%27s-Guide-to-Choosing-a-Religion.html' title='The Savvy Convert's Guide to Choosing a Religion'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OVrQxnK6NO7q12sjOSVUZ8A==-p-The-Savvy-Convert%27s-Guide-to-Choosing-a-Religion.html' title='The Savvy Convert's Guide to Choosing a Religion'>The Savvy Convert's Guide to Choosing a Religion<br /></a>Are you a searcher? Disappointed with your religion of birth? This innovative consumer's guide will help you identify th...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=C92zXNA5QamWfPfxIMDStA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1416535926%2Fref%3Dasc_df_14165359261931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1416535926&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=It%27s+a+Dog+Eat+Dog+World+and+Cats+Are+Waiting+Tables%3A+100+Clever%2C+Funny%2C+and+Insightful+Lessons+for+Life&dlprc=12.82&crn=&istrsmrc=1&isathrsl=0&AR=23&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=19&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life' rel="nofollow"><div class='product-four-image'><img src='http://di108.shopping.com/images/di/43/39/32/7a584e413551616d5766506678494d44537441-100x100-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=23' border='0' width='180px;' height='180px;' alt='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life' title='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=C92zXNA5QamWfPfxIMDStA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1416535926%2Fref%3Dasc_df_14165359261931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1416535926&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=It%27s+a+Dog+Eat+Dog+World+and+Cats+Are+Waiting+Tables%3A+100+Clever%2C+Funny%2C+and+Insightful+Lessons+for+Life&dlprc=12.82&crn=&istrsmrc=1&isathrsl=0&AR=23&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=19&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life' rel="nofollow"><div class='product-name'>It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life</div></a><div class='details-row'><div class='price-red'>$12.82</div><div class='more-details-holder'><a href='/sku-OC92zXNA5QamWfPfxIMDStA==-p-It%27s-a-Dog-Eat-Dog-World-and-Cats-Are-Waiting-Tables%3A-100-Clever%2C-Funny%2C-and-Insightful-Lessons-for-Life.html' title='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OC92zXNA5QamWfPfxIMDStA==-p-It%27s-a-Dog-Eat-Dog-World-and-Cats-Are-Waiting-Tables%3A-100-Clever%2C-Funny%2C-and-Insightful-Lessons-for-Life.html' title='It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life'>It's a Dog Eat Dog World and Cats Are Waiting Tables: 100 Clever, Funny, and Insightful Lessons for Life<br /></a>Wacky Wisdom      about the Weird and Wonderful Things of Life that bring Refreshment to Your Soul       Martin Babb's s...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=71kgRyHwqKkyano51ZMT0g%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2FB00394DFSI%2Fref%3Dasc_df_B00394DFSI1931553%3Fsmid%3DA1QPBCYH2LBJX7%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3DB00394DFSI&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Gospel+According+to+Dogs%3A+What+Our+Four-Legged+Saints+Can+Teach+Us&dlprc=3.75&crn=&istrsmrc=0&isathrsl=0&AR=24&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=20&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' rel="nofollow"><div class='product-four-image'><img src='http://di105.shopping.com/images/di/37/31/6b/6752794877714b6b79616e6f35315a4d543067-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=24' border='0' width='180px;' height='180px;' alt='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=71kgRyHwqKkyano51ZMT0g%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2FB00394DFSI%2Fref%3Dasc_df_B00394DFSI1931553%3Fsmid%3DA1QPBCYH2LBJX7%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3DB00394DFSI&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Gospel+According+to+Dogs%3A+What+Our+Four-Legged+Saints+Can+Teach+Us&dlprc=3.75&crn=&istrsmrc=0&isathrsl=0&AR=24&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=20&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' rel="nofollow"><div class='product-name'>The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us</div></a><div class='details-row'><div class='price-red'>$3.75</div><div class='more-details-holder'><a href='/sku-O71kgRyHwqKkyano51ZMT0g==-p-The-Gospel-According-to-Dogs%3A-What-Our-Four-Legged-Saints-Can-Teach-Us.html' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O71kgRyHwqKkyano51ZMT0g==-p-The-Gospel-According-to-Dogs%3A-What-Our-Four-Legged-Saints-Can-Teach-Us.html' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'>The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us<br /></a>Bestselling author of The Gospel According to Peanuts Robert Short reveals what man's best friend can teach us about lif...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=xI_eqcKm7Q2s1UDf5sgfig%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0061198749%2Fref%3Dasc_df_00611987491931537%3Fsmid%3DA207G1W26IYY5G%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0061198749&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Gospel+According+to+Dogs%3A+What+Our+Four-Legged+Saints+Can+Teach+Us&dlprc=1.25&crn=&istrsmrc=0&isathrsl=0&AR=25&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=21&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' rel="nofollow"><div class='product-four-image'><img src='http://di101.shopping.com/images/di/78/49/5f/6571634b6d3751327331554466357367666967-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=25' border='0' width='180px;' height='180px;' alt='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=xI_eqcKm7Q2s1UDf5sgfig%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0061198749%2Fref%3Dasc_df_00611987491931537%3Fsmid%3DA207G1W26IYY5G%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0061198749&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Gospel+According+to+Dogs%3A+What+Our+Four-Legged+Saints+Can+Teach+Us&dlprc=1.25&crn=&istrsmrc=0&isathrsl=0&AR=25&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=21&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us' rel="nofollow"><div class='product-name'>The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us</div></a><div class='details-row'><div class='price-red'>$1.25</div><div class='more-details-holder'><a href='/sku-OxI_eqcKm7Q2s1UDf5sgfig==-p-The-Gospel-According-to-Dogs%3A-What-Our-Four-Legged-Saints-Can-Teach-Us.html' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OxI_eqcKm7Q2s1UDf5sgfig==-p-The-Gospel-According-to-Dogs%3A-What-Our-Four-Legged-Saints-Can-Teach-Us.html' title='The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us'>The Gospel According to Dogs: What Our Four-Legged Saints Can Teach Us<br /></a>Bestselling author of The Gospel According to Peanuts Robert Short reveals what man's best friend can teach us about lif...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=r6QTYutxZlCGVZm1j26f4Q%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F160037834X%2Fref%3Dasc_df_160037834X1931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D160037834X&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+The+Savvy+Life%3A+The+Savvy+Woman%27s+Guide+to+Smart+Spending+and+Rich+Living&dlprc=10.49&crn=&istrsmrc=1&isathrsl=0&AR=26&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=22&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living' rel="nofollow"><div class='product-four-image'><img src='http://di105.shopping.com/images/di/72/36/51/54597574785a6c4347565a6d316a3236663451-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=26' border='0' width='180px;' height='180px;' alt='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living' title='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=r6QTYutxZlCGVZm1j26f4Q%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F160037834X%2Fref%3Dasc_df_160037834X1931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D160037834X&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+The+Savvy+Life%3A+The+Savvy+Woman%27s+Guide+to+Smart+Spending+and+Rich+Living&dlprc=10.49&crn=&istrsmrc=1&isathrsl=0&AR=26&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=22&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living' rel="nofollow"><div class='product-name'>Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living</div></a><div class='details-row'><div class='price-red'>$10.49</div><div class='more-details-holder'><a href='/sku-Or6QTYutxZlCGVZm1j26f4Q==-p-Living-The-Savvy-Life%3A-The-Savvy-Woman%27s-Guide-to-Smart-Spending-and-Rich-Living.html' title='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-Or6QTYutxZlCGVZm1j26f4Q==-p-Living-The-Savvy-Life%3A-The-Savvy-Woman%27s-Guide-to-Smart-Spending-and-Rich-Living.html' title='Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living'>Living The Savvy Life: The Savvy Woman's Guide to Smart Spending and Rich Living<br /></a>It's Not About Being Cheap.Â  Living the Savvy Life isn't about being a cheapskate, a miser or a tightwad.Â  It's about ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=6SoFqGnUOMlGICFtpO3-4w%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076463%2Fref%3Dasc_df_15540764631930796%3Fsmid%3DA2E9OWRCF7T08Y%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1554076463&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=9.99&crn=&istrsmrc=0&isathrsl=0&AR=27&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=23&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-four-image'><img src='http://di103.shopping.com/images/di/36/53/6f/4671476e554f4d6c4749434674704f332d3477-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=27' border='0' width='180px;' height='180px;' alt='Exploring the World Of Wolves' title='Exploring the World Of Wolves'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=6SoFqGnUOMlGICFtpO3-4w%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1554076463%2Fref%3Dasc_df_15540764631930796%3Fsmid%3DA2E9OWRCF7T08Y%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1554076463&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Exploring+the+World+Of+Wolves&dlprc=9.99&crn=&istrsmrc=0&isathrsl=0&AR=27&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=23&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Exploring the World Of Wolves' rel="nofollow"><div class='product-name'>Exploring the World Of Wolves</div></a><div class='details-row'><div class='price-red'>$9.99</div><div class='more-details-holder'><a href='/sku-O6SoFqGnUOMlGICFtpO3-4w==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O6SoFqGnUOMlGICFtpO3-4w==-p-Exploring-the-World-Of-Wolves.html' title='Exploring the World Of Wolves'>Exploring the World Of Wolves<br /></a>The wild, wary gray wolf.  The largest wild member of the dog family, the gray wolf stalks much larger mammals, such as ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=IFPxGpDlkpfIj8-dwwsLtQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1845297431%2Fref%3Dasc_df_18452974311931553%3Fsmid%3DA2FMSW7IPNJVDV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1845297431&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+With+a+Black+Dog&dlprc=6.98&crn=&istrsmrc=0&isathrsl=0&AR=28&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=24&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=1&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living With a Black Dog' rel="nofollow"><div class='product-four-image'><img src='http://di102.shopping.com/images/di/49/46/50/784770446c6b7066496a382d647777734c7451-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=28' border='0' width='180px;' height='180px;' alt='Living With a Black Dog' title='Living With a Black Dog'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923011&dealId=IFPxGpDlkpfIj8-dwwsLtQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1845297431%2Fref%3Dasc_df_18452974311931553%3Fsmid%3DA2FMSW7IPNJVDV%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1845297431&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Living+With+a+Black+Dog&dlprc=6.98&crn=&istrsmrc=0&isathrsl=0&AR=28&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=24&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=1&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Living With a Black Dog' rel="nofollow"><div class='product-name'>Living With a Black Dog</div></a><div class='details-row'><div class='price-red'>$6.98</div><div class='more-details-holder'><a href='/sku-OIFPxGpDlkpfIj8-dwwsLtQ==-p-Living-With-a-Black-Dog.html' title='Living With a Black Dog'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OIFPxGpDlkpfIj8-dwwsLtQ==-p-Living-With-a-Black-Dog.html' title='Living With a Black Dog'>Living With a Black Dog<br /></a>This second book from Matthew Johnstone, author of "I Had a Black Dog", is an equally touching and beautifully illustrat...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=sOyse4ujtlDziKdu0uzQ7g%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0060906111%2Fref%3Dasc_df_00609061111931537%3Fsmid%3DA15AOQYSLLO2CF%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0060906111&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=A+Guide+for+the+Perplexed&dlprc=7.21&crn=&istrsmrc=0&isathrsl=0&AR=29&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=25&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='A Guide for the Perplexed' rel="nofollow"><div class='product-four-image'><img src='http://di101.shopping.com/images/di/73/4f/79/736534756a746c447a694b647530757a513767-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=29' border='0' width='180px;' height='180px;' alt='A Guide for the Perplexed' title='A Guide for the Perplexed'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=sOyse4ujtlDziKdu0uzQ7g%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0060906111%2Fref%3Dasc_df_00609061111931537%3Fsmid%3DA15AOQYSLLO2CF%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D0060906111&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=A+Guide+for+the+Perplexed&dlprc=7.21&crn=&istrsmrc=0&isathrsl=0&AR=29&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=25&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='A Guide for the Perplexed' rel="nofollow"><div class='product-name'>A Guide for the Perplexed</div></a><div class='details-row'><div class='price-red'>$7.21</div><div class='more-details-holder'><a href='/sku-OsOyse4ujtlDziKdu0uzQ7g==-p-A-Guide-for-the-Perplexed.html' title='A Guide for the Perplexed'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OsOyse4ujtlDziKdu0uzQ7g==-p-A-Guide-for-the-Perplexed.html' title='A Guide for the Perplexed'>A Guide for the Perplexed<br /></a>The author of the world wide best-seller, Small Is Beautiful, now tackles the subject of Man, the World, and the Meaning...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=8HzRi4UnXPGhvWMqyyBfSA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0789322129%2Fref%3Dasc_df_07893221291931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0789322129&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Dogs+of+Central+Park&dlprc=14.45&crn=&istrsmrc=1&isathrsl=0&AR=30&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=26&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Dogs of Central Park' rel="nofollow"><div class='product-four-image'><img src='http://di104.shopping.com/images/di/38/48/7a/526934556e5850476876574d71797942665341-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=30' border='0' width='180px;' height='180px;' alt='The Dogs of Central Park' title='The Dogs of Central Park'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=8HzRi4UnXPGhvWMqyyBfSA%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0789322129%2Fref%3Dasc_df_07893221291931468%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D0789322129&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=The+Dogs+of+Central+Park&dlprc=14.45&crn=&istrsmrc=1&isathrsl=0&AR=30&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=26&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='The Dogs of Central Park' rel="nofollow"><div class='product-name'>The Dogs of Central Park</div></a><div class='details-row'><div class='price-red'>$14.45</div><div class='more-details-holder'><a href='/sku-O8HzRi4UnXPGhvWMqyyBfSA==-p-The-Dogs-of-Central-Park.html' title='The Dogs of Central Park'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-O8HzRi4UnXPGhvWMqyyBfSA==-p-The-Dogs-of-Central-Park.html' title='The Dogs of Central Park'>The Dogs of Central Park<br /></a>Meet the four-legged friends who frolic, walk, and romp in New York Cityâ€™s biggest playground. Move over Westminster! ...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=MSCPplZTqUaKYTGuZPTalw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1598581317%2Fref%3Dasc_df_15985813171930248%3Fsmid%3DA1BMWXYBTPPV9%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1598581317&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=To+the+Left+of+Inspiration%3A+Adventures+in+Living+with+Disabilities&dlprc=9.45&crn=&istrsmrc=0&isathrsl=0&AR=31&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=27&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='To the Left of Inspiration: Adventures in Living with Disabilities' rel="nofollow"><div class='product-four-image'><img src='http://di102.shopping.com/images/di/4d/53/43/50706c5a547155614b595447755a5054616c77-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=31' border='0' width='180px;' height='180px;' alt='To the Left of Inspiration: Adventures in Living with Disabilities' title='To the Left of Inspiration: Adventures in Living with Disabilities'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=566&BEFID=63715&aon=%5E&MerchantID=301531&crawler_id=1923010&dealId=MSCPplZTqUaKYTGuZPTalw%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1598581317%2Fref%3Dasc_df_15985813171930248%3Fsmid%3DA1BMWXYBTPPV9%26tag%3Ddealtime-books-mp01-20%26linkCode%3Dasn%26creative%3D395105%26creativeASIN%3D1598581317&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=To+the+Left+of+Inspiration%3A+Adventures+in+Living+with+Disabilities&dlprc=9.45&crn=&istrsmrc=0&isathrsl=0&AR=31&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=27&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=535&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='To the Left of Inspiration: Adventures in Living with Disabilities' rel="nofollow"><div class='product-name'>To the Left of Inspiration: Adventures in Living with Disabilities</div></a><div class='details-row'><div class='price-red'>$9.45</div><div class='more-details-holder'><a href='/sku-OMSCPplZTqUaKYTGuZPTalw==-p-To-the-Left-of-Inspiration%3A-Adventures-in-Living-with-Disabilities.html' title='To the Left of Inspiration: Adventures in Living with Disabilities'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OMSCPplZTqUaKYTGuZPTalw==-p-To-the-Left-of-Inspiration%3A-Adventures-in-Living-with-Disabilities.html' title='To the Left of Inspiration: Adventures in Living with Disabilities'>To the Left of Inspiration: Adventures in Living with Disabilities<br /></a>When is the last time you've read an honest, funny book about living with disabilities?   To the Left of Inspiration: Ad...</div></span></div></div></div><div class='individual-product-container'><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=R_VKubSbudreSiiWo1_mPQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1403339821%2Fref%3Dasc_df_14033398211931229%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1403339821&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Evolving%3A+A+Spiritual+Guide+for+Living&dlprc=14.5&crn=&istrsmrc=1&isathrsl=0&AR=32&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=28&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Evolving: A Spiritual Guide for Living' rel="nofollow"><div class='product-four-image'><img src='http://di107.shopping.com/images/di/52/5f/56/4b7562536275647265536969576f315f6d5051-400x400-0-0.jpg?p=p12.8ce01e8797b379ef7c75&a=1&c=1&l=8064391&t=120310033657&r=32' border='0' width='180px;' height='180px;' alt='Evolving: A Spiritual Guide for Living' title='Evolving: A Spiritual Guide for Living'></div></a><a href='http://stat.dealtime.com/DealFrame/DealFrame.cmp?bm=112&BEFID=63715&aon=%5E&MerchantID=40085&crawler_id=1903310&dealId=R_VKubSbudreSiiWo1_mPQ%3D%3D&url=http%3A%2F%2Fwww.amazon.com%2Fdp%2F1403339821%2Fref%3Dasc_df_14033398211931229%3Fsmid%3DATVPDKIKX0DER%26tag%3Ddealtime-books-20%26linkCode%3Dasn%26creative%3D395093%26creativeASIN%3D1403339821&linkin_id=8064391&Issdt=120310033657&searchID=p12.8ce01e8797b379ef7c75&DealName=Evolving%3A+A+Spiritual+Guide+for+Living&dlprc=14.5&crn=&istrsmrc=1&isathrsl=0&AR=32&NG=3&NDP=28&PN=1&ST=0&DB=sdcprod&MT=phx-pkadu-us-dc16&FPT=DSP&NDS=&NMS=&MRS=&PD=&brnId=14305&IsFtr=0&IsSmart=0&DMT=&op=&CM=&DlLng=1&RR=28&cid=&semid1=&semid2=&IsLps=0&CC=0&SL=0&FS=0&code=&acode=81&category=&HasLink=&frameId=&ND=&MN=&PT=&prjID=&GR=&lnkId=&VK=' style='cursor:pointer;cursor:hand;' target='_blank' title='Evolving: A Spiritual Guide for Living' rel="nofollow"><div class='product-name'>Evolving: A Spiritual Guide for Living</div></a><div class='details-row'><div class='price-red'>$14.50</div><div class='more-details-holder'><a href='/sku-OR_VKubSbudreSiiWo1_mPQ==-p-Evolving%3A-A-Spiritual-Guide-for-Living.html' title='Evolving: A Spiritual Guide for Living'><img class='details-image' src="http://www.netdeals.us/sites-data/images/more-details.png" width="50px" border="0"/></a><span><div class='product-name-mosaic'><a href='/sku-OR_VKubSbudreSiiWo1_mPQ==-p-Evolving%3A-A-Spiritual-Guide-for-Living.html' title='Evolving: A Spiritual Guide for Living'>Evolving: A Spiritual Guide for Living<br /></a>In essence, the title says it all. This book gives practical and powerful tools that will enable anyone to grow spiritua...</div></span></div></div></div></div>
+
+	
+
+<!-- View All Link -->
+<div class="category-names" style="margin:15px 0px 15px 0px;">
+	<a title="All Dog Beds" href="/view-all-dog-furniture.php">
+		View All: Dog Beds, Products, and Accessories
+	</a>
+</div>
+
+
+
+	
+
+
+
+
+
+					
+
+
+
+					</div>    
+
+	</div>   <!--End Left Col + Main Section Container -->
+
+
+				
+			</div>  <!-- end "site container"  -->
+			<!-- Including Footer -->
+			<div class="reset"></div>
+<div id="footer">
+	<div class="padding">
+		<div style="margin-left:75px;">
+			<b>Looking for something?</b><br />
+			<br />
+			<table class="sitemap-table" style="width:95%">
+	<tr>
+				<td valign="top" width="130">
+			<b>Our sites</b><br />
+			<br />
+			<a href="http://www.havethefloor.com/">HaveTheFloor</a><br />
+			<a href="http://www.aquariumstands.us/" />
+								Aquarium Stands</a><br /><a href="http://www.dogcarrierbags.com/" />
+								Dog Carrier Bags</a><br /><a href="http://www.designerdogbeds.us/" />
+								Designer Dog Beds</a><br /><a href="http://www.dogfurniture.us/" />
+								Dog Beds</a><br /><a href="http://www.largebirdcages.us/" />
+								Large Bird Cages</a><br />		</td>
+				<td valign="top" width="100">
+			<b>General</b><br />
+			<br />
+			<a href="/">Home</a><br />
+			<a href="/community-q-and-a-dog-furniture.php">Community Q&amp;A</a><br />
+			<a href="/price-view-all-products.php">All Products</a><br />
+		</td>
+		<td valign="top" width="130">
+			<b>Categories</b><br />
+			<br />
+			<a href="7574-pillow-dog-beds-dog-furniture.php"> Pillow Dog Beds</a><br /><a href="7575-dog-crates-dog-furniture.php"> Dog Crates</a><br /><a href="7576-dog-exercise-pens-dog-furniture.php"> Dog Exercise Pens</a><br /><a href="7577-nesting-dog-beds-dog-furniture.php"> Nesting Dog Beds</a><br /><a href="7578-matspads-dog-furniture.php"> Mats/Pads</a><br />		</td>
+		<td valign="top" width="150">
+			<b>Recent Searches</b><br />
+			<br />
+			<a href="http://www.dogfurniture.us/index.php?search=dog+bed&amp;no_log">dog bed</a><br /><a href="http://www.dogfurniture.us/index.php?search=dog+cage+pad&amp;no_log">dog cage pad</a><br /><a href="http://www.dogfurniture.us/index.php?search=cat+crate&amp;no_log">cat crate</a><br /><a href="http://www.dogfurniture.us/index.php?search=-1%27&amp;no_log">-1'</a><br /><a href="http://www.dogfurniture.us/index.php?search=ruff+wear&amp;no_log">ruff wear</a><br />		</td>
+				<td valign="top" width="220">
+			<b>Top Q&amp;A</b><br />
+			<br />
+			<a href="/question-605-what-is-the-best-way-to-remove--dog-furniture.php">what is the best way to remove ...</a><br /><a href="/question-603-how-do-you-keep-a-dog-off-the--dog-furniture.php">How do you keep a dog off the ...</a><br /><a href="/question-604-how-do-you-make-a-dog-stop--dog-furniture.php">How do you make a dog stop ...</a><br /><a href="/question-606-where-can-i-find-cheap-dog--dog-furniture.php">where can i find cheap dog ...</a><br /><a href="/question-607-how-do-you-keep-a-stray-dog-off--dog-furniture.php">How do you keep a stray dog off ...</a><br />		</td>
+			</tr>
+		
+</table>		</div>		
+		
+		<hr />
+		<div style="text-align:center">
+			<div style="width:75%; margin:0px auto; height:22px; line-height:22px; text-align:left">
+				<div style="width:50%;float:left;text-align:left">
+					Shop: <a href="http://www.netsavings.us/">NetSavings.us</a>
+					&amp; Learn: <a href="http://www.havethefloor.com/">HaveTheFloor.com</a>
+				</div>
+				<div style="width:50%;float:right;text-align:right">
+					<a href="/about-us.php">About Us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="/sitemap.php">Site Map</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<img style="height:20px" align="center" src="http://www.netdeals.us/sites-data/images/favicon.gif" alt="NetSavings.us logo" />
+				</div>
+				<div class="reset"></div>
+			</div>
+		</div>
+		
+		<hr />
+		<div style="text-align:center">
+			<div style="width:75%; margin:0px auto; height:22px; line-height:22px; text-align:left">
+				<div style="width:50%;float:left;text-align:left">
+					Copyright &copy; 2011 HaveTheFloor.com. All Rights reserved.
+				</div>
+				<div style="width:40%;float:left;text-align:left">
+					<a href="http://www.havethefloor.com/?page=terms" target="_blank">Terms of Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+					<a href="http://www.havethefloor.com/?page=privacy-policy" target="_blank">Privacy Policy</a>
+				</div>
+				<div style="width:10%;float:right;text-align:right">
+					<img style="height:20px" align="center" src="http://www.netdeals.us/sites-data/images/logo-net-savings-us.jpg" alt="NetSavings.us logo" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			
+		</td>
+		
+		<td width="20" class="rightshadow"> 
+		</td>      
+  </tr>  
+</table>
+
+
+<div id="google_ad1" style="display:none">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-9971623838367607";
+	/* 160x90, created 3/27/10 */
+	google_ad_slot = "2424754196";
+	google_ad_width = 150;
+	google_ad_height = 90;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>        
+</div>
+<div id="google_ad2" style="display:none">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-9971623838367607";
+		/* 120x600, created 12/21/08 */
+		google_ad_slot = 5903223135;
+		google_ad_width = 120;
+		google_ad_height = 600;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+</div>
+
+<div id="google_ad3" style="display:none">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-9971623838367607";
+	/* 468x15, created 3/19/10 */
+	google_ad_slot = "5184809059";
+	google_ad_width = 468;
+	google_ad_height = 15;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6182902-11");
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=homesupplyguy"></script>
+
+
+
+
+<!--start viglink code-->
+<script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: '0b52d428f8c25842795490c5218cb6ef' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+<!--end viglink code-->
+

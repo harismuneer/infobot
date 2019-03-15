@@ -1,0 +1,899 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-22T11:41:04Z
+WARC-TREC-ID: clueweb12-0300tw-84-16442
+WARC-IP-Address: 69.16.252.24
+WARC-Payload-Digest: sha1:GTSPQ3LWPUW4DZVNDU2SGUSPLKV4DQZS
+WARC-Target-URI: http://www.jpopasia.com/group/scandal/videos/Light.on
+WARC-Record-ID: <urn:uuid:73102f4b-26b5-4a87-a08f-1505e0df0538>
+Content-Type: application/http; msgtype=response
+Content-Length: 51978
+
+HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2012 11:41:01 GMT
+Server: Apache/2.0.63 (Unix) mod_ssl/2.0.63 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.10
+X-Powered-By: PHP/5.2.10
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<title>SCANDAL  - band - </title><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.jpopasia.com/rss/videos.xml" />
+<link href="http://www.jpopasia.com/inc/css/smoothness/jquery-ui-1.7.1.custom.css" type="text/css" rel="stylesheet" media="screen, projection">
+<link href="http://d3rufoqhb6ap02.cloudfront.net/core-3.59
+.css" type="text/css" rel="stylesheet" media="screen, projection">
+<!--[if IE 6]>
+<link rel="stylesheet" href="/inc/css/ie6.css" type="text/css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/inc/css/ie7.css" type="text/css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/inc/css/ie8.css" type="text/css" media="screen, projection" />
+<![endif]-->
+
+
+<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!--<script type="text/javascript" src="http://www.jpopasia.com/inc/flashv/jwplayer.js"></script>-->
+
+	<script type="text/javascript" src="http://d3rufoqhb6ap02.cloudfront.net/core-3.3.4.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="revisit-after" content="1" />
+<meta name="robots" content="all" />
+<meta name="author" content="jpopasia" />
+<meta name="keywords" lang="en" content="lyrics, videos, news, jpop, kpop, jrock, indopop, anime, breaking news, music, asia, charts, community, korean, japanese, chinese, entertainment" />
+<meta name="description" lang="en" content="Genre:  PV - Released on:  , .  Watch video now! () @ JPOPASIA.COM" />
+<link rel="shortcut icon" href="http://cdn.jpopasia.com/favicon2.ico" />
+<meta name="google-site-verification" content="yA6PSdCTGk0zIZoZiO_JKeIXS3zrJZjQdB1NtctvVCc" />
+<link rel="image_src" type="image/jpeg" href="http://www.jpopasia.com/i1/celebrities/1/22514-scandal-42or-t.jpg" />
+<!-- test js -->
+<script type="text/javascript" charset="utf-8">
+	document.write('<style type="text/css" media="screen, projection, print">.nojs { display:none; } .isjs { display:block; }</style>')
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+		
+		
+	
+	$('#home.navigation a, #news.navigation a, #celebrities.navigation a, #charts.navigation a, #community.navigation a, #tips.navigation a').click(function(){
+		$('#navi .navigation a').removeClass('selected');
+		$(this).addClass('selected');
+	});
+	
+		$('#fade1, #fade2').innerfade({ 
+		speed: 1000, 
+		timeout:'4000', 
+		type: 'random_start'
+		
+	});
+		
+	// create account	
+	$('.create-account').click(function() {
+		$("#dialog").dialog({
+			bgiframe: true,
+			autoOpen: false,
+			height: 'auto',
+			width: 660,
+			modal: false,
+			position: ['center',90],
+			close: function(event, ui) { dialogContent.html(''); }
+		});
+		
+		var dialog			= $('#dialog');
+		var dialogContent	= $('#dialog-content');
+		/*$('#ad-header-728').hide();*/
+		$('.widget').remove();
+		dialog.dialog('open');
+		dialog.dialog('option', 'title', 'Sign Up');
+		dialogContent.fadeIn('slow');
+		$.post('/ajax/dialog.php', {type:75278 }, function(callback){
+			dialogContent.html(callback);
+		});
+		return false;
+	});
+	// login
+	$('.global-login').click(function() {
+		var offset			= $(this).offset();
+		var elementWidth 	= $(this).outerWidth();
+		var left			= offset.left + elementWidth + 30;
+		var top				= offset.top - 2;
+		/*$('#ad-header-728').hide();*/
+		$('#footerPlaceholder').after('<div style="position:absolute; display:block; z-index:1000; top:'+top+'px; left:'+left+'px;"><div class="widget login border-round"><div class="pointer up right"></div><div class="close hand"></div><div class="content"><form id="login" class="embedLogin">E-mail address:<br /><input class="pretty" type="text" name="emailLogin" /><br />Password:<br /><input class="pretty" type="password" name="passwordLogin" /><br />Remember me <input type="checkbox" name="rememberLogin" /><br /><br /><div id="globalLoginSubmit" class="small hand button green">Submit</div></form></div></div></div>');
+		$('.widget.login .close').click(function(){ $('.widget.login').remove() });
+		// submit login
+		$('#globalLoginSubmit').live('click', function(){
+			//$(this).after(loading).addClass('black').removeClass('green');
+			$(this).after(loading).attr('disabled', '').removeClass('black').addClass('green').removeClass('disabled');
+			embedLogin();
+		});
+		return false;
+	});
+	$('#nav-search input[type=text]').inputDesc({ description:'search' });	
+	$('#globalsearch').focus(function(){
+		//$('#screenOverlay').setOverlay({ status:1 });
+		if ($('#global-searchresults').length == 0) {
+		 	$('#footerPlaceholder').append('<div class="widget livesearch  border-round"><div id="global-searchresults" class="widget-content"><p>Start typing to search</p></div></div>');
+			// hide when clicked outside area
+		 	$('body').click(function() { $('.livesearch').remove(); });
+			$('#globalsearch, .livesearch').click(function(event){ event.stopPropagation(); });	
+		}
+	});
+
+	$('#globalsearch').keyup(function(event){
+		var keyID	= event.which;
+		if (keyID != 13) {
+			if (keyID != 40 && keyID != 38) {
+				var searchQuery	= $(this).val();
+				var length 		= searchQuery.length;	
+				if (length > 1) {
+					if (!searchQuery) {
+						$('#nav-search-loading').addClass('hidden');
+						$('#searchresults').fadeOut();
+					} else {
+						$('#nav-search-loading').removeClass('hidden');
+						getSearchResults(searchQuery, 'globalsearch');
+					}
+				}	
+			}
+		}
+	});
+	$('.poptip').poptip({ 'delay':0, 'fadeIn':0, 'fadeOut':0 });
+	$('.poptip-l').poptip({ 'delay':0, 'maxWidth':'350px', 'fadeIn':0, 'fadeOut':0 });
+	
+	});
+
+function blockError()
+{
+	return true;
+}
+window.onerror = blockError;
+
+// pop-up comments and message
+function chat() 
+{  	
+	var direc = 'http://www.jpopasia.com/chat/chatJPA/';	window.open(direc,'chat','fullscreen=no,toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=no,directories=no,location=no,width=950,height=620,left=0,top=100,screenX=0,screenY=100');return false;   	 	 
+}
+</script>
+
+</head>
+<body>
+
+<div id="globalMessage"><div class="inner"></div></div>
+
+<!-- Asynchronous Tracking -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-349395-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var newYear = new Date(); 
+	newYear = new Date(2012, 0, 2, 13); 
+	$('#defaultCountdown2').countdown({until: newYear, timezone: +1}); 
+});
+</script>
+
+
+<div id="header">
+
+	<div class="wrapper">
+	<ul id="navi">
+			
+	
+		<li id="nav-logo"><a href="http://www.jpopasia.com"><img src="http://www.jpopasia.com/img/gen/jpopasia3.png"></a></li>
+		
+		<li id="home" class="navigation small"><a  href="/">Home</a></li>
+		<li id="news" class="navigation small"><a  href="/news/">News</a></li>
+		<li id="charts" class="navigation small"><a  href="/charts/">Charts</a></li>
+		<li id="celebrities" class="navigation large"><a  href="/celebrities/">Celebrities</a></li>
+		<li id="community" class="navigation large"><a  href="/community/">Community</a></li>
+		<li id="market" class="navigation large"><a  href="/market/">Market</a></li>
+		<li id="concerts" class="navigation medium"><a  href="/concert-event/">Concerts</a></li>
+		<li id="chat" class="navigation small"><a href="javascript:chat();void(0);" onClick="return confirm(\'Do not spam or insult others in the chat. Be respectful to eachother. All messages are logged and we have zero tolerance for chat misbehaviour (site wide bans and termination of your account without warnings). Forum rules apply to our chat. Entering the chat is FREE! Do you want to enter the JPA chat?\')">Chat</a><div class="chatballoon">2</div></li>
+				
+				<li id="fblike">
+			<iframe scrolling="no" frameborder="0" src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/jpopasia&amp;locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:120px; position: absolute; top: 106px; left: 630px; height:21px; background-color:#3D4758;" allowtransparency="true"></iframe>
+		</li>
+				
+		<li id="nav-search"><form action="/search/" method="GET"><input id="globalsearch" type="text" name="q" value="search" /></form><div id="nav-search-loading" class="hidden"><img src="/img/gen/spinner-s.gif" title="loading"></div></li>
+
+
+
+
+
+
+
+		<li id="nav-promo1">
+										<ul id="fade1">
+											<li>
+										<div class="mask" style="width:260px; height:84px;">		
+											<div class="mask-visible">
+												<a href="http://www.jpopasia.com/celebrity/ieirileo/videos/sabrina::18894.html">
+													<img src="http://www.jpopasia.com/img/album-covers/2/15268-sabrina-qp4h.jpg" alt="Sabrina by Ieiri Leo" title="Sabrina by Ieiri Leo" style="width:260px; margin-left:-0px; margin-top:-45px">
+												
+													
+													<div class="news-sticky-titlebg white" style="width:500px; padding: 3px 3px 3px 8px; top: 59px;">
+														<h2 class="news-sticky-title" style="font-size:11px; font-weight:bold;">Sabrina by Ieiri Leo <span class="label">+lyrics</span></h2>
+													</div>
+					
+												</a>
+											</div>
+										</div>
+									</li><li>
+										<div class="mask" style="width:260px; height:84px;">		
+											<div class="mask-visible">
+												<a href="http://www.jpopasia.com/celebrity/kwill/videos/i-need-you-feat-ji-chang-wook::20098.html">
+													<img src="http://www.jpopasia.com/img/album-covers/3/16725-ineedyou-1x3d.jpg" alt="I Need You Feat. Ji Chang Wook by K.Will" title="I Need You Feat. Ji Chang Wook by K.Will" style="width:260px; margin-left:-0px; margin-top:-70px">
+												
+													
+													<div class="news-sticky-titlebg white" style="width:500px; padding: 3px 3px 3px 8px; top: 59px;">
+														<h2 class="news-sticky-title" style="font-size:11px; font-weight:bold;">I Need You Feat. Ji Chang Wook by K.Will <span class="label">+lyrics</span></h2>
+													</div>
+					
+												</a>
+											</div>
+										</div>
+									</li><li>
+										<a href="http://twitter.com/jpopasia/"><img src="http://cdn.jpopasia.com/jpaPromo428.gif" alt="JpopAsia on twitter" title="JpopAsia on twitter" /></a>
+										<div style="position:relative;"><iframe allowtransparency="true" frameborder="0" scrolling="no"
+					  src="http://platform.twitter.com/widgets/follow_button.html?screen_name=jpopasia&show_count=false"
+					  style="width:300px; height:20px; position:absolute; top:-30px; left:120px;"></iframe></div>
+									</li>
+										</ul>
+									</li>
+									
+									<li id="nav-promo2">
+										<ul id="fade2">
+											<li>
+										<div class="mask" style="width:260px; height:84px;">		
+											<div class="mask-visible">
+												<a href="http://www.jpopasia.com/group/lc5/videos/only-you-kimi-to-no-kizuna::18931.html">
+													<img src="http://www.jpopasia.com/img/album-covers/2/15351-onlyyoukimitonokizun-5ohj.jpg" alt="Only you ~Kimi to no Kizuna~ by Lc5" title="Only you ~Kimi to no Kizuna~ by Lc5" style="width:260px; margin-left:-0px; margin-top:-20px">
+												
+													
+													<div class="news-sticky-titlebg white" style="width:500px; padding: 3px 3px 3px 8px; top: 59px;">
+														<h2 class="news-sticky-title" style="font-size:11px; font-weight:bold;">Only you ~Kimi to no Kizuna~ by Lc5 <span class="label">+lyrics</span></h2>
+													</div>
+					
+												</a>
+											</div>
+										</div>
+									</li><li>
+										<div class="mask" style="width:260px; height:84px;">		
+											<div class="mask-visible">
+												<a href="http://www.jpopasia.com/group/aquatimez/videos/mask::19431.html">
+													<img src="http://www.jpopasia.com/img/album-covers/2/14391-mask-ai1z.jpg" alt="MASK by Aqua Timez" title="MASK by Aqua Timez" style="width:260px; margin-left:-0px; margin-top:-40px">
+												
+													
+													<div class="news-sticky-titlebg white" style="width:500px; padding: 3px 3px 3px 8px; top: 59px;">
+														<h2 class="news-sticky-title" style="font-size:11px; font-weight:bold;">MASK by Aqua Timez <span class="label">+lyrics</span></h2>
+													</div>
+					
+												</a>
+											</div>
+										</div>
+									</li><li>
+										<div class="mask" style="background-color:#111111; width:260px; height:84px;"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fjpopasia&amp;width=260&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:260px; height:62px;" allowTransparency="true"></iframe>
+											<div class="news-sticky-titlebg white" style="width:500px; padding: 3px 3px 3px 8px; top: 59px;">
+												<h2 class="news-sticky-title" style="font-size:11px; font-weight:bold;">Breaking Asian news on your FB? Like us!</h2>
+											</div>
+										</div>
+									
+									</li>
+										</ul>
+									</li>
+
+	
+
+	
+								
+				<li id="nav-promo3"><a href="/vip/"><img src="/img/promos/jpapromo-3-vip.png" alt="VIP" title="VIP" style="width:100px;" /></a></li>							
+							
+		<li id="subnavi">
+			<ul class="horizontal-r">
+									<li><a class="global-login white" href="#">login</a></li>
+					<li class="spacer"> · </li>
+					<li><a class="create-account white" href="#">sign up</a></li>
+					<li class="spacer"> · </li>
+					<li><a class="poptip" title="JpopAsia RSS feed" href="http://www.jpopasia.com/rss/videos.xml"><div class="sprite-lq rssxs" style="margin-top:2px;"></div></a></li>
+					<li>&nbsp;&nbsp;&nbsp;</li>
+					<li><a class="poptip" title="facebook.com/jpopasia" href="http://www.facebook.com/jpopasia/"><div class="sprite-lq fbxs" style="margin-top:2px;"></div></a></li>
+					<li>&nbsp;&nbsp;&nbsp;</li>
+					<li><a class="poptip" title="twitter.com/jpopasia" href="http://twitter.com/jpopasia/"><div class="sprite-lq twxs" style="margin-top:2px;"></div></a></li>
+							</ul>
+		</li>
+	</ul>
+	
+	</div>  <!-- /.wrapper -->
+</div> <!-- /#header -->
+
+
+<div id="dialog" title="JpopAsia">
+	<div id="dialog-content" style="display:none;"><div align="center"><img src="/img/gen/spinner-m.gif"></div></div>
+</div> <!-- /#dialog -->
+
+
+
+
+<div class="wrapper">
+	<div class="nojs">You have turned off JavaScript in your browser.<br />Enable JavaScript in your browsers preferences to make use of all the advanced features of JpopAsia.com</div>
+</div> <!-- /wrapper -->
+
+
+
+<div class="wrapper a-center">
+	<script type="text/javascript"><!--
+								google_ad_client = "pub-3209266765448308";
+								/* 728x90, gemaakt 8-4-08 */
+								google_ad_slot = "3578979288";
+								google_ad_width = 728;
+								google_ad_height = 90;
+								//-->
+								</script>
+								<script type="text/javascript"
+								src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+								</script></div> <!-- /wrapper -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+		
+	$('#tabsVideoSelect').tabs({ spinner:null }).tabs('select', 1);
+	
+	
+	$('#tabsTrending').tabs({
+		spinner:null,
+		cache: true,
+		select: function(event, ui) {
+			$(this).css('height', $(this).parents('.content').height()+'px');
+			var thisLoading	= $('.tabloading', this);
+			thisLoading.html(loading);
+			setTimeout(function(){
+				thisLoading.html('');
+			}, 1000);
+		},
+		load: function(event, ui) {
+			$(this).css('height', '151px');
+		}
+	});
+
+	
+		
+		// select lyric
+	$('.select-lyric').click(function(){
+		var lyricID		= $(this).attr('selectid');
+		//check which col
+		$('.select-lyric').removeClass('bold green');
+		$(this).addClass('bold green');
+		$('#lyricField span').addClass('nodisplay');
+		$('#'+lyricID+'').removeClass('nodisplay');
+		return false;
+	});
+	
+	
+		
+	
+		
+	
+		
+			setTimeout(function(){
+			$('#videoAd').removeClass('nodisplay');
+		}, 60000);
+	});
+</script>
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------
+C46
+----------------------------------------------------------------------------------------------------------------------- -->	
+<div class="wrapper">	
+	<ul class="subnavigation red pointer densed">
+	<li><a href="javascript:history.back()">Back</a></li>
+	<li><div class="separator ui-icon ui-icon-grip-dotted-vertical"></div></li>
+	<li><a class="" href="http://www.jpopasia.com/group/scandal/">SCANDAL</a></li>
+	<li><a class="" href="http://www.jpopasia.com/group/scandal/discography/">Discography <span class="label grey">21 albums</span>  <span class="label grey">41 videos</span>  <span class="label grey">324 lyrics</span></a></li>
+	<li><a class="" href="http://www.jpopasia.com/group/scandal/news/">In news <span class="label grey">54</span></a></li>	<li><a class="selected" href="http://www.jpopasia.com/group/scandal/videos/">Videos <span class="label grey">41</span></a></li>
+	<li><a class="" href="http://www.jpopasia.com/group/scandal/houses/">Houses</a></li>
+	<li><div class="separator ui-icon ui-icon-grip-dotted-vertical"></div></li>
+		<li><a class="" href="http://www.jpopasia.com/lyrics/scandal/">Archived lyrics <span class="label grey">18</span></a></li></ul>
+
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var saveButtonDiscography	= $('#saveDiscography');
+	var saveButton				= $('#save-attributes');
+	var personID				= 22514;
+	
+			
+	// LOAD LYRICS MODAL
+	$('.tracklist').click(function(e){
+		var target		= (e.target)?e.target:e.srcElement;		
+		var trackID		= e.target.id;
+		
+		if (trackID != '') {
+			var trackTitle	= $('#'+trackID).html();
+			$('object, .widget, .object').remove(); // remove videos otherwise causes scrolling conflict
+			// set dialog settings	
+			$("#dialogLyrics").dialog({
+				bgiframe: true,
+				autoOpen: false,
+				height: 600,
+				width: 850,
+				draggable: false,
+				modal: false,
+				position: ['center',90],
+				close: function(event, ui) { dialogContent.html(''); }
+			});
+			// load lyric and forms
+			var dialog			= $('#dialogLyrics');
+			var dialogContent	= $('#dialogContentLyrics');
+			/*$('#ad-header-728').hide();*/
+			dialog.dialog('option', 'title', 'Lyric / video '+trackTitle);
+			dialogContent.show();
+			dialog.dialog('open');
+			$.post('/ajax/dialog.php', { type:41961, value1:trackID, value2:true }, function(callback){
+				dialogContent.html(callback);
+			});
+			return false;
+		}
+	});
+	
+	});
+</script>	
+	<div class="c66">
+	
+		<div class="mod">
+							<div style="border: 10px dashed #d8d8d8; width: 540px; font-size: 30px; padding: 20px; text-align:center;">
+				<strong id="selectVideo">
+					Select a video there -><br /><br />
+					to play<br /><br />
+				</strong>
+				<a class="medium button grey" href="">Play latest video</a> <a class="medium button grey" href="">Play the most popular video</a> <a class="medium button grey" href="">Play the oldest video</a>
+				</div>
+					</div> <!-- /c66 mod -->
+		
+	</div> <!-- /c66 wrap -->
+	
+	
+	
+
+	
+	<div class="c33">
+		
+		
+
+		<div class="mod">	
+			<div class="content box">
+				<div id="tabsVideoSelect" class="ui-tabs xs horizontal">
+
+					<ul class="subnavigation f-right outline-h">
+						<li class="nobg"><a href="#associatedLyric"><span>Track lyrics</span></a></li>
+						<li class="nobg"><a href="#allVideos"><span>All videos</span> <span class="label">56</span></a></li>
+						<li class="nobg"><a href="#showTracklist"><span>Tracklist</span></a></li>
+					</ul>
+				
+					<div class="clear seplinebg"></div>
+					
+						
+						
+						
+					<div id="associatedLyric" class="ui-tabs-hide">
+					<div class="clear" style="margin:0;"></div>
+								
+								<ul id="scrollControl" class="horizontal a-center">
+									<li style="width:160px;"><a id="autoScrollState" href="#">Auto scrolling: enabled</a></li>
+									<li id="scrollToTop" style="width:150px;" class="hand"><span class="ui-icon ui-icon-arrow-n f-right"></span> <span class="f-right">Scroll to top</span></li>
+								</ul>
+								<div class="seplinebg clear"></div>
+								
+								<ul id="selectLyric" class="horizontal a-center">
+									<li class="select-lyric green bold hand" style="width:100px;" selectid="lyricR">Romanized</li>
+									<li class="select-lyric hand" style="width:100px;" selectid="lyricK">Japanese</li>
+									<li class="select-lyric hand" style="width:100px;" selectid="lyricT">Translation</li>
+								</ul>
+								<div class=" clear"></div>
+							
+								
+								<div id="lyricField">
+									<div id="showOnlyVisibleLyric">
+										<span id="lyricR" class="" align="left"><div style="text-align: left;">No romanized lyric yet <a id="track_" class="medium button red tracklist" href="#lyrics">add lyric</a><div class="xs light-grey"></div></div></span>
+										
+										<span id="lyricK" class="nodisplay"" align="left"><div style="text-align: left;">No Japanese lyric yet <a id="track_" class="medium button red tracklist" href="#lyrics">add lyric</a><div class="xs light-grey"></div></div></span>
+										
+										<span id="lyricT" class="nodisplay"" align="left"><div style="text-align: left;">No translated lyric yet <a id="track_" class="medium button red tracklist" href="#lyrics">add lyric</a><div class="xs light-grey"></div></div></span>
+									</div>
+								</div>
+								<div id="#lyricEnd"></div>
+								
+								
+								
+								
+								<div class="clear"></div>					</div> <!-- /associatedLyric -->
+						
+					
+				
+					
+					<div id="allVideos" class="" style="height:600px; overflow:auto;">
+					<ul><li class="seplinebg sepbar a-center"><strong class="outline-h">2012</strong></li><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/harukaze::19932.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/2/15113-harukaze-1qqm-t.jpg" class="hero" alt="HARUKAZE - SCANDAL" title="HARUKAZE" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>HARUKAZE</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Upbeat & rocking ·  19,683 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2011</strong></li><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/love-survive::14869.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/10583-lovesurvive-xbb0-t.jpg" class="hero" alt="LOVE SURVIVE - SCANDAL" title="LOVE SURVIVE" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>LOVE SURVIVE</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  34,494 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/haruka::11406.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/7003-haruka-uvo7-t.jpg" class="hero" alt="Haruka (ハルカ) - SCANDAL" title="Haruka (ハルカ)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Haruka (ハルカ)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Upbeat & touching ·  53,643 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/cute::903.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/1572-pride-nmq9-t.jpg" class="hero" alt="CUTE! - SCANDAL" title="CUTE!" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>CUTE!</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Happy & funny ·  42,456 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/pride::904.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/1572-pride-nmq9-t.jpg" class="hero" alt="Pride - SCANDAL" title="Pride" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Pride</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  90,879 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2010</strong></li><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/koibito-ga-santa-claus::4398.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2439-rgirlsrock-367d-t.jpg" class="hero" alt="Koibito ga Santa Claus (恋人がサンタクロース) - SCANDAL" title="Koibito ga Santa Claus (恋人がサンタクロース)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Koibito ga Santa Claus (恋人がサンタクロース)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & happy ·  3,018 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/scandal-nanka-buttobase::2492.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-track-covers/1/14338-scandalnankabuttobase-7vcy-t.jpg" class="hero" alt="SCANDAL Nanka Buttobase (スキャンダルなんかブッ飛ばせ) - SCANDAL" title="SCANDAL Nanka Buttobase (スキャンダルなんかブッ飛ばせ)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>SCANDAL Nanka Buttobase (スキャンダルなんかブッ飛ばせ)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & energetic ·  8,364 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/playboy-part-ii-part::19353.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-track-covers/2/14334-playboypartiipart-cua3-t.jpg" class="hero" alt="Playboy Part II (プレイボーイPartⅡ) - SCANDAL" title="Playboy Part II (プレイボーイPartⅡ)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Playboy Part II (プレイボーイPartⅡ)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  1,002 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/hi-hi-hi::19935.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="Hi-Hi-Hi - SCANDAL" title="Hi-Hi-Hi" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Hi-Hi-Hi</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Upbeat ·  228 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/everybody-say-yeah::12627.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="EVERYBODY SAY YEAH - SCANDAL" title="EVERYBODY SAY YEAH" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>EVERYBODY SAY YEAH</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & party ·  4,932 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/hello-hello::19936.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="Hello! Hello! - SCANDAL" title="Hello! Hello!" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Hello! Hello!</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Upbeat & rocking ·  210 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/sayonara-my-friend-my-friend::17516.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="Sayonara My Friend (さよならMy Friend) - SCANDAL" title="Sayonara My Friend (さよならMy Friend)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Sayonara My Friend (さよならMy Friend)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Touching & happy ·  1,509 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/girlism::19937.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="GIRLism - SCANDAL" title="GIRLism" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>GIRLism</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  459 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/namida-no-regret::2441.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2315-namidanoregret-49u1-t.jpg" class="hero" alt="Namida no Regret (涙のリグレット) - SCANDAL" title="Namida no Regret (涙のリグレット)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Namida no Regret (涙のリグレット)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Sad & touching ·  115,698 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/taiyou-to-kimi-ga-egaku-story-story::2429.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2317-temptationbox-x9dx-t.jpg" class="hero" alt="Taiyou to Kimi ga Egaku STORY (太陽と君が描くSTORY) - SCANDAL" title="Taiyou to Kimi ga Egaku STORY (太陽と君が描くSTORY)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Taiyou to Kimi ga Egaku STORY (太陽と君が描くSTORY)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & happy ·  152,829 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/secret-base-kimi-ga-kureta-mono::3800.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-track-covers/1/14740-secretbasezone-zxo7-t.jpg" class="hero" alt="secret base ~Kimi ga Kureta Mono~ - SCANDAL" title="secret base ~Kimi ga Kureta Mono~" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>secret base ~Kimi ga Kureta Mono~</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Touching & relaxing ·  5,028 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/shunkan-sentimental::3863.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2319-shunkansentimental-mq6d-t.jpg" class="hero" alt="Shunkan Sentimental (瞬間センチメンタル) - SCANDAL" title="Shunkan Sentimental (瞬間センチメンタル)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Shunkan Sentimental (瞬間センチメンタル)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  9,021 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2009</strong></li><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/scandal-baby::4405.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2290-bestscandal-ktnh-t.jpg" class="hero" alt="SCANDAL BABY - SCANDAL" title="SCANDAL BABY" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>SCANDAL BABY</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & shocking ·  4,164 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/yumemiru-tsubasa::2497.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2303-yumemirutsubasa-of4z-t.jpg" class="hero" alt="Yumemiru Tsubasa (夢見るつばさ) - SCANDAL" title="Yumemiru Tsubasa (夢見るつばさ)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Yumemiru Tsubasa (夢見るつばさ)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  1,803 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/beauteen::2333.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2303-yumemirutsubasa-of4z-t.jpg" class="hero" alt="BEAUTeen!! - SCANDAL" title="BEAUTeen!!" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>BEAUTeen!!</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Happy & upbeat ·  74,163 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/shoujo-s-s::2494.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2290-bestscandal-ktnh-t.jpg" class="hero" alt="Shoujo S (少女S) - SCANDAL" title="Shoujo S (少女S)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Shoujo S (少女S)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  7,611 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/sakura-goodbye-sakura::2289.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2307-sakuragoodbye-4kyf-t.jpg" class="hero" alt="SAKURA Goodbye (SAKURA グッバイ) - SCANDAL" title="SAKURA Goodbye (SAKURA グッバイ)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>SAKURA Goodbye (SAKURA グッバイ)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Happy & rocking ·  82,302 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2008</strong></li><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/doll::2212.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-covers/1/2290-bestscandal-ktnh-t.jpg" class="hero" alt="DOLL - SCANDAL" title="DOLL" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>DOLL</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  72,300 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/koi-moyou::2496.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-track-covers/1/14301-koimoyoulovepattern-k9is-t.jpg" class="hero" alt="Koi Moyou (恋模様) - SCANDAL" title="Koi Moyou (恋模様)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Koi Moyou (恋模様)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Romantic & rocking ·  1,485 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 10px 0 10px;">
+						
+										
+										<a style="" href="http://www.jpopasia.com/group/scandal/videos/space-ranger::2495.html">
+											<div style="float:left;"><img src="http://www.jpopasia.com/img/album-track-covers/1/14302-spaceranger-ydcc-t.jpg" class="hero" alt="Space Ranger (スペースレンジャー) - SCANDAL" title="Space Ranger (スペースレンジャー)" width="40" height="40"" /></div>
+											<div class="title" style="margin-left:50px;">
+												<strong>Space Ranger (スペースレンジャー)</strong><br />
+												<span class="xs light-grey"><span class="label grey">lyric</span> · Rocking & upbeat ·  1,077 views</span>
+											</div>
+										</a>
+									</li><div class="clear"></div><li class="seplinebg grey sepbar a-center"><strong class="outline-h">ARCHIVED VIDEOS</strong><span class="label">15</span></li><li class="seplinebg sepbar a-center"><strong class="outline-h">2011</strong></li><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/33179/scandal/pride.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/33179.jpg" class="hero" alt="Pride" title="Pride" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Pride</strong><br />
+												<span class="xs light-grey">Anime ·  20,466 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/33108/scandal/cute.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/33108.jpg" class="hero" alt="CUTE!" title="CUTE!" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>CUTE!</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  18,264 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2010</strong></li><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/30978/scandal/scandal-nanka-buttobase.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/30978.jpg" class="hero" alt="Scandal Nanka Buttobase" title="Scandal Nanka Buttobase" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Scandal Nanka Buttobase</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  100,674 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/29379/scandal/secret-base-kimi-ga-kureta-mono.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/29379.jpg" class="hero" alt="Secret Base ~ Kimi Ga Kureta Mono ~" title="Secret Base ~ Kimi Ga Kureta Mono ~" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Secret Base ~ Kimi Ga Kureta Mono ~</strong><br />
+												<span class="xs light-grey">J-Pop ·  107,052 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/29848/scandal/namida-no-regret.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/29848.jpg" class="hero" alt="Namida No Regret" title="Namida No Regret" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Namida No Regret</strong><br />
+												<span class="xs light-grey">J-Pop ·  108,921 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/28872/scandal/taiyou-to-kimi-ga-egaku-story.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/28872.jpg" class="hero" alt="Taiyou To Kimi Ga Egaku Story" title="Taiyou To Kimi Ga Egaku Story" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Taiyou To Kimi Ga Egaku Story</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  144,288 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/26807/scandal/shunkan-sentimental.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/26807.jpg" class="hero" alt="Shunkan Sentimental" title="Shunkan Sentimental" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Shunkan Sentimental</strong><br />
+												<span class="xs light-grey">Anime ·  182,490 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2009</strong></li><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/24492/scandal/yumemiru-tsubasa.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/24492.jpg" class="hero" alt="Yumemiru Tsubasa" title="Yumemiru Tsubasa" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Yumemiru Tsubasa</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  63,066 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/22746/scandal/beauteen.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/22746.jpg" class="hero" alt="Beauteen!!" title="Beauteen!!" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Beauteen!!</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  70,593 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/20201/scandal/shojo-s.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/20201.jpg" class="hero" alt="Shojo S" title="Shojo S" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Shojo S</strong><br />
+												<span class="xs light-grey">Anime ·  245,862 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/16825/scandal/sakura-goodbye.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/16825.jpg" class="hero" alt="Sakura Goodbye" title="Sakura Goodbye" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Sakura Goodbye</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  80,418 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="seplinebg sepbar a-center"><strong class="outline-h">2008</strong></li><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/11751/scandal/doll.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/11751.jpg" class="hero" alt="Doll" title="Doll" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Doll</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  69,921 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/15865/scandal/kagerou.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/15865.jpg" class="hero" alt="Kagerou" title="Kagerou" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Kagerou</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  24,504 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/12517/scandal/koi-moyou.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/12517.jpg" class="hero" alt="Koi Moyou" title="Koi Moyou" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Koi Moyou</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  23,163 views</span></div>
+											</a>
+										</li><div class="clear"></div><li class="overflow-a seplinebg " style="padding: 5px 20px 0 20px;">
+											<a style="" href="http://www.jpopasia.com/play/7256/scandal/space-ranger.html">
+												<div style="float:left;"><img src="http://www.jpopasia.com/i1/pv/7256.jpg" class="hero" alt="Space Ranger" title="Space Ranger" style="height:40px; width:40px; " /></div>
+												<div class="title" style="margin-left:50px;"><strong>Space Ranger</strong><br />
+												<span class="xs light-grey">J-Pop / J-Rock ·  34,062 views</span></div>
+											</a>
+										</li><div class="clear"></div></ul>
+								
+								<div class="f-right outline-h"><a class="u" href="http://www.jpopasia.com/group/scandal/discography/">view discography</a></div>
+								<div class="clear"></div>					
+					</div> <!-- /allVideos -->
+					
+					
+					
+					<div id="showTracklist" class="ui-tabs-hide">
+					Query failed: SELECT a.relationID, a.category, a.title, a.releaseDate, a.totalTracks, a.id AS albumID, a.albumType, a.heroImage, t.id AS trackID, t.title AS trackTitle, t.totalLyrics, t.videoID FROM contentAlbums a 
+								LEFT OUTER JOIN contentAlbumTracks t ON a.id = t.albumID
+								WHERE a.id =  ORDER BY a.releaseDate DESC, t.albumID ASC, t.sortOrder ASC<br><br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY a.releaseDate DESC, t.albumID ASC, t.sortOrder ASC' at line 3

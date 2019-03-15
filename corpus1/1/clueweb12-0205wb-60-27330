@@ -1,0 +1,693 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-16T20:48:26Z
+WARC-TREC-ID: clueweb12-0205wb-60-27330
+WARC-Target-URI: http://www.lendingtips.com/calc/1040calc.html
+WARC-Payload-Digest: sha1:JNJ7K5RHILNXLYQIXIEY42ZCDBHH64AU
+WARC-IP-Address: 205.186.181.117
+WARC-Record-ID: <urn:uuid:b3fd70bf-3229-45ea-bba8-14426462ebdf>
+Content-Type: application/http; msgtype=response
+Content-Length: 52907
+
+HTTP/1.1 200 OK
+Date: Thu, 16 Feb 2012 20:48:32 GMT
+Server: Apache/2.0.54
+Accept-Ranges: bytes
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+					<title>1040 Tax Estimator - Tax Calculators</title>
+		
+<META NAME="keywords" CONTENT="Tax Calculators, 1040 Tax Estimator, 1040 Tax Calculator, tax calc">
+<META NAME="description" CONTENT="Tax Calculators">
+
+	 	 <link rel="stylesheet" href="http://www.lendingtips.com/style.css" type="text/css">
+     <script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+     </script>
+    
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- 
+function showbuttons() {   
+
+    var agt       = navigator.userAgent.toLowerCase();
+    var IEMAC     = ((agt.indexOf("msie") != -1) && agt.indexOf("mac")!=-1);
+    var N6        = (agt.indexOf("netscape6") != -1 || (agt.indexOf("netscape/6") !=-1 ));
+
+    if ( N6 ) {
+      return "Netscape 6 is unable to support our detailed reports.  Please upgrade to Nescape 7.<P>";
+    }
+    if ( IEMAC ) {
+      return "<P>";
+    }
+
+    return "<P><FORM><INPUT TYPE='button' value='Calculate' Name='btnCallCalc' onClick='document.calculator.calculate()'><INPUT TYPE='button' value='View Report' Name='btnOpenNote' onClick='openNote()'></FORM>";
+}
+
+function openNote()
+ { 
+ 
+ var agt=navigator.userAgent.toLowerCase(); 
+ var is_aol   = (agt.indexOf("aol") != -1);
+
+ leftpos=0;
+ if (screen) {
+   leftpos=screen.width/2 - 300;
+ } 
+
+ if (is_aol) {
+   var s = " ";
+   s=document.calculator.sJavaScriptReport('HTML');
+    document.write(s);
+ }
+ else {
+   var OpenWindow=window.open("","newwin","toolbar=yes,menubar=yes,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,copyhistory=no,width=600,height=380,left="+leftpos+",top=20");
+   var s = " ";
+   s=document.calculator.sJavaScriptReport('HTML');
+   OpenWindow.document.write(s);
+   OpenWindow.document.close(); 
+   OpenWindow.focus();
+ }
+ }
+
+ 
+ 
+//  -->
+</Script>
+	</head>
+
+	<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<div align="center">
+			<table width="775" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+				<tr>
+					<td>
+						<table width="783" border="0" cellspacing="0" cellpadding="0">
+							<tr height="80">
+								<td colspan="3" align="right" valign="bottom" bgcolor="#0150b4" height="80">
+									<div align="right">
+										<table width="790" border="0" cellspacing="0" cellpadding="0">
+											<tr height="56">
+												<td colspan="2" height="56"><a href="http://www.lendingtips.com"><img src="http://www.lendingtips.com/images/ltipshead.gif" alt="lendingtips.com" border="0"></a></td>
+												<td align="right" valign="bottom" height="56">
+													<form action="http://search.freefind.com/find.html" method="GET" target="_self">
+														<font size="-2" color="white" face="arial,helvetica">Search lendingtips.com&#153;<br>
+														</font><font size=1 face="arial,helvetica"><input type="HIDDEN" name="id" value="98612635"> <input type="HIDDEN" name="pageid" value="r"> <input type="HIDDEN" name="mode" value="ALL"> <input type="HIDDEN" name="n" value="0"> <input type="TEXT" name="query" size="15"><small> <input type="SUBMIT" value=" Find "><br>
+															</small></font><font size="-2" color="white" face="arial,helvetica"></font>
+													</form>
+												</td>
+												<td align="right" valign="bottom" width="8" height="56"></td>
+											</tr>
+											<tr height="22">
+												<td colspan="4" valign="top" height="22">
+													<div align="center">
+														<font color="white">Information on mortgages, home equity loans, and consumer credit to help you use the power of financing to your advantage.<br>
+														</font></div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									</td>
+							</tr>
+							<tr>
+								<td colspan="3" align="center">
+									<table width="790" border="0" cellspacing="0" cellpadding="0">
+										<tr height="25">
+											<td align="center" height="25"><a href="../index.html" onmouseover="MM_swapImage('Image1','','../images/nav2.2_01.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_01.gif" alt="home" name="Image1" height="25" border="0" id="Image1"></a></td>
+											<td align="center" width="84" height="25"><a href="../mortgages.html" onmouseover="MM_swapImage('Image2','','../images/nav2.2_02.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_02.gif" alt="mortgages" name="Image2" width="85" height="25" border="0" id="Image2"></a></td>
+											<td align="center" width="61" height="25"><a href="../calculators.html"><img src="../images/nav2.3_03.gif" alt="calculators" height="25" width="89" border="0"></a></td>
+											<td align="center" bgcolor="#ffffff" width="62" height="25"><a href="../credit.html" onmouseover="MM_swapImage('Image3','','../images/nav2.2_04.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_04.gif" alt="credit" name="Image3" width="64" height="25" border="0" id="Image3"></a></td>
+											<td align="center" width="62" height="25"><a href="../loans.html" onmouseover="MM_swapImage('Image4','','../images/nav2_05.gif',1);MM_swapImage('Image4','','../images/nav2.2_05.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_05.gif" alt="loans" name="Image4" width="65" height="25" border="0" id="Image4"></a></td>
+											<td align="center" width="65" height="25"><a href="../creditcards.html" onmouseover="MM_swapImage('Image5','','../images/nav2.2_06.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_06.gif" alt="credit cards" name="Image5" width="95" height="25" border="0" id="Image5"></a></td>
+											<td align="center" width="62" height="25"><a href="../rates.html" onmouseover="MM_swapImage('Image6','','../images/nav2.2_07.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_07.gif" alt="rates" name="Image6" width="65" height="25" border="0" id="Image6"></a></td>
+											<td align="center" width="82" height="25"><a href="../realestate.html" onmouseover="MM_swapImage('Image7','','../images/nav2.2_08.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_08.gif" alt="real estate" name="Image7" width="88" height="25" border="0" id="Image7"></a></td>
+											<td align="center" width="84" height="25"><a href="../insurance.html" onmouseover="MM_swapImage('Image8','','../images/nav2.2_09.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_09.gif" alt="insurance" name="Image8" height="25" border="0" id="Image8"></a></td>
+											<td align="center" height="25"><a href="../investing.html" onmouseover="MM_swapImage('Image10','','../images/nav2.2_10.gif',1)" onmouseout="MM_swapImgRestore()"><img src="../images/nav2.1_10.gif" alt="investing" name="Image10" height="25" border="0" id="Image10"></a></td>
+										</tr>
+										<tr height="25">
+											<td colspan="10" align="center" height="25">
+												<table width="580" border="0" cellspacing="0" cellpadding="0">
+													<tr height="20">
+														<td align="center" width="146" height="20"><font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="mortgage.html">Mortgage Calculators</a></font></td>
+														<td align="center" width="128" height="20"><font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="loan.html">Loan Calculators</a></font></td>
+														<td align="center" width="182" height="20"><font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="creditcards.html">Credit Cards and Debt Mgt.</a></font></td>
+														<td align="center" width="124" height="20"><font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="auto.html">Auto Calculators</a></font></td>
+													</tr>
+												</table>
+												<table width="596" border="0" cellspacing="0" cellpadding="0">
+													<tr height="20">
+														<td width="227" height="20">
+															<div align="center">
+																<font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="retirement.html">Retirement Savings and Planning</a></font></div>
+														</td>
+														<td width="108" height="20">
+															<div align="center">
+																<font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="tax.html">Tax Calculators</a></font></div>
+														</td>
+														<td height="20">
+															<div align="center">
+																<font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="savings.html">Savings Calculators</a></font></div>
+														</td>
+														<td height="20">
+															<div align="center">
+																<font size="-1" color="#333333" face="Arial, Arial"><a class="three" href="personal.html">Personal Finance</a></font></div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="10" align="center"><img src="../images/shadow.gif" alt="" border="0"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" align="center">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr height="10">
+											<td rowspan="2" valign="top" width="130"><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Untitled Page</title>
+	<style type="text/css">
+<!--
+body {
+	background-color: #ffffff;
+}
+-->
+</style></head>
+
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="white">
+			<tr>
+				<td align="center"><a href="http://www.kqzyfj.com/click-1561699-10365130" target="_blank" onmouseover="window.status='http://www.ameriquest-mortgage.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.afcyhf.com/image-1561699-10365130" width="125" height="125" alt="Refinance Now while Interest Rates are Low!" border="0"></a>
+				</td>
+			</tr>
+			<tr height="18">
+				<td align="center" height="18">
+					<hr width="90%">
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><a href="http://www.tkqlhce.com/click-1561699-9997442" target="_blank" onmouseover="window.status='http://www.ingdirect.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.lduhtrp.net/image-1561699-9997442" width="120" height="600" alt="Click here to start saving with ING DIRECT!" border="0"></a></td>
+			</tr>
+			<tr height="18">
+				<td align="center" height="18">
+					<hr width="90%">
+				</td>
+			</tr>
+			<tr height="18">
+				<td align="center" height="18"><a href="http://www.jdoqocy.com/click-1561699-10286830" target="_blank" onmouseover="window.status='http://www.worldperksvisa.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.afcyhf.com/image-1561699-10286830" width="120" height="300" alt="Earn 4000 airline miles with WorldPerks Visa" border="0"></a></td>
+			</tr>
+		</table>
+	</body>
+
+</html>
+											</td>
+											<td width="653" height="10"></td>
+										</tr>
+										<tr>
+											<td width="653">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0">
+													<tr>
+														<td colspan="3"><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive">
+		<title>Untitled Page</title>
+							 
+	</head>
+
+	<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		 
+		<table width="639" border="0" cellspacing="0" cellpadding="0">
+			<tr height="125">
+				<td align="left" valign="top" width="20" height="125"></td>
+				<td align="left" valign="top" bgcolor="#666666" width="1" height="125"></td>
+				<td align="left" valign="top" width="15" height="125"></td>
+				<td align="left" valign="top" width="199" height="125"><font size="-1" face="Arial, Arial"><b>Average CD/Bank Rates<br>
+							<SCRIPT LANGUAGE="JavaScript"
+SRC="http://lendingtips.stockgroup.com/watchlist_render.asp?wid=banking"></script>
+						</b></font></td>
+				<td width="10" height="125"></td>
+				<td bgcolor="#666666" width="1" height="125"></td>
+				<td width="15" height="125"></td>
+				<td align="left" valign="top" width="199" height="125">
+					<table width="199" border="0" cellspacing="0" cellpadding="0">
+						<tr height="10">
+							<td colspan="4" bgcolor="white" width="199" height="10"><font size="-1" face="Arial, Arial"><b>30 Day Rate Movement<br>
+									</b></font><font size="-2" face="Arial, Arial">1 Yr. CD<br>National Average</font></td>
+						</tr>
+						<tr>
+							<td colspan="4" align="center" bgcolor="white" width="199"><img src="http://www.lendingtips.com/images/30daychangeBANK.gif" alt="30 day mortgage rate trend " border="0"></td>
+						</tr>
+					</table>
+				</td>
+				<td align="left" valign="top" width="10" height="125"></td>
+				<td align="left" valign="top" bgcolor="#666666" width="1" height="125"></td>
+				<td align="left" valign="top" width="15" height="125"></td>
+				<td align="center" valign="middle" width="153" height="125"><a href="http://www.dpbolvw.net/click-1561699-9997451" target="_blank" onmouseover="window.status='http://www.ingdirect.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.afcyhf.com/image-1561699-9997451" width="120" height="90" alt="Click here to start saving with ING DIRECT!" border="0"></a></td>
+			</tr>
+		</table>
+	</body>
+
+</html>
+														</td>
+													</tr>
+													<tr height="10">
+														<td colspan="3" height="10"></td>
+													</tr>
+													<tr height="1">
+														<td colspan="3" height="1"></td>
+													</tr>
+													<tr>
+														<td bgcolor="#0150B4" width="15"><img src="../../images/blue.gif" alt="" height="15" width="15" border="0"></td>
+														<td colspan="2" bgcolor="#0150B4"><font color="#e8e8e8"><br>
+																<img src="../images/taxcalcsubhead.gif" alt="" border="0"><br>
+																<br>
+															</font></td>
+													</tr>
+													<tr height="10">
+														<td colspan="3" height="10"></td>
+													</tr>
+													<tr>
+														<td width="15"></td>
+														<td colspan="2">
+															<div align="center">
+																<table width="627" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td></td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<div align="left">
+																				<font size="-1" color="FF7E00" face="Arial, Arial">&#x2022; </font><font size="-1" face="Arial, Arial"><a class="five" href="http://www.tkqlhce.com/click-1561699-10292436" target="_blank" onmouseover="window.status='http://www.ingdirect.com';return true;" onmouseout="window.status=' ';return true;"><b>ING DIRECT - High Yield Savings with 2.25% annual percentage yield!<br>
+																						</b></a></font><br>
+																				<font size="-1" face="Arial, Arial"><b>1040 Tax Estimator<br>
+																					</b>Enter your filing status, income, deductions and credits and we will estimate your total taxes for 2004. Based on your projected withholdings for the year, we can also estimate your tax refund or amount you may owe the IRS next April. This calculator uses the preliminary 2004 tax tables, subject to modifications by the IRS and changes in the tax code.<br>
+																					<br>
+																				</font><!-- \Title\ --><!-- \Main Area\ --><!--
+  Financial Calculators, ©1998-2004 KJE Computer Solutions, LLC.
+  For more information please see:
+  <A HREF="http://www.dinkytown.net">http://www.dinkytown.net</A>
+ -->
+																				<p><applet name="calculator" code="Tax1040.class" align="baseline" width="500" height="425" archive="dinkytown.jar">
+																						<param name="LINE_1_FILING_STATUS" value="1">
+																						<param name="LINE_6A_PERSONAL_EXEMPTION" value="0">
+																						<param name="LINE_6B_SPOUSE_EXEMPTION" value="0">
+																						<param name="LINE_6C_DEPENDANTS" value="0">
+																						<param name="LINE_6C_DEPENDANTS_QUALIFYING_FOR_CHILD_TAX_CREDIT" value="0">
+																						<param name="LINE_7_WAGES_SALARIES_TIPS_ETC" value="50000">
+																						<param name="LINE_8A_TAXABLE_INTEREST" value="0">
+																						<param name="LINE_8B_TAXEXEMPT_INTEREST" value="0">
+																						<param name="LINE_9_ORDINARY_DIVIDENDS" value="0">
+																						<param name="LINE_10_TAXABLE_REFUNDS_OR_CREDITS_OF_STATE_AND_LOCAL_INCOME_TAXES" value="0">
+																						<param name="LINE_11_ALIMONY_RECEIVED" value="0">
+																						<param name="LINE_12_BUSINESS_INCOME_OR_LOSS" value="0">
+																						<param name="LINE_13_CAPITAL_GAIN_OR_LOSS" value="0">
+																						<param name="LINE_14_OTHER_GAINS_OR_LOSSES" value="0">
+																						<param name="LINE_15_TAXABLE_IRA_DISTRIBUTIONS" value="0">
+																						<param name="LINE_16_TAXABLE_PENSIONS_AND_ANNUITY_DISTRIBUTIONS" value="0">
+																						<param name="LINE_17_INCOME_FROM_SCHEDULE_E" value="0">
+																						<param name="LINE_18_FARM_INCOME_OR_LOSS" value="0">
+																						<param name="LINE_19_UNEMPLOYMENT_COMPENSATION" value="0">
+																						<param name="LINE_20_TAXABLE_SOCIAL_SECURITY_BENEFITS" value="0">
+																						<param name="LINE_21_OTHER_INCOME" value="0">
+																						<param name="LINE_23_IRA_DEDUCTION" value="0">
+																						<param name="LINE_24_STUDENT_LOAN_INTEREST_DEDUCTION" value="0">
+																						<param name="LINE_25_MEDICAL_SAVINGS_ACCOUNT_DEDUCTION" value="0">
+																						<param name="LINE_26_MOVING_EXPENSES" value="0">
+																						<param name="LINE_27_ONEHALF_OF_SELFEMPLOYMENT_TAX" value="0">
+																						<param name="LINE_28_SELFEMPLOYED_HEALTH_INSURANCE_DEDUCTION" value="0">
+																						<param name="LINE_29_KEOP_AND_SELF_EMPLOYED_SEP_AND_SIMPLE_PLANS" value="0">
+																						<param name="LINE_30_PENALTY_ON_EARLY_WITHDRAWAL_OF_SAVINGS" value="0">
+																						<param name="LINE_31_ALIMONY_PAID" value="0">
+																						<param name="LINE_36_ITEMIZED_DEDUCTIONS" value="0">
+																						<param name="LINE_41_CREDIT_FOR_CHILD_AND_DEPENDENT_CARE_EXPENSES" value="0">
+																						<param name="LINE_42_CREDIT_FOR_THE_ELDERLY_OR_DISABLED" value="0">
+																						<param name="LINE_44_EDUCATION_CREDITS" value="0">
+																						<param name="LINE_45_ADOPTION_CREDIT" value="0">
+																						<param name="LINE_46_FOREIGN_TAX_CREDIT" value="0">
+																						<param name="LINE_47_OTHER_CREDITS" value="0">
+																						<param name="LINE_50_SELFEMPLOYMENT_TAX" value="0">
+																						<param name="LINE_51_ALTERNATIVE_MINIMUM_TAX" value="0">
+																						<param name="LINE_52_SOCIAL_SECURITY_AND_MEDICARE_ON_TIPS_NOT_REPORTED" value="0">
+																						<param name="LINE_53_TAX_ON_IRAS_AND_OTHER_RETIREMENT_PLANS" value="0">
+																						<param name="LINE_54_ADVANCE_EARNED_INCOME_CREDIT_PAYMENTS" value="0">
+																						<param name="LINE_55_HOUSEHOLD_EMPLOYMENT_TAXES" value="0">
+																						<param name="LINE_57_FEDERAL_INCOME_TAX_WITHHELD" value="0">
+																						<param name="LINE_58_2000_ESTIMATED_TAX_PAYMENTS" value="0">
+																						<param name="LINE_59_EARNED_INCOME_CREDIT" value="0">
+																						<param name="LINE_60_ADDITIONAL_CHILD_TAX_CREDIT_" value="0">
+																						<param name="LINE_61_AMOUNT_PAID_WITH_FORM_4868" value="0">
+																						<param name="LINE_62_EXCESS_SOCIAL_SECURITY_AND_RRTA_TAX_WITHHELD" value="0">
+																						<param name="LINE_63_OTHER_PAYMENTS" value="0">
+																						<param name="BACKGROUND" value="background.jpg">
+																						<param name="BACKGROUND_COLOR" value="FFFFDD">
+																						<param name="BORDER" value="ROUND">
+																						<param name="BORDER_COLOR" value="000000">
+																						<param name="BORDER_WIDTH" value="2">
+																						<param name="TEXT_FOR_REPORT" value="<HTML> <HEAD> <TITLE>1040 Tax Calculator</TITLE> <META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso8859-1'> <META NAME='Description' CONTENT='Financial Calculators, &QCPQ;1998-2004 KJE Computer Solutions, LLC. For more information please see http://www.dinkytown.net'> <STYLE> <!-- BODY, TABLE, TD, TH, UL, OL, DD, DL, P, BR { font-family: helvetica, arial, sans-serif; font-size: 10pt; } H1 { font-family: helvetica, arial, sans-serif; font-size: 13pt; font-weight: bold; } DT { font-family: helvetica, arial, sans-serif; font-size: 10pt; font-weight: bold; } P.footer { font-family: helvetica, arial, sans-serif; font-size: 9pt; } DIV.large { font-family: helvetica, arial, sans-serif; font-size: 13pt; font-weight: bold; } --> </STYLE> </HEAD> <BODY bgcolor='#FFFFFF' LINK='#003399' VLINK='#666666' BGCOLOR='#FFFFFF'> <CENTER><table border=0 bgcolor='#000000' width=468 cellspacing=1 cellpadding=0><tr><td width='100%'><table bgcolor='#FFFFDD' border=0 width=468 cellspacing=1 cellpadding=5><tr><td width='100%' align=center valign=middle><DIV class=large>1040 Tax Calculator</DIV></td></tr></table></TD></TR></TABLE></CENTER> <H1>Your taxes are estimated at LINE_56_TOTAL_TAX.</H1><P>This is AVERAGE_TAX_RATE of your total income of LINE_22_TOTAL_INCOME. Your total tax payments for the year were LINE_64_TOTAL_PAYMENTS. REFUND_OR_OVERPAYMENT_TEXT is estimated at REFUND_OR_OVERPAYMENT_AMT. Your income puts you in the BRACKET_TAX_RATE tax bracket. This calculator uses the preliminary 2004 tax tables, subject to modifications by the IRS and changes in the tax code.<P> <CENTER><table width=468 border=0 bgcolor='#000000' cellspacing=1 cellpadding=0><tr><td width='100%'><TABLE width=468 CELLSPACING=1 CELLPADDING=5 BORDER=0 BGCOLOR='#FFFFFF'> <TR BGCOLOR='CCCCCC'><TD COLSPAN=2><CENTER><b>REFUND_OR_OVERPAYMENT_TEXT REFUND_OR_OVERPAYMENT_AMT</b></CENTER></TD></TR> <TR><TD><b>Filing status</b></TD><TD><b>LINE_1_FILING_STATUS</b></TD></TR> <TR><TD valign=top><b>Total exemptions claimed: LINE_6D_TOTAL_EXEMPTIONS_CLAIMED</b></TD><TD> <TABLE width=90% CELLSPACING=1 CELLPADDING=0 BORDER=0 BGCOLOR='#FFFFFF'> <TR><TD>Personal exemption</TD><TD>LINE_6A_PERSONAL_EXEMPTION</TD></TR> <TR><TD>Spouse exemption</TD><TD>LINE_6B_SPOUSE_EXEMPTION</TD></TR> <TR><TD>Dependents</TD><TD>LINE_6C_DEPENDANTS</TD></TR> </TABLE> </TD></TR> <TR><TD><b>Wages, salaries, tips, etc</b></TD><TD>LINE_7_WAGES_SALARIES_TIPS_ETC</TD></TR> <TR><TD><b>Taxable interest</b></TD><TD>LINE_8A_TAXABLE_INTEREST</TD></TR> <TR><TD><b>Tax-exempt interest</b></TD><TD>LINE_8B_TAXEXEMPT_INTEREST</TD></TR> <TR><TD><b>Ordinary dividends</b></TD><TD>LINE_9_ORDINARY_DIVIDENDS</TD></TR> <TR><TD><b>Corporate dividends</b></TD><TD>LINE_9_OTHER_DIVIDENDS</TD></TR> <TR><TD><b>Taxable refunds or credits of state and local income taxes</b></TD><TD valign=top>LINE_10_TAXABLE_REFUNDS_OR_CREDITS_OF_STATE_AND_LOCAL_INCOME_TAXES</TD></TR> <TR><TD><b>Alimony received</b></TD><TD>LINE_11_ALIMONY_RECEIVED</TD></TR> <TR><TD><b>Business income or loss</b></TD><TD>LINE_12_BUSINESS_INCOME_OR_LOSS</TD></TR> <TR><TD><b>Short term capital gain or loss*</b></TD><TD>LINE_13_SHORT_TERM_CAP_GAIN</TD></TR> <TR><TD><b>Long term capital gain or loss*</b></TD><TD>LINE_13_LONG_TERM_CAP_GAIN</TD></TR> <TR><TD><b>Other gains or losses</b></TD><TD>LINE_14_OTHER_GAINS_OR_LOSSES</TD></TR> <TR><TD><b>Taxable IRA distributions</b></TD><TD>LINE_15_TAXABLE_IRA_DISTRIBUTIONS</TD></TR> <TR><TD><b>Taxable pensions and annuity distributions</b></TD><TD valign=top>LINE_16_TAXABLE_PENSIONS_AND_ANNUITY_DISTRIBUTIONS</TD></TR> <TR><TD><b>Income from Schedule E</b></TD><TD>LINE_17_INCOME_FROM_SCHEDULE_E</TD></TR> <TR><TD><b>Farm income or loss</b></TD><TD>LINE_18_FARM_INCOME_OR_LOSS</TD></TR> <TR><TD><b>Unemployment compensation</b></TD><TD>LINE_19_UNEMPLOYMENT_COMPENSATION</TD></TR> <TR><TD><b>Taxable social security benefits</b></TD><TD>LINE_20_TAXABLE_SOCIAL_SECURITY_BENEFITS</TD></TR> <TR><TD><b>Other income</b></TD><TD>LINE_21_OTHER_INCOME</TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total income</b></TD><TD><b>LINE_22_TOTAL_INCOME</b></TD></TR> <TR><TD><b>Educator expenses</b></TD><TD>NEW_23_EDUCATION_EXPENSES</TD></TR> <TR><TD><b>IRA deduction</b></TD><TD>LINE_23_IRA_DEDUCTION</TD></TR> <TR><TD><b>Student loan interest deduction</b></TD><TD>LINE_24_STUDENT_LOAN_INTEREST_DEDUCTION</TD></TR> <TR><TD><b>Tuition and fees deduction</b></TD><TD>NEW_26_TUITION_AND_FEES</TD></TR> <TR><TD><b>Moving expenses</b></TD><TD>LINE_26_MOVING_EXPENSES</TD></TR> <TR><TD><b>One-half of self-employment tax</b></TD><TD valign=top>LINE_27_ONEHALF_OF_SELFEMPLOYMENT_TAX</TD></TR> <TR><TD><b>Self-employed health insurance deduction</b></TD><TD valign=top>LINE_28_SELFEMPLOYED_HEALTH_INSURANCE_DEDUCTION</TD></TR> <TR><TD><b>Archer Medical Savings Account (MSA) deduction</b></TD><TD valign=top>LINE_25_MEDICAL_SAVINGS_ACCOUNT_DEDUCTION</TD></TR> <TR><TD><b>Self-employed SEP, SIMPLE and qualified plans</b></TD><TD valign=top>LINE_29_KEOP_AND_SELF_EMPLOYED_SEP_AND_SIMPLE_PLANS</TD></TR> <TR><TD><b>Penalty on early withdrawal of savings</b></TD><TD valign=top>LINE_30_PENALTY_ON_EARLY_WITHDRAWAL_OF_SAVINGS</TD></TR> <TR><TD><b>Alimony paid</b></TD><TD>LINE_31_ALIMONY_PAID</TD></TR> <TR><TD><b>Total adjustments</b></TD><TD>LINE_32_TOTAL_ADJUSTMENTS_23_THROUGH_31</TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Adjusted gross income (AGI)</b></TD><TD><b>LINE_33_ADJUSTED_GROSS_INCOME</b></TD></TR> <TR><TD valign=top><b>Total credits: LINE_35A_TOTAL_CREDITS</b></TD><TD> <TABLE width=90% CELLSPACING=1 CELLPADDING=0 BORDER=0 BGCOLOR='#FFFFFF'> <TR><TD>65 or older?</TD><TD>LINE_35A_YOU_WERE_65_OR_OLDER</TD></TR> <TR><TD>Blind?</TD><TD>LINE_35A_BLIND</TD></TR> <TR><TD>Spouse 65?</TD><TD>LINE_35A_SPOUSE_WAS_65_OR_OLDER</TD></TR> <TR><TD>Spouse blind?</TD><TD>LINE_35A_BLIND_SPOUSE</TD></TR> </TABLE> </TD></TR> <TR><TD><b>Married filing separately</b></TD><TD>LINE_35B_MARRIED_FILING_SEPARATELY</TD></TR> <TR><TD><b>Itemized deductions</b></TD><TD>LINE_36_ITEMIZED_DEDUCTIONS</TD></TR> <TR><TD><b>Can someone claim you as a dependent?</b></TD><TD>LINE_36_CAN_SOMEONE_CLAIM_YOU_AS_A_DEPENDENT</TD></TR> <TR><TD><b>Standard deduction</b></TD><TD>LINE_36_STANDARD_DEDUCTION</TD></TR> <TR><TD><b>Deduction to use</b></TD><TD>LINE_36_DEDUCTION_TO_USE</TD></TR> <TR><TD><b>Deduction for exemptions</b></TD><TD>LINE_38_DEDUCTION_FOR_EXEMPTIONS</TD></TR> <TR><TD><b>Taxable income</b></TD><TD><b>LINE_39_TAXABLE_INCOME</b></TD></TR> <TR BGCOLOR='CCCCCC'><TD valign=top><b>Tax*</b></TD><TD><b>LINE_40_TAX</b></TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Alternative Minimum Tax (AMT)</b></TD><TD><b>LINE_51_ALTERNATIVE_MINIMUM_TAX</b></TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total with AMT</b></TD><TD><b>LINE_42_TOTAL</b></TD></TR> <TR><TD><b>Foreign tax credit</b></TD><TD>LINE_46_FOREIGN_TAX_CREDIT</TD></TR> <TR><TD><b>Child and dependent care credit</b></TD><TD>LINE_41_CREDIT_FOR_CHILD_AND_DEPENDENT_CARE_EXPENSES</TD></TR> <TR><TD><b>Credit for the elderly or disabled</b></TD><TD>LINE_42_CREDIT_FOR_THE_ELDERLY_OR_DISABLED</TD></TR> <TR><TD><b>Education credits</b></TD><TD>LINE_44_EDUCATION_CREDITS</TD></TR> <TR><TD><b> Retirement savings contributions credit</b></TD><TD>NEW_48_RETIREMENT_SAVINGS_CREDIT</TD></TR> <TR><TD valign=top><b>Child tax credit</b></TD><TD>LINE_43_CHILD_TAX_CREDIT<BR>Based on LINE_6C_DEPENDANTS_QUALIFYING_FOR_CHILD_TAX_CREDIT qualifying dependents.</TD></TR> </TD></TR> <TR><TD><b>Child tax credit received previously</b></TD><TD>LINE_RECVD_CHILD_CREDIT</TD></TR> <TR><TD><b>Adoption credit</b></TD><TD>LINE_45_ADOPTION_CREDIT</TD></TR> <TR><TD><b>Other credits</b></TD><TD>LINE_47_OTHER_CREDITS</TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total credits</b></TD><TD><b>LINE_48_TOTAL_CREDITS</b></TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total tax after credits</b></TD><TD><b>LINE_49_TOTAL_TAX_AFTER_CREDITS</b></TD></TR> <TR><TD><b>Self-employment tax</b></TD><TD>LINE_50_SELFEMPLOYMENT_TAX</TD></TR> <TR><TD><b>Social security and Medicare on tips not reported</b></TD><TD valign=top>LINE_52_SOCIAL_SECURITY_AND_MEDICARE_ON_TIPS_NOT_REPORTED</TD></TR> <TR><TD><b>Tax on IRAs and other retirement plans</b></TD><TD valign=top>LINE_53_TAX_ON_IRAS_AND_OTHER_RETIREMENT_PLANS</TD></TR> <TR><TD><b>Advance earned income credit payments</b></TD><TD valign=top>LINE_54_ADVANCE_EARNED_INCOME_CREDIT_PAYMENTS</TD></TR> <TR><TD><b>Household employment taxes</b></TD><TD>LINE_55_HOUSEHOLD_EMPLOYMENT_TAXES</TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total other taxes</b></TD><TD><b>TOTAL_OTHER_TAXES</b></TD></TR> <TR BGCOLOR='CCCCCC'><TD VALIGN=TOP><b>Total tax</b></TD><TD><b>LINE_56_TOTAL_TAX</b></TD></TR> <TR><TD><b>Federal income tax withheld</b></TD><TD>LINE_57_FEDERAL_INCOME_TAX_WITHHELD</TD></TR> <TR><TD><b>2004 estimated tax payments</b></TD><TD>LINE_58_2000_ESTIMATED_TAX_PAYMENTS</TD></TR> <TR><TD><b>Earned income credit</b></TD><TD valign=top>LINE_59_EARNED_INCOME_CREDIT</TD></TR> <TR><TD><b>Excess social security and RRTA tax withheld</b></TD><TD valign=top>LINE_62_EXCESS_SOCIAL_SECURITY_AND_RRTA_TAX_WITHHELD</TD></TR> <TR><TD><b>Additional child tax credit</b></TD><TD>LINE_60_ADDITIONAL_CHILD_TAX_CREDIT_</TD></TR> <TR><TD><b>Amount paid with request for extension</b></TD><TD valign=top>LINE_61_AMOUNT_PAID_WITH_FORM_4868</TD></TR> <TR><TD><b>Other payments</b></TD><TD>LINE_63_OTHER_PAYMENTS</TD></TR> <TR BGCOLOR='CCCCCC'><TD><b>Total payments</b></TD><TD><b>LINE_64_TOTAL_PAYMENTS</b></TD></TR> </TABLE></TD></TR></TABLE> <P><TABLE width=90%><TR><TD> <P>*Any amount you enter as a short-term capital gain is taxed as normal income. Any amount you enter as a long-term capital gain or dividend is taxed as follows:<P> <UL><LI>This calculator assumes that all of your long-term capital gains and dividends are taxed at either 5% or 15%.<LI>The tax is 5% for the portion of your gain that would have been taxed at 15% or lower tax if it were a short-term gain.<P> <LI>The tax is 15% for any of your capital gain that would have been taxed at a rate higher than 15% if it were considered a short term gain.<P> <LI>This calculator assumes that none of your long-term capital gains come from collectibles, section 1202 gains or unrecaptured 1250 gains. These types of capital gains are taxed at 28%, 28% and 25% respectively (unless your ordinary income tax bracket is a lower rate). </UL> <P>For more information on capital gains tax rates and how they are applied, you may wish to read IRS Publication 17: Your Federal Income Taxes. </TD></TR></TABLE> <BR> </CENTER> <BR> <HR SIZE=1> <CENTER><P class=footer> Information and interactive calculators are made available to you as self-help tools for your independent use and are not intended to provide investment advice. We can not and do not guarantee their applicability or accuracy in regards to your individual circumstances. All examples are hypothetical and are for illustrative purposes. We encourage you to seek personalized advice from qualified professionals regarding all personal finance issues. </P></CENTER><br><br> </BODY> </HTML> ">
+																						<center>
+																							This Financial Calculator requires a Browser with Java&#153; applet Support. If you are seeing this message you will need to download SUN's Java&#153; Plug-in. This can be done simply, and automatically, by clicking the link below:
+																							<p><a href="http://www.java.com" target=_blank><b>Get the Java&#153; Plug-in!</b></a></p>
+																						</center>
+																					</applet>
+																					<script>document.write(showbuttons())</script>
+																				</p>
+																				<p><font size="-1" face="Arial, Arial"><b>Definitions<br>
+																							<br>
+																						</b></font><font size="-1" face="Arial, Arial"><b>Jobs and Growth Tax Relief Reconciliation Act<br>
+																						</b>The tax bill passed in 2003 included some significant, often temporary, and somewhat confusing changes. This is in addition to the already complex tax code changes passed by Congress in 2000. Below is a summary of the changes that impact most taxpayers in 2004. <br>
+																						<br>
+																							1.	Child tax credit: The child tax credit has been increased from $600 to $1,000 for 2003 and 2004. Starting in 2005, the tax credit returns to the level originally passed in the 2000 tax bill. The credit is, however, still phased out for higher incomes.<br>
+																						<br>
+																						2.	Marriage penalty relief: The new law changes 2003 and 2004's standard deduction for married couples filing jointly and qualified widowers to be double that of single tax filers. This puts the standard deduction for 2004 at $9700. After 2004, the standard deduction will revert back to the law passed in 2000. <br>
+																						<br>
+																						In addition to the increased standard deduction, the 15% tax bracket has been increased for married tax filers to further reduce the impact of the marriage penalty. Like the standard deduction change, this change is only for 2003 and 2004. <br>
+																						<br>
+																						3.	The 10% tax bracket: In 2004, single taxpayers will pay 10% of income up to $7,150, increased from $6,000 under the old law. Likewise, married couples filing jointly will have an increase from $12,000 to $14,300. These amounts will revert back to the old law's rules in 2005. <br>
+																						<br>
+																							4.	Lower tax rates: The new law accelerates rate reductions for all brackets above 15%:<br>
+																					</font><br>
+																				</p>
+																				<dl>
+																					<dt>
+																						<table width=97% border=1 cellspacing="0" cellpadding="5">
+																							<tr>
+																								<td align=center colspan=5>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Filing Status and Income Tax Rates 2004</font></b></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Tax rate</font></b></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Married filing jointly or Qualified Widow(er)</font></b></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Single</font></b></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Head of household</font></b></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<b><font size="-1" face="Arial, Arial">Married filing separately</font></b></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">10%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$0 - 14,300</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$0 - 7,150 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$0 - $10,200 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$0 - 7,150</font></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">15%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$14,301- 58,100</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$7,151- 29,050 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$10,201- 38,900 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$7,151- 29,050</font></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">20%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$58,101- 117,250</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$29,051- 70,350 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$38,901- 100,500</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$29,051- 58,625</font></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">28%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$117,251- 178,650</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$70,351- 146,750 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$100,501- 162,700 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$58,626- 89,325</font></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">33%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$178,651- 319,100 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$146,751- 319,100</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$162,701- 319,100</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">$89,326- 159,550</font></div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align=center width=12%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">35%</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">over $319,100</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">over $319,100 </font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">over $319,100</font></div>
+																								</td>
+																								<td align=center width=22%>
+																									<div align="left">
+																										<font size="-1" face="Arial, Arial">over $159,550 </font></div>
+																								</td>
+																							</tr>
+																						</table>
+																						<font size="-1" face="Arial, Arial"><br>
+																								5.	Reduced Taxes on Capital Gains: The capital gains tax rates of 15% and 20% have been reduced to 5% and 15% respectively. These capital gains rates are for property that was held for at least one year. This calculator assumes that all of your long-term capital gains are taxed the new rates of 5% and 15%.<br>
+																							<br>
+																								6.	Reduced Taxes on Dividends: The new law applies the capital gains tax rates to qualified dividends paid from most U.S. corporations and certain qualified foreign corporations. This calculator assumes that all dividends are qualified, however, you should make certain that this is the case in your particular circumstance. All qualified dividends will appear in column 1b of Form 1099-DIV, which should be sent to you in January of the year following the dividend payment. Taxpayers in the 10% or 15% bracket pay a 5% rate of tax on dividends paid between January 1, 2003, and December 31, 2007, and zero percent in 2008. Taxpayers in tax brackets above 15%, pay a 15% rate of tax on dividends paid between January 1, 2003, and December 31, 2008.<br>
+																							<br>
+																								7.	Alternative Minimum Tax (AMT): The new tax law increases the AMT exemption for married filers to $58,000 for 2004. it has also increased the AMT exemption to $40,250 for single filers for 2004. Please note that calculating the impact of AMT on your taxes is beyond the scope of this calculator. Please see your tax professional for assistance if you believe that you will be required to pay the AMT.<br>
+																							<br>
+																								8.	IRA and retirement plan deductions: The new tax law did not change IRA deduction and contribution limits. However, the 2000 tax code increased the amount for most individuals to $3,000. Those over 50 can contribute $3500.<br>
+																							<br>
+																							<br>
+																							<b>Dependents<br>
+																								<br>
+																							</b>A dependent is someone you support and for whom you can claim a dependency exemption. In 2004 each dependent you claim entitles you to receive a $3,100 reduction in your taxable income (see exemptions below). In 2004, each dependent under the age of 17 also receives a tax credit of $1000. The credit is, however, phased out for at higher incomes.<br>
+																							<br>
+																							<b>Total exemptions claimed.</b> Each exemption you claim reduces your taxable income by $3,100 for 2004. You receive an exemption for yourself, your spouse and one for each of your dependents.<br>
+																							<br>
+																							<b>Capital Gain or Loss.</b> This is the total capital gain you realized from the sale of assets. This calculator allows you to enter your total short-term capital gain for investments held less than one year and your total long-term gain for investments held at least one year. Any amount you enter as a short-term capital gain is taxed as normal income. Any amount you enter as a long-term capital gain is taxed as follows:<br>
+																								*	This calculator assumes that all of your long-term capital gains are taxed at either 5% or 15%.<br>
+																								*	The tax is 5% for the portion of your gain that would have been taxed at 15% or lower tax if it were a short-term gain.<br>
+																								*	The tax is 15% for any of your capital gain that would have been taxed at a rate higher than 15% if it were considered a short-term gain.<br>
+																							*	This calculator assumes that none of your long-term capital gains come from collectibles, section 1202 gains or unrecaptured 1250 gains. These types of capital gains are taxed at 28%, 28% and 25% respectively (unless your ordinary income tax bracket is a lower rate). <br>
+																							<br>
+																							For more information on capital gains tax rates and how they are applied, you may wish to read IRS Publication 17: Your Federal Income Taxes. <br>
+																							<br>
+																							<b>Income from Schedule E.</b> Rental real estate, royalties, partnerships, S Corporations, trusts, etc.<br>
+																							<br>
+																							<b>Total income. </b>Total income calculated by adding lines 7 through 21 on your form 1040. For most taxpayers this includes wages, salaries, tips, interest, dividends and gains and losses from a variety of activities.<br>
+																							<br>
+																							<b>Adjusted gross income.</b> Adjusted gross income (AGI) is calculated by subtracting all deductions from lines 23 through 33 from your total income. AGI is used to calculate many of the qualifying amounts if you itemized your deductions.<br>
+																							<br>
+																							<b>Taxable income. </b>Your total taxable income is your AGI minus your itemized or standard deduction, and your deduction for exemptions.<br>
+																							<br>
+																							<b>Tax.</b> This is the total federal income tax you owe for 2004 before any tax credits.<br>
+																							<br>
+																							<b>Total credits.</b> Your total tax credits. This amount is subtracted from the total tax amount.<br>
+																							<br>
+																							<b>Total tax after credits.</b> This is the total federal income tax you will need to pay in 2004.<br>
+																							<br>
+																							<b>Total other taxes.</b> Any other taxes that you owe for 2004. This includes self-employment tax, alternative minimum tax, and household employment taxes.<br>
+																							<br>
+																							<b>Total tax.</b> Grand total of your 2004 Federal tax bill.<br>
+																							<br>
+																							<b>Total payments.</b> Total of all tax payments made in 2004. This includes tax withheld from Forms W-2 and 1099, and estimated taxes paid, earned income credit and excess social security tax withheld. <br>
+																							<br>
+																						</font><font size="-2" face="Arial, Arial">Information and interactive calculators are made available to you as self-help tools for your independent use and are not intended to provide investment advice. We can not and do not guarantee their applicability or accuracy in regards to your individual circumstances. All examples are hypothetical and are for illustrative purposes. We encourage you to seek personalized advice from qualified professionals regarding all personal finance issues.<br>
+																							<br>
+																						</font>
+																					
+																						
+																				</dl>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3"><br>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3">
+															<hr width="600">
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3" align="center">
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr height="25">
+																	<td align="center" height="25"></td>
+																</tr>
+																<tr>
+																	<td align="center">&copy;2005 Lendingtips.com All rights reserved.</td>
+																</tr>
+																<tr height="18">
+																	<td align="center" height="18">
+																		<table width="515" border="0" cellspacing="0" cellpadding="0">
+																			<tr>
+																				<td align="center"><font size="-1" face="Arial, Arial"><a href="../terms.html">Terms of Use</a></font></td>
+																				<td align="center"><font size="-1" face="Arial, Arial"><a href="../advertise.html">Advertise With Us</a></font></td>
+																				<td align="center"><font size="-1" face="Arial, Arial"><a href="../contactus.html">Contact Us</a></font></td>
+																				<td align="center"><font size="-1" face="Arial, Arial"><a href="../sitemap.html">Site Map</a></font></td>
+																				<td align="center"><font size="-1" face="Arial, Arial"><a href="../privacy.html">Privacy Policy</a></font></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr height="18">
+																	<td align="center" height="18"><br>
+																		Lendingtips.com 464 Oak Avenue Naples, FL 34108<br>
+													Phone (239)877-7835  Fax (239)594-5686<br>
+													<br>
+																				<br></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		  </table>
+		</div>
+		<p></p>
+</body>
+
+</html>

@@ -1,0 +1,1697 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-26T19:46:11Z
+WARC-TREC-ID: clueweb12-0402wb-66-13363
+WARC-Target-URI: http://www.cargurus.com/Cars/2011-Ford-Edge-Price-c22190
+WARC-Payload-Digest: sha1:UUYGIJKMQRNDFSVVJ6CMRSW42YZ4GG5P
+WARC-IP-Address: 207.154.35.20
+WARC-Record-ID: <urn:uuid:9b0d9738-9a1f-42f7-ae56-c70a3d7a4463>
+Content-Type: application/http; msgtype=response
+Content-Length: 65751
+
+HTTP/1.1 200 OK
+Date: Sun, 26 Feb 2012 19:46:11 GMT
+Server: Apache/2.2.3 (CentOS)
+Cache-Control: no-cache,no-store,must-revalidate
+Pragma: no-cache
+Expires: 0
+Last-Modified: Sun, 26 Feb 2012 19:46:11 GMT
+Set-Cookie: preferredContactInfo=Y2l0eT1MZXhpbmd0b24qcG9zdGFsQ29kZT00MDUwNypzdGF0ZT1LWSo_; Expires=Fri, 24-Feb-2017 19:46:12 GMT; Path=/
+Content-Language: en-US
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Content-Type: text/html;charset=UTF-8
+Set-Cookie: Coyote-2-c0a8020a=c0a8021e:0; path=/
+
+
+
+
+
+
+
+
+
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+  <head>
+  
+  
+
+  
+    <title>2011 Ford Edge Price - CarGurus</title>
+    
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="pragma" content="no-cache"/>
+  <meta http-equiv="cache-control" content="no-cache,no-store,must-revalidate"/>
+  <meta http-equiv="expires" content="0"/>
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+  <meta http-equiv="content-language" content="en"/>
+    
+     <meta name="keywords" content="2011 Ford Edge,2011,Ford,Edge,price,msrp,invoice"/>
+
+  
+  
+
+  
+	
+      <meta name="description" content="2011 Ford Edge Price. Find the lowest prices on and see what CarGurus users paid for a 2011 Ford Edge. Get Invoice price, MSRP, and pricing in your area - CarGurus."/>
+
+    <!-- Include core styles -->
+    	<link rel="stylesheet" type="text/css" media="all" href="http://static.cargurus.com/grouped_css/cg_site_global_CC75D75AEA71A27CA6F96687AC9240AF48A76812.css">
+
+    <!-- End include core styles -->
+    	<link rel="stylesheet" type="text/css" media="all" href="http://static.cargurus.com/grouped_css/cg_site_cars_4E6ADD4A71ECAB916722E210B857C55D3A8CD13D.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" >
+
+    	<script type="text/javascript" src="http://static.cargurus.com/grouped_js/ext-lib_D2B50384D7619475B0E3A1358B59FD71CD2819C9.js"></script>
+    	<script type="text/javascript" src="http://static.cargurus.com/grouped_js/cargurus_6C0ADE546A2CA0EE12FF5E88F029250A32C6F0ED.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/cargurus/inventorylisting/inventorylistings_oo.js?v=1830728440_91748"></script> 
+  <script language="javascript" type="text/javascript" src="/js/cargurus/inventorylisting/inventoryListingFilters.js?v=1880715484_69916"></script>
+  <script language="javascript" type="text/javascript" src="/js/cargurus/inventorylisting/contactdealer.js?v=1542493008_18849"></script>
+  <script type="text/javascript">
+    var userListingManager = new CG.UserListingManager("instantMarketToolForm", false, "ResearchPriceView");
+  </script>
+  <script type="text/javascript">
+         CG.DealFinderRating.addRating("GREAT_PRICE", "Great Deal", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_up_green_small.gif");
+         CG.DealFinderRating.addRating("GOOD_PRICE", "Good Deal", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_up_right_green_small.gif");
+         CG.DealFinderRating.addRating("OK_PRICE", "Fair Deal", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_right_yellow_small.gif");
+         CG.DealFinderRating.addRating("NA", "", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_NA_small.gif");
+         CG.DealFinderRating.addRating("FAIR_PRICE", "Fair Deal", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_right_yellow_small.gif");
+         CG.DealFinderRating.addRating("OUTLIER", "Uncertain", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_question_red.png");
+         CG.DealFinderRating.addRating("POOR_PRICE", "Poor Deal", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_right_down_orange_small.gif");
+         CG.DealFinderRating.addRating("OVERPRICED", "Overpriced", "http://static.cargurus.com/gfx/cargurus/inventorylistings/circle_arrow_down_red_small.gif");
+  </script>
+
+
+  <script type="text/javascript">
+    var CG_LOGGER = new CG.Logger("server");
+    function getFacebookCarGurusAppId() {
+         return "199331106902";
+    }
+
+    $(document).ready(function() {
+
+      // Sets the cookie if the href of the current window is a paid search URL.
+      CG.CookieUtils.setPaidReferrerCookie();
+
+      //This is required so that deep objects (like arrays don't get serialized
+      //in a "new" way).  This change is as of jquery 1.4.3
+      jQuery.ajaxSettings.traditional = true;
+
+      
+
+    });
+
+
+
+
+    // JS event model does not propagate events to body handlers, this forces said callbacks.
+    function forceOnBodyCallbacks() {
+        
+    }
+
+  </script>
+
+  
+  <script>
+    function DM_prepClient(csid, client) {
+        if (csid == "H05525") {
+            client.DM_addEncToLoc("type", "Crossover, SUV");
+            client.DM_addEncToLoc("make", "FORD");
+            client.DM_addEncToLoc("model", "Edge");
+            client.DM_addEncToLoc("sid", "cargurus");
+            client.DM_addEncToLoc("section", "guru.new.dfp");
+            client.DM_addEncToLoc("content", "bg");
+            client.DM_addEncToLoc("year", "2011");
+            client.DM_addEncToLoc("zip", "40507");
+        }
+    }
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $.getScript("http://js.revsci.net/gateway/gw.js?csid=H05525&auto=t");
+    });
+  </script>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.cargurus.com/rss/d923.xml" ><link rel="canonical" href="http://www.cargurus.com/Cars/2011-Ford-Edge-Price-c22190" >  
+  </head>
+
+  <body onclick="forceOnBodyCallbacks();" >
+
+  <div id="content" >
+
+  <div class="leaderboardParent">
+    <div id="bannerAdLEADERBOARD_TopBanner" class="leaderboard" style="overflow:hidden;"></div>
+  </div>
+  
+  <script type="text/javascript">
+   $(document).ready( function() {
+    CG.Ads.showBannerAds('c22190', ['LEADERBOARD'], {'LEADERBOARD':'bannerAdLEADERBOARD_TopBanner'}, '');
+   });
+  </script>
+
+  <div class="cg-siteHeader-padding clearfix">
+    <div class="cg-siteHeader-logoSection">
+      <a href="/">
+        <h1 class="cg-siteHeader-cgLogo">
+          CarGurus
+        </h1>
+      </a>
+        <div class="cg-siteHeader-tagline">Find and share automotive knowledge</div>
+
+    </div>
+    <div class="cg-siteHeader-navSection">
+
+      <div id="searchBarContainer" style="float:right; margin:9px 0 0 10px;">
+<form action="/Cars/GoogleSearchResults.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-8963988335522163:g54s215k1k6" />
+    <input type="hidden" name="cof" value="FORID:9" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="18" id="googleTextBox" style="font-size:12px; padding:0; margin:0"/>
+    <a href="#" class="g-searchButton"><img src="http://static.cargurus.com/gfx/icons/silk/zoom.png" style="vertical-align:middle"/></a>
+  </div>
+</form>
+<script type="text/javascript" charset="utf-8">
+  $(".g-searchButton").click(function(){
+    $("#cse-search-box").submit();
+  })
+</script>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+      </div>
+      <div class="cg-siteHeader-authBar-wrap clearfix">
+<div id="authBar">
+    <div id="authPlaceholder">
+            <span  class="slnk " title="Sign in" onclick="slnk('aHR0cHM6Ly93d3cuY2FyZ3VydXMuY29tL0NhcnMvYXV0aGVudGljYXRpb24vcmVuZGVyTG9naW5Gb3JtLmFjdGlvbj9yZWRpcmVjdFVybD0lMkZDYXJzJTJGMjAxMS1Gb3JkLUVkZ2UtUHJpY2UtYzIyMTkw', false);">Sign in</span> <span class="separator">|</span>
+        <span  class="slnk " title="Register" onclick="slnk('aHR0cHM6Ly93d3cuY2FyZ3VydXMuY29tL0NhcnMvYXV0aGVudGljYXRpb24vcmVuZGVyUmVnaXN0cmF0aW9uRm9ybS5hY3Rpb24/cmVkaXJlY3RVcmw9JTJGQ2FycyUyRjIwMTEtRm9yZC1FZGdlLVByaWNlLWMyMjE5MA__', false);">Register</span> <span class="separator">|</span>
+      <span class="slnk" onclick="CG.Auth.showRegisterOrLoginDialog('slnk(\'L0NhcnMvdXNlci9teUdhcmFnZS5hY3Rpb24_\', false);', 'Please register or sign in to access your personalized garage.', 'UserAuthBar-MyGarage');">My garage</span>
+
+    </div>
+<div class="clearInvisible"></div>
+</div>
+      </div>
+
+<div>
+  <div class="mattblacktabs clearfix">
+
+      <ul>
+        
+        
+
+          <li class="">
+            <a href="/" title="Home" class="ui-corner-top">Home</a>
+          </li>
+          <li class=" selected">
+            <a href="/Cars/autos/" title="Research" class="ui-corner-top">Research</a>
+          </li>
+          <li class="">
+            <a href="/Cars/forsale" title="Cars For Sale" class="ui-corner-top">Cars For Sale</a>
+          </li>
+          <li class="">
+            <span class="slnk ui-corner-top" onclick="cgPageTracker.trackEvent('UserListings', 'SellYourCarLink', 'SiteTab');slnk('L0NhcnMvc2VsbC1jYXIv', false);">Sell Your Car</span>
+          </li>
+          <li class="">
+            <a href="/Cars/price-trends/" title="Price Trends" class="ui-corner-top">Price Trends</a>
+          </li>
+          <li class="">
+            <span class="slnk ui-corner-top" onclick="slnk('L0NhcnMvY29tbXVuaXR5Lw__', false);">Community</span>
+          </li>
+          <li class="">
+            <span class="slnk ui-corner-top" onclick="slnk('L0NhcnMvYWRkQ2FyLmFjdGlvbj9zb3VyY2U9c2l0ZVRhYiZwaWQ9c2l0ZVRhYg__', false);">Share a Car</span>
+          </li>
+      </ul>
+<div class="clearInvisible"></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <div class="cg-siteHeader-crumbsWrap clearfix">
+    <div id="breadcrumb" class="clearfix" >
+  <a href="/" title="Home" name="breadcrumb">Home</a> 
+    <span class="cg-breadcrumb-separator">&gt;</span> <a href="/Cars/autos/" title="Research Cars" name="breadcrumb">
+    Research
+    </a> 
+<span class="cg-breadcrumb-separator">&gt;</span> <a href="/Cars/Ford-Overview-m2" title="Ford" >Ford</a> 
+<span class="cg-breadcrumb-separator">&gt;</span> <a href="/Cars/Ford-Edge-Overview-d923" title="Ford Edge" >Edge</a> 
+<span class="cg-breadcrumb-separator">&gt;</span> 2011     </div>
+  </div>
+
+
+
+  <div id="contentBody">
+
+
+
+
+
+
+
+
+<div id="carOverview" class="priceTab">
+  <div class="cg-carOverviewHeading-wrap clearfix">
+    <h1 >2011 Ford Edge Price</h1>
+    <div class="cg-carOverviewHeading-options">
+      <div class="cg-carOverviewSocial-wrap">
+  <div class="socialPluginBar" style="width: 80px;">
+
+
+
+  <div id="fb-like-button-1"></div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fb-like-button-1').html('<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cargurus.com%2FCars%2FFord-Edge-Overview-d923&amp;layout=button_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;" scrolling="no" frameborder="0" style="width:80px;height:21px;" allowTransparency="true"></iframe>');
+    });
+  </script>
+  </div>
+        <div style="float:right;margin-right:5px;">
+
+  <g:plusone href="http://www.cargurus.com/Cars/Ford-Edge-Overview-d923" size="medium" count="false" callback="logGooglePlusOneClick"></g:plusone>
+</div>
+      </div>
+      <div class="cg-carOverviewSwitch-wrap">  
+  <div id="switchCarWidget">
+  
+
+    
+    
+
+
+
+
+<form id="changeCar" name="changeCar" action="/Cars/changeCar.action" method="post">
+<table class="wwFormTable"><tbody>
+
+
+
+<input type="hidden" name="switchCarCalloutTab" value="Price" id="changeCar_switchCarCalloutTab"/>
+
+
+
+
+
+
+<tr>
+
+    <td 
+class="tdContent" >
+
+<table style="border-spacing: 0px;" id="changeCar_entitySelectingHelper_selectedEntity">
+  <tr>
+      
+      <td style="padding-left: 0px;">
+
+    <input type="hidden" name="uncached" value="false">
+    <input type="hidden" name="showInactive" value="false">
+    <input type="hidden" name="newCarsOnly" value="false">
+    <input type="hidden" name="useInventoryService" value="false">
+    <input type="hidden" name="name" value="entitySelectingHelper.selectedEntity">
+    <input type="hidden" name="quotableOnly" value="false">
+    <input type="hidden" name="includeAllModelsOption" value="true">
+    <input type="hidden" name="carsWithRegressionOnly" value="false">
+
+    <select class="select" 
+            style="width: 130px;"
+            name="ign-makerId-entitySelectingHelper.selectedEntity"
+            id="select-99535804"
+            onChange="setSelectedEntityId(this.options[this.selectedIndex].value, this.form, 'entitySelectingHelper.selectedEntity', '');"
+            >
+    <option selected="selected">Select Make</option>
+<option  value="m4">Acura</option> 
+<option  value="m124">Alfa Romeo</option> 
+<option  value="m79">AM General</option> 
+<option  value="m133">AMC</option> 
+<option  value="m128">Ariel</option> 
+<option  value="m157">Ascari</option> 
+<option  value="m110">Aston Martin</option> 
+<option  value="m153">Asuna</option> 
+<option  value="m19">Audi</option> 
+<option  value="m119">Austin</option> 
+<option  value="m139">Austin-Healey</option> 
+<option  value="m140">Bedford</option> 
+<option  value="m20">Bentley</option> 
+<option  value="m3">BMW</option> 
+<option  value="m113">Bugatti</option> 
+<option  value="m21">Buick</option> 
+<option  value="m22">Cadillac</option> 
+<option  value="m173">Caparo</option> 
+<option  value="m149">Caterham</option> 
+<option  value="m1">Chevrolet</option> 
+<option  value="m23">Chrysler</option> 
+<option  value="m117">Citroen</option> 
+<option  value="m182">Cizeta</option> 
+<option  value="m190">Commuter Cars</option> 
+<option  value="m192">CT 200h</option> 
+<option  value="m127">Dacia</option> 
+<option  value="m81">Daewoo</option> 
+<option  value="m166">DAF</option> 
+<option  value="m95">Daihatsu</option> 
+<option  value="m96">Datsun</option> 
+<option  value="m179">De Tomaso</option> 
+<option  value="m97">Delorean</option> 
+<option  value="m24">Dodge</option> 
+<option  value="m159">Duesenberg</option> 
+<option  value="m82">Eagle</option> 
+<option  value="m174">Edsel</option> 
+<option  value="m120">Eunos</option> 
+<option  value="m25">Ferrari</option> 
+<option  value="m98">FIAT</option> 
+<option  value="m183">Fisker</option> 
+<option  selected="selected" value="m2">Ford</option> 
+<option  value="m99">Freightliner</option> 
+<option  value="m83">Geo</option> 
+<option  value="m26">GMC</option> 
+<option  value="m172">Gumpert</option> 
+<option  value="m144">Hillman</option> 
+<option  value="m115">Holden</option> 
+<option  value="m6">Honda</option> 
+<option  value="m126">HSV</option> 
+<option  value="m186">Hudson</option> 
+<option  value="m162">Humber</option> 
+<option  value="m27">Hummer</option> 
+<option  value="m28">Hyundai</option> 
+<option  value="m84">Infiniti</option> 
+<option  value="m158">International</option> 
+<option  value="m30">Isuzu</option> 
+<option  value="m31">Jaguar</option> 
+<option  value="m32">Jeep</option> 
+<option  value="m189">Kaiser</option> 
+<option  value="m184">Keating</option> 
+<option  value="m156">Kenworth</option> 
+<option  value="m33">Kia</option> 
+<option  value="m129">Koenigsegg</option> 
+<option  value="m155">Lada</option> 
+<option  value="m34">Lamborghini</option> 
+<option  value="m100">Lancia</option> 
+<option  value="m35">Land Rover</option> 
+<option  value="m37">Lexus</option> 
+<option  value="m152">Leyland</option> 
+<option  value="m38">Lincoln</option> 
+<option  value="m39">Lotus</option> 
+<option  value="m180">Mahindra</option> 
+<option  value="m40">Maserati</option> 
+<option  value="m41">Maybach</option> 
+<option  value="m42">Mazda</option> 
+<option  value="m141">McLaren</option> 
+<option  value="m43">Mercedes-Benz</option> 
+<option  value="m44">Mercury</option> 
+<option  value="m101">Merkur</option> 
+<option  value="m102">MG</option> 
+<option  value="m45">MINI</option> 
+<option  value="m46">Mitsubishi</option> 
+<option  value="m150">Morgan</option> 
+<option  value="m151">Morris</option> 
+<option  value="m154">Moskvitch</option> 
+<option  value="m185">Mosler</option> 
+<option  value="m12">Nissan</option> 
+<option  value="m142">Noble</option> 
+<option  value="m85">Oldsmobile</option> 
+<option  value="m103">Opel</option> 
+<option  value="m176">Packard</option> 
+<option  value="m121">Pagani</option> 
+<option  value="m86">Panoz</option> 
+<option  value="m177">Peel</option> 
+<option  value="m178">Perodua</option> 
+<option  value="m104">Peugeot</option> 
+<option  value="m105">Pininfarina</option> 
+<option  value="m87">Plymouth</option> 
+<option  value="m47">Pontiac</option> 
+<option  value="m48">Porsche</option> 
+<option  value="m160">Proton</option> 
+<option  value="m191">Ram</option> 
+<option  value="m147">Reliant</option> 
+<option  value="m106">Renault</option> 
+<option  value="m49">Rolls-Royce</option> 
+<option  value="m131">Rover</option> 
+<option  value="m50">Saab</option> 
+<option  value="m108">Saleen</option> 
+<option  value="m51">Saturn</option> 
+<option  value="m52">Scion</option> 
+<option  value="m125">Seat</option> 
+<option  value="m135">Shelby</option> 
+<option  value="m123">Simca</option> 
+<option  value="m118">Skoda</option> 
+<option  value="m111">smart</option> 
+<option  value="m143">Spyker</option> 
+<option  value="m171">SsangYong </option> 
+<option  value="m187">SSC</option> 
+<option  value="m109">Sterling</option> 
+<option  value="m164">Studebaker</option> 
+<option  value="m53">Subaru</option> 
+<option  value="m132">Sunbeam</option> 
+<option  value="m54">Suzuki</option> 
+<option  value="m161">Talbot</option> 
+<option  value="m163">Tata</option> 
+<option  value="m146">Tecnoidea</option> 
+<option  value="m112">Tesla</option> 
+<option  value="m7">Toyota</option> 
+<option  value="m134">Trabant</option> 
+<option  value="m137">Triumph</option> 
+<option  value="m130">TVR</option> 
+<option  value="m181">Ultima</option> 
+<option  value="m122">Valiant</option> 
+<option  value="m169">Vanden Plas</option> 
+<option  value="m116">Vauxhall</option> 
+<option  value="m168">Vector</option> 
+<option  value="m55">Volkswagen</option> 
+<option  value="m56">Volvo</option> 
+<option  value="m175">Wartburg</option> 
+<option  value="m138">Wiesmann</option> 
+<option  value="m188">Yugo</option> 
+<option  value="m148">Zastava</option> 
+    </select>
+      </td>
+
+        
+        
+        <td>
+
+      <input type="hidden" name="heading" value="Select Year">
+
+      <select class="select" 
+        style="width: 130px;"
+        name="ign-modelId-entitySelectingHelper.selectedEntity"
+        onChange="        setSelectedEntityId(this.options[this.selectedIndex].value, this.form, 'entitySelectingHelper.selectedEntity', '');
+        "       >
+        <option>Select Model</option>
+            <option class="b">(All Models)</option>
+<option  value="d318">Aerostar</option> 
+<option  value="d1491">Anglia</option> 
+<option  value="d319">Aspire</option> 
+<option  value="d1778">Bantam</option> 
+<option  value="d320">Bronco</option> 
+<option  value="d321">Bronco II</option> 
+<option  value="d1315">C-MAX</option> 
+<option  value="d740">Capri</option> 
+<option  value="d741">Classic</option> 
+<option  value="d322">Contour</option> 
+<option  value="d323">Contour SVT</option> 
+<option  value="d1833">Corsair</option> 
+<option  value="d1201">Cortina</option> 
+<option  value="d1790">Cougar</option> 
+<option  value="d742">Country Squire</option> 
+<option  value="d2028">Courier</option> 
+<option  value="d1965">Crestline</option> 
+<option  value="d324">Crown Victoria</option> 
+<option  value="d325">E-150</option> 
+<option  value="d326">E-250</option> 
+<option  value="d327">E-350</option> 
+<option  value="d1140">E-Series Van</option> 
+<option  value="d1139">E-Series Wagon</option> 
+<option  value="d1108">EA Falcon</option> 
+<option  value="d328">Econoline Cargo</option> 
+<option  value="d329">Econoline Wagon</option> 
+<option  selected="selected" value="d923">Edge</option> 
+<option  value="d1076">EL Falcon</option> 
+<option  value="d743">Elite</option> 
+<option  value="d1870">Endeavour</option> 
+<option  value="d330">Escape</option> 
+<option  value="d759">Escape Hybrid</option> 
+<option  value="d331">Escort</option> 
+<option  value="d332">Excursion</option> 
+<option  value="d1932">EXP</option> 
+<option  value="d333">Expedition</option> 
+<option  value="d334">Explorer</option> 
+<option  value="d335">Explorer Sport</option> 
+<option  value="d336">Explorer Sport Trac</option> 
+<option  value="d1395">F-100</option> 
+<option  value="d337">F-150</option> 
+<option  value="d338">F-150 Heritage</option> 
+<option  value="d339">F-150 SVT Lightning</option> 
+<option  value="d340">F-250</option> 
+<option  value="d341">F-250 Super Duty</option> 
+<option  value="d342">F-350</option> 
+<option  value="d343">F-350 Super Duty</option> 
+<option  value="d1022">F-450 Super Duty</option> 
+<option  value="d1563">F-650</option> 
+<option  value="d1307">Fairlane</option> 
+<option  value="d1694">Fairmont</option> 
+<option  value="d1341">Falcon</option> 
+<option  value="d344">Festiva</option> 
+<option  value="d1060">Fiesta</option> 
+<option  value="d345">Five Hundred</option> 
+<option  value="d1049">Flex</option> 
+<option  value="d346">Focus</option> 
+<option  value="d347">Focus SVT</option> 
+<option  value="d348">Freestar</option> 
+<option  value="d349">Freestyle</option> 
+<option  value="d845">Fusion</option> 
+<option  value="d1213">Galaxie</option> 
+<option  value="d2062">Galaxy</option> 
+<option  value="d1165">Granada</option> 
+<option  value="d350">GT</option> 
+<option  value="d1976">GT40</option> 
+<option  value="d1066">Ka</option> 
+<option  value="d2010">Kuga</option> 
+<option  value="d1080">Laser</option> 
+<option  value="d1394">LTD</option> 
+<option  value="d351">LTD Crown Victoria</option> 
+<option  value="d1293">Maverick</option> 
+<option  value="d1564">Model A</option> 
+<option  value="d1393">Model B</option> 
+<option  value="d2049">Model T</option> 
+<option  value="d1059">Mondeo</option> 
+<option  value="d2">Mustang</option> 
+<option  value="d352">Mustang SVT Cobra</option> 
+<option  value="d1194">Orion</option> 
+<option  value="d1571">Pinto</option> 
+<option  value="d1792">Popular</option> 
+<option  value="d353">Probe</option> 
+<option  value="d1330">Puma</option> 
+<option  value="d1362">Ranchero</option> 
+<option  value="d354">Ranger</option> 
+<option  value="d1236">RS200</option> 
+<option  value="d1202">S-MAX</option> 
+<option  value="d1702">Sapphire</option> 
+<option  value="d1445">Scorpio</option> 
+<option  value="d924">Shelby GT500</option> 
+<option  value="d1086">Sierra</option> 
+<option  value="d1442">Taunus</option> 
+<option  value="d355">Taurus</option> 
+<option  value="d1020">Taurus X</option> 
+<option  value="d1851">Telstar</option> 
+<option  value="d356">Tempo</option> 
+<option  value="d1425">Territory</option> 
+<option  value="d357">Thunderbird</option> 
+<option  value="d1198">Torino</option> 
+<option  value="d1067">Transit</option> 
+<option  value="d2037">Transit Connect</option> 
+<option  value="d358">Windstar</option> 
+<option  value="d359">Windstar Cargo</option> 
+<option  value="d1956">Zephyr</option> 
+      </select>
+        </td>
+
+        
+        
+        <td>
+
+
+  <input type="hidden" name="includeUnknownTrimOption" value="false">
+  <input type="hidden" name="carsWithRegressionOnly" value="false">
+
+      <select class="select"
+         style="width: 130px;"
+         name="ign-carId-entitySelectingHelper.selectedEntity"
+         onChange="setSelectedEntityId(this.options[this.selectedIndex].value, this.form, 'entitySelectingHelper.selectedEntity', '');adjustCar2ComboBox(this.options[this.selectedIndex].text, this.form, 'entitySelectingHelper.selectedEntity', '');"       >
+      <option>Select Year</option>
+<option  value="c23259">2013</option> 
+<option  value="c23043">2012</option> 
+<option  selected="selected" value="c22190">2011</option> 
+<option  value="c21675">2010</option> 
+<option  value="c21318">2009</option> 
+<option  value="c9095">2008</option> 
+<option  value="c7325">2007</option> 
+      </select>
+        </td>
+
+
+
+    <td>
+
+
+
+
+
+
+
+
+
+<input type="submit" id="changeCar_submit" name="submit" value="Go"
+  class="jq-button ui-button ui-widget ui-state-default ui-corner-all jq-button"
+/>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+
+<input type="hidden" name="entitySelectingHelper.selectedEntity" value="c22190" id="entitySelectingHelper.selectedEntity"/>
+</td>
+</tr>
+
+
+
+
+
+</tbody></table></form>
+
+
+
+  </div>
+</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a name="carTabs"></a>
+
+
+  <div id="carTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all" style="border: 0px solid #FFFFFF !important;">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+
+          <li class="ui-state-default ui-corner-top">
+                        <a href="/Cars/2011-Ford-Edge-Overview-c22190" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'OverviewTab');"><span class="carTabTitle">Overview</span></a>
+            </li>
+
+          <li class="ui-state-default ui-corner-top">
+                        <a href="/Cars/2011-Ford-Edge-Pictures-c22190" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'PicturesTab');"><span class="carTabTitle">Pictures</span></a>
+            </li>
+
+          <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
+              <a href="#" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'PriceTab');return false;">
+                  <span class="carTabTitle">Price</span>
+              </a></li>
+
+          <li class="ui-state-default ui-corner-top">
+                        <a href="/Cars/2011-Ford-Edge-Specs-c22190" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'SpecsTab');"><span class="carTabTitle">Specs</span></a>
+            </li>
+
+          <li class="ui-state-default ui-corner-top">
+                        <a href="/Cars/2011-Ford-Edge-DealerQuotes-c22190" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'Dealer_QuotesTab');"><span class="carTabTitle">Dealer Quotes</span></a>
+            </li>
+
+          <li class="ui-state-default ui-corner-top">
+                        <a href="/Cars/l-Used-Ford-Edge-Lexington-d923_L12037" onclick="cgPageTracker.trackEvent('CarTabs', 'TabClicksFrom-new_price', 'Used_EdgeTab');"><span class="carTabTitle">Used Edge</span></a>
+            </li>
+</ul>
+    <div id="tabContent" style="padding: 10px 0px !important;" class="clearfix">
+
+<div class="carsLeftContent">
+
+<div class="clearInvisible"></div>
+
+    <div class="carNavigationBar">
+      <ul class="plain">
+
+  
+
+
+
+    <li class="navLink">
+              <span onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'Specs-Tab');">
+<a href="/Cars/2011-Ford-Edge-Specs-c22190" class="defaultLink" title="2011 Ford Edge Specs" ><span >Specs</span></a>        </span>
+
+    </li>
+
+  
+
+
+
+    <li class="navLink">
+      <a href="/Cars/2011-Ford-Edge-DealerQuotes-c22190" class="defaultLink" title="2011 Ford Edge Dealer Quotes"
+        onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'Dealer Quotes-Tab');">Dealer Quotes</a>
+    </li>
+
+  
+
+
+
+    <li class="disabledLink">
+      Videos
+    </li>
+
+  
+
+
+
+    <li class="navLink">
+              <span onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'For Sale-Tab');">
+<a href="/Cars/l-Used-Ford-Edge-Lexington-d923_L12037" class="defaultLink" title="Used Ford Edge For Sale" ><span >Used Ford Edge</span></a>        </span>
+
+    </li>
+
+  
+
+
+
+    <li class="navLink">
+              <span onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'Discussions-Tab');">
+<a href="/Cars/autoclub/forum-ford-edge-ac846" class="defaultLink" title="Ford Edge Forum" ><span >Ford Edge Forum</span></a>        </span>
+
+    </li>
+
+  
+
+
+
+    <li class="navLink">
+              <span onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'Repairs-Tab');">
+<a href="/Cars/r-Ford-Lexington-m2_L12037" class="defaultLink" title="Ford Repairs" ><span >Ford Repairs</span></a>        </span>
+
+    </li>
+
+  
+
+
+
+    <li class="navLink">
+              <span onclick="cgPageTracker.trackEvent('LeftNavBar', 'ClicksFrom-new_price', 'Dealers-Tab');">
+<a href="/Cars/dealers-Ford-Lexington-m2_L12037" class="defaultLink" title="2011 Ford Edge Dealers" ><span >Ford Dealers</span></a>        </span>
+
+    </li>
+      </ul>
+    </div>
+
+  <div class="popularListContainer">
+    <div class="popularListHeader">
+       Related Models For Sale<br/>
+    </div>
+
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Ford-Explorer-Lexington-d334_L12037" class="defaultLink" title="Used Ford Explorer">Used Ford Explorer</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">1282 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Ford-Escape-Lexington-d330_L12037" class="defaultLink" title="Used Ford Escape">Used Ford Escape</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">2865 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Chevrolet-Equinox-Lexington-d616_L12037" class="defaultLink" title="Used Chevrolet Equinox">Used Chevrolet Equinox</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">1781 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Nissan-Murano-Lexington-d243_L12037" class="defaultLink" title="Used Nissan Murano">Used Nissan Murano</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">7023 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Lincoln-MKX-Lexington-d928_L12037" class="defaultLink" title="Used Lincoln MKX">Used Lincoln MKX</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">197 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Honda-CR-V-Lexington-d589_L12037" class="defaultLink" title="Used Honda CR-V">Used Honda CR-V</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">998 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Jeep-Grand-Cherokee-Lexington-d490_L12037" class="defaultLink" title="Used Jeep Grand Cherokee">Used Jeep Grand Cherokee</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">3102 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Ford-Fusion-Lexington-d845_L12037" class="defaultLink" title="Used Ford Fusion">Used Ford Fusion</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">2092 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Kia-Sorento-Lexington-d162_L12037" class="defaultLink" title="Used Kia Sorento">Used Kia Sorento</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">2284 listings</div>
+              </div>
+
+              <div style="padding: 0 5px 5px;">
+                 <a href="/Cars/l-Used-Toyota-Highlander-Lexington-d298_L12037" class="defaultLink" title="Used Toyota Highlander">Used Toyota Highlander</a>
+                 <div style="color: #738C8D; margin-bottom: 5px; font-size: 11px;">353 listings</div>
+              </div>
+  </div>
+    <div class="popularListContainer">
+        <div class="popularListHeader">
+            Other Years <br/>
+        </div>
+
+         <div style="padding: 0 5px 5px;">
+            <a href="/Cars/2012-Ford-Edge-Overview-c23043" class="defaultLink" title="2012 Ford Edge Overview">2012 Ford Edge</a>
+         </div>
+         <div style="padding: 0 5px 5px;">
+            <a href="/Cars/2010-Ford-Edge-Overview-c21675" class="defaultLink" title="2010 Ford Edge Overview">2010 Ford Edge</a>
+         </div>
+         <div style="padding: 0 5px 5px;">
+            <a href="/Cars/2009-Ford-Edge-Overview-c21318" class="defaultLink" title="2009 Ford Edge Overview">2009 Ford Edge</a>
+         </div>
+         <div style="padding: 0 5px 5px;">
+            <a href="/Cars/2008-Ford-Edge-Overview-c9095" class="defaultLink" title="2008 Ford Edge Overview">2008 Ford Edge</a>
+         </div>
+         <div style="padding: 0 5px 5px;">
+            <a href="/Cars/2007-Ford-Edge-Overview-c7325" class="defaultLink" title="2007 Ford Edge Overview">2007 Ford Edge</a>
+         </div>
+    </div>
+    <div class="popularListContainer">
+        <div class="popularListHeader">
+            Used Cars For Sale <br/>
+        </div>
+
+             <div style="padding: 0 5px 5px;">
+                <a href="/Cars/l-Used-2012-Ford-Edge-Lexington-c23043_L12037" class="defaultLink" title="2012 Ford Edge For Sale">
+                2012 Ford Edge For Sale</a>
+             </div>
+             <div style="padding: 0 5px 5px;">
+                <a href="/Cars/l-Used-2010-Ford-Edge-Lexington-c21675_L12037" class="defaultLink" title="2010 Ford Edge For Sale">
+                2010 Ford Edge For Sale</a>
+             </div>
+             <div style="padding: 0 5px 5px;">
+                <a href="/Cars/l-Used-2009-Ford-Edge-Lexington-c21318_L12037" class="defaultLink" title="2009 Ford Edge For Sale">
+                2009 Ford Edge For Sale</a>
+             </div>
+             <div style="padding: 0 5px 5px;">
+                <a href="/Cars/l-Used-2008-Ford-Edge-Lexington-c9095_L12037" class="defaultLink" title="2008 Ford Edge For Sale">
+                2008 Ford Edge For Sale</a>
+             </div>
+             <div style="padding: 0 5px 5px;">
+                <a href="/Cars/l-Used-2007-Ford-Edge-Lexington-c7325_L12037" class="defaultLink" title="2007 Ford Edge For Sale">
+                2007 Ford Edge For Sale</a>
+             </div>
+    </div>
+  <div class="popularListContainer">
+    <div class="popularListHeader">
+       2011 Ford Edge Trims For Sale<br/>
+    </div>
+
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-Limited-t37233" class="defaultLink"
+             title="2011 Ford Edge Limited For Sale">2011 Ford Edge Limited For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-Limited-AWD-t37234" class="defaultLink"
+             title="2011 Ford Edge Limited AWD For Sale">2011 Ford Edge Limited AWD For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-SE-t37230" class="defaultLink"
+             title="2011 Ford Edge SE For Sale">2011 Ford Edge SE For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-SE-Fleet-AWD-t39704" class="defaultLink"
+             title="2011 Ford Edge SE Fleet AWD For Sale">2011 Ford Edge SE Fleet AWD For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-SEL-t37231" class="defaultLink"
+             title="2011 Ford Edge SEL For Sale">2011 Ford Edge SEL For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-SEL-AWD-t37232" class="defaultLink"
+             title="2011 Ford Edge SEL AWD For Sale">2011 Ford Edge SEL AWD For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-Sport-t37235" class="defaultLink"
+             title="2011 Ford Edge Sport For Sale">2011 Ford Edge Sport For Sale</a>
+        </div>
+        <div style="padding: 0 5px 5px; font-size: 11px;">
+           <a href="/Cars/l-Used-2011-Ford-Edge-Sport-AWD-t37236" class="defaultLink"
+             title="2011 Ford Edge Sport AWD For Sale">2011 Ford Edge Sport AWD For Sale</a>
+        </div>
+  </div>
+  
+
+    <div class="followUs-wrap">
+      <div class="cg-widget-header clearfix">
+        <h2>Follow us</h2>
+      </div>
+
+        <div class="cg-followBlog">
+          <div class="cg-followBlogLink ui-corner-all"><span  class="slnk " onclick="slnk('aHR0cDovL2Jsb2cuY2FyZ3VydXMuY29tLw__', false);">The <span class="cgRed">Car</span><span class="cgBlue">Gurus</span> Blog</span></div>
+        </div>
+
+        <div class="cg-followUsOption" id="cg-follow-us-twitter"></div>
+
+        <div class="cg-followUsOption" id="cg-follow-us-facebook"></div>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $('#cg-follow-us-twitter').html('<iframe class="twitter-follow-button" scrolling="no"  frameborder="0" style="width: 100%; height: 20px;" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.html?preview=false&screen_name=cargurus&bg=light&show_count=false&lang=en"></iframe>');
+              $('#cg-follow-us-facebook').html('<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fcargurus&amp;width=160&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=280" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:280px;" allowTransparency="true"></iframe>');
+          });
+        </script>
+    </div>
+
+</div>    <div class="cg-mainColumn-full">
+
+      <div id="liveMarketToolPage">
+        <div id="hiddenPriceResults" style="display:none;">
+          <div id="pcc-regionName">
+              Southeast
+          </div>
+        </div>
+        <div class="yui-gc">
+          <div class="yui-u">
+            <div class="cg-imv-filterWrap ui-corner-all">
+              <h2>Refine Price</h2>
+
+
+
+
+
+
+
+
+
+        
+<form id="instantMarketToolForm" name="instantMarketToolForm" onsubmit="return false;" action="/Cars/instantMarketValueForm.action" method="get" style="width: 100%;">
+<table class="wwFormTable" style="width: 100%;"><tbody>
+
+
+
+<input type="hidden" name="startUrl" value="/Cars/2011-Ford-Edge-Overview-c22190" id="instantMarketToolForm_startUrl"/>
+
+
+
+
+<input type="hidden" name="selectedEntity" value="c22190" id="instantMarketToolForm_selectedEntity"/>
+          
+
+
+
+
+
+<tr>
+
+
+    <td class="tdLabel"><label for="instantMarketToolForm_selectedEntity" class="label">Trim:</label>
+</td>
+    <td 
+class="tdContent" >
+
+<select class="select"
+  style="width: 135px;" 
+  name="ign-trimId-selectedEntity" 
+  onChange="setSelectedEntityId(this.options[this.selectedIndex].value, this.form, 'selectedEntity', '');populateOptions(this.form, 'selectedEntity', 'priceToolsRefreshDinamic', function() {userListingManager.getPriceReport();}, true, 1, 1); populateTransmissionComboBox(false, false, 'false', this.form, 'selectedEntity', false);userListingManager.getPriceReport();"       
+  >
+  <option>Select Trim</option>
+<option  value="t37233">Limited</option> 
+<option  value="t37234">Limited AWD</option> 
+<option  value="t37230">SE</option> 
+<option  value="t39704">SE Fleet AWD</option> 
+<option  value="t37231">SEL</option> 
+<option  value="t37232">SEL AWD</option> 
+<option  value="t37235">Sport</option> 
+<option  value="t37236">Sport AWD</option> 
+</select>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+    <td class="tdLabel"><label for="instantMarketToolForm_carDescription_postalCode" class="label">ZIP:</label>
+</td>
+    <td 
+class="tdContent" ><input type="text" name="carDescription.postalCode" size="10" value="40507" id="instantMarketToolForm_carDescription_postalCode" class="priceToolsRefresh"/></td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+    <td class="tdLabel"><label for="mileage" class="label">Mileage:</label>
+</td>
+    <td 
+class="tdContent" ><input type="text" name="carDescription.mileage" size="10" value="" id="mileage" class="priceToolsRefresh"/></td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+    <td class="tdLabel"><label for="transmissionSelect" class="label">Transmission:</label>
+</td>
+    <td 
+class="tdContent" ><select name="carDescription.transmissionType" id="transmissionSelect" class="select priceToolsRefresh">
+    <option value="-1"
+    >Any</option>
+    <option value="AUTOMATIC_TRANSMISSION">Automatic</option>
+    <option value="MANUAL_TRANSMISSION">Manual</option>
+
+
+</select></td>
+</tr>
+
+
+
+
+
+<tr>
+
+
+    <td class="tdLabel"><label for="ownCar" class="label">I own this car:</label>
+</td>
+    <td 
+class="tdContent" ><input type="checkbox" name="ownCar" value="true" checked="checked" id="ownCar"/>
+<input type="hidden" id="__checkbox_ownCar" name="__checkbox_ownCar" value="true" /> </td>
+</tr>
+  <tr id="optionsRow" style="display:none;">
+    <td id="OptionsLabel" class="tdLabel">
+      <label class="label">Options:</label>
+    </td>
+
+
+      <td id="OptionValuesContainer" class="tdValue">
+          <span style="color: #808080;">N/A</span>
+    </td>
+  </tr>
+  <tr id="wheelOptionsRow" style="display:none;">
+    <td id="WheelOptionsLabel" class="tdLabel">
+      <label class="label">Wheels:</label>
+    </td>
+
+    <td id="WheelValuesContainer" class="tdValue">
+          <span style="color: #808080;">N/A</span>
+    </td>
+  </tr>
+
+
+
+
+</tbody></table></form>
+
+
+
+            </div>
+            <div id="priceReport-renderSimilarModelsPlaceholder">
+
+  <div class="cg-priceTabSimilarModels">
+      <h2>Similar Models</h2>
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Ford-Explorer-Price-c22399" class="defaultLink">2011 Ford Explorer</a>
+          </h3>
+          <p>Instant Market Value: <strong>$34,576</strong></p>
+          </div>
+
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Ford-Escape-Price-c22343" class="defaultLink">2011 Ford Escape</a>
+          </h3>
+          <p>Instant Market Value: <strong>$21,514</strong></p>
+          </div>
+
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Chevrolet-Equinox-Price-c22377" class="defaultLink">2011 Chevrolet Equinox</a>
+          </h3>
+          <p>Instant Market Value: <strong>$24,289</strong></p>
+          </div>
+
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Nissan-Murano-Price-c22595" class="defaultLink">2011 Nissan Murano</a>
+          </h3>
+          <p>Instant Market Value: <strong>$26,708</strong></p>
+          </div>
+
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Lincoln-MKX-Price-c22203" class="defaultLink">2011 Lincoln MKX</a>
+          </h3>
+          <p>Instant Market Value: <strong>$36,146</strong></p>
+          </div>
+
+
+          <div class="cg-relatedCar-wrap">
+          <h3>
+              <a href="/Cars/2011-Honda-CR-V-Price-c22496" class="defaultLink">2011 Honda CR-V</a>
+          </h3>
+          <p>Instant Market Value: <strong>$23,773</strong></p>
+          </div>
+  </div>
+            </div>
+          </div>
+          <div class="yui-u first">
+            <div class="cg-imv-reportWrap">
+              <div id="priceReport-jsPlaceholder"></div>
+              <div id="priceReport-instantValuePlaceholder">
+
+  <div class="topReportSection">
+    <div class="cg-sharePrice-wrap js-showToOwner">
+      <span class="slnk" onclick="CG.Utils.showFacebookNewsStoryPopupPrompt('MV_22190_28055');">
+        <img src="http://static.cargurus.com/gfx/buttons/facebook_share_button_small.gif" title="Share on Facebook"/>
+      </span>
+      <span class="slnk" onclick="slnk('aHR0cDovL3R3aXR0ZXIuY29tL3NoYXJlP3ZpYT1jYXJndXJ1cyZ1cmw9aHR0cCUzQSUyRiUyRnd3dy5jYXJndXJ1cy5jb20lMkZDYXJzJTJGaW5zdGFudE1hcmtldFZhbHVlLmFjdGlvbiZ0ZXh0PU15JTIwMjAxMSUyMEZvcmQlMjBFZGdlJTIwaXMlMjB3b3J0aCUyMCUyNDI4JTJDMDU1LiUyMEhvdyUyMGFib3V0JTIweW91cnMlM0Y_', true, '_tweet', 'resizable=0,scrollbars=0,width=550,height=450');return false;">
+        <img src="http://static.cargurus.com/gfx/buttons/twitter_button_smaller.gif" alt="Post to Twitter" title="Tweet this"/>
+      </span>
+  </div>
+    <h2>Instant Market Value:
+      <span class="instantMarketValue">$28,055</span>
+    </h2>
+      <span class="sectionExplanation">Based on 1,734  local  listings</span>
+
+
+  </div>
+
+              </div>
+              <div id="priceReport-chartReportPlaceholder">
+  <div id="priceVsMileageChartContainer"></div>
+  <script language="javascript" type="text/javascript">
+    $(document).ready(function() {
+      statsData = {"avgLine":[[6000,28725.945347055887],[54713,26692.666799634004]],"nearbyListingPoints":[[23912,25881],[34216,25950],[28257,25995],[27755,26950],[16732,26990],[19071,27988],[24164,27990],[30550,27992],[30790,27992],[32056,28824],[25240,28873],[27653,28881],[29205,28881],[21124,28981],[16716,28988],[17734,28990],[34112,29588],[14322,29988],[23415,29988],[15368,30388],[15693,30879],[25006,32000],[24405,32995]],"listingPoints":[[54713,19490],[30522,23599],[27180,24083],[22293,24900],[15629,24998],[13470,25532],[19000,25950],[19531,25998],[29520,26499],[36900,26914],[32618,26995],[26846,26999],[18120,27630],[24358,27900],[19228,27991],[6491,27998],[22174,28490],[17985,28791],[27064,28968],[16032,28995],[18982,28998],[26115,29480],[25041,29769],[31220,29950],[10186,29991],[19264,29995],[24587,30000],[11189,30899],[32452,30991],[21030,30998],[34515,31738],[22616,31995],[20996,32147],[20104,32988],[9096,33844],[15882,34900],[12824,37000]],"fairUpper":[[6000,30440.017210429938],[54713,28406.738663008055]],"maxPrice":37000,"fairLower":[[6000,27011.873483681837],[54713,24978.594936259953]],"minPrice":19490,"nearbyListingIds":[34158969,33555099,31413516,31909903,34213332,33144269,32098818,33437124,33437123,32711734,34230566,33785707,31223608,32989508,33969697,32267006,33316864,33444127,32035868,34539177,34722463,28630887,28137249]};
+    });
+  </script>
+
+
+                  <script type="text/javascript" charset="utf-8">
+                    $(function(){
+                		    userListingManager.buildPriceMileageReportChart("priceVsMileageChartContainer", statsData, "Southeast");
+                    })
+                  </script>
+
+<div class="cg-nextStep js-showToOwner">
+  <a href="#" class="cg-iconLeft ico-email" onclick="return userListingManager.redirectToAddToGarage();">Track your car</a>
+  <span class="cg-nextStep-desc">Sign up for periodic updates about your car's value</span>
+</div>
+
+<div class="cg-nextStep js-showToOwner">
+  <a href="#" class="cg-iconLeft ico-money" onclick="return userListingManager.redirectToListYourCar('PRIVATE');">Sell your car</a>
+  <span class="cg-nextStep-desc">Advertise and sell your car for free. Seen by over <strong>three million</strong> users a month!</span>
+</div>
+
+
+  <div class="cg-nextStep">
+    <a href="#" class="cg-iconLeft ico-zoom" onclick="userListingManager.redirectToBrowseUsedCars('L0NhcnMvbC1Vc2VkLTIwMTEtRm9yZC1FZGdlLWMyMjE5MD9zb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8w');">Browse used cars</a>
+    <span class="cg-nextStep-desc">Find the best deals by browsing over <strong>one million</strong> used cars for sale.</span>
+  </div>
+                <div id="priceReport-renderSimilarListingsPlaceholder">
+  <div class="cg-similarListings-wrap">
+    <h2>Comparable Listings</h2>
+        <div class="cg-listing-wrap clearfix">
+
+
+
+
+
+
+
+  <div class="cg-listing">
+    <div class="cg-listing-img">
+    <span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM1NiZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM0MzcxMjQjbGlzdGluZz0zMzQzNzEyNA__', true, '_blank', '');"><img src="http://images.cars.com/phototab/DMI/13477/U2327.jpg" alt="" title="" width="100"/></span>
+  </div>
+
+  <div class="cg-listing-body">
+      <h3><span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM1NiZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM0MzcxMjQjbGlzdGluZz0zMzQzNzEyNA__', true, '_blank', '');">2011 Ford Edge Limited</span></h3>
+      <span><strong>Price: </strong>$27,992</span>
+      <span><strong>Mileage: </strong>30,550 miles</span>
+    </div>
+  </div>
+        </div>
+        <div class="cg-listing-wrap clearfix alt">
+
+
+
+
+
+
+
+  <div class="cg-listing">
+    <div class="cg-listing-img">
+    <span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM1NiZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM0MzcxMjMjbGlzdGluZz0zMzQzNzEyMw__', true, '_blank', '');"><img src="http://images.cars.com/phototab/DMI/13477/U2326.jpg" alt="" title="" width="100"/></span>
+  </div>
+
+  <div class="cg-listing-body">
+      <h3><span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM1NiZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM0MzcxMjMjbGlzdGluZz0zMzQzNzEyMw__', true, '_blank', '');">2011 Ford Edge Limited</span></h3>
+      <span><strong>Price: </strong>$27,992</span>
+      <span><strong>Mileage: </strong>30,790 miles</span>
+    </div>
+  </div>
+        </div>
+        <div class="cg-listing-wrap clearfix">
+
+
+
+
+
+
+  <div class="cg-listing">
+    <div class="cg-listing-img">
+    <span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM4MyZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzQyMzA1NjYjbGlzdGluZz0zNDIzMDU2Ng__', true, '_blank', '');"><img src="http://static.cargurus.com/gfx/image_not_available.gif" alt="" title="" width="100"/></span>
+  </div>
+
+  <div class="cg-listing-body">
+      <h3><span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDM4MyZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzQyMzA1NjYjbGlzdGluZz0zNDIzMDU2Ng__', true, '_blank', '');">2011 Ford Edge Limited</span></h3>
+      <span><strong>Price: </strong>$28,873</span>
+      <span><strong>Mileage: </strong>25,240 miles</span>
+        <ul>
+            <li>Navigation System</li>
+        </ul>
+    </div>
+  </div>
+        </div>
+        <div class="cg-listing-wrap clearfix alt">
+
+
+
+
+
+
+
+  <div class="cg-listing">
+    <div class="cg-listing-img">
+    <span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDUwOSZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM1NTUwOTkjbGlzdGluZz0zMzU1NTA5OQ__', true, '_blank', '');"><img src="http://images.cars.com/phototab/DMI/13487/2354P.jpg" alt="" title="" width="100"/></span>
+  </div>
+
+  <div class="cg-listing-body">
+      <h3><span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'SimilarListings', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9dDM3MjMzJnppcD00MDUwOSZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8wJnNob3dMaXN0aW5nSWQ9MzM1NTUwOTkjbGlzdGluZz0zMzU1NTA5OQ__', true, '_blank', '');">2011 Ford Edge Limited</span></h3>
+      <span><strong>Price: </strong>$25,950</span>
+      <span><strong>Mileage: </strong>34,216 miles</span>
+        <ul>
+            <li>Chrome Wheels</li>
+        </ul>
+    </div>
+  </div>
+  </div>
+  <div class="cg-browseSimilarLink">
+    <span  class="slnk " onclick="cgPageTracker.trackEvent('PriceCalculator', 'BrowseAllListingsLink', 'Click', 1);slnk('L0NhcnMvaW52ZW50b3J5bGlzdGluZy92aWV3RGV0YWlsc0ZpbHRlclZpZXdJbnZlbnRvcnlMaXN0aW5nLmFjdGlvbj9lbnRpdHlTZWxlY3RpbmdIZWxwZXIuc2VsZWN0ZWRFbnRpdHk9YzIyMTkwJnppcD00MDUwNyZzb3VyY2VDb250ZXh0PVByaWNlQ2FsY3VsYXRvcl9mYWxzZV8w', true, '_blank', '');">Browse more 2011 Ford Edge listings  near Lexington</span>
+  </div>
+</div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="cg-priceTabRetailSection">
+        <h2>2011 Ford Edge Price Trends</h2>
+          <p>Are 2011 Ford Edge prices going up or down? Find out on our <a href="/Cars/price-trends/Ford-Edge-d923">Ford Edge Price Trends</a> page.</p>
+      </div>
+      <div class="cg-priceTabRetailSection">
+        <h2>2011 Ford Edge Retail Prices</h2>
+        <p>These prices reflect the current national average retail price for 2011 Ford Edge trims at different mileages.
+        They are based on real time analysis of our <a href="/Cars/l-Used-2011-Ford-Edge-Lexington-c22190_L12037" class="defaultLink" title="Used 2011 Ford Edge For Sale" ><span >2011 Ford Edge listings</span></a>.
+        We update these prices daily to reflect the current retail prices for a <a href="/Cars/l-Used-2011-Ford-Edge-Lexington-c22190_L12037" class="defaultLink" title="Used 2011 Ford Edge For Sale" ><span >Used 2011 Ford Edge</span></a>.
+        </p>
+
+         <div class="yui-gc">
+           <div class="yui-u first">
+
+    <table id="msrpInvoiceTableId" class="sortable prices">
+      <tr>
+        <th>Trim</th>
+        <th>MSRP</th>
+        <th>Invoice</th>
+        <th>Instant Market Value</th>
+      </tr>
+
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtTGltaXRlZC1PdmVydmlldy10MzcyMzM_', false);">Limited</span></td>
+              <td>$34,650</td>
+              <td>$32,297</td>
+              <td><span class="imv-wrap">$30,286</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtTGltaXRlZC1BV0QtT3ZlcnZpZXctdDM3MjM0', false);">Limited AWD</span></td>
+              <td>$36,500</td>
+              <td>$33,980</td>
+              <td><span class="imv-wrap">$32,073</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU0VMLU92ZXJ2aWV3LXQzNzIzMQ__', false);">SEL</span></td>
+              <td>$30,650</td>
+              <td>$28,657</td>
+              <td><span class="imv-wrap">$26,584</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU0VMLUFXRC1PdmVydmlldy10MzcyMzI_', false);">SEL AWD</span></td>
+              <td>$32,500</td>
+              <td>$30,340</td>
+              <td><span class="imv-wrap">$28,157</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU0UtRmxlZXQtQVdELU92ZXJ2aWV3LXQzOTcwNA__', false);">SE Fleet AWD</span></td>
+              <td>$29,490</td>
+              <td>$27,896</td>
+              <td><span class="na-wrap">N/A</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU3BvcnQtT3ZlcnZpZXctdDM3MjM1', false);">Sport</span></td>
+              <td>$36,925</td>
+              <td>$34,367</td>
+              <td><span class="imv-wrap">$32,967</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU3BvcnQtQVdELU92ZXJ2aWV3LXQzNzIzNg__', false);">Sport AWD</span></td>
+              <td>$38,775</td>
+              <td>$36,050</td>
+              <td><span class="imv-wrap">$34,981</span></td>
+
+            </tr>
+            <tr>
+              <td><span  class="slnk " onclick="slnk('L0NhcnMvMjAxMS1Gb3JkLUVkZ2UtU0UtT3ZlcnZpZXctdDM3MjMw', false);">SE</span></td>
+              <td>$27,640</td>
+              <td>$26,194</td>
+              <td><span class="imv-wrap">$22,995</span></td>
+
+            </tr>
+    </table>
+             <div class="cg-priceTab-moreOptionsSection">
+
+    <div title="Find a great deal on a Used Edge"
+        class="ui-widget ui-widget-content ui-corner-all usedCarCallout usedCarBorder">
+      <table class="basic" cellspacing="0">
+        <tr>
+            <td style="vertical-align:top;">
+
+
+
+    <div  class="cg_picture" style="width: 100px;height: 66px;overflow: hidden;">
+
+
+
+
+
+      <img style="width: 100px;height: 66px;" src="http://static.cargurus.com/images/site/2011/08/28/22/45/2012_ford_edge-pic-6361009098133005341-tmb.jpeg"
+alt="Edge"  title="Edge"        />    
+  </div>
+            </td>
+          <td style="vertical-align:top;padding-left:10px;">
+            <div style="font-size:14px;">
+              <div style="color:#1F709B;font-size:17px;padding-bottom:5px;">
+                  Looking for a Used <span class="b">Edge</span> in your area?
+              </div>
+              <span style="float: left;">
+                CarGurus has <span class="b">11,125</span> nationwide Edge listings
+                starting at <span class="b" style="color: #459737;">$9,968</span>.
+                <div style="margin-top: 5px;">
+
+
+
+
+
+        
+<form id="searchZip403018" name="searchZip403018" onsubmit="return CG.Utils.validateZip(this.zip.value);" action="/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action" method="GET" style="float: left;">
+
+
+
+<input type="hidden" name="entitySelectingHelper.selectedEntity" value="d923" id="searchZip403018_entitySelectingHelper_selectedEntity"/>
+
+
+
+<input type="hidden" name="sourceContext" value="carPictureCountLowPriceWithZipCallout" id="searchZip403018_sourceContext"/>                    <span class="label" style="font-size: 14px;">ZIP:</span>
+
+
+
+
+<input type="text" name="zip" size="5" maxlength="5" value="40507" id="searchZip403018_zip"/>
+
+
+
+
+
+
+
+<input type="submit" id="searchZip403018_0" value="Find Deals"
+  class="jq-button ui-button ui-widget ui-state-default ui-corner-all orangeButton"
+/>
+
+
+
+
+</form>
+
+
+
+                </div>
+              </span>
+<div class="clearInvisible"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="ui-widget ui-widget-content askQ">
+  <div class="calloutHeader">
+    <div class="calloutTitle">Have a 2011 Ford Edge Pricing question?</div>
+
+  </div>
+  
+  
+  <div class="calloutMain">
+    <table style="width: 100%;">
+    <tr>
+      <td class="askForm">
+
+
+
+
+        
+<form id="askQuestion" name="askQuestion" onsubmit="cgPageTracker.trackEvent('AskQuestionCallout','new_price', 'AskSubmit');" action="/Cars/autoclub/askQuestion.action" method="GET">              
+
+
+
+
+<input type="hidden" name="selectedEntity" value="c22190" id="askQuestion_selectedEntity"/>
+
+
+
+<input type="hidden" name="startUrl" value="/Cars/2011-Ford-Edge-Overview-c22190" id="askQuestion_startUrl"/>    
+
+
+
+
+<input type="text" name="topic" maxlength="200" value="" id="askCalloutTopic" class="askQuestionTextField" style="width:130px;"/>
+
+
+
+
+
+
+
+<input type="submit" id="askQuestion_0" value="Ask"
+  class="jq-button ui-button ui-widget ui-state-default ui-corner-all inputbutton jq-button"
+ style="margin-left:5px;"/>
+
+
+
+
+</form>
+
+
+
+      </td>     
+        <td class="or" style="text-align:center;">OR</td>
+        <td class="searchBox">
+
+<div class="searchFormSimple">
+
+
+
+
+        
+<form id="searchForums" name="searchForums" onsubmit="cgPageTracker.trackEvent('AskQuestionCallout','new_price', 'SearchSubmit');" action="/Cars/searchForums.action" method="GET">
+<table class="wwFormTable"><tbody>
+
+
+
+<input type="hidden" name="siteSection" value="FORUMS" id="searchForums_siteSection"/>
+
+
+
+
+<input type="hidden" name="autoClub" value="846" id="searchForums_autoClub"/>
+
+
+
+
+
+<input type="hidden" name="selectedEntity" value="c22190" id="searchForums_selectedEntity"/>
+
+
+
+
+<input type="hidden" name="discussionCategory" value="" id="searchForums_discussionCategory"/>
+    <tr>
+        <td class="searchBox">
+
+
+
+
+<input type="text" name="query" value="" id="searchForums_query" class="textBox" style="float: left; width: 130px;"/>
+
+
+
+
+
+
+
+<input type="submit" id="searchForums_sa" name="sa" value="Search"
+  class="jq-button ui-button ui-widget ui-state-default ui-corner-all jq-button"
+ style="float: left; padding:0.4em 3px !important; margin-left: 3px;"/>
+        </td>
+     </tr>
+
+
+
+
+</tbody></table></form>
+
+
+
+</div>
+        </td>
+    </tr>
+    </table>
+ 
+     <div class="whyAskCG">
+       <div class="reasons">
+           Average response time: <span class="statValue">8.5 hours</span>,
+           <span style="margin-left: 10px;"># of Ford Edge owners:</span><span class="statValue">417</span>
+       </div>
+     </div>
+  </div>
+<div class="clearInvisible"></div>
+</div>
+<div class="adSenseContainer" style="width: 468px; margin: auto;">
+  <script type="text/javascript">
+    google_ad_width = 468;
+    google_ad_height = 60;
+    google_ad_format = "468x60_as";
+    google_ad_type = "text_image";
+    google_ad_client = "pub-8963988335522163";
+    google_ad_channel = "5224166592";
+    google_color_border = "3366CC";
+    google_color_bg = "FFFFFF";
+    google_color_link = "0000FF";
+    google_color_url = "008000";
+    google_color_text = "000000";
+    google_alternate_color = "E5ECF9";   
+    google_hints = "Ford Edge";
+  </script>
+    
+  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+              </div>
+
+           </div>
+           <div class="yui-u">
+             <div class="cg-helpCallout-wrap">
+               <div class="cg-helpCallout">
+                 <p><strong>MSRP</strong> (also known as the sticker price) stands for the <strong>Manufacturer Suggested Retail Price</strong>. This is the
+                 manufacturer's recommended price for the vehicle including optional equipment.</p>
+               </div>
+             </div>
+             <div class="cg-helpCallout-wrap">
+               <div class="cg-helpCallout">
+                 <p>The <strong>Invoice Price</strong> of a vehicle is the amount that a dealer pays to the manufacturer for the vehicle.  The dealer's profit is <strong>the difference between MSRP and Invoice</strong> plus any manufacturer-to-dealer incentives.</p>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+    $(function(){
+      if($("#ownCar").attr("checked")){
+  		  $('.js-showToOwner').show();
+  	  }else{
+      	$('.js-showToOwner').hide();
+      }
+
+      $("#ownCar").click(function(){
+        userListingManager.getPriceReport();
+      })
+    })
+  </script>
+<div class="clearInvisible"></div>
+    </div>
+
+<div class="clearInvisible"></div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+<div class="footer centeredText">
+  <div class="links">
+      <a href="#" onclick="CG.Auth.showRegisterOrLoginDialog('','','footer'); return false;">Register</a> |
+      <a href="/Cars/aboutCarGurus.html" target="_blank">About</a>
+      | <span  class="slnk " onclick="slnk('L3ByZXNzL2luZGV4Lmh0bWw_', false);">Press</span>
+      | <a href="/Cars/sitemap.html" target="_blank">Sitemap</a>
+      | <a href="http://blog.cargurus.com" target="_blank">Blog</a>
+      | <a href="/Cars/widgets" title="Car Widgets and Applications">Widgets</a>
+      | <span  class="slnk " onclick="slnk('L0NhcnMvam9icy5odG1s', true, '_blank', '');">Jobs</span>
+      | <span  class="slnk " onclick="slnk('L0NhcnMvVGVybXNPZlVzZS5odG1s', true, '_blank', '');">Terms</span>
+      | <span  class="slnk " onclick="slnk('L0NhcnMvcHJpdmFjeVBvbGljeS5odG1s', true, '_blank', '');">Privacy</span>
+      | <span  class="slnk " onclick="slnk('L0NhcnMvZmFxLmh0bWw_', false);">FAQ</span>
+      | <span  class="slnk " onclick="slnk('L0NhcnMvZW50ZXJGZWVkYmFjay5hY3Rpb24_', true, '_blank', '');">Contact</span>
+  </div>
+  <p class="copyright">copyright &copy; 2006-2012 CarGurus &reg; LLC, All Rights Reserved.</p>
+
+</div>
+
+<script type="text/javascript">
+  document.write(unescape("%3Cscript src='http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try{
+  var pageTracker = _gat._getTracker("UA-4745999-1");
+  pageTracker._initData();
+} catch(err) {}
+</script>
+
+<script type="text/javascript">
+  cgPageTracker.trackCurrentGAPageview("Price-CAR-true");
+</script>
+
+
+  <script type="text/javascript">
+    $(function(){
+
+        $.getScript("http://apis.google.com/js/plusone.js");
+
+      loadUserVoiceFeedbackWidget();
+
+    });
+  </script>
+
+</body>
+
+</html>

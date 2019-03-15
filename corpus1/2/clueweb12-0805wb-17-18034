@@ -1,0 +1,745 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-09T15:12:02Z
+WARC-TREC-ID: clueweb12-0805wb-17-18034
+WARC-IP-Address: 209.202.252.50
+WARC-Payload-Digest: sha1:Y7C5VQANJ4M7ORULK4Q654VNWMH2CX7X
+WARC-Target-URI: http://khuish.tripod.com/military.htm/
+WARC-Record-ID: <urn:uuid:bfab47b3-efe9-48c6-84c3-bf157ff335a7>
+Content-Type: application/http; msgtype=response
+Content-Length: 49665
+
+HTTP/1.1 200 OK
+Date: Fri, 09 Mar 2012 15:12:03 GMT
+Server: Squeegit/1.2.5 (3_sir)
+Vary: *
+X-Server-IP: 209.202.244.218
+P3P: policyref="http://www.lycos.com/w3c/p3p.xml", CP="IDC DSP COR CURa ADMa DEVa CUSa PSAa IVAa CONo OUR IND UNI STA"
+Set-Cookie: MEMBER_PAGE=khuish/military.htm/; path=/; domain=.tripod.com
+Set-Cookie: REFERRER=http://listingsus.com/Society/Genealogy/; path=/; domain=.tripod.com
+Connection: close
+Content-Type: text/html
+
+<Html><HEAD>
+<title>Firstmom's Genealogy Resources - Military Resources</title>
+<META NAME="description" Content="Firstmom's Genealogy Resources- Military 
+helps you find actual genealogy records, military archives, Civil War, War of 1812, Revolutionary War, World War I and II etc. This page will also assist you in finding your ancestors military pension records.">
+<meta name="rating" content="Safe For Kids"><meta name="revisit-after" content="30 days">
+<meta name="language" content="English"><meta name="distribution" content="Global">
+<META NAME="keywords" CONTENT="Military records, nara, genealogy, ancestry, army, navy,
+air force, marines, medals, medal of honor, coast guard,
+ revolutionary, War of 1812, census, firstmoms, first moms, iraqi, cemetery, cemeteries, tombstone, indiana, rootsweb, history,
+ huish, pioneer, military, government, civil war, WWI WWII, Korean War, combat, ancestry, heritage,
+ regiment, cavalry, infantry, american, soldiers, servicemen, service, reenactments, volunteer, troops, muster rolls, wars, hobby, education, historian">
+<META Name="author" Content="Kathy Huish">
+<META NAME="creation_date" CONTENT="WED, 24 MAR 1999 11:00:00">
+</head>
+<body background="back1.gif" TEXT="000000" LINK="0000FF" VLINK="FF0000" ><!-- begin compete js -->
+<script type="text/javascript">
+    __compete_code = '667f89f26d96c30e99728fe6a608804d';
+    (function () {
+        var s = document.createElement('script'),
+            d = document.getElementsByTagName('head')[0] ||
+                document.getElementsByTagName('body')[0],
+            t = 'https:' == document.location.protocol ? 
+                'https://c.compete.com/bootstrap/' : 
+                'http://c.compete.com/bootstrap/';
+        s.src = t + __compete_code + '/bootstrap.js';
+        s.type = 'text/javascript';
+        s.async = 'async'; 
+        if (d) { d.appendChild(s); }
+    }());
+</script>
+<!-- end compete js -->
+
+<!-- quantcast -->
+<script type="text/javascript">
+	function channValidator(chann){
+	return (typeof(chann) == 'string' && chann != '');
+	}
+
+	function lycosQuantcast(){
+		var lb = "";
+		if(typeof(cm_host) !== 'undefined' && channValidator(cm_host)){
+			lb += cm_host.split('.')[0] + '.';
+		}
+	
+		if(typeof(cm_taxid) !==	'undefined' && channValidator(cm_taxid)){
+			lb += cm_taxid;
+			lb = lb.replace('/','');
+		} else {
+			lb = lb.replace('.','');
+		}
+		return lb;
+	}
+	
+	var _qevents = _qevents || [];
+	
+	(function() {
+		var elem = document.createElement('script');
+		elem.src = (document.location.protocol == "https:" ? "https://secure" :"http://edge") + ".quantserve.com/quant.js";
+		elem.async = true;
+		elem.type = "text/javascript";
+		var scpt = document.getElementsByTagName('script')[0];
+		scpt.parentNode.insertBefore(elem, scpt);
+	})();
+	
+	_qevents.push({
+		qacct:"p-6eQegedn62bSo",
+		labels:lycosQuantcast()
+	});
+</script>
+<!-- end quantcast -->
+
+<!-- Begin OwnerIQ js -->
+<script type="text/javascript">
+  var _oiqq = _oiqq || [];
+  _oiqq.push(['oiq_doTag']);
+
+  (function() {
+    var oiq = document.createElement('script'); oiq.type = 'text/javascript'; oiq.async = true;
+    oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
+  })();
+</script>
+<!-- End OwnerIQ -->
+
+
+<script type="text/javascript">
+function getReferrer() {
+    // Reads the referrer out of the cookie, if available.
+    var all= this.document.cookie;
+    if (all== '') return false;
+    var cookie_name = 'REFERRER=';
+    var start = all.lastIndexOf(cookie_name);
+    if (start == -1) return false;  // referrer URL not found.
+    start += cookie_name.length;
+    var end = all.indexOf(';', start);
+    if (end == -1) end = all.length;
+    return all.substring(start, end);
+}
+function getQuery() {
+    // Get the referrer search query from cookie, if available.
+    var rfr = getReferrer();
+    if (rfr == '') return false;
+    var q = extractQuery(rfr, 'yahoo.com', 'p=');
+    if (q) return q;
+    q = extractQuery(rfr, '', 'q=');
+    return q ? q : "";
+}
+function extractQuery(full, site, q_param) {
+    var start = full.lastIndexOf(site);
+    if (start == -1) return false;
+    start = full.lastIndexOf(q_param);
+    if (start == -1) return false;
+    start += q_param.length;
+    var end = full.indexOf('&', start);
+    if (end == -1) end = full.length;
+    return unescape(full.substring(start, end)).split(" ").join("+");
+}
+var cm_role = "live";
+var cm_host = "tripod.lycos.com";
+var cm_taxid = "/memberembedded";
+var tripod_member_name = "khuish";
+var tripod_member_page = "khuish/military.htm/";
+var tripod_ratings_hash = "1331305923:1cfd98091b206def8f91fc89f161c690";
+
+var lycos_ad_category = {"dmoz":"society\/genealogy","ontarget":"&CAT=family%20and%20lifestyles","find_what":"family tree maker"};
+
+var lycos_ad_remote_addr = "128.2.207.79";
+var lycos_ad_www_server = "www.tripod.lycos.com";
+var lycos_ad_track_small = "http://members.tripod.com/adm/img/common/ot_smallframe.gif?rand=156683";
+var lycos_ad_track_served = "http://members.tripod.com/adm/img/common/ot_adserved.gif?rand=156683";
+var lycos_search_query = getQuery();
+</script>
+
+<script type="text/javascript" src="http://scripts.lycos.com/catman/init.js"></script>
+<script type="text/javascript"> 
+
+var lycos_ad = Array();
+var lycos_onload_timer;
+
+function lycos_check_size() {
+    var window_width = 0, window_height = 0;
+    if (typeof(window.innerWidth) == 'number' ) {
+        window_width = window.innerWidth;
+        window_height = window.innerHeight;
+    } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+        window_width = document.documentElement.clientWidth;
+        window_height = document.documentElement.clientHeight;
+    } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+        window_width = document.body.clientWidth;
+        window_height = document.body.clientHeight;
+    } 
+    
+    var lycos_track_img = document.createElement('img');
+    if( top == self ) {
+        return 1;
+    } else {
+        if ((window_width < 300) || (window_height < 300)) {
+            lycos_track_img.src=this.lycos_ad_track_small+"&w="+window_width+"&h="+window_height;
+            return 0;
+        } else {
+            lycos_track_img.src=this.lycos_ad_track_served+"&w="+window_width+"&h="+window_height;
+            return 1;
+        }
+    }
+}
+       
+function lycos_insert_ads() {
+    var lycos_ad_mgr = new AdManager();
+    
+    if (this.lycos_search_query) {
+        lycos_ad_mgr.setForcedParam("keyword", this.lycos_search_query);
+    } else if (this.lycos_ad_category && this.lycos_ad_category.find_what) {
+        lycos_ad_mgr.setForcedParam("keyword", this.lycos_ad_category.find_what);
+    }
+
+    if (this.lycos_ad_category && this.lycos_ad_category.dmoz) {
+        lycos_ad_mgr.setForcedParam("page", this.lycos_ad_category.dmoz);
+    } else {
+        lycos_ad_mgr.setForcedParam("page", "member");
+    }
+
+    var lycos_prod_set = lycos_ad_mgr.chooseProductSet();
+    var slots = ["leaderboard", "leaderboard2"];
+    for (var slot in slots) {
+        if (lycos_ad_mgr.isSlotAvailable(slots[slot])) {
+            lycos_ad[slots[slot]] = lycos_ad_mgr.getSlot(slots[slot]);
+        }
+    }
+
+    lycos_ad_mgr.renderFooter();
+}
+
+function generateHref(atag, template){
+    atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_', 'Check%20out%20this%20Tripod%20Member%20site!'); 
+}
+
+if (lycos_check_size()) {
+    lycos_insert_ads();
+}
+
+window.onload = function() {
+    var f = document.getElementById("FooterAd");
+    var b = document.getElementsByTagName("body")[0];
+    b.removeChild(f);
+    b.appendChild(f);
+    f.style.display = "block";
+}
+
+</script>
+<div id="tb_container" style="text-align:center; position:relative; z-index:999999999">
+    <div id="tb_ad" style="display:block!important; overflow:hidden; width:868px; margin:0 auto">
+    <a href="http://adtrack.ministerial5.com/clicknew/?a=637394" title="build your own website at Tripod.com" style="float:left; width:140px; border:0">
+    	<img src="http://tripod.com/common/ly/images/freeAd.jpg" alt="Made with Tripod.com" style="border:0" />
+    </a> 
+        <div id="ad_container" style="display:block!important; float:left; width:728px ">
+        <script type="text/javascript">document.write(lycos_ad['leaderboard']);</script>
+        </div>
+    </div>
+</div>
+<div id="FooterAd" style="text-align:center; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:94px!important"> 
+<script type="text/javascript">document.write(lycos_ad['leaderboard2']);</script>
+</div>
+<noscript>
+ <img src="http://members.tripod.com/adm/img/common/ot_noscript.gif?rand=156683" alt="" width="1" height="1" />
+ <!-- BEGIN STANDARD TAG - 728 x 90 - Lycos - Tripod Fallthrough - DO NOT MODIFY -->
+ <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="728" height="90" src="http://ad.yieldmanager.com/st?ad_type=iframe&amp;ad_size=728x90&amp;section=209094"></iframe>
+ <!-- END TAG -->
+</noscript>
+
+<center><font size=-1><B>Genealogy Site Index</b><br>
+| <a href="http://khuish.tripod.com/ships.htm" >Ship Passenger Lists</a> |
+<a href="http://khuish.tripod.com/military.htm" >Military Resources</a> |
+<a href="http://khuish.tripod.com/free.htm" >Free Stuff</a> |
+<a href="http://khuish.tripod.com/research.html">Researcher's List</a> |
+<a href="http://khuish.tripod.com/family.htm">Surname/Personal</a> |
+<a href="http://khuish.tripod.com/states.htm">United States</a> |
+<a href="http://khuish.tripod.com/alabama.htm" >Alabama</a> |
+<a href="http://khuish.tripod.com/indiana.htm" >Indiana</a> | <a href="http://khuish.tripod.com/ohio.htm" >Ohio</a> |
+<a href="http://khuish.tripod.com/newyork.htm" >New York</a> | <a href="http://khuish.tripod.com/maine.htm" >Maine</a> |
+<a href="http://khuish.tripod.com/northc.htm" >North Carolina</a> |
+<a href="http://khuish.tripod.com/penn.htm" >Pennsylvania</a> |
+<a href="http://khuish.tripod.com/kentucky.htm" >Kentucky</a> |
+<a href="http://khuish.tripod.com/southc.htm" >South Carolina</a> |
+<a href="http://khuish.tripod.com/wvirg.htm" >West Virginia</a> |
+<a href="http://khuish.tripod.com/native.htm" >Native American</a> |
+<a href="http://khuish.tripod.com/nonusa.htm" >Other Countries</a> |
+<a href="http://khuish.tripod.com/canada.htm" >Canada</a> | <a href="http://khuish.tripod.com/ireland.htm" >Ireland</a> |
+<a href="http://khuish.tripod.com/england.htm" >England/Wales</a> |
+<a href="http://khuish.tripod.com/germany.htm" >Germany</a> | <a href="http://khuish.tripod.com/italy.htm" >Italy</a> |
+<a href="http://khuish.tripod.com/general.htm" >General Genealogy</a> |
+<a href="http://khuish.tripod.com/adoption.htm" >Adoption</a> |
+</center>
+<A NAME="Top">
+<P><center> <a href="http://www.dpbolvw.net/click-2421452-10471832" target="_blank" onmouseover="window.status='http://www.ancestry.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.lduhtrp.net/image-2421452-10471832" width="468" height="60" alt="Banner - Meet Your Ancestors" border="0"/></a>
+</center><hr>
+<p>
+<p> </font>
+
+
+
+
+<center>
+<H2><B>Welcome to Firstmom's Genealogy Resources-Military</b></h2><Br>
+<center><I><Font size=-1><B>Brought to you by</i></b></center>
+<a href="http://khuish.tripod.com/index.html">Firstmom's Genealogy Resources & Records</a></center></font><BR>
+<a name="top">
+<P>
+<P><B>Firstmom's has made it into <a href="http://www.worldwidetopsites.com/php/in.php?id=genealog" target="_blank">Worldwide Top Genealogy Sites</a></b>  <P><BR></b>
+<P><a href="http://www.jdoqocy.com/click-2421452-10490788" target="_blank" onmouseover="window.status='http://www.usamilitarymedals.com/';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.awltovhc.com/image-2421452-10490788" width="88" height="31" alt="USAMilitaryMedals.com Military Medals Store" border="0"/></a>
+
+<P><font size=-1>This page is for locating military records for genealogy or heritage
+purposes and for general Military History knowledge. 
+<P>
+</font>
+<P><center><B><U>GENERAL MILITARY</b></u></center><P>
+<LI>Find <a href="http://www.kqzyfj.com/click-2421452-10490800" target="_blank" onmouseover="window.status='http://www.usamilitarymedals.com/';return true;" onmouseout="window.status=' ';return true;"><B>Military Medals and Ribbons</b></a> for all Branches of Military
+<img src="http://www.lduhtrp.net/image-2421452-10490800" width="1" height="1" border="0"/><br>
+<LI><a href="http://www.army.mil/cmh-pg/"><B>Center For Military History</a></b><Br>
+<LI><a href="http://carlisle-www.army.mil/usamhi/"><B>Military History Institute</b></a><Br>
+<LI><a href="http://www.segenealogy.com/louisiana/la_military.htm"><B>Military History of Louisiana</a></b><br>
+<LI><a href="http://members.aol.com/anolelady/research.htm"><B>Researchers List</a></b> You may find someone locally who can find records easier, or list yourself and do that for others.<Br>
+<LI><a href="http://www.ancientfaces.com/" target="_blank"><B>Ancient Faces</a></b> Searchable Database of over 2700 photos online, includes military photographs. <Br>
+<LI><a href="http://www.vmi.edu/~archtml/index.html"><B>Virginia Military Institute Archives</a></b><Br>
+<LI><a href="http://www.census-online.com/links/index.html" target="_blank"><B>Census Online</a></b> Includes some Military rosters, war-dead lists etc.<Br>
+<LI><a href="http://www.kwp.org/html/about_the_project.html"><B>Korean War Project</a></b><Br>
+<LI><a href="http://www.worldwar1.com/"><B>World War I - Trenches on the Web</a></b><Br>
+<LI><a href="http://members.tripod.com/~Caryl_Williams/veterans.html"><B>British WW2 Reunion's and Tracing your Military Ancestors Page</a></b><Br>
+
+<LI><a href="http://lcweb2.loc.gov/pow/powhome.html"><B>POW/MIA Searchable Database</a></b> Vietnam Era, 130,098 records.<Br>
+<LI><a href="http://www.usgennet.org/usa/topic/colonial/book/chap9.html" target="_blank"><B>French and Indian War</a></b> historical.<br>
+<LI><A HREF="http://www.rootsweb.com/~ncburke/ncbnc1838.htm"><B>1838 Indian Removal -NC Regiment</A></b><Br>
+
+<LI><a href="http://homepages.rootsweb.com/~clanboyd/military.htm" target="_blank"><B>BOYD Military Records</a></b> Databases of those of the Boyd (and variation) surname found in military records.<br>
+
+<a name="revolut">
+<P><center><B><U>AMERICAN REVOLUTION</U></b></center><Br><P>
+See states below for more resources<br>
+<LI><a href="http://www.usgennet.org/usa/topic/revwar/webbbs/queries/index.cgi" target="_blank"><B>Revolutionary War Query Board</a></b><br>
+<LI><a href="http://www.usgennet.org/usa/topic/revwar/index.html" target="_blank"><B>The American Revolutionary War</a></b> from the American Local History Network.<br>
+<LI><a href="http://www.usgennet.org/usa/topic/colonial/census/1840/index.html" target="_blank"><B>1840 Census of Pensioners, Revolutionary and Military Services</a></b> for all states.<br>
+<LI><a href="http://www.rootsweb.com/~ars/index.htm"><B>American Revolution War Soldiers & Descendants</a></b><br>
+<LI><a href="http://earlyamerica.com/earlyamerica/freedom/index.html"><B>Early American Documents</a></b> View the Bill of Rights, Declaration, Constitution and more.<Br>
+<LI><a href="http://members.tripod.com/~AlanCheshire/index-15.html"><B>Pocahontas, John Rolfe, Jamestown & Virginia Links</a></b><Br>
+<LI><a href="http://www.pbs.org/liberty"><B>Liberty! The American Revolution</a></b> The PBS program.<Br>
+
+<LI><a href="http://www.usgennet.org/usa/ma/state/revwar/bunker2.html" target="_blank"><B>Bunker Hill "Firsts"</a></b> First man to fire<br>
+<LI><a href="http://www.usgennet.org/usa/ma/state/revwar/prisbunker.html" target="_blank"><B>Some Prisoners Taken at the Battle of Bunker Hill</a></b><br>
+
+<LI><a href="http://www.ushistory.org/march/index.html"><B>Virtual Marching Tour of the American Revolution</b></a><Br>
+<LI><a href="http://www.dar.org"><B>National Society Daughters of the American Revolution</a></b><Br>
+<LI><a href="http://www.sar.org"><B>Sons of the American Revolution SAR</a></b><br>
+<LI><a href="http://www.cswnet.com/~mgoad/dar.htm"><B>DAR Patriot Index Lookups</a></b><Br>
+<LI><a href="http://www.army.mil/cmh-pg/downloads/SOAR/SOAR.htm"><B>Soldiers of the American Revolution</a></b> Downloadable Backgrounds and Screensavers<br> 
+<LI><a href="http://www.langeonline.com/Heritage/Maritimehistory.htm"><B>History of Maritime Connecticut During Revolution</a></b> Includes Paylist of ship Oliver Cromwell<br>
+<LI><a href="http://www.ngeorgia.com/history/nghistar.html" target="_blank"><B>American Revolution in Georgia</a></b><br>
+<LI><a href="http://www.usgennet.org/usa/ma/state/revwar/index.html" target="_blank"><B>Massachusetts Revolutionary War Soldiers</a></b> Over 5500 names<br>
+<LI><a href="http://webmomma.topcities.com/SussexRevWar1.htm" target="_blank"><B>Sussex Revolutionary War Soldiers</b></a><br>
+<a name="1812">
+<P><center><B><U>War of 1812</b></u></center><Br><P>
+<LI><a href="http://www.rootsweb.com/~ncburke/ncbncreg1.htm"><B>Burke Co., NC Regiments- 1812 & 1814</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~nclincol/nclmuster.htm"><B>Lincoln Co. NC Soldiers- War of 1812</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~nccumber/1812soldiers.htm"><B>Cumberland Co. NC Soldiers- War of 1812</a></b><Br>
+<LI><a href="http://www.ohiohistory.org/resource/database/rosters.html"><B>War of 1812 Rosters</a></b> of Ohio Soldiers<Br>
+<LI><a href="http://www.geocities.com/Pentagon/8502/" target="_blank"><B>War of 1812 Soldier's and Links</a></b><br>
+<LI><a href="http://lvaimage.lib.va.us/collections/WA.html"><B>War of 1812 Pay Rolls and Muster Rolls</a></b> at Library of Virginia<br>
+<LI><a href="http://www.library.sos.state.il.us/departments/archives/war1812.html"><B>Database of Illinois War of 1812 Veterans</a></b><br>
+<LI><a href="http://www.rootsweb.com/~pacolumb/muster1.htm"><B>War of 1812, 157th Regiment of Columbia County PA</a></b><br>
+<LI><a href="http://www.rootsweb.com/~nclincol/nclmuster.htm"><B>Lincoln Co NC 1812-1814 Muster Rolls</a></b><br>
+<center><form action="http://www.kqzyfj.com/interactive" method="get">
+  <input name="t" value="9915" type="hidden" />
+  <input name="rank" value="1" type="hidden" />
+  <input name="pcc" value="2" type="hidden" />
+  <input name="gss" value="affiliate" type="hidden" />
+  <input name="prox"  value="1" type="hidden" />
+  <input name="gl" value="allgs" type="hidden" />
+  <input name="srchb" value="r" type="hidden" />
+  <table border="0" cellpadding="0" cellspacing="0" 
+
+style="background:url(http://c.mfcreative.com/Affiliate/widgets/468_60_search.jpg) no-repeat; width:468px; height:60px;">
+    <tr>
+      <td style="padding-top:18px; padding-left:8px; width:98px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><input name="gsfn" size="10" />
+        <p style="margin: 0; padding: 0; font-weight: bold">FIRST NAME</p></td>
+      <td  style="padding-top:18px; width:98px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><input name="gsln" size="10" />
+        <br />
+        <p style="margin: 0; padding: 0; font-weight: bold">LAST NAME</p></td>
+      <td style="padding-top:16px; width:70px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><select name="gspl" style="margin-bottom: 2px">
+          <option value="2,Any Locality">Any</option>
+          <option value="3,Alabama">AL</option>
+          <option value="4,Alaska">AK</option>
+          <option value="5,Arizona">AZ</option>
+          <option value="6,Arkansas">AR</option>
+          <option value="7,California">CA</option>
+          <option value="8,Colorado">CO</option>
+          <option value="9,Connecticut">CT</option>
+          <option value="10,Delaware">DE</option>
+          <option value="11,District of Columbia">DC</option>
+          <option value="12,Florida">FL</option>
+          <option value="13,Georgia">GA</option>
+          <option value="14,Hawaii">HI</option>
+          <option value="15,Idaho">ID</option>
+          <option value="16,Illinois">IL</option>
+          <option value="17,Indiana">IN</option>
+          <option value="18,Iowa">IA</option>
+          <option value="19,Kansas">KS</option>
+          <option value="20,Kentucky">KY</option>
+          <option value="21,Louisiana">LA</option>
+          <option value="22,Maine">ME</option>
+          <option value="23,Maryland">MD</option>
+          <option value="24,Massachusetts">MA</option>
+          <option value="25,Michigan">MI</option>
+          <option value="26,Minnesota">MN</option>
+          <option value="27,Mississippi">MS</option>
+          <option value="28,Missouri">MO</option>
+          <option value="29,Montana">MT</option>
+          <option value="30,Nebraska">NE</option>
+          <option value="31,Nevada">NV</option>
+          <option value="32,New Hampshire">NH</option>
+          <option value="33,New Jersey">NJ</option>
+          <option value="34,New Mexico">NM</option>
+          <option value="35,New York">NY</option>
+          <option value="36,North Carolina">NC</option>
+          <option value="37,North Dakota">ND</option>
+          <option value="38,Ohio">OH</option>
+          <option value="39,Oklahoma">OK</option>
+          <option value="40,Oregon">OR</option>
+          <option value="41,Pennsylvania">PA</option>
+          <option value="42,Rhode Island">RI</option>
+          <option value="43,South Carolina">SC</option>
+          <option value="44,South Dakota">SD</option>
+          <option value="45,Tennessee">TN</option>
+          <option value="46,Texas">TX</option>
+          <option value="47,Utah">UT</option>
+          <option value="48,Vermont">VT</option>
+          <option value="49,Virginia">VA</option>
+          <option value="50,Washington">WA</option>
+          <option value="51,West Virginia">WV</option>
+          <option value="52,Wisconsin">WI</option>
+          <option value="53,Wyoming">WY</option>
+          <option value="3256,Non-US">INTL</option>
+        </select>
+        <br />
+        <p style="margin: 0; padding: 0; font-weight: bold">LOCALITY</p></td>
+      <td valign="top" width="200" style="padding-top:20px;"><input type="submit" value="" name="submit" style="background:url(http://c.mfcreative.com/Affiliate/widgets/search_sm.gif); width:88px; height:24px; cursor:pointer;" />
+        <br />
+      </td>
+    </tr>
+  </table>
+
+<input type="hidden" name="aid" value="10469564"/>
+<input type="hidden" name="pid" value="2421452"/>
+<input type="hidden" name="url" value="http://www.ancestry.com/rd/cjus.aspx"/>
+</form>
+<img src="http://www.lduhtrp.net/image-2421452-10469564" width="1" height="1" border="0"/>
+</center>
+<br><img src="http://www.lduhtrp.net/image-2421452-10467650" width="1" height="1" border="0"/>
+<a href="http://www.tkqlhce.com/click-2421452-10467608" target="_blank" onmouseover="window.status='http://www.ancestry.com';return true;" onmouseout="window.status=' ';return true;"><B>Free Trial - Ancestry.com US Deluxe Membership</b></a> No Credit Card Required.
+<img src="http://www.awltovhc.com/image-2421452-10467608" width="1" height="1" border="0"/> 
+
+<a name="civil"><P>
+<P><center><B><U>CIVIL WAR</U></b></CENTER><BR><P>
+<Br><I>General</i><Br>
+
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw.html" target="_blank"><B>Ancestral Trails- Civil War Rosters</a></b> Very comprehensive list!!<Br>
+<LI><a href="http://www.geocities.com/SoHo/9787/cwphoto.html"><B>Civil War Photo Album</a></b> Do you know these people?<Br>
+<LI><a href="http://homes.arealcity.com/Civilwarchilders/index.html"><B>CHILDERS in the Civil War</a></b> If you've got a Childers (or variation) in your family tree of this era...check here. Very complete site! Good job Jack!<Br>
+<LI><a href="http://www.cwc.lsu.edu"><B>U.S. Civil War Center</a></b><Br>
+<LI><a href="http://www.tarleton.edu/~kjones/confeds.html"><B>Confederate Regimental History Directory</a></b> Excellent site listing histories of numerous confederate regiments.<Br>
+<LI><a href="http://freepages.genealogy.rootsweb.com/~helmsnc/FredCWCEM" target="_blank"><B>Fredericksburg Confederate Civil War Cemetery List</a></b><Br>
+<LI><a href="http://sunsite.utk.edu/civil-war/warweb.html"><B>American Civil War Homepage</a></b><Br>
+<LI><a href="http://www.geocities.com/EnchantedForest/Dell/2645/clipart.htm"><B>Civil War Clipart Gallery</a></b> Thats where the soldier above came from.<Br>
+<LI><a href="http://sunsite.utk.edu/civil-war/unit3.html"><B>Civil War Unit Contacts</a></b> email addresses of people with more info on various units<Br>
+<LI><a href="http://www.tarleton.edu/~kjones/unions.html"><B>Union Regimental Histories</a></b> <Br>
+<LI><a href="http://www.gburgtimes.com"><B>The Gettysburg Times</a></b><Br>
+<LI><a href="http://suvcw.org/gar.htm"><B>History of the Grand Army of the Republic</a></b><Br>
+<LI><a href="http://khuish.tripod.com/george.jpg"><B>Photo of George Hyde Huish in his GAR Uniform</a></b> My GGgrandfather.<Br>
+<LI><a href="http://www.scv.org/scvhisp2.htm"><B>Sons of Confederate Veterans Hispanic Heritage</a></b><Br>
+<LI><a href="http://www.scv.org/scvgen00.htm"><B>Sons of Confederate Veterans-Genealogy Network</a></b><Br>
+<LI><a href="http://www.iserv.net/~civilmed"><B>Civil War Medical Staff Press</a></b><Br>
+<LI><a href="http://members.tripod.com/~Chubbles/stuff/stuffctr.html"><B>Civil War STUFF</a></b> All kinds of neat "FREE" stuff from calculators to Card Games.<Br>
+<LI><a href="http://khuish.tripod.com/civplum1.htm"><B>Plummers in the Civil War</a></b> A list of 260 Plummer ancestors who were enlisted in the Civil War<Br>
+<LI><a href="http://www2.cr.nps.gov/abpp/battles/bystate.htm"><B>Civil War Battle Summaries By State</a></b><Br>
+
+<hr width=50%><P>
+
+<P><B><I>State Specific Resources -all wars</i></b><Br>
+<Br>Alabama<Br>
+<LI><a href="http://www.archives.state.al.us/referenc/military.html" target="_blank"><B>Alabama Dept. of Archives & History</a></b> Military Records<br>
+<LI><a href="http://www.archives.state.al.us/al_sldrs/~start.html" target="_blank"><B>Soldiers of the American Revolution Residing in Alabama</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-al.html" target="_blank"><B>Alabama Civil War Rosters</a></b><br>
+<LI><a href="http://www.usigs.org/library/military/links/atoe.htm#ALABAMA"><B>USIGS Military Collection, Civil War Links- Alabama</a></b><Br>
+<LI><a href="http://www.tidalwave.net/~jcbrooks/genealog/dekalb/history/military.htm"><B>DeKalb County Civil War Units</a></b><Br>
+<LI><a href="http://members.aol.com/egun/Union.html"><B>Alabama Regiments-Civil War</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~altallad/5thAL.htm"><B>Fifth Alabama Cavalry Regiment</a></b><Br>
+<LI><a href="http://home.att.net/~jamesdallen/6th_Alabama/6th_Alabama_We1.htm"><B>6th Alabama Infantry Regiment Home Page</a></b> Genealogy and History of Regiment and the men who served in the 6th<Br>
+<LI><a href="http://members.aol.com/wwhitby/33rd.html"><B>33rd Alabama Regimental History</a></b><Br>
+<br>Arkansas<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ar.html" target="_blank"><B>AR Civil War Rosters</a></b><br>
+<br>Connecticut<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-cn.html" target="_blank"><B>CT Civil War Rosters</a></b><br>
+<LI><a href="http://www.langeonline.com/Heritage/Maritimehistory.htm"><B>History of Maritime Connecticut During Revolution</a></b> Includes Paylist of ship Oliver Cromwell<br>
+<br>Delaware<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-de.html" target="_blank"><B>Delaware Civil War Rosters</a></b><br>
+<Br>Florida<Br>
+<LI><a href="http://www.florida-scv.org/"><B>Sons of Confederate Veterans-Florida Division</a></b><Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-fl.html" target="_blank"><B>FL Civil War Rosters</a></b><br>
+<Br>Georgia<Br>
+<LI><a href="http://www.ngeorgia.com/history/nghistar.html" target="_blank"><B>American Revolution in Georgia</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ga.html" target="_blank"><B>GA Civil War Rosters</a></b><br>
+<LI><a href="http://members.tripod.com/gascv/"><B>Georgia Sons of Confederate Veterans</a></b> News and Information<Br>
+<Br>Illinois<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-il.html" target="_blank"><B>IL Civil War Rosters</a></b><br>
+<LI><a href="http://www.library.sos.state.il.us/departments/archives/war1812.html"><B>Database of Illinois War of 1812 Veterans</a></b><br>
+<Br>Indiana<Br>
+See also <a href="http://khuish.tripod.com/indiana.htm"><B>Firstmom's Indiana Genealogy Resources</a></b><Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-in.html" target="_blank"><B>Civil War Rosters-Indiana</a></b> Excellent and up-to-date site!<br>
+<LI><a href="http://civilwarindiana.com/"><B>Civil War Indiana</a></b> Almost anything you want to know about the Civil War for Indiana Soldiers.<Br>
+<LI><a href="http://vax1.vigo.lib.in.us/~jmounts/civilwar/links.htm"><B>Civil War Links</a></b> Lots of Indiana Regiments<Br>
+<LI><a href="http://www.geocities.com/CapitolHill/6265/index.html"><B>Indiana Coalition to Honor Civil War Dead</a></b><Br>
+<LI><a href="http://members.tripod.com/~cwphotos/in.htm"><B>Civil War Images: Union Armies: Indiana</a></b> Photos of a few 27th Indiana soldiers<Br>
+<LI><a href="http://members.aol.com/wwhitby/6thind.html"><B>History of the 6th Indiana Volunteer Infantry, USA</a></b><br>
+<LI><a href="http://www.19thindiana.com/"><B>19th Indiana Vol. Inf. Co. A</a></b><Br>
+<LI><a href="http://www.19thindianacompanyk.com/page3.html"><B>Company K 19th Indiana and the Iron Brigade</a></b><br>
+<LI><a href="http://www.geocities.com/Heartland/Estates/4308/43rdinf.html"><B>43rd Indiana Infantry</a></b><Br>
+
+<LI><a href="http://www.geocities.com/inssar-south" target="_blank"><B>Indiana Society Sons of the American Revolution</a></b><Br>
+
+<Br>Iowa<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ia.html" target="_blank"><B>IA Civil War Rosters</a></b><br>
+<LI><a href="http://www.ionet.net/~cousin/dale3.html"><B>8th Iowa Cavalry from Appanoose County, Iowa</a></b><Br>
+
+<br>Kansas<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ks.html" target="_blank"><B>KS Civil War Rosters</a></b><br>
+
+<Br>Kentucky<Br>
+<LI><a href="http://www.rootsweb.com/~kymil/" target="_blank"><B>KY In the Military</b></a> Includes all wars.<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ky.html" target="_blank"><B>KY Civil War Rosters</a></b><br>
+<LI><a href="http://www.geocities.com/kysuvcw/" target="_blank"><B>Sons of Union Veteran's of the Civil War-KY</b></a><br>
+<LI><a href="http://www.unionregimentsofkentucky.com/thomasspeed/index.html" target="_blank"><B>Thomas Speed's Union Regiment's of KY</b></a><br>
+<LI><a href="http://www.rootsweb.com/~kymil/cw/cw-union.html" target="_blank"><B>Kentucky Civil War-Union Links</b></a><br>
+<LI><a href="http://www.civilwararchive.com/unionky.htm" target="_blank"><B>The Civil War Archive -Union Regimental Index</b></a> Kentucky<br>
+<LI><a href="http://www.geocities.com/drightmyer/" target="_blank"><B>Guide to Genealogical Research on KY Ancestors in the Civil War</b></a><br>
+
+
+<br>Louisiana<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-la.html" target="_blank"><B>LA Civil War Rosters</a></b><br>
+<LI><a href="http://www.segenealogy.com/louisiana/la_military.htm"><B>Military History of Louisiana</a></b><br>
+
+<Br>Maine<Br>
+See also <a href="http://khuish.tripod.com/maine.htm"><B>Firstmom's Maine Genealogy Resources</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-me.html" target="_blank"><B>ME Civil War Rosters</a></b><br>
+<LI><a href="http://www.rootsweb.com/~mecivilw/mecivilw.htm" target="_blank"><B>Maine in the Civil War</a></b><Br>
+<LI><a href="http://www.state.me.us/sos/arc/archives/military/civilwar/civilwar.htm"><B>Maine State Archives- Civil War page</a></b><Br>
+<LI><a href="http://www.state.me.us/sos/arc/archives/military/civilwar/reghis.htm"><B>Summary Unit Histories & Related Materials</a></b> you will find at Maine Archives, listed by regiment<Br>
+<LI><a href="http://cwoodcock.com/firstmaine/"><B>First Maine Heavy Artillery Database</a></b><Br>
+<LI><a href="http://www.state.me.us/sos/arc/archives/military/civilwar/sampson.htm"><B>Nurse, 3rd Maine Vol. Infantry</a></b> Biographical accounts of Sarah S. Sampson, interesting reading, includes photo.<Br>
+<LI><a href="http://www.datasync.com/~bouchard/civilwar/cosdf13me.html"><B>Companies D and F, 13th Maine Infantry</a></b><Br>
+<LI><a href="http://www.datasync.com/~bouchard/civilwar/14thMVI.html"><B>14th Maine Volunteer Infantry</a></b><Br>
+<LI><a href="http://www.20thmaine.com/"><B>20th Maine</a></b><Br>
+
+<br>Maryland<br>
+
+<LI><a href="http://www.usgennet.org/usa/md/county/carroll/History/revolutionary_times.htm" target="_blank"><B>Revolutionary Times -Maryland</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-md.html" target="_blank"><B>MD Civil War Rosters</b></a><br>
+<br>Massachusetts<br>
+
+<LI><a href="http://www.usgennet.org/usa/ma/state/revwar/index.html" target="_blank"><B>Massachusetts Revolutionary War Soldiers</a></b> Over 5500 names<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ma.html" target="_blank"><B>MA Civil War Rosters</a></b><br>
+<Br>Michigan<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-mi.html" target="_blank"><B>MI Civil War Rosters</a></b><br>
+<LI><a href="http://users.aol.com/dlharvey/cwmireg.htm"><B>Michigan in the Civil War</a></b><Br>
+<br>Mississippi<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ms.html" target="_blank"><B>MS Civil War Rosters</a></b><br>
+<br>New Hampshire<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-nh.html" target="_blank"><B>NH Civil War Rosters</a></b><br>
+<BR>New Jersey<br>
+<LI><a href="http://webmomma.topcities.com/Civil%20war%20soldiers.htm" target="_blank"><B>Blairstown, Sussex Co Civil War Soldiers</b></a><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-nj.html" target="_blank"><B>NJ Civil War Rosters</a></b><br>
+<LI><a href="http://olivetreegenealogy.com/mil/usa/rev/njvol_6thbat.shtml"><B>Rev War- NJ Vol. Lt. Allens 6th Battalion in 1777</a></b><br>
+<LI><a href="http://olivetreegenealogy.com/mil/usa/rev/index.shtml" target="_blank"><B>OTE Revolutionary War Muster Rolls</a></b> mostly NJ<br>
+<Br>New York<Br>
+See also <a href="http://khuish.tripod.com/newyork.htm"><B>Firstmom's New York Genealogy Resources</b></a><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ny.html" target="_blank"><B>NY Civil War Rosters</a></b><br>
+<LI><a href="http://freenet.buffalo.edu/~ae487/washrev.html"><B>Washington Co. NY Revol. War Pension Applications</a></b><Br>
+<LI><a href="http://freenet.buffalo.edu/~ae487/charmil.html"><B>Charlotte Co. NY Militia Roll (1775-1781)</a></b><Br>
+<LI><a href="http://freenet.buffalo.edu/~ae487/warrrev.html"><B>Warren Co. NY Revol. War pension applications</a></b><Br>
+<LI><a href="http://www.geocities.com/Heartland/2101/oar16ny.html"><B>Officers of the 16th NY Infantry (1861-2)</a></b><Br>
+<LI><a href="http://raims.com/milmenu.html"><B>Ontario Co. NY Military Records</a></b><Br>
+<br>North Carolina<br>
+See also <a href="http://khuish.tripod.com/northc.htm"><B>Firstmoms North Carolina Genealogy Resources</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-nc.html" target="_blank"><B>NC Civil War Rosters</a></b><br>
+<LI><a href="http://www.rootsweb.com/~nclincol/nclmuster.htm"><B>Lincoln Co NC 1812-1814 Muster Rolls</a></b><br>
+<LI><a href="http://homepages.rootsweb.com/~ncuv/ncuv.htm"><B>1st and 2nd Regiments of North Carolina Union Volunteers</a></b><br>
+<LI><a href="http://user.aol.com/jweaver301/nc/anccwa-f.htm"><B>Civil War Soliders from Ashe and Alleghany County, NC</a></b><br>
+<LI><a href="http://members.tripod.com/~records_searcher/index-10.html"><B>CIVIL WAR ROSTERS - MECKLENBURG COUNTY, NC</a></b><br>
+<LI><a href="http://www.rootsweb.com/~nchyde/HYDEUSA.HTM"><B>Hyde Co., NC Union Soldiers and Sailors</a></b><br>
+<LI><a href="http://www.rootsweb.com/~nchyde/HYDECSA.HTM"><B>Hyde Co., NC Confederate Soldiers</a></b><br>
+<LI><a href="http://www.geocities.com/Heartland/River/5885/page2.html"><B>History of Watauga County</a></b> Includes rosters<br> 
+<LI><a href="http://www.mindspring.com/~nixnox/"><B>Battle of Morrisville Station</a></b> Includes historic articles on the town and more.<br>
+<LI><a href="http://www.nara.gov/nara/electronic/ncallist.html"><B>Korean Conflict Casualty List-NC</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~ncburke/ncbncreg1.htm"><B>Burke Co., NC Regiments- 1812 & 1814</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~nclincol/nclmuster.htm"><B>Lincoln Co. NC Soldiers- War of 1812</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~nccumber/1812soldiers.htm"><B>Cumberland Co. NC Soldiers- War of 1812</a></b><Br>
+<Br>Ohio<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-oh.html"><B>Ohio Civil War Rosters</a></b><br>
+<LI><a href="http://www.geocities.com/Heartland/5060/civilwar.htm"><B>History of First Ohio Light Artillery, Battery L</a></b><Br>
+<LI><a href="http://www.ohiohistory.org/resource/database/civilwar.html"><B>Civil War Documents</a></b> Prisoners and other records online.<Br>
+<LI><a href="http://www.ohiohistory.org/resource/database/rosters.html"><B>War of 1812 Rosters</a></b> of Ohio Soldiers<Br>
+<Br>Pennsylvania<Br>
+See also <a href="http://khuish.tripod.com/penn.htm"><B>Firstmom's Pennsylvania Genealogy Resources</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-pa.html"><B>PA Civil War Rosters</a></b><br>
+<LI><a href="http://www.rootsweb.com/~pacolumb/muster1.htm"><B>War of 1812, 157th Regiment of Columbia County PA</a></b><br>
+<LI><a href="http://suvcw.org/pa/garposts.txt"><B>Grand Army of the Republic Posts in PA</a></b><Br>
+<LI><a href="http://www.integratedpower.com/49thpva.htm"><B>49th PA Infantry Co. A</a></b><Br>
+<LI><a href="http://www.geocities.com/Heartland/Hills/3916/cwpa53hist.html"><B>53rd Pennsylvania Volunteer Infantry, Company "C"</a></b><Br>
+<LI><a href="http://khuish.tripod.com/isaac54.txt"><B>Info on the 54th PA in the Civil War</a></b> Isaac Plummer Sr. was in this regiment.<Br>
+<LI><a href="http://www.geocities.com/Heartland/Hills/6195/54thtoc.htm"><B>54th PA Volunteer Infantry</b></a> Info. on the 54th PA Volunteer Infantry in which Isaac W. Plummer served.<Br>
+<LI><a href="http://khuish.tripod.com/silas81.txt"><B>Info on the 81st PA in the Civil War</a></b> Silas D. Plummer is my family tree member in this regiment.<Br>
+<LI><a href="http://www.geocities.com/Heartland/Lane/6496/"><B>149th PA Bucktails Website</a></b><Br>
+<LI><a href="http://www.geocities.com/Heartland/Hills/3916/cwpa.html"><B>Pennsylvania Civil War Volunteers</a></b><Br>
+<br>Rhode Island<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-ri.html" target="_blank"><B>RI Civil War Rosters</a></b><br>
+<LI><a href="http://www.rootsweb.com/~rigenweb/article5.html"><B>Records of the Colony of Rhode Island</a></b> Includes Revolutionary War Officers<br>
+<Br>South Carolina<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-sc.html" target="_blank"><B>SC Civil War Rosters</a></b><br>
+<LI><a href="http://members.tripod.com/mwyckoff/index.html" target="_blank"><B>South Carolina in the Civil War</a></b><Br>
+<LI><a href="http://www.researchonline.net/sccw/scunits.htm" target="_blank"><B>Military Units of South Carolina</a></b><Br>
+<LI><a href="http://cgi.rootsweb.com/~genbbs/genbbs.cgi/USWARS/ACWRoots/SC" target="_blank"><B>Query Board for SC Civil War Soldiers</a></b><Br>
+<LI><a href="http://members.tripod.com/mwyckoff/organ.html" target="_blank"><B>Other organizations for SC Civil War info</a></b><Br>
+<LI><a href="http://freepages.genealogy.rootsweb.com/~york/_indexYorkCivilWar.htm"><B>York County SC in the Civil War</a></b><Br>
+<LI><a href="http://freepages.genealogy.rootsweb.com/~york/Pension/1890.htm"><B>1890 Veteran's Census -York County SC</b></a><Br>
+<LI><a href="http://freepages.genealogy.rootsweb.com/~york/1SCC/H.htm"><B>1st South Carolina Cavalry Co. H</a></b> with roster.<Br>
+<LI><a href="http://freepages.genealogy.rootsweb.com/~york/3rd/D.html"><B>3rd Battalion of State Troops Senior Reserves, Co. C</a></b> with roster.<Br>
+<br>Tennessee<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-tn.html" target="_blank"><B>TN Civil War Rosters</a></b><br>
+<LI><a href="http://www.tngenweb.org/revwar/"><B>Tennessee Rev. War Soldiers</a></b><br>
+<LI><a href="http://www.tngenweb.org/civilwar/tncwindex.html"><B>Tennesseans in the Civil War</a></b><br>
+<Br>Texas<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-tx.html" target="_blank"><B>TX Civil War Rosters</a></b><br>
+<Br>Virginia<Br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-va.html" target="_blank"><B>VA Civil War Rosters</a></b><br>
+<LI><a href="http://lvaimage.lib.va.us/collections/WA.html"><B>War of 1812 Pay Rolls and Muster Rolls</a></b> at Library of Virginia<br>
+<LI><a href="http://www.vmi.edu/~archtml/index.html"><B>Virginia Military Institute Archives</a></b><Br>
+<LI><a href="http://www.vmi.edu/archives/photos.html"><B>Photographs from the VMI Archives</a></b><br>
+<Br>West Virginia<Br>
+See also <a href="http://khuish.tripod.com/wvirg.htm"><B>Firstmoms West Virginia Genealogy Resources</a></b><br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-wv.html" target="_blank"><B>WV Civil War Rosters</a></b><br>
+<LI><a href="http://www.wvra.org/"><B>WVRA</a></b> Civil War reenacting in West Virginia. Includes 1st WV Inf Co A.<Br>
+<LI><a href="http://www.wvcivilwar.com/"><B>WV in the Civil War</a></b> Great Civil War site for West Virginia! Photos, People, History and more.<Br>
+<LI><a href="http://www.wvcivilwar.com/1stinf3m.shtml"><B>1st WV Infantry</a></b> 3 months service. Regiment my GGGrandfather George Hyde Huish served in. Also known as 1st Reg. of VA Union Volunteer Infantry. May-August 1861.<br>
+<LI><a href="http://www.lindapages.com/1wvi/1wvi.htm" target="_blank"><B>ROSTER! 1st WV Infantry (3 Months Service</a></b> It is so wonderful that this is now online, thank you Linda!<br>
+<LI><a href="http://www.civilwararchive.com/Unreghst/unwvinf1.htm"><B>West Virginia Infantry Histories</a></b><Br>
+<LI><a href="http://www.rootsweb.com/~wvhancoc/cwsold1.htm"><B>Civil War Soldiers from Hancock Co WV</a></b><Br>
+<LI><a href="http://www.wvculture.org/history/medals.html"><B>Unclaimed Civil War Medals</a></b> West Virginia State Archives<Br>
+<LI><a href="http://www.rootsweb.com/usgenweb/wv/civilwar.htm"><B>Civil War Records - WVGenWeb Archives</a></b><Br>
+<LI><a href="http://www.rootsweb.com/usgenweb/wv/earlymil.htm"><B>Early Military Records - WVGenWeb Archives</a></b><Br>
+<LI><a href="http://www.civilwararchive.com/unionwv.htm"><B>The Civil War Archive - Union Regiments - West Virginia</a></b><Br>
+<br>Wisconsin<br>
+<LI><a href="http://www.geocities.com/Area51/Lair/3680/cw/cw-wi.html" target="_blank"><B>WI Civil War Rosters</a></b><br>
+<hr width=50%>
+<center><form action="http://www.kqzyfj.com/interactive" method="get">
+  <input name="t" value="9915" type="hidden" />
+  <input name="rank" value="1" type="hidden" />
+  <input name="pcc" value="2" type="hidden" />
+  <input name="gss" value="affiliate" type="hidden" />
+  <input name="prox"  value="1" type="hidden" />
+  <input name="gl" value="allgs" type="hidden" />
+  <input name="srchb" value="r" type="hidden" />
+  <table border="0" cellpadding="0" cellspacing="0" 
+
+style="background:url(http://c.mfcreative.com/Affiliate/widgets/468_60_search.jpg) no-repeat; width:468px; height:60px;">
+    <tr>
+      <td style="padding-top:18px; padding-left:8px; width:98px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><input name="gsfn" size="10" />
+        <p style="margin: 0; padding: 0; font-weight: bold">FIRST NAME</p></td>
+      <td  style="padding-top:18px; width:98px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><input name="gsln" size="10" />
+        <br />
+        <p style="margin: 0; padding: 0; font-weight: bold">LAST NAME</p></td>
+      <td style="padding-top:16px; width:70px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#685f4c;"><select name="gspl" style="margin-bottom: 2px">
+          <option value="2,Any Locality">Any</option>
+          <option value="3,Alabama">AL</option>
+          <option value="4,Alaska">AK</option>
+          <option value="5,Arizona">AZ</option>
+          <option value="6,Arkansas">AR</option>
+          <option value="7,California">CA</option>
+          <option value="8,Colorado">CO</option>
+          <option value="9,Connecticut">CT</option>
+          <option value="10,Delaware">DE</option>
+          <option value="11,District of Columbia">DC</option>
+          <option value="12,Florida">FL</option>
+          <option value="13,Georgia">GA</option>
+          <option value="14,Hawaii">HI</option>
+          <option value="15,Idaho">ID</option>
+          <option value="16,Illinois">IL</option>
+          <option value="17,Indiana">IN</option>
+          <option value="18,Iowa">IA</option>
+          <option value="19,Kansas">KS</option>
+          <option value="20,Kentucky">KY</option>
+          <option value="21,Louisiana">LA</option>
+          <option value="22,Maine">ME</option>
+          <option value="23,Maryland">MD</option>
+          <option value="24,Massachusetts">MA</option>
+          <option value="25,Michigan">MI</option>
+          <option value="26,Minnesota">MN</option>
+          <option value="27,Mississippi">MS</option>
+          <option value="28,Missouri">MO</option>
+          <option value="29,Montana">MT</option>
+          <option value="30,Nebraska">NE</option>
+          <option value="31,Nevada">NV</option>
+          <option value="32,New Hampshire">NH</option>
+          <option value="33,New Jersey">NJ</option>
+          <option value="34,New Mexico">NM</option>
+          <option value="35,New York">NY</option>
+          <option value="36,North Carolina">NC</option>
+          <option value="37,North Dakota">ND</option>
+          <option value="38,Ohio">OH</option>
+          <option value="39,Oklahoma">OK</option>
+          <option value="40,Oregon">OR</option>
+          <option value="41,Pennsylvania">PA</option>
+          <option value="42,Rhode Island">RI</option>
+          <option value="43,South Carolina">SC</option>
+          <option value="44,South Dakota">SD</option>
+          <option value="45,Tennessee">TN</option>
+          <option value="46,Texas">TX</option>
+          <option value="47,Utah">UT</option>
+          <option value="48,Vermont">VT</option>
+          <option value="49,Virginia">VA</option>
+          <option value="50,Washington">WA</option>
+          <option value="51,West Virginia">WV</option>
+          <option value="52,Wisconsin">WI</option>
+          <option value="53,Wyoming">WY</option>
+          <option value="3256,Non-US">INTL</option>
+        </select>
+        <br />
+        <p style="margin: 0; padding: 0; font-weight: bold">LOCALITY</p></td>
+      <td valign="top" width="200" style="padding-top:20px;"><input type="submit" value="" name="submit" style="background:url(http://c.mfcreative.com/Affiliate/widgets/search_sm.gif); width:88px; height:24px; cursor:pointer;" />
+        <br />
+      </td>
+    </tr>
+  </table>
+</center><hr>
+
+
+</center>
+
+
+<center><P> Thank you for visiting my page and or pages! Bookmark it and come back
+often...updating it almost daily! Link to me freely...it motivates me when I see the counter
+rise ;) <P> <Br></center><P>
+<P>You are number
+ <img src="/bin/counter/military.htm?0000FF"> to visit Firstmom's Genealogy 
+Military Page.<Br><P>
+<a href="http://www.anrdoezrs.net/click-2421452-10470529" target="_blank" onmouseover="window.status='http://www.ancestry.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.tqlkg.com/image-2421452-10470529" width="120" height="60" alt="RootsWeb.com Logo" border="0"/></a>
+<P><BR>
+
+<P>
+<I>Webmaster:</i> Kathy Huish<Br>Indiana<Br>
+Copyright &copy; 1999-2007 Firstmom's Genealogy<Br>
+URL: <a href="http://khuish.tripod.com/military.htm">http://khuish.tripod.com/military.htm</a><Br>
+<P><P>
+<P>
+</table></body></html>

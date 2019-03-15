@@ -1,0 +1,853 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-09T14:57:17Z
+WARC-TREC-ID: clueweb12-0805wb-29-00101
+WARC-Target-URI: http://alumni.unc.edu/article.aspx?sid=8331
+WARC-Payload-Digest: sha1:C6Q3SMKGMXQVXDMYT2L6PWH5LB7HHTWZ
+WARC-IP-Address: 152.2.244.241
+WARC-Record-ID: <urn:uuid:bee0bad1-2704-4a62-84e9-e71b593cd934>
+Content-Type: application/http; msgtype=response
+Content-Length: 47232
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 09 Mar 2012 14:57:21 GMT
+X-Powered-By: ASP.NET
+X-AspNet-Version: 1.1.4322
+Cache-Control: private
+Content-Type: text/html; charset=iso-8859-1
+Content-Length: 47006
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+ 
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+ 
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>UNC General Alumni Association :: 2011 Carrier Classic Game-Viewing Parties | </title>
+    <link rel="stylesheet" type="text/css" href="http://alumni.unc.edu/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://alumni.unc.edu/css/text.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://alumni.unc.edu/css/960_static.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://alumni.unc.edu/css/layout.css" media="screen" />
+    
+
+    
+<link href="http://alumni.unc.edu/css/nav/dropdown.css" media="all" rel="stylesheet" type="text/css" />
+<link href="http://alumni.unc.edu/css/nav/default.advanced-mod.css" media="all" rel="stylesheet" type="text/css" />
+
+
+    
+
+    <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.kwicks-1.5.1.pack.js"></script>
+    <script type="text/javascript" src="/js/application.js"></script>
+    <script type="text/javascript" src="/js/jquery.canvasSwap.js"></script>
+	<script type="text/javascript" src="/js/jquery.pngFix.js"></script>
+	<script type="text/javascript" src="/js/menu.js"></script>
+	
+	<!--preloading, see init code in doc ready function below -->
+	<script type="text/javascript" src="/js/jquery.preload-min.js"></script>
+	
+<!--[if lt IE 7]>
+<script type="text/javascript" src="/css/nav/jquery.dropdown.js"></script>
+<![endif]-->
+
+
+	<!-- headline scroller-->
+	<link rel="stylesheet" type="text/css" href="/css/contentslider.css" />
+	<script type="text/javascript" src="/js/contentslider.js"></script>
+	
+	
+
+	
+	
+	
+	<!-- video gallery -->
+	<script type="text/javascript" src="/js/swfobject.js"></script>
+	<script type="text/javascript">
+	    //we are definining a base for the relative URLs in the XML document: this makes the swf get relative to itself, not the parent HTML document
+	    var flashvars = {}
+	    var params = {
+	        base: ".",
+	        wmode: "transparent"
+	    }
+	    var attributes = {}
+
+
+
+
+	    // "video.swf" that the swfobject embed below refers to is the "player" only. Will need to edit the embed URL to wherever you place the file.
+
+	    swfobject.embedSWF("video/video.swf", "video", "365", "350", "9.0.0", false, flashvars, params, attributes);
+	    // arguments: url, div id, width, height, min flash version
+	</script>
+	
+	<!--photo gallery -->
+	<script type="text/javascript">
+	    //we are definining a base for the relative URLs in the XML document: this makes the swf get relative to itself, not the parent HTML document
+	    var flashvars = {
+	}
+	var params = {
+	    base: ".",
+	    wmode: "transparent",
+	    allowfullscreen: "true"
+	}
+	var attributes = {}
+
+
+	// Dave, same for potw2.swf, works like the video swf above
+	swfobject.embedSWF("/potw/potw2.swf", "potw", "365", "375", "9.0.0", false, flashvars, params, attributes);
+	// arguments: url, div id, width, height, min flash version
+	</script>
+	
+	
+	
+
+
+
+	
+<script language="javascript" type="text/javascript">
+
+    // /////////////////////////////////////                  document ready function             ///////////
+
+    $(document).ready(function() {
+
+        //make IE6 support 24bit png graphics 
+        $('body').pngFix();
+
+        // canvasSwap for rollover graphics. Simply place a copy of the "on" state of the graphic into the same directory as the "off" state, and name the "on" state with "_on" before the extension. "On" state must be same format, gif for gif, png for png. For example: the graphic "logintab.png" has an on-state graphic "logintab_on.png" that resides adjacent in img dir. Then simply add a unique class to the off-state img (use base image name to keep things straight) and make an entry below following the same syntax as the list of graphics to which rollovers apply. That's it. UPDATE: though we have pngfix, IE6 will not activate the click on a 24-bit png. 
+        $.fn.canvasSwap.defaults.suffix = '_on';
+        $.fn.canvasSwap.defaults.ie6_support = false; // don't turn it on... 
+        $('img.logintab').canvasSwap();
+        $('img.searchtab').canvasSwap();
+        $('img.login-close-x').canvasSwap();
+        $('img.membership').canvasSwap();
+        $('img.email').canvasSwap();
+        $('img.print').canvasSwap();
+        $('img.twitter').canvasSwap();
+        $('img.facebook').canvasSwap();
+        $('img.linkedin').canvasSwap();
+        $('img.rss').canvasSwap();
+        $('img.itunes').canvasSwap();
+        $('img.more').canvasSwap();
+        $('img.readmore').canvasSwap();
+        $('img.enlarge').canvasSwap();
+        $('img.logout').canvasSwap();
+        $('img.text-smaller').canvasSwap();
+        $('img.text').canvasSwap();
+        $('img.text-larger').canvasSwap();
+
+        //preloading...
+        $('#nav-band-content img').preload({  // we are looking specifically at this ID div, for images
+            find: '.gif', // use a string or regex to match part of the src
+            replace: '_on.gif' // replacement to generate alternate URL; this coincides with the _on suffix we are using in canvasSwap above to generate graphic rollovers.
+        });
+
+
+
+
+        //highlight divs on mouseover
+        $('div.hilite_div').hover(function() { $(this).css('background', '#d8e8f6') },function() { $(this).css('background', 'none') }
+);
+
+        //highlight more's w/o links on mouseover
+        $('span.continue').hover(
+function() { $(this).css('color', '#cc6600') },
+function() { $(this).css('color', '#558dbe') }
+);
+
+
+        //login & search box
+        $('img.logintab').click(function() {
+            $('div.loginbox').slideToggle('slow');
+            $('div.searchbox').fadeOut('fast');
+            return false;
+        });
+
+
+
+        $('img.searchtab').click(function() {
+            $('div.searchbox').slideToggle('slow');
+            $('div.loginbox').fadeOut('fast');
+            return false;
+        });
+
+        $('img.login-close-x').click(function() {
+            $('div.loginbox').fadeOut('slow');
+            $('div.searchbox').fadeOut('slow');
+            return false;
+        });
+
+
+        // Text resizing script
+        // Reset Font Size
+        var originalFontSize = $('.articles p').css('font-size');
+        $("img.text").click(function() {
+            $('.articles p').css('font-size', originalFontSize);
+            $('.articles ul').css('font-size', newFontSize);
+            return false;
+        });
+        // Increase Font Size
+        $("img.text-larger").click(function() {
+            var currentFontSize = $('.articles p').css('font-size');
+            var currentFontSizeNum = parseFloat(currentFontSize, 10);
+            var newFontSize = currentFontSizeNum + 2; //you could use a multiplier (and divider for Decreasing) but since we are set to px and ems, let's just increase or decrease by 2 sizes
+            $('.articles p').css('font-size', newFontSize);
+            $('.articles ul').css('font-size', newFontSize);
+            return false;
+        });
+        // Decrease Font Size
+        $("img.text-smaller").click(function() {
+            var currentFontSize = $('.articles p').css('font-size');
+            var currentFontSizeNum = parseFloat(currentFontSize, 10);
+            var newFontSize = currentFontSizeNum - 2;
+            $('.articles p').css('font-size', newFontSize);
+            $('.articles ul').css('font-size', newFontSize);
+            return false;
+        });
+
+
+
+
+    }); //close doc ready function
+</script>
+
+<!--shadowbox scripts and style below is to provide the Photo of the Week (POTW) enlargement capability - the initialization arguments for shadowbox are passed here. Notably, the base param is important, again, this makes the swf get from paths relative to itself. -->
+
+<link rel="stylesheet" type="text/css" href="/potw/shadowbox-build-30rc1/shadowbox.css">
+<script type="text/javascript" src="/potw/shadowbox-build-30rc1/shadowbox.js"></script>
+<script type="text/javascript">
+    Shadowbox.init({
+        language: "en",
+        players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'],
+        resizeDuration: "0.15",
+        overlayColor: "#6699cc",
+        overlayOpacity: "0.85",
+        flashParams: { base: "." }
+    });
+</script>
+
+
+<!-- Legacy - Needed?  -->
+
+
+ <script type="text/javascript">
+    // All of the functions run in this function below will be executed when
+    // the page has loaded entirely.  (See http://jquery.com/ for more info.)
+    $( 'document' ).ready( function ( ) 
+    {
+      //$( '#loginButton' ).click( function ( ) {
+      //  $( "#loginBox" ).slideToggle( "fast" );
+      //  $( "#searchBox" ).hide( );
+     // } );
+     // $( '#searchButton' ).click( function ( ) {
+     //   $( "#loginBox" ).hide( );
+     //   $( "#searchBox" ).slideToggle( );
+     // } );
+    //  $( '#closeLogin' ).click( function ( ) {
+     //   $( "#loginBox" ).slideUp( );
+     //   $( "#searchBox" ).hide( );
+     // } );
+    //  $( '#closeSearch' ).click( function ( ) {
+    //    $( "#loginBox" ).hide( );
+    //    $( "#searchBox" ).slideUp( );
+    //  } );
+
+      $( '#emailpage' ).click( function ( ) {
+        window.open( '/email.aspx?sid=8331', 'newWin', 'width=400,height=300' );
+      } );
+    } );
+
+  
+
+
+    // This function determines which navigational menu items should be shown
+    // and selected on this page based on the article's information.
+    function setUpNavMenu ( )
+    {
+      // Show or hide our menus based on what page we're on.
+      var ArticleId       = 8331;
+      var Tier1ArticleId  = 49;
+      var Tier2ArticleId  = 0;
+      var Tier3ArticleId  = 0;
+
+      if ( Tier3ArticleId > 0 )
+      {
+        // Show the submenu containing this article
+        $( '#' + Tier3ArticleId + " > ul" ).show( );
+
+        // ...and show the parent menu of that menu.
+        $( '#' + Tier2ArticleId + " > ul" ).show( );
+
+        // Make the parent menu blue
+        $( '#' + Tier2ArticleId ).addClass( 'menuItemActive' );
+
+        // Put our arrow on this item, or on the menu which should hold this
+        // sub-item if it's not part of the menu.
+        if ( $( '#' + ArticleId ).get( ).length > 0 )
+        {
+          $( '#' + ArticleId ).addClass( 'subMenuItemSelected' );
+        }
+        else
+        {
+          $( '#' + Tier3ArticleId ).addClass( 'subMenuItemSelected' );
+        }
+      }
+      else if ( Tier2ArticleId > 0 )
+      {
+        // Show the submenu containing this article
+        $( '#' + Tier2ArticleId + " > ul" ).show( );
+
+        // If this article has a submenu, show it, too.
+        $( '#' + ArticleId + " > ul" ).show( );
+
+        // Make the parent menu blue
+        $( '#' + Tier2ArticleId ).addClass( 'menuItemActive' );
+
+        // Put our arrow on this item
+        if ( $( '#' + ArticleId ).get( ).length > 0 )
+        {
+          $( '#' + ArticleId ).addClass( 'subMenuItemSelected' );
+        }
+        else
+        {
+          $( '#' + Tier2ArticleId ).addClass( 'menuItemSelected' );
+        }
+      }
+      else
+      {
+        // Put our arrow on this item
+        // $( '#' + ArticleId ).addClass( 'menuItemSelected' );
+        if ( $( '#' + ArticleId ).get( ).length > 0 )
+        {
+          $( '#' + ArticleId ).addClass( 'menuItemSelected' );
+        }
+        else
+        {
+          $( '#' + Tier1ArticleId ).addClass( 'menuItemSelected' );
+        }
+
+        // Show the main sub-menu for this item
+        $( '#' + ArticleId + ' ul.menu_tier2' ).show( );
+      }
+    }
+  </script>
+
+
+
+
+  </head>
+  <body>
+
+
+
+
+  
+<div id="nav-band" class="container_16">
+    
+    <div class="grid_8 alpha" > <!--with the 960 system we use class "alpha" on first div in a row, and class "omega" on the last div in a row. "Grid" classes go inside "Container" classes. This is a 16 column grid. -->
+    
+    <a href="http://alumni.unc.edu/index.aspx"><img src="/img/UNC-General-Alumni-Assoc.gif" width="407" height="14" border="0" alt="UNC General Alumni Association" /></a>
+    </div>
+
+	<!-- Welcome message and Login/Search tabs -->
+	<div id="nav-band-content" class="grid_8 omega right" >
+	<div class="welcome">Welcome    <strong>Tar Heel</strong></div><img src=http://alumni.unc.edu/img/login-tab.gif width=68 height=27 border=0 alt=Login class=logintab />
+	
+	
+	<!-- hiding logout.gif. This should be integrated to replace login-tab.gif above when the user is atually logged in.
+	
+	<img src="/img/logout.gif" width="76" height="27" border="0" alt="Logout" class="logout" title="Note: in production, either display 'login' or 'logout' depending on the status. It is shown inline here for illustration. " />
+	
+	-->
+   
+   <img src="/img/searchtab.gif" width="77" height="27" border="0" alt="Search" class="searchtab"  title="" />
+	</div>
+		
+</div>
+	
+<div class="container_16 ie6-nav-band">
+<!--drop-down login box-->
+
+<div class="loginbox right" id="login">
+    <FORM ACTION="http://www.alumniconnections.com/olc/pub/UNO/login/app.sph/olclogin.app" METHOD="post">
+	
+	    <INPUT TYPE="hidden" NAME="referer" VALUE="http://www.alumniconnections.com/olc/membersonly/UNO/olctransfer.cgi?auth=Y&gotourl=http://alumni.unc.edu/process3.asp?sid=7717">
+        <INPUT TYPE="hidden" NAME="SaFormName" VALUE="SubmitLogin__Floginform_html">
+<label>User: </label><input type="text" name="username" size="15"/>&nbsp;
+<label>Password: </label><input type="password" name="password" size="15" />
+<input type="submit" value="Login" id="loginsubmit" />
+</form>
+<br /><a href="http://www.alumniconnections.com/olc/pub/UNO/forgot/forgot.cgi">Recover password?</a> | <a href="http://www.alumniconnections.com/olc/pub/UNO/register/register.cgi">Register!</a>
+</div>
+
+
+<!--Drop-down search box-->
+<div class="searchbox right"  id="search">
+<form method="post" action="/search.asp">
+<input type="text" name="searchterm" size="25" value="Enter search terms..." onClick="this.value='';"/><!--onClick removes default value-->
+<input type="submit" value="Search" />
+</form><br />
+</div>
+
+</div>
+      
+       <div class="container_16" style="border-top: 2px solid #000;">
+      
+      <div class="grid_16">
+        <div id="news-branding" onClick="location.href='index.aspx'">
+        <img src="/img/gaa-watermark.png" width="142" height="141" border="0" alt="UNC GAA" />
+        </div>
+        
+		<!-- panorama is the box holding the header image, currently assigned as a bg img in css.  -->
+        <div id="news-panorama" onClick="location.href='http://alumni.unc.edu/index.aspx'"><img src="/images/monthly_headers/3.jpg" /></div>
+	  </div>
+      
+      <div class="clear"></div>
+      
+      <div class="grid_16 bg">
+      	<div class="navcontainer">
+			<ul id="nav" class="dropdown dropdown-horizontal">
+			  <li><a href="http://alumni.unc.edu/index.aspx">Home</a></li>
+			  <li><a href="http://alumni.unc.edu/article.aspx?sid=3606" class="dir">Alumni Directory</a></li>
+			  <li><a href="http://alumni.unc.edu/article.aspx?sid=45" class="dir">Events</a>
+			  <!-- if you put another <ul> within a top-level <li> you get a drop menu. If you ever want it. As follows:
+			  <ul><li><a href="#">second item</a></li></ul>
+			  -->
+			  </li>
+			  <li><a href="http://alumni.unc.edu/article.aspx?sid=49">Carolina Clubs</a></li>
+			  <li><a href="http://alumni.unc.edu/article.aspx?sid=53" class="dir">Reunions</a></li>
+			  <li><a href="http://alumni.unc.edu/article.aspx?sid=18">News & Publications</a></li>
+			  <li class="imgli"><a href="http://alumni.unc.edu/article.aspx?sid=16" class="membership"><img src="/img/membership.gif" class="membership" width="162" height="34" border="0" alt="Membership Join/Renew" /></a></li>
+		 </ul>
+		</div>
+
+	   <div class="lower-navcontainer"> 
+            <ul class="low-dropdown dropdown-horizontal">
+	            <li><a href="http://alumni.unc.edu/calendar/">Calendar</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=189">User Services</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=2">About the GAA</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=7209">Alumni Store</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=3">FAQ & University</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=194">For Students</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=5251">Travel & Lifelong Learning</a></li>
+	            <li><a href="http://alumni.unc.edu/article.aspx?sid=47" class="dir">Career Services</a></li>
+            </ul>       
+	    </div>
+	</div>
+     
+     <div class="clear"></div>
+      
+      <div class="grid_16 insetshadow">
+     
+    		<!-- Social Icons -->
+		   	<div class="prefix_12 grid_4 social alpha omega">
+		
+		   	<a href="javascript:;" title="E-mail This Page" id="emailpage"><img src="/img/social-email.gif" width="25" height="25" border="0" alt="share" class="email" title="share" /></a>
+		   	
+		   	<a href="/print.aspx?sid=8331"><img src="/img/social-print.gif" width="25" height="25" border="0" alt="share" class="print" title="print" /></a>
+		   	
+		   	<a href="http://alumni.unc.edu/twitter"><img src="/img/social-twitter.gif" width="25" height="25" border="0" alt="share" class="twitter" title="twitter" /></a>
+		   	
+		   	<a href="http://alumni.unc.edu/facebook"><img src="/img/social-facebook.gif" width="25" height="25" border="0" alt="share" class="facebook" title="facebook" /></a>
+		   	
+		   	<a href="http://alumni.unc.edu/linkedin"><img src="/img/social-linkedin.gif" width="25" height="25" border="0" alt="share" class="linkedin" title="linkedin" /></a>
+		   	
+		   	<a href="http://alumni.unc.edu/article.aspx?sid=4160"><img src="/img/social-rss.gif" width="25" height="25" border="0" alt="share" class="rss" title="subscribe" /></a>
+		   	
+		   	<a href="http://itunes.unc.edu"><img src="/img/social-itunes.gif" width="25" height="25" border="0" alt="share" class="itunes" title="iTunes U" /></a>
+		   	</div>
+      </div>
+  <div class="clear"></div>
+  <!-- /header -->
+
+
+    
+
+
+    
+
+
+
+   <div class="grid_16">
+   <div class="grid_4 alpha">
+   
+   
+   
+
+    
+   
+  <div class="section-menu-box" id="section-menu"> <!--id "section-menu" is JS id -->
+     <!-- can use class="active" on the active li, js can write this in onClick"-->
+      <ul class="section menu">
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=49';">Overview</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=2204';">Club Leaders Toolkit</dt>
+<dd class=""><ul class="submenu">
+	<li ><a onclick="location.href='/article.aspx?sid=2205';" href="/article.aspx?sid=2205">Club Leaders Handbook</a>
+<ul class="toggle" >
+		<li ><a href="/article.aspx?sid=2212"> History, Membership, Goals &amp; Awards</a></li>
+		<li ><a href="/article.aspx?sid=2213"> Leadership &amp; Volunteers</a></li>
+		<li ><a href="/article.aspx?sid=2214"> Finances</a></li>
+		<li ><a href="/article.aspx?sid=2215"> Support From GAA</a></li>
+		<li ><a href="/article.aspx?sid=2216"> Events &amp; Community Support</a></li>
+		<li ><a href="/article.aspx?sid=2217"> Students, Scholarships &amp; Admissions</a></li>
+</ul>
+</li>
+	<li ><a onclick="location.href='/article.aspx?sid=2345';" href="/article.aspx?sid=2345">Fundraising Opportunities</a>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=1625';">Club Awards</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=2136';">Club Scholars</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=2244';">How to Start a Carolina Club</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=243';">Game-Viewing Locations</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='http://www.alumniconnections.com/olc/pub/UNO/photogallery/index.jsp';">Photo Galleries</dt>
+</dl></li>
+<li><dl><dt class="toggler" onClick="location.href='/article.aspx?sid=3597';">Discussion Groups</dt>
+</dl></li>
+
+        </ul>
+  </div><!-- /vertical_nav -->
+
+
+  <!-- /left_col -->
+<script type="text/javascript">setUpNavMenu( );</script>
+
+
+
+<br />
+
+<a href="/article.aspx?sid=686"><img src="img/promo-auto-renewal.png" width="220" height="176" alt="Automatically renew your membership" border="0" /></a>
+<!-- end Left article sidebar -->
+        
+        
+     
+     
+     </div> 
+     <!-- Close left sidebar column -->
+       
+
+   
+
+
+        
+    <div class="grid_12 omega"><!--begin center well-->
+	
+		<div class="grid_8 alpha eyebrow text-sizer-border"> <!--eyebrow, text resizer-->
+		  <span class="eyebrow-text"> 
+		  
+		   Clubs  
+         
+         </span>
+		   <div class="float-right">
+		   <img src="img/text-smaller.gif" width="25" height="25" border="0" alt="text smaller" class="text-smaller"  title="reduce text size" />
+		   <img src="img/text.gif" width="25" height="25" border="0" alt="text smaller" class="text" title="original text size" />
+		   <img src="img/text-larger.gif" width="25" height="25" border="0" alt="text smaller" class="text-larger" title="enlarge text" />
+		   </div>
+		 </div>
+		  
+        <!-- ================  Could include a boolean from DB to show (or not) right side bar  ==================== -->
+        
+        
+        <div class="grid_4 omega float-right"> <!--begin floated right sidebar-->
+        
+        
+        
+<div class="box eyebrow">
+	 Related Items
+   <div class="block">
+	 
+	 <div class="related-stories hilite_div"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=36&org=UNO">Chicago Carolina Club  </a></div><div class="related-stories hilite_div"><a href="http://www.alumniconnections.com/olc/pub/UNO/eventcal/eventcal.cgi">Events Calendar  </a></div><div class="related-stories hilite_div"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=56&org=UNO">New York Carolina Club  </a></div><div class="related-stories hilite_div"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=84&org=UNO">Blue Ridge Carolina Club  </a></div><div class="related-stories hilite_div"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=98&org=UNO">Charlotte Carolina Club  </a></div>
+	 
+	
+    </div> 
+</div>
+
+
+<div id="car_sidebar_promo">
+
+  <a href="/article.aspx?SID=89"><img src="img/on-the-cover.gif" width="220" height="151" alt="on the cover" border="0" /></a><br />
+       
+        
+</div>
+
+        </div><!-- end right article sidebar -->
+        
+        
+        
+        
+        
+        		
+ 
+        
+        
+        <div class="articles"> <!--begin main article -->
+			<!-- In the text-resizing js up in the head, we are only targeting all <p> and <ul> inside .articles class div. This could be expanded upon if you find other tags you need to target. The script could also stand a little refinement to adjust the leading (line-height) along with the text size. -->
+			
+			
+			
+			<p style="font-family: stencil; font-size: 35px; color: #416a90;">2011 QUICKEN LOANS<br /><br />Carrier Classic</p>
+<p><span class="Heading"><span class="subhead"><img style="margin: 5px; float: right; border: 0px;" src="https://alumni.unc.edu/images/clubs/carrier_classic/MZ28678_Carrier_Classic_logo_web.jpg" alt="" width="150" height="150" /></span></span> <!-- <span class="mceItemObject"  width="250" height="125" data="http://www.usflashmap.com/component/cdt_new/cdt2_1.swf" type="application/x-shockwave-flash"> <span  name="data" value="http://www.usflashmap.com/component/cdt_new/cdt2_1.swf" class="mceItemParam"></span> <span  name="base" value="http://www.usflashmap.com/component/cdt_new/" class="mceItemParam"></span> <span  name="flashvars" value="       &amp;timer=1&amp;       &amp;time_template=3:ss;2:mm;1:hh;0:dd&amp;       &amp;time_color=0x000000&amp;       &amp;label_color=0xe1eefa&amp;       &amp;background_color=0x416a90&amp;       &amp;flare_view=true&amp;       &amp;time_label=d:DAYS;h:HOURS;m:MINS;s:SECS&amp;       &amp;time_zone=Local time&amp;       &amp;event_time=year:2011;month:11;day:11;hour:19;minute:0;seconds:0&amp;       &amp;event_duration=year:0;month:0;day:0;hour:0;minute:0;seconds:0&amp;       &amp;event_recursion=hourly&amp;       &amp;onpress_url=-&amp;       &amp;event_onpress_url=-&amp;       &amp;title=Tip-off in:&amp;       &amp;event_title=Game On!&amp;       &amp;sound_file=-&amp;       &amp;event_sound_file=-&amp;       &amp;transparent=true&amp; " class="mceItemParam"></span> <span  name="quality" value="high" class="mceItemParam"></span> <span  name="wmode" value="transparent" class="mceItemParam"></span> <span  name="scale" value="noscale" class="mceItemParam"></span> <span  name="salign" value="lt" class="mceItemParam"></span> <span  name="src" value="http://www.usflashmap.com/component/cdt_new/cdt2_1.swf" class="mceItemParam"></span> </span> --></p>
+<p style="font-family: stencil; font-size: 22px; color: #cc6600;">Veterans Day - 11.11.11<br />UNC vs. Michigan State<br />Aboard the <em>USS Carl Vinson</em></p>
+<p>The first-ever Carrier Classic aboard the USS Carl Vinson was a tremendous success. Carolina Clubs from around the world gathered to watch this never-before-seen basketball experience. To honor Veterans Day, participating clubs held service projects to benefit veterans, active duty service members and/or their families.</p>
+<p>More than <strong>3,100</strong> alumni and fans contributed more than <strong>$14,500,</strong> donated more than <strong>11,000</strong> items, packed more than <strong>250</strong> care packages and wrote more than <strong>350</strong> notes and postcards for veterans and military support groups. <a href="/article.aspx?sid=8605" target="_blank">View a brief summary</a> of each clubs' project.</p>
+<p><a href="https://admin.alumniconnections.com/olc/pub/UNO/photogallery/Carrier Classic 11-11-11/index.html" target="_blank">View a selection of photos</a> from game-viewing events from across the country.</p>
+<p><em><a href="http://quickenloanscarrierclassic.com/"><img style="float: right;" src="https://alumni.unc.edu/images/clubs/carrier_classic/Carriersketch_web.jpg" alt="CarrierSketch" width="225" height="199" /></a></em>Coach Williams was excited to play on the <em>USS Carl Vinson</em>: <a href="http://espn.go.com/mens-college-basketball/blog/_/name/katz_andy/id/7008108/preparation-continues-carrier-classic-north-carolina-tar-heels-michigan-state-spartans-college-basketball" target="_blank">watch his interview with ESPN's Andy Katz</a>.</p>
+<p>Click on your city below to view your local Carolina Club's event calendar. Don't see the club in your area listed? Contact Casey Privette '01 at <a href="mailto:clubs@unc.edu">clubs@unc.edu</a> to let us know about what you'd like to help with in your hometown.</p>
+<p style="font-family: Stencil; font-size: 18px; color: #cc6600;">Participating Carolina Clubs&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="5" width="700">
+<tbody>
+<tr height="20">
+<td width="225" height="20"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=84" target="_blank"><strong>Asheville</strong></a></td>
+<td width="225"><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=127" target="_blank">Hickory</a></strong></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=3" target="_blank">Phoenix</a></strong></td>
+</tr>
+<tr height="20">
+<td height="20"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=28" target="_blank"><strong>Atlanta</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=75" target="_blank"><strong>Houston</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=62" target="_blank"><strong>Pittsburgh</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=73" target="_blank"><strong>Austin, Texas</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=35" target="_blank"><strong>Honolulu</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=60" target="_blank"><strong>Portland, Ore.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=48" target="_blank"><strong>Baltimore</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=133" target="_blank"><strong>Iowa City, Iowa</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=63" target="_blank"><strong>Providence, R.I.</strong></a></td>
+</tr>
+<tr height="20">
+<td height="20"><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=143" target="_blank"><strong>Beijing, China</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=22" target="_blank">Jacksonville, Fla.</a></strong></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=103" target="_blank"><strong>Raleigh</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=1" target="_blank"><strong>Birmingham, Ala.</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=100" target="_blank">Jacksonville</a></strong></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=79" target="_blank"><strong>Richmond, Va.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=185" target="_blank"><strong>Boone</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=41" target="_blank"><strong>Kansas City, Mo.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=76" target="_blank"><strong>San Antonio</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=49" target="_blank"><strong>Boston</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=69" target="_blank"><strong>Knoxville, Tenn.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=10" target="_blank"><strong>San Diego</strong></a></td>
+</tr>
+<tr height="20">
+<td><strong>Brazzaville, Congo</strong>^</td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=52" target="_blank"><strong>Las Vegas</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=11" target="_blank"><strong>San Francisco</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=85" target="_blank"><strong>Concord</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=43" target="_blank"><strong>Lexington, Ky.</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=119" target="_blank">Santa Fe, N.M.</a></strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=101" target="_blank"><strong>Chapel Hill</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=7" target="_blank"><strong>Los Angeles</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=33" target="_blank"><strong>Savannah, Ga.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=64" target="_blank"><strong>Charleston, S.C.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=70" target="_blank"><strong>Memphis, Tenn.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=80" target="_blank"><strong>Seattle</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=98" target="_blank"><strong>Charlotte</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=23" target="_blank"><strong>Miami</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=143" target="_blank"><strong>Shanghai, China</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=139" target="_blank"><strong>Charlottesville, Va.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=197" target="_blank"><strong>Missoula, Mon.</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=37" target="_blank">St. Louis</a></strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=36" target="_blank"><strong>Chicago</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=95" target="_blank"><strong>Mooresville</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=27" target="_blank"><strong>Tampa, Fla.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=57" target="_blank"><strong>Cincinnati</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=214" target="_blank"><strong>Monroe</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=3" target="_blank">Tucson, Ariz.</a></strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=74" target="_blank"><strong>Dallas/Fort Worth</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=71" target="_blank"><strong>Nashville, Tenn.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=199" target="_blank"><strong>Vero Beach, Fla.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=187" target="_blank"><strong>Dayton, Ohio</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=96" target="_blank"><strong>New Bern</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=78" target="_blank">Virginia Beach, Va.</a></strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=13" target="_blank"><strong>Denver, Col.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=56" target="_blank"><strong>New York City</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=17" target="_blank"><strong>Washington, D.C.</strong></a></td>
+</tr>
+<tr height="20">
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=101" target="_blank">Durham</a></strong></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=170" target="_blank"><strong>Newark, Del.</strong></a></td>
+<td><strong><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=137" target="_blank">Washington, D.C. Black Alumni</a></strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=21" target="_blank"><strong>Fort Lauderdale, Fla.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=51" target="_blank"><strong>Omaha, Neb.</strong></a></td>
+<td><strong>Wellington, New Zealand^</strong></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=87" target="_blank"><strong>Fearrington Village</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=8" target="_blank"><strong>Orange County, Calif.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=25" target="_blank"><strong>West Palm Beach, Fla.</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=93" target="_blank"><strong>Greensboro</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=24" target="_blank"><strong>Orlando, Fla.</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=83" target="_blank"><strong>Wilmington</strong></a></td>
+</tr>
+<tr height="20">
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=102" target="_blank"><strong>Greenville</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=61" target="_blank"><strong>Philadelphia</strong></a></td>
+<td><a href="http://www.alumniconnections.com/olc/pub/UNO/cpages/chapterpage.jsp?chapter=91" target="_blank"><strong>Winston-Salem</strong></a></td>
+</tr>
+</tbody>
+</table>
+<p class="profile">^ These areas do not have an active Carolina Club but have notified the GAA of plans for a game-viewing party.</p>
+<p class="profile"><a href="http://quickenloanscarrierclassic.com/" target="_blank">2011 Quicken Loans Carrier Classic website</a></p>
+<div>
+<table style="width: 250px; float: right;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2"><img src="https://alumni.unc.edu/images/clubs/TreasureCoast_CarrierClassic_Service_web.jpg" alt="TCCC Project" width="250" height="122" /></td>
+</tr>
+<tr class="photocaption">
+<td width="8">&nbsp;</td>
+<td><span class="style3">The Treasure Coast Carolina Club in Vero Beach, Fla., completed their service project on Oct. 15. Members packed&nbsp;eight care packages to send to deployed troops.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="font-family: Stencil; font-size: 18px; color: #cc6600;">Carrier Classic In the News</p>
+<ul>
+<li><strong>Nov. 11 </strong>- <a href="https://www.google.com/search?source=ig&amp;hl=en&amp;rlz=&amp;=&amp;q=carrier classic" target="_blank">News coverage of the Carrier Classic</a></li>
+<li><strong>Nov. 10</strong> - <a href="http://www.tarheelblue.com/allaccess/?media=280777" target="_blank">Heels get their first tour of the <em>USS Carl Vinson</em></a></li>
+<li><strong>Nov. 9</strong> - <a href="http://youtu.be/uoc2-m1rGso" target="_blank">YouTube: San Diego TV news story on Carrier Classic</a></li>
+<li><strong>Nov. 9</strong> - <a href="http://www.cbssports.com/mcc/blogs/entry/26283066/33204959" target="_blank">Here's how the <em>USS Carl Vinson</em> will look</a></li>
+<li><strong>Nov. 7</strong> - <a href="http://www.mlive.com/spartans/index.ssf/2011/11/all_hoops_on_deck_for_michigan.html" target="_blank">All hoops on deck for Michigan State/North Carolina game aboard <em>USS Carl Vinson</em></a></li>
+<li><strong>Nov. 7 -</strong> <a href="http://www.youtube.com/watch?v=oHao5qr_1HE&amp;feature=share" target="_blank">YouTube: Coach Williams and players discuss the game</a></li>
+<li><strong>Nov. 4</strong> - <a href="http://www.facebook.com/home.php#!/media/set/?set=a.10150414613787628.386042.93535462627&amp;type=3" target="_blank">Photos on Facebook of the arena construction</a></li>
+<li><strong>Nov. 3 - </strong><a href="http://www.navy.mil/search/display.asp?story_id=63587" target="_blank">Construction on the arena has begun</a></li>
+<li><strong>Nov. 2</strong> - <a href="http://www.youtube.com/watch?v=966W5eiNHMw&amp;feature=share&amp;mid=51" target="_blank">The <em>USS Carl Vinson</em> sailors have some basketball skills, too</a></li>
+<li><strong>Oct. 26 - </strong><a href="http://www.tarheelblue.com/sports/m-baskbl/spec-rel/102611aab.html?mid=512292" target="_blank">First look at UNC Camo Jerseys for Carrier Classic</a></li>
+<li><strong>Oct. 24</strong> - <a href="http://content.usatoday.com/communities/gameon/post/2011/10/james-worthy-and-magic-johnson-will-play-horse-for-250000/1" target="_blank">Worthy and Magic Will Play Horse With You At Halftime...for $250,000</a></li>
+<li><strong>Oct. 24 -</strong> <a href="http://hamptonroads.com/2011/10/newport-news-shipbuilders-make-carrier-classic-trophy" target="_blank">Newport News Shipbuilders Make Carrier Classic Trophy</a></li>
+<li><strong>Oct. 13 -</strong> <a href="http://espn.go.com/mens-college-basketball/story/_/id/7096271/barack-obama-attend-carrier-classic-carl-vinson?mid=5011" target="_blank">President Obama <em>will</em> attend the Carrier Classic</a></li>
+<li><strong>Oct. 11</strong> - <a href="http://www.sfexaminer.com/local/bay-area/2011/10/fleet-week-ship-serve-college-basketball-court?mid=4" target="_blank"><em>USS Carl Vinson</em> in San Francisco for Fleet Week</a></li>
+<li><strong>Oct. 10</strong> - <a href="http://content.usatoday.com/communities/campusrivalry/post/2011/10/james-worthy-named-uncs-honorary-captain-for-nov-11-carrier-classic/1" target="_blank">James Worthy Named As Honorary Captain for UNC</a></li>
+<li><strong class="profile">Oct. 7</strong> - <a href="http://www.cbssports.com/mcc/blogs/entry/26283066/32565208" target="_blank">President Obama Could Appear at Carrier Classic</a></li>
+<li><strong>Oct. 7</strong> - <a href="http://www.dailytarheel.com/index.php/article/2011/10/unc_mens_basketball_to_play_on_aircraft_carrier" target="_blank">Captain of the <em>USS Carl Vinson</em> is a Tar Heel Fan</a></li>
+<li><strong>Sept. 15</strong> - <a href="http://www.tarheelblue.com/sports/m-baskbl/spec-rel/091511aab.html" target="_blank">Roy Williams Discusses Importance of the Carrier Classic</a></li>
+</ul>
+			
+			
+			
+			</div><!--close articles-->
+</div><!-- close center well -->
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+  
+  
+   </div><!--close grid 16 for triple columns -->
+  
+   <div class="clear"></div>
+     		<div class="grid_16 footer_box">
+			  <img src="/img/footer-rcorner.gif" class="footer_r_corner" width="8" height="8" border="0" alt="*" />
+			  <img src="/img/footer-lcorner.gif"  width="8" height="8" border="0" alt="*" />
+				 <a href="http://alumni.unc.edu">Home</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/article.aspx?sid=16">Join/Renew Membership</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/aboutus/directory.asp">Contact Us</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://www.carolina-club.com" target="_blank">The Carolina Club</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/article.aspx?sid=6">Volunteer</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/article.aspx?sid=1784">Privacy Policy</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://www.unc.edu" target="_blank">UNC.edu</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/article.aspx?sid=5257">Site Map</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://alumni.unc.edu/article.aspx?sid=4160">Newsfeed</a>
+				 <span class="footer_separator">|</span>
+				 <a href="http://www.uncmobile.com" target="_blank">UNCMobile</a>
+			</div>
+      
+      <div class="grid_16" id="site_info">
+        <div class="box">
+        	<img src="/img/gaa-footer-logo.png" border="0" width="100" height="120" alt="General Alumni Association logo" class="gaa-footer-logo" />
+          <p><img src="/img/unc-general-alumni-assoc.png" width="407" height="14" border="0" alt="UNC General Alumni Association" style="margin-top: 15px;" /><br />
+          George Watts Hill Alumni Center | CB#9180, Stadium Drive | P.O. Box 660 | Chapel Hill, NC 27514-0660 | (919) 962-1208
+          <br />&copy; 
+          
+          <script type="text/javascript">
+				var theDate=new Date()
+				document.write(theDate.getFullYear())
+		  </script>
+                    
+           UNC General Alumni Association</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+    
+
+
+<!-- =======================  Google analytics code  ============================ -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4327395-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+    </body>
+</html>
+
+
+<!-- =========================== Google analytics code is in /includes/footer.html ======================== -->
+
+
+  <script defer src="http://server1.opentracker.net/?site=alumni.unc.edu"></script>

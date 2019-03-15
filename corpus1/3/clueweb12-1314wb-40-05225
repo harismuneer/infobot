@@ -1,0 +1,255 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-07T04:23:55Z
+WARC-TREC-ID: clueweb12-1314wb-40-05225
+WARC-IP-Address: 69.89.31.148
+WARC-Payload-Digest: sha1:AYCVXVXEQHIKOCYN5BQ34OSW3LCODFLN
+WARC-Target-URI: http://www.cjnlus.com/ships/carriers.php
+WARC-Record-ID: <urn:uuid:7894ab52-53d3-45e7-83a7-618b26655202>
+Content-Type: application/http; msgtype=response
+Content-Length: 12289
+
+HTTP/1.1 200 OK
+Date: Sat, 07 Apr 2012 04:24:01 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/content.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Central Jersey Council Navy League of the United States - Ships - Carriers</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css"> 
+<!-- 
+
+--> 
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColAbsHdr #sidebar1 { width: 180px; }
+.thrColAbsHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25934651-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="thrColAbsHdr">
+<div style="position: fixed; bottom: 0px; display:block; z-index:1001; left: 0px; width:357px; height:80px; background-image:url(images/uss-ronald-reagan.png); background-position:left; background-repeat:no-repeat;">
+</div>
+<div style="position: fixed; bottom: 0px; display:block; z-index:1000; left: 0px; width:100%; height:16px;  background:#FFAD00;text-align:center; font-size:11px; color:#000000; border-top: thin solid #000; ">
+<a href="http://www.cjnlus.com/nowhearthis/?p=subscribe">Sign up for our email newsletters</a></div>
+
+<div id="container">
+<div id="logo"><img src="/images/logo.png" alt="logo" /></div>
+  <div id="header">
+    <div align="center"><div id="menu"><a href="/">Home</a> | <a href="/about.php">About Us</a> | <a href="/calendar.php">Calendar</a> | <a href="/resources.php">Resources</a> | <a href="/links.php">Links</a> | <a href="/contacts.php">Contacts</a> | <a href="http://www.cjnlus.com/cgi-bin/cpshop.cgi">Store</a></div>
+  </div>
+  <!-- end #header -->
+ <div style="padding-left:150px; font-family:'Times New Roman', Times, serif; font-size:26px; color:#000083; font-variant:small-caps"> Central Jersey Council of</div>
+<div style="padding-left:200px; font-family:'Times New Roman', Times, serif; font-size:26px; color:#000083; font-variant:small-caps">the Navy League of the United States</div></div>
+  <div id="sidebar2"><div style="text-align:center; background-image:url(/images/pale.jpg); background-repeat:repeat;">
+  <div style="background-image:url(/images/signup-right.jpg); background-position:top right; background-repeat:no-repeat;">
+  <div style="background-image:url(/images/signup-left.jpg); background-position:top left; background-repeat:no-repeat; font-size:10px" >
+  Join Our Newsletter and<br />Announcement Email List
+  </div>
+  </div>
+  </div>
+  <div style="text-align:center; background-image:url(/images/pale.jpg); background-repeat:repeat;">
+  <div style="background-image:url(/images/signup-right.jpg); background-position:bottom right; background-repeat:no-repeat;">
+  <div style="background-image:url(/images/signup-left.jpg); background-position:bottom left; background-repeat:no-repeat; font-size:9px; padding-bottom:2px ">      
+      <script language="Javascript" type="text/javascript">
+
+function checkform() {
+  for (i=0;i<fieldstocheck.length;i++) {
+    if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].type") == "checkbox") {
+      if (document.subscribeform.elements[fieldstocheck[i]].checked) {
+      } else {
+        alert("Please enter your "+fieldnames[i]);
+        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+        return false;
+      }
+    }
+    else {
+      if (eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].value") == "") {
+        alert("Please enter your "+fieldnames[i]);
+        eval("document.subscribeform.elements['"+fieldstocheck[i]+"'].focus()");
+        return false;
+      }
+    }
+  }
+  for (i=0;i<groupstocheck.length;i++) {
+    if (!checkGroup(groupstocheck[i],groupnames[i])) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+var fieldstocheck = new Array();
+var fieldnames = new Array();
+function addFieldToCheck(value,name) {
+  fieldstocheck[fieldstocheck.length] = value;
+  fieldnames[fieldnames.length] = name;
+}
+var groupstocheck = new Array();
+var groupnames = new Array();
+function addGroupToCheck(value,name) {
+  groupstocheck[groupstocheck.length] = value;
+  groupnames[groupnames.length] = name;
+}
+
+function compareEmail()
+{
+  return (document.subscribeform.elements["email"].value == document.subscribeform.elements["emailconfirm"].value);
+}
+function checkGroup(name,value) {
+  option = -1;
+  for (i=0;i<document.subscribeform.elements[name].length;i++) {
+    if (document.subscribeform.elements[name][i].checked) {
+      option = i;
+    }
+  }
+  if (option == -1) {
+    alert ("Please enter your "+value);
+    return false;
+  }
+  return true;
+}
+
+</script>
+<form action="/nowhearthis/?p=subscribe&id=2" method=post name="subscribeform" target="_blank" id="form1">Email:  <input  type=text name=email value=""  size="12" maxlength="45" />
+  <script language="Javascript" type="text/javascript">addFieldToCheck("email","Email");</script>
+  <input type=hidden name="htmlemail" value="1">
+<input name="list[4]" type="hidden" value=signup checked  />
+<input type=hidden name="listname[4]" value="Newsletter"/>
+<input name="list[1]" type="hidden" value=signup checked  />
+<input type=hidden name="listname[1]" value="Now Hear This"/><br>
+<input type=submit name="subscribe" value="Subscribe	" onClick="return checkform();"></p>
+    </form>
+    </div>
+  </div>
+  </div>
+  <div class="join">Interested in Joining <br />
+the Navy League?<br />
+<a href="/memberinterest.php">CLICK HERE</a></div>
+<div class="join"><a href="http://www.cjnlus.com/story_detail.php?story_id=294"><img src="/images/op-sos.jpg" alt="op-sos"  border="0"/></a></div>
+
+  <!-- end #sidebar2 --></div>
+  <div id="mainContent2">
+<!-- InstanceBeginEditable name="mainzone" -->
+<h1>US NAVY SHIPS</h1>
+<div align="center"><a href="index.php">return to main index</a></div>
+<h1><a name="carriers"></a><p><img src="images/cvn_big.gif" alt="CVN" width="300" height="63" /><br />
+Aircraft Carriers (CVN/CV)</p></h1>
+<h2>NIMITZ<a name="NIMITZ"></a> CLASS</h2> 
+<table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#FFD57C">
+    <tr valign="top" bgcolor="#FFFFFF"> 
+                <td width="48%"> 
+                  <p>USS Nimitz (CVN 68)</p>
+                  <p><span class="smalltext">Home port: Dan Diego, CA</span><span class="mediumtext"> 
+                    </span><br>
+                    <a href="http://www.nimitz.navy.mil">home page</a> 
+                    | <a href="http://www.news.navy.mil/local/cvn68/">news</a></p></td>
+                <td width="52%"> 
+                  <p>USS Dwight D. Eisenhower (CVN 69)</p>
+                  <p><span class="smalltext">Home port: Newport News, VA<br>
+                    <a href="http://www.eisenhower.navy.mil">home page</a> 
+                    | <a href="http://www.news.navy.mil/local/cvn69/"> news</a> 
+                    </span></p>                </td>
+              </tr>
+              <tr valign="top" bgcolor="#FFFFFF"> 
+                <td width="48%"> 
+                  <p>USS Carl Vinson (CVN 70)</p>
+                  <p><span class="smalltext">Home port:Bremerton, WA<br>
+                    <a href="http://www.cvn70.navy.mil/">home page</a> | <a href="http://www.news.navy.mil/local/cvn70/">news</a> 
+                    </span></p>                </td>
+                <td width="52%"> 
+                  <p>USS Theodore Roosevelt (CVN 71)</p>
+                  <p><span class="smalltext">Home port: </span><span class="mediumtext"></span><span class="smalltext">Norfolk, 
+                    VA</span><br>
+                    <a href="http://www.roosevelt.navy.mil/">home page</a> | <a href="http://www.news.navy.mil/local/cvn71/">news</a>                  </p>                </td>
+              </tr>
+              <tr valign="top" bgcolor="#FFFFFF"> 
+                <td width="48%"> 
+                  <p>USS Abraham Lincoln (CVN 72)</p>
+                  <p><span class="smalltext">Home port:Everett, WA<br>
+                    <a href="http://www.lincoln.navy.mil/">home page</a> | <a href="http://www.news.navy.mil/local/cvn72/">news</a> 
+                    </span></p>                </td>
+                <td width="52%"> 
+                  <p>USS George Washington (CVN 73)</p>
+                  <p><span class="smalltext">Home port: </span><span class="mediumtext"></span><span class="smalltext">Norfolk, 
+                    VA</span><br>
+                   </p></td>
+              </tr>
+              <tr valign="top" bgcolor="#FFFFFF"> 
+                <td width="48%"> 
+                  <p>USS John C. Stennis (CVN 74)</p>
+                  <p><span class="smalltext">Home port: Dan Diego, CA</span><span class="mediumtext"> 
+                    </span><br>
+                    <a href="http://www.cvn74.navy.mil/">home page</a> | <a href="http://www.news.navy.mil/local/cvn74/">news</a>                  </p>                </td>
+                <td width="52%"> 
+                  <p>USS Harry S. Truman (CVN 75)</p>
+                  <p><span class="smalltext">Home port: </span><span class="mediumtext"></span><span class="smalltext">Norfolk, 
+                    VA</span><br>
+                    <a href="www.truman.navy.mil/">home page</a> 
+                    | <a href="http://www.news.navy.mil/local/cvn75/">news</a>                  </p>                </td>
+              </tr>
+              <tr valign="top" bgcolor="#FFFFFF"> 
+                <td width="48%"> 
+                  <p>USS Ronald Reagan (CVN 76)</p>
+                  <p><span class="smalltext">Home port: Dan Diego, CA</span><span class="mediumtext"> 
+                    </span><br>
+                    <a href="http://www.reagan.navy.mil/">home page</a> | <a href="http://www.news.navy.mil/local/cvn76/">news</a>                  </p>                </td>
+                <td width="52%"> 
+                  <p>PCU George H.W. Bush (CVN 77) </p>
+                  <p class="smalltext">Commissioned January 10th, 2009</p>                </td>
+              </tr>
+</table>
+
+<h2>ENTERPRISE<a name="ENTERPRISE"></a> CLASS</h2>
+<table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#FFD57C">
+    <tr valign="top" bgcolor="#FFFFFF"> 
+        <td width="50%"><p>USS Enterprise (CVN 65)</p>
+                  <p><span class="smalltext">Home port: </span><span class="mediumtext"></span><span class="smalltext">Norfolk, 
+                    VA</span><br>
+                    <a href="http://www.enterprise.navy.mil/">home page</a> | 
+                    <a href="http://www.news.navy.mil/local/cvn65/">news</a> </p></td>
+        <td width="50%">&nbsp; </td>
+    </tr>
+</table>
+
+<div align="center"><a href="index.php">return to main index</a></div>
+<!-- InstanceEndEditable -->
+	<!-- end #mainContent --></div>
+  <div id="footer">
+    <div align="center"><div id="menu"><a href="/">Home</a> | <a href="/about.php">About Us</a> | <a href="/calendar.php">Calendar</a> | <a href="/resources.php">Resources</a> | <a href="/links.php">Links</a> | <a href="/contacts.php">Contacts</a> | <a href="http://www.cjnlus.com/cgi-bin/cpshop.cgi">Store</a></div>
+    <div align="right" style="font-size:9px; padding-right:20px;">&copy; 2003-2011 Navy League<br />
+Web Site by Blue Larch LLC</div>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,1068 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-06T03:41:40Z
+WARC-TREC-ID: clueweb12-1906wb-06-11966
+WARC-Target-URI: http://algs4.cs.princeton.edu/44sp/
+WARC-Payload-Digest: sha1:XIHBPV47US3UGO2CGU3QHMMW2YTWLGYC
+WARC-IP-Address: 128.112.136.36
+WARC-Record-ID: <urn:uuid:6c089b31-4a37-458f-b6bc-fafad919c1c0>
+Content-Type: application/http; msgtype=response
+Content-Length: 38175
+
+HTTP/1.1 200 OK
+Date: Sun, 06 May 2012 03:41:40 GMT
+Server: Apache/2.2.21
+X-Powered-By: PHP/5.3.10
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+
+<head>
+
+<link rel="icon"          href="http://algs4.cs.princeton.edu/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://algs4.cs.princeton.edu/favicon.ico" type="image/x-icon">
+<link rel="stylesheet"    href="http://algs4.cs.princeton.edu/algs4.css"   type="text/css" media="screen">
+<meta name="google-site-verification" content="nYspbl5bNBQrNZKguiAAFTMVM7sq2P1WQYc8Oi6Okl0" />
+<meta name="msvalidate.01" content="D4B7F6DF793EFF34DE96F611C2A367A5" />
+
+<!-- IE HACKS -->
+<!--[if IE]>
+<style type="text/css" media="screen">
+ #menu ul li {float: left; width: 100%;}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+body {
+behavior: url(/csshover.htc);
+} 
+#menu ul li {float: left; width: 100%;}
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2 {
+font: bold 0.9em/1.5em arial, helvetica, sans-serif;
+} 
+
+</style>
+<![endif]-->
+
+
+
+<title>
+Shortest Paths</title>
+
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="AUTHOR" CONTENT="Robert Sedgewick and Kevin Wayne">
+<META NAME="KEYWORDS" CONTENT="Shortest Paths,Algorithms,4th edition,data structures,Java,intro,introduction,Sedgewick,Wayne">
+<META NAME="DESCRIPTION" CONTENT="The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne surveys the most important algorithms and data structures in use today. The broad perspective taken makes it an appropriate introduction to the field.">
+<META NAME="TITLE" CONTENT="Shortest Paths. Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne.">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+
+<script type='text/javascript' src='/media/swfobject.js'></script>
+</head>
+
+
+<body>
+
+<div id = "menu">
+<div align="center">
+<a class = picture href = "http://algs4.cs.princeton.edu">
+<img src="http://algs4.cs.princeton.edu/cover.png" width=189 height=236 border=0 alt = "Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne">
+</a>  
+</div>
+
+
+
+
+
+<ul>
+  <li><a class = title href = "http://algs4.cs.princeton.edu">Algorithms, 4th edition</a>
+
+<ul>
+
+
+      <li> <a href = "/10fundamentals">1.&nbsp;&nbsp;Fundamentals</a>
+        <ul>
+          <li> <a href = "/11model">1.1&nbsp;&nbsp;Programming Model</a>
+          <li> <a href = "/12oop">1.2&nbsp;&nbsp;Data Abstraction</a>
+          <li> <a href = "/13stacks">1.3&nbsp;&nbsp;Stacks and Queues</a>
+          <li> <a href = "/14analysis">1.4&nbsp;&nbsp;Analysis of Algorithms</a>
+          <li> <a href = "/15uf">1.5&nbsp;&nbsp;Case Study: Union-Find</a>
+        </ul>
+
+      <li> <a href = "/20sorting">2.&nbsp;&nbsp;Sorting</a>
+        <ul>
+          <li> <a href = "/21elementary">2.1&nbsp;&nbsp;Elementary Sorts</a>
+          <li> <a href = "/22mergesort">2.2&nbsp;&nbsp;Mergesort</a>
+          <li> <a href = "/23quicksort">2.3&nbsp;&nbsp;Quicksort</a>
+          <li> <a href = "/24pq">2.4&nbsp;&nbsp;Priority Queues</a>
+          <li> <a href = "/25applications">2.5&nbsp;&nbsp;Sorting Applications</a>
+        </ul>
+
+      <li> <a href = "/30searching">3.&nbsp;&nbsp;Searching</a>
+        <ul>
+          <li> <a href = "/31elementary">3.1&nbsp;&nbsp;Symbol Tables</a>
+          <li> <a href = "/32bst">3.2&nbsp;&nbsp;Binary Search Trees</a>
+          <li> <a href = "/33balanced">3.3&nbsp;&nbsp;Balanced Search Trees</a>
+          <li> <a href = "/34hash">3.4&nbsp;&nbsp;Hash Tables</a>
+          <li> <a href = "/35applications">3.5&nbsp;&nbsp;Searching Applications</a>
+        </ul>
+
+      <li> <a href = "/40graphs">4.&nbsp;&nbsp;Graphs</a>
+        <ul>
+          <li> <a href = "/41undirected">4.1&nbsp;&nbsp;Undirected Graphs</a>
+          <li> <a href = "/42directed">4.2&nbsp;&nbsp;Directed Graphs</a>
+          <li> <a href = "/43mst">4.3&nbsp;&nbsp;Minimum Spanning Trees</a>
+          <li> <a href = "/44sp">4.4&nbsp;&nbsp;Shortest Paths</a>
+        </ul>
+
+      <li> <a href = "/50strings">5.&nbsp;&nbsp;Strings</a>
+        <ul>
+          <li> <a href = "/51radix">5.1&nbsp;&nbsp;String Sorts</a>
+          <li> <a href = "/52trie">5.2&nbsp;&nbsp;Tries</a>
+          <li> <a href = "/53substring">5.3&nbsp;&nbsp;Substring Search</a>
+          <li> <a href = "/54regexp">5.4&nbsp;&nbsp;Regular Expressions</a>
+          <li> <a href = "/55compression">5.5&nbsp;&nbsp;Data Compression</a>
+        </ul>
+
+      <li> <a href = "/60context">6.&nbsp;&nbsp;Context</a>
+        <ul>
+          <li> <a href = "/61event">6.1&nbsp;&nbsp;Event-Driven Simulation</a>
+          <li> <a href = "/62btrees">6.2&nbsp;&nbsp;B-trees</a>
+          <li> <a href = "/63suffix">6.3&nbsp;&nbsp;Suffix Arrays</a>
+          <li> <a href = "/64maxflow">6.4&nbsp;&nbsp;Maxflow</a>
+          <li> <a href = "/65reductions">6.5&nbsp;&nbsp;Reductions</a>
+          <li> <a href = "/66intractability">6.6&nbsp;&nbsp;Intractability</a>
+        </ul>
+    </ul>
+
+
+
+
+<li><a class = title> Related Booksites</a>
+<table width = 100% border = 0 cellspacing = 0 cellpadding = 0>
+<tr>
+<td align = center>
+<a class = booksite href = "http://introcs.cs.princeton.edu">
+   <img src = "http://introcs.cs.princeton.edu/java/cover.jpg"
+        width = 80 height = 108 border=0
+        alt = "Introduction to Programming in Java
+               by Robert Sedgewick and Kevin Wayne">
+</a>
+<td align = center>
+<a class = booksite href = "http://aofa.cs.princeton.edu">
+   <img src = "http://aofa.cs.princeton.edu/cover.png"
+        width = 81 height = 108 border=0
+        alt = "An Introduction to the Analysis of Algorithms by Robert Sedgewick and Philippe Flajolet">
+</a>
+</tr>
+</table>
+
+<li><a class = title>Web Resources</a>
+
+
+      <li> <a href = "/faq">FAQ</a>
+      <li> <a href = "http://introcs.cs.princeton.edu/java/data">Data</a>
+      <li> <a href = "/code">Code</a>
+      <li> <a href = "/errata">Errata</a>
+      <li> <a href = "/references">References</a>
+      <li> <a href = "https://www.coursera.org/course/algs4partI">Online Course</a>
+      <li> <a href = "/lectures">Lecture Slides</a>
+      <li> <a href = "http://introcs.cs.princeton.edu/java/assignments">Programming Assignments</a>
+      <li>
+   </ul>
+
+</ul>
+
+<p><br>
+<FORM NAME="search" METHOD=GET ACTION="http://search.cs.princeton.edu/">
+&nbsp;&nbsp;
+<INPUT NAME=q TYPE="text" VALUE="Search booksite..."
+class = search
+style="color:#000000; background:#DDDDDD" 
+SIZE = 18 MAXLENGTH = 80
+onFocus="this.form.q.value='';" 
+onBlur="this.form.q.value='Search booksite...';"
+>&nbsp;&nbsp;
+<INPUT TYPE=HIDDEN NAME=restrict VALUE="Algs4">
+</form>
+<p><br>
+
+
+
+
+</div>
+
+
+<div id = "content">
+<H1>4.4 &nbsp; Shortest Paths</H1>
+<p><br>
+
+<p><br>
+
+<p><h2>Shortest paths.</h2>
+An edge-weighted digraph is a digraph where we associate weights or costs with each edge.
+A <em>shortest path</em> from vertex s to vertex t is a directed path
+from s to t with the property that no other such path has a lower weight.
+
+
+<p>
+<center>
+<img src = "images/shortest-path.png" alt = "Shortest path">
+</center>
+<p>
+
+
+<p><h2>Properties.</h2>
+We summarize several important properties and assumptions.
+
+<ul>
+
+<p><li><em>Paths are directed.</em>
+A shortest path must respect the direction of its edges.
+
+<p><li><em>The weights are not necessarily distances.</em>
+Geometric intuition can be helpful, but the edge weights weights might
+represent time or cost.
+
+<p><li><em>Not all vertices need be reachable.</em>
+If t is not reachable from s, there is no path at all,
+and therefore there is no shortest path from s to t.
+
+<p><li><em>Negative weights introduce complications.</em>
+For the moment, we assume that edge weights are positive (or zero).
+
+<p><li><em>Shortest paths are normally simple.</em>
+Our algorithms ignore zero-weight edges that form cycles,
+so that the shortest paths they find have no cycles.
+
+<p><li><em> Shortest paths are not necessarily unique.</em>
+There may be multiple paths of the lowest weight from one vertex to another;
+we are content to find any one of them.
+
+<p><li><em>Parallel edges and self-loops may be present.</em>
+In the text, we assume that parallel edges are not present and
+use the notation v->w to refer to the edge from v to w, but our code handles 
+them without difficulty.
+
+</ul>
+
+
+<p><h2>Edge-weighted digraph data type.</h2>
+We represent the weighted edges using the following API:
+
+<p>
+<center>
+<img src = "images/directed-edge-api.png" alt = "API for a weighted directed edge">
+</center>
+<p>
+<br>
+
+The <tt>from()</tt> and <tt>to()</tt> methods are useful
+for accessing the edge's vertices.
+<a href = "DirectedEdge.java.html">DirectedEdge.java</a> implements this API.
+
+
+<p>
+We represent edge-weighted digraphs using the following API:
+
+<p>
+<center>
+<img src = "images/edge-weighted-digraph-api.png" alt = "API for an
+edge-weighted graph">
+</center>
+<p>
+<br>
+
+<a href = "EdgeWeightedDigraph.java.html">EdgeWeightedDigraph.java</a>
+implements the API using the adjacency-lists representation.
+
+<p>
+<center>
+<img src = "images/edge-weighted-digraph-representation.png" alt = "edge-weighted digraph representation">
+</center>
+<p>
+<br>
+
+<p><h2>Shortest paths API.</h2>
+We use the following API for computing the shortest paths of an edge-weighted digraph:
+
+
+<p>
+<center>
+<img src = "images/sp-api.png" alt = "API for SP implementations">
+</center>
+<p>
+<br>
+
+We prepare some test data:
+<ul>
+<li>
+<a href = "tinyEWD.txt">tinyEWD.txt</a>
+contains 8 vertices and 15 edges
+<li>
+<a href = "mediumEWD.txt">mediumEWD.txt</a>
+contains 250 vertices and 2,546 edges
+<li>
+<a href = "1000EWD.txt">1000EWG.txt</a>
+contains 1,000 vertices and 16,866 edges
+<li>
+<a href = "10000EWD.txt">10000EWG.txt</a>
+contains 10,000 vertices and 123,462 edges
+<li>
+<a href = "largeEWD.txt">largeEWG.txt</a>
+contains one million vertices and 15,172,126 edges.
+
+</ul>
+
+
+
+<p><h2>Data structures for single-source shortest paths.</h2>
+Given an edge-weighted digraph and a designated vertex s,
+a <em>shortest-paths tree</em> (SPT) is a subgraph containing s
+and all the vertices reachable from s that forms a directed tree
+rooted at s such that every tree path is a shortest path in the digraph.
+
+
+<p>
+We represent the shortest paths with two vertex-indexed arrays:
+
+<ul>
+<p><li><em>Edges on the shortest-paths tree</em>:
+<tt>edgeTo[v]</tt> is the the last edge on a shortest path from s to v.
+
+<p><li><em>Distance to the source</em>: <tt>distTo[v]</tt> is the
+length of the shortest path from s to v.
+
+</ul>
+
+<!--
+By convention, <tt>edgeTo[s]</tt> is <tt>null</tt> and <tt>distTo[s]</tt> is 0.
+We also adopt the convention that distances to vertices that are not
+reachable from the source are all <tt>Double.POSITIVE_INFINITY</tt>.
+-->
+
+<p>
+<center>
+<img src = "images/spt.png" alt = "Shortest paths tree">
+</center>
+
+
+<p><h2>Relaxation.</h2>
+Our shortest-paths implementations are based on an operation known as 
+<em>relaxation</em>.
+We initialize <tt>distTo[s]</tt> to 0 and
+<tt>distTo[v]</tt> to infinity for all other vertices v.
+
+<ul>
+<p><li><em>Edge relaxation.</em>
+To relax an edge v->w means to test whether the best known way from s to w is to
+go from s to v, then take the edge from v to w, and, if so, update our data structures.
+
+
+<blockquote>
+<table>
+<TR><TD><pre>
+private void relax(DirectedEdge e) {
+    int v = e.from(), w = e.to();
+    if (distTo[w] > distTo[v] + e.weight()) {
+        distTo[w] = distTo[v] + e.weight();
+        edgeTo[w] = e;
+    }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+
+
+<p>
+<center>
+<img src = "images/relaxation-edge.png" alt = "edge relaxation">
+</center>
+
+<p><li><em>Vertex relaxation.</em>
+All of our implementations actually relax all the edges pointing from
+a given vertex.
+
+<blockquote>
+<table>
+<TR><TD><pre>
+private void relax(EdgeWeightedDigraph G, int v) {
+    for (DirectedEdge e : G.adj(v)) {
+        int w = e.to();
+        if (distTo[w] > distTo[v] + e.weight()) {
+            distTo[w] = distTo[v] + e.weight();
+            edgeTo[w] = e;
+        }
+    }
+}
+</pre></td></tr>
+</table>
+</blockquote>
+</ul>
+
+
+<!--
+
+<p><h2>Proposition. (shortest-paths optimality conditions)</h2>
+Let G be an edge-weighted digraph with source s.
+Suppose that for each vertex v reachable from s that
+<tt>distTo[v]</tt> is the length of some path from <tt>s</tt> to <tt>v</tt>
+and for each vertex v not reachable from s,
+<tt>distTo[v]</tt> is equal to infinity.
+These values are the lengths of <em>shortest</em> paths if and only if
+they satisfy <tt>distTo[w] <= distTo[v] + e.weight()</tt>
+for each edge e = v->w.
+
+The optimality conditions lead to a generic algorithm. For the moment,
+we restrict attention to nonnegative weights.
+
+<p><h2>Propsition. (generic shortest paths algorithm)</h2>
+Initialize <tt>distTo[s]</tt> to 0 and all other <tt>distTo[]</tt>
+values to infinity, and proceed as follows:
+Relax any edge in G, continuing until no edge is eligible.
+For all vertices v reachable from <tt>s</tt>,
+the value of <tt>distTo[v]</tt> after this computation is
+the length of a shortest path from <tt>s</tt> to <tt>v</tt>
+(and the value of <tt>edgeTo[]</tt> is the last edge on that path).
+-->
+
+
+<p><h2>Dijkstra's algorithm.</h2>
+Dijkstra's algorithm
+initializing <tt>dist[s]</tt> to 0 and all other <tt>distTo[]</tt>
+entries to positive infinity. Then, it repeatedly relaxes and
+adds to the tree a non-tree vertex with the lowest <tt>distTo[]</tt> value,
+continuing until all vertices are on the tree or no non-tree vertex
+has a finite <tt>distTo[]</tt> value.
+
+<p>
+<a href = "DijkstraSP.java.html">DijkstraSP.java</a> is an
+efficient implementation of Dijkstra's algorithm.
+It uses <a href = "IndexMinPQ.java.html">IndexMinPQ.java</a> for
+the priority queue.
+
+<!--
+<p>
+<center>
+<img src = "images/dijkstra-trace.png" alt = "Trace of Dijkstra's algorithm">
+</center>
+<p>
+-->
+
+<p><h2>Proposition.</h2>
+Dijkstra's algorithm solves the single-source shortest-paths problem in edge-weighted
+digraphs with nonnegative weights using extra space proportional to V and
+time proportional to E log V (in the worst case).
+
+<!--
+Our implementation of Dijkstra's algorithm is effective for solving other
+versions of the problem.
+<ul>
+
+<p><li><em>Single-source shortest paths in undirected graphs.</em>
+To find the shortest paths in undirected graphs,
+build an edge-weighted digraph with the same vertices and with two directed
+edges (one in each direction) corresponding to each edge in the graph.
+
+<p><li><em>Source-sink shortest paths.</em>
+To find the shortest path from s to t, use Dijkstra's algorithm, but 
+terminate the search as soon as t comes off the priority queue.
+
+<p><li><em>All-pairs shortest paths.</em>
+<a href = "DijkstraAllPairsSP.java.html">DijkstraAllPairsSP.java</a> solves
+the all-pairs shortest paths problem by running Dijkstra's algorithm
+from each vertex in the graph.
+</ul>
+-->
+
+
+<p><h2>Acyclic edge-weighted digraphs.</h2>
+We use the term <em>edge-weighted DAG</em> to refer to an acyclic edge-weighted 
+digraph.
+
+<ul>
+<p><li><em>Single-source shortest paths problem in edge-weighted DAGs.</em>
+We now consider an algorithm for finding shortest paths that is simpler and faster 
+than Dijkstra's algorithm for edge-weighted DAGs.
+<ul>
+<p><li> It solves the single-source problem in linear time.
+<p><li> It handles negative edge weights.
+<p><li> It solves related problems, such as finding longest paths.
+</ul>
+
+<p>
+The algorithm combines vertex relaxation with topological sorting.
+We initialize <tt>distTo[s]</tt> to 0 and all other <tt>distTo[]</tt>
+values to infinity, then relax the vertices, one by one, taking the 
+vertices in <em>topological order</em>.
+<a href = "AcyclicSP.java.html">AcyclicSP.java</a> is an implementation
+of this approach.
+It relies on this version of 
+<a href = "Topological.java.html">Topological.java</a>, extended
+to support edge-weighted digraphs.
+
+<p><li><em>Single-source longest paths problem in edge-weighted DAGs.</em>
+We can solve the single-source longest paths problems in edge-weighted DAGs
+by initializing the <tt>distTo[]</tt> values to negative infinity
+and switching the sense of the inequality in <tt>relax()</tt>.
+<a href = "AcyclicLP.java.html">AcyclicLP.java</a> implements this approach.
+
+<p><li><em>Critical path method.</em>
+We consider the parallel precedence-constrained job scheduling problem:
+Given a set of jobs of specified duration to be completed, with precedence 
+constraints that specify that certain jobs have to be completed before
+certain other jobs are begun, how can we schedule the jobs on identical
+processors (as many as needed) such that they are all completed in
+the minimum amount of time while still respecting the constraints?
+
+<p>
+<center>
+<img src = "images/scheduling-problem.png" alt = "Job-scheduling problem">
+</center>
+<p>
+
+<p>
+<center>
+<img src = "images/scheduling-solution.png" alt = "Job-scheduling solution">
+</center>
+<p>
+
+This problem can be solved by formulating it as a longest paths problem
+in an edge-weighted DAG:
+Create an edge-weighted DAG with a source s, a sink t, and two
+vertices for each job (a start vertex and an end vertex).
+For each job, add an edge from its start vertex to its end vertex with
+weight equal to its duration.
+For each precedence constraint v->w, add a zero-weight edge from the
+end vertex corresponding to v to the beginning vertex corresponding to w.
+Also add zero-weight edges from the source to each job's
+start vertex and from each job's end vertex to the sink.
+
+<p>
+<center>
+<img src = "images/scheduling-reduction.png" alt = "Job-scheduling problem reduction to longest paths">
+</center>
+
+<p>
+Now, schedule each job at the time given by the length of its longest
+path from the source.
+
+<p>
+<center>
+<img src = "images/scheduling-critical-path.png" alt = "Job-scheduling problem critical path">
+</center>
+<p>
+
+<a href = "CPM.java.html">CPM.java</a> is an implementation of the
+critical path method.
+
+
+</ul>
+
+<p><h2>Proposition.</h2>
+By relaxing vertices in topological order, we can solve the single-source
+shortest-paths and longest-paths problems for edge-weighted DAGs in
+time proportional to E + V.
+
+
+
+<p><h2>Shortest paths in general edge-weighted digraphs.</h2>
+We can solve shortest path problems if (i) all weights are nonnegative
+or (ii) there are no cycles. 
+
+<ul>
+
+<p><li><em>Negative cycles.</em>
+A <em>negative cycle</em> is a directed cycle whose total weight (sum of the weights
+of its edges) is negative.
+The concept of a shortest path is meaningless if there is a negative cycle.
+
+<p>
+<center>
+<img src = "images/tinyEWDnc.png" alt = "an edge-weighted digraph with a negative cycle">
+</center>
+<p>
+
+Accordingly, we consider edge-weighted digraphs with no negative cycles.
+
+
+
+<p><li><em>Bellman-Ford algorithm.</em>
+Initialize <tt>distTo[s]</tt> to 0 and 
+all other <tt>distTo[]</tt> values to infinity. Then, considering the digraph's 
+edges in any order, and relax all edges. Make V such passes.
+
+
+<blockquote>
+<table>
+<TR><TD><pre>
+for (int pass = 0; pass < G.V(); pass++)
+   for (int v = 0; v < G.V(); v++)
+      for (DirectedEdge e : G.adj(v))
+          relax(e);
+</pre></td></tr>
+</table>
+</blockquote>
+
+We do not consider this version in detail because it <em>always</em>
+relaxes V E edges.
+
+<p><li><em>Queue-based Bellman-Ford algorithm.</em>
+The only edges that could lead to a change in <tt>distTo[]</tt> are those
+leaving a vertex whose <tt>distTo[]</tt> value changed in the previous pass. To keep 
+track of such vertices, we use a FIFO queue. 
+<a href = "BellmanFordSP.java.html">BellmanFordSP.java</a> implements this approach
+by maintaining two additional data structures:
+<ul>
+<p><li> A queue of vertices to be relaxed
+<p><li> A vertex-index boolean array <tt>onQ[]</tt> that indicates which
+vertices are on the queue, to avoid duplicates
+</ul>
+
+<p><li><em>Negative cycle detection.</em>
+In many applications, our goal is to check for and
+to check for and extract negative cycles. Accordingly, we add the following
+methods to the API:
+
+<p>
+<center>
+<img src = "images/negative-cycle-api.png" alt = "API for negative cycle detection">
+</center>
+<p>
+<br>
+
+
+There is a negative cycle reachable from the source if and only if the queue
+is nonempty after the Vth pass through all the edges.
+Moreover, the subgraph of edges in our <tt>edgeTo[]</tt> array must contain 
+a negative cycle. Accordingly, to implement <tt>negativeCycle()</tt>
+<a href ="BellmanFordSP.java.html">BellmanFordSP.java</a>
+builds an edge-weighted digraph from the edges in <tt>edgeTo[]</tt>
+and looks for a cycle in that digraph. To find the cycle, it uses
+<a href = "EdgeWeightedDirectedCycle.java.html">EdgeWeightedDirectedCycle.java</a>,
+a version of <a href = "../42directed/DirectedCycle.java.html">DirectedCycle.java</a>
+from Section 4.3, adapted to work for edge-weighted digraphs.
+We amortize the cost of this check by performing this check only after
+every Vth call to <tt>relax()</tt>.
+
+
+<p><li><em>Arbitrage detection.</em>
+Consider a market for financial transactions that is based on
+trading commodities.
+The table in <a href = "rates.txt">rates.txt</a>
+shows conversion rates among currencies.
+The first line in the file is the number V of currencies;
+then the file has one line per currency,
+giving its name followed by the conversion rates to the other currencies.
+An <em>arbitrage opportunity</em> is a directed cycle 
+such that the product of the exchange rates is greater than one.
+For example, our table says that 1,000 U.S. dollars will buy 
+1,000.00 &times; .741 = 741 euros,
+then we can buy 741 &times; 1.366  = 1,012.206 Canadian dollars with our euros,
+and finally, 1,012.206 &times; .995 = 1,007.14497 U.S. dollars with our Canadian
+dollars, a 7.14497-dollar profit!
+
+
+<center>
+<table>
+<TR>
+<td><img src = "images/rates.png" alt = "Exchange rates"></td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td><img src = "images/arbitrage.png" alt = "Arbitrage opportunity"></td>
+</td></tr>
+</table>
+</center>
+
+
+<p>
+To formulate the arbitrage problem as a negative-cycle detection problem,
+replace each weight by its <em>logarithm</em>, negated. With this change,
+computing path weights by multiplying edge weights in the original problem
+corresponds to adding them in the transformed problem.
+<a href = "Arbitrage.java.html">Arbitrage.java</a> identifies
+arbitrage opportunities in a currency-exchange network by solving the
+corresponding negative cycle detection problem.
+
+
+
+
+</ul>
+
+<p><h3>Proposition.</h3>
+There exists a shortest path from s to v in an edge-weighted digraph
+if and only if there exists at least one directed path from s to v
+and no vertex on any directed path from s to v is on a negative cycle.
+
+<p><h3>Proposition.</h3>
+The Bellman-Ford algorithm solves
+the single-source shortest-paths problem from a given source s
+(or finds a negative cycle reachable from s) for any edge-weighted digraph
+with V vertices and E edges, in time proportional to E V and extra space
+proportional to V, in the worst case.
+
+
+
+<p>
+<H4>Exercises</H4>
+
+<ol>
+
+
+<a name = "Ex4.4.1"></a>
+<li value = 1> 
+True or false. Adding a constant to every edge weight
+does not change the solution to the single-source shortest-paths problem.
+
+<p><em>Solution.</em> False.
+
+
+<a name = "Ex4.4.2"></a>
+<li value = 2> 
+Provide an implementation of <tt>toString()</tt> for
+<a href = "EdgeWeightedDigraph.java.html">EdgeWeightedDigraph.java</a>.
+
+
+<a name = "Ex4.4.11"></a>
+<li value = 11>
+Use the memory-cost model of Section 1.4 to determine the amount of 
+memory used by <a href = "EdgeWeightedDigraph.java.html">EdgeWeightedDigraph.java</a>
+to represent a graph with <em>V</em> vertices and <em>E</em> edges.
+
+<p><em>Solution.</em>
+56 + 40V + 72E.
+<a href = "MemoryOfEdgeWeightedDigraph.java.html">MemoryOfEdgeWeightedDigraph.java</a>
+computes it empirically assuming that no <tt>Integer</tt> values are cached&mdash;Java
+typically caches the integers -128 to 127.
+
+<a name = "Ex4.4.12"></a>
+<li value = 12>
+Adapt the <tt>DirectedCycle</tt> and <tt>Topological</tt>
+classes from Section 4.2 to use the 
+<tt>EdgeweightedDigraph</tt> and <tt>DirectedEdge</tt> APIs of this section,
+thus implementing
+<a href = "EdgeWeightedDirectedCycle.java.html">EdgeWeightedDirectedCycle.java</a>
+and <a href = "Topologica.java.html">Topological.java</a>.
+
+
+<!--
+<a name = "Ex4.4.15"></a>
+<li value = 15>
+<li> 
+What happens to Bellman-Ford if there is a negative
+cycle on the path from s to v and then you call pathTo(v)?
+-->
+
+
+<a name = "Ex4.4.16"></a>
+<li value = 16>
+Suppose that we convert an 
+<tt>EdgeWeightedGraph</tt> into an 
+<tt>EdgeWeightedDigraph</tt> by creating two <tt>DirectedEdge</tt>
+objects in the <tt>EdgeWeightedDigraph</tt> (one in each direction) for
+each <tt>Edge</tt> in the <tt>EdgeWeightedGraph</tt>
+and then use the Bellman-Ford algorithm. Explain why this approach fails spectacularly.
+
+<p><em>Solution:</em> This can introduce negative cost cycles even if the
+edge-weighted graph does not contain them.
+
+
+<a name = "Ex4.4.17"></a>
+<li value = 17>
+What happens if you allow a vertex to be enqueued more than
+once in the same pass in the Bellman-Ford algorithm?
+
+<p><em>Answer</em>: The running time of the algorithm can go exponential.
+For example, consider what happens for the complete edge-weighted digraph
+whose edge weights are all -1.
+
+
+
+</ol>
+
+
+<p>
+<H4>Creative Problems</H4>
+
+<ol>
+
+<!--
+<a name = "Ex4.4.25"></a>
+<li value = 25>
+<b>Shortest path between two subsets.</b>
+Given a digraph with positive edge weights, and two distinguished
+subsets of vertices S and T, find a shortest path from any
+vertex in S to any vertex in T. Your algorithm should run in time proportional
+to E log V, in the worst case.
+-->
+
+
+<a name = "Ex4.4.28"></a>
+<li value = 28>
+<b>Longest paths in DAGs.</b>
+Develop an implementation 
+<a href = "AcyclicLP.java.html">AcyclicLP.java</a> that can solve the longest-paths
+problem in edge-weighted DAGs.
+
+
+
+<!--
+<a name = "Ex4.4.30"></a>
+<li value = 30>
+<b>All-pairs shortest paths in graphs with negative cycles.</b>
+Articulate an API like the one implemented on page 656 for the
+all-pairs shortest-paths problem in graphs with no
+Develop an implementation that runs a version of Bellman-Ford
+to identify weights pi[v]
+such that for any edge v->w, the edge weight plus the difference between
+pi[v] and pi[w] is nonnegative.
+Then, use these weights to reweight the digraph, so that
+Dijkstra's algorithm is effective for finding all shortest paths in
+the reweighted digraph.
+-->
+
+<a name = "Ex4.4.31"></a>
+<p><li value = 31>
+<b>All-pairs shortest paths on a line.</b>
+Given a weighted line-graph (undirected connected graph, all vertices
+of degree 2, except two endpoints which have degree 1),
+devise an algorithm that preprocesses
+the graph in linear time and can return the distance of the shortest path
+between any two vertices in constant time.
+
+<p><em>Partial solution.</em>
+Find a vertex s of degree 1 and run breadth-first (or depth-first) search
+to find the order in which the remaining vertices appear.
+Then, compute the length of the shortest path from s to v for each
+vertex v, say <tt>dist[v]</tt>. The shortest path between v and w is
+|<tt>dist[v] - dist[w]</tt>|.
+
+
+<!--
+<a name = "Ex4.4.32"></a>
+<li value = 32>
+<b>Parent-checking heuristic.</b>
+Modify Bellman-Ford to relax a vertex v only if its SPT parent <tt>edgeTo[v]</tt>
+is not currently on the queue. This heuristic has been reported by
+Cherkassky, Goldberg, and Radzik to be useful in practice.
+Prove that it correctly computes shortest paths and that the worst-case
+running time is proportional to EV.
+-->
+
+
+<!--
+<a name = "Ex4.4.33"></a>
+<li value = 33>
+<li><b>Shortest path in a grid.</b>
+Given an N-by-N matrix of positive integers, find the shortest path from
+the (0, 0) entry to the (N-1, N-1) entry, where the length 
+of the path is the sum of the integers in the path.
+Repeat the problem but assume you can only move right and down.
+-->
+
+
+<a name = "Ex4.4.34"></a>
+<li value = 34>
+<b>Monotonic shortest path.</b>
+Given an edge-weighted digraph, find a <em>monotonic</em> shortest path
+from s to every other vertex.
+A path is monotonic if the weight of every edge on the path is either
+strictly increasing or strictly decreasing.
+<p>
+<em>Partial solution</em>: relax edges in ascending order and find a best path; then relax edges in
+descending order and find a best path.
+
+
+
+<!--
+<a name = "Ex4.4.35"></a>
+<li value = 35>
+<b>Bitonic shortest path.</b>
+Given an edge-weighted digraph, find <em>bitonic</em> shortest path from s to every other vertex
+(if one exists).
+A path is bitonic if there is an intermediate vertex v such that the weights of the
+edges on the path from s to v are
+strictly increasing and the weights of the edges on the path from v to t
+are strictly decreasing.
+The path should be simple (no repeated vertices).
+-->
+
+<a name = "Ex4.4.35"></a>
+<li value = 35>
+<b>Lazy implementation of Dijkstra's algorithm.</b>
+Develop an implementation 
+<a href = "LazyDijkstraSP.java.html">LazyDijkstraSP.java</a> 
+of the lazy version of Dijkstra's algorithm that
+is described in the text.
+
+</ol>
+
+
+<p>
+<H4>Web Exercises</H4>
+
+<ol>
+
+<li><b>Optimal substructure property.</b>
+Prove that every subpath on a shortest path from v to w is also a shortest path
+between the two endpoints.
+
+<li><b>Unique shortest path tree.</b>
+Suppose that there is a unique shortest path from s to every other vertex.
+Prove that the SPT is unique.
+
+<li><b>No negative cycles.</b>
+Prove that if the generic algorithm terminates, then there are no negative cycles
+reachable from s. Hint: upon termination, all edges reachable from s satisfy
+distTo[w] <= distTo[v] + e.weight(). Add up this inequality for all edges
+along a cycle.
+
+<li><b>Predecessor graph.</b>
+True or false. During execution of Bellman-Ford in an edge-weighted digraph with no negative
+cycles, following the <tt>edgeTo[]</tt> array always yields a path back to s.
+Repeat the question for Dijkstra's algorithm.
+
+<li><b>Yen's improvement to Bellman-Ford.</b>
+[<a href = "http://11011110.livejournal.com/215330.html">reference</a>]
+Partition the edges into two DAGs A and B: A consists of edges that go
+from a lower indexed vertex to a higher indexed vertex; B consists of edges
+that go from a higher indexed vertex to a lower indexed vertex.
+When iterating through all of the edges in a phase of Bellman-Ford,
+first iterate through the edges in A in ascending order of vertex number (a
+topological order of A), then iterate through the edges in B in descending order
+of vertex number (a topological order of B).
+When iterating through the edges in A, any path in the SPT that starts
+at a vertex with the correct <tt>distTo[]</tt> value and uses only edges in A
+results in the correct <tt>distTo[]</tt> value; similarly for B.
+The number of passes needed is the maximum number of A-B alternations on
+a path, which is at most (V+1)/2. Thus, the number of passes is at most (V+1)/2 instead
+of V. 
+
+
+<p><li><b>Replacement paths.</b>
+Given an edge-weighted digraph with nonnegative weights and source s and sink t,
+design an algorithm to find the shortest path from s to t that does not use 
+edge e for every edge e.
+The order of growth of your algorithm should be 
+E V log V.
+
+
+
+<p><li><b>Road network data sets.</b>
+<ul>
+<p><li>
+From the <a href = "http://www.dis.uniroma1.it/~challenge9/download.shtml">DIMACS challenge</a>.
+Here are
+<a href = "http://www.dis.uniroma1.it/~challenge9/data/tiger/">all the roads in each state</a>.
+
+<p><li>
+<a href = "rome99.txt">rome99.txt</a> is a large portion of the 
+directed road network of Rome from the 
+<a href = "http://www.dis.uniroma1.it/~challenge9/download.shtml">DIMACS challenge</a>.
+The graph contains 3353 vertices and 8870 edges.
+Vertices correspond to intersections between roads and edges correspond to roads or road 
+segments. The edge weights are distances in meters.
+
+<p><li>
+<a href = "NYC.txt">NYC.txt</a> is the undirected road network of New York City.
+The graph contains 264346 vertices and 733846 edges.
+It is connected, contains parallel edges, but no self-loops.
+The edge weights are travel times and are strictly positive.
+</ul>
+
+<p><li><b>Internet routing.</b>
+<a href = "http://en.wikipedia.org/wiki/Open_shortest_path_first">OSPF (Open Shortest Path
+First)</a> is a widely used protocol for Internet routing that uses Dijkstra's algorithm.
+<a href = "http://en.wikipedia.org/wiki/Routing_Information_Protocol">RIP (Routing
+Information Protocol)</a>
+is another routing protocol based on the Bellman-Ford algorithm.
+
+
+<li><b>Floyd-Warshall algorithm.</b>
+<a href = "FloydWarshall.java.html">FloydWarshall.java</a> implements
+the Floyd-Warshall algorithm for the all-pairs shortest path problem.
+It takes time proportional to V^3 and space proportional to V^2.
+It uses <a href = "AdjMatrixEdgeWeightedDigraph.java.html">AdjMatrixEdgeWeightedDigraph.java</a>.
+
+<li><b>Randomized Bellman-Ford.</b>
+[<a href = "http://11011110.livejournal.com/215330.html">reference</a>]
+Suppose that we choose the vertex order in Yen's algorithm uniformly at randomly
+(where A contains all the edges that go from a lower vertex in the permutation to
+a higher vertex).
+Prove that the expected number of passes is at most (V+1)/3.
+
+
+</ol>
+
+
+
+<br><br>
+<p class = footer>
+<em>Last modified on April 06, 2012.</em><br><br>
+Copyright &copy; 2002&ndash;2012
+<a href = "http://www.cs.princeton.edu/~rs" class = footer>Robert Sedgewick</a>
+and
+<a href = "http://www.cs.princeton.edu/~wayne" class = footer>Kevin Wayne</a>.
+All rights reserved.
+</div>
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10811519-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>
+
+ 
+
+
+
+
+<!--
+<hr>
+<center><a href=#GLOBALS>GLOBALS</a> | <a href=#_SERVER>_SERVER</a> | <a href=#_GET>_GET</a> | <a href=#_POST>_POST</a> | <a href=#_FILES>_FILES</a> | <a href=#_COOKIE>_COOKIE</a> | <a href=#_SESSION>_SESSION</a> | <a href=#_REQUEST>_REQUEST</a> | <a href=#_ENV>_ENV</a></center>
+<hr>
+<b><a name=GLOBALS>GLOBALS</a>:</b>
+<li> $GLOBALS[GLOBALS] = <a href=#GLOBALS>Array</a>
+<li> $GLOBALS[_ENV] = <a href=#_ENV>Array</a>
+<li> $GLOBALS[HTTP_ENV_VARS] = Array<li> $GLOBALS[_POST] = <a href=#_POST>Array</a>
+<li> $GLOBALS[HTTP_POST_VARS] = Array<li> $GLOBALS[_GET] = <a href=#_GET>Array</a>
+<li> $GLOBALS[HTTP_GET_VARS] = Array<li> $GLOBALS[_COOKIE] = <a href=#_COOKIE>Array</a>
+<li> $GLOBALS[HTTP_COOKIE_VARS] = Array<li> $GLOBALS[_SERVER] = <a href=#_SERVER>Array</a>
+<li> $GLOBALS[HTTP_SERVER_VARS] = Array<li> $GLOBALS[_FILES] = <a href=#_FILES>Array</a>
+<li> $GLOBALS[HTTP_POST_FILES] = Array<li> $GLOBALS[_REQUEST] = <a href=#_REQUEST>Array</a>
+<li> $GLOBALS[title] = Array<li> $GLOBALS[section] = 4.4<li> $GLOBALS[number] = Array<li> $GLOBALS[url] = Array<li> $GLOBALS[count] = 36<li> $GLOBALS[i] = 36<li> $GLOBALS[filename] = index.html<li> $GLOBALS[date] = 05/05/12 23:41<li> $GLOBALS[REMOTEADDR] = 128.2.207.79<li> $GLOBALS[REMOTEHOST] = boston-cluster.lti.cs.cmu.edu<li> $GLOBALS[HTTPREFERER] = http://algs4.cs.princeton.edu/44sp<li> $GLOBALS[REQUESTURI] = /44sp/<li> $GLOBALS[REDIRECTSTATUS] = <li> $GLOBALS[fp] = Resource id #6<li> $GLOBALS[superglobals] = Array<li> $GLOBALS[env] = GLOBALS<li> $GLOBALS[nav] = Array<li> $GLOBALS[nav_list] = <a href=#GLOBALS>GLOBALS</a> | <a href=#_SERVER>_SERVER</a> | <a href=#_GET>_GET</a> | <a href=#_POST>_POST</a> | <a href=#_FILES>_FILES</a> | <a href=#_COOKIE>_COOKIE</a> | <a href=#_SESSION>_SESSION</a> | <a href=#_REQUEST>_REQUEST</a> | <a href=#_ENV>_ENV</a><li> $GLOBALS[val] = <a href=#GLOBALS>GLOBALS</a> | <a href=#_SERVER>_SERVER</a> | <a href=#_GET>_GET</a> | <a href=#_POST>_POST</a> | <a href=#_FILES>_FILES</a> | <a href=#_COOKIE>_COOKIE</a> | <a href=#_SESSION>_SESSION</a> | <a href=#_REQUEST>_REQUEST</a> | <a href=#_ENV>_ENV</a><li> $GLOBALS[key] = val<hr>
+<b><a name=_SERVER>_SERVER</a>:</b>
+<li> $_SERVER[UNIQUE_ID] = T6Xy9IBwiF4AABOh4PYAAABQ<li> $_SERVER[HTTP_USER_AGENT] = Mozilla/5.0 (compatible; lemurwebcrawler admin@lemurproject.org; +http://boston.lti.cs.cmu.edu/crawler_12/)<li> $_SERVER[HTTP_CONNECTION] = close<li> $_SERVER[HTTP_REFERER] = http://algs4.cs.princeton.edu/44sp<li> $_SERVER[HTTP_ACCEPT] = text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8<li> $_SERVER[HTTP_HOST] = algs4.cs.princeton.edu<li> $_SERVER[PATH] = /sbin:/usr/sbin:/bin:/usr/bin<li> $_SERVER[SERVER_SIGNATURE] = <li> $_SERVER[SERVER_SOFTWARE] = Apache/2.2.21<li> $_SERVER[SERVER_NAME] = algs4.cs.princeton.edu<li> $_SERVER[SERVER_ADDR] = 128.112.136.36<li> $_SERVER[SERVER_PORT] = 80<li> $_SERVER[REMOTE_ADDR] = 128.2.207.79<li> $_SERVER[DOCUMENT_ROOT] = /n/fs/algs4/www<li> $_SERVER[SERVER_ADMIN] = rs@CS.Princeton.EDU<li> $_SERVER[SCRIPT_FILENAME] = /n/fs/algs4/www/44sp/index.php<li> $_SERVER[REMOTE_PORT] = 48484<li> $_SERVER[GATEWAY_INTERFACE] = CGI/1.1<li> $_SERVER[SERVER_PROTOCOL] = HTTP/1.0<li> $_SERVER[REQUEST_METHOD] = GET<li> $_SERVER[QUERY_STRING] = <li> $_SERVER[REQUEST_URI] = /44sp/<li> $_SERVER[SCRIPT_NAME] = /44sp/index.php<li> $_SERVER[PHP_SELF] = /44sp/index.php<li> $_SERVER[REQUEST_TIME] = 1336275700<hr>
+<b><a name=_GET>_GET</a>:</b>
+<hr>
+<b><a name=_POST>_POST</a>:</b>
+<hr>
+<b><a name=_FILES>_FILES</a>:</b>
+<hr>
+<b><a name=_COOKIE>_COOKIE</a>:</b>
+<hr>
+<b><a name=_SESSION>_SESSION</a>:</b>
+<br />
+<b>Warning</b>:  Variable passed to each() is not an array or object in <b>/n/fs/algs4/www/template.inc</b> on line <b>141</b><br />
+<hr>
+<b><a name=_REQUEST>_REQUEST</a>:</b>
+<hr>
+<b><a name=_ENV>_ENV</a>:</b>
+<li> $_ENV[CONSOLE] = /dev/console<li> $_ENV[SELINUX_INIT] = YES<li> $_ENV[TERM] = linux<li> $_ENV[INIT_VERSION] = sysvinit-2.86<li> $_ENV[PATH] = /sbin:/usr/sbin:/bin:/usr/bin<li> $_ENV[runlevel] = 3<li> $_ENV[RUNLEVEL] = 3<li> $_ENV[PWD] = /<li> $_ENV[LANG] = C<li> $_ENV[previous] = N<li> $_ENV[PREVLEVEL] = N<li> $_ENV[SHLVL] = 3<li> $_ENV[HOME] = /<li> $_ENV[_] = /var/local/httpd/bin/httpd-->

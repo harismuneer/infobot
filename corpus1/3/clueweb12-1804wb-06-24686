@@ -1,0 +1,2000 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-30T03:53:45Z
+WARC-TREC-ID: clueweb12-1804wb-06-24686
+WARC-IP-Address: 199.242.0.72
+WARC-Payload-Digest: sha1:N5D4W2RK4C467SMBUFFIZSHMRRYVLY3D
+WARC-Target-URI: https://www2.blackrock.com/us/financial-professionals/client-servicing/tax-information/2012-tax-distributions
+WARC-Record-ID: <urn:uuid:e0180960-73e2-4dfb-9964-ac19e3be9594>
+Content-Type: application/http; msgtype=response
+Content-Length: 104637
+
+HTTP/1.1 200 OK
+Date: Mon, 30 Apr 2012 03:56:06 GMT
+Server: Apache
+X-Powered-By: BlackRock Solutions
+Set-Cookie: SITECORE_IPADDRESS=128.2.207.79; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_firstName=guest; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_lastName=; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_un=; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_usertype=FP; Domain=blackrock.com; Path=/
+Set-Cookie: SITECORE_investor_type=; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_status=Anonymous; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_authorizedSites=; Domain=www2.blackrock.com; Path=/us/
+Set-Cookie: SITECORE_jask=; Domain=www2.blackrock.com; Path=/us/
+Cache-Control: no-cache
+Cache-Control: no-store
+Pragma: no-cache
+Last-Modified: Mon, 30 Apr 2012 00:57:27 GMT
+Cache-Control: max-age=60
+Content-Length: 103601
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=33
+Connection: close
+Content-Type: text/html;charset=UTF-8
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!-- HTMLHead Component Begin -->
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="google-site-verification" content="z1Aw-cih_E2FKOWotfSW8RUFHKmTIfB1VXHbV_J6bM8" />
+        <meta name="DESCRIPTION" content="Get a list of all of BlackRock's 2012 fund distributions." />
+    <meta name="KEYWORDS" content="" />
+<title>
+				2012 Tax Distributions:
+			Tax Information:
+			Client Servicing:
+			Financial Professionals:
+	BlackRock 
+</title>     <link rel="icon" href="/favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" href="/include/common/css/ebiz/blk_core.css" type="text/css" />
+    <link rel="stylesheet" href="/include/public/css/public.css" type="text/css"/>
+	<script type="text/javascript" src="/include/common/js/ebiz/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" language="javascript" src="/include/common/js/ebiz/typeface.js"></script>
+	<script type="text/javascript" language="javascript" src="/include/common/js/ebiz/corporate_e_regular.typeface.js"></script>
+
+    <script type="text/javascript">
+		document.domain="blackrock.com";
+        if(typeof BLK === "undefined" || !BLK)
+        {
+            var BLK = {};
+            BLK.EBIZ = {};
+            BLK.BRS = {};
+            BLK.envConfig = {};
+            BLK.envSetting = {};
+        } 
+        BLK.envConfig = {
+            "environment" : "bfmwww",
+            "application" : "blk.us.fp.en",
+
+
+				"venue" : "PUB_IND"
+        };
+	</script>
+	
+    <script type="text/javascript" language="javascript" src="/include/fp/js/env_settings_bfmwww.js"></script>
+    <script type="text/javascript" language="javascript" src="/include/common/js/ebiz/env_settings_common.js"></script>
+
+		<script type="text/javascript">
+			BLK.envSetting.wsod = 
+				{
+					"searchUrl": "https://www.blackrock.wallst.com/public//gadget/wsod_suggest.asp",
+					"searchParam": "&venue=FP_PUBLIC"
+				};
+		</script>		
+    <script type="text/javascript" language="javascript" src="/include/common/js/ebiz/common.js"></script>
+	<!-- Web Analytics start -->
+	<script type='text/javascript'>
+/* BLK.EBIZ.webAnalytics.config has been moved to the ??_custom.js JS files */
+/* This allows the jQuery selectors defined for Unica link tracking to be customized for each venue more easily */
+	</script>
+	<!-- Web Analytics end -->
+	
+		<script type="text/javascript" language="javascript" src="/include/fp/js/fp_new_custom.js"></script>
+
+	<script type="text/javascript">
+			function getIPFromCookie()
+			{
+				var searchName = "blk_clip";
+				var cookies = document.cookie.split("; ");
+				var found = false;
+				var cookieCrumbs = [];
+
+				var cookieName = "";
+				var cookieValue = "";
+
+				function trim(stringIn)
+				{
+					if(stringIn === "" || stringIn === null)
+					{
+						return "";
+					}
+					else
+					{
+						return stringIn.replace(/^\s+/, "").replace(/\s\s*$/, "");
+					}
+				} // end function trim(stringIn)
+
+				for(var i = 0; i < cookies.length; i++)
+				{
+					cookieCrumbs = cookies[i].split("=");
+					cookieName = cookieCrumbs[0];
+					cookieName = trim(cookieName);
+					cookieValue = decodeURIComponent(cookieCrumbs[1]);
+					if(decodeURIComponent(cookieName) === searchName)
+					{
+						found = true;
+						break;
+					}
+				}
+
+				if(!found)
+				{
+					cookieValue = "";
+				}
+				return cookieValue;
+			} // end function getIPFromCookie()
+
+			//var fsr$ip = getIPFromCookie();
+			
+			
+			String.prototype.trim = function () {
+				return this.replace(/^\s*/, "").replace(/\s*$/, "");
+			}
+
+		if(typeof SITECORE === "undefined" || !SITECORE) {
+        	var SITECORE = {};
+			SITECORE.site={};
+			SITECORE.site.analytics = {};
+			//SITECORE.site.cookies = getCookiesAsJsonArray();
+        }
+		var fsr$ip = getCleanCookie("SITECORE_IPADDRESS");
+		var fsr$firstName = getCleanCookie("SITECORE_firstName");
+		var fsr$lastName = getCleanCookie("SITECORE_lastName");	
+		
+		BLK.EBIZ.webAnalytics.getAnalyticsData = function () 
+		{
+			var cc1Var = "Content";
+			var cc2Var = "";
+				cc2Var = "Client Servicing";
+			var cc3Var = "landingPage";
+				cc3Var = "Tax Info";
+				var cc4Var="2012 Tax Distributions";
+			//var usertype=getCleanCookie("FPUSERTYPE"); // Fix : EBBLKUSRS-783 [Arun B]
+			var usertype=getCleanCookie("SITECORE_usertype");
+			if((!usertype || 0 === usertype.length)) {
+				usertype="II";
+			}		
+			var analyticsData = {
+				"cc1" : cc1Var,
+				"cc2" : cc2Var,
+				"cc3" : cc3Var,
+				"cc4" : cc4Var,
+				"un"  : getCleanCookie("SITECORE_un"),
+				"usertype"  : usertype,
+				"investor_type"  : getCleanCookie("SITECORE_investor_type"),
+				"status"  : getCleanCookie("SITECORE_status")
+			};
+			BLK.EBIZ.trace2("BLK.EBIZ.webAnalytics.getAnalyticsData. . .cc1=" + analyticsData.cc1 + 
+				",cc2=" + analyticsData.cc2 + ",cc3=" + analyticsData.cc3 + ",un=" + analyticsData.un + ",usertype=" + analyticsData.usertype + ",investor_type=" + analyticsData.investor_type + ",status=" + analyticsData.status + " ");
+			return analyticsData;
+		}; // end BLK.EBIZ.webAnalytics.getAnalyticsData = function ()
+
+	</script>
+		<script type="text/javascript" language="javascript" src="/include/common/js/ebiz/forsee/foresee-trigger.js"></script>
+	
+	<!-- Begin: Google Analytics Code -->
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11733486-8']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+
+	</script>
+
+	<!-- End: Google Analytics Code -->
+
+	<!-- Start: Error Page Handling -->
+	<script type="text/javascript">
+	function printErrorCode(){
+		var val = getCleanCookie('SITECORE_ERROR_CODE'); 
+		if(val!="") {
+			document.getElementById('siteCoreErrorCode').innerHTML="Error Code: "+val;
+		}
+	}
+	</script>	
+	<!-- End: Error Page Handling -->	
+</head>
+<!-- End HTMLHead Component-->		<body id='siteCore' lang='en' class='locked'>
+			<div id="fp"> 
+				<div id="contentPageRegular"> 
+					<div id="P_FP_583" class="column2WideNarrow"> 
+						<div id="siteWrapper"> 
+<div id="mastheadWrapper" > 
+	<div id="masthead">
+		<!-- Arun MastHead-->
+			<a href="http://www2.blackrock.com
+/us" class="blkLogo">
+				<img src="/include/common/css/ebiz/images/blk_core_logo.png" alt="BlackRock Logo"/>
+			</a> 		
+		<!-- OSCache Test Begin ::::
+			<cache>
+				<%try { %>
+					Current Date and time is:&nbsp; <%= new java.util.Date(); %>
+				<%} catch (Exception e) { %>
+					Error Occurred
+				<%} %>	
+			</cache>
+		:::: OSCache Test End -->
+<div id="courtesy"> 
+	<!-- SITE Utils for PROD ID = SITE_UTILITIES_FP -->					<ul>						<li><a href="http://www2.blackrock.com/us/individual-investors/">Individual Investors</a></li>						<li class="On"><a href="/us/financial-professionals/">Financial Professionals</a></li>						<li><a href="/us/defined-contribution/">Defined Contribution</a></li>						<li class="last"><a href="http://www2.blackrock.com/us/institutions/">Institutions</a></li>						<li class="selectview">							<ul id="popupMenuGadget1" class="popupMenuGadget popupMenuGadgetOnMouseover">								<li  class='popupMenuGadgetFirst'><a href="/us">More</a></li>								<li><a href="http://www.ishares.com" target="_blank">iShares ETFs</a></li>								<li><a href="http://www2.blackrock.com/us/brs" target="_blank">BlackRock Solutions</a></li>							</ul>						</li>						<li><a href="javascript:window.open('http://www2.blackrock.com/content/groups/public/documents/web_content/contactusauth.htm',null,'height=746,width=700,scrollbars=yes,status=yes,toolbar=no,menubar=no,location=no'); void(0);" >Contact</a></li>						<li class="selectcountry">							<ul id="popupMenuGadget2" class="popupMenuGadget popupMenuGadgetOnMouseover">								<li><a href="#">US</a></li>								<li><a href="http://www2.blackrock.com/global/home/index.htm">Change Country</a></li>							</ul>						</li>					</ul>	<script type="text/javascript">			if (typeof jQuery == 'undefined') {			document.write("<script type='text/javascript' src='/include/common/js/ebiz/jquery.min.js'><\/script>");		}	</script>		<script type="text/javascript">			$(document).ready(function(){				var _url = document.location.href,					_split = _url.split("?message=");				if( _split.length > 1 ) {					$(".login a, #hidden").hide();					alert(_split[1]);					return;				}				$(".login a").click(function(e){					var _this = $(this),						_hidd = $("#hidden"),						_top = _this.position().top,						_left = _this.position().left;					_hidd					.toggleClass("hide")					.css({						"top" : _top + _this.height(),						"left" : _left - 1					});					return false;				});			});		</script>
+</div>
+<!-- courtesy END -->
+<!-- change by CC -->
+
+<!--
+<script type='text/javascript'>
+	$(document).ready(function () {
+		if((fsr$firstName != "Guest") && (fsr$firstName != ""))
+		{
+			$('.name').text("Welcome "+fsr$firstName);
+		}
+	});
+</script> 
+-->
+
+<div id="userInfo">
+	<ul class="uiPerson">
+		<li class="name">
+			</li>
+			<!--
+			<script type="text/javascript">
+				function initModalDialog()
+				{
+					if(typeof BLK.EBIZ.ModalDialog3 !== "undefined")
+					{
+						var dlg = new BLK.EBIZ.ModalDialog3();
+					}
+				} // end function initModalDialog()
+			</script>
+			-->
+				<li class="login">
+					 <a class="modalDialogLink" id="modalDialogGadgetLink1" 
+						rel="modalDialogDatum1" rev="800,auto" href="#nogo" 
+						>Advisor Sign In</a> 	
+					<div id="modalDialogDatum1" 
+						 class="modalDialogDatum modalDialogDatumHide 
+						 modalDialogGadgetShowTitle modalDialogGadgetShowCloseButton" >
+						<div id="loginFormContainer">
+						</div>
+					</div>
+				</li>
+
+	</ul>
+</div>
+		<div id="audience"> 
+		</div> 
+	</div> 
+</div>
+
+<div id="navWrapper" class="navDropdown" > 
+ <!-- For public sites user have access to all access to all sections -->		
+
+		
+		
+		 
+			<ul id="navTree">
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals">Home</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance">Products & Performance</a>
+		
+					<div class="navPanel">
+				
+				
+
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds">Mutual Funds</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/global-allocation-fund">Global Allocation Fund</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/equity-dividend-fund">Equity Dividend Fund</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/global-dividend-income-fund">Global Dividend Income Fund</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/multi-asset-income-fund">Multi-Asset Income Fund</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/high-yield-bond-fund">High Yield Bond Fund</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/blackrock-global-longshort-credit-fund">Global Long/Short Credit Fund</a>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/mutual-funds/product-commentary">Product Commentary</a>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/products-performance/mutual-funds">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/products-performance/closed-end-funds">Closed-End Funds</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/managed-accounts">Managed Accounts</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/collegeadvantage-529-plan">CollegeAdvantage 529 Plan</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/alternative-investments">Alternative Investments</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/defined-contribution">Defined Contribution</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/variable-insurance-funds">Variable Insurance Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/ishares-etfs">iShares ETFs</a>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing">Performance & Pricing</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing/mutual-funds">Mutual Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing/closed-end-funds">Closed-End Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing/money-market-funds">Money Market Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing/managed-accounts">Managed Accounts</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/products-performance/performance-pricing/collegeadvantage-529-plan">CollegeAdvantage 529 Plan</a>
+						</li>
+
+			</ul>
+						</li>
+				
+				
+
+			</ul>
+			</div>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight">Market Insight</a>
+		
+					<div class="navPanel">
+				
+				
+
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary">Market Commentary</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary/weekly-us-commentary">Weekly US Commentary</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary/fixed-income-monthly">Fixed Income Monthly</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary/municipals-monthly">Municipals Monthly</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary/investment-directions">Investment Directions</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-commentary/point-of-view-series">Point of View Series</a>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/market-insight/market-commentary/pm-conference-calls">PM Conference Calls</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/market-insight/market-commentary">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/market-insight/market-strategies">Market Strategies</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/market-insight/market-strategies/rethinking-core-fixed-income">Rethinking Core Fixed Income </a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/market-insight/market-strategies/investment-opportunity-amid-volatility">Investment Opportunity Amid Volatility</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/market-insight/market-strategies/looking-to-equities-for-income">Looking to Equities for Income</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/market-insight/market-strategies/adding-alternatives-to-the-mix">Adding Alternatives to the Mix</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/market-insight/product-commentary">Product Commentary</a>
+						</li>
+				
+				
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/daily-stat">Daily Stat</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/market-insight/chart-of-the-week">Chart of the Week</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+
+			</ul>
+			</div>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/tools">Tools</a>
+		
+					<div class="navPanel">
+				
+				
+
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/tools/tool-center">Tool Center</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/morningstar-hypothetical">Morningstar Hypothetical</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/periodic-table-tool">Periodic Table Tool</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/fund-comparison">Fund Comparison</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/portfolio-analysis-tool">Portfolio Analysis Tool</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/social-security-estimator">Social Security Estimator</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/retirement-income-planner">Retirement Income Planner</a></SPAN>
+						</li>
+				
+				
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/tool-center/portfolio-comparison">Portfolio Comparison</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/tools/tool-center">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/tools/education-library">Education Library</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/tools/business-builders">Business Builders</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/business-builders/retirement-income-planning">Retirement Income Planning</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/tools/business-builders/social-security-fundamentals">Social Security Fundamentals</a>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/business-builders/roth-401ks-and-iras">Roth 401(k)s and IRAs</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/tools/business-builders">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/tools/conversation-starters">Conversation Starters</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/conversation-starters/college-savings-solutions">College Savings Solutions</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/conversation-starters/withdrawal-rates">Withdrawal Rates</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/tools/conversation-starters/strategies-for-volatile-markets">Strategies for Volatile Markets</a></SPAN>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/tools/conversation-starters">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/tools/weekly-advisor-tip">Weekly Advisor Tip</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+
+			</ul>
+			</div>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing">Client Servicing</a>
+		
+					<div class="navPanel">
+				
+				
+
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<SPAN class='padlock'><a href="/us/financial-professionals/client-servicing/share-classes-loads">Share Classes & Loads</a></SPAN>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/mutual-fund-expenses">Mutual Fund Expenses</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/collegeadvantage-529-expenses">CollegeAdvantage 529 Expenses</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/tax-information">Tax Information</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/tax-information/tax-related-faqs">Tax-Related FAQs</a>
+						</li>
+				
+				
+				
+				
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/tax-information/2012-tax-distributions">2012 Tax Distributions</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/tax-information/2011-distributions">2011 Distributions</a>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="navMore">
+					<a href="/us/financial-professionals/client-servicing/tax-information">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/client-servicing/account-access">Account Access</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/forms-applications">Forms & Applications</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/client-servicing/client-statement-information">Client Statement Information</a>
+		
+					<ul rel='2'>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+						</li>
+				
+				
+
+			</ul>
+			</div>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature">Literature</a>
+		
+					<div class="navPanel">
+				
+				
+
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/literature/fact-sheets">Fact Sheets</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/fact-sheets/mutual-funds">Mutual Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/fact-sheets/closed-end-funds">Closed End Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/fact-sheets/separately-managed-accounts">Separately Managed Accounts</a>
+						</li>
+				<li class="navMore">
+					<a href="/us/financial-professionals/literature/fact-sheets">View All</a>
+				</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/literature/shareholder-reports">Shareholder Reports</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/shareholder-reports/mutual-funds">Mutual Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/shareholder-reports/closed-end-funds">Closed End Funds</a>
+						</li>
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/prospectuses">Prospectuses</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/prospectuses/mutual-funds">Mutual Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/prospectuses/money-market-funds">Money Market Funds</a>
+						</li>
+
+			</ul>
+						</li>
+				
+				
+
+								</ul>
+							<ul class="navColumn" rel='1 COLUMN'>
+						<li >
+							<a href="/us/financial-professionals/literature/commentary">Commentary</a>
+		
+					<ul rel='2'>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/commentary/general-investment">General Investment</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/commentary/mutual-funds">Mutual Funds</a>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/commentary/closed-end-funds">Closed End Funds</a>
+						</li>
+
+			</ul>
+						</li>
+				
+				
+
+						<li >
+							<a href="/us/financial-professionals/literature/forms-applications">Forms & Applications</a>
+						</li>
+
+			</ul>
+			</div>
+						</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+			</ul>
+</div> 
+
+							<div id="mainWrapper">
+		<div id="columnLeft" rel="LNAV">
+
+
+	
+	<div id="leftNavProdFind">
+		<h2>Find Products</h2><div class="fundSearch">	<div id="WSODfundSearch">		<input id="wsod_suggest" value="Enter fund name, ticker or CUSIP" default="Enter fund name, ticker or CUSIP" />		<a href="#" id="wsod_suggest_go" class="buttonOrange">Find</a></div></div>
+	</div>
+	<div id="leftNav">
+			<h6>Explore&nbsp;
+				2012 Tax Distributions
+			</h6>
+			<ul>
+					<li><a href="/us/financial-professionals/client-servicing/tax-information/tax-info-archive">Tax Info Archive</a></li>
+					<li><a href="/us/financial-professionals/client-servicing/tax-information/tax-related-faqs">Tax-Related FAQs</a></li>
+					<li><a href="/us/financial-professionals/client-servicing/tax-information/2009-distributions">2009 Distributions</a></li>
+					<li><a href="/us/financial-professionals/client-servicing/tax-information/2008-distributions">2008 Distributions</a></li>
+			</ul>
+	</div>
+			<br>
+			<div class="columnFull columnLogin"> 
+				<!--<b><i>FPAuthenticationRequired : FALSE</i></b>-->
+			</div>
+		</div>
+		<div id="columnMain" rel="MAIN">
+				<a name="top"></a>
+				<div id="pageHeader"> 
+<div id="breadCrumbs" >
+			<ul>
+			<li><a href="/us/financial-professionals">Financial Professionals</a></li>
+			<li><a href="/us/financial-professionals/client-servicing">Client Servicing</a></li>
+			<li><a href="/us/financial-professionals/client-servicing/tax-information">Tax Information</a></li>
+			<li><a href="/us/financial-professionals/client-servicing/tax-information/2012-tax-distributions">2012 Tax Distributions</a></li>
+		</ul>
+</div> <div id="pageUtils" > 
+	<ul>
+		<li><a id="puEmail" class="iconEmail" href="mailto..." rel="nofollow">email page</a></li>
+		<li><a id="puPrint" class="iconPrint" target="_blank" href="#" rel="nofollow">print page</a></li>
+	</ul>
+</div> 
+				</div>
+<!-- eid = 1111158007 -->
+<h1>2012 Distributions for BlackRock Funds</h1><div class="columnFull"><a id="top" name="top"></a>  <div id="callAlt1" class="pageNote">    <p>For fund-specific, historical distribution information, please refer to the &quot;Distribution&quot; tab located on each fund's profile, where available.</p>  </div>  <h5>Choose your fund:</h5>  <p>    <select onchange="processOptions(this)" name="select">      <option value="">Select a BlackRock Fund</option>      <option value="#ACWI_ex_US_Index_Fund">ACWI ex-US Index Fund</option>     <option value="#BlackRock_Asset_Allocation_Portfolio">BlackRock Asset Allocation Portfolio</option>      <!--<option value="#BlackRock_Balanced_Capital_Fund">BlackRock Balanced Capital Fund, Inc.</option>      <option value="#BlackRock_Basic_Value_Fund_Inc">BlackRock Basic Value Fund, Inc.</option> -->      <option value="#BlackRock_Bond_Index_Fund">BlackRock Bond Index Fund</option><!--      <option value="#BlackRock_Bond_Portfolio">BlackRock Bond Portfolio</option>      <option value="#BlackRock_California_Municipal_Bond_Fund">BlackRock California Municipal Bond Fund</option>      <option value="#BlackRock_China_Fund">BlackRock China Fund</option>      <option value="#BlackRock_Energy_and_Resources_Portfolio">BlackRock Energy and Resources Portfolio</option>-->      <option value="#BlackRock_Equity_Dividend_Fund">BlackRock Equity Dividend Fund</option>     <!-- <option value="#BlackRock_EuroFund">BlackRock EuroFund</option>-->      <option value="#BlackRock_Exchange_Portfolio">BlackRock Exchange Portfolio</option>     <!-- <option value="#BlackRock_Focus_Growth_Fund_Inc">BlackRock Focus Growth Fund, Inc.</option>      <option value="#BlackRock_Focus_Value_Fund_Inc">BlackRock Focus Value Fund, Inc.</option>-->      <option value="#BlackRock_Fixed_Income_Value_Opportunities">BlackRock Fixed Income Value Opportunities</option>     <!-- <option value="#BlackRock_Global_Allocation_Fund_Inc">BlackRock Global Allocation Fund, Inc.</option>-->      <option value="#BlackRock_Global_Dividend_Income_Portfolio">BlackRock Global Dividend Income Portfolio</option>    <!--  <option value="#BlackRock_Global_Dynamic_Equity_Fund">BlackRock Global Dynamic Equity Fund</option>      <option value="#BlackRock_Global_Emerging_Markets_Fund_Inc">BlackRock Global Emerging Markets Fund, Inc.</option>      <option value="#BlackRock_Global_Growth_Fund_Inc">BlackRock Global Growth Fund, Inc.</option>      <option value="#BlackRock_Global_Opportunities_Portfolio">BlackRock Global Opportunities Portfolio</option>      <option value="#BlackRock_Global_Small_Cap_Fund">BlackRock Global Small Cap Fund</option>      <option value="#BlackRock_Government_Income_Portfolio">BlackRock Government Income Portfolio</option>      <option value="#BlackRock_Healthcare_Fund_Inc">BlackRock Healthcare Fund, Inc.</option>      <option value="#BlackRock_Health_Sciences_Opportunities_Portfolio">BlackRock Health Sciences Opportunities Portfolio</option>      <option value="#BlackRock_High_Income_Fund">BlackRock High Income Fund</option>      <option value="#High_Income_Portfolio_Managed_Account_Series">High Income Portfolio of the Managed Account Series</option>      <option value="#BlackRock_High_Yield_Municipal_Fund">BlackRock High Yield Municipal Fund</option>      <option value="#BlackRock_Income_Portfolio">BlackRock Income Portfolio</option>-->      <option value="#BlackRock_Index_Equity_Portfolio">BlackRock Index Equity Portfolio</option>     <!-- <option value="#BlackRock_India_Fund">BlackRock India Fund</option>      <option value="#BlackRock_Intermediate_Municipal_Fund">BlackRock Intermediate Municipal Fund</option>      <option value="#BlackRock_International_Fund">BlackRock International Fund</option>      <option value="#BlackRock_International_Index_Fund">BlackRock International Index Fund</option>      <option value="BlackRock_International_Opportunities_Portfolio">BlackRock International Opportunities Portfolio</option>      <option value="#BlackRock_International_Value_Fund">BlackRock International Value Fund</option>      <option value="#BlackRock_Large_Cap_Core_Fund">BlackRock Large Cap Core Fund</option>      <option value="#BlackRock_Large_Cap_Core_Retirement_Portfolio">BlackRock Large Cap Core Retirement Portfolio</option>      <option value="#BlackRock_Large_Cap_Growth_Fund">BlackRock Large Cap Growth Fund</option>      <option value="#BlackRock_Large_Cap_Growth_Retirement_Portfolio">BlackRock Large Cap Growth Retirement Portfolio</option>      <option value="#BlackRock_Large_Cap_Value_Fund">BlackRock Large Cap Value Fund</option>      <option value="#BlackRock_Large_Cap_Value_Retirement_Portfolio">BlackRock Large Cap Value Retirement Portfolio</option>      <option value="#BlackRock_Latin_America_Fund_Inc">BlackRock Latin America Fund, Inc.</option>      <option value="#BlackRock_Managed_Income_Portfolio">BlackRock Managed Income Portfolio</option>      <option value="#BlackRock_Mid_Cap_Value_Equity_Portfolio">BlackRock Mid-Cap Value Equity Portfolio</option>      <option value="#BlackRock_Mid_Cap_Value_Opportunities_Fund">BlackRock Mid Cap Value Opportunities Fund</option>                   <option value="#BlackRock_Money_Market_Portfolio">BlackRock Money Market Portfolio</option>-->             <option value="#BlackRock_Multi_Asset_Income_Portfolio">BlackRock Multi-Asset Income Portfolio</option>      <!--<option value="#BlackRock_National_Municipal_Fund">BlackRock National Municipal Fund</option>      <option value="#BlackRock_Natural_Resources_Trust">BlackRock Natural Resources Trust</option>      <option value="#BlackRock_New_York_Municipal_Bond_Fund">BlackRock New York Municipal Bond Fund</option>      <option value="#BlackRock_NJ_Municipal_Money_Market_Portfolio">BlackRock NJ Municipal Money Market Portfolio</option>      <option value="#BlackRock_PA_Municipal_Money_Market_Portfolio">BlackRock PA Municipal Money Market Portfolio</option>      <option value="#BlackRock_Pacific_Fund">BlackRock Pacific Fund, Inc.</option>      <option value="#BlackRock_Pennsylvania_Municipal_Bond_Fund">BlackRock Pennsylvania Municipal Bond Fund</option>-->            <option value="#BlackRock_Russell_1000_Index_Fund">BlackRock Russell 1000 Index Fund</option>    <!--  <option value="#BlackRock_S&amp;P_500_Index_Fund">BlackRock S&amp;P 500 Index Fund</option>      <option value="#BlackRock_S&amp;P_500_Stock_Fund">BlackRock S&amp;P 500 Stock Fund</option>      <option value="#BlackRock_Short-Term_Bond_Fund">BlackRock Short-Term Bond Fund</option>      <option value="#BlackRock_Small_Cap_Growth_Equity_Portfolio">BlackRock Small Cap Growth Equity Portfolio</option>      <option value="#BlackRock_Small_Cap_Growth_Fund_II">BlackRock Small Cap Growth Fund II</option>      <option value="#BlackRock_Small_Cap_Index_Fund">BlackRock Small Cap Index Fund</option>      <option value="#BlackRock_Strategic_Income_Opportunities_Portfolio">BlackRock Strategic Income Opportunities Portfolio</option>      <option value="#BlackRock_US_Government_Bond_Portfolio">BlackRock US Government Bond Portfolio</option>      <option value="BlackRock_U.S._Opportunities_Portfolio">BlackRock U.S. Opportunities Portfolio</option>      <option value="#BlackRock_US_Treasury_Money_Market_Portfolio">BlackRock U.S. Treasury Money Market Portfolio</option>      <option value="#BlackRock_Utilities_and_Telecommunications_Fund">BlackRock Utilities and Telecommunications Fund, Inc.</option>      <option value="BlackRock_World_Gold_Fund">BlackRock World Gold Fund</option>-->      <option value="#LifePath_2020_Portfolio">LifePath 2020 Portfolio</option>      <option value="#LifePath_2025_Portfolio">LifePath 2025 Portfolio</option>      <option value="#LifePath_2030_Portfolio">LifePath 2030 Portfolio</option>      <option value="#LifePath_2035_Portfolio">LifePath 2035 Portfolio</option>      <option value="#LifePath_2040_Portfolio">LifePath 2040 Portfolio</option>      <option value="#LifePath_2045_Portfolio">LifePath 2045 Portfolio</option>      <option value="#LifePath_2050_Portfolio">LifePath 2050 Portfolio</option>      <option value="#LifePath_2055_Portfolio">LifePath 2055 Portfolio</option>      <option value="#LifePath_Retirement_Portfolio">LifePath Retirement Portfolio</option>      <option value="#LifePath_Index_2020_Portfolio">LifePath Index 2020 Portfolio</option>      <option value="#LifePath_Index_2025_Portfolio">LifePath Index 2025 Portfolio</option>      <option value="#LifePath_Index_2030_Portfolio">LifePath Index 2030 Portfolio</option>      <option value="#LifePath_Index_2035_Portfolio">LifePath Index 2035 Portfolio</option>      <option value="#LifePath_Index_2040_Portfolio">LifePath Index 2040 Portfolio</option>      <option value="#LifePath_Index_2045_Portfolio">LifePath Index 2045 Portfolio</option>      <option value="#LifePath_Index_2050_Portfolio">LifePath Index 2050 Portfolio</option>      <option value="#LifePath_Index_2055_Portfolio">LifePath Index 2055 Portfolio</option>      <option value="#LifePath_Index_Retirement_Portfolio">LifePath Index Retirement Portfolio</option>     <!-- <option value="#Managed_Account_Series_Global_Small_Cap_Portfolio">Managed Account Series Global Small Cap Portfolio</option>      <option value="#Managed_Account_Series_Mid_Cap_Value_Opportunities_Portfolio">Managed Account Series: Mid Cap Value Opportunities Portfolio</option>      <option value="#Van_Kampen_Value_FDP_Fund">Van Kampen Value FDP Fund</option>      <option value="#MFS_Research_International_FDP_Fund">MFS Research International FDP Fund</option>      <option value="#Russell_1000_Index_Fund">Russell 1000 Index Fund</option>-->    </select>  </p>  <br />  <h2>Recent Distributions</h2>          <h5><a id="BlackRock_Asset_Allocation_Portfolio" name="BlackRock_Asset_Allocation_Portfolio"></a>BlackRock Asset Allocation Portfolio</h5>  <p><strong>Record Date: 04/17/12 | Ex-Date: 04/18/12 | Payable Date: 04/19/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.151026</td>      <td>0</td>      <td>0.151026</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor B Shares</strong></td>      <td>0.110370</td>      <td>0</td>      <td>0.110370</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.125337</td>      <td>0</td>      <td>0.125337</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.162849</td>      <td>0</td>      <td>0.162849</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Service Shares</strong></td>      <td>0.151413</td>      <td>0</td>      <td>0.151413</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />            <h5><a id="BlackRock_Equity_Dividend_Fund" name="BlackRock_Equity_Dividend_Fund"></a>BlackRock Equity Dividend Fund</h5>  <p><strong>Record Date: 04/17/12 | Ex-Date: 04/18/12 | Payable Date: 04/19/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.089629</td>      <td>0</td>      <td>0.089629</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor B Shares</strong></td>      <td>0.046174</td>      <td>0</td>      <td>0.046174</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.058286</td>      <td>0</td>      <td>0.058286</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C1 Shares</strong></td>      <td>0.060658</td>      <td>0</td>      <td>0.060658</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R Shares</strong></td>      <td>0.077487</td>      <td>0</td>      <td>0.077487</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.102378</td>      <td>0</td>      <td>0.102378</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Service Shares</strong></td>      <td>0.092470</td>      <td>0</td>      <td>0.092470</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />            <h5><a id="BlackRock_Exchange_Portfolio" name="BlackRock_Exchange_Portfolio"></a>BlackRock Exchange Portfolio</h5>  <p><strong>Record Date: 04/17/12 | Ex-Date: 04/18/12 | Payable Date: 04/19/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>BlackRock Shares</strong></td>      <td>1.250000</td>      <td>0</td>      <td>1.250000</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />            <h5><a id="BlackRock_Global_Dividend_Income_Portfolio" name="BlackRock_Global_Dividend_Income_Portfolio"></a>BlackRock Global Dividend Income Portfolio</h5>  <p><strong>Record Date: 04/17/12 | Ex-Date: 04/18/12 | Payable Date: 04/19/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.058794</td>      <td>0</td>      <td>0.058794</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.042507</td>      <td>0</td>      <td>0.042507</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.064993</td>      <td>0</td>      <td>0.064993</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />            <h5><a id="BlackRock_Index_Equity_Portfolio" name="BlackRock_Index_Equity_Portfolio"></a>BlackRock Index Equity Portfolio</h5>  <p><strong>Record Date: 04/17/12 | Ex-Date: 04/18/12 | Payable Date: 04/19/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor A Shares</strong></td>      <td>0.116112</td>      <td>0</td>      <td>0.116112</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor B Shares</strong></td>      <td>0.020748</td>      <td>0</td>      <td>0.020748</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.063826</td>      <td>0</td>      <td>0.063826</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.130768</td>      <td>0</td>      <td>0.130768</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td>Service Shares</td>      <td>0.120651</td>      <td>0</td>      <td>0.120651</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />  <h5><a id="BlackRock_Multi_Asset_Income_Portfolio" name="BlackRock_Multi_Asset_Income_Portfolio"></a>BlackRock Multi-Asset Income Portfolio</h5>  <p><strong>Record Date: 04/02/12 | Ex-Date: 04/03/12 | Payable Date: 04/04/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.035289</td>      <td>0</td>      <td>0.035289</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.031216</td>      <td>0</td>      <td>0.031216</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.036761</td>      <td>0</td>      <td>0.036761</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />            <h5><a id="BlackRock_ACWI_ex_US_Index_Fund" name="BlackRock_ACWI_ex_US_Index_Fund"></a>BlackRock ACWI ex-US Index Fund</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.045943</td>      <td>0</td>      <td>0.045943</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.051409</td>      <td>0</td>      <td>0.051409</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.052279</td>      <td>0</td>      <td>0.052279</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />    <h5><a id="BlackRock_Bond_Index_Fund" name="BlackRock_Bond_Index_Fund"></a>BlackRock Bond Index Fund</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.018996</td>      <td>0</td>      <td>0.018996</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.021233</td>      <td>0</td>      <td>0.021233</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.021509</td>      <td>0</td>      <td>0.021509</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />        <h5><a id="BlackRock_Russell_1000_Index_Fund" name="BlackRock_Russell_1000_Index_Fund"></a>BlackRock Russell 1000 Index Fund</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.042228</td>      <td>0</td>      <td>0.042228</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.047174</td>      <td>0</td>      <td>0.047174</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.048414</td>      <td>0</td>      <td>0.048414</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />  <h5><a id="BlackRock_S&P_500_Stock_Fund" name="BlackRock_S&P_500_Stock_Fund"></a>BlackRock S&P 500 Stock Fund</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td>&nbsp;</td>      <td>0.621417</td>      <td>0</td>      <td>0.621417</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table><br /><br />    <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Retirement_Portfolio" name="LifePath_Retirement_Portfolio"></a>LifePath Retirement Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.029377</td>      <td>0</td>      <td>0.029377</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.013318</td>      <td>0</td>      <td>0.013318</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.022982</td>      <td>0</td>      <td>0.022982</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.034283</td>      <td>0</td>      <td>0.034283</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.044407</td>      <td>0</td>      <td>0.044407</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2020_Portfolio" name="LifePath_2020_Portfolio"></a>LifePath 2020 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.035229</td>      <td>0</td>      <td>0.035229</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.017378</td>      <td>0</td>      <td>0.017378</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.030912</td>      <td>0</td>      <td>0.030912</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.042830</td>      <td>0</td>      <td>0.042830</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.056351</td>      <td>0</td>      <td>0.056351</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2025_Portfolio" name="LifePath_2025_Portfolio"></a>LifePath 2025 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.021948</td>      <td>0</td>      <td>0.021948</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.000504</td>      <td>0</td>      <td>0.000504</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.018163</td>      <td>0</td>      <td>0.018163</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.030381</td>      <td>0</td>      <td>0.030381</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.037431</td>      <td>0</td>      <td>0.037431</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2030_Portfolio" name="LifePath_2030_Portfolio"></a>LifePath 2030 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.028965</td>      <td>0</td>      <td>0.028965</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.005390</td>      <td>0</td>      <td>0.005390</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.021788</td>      <td>0</td>      <td>0.021788</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.037421</td>      <td>0</td>      <td>0.037421</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.049866</td>      <td>0</td>      <td>0.049866</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2035_Portfolio" name="LifePath_2035_Portfolio"></a>LifePath 2035 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.020796</td>      <td>0</td>      <td>0.020796</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.000000</td>      <td>0</td>      <td>0.000000</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.013372</td>      <td>0</td>      <td>0.013372</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.028313</td>      <td>0</td>      <td>0.028313</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.036019</td>      <td>0</td>      <td>0.036019</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2040_Portfolio" name="LifePath_2040_Portfolio"></a>LifePath 2040 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.032647</td>      <td>0</td>      <td>0.032647</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.027198</td>      <td>0</td>      <td>0.027198</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.023353</td>      <td>0</td>      <td>0.023353</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.042004</td>      <td>0</td>      <td>0.042004</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.057028</td>      <td>0</td>      <td>0.057028</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2045_Portfolio" name="LifePath_2045_Portfolio"></a>LifePath 2045 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.018915</td>      <td>0</td>      <td>0.018915</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.000000</td>      <td>0</td>      <td>0.000000</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.020946</td>      <td>0</td>      <td>0.020946</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.026921</td>      <td>0</td>      <td>0.026921</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.034471</td>      <td>0</td>      <td>0.034471</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2050_Portfolio" name="LifePath_2050_Portfolio"></a>LifePath 2050 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.028364</td>      <td>0</td>      <td>0.028364</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.006216</td>      <td>0</td>      <td>0.006216</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.020132</td>      <td>0</td>      <td>0.020132</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.040233</td>      <td>0</td>      <td>0.040233</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.055101</td>      <td>0</td>      <td>0.055101</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_2055_Portfolio" name="LifePath_2055_Portfolio"></a>LifePath 2055 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.017078</td>      <td>0</td>      <td>0.017078</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.000000</td>      <td>0</td>      <td>0.000000</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class R</strong></td>      <td>0.007579</td>      <td>0</td>      <td>0.007579</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.024692</td>      <td>0</td>      <td>0.024692</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.030003</td>      <td>0</td>      <td>0.030003</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_Retirement_Portfolio" name="LifePath_Index_Retirement_Portfolio"></a>LifePath Index Retirement Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.011824</td>      <td>0</td>      <td>0.011824</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.018085</td>      <td>0</td>      <td>0.018085</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.018088</td>      <td>0</td>      <td>0.018088</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2020_Portfolio" name="LifePath_Index_2020_Portfolio"></a>LifePath Index 2020  Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.016184</td>      <td>0</td>      <td>0.016184</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.021799</td>      <td>0</td>      <td>0.021799</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.021805</td>      <td>0</td>      <td>0.021805</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2025_Portfolio" name="LifePath_Index_2025_Portfolio"></a>LifePath Index 2025 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.022324</td>      <td>0</td>      <td>0.022324</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.025265</td>      <td>0</td>      <td>0.025265</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.025363</td>      <td>0</td>      <td>0.025363</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index 2030_Portfolio" name="LifePath_Index 2030_Portfolio"></a>LifePath Index 2030 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.016877</td>      <td>0</td>      <td>0.016877</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.022540</td>      <td>0</td>      <td>0.022540</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.022545</td>      <td>0</td>      <td>0.022545</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2035_Portfolio" name="LifePath_Index_2035_Portfolio"></a>LifePath Index 2035 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.025628</td>      <td>0</td>      <td>0.025628</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.030114</td>      <td>0</td>      <td>0.030114</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.030309</td>      <td>0</td>      <td>0.030309</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2040_Portfolio" name="LifePath_Index_2040_Portfolio"></a>LifePath Index 2040 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.016812</td>      <td>0</td>      <td>0.016812</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.022397</td>      <td>0</td>      <td>0.022397</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.022403</td>      <td>0</td>      <td>0.022403</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2045_Portfolio" name="LifePath_Index_2045_Portfolio"></a>LifePath Index 2045 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.029773</td>      <td>0</td>      <td>0.029773</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.033646</td>      <td>0</td>      <td>0.033646</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.034047</td>      <td>0</td>      <td>0.034047</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index_2050_Portfolio" name="LifePath_Index_2050_Portfolio"></a>LifePath Index 2050 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.026600</td>      <td>0</td>      <td>0.026600</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.031435</td>      <td>0</td>      <td>0.031435</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.031504</td>      <td>0</td>      <td>0.031504</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />      <h5><a id="LifePath_Index 2055_Portfolio" name="LifePath_Index 2055_Portfolio"></a>LifePath Index 2055 Portfolio</h5>  <p><strong>Record Date: 03/29/12 | Ex-Date: 03/30/12 | Payable Date: 04/02/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.029488</td>      <td>0</td>      <td>0.029488</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.033669</td>      <td>0</td>      <td>0.033669</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Class K</strong></td>      <td>0.034780</td>      <td>0</td>      <td>0.034780</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />  <h5><a id="BlackRock_Fixed_Income_Value_Opportunities" name="BlackRock_Fixed_Income_Value_Opportunities"></a>BlackRock Fixed Income Value Opportunities</h5>  <p><strong>Record Date: 03/28/12 | Ex-Date: 03/29/12 | Payable Date: 03/30/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td>&nbsp;</td>      <td>22.500000</td>      <td>0</td>      <td>22.500000</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table><br /><br />    <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><br />  <h5><a id="BlackRock_Multi_Asset_Income_Portfolio" name="BlackRock_Multi_Asset_Income_Portfolio"></a>BlackRock Multi-Asset Income Portfolio</h5>  <p><strong>Record Date: 03/21/12 | Ex-Date: 03/22/12 | Payable Date: 03/23/12</strong></p>  <table class="altRows">    <tr>      <th>Share Class</th>      <th><strong>Net<br />        Investment<br />        Income<br />        Rate</strong></th>      <th><strong>Short-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Total<br />        Ordinary<br />        Income<br />        Rate</strong></th>      <th><strong>Long-Term<br />        Capital Gain<br />        Rate</strong></th>      <th><strong>Foreign<br />        Tax Credit<br />        Rate</strong></th>      <th><strong>Total<br />        Long-Term<br />        Capital<br />        Gain</strong></th>    </tr>    <tr>      <td><strong>Investor    A Shares</strong></td>      <td>0.024554</td>      <td>0</td>      <td>0.024554</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Investor C Shares</strong></td>      <td>0.022522</td>      <td>0</td>      <td>0.022522</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>    <tr>      <td><strong>Institutional Shares</strong></td>      <td>0.025210</td>      <td>0</td>      <td>0.025210</td>      <td>0</td>      <td>0</td>      <td>0</td>    </tr>  </table>  <br /><br />  <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div><p>&nbsp;</p>   <h2>Past Distributions</h2>   <h5><a id="BlackRock_Bond_Index_Fund2" name="BlackRock_Bond_Index_Fund"></a>BlackRock Bond Index Fund</h5>   <p><strong>Record Date: 02/28/12 | Ex-Date: 02/29/12 | Payable Date: 03/01/12</strong></p>   <table class="altRows">     <tr>       <th>Share Class</th>       <th><strong>Net<br />         Investment<br />         Income<br />         Rate</strong></th>       <th><strong>Short-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Total<br />         Ordinary<br />         Income<br />         Rate</strong></th>       <th><strong>Long-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Foreign<br />         Tax Credit<br />         Rate</strong></th>       <th><strong>Total<br />         Long-Term<br />         Capital<br />         Gain</strong></th>     </tr>     <tr>       <td><strong>Investor A Shares</strong></td>       <td>0.022253</td>       <td>0</td>       <td>0.022253</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Institutional Shares</strong></td>       <td>0.023697</td>       <td>0</td>       <td>0.023697</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Class K Shares</strong></td>       <td>0.024128</td>       <td>0</td>       <td>0.024128</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>   </table>   <p><strong>Record Date: 01/30/12 | Ex-Date: 01/31/12 | Payable Date: 02/01/12</strong></p>   <table class="altRows">     <tr>       <th>Share Class</th>       <th><strong>Net<br />         Investment<br />         Income<br />         Rate</strong></th>       <th><strong>Short-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Total<br />         Ordinary<br />         Income<br />         Rate</strong></th>       <th><strong>Long-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Foreign<br />         Tax Credit<br />         Rate</strong></th>       <th><strong>Total<br />         Long-Term<br />         Capital<br />         Gain</strong></th>     </tr>     <tr>       <td><strong>Investor A Shares</strong></td>       <td>0.022616</td>       <td>0</td>       <td>0.022616</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Institutional Shares</strong></td>       <td>0.025551</td>       <td>0</td>       <td>0.025551</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Class K Shares</strong></td>       <td>0.025101</td>       <td>0</td>       <td>0.025101</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>   </table>   <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div>   <p>&nbsp;</p>   <h5><a id="BlackRock_Multi_Asset_Income_Portfolio" name="BlackRock_Multi_Asset_Income_Portfolio"></a>BlackRock Multi-Asset Income Portfolio</h5>   <p><strong>Record Date: 02/15/12 | Ex-Date: 02/16/12 | Payable Date: 02/17/12</strong></p>  <table class="altRows">     <tr>       <th>Share Class</th>       <th><strong>Net<br />         Investment<br />         Income<br />         Rate</strong></th>       <th><strong>Short-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Total<br />         Ordinary<br />         Income<br />         Rate</strong></th>       <th><strong>Long-Term<br />         Capital Gain<br />         Rate</strong></th>       <th><strong>Foreign<br />         Tax Credit<br />         Rate</strong></th>       <th><strong>Total<br />         Long-Term<br />         Capital<br />         Gain</strong></th>     </tr>     <tr>       <td><strong>Investor    A Shares</strong></td>       <td>0.017505</td>       <td>0</td>       <td>0.017505</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Investor C Shares</strong></td>       <td>0.014270</td>       <td>0</td>       <td>0.014270</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>     <tr>       <td><strong>Institutional Shares</strong></td>       <td>0.018358</td>       <td>0</td>       <td>0.018358</td>       <td>0</td>       <td>0</td>       <td>0</td>     </tr>   </table>     <div class="backToTop"><a href="#top" class="iconArrowUp">Back to Top</a></div>   <p>&nbsp;</p>  <p>Before taking any action based on the tax information provided, we recommend consulting your Financial Advisor. Specific questions regarding your personal income tax situation should be referred to your tax advisor.</p>  <p><p><strong><em>Investors should consider the investment objectives, risks, charges and expenses of any fund carefully before investing. The funds' <a href="/us/financial-professionals/ECON?blkifrmurl=https://estudio.blackrock.com/bin/search.asp?venue=PUB_IND&ServiceName=FPSearch&DocType=26&ProdGroup=29&appname=estudio">prospectuses</a> and, if available, the <a href="/us/financial-professionals/ECON?blkifrmurl=https://estudio.blackrock.com/bin/search.asp?venue=PUB_IND&ServiceName=FPSearch&DocType=128&ProdGroup=29&appname=estudio">summary prospectuses</a> contain this and other information about the funds, and are available, along with information on other BlackRock funds by calling 800-882-0052. The prospectus and, if available, the summary prospectuses should be read carefully before investing.</em></strong></p> </p>  <p>To view tax information for previous years,<a href="/us/financial-professionals/client-servicing/tax-information/tax-info-archive">click here</a>.</p></div>			<br>
+			<div class="columnFull columnLogin"> 
+				<!--<b><i>FPAuthenticationRequired : FALSE</i></b>-->
+			</div>
+		</div>
+							</div>	
+<div id="footerWrapper" > 
+	<!-- START dynamic content -->
+		<div id="footer_sitemap">
+				
+					<ul>
+						<li>
+							<a href="/us/financial-professionals/products-performance">Products & Performance</a>
+									 	
+										<ul rel="DROP">
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/mutual-funds">Mutual Funds</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/closed-end-funds">Closed-End Funds</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/managed-accounts">Managed Accounts</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/collegeadvantage-529-plan">CollegeAdvantage 529 Plan</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/alternative-investments">Alternative Investments</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/defined-contribution">Defined Contribution</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/variable-insurance-funds">Variable Insurance Funds</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/ishares-etfs">iShares ETFs</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/products-performance/performance-pricing">Performance & Pricing</a>
+															</li>
+	
+										</ul>
+						</li>
+					</ul>
+				
+					<ul>
+						<li>
+							<a href="/us/financial-professionals/market-insight">Market Insight</a>
+									 	
+										<ul rel="DROP">
+				
+						<li>
+							<a href="/us/financial-professionals/market-insight/market-commentary">Market Commentary</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/market-insight/market-strategies">Market Strategies</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/market-insight/product-commentary">Product Commentary</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/market-insight/daily-stat">Daily Stat</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/market-insight/chart-of-the-week">Chart of the Week</a>
+						</li>
+	
+										</ul>
+						</li>
+					</ul>
+				
+					<ul>
+						<li>
+							<a href="/us/financial-professionals/tools">Tools</a>
+									 	
+										<ul rel="DROP">
+				
+						<li>
+							<a href="/us/financial-professionals/tools/tool-center">Tool Center</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/tools/education-library">Education Library</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/tools/business-builders">Business Builders</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/tools/conversation-starters">Conversation Starters</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/tools/weekly-advisor-tip">Weekly Advisor Tip</a>
+						</li>
+	
+										</ul>
+						</li>
+					</ul>
+				
+					<ul>
+						<li>
+							<a href="/us/financial-professionals/client-servicing">Client Servicing</a>
+									 	
+										<ul rel="DROP">
+				
+						<li>
+							<SPAN class='padlock'><a href="/us/financial-professionals/client-servicing/share-classes-loads">Share Classes & Loads</a></SPAN>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/mutual-fund-expenses">Mutual Fund Expenses</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/collegeadvantage-529-expenses">CollegeAdvantage 529 Expenses</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/tax-information">Tax Information</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/account-access">Account Access</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/forms-applications">Forms & Applications</a>
+						</li>
+				
+						<li>
+							<a href="/us/financial-professionals/client-servicing/client-statement-information">Client Statement Information</a>
+						</li>
+	
+										</ul>
+						</li>
+					</ul>
+				
+					<ul>
+						<li>
+							<a href="/us/financial-professionals/literature">Literature</a>
+									 	
+										<ul rel="DROP">
+				
+						<li>
+							<a href="/us/financial-professionals/literature/fact-sheets">Fact Sheets</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/literature/shareholder-reports">Shareholder Reports</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/literature/prospectuses">Prospectuses</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/literature/commentary">Commentary</a>
+															</li>
+				
+						<li>
+							<a href="/us/financial-professionals/literature/forms-applications">Forms & Applications</a>
+						</li>
+	
+										</ul>
+						</li>
+					</ul>
+	
+	</div>
+	<!-- END dynamic content -->
+
+	<!-- START stellent content component -->
+	<div id="footer_co_info">
+			  <!--<style> #mastheadWrapper {  margin-top: 60px; }</style><div class="alert" style="width: 978px; height: 60px; position: absolute; left: 15px; top: 0; z-index: 20000; margin: 0;"> <p>This site will experience intermittent outages from 7:45 a.m. ET until approximately 12 p.m. ET on Saturday, September 10, due to site maintenance. We apologize for any inconvenience. </p></div>-->    <ul>		<li><strong>Company Information:</strong></li>		<li><a href="http://www.blackrock.com/global/home/AboutUs" target="_blank">About BlackRock</a></li>		<li><a href="http://www2.blackrock.com/global/home/InvestorRelations/index.htm" target="_blank">Investor Relations</a></li>		<li><a href="http://www2.blackrock.com/global/home/Careers/index.htm" target="_blank">Careers</a></li>        <li class="last"><a href="http://www2.blackrock.com/global/home/PublicPolicy/PublicPolicyhome/index.htm" target="_blank">Public Policy</a></li>		<!-- <li class="last"><a href="#">Contact Us</a></li> -->	</ul>	<ul>		<li><strong>Legal Information:</strong></li>		<li><a href="http://www.blackrock.com/global/home/PrivacyPolicy" target="_blank">Privacy Policy</a></li>		<li><a href="http://www.blackrock.com/global/home/TermsandConditions" target="_blank">Terms &amp; Conditions</a></li>		<li class="last"><a href="http://www2.blackrock.com/global/home/BusinessContinuity/index.htm" target="_blank">Business Continuity</a></li>	</ul>	<!-- <ul>		<li><strong>Stay Connected to BlackRock:</strong></li>		<li><a href="#">Suscribe to our Newsletter</a></li>		<li class="last"><a href="#">Subscribe to our Podcast</a></li>	</ul>	<ul>		<li><strong>Help:</strong></li>		<li><a href="#">Glossary</a></li>		<li><a href="#">Sitemap</a></li>		<li class="last"><a href="#">FAQs</a></li>	</ul> -->  
+	</div>
+	<!-- END stellent content component -->
+	<div id="footer_bottom">
+		<div>&copy; 2012 BlackRock, Inc. All rights reserved. </div>
+	</div>
+	
+</div> 
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+<!-- This is a place holder to handle any potential javascript or other code we may want to include after the body is rendered --></html>

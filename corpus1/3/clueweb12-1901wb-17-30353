@@ -1,0 +1,712 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-04T10:47:36Z
+WARC-TREC-ID: clueweb12-1901wb-17-30353
+WARC-IP-Address: 207.96.225.40
+WARC-Payload-Digest: sha1:JISZUWK5666RTT5NLDOOGJCFKATVAE3S
+WARC-Target-URI: http://www.montmorencyford.com/en/car-parts/tires/
+WARC-Record-ID: <urn:uuid:fc95eee3-de0a-4b61-88ae-91e027deb71d>
+Content-Type: application/http; msgtype=response
+Content-Length: 35682
+
+HTTP/1.1 200 OK
+Date: Fri, 04 May 2012 10:47:36 GMT
+Server: Apache/1.3.37 (Unix) mod_macro/1.1.2 mod_spy/1.3.25
+Content-Length: 35438
+Content-Type: text/html
+Set-cookie: _SPY_x_lng='fr'; path=/
+Vary: Accept-Encoding
+Connection: close
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<!-- 450MONTMORENCYFORD -->
+
+
+
+
+
+
+
+
+  <title>Tire Centre - Cars, Trucks, Commercial Vehicles | Montmorency Ford</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="">
+<meta name="keywords" content="Montmorency Ford,Brossard,Québec,canada,canadian,Ford,Lincoln,new car,used car,cars,car,trucks,truck,minivan,pick-up,new automobile,automobile,buy,purchase,dealer,depositary,dealers,depositaries,accessory,accessories,custom,dealership,maintenance,performance,motor,motors,rent,leasing,location,new models,auto parts,new model,fix,fixing,repair,repairs,sale,sales,service,shopping,used vehicle,new vehicle,club,clubs,event,promotion,sweepstakes,rebate">
+<meta name="publisher" content="Montmorency Ford">
+<meta name="Copyright" content="Montmorency Ford">
+<meta name="Distribution" content="Global">
+<meta name="Rating" content="General">
+<meta name="Language" content="en-ca">
+<meta name="Author" content="Montmorency Ford">
+<meta name="Identifier-url" content="www.montmorencyford.com">
+<meta name="verify-v1" content="Y4HDgC/Ce0S8d9UB+bM/+0keofyQhCx+Wrqm+6dp9bY=">
+
+<meta name="geography" content="7225, boul. Taschereau, Brossard, Québec, J4Y 1A1">
+<meta name="city" content="Brossard">
+<meta name="country" content="Canada">
+<meta name="robots" content="index, follow">
+<link href="http://www.montmorencyford.com/css.spy" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<link href="http://www.montmorencyford.com/css_ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<script src="/dealersite/js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+<script src="http://www.montmorencyford.com/en/rollover.spy" type="text/javascript"></script>
+<script src="http://www.montmorencyford.com/scrolling.js" type="text/javascript"></script>
+<script src="http://www.montmorencyford.com/dealersite/flash/swfobject2.js" type="text/javascript"></script>
+<script src="http://www.montmorencyford.com/dealersite/js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*
+function popCredit(){
+  MainDisplay = window.open('https://secure.auto123.com/montmorencyford/credit/en/index.spy?dealercode=450MONTMORENCYFORD','MainWindow','width=640,height=440,resizable=yes,menubar=yes,toolbar=no,scrollbars=yes,status=yes,dependent=no,left=0,top=0');
+}
+*/
+
+function resizePromos(maxwidth,maxheight,image,imgId){
+  maxWidth = maxwidth;
+  maxHeight = maxheight;
+  tempWidth = 0;
+  tempHeight = 0;
+  promoImage = new Image();
+
+  promoImage.onload = function(){
+    tempRatio = promoImage.width / promoImage.height;
+    if (promoImage.width > maxWidth){
+      tempWidth = maxWidth;
+      tempHeight = tempWidth / tempRatio;
+    }
+    if (tempHeight != 0 && (tempHeight > maxHeight)){
+      tempHeight = maxHeight;
+      tempWidth = tempHeight * tempRatio;
+    }
+    if (tempHeight == 0 && (promoImage.height > maxHeight)){
+      tempHeight = maxHeight;
+      tempWidth = tempHeight * tempRatio;
+    }
+    if (tempWidth != 0 || tempHeight != 0){
+      document.getElementById(imgId).style.width = tempWidth;
+      document.getElementById(imgId).style.height = tempHeight;
+    }
+  }
+
+  promoImage.src = image;
+}
+
+$(document).ready(function(){
+  $('.textMore').hide();
+  $('.textMore').after('<p class="readmore"><a href="#">Read more &raquo;</a></p>');
+
+  $('p.readmore a').click(function(){
+    $(this).parents('.text').find('.textMore').show();
+    $('p.readmore').hide();
+    return false;
+  });
+});
+
+function showDiv(id){
+  document.getElementById(id).style.display = '';
+
+  return false;
+}
+
+function hideDiv(id){
+  document.getElementById(id).style.display = 'none';
+
+  return false;
+}
+</script>
+
+
+<!-- Start Visual Website Optimizer Code -->
+<script type='text/javascript'>
+var _vis_opt_account_id = 6181;
+var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+document.write('<s' + 'cript src="' + _vis_opt_protocol +
+'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
++encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+</script>
+
+<script type='text/javascript'>
+if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +
+'d5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+// if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above
+</script>
+
+<script type='text/javascript'>
+if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+}
+</script>
+<!-- End Visual Website Optimizer Code -->
+
+<!-- Start Visual Website Optimizer Analytics Plugin -->
+<script type="text/javascript">
+function _vis_opt_GA_track(){try{id=_vis_opt_experiment_id;u="undefined";typeof _vis_opt_GA_slot==u&&(_vis_opt_GA_slot=4);var e=_vis_opt_readCookie("_vis_opt_exp_"+id+"_combi");if(typeof _vwo_exp[id].combination_chosen!=u)e=_vwo_exp[id].combination_chosen;typeof _vis_opt_comb_name[e]!=u&&(typeof pageTracker!=u?pageTracker._setCustomVar(_vis_opt_GA_slot,"VWO-"+id,_vis_opt_comb_name[e],1):_gaq.push(["global._setCustomVar",_vis_opt_GA_slot,"VWO-"+id,_vis_opt_comb_name[e],1]))}catch(g){}}
+</script>
+<!-- End Visual Website Optimizer Analytics Plugin -->
+
+
+  <script type="text/javascript">
+    var virtualUrl = document.location.pathname + document.location.search;
+    virtualUrl += (document.location.search) ? "&" : "?";
+
+  
+
+  var contentType = "service";
+  var contentDetails = "parts";
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8645616-1']);
+  _gaq.push(['_setDomainName', '.montmorencyford.com']);
+  _gaq.push(['_setCustomVar', 1, contentType, contentType + "--" + contentDetails, 3]);
+  
+    _gaq.push(['_trackPageview']);
+  
+
+  _gaq.push(['global._setAccount', 'UA-20033281-1']);
+  _gaq.push(['global._setDomainName', '.montmorencyford.com']);
+  _gaq.push(['global._setCustomVar', 1, contentType, contentType + "--" + contentDetails, 3]);
+  if(typeof(_vis_opt_GA_track) == "function") { _vis_opt_GA_track(); }
+  
+    _gaq.push(['global._trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+
+</head>
+<body class="en" xlang="en">
+<div id="gallerywrap">
+  
+
+
+    <div id="topmodellist">
+      
+      <div class="topfb"><a href="http://www.facebook.com/update_security_info.php?wizard=1#!/pages/Montmorency-Ford/147756386862" target="_blank" title="Facebook"><img src="http://www.montmorencyford.com/img/fr/top_facebook.gif" width="74" height="28" alt="Facebook" border="0"></a></div>
+    </div>
+
+
+  <table cellpadding="0" cellspacing="0" style="width: 980px; height: 100%; margin: 0 auto; background-color: #FFFFFF;">
+    <tr>
+  	  <td colspan="2" id="siteheader">
+        <div id="siteheaderWrap">
+          <div id="mainlogo"><a href="http://www.montmorencyford.com/en/" title="Montmorency Ford - Ford Dealer in Brossard, Montreal"><img src="http://www.montmorencyford.com/img/en/top_logo.jpg" width="221" height="84" alt="Montmorency Ford - Ford Dealer in Brossard, Montreal"></a></div>
+          <div id="topaddy"><a href="http://www.montmorencyford.com/en/contact/" title="Contact Us"><img src="http://www.montmorencyford.com/img/en/top_slogan.gif" width="416" height="61" alt="Contact Us"></a></div>
+          <div id="topphone"><a href="http://www.montmorencyford.com/en/contact/" title="Contact Us"><img src="http://www.montmorencyford.com/img/en/top_phone.gif" width="251" height="58" alt="Contact Us"></a></div>
+
+          <ul id="mainnav">
+            <li class="special"><a href="http://www.montmorencyford.com/en/new/" title="New 2012-2013 Ford Lincoln Vehicles"><img src="http://www.montmorencyford.com/img/en/menu_top_01.gif" width="92" height="36" name="mainnav1" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="New 2012-2013 Ford Lincoln Vehicles"></a>
+              <ul class="customlist" style="display: none;">
+                <li><a href="/en/new/ford/cars/">New 2011-2012-2013 Ford Cars</a></li>
+                <li><a href="/en/new/ford/trucks/">New 2011-2012-2013 Ford Trucks</a></li>
+                <li><a href="/en/new/lincoln/">New 2012-2013 Lincoln Vehicles</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.montmorencyford.com/en/new/ford/fleet/" title="Ford Commercial Vehicles"><img src="http://www.montmorencyford.com/img/en/menu_top_02.gif" width="142" height="36" name="mainnav2" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="Ford Commercial Vehicles"></a></li>
+            <li class="special"><a href="http://www.montmorencyford.com/en/used/" title="Used Vehicles for Sale"><img src="http://www.montmorencyford.com/img/en/menu_top_03.gif" width="134" height="36" name="mainnav3" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="Used Vehicles for Sale"></a>
+              <ul class="customlist" style="display: none;">
+                <li><a href="http://www.montmorencyford.com/en/used/search/">Used Vehicle Search</a></li>
+                <li><a href="http://www.montmorencyford.com/en/used/lease-transfers/">Lease Transfers</a></li>
+              </ul>
+            </li>
+            <li class="special"><a href="http://www.montmorencyford.com/en/ford-promotions/" title="Ford Promotions"><img src="http://www.montmorencyford.com/img/en/menu_top_04.gif" width="83" height="36" name="mainnav4" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="Ford Promotions"></a>
+              <ul class="customlist" style="display: none;">
+                <li><a href="http://www.montmorencyford.com/en/ford-promotions/manufacturer/">Ford Canada Promotions</a></li>
+                <li><a href="http://www.montmorencyford.com/en/ford-promotions/#house">Montmorency Ford Promotions</a></li>
+              </ul>
+            </li>
+            <li class="special"><a href="http://www.montmorencyford.com/en/after-sales-service/" title="Ford After-Sales Service"><img src="http://www.montmorencyford.com/img/en/menu_top_05.gif" width="154" height="36" name="mainnav5" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="Ford After-Sales Service"></a>
+              <ul class="customlist" style="display: none;">
+                <li><a href="http://www.montmorencyford.com/en/after-sales-service/mechanical-service/">Ford Mechanical Service</a></li>
+                <li><a href="http://www.montmorencyford.com/en/after-sales-service/maintenance-schedule/">Ford Maintenance Schedule</a></li>
+                <li><a href="http://www.montmorencyford.com/en/body-shop/">Ford Body Shop Service</a></li>
+              </ul>
+            </li>
+            <li class="special"><a href="http://www.montmorencyford.com/en/car-parts/" title="Ford Parts and Accessories"><img src="http://www.montmorencyford.com/img/en/menu_top_06.gif" width="135" height="36" name="mainnav6" onmouseover="imgOn(this.name)" onmouseout="imgOff(this.name)" alt="Ford Parts and Accessories"></a>
+              <ul class="customlist last" style="display: none;">
+                <li><a href="http://www.montmorencyford.com/en/car-parts/tires/">Tire Centre</a></li>
+                <li><a href="http://www.montmorencyford.com/en/car-parts/carts/">Parts and Accessories Catalog</a></li>
+              </ul>
+            </li>
+          </ul>
+		  <p id="lnglink"><a href="http://www.montmorencyford.com/fr/">Français</a></p>
+        </div>
+
+        <div id="topimg">
+          <!-- <div id="topimg1">
+            <div class="topimgSlides">
+              
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_00_a.jpg" width="232" height="130" alt="Tire Centre" title="Tire Centre"></div>
+              
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_01_a.jpg" width="232" height="130" alt="Tire Centre" title="Tire Centre"></div>
+              
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_02_a.jpg" width="232" height="130" alt="Tire Centre" title="Tire Centre"></div>
+              
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_03_a.jpg" width="232" height="130" alt="Tire Centre" title="Tire Centre"></div>
+              
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_04_a.jpg" width="232" height="130" alt="Tire Centre" title="Tire Centre"></div>
+              
+            </div>
+          </div> -->
+
+          <div id="groupBanner">
+            <a id="boul_dodge" href="http://www.boulevarddodge.com/en/" title="Boulevard Dodge" target="_blank">Boulevard Dodge</a>
+            <a id="montmorency_ford" href="#nogo" title="Montmorency Ford">Montmorency Ford</a>
+            <a id="st-lau_hyundai" href="http://www.hyundai-montreal.com/en/" title="Saint-laurent Hyundai" target="_blank">Saint-laurent Hyundai</a>
+            <a id="boul_fiat" href="http://www.boulevarddodge.ca/index.htm?locale=en_CA" title="Boulevard Fiat" target="_blank">Boulevard Fiat</a>
+          </div>
+
+          <div id="topimg2">
+            
+              <div class="topimgSlides">
+                
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_00_b.jpg" width="748" height="274" alt="Tire Centre" title="Tire Centre"></div>
+                
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_01_b.jpg" width="748" height="274" alt="Tire Centre" title="Tire Centre"></div>
+                
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_02_b.jpg" width="748" height="274" alt="Tire Centre" title="Tire Centre"></div>
+                
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_03_b.jpg" width="748" height="274" alt="Tire Centre" title="Tire Centre"></div>
+                
+                <div class="item"><img src="http://www.montmorencyford.com/img/en/top_img_04_b.jpg" width="748" height="274" alt="Tire Centre" title="Tire Centre"></div>
+                
+              </div>
+            
+          </div>
+          
+          
+        </div>
+      </td>
+    </tr>
+    <tr>
+  	  <td id="contentleft">
+        <div id="contentleftWrap">
+          <div id="syncmyride">
+            <a href="http://www.ford.com/syncmyride/" target="_blank" title="syncmyride.com"><img src="/img/fr/img_sync.jpg" alt="syncmyride.com" width="230" height="60" /></a>
+          </div>
+          
+          
+            <div id="quickmenu">
+              
+              <div><img src="http://www.montmorencyford.com/img/en/quick_menu_title.gif" width="128" height="25" alt="Quick Menu" title="Quick Menu"></div>
+
+              <ul>
+                <li><a href="http://www.montmorencyford.com/en/contact/" title="Contact Us">Contact Us</a></li>
+            <li><a href="http://www.montmorencyford.com/en/car-compare/" title="Vehicle Comparison">Vehicle Comparison</a></li>
+            <li><a href="http://www.montmorencyford.com/en/testimonials/" title="Customer Testimonials">Customer Testimonials</a></li>
+            <li><a href="http://www.montmorencyford.com/en/team/" title="Our Team">Our Team</a></li>
+            <li><a href="http://www.montmorencyford.com/en/careers/" title="Careers">Careers</a></li>
+                
+                  
+                    <li><a href="http://www.montmorencyford.com/en/car-parts/carts/">Parts and Accessories Catalog</a></li>
+                    <li><a href="http://www.montmorencyford.com/en/car-parts/order/">Ford Parts Order</a></li>
+                    
+                    
+                    <li><a href="http://www.montmorencyford.com/en/ford-promotions/#promosparts">Parts and Accessories Promotions</a></li>
+                  
+                
+                <li><a href="http://www.montmorencyford.com/en/used/lease-transfers/">Lease Transfers</a></li>
+                
+                <li><a href="http://www.montmorencyford.com/en/car-credit/">Car Financing</a></li>
+                <li><a href="http://www.montmorencyford.com/en/online-requests/">Online Requests</a></li>
+                <li><a href="http://www.montmorencyford.com/en/news/">What's New</a></li>
+                <li><a href="http://www.montmorencyford.com/en/photos/">Photo Gallery</a></li>
+                <li><a href="http://www.montmorencyford.com/fr/">Français</a></li>
+              </ul>
+
+              <!-- <div><img src="http://www.montmorencyford.com/img/en/quick_menu_bottom.gif" width="221" height="13" alt=""></div> -->
+            </div>
+          
+
+          
+            <div id="businesshoursEN" class="businesshours">
+              <div><img src="http://www.montmorencyford.com/img/en/hours_bg_top.gif" width="220" height="27" alt="Business Hours" title="Business Hours"></div>
+              <div id="bhService" class="bhcontent">
+                <p>Monday to Thursday: 7 a.m. to 3:30 a.m.</p>
+                <p>Friday: 7 a.m. to 5 p.m.</p>
+              </div>
+              <div><img src="http://www.montmorencyford.com/img/en/hours_bg_bottom.gif" width="220" height="16" alt=""></div>
+            </div>
+          
+          
+          
+
+          
+            
+              <div class="contentleftBtns"><a href="http://www.montmorencyford.com/en/car-parts/carts/" title="Parts and Accessories Catalog"><img src="http://www.montmorencyford.com/img/en/bt_catalog.jpg" width="221" height="153" alt="Parts and Accessories Catalog"></a></div>
+              <div class="contentleftBtns"><a href="http://www.montmorencyford.com/en/car-parts/tires/" title="Tire Centre"><img src="http://www.montmorencyford.com/img/en/bt_tires.jpg" width="221" height="153" alt="Tire Centre"></a></div>
+              <div class="contentleftBtns"><a href="http://www.montmorencyford.com/en/after-sales-service/appointment/" title="Service Appointment"><img src="http://www.montmorencyford.com/img/en/bt_service.jpg" width="221" height="153" alt="Service Appointment"></a></div>
+            
+
+            
+              <div class="contentleftBtns"><a href="http://www.caaquebec.com" target="_blank" title="CAA Québec Approved auto repair service"><img src="http://www.montmorencyford.com/img/en/logo_caa.gif" width="152" height="152" alt="CAA Québec Approved auto repair service" border="0"></a></div>
+              <!-- div class="contentleftBtns"><a href="http://www.cleverte.org" target="_blank" title="Clé verte"><img src="http://www.montmorencyford.com/img/fr/logo_cle_verte.jpg" width="206" height="123" alt="Clé verte" border="0"></a></div -->
+            
+
+            
+
+            <div class="contentleftBtns">
+  <div><a href="#" onclick="return showDiv('quickcommitment');" title="Montmorency Ford Commitment"><img src="http://www.montmorencyford.com/img/en/bt_engagement.jpg" width="179" height="111" alt="Montmorency Ford Commitment"></a></div>
+  
+  <div id="quickcommitment" class="popupdiv quickcommitmentEN" style="display: none;">
+    <p class="divclose"><a href="#" onclick="return hideDiv('quickcommitment');">X Close</a></p>
+    
+    <p>For more than 40 years and, our twin commitments have been to give you all the information on all our products in a clear and honest manner, and to do everything in our power to make your purchase experience as pleasing as possible. Our clients are our pride and joy, and their satisfaction is our top priority.</p>
+    <p class="last">Come to see by yourself why we are "The most accomplished Ford dealer of all"!</p>
+  </div>
+</div>
+          
+        </div>
+      </td>
+  	  <td align="center" id="contentmiddle">
+        <h1>Tire Centre</h1>
+
+
+<div class="text">
+  <div class="fleft"><img src="/img/en/tire_img_top.jpg" width="277" height="308" alt="Tire Centre" title="Tire Centre"></div>
+  
+  <p>Montmorency Ford is your <strong>Brossard and South Shore tire centre</strong>! We have only the best tire brands in stock, and our on-site consultants can help you choose the perfect <strong>tires for your car, truck or commercial vehicle</strong>, according to your needs.</p>
+  <p>Tires are the only part of the car connected to the road. As such, they constitute one of the most important replacement part decisions you can make. Tires last an average of 68,000 km, much less if you drive on specialized tires designed for high performance in summer, winter or wet weather. In addition, tires should be rotated every 10,000 km, always have the correct tire pressure and should be cleaned regularly to ensure road debris is not lodged in the tread blocks.</p>
+  <p class="last">Tires are a heavy wear item and should be checked regularly.</p>
+</div>
+
+<div class="cleft"><img src="/img/en/tire_logo_brand.gif" width="678" height="141" alt="Michelin - GoodYear - BFGoodrich - Firestone - Bridgestone - Uniroyal - Hankook - Pirelli - Continental - Dunlop - GeneralTire" title="Michelin - GoodYear - BFGoodrich - Firestone - Bridgestone - Uniroyal - Hankook - Pirelli - Continental - Dunlop - GeneralTire"></div>
+
+<div class="text">
+  <h2>Tire Wear</h2>
+  <h3 class="first">Warning Signs</h3>
+  <ul>
+  	<li>Visible tread wear</li>
+  	<li>Rough vehicle ride</li>
+  	<li>Punctures, cuts, snags, etc.</li>
+  	<li>Gradual air loss</li>
+  	<li>Bent or cracked wheel rim</li>
+  	<li>Poor handling, especially on wet surfaces</li>
+  	<li>Poor traction in rain or snow</li>
+  </ul>
+  <p class="last">Tires should be replaced when there is 2/32" or less of tread depth remaining. At this point, they have become unsafe for driving under any circumstances.</p>
+  
+  <h3>Spotting Tread Wear</h3>
+  <p>You'll know it's time to replace your tires when the wear band is visible through the treads. It's also a good idea to check your tires regularly for uneven tread wear. The images below should help you recognize various problems.</p>
+  
+  <div id="tirewear">
+    <div class="tirewearItem">
+      <div><img src="/img/en/tire_wear_01.jpg" width="94" height="125" alt="Toe Wear" title="Toe Wear"></div>
+      
+      <h4>Toe Wear</h4>
+      <p class="last">A thin inner or outer edge may indicate an alignment problem.</p>
+    </div>
+    
+    <div class="tirewearItem last">
+      <div><img src="/img/en/tire_wear_02.jpg" width="94" height="125" alt="Camber Wear" title="Camber Wear"></div>
+      
+      <h4>Camber Wear</h4>
+      <p class="last">Extreme inner or outer edge wear may indicate an alignment problem.</p>
+    </div>
+    
+    <div class="tirewearItem">
+      <div><img src="/img/en/tire_wear_03.jpg" width="94" height="125" alt="Centre Wear" title="Centre Wear"></div>
+      
+      <h4>Centre Wear</h4>
+      <p class="last">Thin thread in the centre of your tire may be a sign of overinflation.</p>
+    </div>
+    
+    <div class="tirewearItem last">
+      <div><img src="/img/en/tire_wear_04.jpg" width="94" height="125" alt="Edge Wear" title="Edge Wear"></div>
+      
+      <h4>Edge Wear</h4>
+      <p class="last">Thin tread wear along both edges may be caused by underinflation.</p>
+    </div>
+    
+    <div class="tirewearItem">
+      <div><img src="/img/en/tire_wear_05.jpg" width="94" height="125" alt="Patch Wear" title="Patch Wear"></div>
+      
+      <h4>Patch Wear</h4>
+      <p class="last">Patchy tread wear or random flat spots could mean your tires are out of balance.</p>
+    </div>
+    
+    <div class="tirewearItem last">
+      <div><img src="/img/en/tire_wear_06.jpg" width="94" height="125" alt="Cup Wear" title="Cup Wear"></div>
+      
+      <h4>Cup Wear</h4>
+      <p class="last">Repetitive diagonal tread wear could mean you have a bent or worn suspension component.</p>
+    </div>
+  </div>
+  
+  <p>If you have any more <a href="/en/contact/#form">questions</a> regarding tires, please contact your Montmorency Ford dealer today.</p>
+</div>
+
+
+
+
+
+
+
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="footer">
+        
+          <div id="footerTop">
+            <p id="footerContact">
+              Montmorency Ford<br />
+              7225, boul. Taschereau<br />
+              Brossard (Québec)&nbsp;&nbsp;J4Y 1A1<br />
+              Tel.: 1 866 781-5986
+              <br />Fax :450 443-0221
+            </p>
+          
+            
+              <div id="footerModels" class="footerlinks">
+                
+                
+                
+                <div id="footerModelsFord" class="item">
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/edge-awd/?year=2013">2013 Ford Edge AWD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/edge-fwd/?year=2013">2013 Ford Edge FWD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/escape/?year=2013">2013 Ford Escape</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/escape-hybrid/?year=2012">2012 Ford Escape Hybrid</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/e-series/models/?year=2012">2012 Ford E-Series</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/expedition/?year=2012">2012 Ford Expedition</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/explorer-4wd/?year=2013">2013 Ford Explorer 4WD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/explorer-fwd/?year=2013">2013 Ford Explorer FWD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/f-150/models/?year=2012">2012 Ford F-150</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/f-250/models/?year=2012">2012 Ford F-250</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/f-350/models/?year=2012">2012 Ford F-350</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/f-450/models/?year=2012">2012 Ford F-450</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/fiesta-hatchback/?year=2012">2012 Ford Fiesta Hatchback</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/fiesta-sedan/?year=2012">2012 Ford Fiesta Sedan</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/flex-awd/?year=2013">2013 Ford Flex AWD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/flex-fwd/?year=2013">2013 Ford Flex FWD</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/focus-electric/?year=2012">2012 Ford Focus Electric</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/focus-hatchback/?year=2012">2012 Ford Focus Hatchback</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/focus-sedan/?year=2012">2012 Ford Focus Sedan</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/fusion/?year=2012">2012 Ford Fusion</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/fusion-hybrid/?year=2012">2012 Ford Fusion Hybrid</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/fusion-v6/?year=2012">2012 Ford Fusion V6</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/mustang/?year=2013">2013 Ford Mustang</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/mustang-convertible/?year=2013">2013 Ford Mustang Convertible</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/ranger/models/?year=2011">2011 Ford Ranger</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/shelby-gt500/?year=2012">2012 Ford Shelby GT500</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/taurus/?year=2013">2013 Ford Taurus</a> :</span>
+                  
+                  
+                  
+                    <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/ford/transit-connect/?year=2012">2012 Ford Transit Connect</a> :</span>
+                  
+                  
+                </div>
+                
+                <div id="footerModelsLincoln" class="item">
+                  
+                  <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/lincoln/mks/?year=2013">2013 Lincoln MKS</a> :</span>
+                  
+                  <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/lincoln/mkt/?year=2013">2013 Lincoln MKT</a> :</span>
+                  
+                  <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/lincoln/mkx/?year=2013">2013 Lincoln MKX</a> :</span>
+                  
+                  <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/lincoln/mkz/?year=2012">2012 Lincoln MKZ</a> :</span>
+                  
+                  <span class="nobr">: <a href="http://www.montmorencyford.com/en/new/lincoln/navigator/?year=2012">2012 Lincoln Navigator</a> :</span>
+                  
+                </div>
+              </div>
+            
+          </div>
+        
+          <div class="footerlinks">
+            <a href="http://www.montmorencyford.com/en/">Home</a> |
+            <a href="http://www.montmorencyford.com/en/new/">New 2012-2013 Ford Lincoln Vehicles</a> |
+            <a href="http://www.montmorencyford.com/en/new/ford/fleet/">Ford Commercial Vehicles</a> |
+            <a href="http://www.montmorencyford.com/en/used/">Used Vehicles for Sale</a> |
+            <a href="http://www.montmorencyford.com/en/ford-promotions/">Ford Lincoln Promotions</a> |
+            <a href="http://www.montmorencyford.com/en/after-sales-service/">Ford Lincoln After-Sales Service</a> |
+            <a href="http://www.montmorencyford.com/en/car-parts/">Ford Lincoln Parts and Accessories</a><br /
+            <a href="http://www.montmorencyford.com/en/car-compare/">Vehicle Comparison</a> |
+            <a href="http://www.montmorencyford.com/en/testimonials/">Customer Testimonials</a> |
+            <a href="http://www.montmorencyford.com/en/team/">Our Team</a> |
+            <a href="http://www.montmorencyford.com/en/careers/">Careers</a> |
+            <a href="http://www.montmorencyford.com/en/contact/">Contact Us</a> |
+            <a href="http://www.montmorencyford.com/en/site-map/">Site Map</a> |
+            <a href="http://www.montmorencyford.com/fr/">Français</a>
+          </div>
+        
+    
+        <p class="copyr">Brossard, Montreal, South Shore</p>
+      
+        <div class="footerlinks">
+          <a href="http://www.hyundai-montreal.com/" target="_blank">Saint-Laurent Hyundai</a> |
+          <a href="http://www.boulevarddodge.com/" target="_blank">Boulevard Dodge</a>
+        </div>
+      
+        <div class="copyr" style="margin-bottom: 10px;">
+
+
+
+<!--****************************************************************************
+                                  CONTACT                                    -->                                                                      
+
+  
+  
+
+
+<br><br>© 2000-2012 EVOLIO All Rights Reserved.<br>
+Please read EVOLIO's <a href="/common_dealer_v3/disclaimer/en/confidentiality.spy?dn=Montmorency+Ford" target="_blank">privacy policy</a> and <a href="/common_dealer_v3/disclaimer/en/legal.spy?dn=Montmorency+Ford" target="_blank">legal disclaimer</a>.
+
+
+
+<script type="text/javascript">document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5513.js"%3E%3C%2Fscript%3E'))</script>
+
+</div>
+      
+        <br><a title="Member of Auto123.com" href="http://www.auto123.com/en/" target="_blank"><img src="http://www.montmorencyford.com/dealersite/text/en/auto123_black_100x33.png" style="width: 100px; height: 33px; margin: 5px; border-width: 0;" alt="Member of Auto123.com"></a><br>
+<a style="text-decoration: none;" class="copyr" href="http://www.auto123.com/en/" target="_blank">Member of Auto123.com</a><br>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+<!--
+  $(document).ready(function(){
+    $('#mainnav .special ul').hide();
+    
+    $('#mainnav .special').hover(function(){
+      $(this).find('ul').slideDown('fast');
+    },function(){
+      $(this).find('ul').slideUp('fast');
+    });
+  });
+  
+  currentSlide = 0;
+  slideQty = 6;
+  marginMultiplierA = 130;
+  marginMultiplierB = 274;
+    
+  function switchSlides(){
+    currentSlide++;
+      
+    if(currentSlide == (slideQty-1))
+      currentSlide = 0;
+      
+    $('#topimg1 .topimgSlides').css({margin: '-' + currentSlide * marginMultiplierA + ' 0 0 0'});
+    $('#topimg2 .topimgSlides').css({margin: '-' + currentSlide * marginMultiplierB + ' 0 0 0'});
+  }
+  
+  $(document).ready(function(){
+    timer = setInterval("switchSlides()", 7000);
+  });
+  
+  
+//-->
+</script>
+
+
+</body>
+</html>

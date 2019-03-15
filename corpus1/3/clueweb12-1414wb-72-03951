@@ -1,0 +1,397 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-13T12:07:31Z
+WARC-TREC-ID: clueweb12-1414wb-72-03951
+WARC-Target-URI: http://www.sellebrity.org.uk/celebrity/gloria-gaynor
+WARC-Payload-Digest: sha1:RX42D6J7WETBCNOTQYWBWVJVECUJNH2T
+WARC-IP-Address: 31.222.179.244
+WARC-Record-ID: <urn:uuid:74b8ff7d-7dc4-48e2-8f40-36ee1d6bf9a5>
+Content-Type: application/http; msgtype=response
+Content-Length: 21056
+
+HTTP/1.1 200 OK
+Date: Fri, 13 Apr 2012 12:08:43 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.3.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sellebrity | Celebrity | Gloria Gaynor - Sellebrity</title> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Author" content="oneagency.co" />
+<meta http-equiv="Publisher" content="oneagency.co" />
+<meta http-equiv="Language" content="en" />
+<meta http-equiv="Distribution" content="Global" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="description" content="Sellebrity | Celebrity | Gloria Gaynor" />    <link href="/css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/jquery.fancybox-1.3.1/jquery.fancybox-1.3.1.css" media="screen" rel="stylesheet" type="text/css" />    <script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="/js/jquery.curvycorners.js"></script>
+<script type="text/javascript" src="/js/jquery.settings.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="/js/jquery.innerfade.js"></script>
+<script type="text/javascript" src="/js/jquery.cycle.lite.1.1.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.1/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.1/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox-1.3.1/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="/js/jcarousellite.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/js/DateTimeCounter.js"></script>    </head>
+<body>
+	
+	
+<div id="top-bar-wrap"><!--START-top-bar-wrap-->
+	<div id="top-bar"><!--START-top-bar-->
+		<ul id="login">
+							<li><a href="/customer/">Account login</a></li>
+						<li class="last"><a href="/contact-us/">Contact us</a></li>
+					</ul>
+	</div><!--END-top-bar-->
+</div><!--END-top-bar-wrap-->
+
+<div id="page-wrap"><!--START-page-wrap-->
+	<div id="page"><!--START-page-->
+		<div id="header-wrap"><!--START-header-wrap-->
+			<div id="header"><!--START-header-->
+				<div id="logo" class="clearfix"><!--START-logo-->
+					<a href="/"><img src="/images/logo.png" alt="Sellebrity Auction - Home" /></a>
+					<h1 id="tagline" class="fL">The online auction site with <span class="gold">100% star quality</span></h1>
+					<a href="/charity-list"><img class="pt" src="/images/charities.png" alt="Supporting UK Charities" /></a>
+				</div><!--END-logo-->
+			
+				<div id="nav-wrap"><!--START-nav-wrap-->
+					<div id="nav"><!--START-nav-->
+						<ul id="menu" class="clearfix">
+							<li><a href="/">Home</a></li>
+							<li><a href="/auction-list">Auctions</a></li>
+							<li><a class="active" href="/celebrity-list">Celebrities</a></li>
+														<li><a href="/charity-list">Charities</a></li>
+							<li><a href="/about-us">About Us</a></li>
+							<li><a href="/customer">My Account</a></li>
+						</ul>
+					</div><!--END-nav-->
+				</div><!--END-nav-wrap-->
+				<div id="search-wrap">
+ 					&nbsp;
+				</div>
+			</div><!--END-header-->
+		</div><!--END-header-wrap-->
+	
+	<div id="mainContent">
+			<div id="breadcrumb-wrap">
+						<ul id="breadcrumb">
+												<li><a href="/" title="Home">Home</a></li>
+							<li>/</li>
+													<li><a href="/celebrity-list" title="Celebrities">Celebrities</a></li>
+							<li>/</li>
+												<li><a href="/auction/gloria-gaynor" title="Gloria Gaynor" style="color:#fff;">Gloria Gaynor</a></li>
+									</ul>
+				
+<div class="quick-search">
+	<form id="searchFrm" action="/search" method="GET">
+		<fieldset>
+			<input type="text" value="Search..." name="searchTxt" class="keywords" id="searchTxt" />
+			<input class="black" type="submit" value=">" name="button" id="cmdSearchQuick"  />
+		</fieldset>
+	</form>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$('form#searchFrm fieldset input#cmdSearchQuick').click(function() {
+		var searchTxt = $('form#searchFrm fieldset input#searchTxt').val().toString();
+		if (isString(searchTxt)) {
+			$('form#searchFrm').submit();
+		}
+		delete(searchTxt);
+		
+		return false;
+	});
+	
+	$('#searchTxt').focusout(function() {
+		if ($(this).val().toString() == '') {
+			$(this).val('Search...');
+		}
+	}).focus(function() {
+		if ($(this).val().toString() == 'Search...') {
+			$(this).val('');
+		}
+	});
+	
+});
+</script>
+			</div>
+		
+
+<div id="product-listing-content"><!--START-product-listing-content-->
+
+    <div id="sidebar"><!--START-sidebar-->
+        <div class="side-block">
+            <h2>Filter Celebrities</h2>
+			
+			<div id="accordion" style="margin-top:20px;">
+				<h3><a href="#">a</a></h3><div><p><a href="/celebrity/alan-titchmarsh">Alan Titchmarsh</a></p></div><h3><a href="#">b</a></h3><div><p><a href="/celebrity/ben-ainslie-cbe">Ben Ainslie CBE</a></p><p><a href="/celebrity/ben-elton">Ben Elton</a></p><p><a href="/celebrity/ben-woods">Ben Woods</a></p><p><a href="/celebrity/brenda-blethyn-obe-">Brenda Blethyn OBE </a></p><p><a href="/celebrity/brian-may-cbe">Brian May CBE</a></p><p><a href="/celebrity/bryan-gunn">Bryan Gunn</a></p></div><h3><a href="#">c</a></h3><div><p><a href="/celebrity/carol-vorderman-mbe">Carol Vorderman MBE</a></p><p><a href="/celebrity/celia-imrie">Celia Imrie</a></p><p><a href="/celebrity/colin-salmon">Colin Salmon</a></p><p><a href="/celebrity/craig-revel-horwood-">Craig Revel Horwood </a></p></div><h3><a href="#">d</a></h3><div><p><a href="/celebrity/daniel-galvin-junior">Daniel Galvin Junior</a></p><p><a href="/celebrity/darren-eadie-sellebrity-founder">Darren Eadie (SELLEBRITY Founder)</a></p><p><a href="/celebrity/dean-ashton">Dean Ashton</a></p><p><a href="/celebrity/dion-dublin">Dion Dublin</a></p></div><h3><a href="#">e</a></h3><div><p><a href="/celebrity/eliza-doolittle">Eliza Doolittle</a></p></div><h3><a href="#">f</a></h3><div><p><a href="/celebrity/fern-britton">Fern Britton</a></p><p><a href="/celebrity/frank-lampard">Frank Lampard</a></p></div><h3><a href="#">g</a></h3><div><p><a href="/celebrity/gabby-logan">Gabby Logan</a></p><p><a href="/celebrity/gary-lineker">Gary Lineker</a></p><p><a href="/celebrity/gloria-estefan">Gloria Estefan</a></p><p><a href="/celebrity/gloria-gaynor">Gloria Gaynor</a></p></div><h3><a href="#">h</a></h3><div><p><a href="/celebrity/helen-worth">Helen Worth</a></p></div><h3><a href="#">j</a></h3><div><p><a href="/celebrity/jeremy-irons">Jeremy Irons</a></p><p><a href="/celebrity/joan-armatrading-mbe">Joan Armatrading MBE</a></p><p><a href="/celebrity/joanna-lumley">Joanna Lumley</a></p><p><a href="/celebrity/jon-snow">Jon Snow</a></p><p><a href="/celebrity/jools-holland">Jools Holland</a></p></div><h3><a href="#">k</a></h3><div><p><a href="/celebrity/kenny-logan">Kenny Logan</a></p><p><a href="/celebrity/kylie-minogue">Kylie Minogue</a></p></div><h3><a href="#">l</a></h3><div><p><a href="/celebrity/lady-daniela-kingsley">Lady Daniela Kingsley</a></p><p><a href="/celebrity/lord-alan-sugar">Lord Alan Sugar</a></p></div><h3><a href="#">m</a></h3><div><p><a href="/celebrity/marc-tierney">Marc Tierney</a></p><p><a href="/celebrity/mark-webber-">Mark Webber </a></p><p><a href="/celebrity/martin-clunes">Martin Clunes</a></p><p><a href="/celebrity/michael-schumacher">Michael Schumacher</a></p></div><h3><a href="#">n</a></h3><div><p><a href="/celebrity/nikki-grahame">Nikki Grahame</a></p></div><h3><a href="#">o</a></h3><div><p><a href="/celebrity/orlando-bloom-">Orlando Bloom </a></p></div><h3><a href="#">p</a></h3><div><p><a href="/celebrity/phillip-schofield">Phillip Schofield</a></p></div><h3><a href="#">r</a></h3><div><p><a href="/celebrity/rob-brydon">Rob Brydon</a></p><p><a href="/celebrity/robbie-savage">Robbie Savage</a></p></div><h3><a href="#">s</a></h3><div><p><a href="/celebrity/samantha-bond">Samantha Bond</a></p><p><a href="/celebrity/sharon-osbourne">Sharon Osbourne</a></p><p><a href="/celebrity/shobna-gulati-">Shobna Gulati </a></p><p><a href="/celebrity/sir-anthony-hopkins">Sir Anthony Hopkins</a></p><p><a href="/celebrity/sir-ben-kingsley">Sir Ben Kingsley</a></p><p><a href="/celebrity/sir-david-attenborough">Sir David Attenborough</a></p><p><a href="/celebrity/sir-john-major">Sir John Major</a></p><p><a href="/celebrity/sir-roger-moore">Sir Roger Moore</a></p><p><a href="/celebrity/stuart-pearce">Stuart Pearce</a></p><p><a href="/celebrity/susan-boyle">Susan Boyle</a></p></div><h3><a href="#">t</a></h3><div><p><a href="/celebrity/team-lotus">Team Lotus</a></p></div><h3><a href="#">v</a></h3><div><p><a href="/celebrity/victoria-wood-cbe">Victoria Wood CBE</a></p></div>				
+			</div>
+			
+			
+        </div>   
+        
+		<div class="side-block">
+			<div id="twitter_div"></div>
+			<a href="http://twitter.com/sellebrity_uk" target="_blank"><img src="/images/twitter-logo.png" alt="Follow us on twitter" /></a>
+			<a href="http://www.facebook.com/pages/Sellebrity-Auction/106463386098679" target="_blank"><img src="/images/facebook.png" alt="Join our facebook group" /></a>
+		</div>
+
+    </div><!--END-sidebar-->
+    
+    <div id="mainbar-wrap">
+        <div id="title-bar">
+            <h1>Gloria Gaynor</h1>
+            <ul class="title-bar-links">
+					<li><a id="watchItem" class="watch-link cmdWatch withPointer">Watch this Celebrity</a></li>
+									<li><a href="http://www.gloriagaynor.com/" target="_blank" style="color: #8F8354;">View Celebrity Site</a></li>
+			            </ul>
+        </div>
+        
+        <div id="mainbar"><!--START-mainbar-->
+            
+            <div id="gallery-wrap">
+                                <div id="gallery-window">
+                                            <a class="defaultImg" href="/uploads/celebrity-images/47.jpg"><img src="/uploads/celebrity-images/47_websiteCeleMain.jpg" width="248" height="248" class="websiteCeleMain withMagnify" alt="Gloria Gaynor" title="Gloria Gaynor" /></a>
+                                    </div>
+                <div id="chosen-charities">
+                   
+                </div>
+            </div>
+            
+            <div id="celeb-bio-wrap">
+                <h2>Celebrity bio</h2>
+                <p>Gloria Gaynor (real name Gloria Fowles, born September 7, 1949) is a U.S. singer best-known for the disco hit songs 'I Will Survive' (1979) and 'Never Can Say Goodbye' (1973).<br /><br />Born in New Jersey, Gaynor was a singer with the Soul Satisfiers, a jazz/pop band, in the 1960s. Her first solo single was 'She'll Be Sorry'/'Let Me Go Baby' (1965).<br /><br />The lyrics of 'I Will Survive' are written from the point of view of a woman, recently dumped, telling her ex-lover that she can cope without him and doesn't want anything more to do with him. The song has become something of an anthem of female emancipation, and is still a staple of office parties and karaoke nights, not to mention an anthem in North American gay culture. She also sang on lesser-known disco songs like 'Honey Bee' (1973), 'Casanova Brown' (1975), and 'I Am What I Am' (1983).<br /><br />She continued recording for many years, releasing 'Last Night' in 2000, 'Just Keep Thinking About You' in 2001, and 'I Never Knew' in 2002.</p>                            </div>
+            
+                            <div id="title-bar" class="clear">
+                    <h1 id="beginAuctionList">
+                    Items listed by Gloria Gaynor                    </h1>
+                </div>
+                		    
+		    <div class="item-search-results"><!--START-item-search-results-->
+					<div class="thumbnail">
+						
+															<a href="/auction/gloria-gaynor-signed-i-will-survive-cd"><img src="/uploads/auction-images/214_websiteProductListFeaturedThumb2.JPG" width="100" height="100" class="websiteProductListFeaturedThumb2" alt="Gloria Gaynor signed 'I Will Survive' CD." title="Gloria Gaynor signed 'I Will Survive' CD." /></a>
+												
+					</div>
+					<div class="item-description">
+						<h2><a href="/auction/gloria-gaynor-signed-i-will-survive-cd">Gloria Gaynor signed 'I Will Survive' CD.</a></h2>
+						<p>Probably one of the most often played and popular songs ever!<br />
+A personally signed copy of 'I Will Survive' by the wonderful Gloria Gaynor.<br />
+A must have for any Karaoke fan!...</p>
+					</div>
+					<div class="bids">
+																												<h2>Bids</h2>
+								<p>4</p>
+																									</div>
+					<div class="price">
+												
+						
+																																							<h2>Final Bid</h2>																		<p>&pound;30.66<br />(Reserve Met)</p>
+									
+									
+																																													
+											
+					</div>
+					<div class="time">
+						
+													<p style="color:#000">End Time:<br />20:45 9th Jan 2012</p><br />
+												
+						<br />
+						
+						<a href="/auction/gloria-gaynor-signed-i-will-survive-cd">View Auction</a>
+						
+													<img src="/uploads/charity-images/4.gif" style="margin-top:6px;" width="80">
+											</div>
+					
+					
+					
+				</div><!--END-item-search-results-->
+		    
+                                <div id="results-footer"><!--START-results-header-->
+                    
+                </div><!--END-results-footer-->
+                        
+        </div><!--END-mainbar-->
+    </div>
+</div><!--END-content-->
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$( "#accordion" ).accordion({ autoHeight: false });
+	
+	var page = 0;// current page of paginator
+	var sortBy = 0;// current sort by filter
+	
+        
+            
+	//show full images in fancybox on mouseup
+	$('a.defaultImg').mouseup(function(){
+		if ($(this).attr('href').length > 0) {
+			$(this).fancybox({
+				padding: 0,
+				margin: 0,
+				href: $(this).attr('href').toString(),
+				type: 'image',
+				transitionIn: 'elastic',
+				transitionOut: 'elastic',
+				speedIn: 600,
+				speedOut: 200,
+				overlayShow: true,
+				hideOnOverlayClick: true,
+				hideOnContentClick: true,
+				titleShow: false,
+				autoScale: true,
+				autoDimensions: true
+			});
+		}
+	});
+    
+	// load the social media share panel (load like this to avoid delays in the page load time)
+	$('#sharePanel').load('/celebrity/get-share-panel', {celebrityId: 47});// fail silently
+    
+	// list objects divs hover CSS
+	$('div.item-search-results').mouseover(function() {
+		if (!$(this).hasClass('item-hover')) {
+			$(this).addClass('item-hover');
+		}
+	}).mouseout(function() {
+		if ($(this).hasClass('item-hover')) {
+			$(this).removeClass('item-hover');
+		}
+	});
+	
+	    
+	// load the social media panel (load like this to avoid delays in the page load time)
+	$('#twitter_div').load('/static-pages/social-media-panel');
+	
+});
+</script>
+
+	</div>
+	
+	
+	</div><!--END-page-->
+</div><!--END-page-wrap-->
+
+<div id="footer-top-wrap"><!--START-footer-wrap-->
+	<div class="footer"><!--START-footer-->
+		<div id="footer-top" class="clearfix"><!--START-footer-top-->
+			<div class="block-footer">
+				<h2>Sign up for Sellebrity</h2>
+				<p>Either create an account or sign up here to receive email alerts and be the first to know of forthcoming auctions.</p>
+				
+<h2 id="newsletterSignUp">Newsletter Sign-Up</h2>
+<form id="newsletterSignUpForm" name="newsletterSignUpForm" action="/newsletter/newsletter-subscribe#newsletterSignUp" method="post">
+        
+<input type="hidden" name="hiddenId" value="7d059305396d98152b8cc1f0b10e34d7" id="hiddenId" />    <fieldset>
+        
+<select name="title" id="title">
+    <option value="" label="Title">Title</option>
+    <option value="Mr" label="Mr">Mr</option>
+    <option value="Master" label="Master">Master</option>
+    <option value="Mrs" label="Mrs">Mrs</option>
+    <option value="Miss" label="Miss">Miss</option>
+    <option value="Ms" label="Ms">Ms</option>
+    <option value="Dr" label="Dr">Dr</option>
+    <option value="Prof" label="Prof">Prof</option>
+    <option value="Rev" label="Rev">Rev</option>
+</select>        
+<input type="text" name="name" id="name" value="Name" class="name-bar" onFocus="this.value = ((this.value == 'Name') ? '' : this.value);" onBlur="this.value = ((this.value == '') ? 'Name' : this.value);" /><br />
+        
+<input type="text" name="email" id="email" value="Email Address" class="email-bar" onFocus="this.value = ((this.value == 'Email Address') ? '' : this.value);" onBlur="this.value = ((this.value == '') ? 'Email Address' : this.value);" /><br />
+        <input type="image" value="submit" src="/images/submit-text.png" name="button" id="newsletter-signup" /><br />
+    </fieldset>
+</form>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('form#newsletterSignUpForm').submit(function() {
+		if ($('form#newsletterSignUpForm #title option:selected').val().toString() == '') {
+			window.alert('You must select a valid Title!');
+			$('form#newsletterSignUpForm #title').focus();
+			return false;
+		} else if ($('form#newsletterSignUpForm #email').val().toString() == 'Email Address' || $('form#newsletterSignUpForm #email').val().toString().indexOf('@') == -1 || $('form#newsletterSignUpForm #email').val().toString().length == 0) {
+			window.alert('You must enter a valid Email Address!');
+			$('form#newsletterSignUpForm #email').focus();
+			return false;
+		} else if ($('form#newsletterSignUpForm #name').val().toString() == 'Name' || $('form#newsletterSignUpForm #name').val().toString().length == 0) {
+			window.alert('You must enter a valid Name!');
+			$('form#newsletterSignUpForm #name').focus();
+			return false;
+		}
+		
+		return true;
+	});
+});
+</script>			</div>
+			<div class="block-footer">
+				<h2>Certificate of Provenance</h2>
+				<h3>Each item donated will be supplied with a certificate of provenance.</h3>
+				<img class="fR" src="/images/badge.png" alt="Certificate of Provenance" />
+				<p>The certificate will document the auction item as won through the online auction site sellebrity.org.uk and the item was owned/donated by the person/s referenced. For our full terms and conditions and details of the certificate please <a href="/terms-and-conditions-lightbox" class="terms iframe" title="Terms &amp; Conditions">click here</a>.</p>
+			</div>
+			<div class="block-footer-last">
+			<div id="social">
+				<h2>Get social</h2>
+				<div>
+					<a href="http://www.facebook.com/pages/Sellebrity-Auction/106463386098679" target="_blank"><img src="/images/facebook.png" alt="Join our facebook group" /></a>
+					<a href="http://twitter.com/sellebrity_uk" target="_blank"><img src="/images/twitter-2.jpg" alt="Follow us on twitter" /></a>
+					<img class="clear tagline-footer" src="/images/tagline-footer.png" alt="The online auction with 100% star quality" />
+				</div>
+				<div>
+					<ul id="linksTsCs">
+						<li>
+							<a href="/terms-and-conditions-lightbox" class="terms iframe" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+						</li>
+						<li>
+							<a href="/privacy-policy-lightbox" class="privacypolicy iframe" title="Privacy Policy">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="/acceptable-use-policy-lightbox" class="usagepolicy iframe" title="Acceptable Use Policy">Acceptable Use Policy</a>
+						</li>
+					</ul>
+				</div>
+			</div><!--END-social-->
+			</div>
+		</div><!--END-footer-top-->
+	</div><!--END-footer-->
+</div><!--END-footer-top-wrap-->
+
+<div id="footer-bot-wrap"><!--START-footer-wrap-->
+	<div class="footer"><!--START-footer-->      
+		<div id="footer-bot" class="clearfix">		
+			<div id="social-launch">
+				<a href="http://oneagency.co/services/" title="Web design, search marketing, creative solutions | oneagency.co" target="_blank">Website design &amp; search marketing</a> by <a href="http://oneagency.co/services/" title="Website design, SEO company, PR &amp; marketing strategy | oneagency.co" target="_blank" style="color:#000;">oneagency.<span style="color:#75BC38;">co</span></a>			</div><!--END-social-->
+		</div><!--END-footer-bot-->
+	</div><!--END-footer-->
+</div><!--END-footer-bot-wrap-->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22366771-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,910 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-13T00:49:10Z
+WARC-TREC-ID: clueweb12-0103wb-46-24983
+WARC-Target-URI: http://www.alumni.uga.edu/alumni/index.php/site/blog/9057
+WARC-Payload-Digest: sha1:IWLYPXBDQJ5RQFNCSR4X776TU5JYZMCF
+WARC-IP-Address: 128.192.72.5
+WARC-Record-ID: <urn:uuid:88da06ee-3baa-47cf-9907-8f927fbcc437>
+Content-Type: application/http; msgtype=response
+Content-Length: 58488
+
+HTTP/1.0 200 OK
+Date: Mon, 13 Feb 2012 00:49:39 GMT
+Server: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.10 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g
+X-Powered-By: PHP/5.2.4-2ubuntu5.10
+Set-Cookie: exp_last_activity=1329094179; expires=Tue, 12-Feb-2013 00:49:39 GMT; path=/
+Set-Cookie: exp_tracker=a%3A5%3A%7Bi%3A0%3Bs%3A14%3A%22site%2Fblog%2F9057%22%3Bi%3A1%3Bs%3A14%3A%22site%2Fblog%2F9162%22%3Bi%3A2%3Bs%3A14%3A%22site%2Fblog%2F9154%22%3Bi%3A3%3Bs%3A14%3A%22site%2Fblog%2F9064%22%3Bi%3A4%3Bs%3A14%3A%22site%2Fblog%2F9254%22%3B%7D; path=/
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Last-Modified: Mon, 13 Feb 2012 00:49:41 GMT
+Pragma: no-cache
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="/alumni/ee/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://www.alumni.uga.edu/alumni/index.php/javascript/hoverIntent.minified"></script>
+<script type="text/javascript" src="http://www.alumni.uga.edu/alumni/index.php/javascript/gallerific"></script>
+<script type="text/javascript" src="http://www.alumni.uga.edu/alumni/index.php/javascript/opacityrollover"></script>
+<script type="text/javascript" src="/alumni/ee/js/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+
+//Set custom configurations
+var config = {
+      sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)
+      interval: 0, // number = milliseconds for onMouseOver polling interval
+      over: megaHoverOver, // function = onMouseOver callback (REQUIRED)
+      timeout: 200, // number = milliseconds delay before onMouseOut
+      out: megaHoverOut // function = onMouseOut callback (REQUIRED)
+ };
+
+ $("ul#topnav li .sub").css({'opacity':'0'}); //Fade sub nav to 0 opacity on default
+ $("ul#topnav li").hoverIntent(config); //Trigger Hover intent with custom configurations
+ $("ul#sub_menu li .sub").css({'opacity':'0'}); //Fade sub nav to 0 opacity on default
+ $("ul#sub_menu li").hoverIntent(config); //Trigger Hover intent with custom configurations
+ 
+   function megaHoverOver(){
+     $(this).find(".sub").stop().fadeTo('slow', 1).show(); //Find sub and fade it in
+     (function($) {
+         //Function to calculate total width of all ul's
+       jQuery.fn.calcSubWidth = function() {
+             //rowWidth = 0;
+             //Calculate row
+             //$(this).find("ul").each(function() { //for each ul...
+                 rowWidth = $(this).width() - $("div.sub",this).css("paddingLeft")
+                 - $("div.sub",this).css("paddingRight"); //Add each ul's width together
+           //  });
+         };
+     })(jQuery); 
+
+     if ( $(this).find(".row").length > 0 ) { //If row exists...
+
+         var biggestRow = 0;	
+
+         $(this).find(".row").each(function() {	//for each row...
+             $(this).calcSubWidth(); //Call function to calculate width of all ul's
+             //Find biggest row
+             if(rowWidth > biggestRow) {
+                 biggestRow = rowWidth;
+             }
+         });
+
+         $(this).find(".sub").css({'width' :biggestRow}); //Set width
+         $(this).find(".row:last").css({'margin':'0'});  //Kill last row's margin
+
+     } else { //If row does not exist...
+
+         $(this).calcSubWidth();  //Call function to calculate width of all ul's
+         $(this).find(".sub").css({'width' : rowWidth}); //Set Width
+
+     }
+ }
+ //On Hover Out
+ function megaHoverOut(){
+   $(this).find(".sub").stop().fadeTo('slow', 0, function() { //Fade to 0 opactiy
+       $(this).hide();  //after fading, hide it
+   });
+ }
+});
+
+</script>
+
+
+<link href="/alumni/index.php/?css=styles/alumni.css" rel="stylesheet" type="text/css" media="screen">
+<link href="/alumni/index.php/?css=styles/jkmegamenu.css" rel="stylesheet" type="text/css" >
+<link href="http://externalaffairs.uga.edu/alumni/css/galleriffic-2.css" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="/alumni/ee/css/colorbox.css" type="text/css" media="screen" >
+<link rel="stylesheet" href="http://alumni.uga.edu/alumni/ee/css/print_styles.css" type="text/css" media="print" >
+
+<title>UGA Alumni Association: Executive Director's Blog</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23824107-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+	<div id="print_head">The UGA Alumni Association - www.alumni.uga.edu</div>
+	<div class="head_container">
+		
+		<!-- Begin Header -->
+
+<!--Branding Bars Begin-->
+		
+<div id="uga_sliderContent">
+
+<div class="quick_links_column">
+				<ul>
+					<li class="uga_slider_header">(UGA) Information</li>
+
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu" target="blank">UGA Homepage</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://bulletin.uga.edu/bulletin/univ/calendar.html" target="blank">Academic calendar</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://my.uga.edu/" target="blank">myUGA</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.reg.uga.edu/graduation" target="blank">Commencement</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/inside/contact.html" target="blank">UGA Phonebook</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.busfin.uga.edu/mail/" target="blank">Postal Services</a></li>
+
+				
+					
+				</ul>
+			</div>
+			<div style="width:1px; height:120px; background-color:#bcbcbc; float:left;  margin-right:10px;"></div>
+			<div class="quick_links_column">
+				<ul>
+					<li class="uga_slider_header">Visiting UGA</li>
+					<li class="uga_slider_bodycopy"><a href="http://visit.uga.edu/" target="blank">Visitors Center</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.georgiacenter.uga.edu/hotel/" target="blank">Hotel at GA Center</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.parking.uga.edu/" target="blank">Parking</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/foodservice/" target="blank">Dining Options</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.transit.uga.edu/" target="blank">Campus Transit</a></li>
+				</ul>
+
+			</div>
+			<div style="width:1px; height:120px; background-color:#bcbcbc; float:left; margin-right:10px;"> </div>
+			<div class="quick_links_column">
+				<ul>
+					<li class="uga_slider_header">Get Involved</li>
+					<li class="uga_slider_bodycopy"><a href="http://www.externalaffairs.uga.edu/development/" target="blank">Giving to UGA</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/cls/programs/vuga/" target="blank">Volunteer Opportunities</a></li>
+
+					<li class="uga_slider_bodycopy"><a href="http://www.alumni.uga.edu/alumni/" target="blank">Alumni Association</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/stuact/" target="blank">Campus Life</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/sga/" target="blank">Student Government Association</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.alumni.uga.edu/alumni/student/council.html" target="blank">Student Advisory Council</a></li>
+					
+					
+				</ul>
+			</div>
+			<div style="width:1px; height:120px; background-color:#bcbcbc; float:left; margin-right:10px;"> </div>
+
+			<div class="quick_links_column">
+				<ul>
+					<li class="uga_slider_header">University Policies</li>
+					<li class="uga_slider_bodycopy"><a href="http://askuga.uga.edu/" target="blank">Administration Policies</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/provost/" target="blank">Academic Policies</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.ovpr.uga.edu/rpph/rph_toc.html" target="blank">Legal and Research Policies</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/profile/administration.html" target="blank">Administration</a></li>
+
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/judicialprograms/code_of_conduct/index.html" target="blank">Code of Conduct</a></li>
+					<li class="uga_slider_bodycopy"><a href="http://www.uga.edu/legal/hotline.html" target="blank">Compliance Ethics and Reporting Hotline</a></li>
+				</ul>
+			</div>
+	</div>
+    <div id="openCloseIdentifier_uga"></div>	
+    <div>
+		
+<div id="uga_brand_bar">
+
+<div id="searchwrapper">
+		<form action="/alumni/index.php/site/search" method="post">
+			<input type="text" class="searchbox" name="s" value="Search the Alumni Site"  onfocus="if(this.value==this.defaultValue) this.value='';"/>
+			<input type="image" src="/alumni/ee/images/submit_button.png" class="searchbox_submit" value="" />
+		</form>
+	</div>
+<div id="quick_links_button" style="width:105px; height:30px; position:relative;  top:10px; left:760px; z-index:99;">&nbsp;</div>
+
+	
+<div id="uga_home_link" ><a href="http://www.uga.edu" style="width:360px; height:40px; position:absolute; top:0px; left:0px; z-index:99;" target="blank"></a></div>
+<div id="ea_home_link"><a href="http://www.externalaffairs.uga.edu" style="width:250px; height:40px; position:absolute; top:0px; left:360px;  z-index:99;"  target="blank"></a></div>
+</div>		
+</div>	
+	<!--Branding Bars End-->   
+<div class="banner">
+	<a href="http://www.alumni.uga.edu/alumni/index.php"><div class="banner_text"></div></a>
+	<a href="https://www.externalaffairs.uga.edu/os/makegift?extacc=30951000&appeal=AFAACOMM"><div class="donate_now"></div></a>
+</div>
+ <div>
+ <!--begin man nav-->
+<div class="menu_background"></div>
+<div >
+	<ul id="topnav">
+		<li><a href="/alumni/index.php/content/welcome" class="about_alumni"><img src="/alumni/ee/images/more_triangle_black.png"/>&nbsp;&nbsp;About Alumni</a>
+			<div class="sub">
+			   <ul>
+				 <li><a href="/alumni/index.php/content/welcome">Welcome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				 <li><a href="/alumni/index.php/site/staff">Staff Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				 <li><a href="/alumni/index.php/content2/board">Board of Directors</a></li>
+				 <li><a href="/alumni/index.php/site/faq">FAQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				 <li><a href="/alumni/index.php/content/partners_and_sponsors">Partners and Sponsors</a></li>
+	   			 <li><a href="/alumni/index.php/content/sponsorship_information">Sponsorship Information</a></li>
+				<li><a href="/alumni/pdfs/support.pdf">Campus Support Form</a></li>
+				
+				 </ul>
+			  </div>
+		</li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/alumni/index.php/site/blog" class="blogbutton">Blog</a></li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/development/gafund_alumni_support/index.php?appeal=AFAACOMM" class="support_button" target="_new">Support</a></li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/alumni/index.php/content2/scholarships_fellowships" class="atlanta_programs">Scholarships & Fellowships</a></li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/alumni/index.php/chapters/chapter_search" class="chapters_and_clubs"><img src="/alumni/ee/images/more_triangle_black.png"/>&nbsp;&nbsp;Chapters</a>
+			<div class="sub">
+			   <ul>
+				 <li><a href="/alumni/index.php/site/chapters/metro_atlanta_chapter">Metro Atlanta<br/>Chapter</a></li>
+				 <li><a href="/alumni/index.php/site/chapters/athens_chapter">Athens Chapter</a></li>
+				 <li><a href="/alumni/index.php/chapters/chapter_search">Chapter Search&nbsp;&nbsp;&nbsp;</a></li>
+				 <li><a href="/alumni/index.php/site/chapter_awards">Awards&nbsp;&nbsp;&nbsp;</a></li>
+				 <li><a href="/alumni/index.php/content/leadership_info">Leadership Info</a></li>
+				 </ul>
+			 </div>
+		</li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/alumni/index.php/site/signature_events" class="signature_events"><img src="/alumni/ee/images/more_triangle_black.png"/>&nbsp;&nbsp;Signature Events</a>
+			<div class="sub">
+				<ul>
+					 <li><a href="/alumni/index.php/content2/call_for_nominations">Alumni Awards</a></li>
+					 <li><a href="/alumni/index.php/site/40under40/40_under_40_about">40 Under 40</a></li>
+					 <li><a href="/alumni/index.php/site/bulldog100/b100_about">Bulldog 100</a></li>
+					 <li><a href="/alumni/index.php/content/uga_day">UGA Days</a></li>
+					 <li><a href="/alumni/index.php/site/signature_events">More Events</a></li>
+					 <li><a href="/alumni/index.php/content/sponsorship_information">Sponsorship Information</a></li>
+				</ul>
+			</div>
+		</li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li><a href="/alumni/index.php/events/calendar" class="event_calendar">Event Calendar</a></li>
+		<li style="width:1px; height:20px; background-color:#bcbcbc; margin-top:12px;"></li>
+		<li style="border:none;"><a href="/alumni/index.php/site/programs" class="programs"><img src="/alumni/ee/images/more_triangle_black.png"/>&nbsp;&nbsp;Programs</a>
+			<div class="sub">
+			   <ul>
+				 <li><a href="/alumni/index.php/site/saa/saa_about">Student Alumni Association</a></li>
+				 <!--<li><a href="http://career.uga.edu/alumni/alumni">Career Services</a></li>-->
+				 <li><a href="http://career.uga.edu/alumni/alumni" target="_new">Career Services</a></li>
+				
+				 <!--<li><a href="/alumni/index.php/content/alumni_admissions">Alumni Admissions</a></li>-->
+				 <li><a href="http://www.alumni.uga.edu/alumni/index.php/content/alumni_admissions" target="_new">Alumni Admissions</a></li> 
+				
+				 <li><a href="/alumni/index.php/content2/uga_alumni_multicultural_programs">Multicultural <br/>Programs</a></li>
+				 <li><a href="/alumni/index.php/content2/women_of_uga_program_overview">Women of UGA</a></li>
+				<li><a href="/alumni/index.php/content/babybulldogs">Baby Bulldogs</a></li>
+				 <li><a href="/alumni/index.php/content2/young_alumni">Young Alumni Programming</a></li>
+				 <li><a href="/alumni/index.php/tours/tours_new">Alumni Tours</a></li>	
+				<li><a href="/alumni/index.php/site/authors_new">Alumni Authors</a></li>				 
+				 </ul>
+			</div>
+		</li>
+	</ul>
+</div>
+ <!--end main nav-->
+</div>
+
+<!-- End Header -->
+	</div>
+<div class="body_container">
+			
+			<div class="body_content">
+			
+ 			<div class="side_column">
+ 				
+					
+				<div class="section_header" style="width:245px; display:block;">
+<span style='color:#cc0000;'>About</span> Alumni
+</div>
+
+<div class="side_nav">
+	<ul>
+			<li><a href="/alumni/index.php/content/welcome">Welcome</a></li>
+		
+		<li><a href="/alumni/index.php/site/staff">Staff Contact</a></li>
+		
+		<li><a href="/alumni/index.php/content2/board">Board of Directors</a></li>
+		
+		<li><a href="/alumni/index.php/site/faq">FAQ</a></li>
+		
+		 <li><a href="/alumni/index.php/content/partners_and_sponsors">Partners and Sponsors</a></li>
+		
+		<li><a href="/alumni/index.php/content/sponsorship_information">Sponsorship Information</a></li>
+
+	</ul>
+</div>
+
+				<div class="section_header" style="width:245px;"><span style="color:#cc0000;">Get</span> Involved</div>
+ 				
+ 					<ul style="width:245px; height:auto; float:left;">
+ 						<li class="event_list_item_left" style="display:block; float:left; height:auto; width:225px!important; padding:10px; margin:0;"><span style="color:#cc0000; font-family:Helvetica, Arial, Verdana, sans-serif; font-size:10px; line-height:12px; font-weight:normal; height:15px; float:left; margin-right:3px;">FIND US ON:</span><br/>
+							<a href="http://www.facebook.com/pages/UGA-Alumni-Association/113414222656" target="blank"><img src="http://www.alumni.uga.edu/alumni/regionalart/facebook_icon.png" style="margin-right:3px;" alt="" /></a>
+							<a href="http://twitter.com/#!/ugaalumniassoc" target="blank"><img src="http://www.alumni.uga.edu/alumni/regionalart/twitter_icon.png" style="margin-right:3px;" alt="" /></a>
+							<a href="http://www.linkedin.com/groups?home=&gid=31401" target="blank"><img src="http://www.alumni.uga.edu/alumni/regionalart/linkedIn_icon.png" style="margin-right:3px;" alt="" /></a>
+						</li>
+						<li class="event_list_item_left" style="display:block; height:auto; width:225px; padding:10px; margin:0;"><a href="/alumni/index.php/chapters/chapter_search"><img src="/alumni/ee/images/chapter_search_ad.jpg" style="display:block; height:auto; width:200px; margin-left:auto; margin-right:auto;"/></a></li>
+						<li class="event_list_item_left" style="display:block; height:auto; width:225px; padding:10px; margin:0;"><a href="http://www.externalaffairs.uga.edu/update/"><img src="/alumni/ee/images/update_your_info_ad.jpg" style="display:block; height:auto; width:200px; margin-left:auto; margin-right:auto;"/></a></li>
+						<li class="event_list_item" style="display:block; height:auto; width:225px; padding:10px; margin:0;"><a href="http://www.scribd.com/fullscreen/64288087?access_key=key-2cnb3v93y1td1d5nedba" target="_new"><img src="/alumni/ee/images/G_Book_2011-2012_left.jpg" style="display:block; height:239px; width:200px; margin-left:auto; margin-right:auto;"/></a></li>
+						<li class="event_list_item_left" style="display:block; height:auto; width:225px; padding:10px; margin:0;"><a href="http://uga.edu/gm/ee/index.php"><img src="/alumni/ee/images/gm_logo.jpg" style="display:block; height:auto; width:200px; margin-left:auto; margin-right:auto;"/></a></li>
+					</ul>
+ 				
+
+			</div>
+ 			
+ 				</div>
+ 			<div><div class="italic_header" >UGA Alumni Association:</div>
+			<div class="page_header" style="z-index:50;">Executive Director's Blog</div>
+			</div>
+ 			<div class="main_column_right">
+ 				<div class="body_content">					
+					<div class="body_copy"><br>
+<link rel="stylesheet" href="/alumni/ee/css/anythingslider.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="/alumni/ee/js/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="/alumni/ee/js/jquery.anythingslider.js" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	$(function () {
+		$('#slider1').anythingSlider({
+			buildNavigation	: false,
+			autoPlay		: false,
+			startStopped    : true, // If autoPlay is on, this can force it to start stopped
+			width : 219, // Override the default CSS width
+			height           : 405,  // Override the default CSS width
+			buildArrows: false,
+			theme           : 'cs-portfolio',
+			themeDirectory      : '/alumni/ee/css/theme-{themeName}.css', 
+			onSlideComplete : function(slider){
+				if(slider.currentPage==11){
+					slider.gotoPage(1);
+				}
+				}
+		});
+		
+	});
+		
+	</script>
+	<style>
+	img { border-style: none; }
+	div.anythingSlider.activeSlider .thumbNav a.cur, div.anythingSlider.activeSlider .thumbNav a {
+			background-color: #9E9E9E;
+		}
+		div.anythingSlider.activeSlider .anythingWindow 
+			{
+			border-top-color: #9E9E9E;
+			border-right-color-value: #9E9E9E;
+			border-bottom-color: #9E9E9E;
+			border-left-color-value: #9E9E9E;
+			border-left-color-ltr-source: physical;
+			border-left-color-rtl-source: physical;
+			border-right-color-rtl-source: physical;
+			border-right-color-ltr-source: physical;
+			}
+			div.anythingSlider .start-stop
+			{
+			background-color: #9E9E9E;
+			color: #ffffff;
+			}
+	div.anythingSlider .anythingWindow {
+	border-left: 1px solid #9E9E9E;
+	border-right: 1px solid #9E9E9E;
+	border-top: 1px solid #9E9E9E;
+	border-bottom: 1px solid #9E9E9E;
+}
+			
+</style>
+<br>
+<div class="extra_column_nav">
+<div class="section_header" style="width:219px;">Archives</div><br><br><br>
+<ul  valign="top" id="slider1">
+
+						
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/18152"><em>02.10.2012</em><br><span style="font-weight:bold;">Come to India Night!</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/18137"><em>02.09.2012</em><br><span style="font-weight:bold;">The Newest Dawg in 2012</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/18132"><em>02.08.2012</em><br><span style="font-weight:bold;">Think Garden: State Botanical Garden of Georgia&#8217;s February Events</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/18123"><em>02.07.2012</em><br><span style="font-weight:bold;">A Special UGA Class Ring Inscription</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/18113"><em>02.06.2012</em><br><span style="font-weight:bold;">NE Georgia Boy Scouts Honor Three UGA Alumni</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/18089"><em>02.03.2012</em><br><span style="font-weight:bold;">UGA Cheerleader Brings the Noise, and the Muscle</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/15930"><em>02.02.2012</em><br><span style="font-weight:bold;">Talented Alumna Spotlight: Laurel Wells ’03</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/15163"><em>02.01.2012</em><br><span style="font-weight:bold;">23-Yard-Long Sanford Stadium in Former Fullback’s Backyard</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/13472"><em>01.31.2012</em><br><span style="font-weight:bold;">Exclusive Athens Dining at The Four Coursemen Supper Club</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/13470"><em>01.30.2012</em><br><span style="font-weight:bold;">The UGA Accidentals are Coming to Jekyll</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/13132"><em>01.27.2012</em><br><span style="font-weight:bold;">Renowned UGA Chemist Henry Schaefer Honored</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/13130"><em>01.26.2012</em><br><span style="font-weight:bold;">SEC Championship Game Watching in Singapore</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12975"><em>01.25.2012</em><br><span style="font-weight:bold;">Happy 91st Birthday to Georgia Legend Dan Magill!</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12860"><em>01.24.2012</em><br><span style="font-weight:bold;">Victory! Lady Bulldogs Swim Team Breaks School Record</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/12852"><em>01.23.2012</em><br><span style="font-weight:bold;">UGA President Michael Adams to Present 2012 State of the University</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12847"><em>01.20.2012</em><br><span style="font-weight:bold;">Bulldog 100: Fastest Growing Bulldog Businesses Celebration</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12842"><em>01.19.2012</em><br><span style="font-weight:bold;">February 2: GMOA’s Green Symposium of the Decorative Arts</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12820"><em>01.18.2012</em><br><span style="font-weight:bold;">Emily Lembeck ’95 Named 2012 Georgia Superintendent of the Year</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12706"><em>01.17.2012</em><br><span style="font-weight:bold;">Stu Wittner ’77 Leads Gold Medal Men’s Basketball Team</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12685"><em>01.13.2012</em><br><span style="font-weight:bold;">Celebrating MLK 2012: Moving Forward with a Shared Vision</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12681"><em>01.12.2012</em><br><span style="font-weight:bold;">Chris Mastrodicasa ’97 and Mike Pruitt ’98 Win Storm Water and Erosion Control Top Projects 2011</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/12676"><em>01.11.2012</em><br><span style="font-weight:bold;">Mark your Calendar for the 10th Annual Founders Day Lecture</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12664"><em>01.10.2012</em><br><span style="font-weight:bold;">Nourish International’s UGA Chapter Makes Impact on Ugandan Nonprofit</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12648"><em>01.09.2012</em><br><span style="font-weight:bold;">Joanne ’96, ’97 and Tom Curtin ’95 Grow Keller Williams Luxury Homes</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12639"><em>01.06.2012</em><br><span style="font-weight:bold;">Kudos to our SoCal Chapter!</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12606"><em>01.05.2012</em><br><span style="font-weight:bold;">Daniel Hart ’05 Reinvents Wine Bottles, Career Path</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12591"><em>01.04.2012</em><br><span style="font-weight:bold;">UGA Sorority Sisters Found Ovarian Cycle Nonprofit</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12588"><em>01.03.2012</em><br><span style="font-weight:bold;">Matt Booth ’94, ’97 Achieves Diplomate Certification in Canine and Feline Practice</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/12413"><em>12.23.2011</em><br><span style="font-weight:bold;">Have a Safe and Happy Holiday!</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12412"><em>12.22.2011</em><br><span style="font-weight:bold;">Alumna Celebrated at White House&#8217;s HealthierUS School Challenge</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12411"><em>12.21.2011</em><br><span style="font-weight:bold;">Join Fellow UGA Alumni at the Outback Bowl Pre-Game Tailgate</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/12406"><em>12.20.2011</em><br><span style="font-weight:bold;">Top Georgia Environmental Regulator Appointed</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9732"><em>12.19.2011</em><br><span style="font-weight:bold;">Premature “Baby Bulldog” Goes Home</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9456"><em>12.16.2011</em><br><span style="font-weight:bold;">This Christmas: Wrapping Up Toys for Tots</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9454"><em>12.15.2011</em><br><span style="font-weight:bold;">Support Homeless Pets in Athens</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/9441"><em>12.14.2011</em><br><span style="font-weight:bold;">Happy Birthday to All-American Football Star Charley Trippi</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9434"><em>12.13.2011</em><br><span style="font-weight:bold;">Double Dawg Among First in State to Become Certified in New Law Specialty</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9423"><em>12.12.2011</em><br><span style="font-weight:bold;">UGA Alumna Earns BET Award</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9417"><em>12.09.2011</em><br><span style="font-weight:bold;">UGA Alumna to be First Female Mayor in Albany</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9406"><em>12.08.2011</em><br><span style="font-weight:bold;">On Campus: Fiji Keeps up with Traditions, Grades</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9401"><em>12.07.2011</em><br><span style="font-weight:bold;">Book Release: “The Long Road to Beating Cystic Fibrosis”</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9400"><em>12.06.2011</em><br><span style="font-weight:bold;">UGA Legacy Profile: Fred Birchmore and Family</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/9392"><em>12.05.2011</em><br><span style="font-weight:bold;">A Talk with UGA Alumni President, The Honorable Steve Jones</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9388"><em>12.02.2011</em><br><span style="font-weight:bold;">Creating China&#8217;s Green Social Network</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9393"><em>12.01.2011</em><br><span style="font-weight:bold;">Principal Jackson Receives National Terrel H. Bell Award</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9383"><em>11.30.2011</em><br><span style="font-weight:bold;">Urban Legends of UGA Admissions</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9371"><em>11.29.2011</em><br><span style="font-weight:bold;">Give to Celebrate, to Remember, to Make a Difference</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9363"><em>11.28.2011</em><br><span style="font-weight:bold;">&#8216;Tis the Season for UGA&#8217;s Holiday Calendar of Events</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9349"><em>11.23.2011</em><br><span style="font-weight:bold;">Happy Thanksgiving!</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/9348"><em>11.22.2011</em><br><span style="font-weight:bold;">Judge&#8217;s Footnote on Georgia Gators</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9333"><em>11.21.2011</em><br><span style="font-weight:bold;">Larry Munson, Long-Time Georgia Football Announcer, Passes at 89</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9323"><em>11.18.2011</em><br><span style="font-weight:bold;">Bulldog Business Innovative Outdoors Awarded Contractor of the Year</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9254"><em>11.17.2011</em><br><span style="font-weight:bold;">UGA CAES Experts Provide Agriculture Training in Afghanistan</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9214"><em>11.16.2011</em><br><span style="font-weight:bold;">Comedian Back in Atlanta, Keeping it Clean</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9208"><em>11.15.2011</em><br><span style="font-weight:bold;">Young Alumni &#8220;Networking&#8221; Basketball Event</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9192"><em>11.14.2011</em><br><span style="font-weight:bold;">Greatest Generation Alumnus Reflects on &#8220;UGA Attitude,&#8221; Athens Town</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/9191"><em>11.11.2011</em><br><span style="font-weight:bold;">Honoring UGA Men and Women in Uniform</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9184"><em>11.10.2011</em><br><span style="font-weight:bold;">Win Georgia vs. Auburn Football Tickets</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9173"><em>11.09.2011</em><br><span style="font-weight:bold;">Lady Bulldog Enters Illinois Hall of Fame</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9162"><em>11.08.2011</em><br><span style="font-weight:bold;">UGA Alumnus to Receive North Carolina Award</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9154"><em>11.07.2011</em><br><span style="font-weight:bold;">Student Alumni Council Wins Spirit Award at Homecoming</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9069"><em>11.04.2011</em><br><span style="font-weight:bold;">Leadership Georgia to Honor UGA Alumni Association President</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9064"><em>11.03.2011</em><br><span style="font-weight:bold;">Huie-Wilcox Gallery Opens on College of Coastal Georgia Campus</span></a></li>
+			</ul>
+		</li>
+							
+			<li><ul style="margin:0; padding:0;">
+		<li><a href="/alumni/index.php/site/blog/9057"><em>11.02.2011</em><br><span style="font-weight:bold;">USS Carl Vinson to Host Historic Basketball Game</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9053"><em>11.01.2011</em><br><span style="font-weight:bold;">Robert Heaberlin Among America’s Best K-8 Principals</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9049"><em>10.31.2011</em><br><span style="font-weight:bold;">Happy Halloween and Homecoming Week!</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9034"><em>10.28.2011</em><br><span style="font-weight:bold;">Gator Hater Potluck Kicks Off GA-FL Weekend</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9033"><em>10.27.2011</em><br><span style="font-weight:bold;">Bob Bruininks to Deliver Captivating Louise McBee Lecture</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9013"><em>10.26.2011</em><br><span style="font-weight:bold;">101-Year-Old Stan Singleton Honored at Athens Kiwanis Club</span></a></li>
+							
+		<li><a href="/alumni/index.php/site/blog/9005"><em>10.25.2011</em><br><span style="font-weight:bold;">Call for Judges: Junior Science &amp; Humanities Symposium, National History Day</span></a></li>
+			</ul>
+		</li>
+	
+
+</ul>
+<div style="width:150px; height:auto; margin-left:auto; margin-right:auto;"> <a href="javascript://" onclick="$('#slider1').data('AnythingSlider').goBack();" style="float:left;" ><< Back</a> <a href="javascript://" onclick="$('#slider1').data('AnythingSlider').goForward();" style="float:right;">Next >></a></div>
+</div>
+<div style="width:430px;float:left;">
+					
+	<div class="news_light_box" style="padding:10px;" valign="top">
+			<em>11.02.2011</em>
+			<h3><a href="/alumni/index.php/site/blog/9057"><span style="font-weight:bold;">USS Carl Vinson to Host Historic Basketball Game</span></a></h3>
+			<img src="/images/sized/alumni/ee/images/blog/Carl_Vinson-138x138.jpg"  width="138" height="138" class="feature_image" style="border:1px solid #54595b;  margin-top:10px;margin-bottom:10px; margin-right:10px;" align="left"/>			<p><p>
+	<span face="">This Veterans Day, November 11, the Carl Vinson and its sailors will host The Carrier Classic on the flight deck of the aircraft carrier. The matchup between North Carolina and Michigan State will be the first college basketball game of its kind, accommodating more than 7,000 fans, mostly veterans. The ship made history 10 years ago by launching air attacks against the Taliban, and again in May when it transported Osama bin Laden&rsquo;s body for a burial at sea. A team of special guests, including honorary captains Magic Johnson and James Worthy, will be onboard, along with President Barack Obama. Click <a href="http://www.sfexaminer.com/local/bay-area/2011/10/fleet-week-ship-serve-college-basketball-court#ixzz1ca74yrYB">here</a></span> to read more.</p>
+<p>
+	UGA is home to the Carl Vinson Institute of Government. Carl Vinson (November 18, 1883 &ndash; June 1, 1981), US <a href="http://en.wikipedia.org/wiki/United_States_House_of_Representatives" title="United States House of Representatives">Representative</a> from <a href="http://en.wikipedia.org/wiki/Georgia_(U.S._state)" title="Georgia (U.S. state)">Georgia</a>, was known as &quot;The Father of the Two-Ocean Navy.&rdquo; For more than 80 years, the Vinson Institute has worked with public officials throughout Georgia and around the world to improve governance and people&#39;s lives. Click <a href="http://www.cviog.uga.edu/">here</a> to read more.</p>
+</p>
+			<div style="float:right;"><a href="javascript: void(0)" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F9057', 'Facebook' , 'width=800, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/facebook_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on Facebook" title="Share on Facebook" /></a>
+			<a href="javascript: void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=USS Carl Vinson to Host Historic Basketball Game&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F9057', 'Twitter' , 'width=400, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/twitter_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Tweet this Blog" title="Tweet this story"  /></a>
+			<a href="javascript: void(0)" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F9057&title=USS Carl Vinson to Host Historic Basketball Game&source=UGA-Alumni-Association-Executive-Directors-Blog', 'LinkedIn' , 'width=500, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/linkedin_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on LinkedIn" title="Share on LinkedIn"  /></a>
+			<script type="text/javascript">
+ 							   function loadScript(jssource) {
+        							var jsnode = document.createElement('script');
+        							jsnode.setAttribute('type','text/javascript');
+        							jsnode.setAttribute('src',jssource);
+        							document.getElementsByTagName('head')[0].appendChild(jsnode);
+        							document.getElementById('plus1').innerHTML = "";
+    								}
+    								var plus1source = "https://apis.google.com/js/plusone.js";
+							</script>
+
+							<a id="plus1"  href="javascript:loadScript(plus1source)">
+							<img src="http://alumni.uga.edu/alumni/ee/images/google_plus_icon.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Google+" title="Google+" />
+							</a>
+							<g:plusone size="small" href="http://www.alumni.uga.edu/alumni/index.php/site/blog/9057"></g:plusone>
+
+			</div>
+			<br />
+				
+	</div>
+
+<br><h2 style="padding-bottom:10px; border-bottom:1px solid #cc0000; width:430px;"><span style="color:#cc0000;">Recent</span> Entries</h2><br>
+					
+	<div class="news_dark_box" style="padding:10px;" valign="top">
+			<em>02.10.2012</em>
+			<h3><a href="/alumni/index.php/site/blog/18152"><span style="font-weight:bold;">Come to India Night!</span></a></h3>
+			<img src="/images/sized/alumni/ee/images/blog/indianight2012-138x138.jpg"  width="138" height="138" class="feature_image" style="border:1px solid #54595b;  margin-top:10px;margin-bottom:10px; margin-right:10px;" align="left"/>			<div ><p>
+	<a href="http://www.facebook.com/pages/UGA-Indian-Cultural-Exchange-ICE/105263372631">Indian Cultural Exchange&rsquo;s</a> (ICE) India Night is the largest and most anticipated event held each year by this active UGA student organization. The night includes traditional and modern dance performances, musical entertainment, and comedic skits, attracting university students from all over the Southeast. &nbsp;</p>
+<p>
+	This year&#39;s diverse show will be held at the Classic Center in downtown Athens on February 18. Attendance is expected to be up to 2,000 students, alumni and friends. Tickets are $14 in advance; $16 at the door. I hope to see you at this enriching, cultural extravaganza!</p>
+<p>
+	ICE was founded in 1992 to unite ethnic Indian students with Indian culture enthusiasts through activities that invoke cultural, social, and community service involvement.<br />
+	<br />
+	For more information, click <a href="http://www.ugaice.org/">here</a>, email <a href="mailto:ugaindianight2012@gmail.com">ugaindianight2012@gmail.com</a>, or tweet @ugaindianight.</p>
+</div>
+			<div style="float:right;"><a href="javascript: void(0)" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18152', 'Facebook' , 'width=800, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/facebook_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on Facebook" title="Share on Facebook" /></a>
+			<a href="javascript: void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Come to India Night!&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18152', 'Twitter' , 'width=400, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/twitter_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Tweet this Blog" title="Tweet this story"  /></a>
+			<a href="javascript: void(0)" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18152&title=Come to India Night!&source=UGA-Alumni-Association-Executive-Directors-Blog', 'LinkedIn' , 'width=500, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/linkedin_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on LinkedIn" title="Share on LinkedIn"  /></a>
+			<script type="text/javascript">
+ 							   function loadScript(jssource) {
+        							var jsnode = document.createElement('script');
+        							jsnode.setAttribute('type','text/javascript');
+        							jsnode.setAttribute('src',jssource);
+        							document.getElementsByTagName('head')[0].appendChild(jsnode);
+        							document.getElementById('plus1').innerHTML = "";
+    								}
+    								var plus1source = "https://apis.google.com/js/plusone.js";
+							</script>
+
+							<a id="plus1" href="javascript:loadScript(plus1source)">
+							<img src="http://alumni.uga.edu/alumni/ee/images/google_plus_icon.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Google+" title="Google+" />
+							</a>
+							<g:plusone size="small" href="http://www.alumni.uga.edu/alumni/index.php/site/blog/18152"></g:plusone></a>
+			</div>
+			<br />
+				
+					
+	</div>
+
+					
+	<div class="news_light_box" style="padding:10px;" valign="top">
+			<em>02.09.2012</em>
+			<h3><a href="/alumni/index.php/site/blog/18137"><span style="font-weight:bold;">The Newest Dawg in 2012</span></a></h3>
+			<img src="/images/sized/alumni/ee/images/blog/New_Dawg-138x138.jpg"  width="138" height="138" class="feature_image" style="border:1px solid #54595b;  margin-top:10px;margin-bottom:10px; margin-right:10px;" align="left"/>			<div ><p>
+	The first baby of the New Year generated a great deal of excitement at Cincinnati&#39;s Bethesda North Hospital. Brent Jarnicki &rsquo;01 and his wife, Jackie, had their first baby born EXACTLY at midnight on January 1, 2012. Jacob Isaac Jarnicki, 6 lbs, 14 oz, and 20.5 inches long, is officially known as the first 2012 baby born in Cincinnati, the greater tri-state area, and even the US! The hospital&nbsp;scheduled a press conference with all four Cincinnati news stations and papers to cover the occasion.</p>
+<p>
+	Click <a href="http://www.wlwt.com/news/30112324/detail.html#.TwJ87-ujIjk.facebook">here</a> to see a video of the proud parents showing off Jacob in red and black. I look forward to meeting him in UGA&#39;s Class of 2030!</p>
+</div>
+			<div style="float:right;"><a href="javascript: void(0)" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18137', 'Facebook' , 'width=800, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/facebook_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on Facebook" title="Share on Facebook" /></a>
+			<a href="javascript: void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=The Newest Dawg in 2012&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18137', 'Twitter' , 'width=400, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/twitter_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Tweet this Blog" title="Tweet this story"  /></a>
+			<a href="javascript: void(0)" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18137&title=The Newest Dawg in 2012&source=UGA-Alumni-Association-Executive-Directors-Blog', 'LinkedIn' , 'width=500, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/linkedin_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on LinkedIn" title="Share on LinkedIn"  /></a>
+			<script type="text/javascript">
+ 							   function loadScript(jssource) {
+        							var jsnode = document.createElement('script');
+        							jsnode.setAttribute('type','text/javascript');
+        							jsnode.setAttribute('src',jssource);
+        							document.getElementsByTagName('head')[0].appendChild(jsnode);
+        							document.getElementById('plus1').innerHTML = "";
+    								}
+    								var plus1source = "https://apis.google.com/js/plusone.js";
+							</script>
+
+							<a id="plus1" href="javascript:loadScript(plus1source)">
+							<img src="http://alumni.uga.edu/alumni/ee/images/google_plus_icon.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Google+" title="Google+" />
+							</a>
+							<g:plusone size="small" href="http://www.alumni.uga.edu/alumni/index.php/site/blog/18137"></g:plusone></a>
+			</div>
+			<br />
+				
+					
+	</div>
+
+					
+	<div class="news_dark_box" style="padding:10px;" valign="top">
+			<em>02.08.2012</em>
+			<h3><a href="/alumni/index.php/site/blog/18132"><span style="font-weight:bold;">Think Garden: State Botanical Garden of Georgia&#8217;s February Events</span></a></h3>
+			<img src="/images/sized/alumni/ee/images/blog/Botanical_Garden-138x138.jpg"  width="138" height="138" class="feature_image" style="border:1px solid #54595b;  margin-top:10px;margin-bottom:10px; margin-right:10px;" align="left"/>			<div ><p>
+	In the event you haven&#39;t visited the State Botanical Garden of Georgia recently, put it on your list. We are so fortunate to have our state&#39;s official botanical garden located right here in Athens.</p>
+<p>
+	<strong>Valentine&rsquo;s Day dinner:</strong> On Feb. 14 at 6:30 p.m., the garden will host a Valentine&rsquo;s Day dinner in the conservatory. Catered by Donderos&rsquo; Kitchen, the buffet is $70 per couple or $40 per person (add $10 per person if reservations are made after Feb. 10). Guests may bring their own wine. For more information or reservations, call 706/542-6359 or 706/389-7955.</p>
+<p>
+	<strong>The Gardens of Japan:</strong> On Feb. 21 at 7 p.m., horticulturist Allan Armitage will speak about Japanese gardens as part of &ldquo;The World is My Garden&rdquo; series, which is co-sponsored by the Friends of the State Botanical Garden of Georgia and the Friends of the Athens-Clarke County Library. Proceeds benefit the State Botanical Garden, the UGA Trial Gardens and the library. For more information or to purchase $10 tickets, call 706/542-6138.</p>
+<p>
+	<strong>Live music.</strong> On Feb. 28, the garden will host a live music session. The artists will be announced.</p>
+<p>
+	The visitor center and conservatory is now open to the public on Tuesdays until 8:30 p.m. The later time includes longer hours for Donderos&rsquo; Kitchen, the garden&rsquo;s new coffee and sandwich shop; the garden&rsquo;s gift shop; conservatory plantings; display gardens; and visitor center&rsquo;s art exhibit. For more information, click <a href="http://botgarden.uga.edu">here</a>.</p>
+</div>
+			<div style="float:right;"><a href="javascript: void(0)" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18132', 'Facebook' , 'width=800, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/facebook_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on Facebook" title="Share on Facebook" /></a>
+			<a href="javascript: void(0)" onclick="window.open('https://twitter.com/intent/tweet?text=Think Garden: State Botanical Garden of Georgia&#8217;s February Events&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18132', 'Twitter' , 'width=400, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/twitter_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Tweet this Blog" title="Tweet this story"  /></a>
+			<a href="javascript: void(0)" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://www.alumni.uga.edu%2Falumni%2Findex.php%2Fsite%2Fblog%2F18132&title=Think Garden: State Botanical Garden of Georgia&#8217;s February Events&source=UGA-Alumni-Association-Executive-Directors-Blog', 'LinkedIn' , 'width=500, height=500'); return false;"><img src="http://alumni.uga.edu/alumni/ee/images/linkedin_icon_small.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Share on LinkedIn" title="Share on LinkedIn"  /></a>
+			<script type="text/javascript">
+ 							   function loadScript(jssource) {
+        							var jsnode = document.createElement('script');
+        							jsnode.setAttribute('type','text/javascript');
+        							jsnode.setAttribute('src',jssource);
+        							document.getElementsByTagName('head')[0].appendChild(jsnode);
+        							document.getElementById('plus1').innerHTML = "";
+    								}
+    								var plus1source = "https://apis.google.com/js/plusone.js";
+							</script>
+
+							<a id="plus1" href="javascript:loadScript(plus1source)">
+							<img src="http://alumni.uga.edu/alumni/ee/images/google_plus_icon.png" style="width:15px; height:15px; padding:0px !important; margin-right:1px;" alt="Google+" title="Google+" />
+							</a>
+							<g:plusone size="small" href="http://www.alumni.uga.edu/alumni/index.php/site/blog/18132"></g:plusone></a>
+			</div>
+			<br />
+				
+					
+	</div>
+
+
+
+
+
+
+<a href="http://www.alumni.uga.edu/alumni/index.php/site/blog/P3">Next Page</a>
+
+
+
+
+</div>
+
+
+
+			</div>							
+		</div>			
+	 </div> 					
+<div class="supporters">
+	<div class="body_copy" style="width:575px; height:20px; text-align:center; color:#bcbcbc; margin-left:auto; margin-right:auto; margin-bottom:10px;">Thank you to our Affinity Partners</div>
+	<div style="width:575px; height:100px; margin-left:auto; margin-right:auto;">
+	<a href="http://www.bankofamerica.com/uga" target="blank"><img src="http://externalaffairs.uga.edu/alumni/ee/images/b_of_a_card_button.jpg" alt="Bank of America" style="width:150px; margin-left:0px; height:100px; float:left;"/></a>
+	<a href="http://www.personal-plans.com/ugaa" target="blank"><img src="http://externalaffairs.uga.edu/alumni/ee/images/marsh_logo.jpg" alt="Marsh" style="width:175px; height:100px; margin-left:50px; float:left;"/></a>
+	<a href="http://www.libertymutual.com/ugaaa" target="blank"><img src="http://externalaffairs.uga.edu/alumni/ee/images/liberty_mutual_logo.jpg" alt="Liberty Mutual" style="width:150px; height:100px; margin-left:50px; float:left;"/></a>
+	</div>
+</div>
+<div class="mega_footer">
+		<div class="mega_footer_head_section">
+			<div class="mega_footer_header">UGA Alumni Association: Site Index</div>
+			<div style="height:35px; width:200px; line-height:25px; float:left; text-align:right; margin:5px 0 0 400px;" class="body_copy"><a href="http://text.usg.edu:8080/tt/<?php echo 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];   ?>" style="color:#ffffff;"><b>Text Only Version</b></a>
+			</div>
+		</div>
+		<div class="mega_footer_content">
+			<div class="mega_footer_column" style="border:none;" >
+				<div class="mega_footer_subhead"><a href="#">About Us</a></div>
+				<ul>
+					<li><a href="/alumni/index.php">Home</a></li>
+					<li><a href="/alumni/index.php/content/welcome">Welcome</a></li>
+					<li><a href="/alumni/index.php/site/staff">Staff Contact</a></li>
+					<li><a href="/alumni/index.php/content2/board">Board of Directors</a></li>
+					<li><a href="/alumni/index.php/site/faq">FAQs</a></li>
+					<li><a href="/alumni/index.php/content/sponsorship_information">Sponsorship Information</a></li>
+					<li><a href="/alumni/pdfs/support.pdf">Campus Support Form</a></li>
+				</ul>
+			</div>
+			<div class="mega_footer_column">
+				<div class="mega_footer_subhead"><a href="#">Important Links</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/site/blog">Blog</a></li>
+					<li><a href="/alumni/index.php/events/calendar">Event Calendar</a></li>
+					<li><a href="http://www.alumniconnections.com/olc/pub/GAU/">Online Community</a></li>
+					<li><a href="/alumni/index.php/content/schools_colleges">Schools & Colleges</a></li>
+					
+				</ul>
+			</div>
+			<div class="mega_footer_column">
+				<div class="mega_footer_subhead"><a href="/alumni/index.php/chapters/chapter_search">Chapters</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/site/chapters/metro_atlanta_chapter">Metro Atlanta Chapter</a></li>
+					<li><a href="/alumni/index.php/site/chapters/athens_chapter">Athens Chapter</a></li>
+					<li><a href="/alumni/index.php/chapters/chapter_search">Chapter Search</a></li>
+					<li><a href="/alumni/index.php/site/chapter_awards">Awards</a></li>
+					<li><a href="/alumni/index.php/content/leadership_info">Leadership Info</a></li>
+				</ul>
+			</div>
+			<div class="mega_footer_column">
+				<div class="mega_footer_subhead"><a href="#">Signature Events</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/content2/call_for_nominations">Alumni Awards</a></li>
+					<li><a href="/alumni/index.php/site/bulldog100/b100_about">Bulldog 100</a></li>
+					<li><a href="/alumni/index.php/site/40under40/40_under_40_about">40 Under 40</a></li>
+					<li><a href="/alumni/index.php/content/uga_day">UGA Day</a></li>
+					<li><a href="/alumni/index.php/site/signature_events">More Signature Events</a></li>	
+					<li><a href="/alumni/index.php/content/sponsorship_information">Sponsorship Information</a></li>
+				</ul>
+			</div>
+			<div class="mega_footer_column">
+				<div class="mega_footer_subhead"><a href="#">Programs</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/site/saa/saa_about">Student Alumni Association</a></li>
+					<li><a href="http://career.uga.edu/alumni/alumni">Career Services</a></li>
+					<li><a href="http://www.alumni.uga.edu/alumni/index.php/content/alumni_admissions">Alumni Admissions</a></li>
+					<li><a href="/alumni/index.php/content2/women_of_uga_program_overview">Women of UGA</a></li>
+					<li><a href="/alumni/index.php/content2/young_alumni">Young Alumni Programs</a></li>
+					<li><a href="/alumni/index.php/tours/tours_new">Alumni Tours</a></li>
+					<li><a href="/alumni/index.php/content/babybulldogs">Baby Bulldogs</a></li>
+					<li><a href="/alumni/index.php/site/authors_new">Alumni Authors</a></li>
+				</ul>
+			</div>
+			<div class="mega_footer_column" style="border:none;">
+				<div class="mega_footer_subhead"><a href="/alumni/index.php/content/partners_and_sponsors"">Products & Benefits</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/content/partners_and_sponsors">Partners & Sponsors</a></li>
+					<!--<li><a href="/alumni/index.php/products_and_discounts/index_new">Merchandise</a></li>-->
+					<li><a href="/alumni/index.php/content/campus_benefits">Campus Benefits</a></li>
+					<li><a href="/alumni/index.php/content/uga_class_ring">UGA Class Ring</a></li>
+				</ul>
+			</div>
+			<div class="mega_footer_column">
+				<div class="mega_footer_subhead"><a href="/alumni/index.php/site/heritage/c/104">UGA Heritage</a></div>
+				<ul>
+					<li><a href="/alumni/index.php/site/heritage/c/104">Greatest Generation</a></li>
+					<li><a href="/alumni/index.php/site/heritage/c/105">UGA Legacies</a></li>
+					<li><a href="/alumni/index.php/site/heritage/c/103">Campus Lore</a></li>
+					<li><a href="/alumni/index.php/site/heritage/c/106">Support Our Troops</a></li>
+				</ul>
+			</div>
+			<div style="width:475px; height:150px; margin:10px 0 0 10px; padding:10px; float:left; border:1px solid #bcbcbc; background-color:#ffffff;">
+					<div style="float:left; height:130px; width:240px; "><img src="/alumni/ee/images/alumni_footer_logo.png"/></div>
+					<div class="body_copy" style="width:200px; height:100px; float:left; border-left:1px dotted #bcbcbc; margin-top:10px; padding:30px 0 0 10px;">The UGA Alumni Association<br>Wray-Nicholson House<br>
+						298 S. Hull Street Athens, GA 30602<br>(706) 542-2251 | (800) 606-8786<br>&copy;2011 UGA Alumni Association
+					</div>
+			</div>
+		</div> 
+	</div>	
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#openCloseIdentifier_ea").hide();
+	$("#openCloseIdentifier_uga").hide();
+});
+$(document).ready(function() {
+	$("#quick_links_button").click( function() {
+		closeea();
+        if ($("#openCloseIdentifier_uga").is(":hidden")) {
+								
+			$("#uga_sliderContent").show(0,	function(){
+				$("#uga_brand_bar").animate({ 
+					marginTop: "151px"
+					}, 500 ,function() {
+						$("#openCloseIdentifier_uga").show();
+					});								
+				});				
+        } else {
+					$("#uga_brand_bar").animate({ 
+						marginTop: "0px"
+						}, 400);			
+					$("#openCloseIdentifier_uga").hide(0,closeea());					
+
+        }		
+    }); 
+});
+$(document).ready(function() {
+	$("#ea_brand_bar").click( function() {
+		closeuga();
+        if ($("#openCloseIdentifier_ea").is(":hidden")) {
+									
+			$("#ea_sliderContent").show(0,	function(){
+				$("#ea_brand_bar").animate({ 
+					marginTop: "161px"
+					}, 500 ,function() {
+						$("#openCloseIdentifier_ea").show();
+					});								
+				});				
+        } else {
+					$("#ea_brand_bar").animate({ 
+						marginTop: "0px"
+						}, 400 );			
+					$("#openCloseIdentifier_ea").hide(0,closeea());					
+
+        }		
+    }); 
+});
+function closeuga(){
+	if ($("#openCloseIdentifier_uga").is(":hidden")!=true) {
+		$("#uga_brand_bar").animate({ 
+			marginTop: "0px"
+			}, 400, function(){
+				$("#uga_sliderContent").hide();
+				$("#openCloseIdentifier_uga").hide();
+			}
+			);
+	}
+}
+function closeea(){	
+	if ($("#openCloseIdentifier_ea").is(":hidden")!=true) {
+		$("#ea_brand_bar").animate({ 
+			marginTop: "0px"
+			}, 400, function(){
+				$("#ea_sliderContent").hide();
+				$("#openCloseIdentifier_ea").hide();
+			}
+			);
+	}		
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,290 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-14T17:04:32Z
+WARC-TREC-ID: clueweb12-0110wb-60-26411
+WARC-Target-URI: http://www.digitalsunlight.org/voting/electoral-votes-2008.html
+WARC-Payload-Digest: sha1:ULESPKQ3Y5HALCWIMSMGD36XTGXAQUDJ
+WARC-IP-Address: 209.59.220.27
+WARC-Record-ID: <urn:uuid:1afa63a0-6d3e-426c-b8de-45fc0a81479f>
+Content-Type: application/http; msgtype=response
+Content-Length: 18098
+
+HTTP/1.1 200 OK
+Date: Tue, 14 Feb 2012 17:04:32 GMT
+Server: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny8 with Suhosin-Patch
+Vary: Host,Accept-Encoding
+X-Powered-By: PHP/5.2.6-1+lenny8
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Electoral Votes 2008 - 2008 Electoral Votes - Electoral Vote 2008 - Study with Digital Sunlight</title>
+<meta name="keywords" content="Electoral Vote 2008, 2008 Electoral Votes, Electoral Votes 2008, Electoral Vote, Electoral Votes, Electoral Vote Map, Electoral College Vote, Electoral College Votes">
+<meta name="description" content="2008 Presidential Election Electoral Votes, 2008 Election Electoral Votes, Electoral Votes 2008 Election">
+<script>
+function showhide(link, num) {
+	var list = document.getElementById("hidelist" + num);
+	if (!list.getElementsByClassName) {
+		list.getElementsByClassName = function(cl) {
+			var retnode = [];
+			var myclass = new RegExp('\\b'+cl+'\\b');
+			var elem = list.getElementsByTagName('*');
+			for (var i = 0; i < elem.length; i++) {
+				var classes = elem[i].className;
+				if (myclass.test(classes)) retnode.push(elem[i]);
+			}
+			return retnode;
+		}
+	}
+	var items = list.getElementsByClassName("list_more");
+	if (items[0].style.display=='none') {
+		nd = '';
+	} else {
+		nd = 'none';
+	}
+	for (var i=0; i < items.length;  i++) {
+		items[i].style.display = nd;
+	}
+	if (link != null) {
+		if (nd=='none') {
+			link.innerHTML = 'More';
+		} else {
+			link.innerHTML = 'Less';
+		}
+	}
+	return false;
+}
+</script>
+<script type="text/javascript">
+function toggleComment() {
+	d = document.getElementById("commentform").style;
+	if (d.display=="none") {
+		d.display="";
+	} else {
+		d.display="none";
+	}
+	return false;
+}
+</script>
+
+	<link type="text/css" rel="stylesheet" href="/slideshow.css">
+	<link type="text/css" rel="stylesheet" href="/slideshow-custom.css">
+<link href="/local/style.css" rel="stylesheet" type="text/css" media="screen"></head>
+</head>
+<body>
+<div id="main">
+    <div class="container">
+
+    	<div id="header">
+        	<ul id="navmenu">
+            	<li><a href="/">Home</a></li>
+                <li><a href="/more/aboutus.html">About Us</a></li>
+                <li><a href="/more/contactus.html">Contact Us</a></li>
+                <li><a href="/more/askus.html">Ask Us</a></li>
+            </ul>
+          <div id="logo" onclick="window.location='/'">
+           	  <h1><a href="/">Study with Digital Sunlight</a></h1>
+        </div>
+        	<form id="search" action="/search.php" method="get">
+            <div>
+
+            <input id="s" type="text" name="q" value="Type Here" onfocus="if (this.value=='Type Here') this.value=''"/>
+                <input id="searchsubmit" type="submit" value="Search"/>
+
+            </div>
+   	    	</form>
+   	    	<div id="menu_container">
+        	<ul id="menu" name="menu">
+	<li><a href="/voting/">Voting</a></li>
+	<li><a href="/tea-party/">Tea Party</a></li>
+	<li><a href="/candidates/">Candidates</a></li>
+	<li><a href="/democratic/">Democratic</a></li>
+	<li><a href="/republican/">republican</a></li>
+	<li><a href="/election/">Election</a></li>
+	<li><a href="/liberal/">Liberal</a></li>
+	<li><a href="/ballots/">Ballots</a></li>
+	<li><a href="/gop/">GOP</a></li>
+            </ul>
+            </div>
+
+        </div><!-- /#header div -->
+       
+        <div id="content_area" class="block">
+	<div id="haw"><script type="text/javascript"><!--
+google_ad_client = "pub-0899710069463066";
+/* digitalsunlight.org Top Links */
+google_ad_slot = "4959427443";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div id="leftcolumn">
+		<h3>Marketplace</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<div class="ad"><a href="http://www.studyup.com/pages/students?aid=18293"><h1>Students</h1>
+<p>Are you looking for ways to improve your study habits? Do you want better grades? StudyUp can help you study smarter. You get unlimited space to upload your notes. You can use StudyUp to search for, invite, and network with your Study Buddies. Live feeds give you instant updates when Buddies add notes! Best of - it's all FREE! Sign Up Today! </p></a></div><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/StudyUpcom/202081209836255" width="180" height="82" show_faces="false" stream="false" header="false"></fb:like-box>
+</div>
+		<h3>Related Articles</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<ul class="lhslist" id="hidelist4"><li class="linktext"><a href="http://www.digitalsunlight.org/voting/count-my-vote.html">My Vote Counts</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/voting/electoral-college-votes.html">Electoral College Votes</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/voting/2008-electoral-votes.html">2008 Electoral Votes</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/voting/your-vote-counts.html">Does Your Vote Count</a></li>
+</ul>
+</div>
+		<h3>Related Categories</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<ul class="lhslist" id="hidelist5"><li><a href="http://www.digitalsunlight.org/voting/">Voting</a></li>
+<li><a href="http://www.digitalsunlight.org/election/">Election</a></li>
+<li><a href="http://www.digitalsunlight.org/candidates/">Candidates</a></li>
+<li><a href="http://www.digitalsunlight.org/ballots/">Ballots</a></li>
+<li><a href="http://www.digitalsunlight.org/republican/">republican</a></li>
+<li><a href="http://www.digitalsunlight.org/democratic/">Democratic</a></li>
+<li><a href="http://www.digitalsunlight.org/gop/">GOP</a></li>
+<li><a href="http://www.digitalsunlight.org/liberal/">Liberal</a></li>
+<li><a href="http://www.digitalsunlight.org/conservative/">Conservative</a></li>
+<li><a href="http://www.digitalsunlight.org/tea-party/">Tea Party</a></li>
+</ul>
+</div>
+		<h3>Recently Added</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<ul class="lhslist" id="hidelist6"><li class="linktext"><a href="http://www.digitalsunlight.org/liberal/leader-of-the-liberal-party.html">The Leader Of The Liberal Party</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/gop/democrat-vs-republican.html">Democrats Vs Republicans</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/ballots/how-to-register-to-vote.html">How To Register To Vote</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/republican/republican-vs-democrat-issues.html">Republican Vs Democrat Issues</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/voting/absentee-voter-registration.html">Absentee Voter Registration</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/tea-party/tea-party-decorations-for-kids.html">Tea Party Decorations For Kids</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/tea-party/tea-party-ribbons.html">Tea Party Ribbon</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/tea-party/girls-tea-party-supplies.html">Girls Tea Party Supplies</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/tea-party/fairy-tea-party-ideas.html">Fairy Tea Party Ideas</a></li>
+<li class="linktext"><a href="http://www.digitalsunlight.org/tea-party/afternoon-tea-party-ideas.html">Afternoon Tea Party Ideas</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-finger-foods.html">Tea Party Finger Foods</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-cake-ideas.html">Tea Party Birthday Cake Ideas</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/mad-hatter-tea-party-decoration-ideas.html">Mad Hatter Tea Party Decoration Ideas</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/afternoon-tea-party-recipes.html">Recipes For Afternoon Tea Party</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-games-for-children.html">Tea Party Games For Children</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/1st-birthday-tea-party.html">1st Birthday Tea Party</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/high-tea-party-invitations.html">High Tea Party Invitations</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-theme-ideas.html">Tea Party Theme Ideas</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-sandwiches-for-kids.html">Tea Party Sandwiches For Kids</a></li>
+<li class="linktext list_more"><a href="http://www.digitalsunlight.org/tea-party/tea-party-graphics.html">Tea Party Graphics</a></li>
+</ul><a href="#" onclick="return showhide(this, 6)">More</a><script>showhide(null, 6);</script>
+</div>
+</div>
+<div id="sidecolumn">
+		<h3>Join StudyUp.com Today</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<p>It's always free and anyone can join!</p>
+<script type="text/javascript" src="http://www.studyup.com/js/signup.js"></script>
+<form class="vertical" id="UserSignupForm" method="post" action="http://www.studyup.com/users/signup" accept-charset="utf-8">
+<div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>
+<div class="input text"><label for="UserUsername">Username</label><input name="data[User][username]" type="text" id="UserUsername" /></div>
+<div class="input text"><label for="UserFirstName">First Name</label><input name="data[User][first_name]" type="text" maxlength="255" id="UserFirstName" /></div>
+<div class="input text"><label for="UserLastName">Last Name</label><input name="data[User][last_name]" type="text" maxlength="255" id="UserLastName" /></div>
+<div class="input text"><label for="UserEmail">Email</label><input name="data[User][email]" type="text" id="UserEmail" /></div>
+<div class="input password"><label for="UserThePassword">Password</label><input type="password" name="data[User][the_password]" id="UserThePassword" /></div>
+<div class="input checkbox"><input type="hidden" name="data[User][teacher]" id="UserTeacher_" value="0" /><input type="checkbox" name="data[User][teacher]" value="1" id="UserTeacher" /><label for="UserTeacher">I'm a teacher</label></div>
+<div class="clear"></div>
+<label>&nbsp;</label><div class="submit"><input type="submit" value="Sign Up" /></div>
+</form>
+<p></p>
+<script src="http://www.studyup.com/js/jquery.js"></script>
+<script src="http://www.studyup.com/js/jquery-ui.js"></script>
+<script src="http://www.studyup.com/js/demo_dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.studyup.com/themes/base/jquery.ui.all.css">
+<a style="color: #546591" href="http://www.youtube.com/watch?v=9LnnnJ5_ajY" id="watch_demo_link">Watch StudyUp Demo Video Now</a>
+<div id="watch_demo">
+<iframe width="100%" height="480" src="http://www.youtube.com/embed/9LnnnJ5_ajY?hl=en&fs=1&wmode=transparent" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</div>
+		<h3>You Recently Visited</h3>
+
+<div class="block_inside_sidecolumn_entry">
+		<ul class="lhslist" id="hidelist7"><li><a href="/voting/how-to-vote-in-an-election.html">How To Vote In An Election</a></li>
+<li><a href="/voting/register-to-vote-in-colorado.html">Register To Vote In Colorado</a></li>
+<li><a href="/voting/florida-voter-registration-card.html">Florida Voter Registration Card</a></li>
+<li><a href="/voting/voter-registration-dc.html">Voter Registration Dc</a></li>
+<li><a href="/voting/voters-registration-card-florida.html">Voters Registration Card Florida</a></li>
+</ul>
+</div>
+</div>
+<div id="middle">
+<div class="block_top block_top_wide">
+		<h2>Electoral Votes 2008</h2>
+<div class="block_inside_entry">
+<div class="ad"><a href="http://www.studyup.com/pages/students?aid=18293"><h1>Need Electoral Votes 2008 Study Help?</h1>
+<p>StudyUp can help improve your grades by enabling you to store all of your notes online, and network with other students - all for FREE! </p></a></div>	<div style="width: 250px; height: 250px; float: right; margin-left: 5px; margin-bottom: 5px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0899710069463066";
+/* digitalsunlight.org Content Block */
+google_ad_slot = "3004641513";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<p class="qname">Mike Said:</p>What happens if there is a tie in <strong class="highlight">Electoral</strong> <strong class="highlight">Votes</strong> for the <strong class="highlight">2008</strong> <a href="http://www.digitalsunlight.org/voting/voter-turn-out.html">Presidential election</a>?<p class="aname">We Answered:</p>The House chooses the President and the Senate chooses the VP.<p class="qname">Amy Said:</p>to win the <strong class="highlight">electoral</strong> <strong class="highlight"><a href="http://www.digitalsunlight.org/voting/">vote</a></strong> in <strong class="highlight">2008</strong>, what is the fewest number of states that a candidate must win?<p class="aname">We Answered:</p>i dont know about fewest states, it can very, but he needs a min of 270 <a href="http://www.digitalsunlight.org/voting/2008-electoral-votes.html">electoral votes</a>.<script type="text/javascript"><!--
+google_ad_client = "pub-0899710069463066";
+/* digitalsunlight.org Content Footer */
+google_ad_slot = "8260474689";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="entry-bottom"></div>
+</div>
+<div class="block_top block_top_wide">
+		<h2>Discuss It!</h2>
+<div class="block_inside_entry">
+<script type="text/javascript">
+document.write("\x09\x3c\x64\x69\x76\x20\x69\x64\x3d\x22\x6c\x65\x61\x76\x65\x63\x6f\x6d\x6d\x65\x6e\x74\x22\x3e\x3c\x61\x20\x68\x72\x65\x66\x3d\x22\x23\x22\x20\x6f\x6e\x63\x6c\x69\x63\x6b\x3d\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x6f\x67\x67\x6c\x65\x43\x6f\x6d\x6d\x65\x6e\x74\x28\x29\x22\x3e\x4c\x65\x61\x76\x65\x20\x61\x20\x43\x6f\x6d\x6d\x65\x6e\x74\x20\x3c\x69\x6d\x67\x20\x73\x72\x63\x3d\x22\x2f\x69\x6d\x61\x67\x65\x73\x2f\x64\x6f\x77\x6e\x2d\x61\x72\x72\x6f\x77\x2e\x6a\x70\x67\x22\x20\x2f\x3e\x3c\x2f\x61\x3e\x3c\x2f\x64\x69\x76\x3e\x0a\x3c\x64\x69\x76\x20\x69\x64\x3d\x22\x63\x6f\x6d\x6d\x65\x6e\x74\x66\x6f\x72\x6d\x22\x20\x73\x74\x79\x6c\x65\x3d\x22\x64\x69\x73\x70\x6c\x61\x79\x3a\x6e\x6f\x6e\x65\x22\x3e\x0a\x3c\x66\x6f\x72\x6d\x20\x6d\x65\x74\x68\x6f\x64\x3d\x22\x70\x6f\x73\x74\x22\x3e\x0a\x3c\x74\x61\x62\x6c\x65\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x4e\x61\x6d\x65\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6e\x70\x75\x74\x20\x6e\x61\x6d\x65\x3d\x22\x6e\x61\x6d\x65\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x43\x6f\x6d\x6d\x65\x6e\x74\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x74\x65\x78\x74\x61\x72\x65\x61\x20\x6e\x61\x6d\x65\x3d\x22\x63\x6f\x6d\x6d\x65\x6e\x74\x22\x3e\x3c\x2f\x74\x65\x78\x74\x61\x72\x65\x61\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6d\x67\x20\x69\x64\x3d\x22\x63\x61\x70\x74\x63\x68\x61\x22\x20\x73\x72\x63\x3d\x22\x2f\x69\x6e\x63\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x5f\x73\x68\x6f\x77\x2e\x70\x68\x70\x22\x20\x61\x6c\x74\x3d\x22\x43\x41\x50\x54\x43\x48\x41\x20\x49\x6d\x61\x67\x65\x22\x20\x2f\x3e\x0a\x3c\x61\x20\x68\x72\x65\x66\x3d\x22\x23\x22\x20\x6f\x6e\x63\x6c\x69\x63\x6b\x3d\x22\x64\x6f\x63\x75\x6d\x65\x6e\x74\x2e\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64\x28\x27\x63\x61\x70\x74\x63\x68\x61\x27\x29\x2e\x73\x72\x63\x20\x3d\x20\x27\x2f\x69\x6e\x63\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x5f\x73\x68\x6f\x77\x2e\x70\x68\x70\x3f\x27\x20\x2b\x20\x4d\x61\x74\x68\x2e\x72\x61\x6e\x64\x6f\x6d\x28\x29\x3b\x20\x72\x65\x74\x75\x72\x6e\x20\x66\x61\x6c\x73\x65\x22\x3e\x52\x65\x6c\x6f\x61\x64\x20\x49\x6d\x61\x67\x65\x3c\x2f\x61\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x53\x65\x63\x75\x72\x69\x74\x79\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6e\x70\x75\x74\x20\x6e\x61\x6d\x65\x3d\x22\x63\x61\x70\x74\x63\x68\x61\x5f\x63\x6f\x64\x65\x22\x20\x73\x69\x7a\x65\x3d\x22\x31\x30\x22\x20\x6d\x61\x78\x6c\x65\x6e\x67\x74\x68\x3d\x22\x36\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x20\x63\x6f\x6c\x73\x70\x61\x6e\x3d\x22\x32\x22\x3e\x3c\x69\x6e\x70\x75\x74\x20\x74\x79\x70\x65\x3d\x22\x73\x75\x62\x6d\x69\x74\x22\x20\x76\x61\x6c\x75\x65\x3d\x22\x44\x69\x73\x63\x75\x73\x73\x20\x49\x74\x21\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x61\x62\x6c\x65\x3e\x0a\x3c\x2f\x66\x6f\x72\x6d\x3e\x0a\x3c\x2f\x64\x69\x76\x3e\x0a");
+</script>
+</div>
+<div class="entry-bottom"></div>
+</div>
+
+</div>
+	<div style="clear: both"></div>
+
+</div>
+        <div id="content-bottom"></div><!-- /content-bottom div -->
+    </div><!-- /.container div -->
+        <div id="footer">
+	<p>Copyright © 2012 DigitalSunlight.org</p>
+		    </div>
+
+    <!-- /#footer div -->
+        </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-2508204-57");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

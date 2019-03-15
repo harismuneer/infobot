@@ -1,0 +1,939 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-03T13:18:41Z
+WARC-TREC-ID: clueweb12-0602wb-63-25231
+WARC-Target-URI: http://www.lyrics.si/lyric/b/Beyonce/Hello.html
+WARC-Payload-Digest: sha1:UHMME3FSFJ2NL3EE43Z5VLHM3CGQYC3P
+WARC-IP-Address: 91.185.194.122
+WARC-Record-ID: <urn:uuid:d5c5001b-9edb-4b35-a5c2-c1ef7a435ba9>
+Content-Type: application/http; msgtype=response
+Content-Length: 39044
+
+HTTP/1.1 200 OK
+Date: Sat, 03 Mar 2012 13:18:36 GMT
+Server: Apache/2
+X-Powered-By: PHP/5.2.17
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Content-Type: text/html
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> 
+<head>  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Hello - Beyonce - besedilo pesmi,lyrics</title>  
+  <meta name="description" content="Hello - You had me at hello
+Hello
+He..." />
+<meta name="keywords" content="besedilo,pesmi,lyrics,hello," />
+<meta name="og:title" content="Hello - Beyonce - besedilo pesmi,lyrics" />
+<meta name="og:url" content="http://www.lyrics.si/lyric/b/Beyonce/Hello.html" />  <link rel="shortcut icon" type="image/x-icon" href="/images/load/favicon_green.ico"/>
+  <link href="/CSS/main.css" rel="stylesheet" type="text/css" />
+  <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="/CSS/styles-ie.css" rel="stylesheet" type="text/css" />
+  <meta property="og:image" content="http://www.lyrics.si/public/images/lyrics.gif"/>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-289347-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+ 
+<div class="wrapper">
+<div class="page">
+<script type="text/javascript" src="/JS/prototype.js"></script>
+<script type="text/javascript" src="/JS/validate.js"></script>
+<script type="text/javascript" src="/JS/lyrics.js"></script>
+<script type="text/javascript" src="/JS/prototype-1.6.0.3.js"></script>
+<script type="text/javascript" src="/JS/actb.js"></script>
+<script type="text/javascript" src="/JS/common.js"></script>
+<script type="text/javascript" src="/JS/scriptaculous/scriptaculous.js"></script>
+<script type="text/javascript" src="/JS/src/AutoComplete.js"></script>
+
+
+
+<p class="header_top">
+<div class="header-container">
+			<div class="header">
+				<div class="header-content">
+					<div class="header-left">
+						<div><a href="/"><img src="/images/banner_left.gif" /></a></div>
+					</div>
+					<div class="header-right">
+						<div class="top_link">
+								
+							<ul>
+								<li class="first"><a href="/" title="Domov">
+									Domov</a>
+								</li>
+						
+								<li><a href="/index/about_us" title="O nas">
+									O nas</a>
+								</li>
+																<li>
+									<a href="/users" title="Prijava">Prijava</a>
+								</li>
+								<li><a href="/users/index/register" title="nov uporabnik">
+									nov uporabnik</a>
+								</li>
+																<li class="last"><a href="/contactus" title="Kontakt">
+									Kontakt</a>
+								</li>
+							</ul>
+						</div>
+						
+						
+						<div class="mini-search">
+							<form name="search"  action="/search/lyrics" method="post">
+							<input type="text" class="input_search" value="" id="search_string" name="search_string" id="search_string" autocomplete="off"  />
+                                                       
+							<select id="select_filter" name="select_filter" class="input_search">
+								<option value="lyrics" title="Besedila">Besedila</option>
+								<option value="albums" title="Albumi">Albumi</option>
+								<option value="artist" title="Izvajalci">Izvajalci</option>	
+                                <option value="lyrics_text">Lyrics Text</option>
+							</select> 
+							<input type="submit" value="" class="mini_search_button" title="Browse Lyrics by lyrics title" onclick="return checkstr();"/>
+							</form>
+						</div>
+						
+                        <div class="mini-search">
+							<form name="lang"  action="" method="post">				
+                             <div class="browse_by_heading" title="Your Laguage:">Izberi jezik :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>                          
+							<select id="select_language" name="select_language" class="select_language" onchange="return setlaguage(this.value,'/default/index/setlang');">
+                                <option value="0" title="Select Language"></option>
+                                <option value="en_US" title="English">English</option>
+								<option value="sl_SI" title="Slovenian">Slovenian</option>
+								<!--option value="de_DE" title="German">German</option>	
+                                <option value="hu_HU" title="Hungarian">Hungarian</option-->
+                            </select>							
+							</form>
+						</div>
+						<div class="browse-by-artist">
+							<div class="browse_by_heading" title="po izvajalcih">po izvajalcih :</div>
+							<div class="browse_by_content">
+                                								<ul><li><a title="Browse by Artist initial 0-9" href="/artist/0-9">0-9</a></li>
+								                                                                        
+									<li><a title="Browse by Artist initial a" href="/artist/a">a</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial b" href="/artist/b">b</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial c" href="/artist/c">c</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial d" href="/artist/d">d</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial e" href="/artist/e">e</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial f" href="/artist/f">f</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial g" href="/artist/g">g</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial h" href="/artist/h">h</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial i" href="/artist/i">i</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial j" href="/artist/j">j</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial k" href="/artist/k">k</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial l" href="/artist/l">l</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial m" href="/artist/m">m</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial n" href="/artist/n">n</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial o" href="/artist/o">o</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial p" href="/artist/p">p</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial q" href="/artist/q">q</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial r" href="/artist/r">r</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial s" href="/artist/s">s</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial t" href="/artist/t">t</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial u" href="/artist/u">u</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial v" href="/artist/v">v</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial w" href="/artist/w">w</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial x" href="/artist/x">x</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial y" href="/artist/y">y</a></li>
+						                                                                          
+									<li><a title="Browse by Artist initial z" href="/artist/z">z</a></li>
+						  
+								</ul>
+							</div>
+						</div>
+												
+					</div>
+				</div>
+			</div>
+		</div>
+        
+ <script type="text/javascript"> 
+ var srchtype;
+            
+$('search_string').observe('keydown',function()
+{          
+        if(document.getElementById('select_filter').value == 'lyrics')
+        {
+            //srchtype = 'lyrics';  
+            new AutoComplete('search_string', '/search/lyrics/searchlyrics/?sty=lyrics&m=json&s=',{
+            delay: .25,
+            resultFormat: AutoComplete.Options.RESULT_FORMAT_JSON     
+            });          
+        }   
+        else if(document.getElementById('select_filter').value == 'artist')
+        {
+            srchtype = 'artist';
+            new AutoComplete('search_string', '/search/lyrics/searchlyrics/?sty=artist&m=json&s=',{
+            delay: .25,
+            resultFormat: AutoComplete.Options.RESULT_FORMAT_JSON     
+            });            
+        } 
+        else if(document.getElementById('select_filter').value == 'albums')
+        {
+            srchtype = 'albums';
+            new AutoComplete('search_string', '/search/lyrics/searchlyrics/?sty=albums&m=json&s=',{
+            delay: .25,
+            resultFormat: AutoComplete.Options.RESULT_FORMAT_JSON     
+            });            
+        }
+        else if(document.getElementById('select_filter').value == 'lyrics_text')
+        {
+            srchtype = 'lyrics_text';
+            new AutoComplete('search_string', '/search/lyrics/searchlyrics/?sty=lyrics_text&m=json&s=',{
+            delay: .25,
+            resultFormat: AutoComplete.Options.RESULT_FORMAT_JSON     
+            });            
+        }     
+        
+});
+</script>         
+
+
+<script>
+function setlaguage(lang,url)
+{  
+    document.location.href = url+"?select_language="+lang;   
+}
+
+function checkstr()
+{
+	if($('search_string').value == "")
+	{
+		alert("Please enter keyword to search");
+		return false;
+	}
+}
+</script>     <div class="hr_menu">
+<div class="hr_left_corn">
+<div class="hr_right_corn">
+<div class="hr_b_left_corn">
+<div class="hr_b_right_corn">
+<div class="hr_all">
+<div class="hr_all_left_corn">
+<div class="hr_all_right_corn">
+<ul id="main-navigation">
+	<li class="active" onmouseover="showLyrics()" onmouseout="shownone()" style="display: block;"><a href="/" title="Besedila">Besedila</a>
+	<ul id="lyricsmenu" >
+	    <li><a href="/" title="Domov">Domov</a></li>     
+		<li><a href="/top100/lyrics" title="Top 100 besedil">Top 100 besedil</a></li>	
+		<li><a href="/lyric/submit" title="Dodaj besedilo">Dodaj besedilo</a></li>
+		<li class="last"><a href="/lyrics/request" title="Zahtevaj besedilo">Zahtevaj besedilo</a></li>	
+	</ul>
+	</li>	
+	<li onmouseover="showAlbums()" onmouseout="shownone()"><a href="/albums/albums" title="Albumi">Albumi</a>
+		<ul id="albumsmenu" style="display: none; ">      		
+    	<li><a href="/albums/albums" title="Vsi albumi">Vsi albumi</a></li>
+    	<li><a href="/albums/newalbums" title="Novi albumi">Novi albumi</a></li>
+    	<li><a href="/albums/upcomingalbum" title="Prihajajoči albumi">Prihajajoči albumi</a></li>
+        <li class="last"> <a href="/top100/albums" title="Top 100 albumov">Top 100 albumov</a></li> 
+    	</ul>            		
+	</li>
+	<li onmouseover="showArtist()" onmouseout="shownone()"><a href="/allartist" title="Izvajalci">Izvajalci</a>
+		<ul id="artistmenu" style="display: none;">      		
+    	<li><a href="/allartist" title="Vsi izvajalci">Vsi izvajalci</a></li>
+        <li class="last"> <a href="/top100/artist" title="Top 100 izvajalcev">Top 100 izvajalcev</a></li> 
+    	</ul>            		
+    </li>
+	<li><a href="/news" title="Novice">Novice</a></li>
+	<li><a href="/users/account/showallusers" title="Uporabniki">Uporabniki</a></li>
+    <li><a href="/lyric/submit" title="Dodaj besedilo">Dodaj besedilo</a></li>
+    <li><a href="/reportafailure" title="Prijavi napako">Prijavi napako</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+	function showArtist()
+	{
+		document.getElementById("albumsmenu").style.display = "none";
+		document.getElementById("lyricsmenu").style.display = "none";
+		document.getElementById("artistmenu").style.display = "block";
+		//document.getElementById("a").style.background=('url(../images/main-navigation-li-active.gif) no-repeat scroll bottom center');
+	}
+	function showLyrics()
+	{
+		document.getElementById("albumsmenu").style.display = "none";
+		document.getElementById("artistmenu").style.display = "none";
+		document.getElementById("lyricsmenu").style.display = "block";
+	}
+	function showAlbums()
+	{
+		document.getElementById("lyricsmenu").style.display = "none";
+		document.getElementById("artistmenu").style.display = "none";
+		document.getElementById("albumsmenu").style.display = "block";
+	}
+	function shownone()
+	{
+		document.getElementById("lyricsmenu").style.display = "none";
+		document.getElementById("artistmenu").style.display = "none";
+		document.getElementById("albumsmenu").style.display = "none";
+	}
+</script>	
+<div style="width: 900px;margin:12px auto;">
+<center>
+<script type="text/javascript">
+_iprom_s='f1rwgin3mfpsx1im';
+_iprom_d='728x90';
+</script>
+<script type="text/javascript" src="http://central.iprom.net/adserver/adserver.js">
+</script>
+</center>
+</div><div class="main-container col2-left-layout">
+			<div class="main">
+				<div class="main-left-corn">
+					<div class="main-right-corn">
+						<div class="main-b-left-corn">
+							<div class="main-b-right-corn">
+		
+									<script type="text/javascript" src="/JS/prototype.js"></script><script type="text/javascript" src="/JS/prototype.js"></script>
+<script type="text/javascript" src="/JS/validate.js"></script><script type="text/javascript" src="/JS/prototype.js"></script>
+<script type="text/javascript" src="/JS/validate.js"></script>
+<script type="text/javascript" src="/JS/lyrics.js"></script>
+<html>
+<head>
+
+
+<link href="/CSS/scroll.css"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript">
+
+function lyricsalign(align)
+{	
+	var ids=align.id;
+
+	if(ids == "leftalign")
+	{
+		document.getElementById("lyrics_body").style.textAlign="left";
+	}
+	if(ids == "centeralign")
+	{
+		document.getElementById("lyrics_body").style.textAlign="center";
+	}
+	if(ids == "rightalign")
+	{
+		document.getElementById("lyrics_body").style.textAlign="right";
+	}
+}
+/********************* Report Ajax Call **************************/
+ 
+	var xmlhttp;
+	function GetXmlHttpObject()
+	{
+		if (window.XMLHttpRequest)
+	    {
+	    	// code for IE7+, Firefox, Chrome, Opera, Safari
+	        return new XMLHttpRequest();
+	    }
+	    if (window.ActiveXObject)
+	    {
+	    	// code for IE6, IE5
+	        return new ActiveXObject("Microsoft.XMLHTTP");
+	    }
+	    return null;
+	}
+
+	function checkReport()
+	{							
+		var report_body = document.getElementById("report_body").value;
+				
+		if(report_body)
+		{
+			reportAjax(report_body);
+			return false;
+		}
+		else
+		{
+			alert("Report Body Can not be Blank");
+			return false;
+		}
+	}	
+	
+	function reportAjax(report)
+	{
+		xmlhttp=GetXmlHttpObject();
+	    if (xmlhttp==null)
+	    {
+	    	alert ("Browser does not support HTTP Request");
+	        return;
+	    }
+	    var url= "/lyrics/reportajax/lid/58002";
+	    url=url+"?report="+report; 
+	   
+	    //url=url+"&sid="+Math.random();
+	    xmlhttp.onreadystatechange=function()
+	    {
+	    	if (xmlhttp.readyState==4)
+		    {  		
+			    var response = eval('(' + xmlhttp.responseText + ')');
+			   	document.getElementById("report_body-label").innerHTML= response["response"];
+		    }
+		}; 
+	    xmlhttp.open("GET",url,true);
+	    xmlhttp.send(null);
+	 }
+ </script>
+</head>
+<body onload="ratedstar(0);" >
+
+<div class="newalbum" >
+	<a href="/">Besedila</a> &gt;&gt;<!--  <img height="10" src=""> -->
+	<a href="/artist/b">Izvajalci</a> &gt;&gt;
+<!--  <img height="10" src=""> -->
+        <a href="/artist/b/beyonce">Beyonce</a>
+	
+	&gt;&gt;
+<!-- <img height="10" src=""> -->
+ 	Hello</div>
+
+<div class="col-main">
+	<div class="toplyrics-left-corn">
+            <div class="toplyrics-right-corn">
+                <div class="toplyrics-b-left-corn">
+                    <div class="toplyrics-b-right-corn">
+			<div class="heading">
+                            <h4>Hello</h4>
+			</div>
+                        <div class="ratepage">
+			<div class="songwriter">
+                            Izvajalci&nbsp;:&nbsp;Beyonce			</div>
+                         <div class="star-rating-wrap">
+				<ul>
+                                    <li style="width:100px;"><div id="rated"  ><!--onmouseout="ratedstar()"-->
+                                     <span
+                                    onmouseup="rate('1','/lyrics/rateajax/lid/58002/uid//total/','')"
+                                    onmouseout="ratedstar('')"
+                                    onmouseover="red('1')" id="star1"
+
+                                    title="1" >&nbsp;</span>
+                                     <span
+                                    onmouseup="rate('2','/lyrics/rateajax/lid/58002/uid//total/','')"
+                                    onmouseout="ratedstar('')"
+                                    onmouseover="red('2')" id="star2"
+
+                                    title="2" >&nbsp;</span>
+                                     <span
+                                    onmouseup="rate('3','/lyrics/rateajax/lid/58002/uid//total/','')"
+                                    onmouseout="ratedstar('')"
+                                    onmouseover="red('3')" id="star3"
+
+                                    title="3" >&nbsp;</span>
+                                     <span
+                                    onmouseup="rate('4','/lyrics/rateajax/lid/58002/uid//total/','')"
+                                    onmouseout="ratedstar('')"
+                                    onmouseover="red('4')" id="star4"
+
+                                    title="4" >&nbsp;</span>
+                                     <span
+                                    onmouseup="rate('5','/lyrics/rateajax/lid/58002/uid//total/','')"
+                                    onmouseout="ratedstar('')"
+                                    onmouseover="red('5')" id="star5"
+
+                                    title="5" >&nbsp;</span>
+                                                                            </div>
+                                    </li>
+                                    <li><span id="total">0</span></li>
+                                        <li>Oceni:</li>
+					</ul>
+
+								
+			   </div>
+                    </div>
+			<div class="songrate" >
+                           
+                           <div style="width:100%; float:left;">
+				<form name="customize">
+                                    <div style="float:left;width:30%; position: relative; top: 15px; ">
+                            		<span style="color:maroon; cursor: pointer;" id="leftalign" onclick="return lyricsalign(this);"><img src="/images/left-align.jpg" height="20" width="20" style="border:medium;" /></span>
+					&nbsp;&nbsp;
+					<span style="color:maroon; cursor: pointer;" id="centeralign" onclick="return lyricsalign(this);"><img src="/images/center-align.jpg" height="20" width="20" style="border:medium;" /></span>
+					&nbsp;&nbsp;
+					<span style="color:maroon; cursor: pointer;" id="rightalign" onclick="return lyricsalign(this);"><img src="/images/right-align.jpg" height="20" width="20" style="border:medium;" /></span>
+					
+                                   </div>
+                                   <div class="custom_div">Prilagodi :
+					<select onchange="changefontfamily(this)" name="fontname" style="width: 100px;">
+                                            <option value="arial">Arial</option>
+                                            <option value="courier new">Courier New</option>
+                                            <option value="tahoma">Tahoma</option>
+                                            <option value="verdana">verdana</option>
+                                        </select>
+							&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+							<select onchange="changefontsize(this)" name="fontsize" style="width: 90px;">
+								<option value="11px" >Najmanjša</option>
+								<option value="12px">Mala</option>
+								<option value="13px">Navadna</option>
+								<option value="14px">Večja</option>
+								<option value="15px">Največja</option>
+							</select>
+						</div>					
+					</form>
+					</div>
+					<div class="toplyrics-content">
+                                            <div class="all_content_of_lyrics ">
+						<div class="bagtop">
+<!--                                                <img src=""> iPod &nbsp;
+                                                    <img src=""> Translate
+-->                         
+                        <span id="facebooklike" style="float: left;">
+                            <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.lyrics.si/lyric/b/Beyonce/Hello.html&amp;layout=button_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:140px; height:20px"></iframe>
+                        </span>
+                                                                                                            <span id="favorites" onclick="addFavorites('/lyrics/addtofavorite/lid/58002/flag/0','', '0' );"
+                                                        style="cursor: pointer;" ><img  src="/images/ico_3.jpg">&nbsp;Priljubljena                                                        </span>
+                                                                                                        <span id="emaillink" onclick="email();" style="cursor: pointer;">
+                                                    <img src="/images/ico_5.jpg"/>
+                                                    &nbsp;E-pošta                                                    </span>
+                                                    <span style="cursor: pointer;" >
+                                                    <img src="/images/ico_4.jpg">
+                                                    <a href="/lyrics/print/lid/58002" target="_blank">Natisni&nbsp;</a></span>
+                                                    
+                                                    <div class="emailfriend" style="color:green; display: none; text-align: center;" id="emailmsg"></div>
+
+
+                                                    <div  id ="emailafriend" class="emailfriend" style="display: none;">
+                                                        <form name="emailfriend" action="" method="post">
+                                                            <div style="margin-bottom:5px;">
+                                                                <span>Email prejemnika<font color="red">*</font></span>&nbsp;:&nbsp;&nbsp;
+                                                                <input type="text" id="tofriend" size="30"/>
+                                                            </div>
+                                                            <div style="margin-bottom:5px;">
+                                                                <span>Email pošiljatelja<font color="red">*</font></span>&nbsp;:&nbsp;&nbsp;
+                                                                <input type="text" id="fromfriend" size="30"/>
+                                                            </div>
+                                                            <div style="margin-bottom:5px;">
+                                                                <span>Ime pošiljatelja<font color="red">*</font></span>&nbsp;:&nbsp;&nbsp;
+                                                                <input type="text" id="fromname" size="30"  value=""  />
+                                                            </div>
+                                                            <div style="margin-bottom:5px;">
+                                                                <span>Vsebina</span>&nbsp;:&nbsp;&nbsp;
+                                                                <input type="text" id="message" size="30"/>
+                                                            </div>
+                                                            <div style="margin-bottom:5px;">
+                                                                <input type ="button" value="Pošlji" onclick="return emailafriendvalidation('/lyrics/emailafriend');" />
+                                                                <input type ="button" value="Prekliči" onclick="return emailcancel();" />
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+
+						</div>
+						<div class="Fireflies_Contain">
+                        
+						<div style="width:500px; margin:25px auto;">
+<center>
+<script type="text/javascript">
+_iprom_s='f1rwgin3mfpsx1im';
+_iprom_d='468x60';
+</script>
+<script type="text/javascript" src="http://central.iprom.net/adserver/adserver.js">
+</script>
+</center>						
+</div>
+						
+						<div class="lyricbody">
+                                                    <div id="lyrics_body">You had me at hello<br />
+Hello<br />
+Hello<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+It was many years ago<br />
+Baby when you<br />
+Stole my cool<br />
+Cause you had me at hello<br />
+Hello<br />
+Hello, oh oh oh oh oh<br />
+<br />
+I get so excited when you travel with me<br />
+Baby, while I'm on my grind<br />
+And never would I ever let my hustle<br />
+Come between me and my family time<br />
+You keep me humble out of this hype<br />
+Cause you know there's more to life<br />
+If I need you, you will be here<br />
+You will make the sacrifice<br />
+Don't fly me away<br />
+Don't need to buy a diamond key to unlock my heart<br />
+You shelter my soul<br />
+You're my fire when I'm cold<br />
+Just want you to know<br />
+<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+It was many years ago<br />
+Baby when you<br />
+Stole my cool<br />
+Cause you had me at hello<br />
+Hello<br />
+Hello, oh oh oh oh oh<br />
+<br />
+Gotta feel you and be near you<br />
+You're the air that I breathe to survive<br />
+Gotta hold you, wanna show you<br />
+That without you my sun doesn't shine<br />
+You don't have to try so hard for me to love you<br />
+Boy, without you my life just ain't the same<br />
+You don't have to try so hard for me to love you<br />
+You had me at hello!</div>
+						</div>
+						<div class="addtofavorite">
+<div id="favorite_left" class="addthis_toolbox addthis_default_style"><a
+	href="" class="addthis_button_compact">Bookmark</a>
+<span class="addthis_separator">|</span> <a
+	class="addthis_button_facebook"></a> <a class="addthis_button_myspace"></a>
+<a class="addthis_button_google"></a> <a class="addthis_button_twitter"></a>
+
+<script type="text/javascript"
+	src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b949793372b5d34"></script>
+</div>
+<!-- AddThis Button END -->
+
+<!-- Correct & Report Lyrics -->
+<div class="favorite_right"><a style="color:#FF0000" 
+	onclick="return checkLogin('')"
+	href="/lyrics/correctlyrics/lid/58002">
+Popravi </a> - <span style="cursor: pointer;"
+	onclick="return reportBad('')"> Prijavi </span>
+</div>
+</div>
+
+<div id="report"
+	style="margin-top: 10px; width: 510px; display: none; border: 5px solid #E3CD78; background-color: #fff; padding: 3px; font-size: 10px;">
+<form enctype="application/x-www-form-urlencoded" method="post" action="/default/lyrics/reportpost/lid/58002"><dl class="zend_form">
+<dt id="report_body-label"><label for="report_body" class="required">Write your reason why this lyrics are bad?</label></dt>
+<dd id="report_body-element">
+<textarea name="report_body" id="report_body" cols="60" rows="4"></textarea></dd>
+
+<input type="submit" name="submit_report" id="submit_report" value="Report Bad! " class="submit" onclick="return checkReport();" />
+
+<input type="reset" name="reset_report" id="reset_report" value="Cancel Report" class="submit" onclick="return reportCancel();" /></dl></form></div>
+
+						</div>
+						
+						<div class="inner_content_bottom" style="text-align: left; padding: 10px;">	
+						<div style="clear: both;" id="error" class="form_error"><span >Za oddajo komentarja se Prijavi ali registriraj...</span></div>
+
+<div style="text-align: center;"><form enctype="application/x-www-form-urlencoded" method="post" action="/default/lyrics/meaningpost/lid/58002"><dl class="zend_form">
+<dt id="meaning-label">&#160;</dt>
+<dd id="meaning-element">
+<textarea name="meaning" id="meaning" cols="60" rows="5"></textarea></dd>
+<dt id="submit-label">&#160;</dt><dd id="submit-element">
+<input type="submit" name="submit" id="submit" value="ODDAJ KOMENTAR" class="submit" onclick="return checkMeaning();" /></dd></dl></form></div>
+</div>
+<div style="width:500px;padding-top:25px;padding-left:25px;">
+<center>
+<script type="text/javascript">
+_iprom_s='f1rwgin3mfpsx1im';
+_iprom_d='468x60';
+</script>
+<script type="text/javascript" src="http://central.iprom.net/adserver/adserver.js">
+</script>
+</center>						
+</div>
+						
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+													
+</body>
+</html>
+		
+										
+<script type="text/javascript" language="javascript">
+var slideTimeBetweenSteps = 60;	// General speed variable (Lower = slower)
+var scrollingContainer = false;
+var scrollingContent = false;
+var containerHeight;
+var contentHeight;	
+
+var contentObjects = new Array();
+var originalslideSpeed = false;
+function slideContent(containerId)
+{
+	var topPos = contentObjects[containerId]['objRef'].style.top.replace(/[^\-0-9]/g,'');
+	topPos = topPos - contentObjects[containerId]['slideSpeed'];
+	if(topPos/1 + contentObjects[containerId]['contentHeight']/1<0)topPos = contentObjects[containerId]['containerHeight'];
+	contentObjects[containerId]['objRef'].style.top = topPos + 'px';
+	setTimeout('slideContent("' + containerId + '")',slideTimeBetweenSteps);
+	
+}
+
+function stopSliding()
+{
+	var containerId = this.id;
+	contentObjects[containerId]['slideSpeed'] = 0;	
+}
+
+function restartSliding()
+{
+	var containerId = this.id;
+	contentObjects[containerId]['slideSpeed'] = contentObjects[containerId]['originalSpeed'];
+	
+}
+function initSlidingContent(containerId,slideSpeed)
+{
+	scrollingContainer = document.getElementById(containerId);
+	scrollingContent = scrollingContainer.getElementsByTagName('DIV')[0];
+	
+	scrollingContainer.style.position = 'relative';
+	scrollingContainer.style.overflow = 'hidden';
+	scrollingContent.style.position = 'relative';	
+	
+	scrollingContainer.onmouseover = stopSliding;
+	scrollingContainer.onmouseout = restartSliding;
+	
+	originalslideSpeed = slideSpeed;
+	
+	scrollingContent.style.top = '200px';
+	
+	contentObjects[containerId] = new Array();
+	contentObjects[containerId]['objRef'] = scrollingContent;
+	contentObjects[containerId]['contentHeight'] = scrollingContent.offsetHeight;
+	contentObjects[containerId]['containerHeight'] = scrollingContainer.clientHeight;
+	contentObjects[containerId]['slideSpeed'] = slideSpeed;
+	contentObjects[containerId]['originalSpeed'] = slideSpeed;
+	
+	slideContent(containerId);
+}
+
+</script>
+
+
+<div class="col-left sidebar">								
+	<div class="block">
+
+<div class="latest-albums-left-corn">
+		<div class="latest-albums-right-corn">
+			<div class="latest-albums-b-left-corn">
+				<div class="latest-albums-b-right-corn">
+<!-- 				<div class="ads-left-corn">
+						<div class="ads-right-corn">
+							<div class="ads-b-left-corn">
+								<div class="ads-b-right-corn"> -->
+<div><!-- Add Video -->
+   
+    <object width="284px" height="225px"> 	<div><h4>Video ni na voljo...</h4></div>
+	 </object> 
+	<!-- Add Video Over -->
+     
+      </div>		
+<!--</div>
+</div>
+</div>
+</div>-->
+</div>
+</div>
+</div>
+</div>
+<p class="scroll_title" style="font-size: 20px; color: #2A7CBD;">Hello</p>
+<div class="ads-left-corn">
+	<div class="ads-right-corn">
+		<div class="ads-b-left-corn">
+			<div class="ads-b-right-corn">
+				<div class="ads-content">
+                    <div style="width:300px;">
+                        
+                        <script type="text/javascript">
+                        _iprom_s='f1rwgin3mfpsx1im';
+                        _iprom_d='video';
+                        _iprom_w='250';
+                        _iprom_h='250';
+                        </script>
+                        <script type="text/javascript" src="http://central.iprom.net/adserver/adserver.js">
+                        </script>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<div id="mainContainer" >
+    
+<!-- Start of first scrolling box -->
+<div class="toplyrics-left-corn">
+		<div class="toplyrics-right-corn">
+			<div class="toplyrics-b-left-corn">
+				<div class="toplyrics-b-right-corn">
+<div id="scrollingContainer">
+	<div id="scrollingContent">
+		<div style="text-align: left;">
+			You had me at hello<br />
+Hello<br />
+Hello<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+It was many years ago<br />
+Baby when you<br />
+Stole my cool<br />
+Cause you had me at hello<br />
+Hello<br />
+Hello, oh oh oh oh oh<br />
+<br />
+I get so excited when you travel with me<br />
+Baby, while I'm on my grind<br />
+And never would I ever let my hustle<br />
+Come between me and my family time<br />
+You keep me humble out of this hype<br />
+Cause you know there's more to life<br />
+If I need you, you will be here<br />
+You will make the sacrifice<br />
+Don't fly me away<br />
+Don't need to buy a diamond key to unlock my heart<br />
+You shelter my soul<br />
+You're my fire when I'm cold<br />
+Just want you to know<br />
+<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+You had me at hello<br />
+Hello<br />
+Hello<br />
+It was many years ago<br />
+Baby when you<br />
+Stole my cool<br />
+Cause you had me at hello<br />
+Hello<br />
+Hello, oh oh oh oh oh<br />
+<br />
+Gotta feel you and be near you<br />
+You're the air that I breathe to survive<br />
+Gotta hold you, wanna show you<br />
+That without you my sun doesn't shine<br />
+You don't have to try so hard for me to love you<br />
+Boy, without you my life just ain't the same<br />
+You don't have to try so hard for me to love you<br />
+You had me at hello!		</div>
+	</div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<div>
+
+<form name="embedcode" method=""> 
+    <input type="text" name="embedtext" maxlength="1000" readonly value="&lt;iframe src=&quot;http://www.lyrics.si/lyrics/scrolllyrics/url_key/SGVsbG8uaHRtbA%3D%3D&quot; width=&quot;250&quot; height=&quot;250&quot; scrolling =no &gt;&lt;/iframe&gt;&lt;br/&gt;
+           &lt;a href=&quot;http://www.lyrics.si&quot; target=&quot;_blank&quot;&gt;Lyrics&lt;/a&gt; |
+           &lt;a href=&quot;http://www.lyrics.si/artist/b/beyonce&quot; target=&quot;_blank&quot;&gt;Beyonce&lt;/a&gt; |
+           &lt;a href=&quot;http://www.lyrics.si/lyric/b/Beyonce/Hello.html&quot; target=&quot;_blank&quot;&gt;Hello&lt;/a&gt;" size="40" onclick="javascript:this.form.embedtext.focus();this.form.embedtext.select();"/>
+kopirajte in prilepite embed kodo zgoraj</form>
+
+
+</div>
+<div class="toplyrics-left-corn">
+		<div class="toplyrics-right-corn">
+			<div class="toplyrics-b-left-corn">
+				<div class="toplyrics-b-right-corn">
+<form name="sharelinks">                
+            <div class="shared_link">
+                <div><span>SHARE Hello LYRICS</span></div>
+                <div class="shared_link_email">
+                    <div class="" style="font-size:10px;"><span>Link-E-pošta&amp; IM :</span></div>
+                                        <input type="text" id="emaillink" name="emaillink" readonly size="15" value="http://www.lyrics.si/lyric/b/Beyonce/Hello.html" onclick="javascript:this.form.emaillink.focus();this.form.emaillink.select();" />
+                </div>
+                <div class="shared_link_blog">
+                    <div class="" style="font-size:10px;"><span>Link-Spletne strani&amp;Blogi :</span></div>
+                                        <input type="text" name="blog" maxlength="500" size="14" value="&lt;a href=&quot;http://www.lyrics.si/lyric/b/Beyonce/Hello.html&quot;&gt;Hello.html Lyrics|Lyrics.si&lt;/a&gt;" readonly onclick="javascript:this.form.blog.focus();this.form.blog.select();" />
+
+                </div>
+                
+            </div>
+</form>
+</div></div></div></div>
+
+
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	initSlidingContent('scrollingContainer',1);
+    
+    
+    function emaillinkselect()
+    {        
+        document.sharelinks.emaillink.select();
+    }
+</script>																																	
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+</div>
+	<div class="footer-container">
+		<div class="footer">
+			<ul class="links">
+					
+			 
+							<li><a href="/contactus">Kontakt</a></li>
+    			<li><a href="/index/about_us">O nas</a></li>
+				<li><a href="/index/privacy_policy">politika zasebnosti</a></li>
+                <li><a href="/index/links">povezave</a></li>
+			
+				<li class="links" style="font-size:12px; font-weight:bold;">Copyright &copy; 2004-2010 <a href="/">Lyrics</a>.si</li>
+			</ul>
+		</div>
+</div>
+</div>
+</div>
+</html>

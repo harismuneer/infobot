@@ -1,0 +1,215 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-26T16:23:06Z
+WARC-TREC-ID: clueweb12-0402wb-48-25739
+WARC-Target-URI: http://nice.sourceforge.net/cgi-bin/twiki/view/Doc/GraphParametricTypeExample?rev=r1.8
+WARC-Payload-Digest: sha1:MO3EICEESPPSKCKSUOVHMGBCHRRDRESG
+WARC-IP-Address: 216.34.181.96
+WARC-Record-ID: <urn:uuid:63574d5f-0800-470e-8d6a-c789e2937e7d>
+Content-Type: application/http; msgtype=response
+Content-Length: 9005
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (CentOS)
+Cache-Control: max-age=172800
+Expires: Tue, 28 Feb 2012 16:23:06 GMT
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 8712
+Date: Sun, 26 Feb 2012 16:23:06 GMT
+X-Varnish: 2145072485
+Age: 0
+Via: 1.1 varnish
+Connection: close
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+ <title> TWiki . Doc . GraphParametricTypeExample   </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />  
+ <base href="http://nice.sourceforge.net/cgi-bin/twiki/view/Doc/GraphParametricTypeExample" />
+</head>
+<body bgcolor="#ffffff">
+<a name="PageTop"></a>
+<form name="main" action="/cgi-bin/twiki/view/Doc/GraphParametricTypeExample">
+<table width="100%" border="0" cellpadding="3" cellspacing="0">
+ <tr>
+  <td bgcolor="#D0D0D0" rowspan="2" valign="top" width="1%">
+   <a href="http://nice.sourceforge.net"><img src="http://nice.sourceforge.net/twiki/pub/Doc/NiceLogos/niceLogopng.png" border="0" alt="Nice" /></a>
+  </td><td>
+   <a href="http://nice.sourceforge.net/cgi-bin/twiki/view/Main/WebHome">TWiki</a>
+   &gt; <a href="http://nice.sourceforge.net/cgi-bin/twiki/view/Doc/WebHome">Doc</a>
+   &gt; <a href="/cgi-bin/twiki/view/Doc/CodeExamples">CodeExamples</a> &gt;
+   <font size="+1"><b>GraphParametricTypeExample</b>   </font>
+  </td><td align="right">
+   <font size="-2">TWiki webs: <br />
+   <a href="/cgi-bin/twiki/view/Dev/WebHome">Dev</a>  |  <a href="/cgi-bin/twiki/view/Doc/WebHome">Doc</a>  |  <a href="/cgi-bin/twiki/view/Main/WebHome">Main</a>  |  <a href="/cgi-bin/twiki/view/TWiki/WebHome">TWiki</a>  |  <a href="/cgi-bin/twiki/view/Sandbox/WebHome">Sandbox</a> </font>
+  </td>
+ </tr>
+ <tr bgcolor="#D0D0D0">
+  <td colspan="2">
+   Doc . {  <a href="/cgi-bin/twiki/view/Doc/WebChanges">Changes</a>  |  <a href="/cgi-bin/twiki/view/Doc/WebIndex">Index</a>  |  <a href="/cgi-bin/twiki/view/Doc/WebSearch">Search</a>  |  Go <input type="text" name="topic" size="16" />  }
+  </td>
+ </tr>
+</table> 
+</form>
+<a href="http://www.osl.iu.edu/publications/pubs/2003/comparing_generic_programming03.pdf" target="_top">"A Comparative Study of Language Support for Generic Programming"</a> used a sample of the Boost Graph Library to compare the generic programming techniques available in C++, ML, Haskell, Eiffel, Java Generics, Generic C# <a href="http://www.osl.iu.edu/research/comparing/" target="_top">(Source code).</a> These Nice implementations use parameterised interfaces to represent most concepts (a few are represented by functions).
+<p />
+The generic algorithms <a href="/cgi-bin/twiki/view/Doc/BreadthFirstSearchExample">Breadth First Search</a>, <a href="/cgi-bin/twiki/view/Doc/DijkstraShortestPathsExample">Dijkstra Shortest Paths</a>, <a href="/cgi-bin/twiki/view/Doc/PrimMinimumSpanningTreeExample">Prim's Minimum Spanning Tree</a>, <a href="/cgi-bin/twiki/view/Doc/BellmanFordShortestPathsExample">Bellman Ford Shortest Paths</a>, and <a href="/cgi-bin/twiki/view/Doc/JohnsonAllPairsShortestPathsExample">Johnson All Pairs Shortest Paths</a>, make use of <a href="/cgi-bin/twiki/view/Doc/GraphConceptsExample">Graph Concepts</a> and <a href="/cgi-bin/twiki/view/Doc/GraphClassesExample">Graph Classes</a> and <a href="/cgi-bin/twiki/view/Doc/GraphTestExample">Graph Tests</a>.
+<p />
+<h2><a name="Bellman_Ford_Shortest_Paths"> Bellman Ford Shortest Paths </a></h2>
+<pre>
+package graph;
+
+&lt;Vertex, Edge, Distance, T | Edge &lt;: GraphEdge&lt;Vertex> > 
+boolean bellmanFordShortestPaths(
+   EdgeListGraph&lt;Vertex,Edge> graph,
+   int size,
+   ReadablePropertyMap&lt;Edge,Distance> weightMap,
+   ReadWritePropertyMap&lt;Vertex,Vertex> predecessor,
+   ReadWritePropertyMap&lt;Vertex,Distance> distance,
+   (Distance, Distance)->Distance combine,
+   (Distance, Distance)->boolean compare
+   ){
+   
+   for (int i = 0; i &lt; size; ++i) {
+      boolean anyRelaxed = false; // Optimization from BGL
+      for ( Edge edge : graph.edges )
+         if( relax(edge, weightMap, distance, predecessor, combine, compare) )
+            anyRelaxed = true; 
+                       
+      if (!anyRelaxed) break;
+   }
+
+   for ( Edge edge : graph.edges() )
+      if (compare( 
+         combine(weightMap[edge], distance[edge.source]), 
+         distance[edge.target])
+         )
+            return false;
+
+   return true;
+}
+
+
+void bellmanFordTest(){ 
+   AdjacencyList &lt;int, AdjacencyListEdge&lt;int>> g = simpleGraph(); 
+   HashPropertyMap&lt;int, double> distanceMap = simpleDistanceMap();  
+   HashPropertyMap&lt;AdjacencyListEdge&lt;int>, double> weightMap = negativeWeights();    
+   
+   HashPropertyMap&lt;int, int> predMap = new HashPropertyMap();  
+    
+   bellmanFordShortestPaths(
+      g, 
+      4,
+      weightMap,
+      predMap,
+      distanceMap,
+      (double a, double b) => { return a + b; },
+      (double a, double b) => { return a &lt; b; }
+      );
+
+   for (i : 3..6) {
+      print("Dist(" i ")="   distanceMap.get(i));                     
+      print(", Pred(" i ")=");
+      
+      // Maybe a Vertex has no predecessors? 3
+      try { print( predMap.get(i) ); 
+      } catch (NoSuchElementException ex){}    
+        
+      println("");
+   }
+}
+</pre>
+<p />
+<h2><a name="Test_Results"> Test Results </a></h2>
+(See <a href="/cgi-bin/twiki/view/Doc/GraphTestExample">test code</a>)
+<pre>
+Breadth First Search Test
+=========================
+initialize 3
+initialize 4
+initialize 5
+initialize 6
+discover 3
+discover 3
+examine edge(3 -> 6)
+tree edge(3 -> 6)
+examine edge(3 -> 5)
+tree edge(3 -> 5)
+finish 3
+discover 6
+examine edge(6 -> 4)
+tree edge(6 -> 4)
+finish 6
+discover 5
+finish 5
+discover 4
+examine edge(4 -> 5)
+nontree edge(4 -> 5)
+black target edge(4 -> 5)
+examine edge(4 -> 3)
+nontree edge(4 -> 3)
+black target edge(4 -> 3)
+finish 4
+
+Dijkstra Shortest Paths Test
+============================
+Dist(3)=0.0, Pred(3)=3
+Dist(4)=7.0, Pred(4)=6
+Dist(5)=8.0, Pred(5)=3
+Dist(6)=5.0, Pred(6)=3
+
+Prim Minimum Spanning Tree Test
+===============================
+Pred(3) = 3
+Pred(4) = 6
+Pred(5) = 4
+Pred(6) = 3
+
+Bellman-Ford Shortest Paths Test
+================================
+Dist(3)=0.0, Pred(3)=
+Dist(4)=3.0, Pred(4)=6
+Dist(5)=2.0, Pred(5)=4
+Dist(6)=5.0, Pred(6)=3
+
+Johnson All-Pairs Shortest Paths Test
+=====================================
+3: 0.0 3.0 2.0 5.0
+4: 3.0 0.0 -1.0 8.0
+5: Infinity Infinity 0.0 Infinity
+6: 1.0 -2.0 -3.0 0.0
+</pre>
+<p />
+-- <a href="/cgi-bin/twiki/view/Main/IsaacGouy">IsaacGouy</a> - 07 Jan 2004
+<p />
+<p />
+<table width="100%" border="0" cellpadding="3" cellspacing="0">
+ <tr bgcolor="#D0D0D0">
+  <td valign="top">
+   Topic <b>GraphParametricTypeExample</b> . {   <a href="/cgi-bin/twiki/edit/Doc/GraphParametricTypeExample?t=1330273386"><b>Edit</b></a>
+   |  <a href="/cgi-bin/twiki/attach/Doc/GraphParametricTypeExample">Attach</a>
+   |  <a href="/cgi-bin/twiki/search/Doc/SearchResult?scope=text&amp;regex=on&amp;search=Graph%20*Parametric%20*Type%20*Example%5B%5EA-Za-z%5D">Ref-By</a>
+   |  <a href="/cgi-bin/twiki/view/Doc/GraphParametricTypeExample?skin=print">Printable</a>
+   |  <a href="/cgi-bin/twiki/rdiff/Doc/GraphParametricTypeExample">Diffs</a>  | r1.8 | <a href="/cgi-bin/twiki/rdiff/Doc/GraphParametricTypeExample?rev1=1.8&amp;rev2=1.7">&gt;</a> | <a href="/cgi-bin/twiki/view/Doc/GraphParametricTypeExample?rev=1.7">r1.7</a> | <a href="/cgi-bin/twiki/rdiff/Doc/GraphParametricTypeExample?rev1=1.7&amp;rev2=1.6">&gt;</a> | <a href="/cgi-bin/twiki/view/Doc/GraphParametricTypeExample?rev=1.6">r1.6</a>
+   |  <a href="/cgi-bin/twiki/oops/Doc/GraphParametricTypeExample?template=oopsmore&amp;param1=1.8&amp;param2=1.8">More</a> 
+   }
+  </td>
+ </tr>
+</table> 
+<table width="100%" border="0" cellpadding="3" cellspacing="0">
+ <tr>
+  <td valign="top">
+   Revision r1.8 - 22 Apr 2005 - 10:52 GMT - <a href="/cgi-bin/twiki/view/Main/TWikiGuest">TWikiGuest</a> <br />Parents: <a href="/cgi-bin/twiki/view/Doc/WebHome">WebHome</a> &gt; <a href="/cgi-bin/twiki/view/Doc/CodeExamples">CodeExamples</a>
+  </td>
+  <td width="40%" valign="top">
+   <font size="-2">Copyright &copy; 1999-2003 by the contributing authors. 
+All material on this collaboration platform is the property of the contributing authors. <br /> 
+Ideas, requests, problems regarding TWiki? <a href="mailto:greifa@users.sf.net?subject=TWiki&#32;Feedback&#32;on&#32;Doc.GraphParametricTypeExample">Send</a> feedback. </font>
+  </td>
+ </tr>
+ <tr><td colspan="2"> <p><i>Doc.GraphParametricTypeExample moved from Doc.GenericProgrammingIntermediateExample on 07 Feb 2004 - 16:22 by <a href="/cgi-bin/twiki/view/Main/IsaacGouy">IsaacGouy</a> </i> - <a title="Click to move topic back to previous location, with option to change references." href="/cgi-bin/twiki/rename/Doc/GraphParametricTypeExample?newweb=Doc&amp;newtopic=GenericProgrammingIntermediateExample&amp;confirm=on">put it back</a></p> </td></tr>
+</table>
+<a name="PageBottom"></a>
+</body>
+</html>

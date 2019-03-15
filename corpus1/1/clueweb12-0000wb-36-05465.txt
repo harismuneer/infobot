@@ -1,0 +1,906 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-10T21:07:24Z
+WARC-TREC-ID: clueweb12-0000wb-36-05465
+WARC-IP-Address: 209.202.252.50
+WARC-Payload-Digest: sha1:4NGWPUZFYMCKI6HZNN6HL46WIBAJHUU3
+WARC-Target-URI: http://fernandolyrics.tripod.com/pantera/cfh.html
+WARC-Record-ID: <urn:uuid:6881904c-a3cc-4713-a775-da86789f97a2>
+Content-Type: application/http; msgtype=response
+Content-Length: 28570
+
+HTTP/1.1 200 OK
+Date: Fri, 10 Feb 2012 21:07:24 GMT
+Server: Squeegit/1.2.5 (3_sir)
+Vary: *
+X-Server-IP: 209.202.244.211
+P3P: policyref="http://www.lycos.com/w3c/p3p.xml", CP="IDC DSP COR CURa ADMa DEVa CUSa PSAa IVAa CONo OUR IND UNI STA"
+Set-Cookie: MEMBER_PAGE=fernandolyrics/pantera/cfh.html; path=/; domain=.tripod.com
+Set-Cookie: REFERRER=http://fernandolyrics.tripod.com/pantera/index.html; path=/; domain=.tripod.com
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Fernando's Lyrics - Pantera Lyrics - Cowboys From Hell</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<STYLE TYPE="text/css">
+    A:LINK {text-decoration: underline}
+    A:VISITED {text-decoration: underline}
+    A:HOVER {color: #FF0000; text-decoration: none}
+    A:ACTIVE {text-decoration: underline}
+</style>
+</head>
+<body background="../images/bkgrd1.gif" bgcolor="000000" text="#ffffff" link="#9C9C9C" vlink="#9C9C9C"><!-- begin compete js -->
+<script type="text/javascript">
+    __compete_code = '667f89f26d96c30e99728fe6a608804d';
+    (function () {
+        var s = document.createElement('script'),
+            d = document.getElementsByTagName('head')[0] ||
+                document.getElementsByTagName('body')[0],
+            t = 'https:' == document.location.protocol ? 
+                'https://c.compete.com/bootstrap/' : 
+                'http://c.compete.com/bootstrap/';
+        s.src = t + __compete_code + '/bootstrap.js';
+        s.type = 'text/javascript';
+        s.async = 'async'; 
+        if (d) { d.appendChild(s); }
+    }());
+</script>
+<!-- end compete js -->
+
+<!-- quantcast -->
+<script type="text/javascript">
+	function channValidator(chann){
+	return (typeof(chann) == 'string' && chann != '');
+	}
+
+	function lycosQuantcast(){
+		var lb = "";
+		if(typeof(cm_host) !== 'undefined' && channValidator(cm_host)){
+			lb += cm_host.split('.')[0] + '.';
+		}
+	
+		if(typeof(cm_taxid) !==	'undefined' && channValidator(cm_taxid)){
+			lb += cm_taxid;
+			lb = lb.replace('/','');
+		} else {
+			lb = lb.replace('.','');
+		}
+		return lb;
+	}
+	
+	var _qevents = _qevents || [];
+	
+	(function() {
+		var elem = document.createElement('script');
+		elem.src = (document.location.protocol == "https:" ? "https://secure" :"http://edge") + ".quantserve.com/quant.js";
+		elem.async = true;
+		elem.type = "text/javascript";
+		var scpt = document.getElementsByTagName('script')[0];
+		scpt.parentNode.insertBefore(elem, scpt);
+	})();
+	
+	_qevents.push({
+		qacct:"p-6eQegedn62bSo",
+		labels:lycosQuantcast()
+	});
+</script>
+<!-- end quantcast -->
+
+<script type="text/javascript">
+function getReferrer() {
+    // Reads the referrer out of the cookie, if available.
+    var all= this.document.cookie;
+    if (all== '') return false;
+    var cookie_name = 'REFERRER=';
+    var start = all.lastIndexOf(cookie_name);
+    if (start == -1) return false;  // referrer URL not found.
+    start += cookie_name.length;
+    var end = all.indexOf(';', start);
+    if (end == -1) end = all.length;
+    return all.substring(start, end);
+}
+function getQuery() {
+    // Get the referrer search query from cookie, if available.
+    var rfr = getReferrer();
+    if (rfr == '') return false;
+    var q = extractQuery(rfr, 'yahoo.com', 'p=');
+    if (q) return q;
+    q = extractQuery(rfr, '', 'q=');
+    return q ? q : "";
+}
+function extractQuery(full, site, q_param) {
+    var start = full.lastIndexOf(site);
+    if (start == -1) return false;
+    start = full.lastIndexOf(q_param);
+    if (start == -1) return false;
+    start += q_param.length;
+    var end = full.indexOf('&', start);
+    if (end == -1) end = full.length;
+    return unescape(full.substring(start, end)).split(" ").join("+");
+}
+var cm_role = "live";
+var cm_host = "tripod.lycos.com";
+var cm_taxid = "/memberembedded";
+var tripod_member_name = "fernandolyrics";
+var tripod_member_page = "fernandolyrics/pantera/cfh.html";
+var tripod_ratings_hash = "1328908044:2cf979fe3c9ae177896c2987dcf3cb10";
+
+var lycos_ad_category = {"dmoz":"health\/addictions","ontarget":"&CAT=health&L2CAT=diseases%20and%20conditions&L3CAT=substance%20abuse","find_what":"it is"};
+
+var lycos_ad_remote_addr = "128.2.207.79";
+var lycos_ad_www_server = "www.tripod.lycos.com";
+var lycos_ad_track_small = "http://members.tripod.com/adm/img/common/ot_smallframe.gif?rand=584149";
+var lycos_ad_track_served = "http://members.tripod.com/adm/img/common/ot_adserved.gif?rand=584149";
+var lycos_search_query = getQuery();
+</script>
+
+<script type="text/javascript" src="http://scripts.lycos.com/catman/init.js"></script>
+<script type="text/javascript"> 
+
+var lycos_ad = Array();
+var lycos_onload_timer;
+
+function lycos_check_size() {
+    var window_width = 0, window_height = 0;
+    if (typeof(window.innerWidth) == 'number' ) {
+        window_width = window.innerWidth;
+        window_height = window.innerHeight;
+    } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+        window_width = document.documentElement.clientWidth;
+        window_height = document.documentElement.clientHeight;
+    } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+        window_width = document.body.clientWidth;
+        window_height = document.body.clientHeight;
+    } 
+    
+    var lycos_track_img = document.createElement('img');
+    if( top == self ) {
+        return 1;
+    } else {
+        if ((window_width < 300) || (window_height < 300)) {
+            lycos_track_img.src=this.lycos_ad_track_small+"&w="+window_width+"&h="+window_height;
+            return 0;
+        } else {
+            lycos_track_img.src=this.lycos_ad_track_served+"&w="+window_width+"&h="+window_height;
+            return 1;
+        }
+    }
+}
+       
+function lycos_insert_ads() {
+    var lycos_ad_mgr = new AdManager();
+    
+    if (this.lycos_search_query) {
+        lycos_ad_mgr.setForcedParam("keyword", this.lycos_search_query);
+    } else if (this.lycos_ad_category && this.lycos_ad_category.find_what) {
+        lycos_ad_mgr.setForcedParam("keyword", this.lycos_ad_category.find_what);
+    }
+
+    if (this.lycos_ad_category && this.lycos_ad_category.dmoz) {
+        lycos_ad_mgr.setForcedParam("page", this.lycos_ad_category.dmoz);
+    } else {
+        lycos_ad_mgr.setForcedParam("page", "member");
+    }
+
+    var lycos_prod_set = lycos_ad_mgr.chooseProductSet();
+    var slots = ["leaderboard", "leaderboard2"];
+    for (var slot in slots) {
+        if (lycos_ad_mgr.isSlotAvailable(slots[slot])) {
+            lycos_ad[slots[slot]] = lycos_ad_mgr.getSlot(slots[slot]);
+        }
+    }
+
+    lycos_ad_mgr.renderFooter();
+}
+
+function generateHref(atag, template){
+    atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_', 'Check%20out%20this%20Tripod%20Member%20site!'); 
+}
+
+if (lycos_check_size()) {
+    lycos_insert_ads();
+}
+
+window.onload = function() {
+    var f = document.getElementById("FooterAd");
+    var b = document.getElementsByTagName("body")[0];
+    b.removeChild(f);
+    b.appendChild(f);
+    f.style.display = "block";
+}
+
+</script>
+<div id="tb_container" style="text-align:center; position:relative; z-index:999999999">
+    <div id="tb_ad" style="display:block!important; overflow:hidden; width:868px; margin:0 auto">
+    <a href="http://adtrack.ministerial5.com/clicknew/?a=637394" title="build your own website at Tripod.com" style="float:left; width:140px; border:0">
+    	<img src="http://tripod.com/common/ly/images/freeAd.jpg" alt="Made with Tripod.com" style="border:0" />
+    </a> 
+        <div id="ad_container" style="display:block!important; float:left; width:728px ">
+        <script type="text/javascript">document.write(lycos_ad['leaderboard']);</script>
+        </div>
+    </div>
+</div>
+<div id="FooterAd" style="text-align:center; display:none; width:100%!important; position:relative; z-index:999999!important; height:94px!important"> 
+<script type="text/javascript">document.write(lycos_ad['leaderboard2']);</script>
+</div>
+<noscript>
+ <img src="http://members.tripod.com/adm/img/common/ot_noscript.gif?rand=584149" alt="" width="1" height="1" />
+ <!-- BEGIN STANDARD TAG - 728 x 90 - Lycos - Tripod Fallthrough - DO NOT MODIFY -->
+ <iframe frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="728" height="90" src="http://ad.yieldmanager.com/st?ad_type=iframe&amp;ad_size=728x90&amp;section=209094"></iframe>
+ <!-- END TAG -->
+</noscript>
+
+<div align=left>
+<P STYLE="margin-left: -0.1in"> 
+<table cellpadding=0 cellspacing=0 width=770 border=0>
+<tr>
+<td>
+<a href="http://fernandolyrics.tripod.com/" target="_top"><img src=../images/fl.gif alt="Fernando's Lyrics Page" border=0></a>
+</td>
+<td>
+<div align=center>
+<a href="http://dynamicdrive.com">
+<img width=468 border=0 height=60 src="../images/ddalt.gif">
+</a>
+</div>
+</td>
+</tr>
+</table>
+
+<p style="margin-top: -5px; margin-left: -0.1in">
+<MAP NAME="navbar"><AREA SHAPE=RECT COORDS="168,3,258,19" HREF="../index.html" ALT="Lyrics"><AREA SHAPE=RECT COORDS="264,3,354,19" HREF="../tabs.html" ALT="Tabs"><AREA SHAPE=RECT COORDS="360,3,450,19" HREF="../links.html" ALT="Links"><AREA SHAPE=RECT COORDS="456,3,546,19" HREF="../chat.html" ALT="Chat"><AREA SHAPE=RECT COORDS="552,3,642,19" HREF="../credits.html" ALT="Credits"><AREA SHAPE=DEFAULT NOHREF ALT=""></MAP><IMG SRC="../images/navbar1.gif" WIDTH=770 HEIGHT=30 BORDER=0 USEMAP="#navbar"></p>
+<p style="margin-top: -20px; margin-left: -0.05in">
+<TABLE align=left valign="top" CELLSPACING=0 CELLPADDING=0 BORDER=0 width=750>
+<tr>
+<td width=40>
+</td>
+<td width=610 valign=top>
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Verdana" size="+3" color="#555555">Pantera lyrics</font></td>
+</tr>
+<tr><td height="1" colspan="3" bgcolor="#545454"></td></tr>
+<tr><td>
+<font face="Verdana" size="+1">
+<a name="top"><p align=right>LP.: Cowboys From Hell<br><br></font></p>
+</tr><td>
+</table>
+<br>
+
+<b><font face="Verdana" size=3><blockquote>
+Select a song:
+</font></b>
+<blockquote>
+<font face="Verdana" size="-1"><br>
+
+<ol>
+	<li><a href="#track1">Cowboys From Hell</a>
+	<li><a href="#track2">Primal Concrete Sledge</a>
+	<li><a href="#track3">Psycho Holiday</a>
+	<li><a href="#track4">Heresy</a>
+	<li><a href="#track5">Cemetary Gates</a>
+	<li><a href="#track6">Domination</a>
+	<li><a href="#track7">Shattered</a>
+	<li><a href="#track8">Clash With Reality</a>
+	<li><a href="#track9">Medicine Man</a>
+	<li><a href="#track10">Message In blood</a>
+	<li><a href="#track11">The Sleep</a>
+	<li><a href="#track12">The Art of Shredding</a>
+</ol>
+
+
+<font face="Verdana" size="-1">
+
+<br><br>
+<font color="d6dc60"><b><a name="#track1">Cowboys From Hell</a></b></font><br>
+<blockquote>
+Under the lights where we stand tall
+<br>Nobody touches us at all
+<br>Showdown, shootout, spread fear within, without
+<br>We're gonna take what's ours to have
+<br>Spread the word throughout the land
+<br>They say the bad guys wear black
+<br>We're tagged and can't turn back
+<br>
+<br>You see us comin'
+<br>And you all together run for cover
+<br>We're takin over this town
+<br>
+<br>Here we come reach for your gun
+<br>And you better listen my friend, you see
+<br>It's been slow down below,
+<br>Aimed at you we're the cowboys from hell
+<br>Deed is done again, we've won
+<br>Ain't talking no tall tales friend
+<br>'Cause high noon, your doom
+<br>Comin' for you we're the cowboys from hell
+<br>
+<br>Pillage the village, trash the scene
+<br>but better not take it out on me
+<br>'Cause a ghost town is found 
+<br>Where your city used to be
+<br>So out of the darkness and into the light
+<br>Sparks fly everywhere in sight
+<br>From my double barrel, 12 gauge,
+<br>Can't lock me in your cage
+<br>
+<br>You see us comin'
+<br>And you all together run for cover
+<br>We're takin over this town
+<br>
+<br>Here we come reach for your gun
+<br>And you better listen my friend, you see
+<br>It's been slow down below,
+<br>Aimed at you we're the cowboys from hell
+<br>Deed is done again, we've won
+<br>Ain't talking no tall tales friend
+<br>'Cause high noon, your doom
+<br>Comin' for you we're the cowboys from hell
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+<font color="d6dc60"><b><a name="#track2">Primal Concrete Sledge</a></b></font><br>
+<blockquote>
+There's a double standard for the way we live
+<br>If there's nothing to have,
+<br>well then there's nothing to save
+<br>I'll break a sweat and I don't regret
+<br>What you'd kill to see brings out the god in me.
+<br>
+<br>Come and be with me
+<br>Live my twisted dream
+<br>Pro devoted sledge
+<br>Time for primal concrete sledge
+<br>
+<br>The man of a thousand retirements
+<br>Will always be the one to tell you when to quit
+<br>I won't take stock in a withered man
+<br>I'm reaching into you, I'll make you understand
+<br>
+<br>Come and be with me
+<br>Live my twisted dream
+<br>Pro devoted sledge
+<br>Time for primal concrete sledge
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+
+<font color="d6dc60"><b><a name="#track3">Psycho Holiday</a></b></font><br>
+<blockquote>
+Empty and sweating
+<br>Head lying in your hands
+<br>Shaking in the corner
+<br>Done too much alcohol
+<br>Gotta get away from it all
+<br>'Cause it feels my blood is freezing
+<br>My self insanity has taken its toll
+<br>Frustration has taken its control
+<br>
+<br>Now I'm far from home
+<br>Spending time alone
+<br>It's time to set my demons free
+<br>been put to the test
+<br>My mind laid to rest
+<br>I'm on a psycho holiday
+<br>
+<br>Shot down on sight
+<br>You are the target of attention
+<br>One woman here another there
+<br>You can't please all the people all the time
+<br>Can't tell the strangers
+<br>From the friends you know
+<br>Frustration has taken it's control
+<br>
+<br>Now you're far from home
+<br>Spending time alone
+<br>It's time to set your demons free
+<br>been put through the test
+<br>Your mind laid to rest
+<br>You're on a psycho holiday
+<br>
+<br>I'm strapped in for life
+<br>Is this where I lived
+<br>Or where I died
+<br>You want my money
+<br>You take my space
+<br>My mind is telling me
+<br>To leave this place
+<br>My self insanity has taken its toll
+<br>Frustration has taken its control
+<br>
+<br>Now you're far from home
+<br>Spending time alone
+<br>It's time to set your demons free
+<br>been put through the test
+<br>Your mind laid to rest
+<br>You're on a psycho holiday
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+
+<font color="d6dc60"><b><a name="#track4">Heresy</a></b></font><br>
+<blockquote>
+Here we are 
+<br>In a world of corruption
+<br>Human nature is 
+<br>Of violent breed
+<br>Who cares if there's no tomorrow
+<br>When I die for my future's
+<br>Laid out for me 
+<br>Can't you see?
+<br>Rise above the lies
+<br>Morals on a backwards globe
+<br>a sin to you 
+<br>For me it's hope.
+<br>
+<br>It's my life and provision
+<br>black or white
+<br>Some pay to pray
+<br>You question why they
+<br>Act this way
+<br>It's their fucking decision
+<br>
+<br>No more judgement day
+<br>Only tranquility
+<br>Peace signs, protest lines
+<br>Mean nothing to me
+<br>
+<br>Honesty born in me
+<br>Heresy
+<br>
+<br>I know what's right or wrong
+<br>And my belief is stronger
+<br>Than your advice
+<br>People, they go to war
+<br>because religion gives them
+<br>Reason to fight
+<br>Sacrifice, die for pride
+<br>a group that caters
+<br>No one's fees
+<br>Or synthetic deities
+<br>Is where I belong
+<br>My stand is the human race
+<br>Without a label or a face
+<br>So they can lick my sack
+<br>
+<br>No more judgement day
+<br>Only tranquility
+<br>Peace signs, protest lines
+<br>Mean nothing to me
+<br>
+<br>Honesty born in me
+<br>Heresy
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+<font color="d6dc60"><b><a name="#track5">Cemetary Gates</a></b></font><br>
+<blockquote>
+The reverend he turned to me
+<br>Without a tear in his eyes
+<br>It's nothing new for him to see
+<br>I didn't ask him why
+<br>I will remember
+<br>The love our souls had
+<br>Sworn to make
+<br>Now I watch the falling rain
+<br>All my mind can see
+<br>Now is your (face)
+<br>
+<br>Well I guess 
+<br>You took my youth
+<br>I gave it all away
+<br>Like the birth of a 
+<br>New-found joy
+<br>This love would end in rage
+<br>And when she died
+<br>I couldn't cry
+<br>The pride within my soul
+<br>You left me incomplete
+<br>All alone as the
+<br>Memories now unfold.
+<br>
+<br>Believe the word
+<br>I will unlock my door
+<br>And pass the 
+<br>Cemetery Gates
+<br>
+<br>Sometimes when I'm alone
+<br>I wonder aloud
+<br>If you're watching over me
+<br>Some place far abound
+<br>I must reverse my life
+<br>I can't live in the past
+<br>Then set my soul free
+<br>Belong to me at last
+<br>Through all those
+<br>Complex years
+<br>I thought I was alone
+<br>I didn't care to look around
+<br>And make this world my own
+<br>And when she died
+<br>I should've cried and spared myself some pain...
+<br>Left me incomplete
+<br>All alone as the memories still remain
+<br>
+<br>The way we were
+<br>The chance to save my soul
+<br>And my concern is now in vain
+<br>Believe the word
+<br>I will unlock my door
+<br>And pass the Cemetery Gates
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+<font color="d6dc60"><b><a name="#track6">Domination</a></b></font><br>
+<blockquote>
+Agony is the price
+<br>That you'll pay in the end
+<br>Domination consumes you
+<br>Then calls you a friend
+<br>It's a twisted fall
+<br>binds are like steel
+<br>And manipulates the will to be
+<br>And it's hard to see
+<br>How soon we forget
+<br>When there's nothing else
+<br>Left to destroy
+<br>It's a useless ploy
+<br>
+<br>Your eyes will see 
+<br>The dawn of the day
+<br>And the writing
+<br>On the wall
+<br>Those words that stare
+<br>Into your soul
+<br>And to yourself
+<br>You will befall
+<br>
+<br>It's domination pushed into living hell
+<br>Domination a now blacked heart
+<br>Is reaching out divinity
+<br>body suspended by chains over razors
+<br>And nails it's a penalty
+<br>Each razor a vice and each nail
+<br>Marks the demise of you life.
+<br>Grim construction grows
+<br>Has life played a trick
+<br>Sealed you in brick by brick
+<br>Till your end forcing you to bend
+<br>
+<br>Your eyes will see 
+<br>The dawn of the day
+<br>And the writing
+<br>On the wall
+<br>Those words that stare
+<br>Into your soul
+<br>And to yourself
+<br>You will befall
+<br>
+<br>It's domination pushed into living hell
+<br>Domination a now blacked heart
+<br>Is reaching out divinity
+<br>body suspended by chains over razors
+<br>And nails it's a penalty
+<br>Each razor a vice and each nail
+<br>Marks the demise of you life.
+<br>Grim construction grows
+<br>Has life played a trick
+<br>Sealed you in brick by brick
+<br>Till your end forcing you to bend
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+<font color="d6dc60"><b><a name="#track7">Shattered</a></b></font><br>
+<blockquote>
+It's storming broken glass, corpses left in piles
+<br>Ungracious bludgeonmnet that breaks the earth for miles
+<br>Nothing can stop it, the day has come,
+<br>from below it's catastrophic
+<br>
+<br>Freezing, there's no healing families are dying
+<br>
+<br>This world is shattered... all shattered
+<br>
+<br>Life crushing turbulence, this wrath can't be denied
+<br>Wishing you could help your friends,
+<br>standing where they died
+<br>Echoes haunting, a hollow planet,
+<br>lacerations, dissected nation
+<br>
+<br>Freezing, there's no healing families are dying
+<br>
+<br>This world is shattered... all shattered
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+<font color="d6dc60"><b><a name="#track8">Clash With Reality</a></b></font><br>
+<blockquote>
+Sometimes I know
+<br>I feel untouchable
+<br>Drowning in life
+<br>Caught up in the accessible
+<br>back down the ground
+<br>I hear the sound
+<br>there's no escapeThe concrete cloud
+<br>Spilling on me
+<br>Drenching me with
+<br>Laymen's sins
+<br>I hear the sirens
+<br>From the back of me
+<br>I'm crashing face first
+<br>Into the glass eye
+<br>
+<br>Clash with reality 
+<br>It rears it's ugly head
+<br>Clash with reality
+<br>The indescribable
+<br>Let the dogs lie
+<br>Where we sleep
+<br>Irrelevant theme
+<br>
+<br>a situation and there's
+<br>Nothing but right
+<br>In kicks the door
+<br>Nobody moves
+<br>'Cause in walks the problem
+<br>Dictates your fate
+<br>Evicts, convicts
+<br>Who'll sign the writ of life?
+<br>This now becomes
+<br>Their morbid game
+<br>Who's piss poor excuse
+<br>Is this for a world?
+<br>It swells my hatred
+<br>Day by day
+<br>
+<br>Clash with reality 
+<br>It rears it's ugly head
+<br>Clash with reality
+<br>The indescribable
+<br>Let the dogs lie
+<br>Where we sleep
+<br>Irrelevant theme
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+<font color="d6dc60"><b><a name="#track9">Medicine Man</a></b></font><br>
+<blockquote>
+Many distant miles away
+<br>Past the shores of ever dark
+<br>There stays a magic man
+<br>Who bears an evil mark
+<br>He helps all concerned
+<br>Those who come again return
+<br>Injecting lies while fires burn
+<br>The devil's heart
+<br>With angel's words
+<br>Have you wondered 
+<br>What heaven's like?
+<br>He can show you in one night
+<br>Overwhelming with euphoric lift
+<br>To lure you to steal your gift
+<br>
+<br>Intoxication
+<br>Seeping down to the bone
+<br>And there's no question
+<br>Where you have to go
+<br>
+<br>Understand just take his hand
+<br>He's the medicine man
+<br>
+<br>Once proud and fearless men
+<br>With desire in their eyes
+<br>Lost strong and fruitful lives
+<br>To self-indulgent ties
+<br>Their souls were dipped in venom
+<br>And put into a box
+<br>Then placed upon a crowded shelf
+<br>Where countless souls now rot
+<br>Have you ever wondered what hell's like?
+<br>He can take you there
+<br>Just one taste and you'll be back
+<br>And by the high you'll swear
+<br>
+<br>Intoxication
+<br>Seeping down to the bone
+<br>And there's no question
+<br>Where you have to go
+<br>
+<br>Understand just take his hand
+<br>He's the medicine man
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+
+
+<font color="d6dc60"><b><a name="#track10">Message In blood</a></b></font><br>
+<blockquote>
+There's a place that I keep deep inside me
+<br>It can trigger my mind
+<br>All along I knew it has been with me
+<br>Since I was just a child
+<br>
+<br>I just summon power within my soul
+<br>It has given me life, beyond life I take
+<br>blame for my murderous problem my signature
+<br>Always reminds
+<br>
+<br>It's a message in blood
+<br>It's your cryptic warning
+<br>Within the message in blood
+<br>Marks the years of pain,
+<br>And your godforsaken ending to life
+<br>
+<br>I'm provoked into sick confrontations, brutal
+<br>Time after time, bed of nails, suffocation,
+<br>life's ending, slay in different designs
+<br>One mans misery is another mans mystery
+<br>No one cares to understand my
+<br>Demented means
+<br>Sticks and stones can break all your
+<br>brittle bones, epitaph written at your feet
+<br>
+<br>It's a message in blood 
+<br>It's your cryptic warning
+<br>Within the message in blood
+<br>Marks the years of pain,
+<br>And your godforsaken ending to life
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>Back to the list...</strong></font></a><br><br>
+
+<font color="d6dc60"><b><a name="#track11">The Sleep</a></b></font><br>
+<blockquote>
+Understanding what has
+<br>Happened before us
+<br>We are confined to a 
+<br>Darkened hidden tomb
+<br>The conquering of our world
+<br>As we knew it
+<br>Rise above this pit
+<br>Of sorrow and pain
+<br>Among the few
+<br>We are the avant leaders
+<br>We've got to live
+<br>Through this trouble and decay
+<br>
+<br>This question haunts my mind
+<br>Will we survive this night?
+<br>We're harboring the meek
+<br>Will we survive the sleep?
+<br>
+<br>Unsure and scared
+<br>We are planning our reprise
+<br>Revolves around this world
+<br>We don't know anymore
+<br>The odds against us
+<br>Yet we're stronger and prevailing
+<br>Learn from mistakes
+<br>Counting souls for sale
+<br>
+<br>This question haunts my mind
+<br>Will we survive this night?
+<br>We're harboring the meek
+<br>Will we survive the sleep?
+</blockquote>
+
+<font color="d6dc60"><b><a name="#track12">The Art of Shredding</a></b></font><br>
+<blockquote>
+<br>Unity is a rare thing
+<br>blind eyes of society bring
+<br>The category of minority
+<br>Now what are we supposed to be?
+<br>born free to be
+<br>Powerless to change the world
+<br>With our lives in the hands of madmen
+<br>
+<br>Now in times when society needs us
+<br>This is where the sin begins
+<br>We're aware they're going to free us
+<br>Rage from our hearts within
+<br>born of this world
+<br>Which is a living hell
+<br>but we'll be closer to heaven
+<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So now, this is the art
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To shred... its only emotion
+</blockquote>
+<a href="#top"><font size="1" face="Verdana"><strong>
+Back to the list...</strong></font></a><br><br>
+<a href="index.html"><font size="1" face="Verdana"><strong>
+Back to Pantera lyrics...</strong></font></a><br><br>
+<a href="../index.html"><font size="1" face="Verdana"><strong>
+Back to Fernando's Lyrics main page...</strong></font></a><br><br>
+
+<br><br>
+
+<div align=center>
+<hr width=450>
+<font size="1" face="Verdana"><a href="http://fernandolyrics.tripod.com/">http://fernandolyrics.tripod.com/</a>|<a href="../e-mail.html">Contact the webmaster</a>|<a href=http://www.fbi.org>Privacy Policy</a></font>
+<br><font size="1" face="Verdana">© 2000 Fernando's Lyrics Inc.</font></div>
+</td>
+
+<td width=100 valign=up>
+<div align=right>
+
+<table border=1 width=100 bordercolor=#FF0000>
+<tr>
+ <td bgcolor=#FF0000><div align=center><font face=verdana size=2><b>New Lyrics</b></font></div></td>
+</tr>
+<tr>
+ <td>
+<font face=verdana size=1>
+<a href=../perfect/index.html>A Perfect Circle</a><br>
+<a href=../alice/index.html>Alice in Chains</a><br>
+<a href=../chamber/index.html>Coal Chamber</a><br>
+<a href=../creed/index.html>Creed</a><br>
+<a href=../factory/index.html>Fear Factory</a><br>
+<a href=../foo/index.html>Foo Fighters</a><br>
+<a href=../godsmack/index.html>Godsmack</a><br>
+<a href=../incubus/index.html>Incubus</a><br>
+<a href=../kilgore/index.html>Kilgore</a><br>
+<a href=../ratm/index.html>Rage Against The Machine</a><br>
+<a href=../slayer/index.html>Slayer</a><br>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<table border=0 width=100>
+<tr>
+ <td bgcolor=#FF0000><div align=center><font face=verdana size=1><b>If you can't find a lyric...</b></font></div></td>
+</tr>
+<tr>
+ <td bgcolor=#FFFFFF><div align=center><font face=verdana color=000000 size=2><b>Ask 4 it!!!</b></font></div></td>
+</tr>
+<tr>
+ <td bgcolor=#FF0000><div align=center><font face=verdana size=1><b>our lyricsfinder®</b></font></div></td>
+</tr>
+<tr>
+ <td bgcolor=#FFFFFF><div align=center><font face=verdana size=1><a href=../rodrigomail.html>rodrigoetal@<br>hotmail.com</a></font></div></td>
+</tr>
+</table>
+</div>
+<div align=left><br>
+<font face=verdana size=1>
+Lyrics:<br>
+<a href=../perfect/index.html>A Perfect Circle</a><br>
+<a href=../alice/index.html>Alice in Chains</a><br>
+<a href=../chamber/index.html>Coal Chamber</a><br>
+<a href=../creed/index.html>Creed</a><br>
+<A HREF=../deftones/index.html>Deftones</A><BR>
+<A HREF=../faith/index.html>Faith No More</A><BR>
+<a href=../factory/index.html>Fear Factory</a><br>
+<a href=../foo/index.html>Foo Fighters</a><br>
+<a href=../godsmack/index.html>Godsmack</a><br>
+<a href=../incubus/index.html>Incubus</a><br>
+<a href=../kilgore/index.html>Kilgore</a><br>
+<A HREF=../korn/index.html>Korn</A><BR>
+<A HREF=../limp/index.html>Limp Bizkit</A><BR>
+<A HREF=../metallica/index.html>Metallica</A><BR>
+<A HREF=../bungle/index.html>Mr. Bungle</A><BR>
+<A HREF=../pantera/index.html>Pantera</A><BR>
+<A HREF=../portishead/index.html>Portishead</A><BR>
+<a href=../ratm/index.html>Rage Against The Machine</a><br>
+<A HREF=../redhot/index.html>Red Hot Chili Peppers</A><BR>
+<a href=../slayer/index.html>Slayer</a><br>
+<A HREF=../slipknot/index.html>Slipknot</A><BR>
+<A HREF=../soulfly/index.html>Soulfly</A><BR>
+<A HREF=../staind/index.html>Staind</A><BR>
+</font>
+</div>
+</tr>
+</table>
+</p>
+</div>
+</body>
+</HTML>

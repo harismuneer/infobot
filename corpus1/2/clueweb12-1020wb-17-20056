@@ -1,0 +1,615 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-20T17:16:05Z
+WARC-TREC-ID: clueweb12-1020wb-17-20056
+WARC-IP-Address: 75.126.76.103
+WARC-Payload-Digest: sha1:KLEN4PPLM6T7QV6HB6H63REXV7NVOXTZ
+WARC-Target-URI: http://spill.com/Actor/ActorDetails.aspx?Name=Nicolas+Cage&PersonId=10155
+WARC-Record-ID: <urn:uuid:d686e73e-25da-496f-a1d4-dbb9518d0cd7>
+Content-Type: application/http; msgtype=response
+Content-Length: 31107
+
+HTTP/1.1 200 OK
+Date: Tue, 20 Mar 2012 17:15:39 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 4.0.30319
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 30836
+Connection: close
+Via: 1.1 AN-0016020122545304
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head><title>
+	Nicolas Cage Actor Details from Spill.com
+</title><link href="/favicon.ico" rel="shortcut icon" /><link href="/style.css" rel="stylesheet" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script src="/Library/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="/Library/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/Library/mdetect.js" type="text/javascript"></script>
+    <script src="/Library/s_code.js" type="text/javascript"></script>
+    <script src="/Library/search.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (DetectMobileQuick()) {
+                var cookieValue = $.cookie("spill_mobile");
+
+                if (cookieValue != null && cookieValue != "0") {
+                    $.cookie("spill_mobile", "1", { expires: 30, path: "/" });
+                    window.location = "http://m.spill.com";
+                }
+            }
+        });
+    </script>
+
+    
+    
+<meta content="Spill.com Movie Reviews and Community - New Movies, Reviews, News, Trailers and Previews for the Most Fun for Movie Lovers!" name="description" /><meta content="movies, movie reviews, spill, spill.com, movie news, films, movie trailers" name="keywords" /><link rel="canonical" href="http://www.spill.com/Actor/ActorDetails.aspx?Name=Nicolas Cage&amp;PersonId=10155" /></head>
+<body>
+    <form method="post" action="/Actor/ActorDetails.aspx?Name=Nicolas+Cage&amp;PersonId=10155" id="form1" onsubmit="return(CheckSearch());">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4MzYzODY1MDFkZNMjDvA9nIy5pmZflYrHTK+I8/VZ" />
+
+        <!-- Start Header -->
+        <div class="header" onclick="window.location = '/';">
+            <a href="/">
+                <img alt="" src="/Images/spillLogo.png" />
+            </a>
+            
+        </div>
+        <!-- End Header -->
+        <div class="wrapper">
+            
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var localPathname = location.pathname;
+        var selector = "";
+
+        if (localPathname == "/" || localPathname == "/Default.aspx") {
+            selector = "#tabHome";
+        }
+        else if (localPathname.indexOf("/Audio") >= 0 || localPathname.indexOf("/Movie-Reviews") >= 0) {
+            selector = "#tabMovieReviews";
+        }
+        else if (localPathname.indexOf("/Podcasts") >= 0) {
+            selector = "#tabPodcasts";
+        }
+        else if (localPathname.indexOf("/Actor") >= 0) {
+            selector = "#tabActors";
+        }
+        else if (localPathname.indexOf("/Store") >= 0) {
+            selector = "#tabStore"
+        }
+
+        if (selector != "") {
+            $(selector).addClass("selected");
+        }
+
+        // MOUSE OVER EVENT HANDLER FOR NAVIGATION
+        $("ul.toolbar li").hover(
+            function () {
+                $("ul.rolloverMenu", this).show();
+            },
+            function () {
+                $("ul.rolloverMenu", this).hide();
+            }
+        );
+    });
+</script>
+
+<ul class="toolbar" id="navigation">
+    <li id="tabHome">
+        <a href="/" title="Home">Home</a>
+    </li>
+    <li id="tabMovieReviews">
+        <a class="menu" href="/Movie-Reviews/Default.aspx" title="Movie Reviews">Movie Reviews</a>
+        <ul class="rolloverMenu">
+            <li><a href="/Audio/Default.aspx" title="Audio Reviews">Audio Reviews</a></li>
+            <li><a href="/Movie-Reviews/Default.aspx" title="Video Reviews">Video Reviews</a></li>
+        </ul>
+    </li>
+    <li id="tabPodcasts">
+        <a class="menu" href="/Podcasts/Default.aspx" title="Podcasts">Podcasts</a>
+        <ul class="rolloverMenu">
+            <li><a href="/Podcasts/Podcast.aspx?category=acoco" title="A Couple of Cold Ones">A Couple of Cold Ones</a></li>
+            <li><a href="/Podcasts/Podcast.aspx?category=letsdothis" title="Let's Do This!">Let's Do This!</a></li>
+            <li><a href="/Podcasts/Podcast.aspx?category=leog" title="LEOG">LEOG</a></li>
+            <li><a href="/Podcasts/Podcast.aspx?category=spillcallin" title="The Spill Call-in Show">The Spill Call-in Show</a></li>
+            <li><a href="/Podcasts/Podcast.aspx?category=loading-bar" title="The Loading Bar">The Loading Bar</a></li>
+            <li><a href="/Podcasts/Podcast.aspx?category=podcast" title="Other Podcasts">Other Podcasts</a></li>
+        </ul>
+    </li>
+    <li id="tabActors">
+        <a href="/Actor/Default.aspx" title="Actors">Actors</a>
+    </li>
+    <li>
+        <a href="http://my.spill.com/profiles" rel="nofollow" title="My Page">My Page</a>
+    </li>
+    <li>
+        <a class="menu" href="http://my.spill.com" title="Community">Community</a>
+        <ul class="rolloverMenu">
+            <li><a href="http://my.spill.com/profiles/members" rel="nofollow" title="Members">Members</a></li>
+            <li><a href="http://my.spill.com/profiles/blog/list" rel="nofollow" title="Blogs">Blogs</a></li>
+            <li><a href="http://my.spill.com/forum" rel="nofollow" title="Forum">Forum</a></li>
+            <li><a href="http://my.spill.com/groups" rel="nofollow" title="Groups">Groups</a></li>
+            <li><a href="http://my.spill.com/photo" rel="nofollow" title="Photos">Photos</a></li>
+            <li><a href="http://my.spill.com/video/video" rel="nofollow" title="Videos">Videos</a></li>
+        </ul>
+    </li>
+    <li>
+        <a class="menu" href="http://my.spill.com/profile/TheSpillCrew" rel="nofollow" title="The Spill Crew">The Spill Crew</a>
+        <ul class="rolloverMenu">
+            <li>
+                <a href="http://my.spill.com/profile/Korey1" rel="nofollow" title="Korey">
+                    <img alt="" src="http://cdn-images.spill.com/site/korey_icon_24.gif" style="margin: 0 10px 0 0; padding: 0; vertical-align: middle;" />
+                    Korey
+                </a>
+            </li>
+            <li>
+                <a href="http://my.spill.com/profile/cyrus001" rel="nofollow" title="Cyrus">
+                    <img alt="" src="http://cdn-images.spill.com/site/cyrus_icon_24.gif" style="margin: 0 10px 0 0; padding: 0; vertical-align: middle;" />
+                    Cyrus
+                </a>
+            </li>
+            <li>
+                <a href="http://my.spill.com/profile/Leon001" rel="nofollow" title="Leon">
+                    <img alt="" src="http://cdn-images.spill.com/site/leon_icon_24.gif" style="margin: 0 10px 0 0; padding: 0; vertical-align: middle;" />
+                    Leon
+                </a>
+            </li>
+            <li>
+                <a href="http://my.spill.com/profile/cohost3000" rel="nofollow" title="Co-Host 3000">
+                    <img alt="" src="http://cdn-images.spill.com/site/cohost_icon_24.gif" style="margin: 0 10px 0 0; padding: 0; vertical-align: middle;" />
+                    Co-Host 3000
+                </a>
+            </li>
+            <li>
+                <a href="http://my.spill.com/main/authorization/signUp?target=http://www.spill.com/" rel="nofollow" title="Join Spill">
+                    <img alt="" src="http://cdn-images.spill.com/site/join_icon_24.gif" style="margin: 0 10px 0 0; padding: 0; vertical-align: middle;" />
+                    Join Spill
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="toolbarTab" id="tabStore">
+        <a href="/Store/Default.aspx" title="Swag Shop">Swag Shop</a>
+    </li>
+    <li class="search">
+        <input id="searchBoxText" name="searchBoxText" onfocus="this.style.color = '#666666'; this.value = ''; this.onfocus = null;"
+            onkeydown="SearchKeyCheck(event);" type="text" value="Enter movie name" />
+    </li>
+</ul>
+            <div id="DivLeaderboard" class="subheadAdPanel float-fix">
+                <div class="left placement1">
+                    <a href="http://twitter.com/spillcrew" target="_blank">
+                        <img alt="Follow us on Twitter" src="/Images/twitAd.gif" />
+                    </a>
+                </div>
+                <div class="left placement2">
+<!-- Begin ad tag --><script type="text/javascript" src="http://ad.doubleclick.net/adj/hwd.spill/actor;dcopt=ist;companion=yes;site=PROD;pos=top;sz=728x90,1000x250;tile=1;dcopt=ni;ord=7531801121091377;actor=10155;?"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/hwd.spill/actor;dcopt=ist;companion=yes;site=PROD;pos=top;sz=728x90,1000x250;tile=1;dcopt=ni;ord=7531801121091377;actor=10155;?"><img src="http://ad.doubleclick.net/ad/hwd.spill/actor;dcopt=ist;companion=yes;site=PROD;pos=top;sz=728x90,1000x250;tile=1;dcopt=ni;ord=7531801121091377;actor=10155;?" /></a>
+</noscript>
+<!-- End ad tag -->
+</div>
+
+            </div>
+            <div class="content" style="clear: both;">
+                
+    
+    
+
+                <div class="float-fix">
+                    
+    <div class="twoColumnWide1" id="twoColumnWide1">
+        
+    <h1 class="titleBar">
+        <a href="/Actor/Default.aspx">Actors</a>&nbsp;-&nbsp;
+        Nicolas Cage
+    </h1>
+    <div class="contentPanel marginBottom float-fix">
+        <div class="left">
+            <div id="ContentPlaceHolderBody_Column1_DivFilms" class="linkBox marginBottom">
+                <h3 class="subhead">Filmography</h3>
+                <ul>
+                    
+                            <li>
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=The+Croods&VideoId=501861">
+                                    The Croods
+                                </a>&nbsp;
+                                (2013)
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Frank+or+Francis&VideoId=546901">
+                                    Frank or Francis
+                                </a>&nbsp;
+                                (2013)
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Ghost+Rider%3a+Spirit+of+Vengeance&VideoId=525865">
+                                    Ghost Rider: Spirit of Vengeance
+                                </a>&nbsp;
+                                (2012)
+                                 - Johnny Blaze/Ghost Rider
+                            </li>
+                        
+                            <li>
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Season+of+the+Witch&VideoId=470628">
+                                    Season of the Witch
+                                </a>&nbsp;
+                                (2011)
+                                 - Behmen
+                            </li>
+                        
+                            <li>
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Trespass&VideoId=524509">
+                                    Trespass
+                                </a>&nbsp;
+                                (2011)
+                                 - Kyle Miller
+                            </li>
+                        
+                </ul>
+                <p class="textRight">
+                    <a href="/Actor/ActorDetails.aspx?Name=Nicolas Cage&PersonId=10155&view=films" id="ContentPlaceHolderBody_Column1_AnchorFilmography">See All</a>
+                </p>
+            </div>
+            <div id="ContentPlaceHolderBody_Column1_DivAwards" class="linkBox marginBottom">
+                <h3 class="subhead">Awards</h3>
+                <ul>
+                    
+                            <li>
+                                Best Actor&nbsp;
+                                (2009)&nbsp;-&nbsp;
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Bad+Lieutenant%3a+Port+of+Call+New+Orleans&VideoId=452229">
+                                    Bad Lieutenant: Port of Call New Orleans
+                                </a>
+                            </li>
+                        
+                            <li>
+                                Best Actor&nbsp;
+                                (2002)&nbsp;-&nbsp;
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Adaptation&VideoId=260395">
+                                    Adaptation
+                                </a>
+                            </li>
+                        
+                            <li>
+                                Best Performance by an Actor in a Motion Picture - Musical or Comedy&nbsp;
+                                (2002)&nbsp;-&nbsp;
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Adaptation&VideoId=260395">
+                                    Adaptation
+                                </a>
+                            </li>
+                        
+                            <li>
+                                Best Actor&nbsp;
+                                (2002)&nbsp;-&nbsp;
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Adaptation&VideoId=260395">
+                                    Adaptation
+                                </a>
+                            </li>
+                        
+                            <li>
+                                Best Performance by an Actor in a Motion Picture - Musical or Comedy&nbsp;
+                                (2002)&nbsp;-&nbsp;
+                                <a href="/Movie-Reviews/MovieReview.aspx?Name=Adaptation&VideoId=260395">
+                                    Adaptation
+                                </a>
+                            </li>
+                        
+                </ul>
+                <p class="textRight">
+                    <a href="/Actor/ActorDetails.aspx?Name=Nicolas Cage&PersonId=10155&view=awards" id="ContentPlaceHolderBody_Column1_AnchorAwardList">See All</a>
+                </p>
+            </div>
+        </div>
+        <p>Actor <a href="/Actor/Default.aspx?Type=query&Query=Nicolas+Cage&Page=1" class="highlight">Nicolas Cage</a> has always strived to make a name for himself based on his work, rather than on his lineage. As the nephew of filmmaker <a href="/Actor/Default.aspx?Type=query&Query=Francis+Ford+Coppola&Page=1" class="highlight">Francis Ford Coppola</a>, <a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a> altered his last name to avoid accusations of nepotism. (He chose "<a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a>" both out of admiration for avant-garde musician <a href="/Actor/Default.aspx?Type=query&Query=John+Cage&Page=1" class="highlight">John Cage</a> and <I>en homage</I> to comic book hero Luke Cage). Even if he had retained the family name, it isn't likely that anyone would consider <a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a> holding fast to his uncle's coattails. Time and again, <a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a> travels to great lengths to add verisimilitude to his roles.</p>
+<p>Born January 7, 1964, in Long Beach, CA, to a literature professor father and dancer/choreographer mother, <a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a> first caught the acting bug while a student at Beverly Hills High School. After graduation, he debuted on film with a small part in <a href="/Actor/Default.aspx?Type=query&Query=Amy+Heckerling&Page=1" class="highlight">Amy Heckerling</a>'s 1982 classic <a href="/Movie-Reviews/SearchResults.aspx?Type=query&Query=Fast+Times+at+Ridgemont+High&Page=1" class="highlight">Fast Times at Ridgemont High</a>. Following a lead role in <a href="/Actor/Default.aspx?Type=query&Query=Martha+Coolidge&Page=1" class="highlight">Martha Coolidge</a>'s cult comedy <a href="/Movie-Reviews/SearchResults.aspx?Type=query&Query=Valley+Girl&Page=1" class="highlight">Valley Girl</a> (1983), <a href="/Actor/Default.aspx?Type=query&Query=Cage&Page=1" class="highlight">Cage</a> spent the remainder of the decade playing endearingly bizarre and disreputable men, most notably as Crazy Charlie the Appliance King in <a href="/Movie-Reviews/SearchResults.aspx?Type=query&Query=Peggy+Sue+Got+Married&Page=1" class="highlight">Peggy Sue Got Married</a> (1986), Hi McDonough in <a href="/Movie-Reviews/SearchResults.aspx?Type=query&Query=Raising+Arizona&Page=1" class="highlight">Raising Arizona</a> (1987), and Ronny Cammareri in the same year's <a href="/Movie-Reviews/SearchResults.aspx?Type=query&Query=Moonstruck&Page=1" class="highlight">Moonstruck</a>, the last of which won him a Golden Globe nomination and a legion of female fans, ecstatic over the actor's unconventional romantic appeal.</p>
+<p id="ContentPlaceHolderBody_Column1_FullBio" class="textRight">
+                <a href="/Actor/ActorDetails.aspx?Name=Nicolas Cage&PersonId=10155&view=bio" id="ContentPlaceHolderBody_Column1_AnchorFullBio">More</a>
+            </p>
+        
+        
+        
+    </div>
+    <div class="marginBottom">
+
+                     <script type='text/javascript'>
+                        adsonar_placementId=1489534;adsonar_pid=1973767;adsonar_ps=-1;adsonar_zw=727;adsonar_zh=250;adsonar_jv='ads.adsonar.com';
+                     </script>
+                     <script language='JavaScript' src='http://js.adsonar.com/js/adsonar.js'></script>
+</div>
+
+    <div id="ContentPlaceHolderBody_Column1_DefaultRelatedVideosPanel_DivRelatedMovies">
+        <h2 class="subhead">Nicolas Cage: Related Videos</h2>
+        <div class="contentPanel marginBottom" >
+            <div class="clear"></div>
+            <div class="float-fix" style="text-align: center;">
+	<div class="related-videos-container">
+		<div class="related-video">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=The Croods&VideoId=501861">
+				<img alt="The Croods" src="/Images/movie_noposter.png" style="border: none; height: 175px; width: 120px;" />
+			</a>
+		</div>
+		<div class="related-video-description">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=The Croods&VideoId=501861">The Croods</a>
+		</div>
+	</div>
+	<div class="related-videos-container">
+		<div class="related-video">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Frank or Francis&VideoId=546901">
+				<img alt="Frank or Francis" src="/Images/movie_noposter.png" style="border: none; height: 175px; width: 120px;" />
+			</a>
+		</div>
+		<div class="related-video-description">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Frank or Francis&VideoId=546901">Frank or Francis</a>
+		</div>
+	</div>
+	<div class="related-videos-container">
+		<div class="related-video">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Ghost Rider: Spirit of Vengeance&VideoId=525865">
+				<img alt="Ghost Rider: Spirit of Vengeance" src="http://www.spill.com/Images/movie_artwork/ghost_rider_spirit_of_vengeance.jpg" style="border: none; height: 175px; width: 120px;" />
+			</a>
+		</div>
+		<div class="related-video-description">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Ghost Rider: Spirit of Vengeance&VideoId=525865">Ghost Rider: Spirit of Vengeance</a>
+		</div>
+	</div>
+	<div class="related-videos-container">
+		<div class="related-video">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Season of the Witch&VideoId=470628">
+				<img alt="Season of the Witch" src="http://www.spill.com/Images/movie_artwork/season_of_the_witch.jpg" style="border: none; height: 175px; width: 120px;" />
+			</a>
+		</div>
+		<div class="related-video-description">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Season of the Witch&VideoId=470628">Season of the Witch</a>
+		</div>
+	</div>
+</div><div class="float-fix" style="text-align: center;">
+	<div class="related-videos-container">
+		<div class="related-video">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Trespass&VideoId=524509">
+				<img alt="Trespass" src="http://www.spill.com/Images/movie_artwork/trespass_2011.jpg" style="border: none; height: 175px; width: 120px;" />
+			</a>
+		</div>
+		<div class="related-video-description">
+			<a href="/Movie-Reviews/MovieReview.aspx?Name=Trespass&VideoId=524509">Trespass</a>
+		</div>
+	</div>
+</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="twoColumnWide2" id="twoColumnWide2">
+        
+    <span id="ContentPlaceHolderBody_Column2_RightColumn"><div class="connectPanel marginBottom">
+<h4>
+Connect With Spill
+</h4>
+<ul class="connect">
+<li>
+<a href="http://www.facebook.com/pages/Spill/316880315314" target="_blank">
+<img alt="Facebook" src="/Images/connect_fbk.png" title="Connect on Facebook" />
+</a>
+</li>
+<li>
+<a href="http://twitter.com/spillcrew" target="_blank">
+<img alt="Twitter" src="/Images/connect_twit.png" title="Follow us on Twitter" />
+</a>
+</li>
+<li>
+<a href="/Rss.aspx" target="_blank">
+<img alt="RSS" src="/Images/connect_rss.png" title="Subscribe via RSS" />
+</a>
+</li>
+</ul></div>
+<div class="advertisement marginBottom">
+<!-- Begin ad tag --><script type="text/javascript" src="http://ad.doubleclick.net/adj/hwd.spill/actor;companion=yes;site=PROD;pos=middle;sz=300x250,300x600;tile=2;dcopt=ni;ord=7206830516088210;actor=10155;?"></script>
+<noscript>
+	<a href="http://ad.doubleclick.net/jump/hwd.spill/actor;companion=yes;site=PROD;pos=middle;sz=300x250,300x600;tile=2;dcopt=ni;ord=7206830516088210;actor=10155;?"><img src="http://ad.doubleclick.net/ad/hwd.spill/actor;companion=yes;site=PROD;pos=middle;sz=300x250,300x600;tile=2;dcopt=ni;ord=7206830516088210;actor=10155;?" /></a>
+</noscript>
+<!-- End ad tag -->
+</div>
+<div class="marginBottom">
+
+                     <script type='text/javascript'>
+                        adsonar_placementId=1489537;adsonar_pid=1973767;adsonar_ps=-1;adsonar_zw=183;adsonar_zh=350;adsonar_jv='ads.adsonar.com';
+                     </script>
+                     <script language='JavaScript' src='http://js.adsonar.com/js/adsonar.js'></script>
+</div>
+</span>
+
+    </div>
+
+                </div>
+                
+    
+
+            </div>
+            
+
+<div class="footer" id="footer">
+    <div id="DefaulFooterBar_DivSiteMap" style="float: left" title="movie reviews">
+        &copy; 2012 Hollywood Spill, LLC&nbsp;|&nbsp;
+        Created by <a href="http://my.spill.com/xn/detail/u_TheSpillCrew">The Spill Crew</a>&nbsp;|&nbsp;
+        <a href="/About.aspx">About</a>&nbsp;|&nbsp;
+        <a href="/SiteMap.aspx">Site Map</a>&nbsp;|&nbsp;
+        <a href="/Contact.aspx">Contact Spill</a>&nbsp;|&nbsp;
+        <a href="/Rss.aspx">RSS</a>
+    </div>
+    <div id="DefaulFooterBar_DivFeedback" style="float: right;" title="movie reviews">
+        <a href="http://my.spill.com/main/index/feedback">Feedback</a>&nbsp;|&nbsp;
+        <a href="/PrivacyPolicy.aspx">Privacy</a>&nbsp;|&nbsp;
+        <a href="/Terms.aspx">Terms of Service</a>
+    </div>
+    <!-- hitbox call -->
+    <!--WEBSIDESTORY CODE HBX2.0 (Universal)-->
+    <!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+    <script language="javascript" type="text/javascript">
+        var _hbEC = 0, _hbE = new Array; function _hbEvent(a, b) { b = _hbE[_hbEC++] = new Object(); b._N = a; b._C = 0; return b; }
+        var hbx = _hbEvent("pv"); hbx.vpc = "HBX0200u"; hbx.gn = "h.spill.com";
+
+        //BEGIN EDITABLE SECTION
+        //CONFIGURATION VARIABLES
+        hbx.acct = "DM590402MEWD"; //ACCOUNT NUMBER(S)
+        hbx.pn = "PUT+PAGE+NAME+HERE"; //PAGE NAME(S)
+        hbx.mlc = "CONTENT+CATEGORY"; //MULTI-LEVEL CONTENT CATEGORY
+        hbx.pndef = "title"; //DEFAULT PAGE NAME
+        hbx.ctdef = "full"; //DEFAULT CONTENT CATEGORY
+
+        //OPTIONAL PAGE VARIABLES
+        //ACTION SETTINGS
+        hbx.fv = ""; //FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+        hbx.lt = "none"; //LINK TRACKING
+        hbx.dlf = "n"; //DOWNLOAD FILTER
+        hbx.dft = "n"; //DOWNLOAD FILE NAMING
+        hbx.elf = "n"; //EXIT LINK FILTER
+
+        //SEGMENTS AND FUNNELS
+        hbx.seg = ""; //VISITOR SEGMENTATION
+        hbx.fnl = ""; //FUNNELS
+
+        //CAMPAIGNS
+        hbx.cmp = ""; //CAMPAIGN ID
+        hbx.cmpn = ""; //CAMPAIGN ID IN QUERY
+        hbx.dcmp = ""; //DYNAMIC CAMPAIGN ID
+        hbx.dcmpn = ""; //DYNAMIC CAMPAIGN ID IN QUERY
+        hbx.dcmpe = ""; //DYNAMIC CAMPAIGN EXPIRATION
+        hbx.dcmpre = ""; //DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+        hbx.hra = ""; //RESPONSE ATTRIBUTE
+        hbx.hqsr = ""; //RESPONSE ATTRIBUTE IN REFERRAL QUERY
+        hbx.hqsp = ""; //RESPONSE ATTRIBUTE IN QUERY
+        hbx.hlt = ""; //LEAD TRACKING
+        hbx.hla = ""; //LEAD ATTRIBUTE
+        hbx.gp = ""; //CAMPAIGN GOAL
+        hbx.gpn = ""; //CAMPAIGN GOAL IN QUERY
+        hbx.hcn = ""; //CONVERSION ATTRIBUTE
+        hbx.hcv = ""; //CONVERSION VALUE
+        hbx.cp = "null"; //LEGACY CAMPAIGN
+        hbx.cpd = ""; //CAMPAIGN DOMAIN
+
+        //CUSTOM VARIABLES
+        hbx.ci = ""; //CUSTOMER ID
+        hbx.hc1 = ""; //CUSTOM 1
+        hbx.hc2 = ""; //CUSTOM 2
+        hbx.hc3 = ""; //CUSTOM 3
+        hbx.hc4 = ""; //CUSTOM 4
+        hbx.hrf = ""; //CUSTOM REFERRER
+        hbx.pec = ""; //ERROR CODES
+
+        //INSERT CUSTOM EVENTS
+
+        //END EDITABLE SECTION
+
+        //REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+    </script>
+    <script language="javascript1.1" src="http://www.spill.com/hbx.js" type="text/javascript"></script>
+    <!--END WEBSIDESTORY CODE-->
+
+    <!-- Start Quantcast tag -->
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <script type="text/javascript">    _qacct = "p-ef1y0A8erBLUc"; quantserve();</script>
+
+    <noscript>
+        <a href="http://www.quantcast.com/p-ef1y0A8erBLUc" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-ef1y0A8erBLUc.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+    </noscript>
+    <!-- End Quantcast tag -->
+
+    <!-- Start Quantcast tag (MTV) -->
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <script type="text/javascript">
+        _qoptions = { labels: "MTV BoxOfficeBlockbusters,MTVN Global Digital Network,MTVN Digital Tribes,MTV Generation Tribe,MTVN Music and Logo Global Network,MTVN Music and Logo Tribes,MTV plus Generation,Spike Flicks,MTVN Global Digital Network,MTVN Digital Tribes,Guys Tribe,MTVN Games and Entertainment Global Network,MTVN Games and Entertainment Tribes,Spike plus Guys" };
+        _qacct = "p-94wNw88f65Rhk"; quantserve();
+    </script>
+
+    <noscript>
+        <a href="http://www.quantcast.com/p-94wNw88f65Rhk" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-94wNw88f65Rhk.gif?labels=Spike%20Flicks%2CMTVN%20Global%20Digital%20Network%2CMTVN%20Digital%20Tribes%2CGuys%20Tribe%2CMTVN%20Games%20and%20Entertainment%20Global%20Network%2CMTVN%20Games%20and%20Entertainment%20Tribes%2CSpike%20plus%20Guys%2CMTV%20BoxOfficeBlockbusters%2CMTVN%20Global%20Digital%20Network%2CMTVN%20Digital%20Tribes%2CMTV%20Generation%20Tribe%2CMTVN%20Music%20and%20Logo%20Global%20Network%2CMTVN%20Music%20and%20Logo%20Tribes%2CMTV%20plus%20Generation" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+    </noscript>
+    <!-- End Quantcast tag -->
+
+    <!-- Start SiteCatalyst code -->
+    <script language="JavaScript" type="text/javascript">
+    <!--
+        configureSiteCatalystData();
+        /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+        var s_code = s.t(); if (s_code) document.write(s_code)
+    //-->
+    </script>
+    <!-- End SiteCatalyst code -->
+
+    <!-- Start comScore Beacon code -->
+    <script src="http://b.scorecardresearch.com/beacon.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+    <!--
+        COMSCORE.beacon({ c1: 2, c2: 3002265, c3: "", c4: "", c5: "", c6: "", c15: "" });
+    //-->
+    </script>
+    <!-- End comScore Beacon code -->
+
+    <!-- Begin Ad Analyzer Code -->
+    <script type="text/javascript">
+    <!--
+        var mv_cnv = 0;
+        var mv_aid = 204374;
+        var mv_uid = '0cc4f063-a347-4be0-87fb-b644545a87fa';
+        if (location.href.substr(0, 5) == "https")
+        { var secure = "s" }
+        else
+        { var secure = "" }
+        var mv_cb = Math.random() + "";
+        document.write('<img src="http' + secure + '://mv.bidsystem.com/ppc/sendtracker.aspx?c=' + mv_aid + '&conversion=' + mv_cnv + '&w=p3p&cb=' + mv_cb + '&u=' + mv_uid + '" border="0" hspace="0" vspace="0">');
+    // -->
+    </script>
+    <!-- End Ad Analyzer Code -->
+
+    <!-- START Nielsen Online SiteCensus V6.0 -->
+    <!-- COPYRIGHT 2010 Nielsen Online -->
+    <script type="text/javascript">
+        (function () {
+            var d = new Image(1, 1);
+            d.onerror = d.onload = function () {
+                d.onerror = d.onload = null;
+            };
+            d.src = ["http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-304975h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+        })();
+    </script>
+    <noscript>
+      <div>
+        <img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-304975h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+        width="1" height="1" alt="" />
+      </div>
+    </noscript>
+    <!-- END Nielsen Online SiteCensus V6.0 -->
+
+    <!-- START Google Analytics Code -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5817183-6']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- END Google Analytics Code -->
+</div>
+
+        </div>
+    </form>
+</body>
+</html>

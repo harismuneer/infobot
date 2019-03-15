@@ -1,0 +1,2187 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-13T21:03:41Z
+WARC-TREC-ID: clueweb12-1415wb-94-10623
+WARC-Target-URI: http://www.hassdesign.com/Forum/read.php?6,2070,4047
+WARC-Payload-Digest: sha1:36PNEVBBWYAWS5RP3BKX7IC73AF3MW36
+WARC-IP-Address: 65.36.191.11
+WARC-Record-ID: <urn:uuid:40c22212-5f48-42a3-8d76-e06f4540dd68>
+Content-Type: application/http; msgtype=response
+Content-Length: 69043
+
+HTTP/1.1 200 OK
+Date: Fri, 13 Apr 2012 21:03:42 GMT
+Server: Apache/2.0.52 (Red Hat) DAV/2 FrontPage/5.0.2.2635 mod_ssl/2.0.52 OpenSSL/0.9.7a
+X-Powered-By: PHP/5.1.4
+Set-Cookie: phorum_session_st=deleted; expires=Thu, 14-Apr-2011 21:03:41 GMT; path=/
+Set-Cookie: phorum_session_v5=deleted; expires=Thu, 14-Apr-2011 21:03:41 GMT; path=/
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="EN">
+  <head>
+    <style type="text/css">
+              /* Element level classes */
+
+body
+{
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    margin: 8px;
+}
+
+td, th
+{
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+img
+{
+    border-width: 0px;
+    vertical-align: middle;
+}
+
+a
+{
+    color: #000099;
+    text-decoration: none;
+}
+a:active
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FF6600;
+}
+
+input[type=text], input[type=password], input[type=file], select
+{
+    background-color: White;
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+
+    vertical-align: middle;
+
+}
+
+textarea
+{
+    background-color: White;
+    color: Black;
+    font-size: 12px;
+    font-family: Lucida Console, Andale Mono, Courier New, Courier;
+}
+
+input[type=submit]
+{
+    border: 1px dotted #808080;
+    background-color: #EEEEEE;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    vertical-align: middle;
+}
+
+input
+{
+    vertical-align: middle;
+}
+
+
+/* new styles */
+
+#phorum-index
+{
+    width: 100%;
+    border: 1px solid #808080;
+    border-bottom-width: 0px;
+    text-align: left;
+}
+
+#phorum-index th
+{
+    border-bottom: 1px solid #808080;
+    background-color: #EEEEEE;
+    padding: 3px 0 3px 0;
+}
+
+#phorum-index td
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    background-color: White;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid #808080;
+}
+
+#phorum-index th.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    padding: 3px 0 3px 3px;
+}
+
+#phorum-index th.forum-name a
+{
+    color: Black;
+}
+
+#phorum-index th.forum-threads
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-posts
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-last-post
+{
+    padding: 3px 15px 3px 3px;
+    vertical-align: middle;
+}
+
+#phorum-index td.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0 5px 15px;
+}
+
+#phorum-index td.forum-name p
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    margin: 0 15px 0 0;
+}
+
+#phorum-index td.forum-name small
+{
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+#phorum-index td.forum-threads
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-posts
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-last-post
+{
+    width: 120px;
+    padding: 0 15px 0 0;
+}
+
+#phorum-menu-table
+{
+    width: 100%;
+    border-width: 0px;
+}
+
+#phorum-menu
+{
+    padding: 5px 3px 0 0;
+    vertical-align: top;
+    width: 200px;
+}
+
+#phorum-content
+{
+    padding: 5px 0 0 2px;
+    vertical-align: top;
+}
+
+div.phorum-menu
+{
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    border: 1px solid #808080;
+    padding: 3px;
+}
+
+div.phorum-menu ul
+{
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+div.phorum-menu li
+{
+    font-weight: bold;
+    font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+    font-size: 12px;
+    padding: 0 0 0 15px;
+    margin-top:3px;
+    background-image: url('templates/classic/images/square_bullet.png');
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+
+div.phorum-menu a
+{
+    font-weight: normal;
+    color: #000000;
+}
+
+div.phorum-menu a:hover
+{
+    color: #FF6600;
+}
+
+div.phorum-menu a.phorum-current-page
+{
+    font-weight: bold;
+}
+
+#phorum-post-form ul
+{
+    padding: 0 0 0 20px;
+    margin: 3px 0px 8px 0px;
+    font-size: 11px;
+}
+
+#phorum-post-form li
+{
+    margin-bottom: 3px;
+}
+
+#phorum-attachment-list td
+{
+    font-size: 11px;
+}
+
+    /* Standard classes for use in any page */
+    /* PhorumDesignDiv - a div for keeping the forum-size size */
+    .PDDiv
+    {
+        width: 100%;
+        text-align: left;
+    }
+    /* new class for layouting the submit-buttons in IE too */
+    .PhorumSubmit {
+        border: 1px dotted #808080;
+        color: Black;
+        background-color: #EEEEEE;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        vertical-align: middle;
+    }
+
+    .PhorumTitleText
+    {
+        float: right;
+    }
+
+    .PhorumStdBlock
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: White;
+        border: 1px solid #808080;
+/*        width: 100%; */
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumStdBlockHeader
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: #EEEEEE;
+/*        width: 100%; */
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumHeaderText
+    {
+        font-weight: bold;
+    }
+
+    .PhorumNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border: 1px solid #808080;
+        margin-top: 1px;
+        margin-bottom: 1px;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .PhorumNavHeading
+    {
+        font-weight: bold;
+    }
+
+    A.PhorumNavLink
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    .PhorumSelectedFolder
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    A.PhorumNavLink:hover
+    {
+        background-color: #FFFFFF;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        color: #FF6600;
+    }
+
+    .PhorumFloatingText
+    {
+        padding: 10px;
+    }
+
+    .PhorumHeadingLeft
+    {
+        padding-left: 3px;
+        font-weight: bold;
+    }
+
+    .PhorumUserError
+    {
+        padding: 10px;
+        text-align: center;
+        color: Red;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .PhorumOkMsg
+    {
+        padding: 10px;
+        text-align: center;
+        color: DarkGreen;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+   .PhorumNewFlag
+    {
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        font-size: 10px;
+        font-weight: bold;
+        color: #CC0000;
+    }
+
+    .PhorumNotificationArea
+    {
+        float: right;
+        border-style: dotted;
+        border-color: #808080;
+        border-width: 1px;
+    }
+
+    /* PSUEDO Table classes                                       */
+    /* In addition to these, each file that uses them will have a */
+    /* column with a style property to set its right margin       */
+
+    .PhorumColumnFloatXSmall
+    {
+        float: right;
+        width: 75px;
+    }
+
+    .PhorumColumnFloatSmall
+    {
+        float: right;
+        width: 100px;
+    }
+
+    .PhorumColumnFloatMedium
+    {
+        float: right;
+        width: 150px;
+    }
+
+    .PhorumColumnFloatLarge
+    {
+        float: right;
+        width: 200px;
+    }
+
+    .PhorumColumnFloatXLarge
+    {
+        float: right;
+        width: 400px;
+    }
+
+    .PhorumRowBlock
+    {
+        background-color: White;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .PhorumRowBlockAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    /************/
+
+
+    /* All that is left of the tables */
+
+    .PhorumStdTable
+    {
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        width: 100%;
+    }
+
+    .PhorumTableHeader
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #808080;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-weight: bold;
+        padding: 3px;
+    }
+
+    .PhorumTableRow
+    {
+        background-color: White;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: Black;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+        vertical-align: middle;
+    }
+
+    .PhorumTableRowAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+        vertical-align: middle;
+    }
+
+    table.PhorumFormTable td
+    {
+        height: 26px;
+    }
+
+    /**********************/
+
+
+    /* Read Page specifics */
+
+    .PhorumReadMessageBlock
+    {
+        margin-bottom: 5px;
+    }
+
+   .PhorumReadBodySubject
+    {
+        color: Black;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 3px;
+    }
+
+    .PhorumReadBodyHead
+    {
+        padding-left: 5px;
+    }
+
+    .PhorumReadBodyText
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        padding: 5px;
+    }
+
+    .PhorumReadNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    /********************/
+
+    /* List page specifics */
+
+    .PhorumListSubText
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListPageLink
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListSubjPrefix
+    {
+        font-weight: bold;
+    }
+
+    /********************/
+
+    /* Posting editor specifics */
+
+    .PhorumListModLink, .PhorumListModLink a
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumAttachmentRow {
+        border-bottom: 1px solid #EEEEEE;
+        padding: 3px 0px 3px 0px;
+    }
+
+    /********************/
+
+    /* PM specifics */
+
+    .phorum-recipientblock
+    {
+        border: 1px solid black;
+        position:relative;
+        float:left;
+        padding: 1px 1px 1px 5px;
+        margin: 0px 5px 5px 0px;
+        font-size: 11px;
+        background-color: White;
+        border: 1px solid #808080;
+        white-space: nowrap;
+    }
+
+    .phorum-pmuserselection
+    {
+        padding-bottom: 5px;
+    }
+
+    .phorum-gaugetable {
+        border-collapse: collapse;
+    }
+
+    .phorum-gauge {
+        border: 1px solid #808080;
+        background-color: #EEEEEE;
+    }
+
+    .phorum-gaugeprefix {
+        border: none;
+        background-color: white;
+        padding-right: 10px;
+    }
+
+    /********************/
+
+    /* Override classes - Must stay at the end */
+
+    .PhorumNarrowBlock
+    {
+        width: 600px;
+    }
+
+    .PhorumSmallFont
+    {
+        font-size: 11px;
+    }
+
+    .PhorumLargeFont
+    {
+        color: Black;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+
+    .PhorumFooterPlug
+    {
+        margin-top: 10px;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+
+
+    /*   BBCode styles  */
+
+    blockquote.bbcode
+    {
+        font-size: 11px;
+        margin: 0 0 0 10px;
+    }
+
+    blockquote.bbcode div
+    {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid #808080;
+    }
+
+    blockquote.bbcode strong
+    {
+        font-style: italic;
+        margin: 0 0 3px 0;
+    }
+
+        @media print{
+        /* Element level classes */
+
+body
+{
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    margin: 8px;
+}
+
+td, th
+{
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+img
+{
+    border-width: 0px;
+    vertical-align: middle;
+}
+
+a
+{
+    color: #000099;
+    text-decoration: none;
+}
+a:active
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #000099;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FF6600;
+}
+
+input[type=text], input[type=password], input[type=file], select
+{
+    background-color: White;
+    color: Black;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+
+    vertical-align: middle;
+
+}
+
+textarea
+{
+    background-color: White;
+    color: Black;
+    font-size: 12px;
+    font-family: Lucida Console, Andale Mono, Courier New, Courier;
+}
+
+input[type=submit]
+{
+    border: 1px dotted #808080;
+    background-color: #EEEEEE;
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    vertical-align: middle;
+}
+
+input
+{
+    vertical-align: middle;
+}
+
+
+/* new styles */
+
+#phorum-index
+{
+    width: 100%;
+    border: 1px solid #808080;
+    border-bottom-width: 0px;
+    text-align: left;
+}
+
+#phorum-index th
+{
+    border-bottom: 1px solid #808080;
+    background-color: #EEEEEE;
+    padding: 3px 0 3px 0;
+}
+
+#phorum-index td
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    background-color: White;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid #808080;
+}
+
+#phorum-index th.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    padding: 3px 0 3px 3px;
+}
+
+#phorum-index th.forum-name a
+{
+    color: Black;
+}
+
+#phorum-index th.forum-threads
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-posts
+{
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#phorum-index th.forum-last-post
+{
+    padding: 3px 15px 3px 3px;
+    vertical-align: middle;
+}
+
+#phorum-index td.forum-name
+{
+    font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0 5px 15px;
+}
+
+#phorum-index td.forum-name p
+{
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    margin: 0 15px 0 0;
+}
+
+#phorum-index td.forum-name small
+{
+    font-weight: normal;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+}
+
+#phorum-index td.forum-threads
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-posts
+{
+    width: 120px;
+    text-align: center;
+}
+
+#phorum-index td.forum-last-post
+{
+    width: 120px;
+    padding: 0 15px 0 0;
+}
+
+#phorum-menu-table
+{
+    width: 100%;
+    border-width: 0px;
+}
+
+#phorum-menu
+{
+    padding: 5px 3px 0 0;
+    vertical-align: top;
+    width: 200px;
+}
+
+#phorum-content
+{
+    padding: 5px 0 0 2px;
+    vertical-align: top;
+}
+
+div.phorum-menu
+{
+    font-size: 12px;
+    font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+    background-color: White;
+    border: 1px solid #808080;
+    padding: 3px;
+}
+
+div.phorum-menu ul
+{
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+div.phorum-menu li
+{
+    font-weight: bold;
+    font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+    font-size: 12px;
+    padding: 0 0 0 15px;
+    margin-top:3px;
+    background-image: url('templates/classic/images/square_bullet.png');
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+
+div.phorum-menu a
+{
+    font-weight: normal;
+    color: #000000;
+}
+
+div.phorum-menu a:hover
+{
+    color: #FF6600;
+}
+
+div.phorum-menu a.phorum-current-page
+{
+    font-weight: bold;
+}
+
+#phorum-post-form ul
+{
+    padding: 0 0 0 20px;
+    margin: 3px 0px 8px 0px;
+    font-size: 11px;
+}
+
+#phorum-post-form li
+{
+    margin-bottom: 3px;
+}
+
+#phorum-attachment-list td
+{
+    font-size: 11px;
+}
+
+    /* Standard classes for use in any page */
+    /* PhorumDesignDiv - a div for keeping the forum-size size */
+    .PDDiv
+    {
+        width: 100%;
+        text-align: left;
+    }
+    /* new class for layouting the submit-buttons in IE too */
+    .PhorumSubmit {
+        border: 1px dotted #808080;
+        color: Black;
+        background-color: #EEEEEE;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        vertical-align: middle;
+    }
+
+    .PhorumTitleText
+    {
+        float: right;
+    }
+
+    .PhorumStdBlock
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: White;
+        border: 1px solid #808080;
+/*        width: 100%; */
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumStdBlockHeader
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        background-color: #EEEEEE;
+/*        width: 100%; */
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-top: 1px solid #808080;
+        padding: 3px;
+        text-align: left;
+    }
+
+    .PhorumHeaderText
+    {
+        font-weight: bold;
+    }
+
+    .PhorumNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border: 1px solid #808080;
+        margin-top: 1px;
+        margin-bottom: 1px;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .PhorumNavHeading
+    {
+        font-weight: bold;
+    }
+
+    A.PhorumNavLink
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    .PhorumSelectedFolder
+    {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+        padding: 0px 4px 0px 4px;
+    }
+
+    A.PhorumNavLink:hover
+    {
+        background-color: #FFFFFF;
+        font-weight: normal;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-size: 12px;
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        color: #FF6600;
+    }
+
+    .PhorumFloatingText
+    {
+        padding: 10px;
+    }
+
+    .PhorumHeadingLeft
+    {
+        padding-left: 3px;
+        font-weight: bold;
+    }
+
+    .PhorumUserError
+    {
+        padding: 10px;
+        text-align: center;
+        color: Red;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .PhorumOkMsg
+    {
+        padding: 10px;
+        text-align: center;
+        color: DarkGreen;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+   .PhorumNewFlag
+    {
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        font-size: 10px;
+        font-weight: bold;
+        color: #CC0000;
+    }
+
+    .PhorumNotificationArea
+    {
+        float: right;
+        border-style: dotted;
+        border-color: #808080;
+        border-width: 1px;
+    }
+
+    /* PSUEDO Table classes                                       */
+    /* In addition to these, each file that uses them will have a */
+    /* column with a style property to set its right margin       */
+
+    .PhorumColumnFloatXSmall
+    {
+        float: right;
+        width: 75px;
+    }
+
+    .PhorumColumnFloatSmall
+    {
+        float: right;
+        width: 100px;
+    }
+
+    .PhorumColumnFloatMedium
+    {
+        float: right;
+        width: 150px;
+    }
+
+    .PhorumColumnFloatLarge
+    {
+        float: right;
+        width: 200px;
+    }
+
+    .PhorumColumnFloatXLarge
+    {
+        float: right;
+        width: 400px;
+    }
+
+    .PhorumRowBlock
+    {
+        background-color: White;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .PhorumRowBlockAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 5px 0px 0px 0px;
+    }
+
+    /************/
+
+
+    /* All that is left of the tables */
+
+    .PhorumStdTable
+    {
+        border-style: solid;
+        border-color: #808080;
+        border-width: 1px;
+        width: 100%;
+    }
+
+    .PhorumTableHeader
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #808080;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        font-weight: bold;
+        padding: 3px;
+    }
+
+    .PhorumTableRow
+    {
+        background-color: White;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: Black;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+        vertical-align: middle;
+    }
+
+    .PhorumTableRowAlt
+    {
+        background-color: #EEEEEE;
+        border-bottom-style: solid;
+        border-bottom-color: #F2F2F2;
+        border-bottom-width: 1px;
+        color: #000000;
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        height: 35px;
+        padding: 3px;
+        vertical-align: middle;
+    }
+
+    table.PhorumFormTable td
+    {
+        height: 26px;
+    }
+
+    /**********************/
+
+
+    /* Read Page specifics */
+
+    .PhorumReadMessageBlock
+    {
+        margin-bottom: 5px;
+    }
+
+   .PhorumReadBodySubject
+    {
+        color: Black;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+        padding-left: 3px;
+    }
+
+    .PhorumReadBodyHead
+    {
+        padding-left: 5px;
+    }
+
+    .PhorumReadBodyText
+    {
+        font-size: 12px;
+        font-family: "Bitstream Vera Sans", "Lucida Sans Unicode", "Lucida Grande", Arial;
+        padding: 5px;
+    }
+
+    .PhorumReadNavBlock
+    {
+        font-size: 12px;
+        font-family: Lucida Sans Unicode, Lucida Grande, Arial;
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+/*        width: 100%; */
+        background-color: #EEEEEE;
+        padding: 2px 3px 2px 3px;
+    }
+
+    /********************/
+
+    /* List page specifics */
+
+    .PhorumListSubText
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListPageLink
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumListSubjPrefix
+    {
+        font-weight: bold;
+    }
+
+    /********************/
+
+    /* Posting editor specifics */
+
+    .PhorumListModLink, .PhorumListModLink a
+    {
+        color: #707070;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+    .PhorumAttachmentRow {
+        border-bottom: 1px solid #EEEEEE;
+        padding: 3px 0px 3px 0px;
+    }
+
+    /********************/
+
+    /* PM specifics */
+
+    .phorum-recipientblock
+    {
+        border: 1px solid black;
+        position:relative;
+        float:left;
+        padding: 1px 1px 1px 5px;
+        margin: 0px 5px 5px 0px;
+        font-size: 11px;
+        background-color: White;
+        border: 1px solid #808080;
+        white-space: nowrap;
+    }
+
+    .phorum-pmuserselection
+    {
+        padding-bottom: 5px;
+    }
+
+    .phorum-gaugetable {
+        border-collapse: collapse;
+    }
+
+    .phorum-gauge {
+        border: 1px solid #808080;
+        background-color: #EEEEEE;
+    }
+
+    .phorum-gaugeprefix {
+        border: none;
+        background-color: white;
+        padding-right: 10px;
+    }
+
+    /********************/
+
+    /* Override classes - Must stay at the end */
+
+    .PhorumNarrowBlock
+    {
+        width: 600px;
+    }
+
+    .PhorumSmallFont
+    {
+        font-size: 11px;
+    }
+
+    .PhorumLargeFont
+    {
+        color: Black;
+        font-size: 16px;
+        font-family: "Bitstream Vera Sans", "Trebuchet MS", Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+
+    .PhorumFooterPlug
+    {
+        margin-top: 10px;
+        font-size: 10px;
+        font-family: "Bitstream Vera Sans", Arial, sans-serif;
+    }
+
+
+
+    /*   BBCode styles  */
+
+    blockquote.bbcode
+    {
+        font-size: 11px;
+        margin: 0 0 0 10px;
+    }
+
+    blockquote.bbcode div
+    {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid #808080;
+    }
+
+    blockquote.bbcode strong
+    {
+        font-style: italic;
+        margin: 0 0 3px 0;
+    }
+
+/* Printing classes */
+/* Override classes from css.tpl */
+
+.PhorumNavBlock,.PhorumReadNavBlock
+{
+	    display: none;
+}
+
+        }
+          </style>
+                <script type="text/javascript" src="http://www.hassdesign.com/Forum/javascript.php?6"></script>
+                <title>texas flag afghan crochet pattern</title>
+    <LINK rel="stylesheet" type="text/css" href="../ssi/HeaderMenuMainStyle3.css" title="Main style">
+<link rel="stylesheet" type="text/css" href="/ssi/chrometheme/chromestyle2.css">
+<meta name="description" content="Crochet message board.  Discuss Crochet, Search for patterns, and get help on our online Crochet-Along classes."/>
+<meta name="keywords" content="crochet, message board, Filet,  discuss crochet, find crochet patterns, crocheting, free patterns, crochet chat, doily, doilies, Tablecloth, table toppers, curtains, crochet instruction, crochet tips, Crochet Along classes, Crochet-Along, handmade, arts and crafts, christmas"/><script type="text/javascript">
+       //<![CDATA[
+       function iscramble_eval_javascript(data)
+       {
+           var cursor = 0; var start = 1; var end = 1;
+           while (cursor < data.length && start > 0 && end > 0) {
+               start = data.indexOf('<script', cursor);
+               end   = data.indexOf('</script', cursor);
+               if (end > start && end > -1) {
+                   if (start > -1) {
+                       var res = data.substring(start, end);
+                       start = res.indexOf('>') + 1;
+                       res = res.substring(start);
+                       if (res.length != 0) {
+                           eval(res);
+                       }
+                   }
+                   cursor = end + 1;
+               }
+           }
+       }
+       //]]>
+       </script>
+      </head>
+  <body bgcolor="white" link="#003366" vlink="#003366" alink="#C0C0C0" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onload="">
+    <div align="center">
+      <div class="PDDiv">
+              		<SCRIPT language="JavaScript" type="text/javascript">
+
+<!-- Begin
+function NewWindow(mypage, myname, w, h, scroll) {
+var winl = (screen.width - w) / 2;
+var wint = (screen.height - h) / 2;
+winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable'
+win = window.open(mypage, myname, winprops)
+if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+}
+//  End -->
+</script>
+
+<script type="text/javascript" src="/ssi/chromejs/chrome.js">
+/***********************************************
+* Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+
+
+<TABLE border="0" bgcolor="#003366" cellspacing="0" cellpadding="0" width="99%">
+  <TR bgcolor="#003366">
+    <TD align="left">
+        <span class="c1">&nbsp; HASS DESIGN</span><BR>
+        <span class="c2">&nbsp; European Style Crochet Patterns &amp; Crochet-Along Classes</span><BR>
+		<br>
+    </TD>
+	<TD align = "right">
+	<A href="/CrochetAlong/LittleHearts/"><IMG src="/CrochetAlong/LittleHearts/FCClassFinishPic150.jpg" width="100" height="100" border="0" alt="Learn Filet Crochet Free" align="middle" hspace="0" vspace="0"></A>
+	</TD>	
+  </TR>
+</TABLE>
+
+<TABLE border="0" bgcolor="#003366" cellspacing="0" cellpadding="0" width="100%">
+  <TR bgcolor="#FFFFFF">
+  <TD align="left" colspan="2">			
+<div id="chromemenu">
+<ul>
+<li><a href="http://www.hassdesign.com">Home</a></li>
+<li><a href="/FiletCrochetDesigns/" onMouseover="cssdropdown.dropit(this,event,'dropmenu1')">Pattern Books</a></li>
+<li><a href="/FiletCrochetDesigns/IP/" onMouseover="cssdropdown.dropit(this,event,'dropmenu2')">Instant-Print<br>Patterns</a></li>
+<li><a href="/CrochetAlong/" onMouseover="cssdropdown.dropit(this,event,'dropmenu3')">Crochet-Along<br>Classes</a></li>	
+<li><a href="/StitchLegend/" onMouseover="cssdropdown.dropit(this,event,'dropmenu4')">Stitch Videos<br>&amp; Instruction</a></li>	
+<li><a href="/Forum/index.php">Message<br>Board</a></li>	
+<li><a href="/FiletCrochetDesigns/IP/FreePatterns/">Free<br>Patterns</a></li>	
+<li><a href="/ssi/CallProcessEmailFull.php" onMouseover="cssdropdown.dropit(this,event,'dropmenu5')">Members</a></li>	
+</ul>
+</div>
+
+<!--1st drop down menu -->                                                   
+<div id="dropmenu1" class="dropmenudiv" style="width: 150px;">
+<a href="/FiletCrochetDesigns/">All at a glance</a>
+<a href="/FiletCrochetDesigns/ElegantTablecloths/">Elegant Tablecloths</a>
+<a href="/FiletCrochetDesigns/CurtainsWithStyle/">Curtains with Style</a>
+<a href="/FiletCrochetDesigns/6BistroCurtain/">Bistro Curtains</a>
+<a href="/FiletCrochetDesigns/8SmallRoundDoilies/">Doily Classics</a>
+<a href="/FiletCrochetDesigns/8DoiliesLacet/">Timeless Doilies</a>
+</div>
+
+<!--2nd drop down menu -->                                                
+<div id="dropmenu2" class="dropmenudiv" style="width: 225px;">
+<a href="/FiletCrochetDesigns/IP/">All at a glance</a>
+<a href="/FiletCrochetDesigns/IP/CrochetBagPatterns/">Crocheted Bag &amp; Tote Patterns</a>
+<a href="/FiletCrochetDesigns/IP/Crochet-Shawl-Patterns/">Ponchos, Shawls &amp; Jewelry</a>
+<a href="/FiletCrochetDesigns/IP/FiletAfghans/">Filet Crochet - Afghan Patterns</a>
+<a href="/FiletCrochetDesigns/IP/FiletDoily/">Filet Crochet - Round Doilies</a>
+<a href="/FiletCrochetDesigns/IP/FiletDoily/">Filet Crochet - Square Doilies</a>
+<a href="/FiletCrochetDesigns/IP/FiletDoily/OvalDoilies/">Filet Crochet - Oval Doilies</a>
+<a href="/FiletCrochetDesigns/IP/FiletCurtains/">Filet Crochet - Curtain Patterns</a>
+<a href="/FiletCrochetDesigns/IP/FiletTablecloths/">Filet Crochet - Tablecloths</a>
+<a href="/FiletCrochetDesigns/IP/FiletTableRunners/">Filet Crochet - Table Runners</a>
+<a href="/FiletCrochetDesigns/IP/FiletTableToppers/">Filet Crochet - Table Toppers</a>
+<a href="/FiletCrochetDesigns/IP/FiletDoily/DoilyPatternsCenter/">Filet Crochet - starting in center</a>
+<a href="/FiletCrochetDesigns/IP/Linen/">Patterns with Linen</a>
+<a href="/FiletCrochetDesigns/IP/DeltaCrochet/">Delta Crochet Patterns</a>
+<a href="/FiletCrochetDesigns/IP/HolidayPatterns/">Holiday Patterns</a>
+<a href="/FiletCrochetDesigns/IP/FreePatterns/">Free Patterns</a>
+</div>
+
+<!--3rd anchor link and menu -->                                                 
+<div id="dropmenu3" class="dropmenudiv" style="width: 400px;">
+<a href="/CrochetAlong/">Info &amp; Schedule</a>
+<a href="/CrochetAlong/Bruges_Crochet/">Learn Bruges Crochet (intermediate) ** New Class **</a>
+<a href="/CrochetAlong/StarJasmine/">Learn Delta Crochet: Star Jasmine (intermediate)</a>
+<a href="/CrochetAlong/Florabunda/">Learn to Crochet in Rounds: Florabunda Doilies (int)</a>
+<a href="/CrochetAlong/Linen/Butterfly/">Learn to Crochet with Fabric: Butterfly Doilies w/ Linen</a>
+<a href="/CrochetAlong/SwanLake/">Learn to Crochet Curtains: Swan Lake Doily &amp; Curtain (int)</a>
+<a href="/CrochetAlong/Rose/">Learn Filet Crochet: Rose Doilies (intermediate)</a>
+<a href="/CrochetAlong/LHeartsTR/">Learn to Crochet Runners: Little Hearts Table Runner (beg)</a>
+<a href="/CrochetAlong/CrochetingWithColor/">Learn to Crochet with Color: Crocheting with Color (int)</a>
+<a href="/CrochetAlong/LittleHearts/">Learn Filet Crochet Basics: Little Hearts Doily (beginner)</a>
+<a href="/FiletCrochetDesigns/IP/12DaysOfChristmas/">20+ Christmas Patterns: 12 Weeks of Christmas (beg - int)</a>
+<a href="/CrochetAlong/HolidaySpirit/">Learn More Filet Crochet: Holiday Spirit (beginner)</a>
+<a href="/CrochetAlong/Gallery/">Member Gallery</a>
+<a href="/Forum/list.php?6">Message Board</a> 
+</div>
+
+
+<!--4th drop down menu -->                                                   
+<div id="dropmenu4" class="dropmenudiv" style="width: 300px;">
+<a href="/StitchLegend/">Crochet Videos: Basic Stitches</a>
+<a href="/BasicFiletTechniques/">Crochet Videos: Basic Filet Techniques</a>
+<a href="/CrochetAlong/Rose/Videos/">Crochet Videos: Advanced Filet Techniques</a>
+<a href="/CrochetAlong/StarJasmine/Videos/">Crochet Videos: Delta Crochet</a>
+<a href="/CrochetStitchVideos/FAQ/">FAQ</a>
+<a href="/CrochetStitchVideos/CrochetVideoTips/">Crochet Video Tips</a>
+<a href="/Forum/list.php?10">Msg Board: Video Support</a>
+<a href="/Forum/list.php?11">Msg Board: QuickTime Tips</a>
+</div>
+
+<!--5th anchor link and menu -->                                                 
+<div id="dropmenu5" class="dropmenudiv" style="width: 150px;">
+<a href="/ssi/CallProcessEmailFull.php">Join Hass Design</a>
+<a href="/ssi/ChangePassword/">Change Password</a>
+<a href="/ssi/ForgotPassword/">Forgot Password</a>
+<a href="mailto:hassdesign@aol.com">Contact Us</a>
+<a href="/CrochetFAQ/">FAQ</a>
+</div>
+
+    </TD>
+  </TR>
+</TABLE>
+		<br>
+
+      
+
+  <div class="PhorumNavBlock" style="text-align: left;">
+    <div style="float: right;">
+      <span class="PhorumNavHeading">Goto Topic:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,1329961545,newer">Previous</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,1329961545,older">Next</a>
+    </div>
+    <span class="PhorumNavHeading PhorumHeadingLeft">Goto:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/index.php">Forum List</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/list.php?6">Message List</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/posting.php?6">New Topic</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/search.php?6">Search</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/login.php?6">Log In</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,printview" target="_blank">Print View</a>
+  </div>
+  
+    <div class="PhorumNavBlock" style="text-align: left;">
+  
+    <div style="float: right;">
+      <span class="PhorumNavHeading">Pages:</span>&nbsp;<strong>1</strong><a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,page=2">2</a><a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,page=2">Next</a>
+    </div>
+  
+  <span class="PhorumNavHeading PhorumHeadingLeft">Current Page: </span>1 of 2
+</div>
+
+  
+
+
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodySubject">texas flag afghan crochet pattern <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#101;&#99;&#109;&#111;&#114;&#103;&#97;&#110;&#50;&#48;&#48;&#49;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">
+            becky morgan
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: April 04, 2005 07:42PM</div><br />
+      <div class="PhorumReadBodyText"> Need a pattern for a crocheted texas flag afghan.<br />
+<br />
+Any one know where I can get one?<br />
+<br />
+Thanks</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,2070#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,2070,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-2077"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#112;&#97;&#99;&#104;&#101;&#112;&#114;&#105;&#110;&#99;&#101;&#115;&#115;&#54;&#54;&#64;&#110;&#101;&#116;&#122;&#101;&#114;&#111;&#46;&#99;&#111;&#109;">
+            Lisa
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: April 14, 2005 06:43AM</div><br />
+      <div class="PhorumReadBodyText"> I have been looking TOO. Can ANYONE help?</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,2077#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,2077,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-3872"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#119;&#101;&#115;&#116;&#98;&#64;&#109;&#115;&#110;&#46;&#99;&#111;&#109;">
+            Linda
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: September 06, 2008 02:50PM</div><br />
+      <div class="PhorumReadBodyText"> Hi Juli,<br />
+I am looking for a texas flag afghan crochet pattern. <br />
+Please send,<br />
+Linda</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3872#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3872,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-3919"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#111;&#115;&#116;&#105;&#110;&#116;&#117;&#99;&#110;&#97;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">
+            pat
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: October 13, 2008 08:29PM</div><br />
+      <div class="PhorumReadBodyText"> I did check out angelcrafts but if they had a texas afghan pattern it is not listed.  I would love to find one also so let me know if anyone finds one.</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3919#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3919,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-3945"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#97;&#108;&#101;&#121;&#106;&#117;&#110;&#101;&#49;&#48;&#50;&#48;&#48;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+            dezarae
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: November 18, 2008 06:55PM</div><br />
+      <div class="PhorumReadBodyText"> <strong class="bbcode">http://www.etsy.com/view_listing.php?listing_id=8596375</strong></div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3945#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3945,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-3993"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#104;&#101;&#101;&#107;&#121;&#95;&#108;&#105;&#108;&#95;&#99;&#104;&#105;&#116;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">
+            Cindi
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: January 17, 2009 10:06AM</div><br />
+      <div class="PhorumReadBodyText"> I checked the etsy site, but the flag i'm looking for isn't there.  I want a pattern for the lone star flag, not the one that's actually shaped like texas.  PLEASE...someone help... need this pattern badly.  can actually do all but the star, i guess, but i don't want to sew it on.<br />
+<br />
+thanks,<br />
+<br />
+cindi <br />
+( <a rel="nofollow"  href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#104;&#101;&#101;&#107;&#121;&#95;&#108;&#105;&#108;&#95;&#99;&#104;&#105;&#116;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#99;&#104;&#101;&#101;&#107;&#121;&#95;&#108;&#105;&#108;&#95;&#99;&#104;&#105;&#116;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a> )</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3993#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,3993,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-4047"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#71;&#108;&#101;&#110;&#100;&#97;&#55;&#57;&#99;&#64;&#65;&#79;&#76;&#46;&#99;&#111;&#109;">
+            Glenda Cline
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: February 20, 2009 10:21PM</div><br />
+      <div class="PhorumReadBodyText"> I have also been looking for a Texas Flag afghan pattern.  I am like some of you, I could figure out the basic part, but I don't know how to make the star.</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4047#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4047,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-4124"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#114;&#111;&#98;&#105;&#110;&#50;&#51;&#57;&#57;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">
+            Lisa
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: April 19, 2009 12:20AM</div><br />
+      <div class="PhorumReadBodyText"> [<a rel="nofollow"  href="http://www.angelfire.com/tx2/originals/original3.html">www.angelfire.com</a>]<br />
+<br />
+In case you haven't found one yet...just found this!<br />
+<br />
+I am going to type this out with spaces because it won't post correctly otherwise...just take out the spaces.<br />
+<br />
+http:// www.angelfire.com /tx2/ originals/ original3.html</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4124#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4124,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-4129"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#104;&#111;&#110;&#100;&#97;&#45;&#109;&#97;&#121;&#98;&#101;&#114;&#114;&#121;&#64;&#115;&#97;&#116;&#120;&#46;&#114;&#114;&#46;&#99;&#111;&#109;">
+            Rhonda
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: May 05, 2009 11:38AM</div><br />
+      <div class="PhorumReadBodyText"> Has anyone found a Texas flag afghan patter yet?</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4129#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4129,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+  
+    <a name="msg-4158"></a>
+  
+  <div class="PhorumReadMessageBlock">
+    
+    <div class="PhorumStdBlock">
+      
+        <div class="PhorumReadBodyHead"><strong>Re: texas flag afghan crochet pattern</strong> <span class="PhorumNewFlag"></span></div>
+      
+      <div class="PhorumReadBodyHead">Posted by:
+        <strong>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#97;&#110;&#99;&#121;&#109;&#101;&#114;&#114;&#105;&#102;&#105;&#101;&#108;&#100;&#55;&#64;&#118;&#101;&#114;&#105;&#122;&#111;&#110;&#46;&#110;&#101;&#116;">
+            Nancy Merrifield
+          </a>
+        </strong> ()</div>
+      <div class="PhorumReadBodyHead">Date: June 01, 2009 08:18PM</div><br />
+      <div class="PhorumReadBodyText"> Does anyone out there have a pattern for a Texas Flag?</div><br />
+      
+    </div>
+    
+      
+      <div class="PhorumReadNavBlock" style="text-align: left;">
+        <span class="PhorumNavHeading PhorumHeadingLeft">Options:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4158#REPLY">Reply</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,4158,quote=1#REPLY">Quote</a>
+      </div>
+    
+  </div>
+
+
+  
+    <div class="PhorumNavBlock" style="text-align: left;">
+  
+    <div style="float: right;">
+      <span class="PhorumNavHeading">Pages:</span>&nbsp;<strong>1</strong><a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,page=2">2</a><a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/read.php?6,2070,page=2">Next</a>
+    </div>
+  
+  <span class="PhorumNavHeading PhorumHeadingLeft">Current Page: </span>1 of 2
+</div>
+
+  
+  <br /><br />
+
+
+<div id="phorum-post-form" align="center">
+  
+  
+  
+  
+  <form id="post_form" name="post" action="http://www.hassdesign.com/Forum/posting.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="forum_id" value="6" />
+<input type="hidden" name="message_id" value="0" />
+<input type="hidden" name="message_id:signature" value="ffeef678261c7c75ef5a168773577881" />
+<input type="hidden" name="user_id" value="0" />
+<input type="hidden" name="datestamp" value="" />
+<input type="hidden" name="status" value="0" />
+<input type="hidden" name="author" value="" />
+<input type="hidden" name="email" value="" />
+<input type="hidden" name="forum_id" value="6" />
+<input type="hidden" name="thread" value="2070" />
+<input type="hidden" name="parent_id" value="4047" />
+<input type="hidden" name="allow_reply" value="1" />
+<input type="hidden" name="special" value="" />
+<input type="hidden" name="attachments" value="YTowOnt9" />
+<input type="hidden" name="attachments:signature" value="283487884a398db3546ccb73b0256977" />
+<input type="hidden" name="meta" value="YTowOnt9" />
+<input type="hidden" name="meta:signature" value="283487884a398db3546ccb73b0256977" />
+<input type="hidden" name="thread_count" value="0" />
+<input type="hidden" name="mode" value="reply" />
+
+    <div class="PhorumNavBlock PhorumNarrowBlock" style="text-align: left">
+  <span class="PhorumNavHeading PhorumHeadingLeft">Goto:</span>&nbsp;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/index.php">Forum List</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/list.php?6">Message List</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/search.php?6">Search</a>&bull;<a class="PhorumNavLink" href="http://www.hassdesign.com/Forum/login.php?6">Log In</a>
+</div>
+
+    <div class="PhorumStdBlockHeader PhorumNarrowBlock">
+  <table class="PhorumFormTable" cellspacing="0" border="0">
+    
+
+    <script type="text/javascript">
+      document.write('<input type="submit" name="ignore" style="display:none">');
+    </script>
+    
+
+    <tr>
+      <td style="white-space: nowrap">Your Name:&nbsp;</td>
+      <td width="100%">
+       
+        <input type="text" name="author" size="30" value="" />
+       
+      </td>
+    </tr>
+    
+
+    
+    
+      
+        
+      
+    
+
+    
+    <tr>
+      <td style="white-space: nowrap">Your Email:&nbsp;</td>
+      <td width="100%">
+        <input type="text" name="email" size="30" value="" />
+      </td>
+    </tr>
+    
+    
+
+    <tr>
+      <td style="white-space: nowrap">Subject:&nbsp;</td>
+      <td><input type="text" name="subject" id="phorum_subject" size="50" value="Re: texas flag afghan crochet pattern" /></td>
+    </tr>
+    
+    
+
+    
+    
+
+    
+    
+
+    
+  </table>
+</div>
+
+<noscript><div style="font-size: small;"><br/><br/>Help information<br/><ul><li><a href="http://www.hassdesign.com/Forum/addon.php?6,module=bbcode,action=help" target="editor_tools_help">BBcode help</a><br/></li><li><a href="http://www.hassdesign.com/Forum/addon.php?6,module=smileys,action=help" target="editor_tools_help">Smileys help</a><br/></li></ul><br/></div></noscript>    <input type="hidden"
+           name="spamhurdles_key"
+           id="spamhurdles_key_field"
+           value="cc1a7688703852de5f59b33a7a1d80cf" />     <script type="text/javascript">
+    //<![CDATA[
+    var today = new Date();
+    var expire = new Date();
+    expire.setTime(today.getTime() + 3600000*24*30);
+    document.cookie = "mod_spamhurdles_key=cc1a7688703852de5f59b33a7a1d80cf;expires="+
+                      expire.toGMTString();
+    //]]>
+    </script> <!-- 
+<input type="text" name="commentname" value="">
+-->
+<span id="iscramble_1"></span><script type="text/javascript">
+//<![CDATA[
+var box = document.getElementById('iscramble_1');var a='';var b='%2Clsn0%20%%acmu/%20%2Dbf100%20p_/%200%3yio20%2cph./hbf%20%33e7%20%2ss00%2%20s2AA%20stwgualg20%2t60d20%202l%%20%20iepe%20%33soorp20%20%01aA%20iai%2020%tdn%20%rt.nmmii0%20%e1c2%20%2e220%A%2g3a20%20%/d/slx%20%223a420%2%hgE%200%m%l%20%2DAsmddi2%20%2495%20%dmm30%%20%Dy2%20%2/eF/ee00%2049eb0%203u%%200%202300%20hwirp/.%20%le03%20%2%d2A%220%2%%%20%22wsosslA%20ab736%20%Dr200%';var c='3657982410';for(var i=0;i<37;i++) for(var j=0;j<10;j++) a+=b.charAt((parseInt(c.charAt(j))*37)+i);var unscrambled_data = unescape(a);
+box.innerHTML = unscrambled_data;
+iscramble_eval_javascript(unscrambled_data);
+//]]>
+</script>
+<noscript>
+
+</noscript>
+        <script type="text/javascript" src="http://www.hassdesign.com/Forum/mods/spamhurdles/lib/md5.js"> </script>
+        <div class="PhorumStdBlockHeader PhorumNarrowBlock"><script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LfSPAEAAAAAADPuy1D0_4-f_At8ZeTtaRBX_M7R"></script>
+
+	<noscript>
+  		<iframe src="http://api.recaptcha.net/noscript?k=6LfSPAEAAAAAADPuy1D0_4-f_At8ZeTtaRBX_M7R" height="300" width="500" frameborder="0"></iframe><br>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+	</noscript></div>
+<div class="PhorumStdBlock PhorumNarrowBlock">
+  <textarea name="body" id="phorum_textarea" rows="15" cols="50" style="width: 99%"></textarea>
+  
+</div>
+
+    <div class="PhorumStdBlock PhorumNarrowBlock" style="text-align: right; border-top: none">
+  
+  <input type="submit" name="preview" class="PhorumSubmit" value=" Preview " />
+  <input type="submit" name="finish" class="PhorumSubmit" value=" Post message " />
+  
+</div>
+
+  </form>
+  
+</div>
+
+<script type="text/javascript">editor_tools_lang['help']  = 'Help information';
+editor_tools_lang['bold']  = 'Bold';
+editor_tools_lang['italic']  = 'Italic';
+editor_tools_lang['underline']  = 'Underline';
+editor_tools_lang['strike']  = 'Strike through';
+editor_tools_lang['subscript']  = 'Subscript';
+editor_tools_lang['superscript']  = 'Superscript';
+editor_tools_lang['color']  = 'Select font color';
+editor_tools_lang['size']  = 'Select font size';
+editor_tools_lang['center']  = 'Center text';
+editor_tools_lang['url']  = 'Insert URL';
+editor_tools_lang['email']  = 'Insert email address';
+editor_tools_lang['image']  = 'Insert image URL';
+editor_tools_lang['hr']  = 'Insert horizontal line';
+editor_tools_lang['code']  = 'Formatted code';
+editor_tools_lang['quote']  = 'Insert quoted text';
+editor_tools_lang['quote_title']  = 'Quote';
+editor_tools_lang['enter url']  = 'Please, enter the URL to which you want to create a link.';
+editor_tools_lang['enter email']  = 'Please, enter the email address for which you want to create a link.';
+editor_tools_lang['enter url description']  = 'Please, enter a description for the URL.';
+editor_tools_lang['invalid url']  = 'The URL is invalid. It should start with http://, https://, ftp:// or mailto:';
+editor_tools_lang['enter image url']  = 'Please, enter the URL for the image that you want to add.';
+editor_tools_lang['invalid image url']  = 'The URL for the image is invalid. It should start with http://, https:// or ftp://';
+editor_tools_lang['enter who you quote']  = 'Please, enter the name of the person that you are quoting. You can leave this empty if you like.';
+editor_tools_lang['x-large']  = 'Extra large font';
+editor_tools_lang['large']  = 'Large font';
+editor_tools_lang['medium']  = 'Medium font';
+editor_tools_lang['small']  = 'Small font';
+editor_tools_lang['x-small']  = 'Extra small font';
+editor_tools_lang['bbcode help']  = 'BBcode help';
+editor_tools_lang['rgb']  = 'RGB';
+editor_tools_lang['named']  = 'Named colors';
+editor_tools_lang['slides']  = 'Slides';
+editor_tools_lang['rgb_size']  = '40';
+editor_tools_lang['named_size']  = '90';
+editor_tools_lang['slides_size']  = '70';
+editor_tools_lang['disable']  = 'Disable BBcode for this message';
+editor_tools_default_iconheight = 20;
+editor_tools_help_chapters[0] = new Array('BBcode help', 'http://www.hassdesign.com/Forum/addon.php?6,module=bbcode,action=help');
+editor_tools_help_chapters[1] = new Array('Smileys help', 'http://www.hassdesign.com/Forum/addon.php?6,module=smileys,action=help');
+editor_tools[0] = new Array('help', 'Help information', 'http://www.hassdesign.com/Forum/mods/editor_tools/icons/help.gif', 'editor_tools_handle_help()', 21, 20, 'body');
+editor_tools[1] = new Array('bold', 'Bold', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/bold.gif', 'editor_tools_handle_bold()', 21, 20, 'body');
+editor_tools[2] = new Array('italic', 'Italic', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/italic.gif', 'editor_tools_handle_italic()', 21, 20, 'body');
+editor_tools[3] = new Array('underline', 'Underline', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/underline.gif', 'editor_tools_handle_underline()', 21, 20, 'body');
+editor_tools[4] = new Array('strike', 'Strike through', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/strike.gif', 'editor_tools_handle_strike()', 21, 20, 'body');
+editor_tools[5] = new Array('subscript', 'Subscript', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/subscript.gif', 'editor_tools_handle_subscript()', 21, 20, 'body');
+editor_tools[6] = new Array('superscript', 'Superscript', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/superscript.gif', 'editor_tools_handle_superscript()', 21, 20, 'body');
+editor_tools[7] = new Array('color', 'Select font color', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/color.gif', 'editor_tools_handle_color()', 21, 20, 'body');
+editor_tools[8] = new Array('size', 'Select font size', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/size.gif', 'editor_tools_handle_size()', 21, 20, 'body');
+editor_tools[9] = new Array('code', 'Formatted code', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/code.gif', 'editor_tools_handle_code()', 21, 20, 'body');
+editor_tools[10] = new Array('center', 'Center text', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/center.gif', 'editor_tools_handle_center()', 21, 20, 'body');
+editor_tools[11] = new Array('hr', 'Insert horizontal line', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/hr.gif', 'editor_tools_handle_hr()', 21, 20, 'body');
+editor_tools[12] = new Array('image', 'Insert image URL', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/image.gif', 'editor_tools_handle_image()', 21, 20, 'body');
+editor_tools[13] = new Array('url', 'Insert URL', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/url.gif', 'editor_tools_handle_url()', 21, 20, 'body');
+editor_tools[14] = new Array('email', 'Insert email address', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/email.gif', 'editor_tools_handle_email()', 21, 20, 'body');
+editor_tools[15] = new Array('quote', 'Insert quoted text', 'http://www.hassdesign.com/Forum/./mods/bbcode/icons/quote.gif', 'editor_tools_handle_quote()', 21, 20, 'body');
+editor_tools[16] = new Array('smiley', 'Insert smiley', 'http://www.hassdesign.com/Forum/./mods/smileys/icon.gif', 'editor_tools_handle_smiley()', 21, 20, 'body');
+editor_tools[17] = new Array('subjectsmiley', 'Insert smiley into the subject', 'http://www.hassdesign.com/Forum/./mods/smileys/icon.gif', 'editor_tools_handle_subjectsmiley()', 21, 20, 'subject');
+</script>
+<script type="text/javascript">editor_tools_construct();</script>
+        <script type="text/javascript">
+        //<![CDATA[
+          var poststr;
+          var secondsleft = 5;;
+          var postbutton;
+
+          if (document.getElementById) {
+              var keyfld = document.getElementById("spamhurdles_key_field");
+              if (keyfld && keyfld.form) {
+                  var f = keyfld.form;
+                  if (f.finish) {
+                      postbutton = f.finish;
+                      poststr = postbutton.value;
+                      spamhurdles_postdelay_countdown()
+                  }
+              }
+          }
+
+          function spamhurdles_postdelay_countdown()
+          {
+              secondsleft --;
+              if (secondsleft <= 0) {
+                  postbutton.value = poststr;
+                  postbutton.disabled = false;
+              } else {
+                  postbutton.value = poststr + "(" + secondsleft + ")";
+                  postbutton.disabled = true;
+                  setTimeout('spamhurdles_postdelay_countdown()', 1000);
+              }
+          }
+        //]]>
+        </script>
+        <span id="iscramble_2"></span><script type="text/javascript">
+//<![CDATA[
+var box = document.getElementById('iscramble_2');var a='';var b='%2r%202%20icEd%20%20%tegf%A%20%0ul%hg%20%ae0%20%2Et2h%20%addeyp_%00%2r%lB%20%em0.%20vaD5+y%20%/%2i2ysta20%200r0%20f2.mi9%20%e%dt%20%l%iB%20f2g%20%.l9%20%2030%330% 0%cA%2%A%20otI0%20%20xhn0e00%2r2cEdmmB%20vk2t%20%00%t.%20vl0gBssd%20%a0f30%20ra2e0%20n3d0eA%20/e%f%l00n%20%22o20%20%te220%20m0raB%20f0h30%20%iB%20fi20%20%2%20%%20 %2C%203A20%8gB%20%20%00n%t.%20vedeyp_%20%2gDa00%2%%e2g20%2y%tn2le30%20%ee%20%0ssu%20%i0_%n%20%2ae2o0%%i00%2rD.A%20%3eE%2%20%n%hg%20%2%22%20%u0%20%2Cd%20%2050%2p0%2%20i20%150%ful%20%20%2r%%r2%20%2%me2u%00%2ryi30%20xh0e00%2r%otIak2A%20%3d%20%2ahs%20%at%%%%00%2%20e0%tht0%20fkm%20%l0cen%20%2%2lu00%2d3d%20%l0n00%2ad%20%20/E%2CE%220s00%CT0%2dey20%20%2Eti2h%20%a%otIai30%20n%lA%2022y0e0%20f2.t2elB%20v2y%20%2Cp%r20%2g%m2k00%20tn0nf22gA%20%%f%20%2Dnl2%20%2a2un30%2022%20%2es30%20h%20%20%D%20t%200%2t%205%202em9%2B%20/c00mp0%20iDne%d2%20%22a%20%2r%r2%20%20ul%hy%20%20%vA%20/ergA%20%r0809%20%0hodh0r%r20%22y30%20%oetuB%20f0sse%20%t%eA%20.3t%20%p2B%2D%2%00%s00%20%p0%2%B%2%me20%70%20a22o020%203em8r2A%20%%mB%20%tef%A%20%2cEdme2%20%2D.00%20tui00%2ru2222A%2020flt2oeu%20%%e%20%2ddrnp30%2022erA%20.Dd00%2d%aA%20p%30%70%/%20/%20%20%20/B00%0ne%20%20%/tsk%a%20%m%tn2l%20%200g00%20a2o020%20%me2u_20%20k2a%20%/%dn%20%2ehks%20%2Cir%efi2e0%200fB%20v2ca%t%20%l%p_%20%2y2n%20%vDu20%2e8%20%205A%2cA%20%3E%2%D%202.tA%2A%2022gy0e0%20g0gBss9%20%i3.%20%/tk%a%20%eDne%di%20%2ykuA%2020et0%20s2xygB%20%ed%02rgs%20%a3d00%2r%me82A%20.Dmi2%20%e%20%20l2e%20%dlA%2A%2%20%i20%20%30%/CA%2%tn00%00%2%%ie2g20%2a2.t2e20%20s%eA%20/c0mp0%20k3em8rf9%20%e0l00%2%2la20%20%eei30%20rdm2%on0.%20v%l%20%a0ut2%00%2d3as20%20p0%20%2a%r0%20nf00%00%D%20r%20';var c='3657982410';for(var i=0;i<163;i++) for(var j=0;j<10;j++) a+=b.charAt((parseInt(c.charAt(j))*163)+i);var unscrambled_data = unescape(a);
+box.innerHTML = unscrambled_data;
+iscramble_eval_javascript(unscrambled_data);
+//]]>
+</script>
+<noscript>
+
+</noscript>
+        <div class="PhorumFooterPlug" align="center">
+          <br><br>
+		          <TABLE border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+          <TR>
+            <TD align="center">
+              <SPAN class="c3">
+              <A href="/"><B>Home</B></A> |
+              <A href="mailto:hassdesign@aol.com">Contact Us</A> |
+              <A href="/FiletCrochetDesigns/">Crochet Pattern Books</A> |
+              <A href="/FiletCrochetDesigns/IP/">Instant-Print Crochet Patterns</A> |
+              <A href="/FiletCrochetDesigns/IP/FreePatterns/">Free Patterns</A> |
+              <A href="#" onclick="window.open('https://www.paypal.com/cart/display=1&amp;business=hassdesign%40aol.com','cartwin','width=600,height=400,scrollbars,location,resizable,status');">Shopping Cart</a> |
+              <A href="/sitemap/">Site Map</A>
+              </SPAN>
+            </TD>
+          </TR>
+          <TR>
+            <TD align="center">
+              <SPAN class="c3">
+              <A href="/CrochetAlong/">Crochet-Along Classes</A> |
+              <A href="/StitchLegend/">Stitch Legend</A> |
+              <A href="/DeltaCrochetTechniques/">Delta Crochet</A> |
+              <A href="/BasicFiletTechniques/">Filet Crochet Techniques</A> |
+              <A href="/TipsNTricks/">Crochet Tips 'N Tricks</A>
+              <br></SPAN>
+			  <br>
+            </TD>
+          </TR>
+          <TR>
+            <TD align="center">
+        		<table width="100%" bgcolor="white" border="0" cellpadding="5" cellspacing="5" >
+        		<tr><td align="right">
+                		<table width="50%" bgcolor="#FF9966" onMouseover="this.bgColor='#FF8040'" onMouseout="this.bgColor='#FF9966'"><tr><td align="center"><A href="/ssi/ProcessEmailFull.php" onclick="NewWindow(this.href,'HassDesign','750','625','yes');return false;">
+        				<SPAN class="c38">Join HassDesign</span></A></td></tr></table>
+                    </td>
+        		    <td align="left">
+        				<table width="50%" bgcolor="#FF9966" onMouseover="this.bgColor='#FF8040'" onMouseout="this.bgColor='#FF9966'"><tr><td align="center"><A href="/ssi/HomePage.php" onclick="NewWindow(this.href,'HassDesign','300','200','yes');return false;">
+        				<SPAN class="c38">Bookmark Us!</span></A></td></tr></table>
+        	        </td></tr></table>
+            </TD>
+          </TR>
+          <TR>
+            <TD align="center">
+              <SPAN class="c3"><br>
+              &copy; Copyright 2001 - 2012 Hass Design. All Rights Reserved.
+              </SPAN>
+            </TD>
+          </TR>
+        </TABLE>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-373176-1";
+urchinTracker();
+</script>		  <br><br>
+          This <a href="http://www.phorum.org/">forum</a> powered by <a href="http://www.phorum.org/">Phorum</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

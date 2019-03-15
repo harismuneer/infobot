@@ -1,0 +1,728 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-22T12:47:02Z
+WARC-TREC-ID: clueweb12-0306wb-50-22340
+WARC-Target-URI: http://3dflags.com/world/afghanistan/national-flag/closeup-and-personal?permalink=terms-of-use
+WARC-Payload-Digest: sha1:THAGXIM23YOZBLN4345RHC4DYLP6DDCR
+WARC-IP-Address: 98.138.19.88
+WARC-Record-ID: <urn:uuid:c2edb56f-1908-4e67-8b7f-119ecb2df1dc>
+Content-Type: application/http; msgtype=response
+Content-Length: 27507
+
+HTTP/1.0 200 OK
+Date: Wed, 22 Feb 2012 12:47:02 GMT
+P3P: policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+Content-Location: closeup-and-personal.html
+Vary: negotiate
+TCN: choice
+X-Host: p8w22.geo.ne1.yahoo.com
+X-INKT-URI: http://www.3dflags.com//world/afghanistan/national-flag/closeup-and-personal.html
+X-INKT-SITE: http://www.3dflags.com
+Last-Modified: Wed, 04 Jan 2012 01:52:14 GMT
+Accept-Ranges: bytes
+Content-Length: 26851
+Content-Type: text/html
+Age: 0
+Server: YTS/1.19.8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>3D Flags Image Photos - Afghan flag Graphic Pictures - Closeup &amp; Personal</title>
+<meta description="Afghan flag photo image - Closeup &amp; Personal graphic. View gallery of other Afghanistan flag royalty free clip art, icons, and animations." />
+<link href="/stylesheets/scaffold.css" media="all" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/items.css" media="all" rel="stylesheet" type="text/css" />
+<script src="/javascripts/prototype.js" type="text/javascript"></script>
+<script src="/javascripts/effects.js" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js" type="text/javascript"></script>
+<script src="/javascripts/controls.js" type="text/javascript"></script>
+<script src="/javascripts/rails.js" type="text/javascript"></script>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+<script src="/javascripts/admin.js" type="text/javascript"></script>
+<link href="/plugins/shadowbox/shadowbox.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="/plugins/shadowbox/shadowbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+  Shadowbox.init({ 
+                  overlayOpacity: 0.90
+                  });
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="mainNavigation">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="first" width="201"><a href="/"><img alt="Main-navigation-logo" border="0" class="logo" src="/images/main-navigation-logo.gif" /></a></td>
+<td class="selected" width="203"><a href="/world/">World Flags</a></td>
+<td width="203"><a href="/states-provinces-territories/">States &amp; Provinces</a></td>
+<td width="203"><a href="/specialty/">Specialty Flags</a></td>
+<td width="170"><a href="http://store.3dflags.com/cart"><img alt="Main-navigation-cart" border="0" src="/images/main-navigation-cart.gif" /> Cart</a></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="content">
+<script type="text/javascript">
+ function init() {
+// quit if this function has already been called
+if (arguments.callee.done) return;
+// flag this function so we don't do the same thing twice
+arguments.callee.done = true;
+// run the target initilization code
+onReadyInit();
+ };
+/* for Mozilla */
+if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", init, false);
+}
+// for Internet Explorer (using conditional comments)
+/*@cc_on @*/
+/*@if (@_win32)
+document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+var script = document.getElementById("__ie_onload");
+script.onreadystatechange = function() {
+ if (this.readyState == "complete") {
+   init(); // call the onload handler
+ }
+};
+/*@end @*/
+// for Safari
+if (/WebKit/i.test(navigator.userAgent)) { // sniff
+  var _timer = setInterval(function() {
+    if (/loaded|complete/.test(document.readyState)) {
+      clearInterval(_timer);
+      init(); // call the onload handler
+    }
+  }, 10);
+}
+/* for all other browsers */
+window.onload = init;
+</script>
+<script language="javascript">
+<!--
+// Option support classes
+var classifications = [];
+classifications[0] = new Classification(1, false, true);
+classifications[0].addSize(new Size(1, 'X-Small', 510, 340, false, false));
+classifications[0].addSize(new Size(2, 'Small', 1200, 800, true, false));
+classifications[0].addSize(new Size(3, 'Medium', 2610, 1740, false, false));
+classifications[0].addSize(new Size(4, 'Large', 4290, 2860, false, false));
+function selectClassification(id) {
+for (var i=0; i<classifications.length; i++) {
+if (classifications[i].id == id) {
+classifications[i].select();
+} else {
+classifications[i].deselect();
+}
+}
+}
+function selectSize(id) {
+for (var i=0; i<classifications.length; i++) {
+for (var j=0; j<classifications[i].sizes.length; j++) {
+if (classifications[i].sizes[j].id == id) {
+classifications[i].deselectAllSizes();
+classifications[i].sizes[j].select();
+return;
+}
+}
+}
+}
+function selectClassificationForSize(id) {
+for (var i=0; i<classifications.length; i++) {
+for (var j=0; j<classifications[i].sizes.length; j++) {
+if (classifications[i].sizes[j].id == id) {
+selectClassification(classifications[i].id);
+return;
+}
+}
+}
+}
+function onReadyInit() {
+var size_id = params("size_id");
+if (size_id != null) {
+ 	selectClassificationForSize(size_id);
+     	selectSize(size_id);
+}
+}
+function Classification(id, free_license_available, selected) {
+this.id = id;
+this.selected = selected || false;
+this.free_license_available = free_license_available || false;
+this.sizes = [];
+this.id_prefix = 'classification-id-';
+this.display_type = 'table';
+this.nav_id_prefix = 'classification-nav-id-';
+this.addSize = function(size) {
+var i = this.sizes.length;
+this.sizes[i] = size;
+this.sizes[i]._parent = this;
+}
+this.select = function() {
+this.selected = true;
+$(this.id_prefix + this.id).style.display = this.display_type;
+$(this.nav_id_prefix + this.id).addClassName('selected');
+this.refreshSizes();
+this.refreshFileFormats();
+this.refreshLinkBackLicense();
+}
+this.deselect = function() {
+this.selected = false;
+$(this.id_prefix + this.id).style.display = 'none';
+$(this.nav_id_prefix + this.id).removeClassName('selected');
+}
+this.deselectAllSizes = function() {
+for (var i=0; i<this.sizes.length; i++) {
+this.sizes[i].deselect();
+}
+}
+this.refreshSizes = function() {
+for (var i=0; i<this.sizes.length; i++) {
+if (this.sizes[i].selected == true) {
+this.sizes[i].select();
+}
+}
+}
+this.refreshLinkBackLicense = function() {
+if (this.free_license_available == true) {
+if ($('linkBackLicense').style.display == 'none')
+Effect.BlindDown('linkBackLicense', { duration: 0.3 });
+} else {
+Effect.BlindUp('linkBackLicense', { duration: 0.3});
+}
+}
+this.refreshFileFormats = function() {
+elements = document.getElementsByClassName('fileFormat');
+for (var i=0; i<elements.length; i++) {
+if(elements[i].hasClassName('file-format-for-classification-id-' + this.id)) {
+elements[i].style.display = 'block';
+} else {
+elements[i].style.display = 'none';
+}
+}
+}
+}
+function Size(id, size, width, height, selected, free_license_available) {
+this.id = id;
+this.size = size;
+this.width = width;
+this.height = height;
+this.selected = selected || false;
+this.free_license_available = free_license_available || false;
+this.id_prefix = 'size-id-';
+this.select = function() {
+this.selected = true;
+$(this.id_prefix + this.id).addClassName('selected');
+$(this.id_prefix + this.id).removeClassName('highlighted');
+this.updateCartLink();
+this.updatePreview();
+this.updateFreeDownloadLink();
+}
+this.updateCartLink = function() {
+this.updateLinkSize('addToCart');
+}
+this.updatePreview = function() {
+if ($('viewerImage') != null) {
+if(this.width <= 400 && this.height <= 267) {
+$('viewerImage').width = this.width;
+$('viewerImage').height = this.height;
+$('zoomIcon').style.display = 'none';
+$('actualSizeLabel').style.display = 'block';
+if (false == false) {
+<!-- Do the following if image is not transparent -->
+$('viewerImage').style.border = 'none';
+$('compFrame').style.backgroundColor = '#e8e8e8';
+$('actualSizeLabel').style.color = '#333';
+$('enlargeCaption').style.display = 'none';
+}
+} else {
+$('viewerImage').width = 400;
+$('viewerImage').height = 267;
+$('zoomIcon').style.display = 'inline';
+$('actualSizeLabel').style.display = 'none';
+if (false == false) {
+<!-- Do the following if image is not transparent -->
+$('viewerImage').style.border = '1px solid #bfbfbf';
+$('compFrame').style.backgroundColor = '#fff';
+$('enlargeCaption').style.display = 'block';
+}
+}
+}
+}
+this.deselect = function() {
+this.selected = false;
+$(this.id_prefix + this.id).removeClassName('selected');
+}
+this.updateLinkSize = function(element) {
+$(element).href = $(element).href.gsub(/\d+$/, this.id );
+}
+this.updateFreeDownloadLink = function() {
+if (this._parent.free_license_available == true) {
+if (this.free_license_available == true) {
+$('freeDownloadAvailable').style.display = 'inline';
+$('freeDownloadUnavailable').style.display = 'none';
+this.updateLinkSize('freeDownload');
+$('freeDownloadDescription').update('(' + this.size.toLowerCase() +')');
+} else {
+$('freeDownloadAvailable').style.display = 'none';
+$('freeDownloadUnavailable').style.display = 'inline';
+}
+} 
+}
+}
+function isSelected(obj) {
+if (obj.className.search('selected') >= 0) {
+return true;
+} else {
+return false;
+}
+}
+function selectDimensions(units) {
+selectUnits('dimensions', units)
+}
+function selectFileSize(units) {
+selectUnits('fileSize', units)
+}
+function selectUnits(property, units) {
+elements = document.getElementsByClassName(property);
+for (var i=0; i<elements.length; i++) {
+if (elements[i].hasClassName('header') != true) {
+if (elements[i].hasClassName(units) == true) {
+elements[i].style.display = 'inline';
+} else {
+elements[i].style.display = 'none';
+}
+} else {
+if (elements[i].hasClassName(units) == true) {
+elements[i].addClassName('selected');
+} else {
+elements[i].removeClassName('selected');
+}
+}
+}
+}
+// Viewer Support Classes
+function changeBackground(new_value) {
+if (new_value != 'customBackground') { 
+$('compFrame').style.backgroundColor = null;
+Control.colorPickers.each(function(colorPicker) { colorPicker.close(); });  // Close any open color pickers
+}
+$('compFrame').className = new_value + ' transparent';
+clearBackgroundIndicators();
+$(new_value).className += " selected";
+updateActualSizeLabel(new_value);
+}
+function clearBackgroundIndicators() {
+var backgrounds = ['customBackground', 'gridBackground', 'gradientBackground', 'blackBackground', 'whiteBackground']
+for (var i in backgrounds) {
+$(backgrounds[i]).className = backgrounds[i];
+}
+}
+function updateActualSizeLabel(background_value) {
+if (background_value == 'whiteBackground' || background_value == 'gridBackground') {
+$('actualSizeLabel').style.color = '#333';
+} else {
+$('actualSizeLabel').style.color = '#fff';
+}
+}
+function params( name )	{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return null;
+  else
+    return results[1];
+}
+-->
+</script>
+<div id="segmentNavigation">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="first selected" width="3.52%">
+<a href="/world/a.html">A</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/b.html">B</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/c.html">C</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/d.html">D</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/e.html">E</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/f.html">F</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/g.html">G</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/h.html">H</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/i.html">I</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/j.html">J</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/k.html">K</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/l.html">L</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/m.html">M</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/n.html">N</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/o.html">O</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/p.html">P</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/q.html">Q</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/r.html">R</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/s.html">S</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/t.html">T</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/u.html">U</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/v.html">V</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/w.html">W</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/y.html">Y</a>
+</td>
+<td class="" width="3.52%">
+<a href="/world/z.html">Z</a>
+</td>
+<td class="last">
+<a href="/world/all.html">(ALL)</a>
+</td>			
+</tr>
+</table>
+</div>
+<table id="title" cellspacing="0" cellpadding="0">
+<tr>
+<td class="navigation previous">
+<img alt="Title-navigation-previous-inactive" src="/images/title-navigation-previous-inactive.png" />
+</td>
+<td>
+Flag of the Islamic Republic of Afghanistan
+</td>
+<td class="navigation next">
+<a href="/world/aland/national-flag/closeup-and-personal.html"><img alt="Title-navigation-next" height="11" onMouseOut="this.src='/images/title-navigation-next.png'" onMouseOver="this.src='/images/title-navigation-next-hover.png'" src="/images/title-navigation-next.png" width="9" /></a>
+</td>
+</tr>
+</table>
+<div id="productNavigation">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td onMouseOut="removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<a href="/world/afghanistan/national-flag/classic-wave-clip-art.html"><img alt="Classic Wave" src="/images/product-navigator-button-1.png" title="Classic Wave" /></a>
+</td>
+<td class="selected" onMouseOut="removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<a href="/world/afghanistan/national-flag/closeup-and-personal.html"><img alt="Closeup &amp; Personal" src="/images/product-navigator-button-3.png" title="Closeup &amp; Personal" /></a>
+</td>
+<td onMouseOut="removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<a href="/world/afghanistan/national-flag/lapel-button-a-la-skylights.html"><img alt="Lapel Button à la Skylights" src="/images/product-navigator-button-4.png" title="Lapel Button à la Skylights" /></a>
+</td>
+<!-- Add the temporary holder for the animated classic wave -->
+<td><img alt="Animated Flags Coming Soon" class="comingSoon" src="/images/product-navigator-button-2.png" title="Animated Flags Coming Soon" /></td>
+<!-- End temporary holder for animated classic wave -->
+</tr>
+</table>
+</div>
+<div id="product">
+<div id="viewer">
+<div class="whiteBackground" id="compFrame" style="height:267px;">
+<table class="wrapper" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<a href="http://www.3dflags.com/media/comps/key-20111106/items/1008/3dflags-comp-afg1-1008-large.png" rel="shadowbox"><img alt="Afghan flag Graphic Image - Closeup &amp; Personal" height="267" id="viewerImage" src="http://www.3dflags.com/media/comps/key-20111106/items/1008/3dflags-comp-afg1-1008-medium.png" width="400" /><img alt="click to enlarge" class="zoom" height="12" id="zoomIcon" src="/images/icon-zoom-in.png" style="right: 4px;" title="click to enlarge" width="12" /></a>
+<div id="actualSizeLabel" style="display:none;">actual size</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="enlargeCaption">
+<a href="http://www.3dflags.com/media/comps/key-20111106/items/1008/3dflags-comp-afg1-1008-large.png" rel="shadowbox;width=551;height=367">click to enlarge</a>
+</div>
+</div>
+<div id="options">
+<div class="name"><h2>closeup &amp; personal</h2></div>
+<div id="sizes">
+<table cellpadding="0" cellspacing="0" class="classification" id="classification-id-1">
+<tr>
+<th width="24%">Size</th>
+<th width="32%">Dimensions<br />
+<span class="aside">
+(<a href="#" class="header dimensions pixels selected" onclick="selectDimensions('pixels');">pixels</a>
+ 	| <a href="#" class="header dimensions inches" onclick="selectDimensions('inches');">inches</a>)
+</span>
+</th>
+<th width="30%">File Size<br />
+<span class="aside">
+(<a href="#" class="header fileSize pixels selected" onclick="selectFileSize('pixels');">pixels</a> | <a href="#" class="header fileSize bytes" onclick="selectFileSize('bytes');">bytes</a>)
+</span>
+</th>
+<th width="14%" class="price">Price</th>
+</tr>
+<tr class="size even" id="size-id-1" onClick="selectSize(1)" onMouseOut="if (!isSelected(this)) removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<td class="size">X-Small</td>
+<td>
+<span class="dimensions pixels">
+510 x 340 px
+</span>
+<span class="dimensions inches" style="display: none;">
+7.1&quot; x 4.7&quot; <span class="aside">(72 dpi)</span>
+</span>
+</td>
+<td>
+<span class="fileSize pixels">
+0.17 MP
+</span>
+<span class="fileSize bytes" style="display: none;">
+<a href="#">
+131 - 189 KB
+<span class="details">
+PNG - 189 KB<br />
+JPEG - 131 KB<br />
+</span>
+</a>
+</span>
+</td>
+<td class="price">$0.25</td>
+</tr>
+<tr class="size odd  selected" id="size-id-2" onClick="selectSize(2)" onMouseOut="if (!isSelected(this)) removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<td class="size">Small</td>
+<td>
+<span class="dimensions pixels">
+1,200 x 800 px
+</span>
+<span class="dimensions inches" style="display: none;">
+16.7&quot; x 11.1&quot; <span class="aside">(72 dpi)</span>
+</span>
+</td>
+<td>
+<span class="fileSize pixels">
+0.96 MP
+</span>
+<span class="fileSize bytes" style="display: none;">
+<a href="#">
+716 KB - 1 MB
+<span class="details">
+PNG - 1.45 MB<br />
+JPEG - 716 KB<br />
+</span>
+</a>
+</span>
+</td>
+<td class="price">$0.50</td>
+</tr>
+<tr class="size even" id="size-id-3" onClick="selectSize(3)" onMouseOut="if (!isSelected(this)) removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<td class="size">Medium</td>
+<td>
+<span class="dimensions pixels">
+2,610 x 1,740 px
+</span>
+<span class="dimensions inches" style="display: none;">
+8.7&quot; x 5.8&quot; <span class="aside">(300 dpi)</span>
+</span>
+</td>
+<td>
+<span class="fileSize pixels">
+4.54 MP
+</span>
+<span class="fileSize bytes" style="display: none;">
+<a href="#">
+4 - 8 MB
+<span class="details">
+PNG - 8.26 MB<br />
+JPEG - 3.9 MB<br />
+</span>
+</a>
+</span>
+</td>
+<td class="price">$0.75</td>
+</tr>
+<tr class="size odd" id="size-id-4" onClick="selectSize(4)" onMouseOut="if (!isSelected(this)) removeClassName('highlighted')" onMouseOver="if (!isSelected(this)) addClassName('highlighted')">
+<td class="size">Large</td>
+<td>
+<span class="dimensions pixels">
+4,290 x 2,860 px
+</span>
+<span class="dimensions inches" style="display: none;">
+14.3&quot; x 9.5&quot; <span class="aside">(300 dpi)</span>
+</span>
+</td>
+<td>
+<span class="fileSize pixels">
+12.27 MP
+</span>
+<span class="fileSize bytes" style="display: none;">
+<a href="#">
+10 - 20 MB
+<span class="details">
+PNG - 19.8 MB<br />
+JPEG - 9.76 MB<br />
+</span>
+</a>
+</span>
+</td>
+<td class="price">$1.00</td>
+</tr>
+</table>
+</div>
+<div id="purchaseActions">
+<a href="http://store.3dflags.com/cart_items/new?item_id=1008-world%28%21%29afghanistan%28%21%29national-flag%28%21%29closeup-and-personal&amp;size_id=2" id="addToCart"><img alt="Add-to-cart" src="/images/add-to-cart.gif" /></a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="linkBackLicense" style="display: none;">
+<table>
+<tr>
+<td class="copy">
+<h4>Free Link Back License Available (small and medium icon sizes only)</h4>
+<p>You must give us <a href="/world/afghanistan/national-flag/closeup-and-personal?permalink=link-to-us.html">credit and a clickable link</a> back to the 3DFlags.com homepage each place this graphic is used when you download / use this graphic for free.  <a href="/world/afghanistan/national-flag/closeup-and-personal?permalink=terms-of-use#link-back-media-license.html">learn&nbsp;more...</a></p>
+</td>
+<td class="download">
+<span id="freeDownloadAvailable">
+<a href="http://store.3dflags.com/freebies/agreement/1008/2" id="freeDownload">Download<br />
+<span class='description' id='freeDownloadDescription'>
+(large icon)
+</span></a>
+</span>
+<span id='freeDownloadUnavailable' style="display:none;">Free Version Not Available<br/>In This Size</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="description">
+<h3>Product Description</h3>
+<p>
+The Afghan flag image is shown close up with an interesting fabric and studio lighting. The rolls, waves and folds of the flag add to the richness of the graphic pictures and photos. This flag photo works great for backgrounds.
+</p>
+<p>
+<b>This photo is Copyright © 2011 3DFlags, LLC</b>
+</p>
+<h3>Check Out Other Graphics For This Flag</h3>
+<p>
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="text-align: center; padding: .2em 1em">
+<a href="/world/afghanistan/national-flag/classic-wave-clip-art.html"><img alt="Afghan flag Graphic Photos Images - Classic Wave" height="72" src="http://www.3dflags.com/media/comps/key-20111106/items/336/3dflags-comp-afg1-336-small.png" width="100" /></a>
+</td>
+<td style="text-align: center; padding: .2em 1em">
+<a href="/world/afghanistan/national-flag/lapel-button-a-la-skylights.html"><img alt="Afghanistan flag Photo Image - Lapel Button à la Skylights" height="100" src="http://www.3dflags.com/media/comps/key-20111106/items/1344/3dflags-comp-afg1-1344-small.png" width="100" /></a>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; padding: .2em 1em">
+<a href="/world/afghanistan/national-flag/classic-wave-clip-art.html">Classic Wave</a>
+</td>
+<td style="text-align: center; padding: .2em 1em">
+<a href="/world/afghanistan/national-flag/lapel-button-a-la-skylights.html">Lapel Button à la Skylights</a>
+</td>
+</tr>
+</table>
+</p>
+<h3>Available File Formats</h3>
+<p>
+You may download this product in any (or all) of the following formats after purchasing a license.  Please note, you have up to 72 hours to download your media after completing your order.
+</p>
+<div class="fileFormat file-format-for-classification-id-1 file-format-for-classification-id-2" />
+<h4>PNG</h4>
+<p>
+  	This file format provides the highest quality possible by utilizing lossless compression.  The file sizes are relatively small, although much larger than JPG.  The PNG format also supports full image transparency.
+  </p>
+  <p>
+  	The PNG format is ideal for use in documents, presentations and on the web.  When using larger rectangular images on the web that do not have transparency, consider using JPG instead of PNG for it's smaller file size.
+  </p>
+<p class="meaning">PNG stands for Portable Network Graphics</p>
+</div>
+<div class="fileFormat file-format-for-classification-id-1" />
+<h4>JPEG</h4>
+<p>
+    This file format provides very good quality with extremely small file sizes.  It is the defacto standard for saving digital photographs.  JPEG uses lossy compression which introduces artifacts (a kind of noise) to the images in order to achieve such small file size.  When saving a JPEG, the quality can be adjusted as to balance the tradeoff of visual quality vs file size.  Our JPEGs are compressed at very high quality settings.  This format does not support image transparency.
+  </p>
+  <p>
+    The JPEG format is ideal for larger rectangular images used on the web since they are smaller in size than PNG and thus will download faster.  It is also a good format for when disk space is at a premium or you want to be 100% sure of compatibility with your application.  Do not use this format when you need transparency (an alpha channel).
+  </p>
+<p class="meaning">JPEG stands for Joint Photographic Experts Group</p>
+</div>
+<h3>Afghan flag Information</h3>
+<p>The flag of Afghanistan consists of three equal vertical bands of black (hoist), red, and green, with a gold emblem centered on the red band. The emblem features a temple-like structure encircled by a bold Islamic inscription above and a wreath on the left and right.</p>
+<div class="details">
+<p>
+<a href="/world/afghanistan/national-flag/info.html"><img alt="Icon-entity-facts" src="/images/icon-entity-facts.png" style="width:38; height:38; vertical-align:middle;" /></a> &nbsp;<a href="/world/afghanistan/national-flag/info.html">Facts about the Islamic Republic of Afghanistan</a>
+</p>
+</div>
+<h3>Other Information</h3>
+This Afghanistan flag closeup image is a wonderful way to show your national pride. These Afghan flag photos were created in detail to look great. Available for various countries of the world, this would make a great background or banner for international corporations looking to create web or print pieces.
+<div class="disclaimer">
+<div class="separator"></div>
+<p>
+The use of governmental, municipal, state, provincial or military flags, seals, coats of arms, and insignia is restricted in some countries. Use of flags and national/cultural insignia may require special permission or a license from the country's government, the state or province's municipality or official institution.
+</p>
+<p>
+At 3DFlags.com, we strive to keep our flags up to date and as accurate as possible in our ever growing gallery. As our world changes, so do flags that represent us all. Sometimes a flag may change drastically, and other times the change can be very slight.  Additionally, the official design and even the exact colors of a particular flag may be somewhat vague or subject to artistic interpretation. This is especially true for crests and more complex flags. As such, we do not warrant or guarantee the accuracy of any flags available on our site. We work hard to provide accurate flags, and ask that if you happen to find a error with any flag on our site, please <a href="/about/contact-us.html">contact us</a>, and we will try our best to correct it.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="ancillaryNavigation">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="first"><a href="/about/faq.html">Help</a></td>
+<td><a href="/about/terms-of-use.html">Terms of Use</a></td>
+<td><a href="/about/privacy.html">Privacy Policy</a></td>
+<td><a href="/about/">About Us</a></td>
+<td><a href="http://store.3dflags.com/subscribers/new">Newsletter</a></td>
+<td><a href="/about/contact-us.html">Contact Us</a></td>
+<td><a href="/about/link-to-us.html">Link to Us</a></td>
+<td><a href="/about/order-info.html">Order Info</a></td>
+</tr>
+</table>
+</div>
+<p id="copyright">
+Copyright &copy; 2012 3DFlags, LLC. All rights reserved.<br /> 
+"3DFlags" and "3DFlags.com" are trademarks of 3DFlags, LLC. Flag graphics look and styles are copyright 3DFlags, LLC.
+</p>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2271484-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+<!-- text below generated by server. PLEASE REMOVE --><!-- Counter/Statistics data collection code --><script language="JavaScript" src="http://l.yimg.com/d/lib/smb/js/hosting/cp/js_source/whv2_001.js"></script><script language="javascript">geovisit();</script><noscript><img src="http://visit.webhosting.yahoo.com/visit.gif?us1329914822" alt="setstats" border="0" width="1" height="1"></noscript>

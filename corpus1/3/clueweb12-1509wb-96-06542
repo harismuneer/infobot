@@ -1,0 +1,686 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-17T17:12:13Z
+WARC-TREC-ID: clueweb12-1509wb-96-06542
+WARC-IP-Address: 202.141.160.11
+WARC-Payload-Digest: sha1:ZUJCJ37YQTMEHFGBUGWAEXTUIBDD36P5
+WARC-Target-URI: http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap25.htm
+WARC-Record-ID: <urn:uuid:f23b0d5f-a89e-4eff-8ec7-64c5b7f56823>
+Content-Type: application/http; msgtype=response
+Content-Length: 131636
+
+HTTP/1.1 200 OK
+Date: Tue, 17 Apr 2012 17:12:13 GMT
+Server: Apache/2.0.52 (Red Hat)
+Last-Modified: Wed, 12 Apr 2006 08:59:55 GMT
+ETag: "9b4073e-20119-103b38c0"
+Accept-Ranges: bytes
+Content-Length: 131353
+Connection: close
+Content-Type: text/html
+X-Pad: avoid browser bug
+
+<HTML><HEAD>
+
+<TITLE>Intro to Algorithms: CHAPTER 25: SINGLE-SOURCE SHORTEST PATHS</TITLE></HEAD><BODY BGCOLOR="#FFFFFF">
+
+<a href="chap26.htm"><img align=right src="../../images/next.gif" alt="Next Chapter" border=0></A>
+<a href="toc.htm"><img align=right src="../../images/toc.gif" alt="Return to Table of Contents" border=0></A>
+<a href="chap24.htm"><img align=right src="../../images/prev.gif" alt="Previous Chapter" border=0></A>
+
+
+<h1><a name="08bd_17d1">CHAPTER 25: SINGLE-SOURCE SHORTEST PATHS<a name="08bd_17d1"></h1><P>
+<a name="08bd_17c6"><a name="08bd_17c7">A motorist wishes to find the shortest possible route from Chicago to Boston. Given a road map of the United States on which the distance between each pair of adjacent intersections is marked, how can we determine this shortest route? <P>
+One possible way is to enumerate all the routes from Chicago to Boston, add up the distances on each route, and select the shortest. It is easy to see, however, that even if we disallow routes that contain cycles, there are millions of possibilities, most of which are simply not worth considering. For example, a route from Chicago to Houston to Boston is obviously a poor choice, because Houston is about a thousand miles out of the way.<P>
+<a name="08bd_17c8"><a name="08bd_17c9"><a name="08bd_17ca"><a name="08bd_17cb"><a name="08bd_17cc">In this chapter and in Chapter 26, we show how to solve such problems efficiently. In a <I><B>shortest-paths problem</I></B>, we are given a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>), with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B> mapping edges to real-valued weights. The <I><B>weight</I></B> of path p = <img src="../images/lftwdchv.gif"><I>v<SUB>0</I></SUB>, <I>v</I><SUB>1</SUB>, . . . , <img src="../images/upsil12.gif"><I><SUB>k</I></SUB><img src="../images/wdrtchv.gif"> is the sum of the weights of its constituent edges:<P>
+<img src="514_a.gif"><P>
+We define the <I><B>shortest-path weight</I></B> from <I>u</I> to <I>v</I> by<P>
+<img src="514_b.gif"> if there is a path from <I>u</I> to <I>v</I>, otherwise.<P>
+<a name="08bd_17cd"><a name="08bd_17ce">A <I><B>shortest path</I></B><I> </I>from vertex <I>u</I> to vertex <I>v</I> is then defined as any path <I>p</I> with weight<I> w </I>(<I>p</I>)<I> = </I><img src="../images/delta12.gif"><I>(</I>u, v<I>)</I>.<P>
+In the Chicago-to-Boston example, we can model the road map as a graph: vertices represent intersections, edges represent road segments between intersections, and edge weights represent road distances. Our goal is to find a shortest path from a given intersection in Chicago (say, Clark St. and Addison Ave.) to a given intersection in Boston (say, Brookline Ave. and Yawkey Way).<P>
+Edge weights can be interpreted as metrics other than distances. They are often used to represent time, cost, penalties, lossage, or any other quantity that accumulates linearly along a path and that one wishes to minimize.<P>
+<a name="08bd_17cf"><a name="08bd_17d0">The breadth-first-search algorithm from Section 23.2 is a shortest-paths algorithm that works on unweighted graphs, that is, graphs in which each edge can be considered to have unit weight. Because many of the concepts from breadth-first search arise in the study of shortest paths in weighted graphs, the reader is encouraged to review Section 23.2 before proceeding.<P>
+
+
+
+
+
+<h2>Variants</h2><P>
+<a name="08bf_17d1"><a name="08bf_17d2">In this chapter, we shall focus on the <I><B>single-source shortest-paths problem</I>:</B> given a graph <I>G</I> = (<I>V</I>, <I>E</I>), we want to find a shortest path from a given <I><B>source</I></B> vertex <I>s</I> <img src="../images/memof12.gif"> <I>V</I> to every vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>. Many other problems can be solved by the algorithm for the single-source problem, including the following variants.<P>
+<a name="08bf_17d3"><a name="08bf_17d4"><B>Single-destination shortest-paths problem:</B>     Find a shortest path to a given <I><B>destination</I></B> vertex <I>t</I> from every vertex <I>v</I>. By reversing the direction of each edge in the graph, we can reduce this problem to a single-source problem.<P>
+<a name="08bf_17d5"><B>Single-pair shortest-path problem:</B>     Find a shortest path from <I>u</I> to <I>v</I> for given vertices <I>u</I> and <I>v</I>. If we solve the single-source problem with source vertex <I>u</I>, we solve this problem also. Moreover, no algorithms for this problem are known that run asymptotically faster than the best single-source algorithms in the worst case.<P>
+<a name="08bf_17d6"><B>All-pairs shortest-paths problem:</B>     Find a shortest path from <I>u</I> to <I>v</I> for every pair of vertices <I>u</I> and <I>v.</I> This problem can be solved by running a single-source algorithm once from each vertex; but it can usually be solved faster, and its structure is of interest in its own right. Chapter 26 addresses the all-pairs problem in detail.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Negative-weight edges</h2><P>
+<a name="08c0_17d7"><a name="08c0_17d8"><a name="08c0_17d9"><a name="08c0_17da"><a name="08c0_17db">In some instances of the single-source shortest-paths problem, there may be edges whose weights are negative. If the graph <I>G</I> = (<I>V, E</I>) contains no negative-weight cycles reachable from the source <I>s</I>, then for all <I>v </I><img src="../images/memof12.gif"><I> V</I>, the shortest-path weight <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) remains well defined, even if it has a negative value. If there is a negative-weight cycle reachable from <I>s</I>, however, shortest-path weights are not well defined. No path from s to a vertex on the cycle can be a shortest path--a lesser-weight path can always be found that follows the proposed &quot;shortest&quot; path and then traverses the negative-weight cycle. If there is a negative-weight cycle on some path from <I>s</I> to <I>v</I>, we define <img src="../images/delta12.gif"> <I></I>(<I>s,v</I>)<I> </I> = -<img src="../images/infin.gif">.<P>
+Figure 25.1 illustrates the effect of negative weights on shortest-path weights. Because there is only one path from <I>s</I> to <I>a</I> (the path <img src="../images/lftwdchv.gif"><I>s, a</I><img src="../images/wdrtchv.gif">), <img src="../images/delta12.gif"><I></I>(<I>s, a</I> = <I>w</I>(<I>s, a</I>) = 3. Similarly, there is only one path from <I>s</I> to <I>b</I>, and so <img src="../images/delta12.gif"><I></I>(<I>s, b</I>) = <I>w</I>(<I>s, a</I>) + <I>w</I>(<I>a, b</I>) = 3 + (-4) = - 1. There are infinitely many paths from <I>s</I> to <I>c</I>: <img src="../images/lftwdchv.gif"><I>s, c</I><img src="../images/wdrtchv.gif">, <img src="../images/lftwdchv.gif"><I>s, c, d, c</I><img src="../images/wdrtchv.gif">, <img src="../images/lftwdchv.gif"><I>s, c, d, c, d, c</I><img src="../images/wdrtchv.gif">, and so on. Because the cycle <img src="../images/lftwdchv.gif"><I>c, d, c</I><img src="../images/wdrtchv.gif"> has weight 6 + (-3) = 3 &gt; 0, the shortest path from <I>s</I> to <I>c</I> is <img src="../images/lftwdchv.gif"><I>s, c</I><img src="../images/wdrtchv.gif">, with weight <img src="../images/delta12.gif"><I></I>(<I>s, c</I>) = 5. Similarly, the shortest path from <I>s</I> to <I>d</I> is <img src="../images/lftwdchv.gif"><I>s, c, d</I><img src="../images/wdrtchv.gif">, with weight <img src="../images/delta12.gif"><I></I>(<I>s, d</I>) = <I>w</I>(<I>s, c</I>) + <I>w</I>(<I>c, d</I>) = 11. Analogously, there are infinitely many paths from <I>s</I> to <I>e</I>: <img src="../images/lftwdchv.gif"><I>s, e</I><img src="../images/wdrtchv.gif">, <img src="../images/lftwdchv.gif"><I>s, e, f, e</I><img src="../images/wdrtchv.gif">, <img src="../images/lftwdchv.gif"><I>s, e, f, e, f, e</I><img src="../images/wdrtchv.gif">, and so on. Since the cycle <img src="../images/lftwdchv.gif"><I>e, f, e</I><img src="../images/wdrtchv.gif"> has weight 3 + (-6) = -3 &lt; 0, however, there is no shortest path from <I>s</I> to <I>e</I>. By traversing the negative-weight cycle <img src="../images/lftwdchv.gif"><I>e, f, e</I><img src="../images/wdrtchv.gif"> arbitrarily many times, we can find paths from <I>s</I> to <I>e</I> with arbitrarily large negative weights, and so <img src="../images/delta12.gif"><I></I>(<I>s, e</I>) = -<img src="../images/infin.gif">. Similarly, <img src="../images/delta12.gif"><I></I>(<I>s, f</I>) -<img src="../images/infin.gif">. Because <I>g</I> is reachable from <I>f</I>, we can also find paths with arbitrarily large negative weights from <I>s</I> to <I>g</I>, and <img src="../images/delta12.gif"><I></I>(<I>s, g</I>) = -<img src="../images/infin.gif">. Vertices <I>h, i, and j</I> also form a negative-weight cycle. They are not reachable from <I>s</I>, however, and so <img src="../images/delta12.gif"><I></I>(<I>s, h</I>) = <img src="../images/delta12.gif"><I></I>(<I>s, i</I>) = <img src="../images/delta12.gif"><I></I>(<I>s, j</I>) = <img src="../images/infin.gif">.<P>
+<img src="516_a.gif"><P>
+<h4><a name="08c0_17dc">Figure 25.1  Negative edge weights in a directed graph. Shown within each vertex is its shortest-path weight from source s. Because vertices e and f form a negative-weight cycle reachable from s, they have shortest-path weights of -<img src="../images/infin.gif">. Because vertex g is reachable from a vertex whose shortest-path weight is -<img src="../images/infin.gif">, it, too, has a shortest-path weight of -<img src="../images/infin.gif">. Vertices such as h, i, and j are not reachable from s, and so their shortest-path weights are <img src="../images/infin.gif">, even though they lie on a negative-weight cycle.<a name="08c0_17dc"></sub></sup></h4><P>
+Some shortest-paths algorithms, such as Dijkstra's algorithm, assume that all edge weights in the input graph are nonnegative, as in the road-map example. Others, such as the Bellman-Ford algorithm, allow negative-weight edges in the input graph and produce a correct answer as long as no negative-weight cycles are reachable from the source. Typically, if there is such a negative-weight cycle, the algorithm can detect and report its existence.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Representing shortest paths</h2><P>
+<a name="08c1_17dc">We often wish to compute not only shortest-path weights, but the vertices on the shortest paths as well. The representation we use for shortest paths is similar to the one we used for breadth-first trees in Section 23.2. Given a graph <I>G</I> = (<I>V, E</I>), we maintain for each vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I> a <I><B>predecessor</I></B><I> </I><img src="../images/piuc.gif"><I></I>[<I>v</I>] that is either another vertex or <FONT FACE="Courier New" SIZE=2>NIL</FONT>. The shortest-paths algorithms in this chapter set the <img src="../images/piuc.gif"> attributes so that the chain of predecessors originating at a vertex <I>v</I> runs backwards along a shortest path from <I>s</I> to <I>v</I>. Thus, given a vertex <I>v</I> for which <img src="../images/piuc.gif"><I></I>[<I>v</I>] <img src="../images/noteq.gif"> <FONT FACE="Courier New" SIZE=1>NIL</FONT>, the procedure <FONT FACE="Courier New" SIZE=2>PRINT</FONT>-<FONT FACE="Courier New" SIZE=2>PATH</FONT> (<I>G</I>, <I>s, v</I>) from Section 23.2 can be used to print a shortest path from <I>s</I> to <I>v</I>.<P>
+<a name="08c1_17dd">During the execution of a shortest-paths algorithm, however, the <img src="../images/piuc.gif"><I> </I>values need not indicate shortest paths. As in breadth-first search, we shall be interested in the <I><B>predecessor subgraph</I></B> <I>G</I><img src="../images/piuc.gif"><I> = (</I>V<SUB><img src="../images/piuc.gif"></SUB>, E<SUB><img src="../images/pi14.gif"></SUB>) induced by the <img src="../images/piuc.gif"><I></I> values. Here again, we define the vertex set <I>V<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"></FONT>, to be the set of vertices of <I>G</I> with non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> predecessors, plus the source <I>s</I>:<P>
+<pre><I>V</I><SUB></SUB><img src="../images/piuc.gif"><SUB> = {<I>v</I> <img src="../images/memof12.gif"> <I>V</I> : <img src="../images/piuc.gif">[<I>v</I>] <img src="../images/noteq.gif"> NIL} <img src="../images/wideu.gif"> {<I>s</I>} .</sub></sup></pre><P>
+The directed edge set <I>E<FONT FACE="Courier New" SIZE=2></I><img src="../images/piuc.gif"><I></I></FONT> is the set of edges induced by the <img src="../images/piuc.gif"><I></I> values for vertices in <I>V</I><img src="../images/piuc.gif"><I><SUB></I>:<P>
+<pre><I>E</I><SUB></SUB><img src="../images/piuc.gif"><SUB> = {(<img src="../images/piuc.gif">[<I>v</I>], <I>v</I>) <img src="../images/memof12.gif"> <I>E</I> : <I>v</I> <img src="../images/memof12.gif"> <I>V</I></SUB><SUB><img src="../images/piuc.gif"></SUB><I> - </I>{<I><img src="../images/sum14.gif"></I>}}. </sub></sup></pre><P>
+<a name="08c1_17de"><a name="08c1_17df">We shall prove that the <img src="../images/piuc.gif"><I></I> values produced by the algorithms in this chapter have the property that at termination <I>G<FONT FACE="Courier New" SIZE=2></I><img src="../images/piuc.gif"><I></I></FONT> is a &quot;shortest-paths tree&quot;--informally, a rooted tree containing a shortest path from a source <I>s</I> to every vertex that is reachable from <I>s</I>. A shortest-paths tree is like the breadth-first tree from Section 23.2, but it contains shortest paths from the source defined in terms of edge weights instead of numbers of edges. To be precise, let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>, and assume that <I>G</I> contains no negative-weight cycles reachable from the source vertex <I>s</I> <img src="../images/memof12.gif"> <I>V</I>, so that shortest paths are well defined. A <I><B>shortest-paths tree</I></B> rooted at <I>s</I> is a directed subgraph <I>G</I><I>'</I> = ( <I>V</I><I>'</I>, <I>E</I><I>'</I>), where <I>V</I>'<I> <img src="../images/rgtubar.gif"> </I><I>V</I> and <I>E</I>'<I> <img src="../images/rgtubar.gif"></I> <I>E</I>, such that<P>
+1.     <I>V</I><I>'</I> is the set of vertices reachable from <I>s</I> in <I>G</I>,<P>
+2.     <I>G</I><I>'</I> forms a rooted tree with root <I>s</I>, and<P>
+3.     for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I><I>'</I>, the unique simple path from <I>s</I> to <I>v</I> in <I>G</I><I>'</I> is a shortest path from <I>s</I> to <I>v</I> in <I>G</I>.<P>
+Shortest paths are not necessarily unique, and neither are shortest-paths trees. For example, Figure 25.2 shows a weighted, directed graph and two shortest-paths trees with the same root.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Chapter outline</h2><P>
+The single-source shortest-paths algorithms in this chapter are all based on a technique known as relaxation. Section 25.1 begins by proving some important properties of shortest paths in general and then proves some important facts about relaxation-based algorithms. Dijkstra's algorithm, which solves the single-source shortest-paths problem when all edges have nonnegative weight, is given in Section 25.2. Section 25.3 presents the Bellman-Ford algorithm, which is used in the more general case in which edges can have negative weight. If the graph contains a negative-weight cycle reachable from the source, the Bellman-Ford algorithm detects its presence. Section 25.4 gives a linear-time algorithm for computing shortest paths from a single source in directed acyclic graphs. Finally, Section 25.5 shows how the Bellman-Ford algorithm can be used to solve a special case of &quot;linear programming.&quot;<P>
+<img src="518_a.gif"><P>
+<h4><a name="08c2_0001">Figure 25.2 (a) A weighted, directed graph with shortest-path weights from source s. (b) The shaded edges form a shortest-paths tree rooted at the source s. (c) Another shortest-paths tree with the same root.<a name="08c2_0001"></sub></sup></h4><P>
+Our analysis will require some conventions for doing arithmetic with infinities. We shall assume that for any real number <I>a</I> <img src="../images/noteq.gif"> -<img src="../images/infin.gif">, we have <I>a</I> + <img src="../images/infin.gif"> = <img src="../images/infin.gif"> + <I>a</I> = <img src="../images/infin.gif">. Also, to make our proofs hold in the presence of negative-weight cycles, we shall assume that for any real number <I>a</I> <img src="../images/noteq.gif"> <img src="../images/infin.gif">, we have <I>a</I> + (-<img src="../images/infin.gif">) = (-<img src="../images/infin.gif">) + <I>a</I> = -<img src="../images/infin.gif">.<P>
+<P>
+
+
+
+
+
+
+
+<h1><a name="08c3_0001">25.1 Shortest paths and relaxation<a name="08c3_0001"></h1><P>
+To understand single-source shortest-paths algorithms, it is helpful to understand the techniques that they use and the properties of shortest paths that they exploit. The main technique used by the algorithms in this chapter is relaxation, a method that repeatedly decreases an upper bound on the actual shortest-path weight of each vertex until the upper bound equals the shortest-path weight. In this section, we shall see how relaxation works and formally prove several properties it maintains.<P>
+On a first reading of this section, you may wish to omit proofs of theorems--reading only their statements--and then proceed immediately to the algorithms in Sections 25.2 and 25.3. Pay particular attention, however, to Lemma 25.7, which is a key to understanding the shortest-paths algorithms in this chapter. On a first reading, you may also wish to ignore completely the lemmas concerning predecessor subgraphs and shortest-paths trees (Lemmas 25.8 and 25.9), concentrating instead on the earlier lemmas, which pertain to shortest-path weights.<P>
+
+
+
+
+
+<h2>Optimal substructure of a shortest path</h2><P>
+<a name="08c4_17e0"><a name="08c4_17e1">Shortest-paths algorithms typically exploit the property that a shortest path between two vertices contains other shortest paths within it. This optimal-substructure property is a hallmark of the applicability of both dynamic programming (Chapter 16) and the greedy method (Chapter 17). In fact, Dijkstra's algorithm is a greedy algorithm, and the Floyd-Warshall algorithm, which finds shortest paths between all pairs of vertices (see Chapter 26), is a dynamic-programming algorithm. The following lemma and its corollary state the optimal-substructure property of shortest paths more precisely.<P>
+<a name="08c4_17e2">Lemma 25.1<a name="08c4_17e2"><P>
+Given a weighted, directed graph <I>G</I> = (<I>V</I>,<I> E</I>) with weight function <I>w</I>: <I>E </I><img src="../images/arrow12.gif"> <I><B>R</B>, let </I>p<I> = <img src="../images/lftwdchv.gif"></I>v<I><SUB>1</SUB>, </I>v<I><SUB>2</SUB></I>, . . . , v<SUB>k<I></SUB><img src="../images/wdrtchv.gif"></I> be a shortest path from vertex <I>v</I><SUB>1</SUB>, to vertex <I>v<SUB>k</I></SUB> and, for any <I>i</I> and <I>j</I> such that 1 <U>&lt;</U> <I>i</I> <U>&lt;</U> <I>j</I> <U>&lt;</U> <I>k</I>, let <I>p<SUB>ij</I></SUB> = <img src="../images/lftwdchv.gif"><I>v<SUB>i</I></SUB>,<I> v<SUB>i</I>+1</SUB>, . . . , <I>v<SUB>i</I></SUB><img src="../images/wdrtchv.gif"> be the subpath of <I>p</I> from vertex <I>v<SUB>i</I></SUB>, to vertex <I>v<SUB>j</I></SUB>. Then, <I>p<SUB>ij</I></SUB> is a shortest path from <I>v<SUB>i</I></SUB> to <I>v<SUB>j</I></SUB>.<P>
+<I><B>Proof     </I></B>If we decompose path <I>p</I> into <img src="519_a.gif"> then <I>w</I>(<I>p</I>) = <I>w</I>(<I>p</I><SUB>1<I>i</I></SUB>) + <I>w</I>(<I>p<SUB>ij</I></SUB>) + <I>w</I>(<I>p<SUB>jk</I></SUB>). Now, assume that there is a path <I>p</I><I>'<SUB>ij</I></SUB> from <I>v<SUB>i</I></SUB> to <I>v<SUB>j</I></SUB> with weight <I>w</I>(<I>p</I><I>'<SUB>ij</I></SUB>) &lt; <I>w(p<SUB>ij</SUB>)</I>. Then, <I><img src="519_b.gif"> </I>is a path<I> </I>from<I> v<SUB>1</I></SUB> to <I>v<SUB>k</I></SUB> whose weight <I>w</I>(<I>p</I><SUB>1<I>i</I></SUB>) + <I>w</I>(<I>p</I><I>'<SUB>ij</I></SUB>) + <I>w</I>(<I>p<SUB>jk</I></SUB>) is less than <I>w</I>(<I>p</I>), which contradicts the premise that <I>p</I> is a shortest path from <I>v</I><SUB>1</SUB> to <I>v<SUB>k..     </I></SUB> <P>
+In studying breadth-first search (Section 23.2), we proved as Lemma 23.1 a simple property of shortest distances in unweighted graphs. The following corollary to Lemma 25.1 generalizes the property to weighted graphs.<P>
+<a name="08c4_17e3">Corollary 25.2<a name="08c4_17e3"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w </I>: <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>. Suppose that a shortest path <I>p</I> from a source s to a vertex <I>v</I> can be decomposed into <img src="519_c.gif"> for some vertex <I>u</I> and path <I>p</I><I>'</I>. Then, the weight of a shortest path from <I>s</I> to <I>v</I> is <img src="../images/delta12.gif"><I> (</I>s, v<I>) = <img src="../images/delta12.gif"></I> (<I>s, u</I>) + <I>w</I>(<I>u, v</I>).<P>
+<I><B>Proof     </I></B>By Lemma 25.1, subpath <I>p</I><I>'</I> is a shortest path from source <I>s</I> to vertex <I>u</I>. Thus,<P>
+<pre><img src="../images/delta12.gif">(<I>s</I>, <I>v</I>)   =  <I>w</I>(<I>p</I>)</sub></sup></pre><P>
+<pre>=  w(p') + w(u, v)</sub></sup></pre><P>
+<pre>=  <img src="../images/delta12.gif">(s, u) + w(u, v).      </sub></sup></pre><P>
+The next lemma gives a simple but useful property of shortest-path weights.<P>
+<a name="08c4_17e4">Lemma 25.3<a name="08c4_17e4"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph <I>G</I> = (<I>V, E</I>) with weight function <I>w</I>: <I>E</I> <img src="../images/arrow12.gif"> <B>R</B> and source vertex <I>s</I>. 0Then, for all edges (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I>, we have <img src="../images/delta12.gif"><I>(</I>s, v<I>) <U>&lt;</U> <img src="../images/delta12.gif"></I> (<I>s, u</I>) + <I>w</I>(<I>u, v</I>).<P>
+<I><B>Proof     </I></B>A shortest path <I>p</I> from source <I>s</I> to vertex <I>v</I> has no more weight than any other path from <I>s</I> to <I>v</I>. Specifically, path <I>p</I> has no more weight than the particular path that takes a shortest path from source <I>s</I> to vertex <I>u </I>and then takes edge (<I>u, v</I>).      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Relaxation</h2><P>
+<a name="08c5_17e2"><a name="08c5_17e3"><a name="08c5_17e4">The algorithms in this chapter use the technique of <I><B>relaxation</I></B>. For each vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, we maintain an attribute <I>d</I>[<I>v</I>], which is an upper bound on the weight of a shortest path from source <I>s</I> to <I>v</I>. We call <I>d</I>[<I>v</I>] a <I><B>shortest-path</I></B> <I><B>estimate</I></B>. We initialize the shortest-path estimates and predecessors by the following procedure.<P>
+<pre><a name="08c5_17e5">INITIALIZE-SINGLE-SOURCE(<I>G,s</I>)</sub></sup></pre><P>
+<pre>1<B>  for</B> each vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>2<B>       do</B> <I>d</I>[<I>v</I>] <img src="../images/arrlt12.gif"> <img src="../images/infin.gif"></sub></sup></pre><P>
+<pre>3          <img src="../images/piuc.gif">[<I>v</I>] <img src="../images/arrlt12.gif"> NIL</sub></sup></pre><P>
+<pre>4<I>  d</I>[<I>s</I>] <img src="../images/arrlt12.gif"> 0</sub></sup></pre><P>
+After initialization, <img src="../images/piuc.gif">[<I>v</I>] = <FONT FACE="Courier New" SIZE=2>NIL</FONT> for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, <I>d</I>[<I>v</I>] = 0 for <I>v</I> = <I>s</I>, and <I>d</I>[<I>v</I>] = <img src="../images/infin.gif"> for <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>}.<P>
+The process of <I><B>relaxing</I></B><SUP>1</SUP> an edge (<I>u</I>, <I>v</I>) consists of testing whether we can improve the shortest path to <I>v</I> found so far by going through <I>u</I> and, if so, updating <I>d</I>[<I>v</I>] and <img src="../images/piuc.gif">[<I>v</I>]. A relaxation step may decrease the value of the shortest-path estimate <I>d</I>[<I>v</I>] and update <I>v'</I>s predecessor field <img src="../images/piuc.gif">[<I>v</I>]. The following code performs a relaxation step on edge (<I>u</I>, <I>v</I>).<P>
+<SUP>1</SUP>It may seem strange that the term &quot;relaxation&quot; is used for an operation that tightens an upper bound. The use of the term is historical. The outcome of a relaxation step can be viewed as a relaxation of the constraint <I>d</I>[<I>v</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>), which, by Lemma 25.3, must be satisfied if <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I>(</I>s<I>, </I>u<I>) and </I>d<I>[</I>v<I>] = <img src="../images/delta12.gif"></I>(<I>s</I>, <I>v</I>). That is, if <I>d</I>[<I>v</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>), there is no "pressure" to satisfy this constraint, so the constraint is &quot;relaxed.&quot;<P>
+<pre><a name="08c5_17e6">RELAX(<I>u</I>, <I>v</I>, <I>w</I>)</sub></sup></pre><P>
+<pre>1<B> if</B> <I>d</I>[<I>v</I>] &gt; <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>,<I>v</I>)</sub></sup></pre><P>
+<pre>2<B>    then</B> <I>d</I>[<I>v</I>] <img src="../images/arrlt12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>,<I>v</I>)</sub></sup></pre><P>
+<pre>3         <img src="../images/piuc.gif">[<I>v</I>] <img src="../images/arrlt12.gif"> <I>u</I></sub></sup></pre><P>
+Figure 25.3 shows two examples of relaxing an edge, one in which a shortest-path estimate decreases and one in which no estimate changes.<P>
+<img src="521_a.gif"><P>
+<h4><a name="08c5_17e7">Figure 25.3 Relaxation of an edge (u, v). The shortest-path estimate of each vertex is shown within the vertex. (a) Because d[v] &gt; d[u] + w(u, v) prior to relaxation, the value of d[v] decreases. (b) Here, d[v] <img src="../images/lteq12.gif"> d[u] + w(u, v) before the relaxation step, so d[v] is unchanged by relaxation.<a name="08c5_17e7"></sub></sup></h4><P>
+Each algorithm in this chapter calls <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-S<FONT FACE="Times New Roman" SIZE=1>OURCE</FONT> and then repeatedly relaxes edges. Moreover, relaxation is the only means by which shortest-path estimates and predecessors change. The algorithms in this chapter differ in how many times they relax each edge and the order in which they relax edges. In Dijkstra's algorithm and the shortest-paths algorithm for directed acyclic graphs, each edge is relaxed exactly once. In the Bellman-Ford algorithm, each edge is relaxed several times.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Properties of relaxation</h2><P>
+The correctness of the algorithms in this chapter depends on important properties of relaxation that are summarized in the next few lemmas. Most of the lemmas describe the outcome of executing a sequence of relaxation steps on the edges of a weighted, directed graph that has been initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>. Except for Lemma 25.9, these lemmas apply to <I>any</I> sequence of relaxation steps, not just those that produce shortest-path values.<P>
+<a name="08c6_0001">Lemma 25.4<a name="08c6_0001"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E </I><img src="../images/arrow12.gif"> <B>R</B>, and let (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>. Then, immediately after relaxing edge (<I>u</I>, <I>v</I>) by executing <FONT FACE="Courier New" SIZE=2>RELAX</FONT>(<I>u</I>, <I>v</I>, <I>w</I>), we have <I>d</I>[<I>v</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>).<P>
+<I><B>Proof     </I></B>If, just prior to relaxing edge (<I>u</I>, <I>v</I>), we have <I>d</I>[<I>v</I>] &gt; <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>), then <I>d</I>[<I>v</I>] = <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>) afterward. If, instead, <I>d</I>[<I>v</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>) just before the relaxation, the neither <I>d</I>[<I>u</I>] nor <I>d</I>[<I>v</I>] changes, and so <I>d</I>[<I>v</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>) afterward.      <P>
+<a name="08c6_0002">Lemma 25.5<a name="08c6_0002"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>. Let <I>s</I> <img src="../images/memof12.gif"> <I>V</I> be the source vertex, and let the graph be initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G</I>, <I>s</I>). Then, <I>d</I>[<I>v</I>] <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, and this invariant is maintained over any sequence of relaxation steps on the edges of <I>G</I>. Moreover, once <I>d</I>[<I>v</I>] achieves its lower bound <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>), it never changes.<P>
+<I><B>Proof     </I></B>The invariant <I>d</I>[<I>v</I>] <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) is certainly true after initialization, since <I>d</I>[<I>s</I>] = 0 <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>s</I>) (note that <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>s</I>) is - <img src="../images/infin.gif"> if <I>s</I> is on a negative-weight cycle and 0 otherwise) and <I>d</I>[<I>v</I>] = <img src="../images/infin.gif"> implies <I>d</I>[<I>v</I>] <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>}. We shall use proof by contradiction to show that the invariant is maintained over any sequence of relaxation steps. Let <I>v</I> be the first vertex for which a relaxation step of an edge (<I>u</I>, <I>v</I>) causes <I>d</I>[<I>v</I>] &lt; <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>). Then, just after relaxing edge (<I>u</I>, <I>v</I>), we have<P>
+<pre><I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>)  =  <I>d</I>[<I>v</I>]</sub></sup></pre><P>
+<pre>&lt;  <img src="../images/delta12.gif">(s,v)</sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <img src="../images/delta12.gif">(s,u) + w(u, v)  (by Lemma 25.3),</sub></sup></pre><P>
+which implies that <I>d</I>[<I>u</I>] &lt; <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>). But because relaxing edge (<I>u</I>, <I>v</I>) does not change <I>d</I>[<I>u</I>], this inequality must have been true just before we relaxed the edge, which contradicts the choice of <I>v</I> as the first vertex for which <I>d</I>[<I>v</I>] &lt; <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>). We conclude that the invariant <I>d</I>[<I>v</I>] <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) is maintained for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I>.<P>
+To see that the value of <I>d</I>[<I>v</I>] never changes once <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>), note that having achieved its lower bound, <I>d</I>[<I>v</I>] cannot decrease because we have just shown that <I>d</I>[<I>v</I>] <img src="../images/gteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>), and it cannot increase because relaxation steps do not increase <I>d</I> values.      <P>
+<a name="08c6_0003">Corollary 25.6<a name="08c6_0003"><P>
+Suppose that in a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>) with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>, no path connects a source vertex <I>s</I> <img src="../images/memof12.gif"> <I>V</I> to a given vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>. Then, after the graph is initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>), we have <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, v</I>), and this equality is maintained as an invariant over any sequence of relaxation steps on the edges of <I>G</I>.<P>
+<I><B>Proof     </I></B>By Lemma 25.5, we always have <img src="../images/infin.gif"> = <img src="../images/delta12.gif"><I>(</I>s, v<I>) <img src="../images/lteq12.gif"> </I>d<I>[</I>v<I>]; thus, so </I>d<I>[</I>v<I>] = <img src="../images/infin.gif"> = <img src="../images/delta12.gif"></I>(<I>s, v</I>).      <P>
+The following lemma is crucial to proving the correctness of the shortest-paths algorithms that appear later in this chapter. It gives sufficient conditions for relaxation to cause a shortest-path estimate to converge to a shortest-parth weight.<P>
+<a name="08c6_0004">Lemma 25.7<a name="08c6_0004"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>, let <I>s</I> <img src="../images/memof12.gif"> <I>V</I> be a source vertex, and let <img src="522_a.gif"> be a shortest path in <I>G</I> for some vertices <I>u, v </I><img src="../images/memof12.gif"><I> V</I>. Suppose that <I>G</I> is initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>) and then a sequence of relaxation steps that includes the call <FONT FACE="Courier New" SIZE=2>RELAX</FONT>(<I>u, v, w</I>) is executed on the edges of <I>G</I>. If <I>d</I>[<I>u</I>] =<img src="../images/delta12.gif"><I></I>(<I>s, u</I>) at any time prior to the call, then <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, v</I>) at all times after the call.<P>
+<I><B>Proof     </I></B>By Lemma 25.5, if <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, u</I>) at some point prior to relaxing edge (<I>u, v</I>), then this equality holds thereafter. In particular, after relaxing edge (<I>u</I>, <I>v)</I> we have<P>
+<pre><I>d</I>[<I>v</I>]  <img src="../images/lteq12.gif">  <I>d</I>[<I>u</I>] + <I>w</I>(<I>u,v</I>)    (by Lemma 25.4)</sub></sup></pre><P>
+<pre>=  <img src="../images/delta12.gif">(s,u) + w(u,v)</sub></sup></pre><P>
+<pre>=  <img src="../images/delta12.gif">(s,v)           (by Corollary 25.2).</sub></sup></pre><P>
+By Lemma 25.5, <img src="../images/delta12.gif"><I></I>(<I>s, v</I>) bounds <I>d</I>[<I>v</I>] from below, from which we conclude that <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, v</I>), and this equality is maintained thereafter.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Shortest-paths trees</h2><P>
+<a name="08c7_17e7"><a name="08c7_17e8">So far, we have shown that relaxation causes the shortest-path estimates to descend monotonically toward the actual shortest-path weights. We would also like to show that once a sequence of relaxations has computed the actual shortest-path weights, the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> induced by the resulting <img src="../images/piuc.gif"> values is a shortest-paths ree for <I>G </I>. <U>e </U>start with the following lemma, which shows that the predecessor subgraph always forms a rooted tree whose root is the source.<P>
+<a name="08c7_17e9">Lemma 25.8<a name="08c7_17e9"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w </I>: <I>E</I> <img src="../images/arrow12.gif"> <I><B>R</I></B> and source vertex <I>s</I> <img src="../images/memof12.gif"> <I>V</I>, and assume that <I>G</I> contains no negative-weight cycles that are reachable from <I>s</I>. Then, after the graph is initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>), the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> forms a rooted tree with root <I>s</I>, and any sequence of relaxation steps on edges of <I>G</I> maintains this property as an invariant.<P>
+<I><B>Proof     </I></B>Initially, the only vertex in <I>G</I><img src="../images/piuc.gif"> is the source vertex, and the lemma is trivially true. Consider a predecessor subgraph <I>G</I><SUB><img src="../images/piuc.gif"></SUB> that arises after a sequence of relaxation steps. We shall first prove that <I>G</I><img src="../images/piuc.gif"><I></I> is acyclic. Suppose for the sake of contradiction that some relaxation step creates a cycle in the graph <I>G</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/piuc.gif"></FONT>. Let the cycle be <I>c</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>0</SUB>, <I>v</I><SUB>1</SUB>, . . . , <I>v</I><SUB>k</SUB><img src="../images/wdrtchv.gif">, where <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>k</FONT></SUB> = <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>0</FONT></SUB>. Then, <img src="../images/piuc.gif"><I></I>[<I>v<SUB><FONT FACE="Courier New" SIZE=2>i</I></FONT></SUB>] = <I>v<SUB><FONT FACE="Courier New" SIZE=2>i -</I> 1</FONT></SUB> for <I>i</I> = 1, 2, . . ., <I>k</I> and, without loss of generality, we can assume that it was the relaxation of edge (<I>v<SUB><FONT FACE="Courier New" SIZE=2>k - </I>1</FONT></SUB>, <I>v<SUB><FONT FACE="Courier New" SIZE=2>k</I></FONT></SUB>) that created the cycle in <I>G</I><SUB><FONT FACE="Courier New" SIZE=2></SUB><img src="../images/piuc.gif">.</FONT><P>
+We claim that all vertices on cycle <I>c</I> are reachable from the source <I>s</I>. Why? Each vertex on <I>c</I> has a non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> predecessor, and so each vertex on <I>c</I> was assigned a finite shortest-path estimate when it was assigned its non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> <img src="../images/piuc.gif"><I></I> value. By Lemma 25.5, each vertex on cycle <I>c</I> has a finite shortest-path weight, which implies that it is reachable from <I>s</I>.<P>
+We shall examine the shortest-path estimates on <I>c</I> just prior to the call <FONT FACE="Courier New" SIZE=2>RELAX </FONT>(<I>v<SUB>k - </I>1</SUB>,<I> v<SUB>k</I></SUB>, <I>w</I>) and show that <I>c</I> is a negative-weight cycle, thereby contradicting the assumption that <I>G </I>contains no negative-weight cycles that are reachable from the source. Just before the call, we have <img src="../images/piuc.gif"><I></I>[<I>v<SUB>i</I></SUB>]<I> = v<SUB>i-</I>1</SUB> for <I>i</I> = 1, 2, . . . , <I>k - </I>1. Thus, for <I>i</I> = 1, 2, . . . , <I>k</I> - 1, the last update to <I>d</I>[<I>v<SUB>i</I></SUB>] was by the assignment <I>d</I>[<I>v<SUB>i</I></SUB>] <img src="../images/arrlt12.gif"> <I>d</I>[<I>v<SUB>i -</I> 1</SUB>] + <I>w</I>(<I>v<SUB>i</SUB>,v<SUB>i -</I> 1</SUB>). If <I>d</I>[<I>v<SUB>i - </I>1</SUB>] changed since then, it decreased. Therefore, just before the call <FONT FACE="Courier New" SIZE=2>RELAX</FONT> (<I>v<SUB>k - </I>1</SUB>, <I>v<SUB>k</SUB>, w</I>), we have<P>
+<pre><I>d</I>[<I>v<SUB>i</I></SUB>] <img src="../images/gteq.gif"> <I>d</I>[<I>v<SUB>i - </I>1</SUB>]+<I>w</I>(<I>v<SUB>i -</SUB><B><SUB> </I></B>1</SUB>,<I>v<SUB>i</I></SUB>)  for all <I>i</I> = 1, 2,...,<I>k</I> - 1 .</sub></sup></pre><P>
+<h4><a name="08c7_17ea">(25.1)<a name="08c7_17ea"></sub></sup></h4><P>
+Because <img src="../images/piuc.gif">[<I>v<SUB>k</I></SUB>] is changed by the call, immediately beforehand we also have the strict inequality<P>
+<pre><I>d</I>[<I>vk</I>] &gt; <I>d</I>[<I>v<SUB>k</I> - 1</SUB>] + <I>w</I>(<I>v<SUB>k</I> - 1</SUB>, <I>vk</I>) .</sub></sup></pre><P>
+Summing this strict inequality with the <I>k</I> - 1 inequalities (25.1), we obtain the sum of the shortest-path estimates around cycle <I>c</I>:<P>
+<img src="524_a.gif"><P>
+since each vertex in the cycle <I>c</I> appears exactly once in each summation. This implies<P>
+<img src="524_b.gif"><P>
+Thus, the sum of weights around the cycle <I>c</I> is negative, thereby providing the desired contradiction.<P>
+We have now proved that <I>G</I><img src="../images/piuc.gif"><I></I> is a directed, acyclic graph. To show that it forms a rooted tree with root <I>s</I>, it sufiices (see Exercise 5.5-3) to prove that for each vertex <I>v </I><img src="../images/memof12.gif"><I></I> <I>V<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"><I></I>,</FONT> there is a unique path from <I>s</I> to <I>v</I> in <I>G</I><img src="../images/piuc.gif"><I>.</I><P>
+We first must show that a path from <I>s</I> exists for each vertex in <I>V</I><img src="../images/piuc.gif">. The vertices in <I>V<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"></FONT> are those with non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> <img src="../images/piuc.gif"><I></I> values, plus <I>s</I>. The idea here is to prove by induction that a path exists from <I>s</I> to all vertices in <I>V</I><img src="../images/piuc.gif">. The details are left as Exercise 25.1-6.<P>
+To complete the proof of the lemma, we must now show that for any vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I><img src="../images/piuc.gif"><I>,</I> there is at most one path from <I>s</I> to <I>v</I> in the graph <I>G<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"></FONT>. Suppose otherwise. That is, suppose that there are two simple paths from <I>s</I> to some vertex <I>v:</I> <I>p</I><SUB>1</SUB>, which can be decomposed into <img src="524_c.gif"> and <I>p</I><SUB>2</SUB>, which can be decomposed into <img src="525_d.gif">, where <I>x</I> <img src="../images/noteq.gif"> <I>y</I>. (See Figure 25.4.) But then, <img src="../images/piuc.gif"><I></I>[<I>z</I>] = <I>x</I> and <img src="../images/piuc.gif"><I></I>[<I>z</I>] = <I>y</I>, which implies the contradiction that <I>x</I> = <I>y</I>. We conclude that there exists a unique simple path in  <I>G</I><img src="../images/piuc.gif"> from <I>s</I> to <I>v</I>, and thus <I>G<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"></FONT> forms a rooted tree with root <I>s.     </I> <P>
+<img src="525_a.gif"><P>
+<h4><a name="08c7_17eb">Figure 25.4  Showing that a path in G<img src="../images/piuc.gif"><SUB></SUB> from source s to vertex v is unique. If there are two paths <img src="525_b.gif"> and <img src="525_c.gif">, where x <img src="../images/noteq.gif"> y, then <img src="../images/piuc.gif">[z] = x and <img src="../images/piuc.gif">[z] = y, a contradiction.<a name="08c7_17eb"></sub></sup></h4><P>
+We can now show that if, after we have performed a sequence of relaxation steps, all vertices have been assigned their true shortest-path weights, then the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> is a shortest-paths tree.<P>
+<a name="08c7_17ec">Lemma 25.9<a name="08c7_17ec"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w </I>: E <img src="../images/arrow12.gif"> <B>R</B> and source vertex <I>s</I> <img src="../images/memof12.gif"> <I>V</I>, and assume that <I>G</I> contains no negative-weight cycles that are reachable from <I>s</I>. Let us call <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>) and then execute any sequence of relaxation steps on edges of <I>G</I> that produces <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, v</I>) for all <I>v </I><img src="../images/memof12.gif"> <I>V</I>. Then, the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> is a shortest-paths tree rooted at <I>s</I>.<P>
+<I><B>Proof     </I></B>We must prove that the three properties of shortest-paths trees hold for <I>G</I><img src="../images/piuc.gif"><I>. </I>To show the first property, we must show that <I>V<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"> </FONT>is the set of vertices reachable from <I>s</I>. By definition, a shortest-path weight <img src="../images/delta12.gif">(<I>s, v</I>) is finite if and only if <I>v</I> is reachable from <I>s</I>, and thus the vertices that are reachable from <I>s</I> are exactly those with finite <I>d</I> values. But a vertex <I>v </I><img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>} has been assigned a finite value for <I>d</I>[<I>v</I>] if and only if <img src="../images/piuc.gif">[<I>v</I>] <img src="../images/noteq.gif"> <FONT FACE="Courier New" SIZE=2>NIL</FONT>. Thus, the vertices in <I>V</I><img src="../images/piuc.gif"><SUP> </SUP>are exactly those reachable from <I>s</I>.<P>
+The second property follows directly from Lemma 25.8.<P>
+It remains, therefore, to prove the last property of shortest-paths trees: for all <I>v </I><img src="../images/memof12.gif"> <I>V</I><img src="../images/piuc.gif">, the unique simple path <img src="525_e.gif"> in <I>G<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"></FONT> is a shortest path from <I>s</I> to <I>v </I>in <I>G</I>. Let <I>p</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>0</SUB><I>, v</I><SUB>1</SUB>, . . . , <I>v<SUB>k</I></SUB><img src="../images/wdrtchv.gif">, where <I>v</I><SUB>0</SUB> = <I>s</I> and <I>v<SUB>k</I></SUB> = <I>v</I>. For <I>i</I> = l, 2, . . . , <I>k</I>, we have both <I>d</I>[<I>v<SUB>i</I></SUB>]<I> = </I><img src="../images/delta12.gif"><I>(s</I>, <I>v<SUB>i</I></SUB>) and <I>d</I>[<I>v<SUB>i</I></SUB>] <img src="../images/gteq.gif"><I> d</I>[<I>v<SUB>i - </I>1</SUB>] + <I>w</I>(<I>v<SUB>i - </I>1</SUB>, <I>v<SUB>i</I></SUB>),<I><SUB> </I></SUB>from which we conclude <I>w</I>(<I>v<SUB>i-</I>1</SUB>, <I>v<SUB>i</I></SUB>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I></I>(<I>s, v<SUB>i</I></SUB>) - <img src="../images/delta12.gif"><I></I>(<I>s, v<SUB>i - </I>1</SUB>). Summing the weights along path <I>p</I> yields<P>
+<img src="525_f.gif"><P>
+<img src="526_a.gif"><P>
+<pre>=  <img src="../images/delta12.gif">(s, v<SUB>k</SUB>) - <img src="../images/delta12.gif">(s, v<SUB>0)</sub></sup></pre><P>
+<pre>=  <SUB><img src="../images/delta12.gif"></SUB>(<SUB>s, v</SUB>k<SUB>).</sub></sup></pre><P>
+The third line comes from the telescoping sum on the second line, and the fourth line follows from <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I><SUB>0</SUB>) =    <img src="../images/delta12.gif"><I></I>(<I>s, s</I>) = 0. Thus, <I>w(p)</I> <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I></I>(s, <I>v</I><SUB>k</SUB>). Since <img src="../images/delta12.gif"><I></I>(s, <I>v</I><SUB>k</SUB>) is a lower bound on the weight of any path from s to <I>v<SUB>k</I></SUB>, we conclude that <I>w</I>(<I>p</I>) = <img src="../images/delta12.gif"><I></I>(<I>s, v<SUB>k</I></SUB>), and thus <I>p</I> is a shortest path from <I>s</I> to <I>v</I> = <I>v<SUB>k</I></SUB>.      <P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="08c8_17ea">Exercises<a name="08c8_17ea"></h2><P>
+<a name="08c8_17eb">25.1-1<a name="08c8_17eb"><P>
+Give two shortest-paths trees for the directed graph of Figure 25.2 other than the two shown.<P>
+<a name="08c8_17ec">25.1-2<a name="08c8_17ec"><P>
+Give an example of a weighted, directed graph <I>G</I> = (<I>V, E</I>) with weight function <I>w:</I> E <img src="../images/arrow12.gif"> <B>R</B> and source <I>s</I> such that <I>G</I> satisfies the following property: For every edge (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E,</I> there is a shortest-paths tree rooted at<I> s</I> that contains (<I>u, v</I>) and another shortest-paths tree rooted at <I>s</I> that does not contain (<I>u, v</I>).<P>
+<a name="08c8_17ed">25.1-3<a name="08c8_17ed"><P>
+Embellish the proof of Lemma 25.3 to handle cases in which shortest-path weights are <img src="../images/infin.gif"> or -<img src="../images/infin.gif">.<P>
+<a name="08c8_17ee">25.1-4<a name="08c8_17ee"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with source vertex <I>s</I>, and let <I>G</I> be initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>). Prove that if a sequence of relaxation steps sets <img src="../images/piuc.gif">[<I>s</I>] to a non-<FONT FACE="Courier New" SIZE=2>NIL</FONT> value, then <I>G</I> contains a negative-weight cycle.<P>
+<a name="08c8_17ef">25.1-5<a name="08c8_17ef"><P>
+<a name="08c8_17e9">Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with no negative-weight edges. Let <I>s</I> <img src="../images/memof12.gif"> <I>V</I> be the source vertex, and let us define <img src="../images/piuc.gif">[<I>v</I>] as usual: <img src="../images/piuc.gif"><I></I>[<I>v</I>] is the predecessor of <I>v</I> on some shortest path to <I>v</I> from source <I>s</I> if <I>v</I> <img src="../images/memof12.gif"> <I>V</I> - {<I>s</I>} is reachable from <I>s</I>, and <FONT FACE="Courier New" SIZE=2>NIL</FONT> otherwise. Give an example of such a graph <I>G</I> and an assignment of <img src="../images/piuc.gif"> values that produces a cycle in <I>G</I><img src="../images/piuc.gif"><I>.</I> (By Lemma 25.8, such an assignment cannot be produced by a sequence of relaxation steps.)<P>
+<a name="08c8_17f0">25.1-6<a name="08c8_17f0"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w </I>: <I>E</I> <img src="../images/arrow12.gif"> <B>R</B> and no negative-weight cycles. Let <I>s</I> <img src="../images/memof12.gif"> <I>V</I> be the source vertex, and let <I>G</I> be initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>). Prove that for every vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I><img src="../images/piuc.gif"><I></I>, there exists a path from <I>s</I> to <I>v</I> in <I>G<SUB><FONT FACE="Courier New" SIZE=2></I></SUB><img src="../images/piuc.gif"><I><SUB></I></FONT></SUB> and that this property is maintained as an invariant over any sequence of relaxations.<P>
+<a name="08c8_17f1">25.1-7<a name="08c8_17f1"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph that contains no negative-weight cycles. Let <I>s</I> <img src="../images/memof12.gif"> <I>V</I> be the source vertex, and let <I>G</I> be initialized by <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT>(<I>G, s</I>). Prove that there is a sequence of <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> - 1 relaxation steps that produces <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s ,v</I>) for all <I>v </I><img src="../images/memof12.gif"> <I>V</I>.<P>
+<a name="08c8_17f2">25.1-8<a name="08c8_17f2"><P>
+Let <I>G</I> be an arbitrary weighted, directed graph with a negative-weight cycle reachable from the source vertex <I>s</I>. Show that an infinite sequence of relaxations of the edges of <I>G</I> can always be constructed such that every relaxation causes a shortest-path estimate to change.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08c9_17ef">25.2 Dijkstra's algorithm<a name="08c9_17ef"></h1><P>
+<a name="08c9_17ea"><a name="08c9_17eb"><a name="08c9_17ec"><a name="08c9_17ed">Dijkstra's algorithm solves the single-source shortest-paths problem on a weighted, directed graph <I>G</I> = (<I>V, E</I>) for the case in which all edge weights are nonnegative. In this section, therefore, we assume that <I>w</I>(<I>u, v</I>) <img src="../images/gteq.gif"> 0 for each edge (<I>u, v</I>) <img src="../images/memof12.gif"> <I>E</I>.<P>
+Dijkstra's algorithm maintains a set <I>S</I> of vertices whose final shortest-path weights from the source <I>s</I> have already been determined. That is, for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>S</I>, we have <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, v</I>). The algorithm repeatedly selects the vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I> - <I>S</I> with the minimum shortest-path estimate, inserts <I>u</I> into <I>S</I>, and relaxes all edges leaving <I>u</I>. In the following implementation, we maintain a priority queue <I>Q</I> that contains all the vertices in <I>V - S</I>, keyed by their <I>d</I> values. The implementation assumes that graph <I>G</I> is represented by adjacency lists.<P>
+<pre><a name="08c9_17ee">DIJKSTRA(<I>G,w,s</I>)</sub></sup></pre><P>
+<pre>1  INITIALIZE-SINGLE-SOURCE (<I>G,s</I>)</sub></sup></pre><P>
+<pre>2  <img src="527_a.gif"></sub></sup></pre><P>
+<pre>3  <I>Q</I> <img src="../images/arrlt12.gif"> <I>V</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>4  <B>while</B> <img src="527_b.gif"></sub></sup></pre><P>
+<pre>5<B>       do</B> <I>u</I> <img src="../images/arrlt12.gif"> EXTRACT-MIN(<I>Q)</I></sub></sup></pre><P>
+<pre>6          <I>S</I> <img src="../images/arrlt12.gif"> <I>S</I> <img src="../images/wideu.gif"> {<I>u</I>}</sub></sup></pre><P>
+<pre>7<B>          for</B> each vertex <I>v</I> <img src="../images/memof12.gif"> <I>Adj</I>[<I>u</I>]</sub></sup></pre><P>
+<pre>8              <B>do</B> RELAX (<I>u</I>,<I>v</I>,<I>w</I>)</sub></sup></pre><P>
+<img src="528_a.gif"><P>
+<h4><a name="08c9_17f0">Figure 25.5 The execution of Dijkstra's algorithm. The source is the leftmost vertex. The shortest-path estimates are shown within the vertices, and shaded edges indicate predecessor values: if edge (u,v) is shaded, then <img src="../images/piuc.gif">[v] = u. Black vertices are in the set S, and white vertices are in the priority queue Q = V - S. (a) The situation just before the first iteration of the while loop of lines 4-8. The shaded vertex has the minimum d value and is chosen as vertex u in line 5. (b)-(f) The situation after each successive iteration of the while loop. The shaded vertex in each part is chosen as vertex u in line 5 of the next iteration. The d and <img src="../images/piuc.gif"> values shown in part (f) are the final values.<a name="08c9_17f0"></sub></sup></h4><P>
+Dijkstra's algorithm relaxes edges as shown in Figure 25.5. Line 1 performs the usual initialization of <I>d</I> and <img src="../images/piuc.gif"> values, and line 2 initializes the set <I>S</I> to the empty set. Line 3 then initializes the priority queue <I>Q</I> to contain all the vertices in <img src="528_b.gif">.<I> </I>Each time through the <B>while</B> loop of lines 4-8, a vertex <I>u</I> is extracted from <I>Q = V - S</I> and inserted into set <I>S</I>. (The first time through this loop, <I>u = s</I>.) Vertex <I>u</I>, therefore, has the smallest shortest-path estimate of any vertex in <I>V - S</I>. Then, lines 7-8 relax each edge (<I>u, v</I>) leaving <I>u</I>, thus updating the estimate <I>d</I>[<I>v</I>] and the predecessor <img src="../images/piuc.gif">[<I>v</I>] if the shortest path to <I>v</I> can be improved by going through <I>u</I>. Observe that vertices are never inserted into <I>Q</I> after line 3 and that each vertex is extracted from <I>Q</I> and inserted into <I>S</I> exactly once, so that the <B>while</B> loop of lines 4-8 iterates exactly <img src="../images/sglvrt.gif"><I>V</I><img src="../images/sglvrt.gif"> times.<P>
+Because Dijkstra's algorithm always chooses the &quot;lightest&quot; or &quot;closest&quot; vertex in <I>V</I> - <I>S</I> to insert into set <I>S</I>, we say that it uses a greedy strategy. Greedy strategies are presented in detail in Chapter 17, but you need not have read that chapter to understand Dijkstra's algorithm. Greedy strategies do not always yield optimal results in general, but as the following theorem and its corollary show, Dijkstra's algorithm does indeed compute shortest paths. The key is to show that each time a vertex <I>u</I> is inserted into set <I>S</I>, we have <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I>(</I>s, u<I>).</I><P>
+<img src="529_a.gif"><P>
+<h4><a name="08c9_17f1">Figure 25.6 The proof of Theorem 25.10. Set S is nonempty just before vertex u is inserted into it. A shortest path p from source s to vertex u can be decomposed into <img src="529_b.gif"> where y is the first vertex on the path that is not in V - S and x <img src="../images/memof12.gif"> S immediately precedes y. Vertices x and y are distinct, but we may have s = x or y = u. Path p<SUB>2</SUB><FONT FACE="Times New Roman" SIZE=2> may or may not reenter set S.<a name="08c9_17f1"></FONT></sub></sup></h4><P>
+<a name="08c9_17f2">Theorem 25.10<a name="08c9_17f2"><P>
+If we run Dijkstra's algorithm on a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>) with nonnegative weight function <I>w</I> and source <I>s</I>, then at termination, <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I>(</I>s, u<I>) for all vertices </I>u<I> <img src="../images/memof12.gif"> </I>V<I>.</I><P>
+<I><B>Proof     </I></B>We shall show that for each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V,</I> we have <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, u</I>) at the time when <I>u</I> is inserted into set <I>S</I> and that this equality is maintained thereafter.<P>
+For the purpose of contradiction, let <I>u</I> be the first vertex for which <I>d</I>[<I>u</I>] <img src="../images/noteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>) when it is inserted into set <I>S</I>. We shall focus our attention on the situation at the beginning of the iteration of the <B>while</B> loop in which <I>u</I> is inserted into <I>S</I> and derive the contradiction that <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, u</I>) at that time by examining a shortest path from <I>s</I> to <I>u</I>. We must have <I>u</I> <img src="../images/noteq.gif"> <I>s</I> because <I>s</I> is the first vertex inserted into set <I>S</I> and <I>d</I>[<I>s</I>] = <img src="../images/delta12.gif"><I></I>(<I>s, s</I>) = 0 at that time. Because <I>u</I> <img src="../images/noteq.gif"> <I>s</I>, we also have that <img src="529_c.gif"> just before <I>u</I> is inserted into <I>S</I>. There must be some path from <I>s</I> to <I>u</I>, for otherwise <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>) = <img src="../images/infin.gif">by Corollary 25.6, which would violate our assumption that <I>d</I>[<I>u</I>] <img src="../images/noteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>). Because there is at least one path, there is a shortest path <I>p fr</I>om <I>s </I>to <I>u</I>. Path <I>p</I> connects a vertex in <I>S</I>, namely <I>s</I>, to a vertex in <I>V</I> - <I>S</I>, namely <I>u</I>. Let us consider the first vertex <I>y</I> along <I>p</I> such that <I>y</I> <img src="../images/memof12.gif"> <I>V</I> - <I>S</I>, and let <I>x</I> <img src="../images/memof12.gif"> <I>V</I> be <I>y</I>'s predecessor. Thus, as shown in Figure 25.6, path <I>p</I> can be decomposed as <img src="529_d.gif"><P>
+We claim that <I>d</I>[<I>y</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>y</I>) when <I>u</I> is inserted into <I>S</I>. To prove this claim, observe that <I>x</I> <img src="../images/memof12.gif"> <I>S</I>. Then, because <I>u</I> is chosen as the first vertex for which <I>d</I>[<I>u</I>] <img src="../images/noteq.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>) when it is inserted into <I>S</I>, we had <I>d</I>[<I>x</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>x</I>) when x was inserted into <I>S</I>. Edge (<I>x</I>, <I>y</I>) was relaxed at that time, so the claim follows from Lemma 25.7.<P>
+We can now obtain a contradiction to prove the theorem. Because <I>y</I> occurs before <I>u</I> on a shortest path from <I>s</I> to <I>u</I> and all edge weights are  nonnegative (notably those on path <I>p</I><SUB>2</SUB>), we have <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>y</I>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>), and thus<P>
+<pre><I>d</I>[<I>y</I>]  =  <img src="../images/delta12.gif"><I>(</I>s<I>, </I>y<I>)</I></sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <img src="../images/delta12.gif"><I>(</I>s<I>, </I>u<I>)</I></sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <I>d</I>[<I>u</I>]     (by Lemma 25.5).</sub></sup></pre><P>
+<h4><a name="08c9_17f3">(25.2)<a name="08c9_17f3"></sub></sup></h4><P>
+But because both vertices <I>u</I> and <I>y</I> were in <I>V</I> - <I>S</I> when <I>u</I> was chosen in line 5, we have <I>d</I>[<I>u</I>] <img src="../images/lteq12.gif"> <I>d</I>[<I>y</I>]. Thus, the two inequalities in (25.2) are in fact equalities, giving<P>
+<pre><I>d</I>[<I>y</I>] = <img src="../images/delta12.gif"><I>(</I>s<I>, </I>y<I>) = <img src="../images/delta12.gif"></I>(<I>s</I>, <I>u</I>) = <I>d</I>[<I>u</I>] .</sub></sup></pre><P>
+Consequently, <I>d</I>[<I>u</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>u</I>), which contradicts our choice of <I>u</I>. We conclude that at the time each vertex <I>u</I> <img src="../images/memof12.gif"> <I>V</I> is inserted into set <I>S</I>, we have <I>d</I>[<I>u</I>] = (<I>s</I>, <I>u</I>), and by Lemma 25.5, this equality holds thereafter.      <P>
+<a name="08c9_17f4">Corollary 25.11<a name="08c9_17f4"><P>
+If we run Dijkstra's algorithm on a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>) with nonnegative weight function <I>w</I> and source <I>s</I>, then at termination, the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> is a shortest-paths tree rooted at <I>s</I>.<P>
+<I><B>Proof     </I></B>Immediate from Theorem 25.10 and Lemma 25.9.      <P>
+
+
+
+
+
+<h2>Analysis</h2><P>
+<a name="08ca_17ef">How fast is Dijkstra's algorithm? Consider first the case in which we maintain the priority queue <I>Q</I> = <I>V </I>- <I>S</I> as a linear array. For such an implementation, each <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> operation takes time <I>O</I>(<I>V</I>), and there are |V<I>|</I> such operations, for a total <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> time of <I>O</I>(<I>V</I><SUP>2</SUP>)<I>. </I>Each<I> </I>vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I> is inserted into set <I>S</I> exactly once, so each edge in the adjacency list <I>Adj</I>[<I>v</I>] is examined in the <B>for</B> loop of lines 4-8 exactly once during the course of the algorithm. Since the total number of edges in all the adjacency lists is |E<I>|</I>, there are a total of |E<I>|</I> iterations of this <B>for </B>loop, with each iteration taking <I>O</I>(1) time. The running time of the entire algorithm is thus <I>O</I>(<I>V</I><SUP>2</SUP> + <I>E</I>) = <I>O</I>(<I>V</I><SUP>2</SUP>).<P>
+<a name="08ca_17f0"><a name="08ca_17f1">If the graph is sparse, however, it is practical to implement the priority queue <I>Q</I> with a binary heap. The resulting algorithm is sometimes called the <I><B>modified Dijkstra algorithm</I></B>. Each <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> operation then takes time <I>O</I>(lg <I>V</I>). As before, there are |V<I>|</I> such operations. The time to build the binary heap is <I>O</I>(<I>V</I>). The assignment <I>d</I>[<I>v</I>] <img src="../images/arrlt12.gif"> <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>) in R<FONT FACE="Courier New" SIZE=2>ELAX </FONT>is accomplished by the call <FONT FACE="Courier New" SIZE=2>DECREASE</FONT>-<FONT FACE="Courier New" SIZE=2>KEY</FONT>(<I>Q</I>, <I>v</I>, <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>)), which takes time <I>O</I>(lg <I>V</I>) (see Exercise 7.5-4), and there are still at most |E<I>|</I> such operations. The total running time is therefore <I>O</I>((<I>V</I> + <I>E</I>) lg <I>V</I>), which is <I>O</I>(<I>E</I> lg <I>V</I>) if all vertices are reachable from the source.<P>
+<a name="08ca_17f2"><a name="08ca_17f3">We can in fact achieve a running time of <I>O</I>(<I>V</I> lg <I>V </I>+ <I>E</I>) by implementing the priority queue <I>Q</I> with a Fibonacci heap (see Chapter 21). The amortized cost of each of the |V<I>|</I> <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> operations is <I>O</I>(lg <I>V</I>), and each of the |E<I>|</I> <FONT FACE="Courier New" SIZE=2>DECREASE</FONT>-K<FONT FACE="Courier New" SIZE=2>EY </FONT>calls takes only <I>O</I>(1) amortized time. Historically, the development of Fibonacci heaps was motivated by the observation that in the modified Dijkstra algorithm there are potentially many more <FONT FACE="Courier New" SIZE=2>DECREASE</FONT>-K<FONT FACE="Courier New" SIZE=2>EY </FONT>calls than <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> calls, so any method of reducing the amortized time of each <FONT FACE="Courier New" SIZE=2>DECREASE</FONT>-<FONT FACE="Courier New" SIZE=2>KEY</FONT> operation to <I>o</I>(lg <I>V</I>) without increasing the amortized time of <FONT FACE="Courier New" SIZE=2>EXTRACT</FONT>-<FONT FACE="Courier New" SIZE=2>MIN</FONT> would yield an asymptotically faster implementation.<P>
+<a name="08ca_17f4"><a name="08ca_17f5"><a name="08ca_17f6"><a name="08ca_17f7">Dijkstra's algorithm bears some similarity to both breadth-first search (see Section 23.2) and Prim's algorithm for computing minimum spanning trees (see Section 24.2). It is like breadth-first search in that set <I>S</I> corresponds to the set of black vertices in a breadth-first search; just as vertices in <I>S</I> have their final shortest-path weights, so black vertices in a breadth-first search have their correct breadth-first distances. Dijkstra's algorithm is like Prim's algorithm in that both algorithms use a priority queue to find the "lightest" vertex outside a given set (the set <I>S</I> in Dijkstra's algorithm and the tree being grown in Prim's algorithm), insert this vertex into the set, and adjust the weights of the remaining vertices outside the set accordingly.<P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="08cb_17fa">Exercises<a name="08cb_17fa"></h2><P>
+<a name="08cb_17fb">25.2-1<a name="08cb_17fb"><P>
+Run Dijkstra's algorithm on the directed graph of Figure 25.2, first using vertex <I>s</I> as the source and then using vertex <I>y</I> as the source. In the style of Figure 25.5, show the <I>d</I> and <img src="../images/piuc.gif"> values and the vertices in set <I>S</I> after each iteration of the <B>while</B> loop.<P>
+<a name="08cb_17fc">25.2-2<a name="08cb_17fc"><P>
+<a name="08cb_17f8">Give a simple example of a directed graph with negative-weight edges for which Dijkstra's algorithm produces incorrect answers. Why doesn't the proof of Theorem 25.10 go through when negative-weight edges are allowed?<P>
+<a name="08cb_17fd">25.2-3<a name="08cb_17fd"><P>
+Suppose we change line 4 of Dijkstra's algorithm to the following.<P>
+<pre>4 <B>while</B> |<I>Q</I>| &gt; 1</sub></sup></pre><P>
+This change causes the <B>while</B> loop to execute |<I>V</I>| - 1 times instead of |<I>V</I>| times. Is this proposed algorithm correct?<P>
+<a name="08cb_17fe">25.2-4<a name="08cb_17fe"><P>
+We are given a directed graph<I> G</I> = (<I>V</I>, <I>E</I>) on which each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I> has an associated value<I> r</I>(<I>u</I>, <I>v</I>), which is a real number in the range 0 <img src="../images/lteq12.gif"> <I>r</I>(<I>u</I>, <I>v</I>) <img src="../images/lteq12.gif"> 1 that represents the reliability of a communication channel from vertex <I>u</I> to vertex <I>v</I>. We interpret <I>r</I>(<I>u</I>, <I>v</I>) as the probability that the channel from <I>u</I> to <I>v</I> will not fail, and we assume that these probabilities are independent. Give an efficient algorithm to find the most reliable path between two given vertices.<P>
+<a name="08cb_17ff">25.2-5<a name="08cb_17ff"><P>
+<a name="08cb_17f9">Let <I>G</I> = (<I>V</I>, <I>E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> {0, 1, . . . , <I>W</I> - 1} for some nonnegative integer <I>W</I>. Modify Dijkstra's algorithm to compute the shortest paths from a given source vertex <I>s</I> in <I>O</I>(<I>WV</I> + <I>E</I>) time.<P>
+<a name="08cb_1800">25.2-6<a name="08cb_1800"><P>
+Modify your algorithm from Exercise 25.2-5 to run in<I> O</I>((<I>V</I> + <I>E</I>) lg <I>W</I>) time. (<I>Hint</I>: How many distinct shortest-path estimates can there be in <I>V</I> - <I>S</I> at any point in time?)<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08cc_17fe">25.3 The Bellman-Ford algorithm<a name="08cc_17fe"></h1><P>
+<a name="08cc_17fa"><a name="08cc_17fb"><a name="08cc_17fc">The <I><B>Bellman-Ford algorithm</I></B> solves the single-source shortest-paths problem in the more general case in which edge weights can be negative. Given a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>) with source <I>s</I> and weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B> , the Bellman-Ford algorithm returns a boolean value indicating whether or not there is a negative-weight cycle that is reachable from the source. If there is such a cycle, the algorithm indicates that no solution exists. If there is no such cycle, the algorithm produces the shortest paths and their weights.<P>
+Like Dijkstra's algorithm, the Bellman-Ford algorithm uses the technique of relaxation, progressively decreasing an estimate <I>d</I>[<I>v</I>] on the weight of a shortest path from the source <I>s</I> to each vertex <I>v </I><img src="../images/memof12.gif"><I> V </I>until it achieves the actual shortest-path weight <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>). The algorithm returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT> if and only if the graph contains no negative-weight cycles that are reachable from the source.<P>
+<pre><a name="08cc_17fd">BELLMAN-FORD(<I>G</I>, <I>w</I>, <I>s</I>)</sub></sup></pre><P>
+<pre>1 INITIALIZE-SINGLE-SOURCE(<I>G</I>, <I>s</I>)</sub></sup></pre><P>
+<pre>2 <B>for</B> <I>i</I> <img src="../images/arrlt12.gif"> 1 <B>to</B> |<I>V</I>[<I>G</I>]| - 1</sub></sup></pre><P>
+<pre>3      <B>do for</B> each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>4              <B>do</B> RELAX(<I>u</I>, <I>v</I>, <I>w</I>)</sub></sup></pre><P>
+<pre>5 <B>for</B> each edge (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>[<I>G</I>]</sub></sup></pre><P>
+<pre>6      <B>do if</B> <I>d</I>[<I>v</I>] &gt; <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>, <I>v</I>)</sub></sup></pre><P>
+<pre>7            <B>then return</B> FALSE</sub></sup></pre><P>
+<pre>8 <B>return</B> TRUE</sub></sup></pre><P>
+Figure 25.7 shows how the execution of the Bellman-Ford algorithm works on a graph with 5 vertices. After performing the usual initialization, the algorithm makes |<I>V</I>| - 1 passes over the edges of the graph. Each pass is one iteration of the <B>for</B> loop of lines 2-4 and consists of relaxing each edge of the graph once. Figures 25.7(b)-(e) show the state of the algorithm after each of the four passes over the edges. After making |<I>V</I>|- 1 passes, lines 5-8 check for a negative-weight cycle and return the appropriate boolean value. (We shall see a little later why this check works.)<P>
+<img src="533_a.gif"><P>
+<h4><a name="08cc_17ff">Figure 25.7 The execution of the Bellman-Ford algorithm. The source is vertex z. The d values are shown within the vertices, and shaded edges indicate the <img src="../images/piuc.gif"> values. In this particular example, each pass relaxes the edges in lexicographic order: (u, v),(u, x),(u, y),(v, u),(x, v),(x, y),(y, v),(y, z),(z, u),(z, x). (a) The situation just before the first pass over the edges. (b)-(e) The situation after each successive pass over the edges. The d and <img src="../images/piuc.gif"> values in part (e) are the final values. The Bellman-Ford algorithm returns TRUE in this example.<a name="08cc_17ff"></sub></sup></h4><P>
+The Bellman-Ford algorithm runs in time <I>O</I>(<I>V E</I>), since the initialization in line 1 takes <img src="../images/bound.gif">(<I>V</I>) time, each of the |<I>V</I>| - 1 passes over the edges in lines 2-4 takes <I>O</I>(<I>E</I>) time, and the <B>for</B> loop of lines 5-7 takes <I>O</I>(<I>E</I>) time.<P>
+To prove the correctness of the Bellman-Ford algorithm, we start by showing that if there are no negative-weight cycles, the algorithm computes correct shortest-path weights for all vertices reachable from the source. The proof of this lemma contains the intuition behind the algorithm.<P>
+<a name="08cc_1800">Lemma 25.12<a name="08cc_1800"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a weighted, directed graph with source <I>s</I> and weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>, and assume that <I>G</I> contains no negative-weight cycles that are reachable from <I>s</I>. Then, at the termination of <FONT FACE="Courier New" SIZE=2>BELLMAN</FONT>-<FONT FACE="Courier New" SIZE=2>FORD</FONT>, we have <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) for all vertices <I>v </I>that are reachable from <I>s</I>.<P>
+<I><B>Proof     </I></B>Let <I>v</I> be a vertex reachable from <I>s</I>, and let<I> p</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>0</SUB>, <I>v</I><SUB>1</SUB>, . . . , <I>v<SUB>k</I></SUB><img src="../images/wdrtchv.gif"> be a shortest path from <I>s</I> to <I>v</I>, where <I>v</I><SUB>0</SUB> = <I>s</I> and <I>v<SUB>k</I></SUB> = <I>v</I>. The path <I>p</I> is simple, and so <I>k</I> <img src="../images/lteq12.gif"> |<I>V</I>| - 1. We want to prove by induction that for <I>i</I> = 0, 1, . . . , <I>k</I>, we have <I>d</I>[<I>v<SUB>i</I></SUB>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v<SUB>i</I></SUB>) after the <I>i</I>th pass over the edges of <I>G</I> and that this equality is maintained thereafter. Because there are |<I>V</I>| - 1 passes, this claim suffices to prove the lemma.<P>
+For the basis, we have <I>d</I>[<I>v</I><SUB>0</SUB>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I><SUB>0</SUB>) = 0 after initialization, and by Lemma 25.5, this equality is maintained thereafter.<P>
+For the inductive step, we assume that <I>d</I>[<I>v<SUB>i - </I>1</SUB>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v<SUB>i - </I>1</SUB>) after the (<I>i</I> - 1)st pass. Edge (<I>v<SUB>i - </I>1</SUB>, <I>v<SUB>i</I></SUB>) is relaxed in the <I>i</I>th pass, so by Lemma 25.7, we conclude that <I>d</I>[<I>v<SUB>i</I></SUB>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v<SUB>i</I></SUB>) after the <I>i</I>th pass and at all subsequent times, thus completing the proof.      <P>
+<a name="08cc_1801">Corollary 25.13<a name="08cc_1801"><P>
+Let <I>G</I> = (<I>V</I>, <I>E</I>) be a weighted, directed graph with source vertex <I>s</I> and weight function <I>w</I> : <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>. Then for each vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, there is a path from <I>s</I> to <I>v</I> if and only if <FONT FACE="Courier New" SIZE=2>BELLMAN</FONT>-<FONT FACE="Courier New" SIZE=2>FORD</FONT> terminates with <I>d</I>[<I>v</I>] &lt; <img src="../images/infin.gif"> when it is run on <I>G.</I><P>
+<I><B>Proof     </I></B>The proof is similar to that of Lemma 25.12 and is left as Exercise 25.3-2.      <P>
+<a name="08cc_1802">Theorem 25.14<a name="08cc_1802"><P>
+Let <FONT FACE="Courier New" SIZE=2>BELLMAN</FONT>-<FONT FACE="Courier New" SIZE=2>FORD</FONT> be run on a weighted, directed graph <I>G</I> = (<I>V</I>, <I>E</I>) with source <I>s</I> and weight function <I>w </I>: <I>E</I> <img src="../images/arrow12.gif"> <B>R</B>. If <I>G</I> contains no negative-weight cycles that are reachable from <I>s</I>, then the algorithm returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT>, we have <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>,<I>v</I>) for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, and the predecessor subgraph <I>G</I><img src="../images/piuc.gif"> is a shortest-paths tree rooted at <I>s</I>. If <I>G</I> does contain a negative-weight cycle reachable from <I>S</I>, then the algorithm returns FALSE.<P>
+<I><B>Proof     </I></B>Suppose that graph <I>G</I> contains no negative-weight cycles that are reachable from the source <I>s</I>. We first prove the claim that at termination, <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>V</I>. If vertex <I>v</I> is reachable from <I>s</I>, then Lemma 25.12 proves this claim. If <I>v</I> is not reachable from <I>s</I>, then the claim follows from Corollary 25.6. Thus, the claim is proven. Lemma 25.9, along with the claim, implies that <I>G</I><img src="../images/piuc.gif"> is a shortest-paths tree. Now we use the claim to show that BELLMAN-FORD returns TRUE. At termination, we have for all edges (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>,<P>
+<pre><I>d</I>[<I>v</I>]  =  <img src="../images/delta12.gif">(s,v)</sub></sup></pre><P>
+<pre><img src="../images/lteq12.gif">  <img src="../images/delta12.gif"><I>(</I>s<I>,</I>u<I>) + </I>w<I>(</I>u<I>,</I>v<I>)  (by Lemma 25.3)</I></sub></sup></pre><P>
+<pre>=  <I>d</I>[<I>u</I>] + <I>w</I>(<I>u</I>,<I>v</I>),</sub></sup></pre><P>
+and so none of the tests in line 6 causes <FONT FACE="Courier New" SIZE=2>BELLMAN</FONT>-<FONT FACE="Courier New" SIZE=2>FORD</FONT> to return <FONT FACE="Courier New" SIZE=2>FALSE</FONT>. It therefore returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT>.<P>
+Conversely, suppose that graph <I>G</I> contains a negative-weight cycle <I>c</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>0</SUB>, <I>v</I><SUB>1</SUB>, . . . , <I>v<SUB>k</I></SUB><img src="../images/wdrtchv.gif">, where <I>v</I><SUB>0</SUB> = <I>v<SUB>k</I></SUB>, that is reachable from the source <I>s</I>. Then,<P>
+<img src="535_a.gif"><P>
+<h4>(25.3)</sub></sup></h4><P>
+Assume for the purpose of contradiction that the Bellman-Ford algorithm returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT>. Thus, <I>d</I>[<I>v<SUB>i</I></SUB>]<I> </I><img src="../images/lteq12.gif"><I> d</I>[<I>v<SUB>i-</I>1</SUB>]<I>+w</I>(<I>v<SUB>i-</I>l</SUB>,<I> v<SUB>i</I></SUB>)<I> </I>for<I> i = </I>1, 2, <I>. . . , k. </I>Summing the inequalities around cycle <I>c</I> gives us<P>
+<img src="535_b.gif"><P>
+As in the proof of Lemma 25.8, each vertex in <I>c</I> appears exactly once in each of the first two summations. Thus,<P>
+<img src="535_c.gif"><P>
+Moreover, by Corollary 25.13, <I>d</I> [<I>v<SUB>i</I></SUB>] is finite for i = 1, 2, . . . , <I>k</I>. Thus,<P>
+<img src="535_d.gif"><P>
+which contradicts inequality (25.3). We conclude that the Bellman-Ford algorithm returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT> if graph <I>G</I> contains no negative-weight cycles reachable from the source, and <FONT FACE="Courier New" SIZE=2>FALSE</FONT> otherwise.      <P>
+
+
+
+
+
+<h2><a name="08cd_17ff">Exercises<a name="08cd_17ff"></h2><P>
+<a name="08cd_1800">25.3-1<a name="08cd_1800"><P>
+Run the Bellman-Ford algorithm on the directed graph of Figure 25.7, using vertex <I>y</I> as the source. Relax edges in lexicographic order in each pass, and show the <I>d</I> and <img src="../images/piuc.gif"> values after each pass. Now, change the weight of edge (<I>y, v</I>) to 4 and run the algorithm again, using <I>z</I> as the source.<P>
+<a name="08cd_1801">25.3-2<a name="08cd_1801"><P>
+Prove Corollary 25.13.<P>
+<a name="08cd_1802">25.3-3<a name="08cd_1802"><P>
+Given a weighted, directed graph <I>G</I> = (<I>V, E</I>) with no negative-weight cycles, let <I>m</I> be the maximum over all pairs of vertices <I>u, v </I><img src="../images/memof12.gif"><I> V</I> of the minimum number of edges in a shortest path from <I>u</I> to <I>v</I>. (Here, the shortest path is by weight, not the number of edges.) Suggest a simple change to the Bellman-Ford algorithm that allows it to terminate in <I>m</I> + 1 passes.<P>
+<a name="08cd_1803">25.3-4<a name="08cd_1803"><P>
+Modify the Bellman-Ford algorithm so that it sets <I>d</I>[<I>v</I>] to -<img src="../images/infin.gif"> for all vertices <I>v</I> for which there is a negative-weight cycle on some path from the source to <I>v</I>.<P>
+<a name="08cd_1804">25.3-5<a name="08cd_1804"><P>
+Let <I>G</I> = (<I>V, E</I>) be a weighted, directed graph with weight function <I>w</I> : <I>E </I><img src="../images/arrow12.gif"> <B>R</B>. Give an <I>O</I>(<I>V E</I>)-time algorithm to find, for each vertex <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, the value <img src="../images/delta12.gif">* (<I>v</I>) = min<I><SUB>u</I></SUB><img src="../images/memof12.gif">V<SUB> <I>{<img src="../images/delta12.gif"></I>(<I>u, v</I>)}.<P>
+<a name="08cd_1805">25.3-6<a name="08cd_1805"><P>
+<a name="08cd_17fe">Suppose that a weighted, directed graph <I>G</I> = (<I>V, E</I>) has a negative-weight cycle. Give an efficient algorithm to list the vertices of one such cycle. Prove that your algorithm is correct.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08ce_1809">25.4 Single-source shortest paths in directed acyclic graphs<a name="08ce_1809"></h1><P>
+<a name="08ce_17ff"><a name="08ce_1800"><a name="08ce_1801"><a name="08ce_1802"><a name="08ce_1803">By relaxing the edges of a weighted dag (directed acyclic graph) <I>G</I> = (<I>V, E</I>) according to a topological sort of its vertices, we can compute shortest paths from a single source in <img src="../images/bound.gif">(<I>V</I> + <I>E</I>) time. Shortest paths are always well defined in a dag, since even if there are negative-weight edges, no negative-weight cycles can exist.<P>
+The algorithm starts by topologically sorting the dag (see Section 23.4) to impose a linear ordering on the vertices. If there is a path from vertex <I>u</I> to vertex <I>v</I>, then <I>u</I> precedes <I>v</I> in the topological sort. We make just one pass over the vertices in the topologically sorted order. As each vertex is processed, all the edges that leave the vertex are relaxed.<P>
+<pre><a name="08ce_1804">DAG-SHORTEST-PATHS(<I>G,w,s</I>)</sub></sup></pre><P>
+<pre>1 topologically sort the vertices of <I>G</I></sub></sup></pre><P>
+<pre>2 INITIALIZE-SINGLE-SOURCE(<I>G,s</I>)</sub></sup></pre><P>
+<pre>3 <B>for</B> each vertex <I>u</I> taken in topologically sorted order</sub></sup></pre><P>
+<pre>4      <B>do for</B> each vertex <I>v</I> <img src="../images/memof12.gif"><I>Adj</I>[<I>u</I>]</sub></sup></pre><P>
+<pre>5             <B>do</B> RELAX(<I>u,v,w</I>)</sub></sup></pre><P>
+An example of the execution of this algorithm is shown in Figure 25.8.<P>
+The running time of this algorithm is determined by line 1 and by the <B>for</B> loop of lines 3-5. As shown in Section 23.4, the topological sort can be performed in <img src="../images/bound.gif">(<I>V</I> + <I>E</I>) time. In the <B>for</B> loop of lines 3-5, as in Dijkstra's algorithm, there is one iteration per vertex. For each vertex, the edges that leave the vertex are each examined exactly once. Unlike Dijkstra's algorithm, however, we use only <I>O</I>( 1 ) time per edge. The running time is thus <img src="../images/bound.gif">(<I>V </I>+ <I>E</I>), which is linear in the size of an adjacency-list representation of the graph.<P>
+The following theorem shows that the <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT> procedure correctly computes the shortest paths.<P>
+<img src="537_a.gif"><P>
+<h4><a name="08ce_180a">Figure 25.8 The execution of the algorithm for shortest paths in a directed acyclic graph. The vertices are topologically sorted from left to right. The source vertex is s. The d values are shown within the vertices, and shaded edges indicate the <img src="../images/piuc.gif"> values.(a) The situation before the first iteration of the for loop of lines 3-5. (b)-(g) The situation after each iteration of the for loop of lines 3-5. The newly blackened vertex in each iteration was used as v in that iteration. The values shown in part (g) are the final values.<a name="08ce_180a"></sub></sup></h4><P>
+<a name="08ce_180b">Theorem 25.15<a name="08ce_180b"><P>
+If a weighted, directed graph <I>G = (V, E)</I> has source vertex <I>s</I> and no cycles, then at the termination of the <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT> procedure, <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif"><I>(</I>s, v<I>) for all vertices </I>v<I> <img src="../images/memof12.gif"> </I>V<I>, and the predecessor subgraph </I>G<I><img src="../images/piuc.gif"></I> is a shortest-paths tree.<P>
+<I><B>Proof     </I></B>We first show that <I>d</I>[<I>v</I>]<I> =</I><img src="../images/delta12.gif"><I>(</I>s, v<I>)</I> <I>for all vertices</I> v <I><img src="../images/memof12.gif"> V </I>at termination. If <I>v</I> is not reachable from <I>s</I>, then <I>d</I>[<I>v</I>] =<img src="../images/delta12.gif"><I>(</I>s, v<I>) = <img src="../images/infin.gif"> by Corollary 25.6. Now, suppose that <img src="../images/upsil12.gif"></I> is reachable from <I>s</I>, so that there is a shortest path <I>p</I> = <img src="../images/lftwdchv.gif"><I>v</I><FONT FACE="Courier New" SIZE=2>0</FONT>, <I>v</I><FONT FACE="Courier New" SIZE=2>1</FONT>, . . . , <I>v</I><FONT FACE="Courier New" SIZE=2>k<img src="../images/wdrtchv.gif"></FONT>, where <I>v</I><FONT FACE="Courier New" SIZE=2>0</FONT> = <I>s</I> and <I>v<FONT FACE="Courier New" SIZE=2>k</I></FONT> = <I>v</I>. Because we process the vertices in topologically sorted order, the edges on <I>p</I> are relaxed in the order (<I>v</I><FONT FACE="Courier New" SIZE=2>0</FONT>, <I>v</I><FONT FACE="Courier New" SIZE=2>1</FONT>), (<I>v</I><FONT FACE="Courier New" SIZE=2>1</FONT>, <I>v</I><FONT FACE="Courier New" SIZE=2>2</FONT>), . . . , (<I>v</I><FONT FACE="Courier New" SIZE=2>k-1, <I>v</I>k)</FONT>. A simple induction using Lemma 25.7 (as in the proof of Lemma 25.12) shows that d[<I>v<FONT FACE="Courier New" SIZE=2>i</I></FONT>] = <img src="../images/delta12.gif">(<I>s</I>, <I>v<FONT FACE="Courier New" SIZE=2>i</I></FONT>) at termination for <I>i</I> = 0, 1, . . . , <I>k</I>. Finally, by Lemma 25.9, <I>G</I><FONT FACE="Courier New" SIZE=2><img src="../images/piuc.gif"></FONT> is a shortest-paths tree<I>.     </I> <P>
+<a name="08ce_1805"><a name="08ce_1806"><a name="08ce_1807"><a name="08ce_1808">An interesting application of this algorithm arises in determining critical paths in <I><B>PERT chart</I></B><SUP>2</SUP> analysis. Edges represent jobs to be performed, and edge weights represent the times required to perform particular jobs. If edge (<I>u</I>, <I>v</I>) enters vertex <I>v</I> and edge (<I>v</I>, <I>x</I>) leaves <I>v</I>, then job (<I>u</I>, <I>v</I>) must be performed prior to job (<I>v</I>, <I>x</I>). A path through this dag represents a sequence of jobs that must be performed in a particular order. A <I><B>critical path</I></B> is a <I>longest</I> path through the dag, corresponding to the longest time to perform an ordered sequence of jobs. The weight of a critical path is a lower bound on the total time to perform all the jobs. We can find a critical path by either<P>
+<img src="../images/dot12.gif">     negating the edge weights and running <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT>, or<P>
+<img src="../images/dot12.gif">     running <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT>, replacing &quot;<img src="../images/infin.gif">&quot; by &quot;-<img src="../images/infin.gif">&quot; in line 2 of  <FONT FACE="Courier New" SIZE=2>INITIALIZE</FONT>-<FONT FACE="Courier New" SIZE=2>SINGLE</FONT>-<FONT FACE="Courier New" SIZE=2>SOURCE</FONT> and &quot;&gt;&quot; by &quot;&lt; &quot; in the <FONT FACE="Courier New" SIZE=2>RELAX</FONT> procedure.<P>
+<SUP><FONT FACE="Times" SIZE=1>2&quot;</SUP><FONT FACE="Times" SIZE=2>PERT&quot; is an acronym for &quot;program evaluation and review technique.&quot;</FONT></FONT><P>
+
+
+
+
+
+<h2><a name="08cf_180b">Exercises<a name="08cf_180b"></h2><P>
+<a name="08cf_180c">25.4-1<a name="08cf_180c"><P>
+Run <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT> on the directed graph of Figure 25.8, using vertex <I>r </I>as the source.<P>
+<a name="08cf_180d">25.4-2<a name="08cf_180d"><P>
+Suppose we change line 3 of <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT> to read<P>
+3 <B>for</B> the first |<I>V</I>| - 1 vertices, taken in topologically sorted order<P>
+Show that the procedure would remain correct.<P>
+<a name="08cf_180e">25.4-3<a name="08cf_180e"><P>
+<a name="08cf_1809"><a name="08cf_180a">The PERT chart formulation given above is somewhat unnatural. It would be more natural for vertices to represent jobs and edges to represent  sequencing constraints; that is, edge (<I>u, v</I>)<I> </I>would indicate that job <I>u</I> must be performed before job <I>v.</I> Weights would then be assigned to vertices, not edges. Modify the <FONT FACE="Courier New" SIZE=2>DAG</FONT>-<FONT FACE="Courier New" SIZE=2>SHORTEST</FONT>-<FONT FACE="Courier New" SIZE=2>PATHS</FONT> procedure so that it finds a longest path in a directed acyclic graph with weighted vertices in linear time.<P>
+<a name="08cf_180f">25.4-4<a name="08cf_180f"><P>
+Give an efficient algorithm to count the total number of paths in a directed acyclic graph. Analyze your algorithm and comment on its practicality.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08d0_180f">25.5 Difference constraints and shortest paths<a name="08d0_180f"></h1><P>
+<a name="08d0_180b"><a name="08d0_180c"><a name="08d0_180d"><a name="08d0_180e">In the general linear-programming problem, we wish to optimize a linear function subject to a set of linear inequalities. In this section, we investigate a special case of linear programming that can be reduced to finding shortest paths from a single source. The single-source shortest-paths problem that results can then be solved using the Bellman-Ford algorithm, thereby also solving the linear-programming problem.<P>
+
+
+
+
+
+<h2>Linear programming</h2><P>
+<a name="08d1_180f"><a name="08d1_1810">In the general <I><B>linear-programming problem</I></B>, we are given an <I>m <img src="../images/mult.gif"> n</I> matrix <I>A</I>, an <I>m</I>-vector <I>b</I>, and an <I>n</I>-vector <I>c</I>. We wish to find a vector <I>x</I> of <I>n</I> elements that maximizes the <I><B>objective function</I></B> <img src="539_a.gif"> subject to the <I>m</I> constraints given by <I>Ax </I><img src="../images/lteq12.gif"><I> b.</I><P>
+<a name="08d1_1811"><a name="08d1_1812"><a name="08d1_1813">Many problems can be expressed as linear programs, and for this reason much work has gone into algorithms for linear programming. The <I><B>simplex algorithm</I></B><SUP>3</SUP> solves general linear programs very quickly in practice. With some carefully contrived inputs, however, the simplex method can require exponential time. General linear programs can be solved in polynomial time by either the <I><B>ellipsoid algorithm,</I></B> which runs slowly in practice, or <I><B>Karmarkar</I></B>'<I><B>s algorithm</I></B><I>,</I> which in practice is often competitive with the simplex method.<P>
+<a name="08d1_1814"><a name="08d1_1815"><a name="08d1_1816"><a name="08d1_1817"><a name="08d1_1818"><SUP>3 </SUP>The simplex algorithm finds an optimal solution to a linear programming problem by examining a sequence of points in the feasible region--the region in <I>n</I>-space that satisfies <I>Ax </I><img src="../images/lteq12.gif"><I> b. </I>The algorithm is based on the fact that a solution that maximizes the objective function over the feasible region occurs at some &quot;extreme point,&quot; or &quot;corner,&quot; of the feasible region. The simplex algorithm proceeds from corner to corner of the feasible region until no further improvement of the objective function is possible. A &quot;simplex&quot; is the convex hull (see Section 35.3) of <I>d</I> + 1 points in <I>d</I>-dimensional space (such as a triangle in the plane, or a tetrahedron in 3-space). According to Dantzig [53], it is possible to view the operation of moving from one corner to another as an operation on a simplex derived from a "dual" interpretation of the linear programming problem--hence the name &quot;simplex method.&quot;<P>
+Due to the mathematical investment needed to understand and analyze them, this text does not cover general linear-programming algorithms. For several reasons, though, it is important to understand the setup of linear-programming problems. First, knowing that a given problem can be cast as a polynomial-sized linear-programming problem immediately means that there is a polynomial-time algorithm for the problem. Second, there are many special cases of linear programming for which faster algorithms exist. For example, as shown in this section, the single-source shortest-paths problem is a special case of linear programming. Other problems that can be cast as linear programming include the single-pair shortest-path problem (Exercise 25.5-4) and the maximum-flow problem (Exercise 27.1-8).<P>
+<a name="08d1_1819"><a name="08d1_181a"><a name="08d1_181b">Sometimes we don't really care about the objective function; we just wish to find any <I><B>feasible solution</I></B>, that is, any vector <I>x</I> that satisfies <I>Ax </I><img src="../images/lteq12.gif"> <I>b</I>, or to determine that no feasible solution exists. We shall focus on one such <I><B>feasibility problem.</I></B><P>
+<P>
+
+
+
+
+
+
+
+<h2>Systems of difference constraints</h2><P>
+In a <I><B>system of difference constraints</I></B>, each row of the linear-programming matrix <I>A</I> contains one 1 and one - 1, and all other entries of <I>A</I> are 0. Thus, the constraints given by <I>Ax </I><img src="../images/lteq12.gif"> <I>b</I> are a set of <I>m <B>difference constraints </I></B>involving <I>n </I>unknowns, in which each constraint is a simple linear inequality of the form<P>
+<pre><I>x<SUB>j</SUB> - x<SUB>i </I></SUB><img src="../images/lteq12.gif"><I> b<SUB>k ,</I></sub></sup></pre><P>
+where 1<img src="../images/lteq12.gif"> <I>i</I>, <I>j</I> <img src="../images/lteq12.gif"> <I>n</I> and 1 <img src="../images/lteq12.gif"> <I>k</I> <img src="../images/lteq12.gif"> <I>m</I>.<P>
+For example, consider problem of finding the 5-vector <I>x</I> = (<I>x<SUB>i</I></SUB>) that satisfies<P>
+<img src="540_a.gif"><P>
+This problem is equivalent to finding the unknowns <I>x<SUB>i</I></SUB>, for <I>i</I> = 1, 2, . . . , 5, such that the following 8 difference constraints are satisfied:<P>
+<pre><I>x</I><SUB>1</SUB> - <I>x</I><SUB>2</SUB>  <img src="../images/lteq12.gif">   0,</sub></sup></pre><P>
+<pre><I>x</I><SUB>1</SUB> - <I>x</I><SUB>5</SUB>  <img src="../images/lteq12.gif">  -1,</sub></sup></pre><P>
+<pre><I>x</I><SUB>2</SUB> - <I>x</I><SUB>5</SUB>  <img src="../images/lteq12.gif">   1,</sub></sup></pre><P>
+<pre><I>x</I><SUB>3</SUB> - <I>x</I><SUB>1</SUB>  <img src="../images/lteq12.gif">   5,</sub></sup></pre><P>
+<pre><I>x</I><SUB>4</SUB> - <I>x</I><SUB>1</SUB>  <img src="../images/lteq12.gif">   4,</sub></sup></pre><P>
+<pre><I>x</I><SUB>4</SUB> - <I>x</I><SUB>3  </SUB><img src="../images/lteq12.gif">  -1,</sub></sup></pre><P>
+<pre><I>x</I><SUB>5</SUB> - <I>x</I><SUB>3  </SUB><img src="../images/lteq12.gif">  -3,</sub></sup></pre><P>
+<pre><I>x</I><SUB>5</SUB> - <I>x</I><SUB>4</SUB>  <img src="../images/lteq12.gif">  -3</sub></sup></pre><P>
+<h4><a name="08d2_0001">(25.4)<a name="08d2_0001"></sub></sup></h4><P>
+One solution to this problem is <I>x</I> = (-5, -3, 0, -1, -4), as can be verified directly by checking each inequality. In fact, there is more than one solution to this problem. Another is <I>x</I><I>'</I> = (0, 2, 5, 4, 1). These two solutions are related: each component of <I>x</I>' is 5 larger than the corresponding component of <I>x</I>. This fact is not mere coincidence.<P>
+<a name="08d2_0002">Lemma 25.16<a name="08d2_0002"><P>
+Let <I>x</I> = (<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>, . . . , <I>x<SUB>n</I></SUB>) be a solution to a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints, and let <I>d</I> be any constant. Then <I>x</I> +<I>d</I> = (<I>x</I><SUB>1</SUB> + <I>d, x</I><SUB>2</SUB><I> + d</I>, . . . , <I>x<SUB>n</I></SUB> + <I>d</I>) is a solution to <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> as well.<P>
+<I><B>Proof</I></B>     For each <I>x<SUB>i</I></SUB> and <I>x<SUB>j</I></SUB>, we have (<I>x<SUB>j</I></SUB> + <I>d</I>) - (<I>x<SUB>i</I></SUB> + <I>d</I>) = <I>x<SUB>j</I></SUB> - <I>x<SUB>i</I></SUB>. Thus, if <I>x</I> satisfies <I>Ax</I> <img src="../images/lteq12.gif"> <I>b,</I> so does <I>x + d     </I> <P>
+Systems of difference constraints occur in many different applications. For example, the unknowns <I>x<SUB>i</I></SUB> may be times at which events are to occur. Each constraint can be viewed as stating that one event cannot occur too much later than another event. Perhaps the events are jobs to be performed during the construction of a house. If the digging of the foundation begins at time <I>x</I><SUB>l</SUB> and takes 3 days and the pouring of the concrete for the foundation begins at time<I> x<SUB>2</I></SUB>, we may well desire that <I>x</I><SUB>2</SUB> <img src="../images/lteq12.gif"> <I>x</I><SUB>1</SUB> + 3 or, equivalently, that <I>x</I><SUB>1</SUB><I> - x</I><SUB>2</SUB> <img src="../images/lteq12.gif"> -3. Thus, the relative timing constraint can be expressed as a difference constraint.<P>
+<P>
+
+
+
+
+
+
+
+<h2>Constraint graphs</h2><P>
+<a name="08d3_181c"><a name="08d3_181d"><a name="08d3_181e">It is beneficial to interpret systems of difference constraints from a graph-theoretic point of <I>v</I>iew. The idea is that in a system<I> Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints, the <I>n </I><img src="../images/mult.gif"> <I>m</I> linear-programming matrix <I>A</I> can be <I>v</I>iewed as an incidence matrix (see Exercise 23.1-7) for a graph with <I>n</I> vertices and <I>m</I> edges. Each vertex <I>v<SUB>i</I></SUB> in the graph, for <I>i</I> = 1, 2, . . . , <I>n</I>, corresponds to one of the <I>n</I> unknown variables <I>x<SUB>i</I></SUB>. Each directed edge in the graph corresponds to one of the <I>m</I> inequalities involving two unknowns.<P>
+More formally, given a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b </I>of difference constraints, the corresponding <I><B>constraint</I></B> <I><B>graph</I></B> is a weighted, directed graph <I>G= </I>(<I>V, E</I>), where<P>
+<pre><I>V</I> = {<I>v</I><SUB>0</SUB>,<I>v</I><SUB>1</SUB>, . . . , <I>v<SUB>n</I></SUB>}</sub></sup></pre><P>
+and<P>
+<pre><I>E </I>= {(<I>v<SUB>i</I></SUB>,<I>v<SUB>j</I></SUB>) : <I>x<SUB>j</I></SUB> -<I> x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> <I>b<SUB>k</I></SUB> is a constraint}</sub></sup></pre><P>
+<pre><img src="../images/wideu.gif">{(<I>v</I><SUB>0</SUB>,<I>v</I><SUB>1</SUB> ),(<I>v</I><SUB>0</SUB>,<I>v</I><SUB>2</SUB>),(<I>v</I><SUB>0</SUB>,<I>v</I><SUB>3</SUB>),...,(<I>v</I><SUB>0</SUB>,<I>v<SUB>n</I></SUB>)} .</sub></sup></pre><P>
+The additional vertex <I>v</I><SUB>0</SUB> is incorporated, as we shall see shortly, to guarantee that every other vertex is reachable from it. Thus, the vertex set <I>V </I>consists of a vertex <I>v<SUB>i</I></SUB> for each unknown <I>x<SUB>i</I></SUB>, plus an additional vertex <I>v</I><SUB>0</SUB>. The edge set <I>E</I> contains an edge for each difference constraint, plus an edge (<I>v</I><SUB>0</SUB>, <I>v<SUB>i</I></SUB>) for each unknown <I>x<SUB>i</I></SUB>. If <I>x<SUB>j</I></SUB> - <I>x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> <I>b<SUB>k</I></SUB> is a difference constraint, then the weight of edge (<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) is <I>w(v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) = <I>b<SUB>k</I></SUB>. The weight of each edge leaving <I>v</I><SUB>0</SUB> is 0. Figure 25.9 shows the constraint graph for the system (25.4) of difference constraints.<P>
+<img src="542_a.gif"><P>
+<h4><a name="08d3_1820">Figure 25.9 The constraint graph corresponding to the system (25.4) of difference constraints. The value of <img src="../images/delta12.gif">(v<SUB>0</SUB>,<FONT FACE="Times New Roman" SIZE=2> v<SUB>j</SUB><FONT FACE="Times New Roman" SIZE=2>) </FONT></FONT>is shown in each vertex v<SUB>i</SUB>. A feasible solution to the system is x = (-5, -3, 0, -1, -4).<a name="08d3_1820"></sub></sup></h4><P>
+The following theorem shows that a solution to a system of difference constraints can be obtained by finding shortest-path weights in the corresponding constraint graph.<P>
+<a name="08d3_1821">Theorem 25.17<a name="08d3_1821"><P>
+<a name="08d3_181f">Given a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints, let <I>G</I> = (<I>V</I>, <I>E</I>) be the corresponding constraint graph. If <I>G</I> contains no negative-weight cycles, then<P>
+<pre>x = (<img src="../images/delta12.gif">(v<SUB>0</SUB>,v<SUB>1</SUB>), <img src="../images/delta12.gif">(v<SUB>0</SUB>,v<SUB>2</SUB>), <img src="../images/delta12.gif">(v<SUB>0</SUB>,v<SUB>3</SUB>),..., <img src="../images/delta12.gif">(v<SUB>0</SUB>,v<SUB>n</SUB>))</sub></sup></pre><P>
+<h4><a name="08d3_1822">(25.5)<a name="08d3_1822"></sub></sup></h4><P>
+is a feasible solution for the system. If <I>G </I>contains a negative-weight cycle, then there is no feasible solution for the system.<P>
+<I><B>Proof     </I></B>We first show that if the constraint graph contains no negative-weight cycles, then equation (25.5) gives a feasible solution. Consider any edge (<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) <img src="../images/memof12.gif"> <I>E</I>. By Lemma 25.3, <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v<SUB>j</I></SUB>) <img src="../images/lteq12.gif"> <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v<SUB>i</I></SUB>) +<I>w(v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) or, equivalently, <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v</I><SUB>j</SUB>) - <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v<SUB>j</I></SUB>) <img src="../images/lteq12.gif"> <I>w(v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>). Thus, letting <I>x<SUB>i</I></SUB> = <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v<SUB>i</I></SUB>) and <I>x<SUB>j</I></SUB> = <img src="../images/delta12.gif">(<I>v</I><SUB>0</SUB>, <I>v<SUB>j</I></SUB>) satisfies the difference constraint <I>x<SUB>j</I></SUB> - <I>x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> <I>w</I>(<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) that corresponds to edge (<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>).<P>
+Now we show that if the constraint graph contains a negative-weight cycle, then the system of difference constraints has no feasible solution. Without loss of generality, let the negative-weight cycle be <I>c</I> = <img src="../images/lftwdchv.gif"><I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>, . . . , <I>v<SUB>k</I></SUB><img src="../images/wdrtchv.gif">, where <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>1</FONT></SUB> = <I>v<SUB><FONT FACE="Courier New" SIZE=2>k</I></FONT></SUB>. (The vertex <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>0</FONT></SUB> cannot be on cycle <I>c</I>, because it has no entering edges.) Cycle <I>c</I> corresponds to the following difference constraints:<P>
+<pre><I>x</I><SUB>2 </SUB>- <I>x</I><SUB>1</SUB> <img src="../images/lteq12.gif"> <I>w</I>(<I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>),</sub></sup></pre><P>
+<pre><I>x</I><SUB>3 </SUB>- <I>x</I><SUB>2</SUB> <img src="../images/lteq12.gif"> <I>w</I>(<I>v</I><SUB>2</SUB>, <I>v</I><SUB>3</SUB>),</sub></sup></pre><P>
+<img src="543_a.gif"><P>
+<pre><I>x<SUB>k </I></SUB>- <I>x<SUB>k</I></SUB>_1 <img src="../images/lteq12.gif"> <I>w</I>(<I>v<SUB>k-</I>1</SUB>, <I>v<SUB>k</I></SUB>),</sub></sup></pre><P>
+<pre><I>x</I><SUB>1</SUB> - <I>x<SUB>k</I></SUB> <img src="../images/lteq12.gif"> <I>w</I>(<I>v<SUB>k</I></SUB>, <I>v</I><SUB>1</SUB>) .</sub></sup></pre><P>
+Since any solution for <I>x </I>must satisfy each of these <I>k</I> inequalities, any solution must also satisfy the inequality that results when we sum them together. If we sum the left-hand sides, each unknown <I>x<SUB>i</I></SUB> is added in once and subtracted out once, so that the left-hand side of the sum is 0. The right-hand side sums to <I>w</I>(<I>c</I>), and thus we obtain 0 <img src="../images/lteq12.gif"> <I>w</I>(<I>c</I>). But since <I>c</I> is a negative-weight cycle,<I> w</I>(<I>c</I>) <img src="../images/lteq12.gif"> 0, and hence any solution for the<I> x</I> must satisfy 0 <img src="../images/lteq12.gif"> <I>w</I>(<I>c</I>) <img src="../images/lteq12.gif"> 0, which is impossible.      <P>
+<P>
+
+
+
+
+
+
+
+<h2>Solving systems of difference constraints</h2><P>
+<a name="08d4_1820">Theorem 25.17 tells us that we can use the Bellman-Ford algorithm to solve a system of difference constraints. Because there are edges from the source vertex <I>v</I><SUB>0</SUB> to all other vertices in the constraint graph, any negative-weight cycle in the constraint graph is reachable from <I>v</I><SUB>0</SUB>. If the Bellman-Ford algorithm returns <FONT FACE="Courier New" SIZE=2>TRUE</FONT>, then the shortest-path weights give a feasible solution to the system. In Figure 25.9, for example, the shortest-path weights provide the feasible solution <I>x </I>= (-5, -3, 0, -1, -4), and by Lemma 25.16, <I>x </I>= (<I>d</I> - 5, <I>d</I> - 3, <I>d</I>, <I>d</I> - 1, <I>d</I> - 4) is also a feasible solution for any constant <I>d</I>. If the Bellman-Ford algorithm returns <FONT FACE="Courier New" SIZE=2>FALSE</FONT>, there is no feasible solution to the system of difference constraints.<P>
+A system of difference constraints with <I>m</I> constraints on <I>n</I> unknowns produces a graph with <I>n</I> + 1 vertices and <I>n</I> + <I>m</I> edges. Thus, using the Bellman-Ford algorithm, we can solve the system in <I>O</I>((<I>n</I> + 1 )(<I>n</I> + <I>m</I>)) = <I>O</I>(<I>n</I><SUP>2</SUP>+<I>nm</I>) time. Exercise 25.5-5 asks you to show that the algorithm actually runs in <I>O</I>(<I>nm</I>) time, even if <I>m</I> is much less than <I>n</I>.<P>
+<P>
+
+
+
+
+
+
+
+<h2><a name="08d5_1824">Exercises<a name="08d5_1824"></h2><P>
+<a name="08d5_1825">25.5-1<a name="08d5_1825"><P>
+Find a feasible solution or determine that no feasible solution exists for the following system of difference constraints:<P>
+<pre><I>x</I><SUB>1 </SUB>- <I>x</I><SUB>2</SUB>  <img src="../images/lteq12.gif">   1,</sub></sup></pre><P>
+<pre><I>x</I><SUB>1</SUB> - <I>x</I><SUB>4</SUB>  <img src="../images/lteq12.gif">  -4,</sub></sup></pre><P>
+<pre><I>x</I><SUB>2</SUB> - <I>x</I><SUB>3</SUB>  <img src="../images/lteq12.gif">   2,</sub></sup></pre><P>
+<pre><I>x</I><SUB>2</SUB> - <I>x</I><SUB>5</SUB>  <img src="../images/lteq12.gif">   7,</sub></sup></pre><P>
+<pre><I>x</I><SUB>2 </SUB>- <I>x</I><SUB>6</SUB>  <img src="../images/lteq12.gif">   5,</sub></sup></pre><P>
+<pre><I>x</I><SUB>3</SUB> - <I>x</I><SUB>6</SUB>  <img src="../images/lteq12.gif">  10,</sub></sup></pre><P>
+<pre><I>x</I><SUB>4</SUB> - <I>x</I><SUB>2</SUB>  <img src="../images/lteq12.gif">   2,</sub></sup></pre><P>
+<pre><I>x</I><SUB>5</SUB> - <I>x</I><SUB>1</SUB>  <img src="../images/lteq12.gif">  -1,</sub></sup></pre><P>
+<pre><I>x</I><SUB>5</SUB> - <I>x</I><SUB>4</SUB>  <img src="../images/lteq12.gif">   3,</sub></sup></pre><P>
+<pre><I>x</I><SUB>6</SUB> - <I>x</I><SUB>3</SUB>  <img src="../images/lteq12.gif">  -8.</sub></sup></pre><P>
+<a name="08d5_1826">25.5-2<a name="08d5_1826"><P>
+Find a feasible solution or determine that no feasible solution exists for the following system of difference constraints:<P>
+<pre><I>x</I>1 - <I>x</I>2  <img src="../images/lteq12.gif">   4,</sub></sup></pre><P>
+<pre><I>x</I>1 - <I>x</I>5  <img src="../images/lteq12.gif">   5,</sub></sup></pre><P>
+<pre><I>x</I>2 - <I>x</I>4  <img src="../images/lteq12.gif">  -6,</sub></sup></pre><P>
+<pre><I>x</I>3 - <I>x</I>2  <img src="../images/lteq12.gif">   1,</sub></sup></pre><P>
+<pre><I>x</I>4 - <I>x</I>1  <img src="../images/lteq12.gif">   3,</sub></sup></pre><P>
+<pre><I>x</I>4 - <I>x</I>3  <img src="../images/lteq12.gif">   5,</sub></sup></pre><P>
+<pre><I>x</I>4 - <I>x</I>5  <img src="../images/lteq12.gif">  10,</sub></sup></pre><P>
+<pre><I>x</I>5 - <I>x</I>3  <img src="../images/lteq12.gif">  -4,</sub></sup></pre><P>
+<pre><I>x</I>5 - <I>x</I>4  <img src="../images/lteq12.gif">  -8.</sub></sup></pre><P>
+<a name="08d5_1827">25.5-3<a name="08d5_1827"><P>
+Can any shortest-path weight from the new vertex <I>v</I><SUB>0</SUB> in a constraint graph be positive? Explain.<P>
+<a name="08d5_1828">25.5-4<a name="08d5_1828"><P>
+<a name="08d5_1821">Express the single-pair shortest-path problem as a linear program.<P>
+<a name="08d5_1829">25.5-5<a name="08d5_1829"><P>
+Show how to modify the Bellman-Ford algorithm slightly so that when it is used to solve a system of difference constraints with <I>m</I> inequalities on <I>n</I> unknowns, the running time is <I>O</I>(<I>nm</I>).<P>
+<a name="08d5_182a">25.5-6<a name="08d5_182a"><P>
+Show how a system of difference constraints can be solved by a Bellman-Ford-like algorithm that runs on a constraint graph without the extra vertex <I>v</I><SUB>0</SUB>.<P>
+<a name="08d5_182b">25.5-7<a name="08d5_182b"><P>
+<a name="08d5_1822"><a name="08d5_1823">Let <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> be a system of <I>m</I> difference constraints in <I>n</I> unknowns. Show that the Bellman-Ford algorithm, when run on the corresponding constraint graph, maximizes <img src="545_a.gif"> subject to <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> and <I>x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> 0 for all <I>x<SUB>i</I></SUB>.<P>
+<a name="08d5_182c">25.5-8<a name="08d5_182c"><P>
+Show that the Bellman-Ford algorithm, when run on the constraint graph for a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints, minimizes the quantity (max {<I>x<SUB>i</I></SUB>} - min {<I>x<SUB>i</I></SUB>}) subject to <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I>. Explain how this fact might come in handy if the algorithm is used to schedule construction jobs.<P>
+<a name="08d5_182d">25.5-9<a name="08d5_182d"><P>
+Suppose that every row in the matrix <I>A</I> of a linear program <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> corresponds to a difference constraint, a single-variable constraint of the form <I>x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> <I>b<SUB>k</I></SUB>, or a single-variable constraint of the form -<I>x<SUB>i</I></SUB> <img src="../images/lteq12.gif"> <I>b<SUB>k</I></SUB>. Show how the Bellman-Ford algorithm can be adapted to solve this variety of constraint system.<P>
+<a name="08d5_182e">25.5-10<a name="08d5_182e"><P>
+Suppose that in addition to a system of difference constraints, we want to handle equality constraints of the form <I>x<SUB>i</I></SUB> = <I>x<SUB>j</I></SUB> + <I>b<SUB>k</I></SUB>. Show how the Bellman-Ford algorithm can be adapted to solve this variety of constraint system.<P>
+<a name="08d5_182f">25.5-11<a name="08d5_182f"><P>
+Give an efficient algorithm to solve a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints when all of the elements of <I>b</I> are real-valued and all of the unknowns <I>x<SUB>i</I></SUB> must be integers.<P>
+<a name="08d5_1830">25.5-12<a name="08d5_1830"><P>
+Give an efficient algorithm to solve a system <I>Ax</I> <img src="../images/lteq12.gif"> <I>b</I> of difference constraints when all of the elements of <I>b</I> are real-valued and some, but not necessarily all, of the unknowns <I>x<SUB>i</I></SUB> must be integers.<P>
+<P>
+
+
+<P>
+
+
+
+
+
+
+
+<h1><a name="08d6_1832">Problems<a name="08d6_1832"></h1><P>
+<a name="08d6_1833">25-1 Yen's improvement to Bellman-Ford<a name="08d6_1833"><P>
+<a name="08d6_1824"><a name="08d6_1825">Suppose that we order the edge relaxations in each pass of the Bellman-Ford algorithm as follows. Before the first pass, we assign an arbitrary linear order <I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>, . . . , <I>v</I>|<I>V</I><SUB>|</SUB>, to the vertices of the input graph <I>G</I> = (<I>V</I>, <I>E</I>). Then, we partition the edge set <I>E</I> into <I>E</I><img src="../images/scrptf12.gif"><SUB> <FONT FACE="Times New Roman" SIZE=3><img src="../images/wideu.gif"></FONT> <I>E</SUB><FONT FACE="Courier New" SIZE=2>b</I></FONT><SUB>, where <I>E</I></SUB><FONT FACE="Courier New" SIZE=2><SUB><img src="../images/scrptf12.gif"></FONT></SUB> = {(<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) <img src="../images/memof12.gif"> <I>E</I>: <I>i</I> &lt; <I>j</I>} and <I>E<SUB>b</I></SUB> = {(<I>v<SUB>i</I></SUB>, <I>v<SUB>j</I></SUB>) <img src="../images/memof12.gif"> <I>E</I>: <I>i</I> &gt; <I>j</I>}. Define <I>G</I><img src="../images/scrptf12.gif"><SUB> = (<I>V</I>, <I>E</I></SUB><FONT FACE="Courier New" SIZE=2><SUB><img src="../images/scrptf12.gif"></FONT></SUB>) and <I>G<SUB>b</I></SUB> = (<I>V</I>, <I>E<SUB>b</I></SUB>).<P>
+<I><B>a.     </I></B>Prove that <I>G</I><img src="../images/scrptf12.gif"><SUB></SUB> is acyclic with topological sort <img src="../images/lftwdchv.gif"><I>v</I><SUB><FONT FACE="Courier New" SIZE=2>1</FONT></SUB>, <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>2</FONT></SUB>, . . . , <I>v</I><SUB><FONT FACE="Courier New" SIZE=2></SUB>|<I>V</I><SUB>|</SUB><img src="../images/wdrtchv.gif"></FONT> and that <I>G<SUB><FONT FACE="Courier New" SIZE=2>b</I></FONT></SUB> is acyclic with topological sort (<I>v<SUB><FONT FACE="Courier New" SIZE=2>V</I></SUB>|</FONT><SUB>, <I>v</I>|<I>V</I></SUB>|<SUB>-</SUB>1<SUB>, . . . <I>v</I></SUB>1<SUB></sub>).<P>
+Suppose that we implement each pass of the Bellman-Ford algorithm in the following way. We visit each vertex in the order <I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>, . . . , <I>v</I>|<I>V</I><SUB>|</SUB> relaxing edges of <I>E</I><img src="../images/scrptf12.gif"> that leave the vertex. We then visit each vertex in the order <I>v</I><SUB><FONT FACE="Courier New" SIZE=2></SUB>|<I>V</I><SUB>|</FONT><I></SUB>, </I>v<SUB><FONT FACE="Courier New" SIZE=2><I></SUB>|V</I><SUB>|</FONT></SUB>-<SUB><FONT FACE="Courier New" SIZE=2>1</FONT></SUB>, . . . <I>v</I><SUB><FONT FACE="Courier New" SIZE=2>1</FONT></SUB>, relaxing edges of <I>E<SUB><FONT FACE="Courier New" SIZE=2>b</I></FONT></SUB> that leave the vertex.<P>
+<I><B>b.     </I></B>Prove that with this scheme, if <I>G</I> contains no negative-weight cycles that are reachable from the source vertex <I>s</I>, then after only <FONT FACE="Courier New" SIZE=2><img src="../images/hfbrul14.gif">|<I>V</I>|</FONT> /2<FONT FACE="Courier New" SIZE=2><img src="../images/hfbrur14.gif"></FONT> passes over the edges, <I>d</I>[<I>v</I>] = <img src="../images/delta12.gif">(<I>s</I>, <I>v</I>) for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>V</I>.<P>
+<I><B>c.</I>     </B>How does this scheme affect the running time of the Bellman-Ford algorithm?<P>
+<a name="08d6_1834">25-2 Nesting boxes<a name="08d6_1834"><P>
+<a name="08d6_1826">A <I>d</I>-dimensional box with dimensions (<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>, . . . , <I>x<SUB>d</I></SUB>) <I><B>nests</I></B> within another box with dimensions (<I>y</I><SUB>1</SUB>, <I>y</I><SUB>2</SUB>, . . . , <I>y<SUB>d</I></SUB>) if there ex<FONT FACE="Courier New" SIZE=2>i</FONT>sts a permutation <img src="../images/piuc.gif"> on{1, 2, . . . , <I>d</I>} such that <I>x</I>,<img src="../images/piuc.gif">(l)<SUB> &lt; <I>y</I></SUB><FONT FACE="Courier New" SIZE=2>1</FONT><SUB>, <I>x</SUB><FONT FACE="Courier New" SIZE=2></I><SUB><img src="../images/piuc.gif"><I>(</I>d<I>)</FONT></SUB> &lt; </I>y<SUB>d<I></SUB>.</I><P>
+<I><B>a.     </I></B>Argue that the nesting relation is transitive.<P>
+<I><B>b.     </I></B>Describe an efficient method to determine whether or not one <I>d</I>-dimensional box nests inside another.<P>
+<I><B>c.     </I></B>Suppose that you are given a set of <I>n</I> <I>d</I>-dimensional boxes {<I>B</I><SUB>1</SUB>, <I>B</I><SUB>2</SUB>, . . . , <I>B<SUB>n</I></SUB>}. Describe an efficient algorithm to determine the longest sequence <img src="../images/lftwdchv.gif"><I>B<SUB>i</I>1</SUB>, <I>B<SUB>i</I>2</SUB>, . . . , <I>B<SUB>ik</I></SUB><img src="../images/wdrtchv.gif"> of boxes such that <I>B<SUB>ij</I></SUB> nests within <I>B<SUB>ij</I>+1</SUB> for <I>j</I> = 1, 2, . . . , <I>k</I> - 1. Express the running time of your algorithm in terms of <I>n</I> and <I>d</I>.<P>
+<a name="08d6_1835">25-3 Arbitrage<a name="08d6_1835"><P>
+<a name="08d6_1827"><I><B>Arbitrage</I></B> is the use of discrepancies in currency exchange rates to transform one unit of a currency into more than one unit of the same currency. For example, suppose that 1 U.S. dollar buys 0.7 British pound, 1 British pound buys 9.5 French francs, and 1 French franc buys 0.16 U.S. dollar. Then, by converting currencies, a trader can start with 1 U.S. dollar and buy 0.7 <img src="../images/mult.gif"> 9.5 <img src="../images/mult.gif"> 0.16 = 1.064 U.S. dollars, thus turning a profit of 6.4 percent.<P>
+Suppose that we are given <I>n</I> currencies <I>c</I><SUB>l</SUB>, <I>c</I><SUB>2</SUB>, . . . , <I>c<SUB>n</I></SUB> and an <I>n </I><img src="../images/mult.gif"> <I>n</I> table <I>R </I>of exchange rates, such that one unit of currency <I>c<SUB>i</I></SUB> buys <I>R</I>[<I><SUB>i</I>, <I>j</I></SUB>] units of currency <I>c<SUB>j</I></SUB>.<P>
+<I><B>a.</I></B>     Give an efficient algorithm to determine whether or not there exists a sequence of currencies <img src="../images/lftwdchv.gif"><I>c<SUB>i</I>1</SUB>, <I>c<SUB>i</I>2</SUB>, . . . , <I>c<SUB>ik</I></SUB><img src="../images/wdrtchv.gif"> such that<P>
+<pre><I>R</I>[<I>i</I><SUB>1</SUB>, <I>i</I><SUB>2</SUB>] <img src="../images/dot10.gif"> <I>R</I>[<I>i</I><SUB>2</SUB>, <I>i</I><SUB>3</SUB>] <img src="../images/dot10.gif"> <img src="../images/dot10.gif"> <img src="../images/dot10.gif"> <I>R</I>[<I>i<SUB>k-</I>1</SUB>, <I>i<SUB>k</I></SUB>] <img src="../images/dot10.gif"> <I>R</I>[<I>i<SUB>k</I></SUB>, <I>i</I><SUB>1</SUB>] &gt; 1.</sub></sup></pre><P>
+Analyze the running time of your algorithm.<P>
+<I><B>b.     </I></B>Give an efficient algorithm to print out such a sequence if one exists. Analyze the running time of your algorithm.<P>
+<a name="08d6_1836">25-4 Gabow's scaling algorithm for single-source shortest paths<a name="08d6_1836"><P>
+<a name="08d6_1828"><a name="08d6_1829"><a name="08d6_182a"><a name="08d6_182b"><a name="08d6_182c">A <I><B>scaling</I></B> algorithm solves a problem by initially considering only the highest-order bit of each relevant input value (such as an edge weight). It then refines the initial solution by looking at the two highest-order bits. It progressively looks at more and more high-order bits, refining the  solution each time, until all bits have been considered and the correct solution has been computed.<P>
+In this problem, we examine an algorithm for computing the shortest paths from a single source by scaling edge weights. We are given a directed graph <I>G = </I>(<I>V, E</I>) with nonnegative integer edge weights <I>w</I>. Let <I>W</I> = max<SUB>(<I>u,v</I>) </SUB><img src="../images/memof12.gif"> <I>E </I><SUB>{<I>w</I>(<I>u, v</I>)}</SUB>. Our goal is to develop an algorithm that runs in <I>O</I>(<I>E </I>lg<I> W</I>) time.<P>
+The algorithm uncovers the bits in the binary representation of the edge weights one at a time, from the most significant bit to the least significant bit. Specifically, let <I>k = </I><FONT FACE="Courier New" SIZE=2><img src="../images/hfbrul14.gif"></FONT>lg<I> </I>(<I>W + </I>1)<FONT FACE="Courier New" SIZE=2><img src="../images/hfbrur14.gif"></FONT> be the number of bits in the binary representation of <I>W</I>, and for <I>i = </I>1, 2, . . . , <I>k</I>, let <I>w<SUB>i</I></SUB>(<I>u, v</I>)<I> = </I><FONT FACE="Courier New" SIZE=2><img src="../images/hfbrdl12.gif"><I>w </I></FONT>(<I>u, v</I>)/2<I><SUP>k - i</I></SUP><img src="../images/hfbrdr12.gif">. That is, <I>w<SUB>i</I></SUB>(<I>u</I>, <I>v</I>) is the "scaled-down" version of <I>w</I>(<I>u, v</I>) given by the <I>i</I> most significant bits of <I>w</I>(<I>u, v</I>). (Thus, <I>w<SUB>k</I></SUB>(<I>u, v</I>)<I> = w</I>(<I>u, v</I>) for all (<I>u, v</I>)<I> </I><img src="../images/memof12.gif"><I> E.</I>) For<I> </I>example, if <I>k </I>=<I> </I>5<I> </I>and <I>w</I>(<I>u, v</I>) = 25, which has the binary representation <img src="../images/lftwdchv.gif">11001<img src="../images/wdrtchv.gif">, then <I>w</I><SUB>3</SUB>(<I>u, v</I>) = <img src="../images/lftwdchv.gif">110<img src="../images/wdrtchv.gif"> = 6. As another example with <I>k</I> = 5, if <I>w</I>(<I>u, v</I>) = <img src="../images/lftwdchv.gif">00100<img src="../images/wdrtchv.gif"> = 4, then <I>w</I><SUB>3</SUB>(<I>u, v</I>) = <img src="../images/lftwdchv.gif">001<img src="../images/wdrtchv.gif"> = 1. Let us define <img src="../images/delta12.gif"><I><SUB>i</I></SUB>(<I>u, v</I>) as the shortest-path weight from vertex <I>u</I> to vertex <I>v</I> using weight function <I>w<SUB>i</I></SUB>. Thus, <img src="../images/delta12.gif"><SUB>k<I></SUB>(</I>u, v<I>)</I> = <I><img src="../images/delta12.gif"></I>(<I>u, v</I>) for all <I>u, v </I><img src="../images/memof12.gif"><I> V</I>. For a given source vertex <I>s</I>, the scaling algorithm first computes the shortest-path weights <img src="../images/delta12.gif"><I></I><SUB>1</SUB>(<I>s, v</I>) for all <I>v </I><img src="../images/memof12.gif"><I> V</I>, then computes <img src="../images/delta12.gif"><I><SUB>2</SUB></I>(<I>s, v</I>) for all <I>v </I><img src="../images/memof12.gif"><I>V</I>, and so on, until it computes <img src="../images/delta12.gif"><SUB>k<I></I></SUB>(<I>s, v</I>) for all <I>v </I><img src="../images/memof12.gif"><I> V</I>. We assume throughout that |<I>E </I>| <img src="../images/gteq.gif"> |<I>V </I>| - 1, and we shall see that computing <img src="../images/delta12.gif"><SUB><I>i</I></SUB> from <img src="../images/delta12.gif"><SUB><I>i</I> - 1</SUB>takes <I>O</I>(<I>E</I>) time, so that the entire algorithm takes <I>O</I>(<I>kE</I>) = <I>O</I>(<I>E</I> lg <I>W</I>) time.<P>
+<I><B>a.     </I></B>uppose that for all vertices <I>v</I> <img src="../images/memof12.gif"> <I>V</I>, we have <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) <U>&lt;</U> |E|. Show that we can compute <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I> in <I>O</I>(E) time.<P>
+<I><B>b.     </I></B>Show that we can compute <img src="../images/delta12.gif"><I><SUB>1</I></SUB>(<I>s</I>, <I>v</I>) for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I> in <I>O</I>(<I>E</I>) time.<P>
+Let us now concentrate on computing <img src="../images/delta12.gif"><SUB>i</SUB> from <img src="../images/delta12.gif"><SUB>i - 1</SUB>.<P>
+<I><B>c.     </I></B>Prove that for <I>i</I> = 2, 3, . . . , <I>k</I>, either <I>w<SUB>i</I></SUB>(<I>u</I>, <I>v</I>) = 2<I>w<SUB>i </I>- 1</SUB>(<I>u</I>, <I>v</I>) or <I>w<SUB>i</I></SUB>(<I>u</I>, <I>v</I>) = 2<I>w<SUB>i </I>- 1</SUB> (<I>u</I>, <I>v</I>) + 1. Then, prove that<P>
+<pre>2<img src="../images/delta12.gif"><SUB>i - 1</SUB>(s,v) <U>&lt;</U> <img src="../images/delta12.gif"><SUB>i</SUB>(s,v) <U>&lt;</U> 2<img src="../images/delta12.gif"><SUB>i - 1</SUB>(s,v) + |V| - 1</sub></sup></pre><P>
+for all <I>v</I> <img src="../images/memof12.gif"> <I>V</I>.<P>
+<I><B>d.     </I></B>Define for <I>i</I> = 2, 3, . . . , <I>k</I> and all (<I>u</I>, <I>v</I>) <img src="../images/memof12.gif"> <I>E</I>,<P>
+<img src="547_a.gif"><P>
+Prove that for <I>i</I> = 2, 3, . . . , <I>k</I> and all <I>u, v </I><img src="../images/memof12.gif"><I> V</I>, the "reweighted" value <img src="548_a.gif"> of edge (<I>u, v</I>) is a nonnegative integer.<P>
+<I><B>e.     </I></B>Now, define <img src="548_b.gif"> as the shortest-path weight from <I>s</I> to <I>v</I> using the weight function <img src="548_c.gif">. Prove that for <I>i</I> = 2, 3, . . . , <I>k</I> and all <I>v </I><img src="../images/memof12.gif"><I> V</I>,<P>
+<img src="548_d.gif"><P>
+<img src="548_e.gif"><P>
+<I><B>f.     </I></B>Show how to compute <img src="../images/delta12.gif"><I><SUB>i</I></SUB>(<I>s, v</I>) from <img src="../images/delta12.gif"><I><SUB>i </I>- 1</SUB> (<I>s, v</I>) for all <I>v </I><img src="../images/memof12.gif"><I> V</I> in <I>O</I>(<I>E</I>) time, and conclude that <img src="../images/delta12.gif"><I></I>(<I>s, v</I>) can be computed for all <I>v </I><img src="../images/memof12.gif"><I> V</I> in <I>O</I>(<I>E </I>lg<I> W</I>) time.<P>
+<a name="08d6_1837">25-5 Karp's minimum mean-weight cycle algorithm<a name="08d6_1837"><P>
+<a name="08d6_182d"><a name="08d6_182e"><a name="08d6_182f"><a name="08d6_1830"><a name="08d6_1831">Let <I>G = (V, E)</I> be a directed graph with weight function <I>w: E </I><img src="../images/arrow12.gif"> <I></I><B>R</B><I>,</I> and<I> </I>let<I> n</I> = |<I>V</I>|. We define the <I><B>mean weight</I></B> of a cycle <I>c </I>= <img src="../images/lftwdchv.gif"><I>e</I><SUB>1</SUB>, <I>e</I><SUB>2</SUB>, . . . , <I>e<SUB>k</I></SUB><img src="../images/wdrtchv.gif"> of edges in <I>E</I> to be<P>
+<img src="548_f.gif"><P>
+Let <img src="../images/mu12.gif">* = min<I><SUB>c</I></SUB> <img src="../images/mu12.gif">(<I>c</I>), where <I>c</I> ranges over all directed cycles in <I>G</I>. A cycle <I>c</I> for which <img src="../images/mu12.gif">(<I>c</I>) = <img src="../images/mu12.gif">* is called a <I><B>minimum mean-weight cycle.</I></B> This problem investigates an efficient algorithm for computing <img src="../images/mu12.gif">*.<P>
+Assume without loss of generality that every vertex <I>v </I><img src="../images/memof12.gif"><I> V</I> is reachable from a source vertex <I>s </I><img src="../images/memof12.gif"><I> V</I>. Let <img src="../images/delta12.gif"><I></I>(<I>s</I>, <I>v</I>) be the weight of a shortest path from <I>s</I> to <I>v</I>, and let <img src="../images/delta12.gif"><I><SUB>k</I></SUB>(<I>s, v</I>) be the weight of a shortest path from <I>s</I> to <I>v</I> consisting of <I>exactly k</I> edges. If there is no path from <I>s</I> to <I>v</I> with exactly <I>k</I> edges, then <img src="../images/delta12.gif"><SUB><I>k</I></SUB>(<I>s, v</I>) = <FONT FACE="Times New Roman" SIZE=3><img src="../images/infin.gif"></FONT>.<P>
+<I><B>a.     </I></B>Show that if <img src="../images/mu12.gif">* = 0, then <I>G</I> contains no negative-weight cycles and <img src="../images/delta12.gif">(<I>s, v</I>) = min<SUB>0 </SUB><img src="../images/lteq12.gif"> <I>k </I><SUB><img src="../images/lteq12.gif"> <I>n </I>- 1</SUB><img src="../images/delta12.gif"><SUB>k<I></SUB>(</I>s<I>,</I> v<I>) for all vertices </I>v <I><img src="../images/memof12.gif"></I> V<I>.</I><P>
+<I><B>b.     </I></B>Show that if <img src="../images/mu12.gif">* = 0, then<P>
+<img src="548_g.gif"><P>
+for all vertices <I>v </I><img src="../images/memof12.gif"><I> V</I>. (<I>Hint:</I> Use both properties from part (a).)<P>
+<I><B>c.     </I></B>Let <I>c</I> be a 0-weight cycle, and let <I>u</I> and <I>v</I> be any two vertices on <I>c</I>. Suppose that the weight of the path from <I>u</I> to <I>v</I> along the cycle is <I>x</I>. Prove that <img src="../images/delta12.gif">(<I>s, v</I>) = <img src="../images/delta12.gif">(<I>s, u</I>) + <I>x</I>. (<I>Hint</I>: The weight of the path from <I>v</I> to <I>u</I> along the cycle is -<I>x</I>.)<P>
+<I><B>d.     </I></B>Show that if <img src="../images/mu12.gif">*<I> </I>=<I> </I>0, then there exists a vertex <I>v</I> on the minimum mean-weight cycle such that<P>
+<img src="548_h.gif"><P>
+(<I>Hint</I>: Show that a shortest path to any vertex on the minimum mean-weight cycle can be extended along the cycle to make a shortest path to the next vertex on the cycle.)<P>
+<B>e.     </B>Show that if <img src="../images/mu12.gif">* = 0, then<P>
+<img src="549_a.gif"><P>
+<I><B>f.     </I></B>Show that if we add a constant <I>t</I> to the weight of each edge of <I>G</I>, then <img src="../images/mu12.gif">* is increased by <I>t</I>. Use this to show that<P>
+<img src="549_b.gif"><P>
+<I><B>g.     </I></B>Give an <I>O</I>(<I>V E</I>)-time algorithm to compute <img src="../images/mu12.gif">*.<P>
+<P>
+
+
+
+
+
+
+
+<h1>Chapter notes</h1><P>
+Dijkstra's algorithm [55] appeared in 1959, but it contained no mention of a priority queue. The Bellman-Ford algorithm is based on separate algorithms by Bellman [22] and Ford [71]. Bellman describes the relation of shortest paths to difference constraints. Lawler [132] describes the linear-time algorithm for shortest paths in a dag, which he considers part of the folklore.<P>
+When edge weights are relatively small integers, more efficient algorithms can be used to solve the single-source shortest-paths problem. Ahuja, Mehlhorn, Orlin, and Tarjan [6] give an algorithm that runs in <img src="549_c.gif"> time on graphs with nonnegative edge weights, where <I>W</I> is the largest weight of any edge in the graph. They also give an easily programmed algorithm that runs in <I>O</I>(<I>E + V </I>lg<I> W</I>) time. For graphs with negative edge weights, the algorithm due to Gabow and Tarjan [77] runs in <img src="549_d.gif"> time, where the magnitude of the largest-magnitude weight of any edge in the graph.<P>
+<a name="08d7_1832"><a name="08d7_1833"><a name="08d7_1834">Papadimitriou and Steiglitz [154] have a good discussion of the simplex method and the ellipsoid algorithm as well as other algorithms related to linear programming. The simplex algorithm for linear programming was invented by G. Danzig in 1947. Variants of simplex remain the most popular method for solving linear-programming problems. The ellipsoid algorithm is due to L. G. Khachian in 1979, based on earlier work by N. Z. Shor, D. B. Judin, and A. S. Nemirovskii. Karmarkar describes his algorithm in [115].<P>
+<P>
+
+
+<P>
+<P>
+<center>Go to <a href="chap26.htm">Chapter 26</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back to <a href="toc.htm">Table of Contents</A>
+</P>
+</center>
+
+
+</BODY></HTML>

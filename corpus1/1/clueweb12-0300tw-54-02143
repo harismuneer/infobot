@@ -1,0 +1,623 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-21T11:20:37Z
+WARC-TREC-ID: clueweb12-0300tw-54-02143
+WARC-IP-Address: 66.147.224.86
+WARC-Payload-Digest: sha1:3QTTKPBJEI3J2HK4X2T5UGYQ3CN2IMZA
+WARC-Target-URI: http://electoral-vote.com/
+WARC-Record-ID: <urn:uuid:649f8082-8f02-44cd-986e-03e8bc450525>
+Content-Type: application/http; msgtype=response
+Content-Length: 30273
+
+HTTP/1.1 200 OK
+Date: Tue, 21 Feb 2012 11:20:33 GMT
+Server: Apache
+Last-Modified: Tue, 21 Feb 2012 11:20:02 GMT
+Accept-Ranges: bytes
+Content-Length: 30066
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title> Electoral-vote.com: President, Senate, House Updated Daily </title>
+  <meta name="keywords" content="election, electoral vote, poll, polls, pollster, President, Senate, House of Representatives, election prediction">
+  <meta name="description" content="Track the election with a red/blue map of the US updated daily using the latest state polls.">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="robots" content="noodp">
+  <link href="/evp2012/style.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/evp2012/RSS/index.rss">
+  <meta http-equiv="Expires" content="Sun, 31 Dec 2000 08:00:00 GMT">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+  <!-- This script makes the ads open in a new window -->
+  <script type="text/javascript">
+     // Add target="_blank" functionality for adspot URLs.
+     window.onload = function() {
+       var links = document.getElementsByTagName('a');
+       for (var i = 0; i < links.length; i += 1) {
+         if (links[i].className == 'adspot_adurl') {
+           links[i].onclick =
+             function() { return !window.open(this.href); };
+         }
+       }
+     };
+   </script>
+</head>
+
+<body>
+
+<table class="main" summary=""> <!-- Start of main table -->
+<tr> <td>
+
+<table border="0" summary="Banner ad">
+<tr>
+    <td align="left" class="date">Feb. 21</td>
+    <td> <a href="http://www.votefromabroad.org/?adid=3DKEVC9990000092001" target="_blank"><img class="clickon" src="/evp2012/Icons/banner1.gif" alt="absentee ballot for overseas voters" width="600" height="60" ></a></td>
+</tr>
+</table>
+
+<hr class="minor3">
+
+<table border="0" width="100%" summary="President, Senate scores">
+<tr>
+   <td width="150"> &nbsp; </td> <!-- spacer -->
+
+   <!-- Electoral vote box score --> 
+   <td> <table class="score1" summary="">
+	<tr> <td class="score"> 
+		<span class="dem">Obama ? &nbsp; </span> 
+		<span class="gop">Republican ? &nbsp; </span> 
+		 </td> 
+	</tr> </table>
+   </td>
+
+   <!-- Senate box score --> 
+   <td> <table class="score3" summary=""> 
+	<tr> <td class="score"> <a class="scorelink" href="http://www.electoral-vote.com/evp2012/Senate/Maps/Nov19-s.html">Senate</a>
+		<span class="dem">Dem ? &nbsp; </span> 
+		<span class="gop">GOP ? &nbsp; </span>
+		 </td> 
+	</tr> </table> 
+   </td>
+
+   <td width="150"> &nbsp; </td> <!-- spacer -->
+</tr>
+</table>
+
+<hr class="minor3">
+
+<table border="0" summary="" width="100%"> <!-- Start of three-panel map -->
+<tr>
+   <!-- Left panel with map 1 -->
+   <td width="580" align="center" valign="top">
+   <script type="text/javascript" language="JavaScript" src="/evp2012/Pres/JS/Feb21.js"></script>
+   <noscript> <img width="580" height="359" src="/evp2012/Pres/Pngs/Feb21.png" alt="Electoral college map" > </noscript>
+   </td>   <!-- End of left panel -->
+
+   <!-- Spacer panel --> <td width="60"> &nbsp; </td>
+
+   <!-- Right panel with links and legend -->
+   <td width="210" align="left" valign="top">
+        <!-- Links -->
+ 	<table summary=""> <!-- Start of the menu to the right of the map -->
+           <tr> <td class="ptr"> <a href="/evp2012/Senate/Maps/Feb21-s.html">Senate map and races</a>  </td></tr>
+           <tr> <td class="ptr"> <a href="/evp2012/Info/data.html">Downloadable polling data</a> </td></tr>
+ 	   <tr> <td class="ptr"> <a href="/evp2012/Pres/Maps/Feb17.html">Previous report</a>  </td></tr>
+ 	   <tr> <td class="ptr"> <a href="/evp2012/Pres/Maps/Feb22.html">Next report</a>  </td></tr>
+<!--
+ 	   <tr> <td class="ptr"> <a href="http://www.electoral-vote.com/evp2004/Pres/Maps/Feb21.html">This day in 2004</a></td> </tr>
+-->
+	</table> <!-- End of the menu to the right of the map -->
+
+	<br> <br>
+        <!-- Map legend -->
+	<table border="0" summary="Map legend"> <!-- Start of the color swatches -->
+   	   <tr> <td> <img src="/evp2012/Icons/darkblue.gif" width="30" height="15" alt="strong Dem" > </td> <td > Strong Dem (253) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/lightblue.gif" width="30" height="15" alt="weak Dem" > </td> <td > Weak Dem (32) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/whiteblue.gif" width="30" height="15" alt="barely Dem" > </td> <td > Barely Dem (73) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/white.gif" width="30" height="15" alt="tied" > </td> <td > Exactly tied (0) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/whitered.gif" width="30" height="15" alt="barely GOP" > </td> <td > Barely GOP (13) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/lightred.gif" width="30" height="15" alt="weak GOP" > </td> <td > Weak GOP (42) </td> </tr>
+	   <tr> <td> <img src="/evp2012/Icons/darkred.gif" width="30" height="15" alt="strong GOP" > </td> <td > Strong GOP (125) </td> </tr>
+	   <tr> <td class="tiny" colspan="2"> 270 Electoral votes needed to win </td> </tr>
+	   <tr> <td class="tiny" colspan="2"> <a href="/evp2012/Info/map-algorithm.html">Map algorithm explained</a> </td> </tr>
+	</table> <!-- End of the color swatches -->
+</tr>
+</table>  <!-- End of three-panel map -->
+
+
+<!-- Map caption -->
+<table border="0   " width="100%" summary=""> <!-- Start of the map caption -->
+   <tr>
+      <td width="15%" align="left" class="main_labels" valign="top">Senate polls today:</td>
+      <td colspan="3">(None)  </td>
+      <td width="5%" align="right" rowspan="2"> <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=395329=390&amp;mt=8" target="_blank"> <img src="/evp2012/Icons/iphone.jpg" alt="iPhone"> </a> </td>
+      <td width="6%" align="right" valign="bottom"> <a href="http://www.electoral-vote.com/evp2012/Info/rss_info.html"> <img src="/evp2012/Icons/xml.gif" alt="RSS" > </a> </td>
+   </tr>
+
+   <tr>
+      <td width="15%" align="left" class="main_labels" valign="top">Dem pickups:</td>
+      <td width="23%">(None)</td>
+      <td width="11%" align="left" class="main_labels" valign="top">GOP pickups:</td>
+      <td width="40%">(None)</td>
+      <!-- covered by the rowspan above -->
+      <td width="6%" align="right">  <a href="http://www.electoral-vote.com/phone.html"> <img src="/evp2012/Icons/pda.gif" alt="PDA" > </a> </td>
+   </tr>
+</table> <!-- End of the map caption -->
+
+<hr class="minor3">
+<!-- Start menu -->
+<table width="100%" summary=""> <!-- Start of the main menu -->
+<tr>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/welcome.html"> <img src="/evp2012/Icons/welcome.gif" width="16" height="16" alt="" > Welcome</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/faqs.html"> <img src="/evp2012/Icons/question.gif" width="16" height="16" alt="" > FAQs</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Donations/index.html"> <img src="/evp2012/Icons/dollar.gif" width="16" height="16" alt="" > Donations</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/bloggers.html"> <img src="/evp2012/Icons/mouth.gif" width="16" height="16" alt="" > Icons for bloggers</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/previous-elections.html"> <img src="/evp2012/Icons/election.gif" width="16" height="16" alt="" > Previous elections</a></td>
+</tr>
+
+<tr>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Pres/ec_graph-2012.html"> <img src="/evp2012/Icons/graph.gif" width="16" height="16" alt="" > Electoral coll. graph</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Senate/senate_races.html"> <img src="/evp2012/Icons/races.gif" width="16" height="16" alt="" > All Senate races</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/datagalore.html"> <img src="/evp2012/Icons/piechart.gif" width="16" height="16" alt="" > Data galore</a></td>
+    <td class="menu" align="left" width="20%"> <a href="/evp2012/Info/GOP-2012.html"> <img src="/evp2012/Icons/elephant.gif" width="16" height="16" alt="" > Primaries &amp; caucuses</a></td>
+    <td class="menu" align="left" width="20%"> <a href="http://www.electoral-vote.com"> <img src="/evp2012/Icons/null-menu.gif" width="16" height="16" alt="" > &nbsp;</a></td>
+</tr>
+
+</table> <!-- End of the main menu -->
+
+<hr class="minor3">
+<!--BEGIN_PW-->
+<table border="1" cellspacing="0" width="915" summary="Headlines from Political Wire">
+<tr><td>
+<table border="0" cellspacing="0" width="915" summary="Headlines from Political Wire">
+<tr>
+ <th rowspan="3" bgcolor="#FFFFFF"><a href="http://politicalwire.com" target="_blank"><img src="http://www.electoral-vote.com/evp2008/Icons/pwlogo-med.jpg" alt="PW logo" border="0" /></a> </th>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/luxury_hotels_of_the_romney_campaign.html" target="_blank" >Luxury Hotels of the Romney Campaign</a></td>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/santorum_finally_gets_the_medias_attention.html" target="_blank" >Santorum Finally Gets the Media's Attention</a></td>
+
+</tr>
+
+<tr>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/watergate_a_novel.html" target="_blank" >Watergate: A Novel</a></td>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/quote_of_the_day.html" target="_blank" >Quote of the Day</a></td>
+
+</tr>
+<tr>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/which_candidate_is_most_charitable.html" target="_blank" >Which Candidate is Most Charitable?</a></td>
+
+ <td class="pw"><a href="http://politicalwire.com/archives/2012/02/20/santorum_way_ahead_in_oklahoma.html" target="_blank" >Santorum Way Ahead in Oklahoma</a></td>
+
+</tr>
+</table>
+</td></tr>
+</table>
+
+
+<!--END_PW-->
+<hr class="minor3">
+<a name="news"> </a>
+<h2>News from the Votemaster</h2>
+<!-- This table has two columns: (1) the blog (2) the ads -->
+<table width="100%" border="0" summary="Blog">
+<tr> <td valign="top">
+<a id="item-1"> </a>
+<h4>Too Late for a White Knight
+&nbsp; &nbsp; <a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb21.html#item-1"> <font size="-3">Permalink</font></a> </h4>
+<p>There has been a lot of
+<a href="http://www.politico.com/news/stories/0212/73070.html" target="_blank">speculation</a>
+in the media of late about what is going to happen if Rick Santorum defeats Mitt Romney in Michigan on Feb. 28.
+In reality, there will be a lot of moaning and groaning from Republican quarters about how this is a bad thing,
+but it is unlikely anything concrete will happen until a week later, when 10 states vote on super Tuesday, March 6.
+If Romney wins only Massachusetts, Vermont, and Virgina (where Gingrich and Santorum aren't on the ballot), panic
+will break out among party leaders and the cry for a white knight will become deafening. Only it is not going to
+happen because it is too late. Here is the list of
+<a href="http://www.fec.gov/pubrec/fe2012/2012pdates.pdf" target="_blank">filing deadlines</a>
+for March and later, including all the caucuses,
+which usually do not have a filing deadline.</p>
+<!--ENDFEED-->
+
+
+<table border="1" cellspacing="0" summary="">
+
+<tr>
+   <td class="state-header"> State </td>
+   <td class="state-header"> Delegates </td>
+   <td class="state-header"> Voting Date </td>
+   <td class="state-header"> Type </td>
+   <td class="state-header"> Filing deadline </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Connecticut </td>
+   <td class="red-item"> 28 </td>
+   <td class="red-item"> April 24, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 2, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Washington </td>
+   <td class="red-item"> 43 </td>
+   <td class="red-item"> March 3, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 3, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Oregon </td>
+   <td class="red-item"> 28 </td>
+   <td class="red-item"> May 15, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 6, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Alaska </td>
+   <td class="red-item"> 27 </td>
+   <td class="red-item"> March 6, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 6, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Idaho </td>
+   <td class="red-item"> 32 </td>
+   <td class="red-item"> March 6, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 6, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> North Dakota </td>
+   <td class="red-item"> 28 </td>
+   <td class="red-item"> March 6, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 6, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Nebraska </td>
+   <td class="red-item"> 35 </td>
+   <td class="red-item"> May 15, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 7, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Guam </td>
+   <td class="red-item"> 9 </td>
+   <td class="red-item"> March 10, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 10, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Kansas </td>
+   <td class="red-item"> 40 </td>
+   <td class="red-item"> March 10, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 10, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Virgin Islands </td>
+   <td class="red-item"> 9 </td>
+   <td class="red-item"> March 10, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 10, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Wyoming </td>
+   <td class="red-item"> 29 </td>
+   <td class="red-item"> March 10, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 10, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Montana </td>
+   <td class="red-item"> 26 </td>
+   <td class="red-item"> June 5, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 12, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> American Samoa </td>
+   <td class="red-item"> 9 </td>
+   <td class="red-item"> March 13, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 13, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Hawaii </td>
+   <td class="red-item"> 20 </td>
+   <td class="red-item"> March 13, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 13, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Utah </td>
+   <td class="red-item"> 40 </td>
+   <td class="red-item"> June 26, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 15, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> New Mexico </td>
+   <td class="red-item"> 23 </td>
+   <td class="red-item"> June 5, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 16, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Missouri </td>
+   <td class="red-item"> 52 </td>
+   <td class="red-item"> March 17, 2012 </td>
+   <td class="red-item"> Caucus </td>
+   <td class="red-item"> March 17, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> California </td>
+   <td class="red-item"> 172 </td>
+   <td class="red-item"> June 5, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 23, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> South Dakota </td>
+   <td class="red-item"> 28 </td>
+   <td class="red-item"> June 5, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> March 27, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> New Jersey </td>
+   <td class="red-item"> 50 </td>
+   <td class="red-item"> June 5, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> April 2, 2012 </td>
+</tr>
+
+
+<tr>
+   <td class="red-item"> Texas </td>
+   <td class="red-item"> 155 </td>
+   <td class="red-item"> May 29, 2012 </td>
+   <td class="red-item"> Primary </td>
+   <td class="red-item"> ? </td>
+</tr>
+
+</table>
+
+<br>
+<p>If some other candidate jumped in on Feb. 29, the day after the Michigan and Arizona primaries and magically
+qualified for all the remaining primaries and got all the delegates, he or she would get 883 delegates, far short
+of the 1144 needed to win the nomination. And such a scenario is completely unrealistic because (1) it takes weeks to
+collect the signatures to qualify to get on the ballot and (2) the events before April 1 use some form of
+proportional allocation of delegates, so to get 100% of the delegates from, say, Idaho, the new candidate would have
+to get 100% of the votes at the caucus, which is pretty unlikely.
+Realistically, if a candidate with close to 100% name recognition (that's you Mike Huckabee and you Sarah Palin)
+were to jump in on March 7 and spend two weeks qualifying for the remaining states, the only primaries he or she
+would make are California, South Dakota, New Jersey, and Texas (whose filing date is up in the air until the court
+cases about redistricting there have been settled). Even a clean sweep of all those states would yield only 405
+delegates, about a third of what is needed.</p>
+
+<p>Of course, if a new candidate emerged and did very well, it is possible that no candidate would have enough
+delegates to win on the first ballot, in which case all delegates would be freed to vote their consciences on the
+second ballot and anything could happen.
+Now consider this arithmetic from the point of view of Huckabee or Palin. You jump into the race on March 7 and
+work your tail off for 6 months only to have the party leaders anoint someone else in Tampa? Not an
+attractive proposition.</p>
+
+<p>Another name that has been bandied about as the savior is Gov. Mitch Daniels (R-IN), who has far less charisma
+than Mitt Romney (yes, Virginia, that is possible) and whose wife and daughters are known to be against a run.
+Also a possible candidate is Gov. Chris Christie (R-NJ), who is on record saying he is not ready for the job this
+year.
+In reality, there are not a lot of Republicans other than Huckabee and Palin who could become the instant front runner on
+day 1. So for better or worse, the field we have now is the field we are going to have.</p>
+
+<p>Even if no candidate has 1144 votes on the first ballot (still an unlikely outcome at this point),
+the Republicans will not have a
+<a href="http://theweek.com/article/index/224407/brokered-conventions-a-guide-to-political-pundits-dream-scenario" target="_blank">brokered convention</a>
+simply because there are no brokers any more.
+In the old days, Speaker John Boehner and Senate minority leader Mitch McConnell would get together in
+a smoke-filled room and pick a candidate. But their choice, Mitt Romney, is already known, and they aren't
+getting a lot of traction with him. So how could they pull someone out of thin air and expect the party to
+go along with him or her?</p>
+
+<p>If no candidate got a majority on the first ballot, no one knows what would happen.
+There are persistent
+<a href="http://www.thedailybeast.com/articles/2012/02/16/is-ron-paul-still-running.html" target="_blank">rumors</a>
+that some Ron Paul supporters are trying to get elected to the convention as Romney delegates. If they
+succeed and there is a second ballot, they would be free to vote for Paul or any other candidate he favors from then
+on. The possibility of such a stealth strategy is very real because in most caucus states, there are precinct,
+county, congressional district, and state caucuses and anyone at the state caucus can run for RNC delegate.
+Generally speaking, the people there don't know each other and anyone making a strong (but possibly fake) speech
+for Romney could be elected to the convention as a Romney delegate. Such a candidate would probably vote for Romney on the
+first ballot but then do Paul's bidding on subsequent ballots.</p>
+
+<p>In fact, the situation is even worse than that. About 30 states have no law requiring convention delegates
+to vote for the person they are pledged to, even on the first ballot. A person elected to the RNC as, say, a Romney
+delegate in March might have second thoughts about him in August, for example, if polls showed him losing to
+President Obama in November. If such a delegate voted for someone else, even on the first ballot, there would be
+no legal sanctions taken against him or her. Normally, one candidate has such an overwhelming lead in delegates
+that a few faithless delegates don't matter, but this year it could.</p>
+
+<a id="item-2"> </a>
+<h4>Another Republican Debate Tomorrow
+&nbsp; &nbsp; <a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb21.html#item-2"> <font size="-3">Permalink</font></a> </h4>
+<p>Tomorrow CNN will host another debate between the four remaining Republican candidates in Mesa Arizona.
+While Arizona is not hotly contested (Romney is expected to win it due to the substantial Mormon population
+in northern Arizona), no doubt people in Michigan will be watching, too. It should be interesting to see if
+Santorum and Romney really go after each other this time. This is the first debate held with Santorum in
+the lead nationally.</p>
+<!-- END OF NEWS -->
+
+<br><p>If you like this Website, tell your friends. You can also share by clicking this button &nbsp;
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">addthis_pub  = 'Votemaster';</script>
+<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()">
+   <img src="http://s9.addthis.com/button1-share.gif" width="125" height="16" border="0" alt="" >
+</a>
+<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+<!-- AddThis Button END -->
+</p>
+
+ -- <a href="/evp2012/Info/signature.html">The Votemaster</a>
+<br><br>
+<hr>
+<h3>Previous headlines</h3>
+<br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb17.html#item-1"> Feb17 Santorum Leading Romney in Michigan</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb12.html#item-1"> Feb12 Romney Wins the CPAC Straw Poll</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb12.html#item-2"> Feb12 Romney Edges Out Paul by 194 Votes in Maine</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb12.html#item-3"> Feb12 Santorum Leading in Michigan and Nationwide</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb08.html#item-1"> Feb08 Santorum Wins Big in Missouri, Minnesota, and Colorado</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb05.html#item-1"> Feb05 Romney Wins Nevada Caucuses</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb05.html#item-2"> Feb05 Republican Primary and Caucus Schedule</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb04.html#item-1"> Feb04 Romney Expected to Win Big at Nevada Caucuses Today</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Feb04.html#item-2"> Feb04 Economy is Improving</a> <br>
+<a href="http://www.electoral-vote.com/evp2011/Pres/Maps/Feb01.html#item-1"> Feb01 Romney Wins Decisively in Florida</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan31.html#item-1"> Jan31 Romney Set to Win Big in Florida</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan31.html#item-2"> Jan31 Santorum Faces Easy Choice Tomorrow</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan31.html#item-3"> Jan31 Prediction: Florida Will Win Today</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan27.html#item-1"> Jan27 Romney Takes Off the Gloves in Final Florida Debate</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan27.html#item-2"> Jan27 Romney Failed to List Foreign Investments on Legal Form</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan25.html#item-1"> Jan25 Obama Lays Groundwork for a Populist Campaign in State-of-the-Union Speech</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan24.html#item-1"> Jan24 Romney Releases 2010 Tax Return</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan24.html#item-2"> Jan24 Role Reversal in the Debate: Romney Attacks, Gingrich Plays Defense</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan24.html#item-3"> Jan24 Fred Thompson Endorses Newt Gingrich</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan22.html#item-1"> Jan22 Gingrich Crushes Romney in South Carolina</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-1"> Jan20 Perry Drops Out and Endorses Gingrich</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-2"> Jan20 Gingrich Surging in South Carolina</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-3"> Jan20 Gingrich's Second Wife Attacks Him</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-4"> Jan20 Romney Loses His Win in Iowa</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-5"> Jan20 Romney Reported to Have Millions of Dollars in the Cayman Islands</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan20.html#item-6"> Jan20 The Final Four Take Off the Gloves in the Last Debate before the South Carolina Primary</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan17.html#item-1"> Jan17 Hard-Hitting Debate in South Carolina Changes Nothing</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan16.html#item-1"> Jan16 Huntsman Expected to Drop Out Today and Endorse Romney</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan16.html#item-2"> Jan16 Why is the Republican Field So Weak?</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan16.html#item-3"> Jan16 South Carolina Debate Tonight</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan15.html#item-1"> Jan15 Social Conservatives Agree to Back Santorum</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan13.html#item-1"> Jan13 Eleventh Commandment Repealed</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan11.html#item-1"> Jan11 NH: Romney 39%, Paul 23%, Huntsman 17%, Gingrich 9%, Santorum 9%</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan11.html#item-2"> Jan11 Charlie Cook: Redistricting is Politically Neutral</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan10.html#item-1"> Jan10 Romney Leads Going into the New Hampshire Primary Today</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan10.html#item-2"> Jan10 Gingrich Goes Negative in South Carolina</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan08.html#item-1"> Jan08 Romney Survives Debate Unscathed</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan08.html#item-2"> Jan08 Those who cannot remember the past are condemned to repeat it</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan05.html#item-1"> Jan05 Bachmann Drops Out</a> <br>
+<a href="http://www.electoral-vote.com/evp2012/Pres/Maps/Jan05.html#item-2"> Jan05 Perry Hesitates, but Stays In</a> <br>
+<!-- END OF BLOG COLUMN of table. Now the ads -->
+</td>
+<td width="180" align="right" valign="top">
+
+<!-- Premium blogad -->
+<a href="http://web.blogads.com/adspotsfolder/ba_adspotsfolder_revision_create_shortcut?persistent_uid=fa1e429c974a02df8aaef4657118d408" target="_blank">
+</a><br><br><br>
+<script type="text/javascript" language="javascript" src="http://cache.blogads.com/886161182/feed.js"></script>
+
+<!-- Standard blogad -->
+<br><br>
+<script type="text/javascript" language="javascript" src="http://cache.blogads.com/119093743/feed.js"></script>
+
+<br>
+<div align="center" class="donate">
+<p>Your donation is greatly appreciated. It will buy ads to publicize the site.</p>
+  <a href="http://www.electoral-vote.com/evp2012/Donations/index.html"> 
+	<img src="http://www.electoral-vote.com/evp2012/Icons/PayPal-donate.gif" alt="Donate">
+  </a>
+</div>
+
+</td> </tr> </table>  <!-- END OF BLOG + AD TABLE -->
+
+<hr>
+<!-- SiteSearch Google -->
+<FORM method=GET action="http://www.google.com/search">
+<input type=hidden name=ie value=UTF-8>
+<input type=hidden name=oe value=UTF-8>
+
+<TABLE border="0" align="center" bgcolor="#F9FDC4" summary="Google search box"><tr><td>
+<a href="http://www.google.com/">
+<img src="/evp2012/Icons/google-logo.gif" border="0" alt="Google" > </a>
+</td>
+<td>
+<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+<INPUT type=submit name=btnG VALUE="Google Search">
+<font size=-1>
+<input type=hidden name=domains value="www.electoral-vote.com"><br><input type=radio name=sitesearch value=""> WWW <input type=radio name=sitesearch value="www.electoral-vote.com" checked> www.electoral-vote.com <br>
+</font>
+</td></tr></TABLE>
+</FORM>
+
+<!-- SiteSearch Google -->
+
+<hr>
+
+<!--
+<div align="center">
+  <a href="http://www.cs.vu.nl/masters/compsys/index-07.html" target="_blank"><img class="clickon" src="/evp2012/Icons/banner3.gif" alt="absentee ballot for overseas voter" width="600" height="60" ></a>
+</div>
+-->
+
+</td></tr></table>
+
+<table summary="" border="0"> <tr> <td width="800" align="center">
+
+<!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+<script type="text/javascript" language="JavaScript">var site="s10ElectoralVote"</script>
+<script type="text/javascript" language="JavaScript1.2" src="http://s10.sitemeter.com/js/counter.js?site=s10ElectoralVote">
+</script>
+<noscript>
+<a href="http://s10.sitemeter.com/stats.asp?site=s10ElectoralVote" target="_top">
+<img src="http://s10.sitemeter.com/meter.asp?site=s10ElectoralVote" alt="Site Meter" border="0" ></a>
+</noscript>
+<!-- Copyright (c)2002 Site Meter -->
+<!--WEBBOT bot="HTMLMarkup" Endspan -->
+
+</td> </tr> </table>
+
+</body>
+</html>
+

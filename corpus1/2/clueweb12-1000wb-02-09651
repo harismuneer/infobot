@@ -1,0 +1,506 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-16T20:04:19Z
+WARC-TREC-ID: clueweb12-1000wb-02-09651
+WARC-IP-Address: 107.21.255.177
+WARC-Payload-Digest: sha1:YFWA2SDHWTMAFOYFKVXJIROYCQIIPVD5
+WARC-Target-URI: http://www.electnext.com/questions/5702-the-capital-gains-tax-rate-should-be-reduced
+WARC-Record-ID: <urn:uuid:b0bb59d0-e3b4-4ad5-844b-6663f81e8e1f>
+Content-Type: application/http; msgtype=response
+Content-Length: 21290
+
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Date: Fri, 16 Mar 2012 20:04:21 GMT
+ETag: "fc6c7648f3ebbf7d97303a0750d5c0d2"
+Server: Apache/2.2.21 (Amazon)
+Set-Cookie: t=BAgw--b4d05d0df4f999e701ccaa38704503b1a01e3d26; path=/; expires=Tue, 16-Mar-2032 20:04:21 GMT
+Set-Cookie: _electnext_session=BAh7DUkiD3Nlc3Npb25faWQGOgZFRiIlMmU2NWY1NjJiYTU2Yzg2YTE5Y2NhY2QwZWE0ODcwNGNJIgxtYXRjaGVzBjsARnsASSIHaWQGOwBGSSIpOTA4MTY4MzItYTA3Yy01NGYyLTlmM2MtMDY5YmUxMjI0MjdiBjsARkkiEF9jc3JmX3Rva2VuBjsARkkiMTlNUVJlU0U4bElDbmwwMzl5Y0RWT083MnlVNWt3eitPd2J1R25xQURkWnc9BjsARkkiDmFiX3Rva2VucwY7AEZ7AEkiFG9tbmlhdXRoLm9yaWdpbgY7AEYiHmh0dHA6Ly93d3cuZWxlY3RuZXh0LmNvbS9JIgpvYXV0aAY7AEZ7BkkiDHR3aXR0ZXIGOwBGewhJIhdjYWxsYmFja19jb25maXJtZWQGOwBGVEkiEnJlcXVlc3RfdG9rZW4GOwBGSSIuUUUwUlRjeWNXWWJXUzNQTUVKZHAyWHFHWEQyMGRQQXk2RE4xZERSTjQGOwBUSSITcmVxdWVzdF9zZWNyZXQGOwBGSSIvcGxINzVreHhKaGRBWTJlTngxVm9HWXc0azBFenpVaTYzdmgwcm1IZ1k0BjsAVEkiFHF1ZXN0aW9uX2ZlZWRlcgY7AEZJIh0vaXNzdWVzL2VuZXJneS9xdWVzdGlvbnMGOwBG--94da9baf02d3ba74b712f7fc10e9ad18fcae54c9; path=/; HttpOnly
+Status: 200
+X-Powered-By: Phusion Passenger (mod_rails/mod_rack) 3.0.11
+X-Runtime: 0.142706
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Length: 20018
+Connection: Close
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw="/>
+<link href="/favicon.ico?1328642971" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<title>ElectNext | The capital gains tax rate should be reduced.</title>
+<meta property="og:image" content="http://s3.amazonaws.com/electnext/issues/icon_for_sharings/139/original.png"/>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta content='en' http-equiv='content-language'>
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="/stylesheets/jquery-ui.css?1330528636" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="/javascripts/libs.js?1330528636" type="text/javascript"></script>
+<script src="/javascripts/application.js?1330528636" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    $(function() {
+      DD_roundies.addRule('.very-round', '20px', true);
+      DD_roundies.addRule('.round', '8px', true);
+      DD_roundies.addRule('.barely-round', '3px', true);
+      DD_roundies.addRule('.round-top', '8px 8px 0 0', true);
+      DD_roundies.addRule('.round-bottom', '0 0 8px 8px', true);
+      DD_roundies.addRule('.round-3', '0 8px 8px 8px', true);
+    
+      $('.feedback-panel').tabSlideOut({
+        tabHandle: '.feedback-tab',
+        fixedPosition: true,
+        pathToTabImage: '/images/feedback.png',
+        imageHeight: '100px',
+        imageWidth: '32px',
+        action: 'click',
+        topPos: '50px',
+      }); // tabSlideOut doesn't do chaining!
+      $('.feedback-panel').show();
+      $('.feedback-panel-inside').click(function(event) {
+        // Close the feedback panel, unless the user clicked a form element:
+        var t = $(event.target);
+        if (t.is('input') || t.is('textarea')) {
+          // do nothining
+        } else {
+          $('.feedback-tab').click();
+        }
+      });
+    });
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23855241-1']);
+    _gaq.push(['_setDomainName', '.electnext.com']);
+    _gaq.push(['_trackPageview']);
+  //]]>
+</script>
+<script>
+  //<![CDATA[
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+<script src="/javascripts/questions.js?1330528636" type="text/javascript"></script>
+
+</head>
+<body class='bp'>
+<div id='everything-but-footer'>
+<div id='top-strip-filler'></div>
+<div id='top-strip'>
+<div class='container'>
+<div class='span-24 last' id='header'>
+<div class='left'>
+<h1 id='company-name'>
+<a href="/"><span class="red">Elect</span><span class="blue">Next</span>
+</a></h1>
+</div>
+<div class='right'>
+<div id='nav'>
+<ul class='top'>
+<li>
+<a href="/questions">Questions</a>
+</li>
+<li>
+<a href="/signup">Sign Up</a>
+</li>
+<li class='last-nav-item'>
+<a href="/login">Log In</a>
+</li>
+</ul>
+</div>
+</div>
+<div id='like-us'>
+<div class='twitter'>
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://electnext.com/" data-text="Check out @ElectNext!:" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div class='facebook'>
+<iframe src="http://www.facebook.com/plugins/like.php?app_id=206633736044420&amp;href=http%3A%2F%2Ffacebook.com%2FElectNext&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id='middle-strip'>
+<div class='container'>
+<div class='last questions span-24' id='main'>
+<div class='span-18' id='body'>
+<div id='body-2-col-inner'>
+<div class='notices-container'>
+
+</div>
+<div class='question-column' data-id='5702'>
+<div class='strip-box'>
+<h2>Tell us About Yourself!</h2>
+<div class='panel'>
+<div class='question-box'>
+<div class='left-box'>
+<div class='issue'>
+<img alt="Original" src="http://s3.amazonaws.com/electnext/issues/icon_smalls/139/original.png" />
+<div class='bars'>
+<div class='bars-hidable'>
+<div class='bar strongly-disagree' title='510 users strongly disagree'>
+<div class='mask' style='height:13px'></div>
+</div>
+<div class='bar disagree' title='900 users disagree'>
+<div class='mask' style='height:0px'></div>
+</div>
+<div class='agree bar' title='513 users agree'>
+<div class='mask' style='height:12px'></div>
+</div>
+<div class='bar strongly-agree' title='305 users strongly agree'>
+<div class='mask' style='height:19px'></div>
+</div>
+</div>
+</div>
+</div>
+<div class='count'>
+2228 <br/>Answers
+</div>
+</div>
+
+<div class='right-side'>
+<div class='text'>The capital gains tax rate should be reduced.</div>
+<div class='buttons'>
+<a href="#" class="debate" title="Join the Debate">5 Arguments</a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+</div>
+<div class='clear'></div>
+<div class='row-wrapper'>
+<div class='answer-boxes'>
+<a href="#" class="strongly-disagree " data-remote="true" data-score="-2" data-url="/questions/5702-the-capital-gains-tax-rate-should-be-reduced/answer?score=-2">Strongly Disagree</a>
+<a href="#" class="disagree " data-remote="true" data-score="-1" data-url="/questions/5702-the-capital-gains-tax-rate-should-be-reduced/answer?score=-1">Disagree</a>
+<a href="#" class="agree " data-remote="true" data-score="1" data-url="/questions/5702-the-capital-gains-tax-rate-should-be-reduced/answer?score=1">Agree</a>
+<a href="#" class="strongly-agree " data-remote="true" data-score="2" data-url="/questions/5702-the-capital-gains-tax-rate-should-be-reduced/answer?score=2">Strongly Agree</a>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div>
+<div class='control-buttons'>
+<a href="/questions/5702-the-capital-gains-tax-rate-should-be-reduced/answer?skip=1" class="skip-link">Back</a>
+<a href="/issues/energy/questions" class="answer-link disabled">Submit</a>
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+<div class='panel learn-more'>
+<div class='argument-column con-column'>
+<div class='title'>
+Con
+</div>
+<a name='argument-217'></a>
+<div class='argument' data-id='217'>
+<div class='header'>
+<a href=""><img alt="Unknown-tiny" class="created-by-image" src="/images/unknown-tiny.png?1330528636" />
+</a><div class='header-right'>
+<a href="" class="created-by-name">Karl</a>
+<div class='cred-score'>
+45
+cred
+</div>
+</div>
+<div class='clear'></div>
+<div class='created-at'>Dec 04, 2011</div>
+</div>
+<div class='argument-text'>
+Income is income. Investors do not need an incentive for long-term investment, which is what the capital gains tax is meant to induce. If an investment provides a good return, it will attract capital. (Plus, the idea of one year as the definition of &quot;long term&quot; is laughable.)<br/><br/>By treating all income equally, the very wealthy, who have tailored their investments to favor capital gains, would pay their fair share. (This is the Buffett logic...which is totally correct.)
+</div>
+<div class='footer'>
+<a href="#" class="see-comments-link">0 comments
+</a><a href="#" class="thumb for-argument up" data-remote="true" data-score="1" data-url="/arguments/217/vote?score=1">5
+</a><a href="#" class="thumb for-argument down" data-remote="true" data-score="-1" data-url="/arguments/217/vote?score=-1">0
+</a><div class='social'>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+</div>
+<div class='comment-level'>
+<form accept-charset="UTF-8" action="/arguments/217/comments" class="new_comment" data-remote="true" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw=" /></div>
+<img alt="Unknown-tiny" src="/images/unknown-tiny.png?1330528636" />
+<textarea class="expand15-200" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+
+<input id="comment_submit" name="commit" type="submit" value="Reply" />
+<div class='clear'></div>
+</form>
+<div class='comment-list indented'>
+</div>
+</div>
+
+</div>
+
+<div class='divider'></div>
+<a name='argument-172'></a>
+<div class='argument' data-id='172'>
+<div class='header'>
+<img alt="Unknown-tiny" class="created-by-image" src="/images/unknown-tiny.png?1330528636" />
+<div class='header-right'>
+<div class='created-by-name'>Mike</div>
+<div class='cred-score'>
+580
+cred
+</div>
+</div>
+<div class='clear'></div>
+<div class='created-at'>Nov 10, 2011</div>
+</div>
+<div class='argument-text'>
+If anything it should be raised for high earners. It isn't fair that billionaires like Warren Buffet pay a lower tax rate than the average middle-class American. <a href="http://www.americanprogress.org/issues/2011/02/te022311.html">http://www.americanprogress.org/issues/2011/02/te022311.html</a> 
+</div>
+<div class='footer'>
+<a href="#" class="see-comments-link">0 comments
+</a><a href="#" class="thumb for-argument up" data-remote="true" data-score="1" data-url="/arguments/172/vote?score=1">0
+</a><a href="#" class="thumb for-argument down" data-remote="true" data-score="-1" data-url="/arguments/172/vote?score=-1">0
+</a><div class='social'>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+</div>
+<div class='comment-level'>
+<form accept-charset="UTF-8" action="/arguments/172/comments" class="new_comment" data-remote="true" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw=" /></div>
+<img alt="Unknown-tiny" src="/images/unknown-tiny.png?1330528636" />
+<textarea class="expand15-200" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+
+<input id="comment_submit" name="commit" type="submit" value="Reply" />
+<div class='clear'></div>
+</form>
+<div class='comment-list indented'>
+</div>
+</div>
+
+</div>
+
+<div class='divider'></div>
+<a name='argument-355'></a>
+<div class='argument' data-id='355'>
+<div class='header'>
+<a href="http://www.chopshopstore.com"><img alt="Tiny" class="created-by-image" src="http://s3.amazonaws.com/electnext/users/photos/23124/tiny." />
+</a><div class='header-right'>
+<a href="http://www.chopshopstore.com" class="created-by-name">Thomas John Romer</a>
+<div class='cred-score'>
+85
+cred
+</div>
+</div>
+<div class='clear'></div>
+<div class='created-at'>Jan 25, 2012</div>
+</div>
+<div class='argument-text'>
+Most people that qualify for the low rate on Capital Gains considered it a gift when it was created and expected it would have been gone long ago. The only thing keeping it at the current rate is the inability for any politician to raise any tax at any time because they all (Democrats included) live in fear of being branded as someone who raises taxes.
+</div>
+<div class='footer'>
+<a href="#" class="see-comments-link">0 comments
+</a><a href="#" class="thumb for-argument up" data-remote="true" data-score="1" data-url="/arguments/355/vote?score=1">0
+</a><a href="#" class="thumb for-argument down" data-remote="true" data-score="-1" data-url="/arguments/355/vote?score=-1">0
+</a><div class='social'>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+</div>
+<div class='comment-level'>
+<form accept-charset="UTF-8" action="/arguments/355/comments" class="new_comment" data-remote="true" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw=" /></div>
+<img alt="Unknown-tiny" src="/images/unknown-tiny.png?1330528636" />
+<textarea class="expand15-200" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+
+<input id="comment_submit" name="commit" type="submit" value="Reply" />
+<div class='clear'></div>
+</form>
+<div class='comment-list indented'>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='argument-column pro-column'>
+<div class='title'>
+Pro
+</div>
+<a name='argument-89'></a>
+<div class='argument' data-id='89'>
+<div class='header'>
+<img alt="Unknown-tiny" class="created-by-image" src="/images/unknown-tiny.png?1330528636" />
+<div class='header-right'>
+<div class='created-by-name'>Steve</div>
+<div class='cred-score'>
+31
+cred
+</div>
+</div>
+<div class='clear'></div>
+<div class='created-at'>Nov 08, 2011</div>
+</div>
+<div class='argument-text'>
+Raising taxes in the middle of a bad economy will only hurt make things worse. This study shows that raising it likely would not even increase net tax revenue.<br/><a href="http://www.heritage.org/research/reports/2010/03/obamas-capital-gains-tax-hike-unlikely-to-increase-revenues">http://www.heritage.org/research/reports/2010/03/obamas-capital-gains-tax-hike-unlikely-to-increase-revenues</a>
+</div>
+<div class='footer'>
+<a href="#" class="see-comments-link">0 comments
+</a><a href="#" class="thumb for-argument up" data-remote="true" data-score="1" data-url="/arguments/89/vote?score=1">2
+</a><a href="#" class="thumb for-argument down" data-remote="true" data-score="-1" data-url="/arguments/89/vote?score=-1">3
+</a><div class='social'>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+</div>
+<div class='comment-level'>
+<form accept-charset="UTF-8" action="/arguments/89/comments" class="new_comment" data-remote="true" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw=" /></div>
+<img alt="Unknown-tiny" src="/images/unknown-tiny.png?1330528636" />
+<textarea class="expand15-200" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+
+<input id="comment_submit" name="commit" type="submit" value="Reply" />
+<div class='clear'></div>
+</form>
+<div class='comment-list indented'>
+</div>
+</div>
+
+</div>
+
+<div class='divider'></div>
+<a name='argument-203'></a>
+<div class='argument' data-id='203'>
+<div class='header'>
+<a href=""><img alt="Unknown-tiny" class="created-by-image" src="/images/unknown-tiny.png?1330528636" />
+</a><div class='header-right'>
+<a href="" class="created-by-name">Carolyn</a>
+<div class='cred-score'>
+-35
+cred
+</div>
+</div>
+<div class='clear'></div>
+<div class='created-at'>Nov 29, 2011</div>
+</div>
+<div class='argument-text'>
+Cutting taxes stimulates consumer spending. Thus, by reducing taxes it would encourage people to go out and buy things which would in turn stimulate the economy. On the other hand, if the government would raise taxes, it would discourage consumer spending, thus crippling the economy even further. A country cannot have a strong economy if there is not a high rate of consumer spending. Therefore, by reducing taxes the government would in the long run help the economy by encouraging consumer spending. 
+</div>
+<div class='footer'>
+<a href="#" class="see-comments-link">0 comments
+</a><a href="#" class="thumb for-argument up" data-remote="true" data-score="1" data-url="/arguments/203/vote?score=1">0
+</a><a href="#" class="thumb for-argument down" data-remote="true" data-score="-1" data-url="/arguments/203/vote?score=-1">4
+</a><div class='social'>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=fb" class="facebook-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=tw" class="twitter-share" target="_blank"></a>
+<a href="/shares/new?q=5702&amp;t=Q&amp;w=em" class="email-share" target="_blank"></a>
+
+<div class='clear'></div>
+</div>
+<div class='clear'></div>
+</div>
+<div class='comment-level'>
+<form accept-charset="UTF-8" action="/arguments/203/comments" class="new_comment" data-remote="true" id="new_comment" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="9MQReSE8lICnl039ycDVOO72yU5kwz+OwbuGnqADdZw=" /></div>
+<img alt="Unknown-tiny" src="/images/unknown-tiny.png?1330528636" />
+<textarea class="expand15-200" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+
+<input id="comment_submit" name="commit" type="submit" value="Reply" />
+<div class='clear'></div>
+</form>
+<div class='comment-list indented'>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class='clear'></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class='span-6 last' id='side'>
+<div class='please-log-in-graphic'>
+<div class='text'>How do you match up?</div>
+<a href="/signup">Sign up</a>
+</div>
+<div class='nav-extra'>
+
+</div>
+<div class='clear'></div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id='footer-push'></div>
+</div>
+<!-- FOOTER -->
+<div id='bottom-strip'>
+<div class='container'>
+<div class='span-24 last' id='footer'>
+<a href="/about">About</a> |
+<a href="/team">Team</a> |
+<a href="http://solonsalon.electnext.com/">Blog</a> |
+<a href="/jobs">Jobs</a> |
+<a href="/contact">Contact</a> |
+<a href="/privacy">Privacy policy</a>
+<br>
+Copyright &copy; 2011 ElectNext. All rights reserved.
+</div>
+<!-- FEEDBACK -->
+<div class='feedback-panel'>
+<div class='feedback-tab'></div>
+<div class='feedback-panel-inside'>
+<form accept-charset="UTF-8" action="/feedbacks" class="new_feedback" data-remote="true" id="new_feedback" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="nOlpN0ow6+PH8FOY3UDPl6dbO5ewowIIrBVEurq/kSg=" /></div>
+
+<input id="feedback_page" name="feedback[page]" type="hidden" value="http://www.electnext.com/questions/5667-american-auto-manufacturers-should-be-required-to-meet-new-fuel-efficiency-standa" />
+<input id="feedback_lock_a" name="feedback[lock_a]" type="hidden" value="" />
+<input id="feedback_lock_b" name="feedback[lock_b]" type="hidden" value="20" />
+<div class='field'>
+<label for="feedback_name">Name</label>
+<br>
+<input id="feedback_name" name="feedback[name]" size="30" type="text" />
+</div>
+<div class='field'>
+<label for="feedback_email">Email</label>
+<br>
+<input id="feedback_email" name="feedback[email]" size="30" type="text" />
+</div>
+<div class='field'>
+<label for="feedback_text">Text</label>
+<br>
+<textarea cols="40" id="feedback_text" name="feedback[text]" rows="20"></textarea>
+</div>
+<div class='actions'>
+<input id="feedback_submit" name="commit" type="submit" value="Send Feedback" />
+</div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+

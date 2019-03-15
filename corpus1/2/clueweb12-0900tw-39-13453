@@ -1,0 +1,910 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-14T02:50:50Z
+WARC-TREC-ID: clueweb12-0900tw-39-13453
+WARC-IP-Address: 77.67.87.34
+WARC-Payload-Digest: sha1:U5UVM6P35J7K7WYD4KBSITJLNGYXR2J2
+WARC-Target-URI: http://www.navy.mil/search/display.asp?story_id=65855
+WARC-Record-ID: <urn:uuid:467506be-7dd2-4da8-86f1-a9d42cc08ee2>
+Content-Type: application/http; msgtype=response
+Content-Length: 40269
+
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+Header: US Navy
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Cache-Control: max-age=38587
+Expires: Wed, 14 Mar 2012 13:33:57 GMT
+Date: Wed, 14 Mar 2012 02:50:50 GMT
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+<title>Carl Vinson Marks 30 Years of Service</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="DESCRIPTION" CONTENT="Sailors aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70) celebrated the carrier's 30th year of service ">
+<META NAME="PRIORITY" CONTENT="Top Story">
+<META NAME="DATE_RELEASE" CONTENT="3/13/2012 9:30:00 AM">
+<META NAME="AUTHOR" CONTENT="This story was written by Mass Communication Specialist 2nd Class (SW) Byron C. Linder, USS Carl Vinson Public Affairs">
+<META NAME="SUBMITTED" CONTENT="This story was submitted by MCC Monica Nelson">
+<link href="../newsstand.css" rel="stylesheet" type="text/css">
+<link href="../story.css" rel="stylesheet" type="text/css">
+<style>
+  .vertical {
+  	background: url(/images/navy_mil/comment_images/vert_line.gif) repeat-y;
+  }
+
+  .horizontal {
+  	background: url(/images/navy_mil/comment_images/hr_dotted.jpg) repeat-x;
+  }
+  
+  ul {
+  	list-style-image: url(/images/blank.gif);
+  	margin: 7px;
+  }
+  
+  li {
+	margin-top: .5em;
+  }
+</style>
+<SCRIPT type="text/javascript">
+<!--
+
+// Test for Microsoft Internet Explorer
+//-----------------------------------------------------------------------
+function isMSIE() 
+//-----------------------------------------------------------------------
+{
+	return (navigator.appVersion.indexOf("MSIE") != -1)
+}
+
+
+// Netscape CSS Bug Fix
+if (document.layers){
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	}
+	
+//-----------------------------------------------------------------------
+function reloadPage() 
+//-----------------------------------------------------------------------
+{
+	if (innerWidth != origWidth || innerHeight != origHeight)
+		location.reload();
+}
+	
+if (document.layers) onresize = reloadPage;	
+
+
+// Email Link Protection Functions
+var user;
+var domain;
+var suffix;
+var linktitle;
+
+// Show and Hide Functions
+//-----------------------------------------------------------------------
+function hide_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id;
+	
+	menu_id = document.getElementById(div_id);
+	
+	/* Hide the specified menu */
+	if (menu_id == null)
+	{
+		return;
+	}
+	else 
+	{
+		menu_id.className = 'hide';
+	}
+}
+
+//-----------------------------------------------------------------------
+function toggle_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id, old_value;
+	
+	menu_id = document.getElementById(div_id);
+	if (menu_id == null)
+		return;
+		
+	/* Retrive current class value */
+	old_value = menu_id.className;
+	
+	/* First hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+
+	/* set new class value */
+	if (old_value == 'hide')
+	{
+		menu_id.className = 'show';
+	}
+	else
+	{
+		menu_id.className = 'hide';	
+	}
+}	
+
+//-----------------------------------------------------------------------
+function show_all_menus()
+//-----------------------------------------------------------------------
+{
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'show';
+			}
+	}
+}	
+
+//-----------------------------------------------------------------------
+function toggle_display(div_id)
+//-----------------------------------------------------------------------
+{
+	var child;
+
+	/* Hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+	
+/*	child = document.all(window.event.srcElement.child);*/
+	child = document.getElementById(div_id);
+	
+	if (child == null)
+		return;
+	else
+	{
+		if (child.className == 'hide')
+		{
+			child.className = 'show';
+		}
+		else
+		{
+			child.className = 'hide';
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+		
+
+</head>
+
+<body bgcolor="#999999" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000033" link="#0066CC" vlink="#666666" alink="#666666" background="/images/body-tile.png" onload="showRating();">
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+function clearText(theBox) {
+  theBox.value = "";
+}
+//-->
+</SCRIPT>
+<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+<style type="text/css">
+@import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #cccccc;
+}
+-->
+</style>
+<script language="JavaScript">
+function openwincno(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/cnopd.html', 'cno', properties);
+}
+</script>
+<script language="JavaScript">
+function openwin(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/radio.html', 'ahradio', properties);
+}
+</script>
+<table width=1000 height="50" border=0 align="center" cellpadding=0 cellspacing=0 bgcolor="#000033" style="background-image: url('/graphics/Navymil.png');background-position: right;background-repeat: no-repeat;">
+<form name=srchForm method=get action="http://search.dma.mil/search">
+  <tr>
+    <td width=725 height=50><a href="http://www.navy.mil"><img src="/images/bblank.gif" border=0 width=725 height=50 alt="Home Page"></a></td>
+        <td align=right>
+          <table border=0 cellpadding=0 cellspacing=1 width=265>
+            <tr>
+                  <td>&nbsp;<a href="http://www.navy.com" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Careers</strong></a></td>
+                  <td>&nbsp;<a href="/navydata/infoIndex.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Info&nbsp;Index</strong></a></td>
+                  <td>&nbsp;<a href="/about.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>About&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/submit/contacts.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Contact&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Home</strong></a>&nbsp;</td>
+            </tr>
+                <tr>
+                  <td align=center colspan=5><input maxlength=255 type=text name=q id=q value="Search Navy.mil" title="Search Navy.mil" style="height: 18px; width: 200px; font-size: 9px; font-weight: bold;" onFocus="clearText(this);">&nbsp;&nbsp;<input type=image src="/images/go_darkgray.gif" border=0 name=btnG alt="Submit"></td>
+                </tr>
+                <tr>
+                  <td align=center colspan=5><a href="/search/advanced_search.asp" style="font-size:11px; font-family:sans-serif; font-weight:regular; text-decoration:none; color:#FFFFFF"> >>> Advanced Search </a></td>
+                </tr>
+          </table>
+			<input type="hidden" name="client" value="navy_search">
+			<input type="hidden" name="proxystylesheet" value="navy_search">
+			<input type="hidden" name="output" value="xml_no_dtd">
+			<input type="hidden" name="site" id="site" value="navy_all">
+        </td>
+  </tr>
+</form>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <!-- Begin Standard USN Header Bar -->
+
+<style>
+        @import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var menu_ids = new Array('column2_menu','column3_menu','column4_menu','column5_menu','column6_menu');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CFDBE7">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="11%"><a href=""></a></td>
+<td width="11%"><a title="US Navy Today - for 508 viewers please click here then tab into the menu for this area"
+tabindex=200
+class="header_menu_item"
+href="javascript:void(0);"
+name="column2_menu_link"
+id="column2_menu_link"
+child="column2_menu"
+onclick="toggle_main_menu('column2_menu');">&nbsp;US Navy Today</a></td>
+
+<td width="11%"><a title="About the Navy - for 508 viewers please click here then tab into the menu for this area"
+tabindex=300
+class="header_menu_item"
+href="javascript:void(0);"
+name="column3_menu_link"
+id="column3_menu_link"
+child="column3_menu"
+onclick="toggle_main_menu('column3_menu');">&nbsp;About the Navy</a></td>
+
+<td width="11%"><a title="Navy Leadership - for 508 viewers please click here then tab into the menu for this area"
+tabindex=400
+class="header_menu_item"
+href="javascript:void(0);"
+name="column4_menu_link"
+id="column4_menu_link"
+child="column4_menu"
+onclick="toggle_main_menu('column4_menu');">&nbsp;Navy Leadership</a></td>
+
+<td width="11%"><a title="Media Resources - for 508 viewers please click here then tab into the menu for this area"
+tabindex=500
+class="header_menu_item"
+href="javascript:void(0);"
+name="column5_menu_link"
+id="column5_menu_link"
+child="column5_menu"
+onclick="toggle_main_menu('column5_menu');">&nbsp;Media Resources</a></td>
+
+<td width="11%"><a title="Links of Interest - for 508 viewers please click here then tab into the menu for this area"
+tabindex=600
+class="header_menu_item"
+href="javascript:void(0);"
+name="column6_menu_link"
+id="column6_menu_link"
+child="column6_menu"
+onclick="toggle_main_menu('column6_menu');">&nbsp;Links of Interest</a></td>
+
+<td width="17%"><a tabindex=700 class="header_menu_item" href="/navydata/infoIndex.asp">&nbsp;Information Index </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Column2 Menu Popup Items --->
+<div id="column2_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">US Navy Today:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=221 class="header_submenu_item" href="/navydata/navy_legacy_hr.asp?id=146">Status of the Navy </a></div>
+</td>
+<td width="330">
+<div><a tabindex=241 class="header_submenu_item" href="/links/alpha.asp">Navy Web Sites </a></div>
+</td>
+<td width="330">
+<div><a tabindex=261 class="header_submenu_item" href="/search/history_today.asp">Today in Naval History </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=290 href="javascript:void(0);" onclick="hide_main_menu('column2_menu');">Hide US Navy Today Menu</a></div>
+</div>
+</div>
+
+<!-- Column3 Menu Popup Items --->
+<div id="column3_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">About the Navy:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=321 class="header_submenu_item" href="/navydata/organization/org-top.asp">Navy Organization </a></div>
+</td>
+<td width="330">
+<div><a tabindex=341 class="header_submenu_item" href="/navydata/our_ships.asp">Our Ships </a></div>
+</td>
+<td width="330">
+<div><a tabindex=361 class="header_submenu_item" href="/navydata/fact.asp">Fact File </a></div>
+<div><a tabindex=362 class="header_submenu_item" href="/navydata/faq.asp">FAQ (Got a Question?) </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=390 href="javascript:void(0);" onclick="hide_main_menu('column3_menu');">Hide About the Navy Menu</a></div>
+</div>
+</div>
+
+<!-- Column4 Menu Popup Items --->
+<div id="column4_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Navy Leadership:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=421 class="header_submenu_item" href="/secnav/index.asp">Secretary of the Navy </a></div>
+<div><a tabindex=422 class="header_submenu_item" href="/navydata/bios/bio_list.asp">Biographies </a></div>
+</td>
+<td width="330">
+<div><a tabindex=441 class="header_submenu_item" href="/cno/index.asp">Chief of Naval Operations </a></div>
+<div><a tabindex=442 class="header_submenu_item" href="/navydata/ccklist.asp">Leadership Tools </a></div>
+</td>
+<td width="330">
+<div><a tabindex=461 class="header_submenu_item" href="/cnp/index.asp">Chief of Naval Personnel </a></div>
+<div><a tabindex=462 class="header_submenu_item" href="/mcpon/index.asp">Master Chief Petty Officer of the Navy </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=490 href="javascript:void(0);" onclick="hide_main_menu('column4_menu');">Hide Navy Leadership Menu</a></div>
+</div>
+</div>
+
+<!-- Column5 Menu Popup Items --->
+<div id="column5_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Media Resources:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=521 class="header_submenu_item" href="/view_photos_top.asp">Photo Gallery </a></div>
+<div><a tabindex=522 class="header_submenu_item" href="/view_galleries.asp">Eye on the Fleet Featured Gallery </a></div>
+<div><a tabindex=523 class="header_submenu_item" href="/view_videos.asp?vtype=5">All Hands Television Archive </a></div>
+<div><a tabindex=524 class="header_submenu_item" href="/podcast/podcast.asp">Podcasts and RSS Feeds </a></div>
+<div><a tabindex=525 class="header_submenu_item" href="/view_videos.asp">Video Gallery </a></div>
+<div><a tabindex=526 class="header_submenu_item" href="/view_flash_gallery.asp">Everyday in the Navy Archive </a></div>
+</td>
+<td width="330">
+<div><a tabindex=541 class="header_submenu_item" href="/navydata/cnopList.asp">CNO Podcast </a></div>
+<div><a tabindex=542 class="header_submenu_item" href="/navydata/mcponplist.asp">MCPON Podcast </a></div>
+<div><a tabindex=543 class="header_submenu_item" href="/view_videos.asp?vtype=6">All Hands Update Archive </a></div>
+<div><a tabindex=544 class="header_submenu_item" href="/view_webads.asp">Web Ad Gallery </a></div>
+<div><a tabindex=545 class="header_submenu_item" href="/view_printads.asp">Print Ad Gallery </a></div>
+</td>
+<td width="330">
+<div><a tabindex=561 class="header_submenu_item" href="/navydata/radioList.asp">All Hands Radio Archive </a></div>
+<div><a tabindex=562 class="header_submenu_item" href="/allhands.asp">All Hands Magazine </a></div>
+<div><a tabindex=563 class="header_submenu_item" href="/view_ggphotos.asp">Graphics Gallery </a></div>
+<div><a tabindex=564 class="header_submenu_item" href="/view_ahhphotos.asp">All Hands Photo Gallery </a></div>
+<div><a tabindex=565 class="header_submenu_item" href="https://service.govdelivery.com/service/multi_subscribe.html?code=USNAVYDMA" target=new>Subscribe/Unsubscribe to Navy News </a></div>
+<div><a tabindex=566 class="header_submenu_item" href="/photo_submit.asp">How to Submit a Photo to Navy Visual News </a></div>
+<div><a tabindex=567 class="header_submenu_item" href="/submit/index.asp">How to Submit a Story to Navy.mil </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=590 href="javascript:void(0);" onclick="hide_main_menu('column5_menu');">Hide Media Resources Menu</a></div>
+</div>
+</div>
+
+<!-- Column6 Menu Popup Items --->
+<div id="column6_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Links of Interest:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=621 class="header_submenu_item" href="http://www.npc.navy.mil/ReferenceLibrary/Publications/ShiftColors/" target=new>Shift Colors-Navy Retiree Newsletter </a></div>
+<div><a tabindex=622 class="header_submenu_item" href="/navco/">Navy Office of Community Outreach </a></div>
+<div><a tabindex=623 class="header_submenu_item" href="https://navyfamily.navy.mil/cas/login?service=https%3A%2F%2Fnavyfamily.navy.mil%2F" target=new>Affected Navy Family Assistance </a></div>
+<div><a tabindex=624 class="header_submenu_item" href="http://www.nmcrs.org/" target=new>Navy / Marine Corps Relief </a></div>
+<div><a tabindex=625 class="header_submenu_item" href="http://www.militaryonesource.com/skins/MOS/home.aspx" target=new>Military One Source </a></div>
+</td>
+<td width="330">
+<div><a tabindex=641 class="header_submenu_item" href="http://www.history.navy.mil/ " target=new>Naval History & Heritage Command </a></div>
+<div><a tabindex=642 class="header_submenu_item" href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx" target=new>Navy Personnel Command </a></div>
+<div><a tabindex=643 class="header_submenu_item" href="https://www.nko.navy.mil" target=new>Navy Knowledge Online </a></div>
+<div><a tabindex=644 class="header_submenu_item" href="http://www.pentagonchannel.mil/" target=new>Pentagon Channel </a></div>
+<div><a tabindex=645 class="header_submenu_item" href="/navyenterprise/">Navy Enterprise </a></div>
+</td>
+<td width="330">
+<div><a tabindex=661 class="header_submenu_item" href="https://www.navyreserve.navy.mil" target=new>Navy Reserve </a></div>
+<div><a tabindex=662 class="header_submenu_item" href="http://www.usmc.mil/" target=new>US Marine Corps </a></div>
+<div><a tabindex=663 class="header_submenu_item" href="http://www.uscg.mil/" target=new>US Coast Guard </a></div>
+<div><a tabindex=664 class="header_submenu_item" href="http://www.af.mil/" target=new>Air Force </a></div>
+<div><a tabindex=665 class="header_submenu_item" href="http://www.army.mil/" target=new>Army </a></div>
+<div><a tabindex=666 class="header_submenu_item" href="http://www.defense.gov" target=new>Defense.gov </a></div>
+<div><a tabindex=667 class="header_submenu_item" href="http://www.jcs.mil" target=new>Joint Chiefs of Staff </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=690 href="javascript:void(0);" onclick="hide_main_menu('column6_menu');">Hide Links of Interest Menu</a></div>
+</div>
+</div>
+
+<!-- End of Standard US Navy Header Bar -->
+
+
+<table width="1000" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#FFFFFF" with=728 height=30><h1 style="margin:0px; font-size:2px; color:#ffffff">Carl Vinson Marks 30 Years of Service</h1></td>
+	<td bgcolor="#FFFFFF" width=276 style="font-family: arial; font-size: 12pt; font-weight: bold; color: #993300">
+&nbsp;Related Photos
+	</td>
+  </tr>
+</table>
+<table width="1000" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td bgcolor="#FFFFFF" rowspan="4" width=20 height=1></td>
+    <td bgcolor="#FFFFFF" width=626 height=1></td>
+    <td bgcolor="#FFFFFF" rowspan="4" width=10 height=1></td>
+    <td bgcolor="#FFFFFF" rowspan="4" width="15" height="1"></td>
+    <td bgcolor="#FFFFFF" rowspan="4" class="vertical" width="6" height="1"></td>
+    <td width="260" height=1 bgcolor="#FFFFFF"" align="center"></td>
+  </tr>
+  <tr> 
+    <td colspan=2 bgcolor="#FFFFFF" valign="top" rowspan="2"> 
+
+      <!-- PASTE TOP STORY HEADLINE BELOW --> 
+      <p><strong class="hedlyne"> Carl Vinson Marks 30 Years of Service</strong></p>
+		
+	  <table width=100% cellpadding=0 cellspacing=0 border=0 bgcolor="#FFFFFF">
+		<tr>
+		  <td align=center>
+		    <table cellpadding=0 cellspacing=0 border=0>
+			  <tr>
+				<td width=5 height=1></td>
+			    <td width=190 class=storyhd>Story Number: NNS120313-13</td>
+				<td width=15 height=1></td>
+				<td width=230 class=storyhd>Release Date: 3/13/2012 9:30:00 AM</td>
+				<td width=20 height=1></td>
+
+				<td width=100 align=right class=storyhd>0 Comments</td>
+				<td width=5 height=1></td>
+				<td>
+<a href='javascript:rateStory(65855)'><img src="/images/navy_mil/comment_images/vote_tutd.jpg" border=0 alt="Rate this story!"></a>&nbsp;</td>
+			  </tr>
+			  <tr>
+			    <td colspan=8 class="horizontal" height=6 width=6></td>
+			  </tr>
+			  <tr>
+			    <td colspan=8>
+				  <table width=100% cellspacing=0 cellpadding=0 border=0 bgcolor="#FFFFFF">
+				    <tr>
+					  <td>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+					  </td>
+					  <td width=150 align=right>
+					  	<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, 'email', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onfocus="return addthis_open(this, 'email', '[URL]', '[TITLE]')" onblur="addthis_close()" onclick="return addthis_sendto()"><img src="/images/navy_mil/comment_images/email_graphic.jpg" border=0 alt="Email this story to a friend"></a>
+					  </td>
+					  <td>
+					    <A href=print.asp?story_id=65855&VIRIN=112501&imagetype=1&page=1><img src="/images/navy_mil/comment_images/print_graphic.jpg" border=0 alt="Print this story"></a>
+					  </td>
+					  <td style="font-family: Arial; font-size: 11px; color: #AAAAAA;" title="Change the font size of this story">Font Size:</td>
+					  <td><a href="javascript:usefontdef();" id="fontdef" class="fontstd" title="Change to default font size">A</a></td>
+					  <td><a href="javascript:usefontmid();" id="fontmid" class="fontmid" title="Change to larger font size">A</a></td>
+					  <td><a href="javascript:usefontbig();" id="fontbig" class="fontmax" title="Change to largest font size">A</a></td>
+					  <td height=6 width=95></td>
+					  <td width=25 style="font-family: Arial; font-size: 11px;" title="This story has 0 &quot;Thumbs Up&quot; votes"><strong id="tub">0</strong></td>
+					  <td align=right width=25 style="font-family: Arial; font-size: 11px;" title="This story has 0 &quot;Thumbs Down&quot; votes"><strong id="tdb">0</strong></td>
+					</tr>
+				  </table>
+				</td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		    <table width=98% cellpadding=0 cellspacing=0 border=0>
+			  <tr>
+			    <td height=1 width=15></td>
+				<td>
+     <!-- PASTE BYLINE BELOW -->  
+	 <br><p id="byline" class="byline"> By Mass Communication Specialist 2nd Class (SW) Byron C. Linder, USS Carl Vinson Public Affairs</p>
+      <!-- PASTE STORY BELOW --> 
+      <p id='storybody' class='storybody'>USS CARL VINSON, At Sea (NNS) -- Sailors aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70) celebrated the carrier's 30th year of service March 13.  <br>
+<br>
+Navy veterans who commissioned the ship joined them from afar as they recalled their service aboard Vinson. <br>
+<br>
+Commissioned March 13, 1982 in Newport News, Va. with Capt. Richard L. Martin as her first commanding officer, the Navy's third Nimitz-class carrier has completed 11 deployments spanning the world's oceans.<br>
+<br>
+"We were named after an American patriot who knew the value of a strong Navy," said Vinson's Commanding Officer Capt. Kent D. Whalen. "Vinson's vision was a Navy that would protect our nation, keep the sea lanes safe for commerce, and sustain the capability to take the fight to any enemy, anywhere in the world."<br>
+<br>
+"When you look at the amount of time Carl Vinson has spent at sea over the last thirty years, it's a tribute to the dedication of every Sailor who's served aboard her. Prolonged success for a ship always equals one thing - and that's exceptional maintenance practices," said Vinson's Command Master Chief (AW/SW) Jeffrey Pickering. "It's something we focus on in 2012 and it's obvious that it was just as important to the Sailors who sailed Vinson for three decades before us."<br>
+<br>
+Vinson Plankowner Boiler Technician 3rd Class Michael Dorgan reported to Carl Vinson in 1981 as part of the pre-commissioning unit (PCU). He said via email that there are multiple moments throughout his tour aboard CVN 70 that stay with him to this day. <br>
+<br>
+"It's a collection of memories of the people I served with as well as the ports of call," he said. "My years of service aboard the Vinson are very special to me, and I will always cherish them."<br>
+<br>
+Mess Specialist 3rd Class Pierre Wheaton, also part of the PCU and a plankowner, shared his fondest memories.<br>
+<br>
+"Watching the ship being brought to life on commissioning day, seeing the ship for the first time at Newport News, and knowing I would be forever affiliated with the greatest carrier in the fleet," are moments he still holds dear, he said in an e-mail exchange.<br>
+<br>
+Carl Vinson was the first modern aircraft carrier to conduct operations in the Bering Sea in 1986. In 1990, the ship earned the first of what would be six Battle Efficiency (Battle "E") awards.<br>
+<br>
+The Discovery Channel boarded Carl Vinson in 1995 to film a documentary titled "Carrier: Fortress at Sea", chronicling the carrier's six-month deployment to and from the Persian Gulf. In 1996 and 1998, Vinson Sailors earned the ship its second and third Battle "E" awards.<br>
+<br>
+Aviation Machinist's Mate 3rd Class Casey Hall, assigned to Strike Fighter Squadron (VFA) 22 from 1997 to 2000, recalled an instance where he relied on his Shipmates after falling overboard during Vinson's 1999 operations in the Arabian Sea.<br>
+<br>
+What sticks with him more than a decade later is "the way the medical staff worked on me after I was brought back on board," he wrote in an e-mail. <br>
+Coming together for one purpose and mission is something Vinson has become well known for. On Oct. 7, 2001, Vinson launched America's first air strikes in support of Operation Enduring Freedom in response to the 9/11 terrorist attacks, launching more than 4,000 combat sorties. Vinson was recognized with a fourth Battle "E" award for her work that year.<br>
+<br>
+Plankowner Aerographer's Mate 2nd Class (AW) James O'Brien said he felt nothing but pride when he heard of Vinson's involvement in the war on terror.<br>
+<br>
+In 2004, Carl Vinson earned a fifth Battle "E" for  her successes in support of Operation Iraqi Freedom. <br>
+The ship was the third carrier to undergo a refueling and complex overhaul (RCOH) in 2005. When the ship returned to the fleet in 2010, her Sailors remembered what her first commanding officer said to them during their RCOH. "It's the crew's job," Martin said during Vinson's stepping-the-mast ceremony in 2007, "to bring the ship out of the yards with the same kind of spirit that has been with it forever."<br>
+<br>
+Immediately following her RCOH the ship changed homeports from Bremerton, Wash. to San Diego. When she began her transit from Virginia to California intending to go around the Horn of South America, a devastating earthquake struck Haiti. Vinson changed course just hours after getting underway to provide humanitarian assistance to the island nation as part of Operation Unified Response. <br>
+<br>
+From the flight deck, Vinson provided medical supplies, food, and fresh water to the victims.<br>
+<br>
+Vinson Sailors departed on her first combat deployment since RCOH November 2010 to the U.S. 5th Fleet AOR, returning June 2011. On Veterans Day, Nov. 11, 2011, Carl Vinson hosted the inaugural Quicken Loans Carrier Classic NCAA basketball game on the ship's flight deck between the Michigan State Spartans and the North Carolina Tar Heels.<br>
+<br>
+Carl Vinson Sailors departed San Diego for her current deployment 19 days later. Vinson was awarded her sixth Battle "E" in February 2012 for her performance the previous deployment.<br>
+<br>
+"You have done us plankowners proud. You've picked up the torch we passed back in the '80s and ran with it in ways I would have never believed," Wheaton said. "Remember to stay modest and humble, and keep working hard to maintain the Vinson's good name. You're part of the best carrier in the best Navy in the world."<br>
+Vinson Sailors acknowledged the importance of maintaining the legacy they carry on. <br>
+<br>
+"It is a testament to our naval superiority that with teamwork and a lot of maintenance, this ship is ready for anything," said Aviation Boatswain's Mate (Handling) 3rd Class (AW) Logan Judd, assigned to Air Department's V-1 Division. <br>
+<br>
+"I'm proud of everything this ship has been through and achieved. It has definitely had a name in the past and has carried that name with honor throughout the years," added Seaman Jessica Hamilton of Deck Department's 3rd Division, temporarily assigned to Supply Department's S-2 Division.<br>
+	<br>
+For more information, visit <a href="http://www.navy.mil" Target="_BLANK">www.navy.mil</a>, <a href="http://www.facebook.com/usnavy" Target="_BLANK">www.facebook.com/usnavy</a>, or <a href="http://www.twitter.com/usnavy" Target="_BLANK">www.twitter.com/usnavy</a>. <br>
+<br>
+For more news from USS Carl Vinson (CVN 70), visit <a href="http://www.navy.mil/local/cvn70" Target="_BLANK">www.navy.mil/local/cvn70</a>/. </p>
+              </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	  <tr>
+	    <td>
+		  <table width=98% cellpadding=0 cellspacing=0 border=0>
+			<tr>
+			    <td width=15 height=10></td>
+			    <td width=35></td>
+			    <td width=35></td>
+			    <td width=600></td>
+			</tr>
+
+			<tr>
+			  <td colspan=4 width=70 height=20></td>
+			</tr>
+			<tr>
+			  <td colspan=4>
+			    <table width=100% cellpadding=0 cellspacing=0 border=0>
+				  <tr>
+				    <td width=25 height=6></td>
+					<td class="horizontal" height=6 width=650></td>
+				    <td width=8></td>
+				  </tr>
+				</table>
+			  </td>
+			</tr>
+			<tr>
+			  <td width=25 height=6></td>
+			  <td colspan=3><a href="javascript:makeComment(65855);"><img src="/images/navy_mil/comment_images/voice_your_opinion.jpg" border=0 alt="Make a comment on this story"></a></td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+	</table>
+	  <!-------End - STORY PASTE---------> 
+      <br><br>
+    </td>
+      <td width="275" bgcolor="#FFFFFF" valign=top>  
+      <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0 width="275">
+	    <tr>
+		  <td>
+      
+      <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0 width="275">
+      <tr> 
+          <td bgcolor="#ffffff" rowspan=4 width=5 height=200>&nbsp;</td>
+          <td colspan="2"><a href="/list_single.asp?id=112501"><img src="../management/photodb/thumbnails/thumb_121911-N-BK480-001.jpg" width="261" alt="USS Carl Vinson (CVN 70) is underway on a western Pacific deployment. " border="0"></a></td>
+          <td bgcolor="#ffffff" rowspan=4 width=4 height=200>&nbsp;</td>
+      </tr>
+	  <tr>
+		<td colspan=2 class="horizontal" height=6 width=6></td>
+        <td bgcolor="#ffffff" height=10 width=5></td>
+	  </tr>
+	  <tr>
+	   <td colspan=2>
+	    <table cellpadding=0 cellspacing=0 border=0>
+		 <tr>
+		  <td valign=bottom width=25 bgcolor="#ffffff">
+		    <img src="/images/navy_mil/comment_images/previous_image.jpg" border=0 alt="Previous Photo"></a>
+		  </td>
+		  <td valign=top bgcolor="#ffffff">
+		    <a href="/view_single.asp?id=112501" style="font-family: Arial; font-size: 9px; text-decoration: none; color: #000000" title="See a larger view of this photo">&nbsp;View&nbsp;Larger</a>&nbsp;
+		  </td>
+		  <td valign=top bgcolor="#ffffff">
+		    &nbsp;&nbsp;<a href="/management/photodb/photos/121911-N-BK480-001.jpg" style="font-family: Arial; font-size: 9px; text-decoration: none; color: #000000" title="See a high resolution view of this photo">Download&nbsp;HiRes</a>&nbsp;
+		  </td>
+		  <td valign=top bgcolor="#ffffff">
+		    &nbsp;&nbsp;<a href="/list_all.asp?id=65855" style="font-family: Arial; font-size: 9px; text-decoration: none; color: #000000" title="View all related photos">View&nbsp;All&nbsp;Photos&nbsp;</a>
+		  </td>
+		  <td valign=bottom width=26 bgcolor="#ffffff">
+		    <img src="/images/navy_mil/comment_images/next_image.jpg" border=0 alt="Next Photo"></a>
+		  </td>
+		 </tr>
+		</table>
+	   </td>
+	  </tr>
+	  <tr>
+		<td colspan=2 class="horizontal" height=6 width=6></td>
+        <td bgcolor="#ffffff" height=10 width=5></td>
+	  </tr>
+		 
+        <tr> 
+          <td bgcolor="#ffffff" height=10 width=5></td>
+          <td colspan="2"><a href="/list_single.asp?id=112501" class="menudark">121911-N-BK480-001 
+PACIFIC OCEAN (Dec. 19, 2011) USS Carl Vinson (CVN 70) is underway on a western Pacific deployment. (U.S. Navy illustration by Mass Communication Specialist 3rd Class Megan L. Catellier/Released)
+</a></td>
+        </tr>
+         
+        <tr>
+          <td colspan=4 bgcolor="#ffffff" height=10 width=6></td>
+        </tr>
+      </table>
+	  <br>
+
+	    </td>
+	  </tr>
+	  <!-------RELATED CONTENT CODE -------------------------->
+
+	  <tr>
+	    <td colspan=2>
+      	  <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0 width=275>
+			<tr>
+			  <td bgcolor="#FFFFFF" width=276 height=2 style="font-family: arial; font-size: 12pt; font-weight: bold; color: #993300">&nbsp;Related Content</td>
+			</tr>
+			<tr><td width=270 height=2></td></tr>	
+		  </table>
+	    </td>
+	  </tr>
+
+	  <tr>
+	  <td colspan=2>
+      <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0 width=275>
+		<tr>
+		  <td>
+		    <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0>
+				<tr>
+				  <td>
+				   <ul>
+
+				<li><label style="font-family: Arial; font-size: 12px; font-weight: bold; color: #094184;">No related content is currently available</label></li>
+	
+				  </ul>
+				  </td>
+				</tr>
+			</table>
+
+		    <br>
+			<table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0>
+			  <tr>
+			    <td>
+				  <ul>
+					<li><a href="../submit/" class="sitelink">Submit Story/Photos</li>
+					<li><a href="../tools/" class="sitelink">Tools</a></li>
+        			<li><a href="../privacy.asp" class="sitelink">Privacy &amp; Security</a></li>
+					<li><a href="../external.asp" class="sitelink">External Links</a></li>
+        			<li><form action="https://service.govdelivery.com/service/subscribe.html" method="POST">
+					    <input type="hidden" name="code" value="USNAVYDMA_1" />
+						<input type="hidden" name="origin" value="http://www.navy.mil/search/display.asp?story_id=65855" />
+						<p class="sitelink"><img src="/images/navy_mil/email_whitebg.jpg" align=top border=0 alt="Sign up for email updates">&nbsp;To sign up for updates or to access your subscriber preferences, please enter your e-mail address.
+						<input title="Enter email address" type="textfield" name="login" value="Enter email address" onfocus="this.value=''" />
+						<input type="submit" value="Go" /></P>
+					  </form>
+					</li>
+				  </ul>
+				</td>
+			  </tr>
+			</table><br><br>
+	      </td>
+		</tr>
+	  </table>
+	  </td>
+	  </tr>
+	  <tr>
+	  <td colspan=2>
+      <table bgcolor="#ffffff" border=0 cellpadding=0 cellspacing=0 width=275>
+	    <tr>
+		  <td align=center>
+      <!-- Ad Time                                                   ---->
+	  <!-- First, we'll see if an ad has been placed in the story    ---->
+      
+	
+	<!-- Now, If no ad was placed, well put one of the top 10 in but only 1 time out of 4    ---->
+      
+		  </td>
+		</tr>
+        <tr>
+          <td colspan=4 bgcolor="#ffffff">&nbsp;</td>
+        </tr>
+	  </table>
+	  </td>
+	  </tr>
+	</table>
+	</td>
+  </tr>
+</table>
+
+<!-- Piwik -->
+<script type="text/javascript">
+<!--
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://trend.omnitecinc.com/" : "https://trend.omnitecinc.com/"); 
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E")); 
+try { var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7); piwikTracker.trackPageView(); piwikTracker.enableLinkTracking(); } 
+catch( err ) {} 
+//-->
+</script>
+<noscript><p><img src="https://trend.omnitecinc.com/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+</body>
+</html>
+
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+var ViewWindow = new Object();
+
+function rateStory(id)
+{
+	var tempItem = id;
+	viewWindow = window.open('/submit/rate_story.asp?id=' + tempItem,'VIEW_WIN','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=400,height=170');
+	viewWindow.focus();
+}
+
+function makeComment(id)
+{
+	var tempItem = id;
+	viewWindow = window.open('/submit/comment_story.asp?story_id=' + tempItem,'VIEW_WIN','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=1000,height=570');
+	viewWindow.focus();
+}
+
+function openVideo(strVideo)
+{ 
+	var tempItem = strVideo;
+	var openVideo
+	openVideow = window.open(tempItem,'VIDEO_WIN','toolbar=no,location=yes,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no,width=600,height=625');
+	openVideow.focus();
+}
+
+function usefontdef()
+{
+	document.getElementById('storybody').style.fontSize = "12px";
+	document.getElementById('byline').style.fontSize = "12px";
+	document.getElementById('fontdef').style.color = "#000000";
+	document.getElementById('fontmid').style.color = "#AAAAAA";
+	document.getElementById('fontbig').style.color = "#AAAAAA";
+}
+
+function usefontmid()
+{
+	document.getElementById('storybody').style.fontSize = "14px";
+	document.getElementById('byline').style.fontSize = "14px";
+	document.getElementById('fontdef').style.color = "#AAAAAA";
+	document.getElementById('fontmid').style.color = "#000000";
+	document.getElementById('fontbig').style.color = "#AAAAAA";
+}
+
+function usefontbig()
+{
+	document.getElementById('storybody').style.fontSize = "16px";
+	document.getElementById('byline').style.fontSize = "16px";
+	document.getElementById('fontdef').style.color = "#AAAAAA";
+	document.getElementById('fontmid').style.color = "#AAAAAA";
+	document.getElementById('fontbig').style.color = "#000000";
+}
+
+function expandComment(intWhich)
+{
+	document.getElementById("moreComment" + intWhich).style.display = "none";
+	document.getElementById("lessComment" + intWhich).style.display = "block";
+}
+
+function contractComment(intWhich)
+{
+	document.getElementById("lessComment" + intWhich).style.display = "none";
+	document.getElementById("moreComment" + intWhich).style.display = "block";
+}
+
+var xmlhttp
+
+function showRating()
+{
+xmlhttp=GetXmlHttpObject();
+if (xmlhttp==null)
+  {
+  return;
+  }
+var url="/submit/getStoryRating.asp?x=65855";
+xmlhttp.open("GET",url,true);
+xmlhttp.send(null);
+xmlhttp.onreadystatechange=stateChanged;
+}
+
+function stateChanged()
+{
+if (xmlhttp.readyState==4)
+  {
+  var x;
+  var info = xmlhttp.responseText;
+  var rates = info.split("*");
+  x = document.getElementById('tub');
+  x.innerHTML=rates[0];
+  x = document.getElementById('tdb');
+  x.innerHTML=rates[1];
+  }
+}
+
+function GetXmlHttpObject()
+{
+if (window.XMLHttpRequest)
+  {
+  // code for IE7+, Firefox, Chrome, Opera, Safari
+  return new XMLHttpRequest();
+  }
+if (window.ActiveXObject)
+  {
+  // code for IE6, IE5
+  return new ActiveXObject("Microsoft.XMLHTTP");
+  }
+return null;
+}//-->
+</script>

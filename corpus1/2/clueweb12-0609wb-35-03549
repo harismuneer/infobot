@@ -1,0 +1,1260 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-04T22:11:43Z
+WARC-TREC-ID: clueweb12-0609wb-35-03549
+WARC-Target-URI: http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html
+WARC-Payload-Digest: sha1:ZXMXEHANGV32S2J6Z3NQEXUJRT4TSBBZ
+WARC-IP-Address: 66.223.20.195
+WARC-Record-ID: <urn:uuid:0daf6698-cc7c-4d82-a293-56d51628aa10>
+Content-Type: application/http; msgtype=response
+Content-Length: 97245
+
+HTTP/1.1 200 OK
+Date: Sun, 04 Mar 2012 22:11:46 GMT
+Server: Apache/2.2.3 (Red Hat)
+Charset: ISO-8859-1
+Connection: close
+Content-Type: text/html
+
+
+ 
+<html ><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<script language="Javascript1.1" type="text/javascript">
+<!--
+
+var session_cookie = getCookie('session2452796.1312');
+if (session_cookie == null) {
+	var session_dt = "0";
+	var session_j = "0";
+}  else {
+	var session_array = session_cookie.split("&");
+	var session_dt = session_array[0];
+	var session_j = session_array[1];
+}
+
+
+function getCookie(name) {
+	var cname = name + "=";
+	var dc = document.cookie;
+
+	if (dc.length > 0) {
+		begin = dc.indexOf(cname);
+		if (begin != -1) {
+			begin += cname.length;
+			end = dc.indexOf(";", begin);
+			if (end == -1)  {
+				end = dc.length;
+			} // end if
+			return (dc.substring(begin, end));
+		} // end if
+	} // end if
+	return null;
+}
+
+
+var u_cookie = getCookie('ubber2452796.1312');
+if(u_cookie) {
+	u_array = u_cookie.split("&");
+} else {
+	u_array = new Array("", "", "", "", "", "", "", null, null, null);
+} // end if
+
+var ami = "";
+if(('' == u_cookie) ||  (null == u_cookie)) {
+	ami = ".ip-is-loggedin { display: none; } .ip-is-notloggedin { display: }";
+} else {
+	ami = ".ip-is-loggedin { display: ; } .ip-is-notloggedin { display: none }";
+} // end if
+document.writeln('<' + 'style type="text/css">' + ami + '<' + '/style>');
+
+var MONTH_NAMES = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", "Jan", "Feb", "Mar", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var AMPM = Array("AM", "PM");
+// 5 and 6 are reserved
+if(u_array[7]) {
+	dfrm = unescape(u_array[7]);
+} else {
+	dfrm = 'MMM dd, yyyy';
+} // end if
+if(u_array[8]) {
+	tfrm = unescape(u_array[8]);
+} else {
+	tfrm = 'hh:mm a';
+} // end if
+if(u_array[9]) {
+	fudge = unescape(u_array[9]);
+} else {
+	fudge = 0;
+} // end if
+
+//-->
+
+</script>
+<script src="http://www.ornery.org/ubb/datelib.js" language="Javascript1.3" type="text/javascript"></script>
+<title>The Ornery American Forum: Capital Gains Tax </title>
+<meta http-equiv="Pragma" content="no-cache" />
+<link rel="shortcut icon" href="http://www.ornery.org/ubb/favicon.ico" />
+	<base href="http://www.ornery.org/ubb/" />
+<style type="text/css">
+body	{
+	margin:	0;
+	font-family: Arial, Verdana, Helvetica;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	}
+td	{
+	font-family: Arial, Verdana, Helvetica;
+	font-size: 9pt;
+	}
+span.datestamp-1 {
+	font-weight: bold;
+}
+span.timestamp-1 {
+	color: #800080;
+}
+</style>
+<!--  --><!--  -->
+
+<!--  -->
+<script language="Javascript1.3" type="text/javascript">
+		var nuke_quick_reply = 0;
+
+		var real = document.location.href ? document.location.href : document.location;
+		if((real.indexOf("iframe=1") > -1) || (real.indexOf("iframe/1") > -1)) {
+			nuke_quick_reply = 1;
+		} // end if
+
+		u_cookie = getCookie('ubber2452796.1312');
+		if(!u_cookie || u_cookie == null || u_cookie.length < 1) {
+			nuke_quick_reply = 1;
+		} else {
+			u_array = u_cookie.split("&");
+			if(u_array[12] == 1) {
+				nuke_quick_reply = 1;
+			} // end if
+		} // end if
+
+		if(nuke_quick_reply == 1) {
+			document.writeln("<" + "style type=" + '"text/css">');
+			document.writeln("#quickreply { display: none; }");
+			document.writeln("<" + "/style>");
+		} // end if
+</script>
+<!--  -->
+</head>
+
+<body  bgcolor="#FFFFFF" text="#000000" link="#000080" vlink="#2f2f4f" alink = "#800000" >
+
+
+<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+<LINK REL="stylesheet" HREF="http://www.ornery.org/templates/default.css" TYPE="text/css">
+
+
+<!---- start title table ---->
+<TABLE BORDER=0 WIDTH=100% CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD BGCOLOR="#778899" VALIGN=top> &nbsp; <A HREF="/index.html"><IMG SRC="/images/ornery.gif" ALT="Ornery.org" WIDTH=494 HEIGHT=50 BORDER=0></A></TD>
+	</TR>
+
+	<TR>
+		<TD BGCOLOR="#FAF0E6"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+	<TR>
+		<TD BGCOLOR="#778899"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+	<TR>
+		<TD BGCOLOR="#FAF0E6"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+	<TR>
+		<TD BGCOLOR="#778899"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+
+	<TR>
+		<TD BGCOLOR="#FAF0E6" ALIGN=left>
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=150 HEIGHT=24 BORDER=0></TD>
+		<TD><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2> &nbsp; <A HREF="/index.html" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>Front Page</FONT></A> &nbsp; | &nbsp; <A HREF="/about.html" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>About Ornery.org</FONT></A> &nbsp; | &nbsp; <A HREF="/essays/warwatch/index.html" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>World Watch</FONT></A> &nbsp; | &nbsp; <!-- <A HREF="/essays/sportswriter/blog/" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>Sports Blog</FONT></A> &nbsp; | &nbsp; --><A HREF="/essays/index.html" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>Guest Essays</FONT></A> &nbsp; | &nbsp; <A HREF="/contact2.html" class="nodec"><FONT FACE="arial,helvetica,sans-serif" COLOR=#8B0000 SIZE=2>Contact Us</FONT></A> </FONT></TD>
+	</TR>
+</TABLE>
+
+		</TD>
+	</TR>
+
+	<TR>
+		<TD BGCOLOR="#8B0000"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+	<TR>
+		<TD BGCOLOR="#FAF0E6"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=1 BORDER=0></TD>
+	</TR>
+
+	<TR>
+		<TD BGCOLOR="#8B0000"><IMG SRC="/images/pixel_trans.gif" ALT="" WIDTH=1 HEIGHT=2 BORDER=0></TD>
+	</TR>
+</TABLE>
+<!---- end title table ----><P>
+
+ <script language="Javascript1.1" type="text/javascript">
+<!--
+
+	var julians = new Array("2452579.1318", "2452579.1458", "2452579.2149", "2452579.2204", "2452580.2114", "2452581.1319", "2452581.1424", "2452581.1732", "2452581.2056", "2452581.2227", "2452581.2240", "2452581.2244", "2452581.2246", "2452581.2247", "2452581.2250", "2452581.2251", "2452581.2300", "2452581.2303", "2452581.2313", "2452581.2317", "2452581.2319", "2452581.2327", "2452581.2337", "2452581.2339", "2452581.2340", "2452581.2343", "2452581.2344", "2452582.0006", "2452582.0020", "2452582.0341", "2452582.0623", "2452582.1043", "2452582.1144", "2452582.1149", "2452582.1152", "2452582.1304", "2452582.1706", "2452582.2020", "2452583.1304", "2452583.1410", "2452583.1440", "2452583.1553", "2452583.1713", "2452583.1754", "2452583.1801", "2452583.1926", "2452583.2038", "2452583.2259", "2452584.0110", "2452585.0054", "2452585.0550", "2452586.0117", "2452595.1831");
+	var posts = new Array("000000", "000001", "000002", "000003", "000004", "000005", "000006", "000007", "000008", "000009", "000010", "000011", "000012", "000013", "000014", "000015", "000016", "000017", "000018", "000019", "000020", "000021", "000022", "000023", "000024", "000025", "000026", "000027", "000028", "000029", "000030", "000031", "000032", "000033", "000034", "000035", "000036", "000037", "000038", "000039", "000040", "000041", "000042", "000043", "000044", "000045", "000046", "000047", "000048", "000049", "000050", "000051", "000052");
+	var pages = new Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2);
+
+	var replies = julians.length;
+
+	function bluearrow () {
+
+		var counter = 0;
+		var baseurl = "http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_topic;f=6;t=001407";
+		var shorturl = document.location.href;
+		var p = 2;
+		var url = "";
+
+		var ploc = shorturl.indexOf("#");
+		if(ploc > -1) {
+			shorturl = shorturl.substr(0, ploc);
+		} // end if
+
+		var reversed = 0;
+
+		while(counter < replies) {
+
+			if((session_j > julians[counter]) && !reversed) {
+				if((pages[counter] == 1) || (pages[counter] == p)) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				counter++;
+				continue;
+			} else if((session_j < julians[counter]) && reversed) {
+				if((pages[counter] == 1) || (pages[counter] == p)) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				counter++;
+				continue;
+			} else {
+				if(pages[counter] < 1) {
+					continue;
+				}
+				if(pages[counter] == p) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				break;
+			} // endif
+
+		} // endwhile
+		return url;
+
+	} // endfunc
+
+//-->
+</script>
+
+<script language="Javascript1.3" type="text/javascript">
+
+	function latest_check () {
+		var real = document.location.href ? document.location.href : document.location;
+		if(real.indexOf("#LATEST") > -1) {
+			document.location.href = bluearrow();
+		} // end if
+	} // end mer
+
+</script>
+
+<center>
+<table border="0" width="95%">
+<tr><td>
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi"><img src="http://www.ornery.org/ubb/bbtitle.gif" border="0" alt="The Ornery American Forum" /></a><font size="1" face="Arial, Verdana, Helvetica"></font>
+</td>
+<td align="center">
+
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=newtopic;f=6"><img src="http://www.ornery.org/ubb/topic_ot.gif" alt="Post New Topic" border="0" /></a>&nbsp;&nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407"><img src="http://www.ornery.org/ubb/reply_ot.gif" border="0" alt="Post A Reply" /></a>
+<br />
+</font>
+<font size="1" face="Arial, Verdana, Helvetica" >
+<span class="ip-is-loggedin"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/my_profile.html" title="View your profile">my profile</a>  </span><span class="ip-is-notloggedin"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/login.html"  title="Log in to post and check your profile">login</a> | <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/agree.html" title="Registration is free!">register</a> </span>  | <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/search/search_forum/6.html" title="Search">search</a> | <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/faq.html" title="Frequently Asked Questions">faq</a> | <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi" title="Forum Home">forum home</a><br />
+</font>
+</td></tr></table>
+</center>
+
+<br />
+
+
+<table border="0" cellpadding="2" cellspacing="0" width="95%" align="center">
+<tr><td align="left" valign="bottom"><font face="Arial, Verdana, Helvetica" size="2"><small>
+<script language="Javascript1.3" type="text/javascript">
+<!--
+	var thisurl = bluearrow()
+	if(session_j) {
+		document.writeln("<br /><a href='" + thisurl + "'>Jump to new posts</a> " + "&" + "nbsp" + ";" + "<a href='" + thisurl + "'><img align='middle' src='down.gif' border='0' alt='Jump to Latest Posts' /></a>&nbsp;&nbsp;");
+	} // end if
+//-->
+</script>
+ &nbsp;</small></font></td>
+<td valign="bottom" align="right"><font face="Arial, Verdana, Helvetica" size="2"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=next_topic;f=6;t=001407;go=older"><img src="http://www.ornery.org/ubb/prev_topic.gif" border="0" alt="next oldest topic" /></a> &nbsp; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=next_topic;f=6;t=001407;go=newer"><img src="http://www.ornery.org/ubb/next_topic.gif" border="0" alt="next newest topic" /></a></font></td></tr></table>
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor="#D5E6E1"><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+<tr bgcolor="#f7f7f7">
+<td valign="top" align="left">
+<font size="1" face="Arial, Verdana, Helvetica">
+<b>
+&#187; 
+<script language="Javascript" type="text/javascript">
+<!--
+var user_cookie = getCookie('ubber2452796.1312');
+
+if(('' == user_cookie) || (null == user_cookie)) {
+	// User is not logged in
+	document.writeln('You are not logged in.' , ' <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/login.html">Login</a> or <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/agree.html">register</a>')
+} else {
+	// User is logged in
+	var user_array=user_cookie.split("&");
+	user_array[2] = unescape(user_array[2]);
+	document.writeln('Hello, ', user_array[2]);
+	document.writeln('[ <a title="Click here to log out." href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/logoff.html">log out</a> ]');
+
+	// PM check
+	var haspms = '<?php echo checkUserPMs(); ?>';
+	if(haspms > 0) {
+		document.writeln("<" + "b" + "r />");
+		document.writeln("<" + "a");
+		document.writeln(' href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/ubb/my_profile.html"');
+		document.writeln(">" + "<" + "im" + "g src=" + '"http://www.ornery.org/ubb/newpm.gif" border="0" valign="middle" alt=" [New PM] " ' + "/");
+		document.writeln(">You have  " + haspms + "  unread private messages.<" + "/" + "a>");
+	} // end if
+
+} // end else
+
+//-->
+</script>
+
+</b>
+</font>
+</td>
+<td valign="top" align="right">
+<font size="1" face="Arial, Verdana, Helvetica">
+<b>
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi">The Ornery American Forum</a> &raquo; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/forum/6.html"><b>General Comments</b></a> &raquo; Capital Gains Tax (Page 2)</b>
+</font>
+</td>
+</tr>
+
+</table></td></tr></table>
+
+
+
+<br />
+
+
+
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+	var ubber_cookie = getCookie('ubber2452796.1312')
+	var ubber_cookie_array = new Array(6);
+	if(ubber_cookie != null) { ubber_cookie_array = ubber_cookie.split("&"); }
+
+	function avatar_line (avatarURL) {
+		if(ubber_cookie_array[6] != 1) {
+			return "<img src='" + avatarURL + "' alt='Avatar Image'  />";
+		} // end if
+	} // end function
+// -->
+</script>
+
+<center>
+
+<!-- UBB Friend  -->
+
+<table border="0" width="95%">
+<tr>
+<td valign="bottom" align="left">
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=send_topic;t=001407;f=6"><img src="http://www.ornery.org/ubb/ubb_friend_mini.gif" border="0" alt=" - " /></a> <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=send_topic;t=001407;f=6">UBBFriend: Email this page to someone!</a> &nbsp;
+</font>
+</td>
+
+<td align="right" valign="bottom">
+<font size="1"  face="Arial, Verdana, Helvetica">
+<b>This topic comprises 2 pages:&nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407.html">1</a>&nbsp;&nbsp;2&nbsp;</b> &nbsp;
+</font></td>
+
+</tr>
+</table>
+
+<!-- End UBB Friend  -->
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor="#D5E6E1"><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+
+<tr bgcolor="#D5E6E1">
+<td valign="middle" width="18%" align="left">
+<font size="1" face="Arial, Verdana, Helvetica" color="#000080"><b>
+Author
+</b></font>
+</td>
+<td valign="middle" align="left">
+<font size="1" face="Arial, Verdana, Helvetica" color="#000080"><b>
+Topic: Capital Gains Tax</b></font>
+</td>
+</tr>
+
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000040"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000040"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,14,40,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">02:40 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000040;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000040"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Okay,<P>now let us look at distribution of investment from a tax cut.  As noted above, higher risk investments become more favorable as the tax rate decreases.  However, if we look at the risk distribution of capital investments, it is not equal across countries.<P>Essentially each country has its own distribution of investments with each investment having a different risk and return.  When plotted on a graph with risk/return ratio on one axis and the number of investments at that ratio on another axis what results is a curve that is approximately normal or skewed (actually there should be more skew in general to the high risk/ low return ratio).  When we plot all investments together.  If we compare the curves, what we will note is that some countries are 'shifted' with regard to other countries in their risk factors.  That is countries like the US, Sweden, Canada, and Great Britian will have more investments on the higher return to lower risk.  Whereas developing countries will have higher proportions of the high risk/high return.<P>So, this suggests that a tax cut should push a greater proportion of investment to foreign investment.<P>Now, if the intent of a tax cut is to foster investment in higher risk projects in the US, the implications are that it should be a targeted tax cut for US high risk investments, and not a general cut in the CGT.<P>Baldar,<P>will get to your point on repatriation taxes in a bit (well probably not till tommorrow... I'll cover expatriation for tax avoidance and other stuff as well ).<P>LetterRip<P>[edit added a sentence regarding expatriation...]<p>[This message has been edited by LetterRip (edited November 04, 2002).]
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000040">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000040"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000041"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" style="color: #000000; text-decoration: none;" target="_blank"><b>Baldar</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 669
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000041"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,15,53,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">03:53 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for Baldar" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000669"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email Baldar" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000669"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000041;u=00000669"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000041"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+I don't know why you insist on the jargon LR, its very simple to understand the reasoning behind a capital gains tax.  It is to spur investment.  Now are you arguing to what level capital gains tax should be taxed below normal income tax?  Or are you arguing that it should be higher than normal income tax, and if its higher how does that spur investment?<P><BR>Save the jargon, it doesn't really answer any questions.<P>Also there are more systems of tax abroad than you can possibly imagine or innumerate so why this futile look at "other taxes in other countries"?  I can always find a cheaper income tax return abroad and higher rates of return.<P>Could you stop quoting textbooks.   <IMG SRC="http://www.ornery.org/forums/essays/forum/rolleyes.gif"><P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>So, this suggests that a tax cut should push a greater proportion of investment to foreign investment.<HR></BLOCKQUOTE><P>You raise the capital gains tax, people will seek other investments (including abroad), you lower capital gains tax, more will invest locally.  A tax increase pushes greater investment abroad, a tax cut would not.<P>
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000669" style="color: #000000; text-decoration: none;">Posts: <b>3834</b></a> | Registered: <b>Apr 2002</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000041">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000041"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000042"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000042"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,17,13,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">05:13 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000042;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000042"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+I just realized an important implication of the above discussion- pension funds should not have 0% tax on foreign investment.  That of course doesn't tell us what the optimum rate is, only that it it should be higher than 0% (perhaps 1 or 2%...).<P>As to what is the optimum tax rate on capital gains for individuals.  We can change the effective tax rate of foreign income via reducing the amount that can be claimed as a lose against other gains.  Or for my proposal of discounting inflation, not allowing the discount on foreign gains (or at a lower rate).<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> I don't know why you insist on the jargon LR, its very simple to understand the reasoning behind a capital gains tax. It is to spur investment. <HR></BLOCKQUOTE><P>I assume you meant 'capital gains tax cut'?  I'm not insisting on jargon, I'm trying to be precise, alas precision sometimes requires jargon.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Now are you arguing to what level capital gains tax should be taxed below normal income tax? <HR></BLOCKQUOTE><P>Eh, did you mean 'what level capital gains should be taxed below normal income'?<P>If so, yes, sort of.  Depends on what the normal income (or consumption, or other) tax is.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Or are you arguing that it should be higher than normal income tax, and if its higher how does that spur investment? <HR></BLOCKQUOTE><P>Nope.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Also there are more systems of tax abroad than you can possibly imagine or innumerate so why this futile look at "other taxes in other countries"? I can always find a cheaper income tax return abroad and higher rates of return. <HR></BLOCKQUOTE><P>It's not futile.  While there are certainly variations in the real rate of taxation, those of sufficient economy size and development to be worth significantly investing in are all that really need to be considered, and even though that number may be large, they likely 'cluster' ie 19.1% real rate is not significantly different from a 19.0% rate.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Could you stop quoting textbooks. <HR></BLOCKQUOTE><P>Haven't yet quoted a textbook, I read original papers on economics published in the primary literature and a few of the 'foundational' books, as well as recent books by noted experts in a field that is of interest, plus (rarely) popular books.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> You raise the capital gains tax, people will seek other investments (including abroad), you lower capital gains tax, more will invest locally. A tax increase pushes greater investment abroad, a tax cut would not. <HR></BLOCKQUOTE><P>This is all dependent upon the costs of tax avoidance, and the percieved risk/return ratio.  It isn't nearly as clear as you state.  If we raise the cost of avoidance it should decrease the investment abroad.  Increasing/decreasing the rate of taxation changes the real cost of avoidance and also changes the risk/return ratio.<P>However, taxes are not the only factors affecting the cost of avoidance and the risk/return ratios.<P>The IRS is making it more difficult to engage in tax shelters - increasing the cost of avoidance; I proposed decreasing the amount of loss deductable from foreign investments - changing the risk/return ratio.<P>For the majority of investors, 20% is high enough, and maybe too high (which is why I advocate discounting inflation on long term gains...).<P>LetterRip
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000042">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000042"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000043"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" style="color: #000000; text-decoration: none;" target="_blank"><b>Baldar</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 669
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000043"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,17,54,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">05:54 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for Baldar" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000669"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email Baldar" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000669"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000043;u=00000669"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000043"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Inflation is already discounted.  Our inflation rate increases at an extremely low rate now (especially over a yearly period), inflation is taken into account with expected returns not with tax regulation.  Tax regulation never takes inflation directly into account, the investor does that.  <IMG SRC="http://www.ornery.org/forums/essays/forum/rolleyes.gif"><P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>It's not futile. While there are certainly variations in the real rate of taxation, those of sufficient economy size and development to be worth significantly investing in are all that really need to be considered, and even though that number may be large, they likely 'cluster' ie 19.1% real rate is not significantly different from a 19.0% rate.<HR></BLOCKQUOTE><P>Then you don't know international economics and you are assuming everyone invests in European stocks.  There are great opportunities from South Africa to Singapore to Chile, I know that for a fact because I have investments in all those areas.<BR>
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000669" style="color: #000000; text-decoration: none;">Posts: <b>3834</b></a> | Registered: <b>Apr 2002</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000043">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000043"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000044"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" style="color: #000000; text-decoration: none;" target="_blank"><b>Baldar</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 669
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000044"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,18,1,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">06:01 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for Baldar" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000669"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email Baldar" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000669"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000044;u=00000669"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000044"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Sounds like little textbook quips to me by the way.  It goes outside your normal range of language usage.  You don't have to use jargon to be precise either, that is a fallacy, certainly not as much as I see being thrown around here.  Most of my business career has been spent bypassing jargon from people who want to sell me a bill of goods and looking at the real meat of the matter.<P>Jargon is not serving your needs.
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000669" style="color: #000000; text-decoration: none;">Posts: <b>3834</b></a> | Registered: <b>Apr 2002</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000044">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000044"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000045"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000045"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,19,26,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">07:26 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000045;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000045"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Baldur,<P>you said  <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Inflation is already discounted. Our inflation rate increases at an extremely low rate now (especially over a yearly period), inflation is taken into account with expected returns not with tax regulation. Tax regulation never takes inflation directly into account, the investor does that. <HR></BLOCKQUOTE><P>If you look at my proposal it would take inflation into account for tax purposes.  There is tax regulation in some nations that does take inflation into account and there have been past proposals (and probably current) in our leglisature that would propose taking inflation into account for tax purposes.  The speech that Wanniski gave before the Senate Finance Committee included a suggestion that the CGT rate should be discounted to account for inflation.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Then you don't know international economics and you are assuming everyone invests in European stocks. <HR></BLOCKQUOTE><P>Who said anything about assuming all investment was in European stocks????<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> You don't have to use jargon to be precise either, that is a fallacy, certainly not as much as I see being thrown around here. <HR></BLOCKQUOTE><P>What words do you feel I've used that are particularly 'jargonistic' and could easily be replaced with less 'jargonistic' words without loss of meaning?  I usually try and use the simplest word that will accurately reflect what I want to say and avoid jargon as much as can reasonably be done.<P>LetterRip
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000045">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000045"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000046"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" style="color: #000000; text-decoration: none;" target="_blank"><b>Baldar</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 669
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000046"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,20,38,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">08:38 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for Baldar" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000669"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email Baldar" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000669"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000046;u=00000669"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000046"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Cmon Letterip, stop posing you know you lifted that stuff off a text book, and stop trying to misconstrue.<P>I wasn't speaking about a capital gains tax based on inflation for foreign investments.  Something the text your reading doesn't take into account is GAAP.  When funds are transferred to the United States, especially on balance sheets you already take into account exchange rate gain or loss based on inflation, so the capital gains tax with an inflation lever is like an appendix, it doesn't do anything.  You are also taking Wanninski's comments out of context, he was speaking of domestic inflation rates, not international since international inflation rates are adjusted by the exchange rate gain or loss upon conversion to US dollars.  Of course a beginning text book won't tell you that, however an advanced one does mention it, and most CPA's know it too.<P>So again your Capital Gains Tax adjustment issue doesn't even exist.<P>The reason I mentioned European stocks because you stated the following:<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>quote:<BR>--------------------------------------------------------------------------------<BR> Also there are more systems of tax abroad than you can possibly imagine or innumerate so why this futile look at "other taxes in other countries"? I can always find a cheaper income tax return abroad and higher rates of return. <BR>--------------------------------------------------------------------------------<P>It's not futile. While there are certainly variations in the real rate of taxation, those of sufficient economy size and development to be worth significantly investing in are all that really need to be considered, and even though that number may be large, they likely 'cluster' ie 19.1% real rate is not significantly different from a 19.0% rate.<P><HR></BLOCKQUOTE><P>You see you look at "clusters", I on the other hand look at investments, and as I have said your view is incorrect especially along the lines of "those of suffieient economy size and development worth significantly investing".  These are the words of an inexperienced investor quoting from some book.  You don't look at "sufficient economy size", what does that mean anyway?  Country, county, region?  You look at individual company performance.  There are a number of companies around the world that perform well, even in poorly run countries.  Your position doesn't even deal with capital gains at this point, you are looking at "macro economic effects" which is fine and dandy, but doesn't mean squat when it comes to investments abroad by venture capitalists.  So yes, there are so many tax vehicles in the United States alone and multiply that exponentially for tax issues abroad, you can't say there are "only some countries of economic size" that are somehow worthy of interest.  We don't look at countries we look at companies for investment.<P> <IMG SRC="http://www.ornery.org/forums/essays/forum/rolleyes.gif">  (I have been doing that alot lately).<P>
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000669" style="color: #000000; text-decoration: none;">Posts: <b>3834</b></a> | Registered: <b>Apr 2002</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000046">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000046"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000047"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000047"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,4,22,59,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 04, 2002</span> <span class="timeformat-0">10:59 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000047;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000047"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+ <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Cmon Letterip, stop posing you know you lifted that stuff off a text book, and stop trying to misconstrue. <HR></BLOCKQUOTE><P>I'm not posing, and I'm not sure what you think I'm misconstruing.  The only book that was a textbook, ie a book that might be used in an undergraduate class or some such, were for a 'Political Economy' course during my Freshman year of college.  The course was mostly a philosophy and history of government, and all of the tests were essay.  I didn't read the books for the class, nor show up for more than about 10% of classes (I had a family tragedy right before midterms, missed all of my midterms and quit going to all of my classes.)  So, if my writings are similar in conclusion, tone, whatever, to a textbook it is not because I read it in a textbook.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> I wasn't speaking about a capital gains tax based on inflation for foreign investments. Something the text your reading doesn't take into account is GAAP. <HR></BLOCKQUOTE><P>I've familiarized myself somewhat with the GAAP (Generally Accepted Accounting Principles for those that aren't familiar with the term) for non-profits and governments.  (About three years ago I was planning to start a non-profit insurance company - Insurance law, statistics, actuaries, regulation, fraud, and all sorts of crap - then learned while researching the state requirements for starting an insurance company in Alaska, that it takes about a million dollars and three years just to start, plus large amounts of paperwork.  So I abandoned the idea...)<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> When funds are transferred to the United States, especially on balance sheets you already take into account exchange rate gain or loss based on inflation, so the capital gains tax with an inflation lever is like an appendix, it doesn't do anything. You are also taking Wanninski's comments out of context, he was speaking of domestic inflation rates, not international since international inflation rates are adjusted by the exchange rate gain or loss upon conversion to US dollars. Of course a beginning text book won't tell you that, however an advanced one does mention it, and most CPA's know it too. <HR></BLOCKQUOTE><P>However your previous statement  <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Inflation is already discounted. Our inflation rate increases at an extremely low rate now (especially over a yearly period), inflation is taken into account with expected returns not with tax regulation. Tax regulation never takes inflation directly into account, the investor does that. <HR></BLOCKQUOTE><P>Your context clearly says 'never'.  Now, if you wish to narrow the scope of your statement to foreign investment that is a different situation.<P>Most of what I've read has been about domestic policy and the effects of cutting the capital gains tax in general.<P>I linked you one of the sources I've read for information on the capital gains tax.  Perhaps it mentioned it and I overlooked it.  Or perhaps for some reason he failed to mention it.  You've filled an apparent hole in my self education, which I thank you for.<P>However,  the implication of your statement is that foreign gains are taxed less than domestic gains.  So, there should either be a higher general CGT tax rate with domestic stocks adjusted for inflation so that the tax on foreign and domestic is equivalent, or increase the tax rate on foreign gains only, so that the tax rate is equivalent.<P>My other proposition was to reduce the amount of deduction for capital loses made on foreign stock.  (Which I thought was a better idea anyway.)<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>Also there are more systems of tax abroad than you can possibly imagine or innumerate so why this futile look at "other taxes in other countries"?<HR></BLOCKQUOTE><P>Could you please point to where you are quoting from?  I searched for 'in other' in the entire thread and couldn't find the source of the quote.  So it is really difficult to tell where, how, or if I disagree with you.<P>LetterRip
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000047">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000047"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000048"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" style="color: #000000; text-decoration: none;" target="_blank"><b>Baldar</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 669
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000048"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,5,1,10,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 05, 2002</span> <span class="timeformat-0">01:10 AM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/669.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for Baldar" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000669"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email Baldar" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000669"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000048;u=00000669"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000048"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Cmon, stop nit picking, seems that you are busy with branches instead of dealing with the trees here.<P>Allow me to clarify for you, US Capital Gains Tax never ever ever takes into account inflation in foreign currency because it automatically become adjusted when you convert to US dollars.<P>Capital Gains tax does not take into account inflation because it is kept under strict controls, there are no inflation provisions for capital gains taxes presently on the books because inflation has no real effect on gains.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>However, the implication of your statement is that foreign gains are taxed less than domestic gains. So, there should either be a higher general CGT tax rate with domestic stocks adjusted for inflation so that the tax on foreign and domestic is equivalent, or increase the tax rate on foreign gains only, so that the tax rate is equivalent.<BR><HR></BLOCKQUOTE><P>Depends on the country or nationality, some countries have no capital gains tax at all.  You seem to think that higher returns will eventually find their way back to the US regardless, that is not the case.  If a group of investors finds that the tax rates in the US are unnacceptable they keep it offshore, never realizing the gain in the US.<P>I was responding to your vague answer here:<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>quote:<BR>--------------------------------------------------------------------------------<BR>It's not futile. While there are certainly variations in the real rate of taxation, those of sufficient economy size and development to be worth significantly investing in are all that really need to be considered, and even though that number may be large, they likely 'cluster' ie 19.1% real rate is not significantly different from a 19.0% rate.<HR></BLOCKQUOTE><P><BR>Now reread my post regarding companies not countries.....<P><BR>
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000669" style="color: #000000; text-decoration: none;">Posts: <b>3834</b></a> | Registered: <b>Apr 2002</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000048">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000048"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000049"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/604.html" style="color: #000000; text-decoration: none;" target="_blank"><b>WmLambert</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 604
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000049"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,6,0,54,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 06, 2002</span> <span class="timeformat-0">12:54 AM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/604.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for WmLambert" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000604"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email WmLambert" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000604"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000049;u=00000604"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000049"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+<B>LetterRip</B>: Per your statement...   <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>Congress gets 'expert' testimony by both established experts in a field, as well as individuals who have notoriety regarding the subject.<HR></BLOCKQUOTE>  I understand your misunderstanding now about Wanniski.<P>Twenty-five years ago, Wanniski WAS only an economic reporter and editor for the Wall Street Journal. In the time since, he has studied directly under the greatest economists of our time - and with more focus and immersion in the field than any multi-degreed professor from any University. He has been at the leading edge of economics, and over the past fifteen years has put forward a track record of accuracy and understanding that no other economist on Earth can argue with. <P>He does not profess himself to be an economist a lá Mundell or Laffer. What he did was to pull the leading economists of the world together and put their vision down in the writings for all to see at Polyconomics University. <P>I've seen the kind of musings you posted here posted in the forums there - where you will get much better feedback on your points than Baldar, Everard, or I can muster.<P>The one thing that I, a mere layman, can see from your statements is a belief that Cap Gains Tax provides money to the government and that somehow that lends legitimacy to Cap Gains.  ...That without a recompense to the government, Capital Gains has no value and a tax on it is unimportant except for the revenue the tax generates. <P>The Gapital has Gained in value all by itself via many disparate causes, none of them much concerned with international finance. The increased value is a good thing and taxing it makes it less of a good thing. It's not as if the bulk of the Capital hadn't been already taxed going into the mechanism where it gains value.<P>If it was land, then the land was taxed at sale, and annual property taxes added thereafter to the point where no family farm can endure without losing so much value that it must be broken up to pay estate taxes and whatever else the government claims it is owed. In order to get around the law, family land is turned into a corporation, which eventually loses all connectioon to the original owners.<P>The Savings and Loan "Scandal" was primarily caused by Congress rewriting Capital definitions so land was useless to be used as collateral, and loans were foreclosed all over the country as a result. Roger Millken is still serving time in prison over it, although what he did was never illegal or other than an honest attempt to provide benefit for others. Cap Gains Tax is just one aspect of an illogial economic policy. <P>I wish I had enough money that losing a few million here or there was unimportant. I count how many miles it's necessary to drive to get to a cheaper gas station and figure whether it's worth it. I figure Cap Gains Tax is the same thing... a cost that lessens the investment value of Capital. Yes, there is a marginal value (per the Laffer Curve) that CAN bring in revenue most efficiently - but that is not the same thing as saying we SHOULD bring in revenue with it.<p>[This message has been edited by WmLambert (edited November 06, 2002).]
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000604" style="color: #000000; text-decoration: none;">Posts: <b>1364</b></a> | Registered: <b>Dec 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000049">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000049"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000050"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000050"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,6,5,50,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 06, 2002</span> <span class="timeformat-0">05:50 AM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000050;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000050"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Baldur,<P>you seem to have misundestood me.<P>Your statement  <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Also there are more systems of tax abroad than you can possibly imagine or innumerate so why this futile look at "other taxes in other countries"? <HR></BLOCKQUOTE><P>Futile as to what context?  I initially thought you were responding to a specific comment that you were quoting, however, this appears to not be the case.  My clustering is useful in the context that I thought (erroneously) that you were talking about, but apparently not relevant to the context that you were talking about.  So, I am trying to clarify from what context the original quote was taken.  There appears to be no source for the quote, so perhaps you are paraphrasing, but if you are paraphrasing, what you are paraphrasing is as yet unclear to me.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>  Capital Gains tax does not take into account inflation because it is kept under strict controls, there are no inflation provisions for capital gains taxes presently on the books because inflation has no real effect on gains. <HR></BLOCKQUOTE><P>Inflation can easily make the effective rate on real gains for long held assets such as farms, and businesses, 100% or more. thus deducting inflation for these assets could be a significant boon.<P>LetterRip<BR>
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000050">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000050"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#dedfdf" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#dedfdf">
+<td width="18%" valign="top" align="left"><a name="000051"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000051"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,7,1,17,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 07, 2002</span> <span class="timeformat-0">01:17 AM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000051;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000051"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+Greetings all,<P>I recently emailed Mr. Wanniski regarding my concerns on his statements regarding Neumann.<P>First, I would like to say he is extremely prompt in replying and that I appreciated his taking the time to answer.<P>I emailed him the pointer regarding von Neumann, as well as works of prominent uncertainty (specifically uninsurable risk) theorists.<P>His response, while pleasant, does not give me confidence that his thoughts regarding economics have serious validity, namely<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Sorry, sir, I cannot follow this. I am a simple man who believes economics is a behavioral science, not a mathematical science. <HR></BLOCKQUOTE><P>While I agree that economics is in part a behavioral science many of its insights require mathematical understanding.  I fear that not being able to follow the mathematics may lead Mr. Wanniski astray.<P>LetterRip
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000051">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000051"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000052"></a>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" style="color: #000000; text-decoration: none;" target="_blank"><b>LetterRip</b></a>
+</font>
+<br /><font size="1" face="Arial, Verdana, Helvetica">
+
+Member
+<br />
+Member # 310
+<br /><br />
+
+</font>
+</td>
+<td align="left">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407/2.html#000052"><img src="http://www.ornery.org/ubb/posticon.gif" border="0" alt=" - " /></a>
+<font size="1" color="#800080" face="Arial, Verdana, Helvetica">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2002,10,16,18,31,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">November 16, 2002</span> <span class="timeformat-0">06:31 PM</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/profile/310.html" target="_blank"><img src="http://www.ornery.org/ubb/profile_ubb6.gif" border="0" alt="Profile for LetterRip" /></a>&nbsp;
+
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=email;ToWhom=00000310"><img src="http://www.ornery.org/ubb/email_ubb6.gif" border="0" alt="Email LetterRip" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=private_message;u=00000310"><img src="http://www.ornery.org/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=edit_post;f=6;t=001407;reply_num=000052;u=00000310"><img src="http://www.ornery.org/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407;replyto=000052"><img src="http://www.ornery.org/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="2" face="Arial, Verdana, Helvetica">
+[BOLD] WmLambert [/BOLD] : you stated<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Twenty-five years ago, Wanniski WAS only an economic reporter and editor for the Wall Street Journal.<HR></BLOCKQUOTE><P>Agreed.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> In the time since, he has studied directly under the greatest economists of our time - and with more focus and immersion in the field than any multi-degreed professor from any University. <HR></BLOCKQUOTE><P>What do you base this claim on?  I don't see anywhere that Wanniski has made this claim, so I don't see how you could.  To my knowledge he actually claims fairly limited exposure, and has had only one 'mentor' of note (whose key idea was far afield from Wanniskis interest).  So 'the greatest economists of our times' and 'immersed himself' seems an exageration.  Also, it is unclear to what degree he was actually mentored by Mundell.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> He has been at the leading edge of economics, and over the past fifteen years has put forward a track record of accuracy and understanding that no other economist on Earth can argue with. <HR></BLOCKQUOTE><P>I've seen little in the way of insightful and useful predictions.  As to the leading edge of economics, by his own admission he doesn't understand it.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> What he did was to pull the leading economists of the world together and put their vision down in the writings for all to see at Polyconomics University. <HR></BLOCKQUOTE><P>What 'leading economists of the world' are you referring to?  Mundell might meet that description, but his skill is not in the area of interest.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> I've seen the kind of musings you posted here posted in the forums there - where you will get much better feedback on your points than Baldar, Everard, or I can muster. <HR></BLOCKQUOTE><P>Perhaps, I'll post over there eventually, and see if I get any worthwhile responses.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> The one thing that I, a mere layman, can see from your statements is a belief that Cap Gains Tax provides money to the government and that somehow that lends legitimacy to Cap Gains. ...That without a recompense to the government, Capital Gains has no value and a tax on it is unimportant except for the revenue the tax generates.<P>The Gapital has Gained in value all by itself via many disparate causes, none of them much concerned with international finance. The increased value is a good thing and taxing it makes it less of a good thing.<HR></BLOCKQUOTE><P>You misunderstood me.  The reason it is important to tax capital gains, is because a capital gain has real costs associated with it.  There is the protection of the capital via the military, the regulation of the market, and other costs.<P>If the capital gain is not taxed, than these costs must be paid for via other taxes.  So the capital gain is subsidized by a tax on other income to the extent that it does not pay for its own costs.<P>Now then, we allow the capital gains to be subsidized to some extent because investment in a country can return greater economic value to the country then the additional tax revenue on the capital gain.<P>However, there is no such justification for subsidizing foreign investment.  Indeed, I showed above that such subsidy behavior is a net drain on our economy.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>  It's not as if the bulk of the Capital hadn't been already taxed going into the mechanism where it gains value. <HR></BLOCKQUOTE><P>That is incorrect, the majority of capital gains have not been taxed via any mechanism when the gain is realized.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> If it was land, then the land was taxed at sale, and annual property taxes added thereafter to the point where no family farm can endure without losing so much value that it must be broken up to pay estate taxes and whatever else the government claims it is owed. In order to get around the law, family land is turned into a corporation, which eventually loses all connectioon to the original owners. <HR></BLOCKQUOTE><P>Property taxes are to the local economy for providing services such as roads, fire departments, and police departments for local protection of property.  These are annual costs.  Sales tax goes mostly to the state, to pay for state roads and infrastructure.  Capital gains tax go towards federal and state costs - the military, state and federal roads, etc.<P>So there are three different taxes for three different levels of infrastructure and cost.<P>Of course your farm story is mostly fairy tale.  Asside from which subsidies have been extreme.  However, if you want a lower property tax rate on small farms or an estate tax defered until the land is sold, then I've no problem with that.  However, the mentioning of farms is just a debating tactic, it isn't out of concern for 'small farmers', it is a desire for a generally lower capital gains tax.  It is a cheap tactic to elicit sympathy by the wrenching of heart strings for the 'poor destitute farmers', confuse the issue by playing with emotions.<P>It is also a 'bait and switch'.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> The Savings and Loan "Scandal" was primarily caused by Congress rewriting Capital definitions so land was useless to be used as collateral, and loans were foreclosed all over the country as a result. Roger Millken is still serving time in prison over it, although what he did was never illegal or other than an honest attempt to provide benefit for others.<HR></BLOCKQUOTE><P>Hmm...<P>see<BR> <A HREF="http://www.fdic.gov/bank/historical/s&l/" TARGET=_blank>http://www.fdic.gov/bank/historical/s&l/</A> <P>What source are you using for your information?<P>I'm not familiar with your particular interpretation which seems to have little or no support.<P>It seems the crisis was caused by creating changing regulations to improve the profitability of S&Ls (somewhat reasonable since the inflationary risk was too high), which allowed the S&Ls to play much faster and loser with the cash and to concentrate ownership of the S&L into the hands of a few.  The smaller circle of ownership made fraud much easier to do, the loser investment standards (in the cases of Texas and California the nonexistant standards...) allowed fraudulent behavior to be more easily disguised, this was coupled with a drastic cut in the number of positions the government dedicated to oversight (so that the resources to spot the fraudulent behavior was not available especially given the increased opportunity for fraud).  This was coupled with questionable behavior by a number of government officials.<P>If you could point to the source of information for your claim, I would be interested in seeing if it has any support for it.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Cap Gains Tax is just one aspect of an illogial economic policy. <HR></BLOCKQUOTE><P>That was rather a non-sequitar.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> I wish I had enough money that losing a few million here or there was unimportant. I count how many miles it's necessary to drive to get to a cheaper gas station and figure whether it's worth it.<HR></BLOCKQUOTE><P>If hopes and wishes were candies and fishes, we would all have a wonderful Christmas. &lt;grin&gt; (I can't recall the source...)  Of course that has little to do with the current discussion.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR>  I figure Cap Gains Tax is the same thing... a cost that lessens the investment value of Capital. <HR></BLOCKQUOTE><P>It reduces the return on investment for capital gains, and thus can shift investment.<P> <BLOCKQUOTE><font size="1" face="Arial, Verdana, Helvetica">quote:</font><HR> Yes, there is a marginal value (per the Laffer Curve) that CAN bring in revenue most efficiently - but that is not the same thing as saying we SHOULD bring in revenue with it. <HR></BLOCKQUOTE><P>Agreed, tax revenue from capital gains should however be maintained at level that approximates the costs that it incurs to society.<P>Of course, the Laffer Curve is a gross over simplification.  It assumes perfect elasticity of time whereas most employees cannot work incrementally more or less and are stuck at a constant number of hours; assumes the marginal value of additional time is constant, whereas it sharply decreases if working regularly more than 40 hours per week (fatigue, increased breaks and socialization throughout the day, less efficient working behavior, etc., the effectiveness decline is less severe for manual labor); assumes that lower taxes increases output - however, since more consumption can be had for less effort it could decrease output; assume that capital is the limiting factor to growth - whereas it may be any number of other factors - such as an insufficient number of good ideas,  insufficient consumptive capacity of consumers, etc.; ignores the effects of rent seeking behavior; assumes that we are on one side of the curve when we could be on the other side (the 'taxes are too low side');  assumes the curve is smooth and continuos but if may be unsmooth and/or discontinuos, thus there could be areas where two equivalent revenue levels cannot be found on the curve or alternatively there could also be flat spots or numerous equivalent points on the curve, so that increasing and decreasing the tax has little effect on the flow of revenue or capital available; it does not distinguish between foreign and domestic revenue flow, thus a decrease in US revenue flow but that increases foreign revenue flow are is viewed equally as good as an increase in US revenue flow.<P>LetterRip
+</font>
+<hr size="1" style="color:#dedfdf" />
+<font size="1" face="Arial, Verdana, Helvetica">
+ <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=recent_user_posts;u=00000310" style="color: #000000; text-decoration: none;">Posts: <b>6112</b></a> | Registered: <b>Jan 2001</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=get_ip;f=6;t=001407;reply_num=000052">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=report_a_post;f=6;t=001407;p=2;r=000052"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+
+</table></td></tr></table>
+
+
+<!-- Time Zone and Page Jumps -->
+
+<table border="0" width="95%">
+<tr>
+<td align="left" valign="bottom">
+<font size="1" face="Arial, Verdana, Helvetica">
+&nbsp;
+</font>
+</td>
+<td valign="bottom" align="right">
+<font size="1" face="Arial, Verdana, Helvetica">
+<b>This topic comprises 2 pages:&nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi/topic/6/1407.html">1</a>&nbsp;&nbsp;2&nbsp;</b> &nbsp;
+</font>
+</td>
+</tr>
+</table>
+
+<!-- Quick Reply -->
+
+
+<div id="quickreply">
+<br />
+
+<script language="Javascript" type="text/javascript">
+<!--
+
+graems = null;
+previewindow = null;
+function Graems () {
+	graems = window.open(
+		"http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=graemlin_list",
+		"graems",
+		"width=250,height=240,toolbar=no,location=no,directories=no,status,menubar=no,scrollbars,resizable,copyhistory=no"
+		);
+	graems.focus();
+} // end
+
+function Preview () {
+
+	var user_cookie = getCookie('ubber2452796.1312');
+	if( ('' == user_cookie) || (null == user_cookie) ) {
+		alert("Sorry, you must be registered and logged in to preview your post.");
+		return true;
+	}
+
+	previewindow = window.open(
+		"http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=preview_post;f=6;type=reply;quick=1",
+		"preview",
+		"width=550,height=300,toolbar=no,location=no,directories=no,status,menubar=no,scrollbars,resizable,copyhistory=no"
+		);
+	previewindow.focus();
+} // end
+
+function storeCaret (textEl) {
+	if (textEl.createTextRange) {
+		textEl.caretPos = document.selection.createRange().duplicate();
+	} // end if
+} // end storeCaret
+
+function insertAtCaret (textEl, text) {
+	if (textEl.createTextRange && textEl.caretPos) {
+		// MSIE
+		var caretPos = textEl.caretPos;
+		caretPos.text =
+			caretPos.text.charAt(caretPos.text.length - 1) == ' ' ?
+			text + ' ' : text;
+	} else if(textEl.selectionStart && textEl.setSelectionRange) {
+		// Mozilla 1.3+
+		var val = textEl.value;
+		var cpos = textEl.selectionStart;
+		var fpos = cpos + text.length;
+
+		var before = val.substr(0,cpos);
+		var after = val.substr(cpos, val.length);
+		var aspace = after.charAt(0) == ' ' ? "" : " ";
+		var bspace = before.charAt(before.length) == ' ' ? "" : " ";
+
+		textEl.value = before + bspace + text + aspace + after;
+		textEl.setSelectionRange(fpos,fpos); // set cursor pos to end of text
+		textEl.focus();
+	} else {
+		textEl.value  = textEl.value + text; // otherwise just append
+	}
+
+	return true;
+} // end insertAtCaret
+
+// -->
+</script>
+
+<form method="post" action="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi" name="replier" style="display: inline;"
+onsubmit="if(previewindow != null) previewindow.close(); if(graems != null) graems.close();">
+<input type="hidden" name="ubb" value="submit_new_reply" />
+<input type="hidden" name="quick" value="yes" />
+<input type="hidden" name="f" value="6" />
+<input type="hidden" name="t" value="001407" />
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor="#D5E6E1"><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+<tr bgcolor="#D5E6E1">
+<td align="left" colspan="2">
+<font size="2" face="Arial, Verdana, Helvetica" color="#000080"><b>
+Quick Reply
+</b></font>
+</td>
+</tr>
+
+<tr bgcolor="#f7f7f7">
+<td width="18%" rowspan="2" valign="top" align="left"><font face="Arial, Verdana, Helvetica" size="2">
+<b>Message:</b>
+<br /><br />
+</font>
+<font face="Arial, Verdana, Helvetica" size="1">
+HTML is not enabled.
+<br />
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=ubb_code_page" target="_blank">UBB Code™ is enabled.</a>
+<br />
+UBB Code&trade; Images not permitted.
+<br />
+<a href="javascript:void(0);" onclick="Graems()">Instant Graemlins</a>
+<br />
+<!-- Always append the siggy and don't disable graemlins -->
+<input type="hidden" name="disable_smilies" value="0" />
+<input type="hidden" name="Signature" value="yes" />
+</font></td>
+<td valign="top" align="left">
+<textarea name="message" rows="10" cols="50" wrap="virtual"></textarea>
+</td>
+</tr>
+<tr bgcolor="#f7f7f7">
+<td valign="top" align="left">
+<input type="submit" name="submitted" value="Add Reply" />
+&nbsp;
+
+<input type="button" name="preview" value="Preview Post" onclick="Preview()" />
+&nbsp;
+
+<input type="submit" name="full" value="Full Reply Form" />
+</td>
+</tr>
+
+</table></td></tr></table>
+
+</form>
+
+<br />
+
+</div>
+
+<br />
+
+<!-- Bottom Navigation Table -->
+
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor="#D5E6E1"><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+
+<tr>
+
+<td width="25%" bgcolor="#f7f7f7" nowrap="nowrap" valign="bottom" align="center">
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=newtopic;f=6"><img src="http://www.ornery.org/ubb/topic_ot.gif" alt="Post New Topic" border="0" /></a>&nbsp;&nbsp;<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=reply;f=6;t=001407"><img src="http://www.ornery.org/ubb/reply_ot.gif" border="0" alt="Post A Reply" /></a>
+</font>
+</td>
+
+<td width="50%" bgcolor="#dedfdf" valign="bottom" align="center">
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=close_topic;t=001407;f=6"><img src="http://www.ornery.org/ubb/close_topic.gif" border="0" alt="Close Topic" /></a>
+&nbsp; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=stick_topic;f=6;t=001407"><img src="http://www.ornery.org/ubb/feature_topic.gif" border="0" alt="Feature Topic" /></a>
+&nbsp; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=transfer;t=001407;f=6"><img src="http://www.ornery.org/ubb/move_topic.gif" border="0" alt="Move Topic" /></a>
+&nbsp; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=delete_topic;f=6;t=001407"><img src="http://www.ornery.org/ubb/delete_topic.gif" border="0" alt="Delete Topic" /></a>
+</font>
+</td>
+
+<td width="25%" bgcolor="#f7f7f7" align="right" valign="middle">
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=next_topic;f=6;t=001407;go=older"><img src="http://www.ornery.org/ubb/prev_topic.gif" border="0" alt="next oldest topic" /></a> &nbsp; <a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=next_topic;f=6;t=001407;go=newer"><img src="http://www.ornery.org/ubb/next_topic.gif" border="0" alt="next newest topic" /></a>
+</font>
+</td>
+
+</tr>
+
+
+</table></td></tr></table>
+
+
+<!-- Hop To Box -->
+
+<table border="0" width="95%">
+<tr>
+<td align="left" valign="top" width="50%">
+<font size="1" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi?ubb=print_topic;f=6;t=001407"><img src="http://www.ornery.org/ubb/print_topic.gif" border="0" alt=" - " title="" /> Printer-friendly view of this topic</a>
+</font>
+</td>
+<td align="right" valign="top" nowrap="nowrap" width="50%">
+<form action="http://www.ornery.org/cgi-bin/ubbcgi/ultimatebb.cgi" method="get">
+<font size="2" face="Arial, Verdana, Helvetica">
+<input type="hidden" name="ubb" value="forum" />
+<b>Hop To: </b><select name="f">
+
+<option value=''>Select a Forum:</option>
+<option value=''></option>
+<option value="6" selected="selected">General Comments</option>
+<option value="15">World Watch</option>
+<option value="18">Ornery Writers Workshop</option>
+<option value="19">Ornery U</option>
+<option value="20">Ornery American Book Club</option>
+<option value="16">Archives</option>
+
+</select>
+<input type="submit" name="submit" value="Go" />
+</font></form>
+</td>
+</tr>
+</table>
+</center>
+<br />
+
+<script language="JavaScript" type="text/javascript">
+	setTimeout("latest_check();", 1000);
+</script>
+
+
+<br />
+ <center>
+<font size="2" face="Arial, Verdana, Helvetica">
+<a href="http://www.ornery.org/contact2.html">Contact Us</a> | <a href="http://www.ornery.org">Ornery.org Front Page</a></font> <br /> <br /> 
+<font color="#dedfdf" size="1" face="Arial, Verdana, Helvetica">
+
+Powered by <a href="http://www.infopop.com/landing/goto.php?a=ubb.classic">Infopop Corporation</a><br />
+
+
+UBB.classic&trade; 
+6.7.1<!-- 06070101.210.2.9 -->
+
+
+<br /><!-- Translators: Put your "translation by" wording here -->
+</font>
+</center>
+<br />
+<CENTER><script type="text/javascript"><!--
+google_ad_client = "pub-5845664926711362";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_channel ="7188089453";
+google_color_border = "778899";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "C0C0C0";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></CENTER><BR><BR>
+
+
+</body>
+</html>
+ 

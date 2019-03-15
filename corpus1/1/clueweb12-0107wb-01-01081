@@ -1,0 +1,174 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-13T18:44:39Z
+WARC-TREC-ID: clueweb12-0107wb-01-01081
+WARC-Target-URI: http://www.cs.uc.edu/~jpaul/671/chap12b.html
+WARC-Payload-Digest: sha1:JXA2QF4IKWHP4ZYI4AK5A2BTK2CAW2KC
+WARC-IP-Address: 129.137.6.133
+WARC-Record-ID: <urn:uuid:71f63484-084c-49fd-aa90-35b950acb4f3>
+Content-Type: application/http; msgtype=response
+Content-Length: 7428
+
+HTTP/1.1 200 OK
+Date: Mon, 13 Feb 2012 18:44:41 GMT
+Server: Apache/2.2.11 (Unix) PHP/5.2.12 DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8a proxy_html/3.1.2 mod_python/3.3.1 Python/2.4.5 mod_perl/2.0.4 Perl/v5.8.8
+Last-Modified: Tue, 15 Nov 2011 00:37:26 GMT
+ETag: "98f2-1b8e-4b1bb310d231b"
+Accept-Ranges: bytes
+Content-Length: 7054
+Connection: close
+Content-Type: text/html
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; SunOS 5.8 sun4u) [Netscape]">
+</head>
+<body bgcolor="#FFFFDF">
+
+
+<h1> THE BELLMAN-FORD SHORTEST PATH ALGORITHM</h1>
+<p> We now discuss the Bellman-Ford algorithm for the shortest path
+problem. The
+Bellman-Ford algorithm works by making successive passes through the
+edges of the digraph, where in each pass we update the best (shortest)
+path currently found from r to every other vertex.  The cost of the
+shortest paths is maintained using an array Dist[0:n-1], and the paths
+themselves are maintain using a parent array Parent[0:n-1].  We
+initialize the arrays by setting Dist[r] = 0, and Dist[i] = infinity
+if i <> r.  Similarly, we set Parent[r] = -1, and Parent[i] = infinity
+if i <> r.  Suppose during a given pass we are now considering the
+edge uv (directed from u to v).  The fundamental point is this:<b>
+<p>Question: which vertex might update its shortest path when considering uv?<p>
+<p> Answer: v <p> </b>
+
+This point is illustrated by the following pictures.  In the first
+picture, we show the currently shortest path P<sub>r,u</sub> from r to
+u having cost Dist[u], and the currently shortest path P<sub>r,v</sub>
+from r to v having cost Dist[v], just before we consider the directed
+edge uv.  In second picture, by adding the edge uv to the first
+picture, we now have a second path from r to v to consider, namely,
+the path P'<sub>r,v</sub> obtained by adding the edge uv to the path
+P<sub>r,u</sub>. 
+<p>
+
+<img src="bellford1.jpg">
+<p>
+<img src="bellford2.jpg">
+<p>
+ Note that the cost of P'<sub>r,v</sub> is the cost Dist[u] of the
+path P<sub>r,u</sub> plus the cost c(uv) of the edge uv. Hence, to see
+if we now have a shorter path from r to v, we simply need to check
+whether the cost of the path P'<sub>r,v</sub> is smaller than the cost
+of the path P<sub>r,v</sub> , i.e., we simply set <p>
+<pre>
+       Dist[v] = min{cost(P<sub>r,v</sub>) , cost(P'<sub>r,v</sub>)} = min{Dist[v] , Dist[u] + c(uv)}
+</pre>
+<p>
+
+If we have now found a shorter path, i.e., if cost(P'<sub>r,v</sub>) <
+cost(P<sub>r,v</sub>), then we set Dist[v] = cost(P'<sub>r,v</sub>) and
+Parent[v] = u (recall, we need to keep track of the paths, not just
+the distance of the paths, since it is the paths that we really wish
+to determine).  It turns out that after at most n passes through all
+the edges of D, we will have determined the shortest paths from r to
+all vertices reachable from r, or we will have determined that D
+contains negative cycles.  In the case where D has negative cycles,
+i.e., a cycle such that the total cost of the directed paths making up
+the cycle is negative, then by repeatedly going around the cycle we
+can make the cost of paths from r to vertices in this cycle as small
+as we desire, i.e., shortest paths from r to such vertices do not
+exist.  The action of the
+Bellman-Ford algorithm is illustrated for a particular digraph in
+Figure 12.7.
+
+<p>
+The correctness of the Bellman-Ford algorithm for solving the problem of finding
+minimum cost (shortest) paths in a weighted digraph D from a given
+root vertex r follows from the following Proposition.
+<pre>
+Proposition.  For any integer 0 <= i <= n - 1,  after i passes of the Bellman-Ford Algorithm, 
+for each vertex u in the digraph, Dist[u] <= the cost of the shortest path from r to u that
+uses no more than i edges.
+</pre>
+
+We prove the Proposition by induction on i.
+
+<p><b>Basis step: i = 0.</b> This is trivial, since the only path with
+no edges eminating from r is the single vetex path r itself, so if u
+<> r, then Dist[u] = infinity = cost of the empty path.  We could go
+directly to the induction step, but it is instructive to consider the
+case i = 1 as a separate basis step.
+
+<p><b>Basis step: i = 1. </b> Consider any vertex u <> r.  If the
+directed edge ru does not exist, then the cost of the shortest path
+from r to u that uses no more than 1 edge is the cost of the empty
+path, i.e., has cost infinity, so that Dist[u] <= infinity is
+certainly true for such vertices. (It should be noted that we might
+have Dist[u] < infinity after the first pass through the edges, even
+when the directed edge ru does not exist).  So, consider that case when the directed edge ru does exist.  Then the edge is the minimum cost path from r to u than uses no more than 1 edge.  Note that when we pass through the edges in our first pass, we will eventually consider the edge ru.  At that time, we will
+update Dist[u] by the formula: <p>
+<pre>  Dist[u] = min{Dist[u], Dist[r] + c(ru)}.
+</pre>
+But since Dist[r] <= 0 at that point, we see that Dist[u] <=  Dist[r] + c(ru)} <= c(ru), so that the basis step i = 1 has been proven. <p>
+
+<b>Induction step:</b> Assume that the proposition is true for all k <
+ i, and consider the ith pass.  Let P<sub>r,u</sub> be the shortest
+ path from r to u that uses no more than i edges.  Let w be the vertex
+ on this path such that the edge wu is the last edge in the path.  Now
+ consider the subpath P<sub>r,w</sub> of P<sub>r,u</sub> obtained by
+ deleting the edge wu.  Note that P<sub>r,w</sub> has at most i - 1
+ edges, so the induction hypothesis applies to this path.  Hence, by
+ induction hypothesis, Dist[w] <= cost(P<sub>r,w</sub>). Now during
+ the ith pass, we eventually consider the directed edge wu.  We then
+ update Dist[u] by the formula
+
+<pre>  Dist[u] = min{Dist[u], Dist[w] + c(wu)}.
+</pre>
+
+But then we have
+<pre> 
+Dist[u] <= Dist[w] + c(wu) <= cost(P<sub>r,w</sub>) + c(wu) = costP<sub>r,u</sub>
+</pre>
+This completes the induction and proves the proposition.
+<p>
+From Exercise 12.13 in the text, if a weighted digraph contains no
+negative cycles, then amongst the shortest paths to a given vertex
+there always is one that contains at most n - 1 edges.  Hence, if there are no
+negative cycles in the digraph, using the above proposition a shortest
+path from r to all reachable vertices will be computed by the end of
+the (n - 1)st pass, so that the Bellman-Ford algorithm is correct in
+this case.  On the other hand, if there still is a change made
+somewhere in Dist[0:n-1] during the nth pass, then, by the same
+reasoning there must be a negative cycle in the digraph.  This
+completes the proof of the correctness of the Bellman-Ford algorithm.
+
+<p>The efficiency of the
+Bellman-Ford algorithm (modified to terminate when no changes to Dist[0:n-1] are
+made in a given pass) can be quite sensitive to the order in which
+the edges are scanned during each pass.  To see why, consider the
+following 3-vertex digraph, and note the difference between Dist[v]
+after the first pass for the two different orderings of the edges.
+<p><img src="bellford4.jpg">
+<p>
+In fact, it is not hard to give any example of a weighted digraph D on
+n vertices and two orderings of
+ the edges such that
+<i>Bellman-Ford</i> performs only two passes in one ordering, and the
+full n passes in the other ordering. 
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

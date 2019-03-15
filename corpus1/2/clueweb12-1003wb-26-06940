@@ -1,0 +1,474 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-17T03:28:15Z
+WARC-TREC-ID: clueweb12-1003wb-26-06940
+WARC-IP-Address: 23.15.7.33
+WARC-Payload-Digest: sha1:IKL2FH67J7MTH3BIVJUIXXBWXC567PFU
+WARC-Target-URI: http://ipv6.navy.mil/navydata/ships/lists/shipalpha.asp
+WARC-Record-ID: <urn:uuid:08b28137-0742-40f2-b77a-9a72a11a60b6>
+Content-Type: application/http; msgtype=response
+Content-Length: 90817
+
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+Header: US Navy
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Cache-Control: public, max-age=250248
+Expires: Tue, 20 Mar 2012 00:59:07 GMT
+Date: Sat, 17 Mar 2012 03:28:19 GMT
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+<head>
+<title>List of U.S. Navy Ships</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../navy.css" rel="stylesheet" type="text/css">
+<SCRIPT type="text/javascript">
+<!--
+
+// Test for Microsoft Internet Explorer
+//-----------------------------------------------------------------------
+function isMSIE() 
+//-----------------------------------------------------------------------
+{
+	return (navigator.appVersion.indexOf("MSIE") != -1)
+}
+
+
+// Netscape CSS Bug Fix
+if (document.layers){
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	}
+	
+//-----------------------------------------------------------------------
+function reloadPage() 
+//-----------------------------------------------------------------------
+{
+	if (innerWidth != origWidth || innerHeight != origHeight)
+		location.reload();
+}
+	
+if (document.layers) onresize = reloadPage;	
+
+
+// Email Link Protection Functions
+var user;
+var domain;
+var suffix;
+var linktitle;
+
+// Show and Hide Functions
+//-----------------------------------------------------------------------
+function hide_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id;
+	
+	menu_id = document.getElementById(div_id);
+	
+	/* Hide the specified menu */
+	if (menu_id == null)
+	{
+		return;
+	}
+	else 
+	{
+		menu_id.className = 'hide';
+	}
+}
+
+//-----------------------------------------------------------------------
+function toggle_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id, old_value;
+	
+	menu_id = document.getElementById(div_id);
+	if (menu_id == null)
+		return;
+		
+	/* Retrive current class value */
+	old_value = menu_id.className;
+	
+	/* First hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+
+	/* set new class value */
+	if (old_value == 'hide')
+	{
+		menu_id.className = 'show';
+	}
+	else
+	{
+		menu_id.className = 'hide';	
+	}
+}	
+
+//-----------------------------------------------------------------------
+function show_all_menus()
+//-----------------------------------------------------------------------
+{
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'show';
+			}
+	}
+}	
+
+//-----------------------------------------------------------------------
+function toggle_display(div_id)
+//-----------------------------------------------------------------------
+{
+	var child;
+
+	/* Hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+	
+/*	child = document.all(window.event.srcElement.child);*/
+	child = document.getElementById(div_id);
+	
+	if (child == null)
+		return;
+	else
+	{
+		if (child.className == 'hide')
+		{
+			child.className = 'show';
+		}
+		else
+		{
+			child.className = 'hide';
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+		
+
+</head>
+
+<body bgcolor="#999999" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000033" link="#0066CC" vlink="#666666" alink="#666666" background="/images/body-tile.png">
+<!-- Masthead (logo, links, search) --> 
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+function clearText(theBox) {
+  theBox.value = "";
+}
+//-->
+</SCRIPT>
+<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+<style type="text/css">
+@import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #cccccc;
+}
+-->
+</style>
+<script language="JavaScript">
+function openwincno(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/cnopd.html', 'cno', properties);
+}
+</script>
+<script language="JavaScript">
+function openwin(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/radio.html', 'ahradio', properties);
+}
+</script>
+<table width=1000 height="50" border=0 align="center" cellpadding=0 cellspacing=0 bgcolor="#000033" style="background-image: url('/graphics/Navymil.png');background-position: right;background-repeat: no-repeat;">
+<form name=srchForm method=get action="http://search.dma.mil/search">
+  <tr>
+    <td width=725 height=50><a href="http://www.navy.mil"><img src="/images/bblank.gif" border=0 width=725 height=50 alt="Home Page"></a></td>
+        <td align=right>
+          <table border=0 cellpadding=0 cellspacing=1 width=265>
+            <tr>
+                  <td>&nbsp;<a href="http://www.navy.com" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Careers</strong></a></td>
+                  <td>&nbsp;<a href="/navydata/infoIndex.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Info&nbsp;Index</strong></a></td>
+                  <td>&nbsp;<a href="/about.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>About&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/submit/contacts.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Contact&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Home</strong></a>&nbsp;</td>
+            </tr>
+                <tr>
+                  <td align=center colspan=5><input maxlength=255 type=text name=q id=q value="Search Navy.mil" title="Search Navy.mil" style="height: 18px; width: 200px; font-size: 9px; font-weight: bold;" onFocus="clearText(this);">&nbsp;&nbsp;<input type=image src="/images/go_darkgray.gif" border=0 name=btnG alt="Submit"></td>
+                </tr>
+                <tr>
+                  <td align=center colspan=5><a href="/search/advanced_search.asp" style="font-size:11px; font-family:sans-serif; font-weight:regular; text-decoration:none; color:#FFFFFF"> >>> Advanced Search </a></td>
+                </tr>
+          </table>
+			<input type="hidden" name="client" value="navy_search">
+			<input type="hidden" name="proxystylesheet" value="navy_search">
+			<input type="hidden" name="output" value="xml_no_dtd">
+			<input type="hidden" name="site" id="site" value="navy_all">
+        </td>
+  </tr>
+</form>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <!-- Begin Standard USN Header Bar -->
+
+<style>
+        @import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var menu_ids = new Array('column2_menu','column3_menu','column4_menu','column5_menu','column6_menu');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CFDBE7">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="11%"><a href=""></a></td>
+<td width="11%"><a title="US Navy Today - for 508 viewers please click here then tab into the menu for this area"
+tabindex=200
+class="header_menu_item"
+href="javascript:void(0);"
+name="column2_menu_link"
+id="column2_menu_link"
+child="column2_menu"
+onclick="toggle_main_menu('column2_menu');">&nbsp;US Navy Today</a></td>
+
+<td width="11%"><a title="About the Navy - for 508 viewers please click here then tab into the menu for this area"
+tabindex=300
+class="header_menu_item"
+href="javascript:void(0);"
+name="column3_menu_link"
+id="column3_menu_link"
+child="column3_menu"
+onclick="toggle_main_menu('column3_menu');">&nbsp;About the Navy</a></td>
+
+<td width="11%"><a title="Navy Leadership - for 508 viewers please click here then tab into the menu for this area"
+tabindex=400
+class="header_menu_item"
+href="javascript:void(0);"
+name="column4_menu_link"
+id="column4_menu_link"
+child="column4_menu"
+onclick="toggle_main_menu('column4_menu');">&nbsp;Navy Leadership</a></td>
+
+<td width="11%"><a title="Media Resources - for 508 viewers please click here then tab into the menu for this area"
+tabindex=500
+class="header_menu_item"
+href="javascript:void(0);"
+name="column5_menu_link"
+id="column5_menu_link"
+child="column5_menu"
+onclick="toggle_main_menu('column5_menu');">&nbsp;Media Resources</a></td>
+
+<td width="11%"><a title="Links of Interest - for 508 viewers please click here then tab into the menu for this area"
+tabindex=600
+class="header_menu_item"
+href="javascript:void(0);"
+name="column6_menu_link"
+id="column6_menu_link"
+child="column6_menu"
+onclick="toggle_main_menu('column6_menu');">&nbsp;Links of Interest</a></td>
+
+<td width="17%"><a tabindex=700 class="header_menu_item" href="/navydata/infoIndex.asp">&nbsp;Information Index </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Column2 Menu Popup Items --->
+<div id="column2_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">US Navy Today:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=221 class="header_submenu_item" href="/navydata/navy_legacy_hr.asp?id=146">Status of the Navy </a></div>
+</td>
+<td width="330">
+<div><a tabindex=241 class="header_submenu_item" href="/links/alpha.asp">Navy Web Sites </a></div>
+</td>
+<td width="330">
+<div><a tabindex=261 class="header_submenu_item" href="/search/history_today.asp">Today in Naval History </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=290 href="javascript:void(0);" onclick="hide_main_menu('column2_menu');">Hide US Navy Today Menu</a></div>
+</div>
+</div>
+
+<!-- Column3 Menu Popup Items --->
+<div id="column3_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">About the Navy:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=321 class="header_submenu_item" href="/navydata/organization/org-top.asp">Navy Organization </a></div>
+</td>
+<td width="330">
+<div><a tabindex=341 class="header_submenu_item" href="/navydata/our_ships.asp">Our Ships </a></div>
+</td>
+<td width="330">
+<div><a tabindex=361 class="header_submenu_item" href="/navydata/fact.asp">Fact File </a></div>
+<div><a tabindex=362 class="header_submenu_item" href="/navydata/faq.asp">FAQ (Got a Question?) </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=390 href="javascript:void(0);" onclick="hide_main_menu('column3_menu');">Hide About the Navy Menu</a></div>
+</div>
+</div>
+
+<!-- Column4 Menu Popup Items --->
+<div id="column4_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Navy Leadership:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=421 class="header_submenu_item" href="/secnav/index.asp">Secretary of the Navy </a></div>
+<div><a tabindex=422 class="header_submenu_item" href="/navydata/bios/bio_list.asp">Biographies </a></div>
+</td>
+<td width="330">
+<div><a tabindex=441 class="header_submenu_item" href="/cno/index.asp">Chief of Naval Operations </a></div>
+<div><a tabindex=442 class="header_submenu_item" href="/navydata/ccklist.asp">Leadership Tools </a></div>
+</td>
+<td width="330">
+<div><a tabindex=461 class="header_submenu_item" href="/cnp/index.asp">Chief of Naval Personnel </a></div>
+<div><a tabindex=462 class="header_submenu_item" href="/mcpon/index.asp">Master Chief Petty Officer of the Navy </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=490 href="javascript:void(0);" onclick="hide_main_menu('column4_menu');">Hide Navy Leadership Menu</a></div>
+</div>
+</div>
+
+<!-- Column5 Menu Popup Items --->
+<div id="column5_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Media Resources:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=521 class="header_submenu_item" href="/view_photos_top.asp">Photo Gallery </a></div>
+<div><a tabindex=522 class="header_submenu_item" href="/view_galleries.asp">Eye on the Fleet Featured Gallery </a></div>
+<div><a tabindex=523 class="header_submenu_item" href="/view_videos.asp?vtype=5">All Hands Television Archive </a></div>
+<div><a tabindex=524 class="header_submenu_item" href="/podcast/podcast.asp">Podcasts and RSS Feeds </a></div>
+<div><a tabindex=525 class="header_submenu_item" href="/view_videos.asp">Video Gallery </a></div>
+<div><a tabindex=526 class="header_submenu_item" href="/view_flash_gallery.asp">Everyday in the Navy Archive </a></div>
+</td>
+<td width="330">
+<div><a tabindex=541 class="header_submenu_item" href="/navydata/cnopList.asp">CNO Podcast </a></div>
+<div><a tabindex=542 class="header_submenu_item" href="/navydata/mcponplist.asp">MCPON Podcast </a></div>
+<div><a tabindex=543 class="header_submenu_item" href="/view_videos.asp?vtype=6">All Hands Update Archive </a></div>
+<div><a tabindex=544 class="header_submenu_item" href="/view_webads.asp">Web Ad Gallery </a></div>
+<div><a tabindex=545 class="header_submenu_item" href="/view_printads.asp">Print Ad Gallery </a></div>
+</td>
+<td width="330">
+<div><a tabindex=561 class="header_submenu_item" href="/navydata/radioList.asp">All Hands Radio Archive </a></div>
+<div><a tabindex=562 class="header_submenu_item" href="/allhands.asp">All Hands Magazine </a></div>
+<div><a tabindex=563 class="header_submenu_item" href="/view_ggphotos.asp">Graphics Gallery </a></div>
+<div><a tabindex=564 class="header_submenu_item" href="/view_ahhphotos.asp">All Hands Photo Gallery </a></div>
+<div><a tabindex=565 class="header_submenu_item" href="https://service.govdelivery.com/service/multi_subscribe.html?code=USNAVYDMA" target=new>Subscribe/Unsubscribe to Navy News </a></div>
+<div><a tabindex=566 class="header_submenu_item" href="/photo_submit.asp">How to Submit a Photo to Navy Visual News </a></div>
+<div><a tabindex=567 class="header_submenu_item" href="/submit/index.asp">How to Submit a Story to Navy.mil </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=590 href="javascript:void(0);" onclick="hide_main_menu('column5_menu');">Hide Media Resources Menu</a></div>
+</div>
+</div>
+
+<!-- Column6 Menu Popup Items --->
+<div id="column6_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Links of Interest:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=621 class="header_submenu_item" href="http://www.npc.navy.mil/ReferenceLibrary/Publications/ShiftColors/" target=new>Shift Colors-Navy Retiree Newsletter </a></div>
+<div><a tabindex=622 class="header_submenu_item" href="/navco/">Navy Office of Community Outreach </a></div>
+<div><a tabindex=623 class="header_submenu_item" href="https://navyfamily.navy.mil/cas/login?service=https%3A%2F%2Fnavyfamily.navy.mil%2F" target=new>Affected Navy Family Assistance </a></div>
+<div><a tabindex=624 class="header_submenu_item" href="http://www.nmcrs.org/" target=new>Navy / Marine Corps Relief </a></div>
+<div><a tabindex=625 class="header_submenu_item" href="http://www.militaryonesource.com/skins/MOS/home.aspx" target=new>Military One Source </a></div>
+</td>
+<td width="330">
+<div><a tabindex=641 class="header_submenu_item" href="http://www.history.navy.mil/ " target=new>Naval History & Heritage Command </a></div>
+<div><a tabindex=642 class="header_submenu_item" href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx" target=new>Navy Personnel Command </a></div>
+<div><a tabindex=643 class="header_submenu_item" href="https://www.nko.navy.mil" target=new>Navy Knowledge Online </a></div>
+<div><a tabindex=644 class="header_submenu_item" href="http://www.pentagonchannel.mil/" target=new>Pentagon Channel </a></div>
+<div><a tabindex=645 class="header_submenu_item" href="/navyenterprise/">Navy Enterprise </a></div>
+</td>
+<td width="330">
+<div><a tabindex=661 class="header_submenu_item" href="https://www.navyreserve.navy.mil" target=new>Navy Reserve </a></div>
+<div><a tabindex=662 class="header_submenu_item" href="http://www.usmc.mil/" target=new>US Marine Corps </a></div>
+<div><a tabindex=663 class="header_submenu_item" href="http://www.uscg.mil/" target=new>US Coast Guard </a></div>
+<div><a tabindex=664 class="header_submenu_item" href="http://www.af.mil/" target=new>Air Force </a></div>
+<div><a tabindex=665 class="header_submenu_item" href="http://www.army.mil/" target=new>Army </a></div>
+<div><a tabindex=666 class="header_submenu_item" href="http://www.defense.gov" target=new>Defense.gov </a></div>
+<div><a tabindex=667 class="header_submenu_item" href="http://www.jcs.mil" target=new>Joint Chiefs of Staff </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=690 href="javascript:void(0);" onclick="hide_main_menu('column6_menu');">Hide Links of Interest Menu</a></div>
+</div>
+</div>
+
+<!-- End of Standard US Navy Header Bar -->
+
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#FFFFFF" width="14" background="/images/navy_mil/blank.gif"><img src="/images/navy_mil/blank.gif" width="14" height="50" alt=""></td>
+    <td colspan=2 bgcolor="#FFFFFF" valign="top" style=news width=672><br>
+	  <p><h1 style="font-size:18px; font-weight:bold; text-align:center">List of U.S. Navy Ships</h1></p>
+	  <p align=center style=headline><big><strong>Alphabetically with their Homeports</strong></big></p>
+	  <DD>The following is an alphabetical list of U.S. Navy ships with their homeports.  Please note that ships stationed overseas in <strong>Italy and Japan are <em>forward deployed</em></strong> in those ports, not homeported there. Within each homeport listing is an alphabetical list of ships and their mailing addresses. Ships which are named for individuals are listed by the first name of that individual.  For example, <em>USS Dwight D. Eisenhower</em> is listed under the "D" rather than the "E".  Ships that are <strong>USNS</strong> are those operated with a civilian master and crew by the Military Sealift Command.<BR>
+	  <table width=610 border=0 cellspacing=0 cellpadding=0>
+<tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- ( -</td></tr><tr><td class=news>(under construction)</td><td class=news>DDG-113-115</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news>(YP 676-677, 680-692)</td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;United States Naval Academy, Annapolis, MD (USNA)</td></tr><tr><td class=news>(YP 703-704)</td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;United States Naval Academy, Annapolis, MD (USNA)</td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- < -</td></tr><tr><td class=news><em>Anchorage</em></td><td class=news>LPD 23</td><td class=news>&nbsp;&nbsp;&nbsp;under construction</td></tr><tr><td class=news><em>Arlington</em></td><td class=news>LPD 24</td><td class=news>&nbsp;&nbsp;&nbsp;under construction</td></tr><tr><td class=news><em>Avalon</em></td><td class=news>DSRV 2</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>Cutthroat</em></td><td class=news>LSV 2</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>John Warner</em> </td><td class=news>SSN-785</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=203" ><em>Matthew C. Perry</em></a></td><td class=news>T-AKE 9</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr><tr><td class=news><em>Minnesota</em></td><td class=news>SSN 783</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>Mississippi</em></td><td class=news>SSN 782</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV C-Champion</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV C-Commando</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=13&type=ContainerShip" ><em>MV CAPT Steven L. Bennett</em></a></td><td class=news>T-AK 4296</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV Dolores Chouest</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV Gus W. Darnell</em></td><td class=news>T-AOT 1121</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV HOS Greystone</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV HOS Bluewater</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV Transpacific</em></td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>MV VADM K.R. Wheeler</em></td><td class=news>T-AG 5001</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>Mystic</em></td><td class=news>DSRV 1</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>North Dakota</em></td><td class=news>SSN 784</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>PCU America</em></td><td class=news>LHA6</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr><tr><td class=news><em>PCU Coronado</em></td><td class=news>LCS 4</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA. (future)</td></tr><tr><td class=news><em>PCU Detroit</em></td><td class=news>LCS 7</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news><em>PCU Fort Worth</em></td><td class=news>LCS 3</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA. (future)</td></tr><tr><td class=news><em>PCU Jackson</em></td><td class=news>LCS 6</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news><em>PCU Michael Murphy</em></td><td class=news>DDG 112</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><em>PCU Milwaukee</em></td><td class=news>LCS 5</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news><em>PCU Michael Monsoor</em></td><td class=news>DDG 1001</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport - under construction.</td></tr><tr><td class=news><em>PCU Montgomery</em></td><td class=news>LCS 8</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news><em>PCU Zumwalt</em> </td><td class=news>DDG 1000</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport - under construction</td></tr><tr><td class=news><em>San Diego</em></td><td class=news>LPD 22</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news><em>Somerset</em></td><td class=news>LPD 25</td><td class=news>&nbsp;&nbsp;&nbsp;under construction</td></tr><tr><td class=news><em>SS Curtiss</em></td><td class=news>T-AVB  4</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>SS PFC Eugene A. Obregon</em></td><td class=news>T-AK 3006</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>SS Wright</em></td><td class=news>T-AVB  3</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS 1st Lt. Baldomero Lopez</em></td><td class=news>T-AK 3010</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS 1st Lt. Jack Lummus</em></td><td class=news>T-AK 3011</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS 1st Lt. Harry L. Martin</em></td><td class=news>T-AK 3015</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS 2nd Lt. John P. Bobo</em></td><td class=news>T-AK 3008</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=198&type=DryCargoAmmunitionShip" ><em>USNS Amelia Earhart</em></a></td><td class=news>T-AKE 6</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=184&type=DryCargoAmmunitionShip" ><em>USNS Alan Shepard</em></a></td><td class=news>T-AKE 3</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=7&type=FastCombatSupportShip" ><em>USNS Arctic</em> </a></td><td class=news>T-AOE  8</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=6&type=FleetOceanTug" ><em>USNS Apache</em></a></td><td class=news>T-ATF 172</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=17&type=OceanographicSurveyShip" ><em>USNS Bowditch</em></a></td><td class=news>T-AGS 62</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=18&type=FastCombatSupportShip" ><em>USNS Bridge</em></a></td><td class=news>T-AOE 10</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=14&type=FleetReplenishmentOiler" ><em>USNS Big Horn </em></a></td><td class=news>T-AO 198</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=102&type=OceanographicSurveyShip" ><em>USNS Bruce C. Heezen</em></a></td><td class=news>T-AGS 64</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Bob Hope</em></td><td class=news>T-AKR 300</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Brittin</em></td><td class=news>T-AKR 305</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Benavidez</em></td><td class=news>T-AKR 306</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Brittin</em></td><td class=news>T-AKR 305</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Benavidez</em></td><td class=news>T-AKR 306</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Bob Hope</em></td><td class=news>T-AKR 300</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Charlton</em></td><td class=news>T-AKR 314</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Charlton</em></td><td class=news>T-AKR 314</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Cornhusker State</em></td><td class=news>T-ACS  6</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.carlbrashear.org/usns_brashear.html" ><em>USNS Carl Brashear</em></a></td><td class=news>T-AKE 7</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=206" ><em>USNS Charles Drew</em></a></td><td class=news>T-AKE  10</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr><tr><td class=news><a href="http://www.med.navy.mil/SITES/USNSCOMFORT/Pages/default.aspx" ><em>USNS Comfort</em></a></td><td class=news>T-AH 20**</td><td class=news>&nbsp;&nbsp;&nbsp;Baltimore, MD</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=62&type=FleetOceanTug" ><em>USNS Catawba</em></a></td><td class=news>T-ATF 168</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Dahl</em></td><td class=news>T-AKR 312</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Dahl</em></td><td class=news>T-AKR 312</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=83&type=OceanSurveillanceShip" ><em>USNS Effective </em></a></td><td class=news>T-AGOS 21</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Fisher</em></td><td class=news>T-AKR 301</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Fisher</em></td><td class=news>T-AKT 301</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Flickertail State</em></td><td class=news>T-ACS  5</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gem State</em></td><td class=news>T-ACS  2</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Grand Canyon State</em></td><td class=news>T-ACS  3</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gopher State</em></td><td class=news>T-ACS  4</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/Grapple/" ><em>USNS Grapple</em> </a></td><td class=news>T-ARS 53</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=96&type=RescueandSalvageShip" ><em>USNS Grasp</em> </a></td><td class=news>T-ARS 51</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gunnery Sgt. Fred W. Stockham</em></td><td class=news>T-AK 3017</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gordon</em></td><td class=news>T-AKR 296</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gilliland</em></td><td class=news>T-AKR 298</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Gordon</em></td><td class=news>T-AKR 296</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Gilliland</em></td><td class=news>T-AKR 298</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=99&type=FleetReplenishmentOiler" ><em>USNS Guadalupe </em></a></td><td class=news>T-AO 200</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=103&type=OceanographicSurveyShip" ><em>USNS Henson</em></a></td><td class=news>T-AGS 63</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=109&type=FleetReplenishmentOiler" ><em>USNS Henry J. Kaiser</em></a></td><td class=news>T-AO 187</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=106&type=OceanSurveillanceShip" ><em>USNS Impeccable</em></a></td><td class=news>T-AGOS 23</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS John McDonnell</em></td><td class=news>T-AGS 51</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=115&type=FleetReplenishmentOiler" ><em>USNS John Lenthall</em></a></td><td class=news>T-AO 189</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=85&type=FleetReplenishmentOiler" ><em>USNS John Ericsson </em></a></td><td class=news>T-AO 194</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=108&type=FleetReplenishmentOiler" ><em>USNS Kanawha </em></a></td><td class=news>T-AO 196</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Keystone State</em></td><td class=news>T-ACS  1</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Lance Cpl. Roy M. Wheat</em></td><td class=news>T-AK 3016</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Leroy Grumman </em></td><td class=news>T-AO 195</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=116&type=DryCargoAmmunitionShip" ><em>USNS Lewis and Clark</em></a></td><td class=news>T-AKE  1</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=119&type=OceanSurveillanceShip" ><em>USNS Loyal</em></a></td><td class=news>T-AGOS 22</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=114&type=FleetReplenishmentOiler" ><em>USNS Laramie </em></a></td><td class=news>T-AO 203</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.med.navy.mil/sites/usnsmercy/Pages/default.aspx" ><em>USNS Mercy</em></a></td><td class=news>T-AH 19*</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=152&type=OceanographicSurveyShip" ><em>USNS Mary Sears</em></a></td><td class=news>T-AGS 65</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Maj. Stephen W. Pless</em></td><td class=news>T-AK 3007</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Mendonca</em></td><td class=news>T-AKR 303</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Mendonca</em></td><td class=news>T-AKR 303</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=129&type=FleetOceanTug" ><em>USNS Navajo</em></a></td><td class=news>T-ATF 169</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=136&type=FleetReplenishmentOiler" ><em>USNS Patuxent </em></a></td><td class=news>T-AO 201</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=135&type=OceanographicSurveyShip" ><em>USNS Pathfinder</em></a></td><td class=news>T-AGS 60</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=137&type=FleetReplenishmentOiler" ><em>USNS Pecos </em></a></td><td class=news>T-AO 197</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Pililaau</em></td><td class=news>T-AKR 304</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Pomeroy</em></td><td class=news>T-AKR 316</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Pililaau</em></td><td class=news>T-AKR 304</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Paul Buck</em></td><td class=news>T-AOT 1122</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Pomeroy</em></td><td class=news>T-AKR 316</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS PFC Dewayne T. Williams</em></td><td class=news>T-AK 3009</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Red Cloud</em></td><td class=news>T-AKR 313</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Richard G. Matthiesen</em></td><td class=news>T-AOT 1124</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/Byrd/" ><em>USNS Richard E. Byrd</em></a></td><td class=news>T-AKE 4</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=199&type=DryCargoAmmunitionShip" ><em>USNS Robert E. Peary</em> </a></td><td class=news>T-AKE 5</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Red Cloud</em></td><td class=news>T-AKR 313</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=145&type=FastCombatSupportShip" ><em>USNS Rainier</em></a></td><td class=news>T-AOE  7</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=146&type=FleetReplenishmentOiler" ><em>USNS Rappahannock </em></a></td><td class=news>T-AO 204</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=156&type=FleetOceanTug" ><em>USNS Sioux</em></a></td><td class=news>T-ATF 171</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=161&type=OceanographicSurveyShip" ><em>USNS Sumner</em></a></td><td class=news>T-AGS 61</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=162&type=FastCombatSupportShip" ><em>USNS Supply</em></a></td><td class=news>T-AOE  6</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/Sacagawea/" ><em>USNS Sacagawea</em></a></td><td class=news>T-AKE  2</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Sisler</em></td><td class=news>T-AKR 311</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Soderman</em></td><td class=news>T-AKR 317</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Seay</em></td><td class=news>T-AKR 302</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Shughart</em></td><td class=news>T-AKR 295</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=182&type=RescueandSalvageShip" ><em>USNS Salvor</em> </a></td><td class=news>T-ARS 52</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Sisler</em></td><td class=news>T-AKR 311</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=96&type=RescueandSalvageShip" ><em>USNS Safeguard</em></a></td><td class=news>T-ARS 50 </td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Soderman</em></td><td class=news>T-AKR 317</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Samuel L. Cobb</em></td><td class=news>T-AOT 1123</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Seay</em></td><td class=news>T-AKR 302</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Sgt. Matej Kocak</em></td><td class=news>T-AK 3005</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Sgt. William R. Button</em></td><td class=news>T-AK 3012</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Shughart</em></td><td class=news>T-AKR 295</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=164&type=FleetReplenishmentOiler" ><em>USNS Tippecanoe </em></a></td><td class=news>T-AO 199</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=165&type=OceanSurveillanceShip" ><em>USNS Victorious</em></a></td><td class=news>T-AGOS 19</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Watson</em></td><td class=news>T-AKR 310</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Watkins</em></td><td class=news>T-AKR 315</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=201 " ><em>USNS Wally Schirra </em> </a></td><td class=news>T-AKE 8</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Watkins</em></td><td class=news>T-AKR 315</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Watson</em></td><td class=news>T-AKR 310</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=82&type=FleetReplenishmentOiler" ><em>USNS Walter S. Diehl</em></a></td><td class=news>T-AO 193</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=174&type=FleetReplenishmentOiler" ><em>USNS Yukon </em></a></td><td class=news>T-AO 202</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><em>USNS Yano</em></td><td class=news>T-AKR 297</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td class=news><em>USNS Yano</em></td><td class=news>T-AKR 297</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=175&type=CableRepairShip" ><em>USNS Zeus</em></a></td><td class=news>T-ARC 7</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.cvn72.navy.mil/" ><em>USS Abraham Lincoln</em></a></td><td class=news>CVN 72</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, Wash.</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Albuquerque</em></a></td><td class=news>SSN 706</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Alexandria.htm" ><em>USS Alexandria</em></a></td><td class=news>SSN 757</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Alabama</em></a></td><td class=news>SSBN 731</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS Alaska</em></a></td><td class=news>SSBN 732</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Albany.htm" ><em>USS Albany</em></a></td><td class=news>SSN 753</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Annapolis.htm" ><em>USS Annapolis</em></a></td><td class=news>SSN 760</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.antietam.navy.mil/default.aspx" ><em>USS Antietam</em></a></td><td class=news>CG 54</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.anzio.navy.mil/" ><em>USS Anzio</em></a></td><td class=news>CG 68</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.arleighburke.navy.mil/" ><em>USS Arleigh Burke</em></a></td><td class=news>DDG  51</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.ardent.navy.mil/" ><em>USS Ardent</em></a></td><td class=news>MCM 12</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.ashland.navy.mil/default.aspx" ><em>USS Ashland</em></a></td><td class=news>LSD 48</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Asheville</em></a></td><td class=news>SSN 758</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.avenger.navy.mil/" ><em>USS Avenger</em></a></td><td class=news>MCM  1</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.barry.navy.mil/" ><em>USS Barry</em></a></td><td class=news>DDG  52</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.bainbridge.navy.mil/default.aspx" ><em>USS Bainbridge</em></a></td><td class=news>DDG  96</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.bataan.navy.mil/" ><em>USS Bataan</em></a></td><td class=news>LHD 5</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.benfold.navy.mil/" ><em>USS Benfold</em></a></td><td class=news>DDG  65</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.blue-ridge.navy.mil/" ><em>USS Blue Ridge</em></a></td><td class=news>LCC 19</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.boxer.navy.mil/" ><em>USS Boxer</em></a></td><td class=news>LHD 4</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.lhd6.navy.mil/" ><em>USS Bonhomme Richard</em></a></td><td class=news>LHD 6</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.boone.navy.mil/" ><em>USS Boone</em></a></td><td class=news>FFG 28</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Boise.htm" ><em>USS Boise</em></a></td><td class=news>SSN 764</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/bremerton/bremerton_homepage.shtml" ><em>USS Bremerton</em></a></td><td class=news>SSN 698</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Buffalo</em></a></td><td class=news>SSN 715</td><td class=news>&nbsp;&nbsp;&nbsp;Guam</td></tr><tr><td class=news><a href="http://www.bunker-hill.navy.mil/" ><em>USS Bunker Hill</em></a></td><td class=news>CG 52</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.bulkeley.navy.mil/" ><em>USS Bulkeley</em></a></td><td class=news>DDG  84</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.carney.navy.mil/" ><em>USS Carney</em></a></td><td class=news>DDG  64</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.cape-st-george.navy.mil/" ><em>USS Cape St. George</em></a></td><td class=news>CG 71</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.cvn70.navy.mil" ><em>USS Carl Vinson</em></a></td><td class=news>CVN 70</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, Calif.</td></tr><tr><td class=news><a href="http://www.carter-hall.navy.mil/default.aspx" ><em>USS Carter Hall</em></a></td><td class=news>LSD 50</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.carr.navy.mil/" ><em>USS Carr</em></a></td><td class=news>FFG 52</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><em>USS California</em></td><td class=news>SSN 781</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, Va.</td></tr><tr><td class=news><a href="http://www.champion.navy.mil/" ><em>USS Champion</em></a></td><td class=news>MCM  4</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.chief.navy.mil/" ><em>USS Chief</em></a></td><td class=news>MCM 14</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><em>USS Chinook</em></td><td class=news>PC  9</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/charlotte/charlotte_homepage.shtml" ><em>USS Charlotte</em></a></td><td class=news>SSN 766</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/cheyenne/cheyenne_homepage.shtml" ><em>USS Cheyenne</em></a></td><td class=news>SSN 773</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/chicago/chicago_homepage.shtml" ><em>USS Chicago</em></a></td><td class=news>SSN 721</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.chancellorsville.navy.mil/" ><em>USS Chancellorsville</em></a></td><td class=news>CG 62</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.chosin.navy.mil/" ><em>USS Chosin</em></a></td><td class=news>CG 65</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.chafee.navy.mil/" ><em>USS Chafee</em></a></td><td class=news>DDG  90</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.chung-hoon.navy.mil/" ><em>USS Chung-Hoon</em></a></td><td class=news>DDG  93</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.guam.navy.mil/705.htm" ><em>USS City of Corpus Christi</em></a></td><td class=news>SSN 705</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, Hawaii</td></tr><tr><td class=news><a href="http://www.cleveland.navy.mil/" ><em>USS Cleveland</em></a></td><td class=news>LPD  7</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Connecticut</em></a></td><td class=news>SSN 22</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.cowpens.navy.mil/" ><em>USS Cowpens</em></a></td><td class=news>CG 63</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.cole.navy.mil/" ><em>USS Cole</em></a></td><td class=news>DDG  67</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/columbia/columbia_homepage.shtml" ><em>USS Columbia</em></a></td><td class=news>SSN 771</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/columbus/columbus_homepage.shtml" ><em>USS Columbus</em></a></td><td class=news>SSN 762</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.comstock.navy.mil/default.aspx" ><em>USS Comstock</em></a></td><td class=news>LSD 45</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.crommelin.navy.mil/" ><em>USS Crommelin</em></a></td><td class=news>FFG 37</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.curts.navy.mil/default.aspx" ><em>USS Curts</em></a></td><td class=news>FFG 38</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.curtis-wilbur.navy.mil/" ><em>USS Curtis Wilbur</em></a></td><td class=news>DDG  54</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS Dallas</em></a></td><td class=news>SSN 700</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.denver.navy.mil/" ><em>USS Denver</em></a></td><td class=news>LPD  9</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.decatur.navy.mil/" ><em>USS Decatur</em></a></td><td class=news>DDG  73</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.dewert.navy.mil/" ><em>USS De Wert</em></a></td><td class=news>FFG 45</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.dewey.navy.mil/" ><em>USS Dewey</em></a></td><td class=news>DDG 105</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport</td></tr><tr><td class=news><a href="http://www.devastator.navy.mil/" ><em>USS Devastator</em></a></td><td class=news>MCM  6</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.dextrous.navy.mil/" ><em>USS Dextrous</em></a></td><td class=news>MCM 13</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.defender.navy.mil/" ><em>USS Defender</em></a></td><td class=news>MCM  2</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.cook.navy.mil/" ><em>USS Donald Cook</em></a></td><td class=news>DDG  75</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.dubuque.navy.mil/default.aspx" ><em>USS Dubuque</em> </a></td><td class=news>LPD 8</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.eisenhower.navy.mil/" ><em>USS Dwight D. Eisenhower</em></a></td><td class=news>CVN 69</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, Va.</td></tr><tr><td class=news><a href="http://www.elrod.navy.mil/" ><em>USS Elrod</em></a></td><td class=news>FFG 55</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><em>USS Emory S. Land</em></td><td class=news>AS 39</td><td class=news>&nbsp;&nbsp;&nbsp;Diego Garcia</td></tr><tr><td class=news><a href="http://www.enterprise.navy.mil" ><em>USS Enterprise</em></a></td><td class=news>CVN 65</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.essex.navy.mil/" ><em>USS Essex</em></a></td><td class=news>LHD 2</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.farragut.navy.mil/default.aspx" ><em>USS Farragut</em></a></td><td class=news>DDG  99</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.fitzgerald.navy.mil/" ><em>USS Fitzgerald</em></a></td><td class=news>DDG  62</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><em>USS Firebolt</em></td><td class=news>PC 10</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="https://www.florida.navy.mil/index.asp" ><em>USS Florida</em></a></td><td class=news>SSGN 728</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.ford.navy.mil/" ><em>USS Ford</em></a></td><td class=news>FFG 54</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, WA</td></tr><tr><td class=news><a href="http://www.fort-mchenry.navy.mil/default.aspx" ><em>USS Fort McHenry</em></a></td><td class=news>LSD 43</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.sherman.navy.mil/" ><em>USS Forrest Sherman</em></a></td><td class=news>DDG  98</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.cable.navy.mil/" ><em>USS Frank Cable</em></a></td><td class=news>AS 40</td><td class=news>&nbsp;&nbsp;&nbsp;Guam</td></tr><tr><td class=news><em>USS Freedom</em></td><td class=news>LCS 1</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA.</td></tr><tr><td class=news><a href="http://www.gary.navy.mil/" ><em>USS Gary</em></a></td><td class=news>FFG 51</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.germantown.navy.mil/default.aspx" ><em>USS Germantown</em></a></td><td class=news>LSD 42</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="https://www.georgia.navy.mil/index.asp" ><em>USS Georgia</em></a></td><td class=news>SSGN 729</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.gettysburg.navy.mil/" ><em>USS Gettysburg</em></a></td><td class=news>CG 64</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://137.247.20.5/cvn77/" ><em>USS George H.W. Bush</em> </a></td><td class=news>CVN 77</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, Va.</td></tr><tr><td class=news><a href="http://gw.ffc.navy.mil/" ><em>USS George Washington</em> </a></td><td class=news>CVN 73</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><em>USS Gladiator</em></td><td class=news>MCM 11</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.gonzalez.navy.mil/" ><em>USS Gonzalez</em></a></td><td class=news>DDG  66</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.gridley.navy.mil/" ><em>USS Gridley</em></a></td><td class=news>DDG 101</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.green-bay.navy.mil/default.aspx" ><em>USS Green Bay</em></a></td><td class=news>LPD 20</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/greeneville/greeneville_homepage.shtml" ><em>USS Greeneville</em></a></td><td class=news>SSN 772</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><em>USS Gravely</em></td><td class=news>DDG 107</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.guardian.navy.mil/" ><em>USS Guardian</em></a></td><td class=news>MCM  5</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.gunston-hall.navy.mil/default.aspx" ><em>USS Gunston Hall</em></a></td><td class=news>LSD 44</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.harpers-ferry.navy.mil/default.aspx" ><em>USS Harpers Ferry</em></a></td><td class=news>LSD 49</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.halyburton.navy.mil/default.aspx" ><em>USS Halyburton</em></a></td><td class=news>FFG 40</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Hampton</em></a></td><td class=news>SSN 767</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Hartford.htm" ><em>USS Hartford</em></a></td><td class=news>SSN 768</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.truman.navy.mil/" ><em>USS Harry S. Truman</em></a></td><td class=news>CVN 75</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, Va.</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Hawaii.htm" ><em>USS Hawaii</em></a></td><td class=news>SSN 776</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, Hawaii</td></tr><tr><td class=news><a href="http://www.halsey.navy.mil/" ><em>USS Halsey</em></a></td><td class=news>DDG  97</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Helena</em></a></td><td class=news>SSN 725</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Henry M. Jackson</em></a></td><td class=news>SSBN 730</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.higgins.navy.mil/" ><em>USS Higgins</em></a></td><td class=news>DDG  76</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.hopper.navy.mil/" ><em>USS Hopper</em></a></td><td class=news>DDG  70</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.howard.navy.mil/" ><em>USS Howard</em></a></td><td class=news>DDG  83</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.guam.navy.mil/" ><em>USS Houston</em></a></td><td class=news>SSN 713</td><td class=news>&nbsp;&nbsp;&nbsp;Guam</td></tr><tr><td class=news><a href="http://www.hue-city.navy.mil/" ><em>USS Hue City</em></a></td><td class=news>CG 66</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><em>USS Hurricane</em></td><td class=news>PC  3</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.ingraham.navy.mil/" ><em>USS Ingraham</em></a></td><td class=news>FFG 61</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, WA</td></tr><tr><td class=news><a href="http://www.iwo-jima.navy.mil/" ><em>USS Iwo Jima</em></a></td><td class=news>LHD 7</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/jacksonville/jacksonville_homepage.shtml" ><em>USS Jacksonville</em></a></td><td class=news>SSN 699</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.williams.navy.mil/default.aspx" ><em>USS James E Williams</em></a></td><td class=news>DDG  95</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><em>USS Jason Dunham</em></td><td class=news>DDG 109</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Jefferson City</em></a></td><td class=news>SSN 759</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Jimmy Carter</em></a></td><td class=news>SSN 23</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.cvn74.navy.mil/" ><em>USS John C. Stennis</em></a></td><td class=news>CVN 74</td><td class=news>&nbsp;&nbsp;&nbsp;Bremerton, Wash.</td></tr><tr><td class=news><a href="http://www.john-paul-jones.navy.mil/" ><em>USS John Paul Jones</em></a></td><td class=news>DDG  53</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.mccain.navy.mil/" ><em>USS John S McCain</em></a></td><td class=news>DDG  56</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.hall.navy.mil/" ><em>USS John L. Hall</em></a></td><td class=news>FFG 32</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><em>USS Juneau</em></td><td class=news>LPD 10</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.kauffman.navy.mil/" ><em>USS Kauffman</em></a></td><td class=news>FFG 59</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Kentucky</em></a></td><td class=news>SSBN 737</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.kearsarge.navy.mil/" ><em>USS Kearsarge</em></a></td><td class=news>LHD 3</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/keywest/keywest_homepage.shtml" ><em>USS Key West</em></a></td><td class=news>SSN 722</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.kidd.navy.mil/" ><em>USS Kidd</em></a></td><td class=news>DDG 100</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.klakring.navy.mil/" ><em>USS Klakring</em></a></td><td class=news>FFG 42</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.lassen.navy.mil/" ><em>USS Lassen</em></a></td><td class=news>DDG  82</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.laboon.navy.mil/" ><em>USS Laboon</em></a></td><td class=news>DDG  58</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.lake-erie.navy.mil/" ><em>USS Lake Erie</em></a></td><td class=news>CG 70</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.lake-champlain.navy.mil/" ><em>USS Lake Champlain</em></a></td><td class=news>CG 57</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/lajolla/lajolla_homepage.shtml" ><em>USS La Jolla</em></a></td><td class=news>SSN 701</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.leytegulf.navy.mil/" ><em>USS Leyte Gulf</em></a></td><td class=news>CG 55</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/louisville/louisville_homepage.shtml" ><em>USS Louisville</em></a></td><td class=news>SSN 724</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Louisiana</em></a></td><td class=news>SSBN 743</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Maine</em></a></td><td class=news>SSBN 741</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS Maryland</em></a></td><td class=news>SSBN 738</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.makin-island.navy.mil" ><em>USS Makin Island</em></a></td><td class=news>LHD 8</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.mahan.navy.mil/" ><em>USS Mahan</em></a></td><td class=news>DDG  72</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.mason.navy.mil/" ><em>USS Mason</em></a></td><td class=news>DDG  87</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.mccampbell.navy.mil/" ><em>USS McCampbell</em></a></td><td class=news>DDG  85</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.mcfaul.navy.mil/" ><em>USS McFaul</em></a></td><td class=news>DDG  74</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.mcclusky.navy.mil/" ><em>USS McClusky</em></a></td><td class=news>FFG 41</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.mesa-verde.navy.mil" ><em>USS Mesa Verde</em></a></td><td class=news>LPD 19</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Memphis.htm" ><em>USS Memphis</em></a></td><td class=news>SSN 691</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.mitscher.navy.mil/" ><em>USS Mitscher</em></a></td><td class=news>DDG  57</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.milius.navy.mil/" ><em>USS Milius</em></a></td><td class=news>DDG  69</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Miami.htm" ><em>USS Miami</em></a></td><td class=news>SSN 755</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.michigan.navy.mil/" ><em>USS Michigan</em></a></td><td class=news>SSGN 727</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><em>USS Missouri</em></td><td class=news>SSN 780</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, Conn.</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Montpelier.htm" ><em>USS Montpelier</em></a></td><td class=news>SSN 765</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.monterey.navy.mil/" ><em>USS Monterey</em></a></td><td class=news>CG 61</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.momsen.navy.mil/" ><em>USS Momsen</em></a></td><td class=news>DDG  92</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, WA</td></tr><tr><td class=news><a href="http://www.mobile-bay.navy.mil/" ><em>USS Mobile Bay</em></a></td><td class=news>CG 53</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.mtwhitney.navy.mil/" ><em>USS Mount Whitney</em></a></td><td class=news>LCC 20</td><td class=news>&nbsp;&nbsp;&nbsp;Gaeta, Italy</td></tr><tr><td class=news><a href="http://www.mustin.navy.mil/" ><em>USS Mustin</em></a></td><td class=news>DDG  89</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.nassau.navy.mil/" ><em>USS Nassau</em></a></td><td class=news>LHA 4</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.nashville.navy.mil/" ><em>USS Nashville</em></a></td><td class=news>LPD 13</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport - decommissioned</td></tr><tr><td class=news><em>USS New York</em></td><td class=news>LPD 21</td><td class=news>&nbsp;&nbsp;&nbsp;Norfok, VA</td></tr><tr><td class=news><a href="http://www.new-orleans.navy.mil " ><em>USS New Orleans</em></a></td><td class=news>LPD 18</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/NewHampshire.htm" ><em>USS New Hampshire</em></a></td><td class=news>SSN 778</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, Conn.</td></tr><tr><td class=news><em>USS New Mexico</em></td><td class=news>SSN 779</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, Conn.</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/NewportNews.htm" ><em>USS Newport News</em></a></td><td class=news>SSN 750</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Nebraska</em></a></td><td class=news>SSBN 739</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Nevada</em></a></td><td class=news>SSBN 733</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.nicholas.navy.mil/" ><em>USS Nicholas</em></a></td><td class=news>FFG 47</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.nimitz.navy.mil/" ><em>USS Nimitz</em></a></td><td class=news>CVN 68</td><td class=news>&nbsp;&nbsp;&nbsp;Bremerton, Wash.</td></tr><tr><td class=news><a href="http://www.nitze.navy.mil/" ><em>USS Nitze</em></a></td><td class=news>DDG  94</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.normandy.navy.mil/" ><em>USS Normandy</em></a></td><td class=news>CG 60</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Norfolk.htm" ><em>USS Norfolk</em></a></td><td class=news>SSN 714</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/NorthCarolina.htm" ><em>USS North Carolina</em></a></td><td class=news>SSN 777</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, Hawaii</td></tr><tr><td class=news><a href="http://www.o-kane.navy.mil/" ><em>USS O'kane</em></a></td><td class=news>DDG  77</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.oak-hill.navy.mil/default.aspx" ><em>USS Oak Hill</em></a></td><td class=news>LSD 51</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><em>USS Ogden</em></td><td class=news>LPD  5</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.ohio.navy.mil/" ><em>USS Ohio</em></a></td><td class=news>SSGN 726</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/OklahomaCity.htm" ><em>USS Oklahoma City</em></a></td><td class=news>SSN 723</td><td class=news>&nbsp;&nbsp;&nbsp;Guam</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/olympia/olympia_homepage.shtml" ><em>USS Olympia</em></a></td><td class=news>SSN 717</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.oscar-austin.navy.mil/default.aspx" ><em>USS Oscar Austin</em></a></td><td class=news>DDG  79</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.paul-hamilton.navy.mil/" ><em>USS Paul Hamilton</em></a></td><td class=news>DDG  60</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/pasadena/pasadena_homepage.shtml" ><em>USS Pasadena</em></a></td><td class=news>SSN 752</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.patriot.navy.mil/" ><em>USS Patriot</em></a></td><td class=news>MCM  7</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.usspearlharbor.navy.mil/default.aspx" ><em>USS Pearl Harbor</em></a></td><td class=news>LSD 52</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Pennsylvania</em></a></td><td class=news>SSBN 735</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.peleliu.navy.mil/" ><em>USS Peleliu</em></a></td><td class=news>LHA 5</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Philadelphia</em></a></td><td class=news>SSN 690</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.philippine-sea.navy.mil/" ><em>USS Philippine Sea</em></a></td><td class=news>CG 58</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.pinckney.navy.mil/" ><em>USS Pinckney</em></a></td><td class=news>DDG  91</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Pittsburgh.htm" ><em>USS Pittsburgh</em></a></td><td class=news>SSN 720</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.pioneer.navy.mil/" ><em>USS Pioneer</em></a></td><td class=news>MCM  9</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><em>USS Ponce</em></td><td class=news>LPD 15</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.porter.navy.mil/" ><em>USS Porter</em></a></td><td class=news>DDG  78</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.port-royal.navy.mil/" ><em>USS Port Royal</em></a></td><td class=news>CG 73</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.princeton.navy.mil/" ><em>USS Princeton</em></a></td><td class=news>CG 59</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.preble.navy.mil/" ><em>USS Preble</em></a></td><td class=news>DDG  88</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Providence.htm" ><em>USS Providence</em></a></td><td class=news>SSN 719</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.ramage.navy.mil/" ><em>USS Ramage</em></a></td><td class=news>DDG  61</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.reuben-james.navy.mil/" ><em>USS Reuben James</em></a></td><td class=news>FFG 57</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.rentz.navy.mil/" ><em>USS Rentz</em></a></td><td class=news>FFG 46</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS Rhode Island</em></a></td><td class=news>SSBN 740</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.bradley.navy.mil/" ><em>USS Robert G. Bradley</em></a></td><td class=news>FFG 49</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.davis.navy.mil/" ><em>USS Rodney M. Davis</em></a></td><td class=news>FFG 60</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, WA</td></tr><tr><td class=news><a href="http://www.ddg-roosevelt.navy.mil/default.aspx" ><em>USS Roosevelt</em></a></td><td class=news>DDG  80</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.ross.navy.mil/" ><em>USS Ross</em></a></td><td class=news>DDG  71</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.reagan.navy.mil/" ><em>USS Ronald Reagan</em></a></td><td class=news>CVN 76</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, Calif.</td></tr><tr><td class=news><a href="http://www.russell.navy.mil/" ><em>USS Russell</em></a></td><td class=news>DDG  59</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.rushmore.navy.mil/default.aspx" ><em>USS Rushmore</em></a></td><td class=news>LSD 47</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.roberts.navy.mil/" ><em>USS Samuel B. Roberts</em></a></td><td class=news>FFG 58</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/SanJuan.htm" ><em>USS San Juan</em></a></td><td class=news>SSN 751</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/santafe/santafe_homepage.shtml" ><em>USS Santa Fe</em></a></td><td class=news>SSN 763</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><a href="http://www.sampson.navy.mil/" ><em>USS Sampson</em></a></td><td class=news>DDG 102</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS San Francisco</em></a></td><td class=news>SSN 711</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sanjacinto.navy.mil/" ><em>USS San Jacinto</em></a></td><td class=news>CG 56</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.san-antonio.navy.mil" ><em>USS San Antonio</em></a></td><td class=news>LPD 17</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Scranton.htm" ><em>USS Scranton</em></a></td><td class=news>SSN 756</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><em>USS Scout</em></td><td class=news>MCM  8</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><em>USS Sentry</em></td><td class=news>MCM  3</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Seawolf</em></a></td><td class=news>SSN 21</td><td class=news>&nbsp;&nbsp;&nbsp;Bangor, WA</td></tr><tr><td class=news><a href="http://www.shoup.navy.mil/" ><em>USS Shoup</em></a></td><td class=news>DDG  86</td><td class=news>&nbsp;&nbsp;&nbsp;Everett, WA</td></tr><tr><td class=news><a href="http://www.shiloh.navy.mil/" ><em>USS Shiloh</em></a></td><td class=news>CG 67</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><em>USS Sirocco</em></td><td class=news>PC  6</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.simpson.navy.mil/" ><em>USS Simpson</em></a></td><td class=news>FFG 56</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Springfield.htm" ><em>USS Springfield</em></a></td><td class=news>SSN 761</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><em>USS Spruance</em></td><td class=news>DDG 111</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><em>USS Squall</em></td><td class=news>PC  7</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.groves.navy.mil/" ><em>USS Stephen W. Groves</em></a></td><td class=news>FFG 29</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><em>USS Stout</em></td><td class=news>DDG  55</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.stethem.navy.mil/" ><em>USS Stethem</em></a></td><td class=news>DDG  63</td><td class=news>&nbsp;&nbsp;&nbsp;Yokosuka, Japan</td></tr><tr><td class=news><a href="http://www.sterett.navy.mil/" ><em>USS Sterett</em></a></td><td class=news>DDG 104</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.stockdale.navy.mil/default.aspx" ><em>USS Stockdale</em></a></td><td class=news>DDG 106</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.taylor.navy.mil/" ><em>USS Taylor</em></a></td><td class=news>FFG 50</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/TennesseeBlue.htm" ><em>USS Tennessee</em></a></td><td class=news>SSBN 734</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Texas.htm" ><em>USS Texas</em></a></td><td class=news>SSN 775</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, Hawaii</td></tr><tr><td class=news><a href="http://www.tr.surfor.navy.mil/" ><em>USS Theodore Roosevelt</em></a></td><td class=news>CVN 71</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, Va.</td></tr><tr><td class=news><em>USS The Sullivans</em></td><td class=news>DDG  68</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.thach.navy.mil/" ><em>USS Thach</em></a></td><td class=news>FFG 43</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><em>USS Thunderbolt</em></td><td class=news>PC 12</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/content/comsubpac_subsquadrons.shtml" ><em>USS Topeka</em></a></td><td class=news>SSN 754</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.tortuga.navy.mil/default.aspx" ><em>USS Tortuga</em></a></td><td class=news>LSD 46</td><td class=news>&nbsp;&nbsp;&nbsp;Sasebo, Japan</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Toledo.htm" ><em>USS Toledo</em></a></td><td class=news>SSN 769</td><td class=news>&nbsp;&nbsp;&nbsp;Groton, CT</td></tr><tr><td class=news><a href="http://www.truxtun.navy.mil/" ><em>USS Truxtun</em></a></td><td class=news>DDG 103</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.csp.navy.mil/subssquadrons/tucson/tucson_homepage.shtml" ><em>USS Tucson</em></a></td><td class=news>SSN 770</td><td class=news>&nbsp;&nbsp;&nbsp;Pearl Harbor, HI</td></tr><tr><td class=news><em>USS Typhoon</em></td><td class=news>PC  5</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.underwood.navy.mil/" ><em>USS Underwood</em></a></td><td class=news>FFG 36</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.vandegrift.navy.mil/" ><em>USS Vandegrift</em></a></td><td class=news>FFG 48</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.vella-gulf.navy.mil/" ><em>USS Vella Gulf </em></a></td><td class=news>CG 72</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.vicksburg.navy.mil/" ><em>USS Vicksburg</em></a></td><td class=news>CG 69</td><td class=news>&nbsp;&nbsp;&nbsp;Mayport, FL</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/BoatInfo/Virginia.htm" ><em>USS Virginia</em></a></td><td class=news>SSN 774</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, N.H.</td></tr><tr><td class=news><a href="http://www.wasp.navy.mil/" ><em>USS Wasp</em></a></td><td class=news>LHD 1</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><a href="http://www.warrior.navy.mil/" ><em>USS Warrior</em></a></td><td class=news>MCM 10</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.meyer.navy.mil/" ><em>USS Wayne E. Meyer</em></a></td><td class=news>DDG 108 </td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS West Virginia</em></a></td><td class=news>SSBN 736</td><td class=news>&nbsp;&nbsp;&nbsp;Portsmouth, VA</td></tr><tr><td class=news><em>USS Whirlwind</em></td><td class=news>PC 11</td><td class=news>&nbsp;&nbsp;&nbsp;Manama, Bahrain</td></tr><tr><td class=news><a href="http://www.whidbey-island.navy.mil/default.aspx" ><em>USS Whidbey Island</em></a></td><td class=news>LSD 41</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news><a href="http://www.churchill.navy.mil/" ><em>USS Winston S Churchill</em></a></td><td class=news>DDG  81</td><td class=news>&nbsp;&nbsp;&nbsp;Norfolk, VA</td></tr><tr><td class=news><em>USS William P. Lawrence</em></td><td class=news>DDG 110</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA</td></tr><tr><td class=news><a href="http://www.sublant.navy.mil/SubsSquadrons.htm" ><em>USS Wyoming</em></a></td><td class=news>SSBN 742</td><td class=news>&nbsp;&nbsp;&nbsp;Kings Bay, GA</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=210" ><em>Washington Chambers</em></a></td><td class=news>T-AKE  11</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- J -</td></tr><tr><td class=news>John P. Murtha</td><td class=news>LPD 26</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- M -</td></tr><tr><td class=news><a href="http://www.msc.navy.mil/inventory/ships.asp?ship=64&type=ContainerRollonRolloffShip" >MV TSGT John a. Champan</a></td><td class=news>T-AK 323</td><td class=news>&nbsp;&nbsp;&nbsp;no homeport</td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- P -</td></tr><tr><td class=news>PCU Gerald R. Ford</td><td class=news>CVN 78</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news>PCU John F. Kennedy</td><td class=news>CVN 79</td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- S -</td></tr><tr><td class=news>SSN 786</td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news>SSN 787</td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td class=news>SSN 788 - 791</td><td class=news></td><td class=news>&nbsp;&nbsp;&nbsp;<em>No homeport</em></td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- U -</td></tr><tr><td class=news>USS Independence</td><td class=news>LCS 2</td><td class=news>&nbsp;&nbsp;&nbsp;San Diego, CA. (future)</td></tr><tr><td class=news>USS Monsoon </td><td class=news>PC 4</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td class=news>USS Tempest </td><td class=news>PC 2</td><td class=news>&nbsp;&nbsp;&nbsp;Little Creek, VA</td></tr><tr><td colspan=3>&nbsp;</td></tr><tr><td colspan=3 align=center class=menudark>- W -</td></tr><tr><td class=news>William McLean</td><td class=news>T-AKE  12</td><td class=news>&nbsp;&nbsp;&nbsp;No homeport </td></tr>
+	  <tr><td colspan=3>&nbsp;</td></tr>
+	  </table>	  
+    <td bgcolor="#FFFFFF" width="14" height=50></td>
+    <td background="/images/bg_cccccc.gif" valign="top" width="300">
+	<br><br>
+	<table border=0 width=240 align=center>
+	  <tr><td class=menudark>You can also search:</td></tr>
+	  <tr><td><img width=4 border=0 src="/images/blank.gif" alt=""><a href='/navydata/ships/lists/homeport.asp' class=small>Homeports list</td></tr>
+	  <tr><td><img width=4 border=0 src="/images/blank.gif" alt=""><a href='/navydata/ships/lists/ship-fpo.asp' class=small>Ship FPO Mailing Addresses</td></tr>
+	  <tr><td>&nbsp;</td></tr>
+	  <tr><td class=menudark>Can't find your ship?</td></tr>
+	  <tr><td><img width=4 border=0 src="/images/blank.gif" alt=""><a href='/navydata/ships/lists/decoms.asp' class=small>Decommissioned Ships list</td></tr>
+	</table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

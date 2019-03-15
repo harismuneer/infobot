@@ -1,0 +1,600 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-18T04:49:48Z
+WARC-TREC-ID: clueweb12-0210wb-17-32354
+WARC-Target-URI: http://www.pacom.mil/web/Site_Pages/Media/News_2011/01/20110121-Singaore%20Navy%20trains%20with%20USNavy.shtml
+WARC-Payload-Digest: sha1:U546FJCEWGKY22XPOXTK7GUAMVLVOWNX
+WARC-IP-Address: 96.7.40.25
+WARC-Record-ID: <urn:uuid:f7613a5f-d546-4a06-81a6-b690acbd4947>
+Content-Type: application/http; msgtype=response
+Content-Length: 31253
+
+HTTP/1.0 200 OK
+Content-Type: text/html
+X-Powered-By: ASP.NET
+Expires: Sat, 18 Feb 2012 04:49:52 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Sat, 18 Feb 2012 04:49:52 GMT
+Content-Length: 31003
+Connection: close
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>USPACOM - United States Pacific Command</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="stylesheet" href="/web/PACOM_Resources/css/SITE_TEMPLATE.css" />
+    <link rel="stylesheet" href="/web/PACOM_Resources/css/menu.css" />
+    <link rel="shortcut icon" type="image/ico" href="http://www.pacom.mil/pacom.ico"/> 
+    
+    <script type="text/javascript" src="/web/PACOM_Resources/flash_slideshow/flashdetect.js">  </script>
+    <script language="JavaScript" src="/web/PACOM_Resources/js/time.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/web/PACOM_Resources/js/fsmenu.js"></script>
+    <script type="text/javascript" src="/web/pacom_resources/media/video/wasp.js"></script>
+
+	<!--[if IE 6]>
+	<style type="text/css" media="screen">
+		#nav  ul ul{
+			position:absolute;
+			z-index:500;
+			top:auto;
+			display:none;
+			left:-19px;
+			border-top:1px solid #fff;
+		}
+	</style>
+	<![endif]-->
+	
+	<script language="JavaScript" type="text/JavaScript">
+	    function MM_swapImgRestore() { //v3.0
+	        var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+	    }
+
+	    function MM_preloadImages() { //v3.0
+	        var d = document; if (d.images) {
+	            if (!d.MM_p) d.MM_p = new Array();
+	            var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+	                if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+	        }
+	    }
+
+	    function MM_findObj(n, d) { //v4.01
+	        var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+	            d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+	        }
+	        if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+	        for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+	        if (!x && d.getElementById) x = d.getElementById(n); return x;
+	    }
+
+	    function MM_swapImage() { //v3.0
+	        var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+	            if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+	    }
+    </script>
+</head>
+<body>
+
+
+<div id="header">
+<center>
+<table width="1000px">
+<tr>
+    <td align="left">
+        <img src="/web/PACOM_Resources/img/main_banner Dec 2010-l.jpg" alt="USPACOM Banner" width="750px" height="50" border="0" usemap="#Map1" />
+        <map name="Map1" id="Map1">
+          <area shape="rect" coords="-262,-16,742,40" href="/web/pacom_resources/pdf/PACOM Strategy Sep 2010.pdf" target="_blank" alt="USPACOM Strategic Guidance" />
+        </map>
+    </td>
+    <td align="right" valign="middle">
+	    <form id="searchForm" method="get" action="http://search.dma.mil/search">
+	        <input type="hidden" name="btnG" 			    value="Search" />
+	        <input type="hidden" name="output" 			    value="xml_no_dtd" />
+	        <input type="hidden" name="ie" 			        value="UTF-8" />
+	        <input type="hidden" name="oe" 			        value="UTF-8" />
+	        <input type="hidden" name="client" 			    value="defense_DOD" />
+	        <input type="hidden" name="proxystylesheet" 	value="defense_DOD" />
+	        <input type="hidden" name="site" 			    value="DOD_PACOM" />
+	        <input type="hidden" name="numgm" 			    value="5" />
+	        <input type="hidden" name="filter" 			    value="0" />
+	        <input type="hidden" name="proxyreload" 		value="1" />
+	        <input type="hidden" name="sort" 			    value="date:D:R:d1" />
+	        <input type="text" name="q" size="15" class="search_box"/>
+	        <input type="image" name="PACOMSearch" class="search_button" src="/web/PACOM_Resources/img/button_links/btn-searchwh.gif" alt="PACOM Search" />
+        </form>
+    </td>
+</tr>
+</table>
+</center>
+
+
+<div id="nav">
+<ul class='menulist' id='listMenuRoot'>
+
+<li><a href="http://www.pacom.mil/" class="" >Home</a></li>
+
+<li><a href="/web/site_pages/commander/commander.shtml" class="" >Commander</a>
+<ul>
+<li><a href="/web/Site_Pages/Staff Directory/J0/J00 Biography.shtml" class="" >Biography</a></li>
+<!--<li><a href="/web/site_pages/commander/Photos.shtml" class="" >Photos</a></li>-->
+<li><a href="/web/site_pages/commander/Speeches.shtml" class="" >Speeches</a></li>
+<li><a href="/web/site_pages/commander/Statements & Testimony.shtml" class="" >Statements & Testimony</a></li>
+<li><a href="/web/site_pages/commander/Transcripts.shtml" class="" >Transcripts</a></li>
+</ul>
+</li>
+
+<li><a href="/web/site_pages/uspacom/uspacom.shtml" class="" >About</a>
+<ul>
+<li><a href="/web/pacom_resources/pdf/PACOM Strategy Sep 2010.pdf" target="_blank" class="" >Strategic Guidance</a></li>
+<li><a href="/web/Site_Pages/USPACOM/Facts.shtml" class="" >Facts</a></li>
+<li><a href="/web/site_pages/uspacom/Reading List.shtml" class="" >Reading List</a></li>
+<li><a href="/web/site_pages/uspacom/history.shtml" class="" >History</a></li>
+<li><a href="/web/site_pages/uspacom/regional map.shtml" class="" >Regional Map</a></li>
+<li><a href="/web/Site_Pages/USPACOM/Asia-Pacific Economic.shtml">Asia-Pacific Economic</a></li>
+<li><a href="/web/Site_Pages/USPACOM/E-Journal.shtml">Security and Stability Review </a></li>
+</ul>
+</li>
+
+<li><a href="/web/site_pages/media/media.shtml" class="" >Media</a>
+<ul>
+<li><a href="/web/site_pages/media/news.shtml" class="" >News</a></li>
+<li><a href="/web/site_pages/media/photos.shtml" class="" >Photos</a></li>
+<li><a href="/web/site_pages/media/Press Releases.shtml" class="" >Press Releases/OpEd</a></li>
+<li><a href="/web/site_pages/media/rss feeds.shtml" class="" >RSS Feeds</a></li>
+<li><a href="/web/site_pages/media/social networks.shtml" class="" >Social Networks</a>
+<ul>
+<li><a href="http://pacom.dodlive.mil/" target="_blank" class="" >Blog</a></li>
+<li><a href="http://www.facebook.com/pages/US-Pacific-Command/61575637587" target="_blank" class="" >Facebook</a></li>
+<li><a href="http://www.flickr.com/photos/us-pacific-command" target="_blank" class="" >Flickr</a></li>
+<!--<li><a href="http://www.myspace.com/uspacificcommand" target="_blank" class="" >MySpace</a></li>-->
+<li><a href="http://twitter.com/PacificCommand" target="_blank" class="" >Twitter</a></li>
+<li><a href="http://www.youtube.com/user/USPacificCommand" target="_blank" class="" >YouTube</a></li>
+</ul>
+</li>
+<li><a href="/web/site_pages/media/videos.shtml" class="" >Videos</a></li>
+<li><a href="/web/site_pages/media/archives/archives.shtml" class="" >Archives</a>
+<ul>
+<li><a href="/web/site_pages/media/archives/news.shtml" class="" >News</a></li>
+<li><a href="/web/site_pages/media/archives/photos.shtml" class="" >Photos</a></li>
+<li><a href="/web/Site_Pages/Media/Archives/Releases.shtml" class="" >Press Releases/OpEd</a></li>
+<li><a href="/web/site_pages/media/archives/Videos.shtml" class="" >Videos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li><a href="/web/Site_Pages/newcomers/newcomers.shtml" class="" >Command Info</a>
+<ul>
+
+<li><a href="/web/Site_Pages/newcomers/Pacom news.shtml" class="" >Pacom News</a> 
+<li><a href="/web/Site_Pages/newcomers/checkin.shtml" class="" >Check-in</a>
+<ul> 
+    <li><a href="/web/Site_Pages/newcomers/about hawaii.shtml" class="" >About Hawaii</a>
+    <ul> 
+    <li><a href="http://www.pcs-tdy.com/directories/" target="_blank">AmeriForce Directories: Hawaii</a></li>
+    <li><a href="http://www.hvcb.org/" target="_blank">Hawaii Visitor's Bureau</a></li>
+    <!--<li><a href="http://www.hawaii.net" target="_blank">Hawaii's World Wide Web Homepage</a></li>-->
+    <li><a href="http://www.wunderground.com/US/HI/Honolulu.html" target="_blank">Today's weather on Oahu</a></li>
+    </ul> 
+    </li>
+
+    <li><a href="/web/Site_Pages/newcomers/base newspapers.shtml" class="" >Base Newspapers</a>
+    <ul>
+    <li><a href="http://www2.hickam.af.mil/library/hickamkukini/index.asp" target="_blank">Hickam AFB News </a></li>
+    <li><a href="http://www.garrison.hawaii.army.mil/haw.asp" target="_blank">Hawaii Army Weekly</a></li>
+    <li><a href="http://www.mcbh.usmc.mil/news/news.htm" target="_blank">Hawaii Marine</a></li>
+    <li><a href="https://www.cnic.navy.mil/PearlHarbor-Hickam/NewsandCurrentInfo/HookeleNews/index.htm" target="_blank">Joint Base Pearl Harbor-Hickam Ho'okele</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/education.shtml" class="" >Education</a>
+    <ul>
+    <li><a href="http://www.hais.org/" target="_blank">Hawaii Association of Independent Schools</a></li>
+    <li><a href="http://doe.k12.hi.us/" target="_blank">Hawaii Department of Education</a></li>
+    <li><a href="http://www.hpu.edu/" target="_blank">Hawaii Pacific University</a></li>
+    <li><a href="http://www.pacom.mil/web/site_pages/staff%20directory/j1/J14JVEF_About.shtml" target="_blank">Joint Venture Education Forum (JVEF)</a></li>
+    <li><a href="http://www.mccshawaii.com/jec.htm" target="_blank">Marine Corps Joint Education Center</a></li>
+    <li><a href="/web/site_pages/staff directory/j1/j14.shtml">PACOM Military Child Education Division</a></li>
+    <li><a href="http://www.pearlharbor.navy.mil/NCO/index.htm" target="_blank">Pearl Harbor Navy College Office</a></li>
+    <li><a href="http://www.hawaii.edu/" target="_blank">University of Hawaii</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/family service centers.shtml" class="" >Family Service Centers</a>
+    <ul>
+    <li><a href="http://hickamservices.com/" target="_blank">Joint Base Pearl Harbor - Hickam (Services)</a></li>
+    <li><a href="http://www.mwrarmyhawaii.com/acs/welcome.asp" target="_blank">Army Community Service Center</a></li>
+    <li><a href="http://www.mcbh.usmc.mil/" target="_blank">Marine Corps Personnel Services (Family Services)</a></li>
+ 
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/federal & state employment.shtml" class="" >Federal & State Employment</a>
+    <ul>
+    <li><a href="http://www.afpc.randolph.af.mil/" target="_blank">Air Force Civilian Employment</a></li>
+    <li><a href="http://cpol.army.mil/index.html" target="_blank">Army Civilian Jobs</a></li>
+    <li><a href="http://www.mccshawaii.com/jobs.htm" target="_blank">Marine Corps Non-appropriate Fund</a></li>
+    <li><a href="https://www.donhr.navy.mil/" target="_blank">Department of the Navy Civilian Human Resources</a></li>
+    <li><a href="http://www.state.hi.us/hrd/" target="_blank">State of Hawaii Jobs</a></li>
+    <li><a href="http://www.usajobs.opm.gov/" target="_blank">USAJobs</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/housing & personal property offices.shtml" class="" >Housing & Personal Property Offices</a>
+    <ul>
+    <li><a href="http://www2.hickam.af.mil/units/civilengineersq/index.asp" target="_blank">Air Force Housing Office</a></li>
+    <li><a href="https://www.housing.army.mil/" target="_blank">Army Housing in the U.S.</a></li>
+    <li><a href="http://www.uscg.mil/mlcpac/ischonolulu/relocation_handbook.asp" target="_blank">Coast Guard Housing Office</a></li>
+    <li><a href="http://www.cic.pearl.fisc.navy.mil/" target="_blank">Joint Personnal Property Office (JPPSO)</a></li>
+    <li><a href="http://www.mcbh.usmc.mil/g4/housing/homepage.htm" target="_blank">Marine Corps Housing Office</a></li>
+    <li><a href="/web/pacom_resources/word/Navy_Housing_In-Process_Checklist.doc" target="_blank">Navy Housing Checklist</a></li>
+    <li><a href="http://www.hawaii.navy.mil/housing/hsgfrontpg.htm" target="_blank">Navy Housing Office</a></li>
+    <li><a href="http://www.dtic.mil/perdiem/opdrform.html" target="_blank">Per Diem/TLA Rates</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/local military commands.shtml" class="" >Local Military Commands</a>
+    <ul>
+    <li><a href="/web/site_pages/newcomers/air force.shtml">Air Force</a>
+    <ul>
+    <li><a href="http://www.pacaf.af.mil/" target="_blank">Pacific Air Force (PACAF)</a></li>
+    </ul>
+    </li>
+    <li><a href="/web/site_pages/newcomers/army.shtml">Army</a>
+    <ul>
+    <li><a href="http://www.usarpac.army.mil/" target="_blank">Army Region Pacific (USARPAC)</a></li>
+    <li><a href="http://www.garrison.hawaii.army.mil/sites/local/" target="_blank">Army Garrison Hawaii</a></li>
+    </ul>
+    </li>
+    <li><a href="/web/site_pages/newcomers/coast guard.shtml">Coast Guard</a>
+    <ul>
+    <li><a href="http://www.uscg.mil/d14/" target="_blank">14th Coast Guard District (USCG14)</a></li>
+    </ul>
+    </li>
+    <li><a href="/web/site_pages/newcomers/marine corps.shtml">Marine Corps</a>
+    <ul>
+    <li><a href="http://www.mfp.usmc.mil/" target="_blank">Marine Forces Pacific (MARFORPAC)</a></li>
+    <li><a href="http://www.mcbh.usmc.mil/" target="_blank">Marine Corps Base Hawaii</a></li>
+    </ul>
+    </li>
+    <li><a href="/web/site_pages/newcomers/navy.shtml">Navy</a>
+    <ul>
+    <li><a href="http://www.cpf.navy.mil/" target="_blank">U.S. Pacific Fleet (CDRPACFLT)</a></li>
+    <li><a href="https://www.cnic.navy.mil/Hawaii/index.htm" target="_blank">Navy Region Hawaii (COMNAVREG)</a></li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/local news.shtml" class="" >Local News</a>
+    <ul>
+    <li><a href="http://www.staradvertiser.com/" target="_blank">Star Advertiser</a></li>
+    <li><a href="http://www.honoluluweekly.com" target="_blank">Honolulu Weekly</a></li>
+    <li><a href="http://www.spotlighthawaii.com/" target="_blank">Spotlight's Gold Magazines</a></li>
+    <li><a href="http://www.thisweek.com" target="_blank">This Week in Hawaii</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="/web/Site_Pages/newcomers/recreation.shtml" class="" >Recreation</a>
+    <ul>
+    <li><a href="http://hickamservices.com/" target="_blank">Hickam AFB Services</a></li>
+    <li><a href="http://www.kmc-volcano.com/" target="_blank">Kilauea Military Camp</a></li>
+    <li><a href="http://www.mccshawaii.com/" target="_blank">Marine Corps Community Services</a></li>
+    <li><a href="http://www.mwrph.navy.mil/" target="_blank">Morale, Welfare, & Recreation</a></li>
+    <li><a href="http://www.nps.gov/usar/index.htm" target="_blank">USS Arizona Memorial</a></li>
+    <li><a href="http://www.ussmissouri.com" target="_blank">USS Missouri Memorial Association </a></li>
+    </ul>
+    </li>
+    
+</ul>
+</li>
+    
+<li><a href="/web/Site_Pages/Newcomers/Quality of Life QoL.shtml" class="" >Quality of Life</a></li>
+<li><a href="http://www.yourmilitaryinhawaii.com/" target="_blank">Your Military in Hawaii</a></li>
+
+</ul>
+</li>
+
+
+
+<li><a href="/web/Site_Pages/Staff Directory/Staff Directory.shtml" class="" >Staff Directory</a>
+<ul>
+<li><a href="/web/Site_Pages/Staff Directory/Leadership.shtml" class="" >Leadership</a>
+<ul>
+<li><a href="/web/Site_Pages/Staff Directory/J0/J00 Biography.shtml" class="" >Commander</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J0/J01_Biography.shtml" class="" >Deputy Commander</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J0/J02 Watters_Biography.shtml" class="" >Chief of Staff</a></li>
+<!--<li><a href="/web/Site_Pages/Staff Directory/J0/J00SEL Savusa Biography.shtml" class="" >Senior Enlisted Leader</a></li>-->
+</ul>
+</li>
+<li><a href="/web/Site_Pages/Staff Directory/J0/J0.shtml" class="" >Special Staff (J0)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J1/J1.shtml" class="" >Manpower, Personnel & Administration (J1)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J2/J2.shtml" class="" >Intelligence (J2)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J3/J3.shtml" class="" >Operations (J3)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J4/J4.shtml" class="" >Logistics, Engineering, & Security Asst (J4)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J5/J5.shtml" class="" >Strategic Planning & Policy (J5)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J6/J6.shtml" class="" >Communications System (J6)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J7/J7.shtml" class="" >Training & Exercises (J7)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J8/J8.shtml" class="" >Resources & Assessment (J8)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/J9/J9.shtml" class="" >Pacific Outreach (J9)</a></li>
+<li><a href="/web/Site_Pages/Staff Directory/dru.shtml" class="" >Direct Reporting Units</a>
+<ul>
+<li><a href="http://www.apcss.org/" target="_blank" class="" >Asia-Pacific Center for Security Studies</a></li>
+<li><a href="http://www.coe-dmha.org/" target="_blank" class="" >Center of Excellence in Disaster Management and Humanitarian Assistance</a></li>
+<li><a href="https://www.intelink.gov/sites/pacomjioc/default.aspx">Joint Intelligence Operations Center</a></li>
+<li><a href="http://www.jpac.pacom.mil/" target="_blank" class="" >Joint POW/MIA Accounting Command (JPAC)</a></li>
+</ul>
+</li>
+<li><a href="/web/Site_Pages/Staff Directory/jtf.shtml" class="" >Joint Task Forces</a>
+<ul>
+
+<li><a href="/web/site_pages/staff directory/jiatfwest/jiatfwest.shtml" class="" >Director, Joint Interagency Task Force West (JIATF West)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+</ul>
+
+<script type="text/javascript">
+	var listMenu = new FSMenu('listMenu', true, 'display', 'block', 'none');
+	listMenu.showDelay = 0;
+	listMenu.switchDelay = 125;
+	listMenu.hideDelay = 500;
+	listMenu.cssLitClass = 'highlighted';
+	listMenu.showOnClick = 0;
+	listMenu.hideOnClick = true;
+	listMenu.animInSpeed = 0.2;
+	listMenu.animOutSpeed = 0.2;
+	listMenu.animations[listMenu.animations.length] = FSMenu.animFade;
+	listMenu.animations[listMenu.animations.length] = FSMenu.animSwipeDown;
+	var arrow = null;
+	if (document.createElement && document.documentElement) {
+		arrow = document.createElement('span');
+		arrow.appendChild(document.createTextNode('>'));
+		// Feel free to replace the above two lines with these for a small arrow image.//arrow = document.createElement('img');
+		//arrow.src = 'arrow.gif';
+		//arrow.style.borderWidth = '0';
+		arrow.className = 'subind';
+	}
+	addEvent(window, 'load', new Function('listMenu.activateMenu("listMenuRoot", arrow)'));
+</script>
+
+
+   
+   
+   
+<!--   <div class="news_title"><a href="http://www.theaustralian.com.au/news/opinion/asias-maritime-security-is-all-at-sea/story-e6frg6zo-1225922896731" target="_blank"  title="The appearance of hyperlinks does not constitute endorsement by U.S. Pacific Command of this Web site or the information, products or services contained therein. U.S. Pacific Command does not exercise any editorial control over the information you may find at these locations. Such links are provided consistent with the stated purpose of this DoD Web site.">Asia's Maritime Security is All at Sea  (The Australian)</a></div>-->      
+
+
+
+       <a href="http://www.pacom.us.com/?LangType=2052" title="Chinese" target="_blank"><img src="/web/pacom_resources/img/3dflags-chn1-4.gif" alt="中文 / Chinese (Mandarin)" /></a>&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1081 " title="Hindi" target="_blank"><img src="/web/pacom_resources/img/3dflags-ind1-4.gif" alt="fहिंदी / Hindi" /></a>&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1057" title="Bahasa Indonesia" target="_blank"><img src="/web/pacom_resources/img/3dflags-idn1-4.gif" alt="Bahasa Indonesia" /></a>&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1041" title="Japanese" target="_blank"><img src="/web/pacom_resources/img/3dflags-jpn1-4.gif" alt="日本語 / Japanese" /></a>&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1042 " title="Korean" target="_blank"><img src="/web/pacom_resources/img/3dflags-kor1-4.gif" alt="한국어 / Korean" /></a>&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1054" title="Thai" target="_blank"><img src="/web/pacom_resources/img/3dflags-tha1-4.gif" alt="ภาษาไทย / Thai" /></a>&nbsp;  
+ 
+
+       <!-- <a href="http://www.pacom.us.com/?LangType=2052" title="Chinese" target="_blank"><img src="/web/pacom_resources/img/3dflags-chn1-4.gif" alt="中文 / Chinese (Mandarin)" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1081 " title="Hindi" target="_blank"><img src="/web/pacom_resources/img/3dflags-ind1-4.gif" alt="fहिंदी / Hindi" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1057" title="Bahasa Indonesia" target="_blank"><img src="/web/pacom_resources/img/3dflags-idn1-4.gif" alt="Bahasa Indonesia" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1041" title="Japanese" target="_blank"><img src="/web/pacom_resources/img/3dflags-jpn1-4.gif" alt="日本語 / Japanese" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1042 " title="Korean" target="_blank"><img src="/web/pacom_resources/img/3dflags-kor1-4.gif" alt="한국어 / Korean" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.pacom.us.com/?LangType=1054" title="Thai" target="_blank"><img src="/web/pacom_resources/img/3dflags-tha1-4.gif" alt="ภาษาไทย / Thai" /></a>&nbsp; &nbsp;&nbsp;&nbsp;-->
+<!--  <span class="menulist"><font color="#FFFFFF">Translation Sites</font></span></div><!-- end nav -->
+
+
+</div><!-- end nav -->
+</div><!-- end header -->
+
+
+<div id="container">
+
+
+
+
+<div class="main_box">
+	<div class="roundedcornr_top"><div></div></div>
+     <div class="main_content">
+     
+     
+     
+     
+
+    <div>
+
+    <!-- REMOVE THIS TAG IF THERE IS NO HEADRER -->
+    <div class="main_content_title">PACOM Headlines</div>
+	
+    
+
+    
+	
+    <!-- REMOVE THIS TAG IF THERE IS NO TITLE -->
+<div class="main_content_news_title">
+  <h3 id="rrh30">Republic of Singapore Navy Trains with U.S. Navy
+
+ 
+
+
+
+
+          </h3>
+</div> <br />
+	 
+      <p>
+        <!-- BEGIN CONTENT HERE -->
+<strong>By Lt. j.g. Christine Gargan
+
+
+<br /> USS Carl Vinson (CVN 70) Public Affairs
+
+
+
+
+
+
+
+
+ <br />  <br /> 
+ </strong> 
+
+
+
+       <!-- PASTE STORY BELOW -->
+       <strong>USS CARL VINSON, At Sea  </strong> -  Assets assigned to Carrier Strike Group (CSG) 1 and the Republic of Singapore   Navy (RSN) participated in an air surface warfare exercise in the South China   Sea Jan. 19-20. <br />
+       <br />
+       USS Carl Vinson (CVN 70), USS Stockdale (DDG 106), USS   Gridley (DDG 101) and USS Bunker Hill (CG 52) joined aircraft assigned to   Carrier Air Wing 17 in skill evolutions designed to improve bilateral   interoperability with RSS Stalwart (72), RSS Tenacious (71), RSS Valour (89),   RSS Vigour (92), RSS Brave (95), RSS Chieftain and three RSN Fokker 50s maritime   patrol aircraft.<br />
+       <br />
+       The exercise included a visit from two RSN liaison naval   officers to Carl Vinson and focused on strengthening exchanges between the   Singapore and U.S. Navies.<br />
+       <br />
+       &quot;The primary point of the exercise is to   engage an important regional partner and increase our Navy to Navy cooperation,&quot;   said Lt. Cmdr. Axel Steiner, a planning officer for Commander, Destroyer   Squadron 1. &quot;Singapore has a very impressive and professional Navy.&quot;<br />
+       <br />
+       The   U.S. Navy maintains a robust forward presence in the Asia-Pacific region,   utilizing both forward deployed naval forces in Japan and Guam, as well as   rotationally deployed forces from the continental United States and   Hawaii.<br />
+       <br />
+       CSG 1 was formally established October 1, 2009, and led Carl   Vinson and Bunker Hill when the ships supported disaster response and   humanitarian operations in Haiti in this year. This is the first deployment of   the Arleigh Burke-class destroyer Stockdale. This is Bunker Hill's first   deployment since it underwent cruiser modernization and was the first   Ticonderoga-class guided-missile cruiser to complete its mid-life modernization.   This is Carl Vinson's first deployment to 7th Fleet since 2005.<br />
+       <br />
+       <br />
+       <br />
+       <br />
+
+        
+        This article was originally published at: <a href="http://www.navy.mil/search/display.asp?story_id=58124" target="_blank">http://www.navy.mil/search/display.asp?story_id=58124</a><br />
+        <br />
+        
+        
+        
+        
+        
+        <br />         
+        <br />
+      <p><center>
+  -PACOM-</center>
+  <br />
+  (Posted Jan. 21, 2011)<br />
+  <!-- END CONTENT HERE -->
+  
+</div>
+    
+	</div> <!-- end main_content -->
+	<div class="roundedcornr_bottom"><div></div></div>
+</div> <!-- end main_box -->
+<div class="right_menu">	
+	<div class="right_box">
+      <div class="roundedcornr_top"><div></div></div>
+        <div class="right_top_content">
+		    <img src="/web/PACOM_Resources/img/PACOM_Bldg.jpg" alt="Pacific Command Center" width="223px" height="264" border="0" usemap="#Map"/>
+            <br />
+
+            <map name="Map" id="Map">        
+            <area shape="circle" coords="179,42,40" alt="USPACOM Seal" href="/web/pacom_resources/img/command_icons/uspacom_seal_gold.jpg" target="_blank" />          
+            </map>
+        <a href="/web/pacom_resources/pdf/PACOM Strategy Sep 2010.pdf" target="_blank"><a href="/web/pacom_resources/pdf/PACOM Strategy Sep 2010.pdf" target="_blank"><img class="right_strategy_button" src="/web/PACOM_Resources/img/button_links/Strategic Guidance Button Dec 2010a.jpg" alt="PACOM Strategic Guidance" width="223" height="60" /></a></div> <!-- end of right_top_block -->
+	<div class="roundedcornr_bottom"><div></div></div>
+	</div> <!-- end right_box -->
+	
+	
+	<div class="right_box">
+	<div class="roundedcornr_top"><div></div></div>
+	<div class="wireBox">
+		<div class="wireBoxHeader"><div></div></div>
+		<div class="right_wireBoxContent">
+	        <div class="content_title"><center>Connect</center></div>
+	        <center>
+		    <table cellpadding="5">
+		    <tr>
+            
+            
+   
+             
+             <td><a href="http://www.facebook.com/pages/US-Pacific-Command/61575637587" onmouseout="document.facebook.src='/web/PACOM_Resources/img/button_links/facebook_grayscale.gif';" onmouseover="document.facebook.src='/web/PACOM_Resources/img/button_links/facebook.gif';" target="_blank" ><img name="facebook" alt="Facebook" src="/web/PACOM_Resources/img/button_links/facebook_grayscale.gif" /></a></td>
+             
+		    <td><a href="http://pacom.dodlive.mil/" onmouseout="document.blogger.src='/web/PACOM_Resources/img/button_links/blogger_grayscale.gif';" onmouseover="document.blogger.src='/web/PACOM_Resources/img/button_links/blogger.gif';" target="_blank" ><img name="blogger" alt="Blog" src="/web/PACOM_Resources/img/button_links/blogger_grayscale.gif" /></a></td>
+		    
+		    <td><a href="http://www.flickr.com/photos/us-pacific-command" onmouseout="document.flickr.src='/web/PACOM_Resources/img/button_links/flickr_grayscale.gif';" onmouseover="document.flickr.src='/web/PACOM_Resources/img/button_links/flickr.gif';" target="_blank" ><img name="flickr" src="/web/PACOM_Resources/img/button_links/flickr_grayscale.gif" alt="Flickr" /></a></td>
+		    </tr>
+		    <tr>    
+		    <td><a href="http://twitter.com/PacificCommand" onmouseout="document.twitter.src='/web/PACOM_Resources/img/button_links/twitter_grayscale.gif';" onmouseover="document.twitter.src='/web/PACOM_Resources/img/button_links/twitter.gif';" target="_blank" ><img name="twitter" src="/web/PACOM_Resources/img/button_links/twitter_grayscale.gif" alt="Twitter" /></a></td>
+		    <td><a href="http://www.youtube.com/user/USPacificCommand" onmouseout="document.youtube.src='/web/PACOM_Resources/img/button_links/youtube_grayscale.gif';" onmouseover="document.youtube.src='/web/PACOM_Resources/img/button_links/youtube.gif';" target="_blank" ><img name="youtube" src="/web/PACOM_Resources/img/button_links/youtube_grayscale.gif" alt="YouTube" /></a></td>
+		    <td><a href="http://www.pacom.mil/web/Site_Pages/Media/pacomregns.xml" onmouseout="document.rss.src='/web/PACOM_Resources/img/button_links/rss_grayscale.gif';" onmouseover="document.rss.src='/web/PACOM_Resources/img/button_links/rss_social_net.gif';" target="_blank" ><img name="rss" src="/web/PACOM_Resources/img/button_links/rss_grayscale.gif" alt="RSS" /></a></td>
+		    </tr>
+		    </table>
+		    </center>
+		</div> <!-- end wireBoxContent -->
+		<div class="wireBoxFooter"><div></div></div>
+	</div> <!-- end wireBox -->
+	<div class="roundedcornr_bottom"><div></div></div>
+	</div> <!-- end right_box -->
+	
+	
+	<div class="right_box">
+	<div class="roundedcornr_top"><div></div></div>
+		<div class="wireBox">
+			<div class="wireBoxHeader"><div></div></div>
+			<div class="right_wireBoxContent">
+				<div class="content_title"><center>PACOM Portals</center></div>
+				<div class="list">
+				<ul>
+				<li><a href="http://www.pacom.mil/web/Site_Pages/Staff%20Directory/J3/J34%20-%20ATCIP.shtml">AT/FP - Travel</a></li>
+                <li><a href="https://www.us.army.mil/suite/page/588484" target="_blank" >DKO</a></li>
+				<li><a href="https://www.us.army.mil/suite/page/541252" target="_blank" >Training</a></li>
+				</ul>
+				</div> <!-- end list -->
+			</div> <!-- end wireBoxContent -->
+			<div class="wireBoxFooter"><div></div></div>
+		</div> <!-- end wireBox -->
+	<div class="roundedcornr_bottom"><div></div></div>
+	</div> <!-- end right_box -->
+
+</div> <!-- end right_menu -->
+<div class="footer_box">
+
+<center>
+<p>
+This website is maintained by PACOM Public Affairs Office (808) 477-1341
+</p>
+
+<a href="mailto:pacom_j01pa_web@pacom.mil">Email Webmaster</a> &nbsp; 
+<a href="/web/Site_Pages/Home_Page/Contact Public Affairs.shtml">Contact Public Affairs</a> &nbsp; 
+<a href="/web/Site_Pages/Home_Page/Disclaimer.shtml">Disclaimer & Privacy Notice</a> &nbsp;
+<a href="http://www.usa.gov/" target="_blank" >USA.GOV</a> &nbsp;
+<a href="/web/Site_Pages/Home_Page/FOIA.shtml">FOIA</a> &nbsp;
+<a href="/web/Site_Pages/Home_Page/Press Kit.shtml">PACOM Press Kit</a> &nbsp;
+<!--<a href="/web/Site_Pages/Home_Page/New links.shtml">Links</a> &nbsp;-->
+
+</center>
+
+</div> <!-- end footer_box -->
+
+
+</div> <!-- end container -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

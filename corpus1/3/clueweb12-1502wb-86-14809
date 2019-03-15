@@ -1,0 +1,808 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-15T01:34:33Z
+WARC-TREC-ID: clueweb12-1502wb-86-14809
+WARC-Target-URI: http://historicaltextarchive.com/links.php?action=links&cid=6&sid=93
+WARC-Payload-Digest: sha1:GWNV2OIRRTYTOFPJIXMQVWBCOTW34NZU
+WARC-IP-Address: 66.71.252.170
+WARC-Record-ID: <urn:uuid:fe6d3d1e-a2d3-489a-bb55-d2f5c05676db>
+Content-Type: application/http; msgtype=response
+Content-Length: 76865
+
+HTTP/1.1 200 OK
+Date: Sun, 15 Apr 2012 01:35:23 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.17
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>
+      Historical Text Archive: Electronic History Resources, online since 1990    </title>
+
+		<meta name="resource-type" content="document">
+		<meta name="author" content="Donald J. Mabry" />
+		<meta lang="en" />
+		<meta charset="iso-8859-1" />
+		<meta name="description" content="Now in its 22nd year, the Historical Text Archive publishes high quality articles, books, essays, documents, historical photos, and links, screened for content, for a broad range of historical subjects. The HTA is a collection of primary and secondary materials and links to other resources relating to history and culture.">
+    <meta name="keywords" content="History, Africa, African-American history, US history, United States, American history, Civil War, Revolutionary War, Asia, Europe, United States, Hungary, genealogy, genology, Internet history, Latin American history, Mexico, Korean War, colonialism, Gulf War, terrorism, women's history, World War 1, World War 2, WW I, WW II, World War I, World War II, Morocco, photo, photographs">
+
+<script type="text/javascript" src="fckeditor/fckeditor.js"></script>
+<script type="text/javascript" src="prototype.js"></script>
+<script>
+
+function sendRequest() {
+   new Ajax.Updater('category',"category.php",{
+      method: 'post',
+      parameters: Form.serialize("category"),
+      asynchronous: true,
+      onComplete: showResponse
+   });
+}
+function confirmdelete(){
+   var answer = confirm ("You are about to delete a line item.");
+   if (answer) {
+      sendRequest();
+   } else {
+      alert("Please uncheck the item for deletion.");
+   }
+}
+function showResponse(req){
+   $('show').innerHTML= req.responseText;
+}
+
+</script>
+
+
+    <style type="text/css">
+			<!-- 
+ 				body, html 
+{ 
+	padding: 10px;
+  font-family: Verdana,Arial,Helvetica;
+  font-size: 10pt;
+	color: black;
+	background: #460069 url("img/bg2.gif");
+}
+
+iframe
+{
+border-width: 0px;
+border-color: white;
+}
+
+table, tr, td
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 100%;
+}
+
+table.menu, td.menu, tr.menu
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 100%;
+	margin-bottom: 4px;
+	border-style: solid;
+	border-width: 1px;
+	
+}
+
+table.footer
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 85%;
+	margin-top: 1px;
+	
+}
+
+
+ul, li
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 100%;
+}
+
+ol
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 100%;
+	text-align: justify;
+}
+li.menu
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 95%;
+}
+
+.list
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 90%;
+}
+p.normal
+{
+	font-family: Verdana,Arial,Helvetica;
+  text-align: left;
+}
+
+p
+{
+	font-family: Verdana,Arial,Helvetica;
+  text-align: justify;
+}
+
+.more
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 80%;
+	text-align: right;
+}
+
+pre
+{
+	font-size: 75%;
+}
+
+small
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 90%;
+}
+
+a:hover 
+{
+	color: white;
+	background-color: #460069;
+	text-decoration: none;
+}
+
+h1
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 110%;
+}
+h2
+{
+	font-family: Verdana,Arial,Helvetica;
+  font-size: 105%;
+	font-style: italic;
+}
+
+td.menu ul
+{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+td.menu li
+{
+list-style: none;
+margin-left: 3px;
+}			-->
+		</style>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			function go()
+{
+	box = document.forms[1].nav;
+	destination = box.options[box.selectedIndex].value;
+	if (destination) location.href = destination;
+}
+
+
+function popUp(theURL,winName) {
+window.open(theURL,winName,'scrollbars=yes,resizable=yes,width=650,height=400');
+}
+
+var da = (document.all) ? 1 : 0;
+var pr = (window.print) ? 1 : 0;
+var mac = (navigator.userAgent.indexOf("Mac") != -1); 
+
+function printPage() {
+  if (pr) // NS4, IE5
+    window.print()
+  else if (da && !mac) // IE4 (Windows)
+    vbPrintPage()
+  else // other browsers
+    alert("Sorry, your browser doesn't support this feature.");
+  return false;
+}
+
+if (da && !pr && !mac) with (document) {
+  writeln('<OBJECT ID="WB" WIDTH="0" HEIGHT="0" CLASSID="clsid:8856F961-340A-11D0-A96B-00C04FD705A2"></OBJECT>');
+  writeln('<' + 'SCRIPT LANGUAGE="VBScript">');
+  writeln('Sub window_onunload');
+  writeln('  On Error Resume Next');
+  writeln('  Set WB = nothing');
+  writeln('End Sub');
+  writeln('Sub vbPrintPage');
+  writeln('  OLECMDID_PRINT = 6');
+  writeln('  OLECMDEXECOPT_DONTPROMPTUSER = 2');
+  writeln('  OLECMDEXECOPT_PROMPTUSER = 1');
+  writeln('  On Error Resume Next');
+  writeln('  WB.ExecWB OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER');
+  writeln('End Sub');
+  writeln('<' + '/SCRIPT>');
+}
+		// -->
+		</script>
+
+  </head>
+  <body>
+    <center>
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td rowspan="3"><img src="img/hta2_0.jpg" width="270" height="86" alt="The Historical Text Archive: Electronic History Resources, online since 1990"></td>
+          <td colspan="2"><img src="img/hta2_1.jpg" width="480" height="11" alt="Bringing you digitized history, primary and secondary sources"></td>
+        </tr>
+        <tr>
+
+          <td width=468 height=60 background="img/hta2_5.jpg" align=right>&nbsp;</td>
+          <td><img src="img/hta2_3.jpg" width="12" height="60"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><img src="img/hta2_4.jpg" width="480" height="15"></td>
+        </tr>
+      </table>
+      <table width="750" bgcolor="white" border="0" cellspacing="0">
+        <tr>
+
+          <td colspan=2>
+            <font face="Verdana,Arial,Helvetica" size="1">
+						<b><a href="index.php">HTA Home Page</a></b> | <b><a href="links.php">Links</a></b> | <b><a href="links.php?action=sub&cid=6">United States</a> | <b><a href="links.php?action=links&cid=6&sid=93">Civil War</a></font>
+          </td>
+        </tr>
+        <tr bgcolor="#460069">
+          <td>
+          </td>
+
+          <td>
+          </td>
+       </tr>
+      </table>
+      <table width="750" bgcolor="white" border="0">
+        <tr>
+          <td valign="top" width="125">
+            <table bordercolor="#460069" cellspacing="0" cellpadding=2>
+              <tr>
+
+                <td valign="top" background="img/caption.jpg" width="120" class=menu>
+                  <center>
+                    <font face="Verdana,Arial,Helvetica" size="1"><b>Menu</b></font>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" class=menu style="border-top-width: 0px"><font face="Verdana,Arial,Helvetica" size="1">
+
+                  <ul>
+                 <li class=menu>
+                      <a href=".">Home</a>
+                    </li>
+                    <li class=menu>
+                      <a href="sections.php">Articles</a>
+                    </li>
+                    <li class=menu>
+
+                     <a href="books.php">E-books</a>
+                    </li>
+                    <li class=menu>
+                      <a href="links.php">Links</a>
+                    </li>
+                  <p>
+                   <li class=menu>
+                      <a href="search.php?s=google">Search</a>
+
+                    </li>
+<!--         <li class=menu>
+                      <a href="about.php">About the HTA</a>
+                    </li>
+-->
+<!--					 <li class=menu>
+                      Informative Articles
+                    </li>
+-->
+							</ul>
+                </td>
+              </tr>
+            </table>
+           <br>
+            <table bordercolor="#460069" cellspacing="0" cellpadding=2>
+              <tr>
+
+                <td valign="top" background="img/caption.jpg" width="125" class=menu>
+                  <center>
+                    <font face="Verdana,Arial,Helvetica" size="1"><b>Support the HTA</b></font>
+                  </center>
+               </td>
+              </tr>
+              <tr>
+                <td valign="top" class=menu style="border-top-width: 0px">
+
+									<center> 
+								<font face="Verdana,Arial,Helvetica" size="1">
+						<center> 
+			<br/>
+
+                      <p>	<center> <iframe src="http://rcm.amazon.com/e/cm?t=histotextarch-20&o=1&p=8&l=as1&asins=1596299673&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<p><p>
+				  	   
+
+                	
+						</font>
+ </td>
+             </tr>
+            </table>
+
+<!--			<font face="Verdana,Arial,Helvetica" size="1"> -->
+
+<!--</font>-->
+          </td>
+          <td valign="top" width="530">
+This subcategory contains 259 links<br><br>
+<li><a href="links.php?action=links2&lid=1256" target=_blank>18th Georgia Infantry Home Page</a>(2379 clicks)<br>
+		This site contains information concerning the 18th Regiment, Georgia Volunteer Infantry, including a history, roster, flags, researcher's page, and much more.
+</li><li><a href="links.php?action=links2&lid=2828" target=_blank>18th Regiment Louisiana Infantry</a>(1877 clicks)<br>
+		Fought at the Battle of Shiloh. Site includes a roster.</li><li><a href="links.php?action=links2&lid=5958" target=_blank>1st Alabama Cavalry, United States Volunteers</a>(1225 clicks)<br>
+		United States soldiers</li><li><a href="links.php?action=links2&lid=1517" target=_blank>26th Mississippi Infantry, C.S.A</a>(1761 clicks)<br>
+		The companies of this regiment were organized under the leadership of Arthur E. Reynolds, a lawyer of Jacinto, beginning in the summer of 1861, for three years or during the war.</li><li><a href="links.php?action=links2&lid=736" target=_blank>28th Regiment, Wisconsin Volunteer Infantry, 1862-1865</a>(1239 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=2830" target=_blank>48th Ohio Veteran Volunteer Infantry</a>(1740 clicks)<br>
+		"Recruited from southwestern Ohio in the Fall of 1861, the regiment was organized at Camp Dennison in October. The following April, as part of General Sherman's division, they found themselves at the very heart of the Confederate surprise attack at Shiloh, TN, only 30 days after having been issued their rifles. They participated in the siege of Corinth, the capture of Arkansas Post, and the subsequent Vicksburg Campaign, seeing considerable action during the siege of that city. In April of 1864, while a part of Gen. Banks' Red River expedition, the entire regiment was captured after intense fighting at the Battle of Sabine Crossroads (Mansfield, LA) and imprisoned at Camp Ford, near Tyler, Texas. Six months later they were paroled, and saw action again in 1865 as part of the attack on Mobile. The 48th OVVI was mustered out in Texas in May, 1866."</li><li><a href="links.php?action=links2&lid=738" target=_blank>54th Massacusetts Infantry</a>(2348 clicks)<br>
+		The 54th Massachusetts Infantry Regiment was one of the most celebrated regiments of black soldiers that fought in the Civil War. </li><li><a href="links.php?action=links2&lid=6542" target=_blank>5th United States Colored Infantry Company G</a>(631 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=3195" target=_blank>62nd & 65th Regiments United States Infantry, Co-founders of Lincoln University, Jefferson City, MO.</a>(1473 clicks)<br>
+		As an escaped slave, Grandfather Sgt. Anderson Davis helped make up the ranks of the brave and courageous soldiers who had the extraordinary vision and will to found Lincoln Institute, later, Lincoln University, Jefferson City, Mo.</li><li><a href="links.php?action=links2&lid=3217" target=_blank>A Gallant Rush for Glory</a>(1541 clicks)<br>
+		"For the men of the 54th Massachusetts, the assault on a Confederate fort outside Charleston was much more than just another battle. It was their chance to show the world that black troops could fight--and die--for the Union." by William C. Kashatus 
+</li><li><a href="links.php?action=links2&lid=3256" target=_blank>A Tragic Postscript</a>(1525 clicks)<br>
+		"In a tragic postscript to the Civil War, as many as 1,700 Union soldiers, recently released from Confederate prisons, may have died while en route home aboard the steamer Sultana." </li><li><a href="links.php?action=links2&lid=1974" target=_blank>A Tribute To Two Colonels</a>(1224 clicks)<br>
+		By Fred Melchiorre. Colonel Joshua Lawrence Chamberlain and Colonel Robert Gould Shaw, Army of the Potomac July 1863. 
+
+
+</li><li><a href="links.php?action=links2&lid=793" target=_blank>Abraham Lincoln Online</a>(1369 clicks)<br>
+		Speeches, letters, quotes, writings</li><li><a href="links.php?action=links2&lid=789" target=_blank>Abraham Lincoln: First Inaugural Address</a>(1099 clicks)<br>
+		1861</li><li><a href="links.php?action=links2&lid=718" target=_blank>Albert Underwood Civil War Diary</a>(1313 clicks)<br>
+		This is the Civil War diary of Albert Underwood of Annapolis, Park County, Indiana. He was a member of the 9th Indiana Light Artillery. It covers the period of the war from January 1, 1864 thru January 11, 1865. </li><li><a href="links.php?action=links2&lid=721" target=_blank>Alice Williamson Diary 1864 in Tennessee</a>(1273 clicks)<br>
+		Schoolgirl's diary which shows the bitterness felt at United States soldiers.</li><li><a href="links.php?action=links2&lid=3266" target=_blank>All-Girl Rhea County Spartans</a>(1293 clicks)<br>
+		"Begun as a lark, the all-girl Rhea County Spartans soon attracted the attention of unamused Union officers." </li><li><a href="links.php?action=links2&lid=7331" target=_blank>Allen Guelzo, Lincoln’s Emancipation Proclamation</a>(478 clicks)<br>
+		Podcast</li><li><a href="links.php?action=links2&lid=5099" target=_blank>Along the Old Federal Road</a>(1136 clicks)<br>
+		"Now known as the "OLD FEDERAL ROAD," this primary travel route was conceived and built to connect Fort Wilkinson, near Milledgeville, Georgia, to Fort Stoddert, an American outpost north of Mobile, Alabama. Developed from the 1806-11 postal horse path that followed earlier Native American paths, the Federal Road subsequently became a primary travel route for pioneers going to the Mississippi Territory. The Federal Road functioned as an important link between Washington, D.C., and New Orleans. Early settlers, of the area now known as Monroe and Conecuh Counties, in Alabama included the Middleton and many other South Carolina families."</li><li><a href="links.php?action=links2&lid=4995" target=_blank>America's Civil War</a>(2118 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=741" target=_blank>American Civil War Homepage</a>(2166 clicks)<br>
+		Lots of resources</li><li><a href="links.php?action=links2&lid=3999" target=_blank>American Civil War Resources</a>(1868 clicks)<br>
+		"The Civil War is a major collecting focus for the University Libraries. The manuscript collection
+includes letters and diaries from both Union and Confederate soldiers, homefront letters, memoirs,
+and contemporary research files."</li><li><a href="links.php?action=links2&lid=4954" target=_blank>AmericanCivilWar.com</a>(1733 clicks)<br>
+		Various Civil War links.</li><li><a href="links.php?action=links2&lid=2833" target=_blank>Andersonville National Historic Site</a>(1164 clicks)<br>
+		Macon County presents details of Andersonville as well as other historic sites.</li><li><a href="links.php?action=links2&lid=2834" target=_blank>Antietam--A Photographic Tour</a>(1219 clicks)<br>
+		Photo tour of the Battle of Antietam, September 17, 1862.</li><li><a href="links.php?action=links2&lid=4013" target=_blank>Arkansas Civil War Memorial Page</a>(1135 clicks)<br>
+		Particulary strong on veterans from each side.</li><li><a href="links.php?action=links2&lid=2155" target=_blank>Army of Tennessee</a>(991 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=1885" target=_blank>Battle of Nashville (December 15-16, 1864)</a>(1127 clicks)<br>
+		Detailed Web site.</li><li><a href="links.php?action=links2&lid=2838" target=_blank>Battle of Olustee, Florida</a>(1096 clicks)<br>
+		Olustee Battlefield State Historic Site commemorates the largest Civil War battle in Florida. </li><li><a href="links.php?action=links2&lid=7716" target=_blank>Battle of the Wilderness</a>(206 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4000" target=_blank>Battle Summaries</a>(1200 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6208" target=_blank>Behind the Stonewall</a>(656 clicks)<br>
+		Welcome to my unique exhibit of modern day images from battlefields of the American Civil War.  Over 2500 individual snapshots were stitched together using Live Pictures Photovista to bring these 105 spinning 360 degree panoramic images here for your viewing pleasure.  </li><li><a href="links.php?action=links2&lid=3703" target=_blank>Bibliography of African American Women in the Civil Rights Movement</a>(1369 clicks)<br>
+		Short bibilography done in 1996.</li><li><a href="links.php?action=links2&lid=6508" target=_blank>Blogging the Civil War</a>(576 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6866" target=_blank>Brief History of the American Civil War</a>(774 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=5749" target=_blank>C. S. S. ALABAMA</a>(799 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=716" target=_blank>Camp Life</a>(1120 clicks)<br>
+		Exhibit from the Gettysburg National Military Park</li><li><a href="links.php?action=links2&lid=4002" target=_blank>Capt. Richard W. Burt</a>(1108 clicks)<br>
+		Civil War letters.</li><li><a href="links.php?action=links2&lid=8981" target=_blank>Catholics and the Civil War</a>(45 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8909" target=_blank>Causes of the Civil War</a>(45 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4007" target=_blank>Civil  War Resources in the VMI Archive</a>(1557 clicks)<br>
+		The Virginia Military Institute has an extensive collection of Civial War materials.</li><li><a href="links.php?action=links2&lid=8842" target=_blank>Civil War 150th: The Road to Civil War </a>(345 clicks)<br>
+		In this episode, the History Guys focus on the dramatic six months between Abraham Lincoln’s election and the outbreak of war. Over the course of the hour, they attempt to understand the period from the perspective of Americans at the time. Why did abolitionists dread the prospect of Lincoln’s presidency? Why did slaveholders in many parts of the South argue against secession? What made the leaders of Virginia, a state long known as “the mother of presidents,” finally decide to break their ties with the nation? How did 19th century ideas about race and gender shape people’s decision-making? And finally, did the existence of slavery mean some kind of civil war would come sooner or later, or might war have been averted?</li><li><a href="links.php?action=links2&lid=730" target=_blank>Civil War @ Charleston</a>(1143 clicks)<br>
+		A site devoted to the history and heritage of the American Civil War in and around the City of Charleston, SC (Visitor's Information) </li><li><a href="links.php?action=links2&lid=2844" target=_blank>Civil War Album</a>(1470 clicks)<br>
+		" CivilWarAlbum.com is a collection of albums containing over 1,500 photos, and several official records reports and maps related to the 1862-63 Vicksburg Campaigns, Battles of Shiloh, Forts Donelson and Henry, U.S.S. Cairo at Vicksburg, Indian Territory (New Addition), Louisiana and many other sites. All photos were taken between 1990 and March, 2001."</li><li><a href="links.php?action=links2&lid=8143" target=_blank>Civil War and Reconstruction</a>(149 clicks)<br>
+		Yale course taught by David Blight.
+
+This course explores the causes, course, and consequences of the American Civil War, from the 1840s to 1877. The primary goal of the course is to understand the multiple meanings of a transforming event in American history. Those meanings may be defined in many ways: national, sectional, racial, constitutional, individual, social, intellectual, or moral. Four broad themes are closely examined: the crisis of union and disunion in an expanding republic; slavery, race, and emancipation as national problem, personal experience, and social process; the experience of modern, total war for individuals and society; and the political and social challenges of Reconstruction.  </li><li><a href="links.php?action=links2&lid=7708" target=_blank>Civil War and Reconstruction Era, 1845-1877</a>(294 clicks)<br>
+		David W. Blight, Yale. "This course explores the causes, course, and consequences of the American Civil War, from the 1840s to 1877. The primary goal of the course is to understand the multiple meanings of a transforming event in American history. Those meanings may be defined in many ways: national, sectional, racial, constitutional, individual, social, intellectual, or moral. Four broad themes are closely examined: the crisis of union and disunion in an expanding republic; slavery, race, and emancipation as national problem, personal experience, and social process; the experience of modern, total war for individuals and society; and the political and social challenges of Reconstruction."</li><li><a href="links.php?action=links2&lid=8485" target=_blank>Civil War and Reconstruction with David Blight</a>(69 clicks)<br>
+		This course explores the causes, course, and consequences of the American Civil War, from the 1840s to 1877. The primary goal of the course is to understand the multiple meanings of a transforming event in American history. Those meanings may be defined in many ways: national, sectional, racial, constitutional, individual, social, intellectual, or moral. Four broad themes are closely examined: the crisis of union and disunion in an expanding republic; slavery, race, and emancipation as national problem, personal experience, and social process; the experience of modern, total war for individuals and society; and the political and social challenges of Reconstruction. </li><li><a href="links.php?action=links2&lid=5842" target=_blank>Civil War Collection</a>(866 clicks)<br>
+		1411 image records</li><li><a href="links.php?action=links2&lid=4003" target=_blank>Civil War Diaries</a>(1269 clicks)<br>
+		Two diaries from Illlinois soldiers </li><li><a href="links.php?action=links2&lid=4004" target=_blank>Civil War Diary and Letters of David Humphrey Blair</a>(1060 clicks)<br>
+		Of the 45th Ohio Volunteers.</li><li><a href="links.php?action=links2&lid=725" target=_blank>Civil War Diary of Bingham Findley Junkin</a>(1046 clicks)<br>
+		100th Pennsylvania Volunteer Infantry ("Roundheads")
+</li><li><a href="links.php?action=links2&lid=2862" target=_blank>Civil War Generals</a>(1239 clicks)<br>
+		"This is a concise index to the Generals who fought on both sides of the US Civil War, and has been specifically prepared for the Internet." </li><li><a href="links.php?action=links2&lid=4005" target=_blank>Civil War History of John Ritland</a>(1254 clicks)<br>
+		Of the 32nd Iowa Infantry.</li><li><a href="links.php?action=links2&lid=2858" target=_blank>Civil War Image Map</a>(1384 clicks)<br>
+		Click on a state and its shows the Civil War battles there.</li><li><a href="links.php?action=links2&lid=7450" target=_blank>Civil War in America, Illustrated London News</a>(424 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6835" target=_blank>Civil War in Florida: Letters of a New Hampshire Soldier</a>(628 clicks)<br>
+		Calvin Shedd Papers</li><li><a href="links.php?action=links2&lid=5854" target=_blank>Civil War in New York City</a>(785 clicks)<br>
+		archive</li><li><a href="links.php?action=links2&lid=8908" target=_blank>Civil War Jacksonville</a>(46 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=7275" target=_blank>Civil War Letters of Forrest Little, The</a>(495 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=5107" target=_blank>Civil War Letters of John Alexander Ritter, M.D.</a>(1141 clicks)<br>
+		Captain and Regimental Surgeon,  49th Indiana Volunteers
+
+</li><li><a href="links.php?action=links2&lid=715" target=_blank>Civil War Maps</a>(1591 clicks)<br>
+		From the Library of Congress</li><li><a href="links.php?action=links2&lid=4001" target=_blank>Civil War Medicine</a>(1104 clicks)<br>
+		Variety of info on this important aspect of the war.</li><li><a href="links.php?action=links2&lid=7724" target=_blank>Civil War Memory</a>(562 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=2842" target=_blank>Civil War Music of the Western Border</a>(1044 clicks)<br>
+		Songs from Missouri and other then Western places.</li><li><a href="links.php?action=links2&lid=6623" target=_blank>Civil War Panoramas</a>(567 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6588" target=_blank>Civil War Photography, Center for</a>(801 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6464" target=_blank>Civil War Photos</a>(653 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=3225" target=_blank>Civil War Portrait</a>(1120 clicks)<br>
+		"Explore the people, places, and events of the Civil War through the photographs and images in the Civil War Portrait. Each page includes links to related articles here on TheHistoryNet, as well as external links to Civil War sites on the internet." </li><li><a href="links.php?action=links2&lid=2831" target=_blank>Civil War Preservation Trust</a>(1260 clicks)<br>
+		"The Civil War Preservation Trust
+is America's largest non-profit organization devoted to the
+preservation of our nation's endangered Civil War battlefield
+lands. The Trust also promotes educational programs
+and heritage tourism initiatives to inform the public
+about the war and the fundamental conflicts that sparked it." 
+</li><li><a href="links.php?action=links2&lid=4011" target=_blank>Civil War Prisons</a>(1259 clicks)<br>
+		Links to prisons.</li><li><a href="links.php?action=links2&lid=1781" target=_blank>Civil War reading list</a>(968 clicks)<br>
+		From Military Reading List. Recommends books and provides links to buy them. Also links to other wars.</li><li><a href="links.php?action=links2&lid=8424" target=_blank>Civil War Richmond</a>(91 clicks)<br>
+		Welcome to Civil War Richmond, an online research project designed to collect documents, photographs, and maps pertaining to Richmond, Virginia, during the Civil War.
+
+Here you will find information regarding many varied facets of life inside the Confederate Capital. Because there is so much information regarding the hospitals and prisons in Richmond, these have been given their own sections - the "other sites" section deals with other important topics, including: battery defenses, cemeteries, industry, and civilian activity. The "events" section covers events in Richmond that do not relate to a particular site. </li><li><a href="links.php?action=links2&lid=4009" target=_blank>Civil War Soldiers and Sailor System</a>(1555 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=5023" target=_blank>Civil War Traveler.com</a>(952 clicks)<br>
+		Material and links on Civil War sites in Pennsylvania, Virginia, Maryland, and West Virginia.</li><li><a href="links.php?action=links2&lid=6072" target=_blank>Civil War Treasures From the New  York Historical Society</a>(602 clicks)<br>
+		The images in this digital collection are drawn from the New-York Historical Society's rich archival collections that document the Civil War. They include recruiting posters for New York City regiments of volunteers; stereographic views documenting the mustering of soldiers and of popular support for the Union in New York City; photography showing the war's impact, both in the north and south; and drawings and writings by ordinary soldiers on both sides.</li><li><a href="links.php?action=links2&lid=4022" target=_blank>Civil War Treasures from the NY Historical Society</a>(1027 clicks)<br>
+		"The images in this digital collection are drawn from the New-York Historical Society's rich archival collections that document the Civil War. They include recruiting posters for New York City regiments of volunteers; stereographic views documenting the mustering of soldiers and of popular support for the Union in New York City; photography showing the war's impact, both in the north and south; and drawings and writings by ordinary soldiers on both sides." </li><li><a href="links.php?action=links2&lid=2843" target=_blank>Civil War Virginians of the Allegheny Highlands</a>(1063 clicks)<br>
+		Civil War Virginians of the Allegheny Highlands, specifically 25th Virginia Infantry Regiment, 31stVirginia Infantry Regiment, 62nd Virginia Mounted Infantry Regiment. </li><li><a href="links.php?action=links2&lid=8055" target=_blank>Civil War Washington</a>(86 clicks)<br>
+		Civil War Washington examines the U.S. national capital from multiple perspectives as a case study of social, political, cultural and medical/scientific transitions provoked or accelerated by the Civil War. The project draws on the methods of many fields—literary studies, history, geography, computer-aided mapping—to create a digital resource that chronicles the war's impact on the city.  Troops, fugitive slaves, bureaucrats, prostitutes, actors, authors, doctors, and laborers were among those drawn to the capital by a sense of duty, desperation, or adventure. Drawing on material ranging from census records to literary texts and from forgotten individuals to the famous (such as Abraham Lincoln and Walt Whitman) we examine how Washington changed from a sleepy Southern town to the symbolic center of the Union and nation.</li><li><a href="links.php?action=links2&lid=4357" target=_blank>Civil War Women</a>(1509 clicks)<br>
+		Diaries and correspondence.</li><li><a href="links.php?action=links2&lid=6506" target=_blank>Civil War: Forging of a Nation</a>(594 clicks)<br>
+		National Park Service</li><li><a href="links.php?action=links2&lid=6482" target=_blank>Civil War@Smithsonian</a>(507 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8957" target=_blank>Colonel's diary</a>(57 clicks)<br>
+		The colonel's diary; journals kept before and during the civil war by the late Colonel Oscar L. Jackson...sometime commander of the 63rd regiment O. V. I (1922)</li><li><a href="links.php?action=links2&lid=8611" target=_blank>Compiled records showing service of military units in Confederate organizations</a>(68 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8846" target=_blank>Confederate Spy</a>(74 clicks)<br>
+		A spy in the service of the Confederacy
+how it feels to be hung by the neck and die.
+Published 1908</li><li><a href="links.php?action=links2&lid=8847" target=_blank>Confederate Spy Captured in Ohio</a>(61 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=746" target=_blank>Confederate States of America: Constitution</a>(1000 clicks)<br>
+		From the Avalon Project</li><li><a href="links.php?action=links2&lid=712" target=_blank>Confederate States of America: Documents</a>(1100 clicks)<br>
+		From the Avalon Project at Yale</li><li><a href="links.php?action=links2&lid=2847" target=_blank>Confederate Submarine  H.L. Hunley</a>(1414 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=737" target=_blank>Confederates of Color</a>(1048 clicks)<br>
+		Honors people of color.</li><li><a href="links.php?action=links2&lid=8761" target=_blank>Cooper's cavalry tactics</a>(53 clicks)<br>
+		Cooper's cavalry tactics, for the use of volunteers
+to which is added a manual for Colt's revolver.
+Published 1861 by H.P. Lathrop, Power & Cadwallader in New-Orleans, Jackson, Miss . </li><li><a href="links.php?action=links2&lid=5544" target=_blank>Cornelius C. Platter Civil War Diary, 1864 - 1865</a>(1021 clicks)<br>
+		The Civil War diary of Lt. (later Capt.) Cornelius C. Platter, of the 81st Ohio Infantry Volunteers, from November, 1864 - April 27, 1865. Platter's diary details Sherman's march through Georgia from Rome to Savannah and the march north through the Carolinas. He gives dates, times, and lengths of marches and describes the weather, locale, scenery, and food as well as orders, rumors, positions, troop morale, and administrative duties. The diary also includes a description of the burning of Columbia, South Carolina, the news of the Confederate surrender, and the assassination of Abraham Lincoln. 
+
+</li><li><a href="links.php?action=links2&lid=8038" target=_blank>Cornerstone Speech  Alexander H. Stephens March 21, 1861 Savannah, Georgia</a>(90 clicks)<br>
+		VP Alexander Stephens on slavery as the foundation of the Confederate States of America</li><li><a href="links.php?action=links2&lid=2398" target=_blank>Crisis at Fort Sumter</a>(921 clicks)<br>
+		The immediate cause of the Civil War as United States soldiers were fired upon in South Carolina.</li><li><a href="links.php?action=links2&lid=2840" target=_blank>CSS Virginia</a>(1085 clicks)<br>
+		"This site's highlights are its compilation of historical documents and the bibliography. Whether you are a serious student of the Civil War or just a high school student needing to write a paper, the information is here."</li><li><a href="links.php?action=links2&lid=8706" target=_blank>David Blight on the Civil War in American Memory, Part 1 </a>(484 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=709" target=_blank>Declaration of Causes of Seceding States</a>(1061 clicks)<br>
+		Georgia, Mississippi, South Carolina, Texas</li><li><a href="links.php?action=links2&lid=799" target=_blank>Democratic Party Platform, 1860</a>(924 clicks)<br>
+		On the cusp of war</li><li><a href="links.php?action=links2&lid=734" target=_blank>Diaries, Letters, Recollections</a>(1209 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=719" target=_blank>Diary of Basil H. Messler</a>(1027 clicks)<br>
+		The diary represents a day-to-day account of events while enlisted in the Mississippi Marine Brigade (initialed M.M.B. in the diary). </li><li><a href="links.php?action=links2&lid=745" target=_blank>Diary of Carrie Berry</a>(1169 clicks)<br>
+		The following passages were taken from the Diary of Carrie Berry, a 
+10 year old resident of Atlanta, Aug. 1, 1864 - Jan. 4, 1865.  </li><li><a href="links.php?action=links2&lid=5780" target=_blank>Documents from the Front : the American Civil War and Fenian Raids in the 1860s</a>(833 clicks)<br>
+		Archives of Ontario</li><li><a href="links.php?action=links2&lid=6800" target=_blank>Dred Scott Decision Anniversary</a>(598 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4010" target=_blank>Dwight Henry Cory Letters and Diary</a>(987 clicks)<br>
+		Of the Ohio Volunteer Cavalry.</li><li><a href="links.php?action=links2&lid=6226" target=_blank>Ebook Subject Collections: The Civil War</a>(701 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=7515" target=_blank>Emancipation and Empire</a>(399 clicks)<br>
+		Reconstructing the Worldwide Web of Cotton Production in the Age of the American Civil War by Sven Beckert</li><li><a href="links.php?action=links2&lid=791" target=_blank>Emancipation Proclamation</a>(1182 clicks)<br>
+		By ILincoln, September 22, 1862</li><li><a href="links.php?action=links2&lid=7438" target=_blank>Fort Pillow Battle</a>(388 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8516" target=_blank>Free Men of Color in Grey</a>(73 clicks)<br>
+		By Arthur W. Bergeron, Jr.
+CIVIL WAR HISTORY, Volume XXXII, No. 3, September, 1986</li><li><a href="links.php?action=links2&lid=7560" target=_blank>Gallant Charge of the 54th Massachusetts, The</a>(310 clicks)<br>
+		Document</li><li><a href="links.php?action=links2&lid=2850" target=_blank>General Jubal A. Early</a>(1003 clicks)<br>
+		Civil War general from Virginia.</li><li><a href="links.php?action=links2&lid=2845" target=_blank>General Samuel Cooper</a>(1041 clicks)<br>
+		Served in the armies of the United States of America and the Confederate States of America.</li><li><a href="links.php?action=links2&lid=5847" target=_blank>George Barnard's Civil War Photographs</a>(756 clicks)<br>
+		From Notre Dame</li><li><a href="links.php?action=links2&lid=1188" target=_blank>George H. Thomas, Practitioner of Emancipation</a>(961 clicks)<br>
+		by Bob Redman. Part of the Army of the Cumberland and George Thomas Source site</li><li><a href="links.php?action=links2&lid=710" target=_blank>Georgia in the Civil War</a>(1153 clicks)<br>
+		Good site.</li><li><a href="links.php?action=links2&lid=790" target=_blank>Gettysburg Address</a>(1101 clicks)<br>
+		Abraham Lincoln</li><li><a href="links.php?action=links2&lid=747" target=_blank>Grant's Memoirs, Vol I</a>(983 clicks)<br>
+		Vol II is found at <a href="http://historicaltextarchive.com/books.php?op=viewbook&bookid=34">http://historicaltextarchive.com/books.php?op=viewbook&bookid=34</a></li><li><a href="links.php?action=links2&lid=740" target=_blank>GUIDE TO CIVIL WAR MANUSCRIPTS IN THE</a>(1055 clicks)<br>
+		Short letter</li><li><a href="links.php?action=links2&lid=2235" target=_blank>H-CivWar</a>(1203 clicks)<br>
+		"H-CivWar is a forum for exploring the approaches, methods, and tools used in teaching history to graduate and undergraduate students. Syllabi, reading lists, and examinations are all valuable subjects for discussion. The Civil War era can not be isolated in the study of this nation's history. Any analysis of the Civil War era is empty without a good understanding of the Jacksonian and Republican eras, urban and rural history, etc. Therefore, some overlap between H-Net lists is expected and welcome, and you are invited to introduce discussions from other forums and disciplines." 
+</li><li><a href="links.php?action=links2&lid=6337" target=_blank>H.H. Bennett & Civil War Cycloramas</a>(648 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8940" target=_blank>Harper's Pictorial History of the Civil War</a>(47 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=7995" target=_blank>Harvest of Death</a>(205 clicks)<br>
+		
+This is a montage of photographs that Alexander Gardner and his associates took shortly after the Battle of Gettyburg, and before the filed had been completely cleared of the dead. Added to the stench of decaying bodies, there was also the aroma of 5,000 dead horses that had not been removed from the battlefield. It was a grim task indeed.
+</li><li><a href="links.php?action=links2&lid=8974" target=_blank>Heart of the Stranger that Hovered Near </a>(260 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4363" target=_blank>Hearts at Home: Southern Women in the Civil War</a>(932 clicks)<br>
+		Variety of resources.</li><li><a href="links.php?action=links2&lid=8470" target=_blank>History 7B - Spring 2006: US History: from Civil War to Present</a>(84 clicks)<br>
+		Lectures available as streaming video at webcast.berkeley.edu/courses.</li><li><a href="links.php?action=links2&lid=1886" target=_blank>HISTORY OF SEVENTY-NINTH INFANTRY</a>(982 clicks)<br>
+		Submitted by: Dale R. Lutz. pp. 48-9 from the Adjutant-General's Report, Illinois, 1861-66, revised, 1901 edition. Vol. 5. Revised by Brigadier General J. N. Reece (Adjutant General). Published Springfield, IL, Phillips Bros. State Printers, 1901. 
+</li><li><a href="links.php?action=links2&lid=2094" target=_blank>History of the Third Georgia Infantry</a>(1078 clicks)<br>
+		Civil War." The Third Georgia Infantry was organized in late April, 1861. In the spring of 1862, the Third Georgia Infantry returned to Virginia and joined the Army of Northern Virginia. It served in that way for the remainder of the war. The Third Georgia participated in more than fifty engagements during its career."</li><li><a href="links.php?action=links2&lid=1770" target=_blank>Homepage of the 15th Mississippi Infantry, Company K</a>(1024 clicks)<br>
+		The 15th Mississippi Infantry, Company K, was organized in the late spring of 1861.  Company K was organized in the area of Double Springs, Whitefield, and Steelville, in the western part of Oktibbeha County.  They were known as the Oktibbeha County Plough Boys.  </li><li><a href="links.php?action=links2&lid=6098" target=_blank>Hotchkiss Map Collection</a>(533 clicks)<br>
+		The Hotchkiss Map Collection contains cartographic items made by Major Jedediah Hotchkiss (1828-1899), a topographic engineer in the Confederate Army. Hotchkiss made detailed battle maps primarily of the Shenandoah Valley, some of which were used by the Generals Robert E. Lee and Thomas J. "Stonewall" Jackson for their combat planning and strategy.</li><li><a href="links.php?action=links2&lid=722" target=_blank>Hungarians in the American Civil War</a>(1060 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=7476" target=_blank>I Take Up My Pen: Letters from the Civil War</a>(386 clicks)<br>
+		"is adapted from an exhibition of original Civil War soldiers’ letters currently on display at the new Museum and Visitor Center at Gettysburg National Military Park, which opened in April 2008. The letters are drawn from the Gilder Lehrman Collection (on deposit at the New-York Historical Society), which contains more than 12,000 Civil War soldiers’ letters, most of them never before seen by the public."</li><li><a href="links.php?action=links2&lid=739" target=_blank>Illinois in the Civil War</a>(1053 clicks)<br>
+		Links and more</li><li><a href="links.php?action=links2&lid=729" target=_blank>Images from the 16th Ohio Volunteers</a>(853 clicks)<br>
+		Photos</li><li><a href="links.php?action=links2&lid=2848" target=_blank>Index of Civil War Naval Forces</a>(1062 clicks)<br>
+		Confederate States and United States navies.</li><li><a href="links.php?action=links2&lid=6375" target=_blank>Intelligence in the Civil War</a>(491 clicks)<br>
+		A publication of the Central Intelligence Agency.</li><li><a href="links.php?action=links2&lid=726" target=_blank>Iowa in the Civil War</a>(1073 clicks)<br>
+		Letters, Journals, Diaries, Oral Accounts and Historical Information from the Civil War
+
+</li><li><a href="links.php?action=links2&lid=4015" target=_blank>Iowa in the Civil War</a>(1024 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8744" target=_blank>Iron Furnace</a>(48 clicks)<br>
+		The iron furnace
+or, slavery and secession
+by John H. Aughey, a refugee from Mississippi
+Published 1863 by William S. & Alfred Martien in Philadelphia . </li><li><a href="links.php?action=links2&lid=2849" target=_blank>Ironclads and Blockade Runners</a>(931 clicks)<br>
+		"At the junction of naval warfare and industrial technology were two very special types of ship, the likes of which had hardly ever been seen before in the world. The ironclads were the advent of the modern armored, self-propelled warship, and the blockade runners took wholesale smuggling to new technological heights. Under the immense pressure of war, technology advanced at a breakneck pace. These pages are dedicated to these fascinating ships, their designers, and the valiant crews of both sides who sailed and fought them." 
+
+</li><li><a href="links.php?action=links2&lid=6978" target=_blank>James McPherson, “Crossroads of Freedom: Antietam”</a>(569 clicks)<br>
+		Podcast from the Gilder Lehrman Institute</li><li><a href="links.php?action=links2&lid=711" target=_blank>Jefferson Davis, Abraham Lincoln, and the American Revolution</a>(1012 clicks)<br>
+		By Greg Ruttan in the Concord Review</li><li><a href="links.php?action=links2&lid=732" target=_blank>John and James Booker Civil War Letters</a>(987 clicks)<br>
+		This collection includes 22 letters (July 1861 - April 1864) from twin brothers John Booker (1840-1864) and James Booker (1840-1923) of Pittsylvania County, Virginia, to their cousin Chloe Unity Blair (1839-75). </li><li><a href="links.php?action=links2&lid=708" target=_blank>John Brown's Raid on Harper's Ferry (Oct.-Dec. 1859)</a>(1069 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4012" target=_blank>John H. Freeman Diary</a>(964 clicks)<br>
+		Of the Company I, 34th Mississippi Volunteers, CSA.</li><li><a href="links.php?action=links2&lid=3227" target=_blank>Key to a Mystery</a>(1037 clicks)<br>
+		"Mortally wounded at the Battle of Gettysburg, Union soldier
+Amos Humiston died clutching the only clue to his identity:
+an ambrotype of his three small children." By Mark H. Dunkelman 
+</li><li><a href="links.php?action=links2&lid=2851" target=_blank>Legacy of the USS Monitor</a>(1182 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=731" target=_blank>Letters from an Iowa Soldier in the Civil War</a>(1038 clicks)<br>
+		These letters are part of a collection written by Newton Robert Scott, Private, Company A, of the 36th Infantry, Iowa Volunteers. Most of the letters were written to Scott's neighborhood friend Hannah Cone, in their home town of Albia, Monroe County, Iowa, over the three year period that he served as Company A's clerk. The final letter, describing the long-awaited mustering out in August of 1865, was written to his parents. 
+</li><li><a href="links.php?action=links2&lid=4016" target=_blank>Letters of the Civil War</a>(1345 clicks)<br>
+		"A COMPILATION OF 
+
+
+LETTERS, STORIES, DIARIES 
+
+
+FROM THE 
+
+
+SOLDIERS, SAILORS, NURSES, POLITICIANS, 
+
+
+MINISTERS, JOURNALISTS and CITIZENS 
+
+
+DURING the WAR OF THE REBELLION. 
+
+
+FROM THE 
+
+
+NEWSPAPERS OF MASSACHUSETTS." 
+</li><li><a href="links.php?action=links2&lid=7442" target=_blank>Lincoln and His Circle</a>(480 clicks)<br>
+		"The project seeks to digitize and make available the letters to, from, and about Abraham Lincoln that are held in the collections of the Department of Rare Books and Special Collections at the University of Rochester."</li><li><a href="links.php?action=links2&lid=8569" target=_blank>Lincoln's Interpretation of the Civil War</a>(92 clicks)<br>
+		By Eric Foner in History Now</li><li><a href="links.php?action=links2&lid=713" target=_blank>M. A. Ryan, Experiences of a Confederate in ...Prison</a>(1032 clicks)<br>
+		"I have often thought before I answered the last roll and passed over the River to join the Silent Host that fell before the roaring cannon and rattling musket that I would give my experiences as a Confederate soldier and as a prisoner of war."</li><li><a href="links.php?action=links2&lid=2846" target=_blank>Major General George H. Thomas</a>(1299 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=717" target=_blank>Major General William T. Sherman’s March of Destruction</a>(1165 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=629" target=_blank>Maps</a>(1070 clicks)<br>
+		Hargrett Library Rare Map Collection
+</li><li><a href="links.php?action=links2&lid=3283" target=_blank>Maryland Fugitive Slave to His Wife, January 12, 1862</a>(952 clicks)<br>
+		John Boston reached freedom but without his wife.</li><li><a href="links.php?action=links2&lid=5809" target=_blank>Milo Grow, Letters from the Civil War</a>(689 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=1766" target=_blank>Mississippi Civil War</a>(931 clicks)<br>
+		Comprehensive site.</li><li><a href="links.php?action=links2&lid=1768" target=_blank>Mississippi Civil War Battles</a>(1121 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8573" target=_blank>Mississippi Sesquicentennial of the American Civil Wa</a>(98 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=2762" target=_blank>Mississippi Soldiers in the Civil War</a>(996 clicks)<br>
+		by Clay Williams and John Marszalek in Mississippi History Online. Includes original documents.</li><li><a href="links.php?action=links2&lid=7820" target=_blank>Mr. Lincoln's T-Mails</a>(157 clicks)<br>
+		Abe used the latest technology!</li><li><a href="links.php?action=links2&lid=6475" target=_blank>National Museum of Civil War Medicine</a>(571 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=5952" target=_blank>New York City Draft Riots, 1863</a>(688 clicks)<br>
+		"An excerpt from <i>
+In the Shadow of Slavery:
+African Americans in New York City, 1626-1863</i>
+by Leslie M. Harris"
+
+</li><li><a href="links.php?action=links2&lid=7236" target=_blank>New York Draft Riots</a>(458 clicks)<br>
+		 	 	 	</li><li><a href="links.php?action=links2&lid=2752" target=_blank>New York Times Coverage of the Civil War Years</a>(1111 clicks)<br>
+		Covers the years 1860-1866. Digital reproduction of articles in the newspaper.</li><li><a href="links.php?action=links2&lid=2859" target=_blank>Ninth Georgia Infantry, CSA</a>(969 clicks)<br>
+		Fought in a number of battles.</li><li><a href="links.php?action=links2&lid=6628" target=_blank>No Party Now: Politics in the Civil War North</a>(573 clicks)<br>
+		Adam I. P. Smith, Lecturer in American History at University College London, discusses his award-winning book No Party Now: Politics in the Civil War North. He examines political parties and partisanship in America during times of war, specifically the period leading up to the American Civil War, and offers an original and insightful analysis of Northern politics at the time.</li><li><a href="links.php?action=links2&lid=7715" target=_blank>Official Records of the War Of The Rebellion</a>(204 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4565" target=_blank>Ohio Civil War Documents</a>(1207 clicks)<br>
+		Searchable database of the Ohio Historical Society.</li><li><a href="links.php?action=links2&lid=3472" target=_blank>Ordinance of Secession, 1861</a>(1057 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4283" target=_blank>Ordinances of Secession</a>(940 clicks)<br>
+		"The ordinances of secession were the actual legal language by which the seceded states severed their connection with the Federal Union. The declarations of causes...are where they tended to disclose their reasons for doing so, although only four states issued separate declarations of causes.
+
+</li><li><a href="links.php?action=links2&lid=8735" target=_blank>Original photographs taken on the battlefields during the Civil War of the United States</a>(95 clicks)<br>
+		Original photographs taken on the battlefields during the Civil War of the United States
+by Mathew B. Brady and Alexander Gardner, who operated under the authority of the War Department and the protection of the Secret Service.
+Published 1907 by [E.B. Eaton] in Hartford, Conn </li><li><a href="links.php?action=links2&lid=7619" target=_blank>Original Photos of the Civil War</a>(278 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4018" target=_blank>Pearce Civil War Collection</a>(1384 clicks)<br>
+		"A major strength of the Pearce Collection is its balanced coverage of the war. Every effort is made to include letters and documents from both sides of the conflict. The collection includes letters from most of the major political and military leaders from both sides of the conflict, and an ever-increasing number of soldier's letters from both the Union and Confederate armies." 
+
+</li><li><a href="links.php?action=links2&lid=4019" target=_blank>Poerty  and Music</a>(995 clicks)<br>
+		of the War.</li><li><a href="links.php?action=links2&lid=2853" target=_blank>Pond Spring and the General Joe Wheeler Home</a>(1168 clicks)<br>
+		"Located near Courtland, Alabama, Pond Spring (The Wheeler Plantation) was home to Joseph Wheeler, former Major General of Cavalry of the great Confederate western army, The Army of Tennessee (and briefly held the rank of Lieutenant General near War's end), also a long-time U.S. Congressman following the Civil War, and  (yet again) U.S. Army Major General during the Spanish-American War.   A well-earned title, "Fightin' Joe" Wheeler became a national symbol for reunification and reconciliation following the Civil War and throughout the latter half of the 19th Century.  As the U.S. Congressman, he largely contributed toward the progressive economic direction the northern section of Alabama would pursue during the 20th Century."
+
+</li><li><a href="links.php?action=links2&lid=797" target=_blank>Presidential Elections, 1860-1884</a>(990 clicks)<br>
+		From back issues of Harper's Weekly</li><li><a href="links.php?action=links2&lid=6483" target=_blank>Prison Diary of Frederic Augustus James</a>(534 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=2854" target=_blank>Prisoner-of-War Letters of Brigadier General Montgomery Dent Corse</a>(1049 clicks)<br>
+		"The prisoner-of-war letters of Brigadier General Montgomery Dent Corse, CSA, 17th Virginia Infantry to his wife, Elizabeth Beverley, along with his commission as Colonel, Active Volunteer Forces of Virginia, May 17, 1861, and his Oath of Allegiance to the United States of America, July 24, 1865. Selected from the Montgomery Dent Corse Collection which was donated to the Alexandria Library in 1981." 
+</li><li><a href="links.php?action=links2&lid=728" target=_blank>Rachel Cormany's Diary</a>(972 clicks)<br>
+		1863. Gettysburg</li><li><a href="links.php?action=links2&lid=761" target=_blank>Recollections of a Private's Homecoming</a>(1020 clicks)<br>
+		H. Clay Sharkey, 3rd Mississippi Co. C, 5th Alabama Cavalry Co. D</li><li><a href="links.php?action=links2&lid=748" target=_blank>Robert E. Lee Papers</a>(1107 clicks)<br>
+		Welcome to the Robert E. Lee Papers at the Special Collections Department of the James Graham Leyburn Library at Washington and Lee University. These 46 letters are a representative sample from our collection which documents aspects of Lee's life and career as a soldier, educator, friend, and father. </li><li><a href="links.php?action=links2&lid=759" target=_blank>Rose O'Neal Greenhow Papers</a>(1047 clicks)<br>
+		From Duke University</li><li><a href="links.php?action=links2&lid=8728" target=_blank>Roster of Confederate Soldiers; NC</a>(73 clicks)<br>
+		 Roster of Confederate soldiers in the war between the states furnished by Lincoln County, North Carolina, 1861-1865.
+Published 1905 by W.J. Hoke Camp, Confed. Veterans? in [Lincolnton, N.C . </li><li><a href="links.php?action=links2&lid=4006" target=_blank>Samuel S. Dunton Civil War Letters</a>(982 clicks)<br>
+		"Index of letters from Samuel S. Dunton to his family while in the 114th New York
+          Infantry during the North American Conflict of 1861-1865 ("Civil War")."</li><li><a href="links.php?action=links2&lid=7156" target=_blank>Secession Era Editorials Project</a>(621 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=792" target=_blank>Second Inaugural Address, 1865</a>(917 clicks)<br>
+		Abraham Lincoln</li><li><a href="links.php?action=links2&lid=742" target=_blank>Selected Civil War Photographs</a>(1008 clicks)<br>
+		Library of Congress</li><li><a href="links.php?action=links2&lid=1490" target=_blank>Selected Civil War Photographs</a>(936 clicks)<br>
+		Library of Congress collection</li><li><a href="links.php?action=links2&lid=4024" target=_blank>Selected Civil War Photographs</a>(1003 clicks)<br>
+		"The Selected Civil War Photographs Collection contains 1,118 photographs. Most of the images were made under the supervision of Mathew B. Brady, and include scenes of military personnel, preparations for battle, and battle after-effects. The collection also includes portraits of both Confederate and Union officers, and a selection of enlisted men." </li><li><a href="links.php?action=links2&lid=5684" target=_blank>Selected Civil War Photographs</a>(699 clicks)<br>
+		Library of Congress</li><li><a href="links.php?action=links2&lid=8705" target=_blank>Sherman and His Campaigns</a>(76 clicks)<br>
+		Author: Col.S.M.Bowman And Lt.-Col.R.B.Irwin. Publisher: Charles B.Richardson, New York.
+Year: 1865</li><li><a href="links.php?action=links2&lid=2302" target=_blank>Shiloh, Pittsburg Landing Tennessee</a>(1161 clicks)<br>
+		April 6-7, 1862. U.S. Civil War</li><li><a href="links.php?action=links2&lid=8577" target=_blank>So What? An Observation on the Debate over Black Confederates</a>(67 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4953" target=_blank>South Carolina Civil War Maps of Battles</a>(968 clicks)<br>
+		Maps</li><li><a href="links.php?action=links2&lid=8715" target=_blank>South Rises Again and Again and Again</a>(263 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8844" target=_blank>Spy in the Civil War, A Story of a</a>(60 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8889" target=_blank>Spy of the Rebellion</a>(55 clicks)<br>
+		The spy of the Rebellion
+being a true history of the spy system of the United States army during the late Rebellion ... compiled from official reports prepared for President Lincoln, General McClellan and the Provost-Marshal-General.
+Published 1884 by Rose Publishing Co. in Toronto .
+</li><li><a href="links.php?action=links2&lid=6505" target=_blank>State of New York and the Civil War</a>(576 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4008" target=_blank>Study of Civil War Sites in the Shenandoah Valley of Virginia</a>(930 clicks)<br>
+		National Park Service. "In 1990, a study of Civil War sites in the Shenandoah Valley of Virginia was authorized by Public Law 101-628. The study was to accomplish four
+tasks: identify significant Civil War sites and determine their condition, establish their relative importance, assess short and long term threats to their
+integrity, and provide alternatives for their preservation and interpretation by Federal, State, and local governments, or by other public or private
+entities."</li><li><a href="links.php?action=links2&lid=8092" target=_blank>Teaching With Documents: The Civil War as Photographed by Mathew Brady</a>(89 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=6650" target=_blank>Tennessee Civil War Railroads</a>(560 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=840" target=_blank>The 11th Pennsylvania Cavalry Regiment</a>(962 clicks)<br>
+		(108th Volunteers) Harlan's Light Cavalry</li><li><a href="links.php?action=links2&lid=2856" target=_blank>The 134th New York Volunteer Infantry</a>(980 clicks)<br>
+		"This regiment was recruited and organized at Schoharie, NY with men raised from Schoharie and Schenectady Counties in upstate New York. It was mustered into service on September 22, 1862 and left for Washington, DC just three days later. The 134th was assigned to the XI Corps of the Army of the Potomac until October, 1863, when that Corps was made part of the Army of the Cumberland. It became part of the XX Corps in April, 1864, at the start of the Atlanta Campaign."
+</li><li><a href="links.php?action=links2&lid=2827" target=_blank>The 15th New York Cavalry</a>(971 clicks)<br>
+		"Formed principally in upstate New York, the 15th NYVC was a late addition to the Army of the Potomac forming companies during 1863.  As a part of George Armstrong Custer's division the units fought throughout the Shenandoah Valley  under the command of Phil Sheridan.  They were present at Five Forks, and Appomattox, and participated in the last cavalry charge of the Civil War."  </li><li><a href="links.php?action=links2&lid=1767" target=_blank>The 19th Mississippi Infantry Regiment in the Civil War</a>(926 clicks)<br>
+		With notes about Company E and Private William Meek Furr. By
+William Frazier Furr, Montgomery, Alabama
+</li><li><a href="links.php?action=links2&lid=2829" target=_blank>The 1st Regiment Kentucky Volunteers</a>(1059 clicks)<br>
+		The 1st Regiment Kentucky Volunteers were Confederate soldiers. </li><li><a href="links.php?action=links2&lid=2857" target=_blank>The 23rd Missouri Volunteer Infantry</a>(1165 clicks)<br>
+		"he 23rd Missouri Volunteer Infantry Regiment (US) never had a unit history published. Many veterans of this distinguished federal command wrote letters and memoirs. One veteran, Private John Peter Bagley of Company "I" can even be called the poet laureate of the 23rd  for he wrote at least two poems: THE NOBLE TWENTY THIRD and THE DYING SOLDIER . While there are many references to the 23rd Missouri Infantry in the history books no one has ever put everything together to tell the regiments story from muster to discharge.  I have been compiling data since 1991 to accomplish this monumental task. My data includes information found in Frederick Dryer’s:  A Compendium of the War of the Rebellion;     War of the Rebellion: A Compilation of the Official Records of the Union and Confederate Armies;    The History of Linn County Missouri;     The History of Sullivan County Missouri;     A History of Northwest Missouri;    Shiloh: Bloody April by Wiley Sword; and  the veteran's memoirs and officer's reports found in the National Archives ." </li><li><a href="links.php?action=links2&lid=3998" target=_blank>The African American Civil War Memorial</a>(1080 clicks)<br>
+		Memorial to the United States Colored Troops (USCT) who served in the Civil War.</li><li><a href="links.php?action=links2&lid=3997" target=_blank>The American Civil War</a>(1138 clicks)<br>
+		Jim Janke frequently updates this site.</li><li><a href="links.php?action=links2&lid=2836" target=_blank>The Battle Between the Monitor and the Virginia</a>(1060 clicks)<br>
+		"
+     The battle between the Virginia "Merrimack" and the Monitor was the most
+decisive factor to date in determining the direction of modern naval warfare.  The
+first battle between ironclads, however, only came about through a series of
+chances, and that elusive element, destiny."
+</li><li><a href="links.php?action=links2&lid=2837" target=_blank>The Battle of Chickamauga: An Alabama Infantry Regiment's  Perspective</a>(1077 clicks)<br>
+		"On these fields and in the woods surrounding a small creek in northwest Georgia, Union and Confederate armies clashed during the fall of 1863 (September 19-20) in some of the hardest fighting of the Civil War. An Alabama Infantry Regiment, the 19th Alabama, fought in this battle as it had done so in other western battles since Shiloh. This regiment was composed of men from northeast Alabama. As in most Confederate regiments, the members of the 19th were not plantation owners, rather they were farmers, shopkeepers and common everyday folk. "</li><li><a href="links.php?action=links2&lid=2852" target=_blank>The Battle of Gettysburg</a>(1167 clicks)<br>
+		From Military History Online. Comprehensive.</li><li><a href="links.php?action=links2&lid=2839" target=_blank>The Battle of the Wilderness, May 5-6, 1864</a>(1113 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=2841" target=_blank>The Battles for Chattanooga</a>(981 clicks)<br>
+		A pictorial history of the Battles for Chattanooga.</li><li><a href="links.php?action=links2&lid=706" target=_blank>The Caning of Sumner (May 1856)</a>(997 clicks)<br>
+		From the Furman University Editorials Project</li><li><a href="links.php?action=links2&lid=1518" target=_blank>The Civil War</a>(857 clicks)<br>
+		The American Battlefield Protection program of the National Park Service </li><li><a href="links.php?action=links2&lid=760" target=_blank>The Civil War Diary of James Laughlin Orr</a>(984 clicks)<br>
+		Covers Sherman's March to the Sea</li><li><a href="links.php?action=links2&lid=7574" target=_blank>The Civil War in American Memory</a>(300 clicks)<br>
+		The collective memory of the Civil War differs throughout America. To some the bloody conflict was a fight for emancipation and equality. For others, it represents the noble, but ultimately failed, attempt by the Confederacy to assert its sovereignty. In this wide-ranging lecture, delivered at the London School of Economics, Civil War historian David Blight examines American memory of the Civil War and how it has both hindered and facilitated justice and healing it its wake. Arguing for a history that is not just “frozen into formulas,” Blight delivers a moving meditation on a part of American history that is still very much alive today.</li><li><a href="links.php?action=links2&lid=3505" target=_blank>The Civil War in New Mexico</a>(951 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8739" target=_blank>The Civil War in the Lower Mississippi River Valley</a>(65 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4982" target=_blank>The Civil War in the Western Theater</a>(993 clicks)<br>
+		Edited by John Marszalek with contributions from Russell F. Weigley, Craig L. Symonds, John Y. Simon, Steven E. Woodworth, and Anne J. Bailey. This book is in pdf format. </li><li><a href="links.php?action=links2&lid=2059" target=_blank>The Civil War Journal of Andrew Jackson Nickell (1828-1863)</a>(1117 clicks)<br>
+		Served in Company E of the 114th Ohio Volunteer Infantry (O.V.I.) during the Civil War and the Vicksburg Campaign. </li><li><a href="links.php?action=links2&lid=7498" target=_blank>The Diplomats Who Sank a Fleet</a>(368 clicks)<br>
+		The Confederacy's Undelivered European Fleet and the Union Consular Service
+By Kevin J. Foster</li><li><a href="links.php?action=links2&lid=8768" target=_blank>The dispatch carrier</a>(48 clicks)<br>
+		The dispatch carrier
+a thrilling description of the adventures of a dispatch carrier in the late war--
+2d. ed.
+by Comrade Wm. N. Tyler.
+Published 1892 by Port Byron "Globe" Print in Port Bryon, Ill . </li><li><a href="links.php?action=links2&lid=8651" target=_blank>The dispatch carrier : a thrilling description of the adventures of a dispatch carrier in the late w</a>(74 clicks)<br>
+		a thrilling description of the adventures of a dispatch carrier in the late war--
+2d. ed.
+by Comrade Wm. N. Tyler.
+Published 1892 by Port Byron "Globe" Print in Port Bryon, Ill .</li><li><a href="links.php?action=links2&lid=707" target=_blank>The Dred Scott Case (1857)</a>(1084 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8762" target=_blank>The following regulations are published for the guidance of the Army, and they will be strictly enfo</a>(47 clicks)<br>
+		Adjutant and Inspector General's Office, Richmond, Va., Aug. 1861
+Published 1861 by s.n. in Richmond, Va .</li><li><a href="links.php?action=links2&lid=744" target=_blank>The Hapless Anaconda: Union Blockade 1861-1865</a>(1024 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=8788" target=_blank>The iron furnace or, slavery and secession</a>(51 clicks)<br>
+		The iron furnace
+or, slavery and secession
+by John H. Aughey, a refugee from Mississippi
+Published 1863 by William S. & Alfred Martien in Philadelphia . </li><li><a href="links.php?action=links2&lid=705" target=_blank>The Kansas-Nebraska Bill (1854)</a>(1018 clicks)<br>
+		Editorials concerning</li><li><a href="links.php?action=links2&lid=2863" target=_blank>The Monitor: History & Legacy</a>(937 clicks)<br>
+		From the Mariners Museum. </li><li><a href="links.php?action=links2&lid=8887" target=_blank>The Numbers War Between the States </a>(52 clicks)<br>
+		Wall Street Journal</li><li><a href="links.php?action=links2&lid=714" target=_blank>The Papers of Jefferson Davis</a>(1139 clicks)<br>
+		The Papers of Jefferson Davis 
+documentary editing project, 
+based at Rice University in 
+Houston, Texas, is publishing 
+a multi-volume edition of his 
+letters and speeches, several 
+of which can be found on this 
+web site. The page also has 
+extensive information on Davis
+and his family and numerous 
+photographs.
+
+</li><li><a href="links.php?action=links2&lid=7994" target=_blank>The River War: The Timucuan Preserve in the Civil War</a>(98 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4020" target=_blank>The Role Of Women In The Civil War</a>(1071 clicks)<br>
+		A more accurate picture of women in the War than Scarlett O'Hara.</li><li><a href="links.php?action=links2&lid=2855" target=_blank>The Seige of Petersburg</a>(1220 clicks)<br>
+		"The siege of Petersburg, Virginia (June 15, 1864 -- April 2, 1865) is one of the least studied campaigns of the Civil War." </li><li><a href="links.php?action=links2&lid=3657" target=_blank>The Seventy-Third Ohio Volunteer Infantry</a>(1101 clicks)<br>
+		General regimental history with roster and photographs</li><li><a href="links.php?action=links2&lid=4025" target=_blank>The Shenandoah 1863 Civil War Museum</a>(905 clicks)<br>
+		Guide to the museum.</li><li><a href="links.php?action=links2&lid=6093" target=_blank>The Southern Homefront, 1861-1865</a>(736 clicks)<br>
+		"The Southern Homefront, 1861-1865" presents materials related to Southern life during the Civil War and the challenge of creating a nation state while waging war. This collection includes government documents, personal diaries, religious pamphlets, and many other materials.</li><li><a href="links.php?action=links2&lid=8570" target=_blank>The Underground Railroad and the Coming of War</a>(85 clicks)<br>
+		By Matthew Pinsker. History Now</li><li><a href="links.php?action=links2&lid=4027" target=_blank>The United States Navy in the Civil War--the West</a>(1391 clicks)<br>
+		"This site is an attempt to tell the story of the "BrownWater Navy" and the brave men and women who served on the Western Rivers and Gulf of Mexico." </li><li><a href="links.php?action=links2&lid=733" target=_blank>The Valley of the Shadow: Living the Civil War in Pennsylvania and Virginia</a>(943 clicks)<br>
+		This project interweaves the histories of two communities on either side of the Mason-Dixon line during the era of the American Civil War. </li><li><a href="links.php?action=links2&lid=2860" target=_blank>The Wild Geese</a>(1161 clicks)<br>
+		"The Wild Geese Today chronicles the epic saga of Ireland's far-flung exiles and those who have struggled to gain Irish freedom."
+</li><li><a href="links.php?action=links2&lid=7551" target=_blank>Three Soldiers and American Ways of War: Part 2, Ulysses S. Grant</a>(320 clicks)<br>
+		"
+In the second of this series of three lectures, Josiah Bunting III examines the military career of Ulysses S. Grant. Grant has not always been viewed favorably by historians, but Bunting contends that Grant was a genius as a leader and an ideal commander. Josiah Bunting III is president of The Harry Frank Guggenheim Foundation and the author, most recently, of Ulysses S. Grant."</li><li><a href="links.php?action=links2&lid=8760" target=_blank>Uniform and dress of the army of the Confederate States</a>(51 clicks)<br>
+		Contains fifteen large lithographs of soldiers standing in landscapes, showing generals and other staff officers, all ranks of cavalry, artillery and infantry, their swords, rifles, drum and bugle, their tunics, trousers, hats and overcoats, plus buttons, badges and chevrons.</li><li><a href="links.php?action=links2&lid=8982" target=_blank>Uniform and dress of the army of the Confederate States</a>(72 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=735" target=_blank>United States Civil War Center</a>(1140 clicks)<br>
+		Seeks to be the definitive site.</li><li><a href="links.php?action=links2&lid=1944" target=_blank>Vermont in the Civil War</a>(951 clicks)<br>
+		The Green Mountain Boys fought again.</li><li><a href="links.php?action=links2&lid=4028" target=_blank>Vermont in the Civil War</a>(860 clicks)<br>
+		"the largest online repository of information documenting the Green Mountain State's participation in the American Civil War."</li><li><a href="links.php?action=links2&lid=8985" target=_blank>Virginia Civil War Campaigns and Battles Index</a>(67 clicks)<br>
+		
+This Week in Virginia History
+
+Virginia Historical Highway Marker
+Civil War Campaigns and Battles Index
+
+The Markerhistory.com Virginia Civil War Campaigns and Battles Index is a comprehensive collection of Civil War related Virginia historical highway markers.  Markers are organized chronologically by earliest event date on each marker, providing an easy to follow time-line of events.  Campaign groupings were created by mapping relevant markers to corresponding Campaigns using the National Park Service (“NPS”) campaign classification system.  A primary benefit of this methodology is that it informs readers of campaign related events which did not take place at NPS maintained sites, providing additional context.</li><li><a href="links.php?action=links2&lid=724" target=_blank>War Days in Fayetteville North Carolina</a>(902 clicks)<br>
+		Covers 1861 to 1865</li><li><a href="links.php?action=links2&lid=723" target=_blank>Weapons of the Civil War</a>(1319 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=3262" target=_blank>Why the South Lost the Civil War</a>(1183 clicks)<br>
+		"Ten Civil War historians provide some contrasting--and probably controversial--views on how and why the Confederate cause ultimately ended in defeat." 
+
+</li><li><a href="links.php?action=links2&lid=8863" target=_blank>Why They Fought</a>(265 clicks)<br>
+		</li><li><a href="links.php?action=links2&lid=4847" target=_blank>William Francis Brand Civil War letters</a>(1165 clicks)<br>
+		The William Francis Brand Civil War Letters web site provides access to digital facsimiles of letters written by Confederate soldier William Francis Brand to his future wife Amanda Catherine Armentrout. 
+</li><li><a href="links.php?action=links2&lid=2861" target=_blank>William Wing Loring</a>(1262 clicks)<br>
+		"Explores the life of this veteran of the U.S., Confederate and Egyptian armies."
+</li><li><a href="links.php?action=links2&lid=8571" target=_blank>Women and the Home Front: New Civil War Scholarship</a>(89 clicks)<br>
+		By Catherine Clinton.
+History Now</li><li><a href="links.php?action=links2&lid=3198" target=_blank>Women's Revolt in Rowan County</a>(1088 clicks)<br>
+		"A worsening war situation, rising food prices, and an indifferent government compelled the women of Rowan County, North Carolina, to take action. By Christopher A. Graham." 
+
+</li><li><a href="links.php?action=links2&lid=7601" target=_blank>“John Brown, Abolitionist:The Man Who Killed Slavery, Sparked the Civil War, and Seeded Civil Rights</a>(271 clicks)<br>
+		David Reynolds
+“John Brown, Abolitionist:The Man Who Killed Slavery, Sparked the Civil War, and Seeded Civil Rights”
+The New-York Historical Society
+December 8, 2005
+Running Time: 42:16
+
+
+
+
+David Reynolds reassesses the legacy of John Brown, who was hanged for his role in the October 1859 raid on the federal armory at Harpers Ferry. Reynolds states that Brown did not live on the fringe of American life, but was at the very center of it. A devout Calvinist possessing unshakable integrity and faith in the righteousness of his violent actions against slavery, Brown was the only abolitionist in the years before the Civil War to live among blacks, advocate a rewritten constitution that would make slaves citizens, and ultimately to take up arms and give his life for the abolitionist cause.
+</li></font>
+</td>
+          <td valign="top">
+
+<table bordercolor="#460069" cellspacing="0" class=menu cellpadding=2>
+              <tr>
+                <td valign="top" background="img/caption.jpg" width="120">
+                  <center>
+                    <font face="" size="1"><b>Current Events Bestsellers</b></font>
+                  </center>
+
+                </td>
+              </tr>
+						</table>
+
+
+
+
+
+              <iframe marginwidth="0" marginheight="0" width="120" height="600" scrolling="no" frameborder="0" src="http://rcm.amazon.com/e/cm?t=histotextarch-20&p=11&o=1&l=bn1&browse=10557&mode=books&fc1=000000&lc1=0000FF&lt1=_blank&f=ifr">
+
+
+<MAP NAME="boxmap-p11"><AREA SHAPE="RECT" COORDS="13, 588, 102, 600" HREF="http://rcm.amazon.com/e/cm/privacy-policy.html?o=1" target=main><AREA COORDS="0,0,10000,10000" HREF="http://www.amazon.com/exec/obidos/redirect-home/historicaltextar" target=main></MAP><img src="http://rcm-images.amazon.com/images/G/01/rcm/120x600.gif" width="120" height="600" border="0" usemap="#boxmap-p11" alt="Shop at Amazon.com">
+
+
+</iframe>
+<p></td>
+        </tr></table>
+
+<table width="750" border="0" bgcolor="#FFFFFF">
+  <tr> 
+    
+    <td width="466" align="center" colspan="7"><br>
+    </td>
+    
+  </tr>
+</table>
+<table width="750" bgcolor="white" border="0" class=footer><tr><td><p>&copy 1990-2012
+
+
+        <a href="about.php">Donald J. Mabry / The Historical Text Archive</a></font></p><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f10436a1e0588dc"></script>
+<!-- AddThis Button END -->
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Programmed By: <a href=http://www.customphpdesign.com>Custom PHP Design</a>
+
+	
+		<br>
+      </p></td></tr>
+      </table>
+    </center>
+</body>
+</html>

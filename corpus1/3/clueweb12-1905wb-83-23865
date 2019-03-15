@@ -1,0 +1,991 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-06T01:45:56Z
+WARC-TREC-ID: clueweb12-1905wb-83-23865
+WARC-IP-Address: 208.203.94.126
+WARC-Payload-Digest: sha1:AE2PX5XZORM3RIMROJZSAI2CBWRJJDGX
+WARC-Target-URI: https://www.oppenheimerfunds.com/articles/article_11-02-09-143142.jsp
+WARC-Record-ID: <urn:uuid:5a19338f-49e3-49ab-b837-b37f07317f74>
+Content-Type: application/http; msgtype=response
+Content-Length: 46996
+
+HTTP/1.1 200 OK
+Server: Oracle-iPlanet-Web-Server/7.0
+Date: Sun, 06 May 2012 01:45:58 GMT
+X-ua-compatible: IE=7;FF=3;OtherUA=4
+Content-type: text/html; charset=UTF-8
+X-Powered-By: Servlet/2.5 JSP/2.1
+Connection: close
+
+
+
+ 
+
+
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Hostname(aliased): ofi3-A -->
+
+<!-- Begin /common/components/top.jsp -->
+	<head>
+		
+				<title>Capital Gains FAQs</title>
+			
+		
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+		<meta name="Title" content="Capital Gains FAQs" />
+		
+		
+		<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+		
+	 
+<!-- Begin /common/components/css.jsp -->
+
+	<!-- Begin /investors/components/css.jsp -->
+<link rel="stylesheet" type="text/css" href="/css_1/modalbox.css"  media="screen" />
+<link rel="stylesheet" type="text/css" href="/css_1/investors.css">
+<link rel="stylesheet" type="text/css" href="/css_1/inv-print.css" media="print">
+
+<!-- End /investors/components/css.jsp -->	 
+	
+	
+	
+<!-- End /common/components/css.jsp -->
+    
+    	
+        
+        <link rel="stylesheet" type="text/css" href="/css_1/ofi_accordion.css" />
+        
+    
+    
+<!-- Begin /common/components/javascript.jsp -->
+
+
+<script type="text/javascript" src="/javascript_1/investors.js"></script>
+
+<script type="text/javascript" src="/javascript_1/jsvalidate-min.js" ></script>
+
+<!--End /common/components/javascript.jsp-->
+    <script type="text/javascript" src="/javascript_1/article.js"></script>
+    </head>
+	
+	<!--Include body tag--> 
+    <body >
+		
+    <!--inlcude top navigation-->
+    
+<!-- Begin /common/components/top_navigation.jsp -->
+
+<!-- Begin /investors/components/top_navigation -->
+
+
+
+
+
+
+<!--start session timeout warning - only if logged-in and only if external user-->
+
+<!--end session timeout warning-->
+
+
+		
+<!--End Determine # of items in cart-->
+<div id="wrapper" class="investor">
+  <div id="header" class="">
+  <img src="/images/investors/logo_print.gif" id="logo_print" border="0" ><a href="/investors/index.jsp"><img src="/images/investors/logo.gif" id="logo" border="0" ></a>
+    <div id="top-nav"> <span>Literature Cart <img src="/images/investors/cart.gif" alt="Cart" /> <a href="/www/litcenter/litViewCart.do" class="yellow"><input type="text" id="cartCount" value="0" /> items</a></span>
+      <ul>
+        <li><a href="/investors/index.jsp">Home</a></li>
+        |
+        <li><a href="/www/pages/advisors/index.jsp">Advisor Center</a></li>
+        |
+        <li><a href="/targetedCopy/CommonPages/companyNews/aboutUs.jsp">About Us</a></li>
+        |
+        <li><a href="/investors/contactUs/contactUs.jsp">Contact Us</a></li>
+        |
+        <li><a href="/targetedCopy/CommonPages/jobOpenings/careers.jsp">Careers</a></li>
+        |
+        <li><a href="/investors/siteFAQ1.jsp">Help</a></li>
+        |
+        <li><a href="/investors/sitemap/sitemap.jsp">Site Map</a></li>
+        |
+        <li>
+		
+			<a href="/www/preLoginServlet" onclick="Effect.toggle('toggle_appear', 'blind'); return false;">Log In</a>
+		  
+		</li>
+      </ul>
+    </div>
+    
+    
+
+	<div id="toggle_appear" style="display:none; z-index: 500;">
+	  <a href="#" onclick="Effect.toggle('toggle_appear', 'blind'); return false;"><img src="/images/investors/forms/close.gif" alt="close" border="0" align="right"/></a>
+      <form id='f2' name='f2' action='/www/postLoginServlet' method='POST' autocomplete="off" onSubmit="return verifySelect2();">
+        <label>User ID</label>
+        <input id="userID" name="j_username" value="" maxlength="64" type="text">
+        <br />
+        <label>Password</label>
+        <input name="j_password" value="" type="password">
+        <br/>
+     	<label id="loginLabel2">Log In Type</label>
+	     <select name="loginType" onchange="remember(this);" id="loginType">
+			<option selected="selected" value="Select">Choose...</option>
+			<option  value="ADVISOR">I'm an Advisor</option>
+			<option  value="INVESTOR">I'm an Investor </option>
+			<option  value="PLAN_ADMIN">I'm a Plan Admin</option>
+			
+			</select>
+			<script type="text/javascript">
+			    Event.observe(window, 'load', function() { remember($("loginType")) });
+				function remember(sel) 
+				{
+					if (sel)
+					{
+				    	var val = sel.options[sel.selectedIndex].value;
+				 	    var div = $("rememberMe");
+				 	    div.style.display = ( val == "ADVISOR") ? "block" : "none";
+					}
+				}
+			</script>
+		<br />
+        <div id="rememberMe" style="display:none;">Remember Me:<input type="checkbox" name="rememberMe" />  <a href="#" class="loginText" style="" onmouseover="showhint('<b>Remember Me On This Computer</b><br><br>By selecting &quot;Remember Me&quot;, you agree to have your user ID and password stored on this computer so that you will be automatically logged in each time you return.<br><br>For your protection, you will, however, need to enter your user ID and password to access account information or your personal profile information.<br><br>Please do not use this feature if you use a public computer or share a computer.<br><br>To cancel use of this feature in the future, simply log in with &quot;Remember Me&quot; unchecked.', this, event, '350px')"><img src="/images/accountPages/i_icon2.gif" border="0"/></a></div>
+        <br />
+        <input src="/images/investors/forms/btn_login.jpg" value="submit" alt="Submit" height="15" type="image" width="45" class="img">
+        <h4><a href="/www/pages/common/forgot_id_pass.jsp">Forgot your User ID or Password?</a></h4>
+        <h4><a href="/www/pages/common/registration.jsp ">New? Register Now</a></h4>
+        <h4><a href="/articles/article_08-27-10-105709.jsp">Log in Help</a></h4>
+      </form>
+	  
+    </div>
+
+
+
+	 <div id="main-nav">
+	 <ul id="nav_drop" onMouseOver="hideSelectBoxes();" onMouseOut="showSelectBoxes();">
+		<!--start dynamic menu creation-->
+		<!--include main navigation-->
+		
+						
+							<li>
+								<a  href="/investors/overview/accounts_services_overview.jsp" target="_top">Accounts & Services</a>
+								
+									<ul>
+										
+												<li><a href="/investors/index.jsp" target="_top">Home</a>
+													
+												</li>
+											
+												<li><a href="/investors/overview/accounts_services_overview.jsp" target="_top">Overview</a>
+													
+												</li>
+											
+												<li><a href="/www/pages/investors/accountPages/portfolio.jsf" target="_top">My Accounts</a>
+													
+												</li>
+											
+												<li><a href="/www/pages/investors/profile/investorProfile.jsf" target="_top">My Profile</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-29-09-170551.jsp" target="_top">Investor Services</a>
+													
+												</li>
+											
+												<li><a href="/www/pages/common/registration.jsp" target="_top">New User Registration</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_03-13-12-162810.jsp" target="_top">Retirement Resources Center</a>
+													
+												</li>
+											
+												<li><a href="/planAdmin/index.jsp" target="_top">Plan Sponsors</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-29-09-161845.jsp" target="_top">FAQs</a>
+													
+												</li>
+											
+									</ul>
+								
+							</li>
+						
+					
+						
+							<li>
+								<a  href="/investors/overview/product_overview.jsp" target="_top">Products</a>
+								
+									<ul>
+										
+												<li><a href="/investors/overview/product_overview.jsp" target="_top">Overview</a>
+													
+												</li>
+											
+												<li><a href="/fund/investors/performance" target="_top">Mutual Funds/Performance</a>
+													
+												</li>
+											
+												<li><a href="/fund/investors/prices" target="_top">Prices</a>
+													
+												</li>
+											
+												<li><a href="/fund/investors/morningstar/" target="_top">Morningstar Highlights</a>
+													
+												</li>
+											
+												<li><a href="/fund/investors/lipper/" target="_top">Lipper Highlights</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_08-19-11-122244.jsp" target="_top">Globalize Your Thinking</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_07-15-10-184626.jsp" target="_top">Rochester Municipal Funds</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_01-07-10-102802.jsp" target="_top">Portfolio Builder</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-27-09-123313.jsp" target="_top">Retirement Plans</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-27-09-142936.jsp" target="_top">Education Savings Plans</a>
+													
+												</li>
+											
+									</ul>
+								
+							</li>
+						
+					
+						
+							<li>
+								<a  href="/investors/overview/planning_and_research_overview.jsp" target="_top">Planning & Research</a>
+								
+									<ul>
+										
+												<li><a href="/investors/overview/planning_and_research_overview.jsp" target="_top">Overview</a>
+													
+												</li>
+											
+												<li><a href="/archives/commentaries/" target="_top">Commentaries</a>
+													
+												</li>
+											
+												<li><a href="/archives/webman_on_the_markets/latest" target="_top">Market Review</a>
+													
+												</li>
+											
+												<li><a href="/archives/investor_timely_topics/" target="_top">News & Timely Topics</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_09-24-10-170420.jsp" target="_top">Tools & Calculators</a>
+													
+												</li>
+											
+												<li><a href="/archives/video" target="_top">Multimedia</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-23-09-103021.jsp" target="_top">Investing for Every Life Stage</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-29-09-123633.jsp" target="_top">Planning & Education</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_12-21-09-134020.jsp" target="_top">Retirement Planning</a>
+													
+												</li>
+											
+												<li><a href="/articles/article_10-30-09-120038.jsp" target="_top">Tax Center</a>
+													
+												</li>
+											
+									</ul>
+								
+							</li>
+						
+					
+						
+							<li>
+								<a  href="/litcenter/funds/home" target="_top">Forms & Literature</a>
+								
+									<ul>
+										
+												<li><a href="/investors/overview/forms_and_literature_overview.jsp" target="_top">Overview</a>
+													
+												</li>
+											
+												<li><a href="/litcenter/forms/non_retirement_accounts" target="_top">Account Forms</a>
+													
+												</li>
+											
+												<li><a href="/litcenter/funds/home" target="_top">Forms & Literature</a>
+													
+												</li>
+											
+												<li><a href="/fund/investors/funddocuments" target="_top">Fund Documents</a>
+													
+												</li>
+											
+									</ul>
+								
+							</li>
+						
+					
+<!--end dynamic menu creation-->
+</ul>
+</div>
+		
+
+<div id="search-interior">
+      <form method="post" name="searchForm" id="searchForm" action="/www/investors/siteSearch">
+         <input type="text" name="query" maxlength="50" value="Search" onclick="this.value='';"/>
+         <input style="display:none;" type="hidden" name="maxResults" value="200"/>
+         <input style="display:none;"  type="hidden" name="resultsPerPage" value="20"/>
+		 <input type="image" src="/images/investors/forms/btn_go.gif" alt="Go" id="img3" >
+		 <!--
+         <div id="search_radio">
+           <input type="radio" value="web" id="searchOptionWeb" name="searchOption" CHECKED>
+           Website
+           <input type="radio" value="lit" id="searchOptionLit" name="searchOption">
+           Lit Center </div>
+         -->
+       </form>	   
+   </div> 
+
+</div>
+<!-- end Header -->
+<!-- begin include omniture file -->
+
+
+
+<!-- Begin /www/pages/investors/components/omniture.jsp -->
+
+<!-- SiteCatalyst code version: H.9.
+Copyright 1997-2007 Omniture, Inc. More info available at
+http://www.omniture.com -->
+
+<script language="JavaScript" src="/javascript_1/s_code.js"></script>
+
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on the next lines. */
+
+/*s.props*/
+/*User Level Metadata*/	
+s.prop40="";
+s.prop43="";
+s.prop41="P";
+s.prop45="Bronze: < $1K";
+s.prop44="";
+s.prop46="";
+s.prop27="INVESTOR";
+s.prop47="null";
+
+/*Page Level Metadata*/
+
+	s.eVar14=s.prop14="146, 36, 113, 256";
+
+s.prop9="Peter Ellman";
+s.prop13="Capital Gains FAQs";
+
+	s.eVar38=s.prop50="KXE7DU7SX";
+
+	s.eVar31=s.prop10="KOW2RFKT2";
+
+
+/*evars*/
+/*User Level Metadata*/	
+s.eVar40="";
+s.eVar43="";
+
+s.eVar41="P";
+s.eVar45="Bronze: < $1K";
+s.eVar44="";
+s.eVar46="";
+
+s.eVar13="Capital Gains FAQs";
+
+s.eVar47="null";
+
+
+s.eVar16="";
+
+/* Plugin Example: getDaysSinceLastVisit 1.0*/
+s.prop48=s.getDaysSinceLastVisit(); 
+
+//--></script>
+
+<!-- End /www/pages/investors/components/omniture.jsp -->
+
+<!-- end include omniture file -->		
+<!-- End /investors/components/top_navigation.jsp -->
+
+<!-- End /common/components/top_navigation.jsp -->
+    
+    	
+        
+            
+<!-- Begin /common/components/column_left.jsp -->
+
+<!-- Begin /investors/components/column_left.jsp -->
+<div id="main-content" class="clearfix">
+
+<div id="col-1">
+
+
+
+
+
+
+<!--begin /components/text_05-25-10-151128.jsp-->
+
+
+
+<a href="http://www.facebook.com/oppfunds/app_401733713171732" target="_blank"><img border="0" src="/images/investors/handsignals/2012-facebook-hs-inside-banner.jpg" alt="Facebook" title="Facebook" width="210" height="227"/></a>
+
+<!--end /components/text_05-25-10-151128.jsp-->
+
+
+
+<script type="text/javascript">
+		document.observe("dom:loaded", function() {
+			accordionNav = new subnavAccordion({id: "subNavigation"});
+		});
+</script>
+
+<div id="subNavigation">
+<!--  Begin /investors/components/investor_navigation_level_three_four.jsp -->
+
+<!--  End /investors/components/investor_navigation_level_three_four.jsp --> 
+
+</div>
+<!-- End generation of level 3 and 4 navigation -->
+<!-- End /investors/components/investor_navigation_level_three_four.jsp -->
+
+
+
+
+<div id="rating">
+	<h4>Rate this article
+    
+    
+     
+      
+          			
+      
+      		
+            
+              <script type="text/javascript">
+										function postRating(val)
+										{
+											var url = '/common/components/star_rating/popup.jsp?origURL=/articles/article_11-02-09-143142.jsp&visitor_id=132465440';
+											var article_id = '';
+											if (article_id) {
+												url += '&article_id=' + article_id + '&rating=' + val;
+											}
+											else {
+												url += '&rating=' + val;
+											}
+											window.open(url,'windowname1', 'width=1, height=1,left=5000,top=5000'); 
+											//alert ("in call back function" + val);
+											 s1.locked = true;
+											 $('thanks').update('Thanks for rating this article.');
+
+										}
+										var s1 = new Stars({
+											maxRating: 5,
+											imagePath: '/images/common/star_rating/',
+											callback: postRating
+										});
+									</script>
+            
+            		
+            
+            			 
+    
+                              
+    
+                                    
+                                    
+          
+	</h4>
+    <span id="thanks"></span>
+</div>
+
+<!-- logic for special/important message includes -->
+
+
+</div>
+
+
+
+<!--center column-->
+<div id="content" class="normal">	
+<!-- End /investors/components/column_left.jsp -->
+
+
+					 
+<!-- End /common/components/column_left.jsp -->
+
+        
+    
+		
+
+  
+   		 
+              
+              
+              		<h1>Capital Gains FAQs</h1>
+              
+           
+     <!--start handsignals image-->
+	
+		
+	
+	<!--end handsignals image-->
+	
+   
+	
+<!-- Begin /common/components/personality.jsp --> 
+
+<!-- begin /www/pages/investors/components/personality.jsp --> 
+
+<!-- end /www/pages/investors/components/personality.jsp -->
+<!-- end /common/components/personality.jsp -->												
+								
+								<!--the body copy-->						
+								
+								<table><tbody><tr valign="top"><td colspan="2"><a id="top" class="bookmark" title="top" name="top"></a><p>Refer to <a href="http://www.irs.gov/" target="_blank">www.irs.gov</a> for detailed information on a wide range of tax issues.</p></td></tr><tr><td><ul><li><a href="#What_is_a_capital_gain">What is a capital gain?</a><br /></li><li><a href="#What_are_the_main_federal_income_tax_effects">What are the main federal income tax effects of owning mutual funds?</a><br /></li><li><a href="#If_I_reinvest">If I reinvest all my fund distributions, will they still be subject to income taxes?</a></li><li><a href="#If_I_receive">If I receive a capital gains distribution but owned my shares less than a year, how is it taxed?</a></li><li><a href="#What_if_the_fund_distributes">What if the fund distributes short-term capital gains?</a></li><li><a href="#I_own_shares">I own shares of a municipal bond fund. Can I receive a taxable dividend or capital gain distribution?</a><br /></li><li><a href="#How_are_dividends">How are dividends taxed?</a><br /></li><li><a href="#How_will_I_know">How will I know how to report dividends, short-term gains and long-term capital gains distributions on my tax return?</a><br /></li><li><a href="#What_are_returns_of_capital">What are "returns of capital" and how are they taxed?</a><br /></li></ul></td><td valign="top" width="50%"><ul><li><a href="#What_is_meant_by">What is meant by the "record date" for a distribution?</a><br /></li><li><a href="#What_is_meant_by_the_ex-date">What is meant by the "ex-date" for a distribution?</a><br /></li><li><a href="#Why_does_the_funds_net_asset">Why does the fund's net asset value per share drop when a distribution is paid?</a><br /></li><li><a href="#How_do_I_compute">How are capital gains distributions taxed for Federal income tax purposes?</a>&#160;<br /></li><li><a href="#What_is_considered">What is considered a short-term capital gain?</a><br /></li><li><a href="#What_is_considered_a_long-term">What is considered a long-term capital gain?</a><br /></li><li><a href="#What_is_the_wash_sale_rule">What is the "wash sale" rule?</a><br /></li><li><a href="#So_why_do_Funds">So why do Funds have to pay out these taxable gains?</a><br /></li><li><a href="#Can_a_fund_pay">Can a fund pay a capital gain distribution if the fund's net asset value has fallen?</a><br /></li><li><a href="#Taxtime_paperwork">What paperwork do I need to save for tax time?</a><br /></li><li><a href="#form_div">Why didn't I receive a Form 1099-DIV for the prior tax year?</a></li></ul></td></tr><tr><td valign="top" colspan="3"><hr size="1" noshade="noshade" /><h5><a id="What_is_a_capital_gain" class="bookmark" title="What_is_a_capital_gain" name="What_is_a_capital_gain">What is a capital gain?</a></h5><p>A capital gain is the profit that results from selling a capital asset such as a mutual fund share at a price higher than the purchase price. In contrast, a capital loss results from selling a capital asset for a price lower than the purchase price.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a>&#160;</p><h5><a id="What_are_the_main_federal_income_tax_effects" class="bookmark" title="What_are_the_main_federal_income_tax_effects" name="What_are_the_main_federal_income_tax_effects">What are the main federal income tax effects of owning mutual funds?</a></h5><p>In general, investors holding mutual fund shares in taxable accounts may be subject to income taxes as a result of two types of events (as noted above):</p><ol><li>When the investor sells or exchanges shares at a profit, realizing a capital gain.</li><li>When the fund pays dividends from investment income and short-term capital gains or pays capital gains distributions.</li></ol><p>Income dividends represent the interest and dividend income the fund received on its portfolio and short-term capital gains the fund earned on securities the fund sold. Capital gains distributions represent the profits a fund makes when it sells portfolio securities held more than 1 year and realizes capital gains. In both cases, the fund typically "passes through" that income or gain to its shareholders in the form of dividends or capital gains distributions.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="If_I_reinvest" class="bookmark" title="If_I_reinvest" name="If_I_reinvest">If I reinvest all my fund distributions, will they still be subject to income taxes?</a></h5><p>Distributions of dividends and capital gains by your fund may be subject to income tax regardless of whether you receive them in cash or reinvest them in additional shares.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="If_I_receive" class="bookmark" title="If_I_receive" name="If_I_receive">If I receive a capital gains distribution but owned my shares less than a year, how is it taxed?</a></h5><p>Even if you held your shares less than a year, a distribution of long-term capital gains by the fund is subject to tax as a long-term capital gain.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_if_the_fund_distributes" class="bookmark" title="What_if_the_fund_distributes" name="What_if_the_fund_distributes">What if the fund distributes short-term capital gains?</a></h5><p>If a fund distributes short-term capital gains as part of its ordinary income dividends, they are taxed as ordinary income, not capital gains. They are reported as "dividend income" on your tax return.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="I_own_shares" class="bookmark" title="I_own_shares" name="I_own_shares">I own shares of a municipal bond fund. Can I receive a taxable dividend or capital gain distribution?</a></h5><p>Even though municipal bond funds try to earn income that will be exempt from federal income taxes, it is possible that a municipal bond fund might pay taxable ordinary income dividends and taxable capital gains distributions. For example,the fund might have a long-term gain when it sells a municipal bond that has appreciated in value.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="How_are_dividends" class="bookmark" title="How_are_dividends" name="How_are_dividends">How are dividends taxed?</a></h5><p>In the past, taxable dividends were taxed as ordinary income, at rates as high as 35%. With the Jobs and Growth Tax Relief Reconciliation Act (JGTRRA) of 2003, dividends received from U.S. companies, certain mutual funds and so-called "qualified" foreign corporations (generally those incorporated in a U.S. possession, eligible for benefits under a U.S. tax treaty that meets certain criteria or readily traded on an established U.S. exchange as stock or an ADR) are taxed at a top rate of 15%. For lower income individuals, the tax rate on dividends drops to 5%, dropping to 0% in 2008. The 15% and 5% rates are effective for dividends received beginning January 2003. These reduced dividend rates (which do not apply to income from bonds and certain other securities) expired on January 1, 2011.</p><p>H.R. 4853, The Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010 extended the tax cuts through December 31, 2012. The maximum tax rate on qualified dividend income and long-term capital gains during this period is 15% and 0% for taxpayers in the lowest two lowest tax brackets.</p><p>The law allows mutual funds to pass through qualified dividends, but to qualify for the lower tax rates, shareholders must have held shares for more than 60 days during a 120-day period that begins 60 days before the fund's ex-dividend date. Refer to the instructions on Form 1040 for a complete list of non-qualifying dividend exceptions. The amount of qualified dividends paid by your fund will be provided on Form 1099-DIV. If you meet the holding period requirements, you may be eligible for the reduced income tax rates on that dividend.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="How_will_I_know" class="bookmark" title="How_will_I_know" name="How_will_I_know">How will I know how to report dividends, short-term gains and long-term capital gains distributions on my tax return?</a></h5><p>In January, the fund will send you a Form 1099 which will identify all the distributions the fund paid to you during the tax year, and will indicate whether they are ordinary income dividends or long-term capital gains distributions.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_are_returns_of_capital" class="bookmark" title="What_are_returns_of_capital" name="What_are_returns_of_capital">What are "returns of capital" and how are they taxed?</a></h5><p>A return of capital is a distribution by a fund that is not from its earnings or profits. It might occur, for example, if a fund has to re-characterize part of a previously-distributed dividend as a result of losses that the fund incurs after the dividend was paid. A return of capital is non-taxable to the extent of your basis in the shares. You would reduce your basis in the shares by the amount of the distribution. Any return of capital will be separately identified when you receive your tax statements.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_is_meant_by" class="bookmark" title="What_is_meant_by" name="What_is_meant_by">What is meant by the "record date" for a distribution?</a></h5><p>The record date is the date on which a fund determines which shareholders are entitled to a distribution of dividends and/or capital gains. Shareholders "of record"&#8212;those who own shares of the fund on the record date&#8212;receive the distribution; shareholders who invest after the record date do not.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_is_meant_by_the_ex-date" class="bookmark" title="What_is_meant_by_the_ex-date" name="What_is_meant_by_the_ex-date">What is meant by the "ex-date" for a distribution?</a></h5><p>This refers to the date when a distribution of dividends and/or capital gains is deducted from a mutual fund's assets or set aside for payment to shareholders. On the ex-dividend date, the fund's share price (the net asset value per share) drops by the amount of the distribution (the net asset value may also change on that date because of market activity affecting the value of the fund's portfolio holdings).</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="Why_does_the_funds_net_asset" class="bookmark" title="Why_does_the_funds_net_asset" name="Why_does_the_funds_net_asset">Why does the fund's net asset value per share drop when a distribution is paid</a></h5><p>On the day that a fund distributes a dividend or capital gains to shareholders, the fund's net asset value per share (for each class of shares) drops by the amount of the dividend or distribution per share, to reflect that the distribution has been paid out. The drop in the net asset value does not reflect a loss in the shareholder's overall investment value, but instead indicates that a portion of that value has been given to the shareholder as a capital gain or income dividend. Keep in mind that there may also be appreciation or depreciation in the fund value from the market activity on that day that will also be reflected in the NAV.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="How_do_I_compute" class="bookmark" title="How_do_I_compute" name="How_do_I_compute">How are capital gains distributions taxed for Federal income tax purposes?</a></h5><p>In 2003, President Bush signed the Jobs Growth and Tax Relief Reconciliation Act (JGTRRA) of 2003 reducing the capital gain rates. Capital gains are now taxed at 15% (5% for individuals in the lowest two tax brackets dropping to 0% in 2008). This provision expires at the end of 2008 unless permanently extended. A mutual fund's capital gain distribution will be taxed at the new capital gain rate. It is currently anticipated that all of the estimated capital gain amounts will be subject to the reduced capital gain rates. Capital gains may also be taxed under state capital gains taxes.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_is_considered" class="bookmark" title="What_is_considered" name="What_is_considered">What is considered a short-term capital gain?</a></h5><p>For federal income tax purposes, if an investment is held for one year or less, any gain on the sale of the investment is considered short-term and is taxed as ordinary income at your marginal tax rate, which can range from 15% to 39.6% under federal income tax rules.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_is_considered_a_long-term" class="bookmark" title="What_is_considered_a_long-term" name="What_is_considered_a_long-term">What is considered a long-term capital gain?</a></h5><p>For federal income tax purposes, if an investment is held for more than one year, any gain on the sale of the investment is considered long-term and is taxed at the capital gains tax rate of either 20% or 10% for dispositions before May 6, 2003 and taxed at 15% or 5% for dispositions made after May 5, 2003.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="What_is_the_wash_sale_rule" class="bookmark" title="What_is_the_wash_sale_rule" name="What_is_the_wash_sale_rule">What is the "wash sale" rule?</a></h5><p>Under the Internal Revenue Code, the wash sales rules are very complicated. In general, as applied to a mutual fund investment, a "wash sale" is the sale and subsequent repurchase of shares of the same mutual fund within 30 days. The wash-sale period starts 30 days before the share is sold and ends 30 days after that sale. The IRS does not allow investors to use a "wash sale" as a tactic for realizing a capital loss for tax purposes. If the transaction is subject to the wash sale rule, and if there is any loss on the sale (including a difference in value because of the sales charge that was paid), it is not recognized for federal income tax purposes and generally cannot be used to offset capital gains. Investors would have to wait at least 30 days before repurchasing shares in a fund sold for a loss. This could have negative investment effects for your portfolio strategy, depending on market activity.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="So_why_do_Funds" class="bookmark" title="So_why_do_Funds" name="So_why_do_Funds">So why do Funds have to pay out these taxable gains?</a></h5><p>Many mutual funds try to qualify as a "regulated investment company" under the Internal Revenue Code, so that they can "pass through" their income and gains to shareholders without having to pay taxes at the fund level on the dividends and capital gains they realize. This avoids a "double taxation" on that income - taxation at both the fund and shareholder level. To qualify as a regulated investment company for those purposes, the fund must pay out at least 90% of the income and gains it realizes for its tax year. In addition, to avoid penalty federal excise taxes at the fund level, each calendar year a fund must pay out 98% of its calendar year income and 98% of its capital gains realized through October 31 of each year.</p><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="Can_a_fund_pay" class="bookmark" title="Can_a_fund_pay" name="Can_a_fund_pay">Can a fund pay a capital gain distribution if the fund's net asset value has fallen?</a></h5><p>Even if a fund's share price has fallen due to stock market volatility or for other reasons, it is possible that the fund may have realized capital gains on some of the securities it sold during the year (and that the gains exceed capital losses in the portfolio). As a result, to avoid the excise taxes described above, and to comply with the distribution requirements under the Internal Revenue Code to qualify as a "regulated investment company," the fund may have to pay out those gains to shareholders.</p><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="Taxtime_Paperwork" class="bookmark" title="Taxtime_Paperwork" name="Taxtime_Paperwork">What paperwork do I need to save for tax time?</a>&#160;&#160;&#160;&#160;&#160;</h5><p>Knowing what to save ahead of time to make tax preparation for you (and your accountant) as easy as possible:</p><ul><li>Keep confirmation statements of mutual fund and other securities purchased and sold, including execution prices and dates</li><li>Keep all statements (monthly and quarterly) and all 1099 forms: 
+
+<ul><li>Your 1099-B will show your proceeds from the sale of securities and other capital assets</li><li>Your 1099-INT will show the interest you've received</li><li>Your 1099-G will show any state tax refunds or other government payments you've received</li><li>Your 1099-DIV will show the dividend income you've received</li><li>Your 1099-SSA will show your Social Security earnings.</li><li>Your 1099-R will show distributions from IRAs, pensions and annuities you've received</li></ul></li><li>Keep records of how you acquired any securities (purchase, inheritance, gift, etc.) and your cost basis</li><li>Keep records if you donate stock (or cash) to a charitable organization (what you donated, the date and the value)</li><li>Keep records if you give stock or mutual fund shares as a gift (what you gave, the date and the value)</li></ul><br /><hr size="1" noshade="noshade" /><p><a href="#top"><img border="0" alt="Back to top" src="/images/btn_top.gif" width="38" height="14" /></a></p><h5><a id="form_div" class="bookmark" title="form_div" name="form_div">Why didn&#8217;t I receive a Form 1099-DIV for the prior tax year?</a></h5><p>There are two main reasons why you may not have received a Form 1099-DIV. The most common reason is that none of your investments paid a dividend or capital gain for the tax year in question. The second, less common, reason is that we do not generate tax forms to report distribution amounts that are less than $10. Remember that a fund's distribution is never guaranteed.</p><p>Please keep in mind that any capital gains paid by a fund come from the sale of securities within that fund. If the portfolio manager sells a security and realizes a gain on that investment, the amount of the gain is considered taxable income. Typically, mutual funds will pass this gain, along with any associated tax liabilities, to their shareholders. There are a number of reasons that a fund may not have significant, or any, capital gains for a given year. For example, if a fund does not sell any of its securities during the year, it would not have any capital gains to distribute even if the underlying securities had performed very well. Additionally, if securities sold within the portfolio were worth less than they were at the time of purchase, the fund realizes a loss on that investment, and there is nothing to distribute. Most of the time a fund will realize both gains and losses on various securities sold throughout the year. If there is a net gain, that amount will usually be distributed amongst the funds' shareholders.</p><p>For more information regarding Form 1099-DIV and other tax related matters, visit our <a href="/articles/article_10-30-09-120038.jsp">Tax Center</a>. If any tax forms were generated for your account(s), you may access them online by selecting "My Accounts" from the "Accounts &amp; Services" tab at the top of the screen, logging in to your account(s), and then selecting the "Documents" tab.</p><br /></td></tr></tbody></table>
+								<!--end body copy-->
+								<!--Begin Callout-->
+																	
+								<!--End Call Out-->
+								<!--more article copy-->						
+								
+								
+								<!--end more article copy-->	
+
+								
+								
+								
+								
+								
+								<!-- Footnotes -->
+                               
+                               		
+                                    
+                                    
+                                    <div id="footnotes">
+										
+                                    
+                               
+                            	
+								<!--begin footnote section-->
+								  
+								
+								
+									
+		
+								
+								<p>Saving these documents will help you keep track of important information like your dividend reinvestments, IRA and other retirement plan contributions.</p>
+
+								<!--end footnote nextion-->
+					
+								
+									
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+		                		 
+                                
+                                
+                                
+                                
+
+
+<!-- Begin /common/components/footnote_downloadProspectusStd.jsp -->
+<!--begin /investors/components/footnotes/standard.jsp-->
+<p><b>Shares of Oppenheimer funds are not deposits or obligations of any bank, are not guaranteed by any bank, are not insured by the FDIC or any other agency, and involve investment risks, including the possible loss of the principal amount invested.</b></p>
+<p><b>Before investing in any of the Oppenheimer funds, investors should carefully consider a fund's investment objectives, risks, charges and expenses.  Fund prospectuses and summary prospectuses contain this and other information about the funds, and may be obtained by asking your financial advisor, visiting <a href="http://www.oppenheimerfunds.com">oppenheimerfunds.com</a>, or calling 1.800.CALL OPP (225.5677). <a href="/fund/investors/documents">Read prospectuses and summary prospectuses</a> carefully before investing.</b></p>
+<p>Oppenheimer funds are distributed by OppenheimerFunds Distributor, Inc.<br>Two World Financial Center, 225 Liberty Street, New York, NY  10281-1008</p>
+<!--request uri: /articles/article_11-02-09-143142.jsp-->
+<!--end /investors/components/footnotes/standard.jsp-->
+
+<!-- End /common/components/footnote_downloadProspectusStd.jsp -->
+
+                                
+                                </div> 
+                                
+                                
+                                	            
+				
+		
+		
+		<!--include bottom navigation-->
+        
+    	
+        
+            
+<!-- Begin /common/components/bottom_2_col.jsp --> 	
+
+
+<!-- Begin /investors/components/bottom_2_col.jsp -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function popUp(URL) {
+win = window.open(URL, "Title", 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=625,height=725,left=300,top=25');
+}
+// End -->
+</script>
+
+	</div> <!-- end main-content -->
+
+<div id="footer">
+<div id="footer-left">
+
+			
+		<img src="/images/investors/email.gif" border="0"/> <a href="#" onclick="popUp('/common-web/pages/investors/emailPageLink.jsp?pageLink=' + window.location.href);">Email this page</a> | 
+		 
+		<a href='javascript:print()' class='print'>Print this page</a>	
+		<script type="text/javascript">
+		if ($('content'))
+		{
+			document.write('| <a href="#" onclick="decreaseFontSize();this.blur();return false;"><img src="/images/investors/font-dec.gif" border="0" /></a> <a href="#" onclick="increaseFontSize();this.blur();return false;"><img src="/images/investors/font-inc.gif" border="0" /> </a>');
+		}
+		</script>
+		<script type="text/javascript" src="/javascript_1/bottom.js"></script>
+
+</div>
+<div id="footer-right"><p><a href="/commonjsp/accessPolicy.jsp" target="_top">Online Account Access Policy</a> | <a href="/articles/article_01-06-10-161520.jsp" target="_top">PRIVACY/LEGAL NOTICES</a> | <a href="/investors/security.jsp" target="_top">SECURITY</a> | <a href="/externalLinks/digitalAssetRedirect.jsp?alias=business_continuity_plan" target="_blank">Business Continuity Plan</a></p><p style="font: 10pt tahoma;"><sup>&copy;</sup> 2012 OppenheimerFunds Distributor, Inc. All rights reserved.</p> </td>
+</div>
+
+</div><!--  end wrapper -->
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  Begin ad beacon content -->
+<script type="text/javascript">
+/* Record Doubleclick impression.  This should only be called from within the page URI matches below.
+	Injects an iframe sourcing a remote call to doubleclick */
+function injectDoubleclickIframe(src, type, cat) {
+  var axel = Math.random() + "";
+  var a = axel * 10000000000000;
+  var linkreefer = "" + window.location.protocol + "//fls.doubleclick.net/activityi;src=" + src + ";type=" + type + ";cat=" + cat + ";ord=" + a + "?";
+  var iframe = new Element('iframe', {'src': linkreefer });
+	$(iframe).setStyle({
+	  display: 'none',
+	  height: '0px',
+	  width: '0px'
+	});
+
+  var body = document.getElementsByTagName("body")[0]; 
+  $(body).insert({top:iframe});
+
+}
+
+/* Should be called directly for any event-based call to double-click.  For example, onclick or onload of a story layer */
+function callDoubleclick(pageReference, src, type, cat) {
+	if (true && pageReference == 'weeklyCommentaryItem1') {
+		injectDoubleclickIframe('2674256', 'globa406', 'globa706');	
+                }
+	if (true && pageReference == 'weeklyCommentaryItem2') {
+		injectDoubleclickIframe('2674256', 'globa406', 'globa169');
+	}
+                if (true && pageReference == 'ourFundsEqutiy') {
+		injectDoubleclickIframe('2674256', 'globa139', 'globa403');
+	}
+                if (true && pageReference == 'ourFundsDebt') {
+		injectDoubleclickIframe('2674256', 'globa139', 'globa212');
+	}
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+window.trackalyzerModal = function() {
+
+	return;
+
+var i;
+var llactid;
+var myid;
+
+myid = 1;
+mypage = escape('/the_rochester_way/learn_more_form.jsp');
+myref = escape(document.referrer);
+myip = escape(location.hostaddress);
+
+if (i!="undefined")
+    {
+	if (i>10000)
+	{
+        myid = i;
+	}
+    }
+
+if  (llactid!="undefined")
+    {
+	if (llactid>10000)
+	{
+        myid = llactid;
+	}
+    }
+
+if (myref=="")
+    {
+     myref="None";
+    }
+if (mypage=="")
+    {
+    mypage="Unavailable";
+    }
+var linkreefer = "https://trackalyzer.com:443/trackalyze_secure.asp?r=" + myref + "&p=" + mypage + "&i=" + myid;
+     var img = new Element('img', {'src': linkreefer });
+ 
+     var body = document.getElementsByTagName("body")[0];
+ 
+     $(body).insert({bottom:img});
+
+
+ window.Trackalyzer = function(myid, page)
+{
+	var mypage = escape('/the_rochester_way/learn_more_form.jsp');
+	var myref = escape(document.referrer);
+	var myip = escape(location.hostaddress);
+	var forward = false;
+if (page!=null)
+	{
+	mypage=page;
+	forward=true;
+	};
+if (myref=="")
+    {
+     myref="None";
+    };
+if (mypage=="")
+    {
+    mypage="Unavailable";
+    };
+var linkreefer = "https://trackalyzer.com:443/trackalyze_secure.asp?i=" + myid + "&r=" + myref + "&p=" + mypage + "&f=" + forward;
+ var img = new Element('img', {'src': linkreefer });
+ 
+     var body = document.getElementsByTagName("body")[0];
+ 
+     $(body).insert({bottom:img});
+
+if (forward==true)
+	{
+	window.location = (mypage)
+	};
+}
+}
+</script>
+
+
+
+
+
+  
+
+
+<!--  End ad beacon content -->
+
+
+
+                 
+
+<script>
+
+</script>
+<!-- End /investors/components/bottom_2_col.jsp --><!--Record Pageview with Omniture-->
+<script language="JavaScript" type="text/javascript"><!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ofundsproductionoppenheimerfunds.112.2O7.net/b/ss/ofundsproductionoppenheimerfunds/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+<!-- end /common/components/bottom_2_col.jsp -->
+</body>
+</html>
+        
+    
+	
+
+
+
+
+
+
+
+
+
+
+

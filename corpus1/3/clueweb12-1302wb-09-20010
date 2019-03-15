@@ -1,0 +1,464 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-02T04:23:17Z
+WARC-TREC-ID: clueweb12-1302wb-09-20010
+WARC-Target-URI: http://www.meltchocolates.com/health-benefits-of-chocolate.aspx
+WARC-Payload-Digest: sha1:YDKPWBD24MXXENPQVNBXSUKRZZQ2QO2B
+WARC-IP-Address: 62.89.145.86
+WARC-Record-ID: <urn:uuid:15e44e97-9d21-434b-87c5-1c143b9bafba>
+Content-Type: application/http; msgtype=response
+Content-Length: 64618
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 64377
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Date: Mon, 02 Apr 2012 04:23:22 GMT
+Connection: close
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><meta name="keywords" content=" " /><meta name="description" content="The health benefits of Chocolate, the ultimate superfood! " /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	Health Benefits of Chocolate
+</title><link href="meltsite.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css" media="screen">
+  <!--
+ .sIFR-active h5, .sIFR-active h6, .sIFR-active h3.bigger {
+     visibility: hidden;
+      font-family: Verdana;
+	 
+ }
+
+  
+
+    .sIFR-active h5 {
+      font-size: 36px;  height:44px; margin-top:-5px;
+	  overflow:hidden;
+    }
+	.sIFR-active h6{
+		font-size: 40px;  height:48px; margin:0 0 5px 0;
+	  	overflow:hidden;
+	}
+	.sIFR-active h3.bigger{
+		font-size: 50px; height:58px; margin:0px 0 5px 0;
+	  	overflow:hidden;
+	}
+	-->
+  </style>
+  <script type="text/javascript">
+  	<!--
+		var FlashDetect=new function(){var self=this;self.installed=false;self.raw="";self.major=-1;self.minor=-1;self.revision=-1;self.revisionStr="";var activeXDetectRules=[{"name":"ShockwaveFlash.ShockwaveFlash.7","version":function(obj){return getActiveXVersion(obj);}},{"name":"ShockwaveFlash.ShockwaveFlash.6","version":function(obj){var version="6,0,21";try{obj.AllowScriptAccess="always";version=getActiveXVersion(obj);}catch(err){}
+return version;}},{"name":"ShockwaveFlash.ShockwaveFlash","version":function(obj){return getActiveXVersion(obj);}}];var getActiveXVersion=function(activeXObj){var version=-1;try{version=activeXObj.GetVariable("$version");}catch(err){}
+return version;};var getActiveXObject=function(name){var obj=-1;try{obj=new ActiveXObject(name);}catch(err){obj={activeXError:true};}
+return obj;};var parseActiveXVersion=function(str){var versionArray=str.split(",");return{"raw":str,"major":parseInt(versionArray[0].split(" ")[1],10),"minor":parseInt(versionArray[1],10),"revision":parseInt(versionArray[2],10),"revisionStr":versionArray[2]};};var parseStandardVersion=function(str){var descParts=str.split(/ +/);var majorMinor=descParts[2].split(/\./);var revisionStr=descParts[3];return{"raw":str,"major":parseInt(majorMinor[0],10),"minor":parseInt(majorMinor[1],10),"revisionStr":revisionStr,"revision":parseRevisionStrToInt(revisionStr)};};var parseRevisionStrToInt=function(str){return parseInt(str.replace(/[a-zA-Z]/g,""),10)||self.revision;};self.majorAtLeast=function(version){return self.major>=version;};self.minorAtLeast=function(version){return self.minor>=version;};self.revisionAtLeast=function(version){return self.revision>=version;};self.versionAtLeast=function(major){var properties=[self.major,self.minor,self.revision];var len=Math.min(properties.length,arguments.length);for(i=0;i<len;i++){if(properties[i]>=arguments[i]){if(i+1<len&&properties[i]==arguments[i]){continue;}else{return true;}}else{return false;}}};self.FlashDetect=function(){if(navigator.plugins&&navigator.plugins.length>0){var type='application/x-shockwave-flash';var mimeTypes=navigator.mimeTypes;if(mimeTypes&&mimeTypes[type]&&mimeTypes[type].enabledPlugin&&mimeTypes[type].enabledPlugin.description){var version=mimeTypes[type].enabledPlugin.description;var versionObj=parseStandardVersion(version);self.raw=versionObj.raw;self.major=versionObj.major;self.minor=versionObj.minor;self.revisionStr=versionObj.revisionStr;self.revision=versionObj.revision;self.installed=true;}}else if(navigator.appVersion.indexOf("Mac")==-1&&window.execScript){var version=-1;for(var i=0;i<activeXDetectRules.length&&version==-1;i++){var obj=getActiveXObject(activeXDetectRules[i].name);if(!obj.activeXError){self.installed=true;version=activeXDetectRules[i].version(obj);if(version!=-1){var versionObj=parseActiveXVersion(version);self.raw=versionObj.raw;self.major=versionObj.major;self.minor=versionObj.minor;self.revision=versionObj.revision;self.revisionStr=versionObj.revisionStr;}}}}}();};FlashDetect.JS_RELEASE="1.0.4";
+-->
+  </script>
+  
+<script src="includes/sifr.js" type="text/javascript"></script>
+  <script src="includes/sifr-debug.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="includes/sifr.css" type="text/css" media="screen" />
+ 
+ <script type="text/javascript">
+    <!--
+	var Journal2 = {
+		src: 'includes/flashfont.swf',
+	    ratios:[6, 1.49, 8, 1.5, 9, 1.44, 12, 1.45, 17, 1.42, 18, 1.39, 23, 1.4, 24, 1.37, 30, 1.38, 39, 1.37, 54, 1.36, 89, 1.35, 90, 1.34, 92, 1.35, 93, 1.34, 95, 1.35, 1.34]   
+	};
+	sIFR.activate(Journal2);
+	sIFR.replace(Journal2, {
+		selector: 'h5'	
+		,css: {
+			'.sIFR-root': { 'color': '#FFFFFF', 'background-color':'#3D3E46', 'font-transform': 'capitalize', 'width':'80' }
+		}		
+		,wmode:'transparent'	  
+		 ,selectable: false
+		 
+		});		
+		sIFR.replace(Journal2, {
+		selector: 'h3.bigger'	
+		,css: {
+			'.sIFR-root': { 'color': '#FFFFFF', 'background-color':'#3D3E46', 'font-transform': 'capitalize', 'width':'80' }
+		}		
+		,wmode:'transparent'	  
+		 ,selectable: false
+		 
+		});		
+	sIFR.replace(Journal2, {
+		selector: 'h6'	
+		,css: {
+			'.sIFR-root': { 'color': '#432E01',  'width':'80','text-indent': '5' }
+		}		
+		,wmode:'transparent'	  
+		 ,selectable: false
+		 
+		});		
+		-->
+			</script>
+	<script type="text/javascript" src="includes/simpletreemenu.js" ></script>
+    <!--[if lt IE 7]>
+        <link href="meltsiteIE6.css" rel="stylesheet" type="text/css" />        
+    <![endif]-->
+     <script type="text/javascript">
+     <!--
+        if (document.all && /MSIE (5\.5|6)/.test(navigator.userAgent) &&
+  document.styleSheets && document.styleSheets[0] && document.styleSheets[0].addRule)
+            {
+                document.styleSheets[0].addRule('img', 'behavior: url(includes/iepngfix.htc)');
+                document.styleSheets[0].addRule('div', 'behavior: url(includes/iepngfix.htc)');
+              
+  
+            }
+    -->
+    </script>
+    <script type="text/javascript" language="javascript" src="includes/JSslides.js"></script>
+    <script type="text/javascript" src="includes/jquery-1.2.2.js"></script>
+    <script type="text/javascript" src="includes/featuredcontentglider.js"></script>
+    
+    <!--[if lte IE 7]>
+        <style type="text/css">
+            .IE7{
+                margin-bottom:-2px;
+            }
+        </style>   
+    <![endif]-->
+</head>
+<body>
+
+<div align="center" class="maindiv_content" >
+	<div class="realbody" style="position:relative">
+	<form name="aspnetForm" method="post" action="/health-benefits-of-chocolate.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODc3MTExNjc1D2QWAmYPZBYGAgEPZBYEAgEPZBYCAgEPZBYEZg8WAh4EaHJlZgUTamF2YXNjcmlwdDp2b2lkKDApOxYCAgEPFgIeBFRleHQFBUVtcHR5ZAIFDw9kFgIeB29uZm9jdXMFFmNsZWFybWUodGhpcywnc2VhcmNoJylkAgMPZBYMAgEPZBYCAgEPFgIfAQU2PGxpPjxzdHJvbmc+SGVhbHRoIEJlbmVmaXRzIG9mIENob2NvbGF0ZTwvc3Ryb25nPjwvbGk+ZAIDD2QWAgIBDxYCHwEFHEhlYWx0aCBCZW5lZml0cyBvZiBDaG9jb2xhdGVkAgcPFgIfAQWbATxkaXYgY2xhc3M9Im92ZXJsYXkiPg0KPGRpdiBjbGFzcz0iZGl2dGV4dCI+DQo8aDMgY2xhc3M9ImJpZ2dlciI+SGVhbHRoIEJlbmVmaXRzIG9mIENob2NvbGF0ZTwvaDM+DQpDaG9jb2xhdGUgaXMgYSBzdXBlcmZvb2QgYW1vbmcgc3VwZXJmb29kcw0KPC9kaXY+PC9kaXY+ZAIJD2QWBAIBD2QWAmYPFgIfAQXqAzxsaT48YSAgaHJlZj0iYWJvdXQtdXMuYXNweCIgPkFib3V0IE1lbHQmcnNhcXVvOzwvYT48L2xpPg0KPGxpPjxhICBocmVmPSJjaG9jb2hvbGljcy1jbHViLmFzcHgiID5DaG9jb2hvbGljcyBDbHViJnJzYXF1bzs8L2E+PC9saT4NCjxsaT48YSAgaHJlZj0iY2hvY29sYXRlLXF1b3Rlcy5hc3B4IiA+Q2hvY29sYXRlIFF1b3RhdGlvbnMmcnNhcXVvOzwvYT48L2xpPg0KPGxpPjxhICBocmVmPSJob3ctdG8tdGFzdGUtY2hvY29sYXRlLmFzcHgiID5Ib3cgdG8gdGFzdGUgY2hvY29sYXRlJnJzYXF1bzs8L2E+PC9saT4NCjxsaT48YSAgaHJlZj0iaGlzdG9yeS1vZi1jaG9jb2xhdGUuYXNweCIgPlRoZSBoaXN0b3J5IG9mIGNob2NvbGF0ZSZyc2FxdW87PC9hPjwvbGk+DQo8bGk+PGEgY2xhc3M9ImFjdGl2ZSIgaHJlZj0iaGVhbHRoLWJlbmVmaXRzLW9mLWNob2NvbGF0ZS5hc3B4IiA+SGVhbHRoIEJlbmVmaXRzIG9mIENob2NvbGF0ZSZyc2FxdW87PC9hPjwvbGk+DQpkAgMPZBYCAgEPFgIfAQXTATxzcGFuIGNsYXNzPSJiaWd0ZXh0Ij5DaG9jb2xhdGUgaGFzIGJlZW4gY3JlZGl0ZWQgd2l0aCBtYW55IGhlYWx0aCBiZW5lZml0cyAtICBpdCB3YXMgZXZlbiBzdWdnZXN0ZWQgaXQgc2hvdWxkIGJlIHByZXNjcmliZWQgb24gdGhlIE5IUyEhPC9zcGFuPjxici8+PGJyLz4NCkNob2NvbGF0ZSB0aHJvdWdob3V0IGhpc3RvcnkgaGFzIGJlZW4gc2VlbiBhcyBtZWRpY2luYWxkAgsPFgIeC18hSXRlbUNvdW50AgoWFAIBD2QWAmYPFQIA6AU8ZGl2ID48aDIgY2xhc3M9InBhcmF0aXRsZSI+Q2hvY29sYXRlIGlzIGdvb2QgZm9yIHRoZSBza2luIGFuZCBsb3dlcnMgdGhlIHJpc2sgb2YgY2FuY2VyPC9oMj48YnIvPkRhcmsgQ2hvY29sYXRlIGlzIGdvb2QgZm9yIHRoZSBza2luITxici8+IDxici8+UmVjZW50IHJlc2VhcmNoIGNhcnJpZWQgb3V0IGJ5IHNjaWVudGlzdHMgYXQgdGhlIEV1cm9wZWFuIERlcm1hdG9sb2d5IENsaW5pYyBpbiBMb25kb24gc3VnZ2VzdHMgdGhhdCB0aGUgZmxhdmFub2xzLCBuYXR1cmFsbHkgb2NjdXJyaW5nIGFudGlveGlkYW50cyBmb3VuZCBpbiBkYXJrIGNob2NvbGF0ZSwgbWF5IGhlbHAgcHJldmVudCB3cmlua2xlcyBjYXVzZWQgYnkgdGhlIHN1biBhbmQgbWlnaHQgbG93ZXIgdGhlIHJpc2sgb2Ygc2tpbiBjYW5jZXIgYXMgd2VsbC4gIDxici8+IDxici8+Ik91ciBzdHVkeSByZXZlYWxlZCwgZm9yIHRoZSBmaXJzdCB0aW1lLCB0aGF0IGhpZ2gtZmxhdmFub2wgY2hvY29sYXRlIHByb3RlY3RzIHRoZSBza2luIGZyb20gaGFybWZ1bCBVViBlZmZlY3RzLiAgVGhlIG1haW4gbWVjaGFuaXNtIGlzIGxpa2VseSB0byBiZSB0aGUgYW50aS1pbmZsYW1tYXRvcnkgYW5kIGFudGlveGlkYW50IGFjdGl2aXR5IG9mIGNvY29hIGZsYXZhbm9scywiIHNhaWQgdGhlIHJlc2VhcmNoZXJzLjxici8+PGJyLz5GdWxsIGFydGljbGU6IERhaWx5IFRlbGVncmFwaCwgNXRoIE5vdmVtYmVyIDIwMDkgKHJlYWQgaXQgb25saW5lKS48L2Rpdj5kAgMPZBYCZg8VAgDcDjxkaXYgPjxoMiBjbGFzcz0icGFyYXRpdGxlIj5DaG9jb2xhdGUgJ2N1dHMgcmlzayBvZiBkeWluZyBpbiBoZWFydCBhdHRhY2sgc3Vydml2b3JzJzwvaDI+PGJyLz5IZWFydCBhdHRhY2sgc3Vydml2b3JzIHdobyBlYXQgY2hvY29sYXRlIHR3aWNlIG9yIG1vcmUgYSB3ZWVrIGNhbiBjdXQgdGhlaXIgcmlzayBvZiBkeWluZyBmcm9tIGhlYXJ0IGRpc2Vhc2UsIGEgbmV3IHN0dWR5IHN1Z2dlc3RzLiA8YnIvPjxici8+UmVzZWFyY2hlcnMgZm91bmQgdGhhdCB0aG9zZSB3aG8gcmVndWxhcmx5IGluZHVsZ2VkIHdlcmUgdXAgdG8gdGhyZWUgdGltZXMgbGVzcyBsaWtlbHkgdG8gZGllIGZyb20gdGhlIGRpc2Vhc2UgdGhhbiB0aG9zZSB3aG8gbmV2ZXIgYXRlIGNob2NvbGF0ZS4gRXZlbiBlYXRpbmcgY2hvY29sYXRlIGxlc3Mgb2Z0ZW4gY2FuIGhlbHAgdG8gcHJvdGVjdCB0aGUgaGVhcnQsIHJlc2VhcmNoZXJzIGhhdmUgZm91bmQuICA8YnIvPjxici8+UHJldmlvdXMgc3R1ZGllcyBoYXZlIHN1Z2dlc3RlZCB0aGF0IGNvY29hIGNvdWxkIGhlbHAgdG8gbG93ZXIgYmxvb2QgcHJlc3N1cmUgYW5kIHRvIGltcHJvdmUgdGhlIGZsb3cgb2YgZmxvdyBhcm91bmQgdGhlIGJvZHkuIERyIEtlbm5ldGggTXVrYW1hbCwgZnJvbSB0aGUgQmV0aCBJc3JhZWwgRGVhY29uZXNzIE1lZGljYWwgQ2VudHJlIGluIEJvc3Rvbiwgd2hvIGNvLWF1dGhvcmVkIHRoZSBzdHVkeSwgc2FpZCB0aGUgZmluZGluZ3Mgd2VyZSBzcGVjaWZpYyB0byBjaG9jb2xhdGUuICBBbnRpb3hpZGFudHMgaW4gY29jb2Egd2VyZSDigJxhIGxpa2VseSBjYW5kaWRhdGXigJ0gdG8gZXhwbGFpbiB0aGUgcG90ZW50aWFsbHkgbGl2ZS1zYXZpbmcgcHJvcGVydGllcywgaGUgYWRkZWQuIEFudGlveGlkYW50cyBhcmUgdGhvdWdodCB0byBwbGF5IGEgcm9sZSBpbiB0aGUgYWdlaW5nIHByb2Nlc3MgYW5kIHByZXZpb3VzIHN0dWRpZXMgaGF2ZSBzdWdnZXN0ZWQgdGhhdCB0aGV5IGNvdWxkIGhlbHAgdG8gcHJvdGVjdCBhZ2FpbnN0IGJvdGggaGVhcnQgZGlzZWFzZSBhbmQgY2FuY2VyLiA8YnIvPjxici8+VGhlIHJlc2VhcmNoZXJzIGZvdW5kIHRoYXQgdGhlcmUgd2FzIGEgbGluayBiZXR3ZWVuIGZhdGFsIGhlYXJ0IGF0dGFja3MgYW5kIHRoZSBhbW91bnQgb2YgY2hvY29sYXRlIGVhdGVuLCBldmVuIGFmdGVyIG90aGVyIGZhY3RvcnMgc3VjaCBhcyBvYmVzaXR5LCBzbW9raW5nIGFuZCBhbGNvaG9sIGNvbnN1bXB0aW9uLCB3ZXJlIHRha2VuIGludG8gYWNjb3VudC4gIOKAnE91ciBmaW5kaW5ncyBzdXBwb3J0IGluY3JlYXNpbmcgZXZpZGVuY2UgdGhhdCBjaG9jb2xhdGUgaXMgYSByaWNoIHNvdXJjZSBvZiBiZW5lZmljaWFsIGJpb2FjdGl2ZSBjb21wb3VuZHMs4oCdIHRoZSByZXNlYXJjaGVycyBjb25jbHVkZWQsIGFsdGhvdWdoIHRoZXkgY2FsbGVkIGZvciBjbGluaWNhbCB0cmlhbHMgdG8gcHJvdmUgdGhlaXIgcmVzdWx0cy4gPGJyLz48YnIvPjxiPkthdGUgRGV2bGluPC9iPiwgTWVkaWNhbCBDb3JyZXNwb25kZW50IG9mIHRoZSBEYWlseSBUZWxlZ3JhcGg8YnIvPjxici8+UHVibGlzaGVkOiAxNCBBdWcgMjAwOS4gPGJyLz4gPGJyLz5Gb3IgZnVsbCBhcnRpY2xlOiAgPGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9Im5saW5rIiBocmVmPSJodHRwOi8vd3d3LnRlbGVncmFwaC5jby51ay9oZWFsdGgvaGVhbHRobmV3cy82MDI4NzcyL0Nob2NvbGF0ZS1jdXRzLXJpc2stb2YtZHlpbmctaW4taGVhcnQtYXR0YWNrLXN1cnZpdm9ycy5odG1sIj5odHRwOi8vd3d3LnRlbGVncmFwaC5jby51ay9oZWFsdGgvaGVhbHRobmV3cy82MDI4NzcyL0Nob2NvbGF0ZS1jdXRzLXJpc2stb2YtZHlpbmctaW4taGVhcnQtYXR0YWNrLXN1cnZpdm9ycy5odG1sPC9hPjwvZGl2PmQCBQ9kFgJmDxUCAJ4RPGRpdiA+PGgyIGNsYXNzPSJwYXJhdGl0bGUiPkludHJvZHVjaW5nIHRoZSBsYXRlc3Qgc3VwZXJmb29kLi4uIGNob2NvbGF0ZTwvaDI+PGJyLz5DaG9jb2xhdGU6IGl0J3MgZ29vZCBmb3IgeW91LiAgQWNjb3JkaW5nIHRvIHJlY2VudCByZXNlYXJjaCBmcm9tIFVTIHNjaWVudGlzdHMsIGNob2NvbGF0ZSBoYXMgam9pbmVkIHRoZSB1bnByb25vdW5jZWFibGUgdHJpbyBvZiBnb2ppIGJlcnJpZXMsIHNwaXJ1bGluYSBhbmQgYWNhaSBiZXJyaWVzIG9uIHRoZSBsaXN0IG9mIHN1cGVyZm9vZHMgdGhhdCBjb3VsZCBwcm9sb25nIHlvdXIgbGlmZS4gSXQgc2VlbXMgdGhvc2UgY2hvY29ob2xpY3Mgd2UndmUgYmVlbiB0dXR0aW5nIGRpc2FwcHJvdmluZ2x5IGF0IGZvciB5ZWFycyB3ZXJlIG9uIHRvIGEgZ29vZCB0aGluZyBhbGwgYWxvbmcuPGJyLz48YnIvPkNoYW5nIExlZSwgdGhlIGNoYWlybWFuIG9mIHRoZSBEZXBhcnRtZW50IG9mIEZvb2QgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSBhdCBDb3JuZWxsIFVuaXZlcnNpdHkgaW4gdGhlIFVTIGhhcyBiZWVuIHN0dWR5aW5nIHRoZSBoZWFsdGh5IHByb3BlcnRpZXMgb2YgY29jb2EgZm9yIHllYXJzLiBMZWUgYW5kIGhpcyB0ZWFtIGZvdW5kIHRoYXQgY29jb2EgaGFzIG5lYXJseSB0d2ljZSBhcyBtYW55IGFudGlveGlkYW50cyBhcyByZWQgd2luZSwgYW5kIHVwIHRvIHRocmVlIHRpbWVzIGFzIG1hbnkgYXMgZ3JlZW4gdGVhLiBUaGVzZSByZXN1bHRzIHN1cnByaXNlZCBldmVuIHRoZSB0ZWFtLiAgIklmIEkgaGFkIG1hZGUgYSBwcmVkaWN0aW9uIGJlZm9yZSBjb25kdWN0aW5nIHRoZSB0ZXN0cywgSSB3b3VsZCBoYXZlIHBpY2tlZCBncmVlbiB0ZWEgYXMgaGF2aW5nIHRoZSBtb3N0IGFudGlveGlkYW50IGFjdGl2aXR5LiIgc2FpZCBMZWUuICJXaGVuIHdlIGNvbXBhcmVkIG9uZSBzZXJ2aW5nIG9mIGVhY2ggYmV2ZXJhZ2UsIHRoZSBjb2NvYSB0dXJuZWQgb3V0IHRvIGJlIHRoZSBoaWdoZXN0IGluIGFudGlveGlkYW50IGFjdGl2aXR5LCBhbmQgdGhhdCB3YXMgc3VycHJpc2luZyB0byBtZS4iPGJyLz48YnIvPlRoZSBoZWFsdGh5IHByb3BlcnRpZXMgb2YgYW50aW94aWRhbnRzIGFyZSBzdGlsbCBhIHRvcGljIGZvciBob3QgZGViYXRlIGluIHRoZSBzY2llbnRpZmljIGNvbW11bml0eSwgYnV0IHRoZXJlIGlzIGNvbnNpZGVyYWJsZSBsYWJvcmF0b3J5IGV2aWRlbmNlIGZyb20gY2hlbWljYWwsIGNlbGwgY3VsdHVyZSBhbmQgYW5pbWFsIHN0dWRpZXMgc2hvd2luZyB0aGF0IGFudGlveGlkYW50cyBtYXkgc2xvdyBkb3duIG9yIGV2ZW4gcHJldmVudCB0aGUgZGV2ZWxvcG1lbnQgb2YgY2FuY2VyLiBPdGhlciBzdHVkaWVzIGhhdmUgaW5kaWNhdGVkIGJlbmVmaXRzIGluIGhlYXJ0IGRpc2Vhc2UgYW5kIG90aGVyIGFnZS1yZWxhdGVkIGNvbmRpdGlvbnMuIE9mIGFudGlveGlkYW50cywgdGhlICJiZXN0IiBwZXJmb3JtZXIgc2VlbXMgdG8gYmUgcG9seXBoZW5vbHMgLSB3aGljaCBhcmUgYWxzbyB0aGUgbGVhc3QgcmVzZWFyY2hlZC4gQ29jb2EgY29udGFpbnMgcG9seXBoZW5vbHMsIHdoaWNoIGFyZSBhbHNvIGZvdW5kIGluIGdyYXBlcywgYmVycmllcyBhbmQgd2luZSAtIGFzIHdlbGwgYXMgY2F0ZWNoaW5zIGFuZCBlcGljYXRlY2hpbnMgLSBmb3VuZCBpbiBncmVlbiB0ZWEuPGJyLz5CdXQgaWYgdGhpcyBzZWVtcyBhbGwgYSBiaXQgdG9vIGdvb2QgdG8gYmUgdHJ1ZSwgdGhlbiB5ZXMsIHRoZXJlIGlzIGEgY2F0Y2guIEJlZm9yZSB5b3UgcnVzaCBvdXQgdG8gdGhlIG5ld3NhZ2VudCBmb3IgYSBiYXIgb2YgRGFpcnkgTWlsaywgcmVtZW1iZXIgdGhpcyBpcyBjb2NvYSB0aGV5IGFyZSB0YWxraW5nIGFib3V0LCBub3QgbWlsayBjaG9jb2xhdGUuIOKApi4uLiAgSG93ZXZlciAiY2hvY29sYXRlIGlzIGFsc28gYSBnb29kIHNvdXJjZSBvZiBpcm9uLCBtYWduZXNpdW0gYW5kIHBob3NwaG9ydXMuIERhcmssIG1vcmUgY29jb2EgcmljaCwgY2hvY29sYXRlIGNvbnRhaW5zIG1vcmUgaXJvbiB0aGFuIHdoaXRlIGNob2NvbGF0ZS4iPGJyLz48YnIvPlNvLCB0aGUgYW5zd2VyIGlzIHRvIHR1Y2sgaW50byBhIGJhciB3aXRoIGEgaGlnaCBjb2NvYSBjb250ZW50IC0gYW5kIG9ubHkgaW4gbW9kZXJhdGlvbi4gPGJyLz48YnIvPjxiPkthdGUgQ2FydGVyPC9iPiwgR3VhcmRpYW48YnIvPjxici8+V2VkbmVzZGF5IDd0aCBNYXJjaCAyMDA3LjwvZGl2PmQCBw9kFgJmDxUCAPAUPGRpdiA+PGgyIGNsYXNzPSJwYXJhdGl0bGUiPkV4dHJhY3RzIGZyb20gYW4gYXJ0aWNsZSBpbiBBbWVyaWNhbiBDaHJvbmljbGUgMzB0aCBNYXkgMjAwNy48L2gyPjxici8+Q2hvY29sYXRlIGNvbnRhaW5zIDQgZXNzZW50aWFsIGluZ3JlZGllbnRzIHRoYXQgbWFrZSBpdCBvbmUgb2YgdGhlIGJlc3QgZm9vZHMgZm9yIGhlYWx0aDo8YnIvPjxici8+PGI+MS4gTWFnbmVzaXVtOjwvYj4gIEZvciB0aGUgaGVhcnQgdG8gYmUgYXQgaXRzIHBlYWsgcGVyZm9ybWFuY2UsIGl0IHJlcXVpcmVzIHR3byBtaW5lcmFscyBtb3JlIHRoYW4gYW55IG90aGVyLCBtYWduZXNpdW0gYW5kIHBvdGFzc2l1bS4gQ2FjYW8sIG9mIGNvdXJzZSwgaXMgYSBmYW50YXN0aWMgZm9vZCBzb3VyY2Ugb2YgaGVhcnQtc3VwcG9ydGluZyBtYWduZXNpdW0uIDxici8+PGJyLz48Yj4yLiBBbnRpb3hpZGFudHM6PC9iPiAgQWNjb3JkaW5nIHRvIHJlc2VhcmNoLCBjYWNhbyBiZWFucyBhcmUgc3VwZXItcmljaCBpbiBhbnRpb3hpZGFudCBmbGF2b25vbHMuIENhY2FvIGlzIG9uZSBvZiB0aGUgcmljaGVzdCBzb3VyY2VzIG9mIGFudGlveGlkYW50cyBvZiBhbnkgZm9vZC4gPGJyLz48YnIvPjxiPjMuIFBoZW55bGV0aHlsYW1pbmUgKFBFQSk6PC9iPiAgUEVBIGlzIGEgY2hlbWljYWwgaW4gY2FjYW8gdGhhdCBpbmNyZWFzZXMgdGhlIGFjdGl2aXR5IG9mIG5ldXJvdHJhbnNtaXR0ZXJzIChicmFpbiBjaGVtaWNhbHMpIGluIHBhcnRzIG9mIHRoZSBicmFpbiB0aGF0IGNvbnRyb2wgb3VyIGFiaWxpdHkgdG8gcGF5IGF0dGVudGlvbiBhbmQgc3RheSBhbGVydC4gPGJyLz48YnIvPjxiPjQuIEFudGktRGVwcmVzc2FudCBQcm9wZXJ0aWVzIG9mIENhY2FvOjwvYj4gIENhY2FvIGlzIGFsc28gYSBncmVhdCBzb3VyY2Ugb2Ygc2Vyb3RvbmluLCBkb3BhbWluZSwgYW5kIHBoZW55bGV0aHlsYW1pbmUsIHRocmVlIHdlbGwtc3R1ZGllZCBuZXVyb3RyYW5zbWl0dGVycywgd2hpY2ggaGVscCBhbGxldmlhdGUgZGVwcmVzc2lvbi4gQ2FjYW8gYWxzbyBjb250YWlucyBhbmFuZGFtaWRlIHdoaWNoIGRlbGl2ZXJzIGJsaXNzZnVsIGZlZWxpbmdzIGFuZCBCIHZpdGFtaW5zLCB3aGljaCBhcmUgYXNzb2NpYXRlZCB3aXRoIGJyYWluIGhlYWx0aC4gQ2FjYW8gaXMgYSBuYXR1cmFsIHByb3phYyEgPGJyLz48YnIvPkdvb2QgZm9yIHRoZSBtZW1vcnkgICBGbGF2YW5vaWRzLCB0aGF0IGFyZSBmb3VuZCBpbiByYXcgY2FjYW8gYmVhbnMsIGNhbiBoZWxwIGJvb3N0IGJyYWluIHBvd2VyIGFuZCBtZW1vcnkuIFRoZSBiZW5lZmljaWFsIGJyYWluIGVmZmVjdHMgYXBwZWFyIHRvIHN0ZW0gZnJvbSBmbGF2YW5vaWRzJyBpbXBhY3Qgb24gdGhlIGJsb29kIHN5c3RlbS4gSW4gZXNzZW5jZSwgdGhlIGNoZW1pY2FscyBzdGltdWxhdGUgYW4gaW5jcmVhc2Ugb2YgYmxvb2QgZmxvdyB0byB0aGUgYnJhaW4uIEJ1dCBleHBlcnRzIGNhdXRpb24gdGhhdCBjaG9jb2xhdGUgdXN1YWxseSBsb3NlcyBpdHMgZmxhdmFub2lkcyBkdXJpbmcgcHJvY2Vzc2luZy4gU28gaWYgeW91IHdhbnQgdG8gaW5jcmVhc2UgeW91ciBhbGVydG5lc3MgYW5kIGNvbmNlbnRyYXRpb24sIHRyeSBzd2FwcGluZyB5b3VyIHJlZ3VsYXIgY2FmZmVpbmUgZHJpbmsgaW4gdGhlIG1vcm5pbmcgZm9yIGEgbmljZSBjdXAgb2YgaG90IGNob2NvbGF0ZSDigJMgbWFkZSB3aXRoIHVucHJvY2Vzc2VkIGFuZCB1bnN3ZWV0ZW5lZCBjYWNhbyBwb3dkZXIuPGJyLz48YnIvPkJlbmVmaWNpYWwgdG8gdGhlIGhlYXJ0LiAgTm8gc2luZ2xlIGZvb2Qgd2lsbCBjb25mZXIgaW1tdW5pdHkgZnJvbSBpbGxuZXNzLCBidXQgYm90aCB0ZWEgYW5kIGNob2NvbGF0ZSwgd2hpY2ggYXJlIHBsYW50IGZvb2RzLCBjYW4gYmUgY29tcG9uZW50cyBvZiBhIGhlYWx0aHkgZGlldCBpZiBlYXRlbiBpbiBtb2RlcmF0aW9uLiBJdCdzIGltcG9ydGFudCB0byBpbmNsdWRlIGEgd2lkZSB2YXJpZXR5IG9mIHBsYW50IGZvb2RzIGluIHlvdXIgZGlldCBldmVyeSBkYXkuPGJyLz48YnIvPlJlY2VudCByZXNlYXJjaCBhdCB0aGUgVW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBoYXMgZm91bmQgdGhhdCBjaG9jb2xhdGUgY2FycmllcyBoaWdoIGxldmVscyBvZiBjaGVtaWNhbHMga25vd24gYXMgcGhlbm9saWNzLCBzb21lIG9mIHdoaWNoIG1heSBoZWxwIGxvd2VyIHRoZSByaXNrIG9mIGhlYXJ0IGRpc2Vhc2UuIFBsYW50cyBzdWNoIGFzIGNob2NvbGF0ZSwgY29mZmVlLCB0ZWEsIGFuZCBvdGhlcnMgY29udGFpbiBoaWdoIGxldmVscyBvZiBwaGVub2xpY3MuIDxici8+PGJyLz5UaGUgdHJ1dGggYWJvdXQgdGhlIGhlYWx0aCBiZW5lZml0cyBvZiBjaG9jb2xhdGUgaXMgZmluYWxseSByZWFjaGluZyBvdXIgZWFycy4gSG93ZXZlciwgdGhlIHdob2xlIHRydXRoIHNob3VsZCBiZSB0b2xkLiBDaG9jb2xhdGUgaXMgaGVhbHRoeSBpZiBpdCBpcyBkYXJrIHdpdGggbm8gYWRkZWQgZGFpcnkgcHJvZHVjdHMvbWlsayBvciByZWZpbmVkIHN1Z2FyLiAgU28gdGhlIG5leHQgdGltZSB5b3XigJlyZSBoYXZpbmcgYSBiYWQgZGF5IGFuZCBmZWVsIGxpa2UgeW91IG5lZWQgc29tZXRoaW5nIHRvIG1ha2UgeW91IHNtaWxlLCBqdXN0IGhhdmUgYSBwaWVjZSBvZiBnb29kIHF1YWxpdHkgZGFyayBjaG9jb2xhdGUgd2l0aG91dCBmZWVsaW5nIGd1aWx0eSE8L2Rpdj5kAgkPZBYCZg8VAgDpCjxkaXYgPjxoMiBjbGFzcz0icGFyYXRpdGxlIj5DaG9jb2xhdGUgJ2hhcyBoZWFsdGggYmVuZWZpdHMnPC9oMj48YnIvPjxiPkVhdGluZyBkYXJrIGNob2NvbGF0ZSBjb3VsZCBoZWxwIGNvbnRyb2wgZGlhYmV0ZXMgYW5kIGJsb29kIHByZXNzdXJlLCBJdGFsaWFuIGV4cGVydHMgc2F5LiA8L2I+PGJyLz48YnIvPlJlc2VhcmNoZXJzIGZvdW5kIGVhdGluZyAxMDBnIG9mIGRhcmsgY2hvY29sYXRlIGVhY2ggZGF5IGZvciAxNSBkYXlzIGxvd2VyZWQgYmxvb2QgcHJlc3N1cmUgaW4gdGhlIDE1IHBlcnNvbi1zdHVkeS4gIFRoZSBVbml2ZXJzaXR5IG9mIEwnQXF1aWxhIHRlYW0gYWxzbyBmb3VuZCB0aGUgYm9keSdzIGFiaWxpdHkgdG8gbWV0YWJvbGlzZSBzdWdhciAtIGEgcHJvYmxlbSBmb3IgcGVvcGxlIHdpdGggZGlhYmV0ZXMgLSB3YXMgaW1wcm92ZWQuIEJ1dCBlYXRpbmcgdGhlIHNhbWUgcXVhbnRpdGllcyBvZiB3aGl0ZSBjaG9jb2xhdGUgZGlkIG5vdCBoYXZlIGFuIGVmZmVjdCwgdGhlIHJlc2VhcmNoZXJzIHNhaWQuIFRoZSB0ZWFtIHNhaWQgYW4gYW50aW94aWRhbnQgY2FsbGVkIGZsYXZhbm9sIHdhcyByZXNwb25zaWJsZSBmb3IgdGhlIGVmZmVjdCBiZWNhdXNlIGl0IG5ldXRyYWxpc2VkIHBvdGVudGlhbGx5IGNlbGwtZGFtYWdpbmcgc3Vic3RhbmNlcyBrbm93biBhcyBveHlnZW4gZnJlZSByYWRpY2FscywgdGhlIEFtZXJpY2FuIEpvdXJuYWwgb2YgQ2xpbmljYWwgTnV0cml0aW9uIHJlcG9ydGVkLiA8YnIvPjxici8+4oCcIFdlIHdvdWxkIHN0aWxsIHJlY29tbWVuZCBhIGJhbGFuY2VkIGxvdyBmYXQsIHNhbHQgYW5kIHN1Z2FyIGRpZXQgdGhhdCBpbmNsdWRlcyBzdGFyY2h5IGNhcmJvaHlkcmF0ZXMgYW5kIHBsZW50eSBvZiBmcnVpdCBhbmQgdmVnZXRhYmxlcyDigJ0gPGJyLz5BbWFuZGEgVmV6ZXksIG9mIERpYWJldGVzIFVLIDxici8+PGJyLz5Xcml0aW5nIGluIHRoZSBqb3VybmFsLCBudXRyaXRpb24gZXhwZXJ0IENlc2FyIEZyYWdhLCBvZiB0aGUgVW5pdmVyc2l0eSBvZiBDYWxpZm9ybmlhLCBzYWlkIHRoZSBmaW5kaW5ncyBvbiBibG9vZCBwcmVzc3VyZSBzZWVtZWQgY3JlZGlibGUuICBIZSBzYWlkIG90aGVyIGZvb2RzIGNvbnRhaW5pbmcgZmxhdmFub2xzLCBzdWNoIGFzIHRlYSBhbmQgd2luZSwgaGF2ZSBhIHNpbWlsYXIgZWZmZWN0IG9uIGJsb29kIHByZXNzdXJlLjxici8+PGJyLz5Gb3IgZnVsbCBhcnRpY2xlOiAgPGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9Im5saW5rIiBocmVmPSJodHRwOi8vbmV3cy5iYmMuY28udWsvZ28vcHIvZnIvLS8xL2hpL2hlYWx0aC80MzcxODY3LnN0bSI+aHR0cDovL25ld3MuYmJjLmNvLnVrL2dvL3ByL2ZyLy0vMS9oaS9oZWFsdGgvNDM3MTg2Ny5zdG08L2E+PC9kaXY+ZAILD2QWAmYPFQIAhAw8ZGl2ID48aDIgY2xhc3M9InBhcmF0aXRsZSI+SGVhbHRoIEJlbmVmaXRzIG9mIERhcmsgQ2hvY29sYXRlPC9oMj48YnIvPkZsYXZvbm9pZHMgaW4gZGFyayBjaG9jb2xhdGUgYXJlIGEgbmF0dXJhbGx5IG9jY3VycmluZyBhbnRpb3hpZGFudCBzaW1pbGFyIHRvIHRob3NlIGZvdW5kIGluIHRlYXMsIHJlZCB3aW5lLCBhbmQgc29tZSBmcnVpdHMgYW5kIHZlZ2V0YWJsZXMuICBUaGVzZSBmbGF2b25vaWRzIGFyZSB0aG91Z2h0IHRvIGhhdmUgYSBiZW5lZmljaWFsIGVmZmVjdCBvbiB0aGUgY2FyZGlvdmFzY3VsYXIgc3lzdGVtLCBhbmQgb25lIHJlY2VudCBzdHVkeSBzaG93ZWQgdGhhdCA2IGdyYW1zIG9mIGRhcmsgY2hvY29sYXRlIGEgZGF5IChhYm91dCBvbmUgc3F1YXJlKSBsb3dlcmVkIHN5c3RvbGljIGFuZCBkaWFzdG9saWMgYmxvb2QgcHJlc3N1cmUgYnkgMiBwb2ludHMgZWFjaC4gPGJyLz48YnIvPlRoZSBzdHVkeSBhbHNvIGNsYWltcyB0aGF0IGRhcmsgY2hvY29sYXRlIG1heSBsb3dlciBsb3ctZGVuc2l0eSBsaXBvcHJvdGVpbiAoTERMKSBjaG9sZXN0ZXJvbCBsZXZlbHMgYnkgYWJvdXQgNSBwb2ludHMuIE5vdCBhIG1ham9yIGVmZmVjdCB0byBiZSBzdXJlLCBidXQgcHVzaGluZyB0aGUgImJhZCIgY2hvbGVzdGVyb2wgZG93bndhcmRzLiBGbGF2b25vaWRzIGFsc28gYmVuZWZpdCB0aGUgd2F5IHRoZSBsaW5pbmcgb2YgdGhlIGJsb29kIHZlc3NlbHMgZnVuY3Rpb24uPGJyLz48YnIvPuKAnFdlIHRoaW5rIGEgbG90IG9mIGJhZCB0aGluZ3MgdGhhdCBoYXBwZW4gdG8gdGhlIGNhcmRpb3Zhc2N1bGFyIHN5c3RlbSBhcmUgYmVjYXVzZSB0aGUgbGluaW5nIG9mIHRoZSB2ZXNzZWxzIGNyYWNrcyBhbmQgYmVjb21lcyBpbmZsYW1lZCwgc2V0dGluZyB0aGUgc3RhZ2UgZm9yIHBsYXF1ZXMgdG8gZm9ybSBhbmQgcnVwdHVyZSzigJ0gc2F5cyBSb2JlcnQgU2hlZWxlciwgTS5ELiwgYSBmYW1pbHkgcGh5c2ljaWFuIGF0IE1heW8gQ2xpbmljLjxici8+PGJyLz5Eb24ndCBmb3JnZXQsIGNob2NvbGF0ZSBjb250YWlucyBjYWxvcmllcyBhbmQgZmF0LCBzbyB0aGVzZSBmaW5kaW5ncyBhcmUgbm90IGFuIGludml0YXRpb24gdG8gZ28gb24gYSBjaG9jb2xhdGUgYmluZ2UuIERyLiBTaGVlbGVyIHNheXMganVzdCBvbmUgc3F1YXJlIGEgZGF5IChhYm91dCAzMCBjYWxvcmllcykgd2lsbCBwcm92aWRlIHRoZSBoZWFsdGggYmVuZWZpdHMgZGVzY3JpYmVkLiBIZSByZWNvbW1lbmRzIGNob2NvbGF0ZSB0aGF0IGNvbnRhaW5zIGF0IGxlYXN0IDYwJSBjb2NvYTsgbWlsayBjaG9jb2xhdGUgYnkgY29udHJhc3QgaGFzIG9ubHkgMTUtMjUlIGNvY29hLCB3aGlsZSBkYXJrIGNob2NvbGF0ZSBjYW4gY29udGFpbiBhcyBtdWNoIGFzIDgwJSsgY29jb2EuPGJyLz48YnIvPkZvciBmdWxsIGFydGljbGU6PGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9Im5saW5rIiBocmVmPSJodHRwOi8vd3d3Lm1lZG5ld3MuY29tL3VzZXIvbWVkbmV3cyI+aHR0cDovL3d3dy5tZWRuZXdzLmNvbS91c2VyL21lZG5ld3M8L2E+PC9kaXY+ZAIND2QWAmYPFQIA4xQ8ZGl2ID48aDIgY2xhc3M9InBhcmF0aXRsZSI+RXh0cmFjdHMgZnJvbSBTdWl0ZTEwMS5jb20g4oCTIENob2NvbGF0ZSBpbiBQcmVnbmFuY3k8L2gyPjxici8+PGI+Q2FuIEVhdGluZyBDaG9jb2xhdGUgUHJldmVudCBQcmUtZWNsYW1wc2lhPzwvYj48YnIvPjxici8+VGhlIGNoZW1pY2FsIHRoZW9icm9taW5lLCB3aGljaCBpcyBrbm93biB0byBzdGltdWxhdGUgdGhlIGhlYXJ0LCByZWxheCBzbW9vdGggbXVzY2xlIGFuZCBkaWxhdGUgYmxvb2QgdmVzc2VscywgaXMgZm91bmQgaW4gY2hvY29sYXRlIGFuZCBhIHJlc2VhcmNoIHN0dWR5IGluIDIwMDggYXQgWWFsZSBVbml2ZXJzaXR5IHN1Z2dlc3RzIHRoYXQgY29uc3VtcHRpb24gYnkgcHJlZ25hbnQgd29tZW4gb2YgY2hvY29sYXRlIHJpY2ggaW4gdGhlIGNoZW1pY2FsIGNvdWxkIGhlbHAgcHJldmVudCBwcmUtZWNsYW1wc2lhIChhIGNvbmRpdGlvbiBvZiBoeXBlcnRlbnNpb24gaW4gcHJlZ25hbmN5IGFzc29jaWF0ZWQgd2l0aCBzaWduaWZpY2FudCBhbW91bnRzIG9mIHByb3RlaW4gaW4gdGhlIHVyaW5lKS48YnIvPjxici8+U2VlICJDaG9jb2xhdGUgQ29uc3VtcHRpb24gaW4gUHJlZ25hbmN5IGFuZCBSZWR1Y2VkIExpa2VsaWhvb2Qgb2YgUHJlLWVjbGFtcHNpYSIsIEVwaWRlbWlvbG9neTogVm9sIDE5KDMpIE1heSAyMDA4LCA0NTnigJM0NjQuPGJyLz48YnIvPjxiPkNob2NvbGF0ZSBNYWtlcyBZb3UgSGFwcHk8L2I+PGJyLz48YnIvPkluIDIwMDQgcmVzZWFyY2hlcnMgYXQgdGhlIFVuaXZlcnNpdHkgb2YgSGVsc2lua2ksIEZpbmxhbmQgYXNrZWQgb3ZlciAzMDAgcHJlZ25hbnQgd29tZW4gdG8gcmF0ZSB0aGVpciBwc3ljaG9sb2dpY2FsIHN0cmVzcyBsZXZlbHMgYW5kIGNob2NvbGF0ZSBjb25zdW1wdGlvbi4gU2l4IG1vbnRocyBhZnRlciB0aGUgYmlydGggb2YgdGhlaXIgYmFiaWVzLCB0aGUgbW90aGVycyByYXRlZCB0aGVpciBiYWJpZXMnIGJlaGF2aW91ciBpbiB2YXJpb3VzIGNhdGVnb3JpZXMsIGluY2x1ZGluZyBmZWFyLCBzb290aGFiaWxpdHksIHNtaWxpbmcgYW5kIGxhdWdodGVyLiBUaGUgYmFiaWVzIGJvcm4gdG8gbW90aGVycyB3aG8gaGFkIGVhdGVuIGNob2NvbGF0ZSBkYWlseSBkdXJpbmcgcHJlZ25hbmN5IHJhdGVkIG1vcmUgcG9zaXRpdmVseSB0aGUgdGVtcGVyYW1lbnQgb2YgdGhlaXIgaW5mYW50cy4gVGhlIGJhYmllcyBvZiBzdHJlc3NlZCBtb3RoZXJzIHdobyBoYWQgcmVndWxhcmx5IGVhdGVuIGNob2NvbGF0ZSBzaG93ZWQgbGVzcyBmZWFyIG9mIG5ldyBzaXR1YXRpb25zIHRoYW4gYmFiaWVzIG9mIHN0cmVzc2VkIHdvbWVuIHdobyBoYWQgbm90IGNvbnN1bWVkIGNob2NvbGF0ZS4gVGhlIHJlc2VhcmNoZXJzIHNwZWN1bGF0ZWQgdGhhdCB0aGUgaGFwcHkgYmVoYXZpb3VyIG9ic2VydmVkIGluIHRoZSBiYWJpZXMgbWlnaHQgcmVzdWx0IGZyb20gY2hlbWljYWxzIGluIGNob2NvbGF0ZSwgd2hpY2ggYXJlIGFzc29jaWF0ZWQgd2l0aCBwb3NpdGl2ZSBtb29kLCBiZWluZyBwYXNzZWQgb24gdG8gdGhlIGJhYnkgaW4gdGhlIHdvbWIuIFNlZSAiU3dlZXQgYmFiaWVzOiBjaG9jb2xhdGUgY29uc3VtcHRpb24gZHVyaW5nIHByZWduYW5jeSBhbmQgaW5mYW50IHRlbXBlcmFtZW50IGF0IHNpeCBtb250aHMiLCBFYXJseSBIdW1hbiBEZXZlbG9wbWVudDogVm9sIDc2LCBJc3N1ZSAyLCAxMznigJMxNDUuPGJyLz48YnIvPjxiPkNob2NvbGF0ZSBDcmF2aW5nczwvYj48YnIvPjxici8+RHIuIE1pY2hlbCBPZGVudCBNRCwgYW4gb2JzdGV0cmljaWFuIHdobyBoYXMgaGFkIGFuIGVub3Jtb3VzIGluZmx1ZW5jZSBvbiB0aGUgaGlzdG9yeSBvZiBjaGlsZGJpcnRoIGFuZCBoZWFsdGggcmVzZWFyY2ggb3ZlciB0aGUgbGFzdCBzZXZlcmFsIGRlY2FkZXMgYW5kIHdobyBhY2hpZXZlZCBmYW1pbGlhcml0eSBmb3IgaW50cm9kdWNpbmcgdGhlIGNvbmNlcHQgb2YgYmlydGhpbmcgcG9vbHMgYW5kIGhvbWUtbGlrZSBiaXJ0aGluZyByb29tcywgY2FycmllZCBvdXQgYSBzdHVkeSBhYm91dCBudXRyaXRpb24gaW4gcHJlZ25hbmN5IOKApuKApuKApuKApuKApuKApuKApi4uIERyLiBPZGVudCBvYnNlcnZlZCB0aGF0IGNob2NvbGF0ZSBpcyByaWNoIGluIG1hZ25lc2l1bSwgYW4gaW1wb3J0YW50IGNhdGFseXN0IGZvciBmYXR0eSBhY2lkIG1ldGFib2xpc20gYW5kIHRoYXQgbWFnbmVzaXVtIGlzIG5lZWRlZCBpbiBpbmNyZWFzZWQgYW1vdW50cyBkdXJpbmcgcHJlZ25hbmN5IGZvciB0aGUgZGV2ZWxvcG1lbnQgb2YgdGhlIGZvZXR1c+KAmSBicmFpbi4gSGUgZm91bmQgdGhhdCBjaG9jb2xhdGUgaXMgYWxzbyByaWNoIGluIGZsYXZvbm9pZHMsIHdoaWNoIGhhdmUgcG90ZW50IGFudGlveGlkYW50IHByb3BlcnRpZXMgaGVscGluZyB0aGUgY2FyZGlvdmFzY3VsYXIsIGltbXVuZSBhbmQgY2FuY2VyLWZpZ2h0aW5nIHN5c3RlbS48YnIvPjxici8+Rm9yIGZ1bGwgYXJ0aWNsZTo8YnIvPjxhIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0ibmxpbmsiIGhyZWY9Imh0dHA6Ly9wcmVuYXRhbC1oZWFsdGguc3VpdGUxMDEuY29tL2FydGljbGUuY2ZtL2Nob2NvbGF0ZV9pbl9wcmVnbmFuY3kiPmh0dHA6Ly9wcmVuYXRhbC1oZWFsdGguc3VpdGUxMDEuY29tL2FydGljbGUuY2ZtL2Nob2NvbGF0ZV9pbl9wcmVnbmFuY3k8L2E+PC9kaXY+ZAIPD2QWAmYPFQIAggc8ZGl2ID48aDIgY2xhc3M9InBhcmF0aXRsZSI+VW5pdmVyc2l0eSByZXNlYXJjaCBwcm92ZXMgdGhhdCBkYXJrIGNob2NvbGF0ZSBzaG91bGQgYmUgZ2lmdCBvZiBsb3ZlIHRoaXMgVmFsZW50aW5lczwvaDI+PGJyLz48Yj5Vbml2ZXJzaXR5IHJlc2VhcmNoIHByb3ZlcyB0aGF0IGRhcmsgY2hvY29sYXRlIHNob3VsZCBiZSBnaWZ0IG9mIGxvdmUgdGhpcyBWYWxlbnRpbmVzPC9iPjxici8+PGJyLz5Zb3XigJlsbCBiZSBkb2luZyB5b3VyIHN3ZWV0aGVhcnQgYSBiaWcgZmF2b3VyIHRoaXMgVmFsZW50aW5l4oCZcyBEYXkgaWYgeW91ciBnaWZ0IGNvbnRhaW5zIGRhcmsgY2hvY29sYXRlLiBSZXNlYXJjaGVycyBmcm9tIFF1ZWVuIE1hcmdhcmV0IFVuaXZlcnNpdHksIEVkaW5idXJnaCBoYXZlIHNob3duIHRoYXQgZGFyayBjaG9jb2xhdGUgcmljaCBpbiBwb2x5cGhlbm9scyBjYW4gc2VydmUgYXMgYSBjb252ZW5pZW50IGRhaWx5IHNvdXJjZSBvZiBhbnRpb3hpZGFudCwgcmVkdWNlIGJsb29kIHByZXNzdXJlIGFuZCBsb3dlciBibG9vZCBzdWdhciBsZXZlbHMuIFN1cnByaXNpbmdseSByZXN1bHRzIGFsc28gc2hvd2VkIHRoYXQgcGFydGljaXBhbnRzIGludm9sdmVkIGluIHRoZSByZXNlYXJjaCBkaWQgbm90IGdhaW4gYW55IHdlaWdodCB3aGlsZSBjb25zdW1pbmcgdGhlaXIgcXVvdGEgb2YgZGFyayBjaG9jb2xhdGUuIDxici8+PGJyLz48YnIvPkZvciBmdWxsIGFydGljbGU6PGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgY2xhc3M9Im5saW5rIiBocmVmPSJodHRwOi8vd3d3LnFtdS5hYy51ay9tYXJrZXRpbmcvcHJlc3NfcmVsZWFzZXMvY2hvY29sYXRlLmh0bSI+aHR0cDovL3d3dy5xbXUuYWMudWsvbWFya2V0aW5nL3ByZXNzX3JlbGVhc2VzL2Nob2NvbGF0ZS5odG08L2E+PC9kaXY+ZAIRD2QWAmYPFQIA+Qg8ZGl2ID48aDIgY2xhc3M9InBhcmF0aXRsZSI+SGFydmFyZCBTdHVkeTogRGFyayBDaG9jb2xhdGUgQ2FuIEhlbHAgTG93ZXIgWW91ciBCbG9vZCBQcmVzc3VyZTwvaDI+PGJyLz48Yj5JdCBhbHNvIGhlbHBzIGxvd2VyIHJpc2sgb2YgZGlhYmV0ZXMsIGhlYXJ0IGRpc2Vhc2U8L2I+PGJyLz48YnIvPk1vcmUgZ29vZCBuZXdzIGZvciBjaG9jb2xhdGUgIGxvdmVyczogQSBuZXcgSGFydmFyZCBzdHVkeSBmaW5kcyB0aGF0IGVhdGluZyBhIHNtYWxsIHNxdWFyZSBvZiBkYXJrIGNob2NvbGF0ZSAgZGFpbHkgY2FuIGhlbHAgbG93ZXIgYmxvb2QgcHJlc3N1cmUgZm9yIHBlb3BsZSB3aXRoIDxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vaGVhbHRodG9vbHMuYWFycC5vcmcvYWRhbWNvbnRlbnQvaHlwZXJ0ZW5zaW9uIj5oeXBlcnRlbnNpb24uPC9hPjxici8+PGJyLz5UaGUgc3R1ZHkgam9pbnMgdGhlIGdyb3dpbmcgIHJlc2VhcmNoIGludG8gdGhlIGhlYXJ0LWhlYWx0aHkgYmVuZWZpdHMgb2YgZmxhdm9ub2lkcywgY29tcG91bmRzIGluICB1bnN3ZWV0ZW5lZCBjaG9jb2xhdGUgdGhhdCBjYXVzZSBkaWxhdGlvbiBvZiB0aGUgYmxvb2QgdmVzc2Vscy4gVGhlIEhhcnZhcmQgIHN0dWR5IHdhcyBhbm5vdW5jZWQgdG9kYXkgaW4gQXRsYW50YSAgYXQgdGhlIEFtZXJpY2FuIEhlYXJ0IEFzc29jaWF0aW9uJ3Mgc2NpZW5jZSBzZXNzaW9uIG9uIDxhIGhyZWY9Imh0dHA6Ly9oZWFsdGh0b29scy5hYXJwLm9yZy9nYWxlY29udGVudC9jYXJkaW92YXNjdWxhci1kaXNlYXNlcyIgIHRhcmdldD0iX2JsYW5rIj5jYXJkaW92YXNjdWxhciAgZGlzZWFzZS48L2E+PGJyLz48YnIvPlJlYWQgdGhlIGZ1bGwgYXJ0aWNsZSBvbiB0aGUgQUFSUCB3ZWJzaXRlOjxici8+ICA8YSBocmVmPSJodHRwOi8vd3d3LmFhcnAub3JnL2hlYWx0aC9tZWRpY2FsLXJlc2VhcmNoL2luZm8tMDMtMjAxMS9kYXJrLWNob2NvbGF0ZS1jYW4taGVscC1sb3dlci15b3VyLWJsb29kLXByZXNzdXJlLmh0bWwiICB0YXJnZXQ9Il9ibGFuayI+aHR0cDovL3d3dy5hYXJwLm9yZy9oZWFsdGgvbWVkaWNhbC1yZXNlYXJjaC9pbmZvLTAzLTIwMTEvZGFyay1jaG9jb2xhdGUtY2FuLWhlbHAtbG93ZXIteW91ci1ibG9vZC1wcmVzc3VyZS5odG1sPC9hPjwvZGl2PmQCEw9kFgJmDxUCAMETPGRpdiA+PGgyIGNsYXNzPSJwYXJhdGl0bGUiPkEgcmVjZW50IGFydGljbGUgb24gdGhlIENsZXZlbGFuZCBDbGluaWMgV2Vic2l0ZSBhc2tzOjwvaDI+PGJyLz48aDQ+SXMgIENob2NvbGF0ZSBHb29kIGZvciBZb3VyIEhlYXJ0PyA8L2g0Pjxici8+PHN0cm9uZz5XaHkgYSAgbGl0dGxlLCBpbiBtb2RlcmF0aW9uLCBtYXkgYmUgYmVuZWZpY2lhbCA8L3N0cm9uZz48YnIvPjxici8+PHN0cm9uZz5DaG9jb2xhdGU8L3N0cm9uZz4gaGFzIGdvdHRlbiBhIGxvdCBvZiBtZWRpYSBjb3ZlcmFnZSBpbiByZWNlbnQgeWVhcnMgYmVjYXVzZSBpdCdzIGJlbGlldmVkIHRoYXQgIGl0IG1heSBoZWxwIHByb3RlY3QgeW91ciBjYXJkaW92YXNjdWxhciBzeXN0ZW0uIFRoZSByZWFzb25pbmcgYmVpbmcgdGhhdCB0aGUgIGNvY29hIGJlYW4gaXMgcmljaCBpbiBhIGNsYXNzIG9mIHBsYW50IG51dHJpZW50cyBjYWxsZWQgZmxhdm9ub2lkcy48YnIvPjxici8+PHN0cm9uZz5GbGF2b25vaWRzPC9zdHJvbmc+IGhlbHAgcHJvdGVjdCBwbGFudHMgZnJvbSBlbnZpcm9ubWVudGFsIHRveGlucyBhbmQgaGVscCByZXBhaXIgZGFtYWdlLiBUaGV5IGNhbiAgYmUgZm91bmQgaW4gYSB2YXJpZXR5IG9mIGZvb2RzLCBzdWNoIGFzIGZydWl0cyBhbmQgdmVnZXRhYmxlcy4gV2hlbiB3ZSBlYXQgIGZvb2RzIHJpY2ggaW4gZmxhdm9ub2lkcywgaXQgYXBwZWFycyB0aGF0IHdlIGFsc28gYmVuZWZpdCBmcm9tIHRoaXMgICJhbnRpb3hpZGFudCIgcG93ZXIuIDxici8+PGJyLz48c3Ryb25nPkZsYXZhbm9sczwvc3Ryb25nPiBhcmUgdGhlIG1haW4gdHlwZSBvZiBmbGF2b25vaWQgZm91bmQgaW4gY29jb2EgYW5kIGNob2NvbGF0ZS4gSW4gYWRkaXRpb24gdG8gIGhhdmluZyBhbnRpb3hpZGFudCBxdWFsaXRpZXMsIHJlc2VhcmNoIHNob3dzIHRoYXQgZmxhdmFub2xzIGhhdmUgb3RoZXIgIHBvdGVudGlhbCBpbmZsdWVuY2VzIG9uIHZhc2N1bGFyIGhlYWx0aCwgc3VjaCBhcyBsb3dlcmluZyBibG9vZCBwcmVzc3VyZSwgIGltcHJvdmluZyBibG9vZCBmbG93IHRvIHRoZSBicmFpbiBhbmQgaGVhcnQsIGFuZCBtYWtpbmcgYmxvb2QgcGxhdGVsZXRzIGxlc3MgIHN0aWNreSBhbmQgYWJsZSB0byBjbG90Ljxici8+PGJyLz5SZWFkIHRoZSBmdWxsIGFydGljbGU6PGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgIGhyZWY9Imh0dHA6Ly9teS5jbGV2ZWxhbmRjbGluaWMub3JnL2hlYXJ0L3ByZXZlbnRpb24vbnV0cml0aW9uL2Nob2NvbGF0ZS5hc3B4Ij5odHRwOi8vbXkuY2xldmVsYW5kY2xpbmljLm9yZy9oZWFydC9wcmV2ZW50aW9uL251dHJpdGlvbi9jaG9jb2xhdGUuYXNweDwvYT48YnIvPjxici8+VHdvIGFydGljbGVzIGZyb20gIE5hdHVyYWwgTmV3cyB3ZWJzaXRlOjxiciAvPjxici8+PGg0PkRhcmsgY2hvY29sYXRlIG1heSAgaGVscCBwcmV2ZW50IGNvbG9uIGNhbmNlcjwvaDQ+PGJyLz42LzIvMjAxMiAgLSBDb2xvbiBjYW5jZXIgIGlzIHRoZSB0aGlyZCBsZWFkaW5nIGNhdXNlIG9mIGNhbmNlciBkZWF0aHMgYW5udWFsbHksIGEgc3RhdGlzdGljIHRoYXQgcmVtYWlucyAgY29uc3RhbnQgZGVzcGl0ZSBpbmNyZWFzZWQgYXdhcmVuZXNzIG9mIHRoZSBkZWFkbHkgZGlzZWFzZS4gUmVzZWFyY2hlcnMgZnJvbSAgdGhlIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgSW5zdGl0dXRlIG9mIEZvb2QgYW5kIE51dHJpdGlvbiBpbiBTcGFpbiBoYXZlIHB1Ymxpc2hlZCB0aGUgcmVzdWx0IG9mICBhIHN0dWR5IGluIHRoZSBqb3VybmFsIE1vbGVjdWxhciBOdXRyaXRpb24uLi48YnIvPjxici8+PGg0PkNvY29hIEZsYXZhbm9scyBmcm9tIGRhcmsgY2hvY29sYXRlIGltcHJvdmUgdmlzaW9uIGFuZCAgY29nbml0aXZlIGZ1bmN0aW9uPC9oND48YnIvPjI3LzUvMjAxMSAtIFBvdGVudCBjYWNhbyBmbGF2YW5vbHMgZnJvbSBkYXJrIGNob2NvbGF0ZSBoYXZlIHByb3ZlbiBlZmZlY3RpdmUgaW4gIGxvd2VyaW5nIHRoZSByaXNrIGZyb20gaGVhcnQgZGlzZWFzZSBhbmQgc3VkZGVuIGhlYXJ0IGF0dGFjayBpbiByZWNlbnQgc3R1ZGllcy4gIFdyaXRpbmcgaW4gdGhlIGpvdXJuYWwgUGh5c2lvbG9neSBhbmQgQmVoYXZpb3IsIHJlc2VhcmNoZXJzIGRlbW9uc3RyYXRlIHRoYXQgIGFudGlveGlkYW50cyByZWxlYXNlZCBieSBjb25zdW1wdGlvbiBvZiBjb2NvYSBwcm9kdWN0cyBjYW4gaW1wcm92ZSBtdWx0aXBsZS4uLjxici8+PGJyLz5MZWFybiBtb3JlOiA8YSB0YXJnZXQ9Il9ibGFuayIgIGhyZWY9Imh0dHA6Ly93d3cubmF0dXJhbG5ld3MuY29tL2RhcmtfY2hvY29sYXRlLmh0bWwjaXh6ejFvS1JmWkJVZSI+ZGFyayBjaG9jb2xhdGUgbmV3cyBhbmQgYXJ0aWNsZXM8L2E+PGJyLz48YSB0YXJnZXQ9Il9ibGFuayIgIGhyZWY9Imh0dHA6Ly93d3cubmF0dXJhbG5ld3MuY29tL2RhcmtfY2hvY29sYXRlLmh0bWwjaXh6ejFvS1JmWkJVZSI+aHR0cDovL3d3dy5uYXR1cmFsbmV3cy5jb20vZGFya19jaG9jb2xhdGUuaHRtbCNpeHp6MW9LUmZaQlVlPC9hPjwvZGl2PmQCDQ9kFgICAQ8WAh4HVmlzaWJsZWhkAgMPZBYCZg8WAh8BBaEDPGxpPjxhIGhyZWY9ImZyZXNoLWNob2NvbGF0ZXMuYXNweCI+RnJlc2ggQ2hvY29sYXRlczwvYT48L2xpPjxsaT48YSBocmVmPSJkYXJrLWNob2NvbGF0ZS5hc3B4Ij5EYXJrIENob2NvbGF0ZTwvYT48L2xpPjxsaT48YSBocmVmPSJtaWxrLWNob2NvbGF0ZS5hc3B4Ij5NaWxrIENob2NvbGF0ZTwvYT48L2xpPjxsaT48YSBocmVmPSJ3aGl0ZS1jaG9jb2xhdGUuYXNweCI+V2hpdGUgY2hvY29sYXRlPC9hPjwvbGk+PGxpPjxhIGhyZWY9ImNhcmFtZWxzLWZyb20tbWVsdC1jaG9jb2xhdGVzLmFzcHgiPkNhcmFtZWxzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Im91cm1ldC1jaG9jb2xhdGUuYXNweCI+R291cm1ldCBDaG9jb2xhdGU8L2E+PC9saT48bGk+PGEgaHJlZj0iaG90LWNob2NvbGF0ZS5hc3B4Ij5Ib3QgQ2hvY29sYXRlPC9hPjwvbGk+ZAIEDxYCHwRoZGRNySXsRmSFm+pI3cfNbo4vabhnWg==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgKEze3TBQKP6u74DALu7/nhBAKV1Ja7DAKKp4PmAQLtuq2+DX8BW1D9jjMvgkAV0gcuLCsCpSAO" />
+        
+    
+<div style="height:109px">
+    <div class="topmenudiv" >
+        <ul class="topmenu">
+	        <li><a  href="http://www.meltchocolates.com ">Home</a></li>
+	        <li><a  href="contact-us.aspx">Contact us</a></li>	        
+	        <li><a  href="customer-services.aspx">Customer services</a></li>
+	        <li><a  href="reviews.aspx">Awards and Reviews</a></li>
+	        <li><a  href="press-login.aspx">Press</a></li>
+	        <!--li><a  href="press-login.aspx">Your account</a></li-->
+	        <li style="padding-left:10px;"><a href="javascript:void(0);" id="ctl00_HolderMenu_TheTopMenu_linkcheckout">Your basket Empty <img src="images/btdropbk.gif" alt="" /></a></li>
+        </ul>
+        <div class="bkover" id="bkshow" style="display:none" >
+            <div style="padding:45px 45px 0 30px;text-align:left">
+                <a id="ctl00_HolderMenu_TheTopMenu_btcontinue" href="javascript:__doPostBack('ctl00$HolderMenu$TheTopMenu$btcontinue','')"><img src="images/bkover/closex.gif" style="margin-left:200px;" alt="" /></a>
+                     
+                <img src="images/bkover/itemprom.gif"  alt="" style="margin-top:10px;" /><br /><br />
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="left"><a id="ctl00_HolderMenu_TheTopMenu_btCheckout" href="javascript:__doPostBack('ctl00$HolderMenu$TheTopMenu$btCheckout','')"><img src="images/bkover/checkout.gif"  style="margin:10px 0 0 0px" alt="" /></a></td>
+                        <td align="right"><a id="ctl00_HolderMenu_TheTopMenu_LinkButton1" href="javascript:__doPostBack('ctl00$HolderMenu$TheTopMenu$LinkButton1','')"><img src="images/bkover/continue.gif"  style="margin:10px 0 0 0px" alt="" /></a></td>
+                    </tr>
+                </table>             
+            </div>
+        </div>
+    </div>
+    <div class="divsearchtop">
+        <a id="ctl00_HolderMenu_TheTopMenu_btSearch" href="javascript:__doPostBack('ctl00$HolderMenu$TheTopMenu$btSearch','')"><img src="images/btgo.gif" alt="" /></a>
+        <input name="ctl00$HolderMenu$TheTopMenu$txtSearch" type="text" value="search" id="ctl00_HolderMenu_TheTopMenu_txtSearch" onfocus="clearme(this,'search')" />			
+    </div>
+    <a href="http://www.meltchocolates.com/"><img src="images/logo.gif" alt="Handmade Luxury Chocolates from Melt" title="Handmade Luxury Chocolates from Melt" /></a>
+</div>
+<div>
+    <ul class="topmenu2">
+	    <li><a  href="buy-our-chocolates.aspx"><strong>Buy</strong> our chocolates</a></li>
+	    <li><a  href="about-us.aspx"><strong>About</strong> Melt</a></li>
+	    <li><a  href="melt-producers.aspx"><strong>Our </strong> Producers</a></li>
+	    <li><a  href="news.aspx"><strong>News</strong></a></li>
+	    <li><a  href="blog/"><strong>Blog </strong></a></li>
+	    <li><a  href="events-calendar.aspx"><strong>Events</strong></a></li>
+	    <li><a  href="corporate-gifts-and-occasions.aspx"><strong>Corporate</strong> &amp; Occasions</a></li>
+	    <li><a  href="mini-melt.aspx"><strong>Mini</strong>-Melt</a></li>
+	    <li style="border:none"><a  href="newsletter.aspx"><strong>Newsletter</strong> Signup</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    function clearme(me,val){
+        if (me.value==val) me.value='';
+    }
+   
+</script>
+<script type="text/javascript">
+    var isshow='';
+    if (isshow=='') {
+        isshow='none';
+    }else{
+        isshow='block';
+    }
+    var bkit = document.getElementById("bkshow");
+    bkit.style.display= isshow;
+</script>
+
+		<!--BODY-->
+		
+        
+    <div class="bodycontentpage">
+	    <div class="realcontent">
+		   
+		        
+ <div class="basketdiv">
+    <ul class="pathway">
+	    <li><a href="default.aspx">Home &rsaquo;</a></li>
+	    <li><strong>Health Benefits of Chocolate</strong></li>
+	    
+    </ul>
+</div>
+	        
+	        <div id="ctl00_ContentPageHoder_divPageTitle" class="basketdiv2">
+	  		    <h1>Health Benefits of Chocolate</h1>			  		
+	        </div>			
+
+            <div style="min-height:300px;padding-top:10px;">
+		        <div class="contentpageleft">
+				  <div class="topcontentimg"> 
+				  		<img id="ctl00_ContentPageHoder_imgTop" src="images/defaultpage.jpg" width="665" border="0" />
+				  		<div class="overlay">
+<div class="divtext">
+<h3 class="bigger">Health Benefits of Chocolate</h3>
+Chocolate is a superfood among superfoods
+</div></div>                      	
+			      </div>
+				 
+				    <div class="allcontent">
+				  	    <!--ONE ITEM-->
+				  	    <div id="ctl00_ContentPageHoder_pageIntroMenu">
+	
+				  	        <div class="oneitemcontent">
+				  	            			    
+						            
+<div class="imagecontentleft" >		    
+	<ul class="leftnavct">
+		<li><a  href="about-us.aspx" >About Melt&rsaquo;</a></li>
+<li><a  href="chocoholics-club.aspx" >Chocoholics Club&rsaquo;</a></li>
+<li><a  href="chocolate-quotes.aspx" >Chocolate Quotations&rsaquo;</a></li>
+<li><a  href="how-to-taste-chocolate.aspx" >How to taste chocolate&rsaquo;</a></li>
+<li><a  href="history-of-chocolate.aspx" >The history of chocolate&rsaquo;</a></li>
+<li><a class="active" href="health-benefits-of-chocolate.aspx" >Health Benefits of Chocolate&rsaquo;</a></li>
+
+		<li style="display:none"></li>
+	</ul>
+</div>
+					           
+    				            <div id="ctl00_ContentPageHoder_contenttext" class="textcontent">
+    				                <span class="bigtext">Chocolate has been credited with many health benefits -  it was even suggested it should be prescribed on the NHS!!</span><br/><br/>
+Chocolate throughout history has been seen as medicinal						       
+					            </div>
+                                <div class="clear"></div>   
+    					    </div>
+			                <!--END ONE ITEM-->
+			                <div class="clearline"></div>   
+			                
+			                
+			            
+</div>
+    			        
+    			                
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Chocolate is good for the skin and lowers the risk of cancer</h2><br/>Dark Chocolate is good for the skin!<br/> <br/>Recent research carried out by scientists at the European Dermatology Clinic in London suggests that the flavanols, naturally occurring antioxidants found in dark chocolate, may help prevent wrinkles caused by the sun and might lower the risk of skin cancer as well.  <br/> <br/>"Our study revealed, for the first time, that high-flavanol chocolate protects the skin from harmful UV effects.  The main mechanism is likely to be the anti-inflammatory and antioxidant activity of cocoa flavanols," said the researchers.<br/><br/>Full article: Daily Telegraph, 5th November 2009 (read it online).</div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Chocolate 'cuts risk of dying in heart attack survivors'</h2><br/>Heart attack survivors who eat chocolate twice or more a week can cut their risk of dying from heart disease, a new study suggests. <br/><br/>Researchers found that those who regularly indulged were up to three times less likely to die from the disease than those who never ate chocolate. Even eating chocolate less often can help to protect the heart, researchers have found.  <br/><br/>Previous studies have suggested that cocoa could help to lower blood pressure and to improve the flow of flow around the body. Dr Kenneth Mukamal, from the Beth Israel Deaconess Medical Centre in Boston, who co-authored the study, said the findings were specific to chocolate.  Antioxidants in cocoa were “a likely candidate” to explain the potentially live-saving properties, he added. Antioxidants are thought to play a role in the ageing process and previous studies have suggested that they could help to protect against both heart disease and cancer. <br/><br/>The researchers found that there was a link between fatal heart attacks and the amount of chocolate eaten, even after other factors such as obesity, smoking and alcohol consumption, were taken into account.  “Our findings support increasing evidence that chocolate is a rich source of beneficial bioactive compounds,” the researchers concluded, although they called for clinical trials to prove their results. <br/><br/><b>Kate Devlin</b>, Medical Correspondent of the Daily Telegraph<br/><br/>Published: 14 Aug 2009. <br/> <br/>For full article:  <br/><a target="_blank" class="nlink" href="http://www.telegraph.co.uk/health/healthnews/6028772/Chocolate-cuts-risk-of-dying-in-heart-attack-survivors.html">http://www.telegraph.co.uk/health/healthnews/6028772/Chocolate-cuts-risk-of-dying-in-heart-attack-survivors.html</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Introducing the latest superfood... chocolate</h2><br/>Chocolate: it's good for you.  According to recent research from US scientists, chocolate has joined the unpronounceable trio of goji berries, spirulina and acai berries on the list of superfoods that could prolong your life. It seems those chocoholics we've been tutting disapprovingly at for years were on to a good thing all along.<br/><br/>Chang Lee, the chairman of the Department of Food Science and Technology at Cornell University in the US has been studying the healthy properties of cocoa for years. Lee and his team found that cocoa has nearly twice as many antioxidants as red wine, and up to three times as many as green tea. These results surprised even the team.  "If I had made a prediction before conducting the tests, I would have picked green tea as having the most antioxidant activity." said Lee. "When we compared one serving of each beverage, the cocoa turned out to be the highest in antioxidant activity, and that was surprising to me."<br/><br/>The healthy properties of antioxidants are still a topic for hot debate in the scientific community, but there is considerable laboratory evidence from chemical, cell culture and animal studies showing that antioxidants may slow down or even prevent the development of cancer. Other studies have indicated benefits in heart disease and other age-related conditions. Of antioxidants, the "best" performer seems to be polyphenols - which are also the least researched. Cocoa contains polyphenols, which are also found in grapes, berries and wine - as well as catechins and epicatechins - found in green tea.<br/>But if this seems all a bit too good to be true, then yes, there is a catch. Before you rush out to the newsagent for a bar of Dairy Milk, remember this is cocoa they are talking about, not milk chocolate. …...  However "chocolate is also a good source of iron, magnesium and phosphorus. Dark, more cocoa rich, chocolate contains more iron than white chocolate."<br/><br/>So, the answer is to tuck into a bar with a high cocoa content - and only in moderation. <br/><br/><b>Kate Carter</b>, Guardian<br/><br/>Wednesday 7th March 2007.</div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Extracts from an article in American Chronicle 30th May 2007.</h2><br/>Chocolate contains 4 essential ingredients that make it one of the best foods for health:<br/><br/><b>1. Magnesium:</b>  For the heart to be at its peak performance, it requires two minerals more than any other, magnesium and potassium. Cacao, of course, is a fantastic food source of heart-supporting magnesium. <br/><br/><b>2. Antioxidants:</b>  According to research, cacao beans are super-rich in antioxidant flavonols. Cacao is one of the richest sources of antioxidants of any food. <br/><br/><b>3. Phenylethylamine (PEA):</b>  PEA is a chemical in cacao that increases the activity of neurotransmitters (brain chemicals) in parts of the brain that control our ability to pay attention and stay alert. <br/><br/><b>4. Anti-Depressant Properties of Cacao:</b>  Cacao is also a great source of serotonin, dopamine, and phenylethylamine, three well-studied neurotransmitters, which help alleviate depression. Cacao also contains anandamide which delivers blissful feelings and B vitamins, which are associated with brain health. Cacao is a natural prozac! <br/><br/>Good for the memory   Flavanoids, that are found in raw cacao beans, can help boost brain power and memory. The beneficial brain effects appear to stem from flavanoids' impact on the blood system. In essence, the chemicals stimulate an increase of blood flow to the brain. But experts caution that chocolate usually loses its flavanoids during processing. So if you want to increase your alertness and concentration, try swapping your regular caffeine drink in the morning for a nice cup of hot chocolate – made with unprocessed and unsweetened cacao powder.<br/><br/>Beneficial to the heart.  No single food will confer immunity from illness, but both tea and chocolate, which are plant foods, can be components of a healthy diet if eaten in moderation. It's important to include a wide variety of plant foods in your diet every day.<br/><br/>Recent research at the University of California, has found that chocolate carries high levels of chemicals known as phenolics, some of which may help lower the risk of heart disease. Plants such as chocolate, coffee, tea, and others contain high levels of phenolics. <br/><br/>The truth about the health benefits of chocolate is finally reaching our ears. However, the whole truth should be told. Chocolate is healthy if it is dark with no added dairy products/milk or refined sugar.  So the next time you’re having a bad day and feel like you need something to make you smile, just have a piece of good quality dark chocolate without feeling guilty!</div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Chocolate 'has health benefits'</h2><br/><b>Eating dark chocolate could help control diabetes and blood pressure, Italian experts say. </b><br/><br/>Researchers found eating 100g of dark chocolate each day for 15 days lowered blood pressure in the 15 person-study.  The University of L'Aquila team also found the body's ability to metabolise sugar - a problem for people with diabetes - was improved. But eating the same quantities of white chocolate did not have an effect, the researchers said. The team said an antioxidant called flavanol was responsible for the effect because it neutralised potentially cell-damaging substances known as oxygen free radicals, the American Journal of Clinical Nutrition reported. <br/><br/>“ We would still recommend a balanced low fat, salt and sugar diet that includes starchy carbohydrates and plenty of fruit and vegetables ” <br/>Amanda Vezey, of Diabetes UK <br/><br/>Writing in the journal, nutrition expert Cesar Fraga, of the University of California, said the findings on blood pressure seemed credible.  He said other foods containing flavanols, such as tea and wine, have a similar effect on blood pressure.<br/><br/>For full article:  <br/><a target="_blank" class="nlink" href="http://news.bbc.co.uk/go/pr/fr/-/1/hi/health/4371867.stm">http://news.bbc.co.uk/go/pr/fr/-/1/hi/health/4371867.stm</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Health Benefits of Dark Chocolate</h2><br/>Flavonoids in dark chocolate are a naturally occurring antioxidant similar to those found in teas, red wine, and some fruits and vegetables.  These flavonoids are thought to have a beneficial effect on the cardiovascular system, and one recent study showed that 6 grams of dark chocolate a day (about one square) lowered systolic and diastolic blood pressure by 2 points each. <br/><br/>The study also claims that dark chocolate may lower low-density lipoprotein (LDL) cholesterol levels by about 5 points. Not a major effect to be sure, but pushing the "bad" cholesterol downwards. Flavonoids also benefit the way the lining of the blood vessels function.<br/><br/>“We think a lot of bad things that happen to the cardiovascular system are because the lining of the vessels cracks and becomes inflamed, setting the stage for plaques to form and rupture,” says Robert Sheeler, M.D., a family physician at Mayo Clinic.<br/><br/>Don't forget, chocolate contains calories and fat, so these findings are not an invitation to go on a chocolate binge. Dr. Sheeler says just one square a day (about 30 calories) will provide the health benefits described. He recommends chocolate that contains at least 60% cocoa; milk chocolate by contrast has only 15-25% cocoa, while dark chocolate can contain as much as 80%+ cocoa.<br/><br/>For full article:<br/><a target="_blank" class="nlink" href="http://www.mednews.com/user/mednews">http://www.mednews.com/user/mednews</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Extracts from Suite101.com – Chocolate in Pregnancy</h2><br/><b>Can Eating Chocolate Prevent Pre-eclampsia?</b><br/><br/>The chemical theobromine, which is known to stimulate the heart, relax smooth muscle and dilate blood vessels, is found in chocolate and a research study in 2008 at Yale University suggests that consumption by pregnant women of chocolate rich in the chemical could help prevent pre-eclampsia (a condition of hypertension in pregnancy associated with significant amounts of protein in the urine).<br/><br/>See "Chocolate Consumption in Pregnancy and Reduced Likelihood of Pre-eclampsia", Epidemiology: Vol 19(3) May 2008, 459–464.<br/><br/><b>Chocolate Makes You Happy</b><br/><br/>In 2004 researchers at the University of Helsinki, Finland asked over 300 pregnant women to rate their psychological stress levels and chocolate consumption. Six months after the birth of their babies, the mothers rated their babies' behaviour in various categories, including fear, soothability, smiling and laughter. The babies born to mothers who had eaten chocolate daily during pregnancy rated more positively the temperament of their infants. The babies of stressed mothers who had regularly eaten chocolate showed less fear of new situations than babies of stressed women who had not consumed chocolate. The researchers speculated that the happy behaviour observed in the babies might result from chemicals in chocolate, which are associated with positive mood, being passed on to the baby in the womb. See "Sweet babies: chocolate consumption during pregnancy and infant temperament at six months", Early Human Development: Vol 76, Issue 2, 139–145.<br/><br/><b>Chocolate Cravings</b><br/><br/>Dr. Michel Odent MD, an obstetrician who has had an enormous influence on the history of childbirth and health research over the last several decades and who achieved familiarity for introducing the concept of birthing pools and home-like birthing rooms, carried out a study about nutrition in pregnancy ………………….. Dr. Odent observed that chocolate is rich in magnesium, an important catalyst for fatty acid metabolism and that magnesium is needed in increased amounts during pregnancy for the development of the foetus’ brain. He found that chocolate is also rich in flavonoids, which have potent antioxidant properties helping the cardiovascular, immune and cancer-fighting system.<br/><br/>For full article:<br/><a target="_blank" class="nlink" href="http://prenatal-health.suite101.com/article.cfm/chocolate_in_pregnancy">http://prenatal-health.suite101.com/article.cfm/chocolate_in_pregnancy</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">University research proves that dark chocolate should be gift of love this Valentines</h2><br/><b>University research proves that dark chocolate should be gift of love this Valentines</b><br/><br/>You’ll be doing your sweetheart a big favour this Valentine’s Day if your gift contains dark chocolate. Researchers from Queen Margaret University, Edinburgh have shown that dark chocolate rich in polyphenols can serve as a convenient daily source of antioxidant, reduce blood pressure and lower blood sugar levels. Surprisingly results also showed that participants involved in the research did not gain any weight while consuming their quota of dark chocolate. <br/><br/><br/>For full article:<br/><a target="_blank" class="nlink" href="http://www.qmu.ac.uk/marketing/press_releases/chocolate.htm">http://www.qmu.ac.uk/marketing/press_releases/chocolate.htm</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">Harvard Study: Dark Chocolate Can Help Lower Your Blood Pressure</h2><br/><b>It also helps lower risk of diabetes, heart disease</b><br/><br/>More good news for chocolate  lovers: A new Harvard study finds that eating a small square of dark chocolate  daily can help lower blood pressure for people with <a target="_blank" href="http://healthtools.aarp.org/adamcontent/hypertension">hypertension.</a><br/><br/>The study joins the growing  research into the heart-healthy benefits of flavonoids, compounds in  unsweetened chocolate that cause dilation of the blood vessels. The Harvard  study was announced today in Atlanta  at the American Heart Association's science session on <a href="http://healthtools.aarp.org/galecontent/cardiovascular-diseases"  target="_blank">cardiovascular  disease.</a><br/><br/>Read the full article on the AARP website:<br/>  <a href="http://www.aarp.org/health/medical-research/info-03-2011/dark-chocolate-can-help-lower-your-blood-pressure.html"  target="_blank">http://www.aarp.org/health/medical-research/info-03-2011/dark-chocolate-can-help-lower-your-blood-pressure.html</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			                			                    
+    			               <div style="font-size:1px; background:#392701; height:1px;"></div>
+    			            
+        			            <div class="oneitemcontent">
+        			                
+    	    		                <div ><h2 class="paratitle">A recent article on the Cleveland Clinic Website asks:</h2><br/><h4>Is  Chocolate Good for Your Heart? </h4><br/><strong>Why a  little, in moderation, may be beneficial </strong><br/><br/><strong>Chocolate</strong> has gotten a lot of media coverage in recent years because it's believed that  it may help protect your cardiovascular system. The reasoning being that the  cocoa bean is rich in a class of plant nutrients called flavonoids.<br/><br/><strong>Flavonoids</strong> help protect plants from environmental toxins and help repair damage. They can  be found in a variety of foods, such as fruits and vegetables. When we eat  foods rich in flavonoids, it appears that we also benefit from this  "antioxidant" power. <br/><br/><strong>Flavanols</strong> are the main type of flavonoid found in cocoa and chocolate. In addition to  having antioxidant qualities, research shows that flavanols have other  potential influences on vascular health, such as lowering blood pressure,  improving blood flow to the brain and heart, and making blood platelets less  sticky and able to clot.<br/><br/>Read the full article:<br/><a target="_blank"  href="http://my.clevelandclinic.org/heart/prevention/nutrition/chocolate.aspx">http://my.clevelandclinic.org/heart/prevention/nutrition/chocolate.aspx</a><br/><br/>Two articles from  Natural News website:<br /><br/><h4>Dark chocolate may  help prevent colon cancer</h4><br/>6/2/2012  - Colon cancer  is the third leading cause of cancer deaths annually, a statistic that remains  constant despite increased awareness of the deadly disease. Researchers from  the Science and Technology Institute of Food and Nutrition in Spain have published the result of  a study in the journal Molecular Nutrition...<br/><br/><h4>Cocoa Flavanols from dark chocolate improve vision and  cognitive function</h4><br/>27/5/2011 - Potent cacao flavanols from dark chocolate have proven effective in  lowering the risk from heart disease and sudden heart attack in recent studies.  Writing in the journal Physiology and Behavior, researchers demonstrate that  antioxidants released by consumption of cocoa products can improve multiple...<br/><br/>Learn more: <a target="_blank"  href="http://www.naturalnews.com/dark_chocolate.html#ixzz1oKRfZBUe">dark chocolate news and articles</a><br/><a target="_blank"  href="http://www.naturalnews.com/dark_chocolate.html#ixzz1oKRfZBUe">http://www.naturalnews.com/dark_chocolate.html#ixzz1oKRfZBUe</a></div>
+        		                    <div class="clear"></div>
+    		                    </div>
+    			            
+    			            
+    			
+    		            
+			            <div class="clear"></div>			            
+			        </div>  
+		        </div>
+		        
+<div class="contentpageright">
+
+</div>
+		        <div class="clear"></div>		
+	        </div>
+	        <div class="clear"></div>    	  
+        </div>
+    	<div class="clear"></div>
+        
+<div style="padding:0px 8px 0 8px; ">
+    <img src="images/footer2.gif" alt="" style="float:right;margin-right:-40px" />
+    <img src="images/footer1.gif" alt=""  />
+</div>
+    </div>
+
+        
+</form>
+        
+        
+		<div class="clear"></div>		  
+		<!--OTHER-->
+		
+		<!--END OTHER-->
+    </div>			
+</div>
+<!--END BODY-->
+<!--FOOTER-->
+
+<div class="mainfooter" align="center">
+	<div class="realbody">
+		<div class="menufootertop" align="center">
+			<ul class="foottop">
+			    <li><a href="fresh-chocolates.aspx">Fresh Chocolates</a></li><li><a href="dark-chocolate.aspx">Dark Chocolate</a></li><li><a href="milk-chocolate.aspx">Milk Chocolate</a></li><li><a href="white-chocolate.aspx">White chocolate</a></li><li><a href="caramels-from-melt-chocolates.aspx">Caramels</a></li><li><a href="ourmet-chocolate.aspx">Gourmet Chocolate</a></li><li><a href="hot-chocolate.aspx">Hot Chocolate</a></li>
+				
+			</ul>
+		</div>
+		</div>
+		<div class="clear" style="background:#574727"></div>
+		<div class="realbody">
+		<div style="float:left; width:167px; text-align:center; color:#FFF">
+		<img src="images/footerlogo1.gif" alt=""  />
+		    &copy; Melt 2012
+		<img src="images/footerlogo2.gif" alt=""  />
+		</div>
+		<div class="onefooter">
+			<ul class="footul">
+				<li><a href="http://www.meltchocolates.com/">Home</a></li>
+				<li><a href="buy-our-chocolates.aspx">Our chocolates</a></li>
+				<li><a href="about-us.aspx">About Melt</a></li>
+				<li><a href="news.aspx">News &amp; Events</a></li>
+			</ul>
+		</div>
+		<div class="onefooter">
+			<ul class="footul">
+				<li><a href="contact-us.aspx">Contact us</a></li>
+				<li><a href="customer-services.aspx">Customer services</a></li>
+				<li><a href="press-login.aspx">Press</a></li>
+				<li><a href="checkout.aspx">Your basket</a></li>
+			</ul>
+		</div>
+		<div class="onefooter">
+			<ul class="footul">
+				<li><a href="terms.aspx">Terms &amp; conditions</a></li>
+				<li><a href="privacy.aspx">Privacy policy</a></li>
+				<li><a href="sitemap.aspx">Site map</a></li>				
+				<li><a href="melt-chocolates-special-offers.aspx">Special Offers</a></li>				
+			</ul>
+		</div>
+		<div class="otherfooter">
+			<ul class="foottop" style="text-align:left">
+				<li><a  rel="nofollow" href="http://www.addthis.com/bookmark.php" onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" target="_blank" style="padding:0"><img src="images/faddthis.gif" alt="" /></a></li>				
+				<li><a target="_blank" href="http://twitter.com/meltchocolates" style="padding:0"><img src="images/ftwintter.gif" alt="" /></a></li>
+				<li><a target="_blank" href="http://www.facebook.com/MeltChocolatesUK" style="padding:0"><img src="images/ffacebook.gif" alt="" /></a></li>
+				<!--li><a target="_blank" href="http://www.facebook.com/home.php?filter=nf#/group.php?gid=57166498414" style="padding:0"><img src="images/ffacebook.gif" alt="" /></a></li-->
+			</ul>
+			<h4>0207 727 5030</h4>
+			<span class="smalltext">Melt, 59 Ledbury Road, Notting Hill, London, W11 2AA</span>
+		    <div style="text-align:right;color:#FFF;font-size:7pt;padding-top:10px;">
+		       <a style=" font-weight:bold;color:#FFF; text-decoration:underline" href="http://www.neooptic.com" target="_blank">Web Design</a> by neooptic.com
+		    </div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	 <script type="text/javascript">var addthis_pub = 'neooptic';</script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"></script>
+</div>
+
+
+	
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-2773132-29");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+
+
+</body>
+
+</html>

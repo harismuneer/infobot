@@ -1,0 +1,2277 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-24T02:52:56Z
+WARC-TREC-ID: clueweb12-1700tw-10-07898
+WARC-IP-Address: 208.66.168.147
+WARC-Payload-Digest: sha1:T7ZVWAY3ACTAS57JN3B24AX4HNPF527C
+WARC-Target-URI: http://www.kensingtonbooks.com/finditem.cfm?itemid=16466
+WARC-Record-ID: <urn:uuid:456a4531-b385-4b55-a272-a8697bd8cab9>
+Content-Type: application/http; msgtype=response
+Content-Length: 35658
+
+HTTP/1.1 200 OK
+Server: nginx/1.0.10
+Date: Tue, 24 Apr 2012 02:52:56 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+X-Powered-By: ASP.NET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<!-- web2 -->
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+	
+	
+		
+	
+	
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+	
+
+
+<html>
+
+<head>
+	
+	
+
+
+	
+
+
+
+
+
+	
+		
+		
+		 
+		
+	
+
+
+
+
+
+
+	
+	<title>
+		Kensington, Zebra, Pinnacle Imprints -- romance, fiction, nonfiction book publishers
+	</title>
+	
+
+
+		
+	<meta name="keywords" content="romance,true crime,historical romance,regency romance,romantic suspense,erotic romance,time travel,books,history,african american,wicca,gay,lesbian,book club,mystery,contest,business,entertainment,fiction,non fiction,gambling,new age,occult,hispanic,inspirational,jewish,paranormal,western,parenting,child care,sports,military,reference,biography,world wars,humor,cooking,self help,philosophy,science,current events,fantasy,astrology,spirital,philosophical library, philosophicallibrary">
+
+
+		
+	<meta name="keywords" content="romance,true crime,historical romance,regency romance,romantic suspense,erotic romance,time travel,books,history,african american,wicca,gay,lesbian,book club,mystery,contest,business,entertainment,fiction,non fiction,gambling,new age,occult,hispanic,inspirational,jewish,paranormal,western,parenting,child care,sports,military,reference,biography,world wars,humor,cooking,self help,philosophy,science,current events,fantasy,astrology,spirital,philosophical library, philosophicallibrary">
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+var tempX = 0
+var tempY = 0
+
+// Main function to retrieve mouse x-y pos.s
+
+// Detect if the browser is IE or not.
+// If it is not IE, we assume that the browser is NS.
+var IE = document.all?true:false
+
+// If NS -- that is, !IE -- then set up for mouse capture
+if (!IE) document.captureEvents(Event.MOUSEMOVE)
+
+// Set-up to use getMouseXY function onMouseMove
+document.onmousemove = getMouseXY;
+
+function getMouseXY(e) {
+  if (IE) { // grab the x-y pos.s if browser is IE
+    tempX = event.clientX + document.body.scrollLeft
+    tempY = event.clientY + document.body.scrollTop
+  } else {  // grab the x-y pos.s if browser is NS
+    tempX = e.pageX
+    tempY = e.pageY
+  }  
+  // catch possible negative values in NS4
+  if (tempX < 0){tempX = 0}
+  if (tempY < 0){tempY = 0}  
+  // show the position values in the form named Show
+  // in the text fields named MouseX and MouseY
+  
+  return true
+}
+
+
+function getWindowHeight() {
+  var myHeight = 0;
+  if( typeof( window.innerHeight ) == 'number' ) {
+    //Non-IE
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myHeight = document.body.clientHeight;
+  }
+  return myHeight;
+}
+
+
+function getWindowWidth() {
+  var myWidth = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+  } else if( document.documentElement && ( document.documentElement.clientWidth ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+  } else if( document.body && ( document.body.clientWidth ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+  }
+  return myWidth;
+}
+
+
+function findPosX(obj)
+{
+  var curleft = 0;
+  if(obj.offsetParent)
+      while(1) 
+      {
+        curleft += obj.offsetLeft;
+        if(!obj.offsetParent)
+          break;
+        obj = obj.offsetParent;
+      }
+  else if(obj.x)
+      curleft += obj.x;
+  return curleft;
+}
+
+function findPosY(obj)
+{
+  var curtop = 0;
+  if(obj.offsetParent)
+      while(1)
+      {
+        curtop += obj.offsetTop;
+        if(!obj.offsetParent)
+          break;
+        obj = obj.offsetParent;
+      }
+  else if(obj.y)
+      curtop += obj.y;
+  return curtop;
+}
+
+function getWindowWidth() {
+  var myWidth = 0
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+  } else if( document.documentElement && ( document.documentElement.clientWidth ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+  } else if( document.body && ( document.body.clientWidth ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+  }
+	return myWidth;
+}
+ 
+function getScrollY() {
+  var scrOfY = 0;
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    //Netscape compliant
+    scrOfY = window.pageYOffset;
+  } else if( document.body && (  document.body.scrollTop ) ) {
+    //DOM compliant
+    scrOfY = document.body.scrollTop;
+  } else if( document.documentElement && ( document.documentElement.scrollTop ) ) {
+    //IE6 standards compliant mode
+    scrOfY = document.documentElement.scrollTop;
+  }
+  return scrOfY;
+}
+
+
+function getScrollX() {
+  var scrOfX = 0
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    //Netscape compliant
+    scrOfX = window.pageXOffset;
+  } else if( document.body && ( document.body.scrollLeft) ) {
+    //DOM compliant
+    scrOfX = document.body.scrollLeft;
+  } else if( document.documentElement && ( document.documentElement.scrollLeft) ) {
+    //IE6 standards compliant mode
+    scrOfX = document.documentElement.scrollLeft;
+  }
+  return scrOfX;
+}
+
+function unLoadPreview()
+{
+	var itmPreview = document.getElementById('itmPreview');
+	var itmTMP = document.getElementById('itmTMP');
+	
+	var modalPage = document.getElementById('modalPage')
+	modalPage.style.display = 'none';
+	
+	itmPreview.innerHTML = "";
+	itmPreview.style.top = 0;
+	itmPreview.style.left = 0;
+	
+	itmPreview.style.display = 'none';
+	itmTMP.style.display = 'none';
+	//itmPreview.innerHTML = itmTMP.innerHTML;
+}
+
+
+function doLoadPreview(itmID, elem, popupid) 
+{
+
+	var itmPreview = document.getElementById('itmPreview');
+		itmPreview.style.display = 'none';	
+
+	
+	var tmpElem = document.getElementById('itmTMP');
+	var imgElem = document.getElementById('imgElem' + itmID);
+	
+	var	winHeight = getWindowHeight();
+	var winWidth = getWindowWidth();
+	
+	var imgPosY = findPosY(imgElem);
+	
+	//tmpElem.innerHTML = 'posY: ' + findPosY(imgElem) + ' Heigth: ' + getWidowHeigth();
+	
+	//tmpElem.style.left = findPosX(imgElem) + imgElem.offsetWidth;
+	
+	tmpElem.style.left = winWidth/2 - 200 + getScrollX();
+	tmpElem.style.top = winHeight/2 - 200 + getScrollY();
+	
+	/*
+	if(winHeight - imgPosY < 400)
+	{
+		tmpElem.style.top = imgPosY - ((imgPosY/(winHeight + getScrollY())) * 400);
+	}
+	else
+	{
+		tmpElem.style.top = imgPosY;
+	}
+	*/
+
+	tmpElem.style.display = 'block';
+	
+	if (window.XMLHttpRequest) {
+		req = new XMLHttpRequest();
+	}
+	else if (window.ActiveXObject) {
+		req = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+		// request data passing searchString as an URL parameter
+	var d = new Date();
+	//req.open("GET", "./itemPreview.cfm?itemid=" + itmID + "&token=" + d.valueOf(), true);
+	req.open("GET", "./showpopup.cfm?itemid=" + itmID + "&layoutID=" + popupid + "&token=" + d.valueOf(), true);
+	req.send(null);
+	
+	//alert("./showpopup.cfm?itemid=" + itmID + "&layoutID=" + popupid + "&token=" + d.valueOf());
+			
+		// gives the request object an event handler
+	req.onreadystatechange = function() {
+		//alert(req.readyState);
+
+		if ((req.readyState == 4) && (req.status == 200)) {
+		// creates an array from returned list
+				
+
+				itmPreview.innerHTML = "<table cellpadding='0' cellspacing='0' style='margin-bottom:-2px; width: 100%; position:absolute;'><tr><td align='right'> <table cellpadding='0' cellspacing='0' style='border:none; color:white;'><tr><td>&nbsp;</td><td style='padding:6px;'><img src='x.jpg'></td></tr></table></td></tr></table>";
+				itmPreview.innerHTML += req.responseText;
+				
+				setTimeout('showPrev('+itmID+')',1000);
+				
+				return false;			
+
+			}	
+				
+		}
+		
+		return false;
+	}
+
+	function showPrev(itmID)
+	{
+
+
+		var itmPreview = document.getElementById('itmPreview');
+			itmPreview.style.display = 'block';	
+
+			//-- modal popup on --
+		//var modalContainer = document.getElementById('modalContainer');			
+
+			//modalContainer.style = itmPreview.style;
+			//modalContainer.innerHTML = itmPreview.innerHTML;
+			//modalContainer.style.display = 'block';
+
+
+		
+		var tmpElem = document.getElementById('itmTMP');
+		
+
+		//var imgElem = document.getElementById('imgElem' + itmID);
+	
+		var	winHeight = getWindowHeight();
+		var winWidth = getWindowWidth();
+	
+	
+		var modalPage = document.getElementById('modalPage')
+			modalPage.style.display = 'block';
+
+										
+		var modalContainer = document.getElementById('modalContainer')
+			modalContainer.style.display = 'none';
+			//modalPage.style.width = modalPage.style.width + getScrollX();
+			//modalPage.style.height = modalPage.style.height + getScrollY();
+			//modalPage.style.width = getScrollX();
+		
+
+		itmPreview.style.left = winWidth/2 - itmPreview.offsetWidth/2 + getScrollX();
+		itmPreview.style.top = winHeight/2 - itmPreview.offsetHeight/2 + getScrollY(); 
+		
+		/*
+		var imgPosY = findPosY(imgElem);
+
+		itmPreview.style.left = findPosX(imgElem) + imgElem.offsetWidth + 2;
+		
+		if(winHeight - imgPosY < itmPreview.offsetHeight)
+		{
+			itmPreview.style.top = imgPosY - ((imgPosY/(winHeight + getScrollY())) * itmPreview.offsetHeight);
+		}
+		else
+		{
+			itmPreview.style.top = imgPosY;
+		}
+		*/
+		
+		tmpElem.style.display = 'none';
+
+		return false;
+	}
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+	function add2cart(itmid)
+	{
+		window.location = 'catalog.cfm?dest=cart&eflag=add2cart&srcid=' + itmid + '&itemid=' + itmid + '&qty=1';
+	}
+//-->
+</SCRIPT>
+
+</head>
+
+
+
+<body background="graphics/bg_topnav.jpg"
+	 
+	text="#000000"
+	vlink="#990000"
+	
+		
+	
+	
+>	
+
+
+<style type="text/css">
+##modalPage
+{
+    display: none;
+	position: fixed;
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    /*top: 0px; */
+	top:expression(eval(document.body.scrollTop));
+
+	left: 0px;
+}
+
+.modalPage
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px; left: 0px;
+}
+
+.modalBackground
+{
+    filter: Alpha(Opacity=70); -moz-opacity:0.7; opacity: 0.7;
+    width: 100%; height: 100%; background-color: 003366;
+    position: fixed;
+    z-index: 15000;
+    top: 0px; left: 0px;
+}
+.modalContainer
+{
+    position: absolute;
+    /*width: 300px;*/
+    left: 50%;
+    top: 50%;
+    z-index: 100001;
+}
+.modal
+{
+    background-color: white;
+    border: solid 1px black; position: absolute;
+    top: -150px;
+    left: -150px;
+    z-index: 100002;
+    /*width: 300px;*/
+    /*height: 300px;*/
+    padding: 0px;
+}
+.modalTop
+{
+    /*width: 292px;*/
+    background-color: 003366;
+    padding: 1px;
+    color: ffffff;
+    text-align: right;
+}
+.modalTop a, .modalTop a:visited
+{
+    color: ffffff;
+}
+.modalBody
+{
+    padding: 10px;
+}
+</style>
+
+<div id="modalPage" style="display:none;">
+    <div class="modalBackground">
+    </div>
+    <div id="modalContainer" class="modalContainer">
+        <div class="modal" id="modalBox">
+            <div class="modalTop"><a href="##" onclick="hideModal('modalPage')">Close this window </a></div>
+            <div class="modalBody" id="modalBody">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<center>
+
+
+
+ 	
+
+
+
+
+		
+		
+		
+		
+		
+	
+	
+
+		
+		
+		
+	
+
+			
+
+			
+				
+					
+				
+				
+					
+				
+			
+
+			
+
+
+
+	
+
+
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+	<TR>
+		
+			<TD 
+				
+						COLSPAN=2
+						valign="top"
+						
+							background="graphics/bg_topnav.jpg"
+						
+					
+			>
+			
+				
+				
+				
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		<table width="100%" border=0 cellpadding=0 cellspacing=0><tr><td valign=top><br><br></td><td  width="400" valign="top" align="left" background="bg_topnav.jpg"><br><font face='Arial'><font size=2 color=Black><IMG valign=bottom BORDER=0 SRC="./supportdata/hp_logo_sage.jpg"></font></font></td><td  valign="bottom" align="right" background="bg_topnav.jpg">
+		
+		<font face='Arial'>
+
+	
+
+		<table border="0" cellpadding="0" cellspacing="0">
+		<form action="catalog.cfm" method="post">
+		<input type="hidden" name="search_type" value="All">
+		<tr><td>
+		
+		
+		
+			
+			<select name="columns">
+				<option value="name">Title
+				<option value="identifier">ISBN
+				
+				
+				
+					
+						
+						
+							<option value="text1">Author
+						
+					
+						
+						
+							<option value="text2"><FONT COLOR=RED><B>Pub Date</B></FONT>
+						
+					
+						
+						
+							<option value="text3">Imprint
+						
+					
+						
+						
+							<option value="text4">Format
+						
+					
+						
+						
+							<option value="text5">Series
+						
+					
+						
+						
+					
+						
+						
+							<option value="text7">Line
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+					
+						
+						
+									
+				
+			</select>
+			&nbsp;
+			
+			<input type="hidden" name="numcolumns" value="1">
+			<input type="hidden" name="datamapID" value="2">
+			<input type="hidden" name="searchdatamapID" value="2">
+		
+		<input type="hidden" name="dest" value="searchResults">
+
+		<input type="hidden" name="orderstring" value="name">
+		<font face="helvetica" size=2>
+		
+		<input type="text" size="20" name="searchstring">
+		<input type="image" src="graphics/go_gray.jpg" border="0" align="absmiddle">
+		</td></tr>
+		</form>
+		</table>
+</font>
+		
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+						
+			
+			 
+			
+						
+			 
+			
+			
+			
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+	
+<br></td></tr></table><table width="100%" cellpadding=0 cellspacing=0 border=0><tr><td   valign=top align=centerbackground="bg_topnav.jpg"><font face='Arial'><font size=2 color=Black><img src="http://www.kensingtonbooks.com/supportdata/newhp0311_navbar.jpg" border="0" usemap="#Map" />
+<map name="Map">
+  <area shape="rect" coords="6,5,61,33" href="http://www.kensingtonbooks.com/"><area shape="rect" coords="71,4,136,35" href="http://www.kensingtonbooks.com/finditem.cfm?itemid=14286">
+<area shape="rect" coords="146,5,223,33" href="http://www.kensingtonbooks.com/catalog.cfm?dest=dir&linkid=83&linkon=section">
+<area shape="rect" coords="243,5,326,33" href="http://www.kensingtonbooks.com/finditem.cfm?itemid=16373">
+<area shape="rect" coords="430,4,575,34" href="http://www.kensingtonbooks.com/catalog.cfm?dest=dir&linkid=341&linkon=section">
+<area shape="rect" coords="600,5,737,33" href="http://www.kensingtonbooks.com/finditem.cfm?itemid=14231">
+<area shape="rect" coords="765,2,834,33" href="http://www.kensingtonbooks.com/catalog.cfm?dest=profile">
+<area shape="rect" coords="854,4,900,33" href="http://www.kensingtonbooks.com/catalog.cfm?dest=cart">
+<area shape="rect" coords="910,4,998,36" href="http://www.kensingtonbooks.com/finditem.cfm?itemid=11229">
+<area shape="rect" coords="343,6,413,34" href="http://www.kensingtonbooks.com/catalog.cfm?dest=dir&linkid=233&linkon=section">
+</map></font></font>
+</td>
+</tr>
+</table>
+
+			
+			</TD>
+		
+		
+		
+			
+			
+			
+		
+	</TR>
+	<TR>
+		
+		<TD
+		width="1000"
+		height="300"
+		valign=top
+		
+			
+				bgcolor = "#ffffff"
+			
+		
+		>
+
+			<table width="1000" border="0"><tr><td>
+			
+				
+									
+					
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<!-- Set the datamap id for this item -->
+
+	
+	
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+						
+			
+			 
+			
+						
+			 
+			
+			
+			
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		<table width="1000" border=0 cellpadding=0 cellspacing=0><tr><td valign=top></td></tr></table><table width="1000" cellpadding=0 cellspacing=0 border=0><tr><td   width="1" valign=top align=leftbackground="bg_topnav.jpg"></td><td  width="353" valign="top" align="center"bgcolor="#ffffff"><br>
+		
+		
+
+
+	
+	
+		<img src="itm_img/9780758238207.jpg" border="0">
+	
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		<br><br></td><td  width="280" valign="top" align="left"bgcolor="#ffffff"><br>
+		
+		
+
+
+	<font face="Arial" size="2" color="#ffffff">Chapter The Healing Powers Of Chocolate</font>
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		</td><td  width="100" valign="top" align="left"bgcolor="#ffffff"></td><td  width="200" valign="top" align="left"bgcolor="#ffffff"><font face='Arial' color='#000000'><font size=2 color=Black><FONT COLOR=#333333></font></font>
+		
+		
+
+
+	<font face="Arial" size="2" color="BLACK"><P><BR><A HREF="http://www.kensingtonbooks.com/catalog.cfm?dest=dir&linkid=1556&linkon=subsection"  style="text-decoration: none; ">
+<FONT=arial><FONT SIZE=2><FONT COLOR=#990000>About Cal Orey</A><BR><A HREF="http://www.kensingtonbooks.com/finditem.cfm?itemid=15698"  style="text-decoration: none; ">
+<FONT=arial><FONT SIZE=2><FONT COLOR=#990000>About Book </A>
+</font>
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		<br>
+		
+		
+
+
+	
+		
+	
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+						
+			
+			 
+			
+						
+			 
+			
+			
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		<font face='Arial' color='#000000'><font size=2 color=Black></FONT></font></font><font face='Arial' color='#000000'><font size=2 color=Black><P><!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&username=xa-4c5aaf3b58209fbf"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c5aaf3b58209fbf"></script>
+<!-- AddThis Button END -->
+<P>
+</font></font><font face='Arial' color='#000000'><font size=2 color=Black><P><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></font></font></td></tr></table><table width="1000" cellpadding=0 cellspacing=0 border=0><tr><td   width="1" valign=top align=left bgcolor=#ffffff></td><td  valign="top" align="left"bgcolor="#ffffff"><font face='Arial' color='#000000'><font size=2 color=Black><BLOCKQUOTE><P>
+<CENTER><I!----MG width=800 height=1 BORDER=0 SRC="./supportdata/bg_hpline_oneline.jpg"-----></CENTER></font></font><br>
+		
+		
+
+
+	<font face="Arial" size="2" color="#333333"><CENTER><B>Foreword </CENTER></B>
+
+<P>
+
+Cal Orey is amazing. In The Healing Powers of Chocolate, she takes you 
+on a complete tour of our favorite dietary decadence. But don’t be 
+fooled by the title. Yes, she does canvass all the nutritional reasons you 
+need to treat chocolate as a health food on the order of broccoli and 
+Brussels sprouts (as if you needed another reason). But she also delivers 
+the history of this “food of the gods,” showing you chocolate’s many 
+home remedies, how to cook with it, what wine to pair with it, and 
+even where to buy it. 
+<P>
+
+If you’re still struggling with the fundamental question Is chocolate 
+virtue or vice?, The Healing Powers of Chocolate will clear that up for 
+you. Certainly, you may have to turn your thinking upside down, but 
+that is something we, as a culture, are more than ready to do. 
+<P>
+
+For example, I give “chocolate eating lessons” for major U.S. corporations 
+through my company, Mediterranean Wellness. I love saying 
+that phrase. Slowly, clearly, with a matter-of-fact expression—“chocolate 
+eating lessons”—and waiting to watch the face in front of me 
+screw up sideways, wondering when I’m going to say, “No, ha-ha, just 
+kidding!” 
+<P>
+
+These cognitive contortions are driven by our cultural assumptions 
+about chocolate: it’s a candy, a decadence, an evil fattening siren that 
+lures us daily into our personal and national obesity epidemic. People 
+come up to me all the time and say, “If I could just give up chocolate, 
+I’d be able to stay on my diet.” 
+<P>
+
+It turns out, however, that eating chocolate is not the problem; it’s 
+the solution, hence, the lessons. In fact, when you observe eating behaviors 
+of healthy cultures, like those of the French, you see that they 
+eat chocolate all the time but don’t suffer weight and health problems. 
+In my first book, The Fat Fallacy, I first detailed what these people are 
+doing compared to Americans—who are living on cardboard-flavored, 
+low-fat food products, with three times more heart attacks, and a national 
+obesity epidemic. 
+<P>
+
+Somebody, somewhere is on the wrong page. 
+<P>
+
+CHOCOLATE WILL IMPROVE 
+OUR CULTURE OF HEALTH 
+<P>
+
+
+What we in the United States are missing is the fact that chocolate 
+is a perfect metaphor for what healthy cultures are doing right and we, 
+by contrast, are doing completely wrong. Rather than running from 
+the chocolate, we should embrace it with both arms. 
+<P>
+
+First of all, chocolate is an incredible health food. When you think 
+of Brussels sprouts, celery sticks, and spinach, add chocolate to the list. 
+It is an antioxidant; it is an antiplatelet, like aspirin; it raises the good 
+HDL cholesterol, lowers the bad LDL cholesterol; and it helps prevent 
+tumors from spreading. You need chocolate every day. 
+<P>
+
+That said, keep in mind that the health benefits are conferred from 
+the cocoa itself. Thus, the darker the chocolate, the more cocoa it contains, 
+and the better it is for you. And this is particularly true if you’re 
+concerned about your heart health. 
+<P>
+
+Diabetics also have a reason to cheer for dark chocolate, because 
+the relative concentrations of cocoa are like buckets in a well—when 
+one goes up, the other goes down. So a chocolate high in cocoa will be 
+low in sugar. This is good news for those who are concerned about 
+keeping insulin swings to a minimum. 
+<P>
+
+Yes, chocolate is perhaps a good choice for improving your heart 
+health and insulin control, but what about the chocoholic? The aver
+age person who just likes . . . loves . . . fantasizes daily about . . . chocolate? 
+This person is likely most concerned about the effect chocolate 
+can have on his or her weight. 
+<P>
+
+Again, a cultural perspective sheds some much needed light. Americans 
+eat roughly 10 pounds of chocolate per person per year. The Swiss lead 
+the world in chocolate consumption per capita, at 22 pounds per person 
+per year. The American obesity rate is roughly three times that of 
+the Swiss, but we eat less than half as much chocolate as they do. 
+Certainly, many factors conspire to produce our rampant obesity problems, 
+but chocolate consumption is not a health liability for them. 
+<P>
+
+Perhaps the reason is that dark chocolate is low in sugar and includes 
+healthy vegetable oils that help keep your insulin levels steady. 
+When these levels are stable, you find that you’re just less hungry between 
+meals. This makes you consume less, which helps you control 
+your calories, which helps you control your weight. And all you did was 
+“love on” some delicious, high-quality chocolate (which also is something 
+of a food Casanova, containing a natural “love drug,” providing 
+feel-good feelings similar to those when you are in love). 
+<P>
+
+HOW TO KEEP CHOCOLATE A HEALTH FOOD 
+<P>
+
+Even with all of this wonderful news about chocolate, there is a strong 
+caveat. The biological benefits for your heart, blood sugar, weight, and 
+mood are dose dependent, which pulls us back to “chocolate eating 
+lessons.” You get the health benefits of chocolate only when you eat in 
+control. There is nothing on this planet that you cannot overconsume, 
+instantly changing a healthy food into an unhealthy one, including 
+dark chocolate. <P>
+
+
+So when you eat your chocolate, you must start with high-quality 
+dark chocolate that makes you basically moan out loud. Audible groaning 
+is a good thing. Then remember, no biting or chewing your chocolate. 
+The way you make this love affair last as long as possible is to leave 
+it on your palate for as many luscious, lingering minutes as you possibly 
+can. 
+<P>
+
+We’ve adapted this sumptuous method of eating chocolate into a 
+full curriculum—the Mediterranean Wellness PATH program (the book 
+form is The French Don’t Diet Plan)—which lowers weight, cholesterol, 
+and controls blood sugar for individuals and corporations nationally. 
+<P>
+
+Basically, eating this way controls portions for you as you become 
+sated prior to working your way to the end of the 70 percent cocoa 
+Belgian bar of wonderfulness. Controlling your portions in this way— 
+by taking your time, choosing high quality, and savoring the flavor of 
+your food—is how chocolate becomes a health boon, not a health disaster; 
+a heart-healthy snack, rather than a contributor to a coronary. 
+<P>
+
+ALL YOU NEED IS LOVE 
+(AND A LITTLE CHOCOLATE) 
+<P>
+
+Obviously, this kind of eating behavior generalizes very well to all 
+foods, in all conditions. In fact, when you observe people from healthy 
+cultures eating any of their wonderful foods at all, you notice these 
+same themes coming through quite naturally. The thin people—the 
+ones without the heart disease and diabetes—love their chocolate just 
+like they love their food. 
+<P>
+
+This fact is exactly why we should not fear chocolate. We should 
+change our way of thinking completely to recognize that chocolate is 
+not a candy, but a health food. It’s not a sinfully sumptuous vice that 
+you sneak from the jar when no one’s looking or treat yourself with because 
+you’ve been “good” on your draconian diet, but a virtue you 
+should encourage every day. When we do this in control, insulin is stabilized, 
+calories are controlled, and the good cholesterol is boosted 
+while the bad cholesterol is decreased. Therefore, all these realities of 
+the physiological system make chocolate eating the solution to our 
+dreadful weight and health concerns, and not the problem. 
+<P>
+
+—William Clower, Ph.D., author of 
+The French Don’t Diet Plan 
+and The Fat Fallacy 
+<P>
+
+<CENTER><B>Preface </B></CENTER>
+
+<P>
+
+One summer morning, I woke up and had chocolate on the brain. I did 
+brew a cup of fresh Italian Roast coffee splashed with organic chocolate 
+milk and paired it with a warm dark chocolate muffin. And then, 
+my creative juices were in high-octane gear. I got a craving to e-mail a 
+query to my book editor. I wanted to write a new book on the healing 
+powers of chocolate. But I hesitated and thought, “This is a crazy idea. 
+Chocolate is a decadent food.” 
+<P>
+
+Later that day I pondered the topic like I would scrutinize a truffle. 
+After all, I had gone to Vinegar World and Olive Land in my two books 
+The Healing Powers of Vinegar and The Healing Powers of Olive Oil. 
+Would my publisher at Kensington really be interested in sending me 
+to Chocolate Nirvana? Or was my idea just a sweet pipe dream of a 
+self-professed chocoholic? 
+<P>
+
+I decided I had nothing to lose, so I sat down in my study and wrote 
+a quick query regarding writing a book on chocolate. A few hours later, 
+I received a response from my editor, Richard Ember. I’d snagged his interest. 
+Within a couple of weeks, the idea was sealed into a chocolate
+book deal. At last, I was given the go-ahead to write the book I had 
+wanted to pen for more than a decade. 
+<P>
+
+Back in 1999, I pitched the idea to another editorial consultant 
+when I was writing those mini mags sold at grocery store checkout 
+stands. My editor showed interest, but then there was a shake-up in 
+the company and my chocolate-book idea fizzled like hot chocolate 
+gone cold. 
+<P>
+
+Ironically, in both books on disease-fighting antioxidant-rich vinegar 
+and olive oil, I did mention chocolate (also chock-full of disease-
+fighting antioxidants). And, as a health-conscious Californian and 
+self-professed chocolate lover, I have touched on the once forbidden 
+food—chocolate—in health articles for women’s magazines including 
+Woman’s World and Women’s Weekly. But I noted only chunks of its 
+virtues, from how the good-for-you fatty food can boost your energy to 
+how it can rev up your libido (maybe). 
+<P>
+
+The amazing part is, I was assigned to write a book about my pas-
+sion—chocolate—and this is how The Healing Powers of Chocolate became 
+one of my favorite love affairs and was finally written by me, a 
+health author who simply loves chocolate. 
+<P>
+
+By being a San Francisco Bay Area native (a popular home of experienced 
+chocolate makers and artisans), I was given the opportunity to 
+share the real chocolate world through my research of famous chocolate 
+makers (three major companies: Guittard and Ghirardelli, part of 
+the Lindt empire; and Scharffen Berger, part of the Hershey moguls). 
+<P>
+
+Also, olive oil, vinegar, and chocolate are linked to the traditional 
+European diet and lifestyle, which continue to make headlines in research 
+and news articles, and which I practice and preach to anyone 
+who is interested in staying healthy and living longer by teaming 
+health and indulgence. 
+<P>
+
+I immediately began my mission and set out in the real world and 
+cyberspace to discover the past and present standout benefits of 
+chocolate: heart health, weight loss, home cures, beauty uses, and so 
+much more. And never did I imagine what a wealth of information is 
+in the wide, wide world of chocolate. 
+<P>
+
+I took the holistic route to chocolate’s wonders and confirmed my 
+instincts that chocolate is good for the body, mind, and spirit. I delved 
+deep into the cutting-edge health benefits, original and edgy home 
+cures, and anecdotes from both famous and everyday people, past and 
+present. And that is why The Healing Powers of Chocolate will surprise 
+you with its extraordinary surprises—like a box of healthful and heavenly 
+chocolates, all natural, of course, and full of flavor. 
+<P>
+So make yourself a cup of hot (or iced) chocolate (depending on 
+what season it is), sit down, and grab a pencil (you’ll want to take 
+notes!). I’ll show you, page by page, how this ancient “food of the 
+gods” can be your best friend, too, for the end of time.</font>
+
+
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+						
+			
+			 
+			
+						
+			 
+			
+			
+			
+			
+		
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+	
+	
+		
+			
+			
+			
+			
+			
+			
+			 
+			
+
+			
+				
+			
+						
+
+		
+
+	
+	
+	
+	
+	
+	
+<font face='Arial' color='#000000'><font size=2 color=Black></BLOCKQUOTE></font></font><br><br></td></tr></table><table width="1000" cellpadding=0 cellspacing=0 border=0><tr><td   width="1" valign=top align=left bgcolor=#ffffff></td><td  width="1000" valign="top" align="left" background="bg_topnav.jpg">
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+				
+				
+			</td></tr></table>
+		</TD>
+		
+		
+	</TR>
+	<TR>
+		
+	</TR>
+</TABLE> 
+
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29582525-1']);
+  _gaq.push(['_setDomainName', 'kensingtonbooks.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
+
+	
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29582525-1']);
+  _gaq.push(['_setDomainName', 'kensingtonbooks.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

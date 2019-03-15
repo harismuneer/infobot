@@ -1,0 +1,1897 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-01T15:26:43Z
+WARC-TREC-ID: clueweb12-0500wb-82-26713
+WARC-Target-URI: http://www.lyriczz.com/songs/i-25.html
+WARC-Payload-Digest: sha1:G7IECMJYGTBUOAZUEZJVCO7MUKN7TMH2
+WARC-IP-Address: 64.131.74.249
+WARC-Record-ID: <urn:uuid:abc9849d-d272-4c50-9045-3172a4211bdc>
+Content-Type: application/http; msgtype=response
+Content-Length: 119828
+
+HTTP/1.1 200 OK
+Date: Thu, 01 Mar 2012 15:27:48 GMT
+Server: Apache/1.3.42 (Unix) PHP/5.3.2 mod_log_bytes/1.2 mod_bwlimited/1.4 mod_auth_passthrough/1.8 FrontPage/5.0.2.2635 mod_ssl/2.8.31 OpenSSL/0.9.7a
+X-Powered-By: PHP/5.3.2
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Song Lyrics: I - page 25</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="Song Lyrics for an I, such as Cannibal Corpse - I Will Kill You lyrics, Beth Nielsen Chapman - I Will Know Your Love lyrics, Filter - I Will Lead You lyric" />
+<meta name="keywords" content="lyrics,music,songs" />
+<link href="http://www.lyriczz.com/style.css" rel="stylesheet" type="text/css" />
+
+<!-- START main submenu script -->
+<link href="http://www.lyriczz.com/include/submenu/p7exp.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.lyriczz.com/include/submenu/p7exp.js"></script>
+
+
+
+<!--[if lte IE 7]>
+<style>
+#menuwrapper, #p7menubar ul a {height: 1%;}
+a:active {width: auto;}
+</style>
+<![endif]-->
+
+<!-- END main submenu script -->
+
+
+ <script type="text/javascript" src="http://www.lyriczz.com/js/jquery.js"></script>
+  <script type="text/javascript" src="http://www.lyriczz.com/js/suggest.js"></script>
+  <script type="text/javascript">
+  <!--
+  $(document).ready(function()
+  {
+    //hide the all of the element with class msg_body
+    $(".msg_body").hide();
+    //toggle the componenet with class msg_body
+    $(".msg_head").click(function()
+    {
+      $(this).next(".msg_body").slideToggle(600);
+    });
+    //$("#inputText").focus();
+	
+	
+	$('#inputText').each(function(){
+
+	this.value = $(this).attr('title');
+	$(this).addClass('textLabel');
+
+	$(this).focus(function(){
+		if(this.value == $(this).attr('title')) {
+			this.value = '';
+			$(this).removeClass('textLabel');
+		}
+	});
+
+	$(this).blur(function(){
+		if(this.value == '') {
+			this.value = $(this).attr('title');
+			$(this).addClass('textLabel');
+		}
+	});
+});
+
+  });
+  //-->
+  </script>
+  <script type="text/javascript">
+  <!--
+  function sval(a)
+    {
+     document.getElementById("searchtype").value = a;
+    }
+  //-->
+  </script>
+  <link rel="stylesheet" type="text/css" href="http://www.lyriczz.com/css/srch_style.css" />
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="http://www.lyriczz.com/css/srch_ie.css" />
+  <![endif]-->
+	<!-- START analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28140316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+	<!-- END analytics -->
+  
+
+</head>
+<body onLoad="P7_ExpMenu()"  onclick="emptySuggestions();" >
+<div id="header">
+ <a class="home_link" href="http://www.lyriczz.com"><img alt="Lyrics" title="Lyrics" src="http://www.lyriczz.com/images/lyrics.jpg"/></a>
+	<div id="menuwrapper"  style="margin-top: -14px;" >
+					<div id="searchTips">Tip: wait a moment for suggestions.</div>
+			<br style="clear:both;"/>
+				<ul id="p7menubar">
+			<li class="left"><a class="trigger" href="http://www.lyriczz.com">Lyrics</a>
+			<ul>
+				<li><a href="http://www.lyriczz.com/top100.php">Popular lyrics</a></li>
+				<li><a href="http://www.lyriczz.com/latest.php">New Lyrics </a></li>
+			</ul>
+			</li>
+			<li class="right"><a class="trigger" href="http://www.lyriczz.com/chartzz.php">Chartzz</a>
+				<ul>
+					<li><a href="http://www.lyriczz.com/chart_usa.php">USA Chart</a></li>
+					<li><a href="http://www.lyriczz.com/chart_uk.php">UK Chart</a></li>
+					<li><a href="http://www.lyriczz.com/chart_nl.php">Netherlands Chart</a></li>
+				</ul>
+			</li>
+		</ul>
+					<div id="searchBoxContainer" class="">
+				<input type="text" id="inputText" onfocus="resetCurrentLi();" autocomplete="off" onkeyup="handleInput(event);" class="inputText" size="50" title="Search by Artist or Song" name="search" />
+
+				<input id="srchButton" type="image" src="http://www.lyriczz.com/images/search.jpg" value="Enter search criteria" onclick="handleInput({keyCode: 13});">
+				<br style="clear:both;"/>
+			</div>		
+				<br class="clearit">
+				<div id="suggestions" style="display: block"> </div>
+			</div>
+</div>
+<div id="content_wrapper">
+
+
+<div id="content">
+
+ <div id="middle_area"> 
+  <div style="text-align:left;">
+   <div style='font-size: 15px; font-weight: bold;'>Artist Name:  <a href='http://www.lyriczz.com/artist/1-1.html'>#</a>  <a href='http://www.lyriczz.com/artist/a-1.html'>A</a>  <a href='http://www.lyriczz.com/artist/b-1.html'>B</a>  <a href='http://www.lyriczz.com/artist/c-1.html'>C</a>  <a href='http://www.lyriczz.com/artist/d-1.html'>D</a>  <a href='http://www.lyriczz.com/artist/e-1.html'>E</a>  <a href='http://www.lyriczz.com/artist/f-1.html'>F</a>  <a href='http://www.lyriczz.com/artist/g-1.html'>G</a>  <a href='http://www.lyriczz.com/artist/h-1.html'>H</a>  <a href='http://www.lyriczz.com/artist/i-1.html'>I</a>  <a href='http://www.lyriczz.com/artist/j-1.html'>J</a>  <a href='http://www.lyriczz.com/artist/k-1.html'>K</a>  <a href='http://www.lyriczz.com/artist/l-1.html'>L</a>  <a href='http://www.lyriczz.com/artist/m-1.html'>M</a>  <a href='http://www.lyriczz.com/artist/n-1.html'>N</a>  <a href='http://www.lyriczz.com/artist/o-1.html'>O</a>  <a href='http://www.lyriczz.com/artist/p-1.html'>P</a>  <a href='http://www.lyriczz.com/artist/q-1.html'>Q</a>  <a href='http://www.lyriczz.com/artist/r-1.html'>R</a>  <a href='http://www.lyriczz.com/artist/s-1.html'>S</a>  <a href='http://www.lyriczz.com/artist/t-1.html'>T</a>  <a href='http://www.lyriczz.com/artist/u-1.html'>U</a>  <a href='http://www.lyriczz.com/artist/v-1.html'>V</a>  <a href='http://www.lyriczz.com/artist/w-1.html'>W</a>  <a href='http://www.lyriczz.com/artist/x-1.html'>X</a>  <a href='http://www.lyriczz.com/artist/y-1.html'>Y</a>  <a href='http://www.lyriczz.com/artist/z-1.html'>Z</a> </div>
+   <div style='font-size: 15px; font-weight: bold;'>Song Title:  <a href='http://www.lyriczz.com/songs/1-1.html'>#</a>  <a href='http://www.lyriczz.com/songs/a-1.html'>A</a>  <a href='http://www.lyriczz.com/songs/b-1.html'>B</a>  <a href='http://www.lyriczz.com/songs/c-1.html'>C</a>  <a href='http://www.lyriczz.com/songs/d-1.html'>D</a>  <a href='http://www.lyriczz.com/songs/e-1.html'>E</a>  <a href='http://www.lyriczz.com/songs/f-1.html'>F</a>  <a href='http://www.lyriczz.com/songs/g-1.html'>G</a>  <a href='http://www.lyriczz.com/songs/h-1.html'>H</a>  <a href='http://www.lyriczz.com/songs/i-1.html'>I</a>  <a href='http://www.lyriczz.com/songs/j-1.html'>J</a>  <a href='http://www.lyriczz.com/songs/k-1.html'>K</a>  <a href='http://www.lyriczz.com/songs/l-1.html'>L</a>  <a href='http://www.lyriczz.com/songs/m-1.html'>M</a>  <a href='http://www.lyriczz.com/songs/n-1.html'>N</a>  <a href='http://www.lyriczz.com/songs/o-1.html'>O</a>  <a href='http://www.lyriczz.com/songs/p-1.html'>P</a>  <a href='http://www.lyriczz.com/songs/q-1.html'>Q</a>  <a href='http://www.lyriczz.com/songs/r-1.html'>R</a>  <a href='http://www.lyriczz.com/songs/s-1.html'>S</a>  <a href='http://www.lyriczz.com/songs/t-1.html'>T</a>  <a href='http://www.lyriczz.com/songs/u-1.html'>U</a>  <a href='http://www.lyriczz.com/songs/v-1.html'>V</a>  <a href='http://www.lyriczz.com/songs/w-1.html'>W</a>  <a href='http://www.lyriczz.com/songs/x-1.html'>X</a>  <a href='http://www.lyriczz.com/songs/y-1.html'>Y</a>  <a href='http://www.lyriczz.com/songs/z-1.html'>Z</a> </div>
+  </div>
+  <br />
+  <div style="text-align:left;">
+   <!-- START Leaderboard banner -->
+	<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "728x90,468x60";
+	//--></script>
+	<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/lyricsbaycom/LyricZZcom/tags.js"></script>
+   
+   <!-- END Leaderboard banner -->
+  </div> 
+  <br />
+  
+  <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f061b433e387269"></script>
+<!-- AddThis Button END -->
+
+<br />
+  <h1 class='cb_title'>Song Lyrics for an I</h1>
+<div style="width:580px;">
+  <span class='nums'>&laquo; <a href='http://www.lyriczz.com/songs/i-24.html'>Previous</a> <a href='http://www.lyriczz.com/songs/i-1.html'> 1 </a><a href='http://www.lyriczz.com/songs/i-2.html'> 2 </a><a href='http://www.lyriczz.com/songs/i-3.html'> 3 </a><a href='http://www.lyriczz.com/songs/i-4.html'> 4 </a><a href='http://www.lyriczz.com/songs/i-5.html'> 5 </a><a href='http://www.lyriczz.com/songs/i-6.html'> 6 </a><a href='http://www.lyriczz.com/songs/i-7.html'> 7 </a><a href='http://www.lyriczz.com/songs/i-8.html'> 8 </a><a href='http://www.lyriczz.com/songs/i-9.html'> 9 </a><a href='http://www.lyriczz.com/songs/i-10.html'> 10 </a><a href='http://www.lyriczz.com/songs/i-11.html'> 11 </a><a href='http://www.lyriczz.com/songs/i-12.html'> 12 </a><a href='http://www.lyriczz.com/songs/i-13.html'> 13 </a><a href='http://www.lyriczz.com/songs/i-14.html'> 14 </a><a href='http://www.lyriczz.com/songs/i-15.html'> 15 </a><a href='http://www.lyriczz.com/songs/i-16.html'> 16 </a><a href='http://www.lyriczz.com/songs/i-17.html'> 17 </a><a href='http://www.lyriczz.com/songs/i-18.html'> 18 </a><a href='http://www.lyriczz.com/songs/i-19.html'> 19 </a><a href='http://www.lyriczz.com/songs/i-20.html'> 20 </a><a href='http://www.lyriczz.com/songs/i-21.html'> 21 </a><a href='http://www.lyriczz.com/songs/i-22.html'> 22 </a><a href='http://www.lyriczz.com/songs/i-23.html'> 23 </a><a href='http://www.lyriczz.com/songs/i-24.html'> 24 </a><b> 25 </b><a href='http://www.lyriczz.com/songs/i-26.html'> 26 </a><a href='http://www.lyriczz.com/songs/i-27.html'> 27 </a><a href='http://www.lyriczz.com/songs/i-28.html'> 28 </a><a href='http://www.lyriczz.com/songs/i-29.html'> 29 </a><a href='http://www.lyriczz.com/songs/i-30.html'> 30 </a><a href='http://www.lyriczz.com/songs/i-31.html'> 31 </a><a href='http://www.lyriczz.com/songs/i-32.html'> 32 </a><a href='http://www.lyriczz.com/songs/i-33.html'> 33 </a><a href='http://www.lyriczz.com/songs/i-34.html'> 34 </a><a href='http://www.lyriczz.com/songs/i-35.html'> 35 </a><a href='http://www.lyriczz.com/songs/i-36.html'> 36 </a><a href='http://www.lyriczz.com/songs/i-37.html'> 37 </a><a href='http://www.lyriczz.com/songs/i-38.html'> 38 </a><a href='http://www.lyriczz.com/songs/i-39.html'> 39 </a><a href='http://www.lyriczz.com/songs/i-40.html'> 40 </a><a href='http://www.lyriczz.com/songs/i-41.html'> 41 </a><a href='http://www.lyriczz.com/songs/i-42.html'> 42 </a><a href='http://www.lyriczz.com/songs/i-43.html'> 43 </a><a href='http://www.lyriczz.com/songs/i-44.html'> 44 </a><a href='http://www.lyriczz.com/songs/i-45.html'> 45 </a><a href='http://www.lyriczz.com/songs/i-46.html'> 46 </a><a href='http://www.lyriczz.com/songs/i-47.html'> 47 </a><a href='http://www.lyriczz.com/songs/i-48.html'> 48 </a><a href='http://www.lyriczz.com/songs/i-49.html'> 49 </a><a href='http://www.lyriczz.com/songs/i-50.html'> 50 </a><a href='http://www.lyriczz.com/songs/i-51.html'> 51 </a><a href='http://www.lyriczz.com/songs/i-52.html'> 52 </a><a href='http://www.lyriczz.com/songs/i-53.html'> 53 </a><a href='http://www.lyriczz.com/songs/i-54.html'> 54 </a><a href='http://www.lyriczz.com/songs/i-55.html'> 55 </a><a href='http://www.lyriczz.com/songs/i-56.html'> 56 </a><a href='http://www.lyriczz.com/songs/i-57.html'> 57 </a><a href='http://www.lyriczz.com/songs/i-58.html'> 58 </a><a href='http://www.lyriczz.com/songs/i-59.html'> 59 </a><a href='http://www.lyriczz.com/songs/i-60.html'> 60 </a><a href='http://www.lyriczz.com/songs/i-61.html'> 61 </a><a href='http://www.lyriczz.com/songs/i-62.html'> 62 </a><a href='http://www.lyriczz.com/songs/i-63.html'> 63 </a><a href='http://www.lyriczz.com/songs/i-64.html'> 64 </a><a href='http://www.lyriczz.com/songs/i-65.html'> 65 </a><a href='http://www.lyriczz.com/songs/i-66.html'> 66 </a><a href='http://www.lyriczz.com/songs/i-67.html'> 67 </a><a href='http://www.lyriczz.com/songs/i-68.html'> 68 </a><a href='http://www.lyriczz.com/songs/i-69.html'> 69 </a> <a href='http://www.lyriczz.com/songs/i-26.html'><b>Next</b></a> &raquo;</span><br /><div style='width:580px;'><div class='mnu-row1'>
+						<a class='songs1' title="Cannibal Corpse - I Will Kill You lyrics" href='http://www.lyriczz.com/lyrics/cannibal-corpse/69672-i-will-kill-you/'>
+							<strong>Cannibal Corpse</strong>
+						</a>
+						<a class='songs2' title="Cannibal Corpse - I Will Kill You lyrics" href='http://www.lyriczz.com/lyrics/cannibal-corpse/69672-i-will-kill-you/'>
+							<strong> - I Will Kill You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beth Nielsen Chapman - I Will Know Your Love lyrics" href='http://www.lyriczz.com/lyrics/beth-nielsen-chapman/142399-i-will-know-your-love/'>
+							<strong>Beth Nielsen Chapman</strong>
+						</a>
+						<a class='songs2' title="Beth Nielsen Chapman - I Will Know Your Love lyrics" href='http://www.lyriczz.com/lyrics/beth-nielsen-chapman/142399-i-will-know-your-love/'>
+							<strong> - I Will Know Your Love lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Filter - I Will Lead You lyrics" href='http://www.lyriczz.com/lyrics/filter/130861-i-will-lead-you/'>
+							<strong>Filter</strong>
+						</a>
+						<a class='songs2' title="Filter - I Will Lead You lyrics" href='http://www.lyriczz.com/lyrics/filter/130861-i-will-lead-you/'>
+							<strong> - I Will Lead You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kaci Brown - I Will Learn To Love Again lyrics" href='http://www.lyriczz.com/lyrics/kaci-brown/51918-i-will-learn-to-love-again/'>
+							<strong>Kaci Brown</strong>
+						</a>
+						<a class='songs2' title="Kaci Brown - I Will Learn To Love Again lyrics" href='http://www.lyriczz.com/lyrics/kaci-brown/51918-i-will-learn-to-love-again/'>
+							<strong> - I Will Learn To Love Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Kaci - I Will Learn To Love Again lyrics" href='http://www.lyriczz.com/lyrics/kaci/51963-i-will-learn-to-love-again/'>
+							<strong>Kaci</strong>
+						</a>
+						<a class='songs2' title="Kaci - I Will Learn To Love Again lyrics" href='http://www.lyriczz.com/lyrics/kaci/51963-i-will-learn-to-love-again/'>
+							<strong> - I Will Learn To Love Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Matt Wertz - I Will Let You Down lyrics" href='http://www.lyriczz.com/lyrics/matt-wertz/168327-i-will-let-you-down/'>
+							<strong>Matt Wertz</strong>
+						</a>
+						<a class='songs2' title="Matt Wertz - I Will Let You Down lyrics" href='http://www.lyriczz.com/lyrics/matt-wertz/168327-i-will-let-you-down/'>
+							<strong> - I Will Let You Down lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Deborah Gibson - I Will Let You Go lyrics" href='http://www.lyriczz.com/lyrics/deborah-gibson/153075-i-will-let-you-go/'>
+							<strong>Deborah Gibson</strong>
+						</a>
+						<a class='songs2' title="Deborah Gibson - I Will Let You Go lyrics" href='http://www.lyriczz.com/lyrics/deborah-gibson/153075-i-will-let-you-go/'>
+							<strong> - I Will Let You Go lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Trin-i-tee 5:7 - I Will Lift lyrics" href='http://www.lyriczz.com/lyrics/trin-i-tee-5%3A7/80906-i-will-lift/'>
+							<strong>Trin-i-tee 5:7</strong>
+						</a>
+						<a class='songs2' title="Trin-i-tee 5:7 - I Will Lift lyrics" href='http://www.lyriczz.com/lyrics/trin-i-tee-5%3A7/80906-i-will-lift/'>
+							<strong> - I Will Lift lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Arch Enemy - I Will Live Again lyrics" href='http://www.lyriczz.com/lyrics/arch-enemy/122739-i-will-live-again/'>
+							<strong>Arch Enemy</strong>
+						</a>
+						<a class='songs2' title="Arch Enemy - I Will Live Again lyrics" href='http://www.lyriczz.com/lyrics/arch-enemy/122739-i-will-live-again/'>
+							<strong> - I Will Live Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lara Fabian - I Will Love Again lyrics" href='http://www.lyriczz.com/lyrics/lara-fabian/48868-i-will-love-again/'>
+							<strong>Lara Fabian</strong>
+						</a>
+						<a class='songs2' title="Lara Fabian - I Will Love Again lyrics" href='http://www.lyriczz.com/lyrics/lara-fabian/48868-i-will-love-again/'>
+							<strong> - I Will Love Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Fisher - I Will Love You lyrics" href='http://www.lyriczz.com/lyrics/fisher/161908-i-will-love-you/'>
+							<strong>Fisher</strong>
+						</a>
+						<a class='songs2' title="Fisher - I Will Love You lyrics" href='http://www.lyriczz.com/lyrics/fisher/161908-i-will-love-you/'>
+							<strong> - I Will Love You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lullacry - I Will Make My Paradise lyrics" href='http://www.lyriczz.com/lyrics/lullacry/175236-i-will-make-my-paradise/'>
+							<strong>Lullacry</strong>
+						</a>
+						<a class='songs2' title="Lullacry - I Will Make My Paradise lyrics" href='http://www.lyriczz.com/lyrics/lullacry/175236-i-will-make-my-paradise/'>
+							<strong> - I Will Make My Paradise lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Nelly Furtado - I Will Make You Cry lyrics" href='http://www.lyriczz.com/lyrics/nelly-furtado/7175-i-will-make-you-cry/'>
+							<strong>Nelly Furtado</strong>
+						</a>
+						<a class='songs2' title="Nelly Furtado - I Will Make You Cry lyrics" href='http://www.lyriczz.com/lyrics/nelly-furtado/7175-i-will-make-you-cry/'>
+							<strong> - I Will Make You Cry lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lola Ray - I Will Make You Mine lyrics" href='http://www.lyriczz.com/lyrics/lola-ray/127699-i-will-make-you-mine/'>
+							<strong>Lola Ray</strong>
+						</a>
+						<a class='songs2' title="Lola Ray - I Will Make You Mine lyrics" href='http://www.lyriczz.com/lyrics/lola-ray/127699-i-will-make-you-mine/'>
+							<strong> - I Will Make You Mine lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Boyzone - I Will Miss You lyrics" href='http://www.lyriczz.com/lyrics/boyzone/26080-i-will-miss-you/'>
+							<strong>Boyzone</strong>
+						</a>
+						<a class='songs2' title="Boyzone - I Will Miss You lyrics" href='http://www.lyriczz.com/lyrics/boyzone/26080-i-will-miss-you/'>
+							<strong> - I Will Miss You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ronan Keating - I Will Miss You lyrics" href='http://www.lyriczz.com/lyrics/ronan-keating/111155-i-will-miss-you/'>
+							<strong>Ronan Keating</strong>
+						</a>
+						<a class='songs2' title="Ronan Keating - I Will Miss You lyrics" href='http://www.lyriczz.com/lyrics/ronan-keating/111155-i-will-miss-you/'>
+							<strong> - I Will Miss You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mahalia Jackson - I Will Move On Up A Little Higher lyrics" href='http://www.lyriczz.com/lyrics/mahalia-jackson/26573-i-will-move-on-up-a-little-higher/'>
+							<strong>Mahalia Jackson</strong>
+						</a>
+						<a class='songs2' title="Mahalia Jackson - I Will Move On Up A Little Higher lyrics" href='http://www.lyriczz.com/lyrics/mahalia-jackson/26573-i-will-move-on-up-a-little-higher/'>
+							<strong> - I Will Move On Up A Little Higher lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Darlene Zschech - I Will Never Be lyrics" href='http://www.lyriczz.com/lyrics/darlene-zschech/60053-i-will-never-be/'>
+							<strong>Darlene Zschech</strong>
+						</a>
+						<a class='songs2' title="Darlene Zschech - I Will Never Be lyrics" href='http://www.lyriczz.com/lyrics/darlene-zschech/60053-i-will-never-be/'>
+							<strong> - I Will Never Be lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Heritage Singers - I Will Never Be lyrics" href='http://www.lyriczz.com/lyrics/heritage-singers/151083-i-will-never-be/'>
+							<strong>Heritage Singers</strong>
+						</a>
+						<a class='songs2' title="Heritage Singers - I Will Never Be lyrics" href='http://www.lyriczz.com/lyrics/heritage-singers/151083-i-will-never-be/'>
+							<strong> - I Will Never Be lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Melissa Etheridge - I Will Never Be The Same lyrics" href='http://www.lyriczz.com/lyrics/melissa-etheridge/74123-i-will-never-be-the-same/'>
+							<strong>Melissa Etheridge</strong>
+						</a>
+						<a class='songs2' title="Melissa Etheridge - I Will Never Be The Same lyrics" href='http://www.lyriczz.com/lyrics/melissa-etheridge/74123-i-will-never-be-the-same/'>
+							<strong> - I Will Never Be The Same lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Doors - I Will Never Be Untrue lyrics" href='http://www.lyriczz.com/lyrics/doors/71168-i-will-never-be-untrue/'>
+							<strong>Doors</strong>
+						</a>
+						<a class='songs2' title="Doors - I Will Never Be Untrue lyrics" href='http://www.lyriczz.com/lyrics/doors/71168-i-will-never-be-untrue/'>
+							<strong> - I Will Never Be Untrue lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kimya Dawson - I Will Never Forget lyrics" href='http://www.lyriczz.com/lyrics/kimya-dawson/128061-i-will-never-forget/'>
+							<strong>Kimya Dawson</strong>
+						</a>
+						<a class='songs2' title="Kimya Dawson - I Will Never Forget lyrics" href='http://www.lyriczz.com/lyrics/kimya-dawson/128061-i-will-never-forget/'>
+							<strong> - I Will Never Forget lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Erik Santos - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/erik-santos/46510-i-will-never-leave-you/'>
+							<strong>Erik Santos</strong>
+						</a>
+						<a class='songs2' title="Erik Santos - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/erik-santos/46510-i-will-never-leave-you/'>
+							<strong> - I Will Never Leave You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Crystal Lewis - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/crystal-lewis/144213-i-will-never-leave-you/'>
+							<strong>Crystal Lewis</strong>
+						</a>
+						<a class='songs2' title="Crystal Lewis - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/crystal-lewis/144213-i-will-never-leave-you/'>
+							<strong> - I Will Never Leave You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Dean Friedman - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/dean-friedman/152615-i-will-never-leave-you/'>
+							<strong>Dean Friedman</strong>
+						</a>
+						<a class='songs2' title="Dean Friedman - I Will Never Leave You lyrics" href='http://www.lyriczz.com/lyrics/dean-friedman/152615-i-will-never-leave-you/'>
+							<strong> - I Will Never Leave You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Caliban - I Will Never Let You Down lyrics" href='http://www.lyriczz.com/lyrics/caliban/60548-i-will-never-let-you-down/'>
+							<strong>Caliban</strong>
+						</a>
+						<a class='songs2' title="Caliban - I Will Never Let You Down lyrics" href='http://www.lyriczz.com/lyrics/caliban/60548-i-will-never-let-you-down/'>
+							<strong> - I Will Never Let You Down lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Imx - I Will Never Lie Again lyrics" href='http://www.lyriczz.com/lyrics/imx/40018-i-will-never-lie-again/'>
+							<strong>Imx</strong>
+						</a>
+						<a class='songs2' title="Imx - I Will Never Lie Again lyrics" href='http://www.lyriczz.com/lyrics/imx/40018-i-will-never-lie-again/'>
+							<strong> - I Will Never Lie Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Glen Campbell - I Will Never Pass This Way Again lyrics" href='http://www.lyriczz.com/lyrics/glen-campbell/82575-i-will-never-pass-this-way-again/'>
+							<strong>Glen Campbell</strong>
+						</a>
+						<a class='songs2' title="Glen Campbell - I Will Never Pass This Way Again lyrics" href='http://www.lyriczz.com/lyrics/glen-campbell/82575-i-will-never-pass-this-way-again/'>
+							<strong> - I Will Never Pass This Way Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Cassidy - I Will Never Tell (uh Uh) ft. 	Larsiny lyrics" href='http://www.lyriczz.com/lyrics/cassidy/62315-i-will-never-tell-%28uh-uh%29/'>
+							<strong>Cassidy</strong>
+						</a>
+						<a class='songs2' title="Cassidy - I Will Never Tell (uh Uh) ft. 	Larsiny lyrics" href='http://www.lyriczz.com/lyrics/cassidy/62315-i-will-never-tell-%28uh-uh%29/'>
+							<strong> - I Will Never Tell (uh Uh) ft. 	Larsiny lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Cliff Richard - I Will Not Be A Mistake lyrics" href='http://www.lyriczz.com/lyrics/cliff-richard/33200-i-will-not-be-a-mistake/'>
+							<strong>Cliff Richard</strong>
+						</a>
+						<a class='songs2' title="Cliff Richard - I Will Not Be A Mistake lyrics" href='http://www.lyriczz.com/lyrics/cliff-richard/33200-i-will-not-be-a-mistake/'>
+							<strong> - I Will Not Be A Mistake lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ben Harper - I Will Not Be Broken lyrics" href='http://www.lyriczz.com/lyrics/ben-harper/181967-i-will-not-be-broken/'>
+							<strong>Ben Harper</strong>
+						</a>
+						<a class='songs2' title="Ben Harper - I Will Not Be Broken lyrics" href='http://www.lyriczz.com/lyrics/ben-harper/181967-i-will-not-be-broken/'>
+							<strong> - I Will Not Be Broken lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Nazareth - I Will Not Be Led lyrics" href='http://www.lyriczz.com/lyrics/nazareth/107641-i-will-not-be-led/'>
+							<strong>Nazareth</strong>
+						</a>
+						<a class='songs2' title="Nazareth - I Will Not Be Led lyrics" href='http://www.lyriczz.com/lyrics/nazareth/107641-i-will-not-be-led/'>
+							<strong> - I Will Not Be Led lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Breaking Benjamin - I Will Not Bow lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/164630-i-will-not-bow/'>
+							<strong>Breaking Benjamin</strong>
+						</a>
+						<a class='songs2' title="Breaking Benjamin - I Will Not Bow lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/164630-i-will-not-bow/'>
+							<strong> - I Will Not Bow lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Power Of Mirantic - I Will Not Die Again lyrics" href='http://www.lyriczz.com/lyrics/power-of-mirantic/178743-i-will-not-die-again/'>
+							<strong>Power Of Mirantic</strong>
+						</a>
+						<a class='songs2' title="Power Of Mirantic - I Will Not Die Again lyrics" href='http://www.lyriczz.com/lyrics/power-of-mirantic/178743-i-will-not-die-again/'>
+							<strong> - I Will Not Die Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Tim Mcgraw - I Will Not Fall Down lyrics" href='http://www.lyriczz.com/lyrics/tim-mcgraw/181560-i-will-not-fall-down/'>
+							<strong>Tim Mcgraw</strong>
+						</a>
+						<a class='songs2' title="Tim Mcgraw - I Will Not Fall Down lyrics" href='http://www.lyriczz.com/lyrics/tim-mcgraw/181560-i-will-not-fall-down/'>
+							<strong> - I Will Not Fall Down lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Taproot - I Will Not Fall For You lyrics" href='http://www.lyriczz.com/lyrics/taproot/70454-i-will-not-fall-for-you/'>
+							<strong>Taproot</strong>
+						</a>
+						<a class='songs2' title="Taproot - I Will Not Fall For You lyrics" href='http://www.lyriczz.com/lyrics/taproot/70454-i-will-not-fall-for-you/'>
+							<strong> - I Will Not Fall For You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Lloyd Cole - I Will Not Leave You Alone lyrics" href='http://www.lyriczz.com/lyrics/lloyd-cole/173380-i-will-not-leave-you-alone/'>
+							<strong>Lloyd Cole</strong>
+						</a>
+						<a class='songs2' title="Lloyd Cole - I Will Not Leave You Alone lyrics" href='http://www.lyriczz.com/lyrics/lloyd-cole/173380-i-will-not-leave-you-alone/'>
+							<strong> - I Will Not Leave You Alone lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Danny Gokey - I Will Not Say Goodbye lyrics" href='http://www.lyriczz.com/lyrics/danny-gokey/149701-i-will-not-say-goodbye/'>
+							<strong>Danny Gokey</strong>
+						</a>
+						<a class='songs2' title="Danny Gokey - I Will Not Say Goodbye lyrics" href='http://www.lyriczz.com/lyrics/danny-gokey/149701-i-will-not-say-goodbye/'>
+							<strong> - I Will Not Say Goodbye lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Matt Wertz - I Will Not Take My Love Away lyrics" href='http://www.lyriczz.com/lyrics/matt-wertz/168328-i-will-not-take-my-love-away/'>
+							<strong>Matt Wertz</strong>
+						</a>
+						<a class='songs2' title="Matt Wertz - I Will Not Take My Love Away lyrics" href='http://www.lyriczz.com/lyrics/matt-wertz/168328-i-will-not-take-my-love-away/'>
+							<strong> - I Will Not Take My Love Away lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Guess Who - I Will Play A Rhapsody lyrics" href='http://www.lyriczz.com/lyrics/guess-who/87989-i-will-play-a-rhapsody/'>
+							<strong>Guess Who</strong>
+						</a>
+						<a class='songs2' title="Guess Who - I Will Play A Rhapsody lyrics" href='http://www.lyriczz.com/lyrics/guess-who/87989-i-will-play-a-rhapsody/'>
+							<strong> - I Will Play A Rhapsody lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Brand New - I Will Play My Game Beneath The Spin Light lyrics" href='http://www.lyriczz.com/lyrics/brand-new/12862-i-will-play-my-game-beneath-the-spin-light/'>
+							<strong>Brand New</strong>
+						</a>
+						<a class='songs2' title="Brand New - I Will Play My Game Beneath The Spin Light lyrics" href='http://www.lyriczz.com/lyrics/brand-new/12862-i-will-play-my-game-beneath-the-spin-light/'>
+							<strong> - I Will Play My Game Beneath The Spin Light lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Death Cab For Cutie - I Will Possess Your Heart lyrics" href='http://www.lyriczz.com/lyrics/death-cab-for-cutie/84403-i-will-possess-your-heart/'>
+							<strong>Death Cab For Cutie</strong>
+						</a>
+						<a class='songs2' title="Death Cab For Cutie - I Will Possess Your Heart lyrics" href='http://www.lyriczz.com/lyrics/death-cab-for-cutie/84403-i-will-possess-your-heart/'>
+							<strong> - I Will Possess Your Heart lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Strike Anywhere - I Will Question The Answer lyrics" href='http://www.lyriczz.com/lyrics/strike-anywhere/76818-i-will-question-the-answer/'>
+							<strong>Strike Anywhere</strong>
+						</a>
+						<a class='songs2' title="Strike Anywhere - I Will Question The Answer lyrics" href='http://www.lyriczz.com/lyrics/strike-anywhere/76818-i-will-question-the-answer/'>
+							<strong> - I Will Question The Answer lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="William Murphy 3rd - I Will Rejoice lyrics" href='http://www.lyriczz.com/lyrics/william-murphy-3rd/95265-i-will-rejoice/'>
+							<strong>William Murphy 3rd</strong>
+						</a>
+						<a class='songs2' title="William Murphy 3rd - I Will Rejoice lyrics" href='http://www.lyriczz.com/lyrics/william-murphy-3rd/95265-i-will-rejoice/'>
+							<strong> - I Will Rejoice lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Toto - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/toto/11596-i-will-remember/'>
+							<strong>Toto</strong>
+						</a>
+						<a class='songs2' title="Toto - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/toto/11596-i-will-remember/'>
+							<strong> - I Will Remember lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Queensryche - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/queensryche/105964-i-will-remember/'>
+							<strong>Queensryche</strong>
+						</a>
+						<a class='songs2' title="Queensryche - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/queensryche/105964-i-will-remember/'>
+							<strong> - I Will Remember lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Everman - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/everman/157502-i-will-remember/'>
+							<strong>Everman</strong>
+						</a>
+						<a class='songs2' title="Everman - I Will Remember lyrics" href='http://www.lyriczz.com/lyrics/everman/157502-i-will-remember/'>
+							<strong> - I Will Remember lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Sarah Mclachlan - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/sarah-mclachlan/46732-i-will-remember-you/'>
+							<strong>Sarah Mclachlan</strong>
+						</a>
+						<a class='songs2' title="Sarah Mclachlan - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/sarah-mclachlan/46732-i-will-remember-you/'>
+							<strong> - I Will Remember You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ryan Cabrera - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/ryan-cabrera/60208-i-will-remember-you/'>
+							<strong>Ryan Cabrera</strong>
+						</a>
+						<a class='songs2' title="Ryan Cabrera - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/ryan-cabrera/60208-i-will-remember-you/'>
+							<strong> - I Will Remember You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Amy Grant - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/amy-grant/90758-i-will-remember-you/'>
+							<strong>Amy Grant</strong>
+						</a>
+						<a class='songs2' title="Amy Grant - I Will Remember You lyrics" href='http://www.lyriczz.com/lyrics/amy-grant/90758-i-will-remember-you/'>
+							<strong> - I Will Remember You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="K's Choice - I Will Return To You lyrics" href='http://www.lyriczz.com/lyrics/kand-039%3Bs-choice/10163-i-will-return-to-you/'>
+							<strong>K's Choice</strong>
+						</a>
+						<a class='songs2' title="K's Choice - I Will Return To You lyrics" href='http://www.lyriczz.com/lyrics/kand-039%3Bs-choice/10163-i-will-return-to-you/'>
+							<strong> - I Will Return To You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Stevie Nicks - I Will Run To You ft. Tom Petty lyrics" href='http://www.lyriczz.com/lyrics/stevie-nicks/108142-i-will-run-to-you/'>
+							<strong>Stevie Nicks</strong>
+						</a>
+						<a class='songs2' title="Stevie Nicks - I Will Run To You ft. Tom Petty lyrics" href='http://www.lyriczz.com/lyrics/stevie-nicks/108142-i-will-run-to-you/'>
+							<strong> - I Will Run To You ft. Tom Petty lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Israel Houghton - I Will Search ft. New Breed lyrics" href='http://www.lyriczz.com/lyrics/israel-houghton/134679-i-will-search/'>
+							<strong>Israel Houghton</strong>
+						</a>
+						<a class='songs2' title="Israel Houghton - I Will Search ft. New Breed lyrics" href='http://www.lyriczz.com/lyrics/israel-houghton/134679-i-will-search/'>
+							<strong> - I Will Search ft. New Breed lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Morrissey - I Will See You In Far Off Places lyrics" href='http://www.lyriczz.com/lyrics/morrissey/109442-i-will-see-you-in-far-off-places/'>
+							<strong>Morrissey</strong>
+						</a>
+						<a class='songs2' title="Morrissey - I Will See You In Far Off Places lyrics" href='http://www.lyriczz.com/lyrics/morrissey/109442-i-will-see-you-in-far-off-places/'>
+							<strong> - I Will See You In Far Off Places lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Chester D T Baldwin - I Will Serve Him lyrics" href='http://www.lyriczz.com/lyrics/chester-d-t-baldwin/103814-i-will-serve-him/'>
+							<strong>Chester D T Baldwin</strong>
+						</a>
+						<a class='songs2' title="Chester D T Baldwin - I Will Serve Him lyrics" href='http://www.lyriczz.com/lyrics/chester-d-t-baldwin/103814-i-will-serve-him/'>
+							<strong> - I Will Serve Him lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Hope Dixon - I Will Serve You lyrics" href='http://www.lyriczz.com/lyrics/hope-dixon/21647-i-will-serve-you/'>
+							<strong>Hope Dixon</strong>
+						</a>
+						<a class='songs2' title="Hope Dixon - I Will Serve You lyrics" href='http://www.lyriczz.com/lyrics/hope-dixon/21647-i-will-serve-you/'>
+							<strong> - I Will Serve You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Lfo - I Will Show You Mine lyrics" href='http://www.lyriczz.com/lyrics/lfo/110776-i-will-show-you-mine/'>
+							<strong>Lfo</strong>
+						</a>
+						<a class='songs2' title="Lfo - I Will Show You Mine lyrics" href='http://www.lyriczz.com/lyrics/lfo/110776-i-will-show-you-mine/'>
+							<strong> - I Will Show You Mine lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Celine Dion - I will sing lyrics" href='http://www.lyriczz.com/lyrics/celine-dion/19315-i-will-sing/'>
+							<strong>Celine Dion</strong>
+						</a>
+						<a class='songs2' title="Celine Dion - I will sing lyrics" href='http://www.lyriczz.com/lyrics/celine-dion/19315-i-will-sing/'>
+							<strong> - I will sing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Donnie Mcclurkin - I Will Sing lyrics" href='http://www.lyriczz.com/lyrics/donnie-mcclurkin/40348-i-will-sing/'>
+							<strong>Donnie Mcclurkin</strong>
+						</a>
+						<a class='songs2' title="Donnie Mcclurkin - I Will Sing lyrics" href='http://www.lyriczz.com/lyrics/donnie-mcclurkin/40348-i-will-sing/'>
+							<strong> - I Will Sing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Richard Smallwood - I Will Sing Praises lyrics" href='http://www.lyriczz.com/lyrics/richard-smallwood/129929-i-will-sing-praises/'>
+							<strong>Richard Smallwood</strong>
+						</a>
+						<a class='songs2' title="Richard Smallwood - I Will Sing Praises lyrics" href='http://www.lyriczz.com/lyrics/richard-smallwood/129929-i-will-sing-praises/'>
+							<strong> - I Will Sing Praises lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Kenny Chesney - I Will Stand lyrics" href='http://www.lyriczz.com/lyrics/kenny-chesney/56840-i-will-stand/'>
+							<strong>Kenny Chesney</strong>
+						</a>
+						<a class='songs2' title="Kenny Chesney - I Will Stand lyrics" href='http://www.lyriczz.com/lyrics/kenny-chesney/56840-i-will-stand/'>
+							<strong> - I Will Stand lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Britney Spears - I Will Still Love You lyrics" href='http://www.lyriczz.com/lyrics/britney-spears/10419-i-will-still-love-you/'>
+							<strong>Britney Spears</strong>
+						</a>
+						<a class='songs2' title="Britney Spears - I Will Still Love You lyrics" href='http://www.lyriczz.com/lyrics/britney-spears/10419-i-will-still-love-you/'>
+							<strong> - I Will Still Love You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Across Five Aprils - I Will Stop The Rain lyrics" href='http://www.lyriczz.com/lyrics/across-five-aprils/116989-i-will-stop-the-rain/'>
+							<strong>Across Five Aprils</strong>
+						</a>
+						<a class='songs2' title="Across Five Aprils - I Will Stop The Rain lyrics" href='http://www.lyriczz.com/lyrics/across-five-aprils/116989-i-will-stop-the-rain/'>
+							<strong> - I Will Stop The Rain lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Diana Ross - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/diana-ross/8122-i-will-survive/'>
+							<strong>Diana Ross</strong>
+						</a>
+						<a class='songs2' title="Diana Ross - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/diana-ross/8122-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Donna Summer - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/donna-summer/8285-i-will-survive/'>
+							<strong>Donna Summer</strong>
+						</a>
+						<a class='songs2' title="Donna Summer - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/donna-summer/8285-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Enrique Iglesias - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/enrique-iglesias/11155-i-will-survive/'>
+							<strong>Enrique Iglesias</strong>
+						</a>
+						<a class='songs2' title="Enrique Iglesias - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/enrique-iglesias/11155-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Gloria Gaynor - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/gloria-gaynor/20768-i-will-survive/'>
+							<strong>Gloria Gaynor</strong>
+						</a>
+						<a class='songs2' title="Gloria Gaynor - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/gloria-gaynor/20768-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kelly Clarkson - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/kelly-clarkson/39051-i-will-survive/'>
+							<strong>Kelly Clarkson</strong>
+						</a>
+						<a class='songs2' title="Kelly Clarkson - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/kelly-clarkson/39051-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Cake - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/cake/44332-i-will-survive/'>
+							<strong>Cake</strong>
+						</a>
+						<a class='songs2' title="Cake - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/cake/44332-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Puppini Sisters - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/puppini-sisters/52650-i-will-survive/'>
+							<strong>Puppini Sisters</strong>
+						</a>
+						<a class='songs2' title="Puppini Sisters - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/puppini-sisters/52650-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Motley Crue - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/motley-crue/99665-i-will-survive/'>
+							<strong>Motley Crue</strong>
+						</a>
+						<a class='songs2' title="Motley Crue - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/motley-crue/99665-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Axel Rudi Pell - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/axel-rudi-pell/134023-i-will-survive/'>
+							<strong>Axel Rudi Pell</strong>
+						</a>
+						<a class='songs2' title="Axel Rudi Pell - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/axel-rudi-pell/134023-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Sacred Rite - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/sacred-rite/136628-i-will-survive/'>
+							<strong>Sacred Rite</strong>
+						</a>
+						<a class='songs2' title="Sacred Rite - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/sacred-rite/136628-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Chubb Rock - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/chubb-rock/148085-i-will-survive/'>
+							<strong>Chubb Rock</strong>
+						</a>
+						<a class='songs2' title="Chubb Rock - I Will Survive lyrics" href='http://www.lyriczz.com/lyrics/chubb-rock/148085-i-will-survive/'>
+							<strong> - I Will Survive lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Cake - I Will Survivie lyrics" href='http://www.lyriczz.com/lyrics/cake/31887-i-will-survivie/'>
+							<strong>Cake</strong>
+						</a>
+						<a class='songs2' title="Cake - I Will Survivie lyrics" href='http://www.lyriczz.com/lyrics/cake/31887-i-will-survivie/'>
+							<strong> - I Will Survivie lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Amy Sky - I Will Take Care Of You lyrics" href='http://www.lyriczz.com/lyrics/amy-sky/34582-i-will-take-care-of-you/'>
+							<strong>Amy Sky</strong>
+						</a>
+						<a class='songs2' title="Amy Sky - I Will Take Care Of You lyrics" href='http://www.lyriczz.com/lyrics/amy-sky/34582-i-will-take-care-of-you/'>
+							<strong> - I Will Take Care Of You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Grant Lee Buffalo - I Will Take Him lyrics" href='http://www.lyriczz.com/lyrics/grant-lee-buffalo/86080-i-will-take-him/'>
+							<strong>Grant Lee Buffalo</strong>
+						</a>
+						<a class='songs2' title="Grant Lee Buffalo - I Will Take Him lyrics" href='http://www.lyriczz.com/lyrics/grant-lee-buffalo/86080-i-will-take-him/'>
+							<strong> - I Will Take Him lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kris Lawrence - I Will Take You Forever ft. Denise Laurel lyrics" href='http://www.lyriczz.com/lyrics/kris-lawrence/129497-i-will-take-you-forever/'>
+							<strong>Kris Lawrence</strong>
+						</a>
+						<a class='songs2' title="Kris Lawrence - I Will Take You Forever ft. Denise Laurel lyrics" href='http://www.lyriczz.com/lyrics/kris-lawrence/129497-i-will-take-you-forever/'>
+							<strong> - I Will Take You Forever ft. Denise Laurel lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Grateful Dead - I Will Take You Home lyrics" href='http://www.lyriczz.com/lyrics/grateful-dead/86200-i-will-take-you-home/'>
+							<strong>Grateful Dead</strong>
+						</a>
+						<a class='songs2' title="Grateful Dead - I Will Take You Home lyrics" href='http://www.lyriczz.com/lyrics/grateful-dead/86200-i-will-take-you-home/'>
+							<strong> - I Will Take You Home lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Robbie Williams - I Will Talk, Hollywood Will Listen lyrics" href='http://www.lyriczz.com/lyrics/robbie-williams/12284-i-will-talk%2C-hollywood-will-listen/'>
+							<strong>Robbie Williams</strong>
+						</a>
+						<a class='songs2' title="Robbie Williams - I Will Talk, Hollywood Will Listen lyrics" href='http://www.lyriczz.com/lyrics/robbie-williams/12284-i-will-talk%2C-hollywood-will-listen/'>
+							<strong> - I Will Talk, Hollywood Will Listen lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Olivia Newton-john - I Will Touch You lyrics" href='http://www.lyriczz.com/lyrics/olivia-newton-john/52104-i-will-touch-you/'>
+							<strong>Olivia Newton-john</strong>
+						</a>
+						<a class='songs2' title="Olivia Newton-john - I Will Touch You lyrics" href='http://www.lyriczz.com/lyrics/olivia-newton-john/52104-i-will-touch-you/'>
+							<strong> - I Will Touch You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="David Gates - I Will Wait For You lyrics" href='http://www.lyriczz.com/lyrics/david-gates/151472-i-will-wait-for-you/'>
+							<strong>David Gates</strong>
+						</a>
+						<a class='songs2' title="David Gates - I Will Wait For You lyrics" href='http://www.lyriczz.com/lyrics/david-gates/151472-i-will-wait-for-you/'>
+							<strong> - I Will Wait For You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Marillion - I Will Walk On Water lyrics" href='http://www.lyriczz.com/lyrics/marillion/56203-i-will-walk-on-water/'>
+							<strong>Marillion</strong>
+						</a>
+						<a class='songs2' title="Marillion - I Will Walk On Water lyrics" href='http://www.lyriczz.com/lyrics/marillion/56203-i-will-walk-on-water/'>
+							<strong> - I Will Walk On Water lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Sheryl Crow - I Will Walk With You lyrics" href='http://www.lyriczz.com/lyrics/sheryl-crow/12013-i-will-walk-with-you/'>
+							<strong>Sheryl Crow</strong>
+						</a>
+						<a class='songs2' title="Sheryl Crow - I Will Walk With You lyrics" href='http://www.lyriczz.com/lyrics/sheryl-crow/12013-i-will-walk-with-you/'>
+							<strong> - I Will Walk With You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Twisted Sister - I Will Win lyrics" href='http://www.lyriczz.com/lyrics/twisted-sister/101048-i-will-win/'>
+							<strong>Twisted Sister</strong>
+						</a>
+						<a class='songs2' title="Twisted Sister - I Will Win lyrics" href='http://www.lyriczz.com/lyrics/twisted-sister/101048-i-will-win/'>
+							<strong> - I Will Win lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="And The Sky Went Red - I Will, Don't Make Me lyrics" href='http://www.lyriczz.com/lyrics/and-the-sky-went-red/120343-i-will%2C-donand-039%3Bt-make-me/'>
+							<strong>And The Sky Went Red</strong>
+						</a>
+						<a class='songs2' title="And The Sky Went Red - I Will, Don't Make Me lyrics" href='http://www.lyriczz.com/lyrics/and-the-sky-went-red/120343-i-will%2C-donand-039%3Bt-make-me/'>
+							<strong> - I Will, Don't Make Me lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Abra Moore - I Win lyrics" href='http://www.lyriczz.com/lyrics/abra-moore/114738-i-win/'>
+							<strong>Abra Moore</strong>
+						</a>
+						<a class='songs2' title="Abra Moore - I Win lyrics" href='http://www.lyriczz.com/lyrics/abra-moore/114738-i-win/'>
+							<strong> - I Win lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Home Grown - I Win, You Lose lyrics" href='http://www.lyriczz.com/lyrics/home-grown/113703-i-win%2C-you-lose/'>
+							<strong>Home Grown</strong>
+						</a>
+						<a class='songs2' title="Home Grown - I Win, You Lose lyrics" href='http://www.lyriczz.com/lyrics/home-grown/113703-i-win%2C-you-lose/'>
+							<strong> - I Win, You Lose lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="A Wilhelm Scream - I Wipe My Ass With Showbiz lyrics" href='http://www.lyriczz.com/lyrics/a-wilhelm-scream/115145-i-wipe-my-ass-with-showbiz/'>
+							<strong>A Wilhelm Scream</strong>
+						</a>
+						<a class='songs2' title="A Wilhelm Scream - I Wipe My Ass With Showbiz lyrics" href='http://www.lyriczz.com/lyrics/a-wilhelm-scream/115145-i-wipe-my-ass-with-showbiz/'>
+							<strong> - I Wipe My Ass With Showbiz lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Carl Thomas - I Wish lyrics" href='http://www.lyriczz.com/lyrics/carl-thomas/6029-i-wish/'>
+							<strong>Carl Thomas</strong>
+						</a>
+						<a class='songs2' title="Carl Thomas - I Wish lyrics" href='http://www.lyriczz.com/lyrics/carl-thomas/6029-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Skee-Lo - I Wish lyrics" href='http://www.lyriczz.com/lyrics/skee-lo/8847-i-wish/'>
+							<strong>Skee-Lo</strong>
+						</a>
+						<a class='songs2' title="Skee-Lo - I Wish lyrics" href='http://www.lyriczz.com/lyrics/skee-lo/8847-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="R. Kelly - I Wish lyrics" href='http://www.lyriczz.com/lyrics/r.-kelly/9044-i-wish/'>
+							<strong>R. Kelly</strong>
+						</a>
+						<a class='songs2' title="R. Kelly - I Wish lyrics" href='http://www.lyriczz.com/lyrics/r.-kelly/9044-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Pearl Jam - I Wish lyrics" href='http://www.lyriczz.com/lyrics/pearl-jam/16393-i-wish/'>
+							<strong>Pearl Jam</strong>
+						</a>
+						<a class='songs2' title="Pearl Jam - I Wish lyrics" href='http://www.lyriczz.com/lyrics/pearl-jam/16393-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Usher - I Wish lyrics" href='http://www.lyriczz.com/lyrics/usher/17866-i-wish/'>
+							<strong>Usher</strong>
+						</a>
+						<a class='songs2' title="Usher - I Wish lyrics" href='http://www.lyriczz.com/lyrics/usher/17866-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Celine Dion - I Wish lyrics" href='http://www.lyriczz.com/lyrics/celine-dion/19316-i-wish/'>
+							<strong>Celine Dion</strong>
+						</a>
+						<a class='songs2' title="Celine Dion - I Wish lyrics" href='http://www.lyriczz.com/lyrics/celine-dion/19316-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Kumbia Kings - I Wish lyrics" href='http://www.lyriczz.com/lyrics/kumbia-kings/22068-i-wish/'>
+							<strong>Kumbia Kings</strong>
+						</a>
+						<a class='songs2' title="Kumbia Kings - I Wish lyrics" href='http://www.lyriczz.com/lyrics/kumbia-kings/22068-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Omarion - I Wish lyrics" href='http://www.lyriczz.com/lyrics/omarion/23189-i-wish/'>
+							<strong>Omarion</strong>
+						</a>
+						<a class='songs2' title="Omarion - I Wish lyrics" href='http://www.lyriczz.com/lyrics/omarion/23189-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Victoria Beckham - I Wish lyrics" href='http://www.lyriczz.com/lyrics/victoria-beckham/28111-i-wish/'>
+							<strong>Victoria Beckham</strong>
+						</a>
+						<a class='songs2' title="Victoria Beckham - I Wish lyrics" href='http://www.lyriczz.com/lyrics/victoria-beckham/28111-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Danity Kane - I Wish lyrics" href='http://www.lyriczz.com/lyrics/danity-kane/28960-i-wish/'>
+							<strong>Danity Kane</strong>
+						</a>
+						<a class='songs2' title="Danity Kane - I Wish lyrics" href='http://www.lyriczz.com/lyrics/danity-kane/28960-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="R Kelly - I Wish lyrics" href='http://www.lyriczz.com/lyrics/r-kelly/45009-i-wish/'>
+							<strong>R Kelly</strong>
+						</a>
+						<a class='songs2' title="R Kelly - I Wish lyrics" href='http://www.lyriczz.com/lyrics/r-kelly/45009-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="L'arc-en-ciel - I Wish lyrics" href='http://www.lyriczz.com/lyrics/land-039%3Barc-en-ciel/58068-i-wish/'>
+							<strong>L'arc-en-ciel</strong>
+						</a>
+						<a class='songs2' title="L'arc-en-ciel - I Wish lyrics" href='http://www.lyriczz.com/lyrics/land-039%3Barc-en-ciel/58068-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Semisonic - I Wish lyrics" href='http://www.lyriczz.com/lyrics/semisonic/60403-i-wish/'>
+							<strong>Semisonic</strong>
+						</a>
+						<a class='songs2' title="Semisonic - I Wish lyrics" href='http://www.lyriczz.com/lyrics/semisonic/60403-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Secret Handshake - I Wish lyrics" href='http://www.lyriczz.com/lyrics/secret-handshake/63105-i-wish/'>
+							<strong>Secret Handshake</strong>
+						</a>
+						<a class='songs2' title="Secret Handshake - I Wish lyrics" href='http://www.lyriczz.com/lyrics/secret-handshake/63105-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dmx - I Wish lyrics" href='http://www.lyriczz.com/lyrics/dmx/71797-i-wish/'>
+							<strong>Dmx</strong>
+						</a>
+						<a class='songs2' title="Dmx - I Wish lyrics" href='http://www.lyriczz.com/lyrics/dmx/71797-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="August Rigo - I Wish lyrics" href='http://www.lyriczz.com/lyrics/august-rigo/76925-i-wish/'>
+							<strong>August Rigo</strong>
+						</a>
+						<a class='songs2' title="August Rigo - I Wish lyrics" href='http://www.lyriczz.com/lyrics/august-rigo/76925-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="G-jay - I Wish lyrics" href='http://www.lyriczz.com/lyrics/g-jay/77866-i-wish/'>
+							<strong>G-jay</strong>
+						</a>
+						<a class='songs2' title="G-jay - I Wish lyrics" href='http://www.lyriczz.com/lyrics/g-jay/77866-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Graham Coxon - I Wish lyrics" href='http://www.lyriczz.com/lyrics/graham-coxon/85620-i-wish/'>
+							<strong>Graham Coxon</strong>
+						</a>
+						<a class='songs2' title="Graham Coxon - I Wish lyrics" href='http://www.lyriczz.com/lyrics/graham-coxon/85620-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Gabrielle - I Wish lyrics" href='http://www.lyriczz.com/lyrics/gabrielle/99570-i-wish/'>
+							<strong>Gabrielle</strong>
+						</a>
+						<a class='songs2' title="Gabrielle - I Wish lyrics" href='http://www.lyriczz.com/lyrics/gabrielle/99570-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Robyn - I Wish lyrics" href='http://www.lyriczz.com/lyrics/robyn/100255-i-wish/'>
+							<strong>Robyn</strong>
+						</a>
+						<a class='songs2' title="Robyn - I Wish lyrics" href='http://www.lyriczz.com/lyrics/robyn/100255-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Lisa Loeb - I Wish lyrics" href='http://www.lyriczz.com/lyrics/lisa-loeb/110983-i-wish/'>
+							<strong>Lisa Loeb</strong>
+						</a>
+						<a class='songs2' title="Lisa Loeb - I Wish lyrics" href='http://www.lyriczz.com/lyrics/lisa-loeb/110983-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Guy Sebastian - I Wish lyrics" href='http://www.lyriczz.com/lyrics/guy-sebastian/114095-i-wish/'>
+							<strong>Guy Sebastian</strong>
+						</a>
+						<a class='songs2' title="Guy Sebastian - I Wish lyrics" href='http://www.lyriczz.com/lyrics/guy-sebastian/114095-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Alex Lloyd - I Wish lyrics" href='http://www.lyriczz.com/lyrics/alex-lloyd/118638-i-wish/'>
+							<strong>Alex Lloyd</strong>
+						</a>
+						<a class='songs2' title="Alex Lloyd - I Wish lyrics" href='http://www.lyriczz.com/lyrics/alex-lloyd/118638-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Babyshambles - I Wish lyrics" href='http://www.lyriczz.com/lyrics/babyshambles/128587-i-wish/'>
+							<strong>Babyshambles</strong>
+						</a>
+						<a class='songs2' title="Babyshambles - I Wish lyrics" href='http://www.lyriczz.com/lyrics/babyshambles/128587-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Billy Crawford - I Wish lyrics" href='http://www.lyriczz.com/lyrics/billy-crawford/143332-i-wish/'>
+							<strong>Billy Crawford</strong>
+						</a>
+						<a class='songs2' title="Billy Crawford - I Wish lyrics" href='http://www.lyriczz.com/lyrics/billy-crawford/143332-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Left Front Tire - I Wish lyrics" href='http://www.lyriczz.com/lyrics/left-front-tire/170202-i-wish/'>
+							<strong>Left Front Tire</strong>
+						</a>
+						<a class='songs2' title="Left Front Tire - I Wish lyrics" href='http://www.lyriczz.com/lyrics/left-front-tire/170202-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="One Direction - I Wish lyrics" href='http://www.lyriczz.com/lyrics/one-direction/181601-i-wish/'>
+							<strong>One Direction</strong>
+						</a>
+						<a class='songs2' title="One Direction - I Wish lyrics" href='http://www.lyriczz.com/lyrics/one-direction/181601-i-wish/'>
+							<strong> - I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Three Graces - I Wish (all The Love In The World) lyrics" href='http://www.lyriczz.com/lyrics/three-graces/68470-i-wish-%28all-the-love-in-the-world%29/'>
+							<strong>Three Graces</strong>
+						</a>
+						<a class='songs2' title="Three Graces - I Wish (all The Love In The World) lyrics" href='http://www.lyriczz.com/lyrics/three-graces/68470-i-wish-%28all-the-love-in-the-world%29/'>
+							<strong> - I Wish (all The Love In The World) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="R. Kelly - I Wish [Remix] lyrics" href='http://www.lyriczz.com/lyrics/r.-kelly/9045-i-wish-%5Bremix%5D/'>
+							<strong>R. Kelly</strong>
+						</a>
+						<a class='songs2' title="R. Kelly - I Wish [Remix] lyrics" href='http://www.lyriczz.com/lyrics/r.-kelly/9045-i-wish-%5Bremix%5D/'>
+							<strong> - I Wish [Remix] lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Jessica Andrews - I Wish For You lyrics" href='http://www.lyriczz.com/lyrics/jessica-andrews/98446-i-wish-for-you/'>
+							<strong>Jessica Andrews</strong>
+						</a>
+						<a class='songs2' title="Jessica Andrews - I Wish For You lyrics" href='http://www.lyriczz.com/lyrics/jessica-andrews/98446-i-wish-for-you/'>
+							<strong> - I Wish For You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Terri Clark - I Wish He'd Been Drinkin Whiskey lyrics" href='http://www.lyriczz.com/lyrics/terri-clark/24556-i-wish-heand-039%3Bd-been-drinkin-whiskey/'>
+							<strong>Terri Clark</strong>
+						</a>
+						<a class='songs2' title="Terri Clark - I Wish He'd Been Drinkin Whiskey lyrics" href='http://www.lyriczz.com/lyrics/terri-clark/24556-i-wish-heand-039%3Bd-been-drinkin-whiskey/'>
+							<strong> - I Wish He'd Been Drinkin Whiskey lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="A-Ha - I Wish I Cared lyrics" href='http://www.lyriczz.com/lyrics/a-ha/991-i-wish-i-cared/'>
+							<strong>A-Ha</strong>
+						</a>
+						<a class='songs2' title="A-Ha - I Wish I Cared lyrics" href='http://www.lyriczz.com/lyrics/a-ha/991-i-wish-i-cared/'>
+							<strong> - I Wish I Cared lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Collin Raye - I Wish I Could lyrics" href='http://www.lyriczz.com/lyrics/collin-raye/146383-i-wish-i-could/'>
+							<strong>Collin Raye</strong>
+						</a>
+						<a class='songs2' title="Collin Raye - I Wish I Could lyrics" href='http://www.lyriczz.com/lyrics/collin-raye/146383-i-wish-i-could/'>
+							<strong> - I Wish I Could lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Everyday Sunday - I Wish I Could lyrics" href='http://www.lyriczz.com/lyrics/everyday-sunday/157665-i-wish-i-could/'>
+							<strong>Everyday Sunday</strong>
+						</a>
+						<a class='songs2' title="Everyday Sunday - I Wish I Could lyrics" href='http://www.lyriczz.com/lyrics/everyday-sunday/157665-i-wish-i-could/'>
+							<strong> - I Wish I Could lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Alan Jackson - I Wish I Could Back Up lyrics" href='http://www.lyriczz.com/lyrics/alan-jackson/75784-i-wish-i-could-back-up/'>
+							<strong>Alan Jackson</strong>
+						</a>
+						<a class='songs2' title="Alan Jackson - I Wish I Could Back Up lyrics" href='http://www.lyriczz.com/lyrics/alan-jackson/75784-i-wish-i-could-back-up/'>
+							<strong> - I Wish I Could Back Up lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Bellefire - I Wish I Could But I Can't lyrics" href='http://www.lyriczz.com/lyrics/bellefire/28204-i-wish-i-could-but-i-canand-039%3Bt/'>
+							<strong>Bellefire</strong>
+						</a>
+						<a class='songs2' title="Bellefire - I Wish I Could But I Can't lyrics" href='http://www.lyriczz.com/lyrics/bellefire/28204-i-wish-i-could-but-i-canand-039%3Bt/'>
+							<strong> - I Wish I Could But I Can't lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Ray Price - I Wish I Could Fall In Love Today lyrics" href='http://www.lyriczz.com/lyrics/ray-price/82676-i-wish-i-could-fall-in-love-today/'>
+							<strong>Ray Price</strong>
+						</a>
+						<a class='songs2' title="Ray Price - I Wish I Could Fall In Love Today lyrics" href='http://www.lyriczz.com/lyrics/ray-price/82676-i-wish-i-could-fall-in-love-today/'>
+							<strong> - I Wish I Could Fall In Love Today lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="John Denver - I Wish I Could Have Been There (woodstock) lyrics" href='http://www.lyriczz.com/lyrics/john-denver/90402-i-wish-i-could-have-been-there-%28woodstock%29/'>
+							<strong>John Denver</strong>
+						</a>
+						<a class='songs2' title="John Denver - I Wish I Could Have Been There (woodstock) lyrics" href='http://www.lyriczz.com/lyrics/john-denver/90402-i-wish-i-could-have-been-there-%28woodstock%29/'>
+							<strong> - I Wish I Could Have Been There (woodstock) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Craig Morgan - I Wish I Could See Bakersfield lyrics" href='http://www.lyriczz.com/lyrics/craig-morgan/129810-i-wish-i-could-see-bakersfield/'>
+							<strong>Craig Morgan</strong>
+						</a>
+						<a class='songs2' title="Craig Morgan - I Wish I Could See Bakersfield lyrics" href='http://www.lyriczz.com/lyrics/craig-morgan/129810-i-wish-i-could-see-bakersfield/'>
+							<strong> - I Wish I Could See Bakersfield lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Wallflowers - I Wish I Felt Nothing lyrics" href='http://www.lyriczz.com/lyrics/wallflowers/101957-i-wish-i-felt-nothing/'>
+							<strong>Wallflowers</strong>
+						</a>
+						<a class='songs2' title="Wallflowers - I Wish I Felt Nothing lyrics" href='http://www.lyriczz.com/lyrics/wallflowers/101957-i-wish-i-felt-nothing/'>
+							<strong> - I Wish I Felt Nothing lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Fishbone - I Wish I Had A Date lyrics" href='http://www.lyriczz.com/lyrics/fishbone/99467-i-wish-i-had-a-date/'>
+							<strong>Fishbone</strong>
+						</a>
+						<a class='songs2' title="Fishbone - I Wish I Had A Date lyrics" href='http://www.lyriczz.com/lyrics/fishbone/99467-i-wish-i-had-a-date/'>
+							<strong> - I Wish I Had A Date lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Uncle Kracker - I Wish I Had A Dollar lyrics" href='http://www.lyriczz.com/lyrics/uncle-kracker/54728-i-wish-i-had-a-dollar/'>
+							<strong>Uncle Kracker</strong>
+						</a>
+						<a class='songs2' title="Uncle Kracker - I Wish I Had A Dollar lyrics" href='http://www.lyriczz.com/lyrics/uncle-kracker/54728-i-wish-i-had-a-dollar/'>
+							<strong> - I Wish I Had A Dollar lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="John Denver - I Wish I Knew How It Would Feel To Be Free lyrics" href='http://www.lyriczz.com/lyrics/john-denver/90403-i-wish-i-knew-how-it-would-feel-to-be-free/'>
+							<strong>John Denver</strong>
+						</a>
+						<a class='songs2' title="John Denver - I Wish I Knew How It Would Feel To Be Free lyrics" href='http://www.lyriczz.com/lyrics/john-denver/90403-i-wish-i-knew-how-it-would-feel-to-be-free/'>
+							<strong> - I Wish I Knew How It Would Feel To Be Free lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="John Legend And The Roots - I Wish I Knew How It Would Feel To Be Free lyrics" href='http://www.lyriczz.com/lyrics/john-legend-and-the-roots/183200-i-wish-i-knew-how-it-would-feel-to-be-free/'>
+							<strong>John Legend And The Roots</strong>
+						</a>
+						<a class='songs2' title="John Legend And The Roots - I Wish I Knew How It Would Feel To Be Free lyrics" href='http://www.lyriczz.com/lyrics/john-legend-and-the-roots/183200-i-wish-i-knew-how-it-would-feel-to-be-free/'>
+							<strong> - I Wish I Knew How It Would Feel To Be Free lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Breaking Benjamin - I Wish I May lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/30545-i-wish-i-may/'>
+							<strong>Breaking Benjamin</strong>
+						</a>
+						<a class='songs2' title="Breaking Benjamin - I Wish I May lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/30545-i-wish-i-may/'>
+							<strong> - I Wish I May lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Breaking Benjamin - I Wish I May lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/63237-i-wish-i-may/'>
+							<strong>Breaking Benjamin</strong>
+						</a>
+						<a class='songs2' title="Breaking Benjamin - I Wish I May lyrics" href='http://www.lyriczz.com/lyrics/breaking-benjamin/63237-i-wish-i-may/'>
+							<strong> - I Wish I May lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Beth Orton - I Wish I Never Saw Sunshine lyrics" href='http://www.lyriczz.com/lyrics/beth-orton/142326-i-wish-i-never-saw-sunshine/'>
+							<strong>Beth Orton</strong>
+						</a>
+						<a class='songs2' title="Beth Orton - I Wish I Never Saw Sunshine lyrics" href='http://www.lyriczz.com/lyrics/beth-orton/142326-i-wish-i-never-saw-sunshine/'>
+							<strong> - I Wish I Never Saw Sunshine lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Counting Crows - I Wish I Was A Girl lyrics" href='http://www.lyriczz.com/lyrics/counting-crows/33880-i-wish-i-was-a-girl/'>
+							<strong>Counting Crows</strong>
+						</a>
+						<a class='songs2' title="Counting Crows - I Wish I Was A Girl lyrics" href='http://www.lyriczz.com/lyrics/counting-crows/33880-i-wish-i-was-a-girl/'>
+							<strong> - I Wish I Was A Girl lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Sandi Thom - I Wish I Was A Punk Rocker (with Flowers In My Hair) lyrics" href='http://www.lyriczz.com/lyrics/sandi-thom/22036-i-wish-i-was-a-punk-rocker-%28with-flowers-in-my-hair%29/'>
+							<strong>Sandi Thom</strong>
+						</a>
+						<a class='songs2' title="Sandi Thom - I Wish I Was A Punk Rocker (with Flowers In My Hair) lyrics" href='http://www.lyriczz.com/lyrics/sandi-thom/22036-i-wish-i-was-a-punk-rocker-%28with-flowers-in-my-hair%29/'>
+							<strong> - I Wish I Was A Punk Rocker (with Flowers In My Hair) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Molly Bee - I Wish I Was A Single Girl Again lyrics" href='http://www.lyriczz.com/lyrics/molly-bee/165184-i-wish-i-was-a-single-girl-again/'>
+							<strong>Molly Bee</strong>
+						</a>
+						<a class='songs2' title="Molly Bee - I Wish I Was A Single Girl Again lyrics" href='http://www.lyriczz.com/lyrics/molly-bee/165184-i-wish-i-was-a-single-girl-again/'>
+							<strong> - I Wish I Was A Single Girl Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Scarlett Johansson - I Wish I Was In New Orleans lyrics" href='http://www.lyriczz.com/lyrics/scarlett-johansson/62061-i-wish-i-was-in-new-orleans/'>
+							<strong>Scarlett Johansson</strong>
+						</a>
+						<a class='songs2' title="Scarlett Johansson - I Wish I Was In New Orleans lyrics" href='http://www.lyriczz.com/lyrics/scarlett-johansson/62061-i-wish-i-was-in-new-orleans/'>
+							<strong> - I Wish I Was In New Orleans lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="And Oceans - I Wish I Was Pregnant lyrics" href='http://www.lyriczz.com/lyrics/and-oceans/120316-i-wish-i-was-pregnant/'>
+							<strong>And Oceans</strong>
+						</a>
+						<a class='songs2' title="And Oceans - I Wish I Was Pregnant lyrics" href='http://www.lyriczz.com/lyrics/and-oceans/120316-i-wish-i-was-pregnant/'>
+							<strong> - I Wish I Was Pregnant lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Bloodhound Gang - I Wish I Was Queer So I Could Get Chicks lyrics" href='http://www.lyriczz.com/lyrics/bloodhound-gang/29482-i-wish-i-was-queer-so-i-could-get-chicks/'>
+							<strong>Bloodhound Gang</strong>
+						</a>
+						<a class='songs2' title="Bloodhound Gang - I Wish I Was Queer So I Could Get Chicks lyrics" href='http://www.lyriczz.com/lyrics/bloodhound-gang/29482-i-wish-i-was-queer-so-i-could-get-chicks/'>
+							<strong> - I Wish I Was Queer So I Could Get Chicks lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Blood Red Shoes - I Wish I Was Someone Better lyrics" href='http://www.lyriczz.com/lyrics/blood-red-shoes/62264-i-wish-i-was-someone-better/'>
+							<strong>Blood Red Shoes</strong>
+						</a>
+						<a class='songs2' title="Blood Red Shoes - I Wish I Was Someone Better lyrics" href='http://www.lyriczz.com/lyrics/blood-red-shoes/62264-i-wish-i-was-someone-better/'>
+							<strong> - I Wish I Was Someone Better lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Neko Case - I Wish I Was The Moon lyrics" href='http://www.lyriczz.com/lyrics/neko-case/32243-i-wish-i-was-the-moon/'>
+							<strong>Neko Case</strong>
+						</a>
+						<a class='songs2' title="Neko Case - I Wish I Was The Moon lyrics" href='http://www.lyriczz.com/lyrics/neko-case/32243-i-wish-i-was-the-moon/'>
+							<strong> - I Wish I Was The Moon lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Dope - I Wish I Was The President lyrics" href='http://www.lyriczz.com/lyrics/dope/37598-i-wish-i-was-the-president/'>
+							<strong>Dope</strong>
+						</a>
+						<a class='songs2' title="Dope - I Wish I Was The President lyrics" href='http://www.lyriczz.com/lyrics/dope/37598-i-wish-i-was-the-president/'>
+							<strong> - I Wish I Was The President lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Moneen - I Wish I Was There To See The Way It Was Supposed To Be lyrics" href='http://www.lyriczz.com/lyrics/moneen/177843-i-wish-i-was-there-to-see-the-way-it-was-supposed-to-be/'>
+							<strong>Moneen</strong>
+						</a>
+						<a class='songs2' title="Moneen - I Wish I Was There To See The Way It Was Supposed To Be lyrics" href='http://www.lyriczz.com/lyrics/moneen/177843-i-wish-i-was-there-to-see-the-way-it-was-supposed-to-be/'>
+							<strong> - I Wish I Was There To See The Way It Was Supposed To Be lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mott The Hoople - I Wish I Was Your Mother lyrics" href='http://www.lyriczz.com/lyrics/mott-the-hoople/165681-i-wish-i-was-your-mother/'>
+							<strong>Mott The Hoople</strong>
+						</a>
+						<a class='songs2' title="Mott The Hoople - I Wish I Was Your Mother lyrics" href='http://www.lyriczz.com/lyrics/mott-the-hoople/165681-i-wish-i-was-your-mother/'>
+							<strong> - I Wish I Was Your Mother lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Heather Headley - I Wish I Wasn't lyrics" href='http://www.lyriczz.com/lyrics/heather-headley/20512-i-wish-i-wasnand-039%3Bt/'>
+							<strong>Heather Headley</strong>
+						</a>
+						<a class='songs2' title="Heather Headley - I Wish I Wasn't lyrics" href='http://www.lyriczz.com/lyrics/heather-headley/20512-i-wish-i-wasnand-039%3Bt/'>
+							<strong> - I Wish I Wasn't lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Martha Wainwright - I Wish I Were lyrics" href='http://www.lyriczz.com/lyrics/martha-wainwright/65197-i-wish-i-were/'>
+							<strong>Martha Wainwright</strong>
+						</a>
+						<a class='songs2' title="Martha Wainwright - I Wish I Were lyrics" href='http://www.lyriczz.com/lyrics/martha-wainwright/65197-i-wish-i-were/'>
+							<strong> - I Wish I Were lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Bruce Springsteen - I Wish I Were Blind lyrics" href='http://www.lyriczz.com/lyrics/bruce-springsteen/31230-i-wish-i-were-blind/'>
+							<strong>Bruce Springsteen</strong>
+						</a>
+						<a class='songs2' title="Bruce Springsteen - I Wish I Were Blind lyrics" href='http://www.lyriczz.com/lyrics/bruce-springsteen/31230-i-wish-i-were-blind/'>
+							<strong> - I Wish I Were Blind lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ella Fitzgerald - I Wish I Were In Love Again lyrics" href='http://www.lyriczz.com/lyrics/ella-fitzgerald/58645-i-wish-i-were-in-love-again/'>
+							<strong>Ella Fitzgerald</strong>
+						</a>
+						<a class='songs2' title="Ella Fitzgerald - I Wish I Were In Love Again lyrics" href='http://www.lyriczz.com/lyrics/ella-fitzgerald/58645-i-wish-i-were-in-love-again/'>
+							<strong> - I Wish I Were In Love Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Frank Sinatra - I Wish I Were In Love Again lyrics" href='http://www.lyriczz.com/lyrics/frank-sinatra/68322-i-wish-i-were-in-love-again/'>
+							<strong>Frank Sinatra</strong>
+						</a>
+						<a class='songs2' title="Frank Sinatra - I Wish I Were In Love Again lyrics" href='http://www.lyriczz.com/lyrics/frank-sinatra/68322-i-wish-i-were-in-love-again/'>
+							<strong> - I Wish I Were In Love Again lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Shedaisy - I Wish I Were The Rain lyrics" href='http://www.lyriczz.com/lyrics/shedaisy/45510-i-wish-i-were-the-rain/'>
+							<strong>Shedaisy</strong>
+						</a>
+						<a class='songs2' title="Shedaisy - I Wish I Were The Rain lyrics" href='http://www.lyriczz.com/lyrics/shedaisy/45510-i-wish-i-were-the-rain/'>
+							<strong> - I Wish I Were The Rain lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Fiction Plane - I Wish I Would Die lyrics" href='http://www.lyriczz.com/lyrics/fiction-plane/161099-i-wish-i-would-die/'>
+							<strong>Fiction Plane</strong>
+						</a>
+						<a class='songs2' title="Fiction Plane - I Wish I Would Die lyrics" href='http://www.lyriczz.com/lyrics/fiction-plane/161099-i-wish-i-would-die/'>
+							<strong> - I Wish I Would Die lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="A-teens - I Wish It Could Be Christmas Everyday lyrics" href='http://www.lyriczz.com/lyrics/a-teens/27359-i-wish-it-could-be-christmas-everyday/'>
+							<strong>A-teens</strong>
+						</a>
+						<a class='songs2' title="A-teens - I Wish It Could Be Christmas Everyday lyrics" href='http://www.lyriczz.com/lyrics/a-teens/27359-i-wish-it-could-be-christmas-everyday/'>
+							<strong> - I Wish It Could Be Christmas Everyday lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Wizzard - I Wish It Could Be Christmas Everyday lyrics" href='http://www.lyriczz.com/lyrics/wizzard/89063-i-wish-it-could-be-christmas-everyday/'>
+							<strong>Wizzard</strong>
+						</a>
+						<a class='songs2' title="Wizzard - I Wish It Could Be Christmas Everyday lyrics" href='http://www.lyriczz.com/lyrics/wizzard/89063-i-wish-it-could-be-christmas-everyday/'>
+							<strong> - I Wish It Could Be Christmas Everyday lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Trace Adkins - I Wish It Was You lyrics" href='http://www.lyriczz.com/lyrics/trace-adkins/97909-i-wish-it-was-you/'>
+							<strong>Trace Adkins</strong>
+						</a>
+						<a class='songs2' title="Trace Adkins - I Wish It Was You lyrics" href='http://www.lyriczz.com/lyrics/trace-adkins/97909-i-wish-it-was-you/'>
+							<strong> - I Wish It Was You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Nanci Griffith - I Wish It Would Rain lyrics" href='http://www.lyriczz.com/lyrics/nanci-griffith/53578-i-wish-it-would-rain/'>
+							<strong>Nanci Griffith</strong>
+						</a>
+						<a class='songs2' title="Nanci Griffith - I Wish It Would Rain lyrics" href='http://www.lyriczz.com/lyrics/nanci-griffith/53578-i-wish-it-would-rain/'>
+							<strong> - I Wish It Would Rain lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Rod Stewart - I Wish It Would Rain lyrics" href='http://www.lyriczz.com/lyrics/rod-stewart/93891-i-wish-it-would-rain/'>
+							<strong>Rod Stewart</strong>
+						</a>
+						<a class='songs2' title="Rod Stewart - I Wish It Would Rain lyrics" href='http://www.lyriczz.com/lyrics/rod-stewart/93891-i-wish-it-would-rain/'>
+							<strong> - I Wish It Would Rain lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Phil Collins - I Wish It Would Rain Down lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11329-i-wish-it-would-rain-down/'>
+							<strong>Phil Collins</strong>
+						</a>
+						<a class='songs2' title="Phil Collins - I Wish It Would Rain Down lyrics" href='http://www.lyriczz.com/lyrics/phil-collins/11329-i-wish-it-would-rain-down/'>
+							<strong> - I Wish It Would Rain Down lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="R Kelly - I Wish Remix To All The Homies That We Lost lyrics" href='http://www.lyriczz.com/lyrics/r-kelly/40995-i-wish-remix-to-all-the-homies-that-we-lost/'>
+							<strong>R Kelly</strong>
+						</a>
+						<a class='songs2' title="R Kelly - I Wish Remix To All The Homies That We Lost lyrics" href='http://www.lyriczz.com/lyrics/r-kelly/40995-i-wish-remix-to-all-the-homies-that-we-lost/'>
+							<strong> - I Wish Remix To All The Homies That We Lost lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Thirsty Merc - I Wish Somebody Would Build A Bridge (so I Can Get Over Myself) lyrics" href='http://www.lyriczz.com/lyrics/thirsty-merc/126994-i-wish-somebody-would-build-a-bridge-%28so-i-can-get-over-myself%29/'>
+							<strong>Thirsty Merc</strong>
+						</a>
+						<a class='songs2' title="Thirsty Merc - I Wish Somebody Would Build A Bridge (so I Can Get Over Myself) lyrics" href='http://www.lyriczz.com/lyrics/thirsty-merc/126994-i-wish-somebody-would-build-a-bridge-%28so-i-can-get-over-myself%29/'>
+							<strong> - I Wish Somebody Would Build A Bridge (so I Can Get Over Myself) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Bianca Ryan - I Wish That lyrics" href='http://www.lyriczz.com/lyrics/bianca-ryan/98950-i-wish-that/'>
+							<strong>Bianca Ryan</strong>
+						</a>
+						<a class='songs2' title="Bianca Ryan - I Wish That lyrics" href='http://www.lyriczz.com/lyrics/bianca-ryan/98950-i-wish-that/'>
+							<strong> - I Wish That lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Muffs - I Wish That I Could Be You lyrics" href='http://www.lyriczz.com/lyrics/muffs/176430-i-wish-that-i-could-be-you/'>
+							<strong>Muffs</strong>
+						</a>
+						<a class='songs2' title="Muffs - I Wish That I Could Be You lyrics" href='http://www.lyriczz.com/lyrics/muffs/176430-i-wish-that-i-could-be-you/'>
+							<strong> - I Wish That I Could Be You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Barbara Mandrell - I Wish That I Could Fall In Love Today lyrics" href='http://www.lyriczz.com/lyrics/barbara-mandrell/140378-i-wish-that-i-could-fall-in-love-today/'>
+							<strong>Barbara Mandrell</strong>
+						</a>
+						<a class='songs2' title="Barbara Mandrell - I Wish That I Could Fall In Love Today lyrics" href='http://www.lyriczz.com/lyrics/barbara-mandrell/140378-i-wish-that-i-could-fall-in-love-today/'>
+							<strong> - I Wish That I Could Fall In Love Today lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Darren Hanlon - I Wish That I Was Beautiful For You lyrics" href='http://www.lyriczz.com/lyrics/darren-hanlon/150755-i-wish-that-i-was-beautiful-for-you/'>
+							<strong>Darren Hanlon</strong>
+						</a>
+						<a class='songs2' title="Darren Hanlon - I Wish That I Was Beautiful For You lyrics" href='http://www.lyriczz.com/lyrics/darren-hanlon/150755-i-wish-that-i-was-beautiful-for-you/'>
+							<strong> - I Wish That I Was Beautiful For You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Alessi Brothers - I Wish That I Was Making Love To You Tonight lyrics" href='http://www.lyriczz.com/lyrics/alessi-brothers/53303-i-wish-that-i-was-making-love-to-you-tonight/'>
+							<strong>Alessi Brothers</strong>
+						</a>
+						<a class='songs2' title="Alessi Brothers - I Wish That I Was Making Love To You Tonight lyrics" href='http://www.lyriczz.com/lyrics/alessi-brothers/53303-i-wish-that-i-was-making-love-to-you-tonight/'>
+							<strong> - I Wish That I Was Making Love To You Tonight lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Joe Nichols - I Wish That Wasn't All lyrics" href='http://www.lyriczz.com/lyrics/joe-nichols/108053-i-wish-that-wasnand-039%3Bt-all/'>
+							<strong>Joe Nichols</strong>
+						</a>
+						<a class='songs2' title="Joe Nichols - I Wish That Wasn't All lyrics" href='http://www.lyriczz.com/lyrics/joe-nichols/108053-i-wish-that-wasnand-039%3Bt-all/'>
+							<strong> - I Wish That Wasn't All lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Atmosphere - I Wish Those Cats @ Phobia Would Give Me Some Free Shoes lyrics" href='http://www.lyriczz.com/lyrics/atmosphere/77630-i-wish-those-cats-%40-phobia-would-give-me-some-free-shoes/'>
+							<strong>Atmosphere</strong>
+						</a>
+						<a class='songs2' title="Atmosphere - I Wish Those Cats @ Phobia Would Give Me Some Free Shoes lyrics" href='http://www.lyriczz.com/lyrics/atmosphere/77630-i-wish-those-cats-%40-phobia-would-give-me-some-free-shoes/'>
+							<strong> - I Wish Those Cats @ Phobia Would Give Me Some Free Shoes lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Agnetha Faltskog - I Wish Tonight Could Last Forever lyrics" href='http://www.lyriczz.com/lyrics/agnetha-faltskog/128402-i-wish-tonight-could-last-forever/'>
+							<strong>Agnetha Faltskog</strong>
+						</a>
+						<a class='songs2' title="Agnetha Faltskog - I Wish Tonight Could Last Forever lyrics" href='http://www.lyriczz.com/lyrics/agnetha-faltskog/128402-i-wish-tonight-could-last-forever/'>
+							<strong> - I Wish Tonight Could Last Forever lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Prince - I Wish U Heaven lyrics" href='http://www.lyriczz.com/lyrics/prince/96706-i-wish-u-heaven/'>
+							<strong>Prince</strong>
+						</a>
+						<a class='songs2' title="Prince - I Wish U Heaven lyrics" href='http://www.lyriczz.com/lyrics/prince/96706-i-wish-u-heaven/'>
+							<strong> - I Wish U Heaven lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Sugazaki Akane - I Wish Upon A Star lyrics" href='http://www.lyriczz.com/lyrics/sugazaki-akane/99238-i-wish-upon-a-star/'>
+							<strong>Sugazaki Akane</strong>
+						</a>
+						<a class='songs2' title="Sugazaki Akane - I Wish Upon A Star lyrics" href='http://www.lyriczz.com/lyrics/sugazaki-akane/99238-i-wish-upon-a-star/'>
+							<strong> - I Wish Upon A Star lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Cliff Richard - I Wish We'd All Been Ready lyrics" href='http://www.lyriczz.com/lyrics/cliff-richard/33201-i-wish-weand-039%3Bd-all-been-ready/'>
+							<strong>Cliff Richard</strong>
+						</a>
+						<a class='songs2' title="Cliff Richard - I Wish We'd All Been Ready lyrics" href='http://www.lyriczz.com/lyrics/cliff-richard/33201-i-wish-weand-039%3Bd-all-been-ready/'>
+							<strong> - I Wish We'd All Been Ready lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Dc Talk - I Wish We'd All Been Ready lyrics" href='http://www.lyriczz.com/lyrics/dc-talk/152042-i-wish-weand-039%3Bd-all-been-ready/'>
+							<strong>Dc Talk</strong>
+						</a>
+						<a class='songs2' title="Dc Talk - I Wish We'd All Been Ready lyrics" href='http://www.lyriczz.com/lyrics/dc-talk/152042-i-wish-weand-039%3Bd-all-been-ready/'>
+							<strong> - I Wish We'd All Been Ready lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Gloria Estefan - I Wish You lyrics" href='http://www.lyriczz.com/lyrics/gloria-estefan/130730-i-wish-you/'>
+							<strong>Gloria Estefan</strong>
+						</a>
+						<a class='songs2' title="Gloria Estefan - I Wish You lyrics" href='http://www.lyriczz.com/lyrics/gloria-estefan/130730-i-wish-you/'>
+							<strong> - I Wish You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Conway Twitty - I Wish You Could Have Turned My Head lyrics" href='http://www.lyriczz.com/lyrics/conway-twitty/91088-i-wish-you-could-have-turned-my-head/'>
+							<strong>Conway Twitty</strong>
+						</a>
+						<a class='songs2' title="Conway Twitty - I Wish You Could Have Turned My Head lyrics" href='http://www.lyriczz.com/lyrics/conway-twitty/91088-i-wish-you-could-have-turned-my-head/'>
+							<strong> - I Wish You Could Have Turned My Head lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mariah Carey - I Wish You Knew lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/45503-i-wish-you-knew/'>
+							<strong>Mariah Carey</strong>
+						</a>
+						<a class='songs2' title="Mariah Carey - I Wish You Knew lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/45503-i-wish-you-knew/'>
+							<strong> - I Wish You Knew lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Daphne Loves Derby - I Wish You Knew This Song Was About You lyrics" href='http://www.lyriczz.com/lyrics/daphne-loves-derby/50634-i-wish-you-knew-this-song-was-about-you/'>
+							<strong>Daphne Loves Derby</strong>
+						</a>
+						<a class='songs2' title="Daphne Loves Derby - I Wish You Knew This Song Was About You lyrics" href='http://www.lyriczz.com/lyrics/daphne-loves-derby/50634-i-wish-you-knew-this-song-was-about-you/'>
+							<strong> - I Wish You Knew This Song Was About You lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Frank Sinatra - I Wish You Love lyrics" href='http://www.lyriczz.com/lyrics/frank-sinatra/68321-i-wish-you-love/'>
+							<strong>Frank Sinatra</strong>
+						</a>
+						<a class='songs2' title="Frank Sinatra - I Wish You Love lyrics" href='http://www.lyriczz.com/lyrics/frank-sinatra/68321-i-wish-you-love/'>
+							<strong> - I Wish You Love lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Rod Stewart - I Wish You Love ft. Chris Botti lyrics" href='http://www.lyriczz.com/lyrics/rod-stewart/93892-i-wish-you-love/'>
+							<strong>Rod Stewart</strong>
+						</a>
+						<a class='songs2' title="Rod Stewart - I Wish You Love ft. Chris Botti lyrics" href='http://www.lyriczz.com/lyrics/rod-stewart/93892-i-wish-you-love/'>
+							<strong> - I Wish You Love ft. Chris Botti lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Dean Martin - I Wish You Love lyrics" href='http://www.lyriczz.com/lyrics/dean-martin/152823-i-wish-you-love/'>
+							<strong>Dean Martin</strong>
+						</a>
+						<a class='songs2' title="Dean Martin - I Wish You Love lyrics" href='http://www.lyriczz.com/lyrics/dean-martin/152823-i-wish-you-love/'>
+							<strong> - I Wish You Love lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Tynisha Keli - I Wish You Loved Me lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/24488-i-wish-you-loved-me/'>
+							<strong>Tynisha Keli</strong>
+						</a>
+						<a class='songs2' title="Tynisha Keli - I Wish You Loved Me lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/24488-i-wish-you-loved-me/'>
+							<strong> - I Wish You Loved Me lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Eagles - I Wish You Peace lyrics" href='http://www.lyriczz.com/lyrics/eagles/10859-i-wish-you-peace/'>
+							<strong>Eagles</strong>
+						</a>
+						<a class='songs2' title="Eagles - I Wish You Peace lyrics" href='http://www.lyriczz.com/lyrics/eagles/10859-i-wish-you-peace/'>
+							<strong> - I Wish You Peace lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Mariah Carey - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/64766-i-wish-you-well/'>
+							<strong>Mariah Carey</strong>
+						</a>
+						<a class='songs2' title="Mariah Carey - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/64766-i-wish-you-well/'>
+							<strong> - I Wish You Well lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Mariah Carey - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/76045-i-wish-you-well/'>
+							<strong>Mariah Carey</strong>
+						</a>
+						<a class='songs2' title="Mariah Carey - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/mariah-carey/76045-i-wish-you-well/'>
+							<strong> - I Wish You Well lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Josie And The Pussycats - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/josie-and-the-pussycats/95387-i-wish-you-well/'>
+							<strong>Josie And The Pussycats</strong>
+						</a>
+						<a class='songs2' title="Josie And The Pussycats - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/josie-and-the-pussycats/95387-i-wish-you-well/'>
+							<strong> - I Wish You Well lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Anna Waronker - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/anna-waronker/121873-i-wish-you-well/'>
+							<strong>Anna Waronker</strong>
+						</a>
+						<a class='songs2' title="Anna Waronker - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/anna-waronker/121873-i-wish-you-well/'>
+							<strong> - I Wish You Well lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Feeling Left Out - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/feeling-left-out/161031-i-wish-you-well/'>
+							<strong>Feeling Left Out</strong>
+						</a>
+						<a class='songs2' title="Feeling Left Out - I Wish You Well lyrics" href='http://www.lyriczz.com/lyrics/feeling-left-out/161031-i-wish-you-well/'>
+							<strong> - I Wish You Well lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="American Heartbreak - I Wish You Were (dead) lyrics" href='http://www.lyriczz.com/lyrics/american-heartbreak/119463-i-wish-you-were-%28dead%29/'>
+							<strong>American Heartbreak</strong>
+						</a>
+						<a class='songs2' title="American Heartbreak - I Wish You Were (dead) lyrics" href='http://www.lyriczz.com/lyrics/american-heartbreak/119463-i-wish-you-were-%28dead%29/'>
+							<strong> - I Wish You Were (dead) lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Simple Minds - I Wish You Were Here lyrics" href='http://www.lyriczz.com/lyrics/simple-minds/8802-i-wish-you-were-here/'>
+							<strong>Simple Minds</strong>
+						</a>
+						<a class='songs2' title="Simple Minds - I Wish You Were Here lyrics" href='http://www.lyriczz.com/lyrics/simple-minds/8802-i-wish-you-were-here/'>
+							<strong> - I Wish You Were Here lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Ray Charles - I Wish You Were Here Tonight lyrics" href='http://www.lyriczz.com/lyrics/ray-charles/73400-i-wish-you-were-here-tonight/'>
+							<strong>Ray Charles</strong>
+						</a>
+						<a class='songs2' title="Ray Charles - I Wish You Were Here Tonight lyrics" href='http://www.lyriczz.com/lyrics/ray-charles/73400-i-wish-you-were-here-tonight/'>
+							<strong> - I Wish You Were Here Tonight lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="David Bowie - I Wish You Would lyrics" href='http://www.lyriczz.com/lyrics/david-bowie/35055-i-wish-you-would/'>
+							<strong>David Bowie</strong>
+						</a>
+						<a class='songs2' title="David Bowie - I Wish You Would lyrics" href='http://www.lyriczz.com/lyrics/david-bowie/35055-i-wish-you-would/'>
+							<strong> - I Wish You Would lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Eric Clapton - I Wish You Would lyrics" href='http://www.lyriczz.com/lyrics/eric-clapton/70222-i-wish-you-would/'>
+							<strong>Eric Clapton</strong>
+						</a>
+						<a class='songs2' title="Eric Clapton - I Wish You Would lyrics" href='http://www.lyriczz.com/lyrics/eric-clapton/70222-i-wish-you-would/'>
+							<strong> - I Wish You Would lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Betty Blowtorch - I Wish You'd Die lyrics" href='http://www.lyriczz.com/lyrics/betty-blowtorch/142137-i-wish-youand-039%3Bd-die/'>
+							<strong>Betty Blowtorch</strong>
+						</a>
+						<a class='songs2' title="Betty Blowtorch - I Wish You'd Die lyrics" href='http://www.lyriczz.com/lyrics/betty-blowtorch/142137-i-wish-youand-039%3Bd-die/'>
+							<strong> - I Wish You'd Die lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Brad Paisley - I Wish You'd Stay lyrics" href='http://www.lyriczz.com/lyrics/brad-paisley/30420-i-wish-youand-039%3Bd-stay/'>
+							<strong>Brad Paisley</strong>
+						</a>
+						<a class='songs2' title="Brad Paisley - I Wish You'd Stay lyrics" href='http://www.lyriczz.com/lyrics/brad-paisley/30420-i-wish-youand-039%3Bd-stay/'>
+							<strong> - I Wish You'd Stay lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Cat Stevens - I Wish, I Wish lyrics" href='http://www.lyriczz.com/lyrics/cat-stevens/6064-i-wish%2C-i-wish/'>
+							<strong>Cat Stevens</strong>
+						</a>
+						<a class='songs2' title="Cat Stevens - I Wish, I Wish lyrics" href='http://www.lyriczz.com/lyrics/cat-stevens/6064-i-wish%2C-i-wish/'>
+							<strong> - I Wish, I Wish lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Tynisha Keli - I Wished You Loved Me lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/24487-i-wished-you-loved-me/'>
+							<strong>Tynisha Keli</strong>
+						</a>
+						<a class='songs2' title="Tynisha Keli - I Wished You Loved Me lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/24487-i-wished-you-loved-me/'>
+							<strong> - I Wished You Loved Me lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Tynisha Keli - I Wished You Loved Me (remix) ft. Sammie lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/53006-i-wished-you-loved-me-%28remix%29/'>
+							<strong>Tynisha Keli</strong>
+						</a>
+						<a class='songs2' title="Tynisha Keli - I Wished You Loved Me (remix) ft. Sammie lyrics" href='http://www.lyriczz.com/lyrics/tynisha-keli/53006-i-wished-you-loved-me-%28remix%29/'>
+							<strong> - I Wished You Loved Me (remix) ft. Sammie lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row1'>
+						<a class='songs1' title="Vanishing Point - I Within I lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138739-i-within-i/'>
+							<strong>Vanishing Point</strong>
+						</a>
+						<a class='songs2' title="Vanishing Point - I Within I lyrics" href='http://www.lyriczz.com/lyrics/vanishing-point/138739-i-within-i/'>
+							<strong> - I Within I lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div><div class='mnu-row2'>
+						<a class='songs1' title="Black Sabbath - I Witness lyrics" href='http://www.lyriczz.com/lyrics/black-sabbath/5199-i-witness/'>
+							<strong>Black Sabbath</strong>
+						</a>
+						<a class='songs2' title="Black Sabbath - I Witness lyrics" href='http://www.lyriczz.com/lyrics/black-sabbath/5199-i-witness/'>
+							<strong> - I Witness lyrics</strong>
+						</a>
+						<div class='clear'></div>
+					</div></div><span class='nums'>&laquo; <a href='http://www.lyriczz.com/songs/i-24.html'>Previous</a> <a href='http://www.lyriczz.com/songs/i-1.html'> 1 </a><a href='http://www.lyriczz.com/songs/i-2.html'> 2 </a><a href='http://www.lyriczz.com/songs/i-3.html'> 3 </a><a href='http://www.lyriczz.com/songs/i-4.html'> 4 </a><a href='http://www.lyriczz.com/songs/i-5.html'> 5 </a><a href='http://www.lyriczz.com/songs/i-6.html'> 6 </a><a href='http://www.lyriczz.com/songs/i-7.html'> 7 </a><a href='http://www.lyriczz.com/songs/i-8.html'> 8 </a><a href='http://www.lyriczz.com/songs/i-9.html'> 9 </a><a href='http://www.lyriczz.com/songs/i-10.html'> 10 </a><a href='http://www.lyriczz.com/songs/i-11.html'> 11 </a><a href='http://www.lyriczz.com/songs/i-12.html'> 12 </a><a href='http://www.lyriczz.com/songs/i-13.html'> 13 </a><a href='http://www.lyriczz.com/songs/i-14.html'> 14 </a><a href='http://www.lyriczz.com/songs/i-15.html'> 15 </a><a href='http://www.lyriczz.com/songs/i-16.html'> 16 </a><a href='http://www.lyriczz.com/songs/i-17.html'> 17 </a><a href='http://www.lyriczz.com/songs/i-18.html'> 18 </a><a href='http://www.lyriczz.com/songs/i-19.html'> 19 </a><a href='http://www.lyriczz.com/songs/i-20.html'> 20 </a><a href='http://www.lyriczz.com/songs/i-21.html'> 21 </a><a href='http://www.lyriczz.com/songs/i-22.html'> 22 </a><a href='http://www.lyriczz.com/songs/i-23.html'> 23 </a><a href='http://www.lyriczz.com/songs/i-24.html'> 24 </a><b> 25 </b><a href='http://www.lyriczz.com/songs/i-26.html'> 26 </a><a href='http://www.lyriczz.com/songs/i-27.html'> 27 </a><a href='http://www.lyriczz.com/songs/i-28.html'> 28 </a><a href='http://www.lyriczz.com/songs/i-29.html'> 29 </a><a href='http://www.lyriczz.com/songs/i-30.html'> 30 </a><a href='http://www.lyriczz.com/songs/i-31.html'> 31 </a><a href='http://www.lyriczz.com/songs/i-32.html'> 32 </a><a href='http://www.lyriczz.com/songs/i-33.html'> 33 </a><a href='http://www.lyriczz.com/songs/i-34.html'> 34 </a><a href='http://www.lyriczz.com/songs/i-35.html'> 35 </a><a href='http://www.lyriczz.com/songs/i-36.html'> 36 </a><a href='http://www.lyriczz.com/songs/i-37.html'> 37 </a><a href='http://www.lyriczz.com/songs/i-38.html'> 38 </a><a href='http://www.lyriczz.com/songs/i-39.html'> 39 </a><a href='http://www.lyriczz.com/songs/i-40.html'> 40 </a><a href='http://www.lyriczz.com/songs/i-41.html'> 41 </a><a href='http://www.lyriczz.com/songs/i-42.html'> 42 </a><a href='http://www.lyriczz.com/songs/i-43.html'> 43 </a><a href='http://www.lyriczz.com/songs/i-44.html'> 44 </a><a href='http://www.lyriczz.com/songs/i-45.html'> 45 </a><a href='http://www.lyriczz.com/songs/i-46.html'> 46 </a><a href='http://www.lyriczz.com/songs/i-47.html'> 47 </a><a href='http://www.lyriczz.com/songs/i-48.html'> 48 </a><a href='http://www.lyriczz.com/songs/i-49.html'> 49 </a><a href='http://www.lyriczz.com/songs/i-50.html'> 50 </a><a href='http://www.lyriczz.com/songs/i-51.html'> 51 </a><a href='http://www.lyriczz.com/songs/i-52.html'> 52 </a><a href='http://www.lyriczz.com/songs/i-53.html'> 53 </a><a href='http://www.lyriczz.com/songs/i-54.html'> 54 </a><a href='http://www.lyriczz.com/songs/i-55.html'> 55 </a><a href='http://www.lyriczz.com/songs/i-56.html'> 56 </a><a href='http://www.lyriczz.com/songs/i-57.html'> 57 </a><a href='http://www.lyriczz.com/songs/i-58.html'> 58 </a><a href='http://www.lyriczz.com/songs/i-59.html'> 59 </a><a href='http://www.lyriczz.com/songs/i-60.html'> 60 </a><a href='http://www.lyriczz.com/songs/i-61.html'> 61 </a><a href='http://www.lyriczz.com/songs/i-62.html'> 62 </a><a href='http://www.lyriczz.com/songs/i-63.html'> 63 </a><a href='http://www.lyriczz.com/songs/i-64.html'> 64 </a><a href='http://www.lyriczz.com/songs/i-65.html'> 65 </a><a href='http://www.lyriczz.com/songs/i-66.html'> 66 </a><a href='http://www.lyriczz.com/songs/i-67.html'> 67 </a><a href='http://www.lyriczz.com/songs/i-68.html'> 68 </a><a href='http://www.lyriczz.com/songs/i-69.html'> 69 </a> <a href='http://www.lyriczz.com/songs/i-26.html'><b>Next</b></a> &raquo;</span></div>   
+<!-- START bottom ad area
+  <div id="bottom_ad_area">    
+  </div>  
+END bottom ad area -->
+ </div>
+ <div id="left_bar" >
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+     <div class="left_bar_box_heading_container"><h1 class="left_bar_box_heading"><a href="chartzz.php" title="Top Music Charts">Top Music Charts</a></h1></div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content">
+     <br />
+     <a href="http://www.lyriczz.com/chart_usa.php" title="USA Song Lyrics Chart">
+      <img width="22" height="16" alt="USA music lyrics charts" src="http://www.lyriczz.com/img/chartusasmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_usa.php" title="USA Song Lyrics Chart"><strong>USA Lyrics Chart</strong></a>
+     <br />
+     <a href="http://www.lyriczz.com/chart_uk.php" title="UK Music Lyrics Chart">
+      <img width="22" height="16" alt="UK music lyrics charts" src="http://www.lyriczz.com/img/chartuksmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_uk.php" title="UK Music Lyrics Chart"><strong>UK Lyrics Chart</strong></a>
+     <br />
+     <a href="http://www.lyriczz.com/chart_nl.php" title="Netherlands Lyrics Chart">
+      <img width="22" height="16" alt="Netherlands music lyrics charts" src="http://www.lyriczz.com/img/chartnlsmall.png" /></a> 
+     <a href="http://www.lyriczz.com/chart_nl.php" title="Netherlands Lyrics Chart"><strong>Netherlands Lyrics</strong></a>
+     <br />
+    </div>   
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left"></div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+    <div class="left_bar_box_heading_container"><h2 class="left_bar_box_heading">Song Lyrics</h2></div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content"> 
+     <!-- Previous third party search was here -->
+	<br />
+	 &raquo; <a href="http://www.lyriczz.com/request.php" rel="nofollow"><strong>Request Lyrics</strong></a><br/>
+	 &raquo; <a href="http://www.lyriczz.com/submit.php" rel="nofollow"><strong>Submit Lyrics</strong></a>
+    </div>
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left"></div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+
+
+  <div class="left_bar_box">  
+   <div class="left_bar_box_top">
+    <div class="left_bar_box_top_left"></div>
+    <div class="left_bar_box_top_middle">Linkzz</div>
+    <div class="left_bar_box_top_right"></div>
+   </div>   
+   <div class="left_bar_box_middle">
+    <div class="left_bar_box_middle_content">
+     <br />
+&raquo; <a href="http://www.jango.com" title="Listen to free music on Jango Internet Radio!" target="_blank">Free Music</a><br />
+&raquo; <a href="http://www.fruitylyrics.com" target="_blank" title="lyrics &#252;bersetzung - traduction - traduzione - &#1087;&#1077;&#1088;&#1077;&#1074;&#1086;&#1076; for all songs">Fruity Song Lyrics</a><br />
+&raquo; <a href="http://www.lyricsbay.com" target="_blank">Lyrics</a><br />
+&raquo; <a href="http://www.allthelyrics.com" target="_blank">All song lyrics</a><br />
+&raquo; <a href="http://www.lyricsreg.com" target="_blank">Lyricsreg</a><br />
+&raquo; <a href="http://www.lyred.com" target="_blank">Lyred</a><br />
+&raquo; <a href="http://www.musicloversgroup.com" title="Videos and Lyrics" target="_blank">Videos and Lyrics</a><br />
+&raquo; <a href="http://www.lyricspy.com" target="_blank">Lyricspy</a><br />
+&raquo; <a href="http://www.asklyrics.com/" target="_blank">Ask Lyrics</a><br />
+&raquo; <a href="http://www.lyricsspot.com/" target="_blank">Lyrics Spot.com</a><br />
+&raquo; <a href="http://www.songs-lyrics.net" target="_blank">Songs Lyrics</a><br />    </div>
+   </div>
+   <div class="left_bar_box_bottom">
+    <div class="left_bar_box_bottom_left">
+	<br />
+	<script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "160x600,120x600";
+	//--></script>
+	<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/lyricsbaycom/LyricZZcom/tags.js"></script>
+
+
+	</div>
+    <div class="left_bar_box_bottom_middle"></div>
+    <div class="left_bar_box_bottom_right"></div>
+   </div>   
+  </div>  
+  
+ </div> 
+<!-- <div id="right_bar">
+ </div> --> 
+ <div style="height:15px;"></div> 
+</div>
+</div> 
+<div id="footer">
+ <br />
+ <a href="http://www.lyriczz.com/mission.php" title="Our Mission">Mission</a> -
+ <a href="http://www.lyriczz.com/disclaimer.php">Disclaimer</a> -
+ <a href="http://www.lyriczz.com/contact.php" rel="nofollow">Contact</a> -
+ <a href="http://www.lyriczz.com" title="Lyrics"><strong>Lyrics</strong></a><br />
+ Want to advertise on LyricZZ.com? Send us <a href="http://www.lyriczz.com/contact.php" rel="nofollow">a message</a>!<br />
+ All <b>Lyrics</b> Found on this site are property of their respective owners<br />
+ &copy; 2012 - Lyriczz.com 
+</div>
+
+
+</body>
+</html>

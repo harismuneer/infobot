@@ -1,0 +1,479 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-01T03:48:57Z
+WARC-TREC-ID: clueweb12-0401tw-12-19807
+WARC-IP-Address: 89.167.142.156
+WARC-Payload-Digest: sha1:TDNNG6R2JTMXFZSMFQNG7DYLO7O67VMB
+WARC-Target-URI: http://www.edge-online.com/features/david-braben-interview
+WARC-Record-ID: <urn:uuid:d9de4825-3be4-4cef-be44-00a0593c2c35>
+Content-Type: application/http; msgtype=response
+Content-Length: 51044
+
+HTTP/1.1 200 OK
+Server: nginx/0.7.67
+Date: Thu, 01 Mar 2012 03:47:36 GMT
+Content-Type: text/html; charset=utf-8
+Connection: close
+X-Powered-By: PHP/5.2.6
+X-Drupal-Cache: MISS
+Last-Modified: Thu, 01 Mar 2012 03:48:57 +0000
+Cache-Control: public, max-age=0
+ETag: "1330573737-0"
+Expires: Sun, 11 Mar 1984 12:00:00 GMT
+Vary: Cookie,Accept-Encoding
+X-PF-Uncompressing: 1
+
+<!doctype html><!--[if lt IE 7 ]><html lang="en-us" dir="ltr" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en-us" dir="ltr" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en-us" dir="ltr" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en-us" dir="ltr" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" dir="ltr" class="no-js"><!--<![endif]-->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>David Braben on Raspberry Pi - Edge Magazine</title>
+    
+
+<!-- REVENUE SCIENCE AD TAG CODE -->
+<script type="text/javascript">
+var rsi_segs = [];
+var segs_beg=document.cookie.indexOf("rsi_segs=");
+if(segs_beg>=0){
+ segs_beg=document.cookie.indexOf("=",segs_beg)+1;
+ if(segs_beg>0){
+ var segs_end=document.cookie.indexOf(";",segs_beg);
+ if(segs_end==-1)segs_end=document.cookie.length;
+ rsi_segs=document.cookie.substring(segs_beg,segs_end).split("|");
+}}
+var segLen=20
+var segQS="";
+if (rsi_segs.length<segLen){segLen=rsi_segs.length}
+for (var i=0;i<segLen;i++){
+ segQS+=("rsi"+"="+rsi_segs[i]+";")
+}
+
+</script>
+<!-- END REVENUE SCIENCE AD TAG CODE -->
+<meta name="google-site-verification" content="vv7tlEo78B0VAYuMVJCsEYeR_UlOCHWfO8rAvfD55QM" />
+<meta name="msvalidate.01" content="DD1D5DE15ADB83A7C7A75936197CB88F" />
+<meta property="og:title" content="David Braben on Raspberry Pi" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://media.edge-online.com/files/imagecache/article/articles/features/raspberry-pi.jpg" />
+<meta property="og:url" content="http://www.edge-online.com/features/david-braben-interview"/>
+<meta property="og:site_name" content="EDGE Magazine" />
+<link rel="shortcut icon" href="http://static.edge-online.com/sites/all/themes/future_edge/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="http://static.edge-online.com/files/js/js_c5fb75c7fe7be6456988b47333ee5189.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="http://static.edge-online.com/files/css/css_7d940440959b90b60447868564c17a70.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="http://static.edge-online.com/files/css/css_b3849261b553476e93ca4e6c2d6536d6.css" />
+  </head>
+
+  <body class="not-front not-logged-in page-node node-type-feature-article one-sidebar sidebar-right sidebar-related page-node-article section-features article-image">
+    <div id="wrapper">
+      <header role="banner" id="banner">
+        <a href="/" id="logo"><img src="http://media.edge-online.com/sites/all/themes/future_edge/logo.png" alt="Edge Magazine" title="Return to homepage" /></a>
+                 
+        <div class="block block-edge-search-header">
+    <form action="/"  accept-charset="UTF-8" method="post" id="edge-search-form">
+<div><div class="form-item" id="edit-search-option-wrapper">
+ <label for="edit-search-option">Search type: </label>
+ <select name="search_option" class="form-select" id="edit-search-option" ><option value="0" selected="selected">All</option><option value="5">Games</option><option value="1">Companies</option><option value="8">Regions</option></select>
+</div>
+<div class="form-item" id="edit-search-text-wrapper">
+ <label for="edit-search-text">Text search: </label>
+ <input type="text" maxlength="128" name="search_text" id="edit-search-text" size="60" value="" placeholder="Search Edge" class="form-text" />
+</div>
+<div class="form-item" id="edit-search-topic-wrapper">
+ <label for="edit-search-topic">Topic search: </label>
+ <input type="text" maxlength="128" name="search_topic" id="edit-search-topic" size="60" value="" placeholder="Search topics" class="form-text form-autocomplete" />
+</div>
+<input class="autocomplete" type="hidden" id="edit-search-topic-autocomplete" value="http://www.edge-online.com/taxonomy/autocomplete/5" disabled="disabled" /><input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-a1bfe87a8538af6d699a5c728d946260" value="form-a1bfe87a8538af6d699a5c728d946260"  />
+<input type="hidden" name="form_id" id="edit--edge-search-form" value="_edge_search_form"  />
+
+</div></form>
+</div><div class="block block-edge-user-login">
+    <div class="item-list"><ul><li class="first"><a href="/user/login?destination=/features/david-braben-interview" rel="nofollow">Login</a></li>
+<li><a href="/user/register?destination=/features/david-braben-interview" rel="nofollow">Register</a></li>
+<li class="last"><a href="/forum">Forum</a></li>
+</ul></div></div><div class="block block-edge-magazine-promo">
+    <a href="/magazine"><img src="http://media.edge-online.com/files/sub_238.png" alt="EDGE magazine cover" title="" width="280" height="73" /></a></div><nav id="mega-navigation" role="navigation" class="block block-edge-mega-nav">
+  <div class="item-list"><ul><li class="drop-down-trigger first"><h2><a href="/games">Games</a></h2>
+  <div class="drop-down" id="meganav-games">
+      <div class="drop-down-foot"></div>
+          <div class="meganav-articles">
+                  <h3>Top game reviews</h3>
+                <div class="item-list"><ul><li class="position-0 first"><a href="/reviews/waking-mars-review"><h4>Waking Mars review</h4><div class="imagecache-article"><img src="http://media.edge-online.com/files/imagecache/home-page-first-article/articles/reviews/waking_mars.jpg" alt="Waking Mars review" title=""  class="imagecache imagecache-home-page-first-article" width="419" height="236" /></div></a></li>
+<li class="position-1"><a href="/reviews/ssx-review"><h4>SSX review</h4><img src="http://media.edge-online.com/files/imagecache/meganav-small/articles/reviews/SSX.jpg" alt="SSX review" title=""  class="imagecache imagecache-meganav-small" width="108" height="61" /><span class="strap">In looking to other games for inspiration the snowboarding series loses some of its own personality.</span></a></li>
+<li><a href="/reviews/binary-domain-review"><h4>Binary Domain review</h4></a></li>
+<li><a href="/reviews/last-story-review"><h4>The Last Story review</h4></a></li>
+<li class="last"><a href="/reviews/ziggurat-review"><h4>Ziggurat review</h4></a></li>
+</ul></div>        <a href="/filter/reviews" class="more">More reviews</a>      </div>
+              <div class="meganav-news">
+        <h3>Latest news</h3>
+        <div class="item-list"><ul><li class="first"><a href="/news/gravity-rush-out-june">Gravity Rush out in June</a></li>
+<li><a href="/news/bigpoint-announces-game-thrones-mmog">Bigpoint announces Game Of Thrones MMOG</a></li>
+<li><a href="/news/zone-enders-hd-confirmed">Zone Of The Enders HD confirmed</a></li>
+<li><a href="/news/games-mass-effect-3-memo-full">Game's Mass Effect 3 memo in full</a></li>
+<li class="last"><a href="/news/game-group-loses-ea-support">Game Group loses EA support</a></li>
+</ul></div><a href="/filter/news" class="more">More news</a>      </div>
+      </div>
+</li>
+<li class="drop-down-trigger"><h2><a href="/design">Design</a></h2>
+  <div class="drop-down" id="meganav-design">
+      <div class="drop-down-foot"></div>
+          <div class="meganav-articles">
+                <div class="item-list"><ul><li class="position-0 first"><a href="/features/taking-mobile-arcade"><h4>Taking mobile to the arcade</h4><div class="imagecache-article"><img src="http://media.edge-online.com/files/imagecache/home-page-first-article/articles/features/adrenaline.jpg" alt="Taking mobile to the arcade" title=""  class="imagecache imagecache-home-page-first-article" width="419" height="236" /></div></a></li>
+<li class="position-1"><a href="/opinion/opinion-interchangeable-dialogue"><h4>Opinion: Interchangeable dialogue</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/opinion/EDG233_leach.png" alt="Opinion: Interchangeable dialogue" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">James Leach asks why games resort to stereotypes and clichés.</span></a></li>
+<li><a href="/unity-competition"><h4>The Edge Create Challenge 2012</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/features/edge_create_challenge.png" alt="The Edge Create Challenge 2012" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">Win a Unity Pro account and an expenses-paid trip to the Unite conference in our browser game contest.</span></a></li>
+<li class="last"><a href="/features/region-specific-texas-0"><h4>Region Specific: Texas</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/features/RSTEXAS.png" alt="Region Specific: Texas" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">A big state with even bigger ambitions for its game industry.</span></a></li>
+</ul></div>        <a href="/design" class="more">More articles</a>      </div>
+              <div class="meganav-news">
+        <h3>Latest news</h3>
+        <div class="item-list"><ul><li class="first"><a href="/news/hydrophobia-dev-staff-unpaid-three-months">Hydrophobia dev staff 'unpaid for three months'</a></li>
+<li><a href="/news/hydrophobia-dev-facing-closure">Hydrophobia dev facing closure</a></li>
+<li><a href="/news/chime-dj-hero-devs-form-mobile-game-startup">Chime, DJ Hero devs form mobile game startup</a></li>
+<li><a href="/news/playdead-hiring-limbo-ports">Playdead hiring for Limbo ports</a></li>
+<li class="last"><a href="/news/bethesda-and-lionhead-staff-next-gen">Bethesda and Lionhead staff up for next-gen</a></li>
+</ul></div><a href="/filter/news" class="more">More news</a>      </div>
+      </div>
+</li>
+<li class="drop-down-trigger"><h2><a href="/business">Business</a></h2>
+  <div class="drop-down" id="meganav-business">
+      <div class="drop-down-foot"></div>
+          <div class="meganav-articles">
+                <div class="item-list"><ul><li class="position-0 first"><a href="/opinion/opinion-its-what-you-do-freemium-counts"><h4>Opinion: It's what you do with freemium that counts</h4><div class="imagecache-article"><img src="http://media.edge-online.com/files/imagecache/home-page-first-article/articles/opinion/free_to_play.jpg" alt="Opinion: It&#039;s what you do with freemium that counts" title=""  class="imagecache imagecache-home-page-first-article" width="419" height="236" /></div></a></li>
+<li class="position-1"><a href="/features/pride-irish"><h4>Pride of the Irish</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/features/ireland.png" alt="Pride of the Irish" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">Why, even in the face of national economic collapse, Ireland’s game industry is becoming a powerful player on the global stage.</span></a></li>
+<li><a href="/features/talking-spry-fox"><h4>Talking Spry Fox</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/features/triple_town_bears.png" alt="Talking Spry Fox" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">Part two of our interview with the Triple Town dev, including why indies are fundamental to social networks and why consoles are scary.</span></a></li>
+<li class="last"><a href="/opinion/opinion-should-tweets-be-taken-so-seriously"><h4>Opinion: Should tweets be taken so seriously?</h4><img src="http://media.edge-online.com/files/imagecache/meganav-smaller/articles/opinion/notch_twitter.PNG" alt="Opinion: Should tweets be taken so seriously?" title=""  class="imagecache imagecache-meganav-smaller" width="94" height="53" /><span class="strap">As Notch calls for us to stop taking his tweets as fact, is it time the media stopped sourcing news from Twitter?</span></a></li>
+</ul></div>        <a href="/business" class="more">More articles</a>      </div>
+              <div class="meganav-news">
+        <h3>Latest news</h3>
+        <div class="item-list"><ul><li class="first"><a href="/news/psp-tales-tops-japan-chart">PSP Tales tops Japan chart</a></li>
+<li><a href="/news/game-group-shares-fall-15-cent">Game Group shares fall 15 per cent</a></li>
+<li><a href="/news/gravity-rush-out-june">Gravity Rush out in June</a></li>
+<li><a href="/news/bigpoint-announces-game-thrones-mmog">Bigpoint announces Game Of Thrones MMOG</a></li>
+<li class="last"><a href="/news/zone-enders-hd-confirmed">Zone Of The Enders HD confirmed</a></li>
+</ul></div><a href="/filter/news" class="more">More news</a>      </div>
+      </div>
+</li>
+<li class="menu-static"><a href="/news">News</a></li>
+<li class="menu-static"><a href="/features">Features</a></li>
+<li class="menu-static"><a href="/reviews">Reviews</a></li>
+<li class="menu-static"><a href="/opinion">Opinion</a></li>
+<li class="menu-static"><a href="http://jobs.edge-online.com">Jobs</a></li>
+<li class="menu-sponsor"><a href="http://www.scottish-enterprise.com/"><img src="http://media.edge-online.com/files/sponsor_images/scotland_70x30.png" alt="Game In Scotland" title="" width="70" height="30" /><div class="sponsor-drop-down"><div class="drop-down-foot"></div><img src="http://media.edge-online.com/files/sponsor_images/scotland_512x240.gif" alt="Game In Scotland" title="" width="512" height="240" /></div></a></li>
+<li class="drop-down-trigger my-edge last"><h2><a href="/myedge">MyEdge</a></h2>
+  <div class="drop-down" id="meganav-myedge-not-logged-in">
+    <div class="drop-down-foot"></div>
+    <a href="/user/register" class="myedge-reg-link" rel="nofollow"><div>
+      <div id="my-edge-nli-left">
+        <h4>Follow</h4>
+        <p>Create your own custom newsfeed in seconds with MyEdge by building your profile and following topics.</p>
+        <div class="myedge-follow-img">Follow</div>
+      </div>
+      <div id="my-edge-nli-middle">
+        <h4>Interact</h4>
+        <p>Comment on stories, jump into the debates on our forums and become part of the Edge community.</p>
+        <div class="myedge-comment-img">Follow</div>
+      </div>
+      <div id="my-edge-nli-right">
+        <h4>Subscribe</h4>
+        <p>Get Edge in your inbox every day: receive our daily bulletin with the latest jobs, news and more.</p>
+        <div class="myedge-logo-img">Follow</div>
+      </div>
+    </div></a>
+    <div id="my-edge-nli-bottom">
+      <p><a href="/user/register" rel="nofollow">Register</a> for a free Edge account today</p>
+    </div>
+  </div>
+</li>
+</ul></div></nav>      </header><!-- end #header -->
+
+      <div class="banner-advert">
+        <div class="block block-edge-advert-leaderboard" id="page_content_top_ad">
+    
+            <script type="text/javascript" >
+               document.write('<script src="http://ad.doubleclick.net/adj/fut.gb.edge/features.article;kw=graphics;kw=indies;kw=programming;kw=developers;kw=raspberry_pi_foundation;kw=david_braben;kw=pc;kw=education;tile=1;sz=728x90;dcopt=ist;'+ segQS +';ord=1330573713?" type="text/javascript"></scr'+'ipt>');
+            </script>
+            <noscript>
+               <a href="http://ad.doubleclick.net/jump/fut.gb.edge/features.article;tile=1;sz=728x90;dcopt=ist;ord=1330573713?" target="_blank">
+                  <img src="http://ad.doubleclick.net/ad/fut.gb.edge/features.article;tile=1;sz=728x90;dcopt=ist;ord=1330573713?" width="728" height="90" border="0" alt="">
+               </a>
+            </noscript></div><div class="block block-edge-promobox-leaderboard">
+    <a href="http://www.edge-online.com/magazine"><img src="http://media.edge-online.com/files/subscribe_mw_top.png" alt="Subscribe to Edge" title="" width="200" height="90" /></a></div>      </div><!-- end #banner-advert -->
+
+      <div id="inner-wrap">
+        <div id="main" role="main">
+          
+          <p class="section-title">Features</p>
+
+                      <time pubdate datetime="2011-11-25T12:47:52+00:00">November 25, 2011<span class="article-author">Author: <span class="author-name"><a href="/users/edge-staff" title="View user profile.">Edge Staff</a></span></span></time>
+                    
+          
+          <a href="#comments" class="comments-count-link"><span class="comment-count">1</span></a>
+          <hgroup>
+            <h1>David Braben on Raspberry Pi</h1>              <h2 class="strapline">Frontier Developments&#039; head on fostering a new generation of game makers.</h2>
+                          </h2>
+          </hgroup>
+
+          
+          <section id="middle">
+            
+            <div class="content-region">
+              <article class="node node-article node-type-feature_article has-comments node-full" data-nid="40071">
+      <div class="imagecache-article">
+      <img src="http://media.edge-online.com/files/imagecache/article/articles/features/raspberry-pi.jpg" alt="Raspberry Pi" title="Raspberry Pi"  class="imagecache imagecache-article" width="615" height="347" />    </div>
+    
+        
+  <h2>You can read our full feature on Raspberry Pi in <a href="http://www.edge-online.com/magazine/e235">our latest issue</a>.</h2><p>You can subscribe to <a href="http://go.redirectingat.com/?id=92X588385&amp;site=edge-online.com&amp;xs=1&amp;url=http%3A%2F%2Fwww.myfavouritemagazines.co.uk%2Fcontent%2Flp%2Fedge%2F&amp;xguid=A39CA74AC1E5ED50452AC3BCF87EA845&amp;xcreo=0&amp;sref=http%3A%2F%2Fwww.edge-online.com%2Fmagazine">Edge in print</a>, on <a href="http://clk.tradedoubler.com/click?p=23708&amp;a=1621074?epi=EDG_ipad_magazine&amp;url=http%3A%2F%2Fitunes.apple.com%2Fgb%2Fapp%2Fid451410596%3Fmt%3D8%26uo%3D6%26partnerId%3D2003">iOS via Newsstand</a> and on Android, PC and Mac <a href="http://www.zinio.com/edge-subscription">via Zinio</a>.</p><p>--</p><p>The Raspberry Pi Foundation&#39;s &quot;ultra-low-cost&quot; computer is the size of a credit card and will cost $25-$35, depending on how much RAM you specify. Frontier Developments&#39; head David Braben is heading up the foundation and its drive to capture the imaginations of a generation not raised on the simple pleasures of the BBC Micro. We sat down with Braben to discuss the hardware, and why it&#39;s needed.</p><p><strong>What&#39;s Raspberry Pi trying to rekindle?</strong><br />There was a real enthusiasm for electronic devices when I was a kid. It wasn&rsquo;t that it was geeky - it was actually quite trendy for a short period of time. But that&rsquo;s not the point. The thing is that when the focus is on the device itself, that&rsquo;s one thing, but what you can do with the device is a lot more interesting. [In Raspberry Pi] you&rsquo;ve got quite a powerful, very cheap device that anyone can carry around, take to school, and hopefully do interesting things with that make it seem less like it&#39;s purely a school thing.</p><p>We do realise that it&rsquo;s only going to be a subset of people that will even get engaged with it, but it&rsquo;s filling a gap where there isn&rsquo;t actually a place for people to get engaged at the moment. There&rsquo;s a huge gulf right now between [making UGC in] <em>Halo</em> Forge, <em>Rollercoaster Tycoon</em> or <em>LittleBigPlanet</em>, and things at the top end like XNA where you&rsquo;ve got to know your bananas to get engaged in it. For me the BBC Micro crossed that gap. Actually, the bottom bit didn&rsquo;t even exist back then, but it shows that there is a will to learn &lsquo;programming Lego&rsquo;.</p><p>At the moment, on a normal machine you&rsquo;ve got to know quite a lot to be able to boot Linux, fire up a compiler and get anything to compile. Just to say your own name on the screen is a challenge. Whereas on the BBC, you&rsquo;d see in every shop that someone had typed, &lsquo;So-and-so is clever,&rsquo; or &lsquo;So-and-so smells&#39;. Line 20, Goto 10: that almost entered the vocabulary, it&rsquo;s so straightforward. It&#39;s understandable even to someone who hasn&rsquo;t done programming. It would be great if you could take that and wrap it in something where it&rsquo;s easy to create something - websites, for instance - very easily. You can do it to an extent with things like Java, but it&rsquo;s much harder to get into, and in terms of teaching it&rsquo;s much harder as well.</p><p><img alt="" src="/files/images/braben_alpha.jpg" /><br /><strong>Frontier Developments&#39; head David Braben and the alpha version of the Raspberry Pi hardware</strong></p><p><strong>So is it safe to assume there will be an analogue to BBC Basic on Raspberry Pi?</strong><br />Well, we have BBC Basic. It&rsquo;s not an analogue, it&rsquo;s <em>the</em> BBC Basic. We&rsquo;re just checking where we are with the rights to that. There may or may not be an issue with the magic three letters there. But the point is that BBC Basic was hand-optimized on machines that were hundreds and hundreds of times slower than this. So it&rsquo;ll feel like the speed of Assembler, it&rsquo;ll run like the wind. And I think that&rsquo;s very exciting. A Java virtual machine is typically 80mb, often bigger still, which is ludicrous. Whereas my guess is that entirety of BBC Basic will fit easily in [Raspberry Pi&#39;s] primary cache. And that to me, in a perverse way, is very attractive. You could write something in Basic doing fancy graphics processing but where you could look at it and it&rsquo;s really obvious what it&rsquo;s doing. That&rsquo;s great from a teaching point of view, and from a fun point of view.</p><p>The problem with the PC, when you start compiling programs, is that you find it isn&rsquo;t quite the same from one PC to the next. And you&rsquo;ll find you&rsquo;ve got the wrong version of Windows, or the wrong graphics drivers. We have that every day writing PC software, and what we have is one version for every permutation on the disc. But if we can say with Raspberry Pi that it&rsquo;s not the device we&rsquo;re getting excited about but the things you can do with it, that can be a lot more inclusive. We can hopefully get a much better male to female ratio. Because what we&rsquo;re doing can be quite simple, and that&rsquo;s what I&rsquo;d like to see from this.</p><p><strong>Is the lack of a case a deliberate aesthetic choice?</strong><br />Yes. It&rsquo;s a practical thing as well, because this is a developer board - it&rsquo;s not a consumer device. The plan is to do that next year. But yes, in a sense it&rsquo;s embracing our roots as well. It&rsquo;s not being ashamed of what we&rsquo;re doing, and trying to make things look nice and antiseptic. Which we may do down the line, but that [would be aimed at] a different group of people. I suspect that a lot of Edge readers would go, &lsquo;Oh, that&rsquo;s cool. You can see exactly what&rsquo;s on the board.&rsquo; The sort of people who do take the lid off their computer and see what&rsquo;s inside. So I think there&rsquo;s no shame in what&rsquo;s there.</p><p>We&rsquo;ve made it extremely public what is there. So if other people want to make it I&rsquo;d actually challenge them to build it for the same price. Never mind retail it for the same price. I think that&rsquo;s the point, at $25 - $35 we&rsquo;ve managed to keep the price astonishingly low.</p><p>And it&rsquo;s a small PC. There&rsquo;s nothing really you can&rsquo;t do with this that you couldn&rsquo;t do with a PC from way back. We can run things like OpenOffice, Twitter, browse the web, Facebook etc</p><p><strong>How about graphics performance?</strong><br />I think it would be fair to say that it&#39;s quite a way beyond [<em>Quake III Arena</em>] in terms of what it can do. It will be able to do things that you&#39;d consider a lot more contemporary, but these are the things available freely that we can show running easily. At the moment we&#39;re appealing to techy people because we want people to give their time for free, writing software and improving things, porting them from other places, and putting them into the public domain, essentially, so we can use them for education.</p><p><strong>What are your plans for distribution?</strong><br />There are things we haven&#39;t announced that are very exciting, but the intitial 10,000 will be distributed through the Raspberry Pi website. Initially it&#39;s the UK, but we already have them outside the country. [About 50 alpha boards out in the wild.] It&#39;s a very wide range of different people, from education to technology companies to well-meaning individuals who have great pieces of software it&#39;d be good to have. It should be a global thing.</p>
+                
+      <footer >
+              <nav><ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node%2F40071%23comment-form">Login</a> or <a href="/user/register?destination=node%2F40071%23comment-form">register</a> to post comments</span></li>
+<li class="facebook-like utilities"><span><iframe class="facebook" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.edge-online.com%2Ffeatures%2Fdavid-braben-interview&amp;layout=button_count&amp;show_faces=false&amp;width=150&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" /></iframe></span></li>
+<li class="tweet utilities"><span><a href="http://twitter.com/share?url=http://www.edge-online.com/features/david-braben-interview" data-url="http://www.edge-online.com/features/david-braben-interview" data-counturl="http://www.edge-online.com/features/david-braben-interview" class="twitter-share-button" data-via="edgeonline" data-related="edgeonline">Tweet</a></span></li>
+<li class="plusone utilities"><span><g:plusone size="medium" href="http://www.edge-online.com/features/david-braben-interview"></g:plusone></span></li>
+<li class="linkedin utilities last"><span><script type="in/share" data-counter="right" data-url="http://www.edge-online.com/features/david-braben-interview"></script></span></li>
+</ul></nav>          </footer>
+  </article><div id="comments">
+  <h2>Comments</h2><span class="comment-count">1</span>  <a id="comment-35516"></a>
+<div id="comment-item-1" class="comment">
+	<div class="user-data">
+    <div class="picture">
+  <a href="/users/goingpostal13" title="View user profile."><img src="/sites/all/themes/future_edge/images/default_avatar.png" alt="GoingPostal13&#039;s picture" title="GoingPostal13&#039;s picture"  /></a></div>
+  </div>
+
+	<div class="comment-body">
+
+    <div class="submitted-username"><a href="/users/goingpostal13" title="View user profile.">GoingPostal13</a> says:</div>
+    <div class="submitted-time"><a href="/features/david-braben-interview#comment-35516">November 25, 2011 at 2.32pm</a></div>
+
+    <div class="content"><p>So looking forward to getting my hands on one of these, keep refreshing the RaspberryPi website to see if they've gone online to purchase.<br />
+<br />
+ENVELOPE 1,10,1,-1,1,10,20,10,126,0,0,-126,126,0<br />
+SOUND 1,1,100,40</p></div>
+    
+	  <nav><ul class="links"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node%2F40071%23comment-form">Login</a> or <a href="/user/register?destination=node%2F40071%23comment-form">register</a> to post comments</span></li>
+</ul></nav>        
+  </div>
+
+</div></div>
+
+
+            </div>
+
+                          <aside class="sidebar" role="complementary" id="related">
+                <div class="block block-edge-share">
+    <div class="item-list"><ul class="widgets"><li class="first"><iframe class="facebook" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.edge-online.com%2Ffeatures%2Fdavid-braben-interview&amp;layout=button_count&amp;show_faces=false&amp;width=150&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" /></iframe></li>
+<li><a href="http://twitter.com/share?url=http://www.edge-online.com/features/david-braben-interview" data-url="http://www.edge-online.com/features/david-braben-interview" data-counturl="http://www.edge-online.com/features/david-braben-interview" class="twitter-share-button" data-via="edgeonline" data-related="edgeonline">Tweet</a></li>
+<li><g:plusone size="medium" href="http://www.edge-online.com/features/david-braben-interview"></g:plusone></li>
+<li><script type="in/share" data-counter="right" data-url="http://www.edge-online.com/features/david-braben-interview"></script></li>
+<li class="last"><!-- AddThis Button BEGIN --> 
+  <div class="addthis_toolbox addthis_default_style "> 
+  <a class="addthis_counter addthis_pill_style"></a> 
+  </div> 
+  <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script> 
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=futurepub"></script> 
+  <!-- AddThis Button END --></li>
+</ul></div><div class="item-list"><ul class="utilities"><li class="first"><a href="#" onclick="print_content();return false;" class="print">Print page</a></li>
+<li><a class="mail" href="mailto:?body=http://www.edge-online.com/features/david-braben-interview">Email</a></li>
+<li class="last"><a href="/features/david-braben-interview?page=show" class="single active">Single page</a></li>
+</ul></div></div><div class="block block-edge-article-topics">
+      <h2 class="block-title">Article<br />topics</h2>
+    Click any topic to explore or <span>Follow</span> with <b><a href="/myedge">MyEdge</a></b><div class="item-list"><ul><li class="first"><a href="/filter/all/tags/257">Graphics</a><a href="/myedge/track/257?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/275">Indies</a><a href="/myedge/track/275?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/256">Programming</a><a href="/myedge/track/256?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/274">Developers</a><a href="/myedge/track/274?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/1880">Raspberry Pi Foundation</a><a href="/myedge/track/1880?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/738">David Braben</a><a href="/myedge/track/738?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li><a href="/filter/all/tags/885">PC</a><a href="/myedge/track/885?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+<li class="last"><a href="/filter/all/tags/310">Education</a><a href="/myedge/track/310?s=/features/david-braben-interview" class="follow" title="Follow topic on MyEdge">follow</a></li>
+</ul></div></div><div class="block block-edge-article-related">
+      <h2 class="block-title">Related<br />articles</h2>
+    <div class="item-list"><ul><li class="first"><a href="/news/raspberry-pi-launches-sells-out">Raspberry Pi launches, sells out</a></li>
+<li><a href="/features/easy-raspberry-pi">Easy as Raspberry Pi </a></li>
+<li><a href="/news/beta-raspberry-pi-attracts-huge-ebay-bids">Beta Raspberry Pi attracts huge eBay bids</a></li>
+<li class="last"><a href="/features/shaking-curriculum-raspberry-pi">Shaking up the curriculum with Raspberry Pi</a></li>
+</ul></div></div><div class="block block-edge-article-more">
+      <h2 class="block-title">More<br />articles</h2>
+    <div class="item-list"><ul><li class="first"><a href="/news/psp-tales-tops-japan-chart">PSP Tales tops Japan chart</a></li>
+<li><a href="/news/raspberry-pi-launches-sells-out">Raspberry Pi launches, sells out</a></li>
+<li><a href="/news/game-group-shares-fall-15-cent">Game Group shares fall 15 per cent</a></li>
+<li class="last"><a href="/features/dillons-rolling-western-review">Dillon&#039;s Rolling Western review</a></li>
+</ul></div></div>              </aside><!-- end aside#related -->
+                      </section><!-- end section#middle -->
+
+                    
+                  </div><!-- end div#main -->
+
+                  <aside class="sidebar" id="right" role="complementary">
+            <div class="block block-edge-jobs-feed-featured">
+    <a id="browse-all-jobs" target="_blank" href="http://jobs.edge-online.com/">Browse all jobs</a><div id="jobs_board_title"><h2 class="block-title"><a href="http://jobs.edge-online.com/" target="_blank">Featured<br/>Jobs</a></h2></div><div class="item-list"><ul><li class="first"><a href="http://bit.ly/w0YvGv"><img width="120" height="60" alt="Job logo" src="/files/kabam.jpg" /></a><div><a href="http://bit.ly/w0YvGv">Web Developer</a><p>Location: Saarbrucken</p></div></li>
+<li><a href="http://bit.ly/wtZPhz"><img width="120" height="60" alt="Job logo" src="/files/cry.jpg" /></a><div><a href="http://bit.ly/wtZPhz">Junior PR Manager</a><p>Location: Frankfurt</p></div></li>
+<li><a href="http://bit.ly/yRF0Uu"><img width="120" height="60" alt="Job logo" src="/files/Dice.jpg" /></a><div><a href="http://bit.ly/yRF0Uu">Junior Artist</a><p>Location: London</p></div></li>
+<li class="last"><a href="http://bit.ly/yRdYD8"><img width="120" height="60" alt="Job logo" src="/files/gamel.jpg" /></a><div><a href="http://bit.ly/yRdYD8">C++ Developer</a><p>Location: Madrid</p></div></li>
+</ul></div></div><div class="block block-edge-advert-skyscraper">
+    
+            <script type="text/javascript" >
+               document.write('<script src="http://ad.doubleclick.net/adj/fut.gb.edge/features.article;kw=graphics;kw=indies;kw=programming;kw=developers;kw=raspberry_pi_foundation;kw=david_braben;kw=pc;kw=education;tile=2;sz=300x600;'+ segQS +';ord=1330573713?" type="text/javascript"></scr'+'ipt>');
+            </script>
+            <noscript>
+               <a href="http://ad.doubleclick.net/jump/fut.gb.edge/features.article;tile=2;sz=300x600;ord=1330573713?" target="_blank">
+                  <img src="http://ad.doubleclick.net/ad/fut.gb.edge/features.article;tile=2;sz=300x600;ord=1330573713?" width="300" height="600" border="0" alt="">
+               </a>
+            </noscript></div><div class="block block-edge-promobox-promobox1">
+    <a href="http://www.edge-online.com/features/region-specific-texas-0"><img src="http://media.edge-online.com/files/RSTEXAS2.png" alt="Texas Region Specific" title="" width="300" height="100" /></a></div><div class="block block-edge-advert-grid">
+    
+            <script type="text/javascript" >
+               document.write('<script src="http://ad.doubleclick.net/adj/fut.gb.edge/features.article;kw=graphics;kw=indies;kw=programming;kw=developers;kw=raspberry_pi_foundation;kw=david_braben;kw=pc;kw=education;sz=300x601;'+ segQS +';ord=1330573713?" type="text/javascript"></scr'+'ipt>');
+            </script>
+            <noscript>
+               <a href="http://ad.doubleclick.net/jump/fut.gb.edge/features.article;sz=300x601;ord=1330573713?" target="_blank">
+                  <img src="http://ad.doubleclick.net/ad/fut.gb.edge/features.article;sz=300x601;ord=1330573713?" width="300" height="601" border="0" alt="">
+               </a>
+            </noscript></div><div class="block block-edge-promobox-promobox2">
+    <a href="http://itunes.apple.com/gb/app/id451410596?mt=8&amp;affId=1621074&amp;ign-mpt=uo%3D6"><img src="http://media.edge-online.com/files/subscribe_app_rhc.png" alt="Subscribe to Edge on iPhone and iPad" title="" width="300" height="100" /></a></div><div class="block block-edge-advert-mpu">
+    
+            <script type="text/javascript" >
+               document.write('<script src="http://ad.doubleclick.net/adj/fut.gb.edge/features.article;kw=graphics;kw=indies;kw=programming;kw=developers;kw=raspberry_pi_foundation;kw=david_braben;kw=pc;kw=education;tile=3;sz=300x250;'+ segQS +';ord=1330573713?" type="text/javascript"></scr'+'ipt>');
+            </script>
+            <noscript>
+               <a href="http://ad.doubleclick.net/jump/fut.gb.edge/features.article;tile=3;sz=300x250;ord=1330573713?" target="_blank">
+                  <img src="http://ad.doubleclick.net/ad/fut.gb.edge/features.article;tile=3;sz=300x250;ord=1330573713?" width="300" height="250" border="0" alt="">
+               </a>
+            </noscript></div><div class="block block-edge-promobox-promobox3">
+    <a href="http://www.edge-online.com/myedge"><img src="http://media.edge-online.com/files/myedge_mw.png" alt="Follow your passions with MyEdge" title="" width="300" height="100" /></a></div><div class="block block-edge-promobox-promobox4">
+    <a href="http://www.edge-online.com/features/150-classic-reviews"><img src="http://media.edge-online.com/files/150_mw.png" alt="150 classic Edge reviews" title="" width="300" height="100" /></a></div><div class="block block-edge-facebookrecommendations">
+    <iframe src="//www.facebook.com/plugins/recommendations.php?site=www.edge-online.com&amp;width=300&amp;height=300&amp;header=true&amp;colorscheme=light&amp;linktarget=_blank&amp;border_color&amp;font=arial" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px;" allowTransparency="true"></iframe></div><div class="block block-edge-cvgfeed">
+    <iframe src="http://www.computerandvideogames.com/export/edge/epp.php" width="300" height="370" border="0" frameborder="0" scrolling="no"></iframe></div>          </aside><!-- end section#right -->
+        
+                  <aside class="community" role="complementary">
+            <div class="inner">
+							<div class="community-content">
+              	<div id="community-topper">
+									<div class="block block-edge-community_tab_header" id="edge_header_twitter_feed">
+    <div class="edge-community-bar-title"><div id="edge-community-bar-edge-logo"></div><p>Connect with Edge</p></div><div id="edge-community-bar-twitter-logo"></div><div id="community-bar-twitter-feed"><a href="http://twitter.com/edgeonline">@edgeonline on Twitter</a></div></div>								</div>
+								<div class="block block-edge-twitter" id="edge_twitter_feed">
+    <div id="community-bar-twitter-follow">
+            	  <div id="edge-community-bar-twitter-logo"></div>
+            	  <div id="edge-community-bar-twitter-button"><a href="http://twitter.com/edgeonline" class="twitter-follow-button">Follow @edgeonline</a></div>
+							 </div>
+							 <div id="community-bar-twitter-main-feed"><a href="http://twitter.com/edgeonline">@edgeonline on Twitter</a></div></div><div class="block block-edge-facebooklike">
+    <a href="http://www.facebook.com/edgeonline" target="_blank"><img class="edge-facebook-logo" src="http://static.edge-online.com/sites/all/themes/future_edge/images/facebook_logo.jpg" alt="facebook logo" /></a><iframe style="height:290px;width:292px" frameBorder="0" src="http://www.facebook.com/plugins/fan.php?connections=10&amp;css=http%3A%2F%2Fstatic.edge-online.com%2Fsites%2Fall%2Fthemes%2Ffuture_edge%2Fcss%2Ffacebooklike.css&amp;height=300&amp;id=112091538846667&amp;locale=en_US&amp;stream=false&amp;width=300"></iframe></div><div class="block block-edge-edge-community-tab">
+    <div class="tabbed"><nav><ul class="tab menu"><li><a href="#tabs-1">Forum</a></li><li><a href="#tabs-2">Comments</a></li><li><a href="#tabs-3">MyEdge</a></li></ul></nav><div id="tabs-1" class="tab-content item-list"><div class="item-list"><ul><li class="first">Bollockoff has posted on<br/><a href="/forums/videogames/so-how-old-are-people-reading-edge">So... HOW old are people reading Edge?!</a></li>
+<li>dynamite-ready has posted on<br/><a href="/forums/videogames/edge-create-challenge-2012">The Edge Create Challenge 2012</a></li>
+<li>Yossarian has posted on<br/><a href="/forums/other-media/i-need-some-help-online-image-storage-work">I need some help with online image storage for work. </a></li>
+<li>Dubs has posted on<br/><a href="/forums/videogames/ninja-gaiden-3">Ninja Gaiden 3</a></li>
+<li class="last">Surveyor has posted on<br/><a href="/forums/videogames/unit-13-vita">Unit 13 [Vita]</a></li>
+</ul></div><a href="/forum" class="more">Visit forum</a></div>
+<div id="tabs-2" class="tab-content item-list"><div class="item-list"><ul><li class="first">Fluffy Von Puba has commented on<br/><a href="/news/games-mass-effect-3-memo-full#comment-66029">Game&#039;s Mass Effect 3 memo in full</a> (6)</li>
+<li>CarbonSolo has commented on<br/><a href="/news/nintendo-turns-down-binding-isaac#comment-65978">Nintendo turns down The Binding Of Isaac</a> (2)</li>
+<li>CarbonSolo has commented on<br/><a href="/news/sega-confirms-jet-set-radio-remake#comment-65969">Sega confirms Jet Set Radio remake</a> (1)</li>
+<li>CarbonSolo has commented on<br/><a href="/news/ipad-3-reveal-expected-march-7-event#comment-65963">iPad 3 reveal expected at March 7 event</a> (2)</li>
+<li class="last">ElAmigo has commented on<br/><a href="/reviews/waking-mars-review#comment-65875">Waking Mars review</a> (3)</li>
+</ul></div></div>
+<div id="tabs-3" class="tab-content item-list"><p>Sign in to your account to create your own news feed.</p> <div class='follow-guide'>Follow</div> <p>Simply click <b>Follow</b> on any topic in which you're interested and you'll find the headlines you care about displayed right here.</p><a href="/user/login" class="form-submit" rel="nofollow">Sign in</a><a href="/user/register" class="form-submit" rel="nofollow">Register</a></div>
+</div></div>							</div>
+            </div>
+          </aside><!-- end aside#community -->
+        
+                  <footer id="footer" role="contentinfo">
+            <div class="block block-edge-advert-reskin">
+    
+            <script type="text/javascript" >
+               document.write('<script src="http://ad.doubleclick.net/adj/fut.gb.edge/features.article;kw=graphics;kw=indies;kw=programming;kw=developers;kw=raspberry_pi_foundation;kw=david_braben;kw=pc;kw=education;tile=4;sz=22x22;'+ segQS +';ord=1330573713?" type="text/javascript"></scr'+'ipt>');
+            </script>
+            <noscript>
+               <a href="http://ad.doubleclick.net/jump/fut.gb.edge/features.article;tile=4;sz=22x22;ord=1330573713?" target="_blank">
+                  <img src="http://ad.doubleclick.net/ad/fut.gb.edge/features.article;tile=4;sz=22x22;ord=1330573713?" width="22" height="22" border="0" alt="">
+               </a>
+            </noscript></div><div class="block block-menu-menu-footer">
+      <h2 class="block-title">Footer links</h2>
+    <ul class="menu"><li class="leaf first"><a href="/about-us" title="">About Us</a></li>
+<li class="leaf"><a href="/advertise-with-us" title="">Advertise With Us</a></li>
+<li class="leaf"><a href="http://www.futurenet.com/futureonline/termsandconditions.asp" title="" rel="nofollow">Terms &amp; Conditions</a></li>
+<li class="leaf last"><a href="http://www.futurenet.com/futureonline/privacy.asp" title="">Privacy Policy</a></li>
+</ul></div><div class="block block-edge-footer-address">
+    <a href="http://futureplc.com"><img src="http://media.edge-online.com/sites/all/themes/future_edge/images/logos/future-publishing.png" alt="Future Publishing" title="" width="44" height="38" /></a><p>&copy; 2011 Future Publishing Limited, Beauford Court, 30 Monmouth Street, Bath, UK BA1 2BW - England and Wales company registration number 2008885</p></div><div class="block block-edge-sitestat">
+    <!-- Begin comScore Digital Analytix FromUrl code v1.5 -->
+    <script type='text/javascript' language='javascript'>
+    <!--
+    function sitestat(ns_l){// FromUrl v1.5 Copyright (c) 2001-2007 Nedstat B.V. All rights reserved.
+    var ns_type='' // leave empty for normal/ppc measurement, fill in for clickin, clickout or pdf
+    var r='' // yes=only parse url when there is a real document.referrer,
+    // no=only parse url when there is no real document.referrer, empty=always parse url
+    var t='?' // tag in url where parameters follow; default '?' could be replaced by "#"
+    var p=new Array();var w='';var l='';var d=document;var n=navigator;var ns_0='' ;if(top!=self){if('\u0041'=='A'){var u=n.userAgent;if(u.indexOf('Safari')==-1) {var b=u.indexOf('Opera');if(b==-1||(u.charAt(b+6)+0)>5){b=u.indexOf('Mozilla' );var xb=b!=-1?u.charAt(b+8)>4:1;if(u.indexOf('compatible')!=-1||xb){var c= 'try{ns_0=top.document.referrer}catch(e){}';eval(c);c= 'try{l=top.document.location.href}catch(e){}';eval(c);}}}}}else{ns_0= d.referrer;l=d.location.href;}if(ns_0.lastIndexOf('/')==ns_0.length-1){ns_0= ns_0.substring(ns_0.lastIndexOf('/'),0);}var f=ns_l.indexOf('?');if(f!=-1){ var q=ns_l.substring(f+1);ns_l=ns_l.substring(0,f);if(q){var m=q.indexOf('&'); w=q.substring(0,m==-1?q.length:m);if(w.indexOf('=')!=-1){w='';}if(w){q= q.substring(m==-1?q.length:m+1);q+=(q?'&':'')+'ns_name='+w;}if(ns_0.length>0){ q+=(q?'&':'')+'ns_referrer='+escape(ns_0);}var s=0;var e=0;while(q.length){e= q.indexOf('&');if(e==-1){e=q.length;}var o=q.substring(s,e);if(o.substring(0,4 )=='amp;'){o=o.substring(4);}if(o)p[p.length]=o;q=q.substring(e+1);}}}var a= l.indexOf(t);a=a==-1?0:l.substring(a+1);var j;if(r=='yes')j=ns_0.length;else if(r=='no')j=!ns_0.length;else if(r=='')j=1;if(a&&j){while(a.length){var e= a.indexOf('&');if(e==-1){e=a.length;}var k=a.substring(0,a.substring(0,e) .indexOf('='));var v=a.substring(a.substring(0,e).indexOf('=')+1,e);if( k.substring(0,4)=='amp;'){k=k.substring(4);}while(v.substring(0,1)=='='){v= v.substring(1);}if(k=='ns_name'){w=v;}else if(k=='ns_or'){var g='ns_referrer=' ;for(var z=0;z<p.length;z++){if(p[z].substring(0,g.length)==g){p[z]= 'ns_referrer='+v;}}}else{if(k.substring(0,3)=='ns_'&&v&&k){var h=0;for(var x=0 ;x<p.length;x++){if(p[x].substring(0,p[x].indexOf('='))==k){p[x]=k+"="+v;h=1}} if(!h){p[p.length]=k+"="+v;}}}a=a.substring(e+1);}}if(!w){return;}var s=''; var y='';for(var i=0;i<p.length;i++)if(p[i].substring(0,8)!='ns_name='){if(p[i ].substring(0,12)!='ns_referrer='){s+='&'+p[i];}else{y='&'+p[i];}}s+=ns_type? '&ns_type='+ns_type+'&ns_action=view':'';ns_pixelUrl=ns_l+'?'+w+"&ns__t="+( new Date()).getTime();ns_l=ns_pixelUrl+s+y;if(d.images){ns_1=new Image(); ns_1.src=ns_l;}else{d.write('<img src='+ns_l+' width="1" height="1">');}}
+    sitestat("http://uk.sitestat.com/future/edgeonline/s?features.david-braben-interview.page&amp;category=feature&amp;fp_author=edge-staff&amp;fp_article_id=40071&amp;fp_tags=graphics|indies|programming|developers|raspberry-pi-foundation|david-braben|pc|education");
+    //-->
+    </script>
+    <noscript>
+    <img src="http://uk.sitestat.com/future/edgeonline/s?features.david-braben-interview.page&amp;category=feature&amp;fp_author=edge-staff&amp;fp_article_id=40071&amp;fp_tags=graphics|indies|programming|developers|raspberry-pi-foundation|david-braben|pc|education" width="1" height="1" alt="">
+    </noscript>
+    <!-- End comScore Digital Analytix code --></div><div class="block block-edge-footer-links">
+    <nav><ul class="links"><li class="0 first"><a href="http://www.techradar.com">TechRadar</a></li>
+<li class="1"><a href="http://www.musicradar.com/">MusicRadar</a></li>
+<li class="2"><a href="http://www.bikeradar.com/">BikeRadar</a></li>
+<li class="3"><a href="http://www.cyclingnews.com/">CyclingNews</a></li>
+<li class="4"><a href="http://www.sfx.co.uk/">SFX</a></li>
+<li class="5"><a href="http://www.gamesradar.com/">GamesRadar</a></li>
+<li class="6"><a href="http://www.computerandvideogames.com/">CVG</a></li>
+<li class="7"><a href="http://www.totalfilm.com/">TotalFilm</a></li>
+<li class="8"><a href="http://www.netmagazine.com/">.NET</a></li>
+<li class="9"><a href="http://www.pcgamer.com/">PCGamer</a></li>
+<li class="10"><a href="http://www.photoradar.com/">PhotoRadar</a></li>
+<li class="11 last"><a href="http://www.tapmag.co.uk/">Tap!</a></li>
+</ul></nav></div>          </footer><!-- end #footer -->
+        
+      </div><!-- end #inner-wrap -->
+
+      <script type="text/javascript" src="http://static.edge-online.com/files/js/js_7fea479630c8d9ef2a4663043321d8fe.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+      <script src="http://platform.twitter.com/widgets.js"></script>
+<script src="http://platform.linkedin.com/in.js"></script>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script><script type="text/javascript" src="http://www.nedstat.com/digitalanalytix/support/sitestat.js"></script>
+<script>if(typeof enable_takeover == 'function') { enable_takeover() } </script>       
+<!-- START REVENUE SCIENCE PIXELLING CODE -->
+<script src="http://js.revsci.net/gateway/gw.js?csid=A08721"></script>
+<script>
+if(typeof DM_addEncToLoc == 'function') {
+  DM_addEncToLoc("Key1","Value1");
+  DM_tag();
+}
+</script>
+<!-- END REVENUE SCIENCE PIXELLING CODE --><script type="text/javascript" src="http://s.skimresources.com/js/92X588385.skimlinks.js"></script>
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-903660h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-903660h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 --><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-3874126-36"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+    </div><!-- end #wrapper -->
+  </body>
+</html>

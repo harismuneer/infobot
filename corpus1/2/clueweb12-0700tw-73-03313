@@ -1,0 +1,639 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-08T10:17:31Z
+WARC-TREC-ID: clueweb12-0700tw-73-03313
+WARC-IP-Address: 184.106.43.246
+WARC-Payload-Digest: sha1:SFC3P3QU5VI5TNIF7DQL4TTF5XLRTEXZ
+WARC-Target-URI: http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/
+WARC-Record-ID: <urn:uuid:8c0de1e0-af92-4819-bae9-5e320d4a4539>
+Content-Type: application/http; msgtype=response
+Content-Length: 56058
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.3 (Red Hat)
+X-Powered-By: W3 Total Cache/0.9.1.3
+X-Pingback: http://wjltevansville.com/xmlrpc.php
+Link: <http://wjltevansville.com/?p=43513>; rel=shortlink
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Date: Thu, 08 Mar 2012 10:17:32 GMT
+X-Varnish: 1783389734
+Age: 0
+Via: 1.1 varnish
+Connection: close
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html dir="ltr" lang="en-US"
+ xmlns:og="http://ogp.me/ns#"
+ xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="UTF-8" />
+	<title>Cartunes Classic Hit: March 7 &#8211; I Will Survive - WJLT</title>
+
+	<link href="http://superhits1053.com/files/2011/02/favicon.ico" rel="icon" type="image/x-icon" />	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://wjltevansville.com/xmlrpc.php" />
+
+	<link rel="alternate" type="application/rss+xml" title="WJLT &raquo; Feed" href="http://wjltevansville.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="WJLT &raquo; Comments Feed" href="http://wjltevansville.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="WJLT &raquo; Cartunes Classic Hit: March 7 &#8211; I Will Survive Comments Feed" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/feed/" />
+<link rel='stylesheet' id='weather-widget-css-css'  href='http://wjltevansville.com/wp-content/plugins/weather-widget/resources/style.css?ver=3.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twitter-pro-css'  href='http://wjltevansville.com/wp-content/plugins/twitter/resources/style.css?ver=3.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='loyalty-frontend-css'  href='http://wjltevansville.com/wp-content/plugins/loyalty-activities/resources/css/loyalty.css?ver=6353' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-css-css'  href='http://wjltevansville.com/css/custom-css.css?ver=1331053499' type='text/css' media='all' />
+<link rel='stylesheet' id='template-style-css'  href='http://wjltevansville.com/wp-content/themes/townsquare/style.css?ver=6353' type='text/css' media='screen' />
+<link rel='stylesheet' id='townsquare-vanilla-css'  href='http://wjltevansville.com/wp-content/themes/townsquare/css/townsquare.css?ver=6353' type='text/css' media='screen' />
+<link rel='stylesheet' id='theme-flavor-css'  href='http://wjltevansville.com/css/flavor.css?ver=1331053499' type='text/css' media='all' />
+<link rel='stylesheet' id='sp-gallery-css'  href='http://wjltevansville.com/wp-content/plugins/gallery/resources/sp-gallery.css?ver=3.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ts-lists-fe-css'  href='http://ts-tools.s3.amazonaws.com/lists/css/ts-lists-fe.css?ver=3.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ts-lists-custom-css'  href='http://ts-tools.s3.amazonaws.com/lists/css/custom/ts-lists-fe-73.css?ver=3.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-style-css'  href='http://wjltevansville.com/wp-content/themes/townsquare2.0/style.css?ver=6353' type='text/css' media='screen' />
+<link rel='stylesheet' id='fontCombo-css'  href='http://wjltevansville.com/css/font-combo.css?ver=6353' type='text/css' media='screen' />
+<script type="text/javascript">/* <![CDATA[ */function add_loyalty_points( activity, points, callback ) {
+	Loyalty_Points.add_points(activity, points, callback);
+}
+
+function remove_loyalty_points( activity, points, callback ) {
+	add_loyalty_points(activity, points*-1, callback);
+}
+
+function get_loyalty_user( activity, callback ) {
+	Loyalty_Points.get_user( activity, callback );
+}
+
+function update_loyalty_points( points ) {
+	Loyalty_Points.update_points(points);
+}
+
+function get_loyalty_point_value( activity ) {
+	return Loyalty_Points.get_point_value(activity);
+}
+
+function get_loyalty_activity_interval( activity ) {
+	return Loyalty_Points.get_interval(activity);
+}
+
+function Loyalty_User() {
+	this.last_request = 0;
+	this.status = 'OK';
+	this.error = '';
+	this.name = '';
+	this.email = '';
+	this.points = 0;
+	this.activities = {};
+}
+Loyalty_User.prototype.update = function ( data ) {
+	if ( typeof(data.status) == 'undefined' ) {
+		return; // if we don't have a status, we can't assume anything else if valid
+	}
+	this.status = data.status;
+	this.error = '';
+	if ( typeof(data.last_request) != 'undefined' ) {
+		this.last_request = data.last_request;
+	}
+	if ( typeof(data.error) != 'undefined' ) {
+		this.error = data.error;
+	}
+	if ( typeof(data.name) != 'undefined' ) {
+		this.name = data.name;
+	}
+	if ( typeof(data.email) != 'undefined' ) {
+		this.email = data.email;
+	}
+	if ( typeof(data.points) != 'undefined' ) {
+		this.points = data.points;
+	}
+	if ( typeof(data.activities) != 'undefined' ) {
+		// don't want to overwrite any existing activities that aren't set in data
+		for ( activity in data.activities ) {
+			this.activities[activity] = data.activities[activity];
+		}
+	}
+};
+
+Loyalty_Points = {
+	activities: {},
+	user: new Loyalty_User,
+
+	add_points: function( activity, points, callback ) {
+		if ( !activity ) {
+			return;
+		}
+		var url = '/api/loyalty';
+		url = url + '/' + activity;
+		if ( points ) {
+			url = url + '/' + points;
+		}
+		jQuery.ajax({
+			url: url,
+			data: { now: Math.round((new Date()).getTime() / 1000) }, // because IE loves to cache
+			success: function(data, textStatus) {
+				if ( data ) {
+					if ( typeof(data.points) != 'undefined' ) {
+						Loyalty_Points.update_points(data.points);
+					}
+					Loyalty_Points.user.update(data);
+					if ( callback ) {
+						callback(Loyalty_Points.user);
+					}
+				}
+			},
+			error: function(request, textStatus) {
+				var data = jQuery.parseJSON(request.response);
+				if ( data ) {
+					Loyalty_Points.user.update(data);
+					if ( callback ) {
+						callback(Loyalty_Points.user);
+					}
+				}
+			},
+			dataType: 'json'
+		});
+	},
+
+	get_user: function( activity, callback ) {
+		if ( !document.cookie.match(/_ts_logged_in=1/) ) {
+			return;
+		}
+		var url = '/api/loyalty/user';
+		if ( activity ) {
+			url = url + '/' + activity;
+		}
+		jQuery.ajax({
+			url: url,
+			data: {},
+			success: function(data, textStatus) {
+				if ( data ) {
+					Loyalty_Points.user.update(data);
+					if ( callback ) {
+						callback(Loyalty_Points.user);
+					}
+				}
+			},
+			error: function(request, textStatus) {
+				data = jQuery.parseJSON(request.response);
+				if ( data ) {
+					Loyalty_Points.user.update(data);
+					if ( callback ) {
+						callback(Loyalty_Points.user);
+					}
+				}
+			},
+			dataType: 'json'
+		});
+	},
+
+	update_points: function( points ) {
+		jQuery(".number-of-points").text(points);
+	},
+
+	get_point_value: function( activity ) {
+		var a = this.get_activity(activity);
+		if ( a != null ) {
+			return a.points;
+		}
+		return 0;
+	},
+
+	get_interval: function( activity ) {
+		var a = this.get_activity(activity);
+		if ( a != null ) {
+			return a.interval;
+		}
+		return 0;
+	},
+
+	get_activity: function( activity ) {
+		if ( !(typeof this.activities[activity] == 'undefined') ) {
+			return this.activities[activity];
+		}
+		return null;
+	}
+};
+
+Loyalty_Points.activities = {"loyalty_manual_entry":{"points":10,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":5,"label":"Manual Entry","immutable":2},"loyalty_new_user":{"points":2500,"point_override":false,"maximum":2500,"daily_maximum":2500,"request_maximum":-1,"interval":15,"label":"User Registration","immutable":true},"loyalty_migrate_user":{"points":10,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":5,"label":"Migrate User","immutable":2},"prize":{"points":10,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":5,"label":"Prize","immutable":2},"loyalty_code_listen":{"points":2500,"point_override":true,"maximum":-1,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Listen & Win","immutable":true},"loyalty_code_bonus":{"points":1000,"point_override":true,"maximum":-1,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Bonus Code","immutable":true},"loyalty_game_blkjack":{"points":10,"point_override":true,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":3,"expiration":0,"label":"Blackjack","immutable":true},"loyalty_game_slots":{"points":10,"point_override":true,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":3,"expiration":0,"label":"Slot Machine","immutable":true},"loyalty_game_scratch":{"points":10,"point_override":true,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":3,"expiration":0,"label":"Scratch & Win","immutable":true},"loyalty_ftlink_link":{"points":250,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":3,"expiration":0,"label":"Featured Link","immutable":true},"loyalty_ftlink_land":{"points":10,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Landing","immutable":true},"loyalty_trivia":{"points":500,"point_override":true,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Trivia","immutable":true},"loyalty_qa_poll":{"points":500,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Poll","immutable":true},"loyalty_qa_quiz":{"points":1000,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Quiz","immutable":true},"loyalty_qa_survey":{"points":1500,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":15,"expiration":0,"label":"Survey","immutable":true},"loyalty_purch_trade":{"points":1000,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":5,"expiration":0,"label":"Trade-in","immutable":true},"loyalty_purch_coupon":{"points":500,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":5,"expiration":0,"label":"Coupon","immutable":true},"loyalty_ct_custom":{"points":500,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":15,"expiration":0,"label":"Featured Contest","immutable":true},"loyalty_ct_standard":{"points":500,"point_override":true,"maximum":-1,"daily_maximum":-1,"request_maximum":-1,"interval":15,"expiration":0,"label":"Contest","immutable":true},"Radio Page Counter":{"points":250,"point_override":false,"maximum":1000000,"daily_maximum":20000,"request_maximum":-1,"interval":900,"expiration":0,"active":true,"immutable":true}};
+/* ]]> */</script><script type='text/javascript' src='http://wjltevansville.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var $adminAjax = {
+	url: "http://wjltevansville.com/wp-admin/admin-ajax.php"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/jquery-updater/js/jquery-1.6.1.min.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/graceful-email-obfuscation/geo-spam-prevention.js?ver=0.1'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/crossposting/resources/crossposting.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare/plugins/widgets/request-song-widget/resources/requestSong.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/twitter/resources/jquery.tweet.js?ver=3.1.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var NowPlaying = {
+	refresh: "15"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/now-playing.min.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/events/resources/events.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://ts-tools.s3.amazonaws.com/lists/js/ts-lists-fe.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://ts-tools.s3.amazonaws.com/lists/js/custom/ts-lists-fe-73.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare/js/jquery.platformselector.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.1'></script>
+<meta property="og:title" content="Cartunes Classic Hit: March 7 &#8211; I Will Survive - WJLT"/>
+<meta property="og:site_name" content="WJLT"/>
+<meta property="og:url" content="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/"/>
+<meta property="og:description" content="Gloria Gaynor had a great voice but didn't hang around long as a solo artist.  She sang, Never Can Say Goodbye, which hit #9 on the Top 40 chart and then"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:image" content="http://wjltevansville.com/files/2012/03/gloria-gaynor-Docklandsboy-flickr.jpg?w=400&h=320&zc=1&s=0&a=t&q=89"/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wjltevansville.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wjltevansville.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='WJLT' href='http://wjltevansville.com/' />
+<link rel='start' title='Remembering John Lennon' href='http://wjltevansville.com/remembering-john-lennon/' />
+<link rel='prev' title='You Can Help Tornado Victims' href='http://wjltevansville.com/you-can-help-tornado-victims/' />
+<link rel='next' title='Facebook Computer Shooter Dad Stands By His Actions On The Today Show' href='http://wjltevansville.com/facebook-computer-shooter-dad-stands-by-his-actions-on-the-today-show/' />
+<link rel='shortlink' href='http://wjltevansville.com/?p=43513' />
+
+<!-- All in One SEO Pack - Pro Version 1.72 by Michael Torbert of Semper Fi Web Design[244,316] -->
+<meta name="description" content="Gloria Gaynor had a great voice but didn't hang around long as a solo artist.  She sang, Never Can Say Goodbye, which hit #9 on the Top 40 chart and then" />
+<meta name="keywords" content="cartunes,classic hit,gloria gaynor,i will survive" />
+<link rel="canonical" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/" />
+<!-- /all in one seo pack Pro Version-->
+<script type="text/javascript" src="http://wjltevansville.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://wjltevansville.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"300",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"FFFFFF",text:"000000",leftbg:"3F6517",lefticon:"FFFFFF",volslider:"FFFFFF",voltrack:"ffffff",rightbg:"3F6517",rightbghover:"",righticon:"FFFFFF",righticonhover:"FFFFFF",track:"FFFFFF",loader:"FFFFFF",border:"FFFFFF",tracker:"ffffff",skip:"000000",pagebg:"ffffff",transparentpagebg:"yes"});</script>
+<meta property="fb:app_id" content="180839145294686">
+<meta property="fb:admins" content="47200475,583052867,100002025987268,732998853">
+<!--[if lt IE 8]><link rel="stylesheet" href="http://wjltevansville.com/wp-content/plugins/gallery/resources/ie7.css" type="text/css" media="screen"><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="http://wjltevansville.com/wp-content/plugins/gallery/resources/ie8.css" type="text/css" media="screen"><![endif]-->
+
+                <script>
+                    if(typeof(oKETool)=="undefined") oKETool = {};
+                    oKETool.pluginsUrl = "http://wjltevansville.com/wp-content/plugins/";
+                    oKETool.themePlugin = "http://wjltevansville.com/wp-content/themes/townsquare2.0/plugins/";
+                </script>
+            <!-- Begin comScore Tag -->
+<script>
+	var _comscore = _comscore || [];
+	_comscore.push({ c1: "2", c2: "8585732" });
+	(function() {
+		var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+		el.parentNode.insertBefore(s, el);
+	})();
+</script>
+
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=8585732&cv=2.0&cj=1" /> </noscript>
+<!-- End comScore Tag -->
+<!-- Google Ads Start -->
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-5913157830665197");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddAttr("type", "post");
+GA_googleAddAttr("Id", "cartunes-classic-hit-march-7-i-will-survive");
+GA_googleAddAttr("CatId", "local-news");
+GA_googleAddAttr("CatId", "music");
+GA_googleAddAttr("CatId", "music-history");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+<!-- Google Ads End -->
+
+<link rel="shortcut icon" href="http://superhits1053.com/files/2011/02/favicon.ico" />
+
+		<script type="text/javascript">
+			var CFCT_URL = "http://wjltevansville.com";
+			var CFCT_AJAX_LOAD = true;
+			var SP_CURRENT_URL = "http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/";
+		</script>
+	
+
+
+<!-- Google Analytics Tracking by Google Analyticator 6.1.1: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-4600788-3']);
+	_gaq.push(['_setDomainName', '.wjltevansville.com']);
+_gaq.push(['_setCampaignCookieTimeout', 0]);
+_gaq.push(['_setAllowHash', false]);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_setAccount', 'UA-19109753-1']);
+_gaq.push(['_setDomainName', '.wjltevansville.com']);
+_gaq.push(['_setCampaignCookieTimeout', 0]);
+_gaq.push(['_setAllowHash', false]);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_setAccount', 'UA-4600788-11']);
+_gaq.push(['_setDomainName', '.wjltevansville.com']);
+_gaq.push(['_setCampaignCookieTimeout', 0]);
+_gaq.push(['_setAllowHash', false]);
+_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+<body class="single single-post postid-43513 single-format-standard townsquare2 single-tone listen-live-block widget-header-clear musicTemplateType category-local-news category-music category-music-history">
+	        <div id="top_banner" class="clearfix">
+            <!-- /EVA_WJLT_LEADERBOARD -->
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-5913157830665197", "EVA_WJLT_LEADERBOARD");
+GA_googleFillSlot("EVA_WJLT_LEADERBOARD");
+</script>	
+        </div>
+        <!-- // #head_banner.name -->
+	<div id="main_container" class="container clearfix">
+		
+		<div id="header" class="clearfix">
+			<div id="head_top" class="clearfix" style="background: url(http://superhits1053.com/files/2011/10/headerBG.png) right center no-repeat;">
+				<div id="head_logo" class="left clearfix">
+					<a href="http://wjltevansville.com" title="WJLT" class="clearfix"><img src="http://superhits1053.com/files/2011/10/logo.png" alt="WJLT" id="site-logo" class=""/></a>				</div><!-- // #head_logo.left -->
+								<div id="header_search">
+					<form method="get" action="http://wjltevansville.com/" class="search_form">
+		<label for="search_input" class="cloak screen_reader">Search</label>
+	<input type="text" id="search_input" class="font_face" name="s" value="" size="15" onblur="if (this.value == '')  {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" class="input text_input search_input" /><input type="submit" name="submit_button" alt="Search" class="submit_button button search_icon" value="" />
+</form>				</div>
+				<a class="contactUs alt_link_color" href="/help/">Contact Us</a>
+								<div id="sso" class="right clearfix">
+				<!-- Removing Temporarily	<img src="http://wjltevansville.com/wp-content/themes/townsquare/img/placeholders/fb_connect.png" alt="This is a Placeholder" class="temp_sso"/-->
+					<span class="sso_links"><a class="login_modal_link" href="#inline_login">Sign In</a> | <a href="http://wjltevansville.com/registration/?referer=http%3A%2F%2Fwjltevansville.com%2Fcartunes-classic-hit-march-7-i-will-survive&referer_title=++Cartunes+Classic+Hit%3A+March+7+%26%238211%3B+I+Will+Survive">Sign Up</a></span>
+				</div><!-- // #sso.right -->
+			</div><!-- // #head_top -->
+		</div><!-- // #header_nav. -->
+		<div id="inner-container" class="inner first clearfix">
+			
+<div id="navigation" class="nav clearfix font_face">
+	<div class="menu-header-container"><ul id="menu-header" class="menu"><li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="/"><span class="nav_item">Home</span></a></li>
+<li id="menu-item-1226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1226"><a href="http://superhits1053.com/shows/"><span class="nav_item">On Air</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-593"><a href="/shows/"><span class="nav_item">Schedule</span></a></li>
+	<li id="menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-594"><a href="/djs/"><span class="nav_item">DJs</span></a></li>
+	<li id="menu-item-4102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4102"><a href="http://wjltevansville.com/value-connection/"><span class="nav_item">Value Connection</span></a></li>
+</ul>
+</li>
+<li id="menu-item-11695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11695"><a href="http://superhits1053.com/listen-live/"><span class="nav_item">Listen</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11696"><a href="http://superhits1053.com/listen-live/"><span class="nav_item">Listen Live</span></a></li>
+	<li id="menu-item-3650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3650"><a href="http://superhits1053.com/mobile/"><span class="nav_item">Mobile</span></a></li>
+</ul>
+</li>
+<li id="menu-item-8158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8158"><a href="http://wjltevansville.com/105-3-wjlt-playlist--november-2011/"><span class="nav_item">Music</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-20426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20426"><a href="http://wjltevansville.com/105-3-wjlt-playlist-february-2012/"><span class="nav_item">March Playlist</span></a></li>
+	<li id="menu-item-11697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11697"><a href="http://wjltevansville.com/playlist/"><span class="nav_item">Recently Played</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1137" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1137"><a href="http://superhits1053.production.townsquaresites.com/events/"><span class="nav_item">Events</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11698"><a href="http://superhits1053.com/events/"><span class="nav_item">Calendar</span></a></li>
+	<li id="menu-item-26071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26071"><a href="http://wjltevansville.com/submit-your-event-to-the-wjlt-event-calendar/"><span class="nav_item">Submit Your Event to the WJLT Event Calendar</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1143"><a href="http://superhits1053.com/vip"><span class="nav_item">Fun Club</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-40955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40955"><a href="http://superhits1053.com/vip/get-points"><span class="nav_item">Get Points</span></a></li>
+	<li id="menu-item-40954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40954"><a href="http://superhits1053.com/vip/use-points"><span class="nav_item">Use Points</span></a></li>
+	<li id="menu-item-40953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40953"><a href="http://superhits1053.com/registration"><span class="nav_item">Sign Up</span></a></li>
+	<li id="menu-item-44381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44381"><a href="http://wjltevansville.com/townsquare-media-general-contest-rules/"><span class="nav_item">Townsquare Media General Contest Rules</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1127"><a href="http://wjltevansville.com/contests/"><span class="nav_item">Contests</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-44380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44380"><a href="http://wjltevansville.com/townsquare-media-general-contest-rules/"><span class="nav_item">Townsquare Media General Contest Rules</span></a></li>
+</ul>
+</li>
+<li id="menu-item-8245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8245"><a href="http://superhits1053.com/job-hub/"><span class="nav_item">Local</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11473"><a href="http://wjltevansville.com/job-hub/research-hub/"><span class="nav_item">Research Hub</span></a></li>
+	<li id="menu-item-31028" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31028"><a href="http://wjltevansville.com/job-hub/"><span class="nav_item">Job Hub</span></a></li>
+	<li id="menu-item-37205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37205"><a href="http://wjltevansville.com/vip/promotions/local-experts-5/"><span class="nav_item">Local Expert</span></a></li>
+	<li id="menu-item-44184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44184"><a href="http://wjltevansville.com/tsm-interactive-start-growing-your-business-today/"><span class="nav_item">TSM Interactive</span></a></li>
+</ul>
+</li>
+<li id="menu-item-3457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3457"><a href="http://superhits1053.com/help"><span class="nav_item">Contact Us</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11699"><a href="http://superhits1053.com/help/"><span class="nav_item">Help &#038; Contact Info</span></a></li>
+	<li id="menu-item-714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-714"><a href="http://wjltevansville.com/feedback/"><span class="nav_item">Feedback</span></a></li>
+</ul>
+</li>
+</ul></div>	
+	<div class="social_icons size_24">
+					<a href="http://www.facebook.com/WJLT" title="Follow on facebook" class="share_link facebook" target="_blank"><span class="social_icon">follow on facebook</span></a>
+				
+		<!--<a href="http://wjltevansville.com/feed/" title="Subscribe via RSS" class="share_link rss"><span class="social_icon">Subscribe via RSS</span></a>-->
+		
+					<a href="http://twitter.com/wjlt" title="Follow on Twitter" class="share_link twitter" target="_blank"><span class="social_icon">follow on Twitter</span></a>
+		
+					</div><!-- // #.social_icons -->
+	
+</div><!-- // #navigation.horizontal_nav -->	<div id="content" class="clearfix">
+		
+		<div id="single_wrap" class="column_1_2 first clearfix">
+
+			<div id="location_wrap" class="column_1_2 content_bg first clearfix">
+				<div id="current_location" class="clearfix">&#32;</div><!-- // #current_location.clearfix -->
+			</div>
+			<div id="single_col_1_2" class="column_1_2 first clearfix">
+
+				<div id="single_two_column" class="single content_wrap content_bg clearfix">
+					
+					<div id="post-content-43513" class="post-43513 post type-post status-publish format-standard hentry category-local-news category-music category-music-history tag-cartunes tag-classic-hit tag-gloria-gaynor tag-i-will-survive post content-single entry_content clearfix">
+	<div class="title_content_wrap">
+		<h1 class="single_title font_face">Cartunes Classic Hit: March 7 &#8211; I Will Survive</h1>
+		<div id="single_meta" class="post_meta alt_color bold clearfix">
+			<span class="author_avatar"><a href="http://wjltevansville.com/author/djeewestrichpsci-net/" title="Dave Westrich"><img width="50" height="50" src="http://superhits1053.com/files/2011/06/dave3-50x50.jpg" class="attachment-50x50" alt="Dave Westrich" title="Dave Westrich" /></a></span>
+			<span class="the_author"><span class="alt_color">By: </span><a href="http://wjltevansville.com/author/djeewestrichpsci-net/" title="Dave Westrich">Dave Westrich</a></span><span class="the_date"><span> &nbsp;|&nbsp; </span> Yesterday</span>		</div><!-- // #single_meta.post_meta -->
+	</div>
+	<div id="post-content-data" class="the_content border_bottom clearfix">
+		<div id="attachment_43517" class="wp-caption alignleft" style="width: 310px"><img class="size-medium wp-image-43517" title="gloria gaynor-Docklandsboy-flickr" src="http://wjltevansville.com/files/2012/03/gloria-gaynor-Docklandsboy-flickr-300x225.jpg" alt="gloria gaynor-Docklandsboy-flickr" width="300" height="225" /><p class="wp-caption-text">Docklandsboy-flickr</p></div>
+<p>Gloria Gaynor had a great voice but didn&#8217;t hang around long as a solo artist.  She sang, <em>Never Can Say Goodbye</em>, which hit #9 on the Top 40 chart and then #1 with this song, <em>I Will Survive,</em> on this date in 1979.  According to Songfacts.com:  <em>This won the 1979 Grammy for Best Disco Recording. It was the first and last time <span id="more-43513"></span>that the Grammys offered this category.  This (song) is a female-empowerment anthem. It is about moving on after a bad  relationship. Over the years, it has taken on meaning for people who  have overcome just about any difficult situation.  This was released as the B-side of another song called &#8220;Substitute.&#8221;  Gloria knew this would be the hit, but the president of her record  company specifically ordered &#8220;Substitute&#8221; as the single. Gloria put her  efforts into promoting &#8220;I Will Survive,&#8221; and when club DJs started  playing it, radio stations caught on and it became a huge hit.</em></p>
+<p><em><br />
+</em><iframe src="http://www.youtube.com/embed/ZBR2G-iI3-I" width="420" height="315" frameborder="0"></iframe></p>
+			</div>
+	
+	<div class="content_meta clearfix">
+		<div class="cat_meta clearfix">
+			<span class="the_tags bold alt_color right">Filed Under: <a href="http://wjltevansville.com/tags/cartunes/" rel="tag">cartunes</a>, <a href="http://wjltevansville.com/tags/classic-hit/" rel="tag">classic hit</a>, <a href="http://wjltevansville.com/tags/gloria-gaynor/" rel="tag">gloria gaynor</a>, <a href="http://wjltevansville.com/tags/i-will-survive/" rel="tag">i will survive</a></span>			<span class="the_category bold alt_color left">Category: <a href="http://wjltevansville.com/category/local-news/" title="View all posts in Evansville News" rel="category tag">Evansville News</a>, <a href="http://wjltevansville.com/category/music/" title="View all posts in Music" rel="category tag">Music</a>, <a href="http://wjltevansville.com/category/music/music-history/" title="View all posts in Music History" rel="category tag">Music History</a></span>
+		</div><!-- // #.cat_meta -->
+					</div><!-- // #.content_meta -->
+</div>
+<div class="social-group">
+	<div class="social_icons size_20"><a href="http://www.facebook.com/sharer.php?t=Cartunes Classic Hit: March 7 &#8211; I Will Survive&u=http%3A%2F%2Fwjltevansville.com%2Fcartunes-classic-hit-march-7-i-will-survive%2F" title="Share on facebook!" class="share_link facebook" target="_blank"><span class="social_icon">Share on facebook!</span></a><a href="http://twitter.com/intent/tweet?text=Check+out+Cartunes+Classic+Hit%3A+March+7+%26%238211%3B+I+Will+Survive: &url=http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/" title="Share on twitter!" class="share_link twitter" target="_blank"><span class="social_icon">Share on twitter!</span></a><a href="mailto:?subject=Check out Cartunes Classic Hit: March 7 &#8211; I Will Survive&body=http%3A%2F%2Fwjltevansville.com%2Fcartunes-classic-hit-march-7-i-will-survive%2F" title="Send to a friend!" class="share_link email" target="_blank"><span class="social_icon">Send to a friend!</span></a></div><!-- // #.social_icons --><a class="tsq-stumble" name="tsq-stumble" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/">&nbsp;</a> 
+	<a class="tsq-facebook-like" name="tsq-facebook-like" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/" data-layout="button_count" data-width="200" data-action="like" data-colorscheme="" >Like</a></div>					
+					
+				</div><!-- // #loop.column_1 -->
+				
+				<div id="single_post_bottom" class="clearfix">
+<div id="recommend-posts-3" class="widget widget_bg recommend-posts widget_rss clearfix"><div class="widget_int_wrap"><div id="onsite_loop_wrap" class="clearfix">
+<span class="title link_color clearfix">More from WJLT-FM</span>
+<ul id="onsite_loop" class="clearfix">
+<li id="post-content-39733" class="post">
+<a href="http://wjltevansville.com/cartunes-classic-hit-feb-24-jump/" title="Cartunes Classic Hit: Feb. 24 &#8211; Jump">Cartunes Classic Hit: Feb. 24 &#8211; Jump</a>
+</li>
+<li id="post-content-39724" class="post">
+<a href="http://wjltevansville.com/cartunes-classic-hit-feb-23-crazy-little-thing-called-love/" title="Cartunes Classic Hit: Feb. 23 &#8211; Crazy Little Thing Called Love">Cartunes Classic Hit: Feb. 23 &#8211; Crazy Little Thing Called Love</a>
+</li>
+<li id="post-content-41033" class="post">
+<a href="http://wjltevansville.com/cartunes-classic-hit-feb-27-pony-time/" title="Cartunes Classic Hit: Feb. 27 &#8211; Pony Time">Cartunes Classic Hit: Feb. 27 &#8211; Pony Time</a>
+</li>
+</ul><!-- // #onsite_loop.name -->
+</div><!-- // #onsite_loop_wrap.clearfix -->
+<div id="offsite_loop_wrap" class="clearfix"><a href="http://ultimateclassicrock.com/" target="_blank"><span class="title link_color clearfix">Ultimate Classic Rock Music News</span></a><ul id="offsite_loop" class="clearfix"><li class="post"><a href="http://ultimateclassicrock.com/jon-stewart-interviews-bruce-springsteen-in-print/" title="Jon Stewart Interviews Bruce Springsteen in Print" target="_blank">Jon Stewart Interviews Bruce Springsteen in Print</a></li><li class="post"><a href="http://ultimateclassicrock.com/the-doobie-brothers-and-chicago-announce-summer-2012-tour/" title="The Doobie Brothers and Chicago Announce Summer 2012 Tour" target="_blank">The Doobie Brothers and Chicago Announce Summer 2012 Tour</a></li><li class="post"><a href="http://ultimateclassicrock.com/bruce-springsteen-apollo-theater-show-to-air-live-on-satellite-radio/" title="Bruce Springsteen&#039;s Apollo Theater Show to Air Live on Satellite Radio" target="_blank">Bruce Springsteen&#039;s Apollo Theater Show to Air Live on Satellite Radio</a></li></ul><!-- // #offsite_loop.name --></div><!-- // #offsite_loop_wrap.clearfix --><div class="widget_floor widget_bg">&nbsp;</div></div></div></div><!--#single_post_bottom-->
+								<div class="comments-header"><h4>Leave a Comment</h4></div><!-- <div id="fb-root"></div> -->
+<div id="comments" class="anchor"></div><!-- // #comments.anchor -->
+<div id="comments_wrap" class="comments_template facebook_bg content_wrap clearfix facebook_comments">
+<!-- <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script> -->
+<script>
+/*FB.init({
+	appId  : '180839145294686',
+	channelUrl  : 'http://wjltevansville.com/wp-content/plugins/facebook-comments/library/channel.html'
+});*/
+</script>
+<!-- <fb:comments href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/"  width="635px"></fb:comments> -->
+<a class="tsq-facebook-comments" name="tsq-facebook-comments" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/"  data-width="630">Comments</a>
+</div>
+				
+			</div><!-- // #single_col_1_2 -->
+			
+		</div><!-- // #single_wrap.colomn_1_2 -->
+		
+		
+<div id="single_post_right_sidebar" class="column_3 sidebar clearfix">
+<div id="widget_listen_live-4" class="widget widget_bg widget_listen_live clearfix"><div class="widget_int_wrap">
+
+<div class="listennow_wrapper widget_header clearfix">
+	<a href="http://wjltevansville.com/listen-live/" class="widget_title font_face listen-live-button">Listen Live<em class="button_bg"></em></a>
+</div>
+
+
+<div class="widget_floor widget_bg">&nbsp;</div></div></div>
+
+
+
+
+<div id="google-ads-widget-4" class="widget widget_bg google-ads-widget clearfix"><div class="widget_int_wrap"><!-- /EVA_WJLT_TOP_RIGHT_TILE_AD_300X250 -->
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-5913157830665197", "EVA_WJLT_TOP_RIGHT_TILE_AD_300X250");
+GA_googleFillSlot("EVA_WJLT_TOP_RIGHT_TILE_AD_300X250");
+</script><div class="widget_floor widget_bg">&nbsp;</div></div></div>
+<div class="facebook-like-box widget">
+	<div class="widget_header clearfix">
+		<h4 class="widget_title font_face">WJLT-FM on Facebook</h4>
+	</div>
+	<div class="widget_bg">
+		<div id="fb-combo-top">
+		<iframe src="http://www.facebook.com/plugins/likebox.php?&amp;href=http%3A%2F%2Fwww.facebook.com%2FWJLT&amp;width=300&amp;height=65&amp;border_color=%23FFFFFF&amp;colorscheme=light&amp;stream=false&amp;header=false&amp;show_faces=false" scrolling="no" frameborder="0" style="border:none;overflow:hidden;width:300px;height:65px;" allowTransparency="true"></iframe>
+		</div>
+		<div id="fb-combo-bottom">
+		<iframe src="http://www.facebook.com/plugins/activity.php?&amp;site=wjltevansville.com&amp;width=300&amp;height=350&amp;border_color=%23FFFFFF&amp;colorscheme=light&amp;header=false&amp;font&amp;recommendations=true&amp;stream=false" scrolling="no" frameborder="0" style="border:none;overflow:hidden;width:300px;height:350px;" allowTransparency="true"></iframe>
+		</div>
+	</div><!-- widget_bg -->
+</div><!-- facebook-like-box widget -->
+<div id="text-7" class="widget widget_bg widget_text clearfix no-padding"><div class="widget_int_wrap">			<div class="textwidget"><script type="text/javascript" src="http://www.seizethedeal.com/widget/jscript/98"></script></div>
+		<div class="widget_floor widget_bg">&nbsp;</div></div></div><div id="rss-feed-3" class="widget widget_bg rssfeed widget_rss clearfix"><div class="widget_int_wrap"><div class="widget_header clearfix"><h4 class="widget_title font_face"> <a class="rsswidget rssfeed-title" href="http://wjltevansville.com" title="The Classic Hits Station" >The Latest from 105.3 WJLT</a></h4></div><ul class="image-rss-feed"><li><span class="rssfeed-image"><a href="http://wjltevansville.com/defining-davy-jones-why-the-death-of-a-monkee-rattled-generation-x-video/" title="On Facebook, on Twitter, on the net, just about everywhere, an entire generation is grieving and paying tribute to Davy Jones.  Most often, the first comment after any post referring to Jones is a question.  “Who was Davy Jones?”.  Well, he was a big deal, for one.  A VERY big deal for “Generation X”.  The group of music lovers who grew up with television, a [&hellip;]" ><img class="rssfeed-item-image" src="http://wjltevansville.com/files/2012/03/davy.png?w=80&h=60" width="80" height="60" alt="" /></a></span><span class="rssfeed-copy"><a class="rsswidget" href="http://wjltevansville.com/defining-davy-jones-why-the-death-of-a-monkee-rattled-generation-x-video/" title="Defining Davy Jones; Why The Death Of A Monkee Rattled Generation X [Video]" >Defining Davy Jones; Why The Death Of A Monkee Rattled Generation X [Video]</a> <span class="rss-date">March 8, 2012</span></span></li><li><span class="rssfeed-image"><a href="http://wjltevansville.com/facebook-computer-shooter-dad-stands-by-his-actions-on-the-today-show/" title="Tommy Jordan, the dad who shot up his daughter’s laptop to teach her a lesson for showing disrespect for her family on Facebook, appeared in public for the first time today to answer questions about his brand of old-world parenting.  Appearing on “The Today Show” with his wife, Dr. Amy Jordan, and their daughter, Hannah Marie, Mr. Jordan stood firm on his de [&hellip;]" ><img class="rssfeed-item-image" src="http://wjltevansville.com/files/2012/03/IMG_1955.png?w=80&h=60" width="80" height="60" alt="" /></a></span><span class="rssfeed-copy"><a class="rsswidget" href="http://wjltevansville.com/facebook-computer-shooter-dad-stands-by-his-actions-on-the-today-show/" title="Facebook Computer Shooter Dad Stands By His Actions On The Today Show" >Facebook Computer Shooter Dad Stands By His Actions On The Today Show</a> <span class="rss-date">March 8, 2012</span></span></li><li><span class="rssfeed-image"><a href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/" title="Gloria Gaynor had a great voice but didn’t hang around long as a solo artist.  She sang, Never Can Say Goodbye, which hit #9 on the Top 40 chart and then #1 with this song, I Will Survive, on this date in 1979.  According to Songfacts.com:  This won the 1979 Grammy for Best Disco Recording. It was the first and last time that the Grammys offered this categor [&hellip;]" ><img class="rssfeed-item-image" src="http://wjltevansville.com/files/2012/03/gloria-gaynor-Docklandsboy-flickr.jpg?w=80&h=60" width="80" height="60" alt="" /></a></span><span class="rssfeed-copy"><a class="rsswidget" href="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive/" title="Cartunes Classic Hit: March 7 – I Will Survive" >Cartunes Classic Hit: March 7 – I Will Survive</a> <span class="rss-date">March 7, 2012</span></span></li><li><span class="rssfeed-image"><a href="http://wjltevansville.com/you-can-help-tornado-victims/" title="If you want to help recent tornado victims, the American Red Cross knows how you can do that with different levels of donations.  Here’s what Matt Bertram, American Red Cross CEO wrote: March is Red Cross month, and off to a somber tone locally and nationwide. Mother Nature’s fury started unleashing last week across multiple states and has affected countless [&hellip;]" ><img class="rssfeed-item-image" src="http://wjltevansville.com/files/2012/03/American-Red-Cross-You-Can-Help-Deliver-Hope.jpg?w=80&h=60" width="80" height="60" alt="" /></a></span><span class="rssfeed-copy"><a class="rsswidget" href="http://wjltevansville.com/you-can-help-tornado-victims/" title="You Can Help Tornado Victims" >You Can Help Tornado Victims</a> <span class="rss-date">March 7, 2012</span></span></li></ul><div class="widget_floor widget_bg">&nbsp;</div></div></div></div><!--#primary_sidebar.sidebar-->
+		
+	</div><!-- // #content -->
+	
+	</div><!-- // #content.inner -->
+	<div id="footer_wrap" class="footer_wrap clearfix">
+		
+<div id="footer-sidebar" class="sidebar clearfix">
+<div id="rss-feed-7" class="widget widget_bg rssfeed widget_rss clearfix"><div class="widget_int_wrap"><a class="rssfeed-header-image" href="http://ultimateclassicrock.com" target="_blank"><img src="http://loudwire.production.townsquaresites.com/files/2011/08/UCR.png" /></a><ul class=""><li><span class="rssfeed-copy"><a class="rsswidget" href="http://ultimateclassicrock.com/metallica-name-director-for-3d-film-due-out-in-2013/" title="Metallica Name Director for 3D Film Due Out in 2013" target="_blank">Metallica Name Director for 3D Film Due Out in 2013</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://ultimateclassicrock.com/daily-rewind-rush-van-halen-sammy-hagar-more/" title="Daily Rewind: Rush, Van Halen, Sammy Hagar + More" target="_blank">Daily Rewind: Rush, Van Halen, Sammy Hagar + More</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://ultimateclassicrock.com/motorhead-rockstar-energy-drink-mayhem-festival-tour/" title="Motorhead Added To Rockstar Energy Drink Mayhem Festival Tour" target="_blank">Motorhead Added To Rockstar Energy Drink Mayhem Festival Tour</a></span></li></ul><div class="widget_floor widget_bg">&nbsp;</div></div></div><div id="rss-feed-6" class="widget widget_bg rssfeed widget_rss clearfix"><div class="widget_int_wrap"><a class="rssfeed-header-image" href="http://loudwire.com" target="_blank"><img src="http://popcrush.com/files/2011/08/loudwire-white.png" /></a><ul class=""><li><span class="rssfeed-copy"><a class="rsswidget" href="http://loudwire.com/metallica-tap-acclaimed-director-for-upcoming-3d-feature-film/" title="Metallica Tap Acclaimed Director for Upcoming 3D Feature Film" target="_blank">Metallica Tap Acclaimed Director for Upcoming 3D Feature Film</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://loudwire.com/daily-reload-motorhead-john-frusciante-more/" title="Daily Reload: Motorhead, John Frusciante + More" target="_blank">Daily Reload: Motorhead, John Frusciante + More</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://loudwire.com/favorite-red-hot-chili-peppers-album-featuring-john-frusciante-readers-poll/" title="Favorite Red Hot Chili Peppers Album Featuring John Frusciante – Readers Poll" target="_blank">Favorite Red Hot Chili Peppers Album Featuring John Frusciante – Readers Poll</a></span></li></ul><div class="widget_floor widget_bg">&nbsp;</div></div></div><div id="rss-feed-5" class="widget widget_bg rssfeed widget_rss clearfix"><div class="widget_int_wrap"><a class="rssfeed-header-image" href="http://tasteofcountry.com" target="_blank"><img src="http://loudwire.production.townsquaresites.com/files/2011/08/tasteOfCountry.png" /></a><ul class=""><li><span class="rssfeed-copy"><a class="rsswidget" href="http://tasteofcountry.com/skylar-laine-whitney-houston-american-idol/" title="Skylar Laine &#039;Brings Country to Whitney Houston&#039; on &#039;American Idol&#039;" target="_blank">Skylar Laine &#039;Brings Country to Whitney Houston&#039; on &#039;American Idol&#039;</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://tasteofcountry.com/daily-roundup-jerrod-niemann-scotty-mccreery/" title="Daily Roundup: Jerrod Niemann, Scotty McCreery + More" target="_blank">Daily Roundup: Jerrod Niemann, Scotty McCreery + More</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://tasteofcountry.com/the-band-perry-if-i-die-young-quadruple-platinum/" title="The Band Perry&#039;s &#039;If I Die Young&#039; Gets Quadruple Platinum Certification" target="_blank">The Band Perry&#039;s &#039;If I Die Young&#039; Gets Quadruple Platinum Certification</a></span></li></ul><div class="widget_floor widget_bg">&nbsp;</div></div></div><div id="rss-feed-4" class="widget widget_bg rssfeed widget_rss clearfix"><div class="widget_int_wrap"><a class="rssfeed-header-image" href="http://guyspeed.com" target="_blank"><img src="http://loudwire.com/files/2011/10/guyspeed_150.png" /></a><ul class=""><li><span class="rssfeed-copy"><a class="rsswidget" href="http://guyspeed.com/nicole-michelle-babe-of-the-day/" title="Nicole Michelle — Babe of the Day" target="_blank">Nicole Michelle — Babe of the Day</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://guyspeed.com/amazine-boxing-knockouts-video/" title="6 Boxing Knockouts That Will Make You Cringe" target="_blank">6 Boxing Knockouts That Will Make You Cringe</a></span></li><li><span class="rssfeed-copy"><a class="rsswidget" href="http://guyspeed.com/the-avengers-film-props-auction/" title="&#039;The Avengers&#039; Film Props are For Sale" target="_blank">&#039;The Avengers&#039; Film Props are For Sale</a></span></li></ul><div class="widget_floor widget_bg">&nbsp;</div></div></div></div>	<div id="footer_links" class="horizontal_navigation clearfix bold alt_link_color">
+	<div class="menu"><ul><li class="page_item"><a href="http://wjltevansville.com/eeo" title="EEO" target="_parent">EEO</a></li><li class="page_item"><a href="http://wjltevansville.com/terms" title="Terms" target="_parent">Terms</a></li><li class="page_item"><a href="http://wjltevansville.com/vip-terms" title="VIP Terms &amp; Conditions" target="_parent">VIP Terms &amp; Conditions</a></li><li class="page_item"><a href="http://wjltevansville.com/vip-faq" title="FAQ" target="_parent">FAQ</a></li><li class="page_item"><a href="http://wjltevansville.com/privacy" title="Privacy" target="_parent">Privacy</a></li><li class="page_item"><a href="http://wjltevansville.com/help" title="Help &amp; Contact" target="_parent">Help &amp; Contact</a></li><li class="page_item"><a href="http://townsquaremedia.com" title="Townsquare Media"  target="_blank">Townsquare Media</a></li><li class="page_item"><a href="http://wkdq.com/evansville-featured-business-listings/" title="Evansville Business Listings" target="_blank">Evansville Business Listings</a></li></ul></div>	</div>
+	<div id="network_links" class="horizontal_navigation clearfix bold alt_link_color">
+	<div id="network_footer" class="menu"><ul><li class="page_item"><a href="http://tasteofcountry.com" title="Country Music" target="_blank">Country Music</a></li><li class="page_item"><a href="http://popcrush.com" title="Music News" target="_blank">Music News</a></li><li class="page_item"><a href="http://ultimateclassicrock.com" title="Classic Rock" target="_blank">Classic Rock</a></li><li class="page_item"><a href="http://loudwire.com" title="Hard Rock" target="_blank">Hard Rock</a></li><li class="page_item"><a href="http://thefw.com" title="Funny Videos" target="_blank">Funny Videos</a></li><li class="page_item"><a href="http://seizethedeal.com" title="Deal of the Day" target="_blank">Deal of the Day</a></li><li class="page_item"><a href="http://guyspeed.com" title="GuySpeed" target="_blank">GuySpeed</a></li><li class="page_item"><a href="http://diffuser.fm" title="Alternative" target="_blank">Alternative</a></li></ul></div>	</div>
+	
+<div id="bottom_banner" class="clearfix"></div>	</div><!-- // #footer_wrap. -->
+</div><!-- // #main-container -->
+	
+<div id="inline_login_wrap" class="cloak">
+	<div id="inline_login">
+		<div id="login_modal" class="login-registration content_bg clearfix">
+	<form id="login_form" class="login-registration" action="http://wjltevansville.com/login/?referer=http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive" method="post" target="_parent">
+		<label for="user_login">Email</label>
+		<input type="text" class="input validate valid-required" tabindex="500" size="22" value="" id="user_login" name="log">
+
+		<label for="user_pass">Password</label>
+		<input type="password" class="input validate valid-required" tabindex="501" size="22" value="" id="user_pass" name="pwd">
+
+		<div class="clearfix">
+			<div class="rememberme">
+				<label  for="rememberme">Remember Me				<input id="rememberme" type="checkbox" name="rememberme" value="forever" tabindex="502" /></label>
+			</div>
+
+
+			<input type="hidden" name="redirect_to" value="http://wjltevansville.com/cartunes-classic-hit-march-7-i-will-survive" />
+
+			<input type="hidden" name="testcookie" value="1" />
+			<input type="submit" name="login_form_submit" id="login_form_submit" class="button-primary button submit-button" value="Log In" tabindex="503" />
+		</div><!-- // #. -->
+	</form>
+	<p class="lost_password"><a href="http://wjltevansville.com/login/?action=lost-password" target="_parent">Forgot Password?</a></p>
+	<p><a href="http://wjltevansville.com/registration/?referer=http%3A%2F%2Fwjltevansville.com%2Fcartunes-classic-hit-march-7-i-will-survive&referer_title=++Cartunes+Classic+Hit%3A+March+7+%26%238211%3B+I+Will+Survive" target="_parent">Register</a></p>
+</div><!-- // #login_modal.login-registration -->	</div>
+</div><script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/loyalty-activities/resources/js/loyalty.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare2.0/plugins/themeSettings/resources/themeSettings-dLNews01.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.getjs.min.js'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.sonar.min.js'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.facebookinit.min.js'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.facebookplugins.min.js?v=2'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.facebookcommentcount.min.js'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/gallery/resources/jquery.cycle.min.js?ver=2.86'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/gallery/resources/sp-gallery.js?ver=3.1.3'></script>
+<script type='text/javascript' src='http://tsm-js.s3.amazonaws.com/jquery.stumble.min.js'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/stumbleupon/views/init-scripts.js'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare/js/jquery.effects-custom.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare/js/fancybox/jquery.fancybox-1.3.3.pack.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-includes/js/jquery/ui.core.js?ver=1.8.9'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/themes/townsquare/js/jquery.template.js?ver=6353'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-content/plugins/loyalty-activities/resources/js/loyalty-ftlink.js?ver=6353'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {
+	empty: "Strength indicator",
+	short: "Very weak",
+	bad: "Weak",
+	good: "Medium",
+	strong: "Strong",
+	mismatch: "Mismatch"
+};
+try{convertEntities(pwsL10n);}catch(e){};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-admin/js/password-strength-meter.js?ver=20101027'></script>
+<script type='text/javascript' src='http://wjltevansville.com/wp-admin/js/user-profile.js?ver=20110113'></script>
+<script type="text/javascript">
+	jQuery(document).bind('fbInit.tsq-facebook', function(){
+		jQuery('[name=tsq-facebook-comments]').fbPlugin();
+	});
+</script><!-- ip: 128.2.207.79 -->
+<!-- Page rendered at 4:17:32 am 03/08/12 --><script type="text/javascript">
+	jQuery(document).bind('fbInit.tsq-facebook', function(){
+		jQuery('[name=tsq-facebook-like]').fbPlugin();
+	});
+</script><script>
+		jQuery.fbInit({
+			fb_options:{
+				appId: '180839145294686',
+				channelUrl: 'http://wjltevansville.com/wp-content/plugins/facebook/library/channel.html'
+			}
+		});
+</script>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Object Caching 1562/1586 objects using memcached
+
+Served from: wjltevansville.com @ 2012-03-08 10:17:32 -->

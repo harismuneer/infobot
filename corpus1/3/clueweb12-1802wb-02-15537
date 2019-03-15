@@ -1,0 +1,1265 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-29T08:23:51Z
+WARC-TREC-ID: clueweb12-1802wb-02-15537
+WARC-Target-URI: http://pacificresearch.org/press/the-electoral-college-does-it-better
+WARC-Payload-Digest: sha1:47YPGC7WDDMRAWLY7SVHEZIM32UNTKLQ
+WARC-IP-Address: 74.217.243.137
+WARC-Record-ID: <urn:uuid:0b46bed8-cbf7-49cf-8cd7-62d42f9c3f5f>
+Content-Type: application/http; msgtype=response
+Content-Length: 66776
+
+HTTP/1.1 200 OK
+Connection: close
+Date: Sun, 29 Apr 2012 08:23:52 GMT
+Server: Microsoft-IIS/6.0
+Powered by: eResources.com
+X-Powered-By: ASP.NET
+cache-control: private
+Content-Length: 66455
+Content-Type: text/html
+Expires: Sat, 28 Apr 2012 08:23:50 GMT
+Set-Cookie: enabled=1; path=/
+Cache-control: no-cache
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	
+<META NAME="author" CONTENT="PRI">
+<META NAME="keywords" CONTENT="PRI, pri, Pacific Research Institute, public policy, think tank, Business Policy, Economic Policy, Education Policy, Environmental Policy, Health Care Policy, Technology Policy, Pacific Research Institute for Public Policy, California business policy, California technology policy, American health policy, California education policy, American education, pacific research institute, free markets, environment, education, technology, technology issues, health care, health care, healthcare, health care issues, tax policy, business, economics, policy research">
+<META NAME="description" CONTENT="Pacific Research Institute is a public policy think tank promoting free markets.">
+<META NAME="lastModified" CONTENT="">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>PRI&nbsp;&bull;&nbsp;Pacific Research Institute &bull; The Electoral College Does It Better</title>
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12844031-1");
+pageTracker._setDomainName(".pacificresearch.org");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<meta name="google-site-verification" content="J1hdF5k19ITNy7fk4_Shibqm_x6J6mjGA1EZEfYoByk" />
+
+</head>
+<body onload="MM_preloadImages('/images/menu/menu_business_economics_over.gif','/images/menu/menu_education_over.gif','/images/menu/menu_environment_over.gif','/images/menu/menu_health_care_over.gif','/images/menu/menu_technology_over.gif')">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td width="50%" height="1100" class="bg" align="right">
+			<table cellpadding="0" cellspacing="0" border="0" width="10" >
+				<tr>
+					<td width="10" height="100%" id="bg_left_pattern">
+						<img src="/images/bg_left_shadow.jpg" width="10" height="1100" alt="" title="" />
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="780" bgcolor="white">
+			<!-- Begin Header -->
+			    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<table cellpadding="0" cellspacing="0" border="0" width="780" >
+		<tr>
+			
+			<td width="780" height="120" background="/images/header_bg/main.jpg">
+				<table cellpadding="0" cellspacing="0" border="0" >
+					<tr>
+						<td width="380" height="38" onclick="javascript: self.location='/'" style="cursor:pointer"></td>
+                        <td width="100">
+                            <table cellpadding="0" cellspacing="5" border="0" >
+                                <tr>
+                                    <td>
+                                    <a href="/donate/"><img src="/images/donate.gif" alt="Donate" width="100" border="0"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+						<td width="300">
+							<script language="JavaScript">
+								function validateFormUp()
+								{
+									var bPass = 1;
+									
+									//if (trim(document.frmLogonUp.txtEmail.value) == "") {
+									if (trim(document.getElementById("txtEmail").value) == "") {
+										alert("Please enter your e-mail address.");
+										//document.frmLogonUp.txtEmail.focus();
+										document.getElementById("txtEmail").focus();
+										bPass = 0;
+										return false;
+									}
+						            
+									//if (bPass == 1 && !isValidEmail(document.frmLogonUp.txtEmail.value)) {
+									if (bPass == 1 && !isValidEmail(document.getElementById("txtEmail").value)) {
+										document.frmLogonUp.txtEmail.focus();
+										bPass = 0;
+										return false;
+									}
+									
+									//if (bPass == 1 && document.frmLogonUp.radOption[ 0 ].checked) {
+										//if (bPass == 1 && trim(document.frmLogonUp.txtPassword.value) == "") {
+										if (bPass == 1 && trim(document.getElementById("txtPassword").value) == "") {
+											alert("Please enter your password.");
+											//document.frmLogonUp.txtPassword.focus();
+											document.getElementById("txtPassword").focus();
+											bPass = 0;
+											return false;
+										}
+									//}
+									//return true;
+									
+									if (bPass == 1) {
+										
+										document.frmLogonUp.action = "http://www.pacificresearch.org/mypri/authenticate.asp";
+										document.frmLogonUp.submit();
+									}
+								}
+							</script>
+						
+							<!--<form id="frmLogonUp" name="frmLogonUp" action="/mypri/authenticate.asp" method="post" onsubmit="return validateFormUp()">-->
+							
+							<form name="frmLogonUp" action="https://www.pacificresearch.org/mypri/authenticate.asp" method="post">
+							<table cellpadding="0" cellspacing="0" border="0" id="login">
+								<tr>
+									<td width="300" height="3" colspan="9"></td>
+								</tr>
+								
+								
+									<tr>										
+										<td width="54" height="19" align="right">Email</td>
+										<td width="10"></td>
+										<td width="60"><input type="text" class="text" id="txtEmail" name="txtEmail"/></td>
+										<td width="49" align="right">Password</td>
+										<td width="10"></td>
+										<td width="60"><input type="password" class="text" id="txtPassword" name="txtPassword"/></td>
+										<td width="9"></td>
+										<td width="26"><input class="GoButton" value="        " onclick="javascript: validateFormUp()" type="image" src="/images/btn_go.gif" /></td>
+										<!--<td width="26"><input type="image" onclick="validateFormUp()" src="/images/btn_go.gif" alt="Go" title="Go" id="Image1" name="Image1"/></td>-->
+										<td width="22"> <input type="hidden" name="radOption" value="1" /> </td>										
+									</tr>
+									<tr>
+										<td width="300" height="16" colspan="9" align="center">
+										
+											Not a member? <a href="http://www.pacificresearch.org/mypri/signup.asp" class="white">Sign Up</a>
+                                            &nbsp;
+                                            <a href="http://www.pacificresearch.org/mypri/forgot_password.asp" class="white">Forgot password?</a>
+								
+								&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href='http://www.pacificresearch.org/bookstore/view_cart.asp'> <font color='White'> View Shopping Cart </font> </a>
+										</td>
+									</tr>
+								
+							</table>
+							</form>
+						
+						</td>
+						<td width="25"></td>
+					</tr>
+				</table>
+				<table cellpadding="0" cellspacing="0" border="0" >
+					<tr>
+						<td width="780" height="52" colspan="7" onclick="javascript: self.location='/'" style="cursor:pointer"></td>
+					</tr>
+					<tr>
+						<td width="155" height="27" onclick="javascript: self.location='/'" style="cursor:pointer"></td>
+									
+							<td width="153"><a href="http://www.pacificresearch.org/business/default.asp?userID=0&login=false&cart=true" onmouseover="MM_swapImage('menu_business_economics','','/images/menu/menu_business_economics_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_business_economics.gif" alt="Business and Economics" width="153" height="27" title="Business and Economics" name="menu_business_economics" id="menu_business_economics" /></a></td>
+							<td width="71"><a href="http://www.pacificresearch.org/education/default.asp?userID=0&login=false&cart=true" onmouseover="MM_swapImage('menu_education','','/images/menu/menu_education_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_education.gif" alt="Education" title="Education" name="menu_education" id="menu_education" /></a></td>
+							<td width="87"><a href="http://www.pacificresearch.org/environment/default.asp?userID=0&login=false&cart=true" onmouseover="MM_swapImage('menu_environment','','/images/menu/menu_environment_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_environment.gif" alt="Environment" title="Environment" name="menu_environment" id="menu_environment" /></a></td>
+							<td width="82"><a href="http://www.pacificresearch.org/health/default.asp?userID=0&login=false&cart=true" onmouseover="MM_swapImage('menu_health_care','','/images/menu/menu_health_care_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_health_care.gif" alt="Health Care" title="Health Care" name="menu_health_care" id="menu_health_care" /></a></td>
+							<!--<td width="99"><a href="http://www.pacificresearch.org/technology/default.asp?userID=0&login=false&cart=true" onmouseover="MM_swapImage('menu_technology','','/images/menu/menu_technology_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_technology.gif" alt="Technology" title="Technology" name="menu_technology" id="menu_technology" /></a></td>-->
+							<td width="99"><a href="http://www.pacificresearch.org/california/default.asp?userID=&login=true&cart=true" onmouseover="MM_swapImage('menu_california','','/images/menu/menu_california_over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="/images/menu/menu_california.gif" alt="California" title="California" name="menu_california" id="menu_california" /></a></td>
+							<td width="133"></td>
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="780" height="5"></td>
+		</tr>
+	</table>
+
+			<!-- End Header -->
+			
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="5"></td>
+					<td width="160">
+						<!-- Begin Navigation -->
+							<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="160"><a href="/default.asp"><img src="/images/nav/nav_home.gif" alt="Home" width="160" height="22" title="Home" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/about/default.asp"><img src="/images/nav/nav_about_pri.gif" alt="About PRI" width="160" height="20" title="About PRI" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/mypri/default.asp"><img src="/images/nav/nav_my_pri.gif" alt="My PRI" width="160" height="20" title="My PRI" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/contactus/default.asp"><img src="/images/nav/nav_contact.gif" alt="Contact" width="160" height="20" title="Contact Us" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/search/advsearch.asp"><img src="/images/nav/nav_search.gif" alt="Search" width="160" height="22" title="Search" /></a></td>
+		</tr>
+		<tr>
+			<td height="3"></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0">
+      	<tr>
+			<td height="3"></td>
+		</tr>
+		<tr>
+			<td><a href="/research/default.asp"><img src="/images/nav/nav_policy_research_areas.gif" alt="Policy Research Areas" width="160" height="26" title="Policy Research Areas" /></a></td>
+		</tr>
+		<tr>
+			<td height="3"></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td><a href="/events/default.asp"><img src="/images/nav/nav_events.gif" alt="Events" width="160" height="21" title="Events" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/publications/default.asp"><img src="/images/nav/nav_publications.gif" alt="Publications" width="160" height="20" title="Publications" /></a></td>
+		</tr>
+		<tr>			
+			<td><a href="/press/default.asp"><img src="/images/nav/nav_press_room.gif" alt="Press Room" width="160" height="20" title="Press Room" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/blog/default.asp"><img src="/images/nav/nav_pri_blog.gif" alt="PRI Blog" width="160" height="20" title="PRI Blog" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/jobs/default.asp"><img src="/images/nav/nav_jobs_internships.gif" alt="Jobs Internships" width="160" height="20" title="Jobs Internships" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/keypeople/default.asp"><img src="/images/nav/nav_scholars.gif" alt="Scholars" width="160" height="20" title="Scholars" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/keypeople/staff.asp"><img src="/images/nav/nav_staff.gif" alt="Staff" width="160" height="20" title="Staff" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="/bookstore/default.asp"><img src="/images/nav/nav_book_store.gif" alt="Book Store" width="160" height="21" title="Book Store" /></a></td>
+		</tr>
+		<tr>
+			<td height="5"></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="160"><a href="/blog/policycast.asp"><img src="/images/nav/nav_policy_cast.gif" alt="Policy Cast" width="160" height="65" title="Policy Cast" /></a></td>
+		</tr>
+		<tr>
+			<td height="5"></td>
+		</tr>
+	</table>
+	<!-- Begin Upcoming Events -->
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="160" height="30"><img src="/images/nav/nav_upcoming_events.gif" alt="Upcoming Events" width="160" height="30" title="Upcoming Events" /></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="1" bgcolor="#eeeeee"></td>
+			<td width="158" height="5" colspan="3"></td>
+			<td width="1" bgcolor="#eeeeee"></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0" class="events">
+
+			<tr>
+				<td width="1" bgcolor="#eeeeee"></td>
+				<td width="9"></td>
+				<td width="5"></td>
+				<td>
+					
+						<a href="http://www.pacificresearch.org/events/sally-pipes-and-dennis-prager"><img width="26" height="26" src="/imgLib/20120424_DennisPragerPhoto.png" alt="" align="left" /></a>
+					
+					<strong><a href="http://www.pacificresearch.org/events/sally-pipes-and-dennis-prager">Sally Pipes and Dennis Prager</a></strong><br />
+					<strong>5.2.2012 6:00:00 PM</strong><br />
+					<div><p>Why the World Needs American Values</p>&nbsp;</div><a href="http://www.pacificresearch.org/events/sally-pipes-and-dennis-prager" class="aqua">More</a><br /><br />
+				</td>
+				<td width="3"></td>
+				<td width="1" bgcolor="#eeeeee"></td>
+			</tr>
+			<tr>
+				<td width="160" height="1" colspan="5" bgcolor="#eeeeee"></td>
+			</tr>
+			<tr>
+				<td width="160" height="5" colspan="5"></td>
+			</tr>
+			
+				<tr>
+					<td width="160" height="1" colspan="5"><img src="/images/nav/nav_dots_sep.gif" width="139" height="1" alt="" /></td>
+				</tr>
+				<tr>
+					<td width="160" height="5" colspan="5"></td>
+				</tr>
+				
+			<tr>
+				<td width="1" bgcolor="#eeeeee"></td>
+				<td width="9"></td>
+				<td width="5"></td>
+				<td>
+					
+						<a href="http://www.pacificresearch.org/events/benjamin-rush-society-debate-harvard-medical-school-may-3-2012"><img width="26" height="26" src="/imgLib/20090318_brs_button_90.gif" alt="" align="left" /></a>
+					
+					<strong><a href="http://www.pacificresearch.org/events/benjamin-rush-society-debate-harvard-medical-school-may-3-2012">Benjamin Rush Society Debate: Harvard Medical School, May 3, 2012</a></strong><br />
+					<strong>5.3.2012 5:45:00 PM</strong><br />
+					<div><p>Harvard Bejamin Rush Society Debate</p>&nbsp;</div><a href="http://www.pacificresearch.org/events/benjamin-rush-society-debate-harvard-medical-school-may-3-2012" class="aqua">More</a><br /><br />
+				</td>
+				<td width="3"></td>
+				<td width="1" bgcolor="#eeeeee"></td>
+			</tr>
+			<tr>
+				<td width="160" height="1" colspan="5" bgcolor="#eeeeee"></td>
+			</tr>
+			<tr>
+				<td width="160" height="5" colspan="5"></td>
+			</tr>
+			
+				<tr>
+					<td width="160" height="1" colspan="5" bgcolor="#eeeeee"></td>
+				</tr>
+				<tr>
+					<td width="160" height="5" colspan="5"></td>
+				</tr>
+				
+	</table>
+	<!-- End Upcoming Events -->
+	<!-- Begin Recent Events -->
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="160" height="30"><img src="/images/nav/nav_recent_events.gif" alt="Recent Events" width="160" height="30" title="Recent Events" /></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="1" bgcolor="#eeeeee"></td>
+			<td width="158" height="5" colspan="3"></td>
+			<td width="1" bgcolor="#eeeeee"></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" border="0" class="events">
+
+			<tr>
+				<td width="1" bgcolor="#eeeeee"></td>
+				<td width="9"></td>
+				<td width="5"></td>
+				<td>
+					
+						<a href="http://www.pacificresearch.org/events/luncheon-and-book-launch-featuring-john-stossel"><img width="26" height="26" src="/imgLib/20120222_NoTheyCantfinal.jpg" alt="" align="left" /></a>
+					
+					<strong><a href="http://www.pacificresearch.org/events/luncheon-and-book-launch-featuring-john-stossel">Luncheon and Book Launch Featuring John Stossel</a></strong><br />
+					<strong>4.20.2012 12:00:00 PM</strong><br />
+					The City Club of San Francisco&nbsp;<a href="http://www.pacificresearch.org/events/luncheon-and-book-launch-featuring-john-stossel" class="aqua">More</a><br /><br />
+				</td>
+				<td width="3"></td>
+				<td width="1" bgcolor="#eeeeee"></td>
+			</tr>
+			
+				<tr>
+					<td width="160" height="1" colspan="5"><img src="/images/nav/nav_dots_sep.gif" width="139" height="1" alt="" /></td>
+				</tr>
+				<tr>
+					<td width="160" height="5" colspan="5"></td>
+				</tr>
+				
+			<tr>
+				<td width="1" bgcolor="#eeeeee"></td>
+				<td width="9"></td>
+				<td width="5"></td>
+				<td>
+					
+						<a href="http://www.pacificresearch.org/events/benjamin-rush-society-presents"><img width="26" height="26" src="/imgLib/20090318_brs_button_90.gif" alt="" align="left" /></a>
+					
+					<strong><a href="http://www.pacificresearch.org/events/benjamin-rush-society-presents">Benjamin Rush Society Presents</a></strong><br />
+					<strong>4.17.2012 6:00:00 PM</strong><br />
+					The Arthur N. Rupe Debate Series&nbsp;<a href="http://www.pacificresearch.org/events/benjamin-rush-society-presents" class="aqua">More</a><br /><br />
+				</td>
+				<td width="3"></td>
+				<td width="1" bgcolor="#eeeeee"></td>
+			</tr>
+			
+				<tr>
+					<td width="160" height="1" colspan="5"><img src="/images/nav/nav_dots_sep.gif" width="139" height="1" alt="" /></td>
+				</tr>
+				<tr>
+					<td width="160" height="5" colspan="5"></td>
+				</tr>
+				
+			<tr>
+				<td width="1" bgcolor="#eeeeee"></td>
+				<td width="9"></td>
+				<td width="5"></td>
+				<td>
+					
+						<a href="http://www.pacificresearch.org/events/dr-art-laffer-orange-county-book-signing"><img width="26" height="26" src="/imgLib/20120227_EurekaFrontCoverL.jpg" alt="" align="left" /></a>
+					
+					<strong><a href="http://www.pacificresearch.org/events/dr-art-laffer-orange-county-book-signing">Dr. Art Laffer Orange County Book Signing</a></strong><br />
+					<strong>3.28.2012 2:00:00 PM</strong><br />
+					Pacific Research Institute&nbsp;<a href="http://www.pacificresearch.org/events/dr-art-laffer-orange-county-book-signing" class="aqua">More</a><br /><br />
+				</td>
+				<td width="3"></td>
+				<td width="1" bgcolor="#eeeeee"></td>
+			</tr>
+			
+				<tr>
+					<td width="160" height="1" colspan="5"><img src="/images/nav/nav_dots_sep.gif" width="139" height="1" alt="" /></td>
+				</tr>
+				<tr>
+					<td width="160" height="5" colspan="5"></td>
+				</tr>
+				
+	</table>
+	<!-- End Recent Events -->
+	
+	
+	<!-- Begin Buttons -->
+	<table cellpadding="0" cellspacing="0" border="0" width="160">
+		<tr>
+			<td align="center"><a href="http://www.opinionjournal.com/federation/"><img src="/images/nav/nav_opinion_journal.gif" alt="Opinion Journal Federation" width="102" height="33" title="Opinion Journal Federation" /></a></td>
+		</tr>
+		<tr>
+			<td height="5"></td>
+		</tr>
+		<tr>
+			<td align="center"><a href="http://www.townhall.com"><img src="/images/nav/nav_town_hall.gif" alt="Town Hall silver partner" width="102" height="53" title="Town Hall silver partner" /></a></td>
+		</tr>
+		<tr>
+			<td height="5"></td>
+		</tr>
+		<tr>
+			<td align="center"><a href="http://www.legalreforminthenews.com/Victims/victim_intro.html"><img src="/images/nav/nav_lawsuit_abuse.gif" alt="Lawsuit abuse victims project" width="102" height="40" title="Lawsuit abuse victims project" /></a></td>
+		</tr>
+		<tr>
+			<td height="5"></td>
+		</tr>
+	</table>
+	<!-- End Buttons -->
+	<table cellpadding="0" cellspacing="0" border="0" width="160">
+		<tr>
+			<td>
+				
+			</td>
+		</tr>
+	</table>
+						<!-- End Navigation -->
+					</td>
+					<td width="5"></td>
+					<td width="420">
+						<!-- Begin Main Left Content -->						
+						<!-- Begin Breadcrumb -->
+
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td width="420" height="20" id="breadcrumbs">
+				<a title='Home' href='http://www.pacificresearch.org/default.asp'>Home</a><img src='/images/breadcrumb_arrow.gif' alt='' /> <a href='http://www.pacificresearch.org/press/'>Press</a> <img src='/images/breadcrumb_arrow.gif' alt='' /> The Electoral College Does It Better
+			</td>
+		</tr>
+	</table>
+<!-- End Breadcrumb -->
+
+<!-- Begin Content -->
+<table cellpadding="0" cellspacing="0" border="0" class="content_inner">
+	<tr>
+		<td width="420" height="45">
+			<table cellpadding="0" cellspacing="0" border="0" class="content_inner_title">
+				<tr>
+					<td width="420" height="10" colspan="3"></td>
+				</tr>
+				<tr>
+					<td width="35" height="25"></td>
+					<td width="265">Press</td>
+					<td width="120">
+						
+		<img src="/images/spacer.gif"  width="40" height="14" border="0" />
+	
+		<a href="/press/archive_list.asp?arc=1"><img src="/images/btn_tiny_archive.gif" alt="Archive" width="62" height="14" title="Archive" /></a>
+	
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			
+			<table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px">
+			<tr>
+				<td width="10"></td>						
+				<td width="400">										
+					<table width="99%" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								
+
+	<script language="javascript">
+    function printPage()
+	{
+		popupBar("http://www.pacificresearch.org/printVersion/print_press.asp?pubID=917&sectionID=11", 770, 500);
+	}
+	
+	function emailPage()
+	{
+		popup2("http://www.pacificresearch.org/emailVersion/email_press.asp?pubID=917", 490, 400);
+	}
+    </script>
+		
+	<!--<div id="printemail">-->
+		
+			<a href="Javascript:void(0)"><img  align="right" onclick="emailPage()" src="/images/email_off.gif" alt="E-mail" onMouseOver="this.src='/images/email_over.gif'" onMouseOut="this.src='/images/email_off.gif'" border="0" /></a>			
+        
+			<a href="Javascript:void(0)"><img align="right" onclick="printPage()" src="/images/print_off.gif" alt="Print" onMouseOver="this.src='/images/print_over.gif'" onMouseOut="this.src='/images/print_off.gif'" border="0" /></a>
+        
+
+    <!--</div>-->
+								<strong>The Electoral College Does It Better</strong><br />
+								<em>Business and Economics Op-Ed</em><br />
+								
+									<strong>By:</strong> Benjamin Zycher<br />
+								
+									<strong>10.27.2004</strong><br /><br />
+								<em><strong>Los Angeles Times,</strong> October 27, 2004<br /><b>Newsday.com</b>, November 1, 2004 </em><hr size="1" noshade="true" /><h5>Forcing candidates to broaden their base reduces political extremism.</h5><p>What should an election system for choosing the president attempt to achieve? Certainly one goal is to reflect the popular will, an outcome that might (or might not, depending on how the system is structured) be achieved with a direct popular vote.</p><p>But as the founding fathers recognized, reflection of the popular will is not the only goal.</p><p>Another goal is to provide candidates with incentives to broaden their geographic and political bases and to steer toward the center rather than the extremes of the political spectrum.</p><p>This, the founders felt, would help reduce the sources of political strife and, in the extreme case, avoid civil war. They understood that passions and irrationalities can afflict mass decision-making under direct democracy.</p><p>The electoral college system as we know it today furthers that goal. The winner of a plurality in any given state (with two minor exceptions, Maine and Nebraska) gets all of that state&#39;s electoral college votes; the candidate who wins a majority in the electoral college (270 out of 538) is elected president.</p><p>Yes, the electoral college distorts the popular vote results somewhat, usually by giving the winner of the popular vote an even greater percentage of the electoral college vote. On rare occasions, the winner of the popular vote fails to win a majority in the electoral college. This happened famously in 2000, and in 1888, 1876 and 1824. It almost happened in 1976, when a switch of about 5,500 votes in Ohio would have given Gerald Ford an electoral college majority and the presidency, leaving Jimmy Carter with a majority in the popular vote.</p><p>But in exchange for that distortion, the electoral college offers important benefits.</p><p>Once a candidate determines that he will be able to win a plurality in a state, thus getting all the electoral college votes, there is no point in campaigning further in that state. The candidate is then driven (by the pressure of the market, so to speak) to develop plurality support in additional states. Thus are candidates forced to broaden their geographic bases; those whose support is heavily regionalized are penalized implicitly.</p><p>This was particularly important in 2000: Al Gore piled up huge majorities on the West Coast and in the Northeast (hence his victory in the popular vote), but was not strong in the rest of the country (and so lost the electoral vote).</p><p>Because the plurality winner in a state gets all of that state&#39;s electoral votes, third and fourth parties have little hope of winning important numbers of electoral college votes (although they can deny a plurality to a candidate).</p><p>This means that the electoral college promotes the two-party system at the state level. The two-party system offers the important long-term benefit of forcing candidates and platforms toward the middle of the political spectrum, thus increasing consensus and compromise and reducing political strife.</p><p>A direct popular election under a plurality rule would tend to yield candidacies (and parties) with strong regional and ideological loyalties, with a goal of simply piling up more raw votes than anyone else. A runoff system would give disproportionate bargaining power to regional and ideological fringes. A system of allocating electoral college votes in proportion to the popular vote (now proposed for Colorado) would induce candidates to shift their efforts and resources to uncompetitive states, where there are large numbers of electoral college votes to be had.</p><p>Yes, the electoral college is easy to poke fun at. Yes, it occasionally frustrates the will of the plurality or majority. But the founding fathers understood the dangers of direct democracy and struggled to create a system that reflected the will of the people while constraining the majority. The electoral college serves those ends well.</p><hr size="1" noshade="true" /><a name="about"></a><em><b>Benjamin Zycher</b> is a senior fellow at the Pacific Research Institute for Public Policy. He can be reached at <a href="mailto:benzycher@bzecon.com">benzycher@bzecon.com</a></em>
+	
+							</td>
+						</tr>					
+						</table>	
+				</td>
+				<td width="10"></td>
+			</tr>
+			</table>
+		
+			<table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px">
+			<tr>
+				<td width="10"></td>						
+				<td width="400">
+					
+					</td>
+				<td width="10"></td>
+			</tr>
+		
+			<tr>	
+				<td width="10"></td>
+				<td><!--
+* Social Bookmark Script
+* @ Version 1.9
+* @ Copyright (C) 2006-2008 by Alexander Hadj Hassine - All rights reserved
+* @ Website http://www.social-bookmark-script.com/
+* @
+* @ By using our script you must leave our copyright notices and the links
+* @ in the script untouched. The links doesn't be removed, converted, hidden
+* @ or made invisible. If you set a backlink to http://www.social bookmark script.com/
+* @ (at least 1 time "search machines friendly" from the starting side of your web page)
+* @ you can be adapt the script to you for your purpose changes.
+-->
+<table >
+<tr >
+	<td><div style=" padding-top:10px; float: left;">Submit to:&nbsp;</div></td>
+	<td>
+		<div style=" padding-top:3px; float: left;">
+		<script language="JavaScript" type="text/JavaScript">
+		<!--
+		function Social_Load() { 
+		var d=document; if(d.images){ if(!d.Social) d.Social=new Array();
+		var i,j=d.Social.length,a=Social_Load.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.Social[j]=new Image; d.Social[j++].src=a[i];}}
+		}
+		Social_Load('http://www.social-bookmark-script.de/img/bookmarks/digg_ani.gif','http://www.social-bookmark-script.de/img/bookmarks/del_ani.gif','http://www.social-bookmark-script.de/img/bookmarks/reddit_ani.gif','http://www.social-bookmark-script.de/img/bookmarks/stumbleupon_ani.gif','http://www.social-bookmark-script.de/img/bookmarks/newsvine_ani.gif','http://www.social-bookmark-script.de/load.gif')
+		function schnipp() { 
+		var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		function schnupp(n, d) { 
+		var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=schnupp(n,d.layers[i].document);
+		if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+		function schnapp() { 
+		var i,j=0,x,a=schnapp.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		if ((x=schnupp(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+		//-->
+		</script>
+		<script>
+		function fbs_click() {
+			u=location.href;t='The Electoral College Does It Better';
+			window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+			return false;
+		}
+		</script>
+
+			<a rel="nofollow" style="text-decoration:none;" href="http://digg.com/" onclick="window.open('http://digg.com/submit?phase=2&amp;url='+encodeURIComponent(location.href)+'&amp;bodytext=&amp;tags=&amp;title='+encodeURIComponent('The Electoral College Does It Better'));return false;" title="Submit to: Digg" onmouseover="schnapp('Digg','','http://www.social-bookmark-script.de/img/bookmarks/digg_ani.gif',1)" onmouseout="schnipp()" > <img style="padding-bottom:1px;" src="http://www.social-bookmark-script.de/img/bookmarks/digg.gif" alt="Submit to: Digg" name="Digg" border="0" id="Digg"/> </a>
+			<a rel="nofollow" style="text-decoration:none;" href="http://del.icio.us/" onclick="window.open('http://del.icio.us/post?v=2&amp;url='+encodeURIComponent(location.href)+'&amp;notes=&amp;tags=&amp;title='+encodeURIComponent('The Electoral College Does It Better'));return false;" title="Submit to: Del.icio.us" onmouseover="schnapp('Delicious','','http://www.social-bookmark-script.de/img/bookmarks/del_ani.gif',1)" onmouseout="schnipp()" > <img style="padding-bottom:1px;" src="http://www.social-bookmark-script.de/img/bookmarks/del.gif" alt="Submit to: Del.icio.us" name="Delicious" border="0" id="Delicious"/> </a>
+			<a rel="nofollow" style="text-decoration:none;" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()"  class="fb_share_button" target="_blank" title="Submit to: Facebook" onmouseover="schnapp('facebook','','http://static.ak.facebook.com/images/share/facebook_share_icon.gif?1:26981',1)" onmouseout="schnipp()" > <img style="border:1px solid #d8dfea;" src="http://static.ak.facebook.com/images/share/facebook_share_icon.gif?1:26981" alt="Submit to: Facebook" name="Facebook"   id="Facebook" width="20" /> </a>
+			<a rel="nofollow" style="text-decoration:none;" href="http://www.stumbleupon.com/" onclick="window.open('http://www.stumbleupon.com/submit?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent('The Electoral College Does It Better'));return false;" title="Submit to: StumbleUpon" onmouseover="schnapp('StumbleUpon','','http://www.social-bookmark-script.de/img/bookmarks/stumbleupon_ani.gif',1)" onmouseout="schnipp()" > <img style="padding-bottom:1px;" src="http://www.social-bookmark-script.de/img/bookmarks/stumbleupon.gif" alt="Submit to: StumbleUpon" name="StumbleUpon" border="0" id="StumbleUpon"/> </a>
+			<a rel="nofollow" style="text-decoration:none;" href="http://www.newsvine.com/" onclick="window.open('http://www.newsvine.com/_wine/save?popoff=1&amp;u='+encodeURIComponent(location.href)+'&amp;tags=&amp;blurb='+encodeURIComponent('The Electoral College Does It Better'));return false;" title="Submit to: Newsvine" onmouseover="schnapp('Newsvine','','http://www.social-bookmark-script.de/img/bookmarks/newsvine_ani.gif',1)" onmouseout="schnipp()" > <img style="padding-bottom:1px;" src="http://www.social-bookmark-script.de/img/bookmarks/newsvine.gif" alt="Submit to: Newsvine" name="Newsvine" border="0" id="Newsvine"/> </a>
+			<a rel="nofollow" style="text-decoration:none;" href="http://reddit.com/" onclick="window.open('http://reddit.com/submit?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent('The Electoral College Does It Better'));return false;" title="Submit to: Reddit" onmouseover="schnapp('Reddit','','http://www.social-bookmark-script.de/img/bookmarks/reddit_ani.gif',1)" onmouseout="schnipp()" > <img style="padding-bottom:1px;" src="http://www.social-bookmark-script.de/img/bookmarks/reddit.gif" alt="Submit to: Reddit" name="Reddit" border="0" id="Reddit"/> </a>
+			
+		</div>
+	</td>
+</tr>
+</table>
+ 
+
+</td>
+				<td width="10"></td>
+			</tr>
+		
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td height="5"></td>
+	</tr>			
+	<tr>
+		<td><img src="/images/content_inner_bottom.gif" width="420" height="5" alt="" /></td>
+	</tr>
+</table>
+						<!-- End Content -->
+
+						<!-- End Main Left Content -->
+					</td>
+					<td width="5"></td>
+					<td width="180">
+						<!-- Begin Main Left Content -->
+						<!-- Begin Search Box -->  
+<script type="text/javascript" language="javascript">
+    function submitIt()
+    {
+    if (document.frmSearch.txtQuicksearch.value == "") {
+    alert("Please enter search text.");
+    document.frmSearch.txtQuicksearch.focus();
+    return false;
+    }
+    return true;
+    }
+</script>
+
+<form name="frmSearch" action="http://www.pacificresearch.org/search/default.asp" method="get" onsubmit="return submitIt()">
+	<table cellpadding="0" cellspacing="0" border="0" id="search_box">
+		<tr>
+			<td width="180" height="20" colspan="2"></td>
+		</tr>
+		<tr>
+			<td width="10" height="21"></td>
+			<td width="170">
+				<input type="text" class="text" size="19" title="Enter search query" name="txtQuicksearch" />
+				<input type="image" src="/images/btn_go_red.gif" alt="Go" width="29" height="19" title="Go" align="absmiddle" />
+			</td>
+			
+		</tr>
+		<tr>
+			<td width="290" height="9" colspan="2"></td>
+		</tr>
+	</table>
+</form>
+<!-- End Search Box -->
+<!-- include virtual="/include/dateFilter.inc" -->
+<!-- include virtual="/include/imageResize.inc" -->
+
+								<table cellpadding="0" cellspacing="0" border="0"width="180">
+								<tr>
+									<td width="180" height="5"></td>
+								</tr>
+								<tr>
+								
+									<td width="180" height="24" id="column_red_title">Within Press</td>
+								
+								</tr>
+								<tr>
+									<td width="180" height="1"></td>
+								</tr>
+								<tr>
+									<td width="180" height="1" bgcolor="black"></td>
+								</tr>
+								<tr>
+									<td id="column_red_bg" width="180">
+										<ul>
+							
+									<li >
+										<a href="/press/pri-history" >PRI History</a>
+									</li>
+							
+									<li >
+										<a href="/press/staff-photos-and-images" >Staff Photos and Images</a>
+									</li>
+							
+									<li >
+										<a href="http://special.pacificresearch.org/scrapbook/index.html" target = " _blank ">Archive Photos</a>
+									</li>
+							
+									<li >
+										<a href="http://www.pacificresearch.org/about/book-a-pri-speaker" >Book a PRI Speaker</a>
+									</li>
+							
+									<li >
+										<a href="/press/video-and-audio-clips" >Video and Audio Clips</a>
+									</li>
+							
+									<li >
+										<a href="http://www.flickr.com/photos/pacificresearchinstitute/" target = " _blank ">2009 Photos</a>
+									</li>
+							
+												</ul>
+										</td>
+									</tr>
+									<tr>
+										<td width="180" height="1" bgcolor="black"></td>
+									</tr>
+								</table>
+							
+<table cellpadding="0" cellspacing="0" border="0" style="display:box">
+	<tr>
+		<td width="180" height="5"></td>
+	</tr>
+	<tr>
+		<td width="180" height="24" id="column_brown_title">Browse by</td>
+	</tr>
+	<tr>
+		<td width="180" height="1"></td>
+	</tr>
+	<tr>
+		<td width="180" height="1" bgcolor="black"></td>
+	</tr>	
+	<tr>
+		<td id="column_brown_bg">
+			
+			<ul>
+				
+					<li><a href="/press/browse_ByDate.asp" class="white">Date</a></li>
+				
+					<li><a href="/press/browse_ByAuthor.asp" class="white">Author</a></li>
+				
+					<li><a href="/press/browse_ByTitle.asp" class="white">Title</a></li>
+				
+					<li><a href="/press/publication_types.asp" class="white">Publication Type</a></li>
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="180" height="1" bgcolor="black"></td>
+	</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td width="180" height="5"></td>
+	</tr>
+	<tr>
+		<td width="180" height="24" id="column_red_title">Recent Publications</td>
+	</tr>
+	<tr>
+		<td width="180" height="1"></td>
+	</tr>
+	<tr>
+		<td width="180" height="1" bgcolor="black"></td>
+	</tr>
+	<tr>
+		<td id="column_red_bg" width="180">
+			
+							<ul><li style="position: relative; vertical-align: top;">
+								
+							<strong><a href="http://www.pacificresearch.org/press/after-obamacare-more-for-the-supreme-court-to-throw-out">After Obamacare: More For The Supreme Court To Throw Out</a></strong><br />
+							
+								<strong>Forbes.com</strong><br />
+							April 27, 2012<br />
+						
+							<p>Basking in cautious confidence, we wait until the ...</p>
+
+							</li></ul>
+				
+			
+							<ul><li style="position: relative; vertical-align: top;">
+								
+							<strong><a href="http://www.pacificresearch.org/press/online-and-digital-education-speech">Online and Digital Education Speech</a></strong><br />
+							
+								<strong>The Atlas "Experience" Conference</strong><br />
+							April 26, 2012<br />
+						
+							<p>Speech given by Lance Izumi: Thank you so much.  ...</p>
+
+							</li></ul>
+				
+			
+							<ul><li style="position: relative; vertical-align: top;">
+								
+							<strong><a href="http://www.pacificresearch.org/press/alecs-independence-is-critical-to-defeating-obamacare">ALEC's Independence is Critical to Defeating Obamacare</a></strong><br />
+							
+								<strong>Forbes.com</strong><br />
+							April 24, 2012<br />
+						
+							<p>You may have never heard of ALEC before the last ...</p>
+
+							</li></ul>
+				
+			
+		</td>
+	</tr>
+	<tr>
+		<td width="180" height="1" bgcolor="black"></td>
+	</tr>
+</table>
+
+
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="180" height="5"></td>
+							</tr>
+							<tr>
+								<td width="180" height="24" id="column_blue_title"><a href = "/press/archive.asp?arc=1" class="whiteNoUnderline">Press Archive</a></td>
+							</tr>
+							<tr>
+								<td width="180" height="1"></td>
+							</tr>
+							<tr>
+								<td width="180" height="1" bgcolor="black"></td>
+							</tr>
+							<tr>
+								<td id="column_blue_bg">
+									<ul>
+
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2012&month=4&arc=1">April 2012</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2012&month=3&arc=1">March 2012</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2012&month=2&arc=1">February 2012</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2012&month=1&arc=1">January 2012</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=12&arc=1">December 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=11&arc=1">November 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=10&arc=1">October 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=9&arc=1">September 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=8&arc=1">August 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=7&arc=1">July 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=6&arc=1">June 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=5&arc=1">May 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=4&arc=1">April 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=3&arc=1">March 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=2&arc=1">February 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2011&month=1&arc=1">January 2011</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=12&arc=1">December 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=11&arc=1">November 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=10&arc=1">October 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=9&arc=1">September 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=8&arc=1">August 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=7&arc=1">July 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=6&arc=1">June 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=5&arc=1">May 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=4&arc=1">April 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=3&arc=1">March 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=2&arc=1">February 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2010&month=1&arc=1">January 2010</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=12&arc=1">December 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=11&arc=1">November 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=10&arc=1">October 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=9&arc=1">September 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=8&arc=1">August 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=7&arc=1">July 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=6&arc=1">June 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=5&arc=1">May 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=4&arc=1">April 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=3&arc=1">March 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=2&arc=1">February 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2009&month=1&arc=1">January 2009</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=12&arc=1">December 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=11&arc=1">November 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=10&arc=1">October 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=9&arc=1">September 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=8&arc=1">August 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=7&arc=1">July 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=6&arc=1">June 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=5&arc=1">May 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=4&arc=1">April 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=3&arc=1">March 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=2&arc=1">February 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2008&month=1&arc=1">January 2008</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=12&arc=1">December 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=11&arc=1">November 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=10&arc=1">October 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=9&arc=1">September 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=8&arc=1">August 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=7&arc=1">July 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=6&arc=1">June 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=5&arc=1">May 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=4&arc=1">April 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=3&arc=1">March 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=2&arc=1">February 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2007&month=1&arc=1">January 2007</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=12&arc=1">December 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=11&arc=1">November 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=10&arc=1">October 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=9&arc=1">September 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=8&arc=1">August 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=7&arc=1">July 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=6&arc=1">June 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=5&arc=1">May 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=4&arc=1">April 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=3&arc=1">March 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=2&arc=1">February 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2006&month=1&arc=1">January 2006</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=12&arc=1">December 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=11&arc=1">November 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=10&arc=1">October 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=9&arc=1">September 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=8&arc=1">August 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=7&arc=1">July 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=6&arc=1">June 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=5&arc=1">May 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=4&arc=1">April 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=3&arc=1">March 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=2&arc=1">February 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2005&month=1&arc=1">January 2005</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=12&arc=1">December 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=11&arc=1">November 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=10&arc=1">October 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=9&arc=1">September 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=8&arc=1">August 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=7&arc=1">July 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=6&arc=1">June 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=5&arc=1">May 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=4&arc=1">April 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=3&arc=1">March 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=2&arc=1">February 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2004&month=1&arc=1">January 2004</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=12&arc=1">December 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=11&arc=1">November 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=10&arc=1">October 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=9&arc=1">September 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=8&arc=1">August 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=7&arc=1">July 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=6&arc=1">June 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=5&arc=1">May 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=4&arc=1">April 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=3&arc=1">March 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=2&arc=1">February 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2003&month=1&arc=1">January 2003</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=12&arc=1">December 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=11&arc=1">November 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=10&arc=1">October 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=9&arc=1">September 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=8&arc=1">August 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=7&arc=1">July 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=6&arc=1">June 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=5&arc=1">May 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=4&arc=1">April 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=3&arc=1">March 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=2&arc=1">February 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2002&month=1&arc=1">January 2002</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=12&arc=1">December 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=11&arc=1">November 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=10&arc=1">October 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=9&arc=1">September 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=8&arc=1">August 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=7&arc=1">July 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=6&arc=1">June 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=5&arc=1">May 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=4&arc=1">April 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=3&arc=1">March 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=2&arc=1">February 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2001&month=1&arc=1">January 2001</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=12&arc=1">December 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=11&arc=1">November 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=10&arc=1">October 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=9&arc=1">September 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=8&arc=1">August 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=7&arc=1">July 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=6&arc=1">June 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=5&arc=1">May 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=4&arc=1">April 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=3&arc=1">March 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=2&arc=1">February 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=2000&month=1&arc=1">January 2000</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=12&arc=1">December 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=11&arc=1">November 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=10&arc=1">October 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=9&arc=1">September 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=8&arc=1">August 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=7&arc=1">July 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=6&arc=1">June 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=5&arc=1">May 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=4&arc=1">April 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=3&arc=1">March 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=2&arc=1">February 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1999&month=1&arc=1">January 1999</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=12&arc=1">December 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=11&arc=1">November 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=10&arc=1">October 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=9&arc=1">September 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=8&arc=1">August 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=7&arc=1">July 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=6&arc=1">June 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=5&arc=1">May 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=4&arc=1">April 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=3&arc=1">March 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=2&arc=1">February 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1998&month=1&arc=1">January 1998</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=12&arc=1">December 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=11&arc=1">November 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=10&arc=1">October 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=9&arc=1">September 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=8&arc=1">August 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=7&arc=1">July 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=5&arc=1">May 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=4&arc=1">April 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=3&arc=1">March 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=2&arc=1">February 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1997&month=1&arc=1">January 1997</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=10&arc=1">October 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=8&arc=1">August 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=7&arc=1">July 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=6&arc=1">June 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=4&arc=1">April 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1996&month=3&arc=1">March 1996</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1995&month=10&arc=1">October 1995</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1995&month=8&arc=1">August 1995</a></li>
+						
+										<li><a href="http://www.pacificresearch.org/press/archive.asp?year=1992&month=8&arc=1">August 1992</a></li>
+						
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td width="180" height="1" bgcolor="black"></td>
+							</tr>
+						</table>
+	<div id="right">
+	
+	</div>
+						<!-- End Main Left Content -->
+					</td>
+					<td width="5"></td>
+				</tr>
+			</table>
+
+			<!-- Begin Footer -->
+			<table cellpadding="0" cellspacing="0" border="0" width="780">
+	<tr>
+		<td width="780" height="60" id="footer">One Embarcadero Center, Suite 350 • San Francisco, CA 94111 • (415) 989-0833 • © 2008 Pacific Research Institute. All Rights Reserved.</td>
+	</tr>
+	<tr><td><img src="/images/spacer.gif" height="5" border="0" /></tr>
+	<tr>
+		<td align="center"><a href="http://www.eResources.com" target=_blank><img src="/images/poweredby_eResources.gif" alt="Powered by eResources" border="0" /></a></td>
+	</tr>
+	<tr><td><img src="/images/spacer.gif" height="15" border="0" /></tr>
+</table>
+<script type="text/javascript" language="javascript" src="/scripts/main.js"></script>
+<script type="text/javascript" language="JavaScript" src="/scripts/routines.js"></script>
+<script type="text/javascript" language="JavaScript" src="/scripts/general.js"></script>
+			<!-- End Footer -->
+			
+		</td>
+		<td width="50%" class="bg">
+			<table cellpadding="0" cellspacing="0" border="0" width="10" height="100%" align="left">
+				<tr>
+					<td width="10" height="100%" id="bg_right_pattern">
+						<img src="/images/bg_right_shadow.jpg" width="10" height="1100" alt="" title="" />
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

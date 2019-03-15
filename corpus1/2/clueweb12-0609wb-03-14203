@@ -1,0 +1,950 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-04T20:11:58Z
+WARC-TREC-ID: clueweb12-0609wb-03-14203
+WARC-IP-Address: 188.65.32.163
+WARC-Payload-Digest: sha1:XCFDZKE56N3X63UP2LLYMOWWBTJYFUCH
+WARC-Target-URI: http://www.whitingandpartners.co.uk/services/capital_gains_tax_rate.htm
+WARC-Record-ID: <urn:uuid:8f9c13bd-f3cb-46e7-b082-c42b0350f5e8>
+Content-Type: application/http; msgtype=response
+Content-Length: 48311
+
+HTTP/1.1 200 OK
+Content-Length: 48018
+Content-Type: text/html
+Last-Modified: Tue, 03 Nov 2009 17:56:49 GMT
+Accept-Ranges: bytes
+ETag: "e8a2164af5cca1:7dc"
+Server: Microsoft-IIS/6.0
+X-Powered-By: PleskWin
+X-Powered-By: ASP.NET
+Date: Sun, 04 Mar 2012 20:11:56 GMT
+Connection: close
+
+<html>
+
+<head>
+
+<title>Capital Gains Tax Rate > Worried that you are going to pay too much ?</title>
+
+<META NAME="description" CONTENT="Let us restructure your affairs to minimise your eventual capital gains tax rate.">
+<META NAME="keywords" CONTENT="capital gains tax, rate, cgt.">
+<META NAME="author" CONTENT="Gopher Systems Ltd, Pewsey, Wiltshire, UK - Web Design & Development in Southern England">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+
+<link rel=stylesheet type="text/css" href="whiting.css">
+
+<style type="text/css">
+<!--
+
+
+//-->
+</style>
+
+<script language="JavaScript1.3" type="text/javascript" src="jse_form.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+// starting state array
+stateArray = new Array
+(
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+)
+
+
+function doIt(id,ip,did)
+{
+currState = stateArray[id];
+
+mpt = id + "-txt";
+
+if(currState==0)
+	{
+	if(ip=="1")
+		{
+		stateArray[id] = 1;
+		document.getElementById(id).src = "assets/wap-nav-01-minus.gif";
+		document.getElementById(did).style.display = "block";
+		document.getElementById(mpt).style.backgroundColor = "#dee3ef";
+		}
+
+	if(ip=="2")
+		{
+		stateArray[id] = 1;
+		document.getElementById(id).src = "assets/wap-nav-02-minus.gif";
+		document.getElementById(did).style.display = "block";
+		document.getElementById(mpt).style.backgroundColor = "#dee3ef";
+		}
+
+	if(ip=="3")
+		{
+		stateArray[id] = 1;
+		document.getElementById(id).src = "assets/wap-nav-03-minus.gif";
+		document.getElementById(did).style.display = "block";
+		document.getElementById(mpt).style.backgroundColor = "#dee3ef";
+		}
+	}
+
+else
+	{
+	if(ip=="1")
+		{
+		stateArray[id] = 0;
+		document.getElementById(id).src = "assets/wap-nav-01-plus.gif";
+		document.getElementById(did).style.display = "none";
+		document.getElementById(mpt).style.backgroundColor = "transparent";
+		}
+
+	if(ip=="2")
+		{
+		stateArray[id] = 0;
+		document.getElementById(id).src = "assets/wap-nav-02-plus.gif";
+		document.getElementById(did).style.display = "none";
+		document.getElementById(mpt).style.backgroundColor = "transparent";
+		}
+
+	if(ip=="3")
+		{
+		stateArray[id] = 0;
+		document.getElementById(id).src = "assets/wap-nav-03-plus.gif";
+		document.getElementById(did).style.display = "none";
+		document.getElementById(mpt).style.backgroundColor = "transparent";
+		}
+	}
+}
+
+//-->
+</script>
+
+</head>
+
+<body>
+<center>
+  <table cellpadding="0" cellspacing="0" width="770" border="0" style="border-style:solid; border-width:1px; border-color:#4a5d8c;">
+    <tr>
+		<td width="770" valign="top">
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="770" border="0">
+	<tr>
+		    <td valign="top"><a href="http://www.whitingandpartners.co.uk" target="_parent"><img src="../assets/assets/wap-top-all.gif" alt="Whiting &amp; Partners, Chartered Accountants" width=770 height=158 border=0></a></td>
+	</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" width="770" border="0" background="../assets/assets/wap-bg.gif">
+	<tr>
+<!-- navigation -->
+		<td valign="top" rowspan="2">
+
+<!-- search field -->
+		<div style="text-align:center; padding:0px 0px 0px 10px;">
+		<form name="jse_Form" onsubmit="search_form(jse_Form);return false">
+		<input type="text" name="d" size="16" class="search-field"> <input type="button" value="Go" onclick="search_form(jse_Form)" class="search-button">
+		</div>
+		</form>
+
+
+<!-- navigation -->
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1s"><a href="../index.html"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../index.html">Home</a></td>
+			</tr>
+		</table>
+		</div>
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="javascript:doIt('1','1','services')"><img src="../assets/wap-nav-01-minus.gif" alt="+" width=33 height=13 border=0 id="1"></a></td>
+				<td valign="top" width="183" class="sec-nav-1" id="1-txt"><a href="javascript:doIt('1','1','services')">Services</a></td>
+			</tr>
+		</table>
+		</div>
+
+			<div id="services" class="startState">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="javascript:doIt('2','2','accounts')"><img src="../assets/wap-nav-02-plus.gif" alt="+" width=49 height=14 border=0 id="2"></a></td>
+					<td valign="top" width="167" class="sec-nav-1" id="2-txt"><a href="javascript:doIt('2','2','accounts')">Accounts Preparation</a></td>
+				</tr>
+			</table>
+
+
+
+				<div id="accounts" class="startState-off">
+				<table cellpadding="0" cellspacing="0" width="210" border="0">
+					<tr>
+						<td valign="top" width="63" class="lvl123"><a href="../Services/statutory_accounts.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="statutory_accounts.htm">Statutory Accounts</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl123e"><a href="../Services/statutory_accounts.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="Management_Accounts.htm">Management Accounts</a></td>
+					</tr>
+				</table>
+				</div>
+
+
+
+			<div id="" class="startState-on">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="javascript:doIt('3','2','software')"><img src="../assets/wap-nav-02-plus.gif" alt="+" width=49 height=14 border=0 id="3"></a></td>
+					<td valign="top" width="167" class="sec-nav-1" id="3-txt"><a href="javascript:doIt('3','2','software')">Accounting Software</a></td>
+				</tr>
+			</table>
+
+
+
+
+				<div id="software" class="startState-off">
+				<table cellpadding="0" cellspacing="0" width="210" border="0">
+					<tr>
+						<td valign="top" width="65" class="lvl123"><a href="javascript:doIt('9','3','sage')"><img src="../assets/wap-nav-03-plus.gif" alt="Document" width=65 height=14 border=0 id="9"></a></td>
+						<td valign="top" width="151" class="sec-nav-2" id="9-txt"><a href="javascript:doIt('9','3','sage')">Sage</a></td>
+					</tr>
+				</table>
+
+
+					<div id="sage" class="startState-off">
+					<table cellpadding="0" cellspacing="0" width="210" border="0">
+						<tr>
+							<td valign="top" width="" class="lvl1234"><a href="sage_sales.htm"><img src="../assets/wap-nav-04-page.gif" alt="Document" width=79 height=11 border=0></a></td>
+							<td valign="top" width="" class="sec-nav-2"><a href="../Services/sage_sales.htm">Sales</a></td>
+						</tr>
+
+						<tr>
+							<td valign="top" width="65" class="lvl1234e"><a href="sage_support.htm"><img src="../assets/wap-nav-04-page.gif" alt="Document" width=79 height=11 border=0></a></td>
+							<td valign="top" width="153" class="sec-nav-2"><a href="../Services/sage_support.htm">Support</a></td>
+						</tr>
+					</table>
+					</div>
+
+				<div id="" class="startState">
+				<table cellpadding="0" cellspacing="0" width="210" border="0">
+					<tr>
+						<td valign="top" width="63" class="lvl123e"><a href="clearly_business.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/clearly_business.htm">Clearly Business</a></td>
+					</tr>
+				</table>
+				</div>
+				</div>
+			</div>
+
+			<div id="" class="startState">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/advice.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/advice.htm">Advice</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/audit.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/audit.htm">Audit</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Book_Keeping.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Book_Keeping.htm">Book-keeping</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Business_Plans.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Business_Plans.htm">Business Plans</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Company_Formation.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Company_Formation.htm">Company Formation</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Company_Secretarial.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Company_Secretarial.htm">Company Secretarial</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Corporate_Finance.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Corporate_Finance.htm">Corporate Finance</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Directors_Responsibilities.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Directors_Responsibilities.htm">Director's Responsibilities</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Finance_Raising.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Finance_Raising.htm">Finance Raising</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Financial_Projections.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Financial_Projections.htm">Financial Projections</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="http://www.whitingandpartnersfs.co.uk/"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="http://www.whitingandpartnersfs.co.uk/">Wealth Management</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Litigation_Support.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Litigation_Support.htm">Litigation Support</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Payroll.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Payroll.htm">Payroll</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Share_Valuations.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Share_Valuations.htm">Share Valuations</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Solvent_Liquidations.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Solvent_Liquidations.htm">Solvent Liquidations</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="Starting_a_Business.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Starting_a_Business.htm">Starting a Business</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12e"><a href="javascript:doIt('4','2','tax')"><img src="../assets/wap-nav-02-plus.gif" alt="+" width=49 height=14 border=0 id="4"></a></td>
+					<td valign="top" width="167" class="sec-nav-1" id="4-txt"><a href="javascript:doIt('4','2','tax')">Tax</a></td>
+				</tr>
+			</table>
+
+				<div id="tax" class="startState">
+				<table cellpadding="0" cellspacing="0" width="210" border="0">
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Benefits_in_Kind.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Benefits_in_Kind.htm">Benefits in Kind</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Capital_Gains_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2s"><a href="../Services/Capital_Gains_Tax.htm">Capital Gains Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Corporation_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Corporation_Tax.htm">Corporation Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Income_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Income_Tax.htm">Income Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Inheritance_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Inheritance_Tax.htm">Inheritance Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/IR_35.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/IR_35.htm">IR 35</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/National_Insurance.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/National_Insurance.htm">National Insurance</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Overseas_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Overseas_Tax.htm">Overseas Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Paye.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Paye.htm">PAYE</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Personal_Tax.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Personal_Tax.htm">Personal Tax</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Share_Option_Taxation.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Share_Option_Taxation.htm">Share Options</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Stamp_Duty.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Stamp_Duty.htm">Stamp 
+                          Duty</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Tax_Enquiries.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Tax_Enquiries.htm">Tax Enquiries</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Tax_Healthchecks.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Tax_Healthchecks.htm">Tax Healthchecks</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13"><a href="../Services/Tax_Planning.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/Tax_Planning.htm">Tax Planning</a></td>
+					</tr>
+
+					<tr>
+						<td valign="top" width="63" class="lvl13e"><a href="../Services/VAT.htm"><img src="../assets/wap-nav-03-page.gif" alt="Document" width=63 height=11 border=0></a></td>
+						<td valign="top" width="153" class="sec-nav-2"><a href="../Services/VAT.htm">VAT</a></td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="javascript:doIt('5','1','delivery')"><img src="../assets/wap-nav-01-plus.gif" alt="+" width=33 height=13 border=0 id="5"></a></td>
+				<td valign="top" width="183" class="sec-nav-1" id="5-txt"><a href="javascript:doIt('5','1','delivery')">Service Delivery</a></td>
+			</tr>
+		</table>
+		</div>
+
+
+			<div id="delivery" class="startState-off">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Traditional.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Traditional.htm">Traditional</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Content/Outsourcing.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Content/Outsourcing.htm">Outsourced</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Remote.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Remote.htm">Remote</a></td>
+				</tr>
+
+
+			</table>
+			</div>
+
+
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../Services/Advice.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../Services/Advice.htm">Pro-active Advice</a></td>
+			</tr>
+		</table>
+		</div>
+
+
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="javascript:doIt('6','1','trade')"><img src="../assets/wap-nav-01-plus.gif" alt="+" width=33 height=13 border=0 id="6"></a></td>
+				<td valign="top" width="183" class="sec-nav-1" id="6-txt"><a href="javascript:doIt('6','1','trade')">Trade Specialisms</a></td>
+			</tr>
+		</table>
+		</div>
+
+			<div id="trade" class="startState-off">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../TradeSpecialisms/agriculture.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/agriculture.htm">Agriculture</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../TradeSpecialisms/Construction.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/Construction.htm">Construction</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../TradeSpecialisms/Doctors.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/Doctors.htm">Doctors</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../TradeSpecialisms/Contractors.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/Contractors.htm">Contractors</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../TradeSpecialisms/Property_Investments.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/Property_Investments.htm">Property Investment</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12e"><a href="../TradeSpecialisms/Solicitors.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../TradeSpecialisms/Solicitors.htm">Solicitors</a></td>
+				</tr>
+			</table>
+			</div>
+
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="javascript:doIt('7','1','client')"><img src="../assets/wap-nav-01-plus.gif" alt="+" width=33 height=13 border=0 id="7"></a></td>
+				<td valign="top" width="183" class="sec-nav-1" id="7-txt"><a href="javascript:doIt('7','1','client')">Client Types</a></td>
+			</tr>
+		</table>
+		</div>
+
+
+			<div id="client" class="startState-off">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Charities.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Charities.htm">Charities</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Clubs.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Clubs.htm">Clubs</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Estates.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Estates.htm">Estates</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Individuals.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Individuals.htm">Individuals</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Groups.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Groups.htm">Groups</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Limited_Companies.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Limited_Companies.htm">Limited Companies</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Limited_Liability_Partnerships.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Limited_Liability_Partnerships.htm">Limited Liability Partnerships</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Sole_Traders.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Sole_Traders.htm">Sole Traders</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Property_Investors.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Property_Investors.htm">Property Investors</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Pension_Schemes.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Pension_Schemes.htm">Pension Schemes</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Partnerships.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Partnerships.htm">Partnerships</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Trusts.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Trusts.htm">Trusts</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12e"><a href="../Services/UK_Subsidiaries.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/UK_Subsidiaries.htm">UK Subsidiaries</a></td>
+				</tr>
+			</table>
+			</div>
+
+
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="javascript:doIt('8','1','about')"><img src="../assets/wap-nav-01-plus.gif" alt="+" width=33 height=13 border=0 id="8"></a></td>
+				<td valign="top" width="183" class="sec-nav-1" id="8-txt"><a href="javascript:doIt('8','1','about')">About Us</a></td>
+			</tr>
+		</table>
+		</div>
+
+
+
+			<div id="about" class="startState-off">
+			<table cellpadding="0" cellspacing="0" width="210" border="0">
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../history.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../History.htm">History</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../our_culture.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Our_Culture.htm">Our Culture</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Partners.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Partners.htm">Partners</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Register_of_Expertise.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Register_of_Expertise.htm">Register of Expertise</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Client_Testimonials.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Client_Testimonials.htm">Client Testimonials</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Free_Initial_Consultation.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Free_Initial_Consultation.htm">Free Initial Consultation</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Fees.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Fees.htm">Fees</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Fee_Protection_Insurance.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Fee_Protection_Insurance.htm">Fee Protection Insurance</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Services/Engagement_Terms.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Services/Engagement_Terms.htm">Engagement Terms</a></td>
+				</tr>
+
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Recruitment.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Recruitment.htm">Recruitment</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12"><a href="../Accountants_East_Anglia.html"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Accountants_East_Anglia.html">Find Us</a></td>
+				</tr>
+
+				<tr>
+					<td valign="top" width="49" class="lvl12e"><a href="../Contact_Whiting_and_Partners.htm"><img src="../assets/wap-nav-02-page.gif" alt="Document" width=49 height=11 border=0></a></td>
+					<td valign="top" width="167" class="sec-nav-1"><a href="../Contact_Whiting_and_Partners.htm">Contact Us</a></td>
+				</tr>
+			</table>
+			</div>
+
+
+		<div id="" class="startState">
+		<table cellpadding="0" cellspacing="0" width="210" border="0">
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../Knowledge_Bank.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../Knowledge_Bank.htm">Knowledge Bank</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../Ask_an_Expert.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../Ask_an_Expert.htm">Ask an Expert</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../UK_Tax_Rates.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../UK_Tax_Rates.htm">UK Tax Rates</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../Secure_Area.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../Secure_Area.htm">Secure Area</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../MainLinks/Useful_Links.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../MainLinks/Useful_Links.htm">Useful Links</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1"><a href="../FAQ.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../FAQ.htm">FAQ</a></td>
+			</tr>
+
+			<tr>
+				<td valign="top" width="33" class="lvl1e"><a href="../Contact_Whiting_and_Partners.htm"><img src="../assets/wap-nav-01-page.gif" alt="Document" width=31 height=11 border=0></a></td>
+				<td valign="top" width="183" class="sec-nav-1"><a href="../Contact_Whiting_and_Partners.htm">Contact Us</a></td>
+			</tr>
+		</table>
+		</div>
+
+
+		<center>
+		&nbsp;<br>
+		<table cellpadding="0" cellspacing="0" width="150" border="0" class="az">
+			<tr>
+				<td width="135" class="az-text"><a href="../Site_Map.htm">A-Z Index</a></td>
+				<td width="15"><a href="../Site_Map.htm"><img src="../assets/wap-az-arrow.gif.gif" alt=">" width=15 height=12 border="0"></a></td>
+			</tr>
+		</table>
+		 <p><a href="../Why_Choose_Us.htm" target="_parent" p class="text"><strong><font color="#FF9933">?</font></strong></a> 
+                  <strong><font color="#336699" size="4">|</font></strong> <a href="../Why_Choose_Us.htm" target="_parent" p class="text"><font color="#FF9933"><em>Why 
+                  choose us</em></font></a> </p>
+				   <p><a href="../The_Big_Picture.htm" target="_parent" p class="text"><strong><font color="#FF9933">The Big Picture</font></strong></a> 
+                  <strong><font color="#336699" size="4">|</font></strong> <a href="../The_Big_Picture.htm" target="_parent" p class="text"><font color="#FF9933"><em>How we help</em></font></a> </p>
+		</center>
+		</td>
+<!-- end of nav -->
+
+		<td></td>
+
+            <!-- text content -->
+            <td valign="top" colspan="3" style="padding:5px 20px;"> <h1 class="title">Capital 
+                Gains Tax Rate</h1>
+              <p class="text"> <a href="../UK_Tax_Rates.htm" target="_parent">Current 
+                UK Tax Rates</a></p>
+              <p class="text">Along with<a href="Inheritance_Tax.htm" target="_parent"> 
+                inheritance tax</a>, capital gains tax is often referred to as 
+                a voluntary tax. With careful <a href="Tax_Planning.htm" target="_parent">prior 
+                planning</a>, it is often possible to reduce or totally avoid 
+                this tax cost. Depending upon your circumstances, we may be able 
+                to advise you in the following ways.</p>
+              <h2 class="text"><strong>Reducing the amount of capital gains tax 
+                assessable</strong></h2>
+              <ul class="text">
+                <li>Claiming all valid tax deductions: 
+                  <ul>
+                    <li>Professional fees,</li>
+                    <li>Enhancement expenditure,</li>
+                    <li>Indexation Allowance,</li>
+                  </ul>
+                </li>
+                <li>Claiming all eligible reliefs: 
+                  <ul>
+                    <li>Taper Relief,</li>
+                    <li>Retirement Relief,</li>
+                    <li>Principal Private Residence Relief,</li>
+                    <li>Lettings Relief,</li>
+                    <li>Gift Relief,</li>
+                    <li>Set-off against current year or brought forward losses.</li>
+                  </ul>
+                </li>
+                <li>Reviewing whether any elections could benefit you, such as 
+                  nominating your principal private residence, if you own and 
+                  occupy more than one house,</li>
+                <li>Advising you of any practical steps you should take. This 
+                  is particuarly relevant for capital gains tax planning for a 
+                  second residential property,</li>
+                <li>Crystallising the paper loss on other investments. This may 
+                  be possible by submitting a neglible value election rather than 
+                  through an actual sale,</li>
+                <li>Considering <a href="Overseas_Tax.htm" target="_parent">emmigrating 
+                  overseas and becoming non-domiciled, for UK capital gains tax 
+                  purposes</a>,</li>
+                <li>Maximising the use of your Annual Exemption,</li>
+                <li>Examining whether <a href="Trusts.htm" target="_parent">trusts</a> 
+                  or <a href="Pension_Schemes.htm" target="_parent">pension funds</a> 
+                  could be used as a capital gains tax planning device,</li>
+                <li>Considering changing the ownership of the asset, particularly 
+                  if your spouse has unused annual exemptions or current year 
+                  or brought forward capital losses,</li>
+                <li>Restructuring the asset held. This can be particularly useful 
+                  within areas of corporate finance, where equities can be exchanged 
+                  for loan notes, which can be redeemed over a number of years, 
+                  taking advantage of more than one year's worth of annual exemption.</li>
+              </ul>
+              <h2 class="text"><strong>Delaying when the capital gains tax is 
+                payable</strong></h2>
+              <ul class="text">
+                <li>Influencing the timing of the sale, including considering 
+                  whether the disposal can be spread over more than one tax year, 
+                  to maximise available reliefs and exemptions,</li>
+                <li>Delaying payment of tax on the assessable capital gain by 
+                  reinvesting the proceeds and claiming: 
+                  <ul>
+                    <li>Rollover relief,</li>
+                    <li>Holdover relief,</li>
+                    <li>Deferral Relief.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="text">The most popular capital gains tax service we offer 
+                is calculating your current exposure to this tax, then discussing 
+                your options for restructuring your affairs to reduce this tax.</p>
+              <p class="text">Agreeing your capital gains tax liability with the 
+                Inland Revenue is achieved by completing the capital gains supplementary 
+                pages of a normal personal tax return. Clients who are fearful 
+                that this gain may be<a href="Tax_Investigations.htm" target="_parent"> 
+                investigated by the Inland Revenue</a> may wish to consider taking 
+                out our<a href="../Fee_Protection_Insurance.htm" target="_parent"> 
+                fee protection insurance</a>. </p>
+              <p class="text">Seek our <a href="advice.htm" target="_parent">advice</a> 
+                in structuring your financial affairs and rest assured that you 
+                will not be paying any more capital gains tax than you absolutely 
+                have to. In addition, we shall complete all of the necessary paperwork 
+                for you and communicate with the Inland Revenue, to agree the 
+                liability, on your behalf.</p>
+              <h3 class="text"><b>Practical Examples of our Capital Gains Tax 
+                Rate Expertise</b> </h3>
+              <table width="" border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                  <td valign="top" class="text"><ul>
+                      <li><a href="../Content/Taper_Relief_on_Lettings.htm" target="_parent">Capital 
+                        gains tax taper relief on let property.</a></li>
+                      <li>Advising on the tax treatment of selling off part of 
+                        your garden as a building plot.</li>
+                    </ul></td>
+                  <td valign="top"><img src="../assets/assets/t.gif" width="1" height="1" border="0"></td>
+                  <td valign="top" class="text"><ul>
+                      <li><a href="../Content/Self_Administered_Pensions.htm" target="_parent">Sheltering 
+                        appreciating assets within your own pension fund, to shelter 
+                        them from CGT.</a></li>
+                      <li><a href="../Content/Bed_and_Breakfasting_post_April_1998.htm" target="_parent">Bed 
+                        and Breakfasting</a> shares sitting at a gain. </li>
+                    </ul></td>
+              </table></td>
+		
+		</tr>
+		
+	<tr>
+		<td></td>
+
+<!-- more information -->
+		<td valign="top">
+		<table cellpadding="0" cellspacing="1" width="90%" border="0" class="more-box">
+			<tr>
+				  <td class="more-title">Find out more, through a no obligation 
+                    free initial consultation:</td>
+			</tr>
+
+			<tr>
+				  <td height="354" valign="top"> 
+                    <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tr>
+						<td height="130" valign="middle" class="more-photo"><a href="../BuryStEdmunds/philip_peters.htm" target="_parent"><img src="../Graphics/People/PDP.jpg" alt="Philip Peters" width="71" height="100" border="0"></a></td>
+
+<td valign="middle"><p class="more-consult-text">If you are interested in capital 
+                            gains tax rates, please contact <a href="../BuryStEdmunds/philip_peters.htm" target="_parent">Philip 
+                            Peters</a>, our technical specialist, or allow him 
+                            to contact you by completing your details below.</p>
+                          <p class="more-consult-text">Our other specialists: 
+                            <a href="../KingsLynn/James_Cater.htm" target="_parent">James 
+                            Cater</a> and <a href="../March/Barbara_Nicholas.htm" target="_parent">Barbara 
+                            Nicholas</a>.<br>
+                          </p>
+                          </td>
+
+
+					</tr>
+				</table>
+                     <form method="post" action="http://whitingandpartners.co.uk/cgi-bin/live-single-mailer.pl" name="">
+				    <table cellpadding="4" cellspacing="0" width="100%" border="0">
+                      <tr> 
+                        <td rowspan="4"><img src="../assets/assets/t.gif" width="30" height="1" border="0"></td>
+                        <td valign="top" class="more-form-text">Name : <br> <input type="text" size="32" name="name" class="more-form"></td>
+                        <td valign="top"></td>
+                        <td valign="top"></td>
+                        <td rowspan="4"><img src="../assets/assets/t.gif" width="30" height="1" border="0"></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" class="more-form-text">Telephone No or 
+                          Email Address : <br> <input type="text" size="32" name="email_or_phone" class="more-form"></td>
+                        <td valign="top"></td>
+                        <td valign="top" class="more-form-text">Preferred Contact 
+                          Time :<br> <input type="text" size="22" name="contact-time" class="more-form"></td>
+                      </tr>
+                      <tr> 
+                        <td valign="top" colspan="3" class="more-form-text">Details 
+                          :<br> <textarea rows="4" cols="70" name="enquiry" class="more-form"></textarea></td>
+                      </tr>
+                      <td class="less-form"><input name="realname" type="text"></td>
+                    </table>
+                    <table cellpadding="4" cellspacing="0" width="100%" border="0">
+                      <tr> 
+                        <td><img src="../assets/assets/t.gif" width="25" height="1" border="0"></td>
+                        <td valign="top" class="more-consult-text">&nbsp;</td>
+                        <td valign="top" align="right"><input name="submit" type="submit" class="more-button" value="Send"></td>
+                        <td><img src="../assets/assets/t.gif" width="27" height="1" border="0"></td>
+                      </tr>
+                    </table>
+                  
+                      <input type="hidden" name="recipient" value="philippeters" />
+				<input type="hidden" name="subject" value="Website Enquiry - Capital Gains Tax Rate" />
+				<input type="hidden" name="redirect" value="http://www.whitingandpartners.co.uk/thankyou.htm">
+				<input type="hidden" name="required" value="name,email_or_phone">
+				<input type="hidden" name="missing_fields_redirect" value="http://www.whitingandpartners.co.uk/error.htm">
+ 				</form>
+				</td>
+			</tr>
+		</table>
+
+		      <p class="note">&nbsp;</p>
+		</td>
+	</tr>
+
+<!-- size fixing row -->
+	<tr>
+		<td valign="top" bgcolor="#a5afc5" width="216"><img src="../assets/assets/t.gif" width="216" height="1" border="0"></td>
+		<td width="10"><img src="../assets/assets/t.gif" width="10" height="1" border="0"></td>
+		<td valign="top" width="560"><img src="../assets/assets/t.gif" width="544" height="1" border="0"></td>
+	</tr>
+</table>
+
+
+
+
+<table cellpadding="0" cellspacing="0" width="770" border="0">
+	<tr>
+		<td background="../assets/assets/wap-bottom-all.gif" width="769" class="legal" style="padding:20px 0px 0px 0px;">
+		<center>
+                <a href="../Legal_Disclaimer.htm" target="_parent" class="legal">Legal 
+                Disclaimer</a> | <a href="../Privacy_Policy.htm" target="_parent" class="legal">Privacy 
+                Policy</a> 
+              </center>
+		</td>
+
+		<td width="1" background="../assets/assets/wap-bottom-all-2.gif"><img src="../assets/assets/t.gif" alt="Whiting and Partners - Chartered Accountants" width=1 height=44 border=0></td>
+	</tr>
+</table>
+
+
+		</tr>
+	</td>
+</table>
+</center>
+</body>
+
+</html>

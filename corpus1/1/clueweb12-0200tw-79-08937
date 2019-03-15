@@ -1,0 +1,328 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-18T03:48:40Z
+WARC-TREC-ID: clueweb12-0200tw-79-08937
+WARC-IP-Address: 174.129.26.93
+WARC-Payload-Digest: sha1:LKYOUFJLATDHBG3GA5KTVHIJCUZCDJGC
+WARC-Target-URI: http://160328.myxocaienergy.com/chocolate-news
+WARC-Record-ID: <urn:uuid:bef8dc97-e8d0-4a5f-a632-61d673eaa405>
+Content-Type: application/http; msgtype=response
+Content-Length: 18265
+
+HTTP/1.1 200 OK
+Date: Sat, 18 Feb 2012 03:48:40 GMT
+Server: Apache/2.2.9 (Debian) PHP/5.2.6-1+lenny10 with Suhosin-Patch mod_ssl/2.2.9 OpenSSL/0.9.8g
+X-Powered-By: PHP/5.2.6-1+lenny10
+P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Chocolate in the News - My Xocai Energy	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="/img/favicon.ico" type="image/x-icon" rel="icon" /><link href="/img/favicon.ico" type="image/x-icon" rel="shortcut icon" /><meta name="content-language" content="en"/><link rel="stylesheet" type="text/css" href="/css/common/common_style.css" /><link rel="stylesheet" type="text/css" href="/css/common/jquery.ui.all.css" /><link rel="stylesheet" type="text/css" href="/css/common/jquery.ui.selectmenu.css" /><link rel="stylesheet" type="text/css" href="/css/style.css" /><link rel="stylesheet" type="text/css" href="/css/tabs.css" />	<!--[if lte IE 7]> <link rel="stylesheet" type="text/css" href="/css/ie7hacks.css" /> <![endif]-->
+<script type="text/javascript" src="/js/common/jquery-1.5.1.min.js"></script><script type="text/javascript" src="/js/common/jquery-ui/jquery.ui.core.js"></script><script type="text/javascript" src="/js/common/jquery-ui/jquery.ui.widget.js"></script><script type="text/javascript" src="/js/common/jquery-ui/jquery.ui.position.js"></script><script type="text/javascript" src="/js/common/jquery-ui/jquery.ui.selectmenu.js"></script>		<!--[if lte IE 8]><!--><script type="text/javascript" src="/js/common/modernizr-custom.js"></script><!--<![endif]-->
+<script type="text/javascript" src="/js/jquery.dropdownPlain.js"></script><script type="text/javascript" src="/js/jcarousellite_1.0.1.min.js"></script><script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script><script type="text/javascript" src="/js/common/subpanel_timeout.js"></script><script type="text/javascript" src="/js/common/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="/js/common/wizard/jquery.inputfocus-0.9.min.js"></script></head>
+
+<body id="full_body_mxi3">
+	<div id="stage_bg_repeat_mxi3">
+		<div id="stage_bg_mxi3">
+			<div id="stage">
+				<div id="logo" class="">
+					<a href="/">
+						<img src="/img/logo_mxi3.jpg" border="0" alt="" />					</a>
+				</div>
+
+				<form id="MarketSelector" method="post" action="/markets/select_market"><fieldset style="display:none;"><input type="hidden" name="_method" value="POST" /></fieldset><div class="input select"><select name="data[Market][id]" id="MarketId">
+<option value="">Select Market</option>
+<option value="2">&lt;img src=&quot;/common/img/flags/eu.png&quot; alt=&quot;&quot; /&gt; Europe</option>
+<option value="1" selected="selected">&lt;img src=&quot;/common/img/flags/us.png&quot; alt=&quot;&quot; /&gt; North America</option>
+</select></div></form><script type="text/javascript">	
+	$(function(){			
+		$('select#MarketId').selectmenu({
+			style:'popup',
+			width: 50,
+			menuWidth: 200
+		}).change(function() {
+			if (this.value != '') {
+				this.form.submit();
+			}
+		});
+	});
+</script>
+				<div id="contact">
+					<script type="text/javascript" src="/js/common/rot13.js"></script><a href="/contact"><img src="/badge.png" alt="Lynette Henk" title="Lynette Henk" id="user_badge" /></a>				</div>
+		<div id="main_nav">
+			<div id="box">
+									<a href="/" class="main_nav">
+						<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+						<span class="nav_middle">Home</span>
+						<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+					</a>
+													<div id="nav_spacer"> </div>
+					<ul class="menu">
+						<li class='active'>
+							<a href="/tab/healthy-chocolate-1" class="main_nav">
+								<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+								<span class="nav_middle">Healthy Chocolate</span>
+								<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+							</a>
+							
+													</li>
+						
+					</ul>
+									<div id="nav_spacer"> </div>
+					<ul class="menu">
+						<li>
+							<a href="/tab/products-1" class="main_nav">
+								<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+								<span class="nav_middle">Products</span>
+								<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+							</a>
+							
+													</li>
+						
+					</ul>
+									<div id="nav_spacer"> </div>
+					<ul class="menu">
+						<li>
+							<a href="/tab/science-1" class="main_nav">
+								<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+								<span class="nav_middle">Science</span>
+								<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+							</a>
+							
+													</li>
+						
+					</ul>
+									<div id="nav_spacer"> </div>
+					<ul class="menu">
+						<li>
+							<a href="/tab/opportunity-1" class="main_nav">
+								<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+								<span class="nav_middle">Opportunity </span>
+								<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+							</a>
+							
+													</li>
+						
+					</ul>
+									<div id="nav_spacer"> </div>
+					<ul class="menu">
+						<li>
+							<a href="/tab/success-stories-1" class="main_nav">
+								<span class="nav_corner"><img src="/img/nav_bg_left_mxi3.png" border="0" alt="" /></span>
+								<span class="nav_middle">Success Stories</span>
+								<span class="nav_corner"><img src="/img/nav_bg_right_mxi3.png" border="0" alt="" /></span>
+							</a>
+							
+													</li>
+						
+					</ul>
+								
+								
+				
+			</div>
+							<div id="div_float_right_nav">
+					<a href="http://160328.myxocaienergy.com/K8kriy0cPOFYKZoU7DjgPg2MqG8-Pzhb2hLKjrPKSY0" class="main_nav main_nav_join_url">
+						<span class="nav_corner"><img src="/img/join_nav_bg_left.png" border="0" alt="" /></span>
+						<span class="join_nav_middle">Order Now</span>
+						<span class="nav_corner"><img src="/img/join_nav_bg_right.png" border="0" alt="" /></span>
+					</a>
+									</div>
+					</div>
+		<!--  start of layout content -->
+		<div id="content_bg_mxi3">			
+		<div id="main_l" class='main_l_full_width'>
+				
+				<link rel="stylesheet" type="text/css" href="/css/common/fancybox/jquery.fancybox-1.3.4.css" /><script type="text/javascript" src="/js/common/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="/js/common/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<div id="subhead">
+				<h4>Healthy Chocolate</h4>
+				<div id='panel-number-links' class="right">
+							<a href="/chocolate-and-athletes"><img src="/img/num_nav_arrow_left.gif" alt="" /></a>				<a href="/human-health"><img src="/img/num_nav_1.gif" alt="" /></a> <a href="/xocai-vs-candy-chocolate"><img src="/img/num_nav_2.gif" alt="" /></a> <a href="/chocolate-and-athletes"><img src="/img/num_nav_3.gif" alt="" /></a> <img src="/img/num_nav_4_active.gif" alt="" /> 				<a href="/dr-q-a"><img src="/img/num_nav_arrow_right.gif" alt="" /></a>					</div>
+	</div>
+<div id="rotator" >
+<ul class='panel_button_list'><li><a href="/human-health">Cacao & Human Health</a></li><li><a href="/xocai-vs-candy-chocolate">Xocai vs. Candy Chocolate</a></li><li><a href="/chocolate-and-athletes">Chocolate and Athletes</a></li><li class = "active"><a href="/chocolate-news">Chocolate in the News</a></li></ul><div class='clear'></div><div style="width: 880px;">
+<script src="/js/jquery-latest.js"></script>
+<script src="/js/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script type="text/javascript">// <![CDATA[
+		$(document).ready(function(){
+			var slider = $('#slider1').bxSlider({
+				controls: true
+			});
+							
+		$('#slide1').click(function() {
+            slider.goToSlide(0);
+            return false;
+        });
+		$('#slide2').click(function() {
+            slider.goToSlide(1);
+            return false;
+        });
+		$('#slide3').click(function() {
+            slider.goToSlide(2);
+            return false;
+        });
+		$('#slide4').click(function() {
+            slider.goToSlide(3);
+            return false;
+        });
+		$('#slide5').click(function() {
+            slider.goToSlide(4);
+            return false;
+        });
+		$('#slide6').click(function() {
+            slider.goToSlide(5);
+            return false;
+        });
+		$('#slide7').click(function() {
+            slider.goToSlide(6);
+            return false;
+        });
+		$('#slide8').click(function() {
+            slider.goToSlide(7);
+            return false;
+        });
+
+		$('#slide9').click(function() {
+            slider.goToSlide(8);
+            return false;
+        });
+	});
+// ]]></script>
+<h1>Chocolate in the News</h1>
+<p><em>Over the past several years, cacao and dark, healthy chocolate have attracted the attention of the medical, health and media worlds. The following are just a few of the headlines highlighting chocolate&rsquo;s many health benefits:</em></p>
+<div id="news_slider">
+<div id="one_half_left" style="min-height: 165px; font-family: 'Myriad Pro'; font-size: 18px; width: 45%; float: left; text-align: left;"><a id="slide1" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_1.jpg" alt="" /></div>
+</a> <a id="slide2" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_2.jpg" alt="" /></div>
+</a> <a id="slide3" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_4.jpg" alt="" /></div>
+</a> <a id="slide4" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_5.jpg" alt="" /></div>
+</a></div>
+<div id="one_half_right" style="min-height: 165px; font-family: 'Myriad Pro'; font-size: 18px; width: 45%; float: right; text-align: left;"><a id="slide5" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_8.jpg" alt="" /></div>
+</a> <a id="slide6" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_10.jpg" alt="" /></div>
+</a> <a id="slide7" style="cursor: pointer; font-weight: 100;">
+<div><img style="margin-right: 10px;" src="../../img/panel_in_news_12.jpg" alt="" /></div>
+</a></div>
+</div>
+<ul id="slider1" style="text-align: left;">
+<li style="height: 120px;"> <img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_1.jpg" alt="" />
+<p>&ldquo;Medical Breakthroughs: Another Reason to Eat Chocolate&rdquo;<br /> <em>Natural Health, July 1, 2005</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_2.jpg" alt="" />
+<p>&ldquo;&hellip;Not only does [chocolate] taste good, studies show that it improves blood flow to your heart...&rdquo;<br /> <em>Newsweek, November 2007</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_4.jpg" alt="" />
+<p>&ldquo;Chocolate the Newest Brain Food?&rdquo;<br /> <em>Shape, September 1, 2006</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_5.jpg" alt="" />
+<p>&ldquo;Chocolate -- particularly dark chocolate -- has been linked in other research to improved cardiovascular health and longevity, possibly because of its antioxidant properties.&rdquo;<br /> <em>U.S. News, April 2010</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_8.jpg" alt="" />
+<p>&ldquo;Boosting Brain Power With Chocolate&rdquo;<br /> <em>Medical News Today, February 2007</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_10.jpg" alt="" />
+<p>&ldquo;New Evidence on Why Cocoa is Beneficial to Cardiovascular Health&rdquo;<br /> <em>EurekAlert! 16 January, 2006</em></p>
+</li>
+<li style="height: 120px;"><img style="float: right; margin-left: 10px;" src="../../img/panel_in_news_12.jpg" alt="" />
+<p>&ldquo;Heart-Healthy Compound in Chocolate Identified&rdquo;<br /> <em>www.ucdavis.edu, 18 January 2006</em></p>
+</li>
+</ul>
+<!--
+<h1>Chocolate in the News</h1>
+<p><em>Over the past several years, cacao and dark, healthy chocolate have attracted the attention of the medical, health and media worlds. The following are just a few of the headlines highlighting chocolate&rsquo;s many health benefits:</em></p>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_1.jpg" _mce_src="../../img/panel_in_news_1.jpg" alt="" />
+<p>&ldquo;Medical Breakthroughs: Another Reason to Eat Chocolate&rdquo;<br /> <em>Natural Health, July 1, 2005</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_2.jpg" _mce_src="../../img/panel_in_news_2.jpg" alt="" />
+<p>&ldquo;&hellip;Not only does [chocolate] taste good, studies show that it improves blood flow to your heart...&rdquo;<br /> <em>Newsweek, November 2007</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_3.jpg" _mce_src="../../img/panel_in_news_3.jpg" alt="" />
+<p>&ldquo;Can chocolate lower your risk for stroke?&rdquo;<br /> <em>Time, February 2010</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_4.jpg" _mce_src="../../img/panel_in_news_4.jpg" alt="" />
+<p>&ldquo;Chocolate the Newest Brain Food?&rdquo;<br /> <em>Shape, September 1, 2006</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_5.jpg" _mce_src="../../img/panel_in_news_5.jpg" alt="" />
+<p>&ldquo;Chocolate   particularly dark chocolate   has been linked in other research to improved cardiovascular health and longevity, possibly because of its antioxidant properties.&rdquo;<br /> <em>U.S. News, April 2010</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_6.jpg" _mce_src="../../img/panel_in_news_6.jpg" alt="" />
+<p>&ldquo;Dark Chocolate May Improve Insulin Sensitivity&rdquo;<br /> <em>WebMD, 11 March 2005</em></p>
+</div>
+<div class="in_news">
+<p>&ldquo;Chocolate Shown to Combat Aging&rdquo;<br /> <em>The Consumer Health Journal, February 2004</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_8.jpg" _mce_src="../../img/panel_in_news_8.jpg" alt="" />
+<p>&ldquo;Boosting Brain Power With Chocolate&rdquo;<br /> <em>Medical News Today, February 2007</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_9.jpg" _mce_src="../../img/panel_in_news_9.jpg" alt="" />
+<p>&ldquo;Chocolate Ingredient May Stop Cancer Cells&rdquo;<br /> <em>www.health.dailynewscentral.com, 18 April 2005</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_10.jpg" _mce_src="../../img/panel_in_news_10.jpg" alt="" />
+<p>&ldquo;New Evidence on Why Cocoa is Beneficial to Cardiovascular Health&rdquo;<br /> <em>EurekAlert! 16 January, 2006</em></p>
+</div>
+<div class="in_news">
+<p>&ldquo;Dark Chocolate Helps Smokers Stay Healthy&rdquo;<br /> <em>Life Style Extra, 20 December 2005</em></p>
+</div>
+<div class="in_news"><img style="float: right; margin-left: 10px;" _mce_style="float: right; margin-left: 10px;" src="../../img/panel_in_news_12.jpg" _mce_src="../../img/panel_in_news_12.jpg" alt="" />
+<p>&ldquo;Heart-Healthy Compound in Chocolate Identified&rdquo;<br /> <em>www.ucdavis.edu, 18 January 2006</em></p>
+</div>
+--></div></div>
+<script type="text/javascript">
+	$(document).ready(function() {
+					
+		$(".fancybox").fancybox({
+			'type'				: 'iframe'
+		});
+	});
+</script>		</div>
+		
+				</div>
+	</div>
+	</div>
+	
+	<div id="footer_spacer">
+		<div id="stage_footer">
+			<span class="float_left">
+				&copy;2012 My Xocai System | <a href="/privacy">Privacy Policy</a>								
+			</span>
+			<span id="google_translate_element"></span><script>
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({
+				pageLanguage: 'en'
+			  }, 'google_translate_element');
+			}
+			</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-21178207-7']);
+		_gaq.push(['_trackPageview']);
+				_gaq.push(['b._setAccount', 'UA-298612-84']);
+		_gaq.push(['b._trackPageview']);
+		
+				_gaq.push(['c._setAccount', 'UA-21178207-38']);
+		_gaq.push(['c._trackPageview']);
+		
+		
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+<!--[if lte IE 8]><!-->
+<script type="text/javascript" src="/js/common/placeholder-modernizr.js"></script><!--<![endif]-->
+</body>
+</html>

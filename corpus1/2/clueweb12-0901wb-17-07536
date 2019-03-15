@@ -1,0 +1,447 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-12T21:55:19Z
+WARC-TREC-ID: clueweb12-0901wb-17-07536
+WARC-Target-URI: https://www.citizenslc.com/calc/Tax1040.html
+WARC-Payload-Digest: sha1:CNENTTVGGCELJDYKDKFVPNBFACJK6XGD
+WARC-IP-Address: 69.48.198.236
+WARC-Record-ID: <urn:uuid:00b5e186-1c1b-4b71-a124-a0c907c8c187>
+Content-Type: application/http; msgtype=response
+Content-Length: 33462
+
+HTTP/1.1 200 OK
+Content-Length: 33190
+Content-Type: text/html
+Last-Modified: Tue, 03 Jan 2012 14:36:38 GMT
+Accept-Ranges: bytes
+ETag: "cc3d01a25cacc1:8405"
+X-Powered-By: ASP.NET
+Server: Goldleaf Web Server
+Date: Mon, 12 Mar 2012 21:55:27 GMT
+Connection: close
+
+<HTML>
+<HEAD>
+<TITLE>1040 Tax Calculator</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="description" CONTENT="Financial Calculators, ©1998-2012 KJE Computer Solutions, LLC. For more information please see http://www.dinkytown.net">
+
+</HEAD>
+<!--
+  Financial Calculators, ©1998-2012 KJE Computer Solutions, LLC.
+  For more information please see:
+  <A HREF="http://www.dinkytown.net">http://www.dinkytown.net</A>
+ -->
+
+<STYLE>
+<!--
+
+BODY, TABLE, TD, TH, UL, OL, DD, DL, P, BR {
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+}
+
+H1 {
+font-family: helvetica, arial, sans-serif;
+font-size: 13pt;
+font-weight: bold;
+}
+
+DT {
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+}
+
+P.footer {
+font-family: helvetica, arial, sans-serif;
+font-size: 9pt;
+}
+
+DIV.large {
+font-family: helvetica, arial, sans-serif;
+font-size: 13pt;
+font-weight: bold;
+}
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+function doLeave() { 
+  document.calcsubmit.btnCallCalc.focus();
+}
+
+function showbuttons() {   
+  var agt       = navigator.userAgent.toLowerCase();
+  var IEMAC     = ((agt.indexOf("msie") != -1) && agt.indexOf("mac")!=-1);
+  var N6        = (agt.indexOf("netscape6") != -1 || (agt.indexOf("netscape/6") !=-1 ));
+  
+  if ( N6 ) {
+    return "Netscape 6 is unable to support our detailed reports.  Please upgrade to Netscape 7 or higher.<P>";
+  }
+  if ( IEMAC ) {
+    return "Internet Explorer for Macintosh is unable to support our detailed reports.  Please use Safari or Firefox.<P>";
+  }
+
+  return "<P><FORM name=calcsubmit><INPUT TYPE='button' value='Calculate' Name='btnCallCalc' onClick='document.calculator.calculate()'><INPUT TYPE='button' value='View Report' Name='btnOpenNote' onClick='openNote()'></FORM>";
+
+}
+
+function openNote(){ 
+  leftpos=0;
+  if (screen) {
+    leftpos=screen.width/2 - 480;
+ }
+
+  var OpenWindow = window.open("","_blank","toolbar=yes,menubar=yes,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,copyhistory=no,width=960,height="+(screen.height-170)+",left="+leftpos+",top=5");
+
+  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
+    setTimeout(function(){openContinue(OpenWindow)},100);
+  else
+    openContinue(OpenWindow);
+}
+
+function openContinue(OpenWindow){
+  var s = " ";
+  s=document.calculator.sJavaScriptReport('HTML');
+  OpenWindow.document.write(s);
+  OpenWindow.document.close();
+  OpenWindow.focus();
+}
+
+
+
+function SiteLeaveNotice()
+{
+return confirm("This Financial Institution has no control over information at any site hyperlinked to or from this Site. The Financial Institution makes no representation concerning and is not responsible for the quality, content, nature, or reliability of any hyperlinked site and is providing this hyperlink to you only as a convenience. The inclusion of any hyperlink does not imply any endorsement, investigation, verification or monitoring by this Financial Institution of any information in any hyperlinked site. In no event shall this Financial Institution be responsible for your use of a hyperlinked site.");} 
+//  -->
+</Script>
+<BODY>
+<!-- \\Main Area\\ -->
+<!--
+  Financial Calculators, ©1998-2012 KJE Computer Solutions, LLC.
+  For more information please see:
+  <A HREF="http://www.dinkytown.net">http://www.dinkytown.net</A>
+ -->
+
+
+<H1>1040 Tax Calculator (Tax Year 2011)</H1><P>Enter your filing status, income, deductions and credits and we will estimate your total taxes for 2011.  Based on your projected withholdings for the year, we can also estimate your tax refund or amount you may owe the IRS next April 2012.  In 2011, Federal income tax rates were scheduled to increase to pre-2001 levels, but the "Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010" left the existing tax brackets in place through 2012. <P><CENTER>
+<!--[if IE]><object  name="calculator" classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" update=no height="425" width="97%"><param name="code" value="Tax1040" /><param name="archive" value="dinkytown.jar" /> <P style="font-size:1px; color: #ffffff" line-height: 1px><![endif]--><![if !IE]><P style="font-size:1px; color: #ffffff" line-height: 1px><![endif]></P><![if !IE]><APPLET width="97%" name="calculator" code="Tax1040.class" align="baseline" WIDTH="500" HEIGHT="425" archive="dinkytown.jar"><![endif]>
+<PARAM name="LINE_1_FILING_STATUS" value="1">
+<PARAM name="LINE_6A_PERSONAL_EXEMPTION" value="0">
+<PARAM name="LINE_6B_SPOUSE_EXEMPTION" value="0">
+<PARAM name="LINE_6C_DEPENDANTS" value="0">
+<PARAM name="LINE_6C_DEPENDANTS_QUALIFYING_FOR_CHILD_TAX_CREDIT" value="0">
+<PARAM name="LINE_7_WAGES_SALARIES_TIPS_ETC" value="50000">
+<PARAM name="LINE_8A_TAXABLE_INTEREST" value="0">
+<PARAM name="LINE_8B_TAXEXEMPT_INTEREST" value="0">
+<PARAM name="LINE_9_ORDINARY_DIVIDENDS" value="0">
+<PARAM name="LINE_10_TAXABLE_REFUNDS_OR_CREDITS_OF_STATE_AND_LOCAL_INCOME_TAXES" value="0">
+<PARAM name="LINE_11_ALIMONY_RECEIVED" value="0">
+<PARAM name="LINE_12_BUSINESS_INCOME_OR_LOSS" value="0">
+<PARAM name="LINE_13_CAPITAL_GAIN_OR_LOSS" value="0">
+<PARAM name="LINE_14_OTHER_GAINS_OR_LOSSES" value="0">
+<PARAM name="LINE_15_TAXABLE_IRA_DISTRIBUTIONS" value="0">
+<PARAM name="LINE_16_TAXABLE_PENSIONS_AND_ANNUITY_DISTRIBUTIONS" value="0">
+<PARAM name="LINE_17_INCOME_FROM_SCHEDULE_E" value="0">
+<PARAM name="LINE_18_FARM_INCOME_OR_LOSS" value="0">
+<PARAM name="LINE_19_UNEMPLOYMENT_COMPENSATION" value="0">
+<PARAM name="LINE_20_TAXABLE_SOCIAL_SECURITY_BENEFITS" value="0">
+<PARAM name="LINE_21_OTHER_INCOME" value="0">
+<PARAM name="LINE_23_IRA_DEDUCTION" value="0">
+<PARAM name="LINE_24_STUDENT_LOAN_INTEREST_DEDUCTION" value="0">
+<PARAM name="EDUCATOR_EXPENSES" value="0">
+<PARAM name="LINE_26_MOVING_EXPENSES" value="0">
+<PARAM name="LINE_27_ONEHALF_OF_SELFEMPLOYMENT_TAX" value="0">
+<PARAM name="LINE_28_SELFEMPLOYED_HEALTH_INSURANCE_DEDUCTION" value="0">
+<PARAM name="LINE_29_KEOP_AND_SELF_EMPLOYED_SEP_AND_SIMPLE_PLANS" value="0">
+<PARAM name="LINE_30_PENALTY_ON_EARLY_WITHDRAWAL_OF_SAVINGS" value="0">
+<PARAM name="LINE_31_ALIMONY_PAID" value="0">
+<PARAM name="LINE_36_ITEMIZED_DEDUCTIONS" value="0">
+<PARAM name="LINE_41_CREDIT_FOR_CHILD_AND_DEPENDENT_CARE_EXPENSES" value="0">
+<PARAM name="LINE_42_CREDIT_FOR_THE_ELDERLY_OR_DISABLED" value="0">
+<PARAM name="LINE_44_EDUCATION_CREDITS" value="0">
+<PARAM name="LINE_45_ADOPTION_CREDIT" value="0">
+<PARAM name="LINE_46_FOREIGN_TAX_CREDIT" value="0">
+<PARAM name="LINE_47_OTHER_CREDITS" value="0">
+<PARAM name="LINE_50_SELFEMPLOYMENT_TAX" value="0">
+<PARAM name="LINE_51_ALTERNATIVE_MINIMUM_TAX" value="0">
+<PARAM name="LINE_52_SOCIAL_SECURITY_AND_MEDICARE_ON_TIPS_NOT_REPORTED" value="0">
+<PARAM name="LINE_53_TAX_ON_IRAS_AND_OTHER_RETIREMENT_PLANS" value="0">
+<PARAM name="LINE_54_ADVANCE_EARNED_INCOME_CREDIT_PAYMENTS" value="0">
+<PARAM name="LINE_55_HOUSEHOLD_EMPLOYMENT_TAXES" value="0">
+<PARAM name="LINE_57_FEDERAL_INCOME_TAX_WITHHELD" value="0">
+<PARAM name="LINE_58_2000_ESTIMATED_TAX_PAYMENTS" value="0">
+<PARAM name="LINE_59_EARNED_INCOME_CREDIT" value="0">
+<PARAM name="LINE_61_AMOUNT_PAID_WITH_FORM_4868" value="0">
+<PARAM name="LINE_62_EXCESS_SOCIAL_SECURITY_AND_RRTA_TAX_WITHHELD" value="0">
+<PARAM name="LINE_63_OTHER_PAYMENTS" value="0">
+<!--
+<PARAM name="MSG_LINE_36_ITEMIZED_DEDUCTIONS" value="Itemized deductions (w/o state tax)">
+<PARAM name="SHOW_STATE_TAX_RATE" value="true">
+<PARAM name="STATE_TAX_RATE" value="0">
+-->
+
+<!--CUSTOM PARAMETERS-->
+
+
+
+<PARAM name="TEXT_FOR_REPORT" value="<HTML>
+<HEAD>
+<TITLE>1040 Tax Calculator</TITLE>
+<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso8859-1'>
+<META NAME='description' CONTENT='Financial Calculators, &QCPQ;1998-2012 KJE Computer Solutions, LLC. For more information please see http://www.dinkytown.net'>
+
+<STYLE>
+<!--
+
+BODY, TABLE, TD, TH, UL, OL, DD, DL, P, BR {
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+}
+
+H1 {
+font-family: helvetica, arial, sans-serif;
+font-size: 13pt;
+font-weight: bold;
+}
+
+DT {
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+font-weight: bold;
+}
+
+P.footer {
+font-family: helvetica, arial, sans-serif;
+font-size: 9pt;
+}
+
+DIV.large {
+font-family: helvetica, arial, sans-serif;
+font-size: 13pt;
+font-weight: bold;
+}
+
+-->
+</STYLE>
+
+</HEAD>
+<BODY bgcolor='#FFFFFF' LINK='#003399' VLINK='#666666' BGCOLOR='#FFFFFF'>
+
+<CENTER><!-- <table border=0 bgcolor='#000000' width=468 cellspacing=1 cellpadding=0><tr><TD valign=top width='100%'><table bgcolor='#FFFFDD' border=0 width=468 cellspacing=1 cellpadding=5><tr><TD valign=top width='100%' align=center valign=middle><DIV class=large>1040 Tax Calculator for 2011 Estimated Taxes</DIV></td></tr></table></TD></TR></TABLE>--></CENTER>
+<H1>Your taxes are estimated at LINE_56_TOTAL_TAX.</H1>**GRAPH**<P>This is AVERAGE_TAX_RATE of your total income of LINE_22_TOTAL_INCOME. Your total tax payments and refundable credits for the year were LINE_64_TOTAL_PAYMENTS. REFUND_OR_OVERPAYMENT_TEXT is estimated at REFUND_OR_OVERPAYMENT_AMT. Your income puts you in the BRACKET_TAX_RATE tax bracket.  <P>
+<CENTER><table width='95%' border=0 bgcolor='#000000' cellspacing=1 cellpadding=0><tr><TD valign=top width='100%'><TABLE width='100%' CELLSPACING=1 CELLPADDING=5 BORDER=0 BGCOLOR='#FFFFFF'><TR BGCOLOR='CCCCCC'><TD valign=top COLSPAN=2><CENTER><b>REFUND_OR_OVERPAYMENT_TEXT REFUND_OR_OVERPAYMENT_AMT</b></CENTER></TD></TR>
+<TR><TD valign=top><b>Filing status</b></TD><TD valign=top><b>LINE_1_FILING_STATUS</b></TD></TR>
+<TR><TD valign=top><b>Total exemptions claimed: LINE_6D_TOTAL_EXEMPTIONS_CLAIMED</b></TD><TD valign=top>
+<TABLE width=90% CELLSPACING=1 CELLPADDING=0 BORDER=0 BGCOLOR='#FFFFFF'>
+<TR><TD valign=top>Personal exemption</TD><TD valign=top>LINE_6A_PERSONAL_EXEMPTION</TD></TR>
+<TR><TD valign=top>Spouse exemption</TD><TD valign=top>LINE_6B_SPOUSE_EXEMPTION</TD></TR>
+<TR><TD valign=top>Dependents</TD><TD valign=top>LINE_6C_DEPENDANTS</TD></TR>
+</TABLE>
+</TD></TR>
+<TR><TD valign=top><b>Wages, salaries, tips, etc</b></TD><TD valign=top>LINE_7_WAGES_SALARIES_TIPS_ETC</TD></TR>
+<TR><TD valign=top><b>Taxable interest</b></TD><TD valign=top>LINE_8A_TAXABLE_INTEREST</TD></TR>
+<TR><TD valign=top><b>Tax-exempt interest</b></TD><TD valign=top>LINE_8B_TAXEXEMPT_INTEREST</TD></TR>
+<TR><TD valign=top><b>Ordinary dividends (this includes any qualified dividends)</b></TD><TD valign=top>LINE_9_ORDINARY_DIVIDENDS</TD></TR>
+<TR><TD valign=top><b>Qualified dividends (included in ordinary dividends above)</b></TD><TD valign=top>LINE_9_OTHER_DIVIDENDS</TD></TR>
+<TR><TD valign=top><b>Taxable refunds or credits of state and local income taxes</b></TD><TD valign=top>LINE_10_TAXABLE_REFUNDS_OR_CREDITS_OF_STATE_AND_LOCAL_INCOME_TAXES</TD></TR>
+<TR><TD valign=top><b>Alimony received</b></TD><TD valign=top>LINE_11_ALIMONY_RECEIVED</TD></TR>
+<TR><TD valign=top><b>Business income or loss (Schedule C & E subject to self-employment taxes)</b></TD><TD valign=top>LINE_12_BUSINESS_INCOME_OR_LOSS</TD></TR>
+<TR><TD valign=top><b>Short term capital gain or loss*</b></TD><TD valign=top>LINE_13_SHORT_TERM_CAP_GAIN</TD></TR>
+<TR><TD valign=top><b>Long term capital gain or loss*</b></TD><TD valign=top>LINE_13_LONG_TERM_CAP_GAIN</TD></TR>
+<TR><TD valign=top><b>Other gains or losses</b></TD><TD valign=top>LINE_14_OTHER_GAINS_OR_LOSSES</TD></TR>
+<TR><TD valign=top><b>Taxable IRA distributions</b></TD><TD valign=top>LINE_15_TAXABLE_IRA_DISTRIBUTIONS</TD></TR>
+<TR><TD valign=top><b>Taxable pensions and annuity distributions</b></TD><TD valign=top>LINE_16_TAXABLE_PENSIONS_AND_ANNUITY_DISTRIBUTIONS</TD></TR>
+<TR><TD valign=top><b>Income from rentals, royalties, S corps and Schedule E (not included above)</b></TD><TD valign=top>LINE_17_INCOME_FROM_SCHEDULE_E</TD></TR>
+<TR><TD valign=top><b>Farm income or loss (Schedule F)</b></TD><TD valign=top>LINE_18_FARM_INCOME_OR_LOSS</TD></TR>
+<TR><TD valign=top><b>Unemployment compensation</b></TD><TD valign=top>LINE_19_UNEMPLOYMENT_COMPENSATION</TD></TR>
+<TR><TD valign=top><b>Taxable social security benefits</b></TD><TD valign=top>LINE_20_TAXABLE_SOCIAL_SECURITY_BENEFITS</TD></TR>
+<TR><TD valign=top><b>Other income</b></TD><TD valign=top>LINE_21_OTHER_INCOME</TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total income</b></TD><TD valign=top><b>LINE_22_TOTAL_INCOME</b></TD></TR>
+<TR><TD valign=top><b>Educator expenses</b></TD><TD valign=top>EDUCATOR_EXPENSES</TD></TR>
+<TR><TD valign=top><b>Certain business expenses (form 2106)</b></TD><TD valign=top>CERTAIN_BUSINESS_EXPENSES</TD></TR>
+<TR><TD valign=top><b>Health Savings Account (HSA) deduction (form 8889)</b></TD><TD valign=top>HEALTH_SAVINGS_ACCOUNT</TD></TR>
+<TR><TD valign=top><b>Moving expenses (form 3903)</b></TD><TD valign=top>LINE_26_MOVING_EXPENSES</TD></TR>
+<TR><TD valign=top><b>Self-employment tax deduction  (Schedule SE)</b></TD><TD valign=top>LINE_27_ONEHALF_OF_SELFEMPLOYMENT_TAX</TD></TR>
+<TR><TD valign=top><b>Self-employed SEP, SIMPLE and qualified plans</b></TD><TD valign=top>LINE_29_KEOP_AND_SELF_EMPLOYED_SEP_AND_SIMPLE_PLANS</TD></TR>
+<TR><TD valign=top><b>Self-employed health insurance deduction</b></TD><TD valign=top>LINE_28_SELFEMPLOYED_HEALTH_INSURANCE_DEDUCTION</TD></TR>
+<TR><TD valign=top><b>Penalty on early withdrawal of savings</b></TD><TD valign=top>LINE_30_PENALTY_ON_EARLY_WITHDRAWAL_OF_SAVINGS</TD></TR>
+<TR><TD valign=top><b>Alimony paid</b></TD><TD valign=top>LINE_31_ALIMONY_PAID</TD></TR>
+<TR><TD valign=top><b>IRA deduction</b></TD><TD valign=top>LINE_23_IRA_DEDUCTION</TD></TR>
+<TR><TD valign=top><b>Student loan interest deduction</b></TD><TD valign=top>STUDENT_LOAN_INTEREST_DEDUCTION<BR>Based on a modified AGI of  MAGI_STUDENT_LOAN_INTEREST_DEDUCTION and total allowable student loan interest of LINE_24_STUDENT_LOAN_INTEREST_DEDUCTION
+</TD></TR>
+<TR><TD valign=top><b>Tuition and fees deduction (Form 8917)</b></TD><TD valign=top>ADJUSTED_TUITION_FEES_DEDUCTION<BR>Based on a modified AGI of  MAGI_STUDENT_LOAN_INTEREST_DEDUCTION and total allowable tuition and fees of TUITION_FEES_DEDUCTION</TD></TR>
+<TR><TD valign=top><b>Domestic production activities deduction (form 8903)</b></TD><TD valign=top>DOMESTIC_PRODUCTION_DEDUCTION</TD></TR>
+<TR><TD valign=top><b>Total adjustments</b></TD><TD valign=top>LINE_32_TOTAL_ADJUSTMENTS_23_THROUGH_31</TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Adjusted gross income (AGI)</b></TD><TD valign=top><b>LINE_33_ADJUSTED_GROSS_INCOME</b></TD></TR>
+<TR><TD valign=top><b>Total Credits: LINE_35A_TOTAL_CREDITS</b></TD><TD valign=top>
+<TABLE width=90% CELLSPACING=1 CELLPADDING=0 BORDER=0 BGCOLOR='#FFFFFF'>
+<TR><TD valign=top>65 or older?</TD><TD valign=top>LINE_35A_YOU_WERE_65_OR_OLDER</TD></TR>
+<TR><TD valign=top>Blind?</TD><TD valign=top>LINE_35A_BLIND</TD></TR>
+<TR><TD valign=top>Spouse 65?</TD><TD valign=top>LINE_35A_SPOUSE_WAS_65_OR_OLDER</TD></TR>
+<TR><TD valign=top>Spouse blind?</TD><TD valign=top>LINE_35A_BLIND_SPOUSE</TD></TR>
+</TABLE>
+</TD></TR>
+<TR><TD valign=top><b>Married filing separately</b></TD><TD valign=top>LINE_35B_MARRIED_FILING_SEPARATELY</TD></TR>
+<TR><TD valign=top><b>Itemized deduction</b></TD><TD valign=top>LINE_36_ITEMIZED_DEDUCTIONS</TD></TR>
+<!--STATE_TAX <TR><TD valign=top><b>Additional itemized deduction for state income tax</b></TD><TD valign=top>STATE_TAX_AMOUNT (STATE_TAX_RATE of taxable income)</TD></TR> STATE_TAX-->
+<TR><TD valign=top><b>Can someone claim you as a dependent?</b></TD><TD valign=top>LINE_36_CAN_SOMEONE_CLAIM_YOU_AS_A_DEPENDENT</TD></TR>
+<TR><TD valign=top><b>Standard deduction</b></TD><TD valign=top>LINE_36_STANDARD_DEDUCTION</TD></TR>
+<!--<TR><TD valign=top><b>&NBSP;</b></TD><TD valign=top colspan=2>Standard duction was Increased by  VEHICLE_SALES_TAX for taxes paid on a new vehicle purchase (see Schedule L)<P>Standard duction was Increased by REAL_ESTATE_TAXES for real estate taxes paid (see Schedule L)</TD></TR>-->
+<TR><TD valign=top><b>Deduction to use (higher of Standard deduction and Itemized deduction)</b></TD><TD valign=top>LINE_36_DEDUCTION_TO_USE</TD></TR>
+<TR><TD valign=top><b>Deduction for exemptions</b></TD><TD valign=top>LINE_38_DEDUCTION_FOR_EXEMPTIONS</TD></TR>
+<TR><TD valign=top><b>Taxable income</b></TD><TD valign=top><b>LINE_39_TAXABLE_INCOME</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top  valign=top><b>Tax*</b></TD><TD valign=top><b>LINE_40_TAX</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Alternative Minimum Tax (AMT)</b></TD><TD valign=top><b>LINE_51_ALTERNATIVE_MINIMUM_TAX</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total with AMT</b></TD><TD valign=top><b>LINE_42_TOTAL</b></TD></TR>
+<TR><TD valign=top><b>Foreign tax credit (form 1116)</b></TD><TD valign=top>LINE_46_FOREIGN_TAX_CREDIT</TD></TR>
+<TR><TD valign=top><b>Credit for child and dependent care credit expenses (form 2441)</b></TD><TD valign=top>LINE_41_CREDIT_FOR_CHILD_AND_DEPENDENT_CARE_EXPENSES</TD></TR>
+<TR><TD valign=top><b>Education credits (form 8863, line 23)</b></TD><TD valign=top>LINE_44_EDUCATION_CREDITS</TD></TR>
+<TR><TD valign=top><b>American opportunity credit (Form 8863, line 14 non-refundable portion)</b></TD><TD valign=top>AMERICAN_OPP_NONREFUNDABLE</TD></TR>
+<TR><TD valign=top><b>Retirement savings contributions credit (form 8880)</b></TD><TD valign=top>NEW_48_RETIREMENT_SAVINGS_CREDIT</TD></TR>
+<!--<TR><TD valign=top><b>Residential energy and hybrid vehicle tax credit</b></TD><TD valign=top>VEHICLE_SALES_TAX</TD></TR>-->
+<TR><TD valign=top><b>Child tax credit</b></TD><TD valign=top>LINE_43_CHILD_TAX_CREDIT<BR>Based on LINE_6C_DEPENDANTS_QUALIFYING_FOR_CHILD_TAX_CREDIT qualifying dependents.</TD></TR>
+<TR><TD valign=top><b>Residential energy credits (Form 5695)</b></TD><TD valign=top>LINE_45_ADOPTION_CREDIT</TD></TR>
+<TR><TD valign=top><b>Other credits that are not refundable</b></TD><TD valign=top>LINE_47_OTHER_CREDITS</TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total credits that are non-refundable</b></TD><TD valign=top><b>LINE_48_TOTAL_CREDITS</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total tax after credits</b></TD><TD valign=top><b>LINE_49_TOTAL_TAX_AFTER_CREDITS</b></TD></TR>
+<TR><TD valign=top><b>Self-employment tax (Schedule SE)</b></TD><TD valign=top>LINE_50_SELFEMPLOYMENT_TAX</TD></TR>
+<TR><TD valign=top><b>Unreported Social Security and Medicare tax (forms 4137 & 5329)</b></TD><TD valign=top>LINE_52_SOCIAL_SECURITY_AND_MEDICARE_ON_TIPS_NOT_REPORTED</TD></TR>
+<TR><TD valign=top><b>Additional tax on IRAs and other retirement plans (form 5329)</b></TD><TD valign=top>LINE_53_TAX_ON_IRAS_AND_OTHER_RETIREMENT_PLANS</TD></TR>
+<TR><TD valign=top><b>Household employment taxes (Schedule H) and Advanced earned income credit (W-2 box 9)</b></TD><TD valign=top>LINE_55_HOUSEHOLD_EMPLOYMENT_TAXES</TD></TR>
+<TR><TD valign=top><b>Repayment 2008 first time homebuyer credit (Form 5405)</b></TD><TD valign=top>LINE_55B</TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total other taxes</b></TD><TD valign=top><b>TOTAL_OTHER_TAXES</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total tax before refundable credits</b></TD><TD align=top><b>TOTAL_TAX_BEFORE_REFUNDABLE_CREDITS</b></TD></TR>
+<TR><TD valign=top><b>Earned income credit</b></TD><TD valign=top>LINE_59_EARNED_INCOME_CREDIT<BR><table border=0 width=100%><TR><TD valign=top>Non-taxable combat pay</TD><TD valign=top>NONTAXABLE_COMBAT_PAY</TD></TR>
+<TR><TD valign=top>Reduction for Scholarships, penal income, and retirement income</TD><TD valign=top>EIC_INCOME_REDUCTION
+</TD></TR>
+<TR><TD valign=top> Number of qualifying children</TD><TD valign=top>LINE_6C_DEPENDANTS_QUALIFYING_FOR_EARNED_INCOME_CREDIT</TD></TR>
+<TR><TD valign=top> Lived in the U.S?</TD><TD valign=top>LIVED_IN_THE_US</TD></TR>
+<TR><TD valign=top> Qualified child of another?</TD><TD valign=top>QUALIFYING_CHILD_OF_ANOTHER</TD></TR>
+<TR><TD valign=top>  Age 25 to 65?</TD><TD valign=top>VALID_AGE_RANGE</TD></TR></TABLE></TD></TR>
+<TR><TD valign=top><B>Additional child tax credit (form 8812)</B></TD><TD valign=top>ADDITIONAL_CHILD_TAX_CREDIT</TD></TR>
+<TR><TD valign=top><b>American opportunity credit (Form 8863, line 14 refundable portion)</b></TD><TD valign=top>AMERICAN_OPP_REFUNDABLE</TD></TR>
+<TR><TD valign=top><b>Other credits that are refundable, including first time homeowner (Form 5405),  credit for prior year AMT (Form 8801) and other refundable credits and payments</b></TD><TD valign=top>LINE_63_OTHER_PAYMENTS</TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total refundable credits</b></TD><TD valign=top><b>TOTAL_REFUNDABLE_CREDITS</b></TD></TR>
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total tax</b></TD><TD align=top><b>LINE_56_TOTAL_TAX</b></TD></TR>
+<TR><TD valign=top><b>Federal income tax withheld on Forms W-2 and 1099</b></TD><TD valign=top>LINE_57_FEDERAL_INCOME_TAX_WITHHELD</TD></TR>
+<TR><TD valign=top><b>Estimated tax payments and amount applied on last year's return</b></TD><TD valign=top>LINE_58_2000_ESTIMATED_TAX_PAYMENTS</TD></TR>
+<TR><TD valign=top><b>Excess social security and RRTA tax withheld</b></TD><TD valign=top>LINE_62_EXCESS_SOCIAL_SECURITY_AND_RRTA_TAX_WITHHELD</TD></TR>
+<TR><TD valign=top><b>Any other payments including amount paid with request for extension</b></TD><TD valign=top>LINE_61_AMOUNT_PAID_WITH_FORM_4868</TD></TR>
+
+<TR BGCOLOR='CCCCCC'><TD valign=top><b>Total payments</b></TD><TD valign=top><b>LINE_64_TOTAL_PAYMENTS</b></TD></TR>
+</TABLE></TD></TR></TABLE>
+<P><TABLE width=90%><TR><TD valign=top>
+<P>*Any amount you enter as a short-term capital gain is taxed as normal income.  Any amount you enter as a long-term capital gain or dividend is taxed as follows:<P>
+<UL><LI>This calculator assumes that all of your long-term capital gains and qualified dividends are taxed at either 0% or 15%.<LI>The tax is 0% for the portion of your gain that would have been taxed at 15% or lower tax if it were a short-term gain.<P>  <LI>The tax is 15% for any of your capital gain that would have been taxed at a rate higher than 15% if it were considered a short term gain.<P>
+<LI>This calculator assumes that none of your long-term capital gains come from collectibles, section 1202 gains or unrecaptured 1250 gains.  These types of capital gains are taxed at 28%, 28% and 25% respectively (unless your ordinary income tax bracket is a lower rate).  
+</UL>
+<P>For more information on capital gains tax rates and how they are applied, you may wish to read IRS Publication 17: Your Federal Income Taxes.
+</TD></TR></TABLE>
+<BR>
+</CENTER>
+
+<BR>
+<HR SIZE=1>
+<CENTER><P class=footer>  Information and interactive calculators are made available to you as self-help tools for your independent use and are not intended to provide investment advice. We cannot and do not guarantee their applicability or accuracy in regards to your individual circumstances. All examples are hypothetical and are for illustrative purposes.  We encourage you to seek personalized advice from qualified professionals regarding all personal finance issues. </P></CENTER><br><br>
+</BODY>
+</HTML>
+">
+<H1><CENTER>This Financial Calculator requires SUN's Java™ Plug-in. If you see this message you will need to download SUN's Java™ Plug-in. This can be done automatically by clicking the yellow bar at the top of your browser and choosing “Install ActiveX Control”.
+</CENTER></H1>
+<OL>
+You can also get SUN's Java™ Plug-in here: <A onClick='return SiteLeaveNotice();' href="http://www.java.com/en/download/download_the_latest.jsp" target=_blank ><b>Get the Java™ Plug-in!</b></A>
+
+<P>For more information about this Plug-in please visit: <A onClick='return SiteLeaveNotice();' href="http://www.dinkytown.net/money/sunjvm.html" target=_blank ><b>SUN's Java™ Plug-in</b></A> 
+</OL><!--[if IE]></OBJECT><![endif]--><![if !IE]></APPLET><![endif]>
+ 
+</CENTER><CENTER><SCRIPT>document.write(showbuttons())</SCRIPT>
+</CENTER>
+
+
+<H1>Definitions</H1><P><TABLE align='center' WIDTH="95%"><TR><TD><DL><!--DEFN_START-->
+<DT><a name="0"><b>2011 Tax rates:</b></a><DD> In 2011, Federal income tax rates were scheduled to increase to pre-2001 levels, but the "Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010" left the existing tax brackets in place through 2012.  The income ranges were increased modestly for inflation, but otherwise remained the same as 2010.  Below are the resulting tax rates and income ranges for 2011:
+<CENTER>
+<TABLE WIDTH=90% BORDER=1>
+<TR class=tblheader><TD align=center colspan=5><b>Filing Status and Income Tax Rates 2011</b><P class=footer>Caution: Do not use these tax rate schedules to figure 2010 taxes. Use only to figure 2011 estimates. </P></TD></TR>
+<TR class=tblheader><TD align=center width="12%"><b>Tax rate</b></TD><TD align=center width="22%"><b>Married filing jointly<BR>or qualified widow(er)</b></TD><TD align=center width="22%"><b>Single</b></TD><TD align=center width="22%"><b>Head of household</b></TD><TD align=center width="22%"><b>Married filing separately</b></TD></TR>
+<TR class=tblrow><TD align=center width="12%"><b>10%</b></TD>
+<TD align=center width="22%"> $0 - 17,000</TD>
+<TD align=center width="22%"> $0 - 8,500</TD>
+<TD align=center width="22%"> $0 - $12,150</TD>
+<TD align=center width="22%"> $0 - 8,500</TD></TR>
+
+<TR class=tblrow2><TD align=center width="12%"><b>15% </b></TD>
+<TD align=center width="22%"> $17,000 - 69,000</TD>
+<TD align=center width="22%"> $8,500 - 34,500</TD>
+<TD align=center width="22%"> $12,150 - 46,250</TD>
+<TD align=center width="22%"> $8,500 - 34,500</TD></TR>
+
+<TR class=tblrow><TD align=center width="12%"><b>25%</b></TD>
+<TD align=center width="22%"> $69,000 - 139,350</TD>
+<TD align=center width="22%"> $34,500 - 83,600</TD>
+<TD align=center width="22%"> $46,250 - 119,400</TD>
+<TD align=center width="22%"> $34,500 - 69,675</TD></TR>
+
+<TR class=tblrow2><TD align=center width="12%"><b>28%</b></TD>
+<TD align=center width="22%"> $139,350 - 212,300</TD>
+<TD align=center width="22%"> $83,600 - 174,400</TD>
+<TD align=center width="22%"> $119,400 - 193,350</TD>
+<TD align=center width="22%"> $69,675 - 106,150</TD></TR>
+
+<TR class=tblrow><TD align=center width="12%"><b>33%</b></TD>
+<TD align=center width="22%"> $212,300 - 379,150</TD>
+<TD align=center width="22%"> $174,400 - 379,150</TD>
+<TD align=center width="22%"> $193,350 - 379,150</TD>
+<TD align=center width="22%"> $106,150 - 189,575</TD></TR>
+
+<TR class=tblrow2><TD align=center width="12%"><b>35%</b></TD>
+<TD align=center width="22%"> over $379,150</TD>
+<TD align=center width="22%"> over $379,150</TD>
+<TD align=center width="22%"> over $379,150</TD>
+<TD align=center width="22%"> over $189,575</TD></TR>
+</TABLE></CENTER>
+<CENTER>Source: http://www.irs.gov</CENTER>
+<DT><B><a name="0">Filing status</a></B><DD>Choose your filing status. Your filing status determines the income levels for your federal tax bracket. It is also important for calculating your standard deduction, personal exemptions, and deduction phase out incomes.  The table below summarizes the five possible filing status choices.  It is important to understand that your marital status as of the last day of the year determines your filing status.<P>
+<P><TABLE WIDTH=83% BORDER=1>
+<TR><TD align=center colspan=2><b>Filing Status for 2011</b></P></TD></TR>
+<TR><TD width="30%" valign=top><b>Married filing jointly</b></TD><TD >If you are married, you are able to file a joint return with your spouse.  If your spouse died during the tax year, you are still able to file a joint return for that year.  You may also choose to file separately under the status "Married filing separately".</TD></TR>
+<TR><TD width="30%" valign=top><b>Qualified widow(er)</b></TD><TD>Generally, you qualify for this status if your spouse died during the previous tax year (not the current tax year) and you and your spouse filed a joint tax return in the year immediately prior to their death.  You are also required to have at least one dependent child or stepchild for whom you are the primary provider.</TD></TR>
+<TR><TD width="30%" valign=top><b>Single<P></b></TD><TD valign=top>If you are divorced, legally separated or unmarried as of the last day of the year you should use this status.</TD></TR>
+<TR><TD width="30%" valign=top><b>Head of household</b></TD><TD>This is the status for unmarried individuals that pay for more than half of the cost to keep up a home.  This home needs to be the main home for the income tax filer and at least one qualifying relative.  You can also choose this status if you are married, but didn't live with your spouse at anytime during the last six months of the year.  You also need to provide more than half of the cost to keep up your home and have at least one dependent child living with you. </TD></TR>
+<TR><TD width="30%" valign=top><b>Married filing separately</b></TD><TD>If you are married, you have the choice to file separate returns.  The filing status for this option is "married filing separately".</TD></TR>
+</TABLE>
+<P>
+<DT><a name="1"><b>Dependents</b></a><DD>A dependent is someone you support and for whom you can claim a dependency exemption.  In 2011, each dependent you claim entitles you to receive a $3,700 reduction in your taxable income (see exemptions below). You may also receive a tax credit of up to $1,000 for each dependent child under the age of 17. The credit is, however, phased out for at higher incomes.<P>
+<DT><B>Total exemptions claimed</B><DD>Each exemption you claim reduces your taxable income by $3,700 for 2011. You receive an exemption for yourself, your spouse and one for each of your dependents.<P>
+<DT><a name="2"><b>Capital gain or loss</b></a><DD>This is the total capital gain you realized from the sale of assets.  This calculator allows you to enter your total short-term capital gain for investments held less than one year and your total long-term gain for investments held at least one year.   Any amount you enter as a short-term capital gain is taxed as normal income.  Any amount you enter as a long-term capital gain is taxed as follows:<P>
+<UL><LI>This calculator assumes that all of your long-term capital gains are taxed at either 0% or 15%.<P>  <LI>The tax is 0% for the portion of your gain that would have been taxed at 15% or lower tax if it were a short-term gain.<P>  <LI>The tax is 15% for any of your capital gain that would have been taxed at a rate higher than 15% if it were considered a short-term gain.<P>
+<LI>This calculator assumes that none of your long-term capital gains come from collectibles, section 1202 gains or un-recaptured 1250 gains.  These types of capital gains are taxed at 28%, 28% and 25% respectively (unless your ordinary income tax bracket is a lower rate).  
+</UL>
+<P>Capital gains were scheduled to increase in 2011, however the "Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010" left them at their existing rates shown above.  For more information on capital gains tax rates and how they are applied, you may wish to read IRS Publication 17: Your Federal Income Taxes.
+ <P>
+<DT><B>Business income or loss from Schedule C</B><DD>Any income or loss as reported on Schedule C.<P>
+<DT><B><a name="2">Income from Schedule E</a></B><DD>Rental real estate, royalties, partnerships, S Corporations, trusts, etc.<P>
+
+<DT><B>Total income</B><DD>Total income calculated by adding lines 7 through 21 on your form 1040. For most taxpayers this includes wages, salaries, tips, interest, dividends and gains and losses from a variety of activities.<P>
+<DT><B>Adjusted gross income</B><DD>Adjusted gross income (AGI) is calculated by subtracting all deductions from lines 23 through 33 from your total income. AGI is used to calculate many of the qualifying amounts if you itemized your deductions.<P>
+<DT><B>Taxable income</B><DD>Your total taxable income is your AGI minus your itemized or standard deduction, and your deduction for exemptions.<P>
+<DT><B>Tax</B><DD>This is the total federal income tax you owe for 2011 before any tax credits.<P>
+<DT><B>Total credits</B><DD>Your total tax credits. This amount is subtracted from the total tax amount.<P>
+<DT><B>Total tax after credits</B><DD>This is the total federal income tax you will need to pay in 2011.<P>
+<DT><B>Total other taxes</B><DD>Any other taxes that you owe for 2011. This includes self-employment tax, alternative minimum tax, and household employment taxes.<P>
+<DT><B>Total tax</B><DD>Grand total of your 2011 federal tax bill.<P>
+<DT><B>Total payments</B><DD>Total of all tax payments made in 2011. This includes tax withheld from Forms W-2 and 1099, and estimated taxes paid, earned income credit and excess social security tax withheld.
+<!--DEFN_END--></DL></TD></TR></TABLE>
+
+
+<BR>
+<HR SIZE=1>
+<CENTER>
+<P class=footer> Information and interactive calculators are made available to you as self-help tools for your independent use and are not intended to provide investment advice. We cannot and do not guarantee their applicability or accuracy in regards to your individual circumstances. All examples are hypothetical and are for illustrative purposes.  We encourage you to seek personalized advice from qualified professionals regarding all personal finance issues.  </P></CENTER>
+<BR>
+</BODY>
+</HTML>

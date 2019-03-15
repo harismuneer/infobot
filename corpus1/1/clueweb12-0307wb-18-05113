@@ -1,0 +1,801 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-22T21:44:04Z
+WARC-TREC-ID: clueweb12-0307wb-18-05113
+WARC-IP-Address: 96.8.126.169
+WARC-Payload-Digest: sha1:QYCW23Y2J3DT6IMJAJNJZMP4YRB6GNJY
+WARC-Target-URI: http://imahero.com/readingprogram/civilwar.html
+WARC-Record-ID: <urn:uuid:0e0809d2-1c35-455c-9f54-0fb6f288985a>
+Content-Type: application/http; msgtype=response
+Content-Length: 57609
+
+HTTP/1.1 200 OK
+Date: Wed, 22 Feb 2012 21:43:40 GMT
+Server: Apache
+Last-Modified: Fri, 20 Jan 2012 20:36:59 GMT
+ETag: "2b2974-e017-4b6fba5e2e6c0"
+Accept-Ranges: bytes
+Content-Length: 57367
+Connection: close
+Content-Type: text/html
+
+<html>
+
+<head>
+
+<title>IMA Hero: Reading Program Civil War</title>
+<meta name="description" content="Wolfgang Amadeus Mozart was a hero -- read about his life, the times in which he lived, and...">
+<meta name="keywords" content="Mozart, Wolfgang Mozart, Wolfgang Amadeus Mozart, Amadeus Mozart, Amadeus, Salzburg, Salzburg Austria, Vienna, Vienna Austria, composer, Leopold Mozart, Nannerl Mozart, Nannerl, Constanze Weber, Franz Xaver, Wolferl, requiem mass, classical music, music, National Theatre Prague, Archibishop of Salzburg, clef, symphony, treble clef, concertos, concerto, Age of Enlightenment, Beethoven, Ludwig von Beethoven, Munich Germany, Munich, Hapsburgs, Schonbrunn Palace, Schönbrunn Palace, Mozarteum, piano, music composition, genius, Palace of Versailles, piano music, sonata, sonatas, Bach, Johann Christian Bach, Johann Sebastian Bach, Johann S. Bach, The Pretended Simpleon, Bastien and Bastienne, La finta semplice, sheet music, Padre Giovanni Battista Martini, Padre Martini, Allegri's Miserere, Archbishop Colloredo, symphony, symphonies, musical genius, Haydn, Joseph Haydn, chamber music, Konzertmeister, Colloredo, Hieronymus Colloredo, violin, violin music, Aloysia Weber, Austria, Munich Carnival, Idomeneo, Joseph II, Leopold II, St. Stephen's Cathedral, Enlightenment, Da Ponte, Lorenze Da Ponte, Marriage of Figaro, Don Giovanni, National Theatre, National Theater, Austria tourism, Cosi fan tutte, Così fan tutte, Magic Flute, Die Zauberflote, Die Zauberflöte, opera, opera seria, opera buffa, Jupiter Symphony, Salzburg tourism, Vienna tourism, Salzburg festival, Mozart festival, Mozart festivals, Mozart webring">
+
+
+
+<script language="javascript">
+
+function timelineWindow(url)	{
+
+link=window.open(url,'link','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,width=750,height=325,left=5,top=130');
+//alert(url);
+if (!(link.closed))	{
+
+window.link.focus();
+//alert(url);
+}
+
+}
+</script>
+
+<script language="JavaScript">
+<!--
+function loadImages() { 
+  if (document.images) {
+    var imgFiles = loadImages.arguments;
+    if (document.preloadArray==null) document.preloadArray = new Array();
+    var i = document.preloadArray.length;
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+      preloadArray[i] = new Image;
+      preloadArray[i++].src = imgFiles[j];
+  } }
+}
+
+function restoreImage() { 
+  if (document.swapImageData != null)
+    for (var i=0; i<(document.swapImageData.length-1); i+=2)
+      document.swapImageData[i].src = document.swapImageData[i+1];
+}
+
+function swapImage() { 
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.swapImageData;
+  for (i=0; i < (swapImage.arguments.length-2); i+=3) {
+    objStr = swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = swapImage.arguments[i+2];
+  } }
+  document.swapImageData = swapArray; 
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" background="../media/bkgrndslice.gif" onLoad="MM_preloadImages('../media/ribbon_yellow_sm1.gif')">
+<table width="649" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="138" valign="top" height="1089"> 
+      <table width="130" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td><a href="../index.asp"><img src="../media/logo.gif" width="138" height="94" border="0"></a></td>
+        </tr>
+        <tr valign="top"> 
+          <td><a href="../index.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','../media/home2.gif',1)"><img name="Image18" border="0" src="../media/home1.gif" width="138" height="26"></a></td>
+        </tr>
+        <tr valign="top"> 
+          <td><a href="../collection.html"><img src="../media/thecollection2.gif" width="138" height="27" border="0"></a></td>
+        </tr>
+        <tr valign="top"> 
+          <td><a href="../imahero_form.asp" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','../media/whosyourhero2.gif',1)"><img name="Image19" border="0" src="../media/whosyourhero1.gif" width="138" height="27"></a></td>
+        </tr>
+        <tr valign="top"> 
+          <td><a href="../aboutus.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','../media/aboutus2.gif',1)"><img name="Image20" border="0" src="../media/aboutus1.gif" width="138" height="27"></a></td>
+        </tr>
+        <tr align="right" valign="top"> 
+          <td><a href="../onlinestore.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','../media/onlinestore2.gif',1)"><img name="Image21" border="0" src="../media/onlinestore1.gif" width="138" height="27"></a></td>
+        </tr>
+        <tr align="right" valign="top"> 
+          <td><a href="../imahero_form.asp"><img src="../media/undermenu.gif" width="138" height="63" border="0"></a></td>
+        </tr>
+        <tr align="right"> 
+          <td><img src="../media/featurebear.gif" width="138" height="25" border="0"></td>
+        </tr>
+        <tr align="right" valign="top"> 
+          <td><a href="../onlinestore.html"><img src="../media/bear_alva.gif" width="138" height="121" border="0"></a></td>
+        </tr>
+        <tr align="right" valign="top"> 
+          <td height="44">&nbsp;</td>
+        </tr>
+        <tr align="center" valign="top"> 
+          <td><img src="../media/icon.gif" border="0" width="30" height="34"></td>
+        </tr>
+      </table>
+    </td>
+    <td width="511" valign="top" bgcolor="#FFFFFF" height="50"> 
+      <table width="489" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td colspan="2"><img src="../media/toppiece.gif" width="489" height="18" border="0"></td>
+        </tr>
+      </table>
+      <table width="489" height="50" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td colspan="2"> 
+            <div align="center"> 
+              <p align="left"><a href="../index.asp"><font size="-1">Home</font></a><font size="-1"></font><font color="#000099"><font size="-1" color="#000099">&gt;&gt;</font></font><font size="-1"><a href="../collection.html">Collection</a></font><font color="#000099"><font size="-1"><font color="#000099">&gt;&gt;</font></font></font><font size="-1"><font size="-1"><a href="../readingprogram.html">Reading 
+                Program</a></font></font><font color="#000099"><font size="-1"><font color="#000099"><font size="-1"><font color="#000099">&gt;&gt;</font></font></font></font></font><font size="-1"><a href="../readingprogram/july2002.html">U.S. 
+                History</a></font><font color="#000099"><font size="-1"><font color="#FF0000"><font color="#000099">&gt;&gt;</font>American 
+                Civil War</font></font></font></p>
+              <p align="left">&nbsp;</p>
+              <p align="center"><font size="+2" color="#6633FF"><a href="../readingprogram.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','../media/ribbon_yellow_sm1.gif',1)"><img name="Image24" border="0" src="../media/ribbon_sm.gif" width="72" height="72" align="left"></a><a href="../readingprogram.html"><img src="images/readingprogram.jpg" width="367" height="45" border="0"></a></font><br>
+                <img src="images/civilwar.jpg" width="206" height="23"> </p>
+              <hr noshade align="center">
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div align="center"> 
+        <table width="500" border="0" cellspacing="0" cellpadding="0" height="342">
+          <tr> 
+            <td width="27" valign="top">&nbsp;</td>
+            <td width="500" valign="top"> 
+              <p><font size="-1"></font> <a href="http://www.amazon.com/exec/obidos/ASIN/051626382X/wwwimaherocom" target="_blank"> 
+                </a><font color="#000099"><a href="http://www.amazon.com/exec/obidos/ASIN/0590454226/wwwimaherocom" target="_blank"><img src="../bookstore/images/0590454226.01.TZZZZZZZ.gif" width="111" height="90" border="0"> 
+                If You Lived at the Time of the Civil War (If You)</a></font></p>
+              <p> <font color="#FF0000"><b>What I Learned Section 1 -- Answer 
+                the Following Questions:</b></font><font color="#000099"><b><br>
+                <a name="1"></a>1. Which states seceded from the Union in 1860 
+                and 1861?</b><br>
+                South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana, 
+                Texas, Virginia, Arkansas, North Carolina, and Tennessee.</font></p>
+              <p><font color="#000099">In November, 1860, Abraham Lincoln was 
+                elected President of the United States. At that time, there were 
+                34 states in the Union. The South depended on farming and crops 
+                as its way of life, and southerners depended on slaves to work 
+                on their plantations. The North, on the other hand, depended on 
+                industry and did not have as many slaves. The southern states 
+                thought President Lincoln would end slavery and destroy the South's 
+                way of life.</font></p>
+              <p><font color="#000099">On December 20, 1860, South Carolina became 
+                the first state to secede from (or leave) the Union. By February, 
+                1861, six more states had seceded from the Union. They were Mississippi, 
+                Florida, Alabama, Georgia, Louisiana, and Texas. These seven states 
+                formed the Confederate States of America and elected Jefferson 
+                Davis as President.</font></p>
+              <p><font color="#000099">When Abraham Lincoln was sworn in as President 
+                in March, 1861, he faced a possible civil war. On April 12, 1861, 
+                Union-controlled Fort Sumter was attacked by Confederate forces, 
+                and the Civil War began.</font></p>
+              <p><font color="#000099">Between April and June, 1861, four more 
+                states seceded and joined the Confederate States of America. They 
+                were Virginia, Arkansas, North Carolina, and Tennessee.</font></p>
+              <p><font color="#000099">Twenty-three states remained in the Union. 
+                They were Maine, New Hampshire, Vermont, Massachusetts, Rhode 
+                Island, Connecticut, New York, New Jersey, Pennsylvania, Ohio, 
+                Delaware, Maryland, Kentucky, Indiana, Illinois, Michigan, Wisconsin, 
+                Minnesota, Iowa, Kansas, Missouri, California, and Oregon. In 
+                1863, the western part of Virginia broke away from Virginia, and 
+                it became a new state in the Union. It was called West Virginia.</font></p>
+              <p><font color="#000099">At the start of the Civil War, there were 
+                twenty-two million people living in the North and nine million 
+                people living in the South. <b><font color="#FF0000">Did you know</font></b> 
+                three million of the nine million people living in the South were 
+                slaves?</font></p>
+              <p><font color="#000099">The following is a list of the states and 
+                dates of their secession:<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>South 
+                Carolina:</b> December 20, 1860<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Mississippi:</b> 
+                January 9, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Florida:</b> 
+                January 10, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Alabama:</b> 
+                January 11, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Georgia: 
+                </b>January 19, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Louisiana: 
+                </b>January 26, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Texas:</b> 
+                February 1, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Virginia: 
+                </b>April 17, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Arkansas:</b> 
+                May 6, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>North 
+                Carolina:</b> May 20, 1861<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Tennessee:</b> 
+                June 8, 1861</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="2"></a>2. What happened on 
+                April 12, 1861?<br>
+                </b>The Civil War began at Fort Sumter, South Carolina.</font></p>
+              <p><font color="#000099">On December 20, 1860, South Carolina seceded 
+                from the Union. Fort Sumter was a United States military fort 
+                located in Charleston Harbor, South Carolina, and therefore, it 
+                was under the control of Union forces.</font></p>
+              <p><font color="#000099">On April 12, 1861, Confederate forces attacked 
+                Fort Sumter, and the Civil War began. This bombardment lasted 
+                34 hours, until the Union forces surrendered on April 14.</font></p>
+              <p><font color="#000099">The Civil War lasted four years. It ended 
+                on April 9, 1865, when Confederate General Robert E. Lee surrendered 
+                to Union General Ulysses S. Grant at Appomattox Court House, Virginia.</font></p>
+              <p><font color="#000099"><b><font color="#FF0000">Did you know</font></b> 
+                the Civil War was known by different names? Southerners referred 
+                to it as The War Between the States.</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="3"></a>3. Was the Northern 
+                Army referred to as the Union Army or the Confederate Army?</b><br>
+                </font><font color="#000099">Union Army.</font><font color="#000099"> 
+                The Northern Army was also referred to as the Federal Army, and 
+                the northern soldiers were called Yankees. In general, Union soldiers 
+                wore blue uniforms.</font></p>
+              <p><font color="#000099">When the Civil War began and states seceded 
+                from the Union, southern soldiers resigned from the U.S. Army 
+                and joined confederate units. <b><font color="#FF0000">Did you 
+                know</font></b> Robert E. Lee was one of these soldiers? Lee was 
+                born in Virginia. When Virginia seceded on April 17, 1861, Lee 
+                resigned from the U.S. Army because of his loyalty to his home 
+                state. </font><a href="../herohistory/robert_herohistory.htm">Read 
+                about Robert E. Lee.</a></p>
+              <p><font color="#000099">The Union military consisted of men from 
+                the United States, Germany, Ireland, France, Spain, Great Britain, 
+                and Italy.</font></p>
+              <p><font color="#000099">The Union army signed up 16,000 men for 
+                five years. On April 15, 1861, President Lincoln asked for 75,000 
+                volunteers to serve for ninety days. As the war continued and 
+                the volunteers stopped joining the army, the government offered 
+                money to those who volunteered. In 1863, the Union began drafting 
+                men between the ages of twenty and forty five. However, a man 
+                could get out of the draft by either buying a substitute to fight 
+                in his place or paying $300.</font></p>
+              <p><font color="#000099">Most Union soldiers were between sixteen 
+                and thirty years old. Many were not married. A private was paid 
+                thirteen dollars a month.</font></p>
+              <p><font color="#000099">The Union flag was called the Stars and 
+                Stripes. It consisted of thirty-four stars to represent all the 
+                states, even the eleven which had seceded. In 1863, a star was 
+                added to the flag to represent the newest state, West Virginia.</font></p>
+              <p><font color="#000099"><b><font color="#FF0000">Did you know</font></b> 
+                the North and the South had different names for the same battles? 
+                The North named battles after rivers, and the South named them 
+                after towns. For example, the battle fought on September 17, 1862, 
+                was called Antietam by the North and Sharpsburg by the South. 
+                The battle fought from December 31, 1862, to January 2, 1863, 
+                was called Stones River by the North and Murfreesboro by the South.</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="4"></a>4. Was the Southern 
+                Army referred to as the Union Army or the Confederate Army?</b><br>
+                Confederate Army. The Southern soldiers were called Rebels. In 
+                general, Confederate soldiers wore gray uniforms.</font></p>
+              <p><font color="#000099">At the beginning of the Civil War, the 
+                southern forces were comprised of small state units. President 
+                Jefferson Davis called for 100,000 volunteers. In 1862, the southern 
+                government drafted men between the ages of eighteen and thirty-five. 
+                However, owners of twenty or more slaves did not have to fight.</font></p>
+              <p><font color="#000099">Although privates earned eleven dollars 
+                per month, many of them were not paid until a year later.</font></p>
+              <p><font color="#000099">The Confederate flag was called the Stars 
+                and Bars. Later, the Rebel Flag was adopted.</font></p>
+              <p><font color="#000099"><b><font color="#FF0000">Did you know</font></b> 
+                the South and the North had a different way to name their armies? 
+                The South named its armies after states (or parts of states), 
+                and the North named its armies after rivers. For example, Southern 
+                armies were called the Army of Northern Virginia or the Army of 
+                Tennessee, and Northern armies were called the Army of the Potomac 
+                and the Army of the Tennessee. Did you notice the Northern army 
+                was called the Army of THE Tennessee, and the Southern army was 
+                the Army of Tennessee (without a "the")? Why? Because the Northern 
+                Army was named after "The Tennessee" as in the Tennessee River, 
+                and the Confederate Army was named after "Tennessee" as in the 
+                state of Tennessee.</font></p>
+              <p><font color="#000099"><b><font color="#FF0000">Did you know</font></b> 
+                most of the fighting occurred in the South? The Battles of Antietam 
+                and Gettysburg were two famous battles which occurred in the North. 
+                Antietam was fought on September 17, 1862, in Maryland. Gettysburg 
+                was fought from July 1 - 3, 1863, in Pennsylvania.</font> </p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="5"></a>5. True or False: During 
+                the Civil War, children in the North had more opportunities to 
+                attend school than chil</b></font><b><font color="#000099">dren 
+                in the South.</font></b><font color="#000099"><br>
+                True. </font><font color="#000099">Children in the North continued 
+                to attend public schools during the war. A typical school day 
+                was from 8:00 a.m. to 5:00 p.m. They read from a McGuffey Reader, 
+                did "sums," wrote on a slate, and memorized "pieces" to recite. 
+                If a schoolmaster was drafted into the army, women became teachers 
+                or the school closed. Some children did not go to school because 
+                they worked in factories for low wages to help their family. Some 
+                boys visited their fathers in the army rather than going to school.</font></p>
+              <p><font color="#000099">Before the war, the South had less schools 
+                than the North, and these school were usually private schools. 
+                Wealthy parents would hire a tutor or governess to teach their 
+                children at home. Then the children attended private high schools.</font></p>
+              <p><font color="#000099">During the war, it became more difficult 
+                for southern children to attend school. First, the tutors left 
+                to fight. Second, children had to help out on the farm or in the 
+                house which left less time to study. Third, many schools were 
+                used as hospitals or prisons.</font></p>
+              <p><font color="#000099">African-American children in the South 
+                were not taught to read or write. One child, Frederick Douglass, 
+                knew it was important to learn in order to become free. He secretly 
+                learned from neighborhood white boys. Douglass escaped from slavery 
+                and spoke out against slavery as an adult. Some slaves who knew 
+                how to read and write taught others slaves in "pit schools." Pit 
+                schools were hidden holes in the ground so the slaves would not 
+                be caught.</font> </p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="6"></a>6. How was the news 
+                spread from the front lines?</b><br>
+                Letters, Newspapers, and Magazines.</font></p>
+              <p><font color="#000099">Before the war in the North, people picked 
+                up their letters from the post office or general store. During 
+                the war, two big changes occurred with the U.S. Mail. One, the 
+                mail was divided into classes. First class was used for letters, 
+                second class was used for newspapers, and third class was used 
+                for magazines. The price of postage depended on the class, rather 
+                than on how far the letter traveled. Two, home mail delivery began 
+                in large cities by "postmen." Later in the war, postal money orders 
+                were used so soldiers could send money safely through the mail.</font></p>
+              <p><font color="#000099">In the South, it was more difficult to 
+                get the news from the front lines. Sometimes it could take months 
+                or years for the news to spread. Some mail never made it through 
+                the army lines. Often telegraph lines were cut by the Union Army. 
+                The Vicksburg <i>Citizen</i> and the Richmond <i>Enquirer</i> 
+                followed the battles and printed the names of the casualties. 
+                These newspapers were read aloud in a public place because many 
+                people could not read. When the newspapers ran out of newsprint, 
+                they used wallpaper or wrapping paper.</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#FF0000"><b>What I Learned Section 2 -- Define the 
+                following words:<br>
+                </b></font><font color="#000099"><b>Secede:</b> Leave</font></p>
+              <p><font color="#000099"> <b>Plantation:</b> Large farm</font></p>
+              <p><font color="#000099"> <b>Confederacy:</b> A group of states 
+                working together but allowing each state to keep its own laws</font></p>
+              <p><font color="#000099"> <b>54th Massachusetts Volunteer Infantry:</b> 
+                First African-American regiment</font></p>
+              <p><font color="#000099"> <b>Underground Railroad:</b> A secret 
+                route to travel from the South and slavery to the North and freedom</font></p>
+              <p><font color="#000099"> <b>Emancipation Proclamation:</b> Document 
+                signed by President Abraham Lincoln on January 1, 1863, which 
+                freed the slaves in the South</font><font color="#000099"><br>
+                </font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font><font color="#000099"><br>
+                </font></p>
+              <p><font color="#FF0000"><b> Bonus Questions</b> (Answer 1 of the 
+                Following Questions for Your <a href="../readingprogram.html#FREEBookmark">FREE 
+                Bookmark</a>)<b>:</b></font><font color="#000099"></font><font color="#000099"><br>
+                <b><a name="A"></a>a. Compare the life in the North and the South 
+                during the Civil War.<br>
+                Life in the North during the Civil War<br>
+                </b>People who lived in the North generally continued the same 
+                kind of life during the Civil War. They were not directly affected 
+                by the fighting because most of the battles were fought in the 
+                South. Farming continued in the country, and business continued 
+                in the cities. Women entered the workplace to replace the men 
+                who became soldiers. Children often dressed up in soldiers' uniforms.</font></p>
+              <p><font color="#000099">People who owned farms or businesses made 
+                more money because they sold their food or goods to the Union 
+                Army. Families who worked for someone else experienced a harder 
+                time because the cost of food and housing increased. Workers worked 
+                about ten to twelve hours a day and earned between $2.50 to $3.00 
+                for the whole day.</font></p>
+              <p><font color="#000099">At the same time, prices of food increased 
+                up to 75%. For example, a dozen eggs cost as much as $6. Some 
+                foods were difficult to find because they were grown in the South. 
+                These included rice, sweet potatoes, citrus fruits, and pecans. 
+                Most families ate meat and potatoes. Lunch was usually eaten at 
+                noon, and supper was eaten at 6 o'clock. During the war, canned 
+                food began so soldiers could carry their food while they marched. 
+                There was canned milk and canned fruit.</font></p>
+              <p><font color="#000099">People who lived in the city went to the 
+                circus, attended vaudeville shows (shows with dancing, comedy, 
+                and singing), and watched parades as men marched off to battle. 
+                The Sanitary Commission featured exhibits of captured battle flags 
+                and military items to raise money for the soldiers. People who 
+                lived in the country attended farm fairs.</font></p>
+              <p><font color="#000099">Popular songs in the North included the 
+                "Battle Hymn of the Republic" and "Battle Cry of Freedom."</font></p>
+              <p><font color="#000099"><b><font color="#FF0000">Did you know</font></b> 
+                baseball became a popular sport during and after the Civil War? 
+                Soldiers played in between battles to pass the time. When they 
+                returned home, they taught their children how to play.</font></p>
+              <p><font color="#000099"><b>Life in the South during the Civil War</b><br>
+                Life changed dramatically for people living in the South. Most 
+                of the battles were fought in the South. Food and supplies were 
+                limited because the railroad lines were cut by the Union Army 
+                and the ports were blocked by the Union Navy. The people had to 
+                find new ways to make everyday necessities with what they had. 
+                For example, buttons were made out of dried persimmon seeds and 
+                hats were made out of corn husks or grass. Women and children 
+                (even very young children) had to do more chores while the men 
+                went off to fight.</font></p>
+              <p><font color="#000099">As the war continued, food became more 
+                scarce. Southerners mostly ate what could be grown or gathered. 
+                Meat was difficult to get because it was hunted. Tea was made 
+                from dried berry leaves, coffee was made by boiling grain, and 
+                baking soda was made from corncob ashes. To make the food last, 
+                some families only ate one or two small meals a day.</font></p>
+              <p><font color="#000099">Although there was little time to play 
+                games, children enjoyed pretending to play war. Boys played a 
+                flute, and girls played with a rag doll. Popular songs were "When 
+                Johnny Comes Marching Home" and "Bonnie Blue Flag."</font></p>
+              <p><font color="#000099">Southerners supported the war by sharing 
+                food and clothing with Confederate soldiers. Homes were offered 
+                to the officers. Families helped the wounded soldiers in nearby 
+                hospitals. </font></p>
+              <p><font color="#000099">Slave children were put to work by the 
+                time they were six years old. They would put the animals in the 
+                barn, clean the yard, or run errands. When they were older, they 
+                would work in the fields. They did not have much time to play. 
+                Popular songs among slaves were "Swing Low, Sweet Chariot" and 
+                "Follow the Drinking Gourd."</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="B"></a>b. Compare the life 
+                in the North and the South after the Civil War.</b><br>
+                <b>Life in the North after the Civil War</b><br>
+                During the Civil War, the North suffered about 360,000 casualties. 
+                After the war, there were more factories which led to more jobs. 
+                As former soldiers returned to work, many women left the work 
+                force. The women who continued to work were paid less than the 
+                men.</font></p>
+              <p><font color="#000099">During the war, many workers had delayed 
+                going on strike because it was considered unpatriotic. After the 
+                war, as the companies grew larger, low paid workers fought for 
+                more money and the end to the fourteen-hour work day. Freed slaves 
+                moved to the North, and they were given low-paying jobs.</font></p>
+              <p><font color="#000099">President Abraham Lincoln wanted to reunite 
+                the country quickly and peacefully. However, Lincoln was assassinated 
+                on April 15, 1865. This was just three days after the surrender 
+                at Appomattox Court House. Andrew Johnson succeeded Lincoln as 
+                President.</font></p>
+              <p><font color="#000099"><b>Life in the South after the Civil War</b><br>
+                During the Civil War, the South suffered about 260,000 casualties. 
+                After the war, it took a long time for the South to recover from 
+                the devastation of the war. Cities and towns needed to be rebuilt. 
+                Railroad and telegraph lines needed to be reset. Farms needed 
+                to be replanted without the help of slaves because the Thirteenth 
+                Amendment (ratified in 1865) abolishes slavery.</font></p>
+              <p><font color="#000099">Life was difficult for freed slaves who 
+                remained in the South. They had little education and money, and 
+                they were discriminated against. Some decided to move to the North.</font><font color="#000099"> 
+                </font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#000099"><b><a name="C"></a>c.</b> <b>Describe ONE 
+                of the following people from the North:<br>
+                </b><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Abraham Lincoln:</b> He was the President of the United States 
+                during the Civil War. </font><a href="../herohistory/abe_herohistory.htm">Read 
+                about Abraham Lincoln.</a></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Ulysses S. Grant:</b> He was a Union general. He accepted Confederate 
+                General Robert E. Lee's surrendered at Appomattox Court House, 
+                Virginia, on April 9, 1865. </font><a href="../herohistory/ulysses_herohistory.htm">Read 
+                about Ulysses S. Grant.</a></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>William T. Sherman:</b> He was a Union general.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"><b> 
+                George B. McClellan: </b>He was a Union general and fought at 
+                Antietam (September 17, 1862).</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Ambrose Burnside:</b> He was a Union general.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>George Meade: </b>He was a Union general and fought at Gettysburg 
+                (July 1-3, 1863). </font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Sojourner Truth</b>: She escaped from slavery and spoke about 
+                ending slavery.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Frederick Douglass:</b> He was born a slave in Baltimore. After 
+                learning how to read and write, he escaped from slavery. He became 
+                a well-known speaker against slavery.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Robert Gould Shaw:</b> He was a Union colonel who led the 54th 
+                Massachusetts Volunteer Infantry, the first African-American army 
+                regiment.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Harriet Beecher Stowe:</b> She wrote <i>Uncle Tom's Cabin,</i> 
+                a book about the evils of slavery. </font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Mathew Brady:</b> He was a photographer who followed the armies. 
+                His photographs allowed people far away from the fighting to see 
+                the battlefields upclose.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Thomas Nast:</b> He was an artist who drew a fat, jolly Santa 
+                Claus in a sleigh filled with toys. This began the holiday tradition.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"><b> 
+                Dorothea Dix:</b> She organized a group of nurses to treat wounded 
+                soldiers.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Clara Barton: </b>She brought food and medicine to the battle 
+                lines, and she organized the American Red Cross in 1881.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Dr. Mary Walker:</b> She became the first woman officer in 
+                the U.S. Army and was awarded the Congressional Medal of Honor.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Harriet Tubman</b></font><b><font color="#000099">:</font></b><font color="#000099"> 
+                She was an escaped slave from Maryland. She helped other slaves 
+                escape using the Underground Railroad. <font color="#FF0000"><b>Did 
+                you know</b></font> her nickname was Moses?</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font><font color="#000099"></font></p>
+              <p><font color="#000099"><b><a name="D"></a>d.</b> <b>Describe ONE 
+                of the following people from the South.<br>
+                </b></font><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Jefferson Davis:</b> He was the President of the Confederate 
+                States of America.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Robert E. Lee:</b> He was a general for the Confederate Army. 
+                <font color="#FF0000"><b>Did you know</b></font> his horse's name 
+                was Traveller? </font><a href="../herohistory/robert_herohistory.htm">Read 
+                about Robert E. Lee.</a></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Thomas J. "Stonewall" Jackson:</b> He was a general in the 
+                Confederate Army.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Jeb Stuart: </b>He was a general in the Confederate Army and 
+                led the cavalry.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>James Longstreet: </b>He was a general in the Confederate Army.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>A.P. Hill: </b>He was a general in the Confederate Army.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"><b> 
+                John Mosby:</b> He was a raider in the Confederate Army and a 
+                part of Jeb Stuart's cavalry. <font color="#FF0000"><b>Did you 
+                know</b></font> he was known as the "Grey Ghost" because he was 
+                hard to capture?</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Nathan Bedford Forrest: </b>He was a general in the Confederate 
+                Army.</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font><font color="#000099"></font></p>
+              <p><font color="#000099"><b><a name="E"></a>e. During and after 
+                the Civil War new words were used. Define the origin of ONE of 
+                the following words:</b><br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> <b>Sideburns:</b> 
+                Northern origin. Bushy side whiskers modeled after General Ambrose 
+                Burnside. </font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Greenbacks:</b> Northern origin. Money printed in 1861, named 
+                because it used green ink on the backside.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Bummers:</b> Northern origin. Soldiers who took food and valuables 
+                from the countryside. Today, the name is shortened to bum.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Mailman: </b>Northern origin. Name became common when home 
+                delivery of mail began.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Shampoo: </b>Northern origin. Women began using this word when 
+                they washed their hair.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Chignon: </b>Northern origin. Women's hair wrapped plainly 
+                into a knot in the back. It became a popular hair style for women 
+                to show support for the war.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Dixie:</b> Southern origin. Nickname for the South before the 
+                Civil War. It may have started from the Mason-Dixon Line (line 
+                dividing Pennsylvania and Maryland) or from the ten-dollar bill 
+                marked Dix. The song &quot;I Wish I Was in Dixie's Land&quot; 
+                was played during Jefferson Davis' inauguration as President of 
+                the Confederate States of America. The song was a symbol for the 
+                South.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Mason-Dixon Line:</b> Southern origin. Line dividing Pennsylvania 
+                and Maryland.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Dix:</b> Southern origin. The ten-dollar bill was marked Dix 
+                which means ten in French.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Scalawags: </b>Southern origin. Name used to describe southerners 
+                who worked in the new southern governments set up by the U.S. 
+                government.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                <b>Carpetbaggers: </b>Southern origin. Name used to describe northerners 
+                who came to southern states to sell items at high prices or to 
+                control the votes of former slaves. The name came from their traveling 
+                bags made of carpet-like material.</font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font><font color="#000099"></font></p>
+              <p><font color="#000099"><b><a name="F"></a>f. Use five of the words 
+                in Section 2 in a sentence.</b><br>
+                Answers will vary. Here are sample sentences from our young readers:<br>
+                <img src="../media/bulletpoint.gif" width="9" height="9"> South 
+                Carolina was the first state to <font color="#FF0000"><b>secede</b></font> 
+                from the United States.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                I saw a <font color="#FF0000"><b>plantation</b></font> when I 
+                visited my uncle in Georgia.</font></p>
+              <p><font color="#000099"> <img src="../media/bulletpoint.gif" width="9" height="9"> 
+                The Confederate States of America was a <font color="#FF0000"><b>confederacy.</b></font></font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                Denzel Washington starred in a movie about the <font color="#FF0000"><b>54th 
+                Massachusetts Volunteer Infantry</b></font>. It was called Glory.</font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                Harriet Tubman helped slaves escape on the <font color="#FF0000"><b>Underground 
+                Railroad. </b></font> </font></p>
+              <p><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9"> 
+                The <font color="#FF0000"><b>Emancipation Proclamation</b></font> 
+                freed slaves during the Civil War.</font><font color="#000099"> 
+                </font></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font><font color="#000099"> </font></p>
+              <p><font color="#000099"><b>g. Have a parent or friend give you 
+                a spelling test with EACH of the words in Section 2.</b></font><b><font color="#000099"> 
+                </font></b></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p><font color="#FF0000"><b>More Valuable Information about the 
+                American Civil War:<br>
+                </b></font><a href="../timelines/abe_timeline.htm">IMA Hero&#153; 
+                Civil War History</a><font color="#000099"><a href="../herohistory/abe_herohistory.htm"><br>
+                </a></font><a href="../herohistory/abe_herohistory.htm">IMA Hero&#153; 
+                Abe Lincoln Hero History</a><font color="#000099"><br>
+                </font><a href="../herohistory/robert_herohistory.htm">IMA Hero&#153; 
+                Robert E. Lee Hero History</a><font color="#000099"><br>
+                </font><a href="../herohistory/ulysses_herohistory.htm">IMA Hero&#153; 
+                Ulysses S. Grant Hero History</a><br>
+                <a href="../photos/civilwar_main.html">IMA Hero&#153; Civil War 
+                Photos</a><br>
+                <a href="../photos/civilwar_links.html">IMA Hero&#153; Civil War 
+                Links</a><br>
+                <font color="#000099"> <a href="http://www.nps.gov/anti/" target="_blank">Antietam 
+                National Battlefield</a><br>
+                <a href="http://www.nps.gov/apco/" target="_blank">Appomattox 
+                Court House National Historical Park</a><br>
+                <a href="http://www.nps.gov/fosu/fosu.htm" target="_blank">Fort 
+                Sumter National Monument</a><br>
+                </font><a href="http://www.nps.gov/frsp/" target="_blank"> </a><font color="#000099"><a href="http://www.nps.gov/gett/" target="_blank"> 
+                Gettysburg National Military Park</a></font><font color="#000099"><br>
+                </font><a href="http://www.civil-war.net/" target="_blank">The 
+                Civil War Home Page</a></p>
+              <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                of Page</a></font></p>
+              <p align="right">&nbsp;</p>
+              </td>
+          </tr>
+          <tr> 
+            <td width="27" valign="top">&nbsp;</td>
+            <td width="525" valign="top" height="25" bgcolor="#FFFFFF"> 
+              <div align="center"> 
+                <div align="center">
+                  <div align="center"> 
+                    <hr noshade>
+                    <font color="#000099" size="+1"><b>U.S. History In Depth:</b></font><font color="#000099"><a href="../readingprogram/august2001.html"><br>
+                    </a></font><a href="../readingprogram/july2002.html">U.S. 
+                    History Main Page</a><font color="#000099" size="+1"><b><br>
+                    </b></font><a href="../readingprogram/americanrev.html">American 
+                    Revolution in Depth</a><font color="#000099"><font color="#000099"><font color="#000099"> 
+                    </font>&nbsp;| </font></font><a href="../readingprogram/coveredwagon.html"> 
+                    Traveling West in a Covered Wagon in Depth</a><br>
+                    <font color="#FF0000">American Civil War in Depth</font><font color="#000099"><font color="#000099"><font color="#000099"><font color="#000099"><font color="#000099"><font color="#000099"><font color="#000099"> 
+                    </font>&nbsp;<font color="#000099">| </font>&nbsp;</font></font></font></font></font></font><a href="../readingprogram/crm.html">Civil 
+                    Rights Movement in Depth</a> 
+                    <div align="center"></div>
+                    <div align="left"> 
+                      <div align="center"></div>
+                    </div>
+                    <div align="center"> 
+                      <hr noshade width="50%" align="center">
+                      <font color="#000099" size="+1"><b>Reading Program:<br>
+                      </b></font><a href="../readingprogram.html"> Main Page</a> 
+                      <font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram.html#Subjects">List 
+                      of Subjects</a><a href="../readingprogram/july2001.html"><br>
+                      American Symbols</a><font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram/august2001.html">Native 
+                      Americans</a><font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram/september2001.html">American 
+                      Biographies</a><font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram/february2002.html">African-American 
+                      History</a><font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram/march2002.html">Women 
+                      in History</a><font color="#000099"> &nbsp;| &nbsp;<font color="#FF0000">U.S. 
+                      History</font><font color="#000099"> &nbsp;| &nbsp;</font></font><a href="../readingprogram/august2002.html">The 
+                      American West</a><font color="#000099"> &nbsp;| &nbsp;</font><a href="../readingprogram/september2002.html">U.S. 
+                      Government</a><font color="#000099"><a href="../readingprogram/march2002.html"></a><font color="#000099"> 
+                      &nbsp;| &nbsp;</font></font><a href="../readingprogram/february2003.html">Explorers</a><font color="#000099"><font color="#000099"> 
+                      &nbsp;| &nbsp;</font></font><a href="../readingprogram/march2003.html">American 
+                      Trails</a><font color="#000099"><font color="#000099"> &nbsp;| 
+                      &nbsp;</font></font><a href="../readingprogram/july2003.html">U.S. 
+                      Holidays</a><a href="../readingprogram/july2003.html"></a><a href="../readingprogram/february2003.html"></a><font color="#000099"><font color="#000099"> 
+                      &nbsp;| &nbsp;</font></font><a href="../readingprogram/august2003.html">Patriots</a><font color="#000099"><font color="#000099"> 
+                      &nbsp;| &nbsp;</font></font><a href="../readingprogram/september2003.html">National 
+                      Parks</a></div>
+                </div>
+                  <div align="left"> 
+                    <div align="center"></div>
+                  </div>
+                  <hr noshade>
+                  <p align="left"><font color="#000099"><img src="../media/bulletpoint.gif" width="9" height="9" border="0"> 
+                    Print out and mail in the <a href="../privacy/consent_form.html">Parental 
+                    Consent Form</a><br>
+                    <img src="../media/bulletpoint.gif" width="9" height="9" border="0"> 
+                    Read our <a href="../privacy/childprivacy.html">Children's 
+                    Privacy Policy</a></font></p>
+                </div>
+                <p align="right"><font size="-1"><a href="../readingprogram/civilwar.html">Top 
+                  of Page</a></font></p>
+                <p>&nbsp;</p>
+              </div>
+              </td>
+          </tr>
+        </table>
+        <hr noshade width="85%" align="center">
+        <div align="center"> 
+          <p><b><font size="-1"><font color="#000099"><font color="#000099"><font color="#000099"><a href="../heroclubhouse.html"><img src="../media/hchsignup1.jpg" width="112" height="95" border="0"></a>&nbsp;&nbsp;&nbsp;</font><a href="../onlinestore.html"></a></font></font></font><font color="#000099"><a href="../readingprogram.html"><img src="../media/readprog_big.jpg" width="112" height="96" border="0"></a></font><font color="#000099"><b><font size="+1"></font></b></font></b></p>
+          <p><b><font color="#FF0000">Happy Learning!</font></b></p>
+          <p><font color="#000099">Send Your Questions or Comments to </font><font color="#663333"> 
+            </font><a href="mailto:info@imahero.com">info@imahero.com</a></p>
+          <hr noshade width="85%" align="center">
+        </div>
+        <p>&nbsp;</p></div>
+      </td>
+  </tr>
+</table>
+
+<table width="629" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="2" align="center" width="1">&nbsp; </td>
+    <td height="2" align="center" width="138"> 
+      <p align="center">&nbsp;</p>
+      </td>
+    <td height="2" align="center" width="486" bgcolor="#FFFFFF"> 
+      <p align="center"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><a href="../index.asp">Home</a><font color="#000099"> 
+        | <a href="../collection.html">Collection</a> | <a href="../imahero_form.asp">Who's 
+        Your Hero?</a> | <a href="../aboutus.html">About Us</a> | <a href="../aboutus.html#Privacy">Privacy</a> 
+        |</font><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"> 
+        <font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" face="Arial, Helvetica, sans-serif" size="-2"><font color="#000099" size="-1"><a href="../sitemap.html"><font size="-2">Site 
+        Map</font></a></font></font></font></font> |</font><font color="#000099"> 
+        </font></font></font></font><font color="#000099"> <a href="../onlinestore.html">Online 
+        Store</a></font></font></p>
+      <font color="#000099" face="Arial, Helvetica, sans-serif" size="-2">
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="-2" color="#000099">&copy;1999-2003 
+        StarRise Creations. All rights reserved. The IMA Hero logo<br>
+        and the IMA Hero bears are trademarks of StarRise Creations.<br>
+        </font>
+      </font></td>
+    <td width="4" height="2">&nbsp;</td>
+  </tr>
+</table>
+</body>
+
+</html>
+

@@ -1,0 +1,725 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T07:11:19Z
+WARC-TREC-ID: clueweb12-0013wb-47-32508
+WARC-Target-URI: http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php/ubb/get_topic/f/14/t/006579/p/1.html
+WARC-Payload-Digest: sha1:FEP3LYDIGQRZIKSBIST5D4CXNBFE37UR
+WARC-IP-Address: 216.22.10.216
+WARC-Record-ID: <urn:uuid:57521869-8386-4826-b390-12ba8a3825e6>
+Content-Type: application/http; msgtype=response
+Content-Length: 33944
+
+HTTP/1.1 200 OK
+Date: Sun, 12 Feb 2012 07:11:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.2.13
+Expires: Sun, 12 Feb 2012 07:10:21 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Last-Modified: Sun, 12 Feb 2012 07:09:21 GMT
+Connection: close
+Content-Type: text/html
+
+
+ 
+<html ><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<script language="Javascript1.1" type="text/javascript">
+<!--
+
+var session_cookie = getCookie('session2453378.0021');
+if (session_cookie == null) {
+	var session_dt = "0";
+	var session_j = "0";
+}  else {
+	var session_array = session_cookie.split("&");
+	var session_dt = session_array[0];
+	var session_j = session_array[1];
+}
+
+
+function getCookie(name) {
+	var cname = name + "=";
+	var dc = document.cookie;
+
+	if (dc.length > 0) {
+		begin = dc.indexOf(cname);
+		if (begin != -1) {
+			begin += cname.length;
+			end = dc.indexOf(";", begin);
+			if (end == -1)  {
+				end = dc.length;
+			} // end if
+			return (dc.substring(begin, end));
+		} // end if
+	} // end if
+	return null;
+}
+
+
+var u_cookie = getCookie('ubber2453378.0021');
+if(u_cookie) {
+	u_array = u_cookie.split("&");
+} else {
+	u_array = new Array("", "", "", "", "", "", "", null, null, null);
+} // end if
+
+var ami = "";
+if(('' == u_cookie) ||  (null == u_cookie)) {
+	ami = ".ip-is-loggedin { display: none; } .ip-is-notloggedin { display: }";
+} else {
+	ami = ".ip-is-loggedin { display: ; } .ip-is-notloggedin { display: none }";
+} // end if
+document.writeln('<' + 'style type="text/css">' + ami + '<' + '/style>');
+
+var MONTH_NAMES = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", "Jan", "Feb", "Mar", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var AMPM = Array("AM", "PM");
+// 5 and 6 are reserved
+if(u_array[7]) {
+	dfrm = unescape(u_array[7]);
+} else {
+	dfrm = 'MMM dd, yyyy';
+} // end if
+if(u_array[8]) {
+	tfrm = unescape(u_array[8]);
+} else {
+	tfrm = 'kk:mm';
+} // end if
+if(u_array[9]) {
+	fudge = unescape(u_array[9]);
+} else {
+	fudge = 0;
+} // end if
+
+//-->
+
+</script>
+<script src="http://www.allstocks.com/stockmessageboard/ubb/datelib.js" language="Javascript1.3" type="text/javascript"></script>
+<title>Allstocks.com's Bulletin Board: Figures show tax rates for each presidency from eisenhower </title>
+<meta http-equiv="Pragma" content="no-cache" />
+<link rel="shortcut icon" href="http://www.allstocks.com/stockmessageboard/ubb/favicon.ico" />
+	<base href="http://www.allstocks.com/stockmessageboard/ubb/" />
+<style type="text/css">
+body	{
+	margin:	0;
+	font-family: Verdana, Arial;
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	}
+td	{
+	font-family: Verdana, Arial;
+	font-size: 9pt;
+	}
+span.datestamp-1 {
+	font-weight: bold;
+}
+span.timestamp-1 {
+	color: #800080;
+}
+</style>
+<!--  --><!--  -->
+<META NAME="keywords" CONTENT="free stock quotes, business news, stock, stocks, shares, penny, stockmarket, investment, portfolio, Picks, Links, Charts, Research, Companies, NYSE, NASDAQ, OTCBB, Quotes, historical data, penny stocks.">
+<META NAME="description" CONTENT="Allstocks.com is the Investor and Traders web site. All content is free to use and Includes Auto-refreshing Free real-time news pages, Stock Picks, The worlds largest collection of Investor Links, Penny Stocks and much more.">
+<META HTTP-EQUIV="pragma"  CONTENT="no-cache">
+<META NAME="Author" CONTENT="Allstocks.com">
+<META NAME="Generator" CONTENT="Allstocks.com 216-978-4601">
+<!--  -->
+<script language="Javascript1.3" type="text/javascript">
+		var nuke_quick_reply = 0;
+
+		var real = document.location.href ? document.location.href : document.location;
+		if((real.indexOf("iframe=1") > -1) || (real.indexOf("iframe/1") > -1)) {
+			nuke_quick_reply = 1;
+		} // end if
+
+		u_cookie = getCookie('ubber2453378.0021');
+		if(!u_cookie || u_cookie == null || u_cookie.length < 1) {
+			nuke_quick_reply = 1;
+		} else {
+			u_array = u_cookie.split("&");
+			if(u_array[12] == 1) {
+				nuke_quick_reply = 1;
+			} // end if
+		} // end if
+
+		if(nuke_quick_reply == 1) {
+			document.writeln("<" + "style type=" + '"text/css">');
+			document.writeln("#quickreply { display: none; }");
+			document.writeln("<" + "/style>");
+		} // end if
+</script>
+<!--  -->
+</head>
+
+<body  bgcolor="#FFFFFF" text="#000000" link="#000080" vlink="#2f2f4f" alink = "#800000" >
+
+<center><script type="text/javascript"><!--
+	e9 = new Object();
+    e9.size = "728x90,468x60";
+//--></script>
+<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/Allstockscom/ros/tags.js"></script>
+<p>
+</center>
+ <script language="Javascript1.1" type="text/javascript">
+<!--
+
+	var julians = new Array("2455952.1924");
+	var posts = new Array("000000");
+	var pages = new Array(1);
+
+	var replies = julians.length;
+
+	function bluearrow () {
+
+		var counter = 0;
+		var baseurl = "http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php?ubb=get_topic;f=14;t=006579";
+		var shorturl = document.location.href;
+		var p = 1;
+		var url = "";
+
+		var ploc = shorturl.indexOf("#");
+		if(ploc > -1) {
+			shorturl = shorturl.substr(0, ploc);
+		} // end if
+
+		var reversed = 0;
+
+		while(counter < replies) {
+
+			if((session_j > julians[counter]) && !reversed) {
+				if((pages[counter] == 1) || (pages[counter] == p)) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				counter++;
+				continue;
+			} else if((session_j < julians[counter]) && reversed) {
+				if((pages[counter] == 1) || (pages[counter] == p)) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				counter++;
+				continue;
+			} else {
+				if(pages[counter] < 1) {
+					continue;
+				}
+				if(pages[counter] == p) {
+					url = shorturl + "#" + posts[counter];
+				} else {
+					tp = pages[counter] ? pages[counter] : p;
+					url = baseurl + ";p=" + tp + "#" + posts[counter];
+				}
+				break;
+			} // endif
+
+		} // endwhile
+		return url;
+
+	} // endfunc
+
+//-->
+</script>
+
+<script language="Javascript1.3" type="text/javascript">
+
+	function latest_check () {
+		var real = document.location.href ? document.location.href : document.location;
+		if(real.indexOf("#LATEST") > -1) {
+			document.location.href = bluearrow();
+		} // end if
+	} // end mer
+
+</script>
+
+<center>
+<table border="0" width="95%">
+<tr><td>
+<a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php"><img src="http://www.allstocks.com/stockmessageboard/ubb/allstck4.jpg" border="0" alt="Allstocks.com's Bulletin Board" /></a><font size="1" face="Verdana, Arial"></font>
+</td>
+<td align="center">
+
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=newtopic;f=14"><img src="http://www.allstocks.com/stockmessageboard/ubb/topic5.jpg" alt="Post New Topic" border="0" /></a>&nbsp;&nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=reply;f=14;t=006579"><img src="http://www.allstocks.com/stockmessageboard/ubb/reply5.jpg" border="0" alt="Post A Reply" /></a>
+<br />
+</font>
+<font size="1" face="Verdana, Arial" >
+<span class="ip-is-loggedin"><a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/my_profile.html" title="View your profile">my profile</a>  </span><span class="ip-is-notloggedin"><a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/login.html"  title="Log in to post and check your profile">login</a> | <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/agree.html" title="Registration is free!">register</a> </span>  | <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/search/search_forum/14.html" title="Search">search</a> | <a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php/ubb/faq.html" title="Frequently Asked Questions">faq</a> | <a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php" title="Forum Home">forum home</a><br />
+</font>
+</td></tr></table>
+</center>
+
+<br />
+
+
+<table border="0" cellpadding="2" cellspacing="0" width="95%" align="center">
+<tr><td align="left" valign="bottom"><font face="Verdana, Arial" size="2"><small>
+<script language="Javascript1.3" type="text/javascript">
+<!--
+	var thisurl = bluearrow()
+	if(session_j) {
+		document.writeln("<br /><a href='" + thisurl + "'>Jump to new posts</a> " + "&" + "nbsp" + ";" + "<a href='" + thisurl + "'><img align='middle' src='down.gif' border='0' alt='Jump to Latest Posts' /></a>&nbsp;&nbsp;");
+	} // end if
+//-->
+</script>
+ &nbsp;</small></font></td>
+<td valign="bottom" align="right"><font face="Verdana, Arial" size="2"><a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=next_topic;f=14;t=006579;go=older"><img src="http://www.allstocks.com/stockmessageboard/ubb/prev_topic.gif" border="0" alt="next oldest topic" /></a> &nbsp; <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=next_topic;f=14;t=006579;go=newer"><img src="http://www.allstocks.com/stockmessageboard/ubb/next_topic.gif" border="0" alt="next newest topic" /></a></font></td></tr></table>
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor=""><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+<tr bgcolor="#f7f7f7">
+<td valign="top" align="left">
+<font size="1" face="Verdana, Arial">
+<b>
+&#187; 
+<script language="Javascript" type="text/javascript">
+<!--
+
+var user_cookie = getCookie('ubber2453378.0021');
+
+if(('' == user_cookie) || (null == user_cookie)) {
+	// User is not logged in
+	document.writeln('You are not logged in.' , ' <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/login.html">Login</a> or <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/agree.html">register</a>')
+} else {
+	// User is logged in
+	var user_array=user_cookie.split("&");
+	user_array[2] = unescape(user_array[2]);
+	document.writeln('Hello, ', user_array[2]);
+	document.writeln('[ <a title="Click here to log out." href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/logoff.html">log out</a> ]');
+
+	// PM check
+	var haspms = '0';
+	if(haspms > 0) {
+		document.writeln("<" + "b" + "r />");
+		document.writeln("<" + "a");
+		document.writeln(' href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/my_profile.html"');
+		document.writeln(">" + "<" + "im" + "g src=" + '"http://www.allstocks.com/stockmessageboard/ubb/newpm.gif" border="0" valign="middle" alt=" [New PM] " ' + "/");
+		document.writeln(">You have  " + haspms + "  unread private messages.<" + "/" + "a>");
+	} // end if
+
+} // end else
+
+//-->
+</script>
+
+</b>
+</font>
+</td>
+<td valign="top" align="right">
+<font size="1" face="Verdana, Arial">
+<b>
+<a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php">Allstocks.com's Bulletin Board</a> &raquo; <a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php/ubb/forum/f/14.html"><b>Off-Topic Post, Non Stock Talk</b></a> &raquo; Figures show tax rates for each presidency from eisenhower </b>
+</font>
+</td>
+</tr>
+
+</table></td></tr></table>
+
+
+
+<br />
+
+
+
+<script language="JavaScript1.1" type="text/javascript">
+<!--
+	var ubber_cookie = getCookie('ubber2453378.0021')
+	var ubber_cookie_array = new Array(6);
+	if(ubber_cookie != null) { ubber_cookie_array = ubber_cookie.split("&"); }
+
+	function avatar_line (avatarURL) {
+		if(ubber_cookie_array[6] != 1) {
+			return "<img src='" + avatarURL + "' alt='Avatar Image' height='48' width='48' />";
+		} // end if
+	} // end function
+// -->
+</script>
+
+<center>
+
+<!-- UBB Friend  -->
+
+<table border="0" width="95%">
+<tr>
+<td valign="bottom" align="left">
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=send_topic;t=006579;f=14"><img src="http://www.allstocks.com/stockmessageboard/ubb/ubb_friend_mini.gif" border="0" alt=" - " /></a> <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=send_topic;t=006579;f=14">UBBFriend: Email this page to someone!</a> &nbsp;
+</font>
+</td>
+
+<td align="right" valign="bottom">
+<font size="1"  face="Verdana, Arial">
+<b></b> &nbsp;
+</font></td>
+
+</tr>
+</table>
+
+<!-- End UBB Friend  -->
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor=""><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+
+<tr bgcolor="#D5E6E1">
+<td valign="middle" width="18%" align="left">
+<font size="1" face="Verdana, Arial" color="#000080"><b>
+Author
+</b></font>
+</td>
+<td valign="middle" align="left">
+<font size="1" face="Verdana, Arial" color="#000080"><b>
+Topic: Figures show tax rates for each presidency from eisenhower</b></font>
+</td>
+</tr>
+
+
+<tr><td bgcolor="#f7f7f7" colspan="2">
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tr bgcolor="#f7f7f7">
+<td width="18%" valign="top" align="left"><a name="000000"></a>
+<font size="2" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/get_profile/u/00029850.html" style="color: #000000; text-decoration: none;" target="_blank"><b>raybond</b></a>
+</font>
+<br /><font size="1" face="Verdana, Arial">
+
+Member
+<br />
+
+<br /><br />
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/get_profile/u/00029850.html">Member Rated</a>:<br /><a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/get_profile/u/00029850.html"><img src="user_ratings_4.gif" border="0" alt="4" /></a>
+</font>
+</td>
+<td align="left">
+<a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php/ubb/get_topic/f/14/t/006579/p/1.html#000000"><img src="http://www.allstocks.com/stockmessageboard/ubb/icons/icon1.gif" border="0" alt="Icon 1" /></a>
+<font size="1" color="#800080" face="Verdana, Arial">
+posted <script language="JavaScript1.3" type="text/javascript">
+document.write(timestamp(new Date(2012,0,25,19,24,0), dfrm, tfrm, 0, 0, 0, 0));
+</script><noscript><span class="dateformat-0">January 25, 2012</span> <span class="timeformat-0">19:24</span></noscript>  &nbsp;&nbsp;&nbsp;
+ &nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi/ubb/get_profile/u/00029850.html" target="_blank"><img src="http://www.allstocks.com/stockmessageboard/ubb/profile.gif" border="0" alt="Profile for raybond" /></a>&nbsp;
+
+&nbsp;
+ &nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=private_message;u=00029850"><img src="http://www.allstocks.com/stockmessageboard/ubb/priv_message.gif" border='0' alt="Send New Private Message" /></a>&nbsp;
+ &nbsp; &nbsp;
+ &nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=edit_post;f=14;t=006579;reply_num=000000;u=00029850"><img src="http://www.allstocks.com/stockmessageboard/ubb/edit_ubb6.gif" border="0" alt="Edit/Delete Post" /></a>&nbsp;
+ &nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=reply;f=14;t=006579;replyto=000000"><img src="http://www.allstocks.com/stockmessageboard/ubb/quote_ubb6.gif" border="0" alt="Reply With Quote" /></a>&nbsp;
+</font>
+<hr size="1" style="color:#0000ff" />
+<font size="2" face="Verdana, Arial">
+Figures represent the rates in place at the beginning and ending year of each presidency.<br /><br /><br />Dwight D. Eisenhower<br /> <br />Marginal Tax Rate on Regular Income over $400,000: 92% - 91%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 25%<br /> <br />During the administration of Republican President Dwight D. Eisenhower, a 92 percent marginal income tax rate for top earners in the United States remained from the previous administration of Harry S. Truman. At the time, the highest tax bracket was for income over $400,000.<br /> <br />This was nearly the highest tax rate for top earners in the century, just under the 94 percent rate for income over $200,000 instated during World War II under Franklin D. Roosevelt's presidency.<br /> <br />In 1954, the 92 percent marginal rate decreased to 91 percent under Eisenhower. The maximum tax on long-term capital gains was 25 percent -- a rate that remained in place for a decade.<br /><br /><br />John F. Kennedy<br /> <br />Marginal Tax Rate on Regular Income over $400,000: 91%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 25%<br /> <br />At the beginning of his presidency, John F. Kennedy inherited a tax policy with a 25 percent maximum rate on long-term capital gains and a regular income tax rate of 91 percent – nearly the highest income tax in the century.<br /> <br />There were no changes to these tax policies during his presidency.<br /><br /><br />Lyndon B. Johnson<br /> <br />Marginal Tax Rate on Regular Income: Over $400,000: 91% - Over $200,000: 75.25%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 25% - 26.9%<br /> <br />The marginal tax rate on the highest regular income bracket fell below 90 percent for the first time in 20 years in 1964 – the first year of Lyndon B. Johnson's presidency.<br /> <br />This decrease put the tax rate at 77 percent for income over $400,000. By the end of Johnson's administration, the tax rate fell by 1.75 percentage points, but the threshold for income in the highest tax bracket also fell to $200,000.<br /> <br />This meant that more people were faced with the maximum regular income tax rate of 75.25 percent.<br /> <br />The capital gains tax rate began to rise during Johnson's presidency in a climb that would peak in the mid-70s.<br /><br /><br />Richard M. Nixon<br /> <br />Marginal Tax Rate on Regular Income over $200,000: 77% - 70%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 27.5% - 36.5%<br /> <br />During the Nixon years, the regular tax rate for the highest income bracket decreased back to its level during Johnson's first year in office, and the capital gains rate continued to increase.<br /> <br />By the end of Richard M. Nixon's presidency, the capital gains rate rose by nine percentage points.<br /> <br />Mitt Romney's father, George W. Romney, campaigned for the Republican presidential nomination in 1967 and released his tax returns, "in a move believed without precedent in American politics," according to an article that year in the St. Joseph Gazette, a newspaper in St. Joseph, Missouri.<br /> <br />Romney Sr.'s tax returns showed that he made $2,972,923.58 over the previous year, and the total taxes he paid were $1,099,555.18, according to the St. Joseph Gazette.<br /> <br />In today's release of his tax returns, Romney Jr. revealed that he paid $3 million on total earnings of $21 million in 2010.<br /><br /><br />Gerald R. Ford<br /> <br />Marginal Tax Rate on Regular Income over 200,000: 70%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 36.5% - 39.875%<br /> <br />Ford instated no change to the regular tax rate, but the capital gains maximum tax rate rose to 39.875 percent - its highest levels since the 1950s.<br /> <br />The capital gains tax rate has not been that high since.<br /><br /><br />Jimmy Carter<br /> <br />Marginal Tax Rate on Regular Income over $203,200 - $215,400: 70% <br /><br />Maximum Tax Rate on Long-Term Capital Gains: 39.875% - 28%<br /> <br />Under Jimmy Carter, the income threshold for the highest tax bracket increased by $12,200.<br /> <br />The capital gains tax rate began its decline that would continue through today.<br /><br /><br />Ronald Reagan<br /> <br />Marginal Tax Rate on Regular Income: over $215,400: 69.125% - over $29,750: 28% <br /><br />Maximum Tax Rate on Long-Term Capital Gains: 20% - 28%<br /> <br />Under Reagan, maximum regular income tax rates decreased from nearly 70 percent to 28 percent, but these rates applied to lower income levels. The earlier rate applied to income over $215,400, while the later rate applied to people with income over $30,950.<br /> <br />In the mid-years of the Reagan administration, the regular income threshold for taxation at the maximum rate initially dropped to $85,600 in 1982, but by 1986 rose to $175,250.<br /> <br />The capital gains tax rate under Reagan started at 20 percent. By the time he left office, the capital gains rate had risen to the 28 percent rate that was in place at the end of the Carter administration.<br /><br /><br />George H.W. Bush<br /> <br />Marginal Tax Rate on Regular Income: Over $30,950: 28% - Over $86,500: 31%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 28% - 28.93%<br /> <br />After his famed promise of "no new taxes," the maximum tax rates under George H.W. Bush increased for both regular income and capital gains.<br /> <br />However, as during the Ford, Carter, and mid-Reagan administration, the level of regular income that was taxed the maximum rate would increase from $30,950 to $86,500, causing fewer people to face that tax.<br /> <br />The capital gains rate would not decrease again until the Clinton administration, and the maximum regular income tax rate would not decrease again until George W. Bush entered office in 2001.<br /><br /><br />Bill Clinton<br /> <br />Marginal Tax Rate on Regular Income: over $250,000: 39.6% - over $288,350: 39.6%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 29.19% - 21.19%<br /> <br />During the Clinton administration, the maximum regular income tax rate stayed the same for the highest earners, but the income level taxed at this rate increased by $47,350.<br /> <br />The maximum capital gains tax decreased by eight percentage points.<br /><br /><br />George W. Bush<br /> <br />Marginal Tax Rate on Regular Income: Over $297,350: 39.1% - Over $357,700: 35%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 21.17% - 15.35%<br /> <br />George W. Bush decreased the regular marginal income tax rate for top earners by over four percentage points during his presidency, while increasing the income level for the highest tax bracket $60,350.<br /> <br />In addition, the highest capital gains tax rate fell near to its current rate of 15 percent.<br /><br /><br />Barack Obama<br /> <br />Marginal Tax Rate on Regular Income: over $372,950 - over 388,350: 35%<br /> <br />Maximum Tax Rate on Long-Term Capital Gains: 15%<br /> <br />The Bush tax cuts have remained through the Obama administration, with a 35 percent marginal income tax for the top income bracket and a 15 percent capital gains income tax. However, unless Congress acts by the end of this year, the 2001, 2003 and 2006 tax cuts will expire at the end of December 2012.<br /> <br /><br /><br />Again, the level of income necessary to face the maximum marginal income tax increased from 2009<br /><br />--------------------<br />Wise men learn more from fools than fools from the wise.<br />
+</font>
+<hr size="1" style="color:#0000ff" />
+<font size="1" face="Verdana, Arial">
+ <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=recent_user_posts;u=00029850" style="color: #000000; text-decoration: none;">Posts: <b>2067</b></a> | From: <b>beautiful California</b> | Registered: <b>Sep 2008</b> 
+ &nbsp;|&nbsp; IP: <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=get_ip;f=14;t=006579;reply_num=000000">Logged</a>&nbsp;|&nbsp;<span style="vertical-align: bottom;"><a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=report_a_post;f=14;t=006579;p=1;r=000000"><img src="reportpost.gif" border="0" alt="Report this post to a Moderator" title="Report this post to a Moderator" /></a></span>
+</font>
+</td></tr>
+</table>
+</td></tr>
+
+
+</table></td></tr></table>
+
+
+<!-- Time Zone and Page Jumps -->
+
+<table border="0" width="95%">
+<tr>
+<td align="left" valign="bottom">
+<font size="1" face="Verdana, Arial">
+&nbsp;
+</font>
+</td>
+<td valign="bottom" align="right">
+<font size="1" face="Verdana, Arial">
+<b></b> &nbsp;
+</font>
+</td>
+</tr>
+</table>
+
+<!-- Quick Reply -->
+
+
+<div id="quickreply">
+<br />
+
+<script language="Javascript" type="text/javascript">
+<!--
+
+graems = null;
+previewindow = null;
+function Graems () {
+	graems = window.open(
+		"http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=graemlin_list",
+		"graems",
+		"width=250,height=240,toolbar=no,location=no,directories=no,status,menubar=no,scrollbars,resizable,copyhistory=no"
+		);
+	graems.focus();
+} // end
+
+function Preview () {
+
+	var user_cookie = getCookie('ubber2453378.0021');
+	if( ('' == user_cookie) || (null == user_cookie) ) {
+		alert("Sorry, you must be registered and logged in to preview your post.");
+		return true;
+	}
+
+	previewindow = window.open(
+		"http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=preview_post;f=14;type=reply;quick=1",
+		"preview",
+		"width=800,height=300,toolbar=no,location=no,directories=no,status,menubar=no,scrollbars,resizable,copyhistory=no"
+		);
+	previewindow.focus();
+} // end
+
+function storeCaret (textEl) {
+	if (textEl.createTextRange) {
+		textEl.caretPos = document.selection.createRange().duplicate();
+	} // end if
+} // end storeCaret
+
+function insertAtCaret (textEl, text) {
+	if (textEl.createTextRange && textEl.caretPos) {
+		// MSIE
+		var caretPos = textEl.caretPos;
+		caretPos.text =
+			caretPos.text.charAt(caretPos.text.length - 1) == ' ' ?
+			text + ' ' : text;
+	} else if(textEl.selectionStart && textEl.setSelectionRange) {
+		// Mozilla 1.3+
+		var val = textEl.value;
+		var cpos = textEl.selectionStart;
+		var fpos = cpos + text.length;
+
+		var before = val.substr(0,cpos);
+		var after = val.substr(cpos, val.length);
+		var aspace = after.charAt(0) == ' ' ? "" : " ";
+		var bspace = before.charAt(before.length) == ' ' ? "" : " ";
+
+		textEl.value = before + bspace + text + aspace + after;
+		textEl.setSelectionRange(fpos,fpos); // set cursor pos to end of text
+		textEl.focus();
+	} else {
+		textEl.value  = textEl.value + text; // otherwise just append
+	}
+
+	return true;
+} // end insertAtCaret
+
+// -->
+</script>
+
+<form method="post" action="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi" name="replier" style="display: inline;"
+onsubmit="if(previewindow != null) previewindow.close(); if(graems != null) graems.close();">
+<input type="hidden" name="ubb" value="submit_new_reply" />
+<input type="hidden" name="quick" value="yes" />
+<input type="hidden" name="f" value="14" />
+<input type="hidden" name="t" value="006579" />
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor=""><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+<tr bgcolor="#D5E6E1">
+<td align="left" colspan="2">
+<font size="2" face="Verdana, Arial" color="#000080"><b>
+Quick Reply
+</b></font>
+</td>
+</tr>
+
+<tr bgcolor="#f7f7f7">
+<td width="18%" rowspan="2" valign="top" align="left"><font face="Verdana, Arial" size="2">
+<b>Message:</b>
+<br /><br />
+</font>
+<font face="Verdana, Arial" size="1">
+HTML is enabled.
+<br />
+<a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php?ubb=ubb_code_page" target="_blank">UBB Code™ is enabled.</a>
+<br />
+
+<br />
+<a href="javascript:void(0);" onclick="Graems()">Instant Graemlins</a>
+<br />
+<!-- Always append the siggy and don't disable graemlins -->
+<input type="hidden" name="disable_smilies" value="0" />
+<input type="hidden" name="Signature" value="yes" />
+</font></td>
+<td valign="top" align="left">
+<textarea name="message" rows="10" cols="50" wrap="virtual"></textarea>
+</td>
+</tr>
+<tr bgcolor="#f7f7f7">
+<td valign="top" align="left">
+<input type="submit" name="submitted" value="Add Reply" />
+&nbsp;
+
+<input type="button" name="preview" value="Preview Post" onclick="Preview()" />
+&nbsp;
+
+<input type="submit" name="full" value="Full Reply Form" />
+</td>
+</tr>
+
+</table></td></tr></table>
+
+</form>
+
+<br />
+
+</div>
+
+<br />
+
+<!-- Bottom Navigation Table -->
+
+
+<table border="0" cellpadding="1" cellspacing="1" width="95%" align="center">
+<tr bgcolor=""><td>
+<table border="0" width="100%" cellpadding="3" cellspacing="0">
+
+
+<tr>
+
+<td width="25%" bgcolor="#f7f7f7" nowrap="nowrap" valign="bottom" align="center">
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=newtopic;f=14"><img src="http://www.allstocks.com/stockmessageboard/ubb/topic5.jpg" alt="Post New Topic" border="0" /></a>&nbsp;&nbsp;<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=reply;f=14;t=006579"><img src="http://www.allstocks.com/stockmessageboard/ubb/reply5.jpg" border="0" alt="Post A Reply" /></a>
+</font>
+</td>
+
+<td width="50%" bgcolor="#dedfdf" valign="bottom" align="center">
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=close_topic;t=006579;f=14"><img src="http://www.allstocks.com/stockmessageboard/ubb/close_topic.gif" border="0" alt="Close Topic" /></a>
+&nbsp; <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=stick_topic;f=14;t=006579"><img src="http://www.allstocks.com/stockmessageboard/ubb/feature_topic.gif" border="0" alt="Feature Topic" /></a>
+&nbsp; <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=transfer;t=006579;f=14"><img src="http://www.allstocks.com/stockmessageboard/ubb/move_topic.gif" border="0" alt="Move Topic" /></a>
+&nbsp; <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=delete_topic;f=14;t=006579"><img src="http://www.allstocks.com/stockmessageboard/ubb/delete_topic.gif" border="0" alt="Delete Topic" /></a>
+</font>
+</td>
+
+<td width="25%" bgcolor="#f7f7f7" align="right" valign="middle">
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=next_topic;f=14;t=006579;go=older"><img src="http://www.allstocks.com/stockmessageboard/ubb/prev_topic.gif" border="0" alt="next oldest topic" /></a> &nbsp; <a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=next_topic;f=14;t=006579;go=newer"><img src="http://www.allstocks.com/stockmessageboard/ubb/next_topic.gif" border="0" alt="next newest topic" /></a>
+</font>
+</td>
+
+</tr>
+
+
+</table></td></tr></table>
+
+
+<!-- Hop To Box -->
+
+<table border="0" width="95%">
+<tr>
+<td align="left" valign="top" width="50%">
+<font size="1" face="Verdana, Arial">
+<a href="http://www.allstocks.com/stockmessageboard/cgi-bin/ultimatebb.cgi?ubb=print_topic;f=14;t=006579"><img src="http://www.allstocks.com/stockmessageboard/ubb/print_topic.gif" border="0" alt=" - " title="" /> Printer-friendly view of this topic</a>
+</font>
+</td>
+<td align="right" valign="top" nowrap="nowrap" width="50%">
+<form action="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php" method="get">
+<font size="2" face="Verdana, Arial">
+<input type="hidden" name="ubb" value="forum" />
+<b>Hop To: </b><select name="f">
+
+<option value=''>Select a Forum:</option>
+<option value=''></option>
+<option value="2">Hot Stocks Free for All !</option>
+<option value="8">Micro Penny Stocks, Penny Stocks $0.10 & Under</option>
+<option value="16">.11 and Up!</option>
+<option value="14" selected="selected">Off-Topic Post, Non Stock Talk</option>
+<option value="7">NASDAQ, AMEX, NYSE Stocks</option>
+<option value="9">General Investing Topics</option>
+<option value="3">Swing Traders</option>
+<option value="10">Reverse & Forward Split Notification and Information</option>
+<option value="6">Asia, China and Canadian Stocks</option>
+<option value="5">Stock Picks Only</option>
+<option value="1">Pink Sheet Stocks</option>
+<option value="17">OTCBB Reporting Stocks</option>
+<option value="13">Questions, Comments and Suggestions about Allstocks.com</option>
+
+</select>
+<input type="submit" name="submit" value="Go" />
+</font></form>
+</td>
+</tr>
+</table>
+</center>
+<br />
+
+<script language="JavaScript" type="text/javascript">
+	setTimeout("latest_check();", 1000);
+</script>
+
+
+<br />
+ <center>
+<font size="2" face="Verdana, Arial">
+<a href="http://www.allstocks.com/links/html/contact.html">Contact Us</a> | <a href="http://www.allstocks.com/stockmessageboard/ubb/ultimatebb.php">Allstocks.com Message Board Home</a></font> <br /> <br /> 
+<font color="#0000ff" size="1" face="Verdana, Arial">© 1997 - 2012 Allstocks.com. All rights reserved.
+
+<br /><br />
+Powered by <a href="http://www.infopop.com/landing/goto.php?a=ubb.classic">Infopop Corporation</a><br />
+
+
+UBB.classic&trade; 
+6.7.2<!-- 06070201.210.2.16 -->
+
+
+<br /><!-- Translators: Put your "translation by" wording here -->
+</font>
+</center>
+<br />
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4854432495599584";
+/* 728x90, created 7/8/10 */
+google_ad_slot = "2637443749";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<p>
+<!-- SiteSearch Google -->
+<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4854432495599584:dtzpvksa7m5" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<!-- SiteSearch Google --></TD>
+<p>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="http://www.addtoany.com/share_save"><img src="http://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0" alt="Share"/></a>
+<script type="text/javascript">
+var a2a_config = a2a_config || {};
+a2a_config.linkname = "AllStocks.com Message Board";
+</script>
+<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+<p>
+</center>
+
+</body>
+</html>
+ 

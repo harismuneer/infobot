@@ -1,0 +1,419 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-21T04:37:05Z
+WARC-TREC-ID: clueweb12-1606wb-37-31264
+WARC-Target-URI: http://www.tellher2.ca/story/?id=128
+WARC-Payload-Digest: sha1:PQZN4RF77UZKAZ5OU5SG6OA4FIBXWZWW
+WARC-IP-Address: 96.31.33.25
+WARC-Record-ID: <urn:uuid:d095a9f7-bfb1-4120-8363-e011c9201946>
+Content-Type: application/http; msgtype=response
+Content-Length: 30068
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+Date: Sat, 21 Apr 2012 04:37:07 GMT
+Connection: close
+Content-Length: 29827
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	I Will Survive
+</title><link href="../css/thickbox.css" rel="stylesheet" type="text/css" /><link href="../css/core.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://www.tellher2.ca/js/thickbox.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        //<![CDATA[
+        //document.domain = "tellher2.com";
+        //document.domain = "discountasp.net";
+        $(document).ready(function() {
+            $('#hd-nav .hdtop img').mouseover(function() {var moi = $(this).parent().parent().prevAll().length;$('#hd-nav .hddot td').removeClass('mo');$('#hd-nav .hddot td:eq(' + moi + ') img').hide();$('#hd-nav .hddot td:eq(' + moi + ')').addClass('mo');}).mouseout(function() {var moi = $(this).parent().parent().prevAll().length;$('#hd-nav .hddot td:eq(' + moi + ') img').show();$('#hd-nav .hddot td').removeClass('mo');});
+        });
+        //]]>
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/editor/assets/skins/sam/simpleeditor.css" />
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/element/element-min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/container/container_core-min.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/editor/simpleeditor-min.js"></script>
+    <script src="../js/th2.js" type="text/javascript"></script>
+    <link href="http://www.tellher2.ca/css/page.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        function refresher() {
+            __doPostBack('ctl00$cph$lnkTrig', '')
+        }
+        $(document).ready(function() {
+            $('#ctl00_cph_txtComment').click(function() { if ($('#ctl00_cph_txtComment').val() == 'Write a comment...') { $('#ctl00_cph_txtComment').val(''); } });
+            $('#ctl00_cph_txtComment').blur(function() { if ($('#ctl00_cph_txtComment').val() == '') { $('#ctl00_cph_txtComment').val('Write a comment...'); } });
+        });
+    </script>
+    <style type="text/css">
+        .yui-skin-sam .yui-editor-container { margin-bottom:3px; }
+        .yui-skin-sam .yui-editor-container, .yui-skin-sam .yui-toolbar-container .yui-toolbar-subcont { border:none; } 
+        .yui-skin-sam .yui-editor-container fieldset { border:none;background:#FEF5F5; }
+        .yui-skin-sam iframe { border:1px solid #CC9999;}
+        .yui-toolbar-container .yui-toolbar-group {float:right;margin-right:0px;}
+        .yui-skin-sam .yui-toolbar-container .yui-button-selected, .yui-skin-sam .yui-toolbar-container .yui-push-button, .yui-skin-sam .yui-toolbar-container .yui-color-button, 
+        .yui-skin-sam .yui-toolbar-container .yui-menu-button {background:none;border:none;width:22px;}
+        .yui-skin-sam .yui-toolbar-container .yui-push-button .first-child, .yui-skin-sam .yui-toolbar-container .yui-color-button .first-child, 
+        .yui-skin-sam .yui-toolbar-container .yui-menu-button .first-child {border:none;}
+    </style>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="default.aspx?id=128" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE1MTgxNTMwNw9kFgJmD2QWAgIDD2QWBAIREA8WAh4HVmlzaWJsZWdkZGQCIw9kFhZmD2QWAmYPZBYCAgEPZBYCAgEPDxYCHgRUZXh0BQ5JIFdpbGwgU3Vydml2ZWRkAgEPFgIeBWNsYXNzBRBzdG9yeUFzc2V0IHZpZGVvFgJmD2QWAmYPZBYCZg8WAh8BBagBPGlmcmFtZSBzcmM9Imh0dHA6Ly92aWRlby50ZWxsaGVyMi5jYS92cC5hc3B4P3ZwPWY0MWVmYzg0LTJmNGYtNDY1ZS1iNDBiLWE2NGI2ODk5MWVmYyZ2aT1mNDFlZmM4NC0yZjRmLTQ2NWUtYjQwYi1hNjRiNjg5OTFlZmMiIGZyYW1lYm9yZGVyPSIwIiBzY3JvbGxpbmc9Im5vIiA+PC9pZnJhbWU+ZAICD2QWAgIBD2QWAmYPZBYCAgMPZBYCAgEPDxYCHwEF1QhJIHdyb3RlIHRoaXMgc29uZyB0d28gd2Vla3MgYWZ0ZXIgY29tcGxldGluZyByYWRpYXRpb24gYW5kIHBlcmZvcm1lZCBpdCBhdCB0aGUgUmVsYXkgZm9yIExpZmUgMjAxMCBhbmQgYWdhaW4gYXQgbXkgIkkgS2lja2VkIENhbmNlciIgQ29uY2VydC4mbmJzcDsgVGhlcmUgaXMgYW4gdXB0ZW1wbyB2ZXJzaW9uIG9uIFlvdVR1YmUuJm5ic3A7IDxicj5MWVJJQ1M6PHNwYW4gc3R5bGU9ImNvbG9yOiBibGFjazsiPjxicj5JIHdpbGwgc3Vydml2ZSEmbmJzcDsmbmJzcDsgSSB3aWxsCnN1cnZpdmUhPC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjogYmxhY2s7Ij48YnI+R29ubmEmbmJzcDtsaXZlIHRvIHdhbGsgdGhlIGxlc3MKdHJhdmVsZWQgbWlsZSw8L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOiBibGFjazsiPjxicj5Hb25uYSBiZSBhcm91bmQgZm9yIGFub3RoZXIKc21pbGUuLi48L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOiBibGFjazsiPjxicj5JIHdpbGwgc3Vydml2ZS48L3NwYW4+CgoKCjxwIGNsYXNzPSJNc29Ob3JtYWwiPjxzcGFuIHN0eWxlPSJjb2xvcjogYmxhY2s7Ij5JIHdpbGwgcnVuIGZyZWUuJm5ic3A7IDxzcGFuPjwvc3Bhbj5JIHdpbGwgcnVuIGZyZWUuPGJyPkknbSBhIGJlIGZyZWUgZnJvbSB0aGlzIHRoaW5nCnRoYXQncyBiZWVuIGFpbGluZyBtZS4uLjxicj5JIHdpbGwgcnVuIGZyZWUuPC9zcGFuPjwvcD4KCgoKPHNwYW4gc3R5bGU9ImNvbG9yOiBibGFjazsiPldpbnRlciBjYW1lIGFuZCBteSBzb3VsIHdhcyB3ZWFyeQrigJMgPC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjogYmxhY2s7Ij48YnI+SGFyZCB0aW1lcyBjb21lIHRvIHVzIGFsbC48L3NwYW4+Cgo8c3BhbiBzdHlsZT0iY29sb3I6IGJsYWNrOyI+PGJyPkluIHRoZSBkYXJrbmVzcyBvZiBuaWdodCB3aGVuIG15CmV5ZXMgd2VyZSB0ZWFyeSwgPC9zcGFuPgoKPHNwYW4gc3R5bGU9ImNvbG9yOiBibGFjazsiPjxicj5JIHdvbmRlcmVkIGlmIEkgd291bGQgZmFsbC4uLi48L3NwYW4+Cgo8cCBjbGFzcz0iTXNvTm9ybWFsIj48c3BhbiBzdHlsZT0iY29sb3I6IGJsYWNrOyI+QnV0IEknbSBhbGl2ZSEgPGJyPiZjb3B5OyBIZWF0aGVyIENod2FzdGlhazxicj48L3NwYW4+PC9wPmRkAgQPZBYCZg9kFgQCBRAPFgIfAGhkZGQCBw8PFgIeC05hdmlnYXRlVXJsBVZodHRwOi8vd3d3LnRlbGxoZXIyLmNhL2xiL2xvZ2luLmFzcHg/a2VlcFRoaXM9dHJ1ZSZUQl9pZnJhbWU9dHJ1ZSZoZWlnaHQ9MjUwJndpZHRoPTU1MGRkAgUPFgIfAGcWBAIBD2QWAmYPZBYCAgEPDxYCHwEFCjIgQ29tbWVudHNkZAIDDxYCHgtfIUl0ZW1Db3VudAICFgRmD2QWCmYPFQECOTZkAgEPDxYCHwMFHX4vbWVtYmVycy9wcm9maWxlLmFzcHg/aWQ9MzE5ZBYCZhAPFgQeDUFsdGVybmF0ZVRleHQFBXdlbmR5HghJbWFnZVVybAUpaHR0cDovL3d3dy50ZWxsaGVyMi5jYS9pbWcvcGgvZl80NXg0NS5wbmdkZGQCAxAPFgQeD0NvbW1hbmRBcmd1bWVudAUCOTYfAGhkZGQCBQ8PFgIfAwUdfi9tZW1iZXJzL3Byb2ZpbGUuYXNweD9pZD0zMTlkFgJmDxUBBXdlbmR5ZAIGDxUCRWkgZmVlbCB0aGUgc2FtZSB0byBoZWF0aGVyIGl0cyBncmVhdCBpIGFtIHN0aWxsIG9uIGhlcnNlcHRlbiB0byB3ZW5keRUxMS8yNC8yMDEwIDk6MzA6MjggUE1kAgEPZBYKZg8VAQMxMDVkAgEPDxYCHwMFHX4vbWVtYmVycy9wcm9maWxlLmFzcHg/aWQ9NDQyZBYCZhAPFgQfBQUDTmluHwYFKWh0dHA6Ly93d3cudGVsbGhlcjIuY2EvaW1nL3BoL2ZfNDV4NDUucG5nZGRkAgMQDxYEHwcFAzEwNR8AaGRkZAIFDw8WAh8DBR1+L21lbWJlcnMvcHJvZmlsZS5hc3B4P2lkPTQ0MmQWAmYPFQEDTmluZAIGDxUCDkJlYXV0aWZ1bCBzb25nFTEvMTMvMjAxMiAxMjoxMDo1OSBQTWQCBxAPFgIfBgUzaHR0cDovL3d3dy50ZWxsaGVyMi5jYS9tZW1iZXJzL3Bob3Rvcy90bi8xNDUtOTAuanBnZGRkAgkPZBYCZg9kFgRmEA8WBB8GBS9odHRwOi8vd3d3LnRlbGxoZXIyLmNhL2ltZy9pY28vYnRuLWxpa2Vfb2ZmLnBuZx4HRW5hYmxlZGhkZGQCAQ8PFgIfAQUBMGRkAgoQDxYCHwYFMmh0dHA6Ly93d3cudGVsbGhlcjIuY2EvaW1nL2ljby9idG4tY29tbWVudF9vZmYucG5nZGRkAgsPDxYCHwEFATJkZAIND2QWAmYPZBYEZg8PFgIfAQUBNmRkAgEPFgIfBAIGFgxmD2QWAgIBDw8WAh8DBRx+L21lbWJlcnMvcHJvZmlsZS5hc3B4P2lkPTc5ZBYCZhAPFgYfBQUETGlzYR4HVG9vbFRpcAUETGlzYR8GBTJodHRwOi8vd3d3LnRlbGxoZXIyLmNhL21lbWJlcnMvcGhvdG9zL3RuLzc5LTQ1LmpwZ2RkZAIBD2QWAgIBDw8WAh8DBR1+L21lbWJlcnMvcHJvZmlsZS5hc3B4P2lkPTEzN2QWAmYQDxYGHwUFB1JldGhpbmsfCQUHUmV0aGluax8GBTNodHRwOi8vd3d3LnRlbGxoZXIyLmNhL21lbWJlcnMvcGhvdG9zL3RuLzEzNy00NS5qcGdkZGQCAg9kFgICAQ8PFgIfAwUdfi9tZW1iZXJzL3Byb2ZpbGUuYXNweD9pZD0xNTZkFgJmEA8WBh8FBQRJbmV6HwkFBEluZXofBgUzaHR0cDovL3d3dy50ZWxsaGVyMi5jYS9tZW1iZXJzL3Bob3Rvcy90bi8xNTYtNDUuanBnZGRkAgMPZBYCAgEPDxYCHwMFHX4vbWVtYmVycy9wcm9maWxlLmFzcHg/aWQ9MTY5ZBYCZhAPFgYfBQUFVGFueWEfCQUFVGFueWEfBgUpaHR0cDovL3d3dy50ZWxsaGVyMi5jYS9pbWcvcGgvZl80NXg0NS5wbmdkZGQCBA9kFgICAQ8PFgIfAwUdfi9tZW1iZXJzL3Byb2ZpbGUuYXNweD9pZD00NDlkFgJmEA8WBh8FBQhMYXdyZW5jZR8JBQhMYXdyZW5jZR8GBSlodHRwOi8vd3d3LnRlbGxoZXIyLmNhL2ltZy9waC9tXzQ1eDQ1LnBuZ2RkZAIFD2QWAgIBDw8WAh8DBR1+L21lbWJlcnMvcHJvZmlsZS5hc3B4P2lkPTQ0OWQWAmYQDxYGHwUFCExhd3JlbmNlHwkFCExhd3JlbmNlHwYFKWh0dHA6Ly93d3cudGVsbGhlcjIuY2EvaW1nL3BoL21fNDV4NDUucG5nZGRkAg4PZBYCZg9kFgICAQ8WAh8CBRlidG5zdG9yeWNvbnRhaW5lciBuZXR3b3JrFgICAQ8PFgQfCQUrVmlldyBIZWF0aGVyJ3MgbmV0d29yayBmb3IgJ0kgV2lsbCBTdXJ2aXZlJx8DBTZodHRwOi8vd3d3LnRlbGxoZXIyLmNhL21lbWJlcnMvY29ubmVjdGlvbnMuYXNweD9pZD0xMjhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAwUTY3RsMDAkY2h4UmVtZW1iZXJNZQUMY3RsMDAkaW1nQnRuBRZjdGwwMCRjcGgkYnRuTGlrZVN0b3J5yp//t1O1cT6InznrL4fVK4GKDio=" />
+
+
+<script src="/ScriptResource.axd?d=zzRmhQ1H4s7vPVgzpJM2A9BlKuJPjbeJK6Fd4aUtEnS7h43zuR3gk7lFnRHBiomPkPL7X4JTxC77fDsAGeGXqPSFibMWrFeqJMgfii57EKKOht2KwF_E_HiVMryk2eZbAIh59MZdldv_R1V2ALuxijrSuKA1&amp;t=fffffffff4a8b06b" type="text/javascript"></script>
+    
+    <div id="hd">
+        <div id="hd-nav">
+            <table cellpadding="0" cellspacing="0" border="0">
+            <tr class="hdtop">
+            <td><a id="ctl00_urlHome" href="../"><img id="ctl00_imgHDHome" src="../img/hd/hd-home.png" alt="Home" /></a></td>
+            <td><a id="ctl00_urlGallery" href="../gallery"><img id="ctl00_imgHDGallery" src="../img/hd/hd-storygallery.png" alt="Story Gallery" /></a></td>
+            <td><a id="ctl00_urlAbout" href="../about"><img id="ctl00_imgHDAbout" src="../img/hd/hd-tellher2.png" alt="TellHer2" /></a></td>
+            <td><a id="ctl00_urlHer2" href="../her2"><img id="ctl00_imgHDHer2" src="../img/hd/hd-her2.png" alt="Her2+" /></a></td>
+            <td><a id="ctl00_urlRethink" href="../rethink"><img id="ctl00_imgHDRethink" src="../img/hd/hd-rethink.png" alt="Rethink Breast Cancer" /></a></td>
+            <td><a id="ctl00_urlDoc" href="../the-documentary"><img id="ctl00_imgHDTheDoc" src="../img/hd/hd-documentary.png" alt="The Documentrary" /></a></td>
+            </tr>
+            <tr class="hddot">
+                <td></td>
+                <td><img id="ctl00_imgD2" src="../img/hd/dot-selected.png" /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>
+        </div>
+        <div id="hd-sub">
+            <div id="logos">
+                <a id="ctl00_urlHomeLogo" href="../"><img id="ctl00_imgTH2" class="logoth2" src="../img/hd/logo-tellher2b.png" alt="Tell HER 2" /></a>
+                <a href="http://www.rethinkbreastcancer.com" target="_win"><img id="ctl00_imgRethink" class="logorehink" src="../img/hd/logo-rethink-breast-cancer.png" alt="rethink breast cancer" /></a>
+            </div>
+            <div id="ctl00_login" class="login">
+                <div id="ctl00_loggedout">
+                    <div class="frm-fields">
+                        <div class="frm-row">
+                            <div class="frm-label">Email Address</div>
+                            <div class="frm-input"><input name="ctl00$txtEmail" type="text" maxlength="75" id="ctl00_txtEmail" /> &nbsp;</div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-label">Password</div>
+                            <div class="frm-input"><input name="ctl00$txtPassword" type="password" maxlength="25" id="ctl00_txtPassword" /> &nbsp;</div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-label">&nbsp;</div>
+                            <div class="frm-remember">
+                            <input id="ctl00_chxRememberMe" type="checkbox" name="ctl00$chxRememberMe" /><label for="ctl00_chxRememberMe">Remember Me</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="frm-btn"><input type="image" name="ctl00$imgBtn" id="ctl00_imgBtn" src="../img/hd/btn-go.png" alt="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$imgBtn&quot;, &quot;&quot;, true, &quot;lgn&quot;, &quot;&quot;, false, false))" /></div>
+                </div>
+                
+            </div>
+            <div id="ctl00_account" class="account">
+                <a href="http://www.tellher2.ca/lb/register.aspx?keepThis=true&TB_iframe=true&height=490&width=890" title="" class="thickbox">Not registered?</a> It's easy! <a href="http://www.tellher2.ca/lb/forgotpwd.aspx?keepThis=true&TB_iframe=true&height=180&width=400" title="" class="thickbox">Forgot your password?</a> We'll email  it to you!
+            </div>
+        </div>
+    </div>
+    <div id="bg">
+        <div id="bd">
+            
+    <script language="javascript" type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(pageLoaded);
+        function pageLoaded(sender, args) {
+            var updatedPanels = args.get_panelsUpdated();
+            for (i = 0; i < updatedPanels.length; i++) {
+                if (updatedPanels[i].id == 'ctl00_cph_upSD' && $('#ctl00_cph_hfTxtEditMode').val() == '1') {
+                    (function() {
+                        var Dom = YAHOO.util.Dom,
+                        Event = YAHOO.util.Event;
+
+                        var myEditor = new YAHOO.widget.SimpleEditor('ctl00_cph_editor', {
+                            height: '125px',
+                            width: '518px',
+                            dompath: false,
+                            animate: true,
+                            toolbar: {
+                                buttons: [
+                                    { group: 'textstyle', label: '',
+                                    buttons: [
+                                        { type: 'push', label: 'Bold', value: 'bold' },
+                                        { type: 'push', label: 'Italic', value: 'italic' },
+                                        { type: 'push', label: 'Underline', value: 'underline' },
+                                        { type: 'push', label: 'Hyperlink', value: 'createlink', disabled: true }
+                                    ]
+                                }]
+                            }
+                        });
+
+                        myEditor.render();
+                        YAHOO.util.Event.on('ctl00_cph_lnkUpdateStoryBody', 'click', function() {
+                            myEditor.saveHTML();
+                            var html = myEditor.get('element').value;
+                            $('#ctl00_cph_hfRTE').val(html);
+                        });
+
+                    })();
+                    break;
+                }
+            }
+        }
+        //]]>
+    </script>
+<div id="secStory" class="yui-skin-sam">
+    <div class="outersides">
+        <div>
+            <div class="secTitle">
+                
+            </div>
+            <div class="mainPage">
+
+                <div class="colMain">
+                    <div class="posrel">
+                        <div class="storyType"><img src="http://www.tellher2.ca/img/pg/gallery/ico-tr-2.png" width="53" height="53" alt="" /></div>
+                        <div>
+                            <span id="ctl00_cph_upST"> 
+                                <div id="ctl00_cph_viewTitle">
+                                    <div class="storyTitle"><span id="ctl00_cph_lblTitle">I Will Survive</span></div>
+                                    <div></div>
+                                </div>
+                                
+                            </span>
+                        </div>
+                        <div id="ctl00_cph_storyAsset" class="storyAsset video"><span id="ctl00_cph_upSA"><iframe src="http://video.tellher2.ca/vp.aspx?vp=f41efc84-2f4f-465e-b40b-a64b68991efc&vi=f41efc84-2f4f-465e-b40b-a64b68991efc" frameborder="0" scrolling="no" ></iframe></span></div>
+                        <div id="ctl00_cph_storyDescription" class="storyDescription">
+                            <span id="ctl00_cph_upSD">
+                                <input type="hidden" name="ctl00$cph$hfTxtEditMode" id="ctl00_cph_hfTxtEditMode" value="0" />
+                                <div id="ctl00_cph_viewBody">
+                                    <div><span id="ctl00_cph_lblDescription">I wrote this song two weeks after completing radiation and performed it at the Relay for Life 2010 and again at my "I Kicked Cancer" Concert.&nbsp; There is an uptempo version on YouTube.&nbsp; <br>LYRICS:<span style="color: black;"><br>I will survive!&nbsp;&nbsp; I will
+survive!</span><span style="color: black;"><br>Gonna&nbsp;live to walk the less
+traveled mile,</span><span style="color: black;"><br>Gonna be around for another
+smile...</span><span style="color: black;"><br>I will survive.</span>
+
+
+
+<p class="MsoNormal"><span style="color: black;">I will run free.&nbsp; <span></span>I will run free.<br>I'm a be free from this thing
+that's been ailing me...<br>I will run free.</span></p>
+
+
+
+<span style="color: black;">Winter came and my soul was weary
+– </span><span style="color: black;"><br>Hard times come to us all.</span>
+
+<span style="color: black;"><br>In the darkness of night when my
+eyes were teary, </span>
+
+<span style="color: black;"><br>I wondered if I would fall....</span>
+
+<p class="MsoNormal"><span style="color: black;">But I'm alive! <br>&copy; Heather Chwastiak<br></span></p></span></div>
+                                    <div></div>
+                                </div>
+                                
+                            </span>
+                        </div>
+                        
+                        <a name="write"></a>
+                        <div class="commentinput">
+                            <span id="ctl00_cph_upWC">
+                            <div class="writecomment">
+                                <div>
+                                <textarea name="ctl00$cph$txtComment" rows="2" cols="20" id="ctl00_cph_txtComment" title="Write a comment...">Write a comment...</textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="submit">
+                                
+                                <a id="ctl00_cph_urlShareStory" class="thickbox" href="http://www.tellher2.ca/lb/login.aspx?keepThis=true&amp;TB_iframe=true&amp;height=250&amp;width=550"><img src="http://www.tellher2.ca/img/lb/btn-submit.png" width="85" height="47" alt="" /></a>
+                            </div>
+                            </span>
+                        </div>
+                        <div id="ctl00_cph_commentCollection">
+                            <div class="commentcount">
+                                <span id="ctl00_cph_upCC">
+                                    <span id="ctl00_cph_lblCommentBarCount">2 Comments</span>
+                                </span>
+                            </div>
+                            <div>
+                                
+                                <a name="c96"></a>
+                                <div class="commentContainer">
+                                    <div class="commentParent">
+                                        <div class="photo"><a id="ctl00_cph_rpComments_ctl00_urlImgProfile" href="../members/profile.aspx?id=319"><img id="ctl00_cph_rpComments_ctl00_imgTh" src="http://www.tellher2.ca/img/ph/f_45x45.png" alt="wendy" /></a></div>
+                                        <div class="actions"></div>
+                                        <div class="name">
+                                        
+                                        
+                                            <a id="ctl00_cph_rpComments_ctl00_urlProfile" href="../members/profile.aspx?id=319">wendy</a></div>
+                                        <div class="comment">
+                                            <div>i feel the same to heather its great i am still on hersepten to wendy</div>
+                                            <div class="date">(11/24/2010 9:30:28 PM)</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <a name="c105"></a>
+                                <div class="commentContainer">
+                                    <div class="commentParent">
+                                        <div class="photo"><a id="ctl00_cph_rpComments_ctl01_urlImgProfile" href="../members/profile.aspx?id=442"><img id="ctl00_cph_rpComments_ctl01_imgTh" src="http://www.tellher2.ca/img/ph/f_45x45.png" alt="Nin" /></a></div>
+                                        <div class="actions"></div>
+                                        <div class="name">
+                                        
+                                        
+                                            <a id="ctl00_cph_rpComments_ctl01_urlProfile" href="../members/profile.aspx?id=442">Nin</a></div>
+                                        <div class="comment">
+                                            <div>Beautiful song</div>
+                                            <div class="date">(1/13/2012 12:10:59 PM)</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="colSide">
+                    <div class="dv spacer">
+                        <br />
+                        <div class="bio">
+                            <div class="photo">
+                                
+                                <a href="http://www.tellher2.ca/members/profile.aspx?id=145"><img id="ctl00_cph_imgTh" src="http://www.tellher2.ca/members/photos/tn/145-90.jpg" /></a>
+                            </div>
+                            <div class="floatleft">
+                                
+                                <div class="colTitle">
+                                    Heather
+                                </div>
+                                <div class="biodetails">
+                                    <div class="minitxt">Joined: 12/3/2009</div>
+                                    <span id="ctl00_cph_upMB"> 
+                                    <div>
+                                        <div id="ctl00_cph_viewMiniBio">
+                                            <div class="minitxt">Diagnosed at 40. Stage II, triple positive IDC.  Married with three young daughters. Surgery, chemo, and radiation complete. Still on Herceptin and Tamoxifen. The pic shows 6 months hair regrowth and life is good.  :-)</div>
+                                            <div></div>
+                                        </div>
+                                        
+                                    </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="colTitle">
+                        <div class="floatleft">Heather's story</div>
+                        <div class="shareThis"><script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=ca297cfd-bb8b-413d-b5f3-4965e82136bc&amp;type=website"></script></div>
+                    </div>
+                    <div class="socialstats spacer">
+                        <div>
+                            <div><span id="ctl00_cph_upSM">
+                            <input type="image" name="ctl00$cph$btnLikeStory" id="ctl00_cph_btnLikeStory" disabled="disabled" title="Click to like" src="http://www.tellher2.ca/img/ico/btn-like_off.png" alt="Click to Like" /> <span id="ctl00_cph_lblLikeCount" class="numeric">0</span> Likes
+                            </span>
+                            </div>
+                            <a href="#write" title="Click to comment"><img id="ctl00_cph_btnCommentStory" src="http://www.tellher2.ca/img/ico/btn-comment_off.png" /></a> <span id="ctl00_cph_lblCommentCount" class="numeric">2</span> Comments<br />
+                        </div>
+                        <div class="action">
+                            <a href="http://www.tellher2.ca/lb/storytype.aspx?keepThis=true&TB_iframe=true&height=550&width=800" title="" class="thickbox">Inspired by this story? <b>Share your own story</b></a>
+                        </div>
+                    </div>
+                    
+                    <div class="connections spacer">
+                        <a id="ctl00_cph_lnkTrig" class="hide" href="javascript:__doPostBack('ctl00$cph$lnkTrig','')">Refresh Data</a>
+                        <span id="ctl00_cph_upCN">
+                        <div class="colTitle">
+                            Heather's Connections (<span id="ctl00_cph_lblConnectionCount">6</span>)
+                        </div>
+                        <div>
+                            
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl00_urlImgProfile" href="../members/profile.aspx?id=79"><img id="ctl00_cph_rpConnections_ctl00_imgTh" title="Lisa" src="http://www.tellher2.ca/members/photos/tn/79-45.jpg" alt="Lisa" /></a></div>
+                                
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl01_urlImgProfile" href="../members/profile.aspx?id=137"><img id="ctl00_cph_rpConnections_ctl01_imgTh" title="Rethink" src="http://www.tellher2.ca/members/photos/tn/137-45.jpg" alt="Rethink" /></a></div>
+                                
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl02_urlImgProfile" href="../members/profile.aspx?id=156"><img id="ctl00_cph_rpConnections_ctl02_imgTh" title="Inez" src="http://www.tellher2.ca/members/photos/tn/156-45.jpg" alt="Inez" /></a></div>
+                                
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl03_urlImgProfile" href="../members/profile.aspx?id=169"><img id="ctl00_cph_rpConnections_ctl03_imgTh" title="Tanya" src="http://www.tellher2.ca/img/ph/f_45x45.png" alt="Tanya" /></a></div>
+                                
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl04_urlImgProfile" href="../members/profile.aspx?id=449"><img id="ctl00_cph_rpConnections_ctl04_imgTh" title="Lawrence" src="http://www.tellher2.ca/img/ph/m_45x45.png" alt="Lawrence" /></a></div>
+                                
+                                    <div class="photo"><a id="ctl00_cph_rpConnections_ctl05_urlImgProfile" href="../members/profile.aspx?id=449"><img id="ctl00_cph_rpConnections_ctl05_imgTh" title="Lawrence" src="http://www.tellher2.ca/img/ph/m_45x45.png" alt="Lawrence" /></a></div>
+                                
+                        </div>
+                        
+                        </span>
+                    </div>
+                    
+                    <div class="stories spacer">
+                        <div class="clear">
+                            <span id="ctl00_cph_upBtnNV">
+                            <div id="ctl00_cph_btnnet" class="btnstorycontainer network">
+                                <a id="ctl00_cph_urlNetworkView" title="View Heather's network for 'I Will Survive'" href="http://www.tellher2.ca/members/connections.aspx?id=128">Heather's<br />network</a>
+                            </div>
+                            </span>
+
+                            
+                            
+                            <div class="btnstorycontainer makeconnect nomrg">
+                                <a href="../lb/connecttype.aspx?sid=128&mid=145&mmn=Heather&keepThis=true&TB_iframe=true&height=550&width=800" title="" class="thickbox">Make a connection<br />with Heather</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <div id="ft">
+        <div id="ft-nav">
+            <div id="ftleft">
+                TellHER2 maintains complete editorial independence and operational separation from the sponsor of the site. 
+                None of the content is pre-screened, altered or edited by the sponsor at any time.<br />
+                The TellHER2 social network is made possible through the generous support of <img id="ctl00_imgRoche" src="../img/global/roche.png" alt="Roche Canada" align="absmiddle" />
+            </div>
+            <div id="ftright">
+                <a id="ctl00_ftUrlPrivacy" href="../privacy.aspx">Privacy Policy</a> | 
+                <a id="ctl00_ftUrlTerms" href="../terms.aspx">Terms & Conditions</a> | 
+                <a href="mailto:info@tellher2.com">Contact Us</a>
+            </div>
+         </div>
+    </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7017298-11");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form></body></html>

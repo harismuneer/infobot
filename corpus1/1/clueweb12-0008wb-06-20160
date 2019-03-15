@@ -1,0 +1,402 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-11T09:57:55Z
+WARC-TREC-ID: clueweb12-0008wb-06-20160
+WARC-IP-Address: 184.106.61.88
+WARC-Payload-Digest: sha1:TKPQJYGCVUOVOZI4MLQ4LTXFZ4D37G5R
+WARC-Target-URI: http://mfea.com/InvestmentGoals/TaxCenter/TaxStrategies_ACI.asp
+WARC-Record-ID: <urn:uuid:4d1d56e3-ee73-4b6c-93a0-eefb09cd4e2c>
+Content-Type: application/http; msgtype=response
+Content-Length: 23288
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 23091
+Content-Type: text/html
+Server: Microsoft-IIS/7.0
+X-Powered-By: FundSys
+Date: Sat, 11 Feb 2012 09:57:54 GMT
+Connection: close
+
+<html>
+<head>
+<META NAME="DCS.UserID" CONTENT=""><META NAME="DCS.GroupID" CONTENT=""><META NAME="DCS.ContentSection" CONTENT="InvestmentGoals">
+<a name="top"></a><title>Mutual Fund Education Alliance - Investment Goals - Tax Center</title>
+<META>
+<link rel="stylesheet" href="/_/resources/css/General.css">
+<script language="JavaScript">
+<!--
+if(window.event + "" == "undefined") event = null;
+function HM_f_PopUp(){return false};
+function HM_f_PopDown(){return false};
+//Definitions from the menu scripts defined first to reslove rollover error while loading
+  HM_MenuIDPrefix = "HM_Menu";
+  HM_ItemIDPrefix = "HM_Item";
+  HM_ArrayIDPrefix = "HM_Array";
+  HM_DOM = (document.getElementById) ? true : false;
+  HM_NS4 = (document.layers) ? true : false;
+  HM_IE = (document.all) ? true : false;
+  HM_IE4 = HM_IE && !HM_DOM;
+  HM_Mac = (navigator.appVersion.indexOf("Mac") != -1);
+  HM_IE4M = HM_IE4 && HM_Mac;
+  HM_IsMenu = (HM_DOM || HM_NS4 || (HM_IE4 && !HM_IE4M));
+  HM_BrowserString = HM_NS4 ? "NS4" : HM_DOM ? "DOM" : "IE4";  
+
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++){
+    x.src=x.oSrc;
+  }  
+}
+
+
+function mouseOutIMG(menuname){
+  //wait for event handlers to be called so that we can test if we enter a menu or not
+  setTimeout("mouseOutToMenu('" + menuname + "')",1)	
+}
+
+function mouseOutToMenu(menuname){
+	menuname = menuname.replace("elMenu",HM_MenuIDPrefix);
+	var TempMenu;
+	if(HM_DOM){
+	  TempMenu = document.getElementById(menuname);
+	}else if(HM_NS4){
+	  TempMenu = eval("window."+menuname);
+	}else{
+	  TempMenu = document.all(menuname);
+	}  
+	if(!TempMenu)return;
+  //Hide image if we don't goat into a menu
+  if(!HM_UserOverMenu){
+    HM_f_HideAll(menuname);
+    MM_swapImgRestore();
+  }  
+}
+
+//create rollover effect and pop up hier menu
+function dualMouseOver(elMenu,event,imgName,blank,imgPath,number){
+  //CurImg = imgName;
+  //journal(CurImg);
+  MM_swapImgRestore();
+  //cancelPopDown = true;
+  
+  HM_f_PopUp(elMenu,event)
+  MM_swapImage(imgName,blank,imgPath,number);
+}
+
+//create rollover effect and pop up hier menu
+function dualMouseOut(elMenu){
+  MM_swapImgRestore();
+  HM_f_PopDown(elMenu)
+}
+
+//show confirmation box that users are leaving site if they click on specific link
+function leaveSite(path){
+  var leaveSiteStr = "You are leaving the MFEA web site. Continue?"
+  if(confirm(leaveSiteStr)){
+    document.location = path;
+  }
+}
+
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+  //re-define this function in any page which requires custom onLoad events to be executed
+function pageLoadCustom(){}
+  
+function pageLoad(){
+  //shared javascript
+  pageLoadCustom();
+}
+  
+//-->  
+</script>
+</head>
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onload="pageLoad()">
+<!--Hold the top, left, bottom, right, and content together (continued with bottomright.asp-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="100%" colspan="2" align="left" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="/_/Resources/Images/spacer.gif" width="76" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="30" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="54" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="101" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="93" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="100" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="99" height="1" border="0"></td>
+    <td><img src="/_/Resources/Images/spacer.gif" width="84" height="1" border="0"></td>
+	<td><img src="/_/Resources/Images/spacer.gif" width="1" height="1" border="0"></td>
+  </tr>
+  <tr>
+    <td rowspan="2" bgcolor="#DCDCBA" colspan="5"><a href="/default.asp"><img name="logo" src="/_/Resources/Images/Child/logo.gif" width="354" height="61" border="0"></a></td>
+    <td background="/_/Resources/Images/menuTopBar.gif" width="100%" colspan="4"><img name="globalNav" src="/_/Resources/Images/Child/globalNav.gif" height="19" border="0" usemap="#m_globalNav"></td>
+
+  </tr>
+  <tr>
+    <form name="frm_top_search" method="get" action="/FundSelector/search.asp">
+    <td colspan="3" bgcolor="#DCDCBA" align="center" valign="top">
+      <table cellpadding="2" cellspacing="0">
+        <tr>
+          <td class="captionBlack" nowrap><input type="radio" class="radio" name="searchType" value="Ticker" checked>&nbsp;Ticker<br>
+            <input type="radio" class="radio" name="searchType" value="Keyword">&nbsp;Keyword/Topic</td>
+          <td width="5"><img src="/_/Resources/Images/spacer.gif" width="5" height="1"></td>
+          <td rowspan="2">Search<br><input type="text" name="searchText" class="searchbox" size=15 maxlength="100"></td>
+          <td rowspan="2"><br>&nbsp;&nbsp;<input type="submit" class="button" name="submit" value="Go!"></td>
+        </tr>
+      </table>
+    </td>
+    <td bgcolor="#DCDCBA" width=100%>&nbsp;</td>
+    </form>
+    <td><img src="/_/Resources/Images/spacer.gif" width="1" height="42" border="0"></td>
+  </tr>
+  <tr>
+    <td><a href="/MyPortfolio/default.asp" onmouseout="HM_f_PopDown('elMenu1');" onMouseOver="HM_f_PopUp('elMenu1',event);//,'nav_MyPortfolio','','/_/Resources/Images/Child/nav_MyPortfolio_f2.gif',1);" ><img name="nav_MyPortfolio" src="/_/Resources/Images/Child/nav_MyPortfolio.gif" width="76" height="21" border="0"></a></td>
+    <td colspan="2"><a href="/FundSelector/default.asp" onmouseout="HM_f_PopDown('elMenu2');" onMouseOver="HM_f_PopUp('elMenu2',event);//,'nav_FundSelector','','/_/Resources/Images/Child/nav_FundSelector_f2.gif',1);"><img name="nav_FundSelector" src="/_/Resources/Images/Child/nav_FundSelector.gif" width="84" height="21" border="0"></a></td>
+    <td><a href="/FundCompanies/default.asp" onmouseout="HM_f_PopDown('elMenu3');" onMouseOver="HM_f_PopUp('elMenu3',event);//,'nav_FundCompanies','','/_/Resources/Images/Child/nav_FundCompanies_f2.gif',1);" ><img name="nav_FundCompanies" src="/_/Resources/Images/Child/nav_FundCompanies.gif" width="101" height="21" border="0"></a></td>
+    <td><a href="/InvestingBasics/Default.asp" onmouseout="HM_f_PopDown('elMenu4');" onMouseOver="HM_f_PopUp('elMenu4',event);//,'nav_InvestingBasics','','/_/Resources/Images/Child/nav_InvestingBasics_f2.gif',1);" ><img name="nav_InvestingBasics" src="/_/Resources/Images/Child/nav_InvestingBasics.gif" width="93" height="21" border="0"></a></td>
+    <td><a href="/InvestmentGoals/Default.asp" onmouseout="HM_f_PopDown('elMenu5');" onMouseOver="HM_f_PopUp('elMenu5',event);//);" ><img name="nav_InvestGoals" src="/_/Resources/Images/Child/nav_InvestGoals_f2.gif" width="100" height="21" border="0"></a></td>
+    <td><a href="/NewsCommentary/Commentary/default.asp" onmouseout="HM_f_PopDown('elMenu6');" onMouseOver="HM_f_PopUp('elMenu6',event);//,'nav_News','','/_/Resources/Images/Child/nav_News_f2.gif',1);" ><img name="nav_News" src="/_/Resources/Images/Child/nav_News.gif" width="99" height="21" border="0"></a></td>
+    <td><a href="/AboutMFEA/default.asp" onmouseout="HM_f_PopDown('elMenu7');" onMouseOver="HM_f_PopUp('elMenu7',event);//,'nav_AboutMFEA','','/_/Resources/Images/Child/nav_AboutMFEA_f2.gif',1);" ><img name="nav_AboutMFEA" src="/_/Resources/Images/Child/nav_AboutMFEA.gif" width="84" height="21" border="0"></a></td>
+    <td background="/_/Resources/Images/menuBar.gif" width=100%><img src="/_/resources/images/shim.gif" width="100%" height="1" border="0"></td>
+  </tr>
+</table>
+<map name="m_globalNav">
+
+  <area shape="rect" coords="71, 0, 158, 19" href="/Website/WebsiteHelp.asp" title="Website Help" alt="Website Help">
+  <area shape="rect" coords="0, 0, 67, 19" href="/default.asp" title="Home Page" alt="Home Page">
+  <area shape="rect" coords="163, 1, 226, 18" href="/Website/ContactUs.asp" title="Contact Us" alt="Contact Us">
+</map>
+<table border="0" cellspacing="0" cellpadding="0">
+</td>
+  </tr>
+  <tr>
+    <td width="130" background="/_/Resources/Images/Child/LeftNav/left_background.gif" align="left" valign="top"><br>
+<table width="130" cellpadding="0" cellspacing="0" border="0">
+
+<!--<tr>
+  <td><a href="/InvestingBasics/LearningTopics/AssetAllocation/default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('AssetAllocation','','/_/Resources/Images/Child/LeftNav/AssetAllocation_f2.gif',1);"><img name="AssetAllocation" src="/_/Resources/Images/Child/LeftNav/AssetAllocation.gif" width="130" height="21" border="0"></a></td>
+</tr>--><tr>
+  <td><a href="/InvestmentGoals/Retirement/default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('Retirement','','/_/Resources/Images/Child/LeftNav/Retirement_f2.gif',1);"><img name="Retirement" src="/_/Resources/Images/Child/LeftNav/Retirement.gif" width="130" height="21" border="0"></a></td>
+</tr><!--<tr>
+  <td><a href="/InvestmentGoals/IRA/default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('IRA','','/_/Resources/Images/Child/LeftNav/IRA_f2.gif',1);"><img name="IRA" src="/_/Resources/Images/Child/LeftNav/IRA.gif" width="130" height="21" border="0"></a></td>
+</tr>--><!--<tr>
+  <td><a href="/InvestmentGoals/TaxCenter/default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('TaxCenter','','/_/Resources/Images/Child/LeftNav/TaxCenter_f2.gif',1);"><img name="TaxCenter" src="/_/Resources/Images/Child/LeftNav/TaxCenter.gif" width="130" height="21" border="0"></a></td>
+</tr>--><tr>
+  <td><a href="/InvestmentGoals/InvestingChildren/Default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('InvestingChildren','','/_/Resources/Images/Child/LeftNav/InvestingChildren_f2.gif',1);"><img name="InvestingChildren" src="/_/Resources/Images/Child/LeftNav/InvestingChildren.gif" width="130" height="25" border="0"></a></td>
+</tr>
+<!--
+<tr>
+  <td><a href="/InvestmentGoals/Women/default.asp" onMouseOut="dualMouseOut('elMenu13');" onMouseOver="dualMouseOver('elMenu13',event,'Women','','/_/Resources/Images/Child/LeftNav/Women_f2.gif',1);"><img name="Women" src="/_/Resources/Images/Child/LeftNav/Women.gif" width="130" height="21" border="0"></a></td>
+</tr>
+-->
+<!--<tr>
+  <td><a href="/InvestmentGoals/Calculators/default.asp" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('Calculators','','/_/Resources/Images/Child/LeftNav/Calculators_f2.gif',1);"><img name="Calculators" src="/_/Resources/Images/Child/LeftNav/Calculators.gif" width="130" height="21" border="0"></a></td>
+</tr>-->  
+</table>
+<br><br></td>
+    <td width="550" align="left" valign="top">
+      <!--Control the spacing of the content within the borders-->
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td width="540">
+
+<!--CONTENT START-->
+
+ <table cellpadding="3" cellspacing="0" border="0" width="545">
+    <tr> 
+      <td valign="top">  
+        <span class="boldblue">Tax Strategies for Capital Gain and Income
+        Distributions</span><br>
+        <span class="boldblack">American Century Investments</span>
+        <br>
+        <p>When you invest in a mutual fund, the fund you own may pay
+        distributions to your account. You will owe tax on these distributions
+        in the year they are received unless you own the fund shares in a
+        tax-deferred account, such as an IRA or 401(k).</p>
+        <p><a href="#background">Types of Distributions</a><br>
+        <a href="#taxed">How You're Taxed</a><br>
+        <a href="#strategies">Strategies That May Reduce Your Tax Liability</a></p>
+        <a name="background"></a>
+        <p><span class="newssub"">Types of Distributions</span><br>
+        Mutual funds must distribute at least 98% of their annual income to
+        investors for the funds to avoid taxation. Funds may distribute four
+        types of income, based on their investments.</p>
+        <p><b>Long-term capital gain distributions</b>: When a mutual fund makes
+        a profit from the sale of investments in its portfolio, it generally
+        passes the profit on to you in the form of capital gains. Long-term
+        capital gains are gains on securities owned by the fund for more than
+        one year.</p>
+        <p><b>Ordinary income distributions</b>: A mutual fund earns dividends,
+        interest and other investment income on the securities in which it
+        invests. After a fund subtracts its expenses from the investment income,
+        it distributes the remainder to you as an ordinary income distribution.</p>
+        <p>The IRS requires that ordinary income distributions include any
+        short-term capital gains (gains on securities owned by the fund for one
+        year or less) realized and distributed by the fund.</p>
+        <p><b>Qualified dividend distributions</b>: A special category called
+        “qualified dividends” applies to dividends paid on stock
+        investments. The mutual fund will pass through to investors any
+        qualified dividends it receives from stocks in the fund’s portfolio.</p>
+        <p><b>Tax-exempt dividend distributions</b>: Interest from state and
+        local municipal bonds is exempt from federal taxes and generally is
+        exempt from state taxes in the state in which the bonds were issued.
+        Mutual funds that invest in these securities generally distribute
+        tax-exempt dividends to their investors.</p>
+        <p><a href="#top">Back to top</a></p>
+        <a name="taxed"></a>
+        <p><span class="newssub">How You're Taxed</span><br>
+        Distributions generally are subject to federal income taxes and may be
+        subject to state and local taxes, whether you reinvest them or take them
+        in cash. The tax status of a capital gain distribution is determined by
+        how long the mutual fund held the underlying security that was sold, not
+        by how long you have been invested in the fund.</p>
+        <ul>
+          <li><b>Long-term capital gains</b>: Your tax bracket determines how
+            much tax you will owe on long-term capital gain distributions, as
+            shown in the table below.
+          <li><b>Ordinary income distributions</b>: This category also includes
+            short-term capital gains. You will owe tax on these distributions at
+            the rate of your ordinary income tax bracket.
+          <li><b>Qualified dividend distributions</b>: Qualified dividends are
+            taxed at the long-term capital gain rates through 2008, as shown in
+            the table below. To qualify for these reduced rates, you must own
+            the mutual fund shares for a period of 61 days or longer. That
+            period must include the date the fund distributed the dividends.
+          <li><b>Tax-exempt dividend distributions</b>: While the dividends may
+            be tax exempt, a portion of the income may be an adjusting item for
+            the Alternative Minimum Tax. It also is possible to have taxable
+            capital gains from investing in tax-exempt bond funds since bond
+            prices fluctuate in response to changing interest rates. By selling
+            bonds at a profit, a fund can generate capital gain distributions
+            that may be subject to federal and state income taxes.</li>
+        </ul>
+        <table cellSpacing="0" cellPadding="0" width="390" bgColor="#006633" border="0">
+          <tbody>
+            <tr>
+              <td>
+                <table cellSpacing="1" cellPadding="5" width="390" bgColor="#02236A" border="0">
+                  <tbody>
+                    <tr vAlign="baseline">
+                      <td colSpan="3" bgcolor="#C0C0C0"><span class="three" class="newssub"; COLOR: #ffffff"><b>Capital
+                        Gain Tax Rates*</b></span></td>
+                    </tr>
+                    <tr vAlign="bottom" align="middle" borderColor="#006633" bgColor="#ffffff">
+                      <td><span class="newssub"">Ordinary Income Tax
+                        Bracket</span></td>
+                      <td><span class="newssub"">Long-Term Capital Gain
+                        Tax Rates for 2004-2007</span></td>
+                      <td><span class="newssub"">Long-Term Capital Gain
+                        Tax Rates for 2008</span></td>
+                    </tr>
+                    <tr bgColor="#99cc99">
+                      <td align="middle" bgcolor="#CCCCCC">10%</td>
+                      <td align="middle" bgcolor="#CCCCCC">5%</td>
+                      <td align="middle" bgcolor="#CCCCCC">0%</td>
+                    </tr>
+                    <tr bgColor="#ffffff">
+                      <td align="middle">15%</td>
+                      <td align="middle">5%</td>
+                      <td align="middle">0%</td>
+                    </tr>
+                    <tr bgColor="#99cc99">
+                      <td align="middle" bgcolor="#CCCCCC">25%</td>
+                      <td align="middle" bgcolor="#CCCCCC">15%</td>
+                      <td align="middle" bgcolor="#CCCCCC">15%</td>
+                    </tr>
+                    <tr bgColor="#ffffff">
+                      <td align="middle">28%</td>
+                      <td align="middle">15%</td>
+                      <td align="middle">15%</td>
+                    </tr>
+                    <tr bgColor="#99cc99">
+                      <td align="middle" bgcolor="#C0C0C0">33%</td>
+                      <td align="middle" bgcolor="#C0C0C0">15%</td>
+                      <td align="middle" bgcolor="#C0C0C0">15%</td>
+                    </tr>
+                    <tr bgColor="#ffffff">
+                      <td align="middle">35%</td>
+                      <td align="middle">15%</td>
+                      <td align="middle">15%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="footnote">*The rates and rules for long-term capital gain tax
+        rates change beginning in 2009.</p>
+        <p><a href="#top">Back to top</a></p>
+        <a name="strategies"></a>
+        <p><span class="newssub"">Strategies That May Reduce Your Tax
+        Liability</span><br>
+        Here are a few tips that may help you minimize your taxes from
+        distributions:</p>
+        <ul>
+          <li>Avoid buying shares in a mutual fund right before a capital gain
+            distribution. Although the distribution may seem like an immediate
+            payback, you’re really buying a tax liability. Here’s why: Say
+            you buy shares in a fund with a net asset value (NAV) of $30 per
+            share. The NAV includes a realized net capital gain of $3 per share.
+            As soon as the fund distributes the $3, the NAV drops to $27. You
+            now have an investment worth $27 per share plus a $3 distribution,
+            and you will owe tax on that $3. While your investment is still
+            worth $30 per share if you reinvest the distribution, you’ve also
+            gained a tax bill.
+          <li>Ask the fund company for estimated distributions and unrealized
+            gains per share for your fund. This information can help you
+            determine how potential distributions could affect your tax bill.
+          <li>Consider tax-efficient funds. Two important considerations are the
+            securities a fund invests in and the fund's investment philosophies.
+          <li>Offset capital gains with capital losses. You may be able to use
+            capital losses from one investment to offset capital gains from
+            another, dollar for dollar. You also can use losses to offset up to
+            $3,000 in other ordinary income each year. You can use any unclaimed
+            portion to offset gains and income in later years.
+          <li>Transfer mutual fund shares that get a large distribution to a
+            charitable organization. When you donate appreciated securities to a
+            charity, you avoid paying taxes on distributions if the transfer
+            takes place before the record date – the day the fund determines
+            which investors receive capital gain and income distributions.
+            Consult your tax advisor about your specific situation.</li>
+        </ul>
+        <p>Taxes should never be the only—or even the most
+        important—consideration when investing in mutual funds. You should
+        look for funds that have solid management and good track records and
+        that meet your long-term investment strategy. These features are more
+        likely to help you meet your financial goals, even considering the cost
+        of taxes.</p>
+        <p><a href="#top">Back to top</a></p>
+        <p><span class="caption">This information is for educational
+        purposes only and is not intended as investment or tax advice.</span></p>
+        <p><span class="caption">This article is from the Financial FYI<sup>®</sup>
+        series produced by the Investor Education department of American Century
+        Investments. &quot;Financial FYI&quot; is a registered mark of American
+        Century Proprietary Holdings, Inc.</span></p>
+        <p>
+        <br>
+        </p>
+        <p class="justifyText">Learn more about <a href="http://www.americancentury.com/index.jsp" target="_blank">American 
+            Century Investments</a>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><a class="bottomnav" href="AmerCenturyCostBasis.asp">Previous Page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bottomnav" href="default.asp">Tax Center 
+Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bottomnav" href="Wells_MuniInvesting.asp">Next Page</a></p>

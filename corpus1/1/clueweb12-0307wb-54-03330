@@ -1,0 +1,386 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-23T02:22:21Z
+WARC-TREC-ID: clueweb12-0307wb-54-03330
+WARC-IP-Address: 128.196.105.150
+WARC-Payload-Digest: sha1:RSL74XBX2XPAFAWBH7QW26YB6DZ37X5F
+WARC-Target-URI: http://datamonster.sbs.arizona.edu/plaza/more/mapsmall_b.php
+WARC-Record-ID: <urn:uuid:554ce833-6570-49af-81b3-ed6fe5d51f35>
+Content-Type: application/http; msgtype=response
+Content-Length: 24086
+
+HTTP/1.1 200 OK
+Date: Thu, 23 Feb 2012 02:22:07 GMT
+Server: Apache/1.3.34 (Unix) PHP/4.3.1
+X-Powered-By: PHP/4.3.1
+Connection: close
+Content-Type: text/html
+
+<link href="../wpoh.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<body onLoad="MM_preloadImages('map_abc_images/map_abc_r1_c1_f2.gif','map_abc_images/map_abc_r1_c2_f2.gif','map_abc_images/map_abc_r1_c3_f2.gif','map_b/map_b_r2_c10_f7.gif','map_b/map_b_r3_c10_f7.gif','map_b/map_b_r3_c12_f7.gif','map_b/map_b_r5_c10_f7.gif','map_b/map_b_r5_c11_f7.gif','map_b/map_b_r5_c12_f7.gif','map_b/map_b_r5_c13_f7.gif','map_b/map_b_r7_c11_f7.gif','map_b/map_b_r7_c12_f7.gif','map_b/map_b_r10_c10_f7.gif','map_b/map_b_r10_c12_f7.gif','map_b/map_b_r3_c2_f3.gif','map_b/map_b_r3_c10_f3.gif','map_b/map_b_r5_c10_f3.gif','map_b/map_b_r5_c11_f3.gif','map_b/map_b_r6_c2_f3.gif','map_b/map_b_r6_c3_f3.gif','map_b/map_b_r6_c5_f3.gif','map_b/map_b_r7_c11_f3.gif','map_b/map_b_r8_c3_f3.gif','map_b/map_b_r9_c2_f3.gif','map_b/map_b_r9_c3_f3.gif','map_b/map_b_r9_c5_f3.gif','map_b/map_b_r9_c7_f3.gif','map_b/map_b_r10_c10_f3.gif','map_b/map_b_r11_c7_f3.gif','map_b/map_b_r11_c8_f3.gif','map_b/map_b_r11_c9_f3.gif','map_b/map_b_r11_c10_f3.gif','map_b/map_b_r12_c3_f3.gif','map_b/map_b_r13_c2_f3.gif','map_b/map_b_r13_c7_f3.gif','map_b/map_b_r13_c10_f3.gif','map_b/map_b_r13_c11_f3.gif','map_b/map_b_r15_c2_f3.gif','map_b/map_b_r17_c2_f3.gif','map_b/map_b_r17_c4_f3.gif','map_b/map_b_r17_c6_f3.gif','map_b/map_b_r9_c1_f4.gif','map_b/map_b_r9_c2_f4.gif','map_b/map_b_r9_c3_f4.gif','map_b/map_b_r9_c5_f4.gif','map_b/map_b_r12_c3_f4.gif','map_b/map_b_r13_c1_f4.gif','map_b/map_b_r13_c2_f4.gif','map_b/map_b_r3_c2_f6.gif','map_b/map_b_r3_c10_f6.gif','map_b/map_b_r5_c10_f6.gif','map_b/map_b_r5_c11_f6.gif','map_b/map_b_r6_c2_f6.gif','map_b/map_b_r6_c3_f6.gif','map_b/map_b_r6_c5_f6.gif','map_b/map_b_r7_c11_f6.gif','map_b/map_b_r8_c3_f6.gif','map_b/map_b_r9_c2_f6.gif','map_b/map_b_r9_c3_f6.gif','map_b/map_b_r9_c5_f6.gif','map_b/map_b_r9_c7_f6.gif','map_b/map_b_r10_c10_f6.gif','map_b/map_b_r11_c7_f6.gif','map_b/map_b_r11_c8_f6.gif','map_b/map_b_r11_c9_f6.gif','map_b/map_b_r11_c10_f6.gif','map_b/map_b_r12_c3_f6.gif','map_b/map_b_r13_c2_f6.gif','map_b/map_b_r13_c7_f6.gif','map_b/map_b_r13_c10_f6.gif','map_b/map_b_r13_c11_f6.gif','map_b/map_b_r15_c2_f6.gif','map_b/map_b_r17_c2_f6.gif','map_b/map_b_r17_c4_f6.gif','map_b/map_b_r17_c6_f6.gif','map_b/map_b_r10_c10_f8.gif','map_b/map_b_r10_c12_f8.gif','map_b/map_b_r11_c10_f8.gif','map_b/map_b_r11_c12_f8.gif','map_b/map_b_r13_c10_f8.gif','map_b/map_b_r13_c11_f8.gif','map_b/map_b_r14_c12_f8.gif','map_b/map_b_r14_c14_f8.gif','map_b/map_b_r16_c12_f8.gif','map_b/map_b_r18_c10_f8.gif','map_b/map_b_r18_c11_f8.gif','map_b/map_b_r13_c1_f5.gif','map_b/map_b_r13_c2_f5.gif','map_b/map_b_r13_c7_f5.gif','map_b/map_b_r13_c10_f5.gif','map_b/map_b_r15_c1_f5.gif','map_b/map_b_r15_c2_f5.gif','map_b/map_b_r17_c2_f5.gif','map_b/map_b_r17_c4_f5.gif','map_b/map_b_r17_c6_f5.gif','map_b/map_b_r18_c2_f5.gif','map_b/map_b_r18_c4_f5.gif','map_b/map_b_r18_c6_f5.gif','map_b/map_b_r18_c10_f5.gif','map_b/map_b_r19_c4_f5.gif','map_b/map_b_r20_c10_f5.gif')">
+<table border="0" cellpadding="0" cellspacing="5" width="500">
+
+	<!-- TITLE -->
+	<tr>
+		<td width="531"><img src="images/header_map.jpg" width="397" height="24"></td>
+	</tr>
+
+
+	<!-- CONTENT -->
+	<tr>
+		<td>
+			<p><span class="boldpurple">Maturity Plaza</span><br>
+This is the middle section of the Plaza and it is located right in front of the stairs of the West entrance of Centennial Hall. Mouse over any section to see  what area is covered by that letter-number combination. <br />
+		  </p>
+		  <p>&nbsp;</p>
+			<table border="0" cellpadding="0" cellspacing="0" width="528">
+              <!-- fwtable fwsrc="map_b.png" fwbase="map_b.gif" fwstyle="Dreamweaver" fwdocid = "1513997803" fwnested="0" -->
+              <tr>
+                <td><img src="map_b/spacer.gif" width="43" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="9" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="12" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="41" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="15" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="35" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="22" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="49" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="40" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="44" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="27" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="21" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="38" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="32" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="100" height="1" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="1" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="15"><img name="map_b_r1_c1" src="map_b/map_b_r1_c1.gif" width="528" height="9" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="9" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="9"><img name="map_b_r2_c1" src="map_b/map_b_r2_c1.gif" width="266" height="58" border="0" alt=""></td>
+                <td colspan="5"><img name="map_b_r2_c10" src="map_b/map_b_r2_c10.gif" width="162" height="58" border="0" alt=""></td>
+                <td rowspan="19"><img name="map_b_r2_c15" src="map_b/map_b_r2_c15.gif" width="100" height="479" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="58" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td><img name="map_b_r3_c1" src="map_b/map_b_r3_c1.gif" width="43" height="9" border="0" alt=""></td>
+                <td rowspan="3" colspan="8"><img name="map_b_r3_c2" src="map_b/map_b_r3_c2.gif" width="223" height="47" border="0" alt=""></td>
+                <td rowspan="2" colspan="2"><img name="map_b_r3_c10" src="map_b/map_b_r3_c10.gif" width="71" height="28" border="0" alt=""></td>
+                <td rowspan="2" colspan="3"><img name="map_b_r3_c12" src="map_b/map_b_r3_c12.gif" width="91" height="28" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="9" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="5"><img name="map_b_r4_c1" src="map_b/map_b_r4_c1.gif" width="43" height="130" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="19" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="5"><img name="map_b_r5_c10" src="map_b/map_b_r5_c10.gif" width="44" height="133" border="0" alt=""></td>
+                <td rowspan="2"><a href="map_b5.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r2_c10','','map_b/map_b_r2_c10_f7.gif','map_b_r3_c10','','map_b/map_b_r3_c10_f7.gif','map_b_r3_c12','','map_b/map_b_r3_c12_f7.gif','map_b_r5_c10','','map_b/map_b_r5_c10_f7.gif','map_b_r5_c11','','map_b/map_b_r5_c11_f7.gif','map_b_r5_c12','','map_b/map_b_r5_c12_f7.gif','map_b_r5_c13','','map_b/map_b_r5_c13_f7.gif','map_b_r7_c11','','map_b/map_b_r7_c11_f7.gif','map_b_r7_c12','','map_b/map_b_r7_c12_f7.gif','map_b_r10_c10','','map_b/map_b_r10_c10_f7.gif','map_b_r10_c12','','map_b/map_b_r10_c12_f7.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r5_c11" src="map_b/map_b_r5_c11.gif" width="27" height="51" border="0" alt=""></a></td>
+                <td rowspan="2"><a href="map_b5.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r2_c10','','map_b/map_b_r2_c10_f7.gif','map_b_r3_c10','','map_b/map_b_r3_c10_f7.gif','map_b_r3_c12','','map_b/map_b_r3_c12_f7.gif','map_b_r5_c10','','map_b/map_b_r5_c10_f7.gif','map_b_r5_c11','','map_b/map_b_r5_c11_f7.gif','map_b_r5_c12','','map_b/map_b_r5_c12_f7.gif','map_b_r5_c13','','map_b/map_b_r5_c13_f7.gif','map_b_r7_c11','','map_b/map_b_r7_c11_f7.gif','map_b_r7_c12','','map_b/map_b_r7_c12_f7.gif','map_b_r10_c10','','map_b/map_b_r10_c10_f7.gif','map_b_r10_c12','','map_b/map_b_r10_c12_f7.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r5_c12" src="map_b/map_b_r5_c12.gif" width="21" height="51" border="0" alt=""></a></td>
+                <td rowspan="5" colspan="2"><img name="map_b_r5_c13" src="map_b/map_b_r5_c13.gif" width="70" height="133" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="19" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="3"><img name="map_b_r6_c2" src="map_b/map_b_r6_c2.gif" width="9" height="92" border="0" alt=""></td>
+                <td rowspan="2" colspan="2"><a href="map_b1.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r3_c2','','map_b/map_b_r3_c2_f3.gif','map_b_r3_c10','','map_b/map_b_r3_c10_f3.gif','map_b_r5_c10','','map_b/map_b_r5_c10_f3.gif','map_b_r5_c11','','map_b/map_b_r5_c11_f3.gif','map_b_r6_c2','','map_b/map_b_r6_c2_f3.gif','map_b_r6_c3','','map_b/map_b_r6_c3_f3.gif','map_b_r6_c5','','map_b/map_b_r6_c5_f3.gif','map_b_r7_c11','','map_b/map_b_r7_c11_f3.gif','map_b_r8_c3','','map_b/map_b_r8_c3_f3.gif','map_b_r9_c2','','map_b/map_b_r9_c2_f3.gif','map_b_r9_c3','','map_b/map_b_r9_c3_f3.gif','map_b_r9_c5','','map_b/map_b_r9_c5_f3.gif','map_b_r9_c7','','map_b/map_b_r9_c7_f3.gif','map_b_r10_c10','','map_b/map_b_r10_c10_f3.gif','map_b_r11_c7','','map_b/map_b_r11_c7_f3.gif','map_b_r11_c8','','map_b/map_b_r11_c8_f3.gif','map_b_r11_c9','','map_b/map_b_r11_c9_f3.gif','map_b_r11_c10','','map_b/map_b_r11_c10_f3.gif','map_b_r12_c3','','map_b/map_b_r12_c3_f3.gif','map_b_r13_c2','','map_b/map_b_r13_c2_f3.gif','map_b_r13_c7','','map_b/map_b_r13_c7_f3.gif','map_b_r13_c10','','map_b/map_b_r13_c10_f3.gif','map_b_r13_c11','','map_b/map_b_r13_c11_f3.gif','map_b_r15_c2','','map_b/map_b_r15_c2_f3.gif','map_b_r17_c2','','map_b/map_b_r17_c2_f3.gif','map_b_r17_c4','','map_b/map_b_r17_c4_f3.gif','map_b_r17_c6','','map_b/map_b_r17_c6_f3.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r6_c3" src="map_b/map_b_r6_c3.gif" width="53" height="50" border="0" alt=""></a></td>
+                <td rowspan="3" colspan="5"><img name="map_b_r6_c5" src="map_b/map_b_r6_c5.gif" width="161" height="92" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="32" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="3"><img name="map_b_r7_c11" src="map_b/map_b_r7_c11.gif" width="27" height="82" border="0" alt=""></td>
+                <td rowspan="3"><img name="map_b_r7_c12" src="map_b/map_b_r7_c12.gif" width="21" height="82" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="18" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="2"><img name="map_b_r8_c3" src="map_b/map_b_r8_c3.gif" width="53" height="42" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="42" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="4"><img name="map_b_r9_c1" src="map_b/map_b_r9_c1.gif" width="43" height="76" border="0" alt=""></td>
+                <td rowspan="4"><img name="map_b_r9_c2" src="map_b/map_b_r9_c2.gif" width="9" height="76" border="0" alt=""></td>
+                <td rowspan="3" colspan="2"><a href="map_b2.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r9_c1','','map_b/map_b_r9_c1_f4.gif','map_b_r9_c2','','map_b/map_b_r9_c2_f4.gif','map_b_r9_c3','','map_b/map_b_r9_c3_f4.gif','map_b_r9_c5','','map_b/map_b_r9_c5_f4.gif','map_b_r12_c3','','map_b/map_b_r12_c3_f4.gif','map_b_r13_c1','','map_b/map_b_r13_c1_f4.gif','map_b_r13_c2','','map_b/map_b_r13_c2_f4.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r9_c3" src="map_b/map_b_r9_c3.gif" width="53" height="50" border="0" alt=""></a></td>
+                <td rowspan="4" colspan="2"><img name="map_b_r9_c5" src="map_b/map_b_r9_c5.gif" width="50" height="76" border="0" alt=""></td>
+                <td rowspan="2" colspan="3"><img name="map_b_r9_c7" src="map_b/map_b_r9_c7.gif" width="111" height="31" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="22" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="2"><img name="map_b_r10_c10" src="map_b/map_b_r10_c10.gif" width="71" height="9" border="0" alt=""></td>
+                <td colspan="3"><img name="map_b_r10_c12" src="map_b/map_b_r10_c12.gif" width="91" height="9" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="9" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="2"><img name="map_b_r11_c7" src="map_b/map_b_r11_c7.gif" width="22" height="45" border="0" alt=""></td>
+                <td rowspan="2"><a href="map_b4.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r3_c2','','map_b/map_b_r3_c2_f6.gif','map_b_r3_c10','','map_b/map_b_r3_c10_f6.gif','map_b_r5_c10','','map_b/map_b_r5_c10_f6.gif','map_b_r5_c11','','map_b/map_b_r5_c11_f6.gif','map_b_r6_c2','','map_b/map_b_r6_c2_f6.gif','map_b_r6_c3','','map_b/map_b_r6_c3_f6.gif','map_b_r6_c5','','map_b/map_b_r6_c5_f6.gif','map_b_r7_c11','','map_b/map_b_r7_c11_f6.gif','map_b_r8_c3','','map_b/map_b_r8_c3_f6.gif','map_b_r9_c2','','map_b/map_b_r9_c2_f6.gif','map_b_r9_c3','','map_b/map_b_r9_c3_f6.gif','map_b_r9_c5','','map_b/map_b_r9_c5_f6.gif','map_b_r9_c7','','map_b/map_b_r9_c7_f6.gif','map_b_r10_c10','','map_b/map_b_r10_c10_f6.gif','map_b_r11_c7','','map_b/map_b_r11_c7_f6.gif','map_b_r11_c8','','map_b/map_b_r11_c8_f6.gif','map_b_r11_c9','','map_b/map_b_r11_c9_f6.gif','map_b_r11_c10','','map_b/map_b_r11_c10_f6.gif','map_b_r12_c3','','map_b/map_b_r12_c3_f6.gif','map_b_r13_c2','','map_b/map_b_r13_c2_f6.gif','map_b_r13_c7','','map_b/map_b_r13_c7_f6.gif','map_b_r13_c10','','map_b/map_b_r13_c10_f6.gif','map_b_r13_c11','','map_b/map_b_r13_c11_f6.gif','map_b_r15_c2','','map_b/map_b_r15_c2_f6.gif','map_b_r17_c2','','map_b/map_b_r17_c2_f6.gif','map_b_r17_c4','','map_b/map_b_r17_c4_f6.gif','map_b_r17_c6','','map_b/map_b_r17_c6_f6.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r11_c8" src="map_b/map_b_r11_c8.gif" width="49" height="45" border="0" alt=""></a></td>
+                <td rowspan="2"><img name="map_b_r11_c9" src="map_b/map_b_r11_c9.gif" width="40" height="45" border="0" alt=""></td>
+                <td rowspan="2" colspan="2"><img name="map_b_r11_c10" src="map_b/map_b_r11_c10.gif" width="71" height="45" border="0" alt=""></td>
+                <td rowspan="3" colspan="3"><img name="map_b_r11_c12" src="map_b/map_b_r11_c12.gif" width="91" height="56" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="19" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="2"><img name="map_b_r12_c3" src="map_b/map_b_r12_c3.gif" width="53" height="26" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="26" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="2"><img name="map_b_r13_c1" src="map_b/map_b_r13_c1.gif" width="43" height="37" border="0" alt=""></td>
+                <td rowspan="2" colspan="5"><img name="map_b_r13_c2" src="map_b/map_b_r13_c2.gif" width="112" height="37" border="0" alt=""></td>
+                <td rowspan="5" colspan="3"><img name="map_b_r13_c7" src="map_b/map_b_r13_c7.gif" width="111" height="114" border="0" alt=""></td>
+                <td rowspan="5"><img name="map_b_r13_c10" src="map_b/map_b_r13_c10.gif" width="44" height="114" border="0" alt=""></td>
+                <td rowspan="5"><img name="map_b_r13_c11" src="map_b/map_b_r13_c11.gif" width="27" height="114" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="11" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="2"><a href="map_b6.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r10_c10','','map_b/map_b_r10_c10_f8.gif','map_b_r10_c12','','map_b/map_b_r10_c12_f8.gif','map_b_r11_c10','','map_b/map_b_r11_c10_f8.gif','map_b_r11_c12','','map_b/map_b_r11_c12_f8.gif','map_b_r13_c10','','map_b/map_b_r13_c10_f8.gif','map_b_r13_c11','','map_b/map_b_r13_c11_f8.gif','map_b_r14_c12','','map_b/map_b_r14_c12_f8.gif','map_b_r14_c14','','map_b/map_b_r14_c14_f8.gif','map_b_r16_c12','','map_b/map_b_r16_c12_f8.gif','map_b_r18_c10','','map_b/map_b_r18_c10_f8.gif','map_b_r18_c11','','map_b/map_b_r18_c11_f8.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r14_c12" src="map_b/map_b_r14_c12.gif" width="59" height="49" border="0" alt=""></a></td>
+                <td rowspan="6"><img name="map_b_r14_c14" src="map_b/map_b_r14_c14.gif" width="32" height="163" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="26" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="6"><img name="map_b_r15_c1" src="map_b/map_b_r15_c1.gif" width="43" height="169" border="0" alt=""></td>
+                <td rowspan="2" colspan="5"><img name="map_b_r15_c2" src="map_b/map_b_r15_c2.gif" width="112" height="38" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="23" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="4" colspan="2"><img name="map_b_r16_c12" src="map_b/map_b_r16_c12.gif" width="59" height="114" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="15" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td colspan="2"><img name="map_b_r17_c2" src="map_b/map_b_r17_c2.gif" width="21" height="39" border="0" alt=""></td>
+                <td colspan="2"><a href="map_b3.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r13_c1','','map_b/map_b_r13_c1_f5.gif','map_b_r13_c2','','map_b/map_b_r13_c2_f5.gif','map_b_r13_c7','','map_b/map_b_r13_c7_f5.gif','map_b_r13_c10','','map_b/map_b_r13_c10_f5.gif','map_b_r15_c1','','map_b/map_b_r15_c1_f5.gif','map_b_r15_c2','','map_b/map_b_r15_c2_f5.gif','map_b_r17_c2','','map_b/map_b_r17_c2_f5.gif','map_b_r17_c4','','map_b/map_b_r17_c4_f5.gif','map_b_r17_c6','','map_b/map_b_r17_c6_f5.gif','map_b_r18_c2','','map_b/map_b_r18_c2_f5.gif','map_b_r18_c4','','map_b/map_b_r18_c4_f5.gif','map_b_r18_c6','','map_b/map_b_r18_c6_f5.gif','map_b_r18_c10','','map_b/map_b_r18_c10_f5.gif','map_b_r19_c4','','map_b/map_b_r19_c4_f5.gif','map_b_r20_c10','','map_b/map_b_r20_c10_f5.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r17_c4" src="map_b/map_b_r17_c4.gif" width="56" height="39" border="0" alt=""></a></td>
+                <td><img name="map_b_r17_c6" src="map_b/map_b_r17_c6.gif" width="35" height="39" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="39" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="3" colspan="2"><img name="map_b_r18_c2" src="map_b/map_b_r18_c2.gif" width="21" height="92" border="0" alt=""></td>
+                <td colspan="2"><a href="map_b3.php" onclick="window.opener.location=this.href; window.close();" onMouseOver="MM_swapImage('map_b_r13_c1','','map_b/map_b_r13_c1_f5.gif','map_b_r13_c2','','map_b/map_b_r13_c2_f5.gif','map_b_r13_c7','','map_b/map_b_r13_c7_f5.gif','map_b_r13_c10','','map_b/map_b_r13_c10_f5.gif','map_b_r15_c1','','map_b/map_b_r15_c1_f5.gif','map_b_r15_c2','','map_b/map_b_r15_c2_f5.gif','map_b_r17_c2','','map_b/map_b_r17_c2_f5.gif','map_b_r17_c4','','map_b/map_b_r17_c4_f5.gif','map_b_r17_c6','','map_b/map_b_r17_c6_f5.gif','map_b_r18_c2','','map_b/map_b_r18_c2_f5.gif','map_b_r18_c4','','map_b/map_b_r18_c4_f5.gif','map_b_r18_c6','','map_b/map_b_r18_c6_f5.gif','map_b_r18_c10','','map_b/map_b_r18_c10_f5.gif','map_b_r19_c4','','map_b/map_b_r19_c4_f5.gif','map_b_r20_c10','','map_b/map_b_r20_c10_f5.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="map_b_r18_c4" src="map_b/map_b_r18_c4.gif" width="56" height="22" border="0" alt=""></a></td>
+                <td rowspan="3" colspan="4"><img name="map_b_r18_c6" src="map_b/map_b_r18_c6.gif" width="146" height="92" border="0" alt=""></td>
+                <td rowspan="2"><img name="map_b_r18_c10" src="map_b/map_b_r18_c10.gif" width="44" height="60" border="0" alt=""></td>
+                <td rowspan="2"><img name="map_b_r18_c11" src="map_b/map_b_r18_c11.gif" width="27" height="60" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="22" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="2"><img name="map_b_r19_c4" src="map_b/map_b_r19_c4.gif" width="56" height="70" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="38" border="0" alt=""></td>
+              </tr>
+              <tr>
+                <td><img name="map_b_r20_c10" src="map_b/map_b_r20_c10.gif" width="44" height="32" border="0" alt=""></td>
+                <td colspan="4"><img name="map_b_r20_c11" src="map_b/map_b_r20_c11.gif" width="118" height="32" border="0" alt=""></td>
+                <td><img src="map_b/spacer.gif" width="1" height="32" border="0" alt=""></td>
+              </tr>
+            </table>
+			<p>&nbsp;			  </p>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+			  &lt;&lt; Go <a href="plaza_mapsmall.php" onclick="window.opener.location=this.href; window.close();" class="purpleheader">back </a><br />
+		      <br />
+		      <br />
+      </p></td>
+	</tr>
+
+
+</table>
+

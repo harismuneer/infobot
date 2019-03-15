@@ -1,0 +1,2043 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-21T14:46:16Z
+WARC-TREC-ID: clueweb12-1104wb-02-07837
+WARC-IP-Address: 175.41.43.30
+WARC-Payload-Digest: sha1:LJART35LGCZYCZVS57UHQDHGG3KJBRLT
+WARC-Target-URI: http://www.flagsaustralia.com.au/CruxPrevious.html
+WARC-Record-ID: <urn:uuid:59e5d73c-f88d-41e6-8457-d9d2b5f9ceb7>
+Content-Type: application/http; msgtype=response
+Content-Length: 97937
+
+HTTP/1.1 200 OK
+Date: Wed, 21 Mar 2012 14:46:14 GMT
+Server: Apache
+Last-Modified: Sun, 22 Jan 2012 01:40:47 GMT
+Accept-Ranges: bytes
+Content-Length: 97730
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/FSA_navigate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Crux Australis  Previous Issues Volumes 15-20</title>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+.style2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style3 {
+	font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+.style4 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style5 {font-size: 10px}
+-->
+</style>
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style5 {font-family: Arial, Helvetica, sans-serif}
+.style7 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style8 {font-size: 12px}
+.style10 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; }
+.style12 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic; }
+.style15 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.style16 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/nav_text_abouttheFSA.jpg','images/nav_text_aboutFSA_ov.jpg','images/nav_textsub_join.jpg','images/nav_textsub_join_ov.jpg','images/nav_textsub_contacts.jpg','images/nav_textsub_contacts_ov.jpg','images/nav_text_cruxaustralis.jpg','images/nav_text_crux_ov.jpg','images/nav_textsub_subscribecrux.jpg','images/nav_textsub_subscribe_ov.jpg','images/nav_textsub_currentissue.jpg','images/nav_textsub_currentissue_ov.jpg','images/nav_textsub_previssue.jpg','images/nav_textsub_previssue_ov.jpg','images/nav_text_australianflags.jpg','images/nav_text_australianflag_ov.jpg','images/nav_textsub_national.jpg','images/nav_textsub_national_ov.jpg','images/nav_textsub_state.jpg','images/nav_textsub_state_ov.jpg','images/nav_textsub_historic.jpg','images/nav_text_resources.jpg','images/nav_text_resources_ov.jpg','images/nav_textsub_worldsocieties.jpg','images/nav_textsub_worldsociet_ov.jpg','images/nav_textsub_retailers.jpg','images/nav_textsub_links.jpg','images/nav_textsub_newausflag_ov.jpg')">
+<table width="934">
+  <tr>
+    <td height="190" colspan="2" align="left"><img src="images/FSA-Flag-large2.jpg" alt="FSA flag" width="300" height="188" /></td>
+    <td width="618" align="left"><img src="images/FSA-heading2.jpg" width="453" height="188" /></td>
+  </tr>
+  <tr>
+    <td width="250" rowspan="3" align="left" valign="top"><h6>
+      <p><a href="FSA.html" target="_top" onclick="MM_nbGroup('down','group1','FSA','images/nav_text_abouttheFSA.jpg',1)" onmouseover="MM_nbGroup('over','FSA','images/nav_text_aboutFSA_ov.jpg','images/nav_text_aboutFSA_ov.jpg',1)" onmouseout="MM_nbGroup('out')"><img src="images/nav_text_abouttheFSA.jpg" alt="About the FSA" name="FSA" width="250" height="50" border="0" id="FSA" onload="" />
+        </a><a href="Subscribe.html" target="_top" class="style3" onClick="MM_nbGroup('down','group1','Join','images/nav_textsub_join.jpg',1)" onMouseOver="MM_nbGroup('over','Join','images/nav_textsub_join_ov.jpg','images/nav_textsub_join_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Join" src="images/nav_textsub_join.jpg" border="0" alt="Join the FSA" onLoad="" />
+          </a><a href="Contact.html" target="_top" onClick="MM_nbGroup('down','group1','Contact','images/nav_textsub_contacts.jpg',1)" onMouseOver="MM_nbGroup('over','Contact','images/nav_textsub_contacts_ov.jpg','images/nav_textsub_contacts_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Contact" src="images/nav_textsub_contacts.jpg" border="0" alt="Contact the FSA" onLoad="" />
+          </a><a href="Crux.html" target="_top" onClick="MM_nbGroup('down','group1','Crux','images/nav_text_cruxaustralis.jpg',1)" onMouseOver="MM_nbGroup('over','Crux','images/nav_text_crux_ov.jpg','images/nav_text_crux_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Crux" src="images/nav_text_cruxaustralis.jpg" border="0" alt="Crux Australis" onLoad="" />
+          </a><a href="Subscribe.html" target="_top" onClick="MM_nbGroup('down','group1','Subscribe','images/nav_textsub_subscribecrux.jpg',1)" onMouseOver="MM_nbGroup('over','Subscribe','images/nav_textsub_subscribe_ov.jpg','images/nav_textsub_subscribe_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Subscribe" src="images/nav_textsub_subscribecrux.jpg" border="0" alt="Subscribe to Crux" onLoad="" />
+          </a><a href="CruxCurrent.html" target="_top" onClick="MM_nbGroup('down','group1','Current','images/nav_textsub_currentissue.jpg',1)" onMouseOver="MM_nbGroup('over','Current','images/nav_textsub_currentissue_ov.jpg','images/nav_textsub_currentissue_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Current" src="images/nav_textsub_currentissue.jpg" border="0" alt="Current Issue" onLoad="" />
+          </a><a href="CruxPrevious.html" target="_top" onClick="MM_nbGroup('down','group1','Previous','images/nav_textsub_previssue.jpg',1)" onMouseOver="MM_nbGroup('over','Previous','images/nav_textsub_previssue_ov.jpg','images/nav_textsub_previssue_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Previous" src="images/nav_textsub_previssue.jpg" border="0" alt="Previous Issues" onLoad="" />
+          </a><a href="AustralianFlag.html" target="_top" onClick="MM_nbGroup('down','group1','AustralianFlag','images/nav_text_australianflags.jpg',1)" onMouseOver="MM_nbGroup('over','AustralianFlag','images/nav_text_australianflag_ov.jpg','images/nav_text_australianflag_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="AustralianFlag" src="images/nav_text_australianflags.jpg" border="0" alt="Australian Flags" onLoad="" />
+          </a><a href="NationalFlag.html" target="_top" onClick="MM_nbGroup('down','group1','National','images/nav_textsub_national.jpg',1)" onMouseOver="MM_nbGroup('over','National','images/nav_textsub_national_ov.jpg','images/nav_textsub_national_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="National" src="images/nav_textsub_national.jpg" border="0" alt="National Flags" onLoad="" />
+          </a><a href="StateFlags.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('State Flags','','images/nav_textsub_state_ov.jpg',1)"><br>
+		  <img name="State Flags" src="images/nav_textsub_state.jpg" border="0" alt="State Flags" onLoad="" />
+		  </a><a href="HistoricalFlags.html" target="_top" onClick="MM_nbGroup('down','group1','HistoricalFlags','images/nav_textsub_historic.jpg',1)" onMouseOver="MM_nbGroup('over','HistoricalFlags','images/nav_textsub_historic_ov.jpg','images/nav_textsub_historic_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>
+		 <img name="Historic" src="images/nav_textsub_historic.jpg" border="0" alt="Historical Flags of Australia" onLoad="" />		 
+		 </a><a href="newflag.html" target="_top" onClick="MM_nbGroup('down','group1','NewFlag','images/nav_textsub_newflag.jpg',1)" onMouseOver="MM_nbGroup('over','NewFlag','images/nav_textsub_newausflag_ov.jpg','images/nav_textsub_newausflag_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="NewFlag" src="images/nav_textsub_newflag.jpg" border="0" alt="A New Australian Flag" onLoad="" />
+		  </a><a href="Resources.html" target="_top" onClick="MM_nbGroup('down','group1','Resources','images/nav_text_resources.jpg',1)" onMouseOver="MM_nbGroup('over','Resources','images/nav_text_resources_ov.jpg','images/nav_text_resources_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+      <img name="Resources" src="images/nav_text_resources.jpg" border="0" alt="Resources" onLoad="" />
+	  </a><a href="WorldSocieties.html" target="_top" onClick="MM_nbGroup('down','group1','WorldSocieties','images/nav_textsub_worldsocieties.jpg',1)" onMouseOver="MM_nbGroup('over','WorldSocieties','images/nav_textsub_worldsociet_ov.jpg','images/nav_textsub_worldsociet_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="WorldSocieties" src="images/nav_textsub_worldsocieties.jpg" border="0" alt="World Societies" onLoad="" />
+		  </a><a href="Retailers.html" target="_top" onClick="MM_nbGroup('down','group1','Retaliers','images/nav_textsub_retailers.jpg',1)" onMouseOver="MM_nbGroup('over','Retailers','images/nav_textsub_retailers_ov.jpg','images/nav_textsub_retailers_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Retailers" src="images/nav_textsub_retailers.jpg" border="0" alt="Flag Retailers" onLoad="" />
+		  </a><a href="Newcountryflags.html" target="_top" onClick="MM_nbGroup('down','group1','Newcountryflags','images/nav_textsub_newcountryflags.jpg',1)" onMouseOver="MM_nbGroup('over','Newcountryflags','images/nav_textsub_newflags_ov.jpg','images/nav_textsub_newflags_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Newcountryflags" src="images/nav_textsub_newcountryflags.jpg" border="0" alt="New Country Flags" onLoad="" />
+		  </a><a href="Links.html" target="_top" onClick="MM_nbGroup('down','group1','Links','images/nav_textsub_links.jpg',1)" onMouseOver="MM_nbGroup('over','Links','images/nav_textsub_links_ov.jpg','images/nav_textsub_links_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Links" src="images/nav_textsub_links.jpg" border="0" alt="Links" onLoad="" />
+		  </a><a href="Vexventures2.html" target="_top" onClick="MM_nbGroup('down','group1','Vexventures','images/nav_textsub_vexventures.jpg',1)" onMouseOver="MM_nbGroup('over','Vexventures','images/nav_textsub_vexventures_ov.jpg','images/nav_textsub_vexventures_ov.jpg',1)" onMouseOut="MM_nbGroup('out')"><br>         
+          <img name="Vexventures" src="images/nav_textsub_vexventures.jpg" border="0" alt="Vexventures" onLoad="" />
+	  
+	  </a>
+      <p>
+      
+    <pre>&nbsp;                 </pre></td>
+    <td width="50" rowspan="3" valign="top"><img src="images/Pole_skinny.jpg" width="50" height="2500" /></td>
+    <td height="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="350"><!-- InstanceBeginEditable name="EditRegion3" -->
+      <table width="618" border="0">
+        <tr>
+          <td width="150"><img src="images/Crux 97.jpg" alt="Crux 97" width="150" height="234" /></td>
+          <td width="150"><img src="images/Crux 98.jpg" alt="crux 98" width="150" height="222" /></td>
+          <td width="150"><div align="center"><img src="images/Crux99 mid.jpg" alt="Crux 99" width="138" height="216" /></div></td>
+          <td width="150"><img src="images/Crux100 mid.jpg" alt="Crux 100" width="150" height="231" /></td>
+        </tr>
+      </table>
+    <!-- InstanceEndEditable --></td>
+  </tr>
+  <tr>
+    <td height="1889" valign="top"><!-- InstanceBeginEditable name="EditRegion4" -->
+      <p>&nbsp;</p>
+      <p class="style2">Previous Issues of <em>Crux Australis</em></p>
+      <p class="style16">Following is a complete listing of all issues of <em>Crux Australis</em> including all the major articles.&nbsp; Minor &quot;notes&quot; and illustrations without text are not included. Volume 4 of each volume includes a full index of all flags and topics contained within individual articles.&nbsp; Articles which do not have an identified author are credited to the editor at the time.&nbsp; Pages in Issues 1-24 were numbered individually; for later issues, pages are numbered sequentially by volume.</p>
+      <p class="style16">A number of the state libraries in Australia subscribe to <em>Crux Australis</em> and all issues from No.1are available in their reading rooms. </p>
+      <p class="style16">All past issues of <em>Crux Australis</em> are available for sale by Flags Australia, though some early issues are only available as photocopies. </p>
+      <table width="616" border="0">
+        <tr>
+          <td width="90" valign="top"><div align="center"></div></td>
+          <td width="211" valign="middle"><span class="style10">Article name </span></td>
+          <td width="100"><span class="style10">Author</span></td>
+          <td width="197"><div align="center" class="style10">
+            <div align="left">Subject</div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Volume 24</span></div></td>
+          <td valign="top"><span class="style10">2011</span></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 100 </span></div></td>
+          <td height="20" class="style7">The Queen's Banners  </td>
+          <td><span class="style7">Tony Burton <em></em></span></td>
+          <td class="style7">Australian Flags - Other, United Kingdom </td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux100 small.jpg" alt="Crux 100" width="81" height="125" /></td>
+          <td valign="top" class="style7">CHOGM 2011  </td>
+          <td class="style7">BrainCELLS</td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">ICV24 Washington </td>
+          <td class="style7">Tony Burton <em></em></td>
+          <td class="style7">Vexillology - ICV </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">ICV26 Sydney 2015 - Congress Flag </td>
+          <td><span class="style7">Ralph Kelly </span></td>
+          <td class="style7">Vexillology - ICV </td>
+        </tr>
+        <tr>
+          <td height="44" class="style7">ICV26 Eblem - The Process </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - ICV, Flag Design </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="35" class="style7">Say, Can You See .... What<em> Is</em> That on the Flag? </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">United States </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">Know Your Flags </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Flag Quiz </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">The Vexing Thing About Flags </td>
+          <td class="style7">James Griffin, <em>New Zealand Herald </em></td>
+          <td class="style7">Vexillology</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">Five Questions for Vexillologist Whitney Smith and Historian Marc Leepson </td>
+          <td class="style12">Brittanica Blog </td>
+          <td class="style7">Vexillology</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">Cuddle Rug: Wrapt - In the Folds of the Flag </td>
+          <td class="style7">Tony Burton <em></em></td>
+          <td class="style7">Australian Flag - usage </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">The Queen's Honour: New Colours for Australia's Military </td>
+          <td><span class="style7">Ralph Bartlett </span></td>
+          <td class="style7">Australian Flags - Military </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 99</span></div></td>
+          <td height="20" class="style7">Flap Over a Flagpole </td>
+          <td><span class="style7">Zane Jackson, <em>The Queensland Times </em></span></td>
+          <td class="style7">Australian Flag - Usage</td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux99 small.jpg" alt="Crux 99" width="79" height="125" /></td>
+          <td valign="top" class="style7">No Flag in Church  </td>
+          <td class="style12">News &amp; Events St Marks </td>
+          <td class="style7">Australian Flag - Usage </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">Eureka Flag Restored </td>
+          <td class="style7">Fiona Henderson, <em>Ballarat Courier </em></td>
+          <td class="style7">Australia - Historical Flags </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">The Other Flag at Eureka  </td>
+          <td><span class="style12">State Library of Victoria </span></td>
+          <td class="style7">Australia - Historical Flags </td>
+        </tr>
+        <tr>
+          <td height="30" class="style7">Shipwrecked Flag: A Chance Encounter With a Very Old Flag </td>
+          <td><span class="style7">Ralph Kelly </span></td>
+          <td class="style7">China, Bhuddism </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="35" class="style7">Deep In the Heart of Europe: A Flag Odyssey </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Ruthenia, Carpatho-Ukraine, Moldova, Transdniestra, Romania, Poland, Lithuania, Belarus, Ukraine, Slovakia </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">Lithuania Congratulates Myanmar </td>
+          <td class="style7">Valentin Poposki </td>
+          <td class="style7">Myanmar [Burma] </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">Know Your Flags</td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Flag Quiz </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 98</span></div></td>
+          <td height="20" class="style7">Your Flag's Got My Flag On It: The Union Jack and the Australian Flag </td>
+          <td><span class="style7">Glen Wright  </span></td>
+          <td class="style7">Australian Flag - Usage, Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux 98 Small.jpg" alt="crux 98" width="84" height="125" /></td>
+          <td valign="top" class="style7">Know Your Flags </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Flag Quiz </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">Genie Out of the Bottle: Flags of the Arab Revolution </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Morocco, Western Sahara, Mauritania, Tunisia, Egypt, Libya </td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">Twelve Apostles of Ausflag </td>
+          <td><span class="style7">Tony Burton</span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td height="20" class="style7">Twelve &quot;Australians of the Year&quot; Call for a New Flag</td>
+          <td><span class="style7">Ausflag</span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="35" class="style7">Australia Day call for New Flag by Ausflag - various media reports </td>
+          <td><span class="style7">John Huxley,Tom Hyland, Martin Flanagan and <em>The Age </em>editorial  </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 97</span></div></td>
+          <td height="20" class="style7">On the Road to Naypyidaw</td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Myanmar [Burma] </td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 97 small.jpg" alt="Crux 97 small" width="80" height="125" /></td>
+          <td valign="top" class="style7">Double Vision in the Andes </td>
+          <td class="style7">Tony Burton &amp; Gus Tracchia </td>
+          <td class="style7">Bolivia</td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">Two Flags on the Island </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">New Caledonia [Kanaky]</td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">Know Your Flags </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Flag Quiz </td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">Malawi - A New Flag on the Lake </td>
+          <td class="style7">Michael Faul </td>
+          <td class="style7">Malawi</td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">Risen Sun Raises Temperature </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Malawi</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Patriot Acts: Learning From America </td>
+          <td class="style7">Waleed Aly, <em>The Monthly </em></td>
+          <td class="style7">United States - politics and national identity </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Eureka Stockade and Boston Tea Part Hijacked by Right and Left </td>
+          <td class="style7">Jake Niall, <em>The Age </em></td>
+          <td class="style7">Australia - politics, Eureka </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">ANZACs in Egypt: Mistaken Identity? </td>
+          <td class="style7">Kym Manuel </td>
+          <td class="style7">Australia - military flags </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">A Quest for Perfection </td>
+          <td class="style7">Tony Burton, Robert Bradley, Whitney Smith </td>
+          <td class="style7">Australia - New Flag Designs</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Africa - Green and Gold </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">African Union </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Where is Juwama? </td>
+          <td class="style7">Tony Burton </td>
+          <td class="style7">Southern Sudan </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Australian Coal and Iron Ore Community </td>
+          <td class="style7">Colin Randall </td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Volume 23</span></div></td>
+          <td valign="top"><span class="style10">2010</span></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 96</span></div></td>
+          <td height="20" class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="images/Crux 96 small.jpg" alt="Crux 96" width="81" height="125" /></td>
+          <td height="22" class="style7">Flags in the World of Islam </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Islamic flags, Arab Revolt flag, Middle East, Africa, Asia </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="20" class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 95</span></div></td>
+          <td height="22" class="style7">Moments Like These ... </td>
+          <td><span class="style7">various media </span></td>
+          <td class="style7">Australian Flag - Usage </td>
+        </tr>
+        <tr>
+          <td rowspan="3" valign="top"><img src="images/Crux 95 small.jpg" alt="Crux 95" width="86" height="125" /></td>
+          <td height="44" class="style7">Flying the First Flag of Queensland Separation: The Evidence  </td>
+          <td><span class="style7">Rod Fisher  </span></td>
+          <td class="style7">Australian Flags - History, Queensland </td>
+        </tr>
+        <tr>
+          <td class="style7">Book Review - <em>Caught in the Breeze </em></td>
+          <td><span class="style7">Tony Burton  </span></td>
+          <td class="style7">Flag publications</td>
+        </tr>
+        <tr>
+          <td class="style7">The Legacy of Leichhardt: For Battle Girt - Ray of Hope or No Hope? </td>
+          <td><span class="style7">Tony Burton and John Vaughan </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Ray Martin Cops Criticism Over Flag Debate  </td>
+          <td><span class="style7">various media </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">And the Lights Went Out in Leichhardt </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Media Shouting Match and other comments on 60 Minutes event <em></em></td>
+          <td><span class="style7">deborah Snow, Ralph Kelly, Jonathan Dixon, Ralph Barlett and Mark Rodda </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 94</span></div></td>
+          <td height="22" class="style7">Flags of Australian Celebration </td>
+          <td><span class="style7">Ralph Bartlett</span></td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 94 small.jpg" alt="Crux 94" width="84" height="125" /></td>
+          <td height="35" class="style7">In a Flap Over the Aussie Flag </td>
+          <td><span class="style7">various media </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td class="style7">Ray, Ray, Go Away </td>
+          <td><span class="style7">Tony Burton and various media and blogs </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td class="style7">Letters</td>
+          <td><span class="style7">Nigel Morris, Rohen Conners </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td class="style7">A Bit of Biffo, You Beauty </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td class="style7">Debating the Flag </td>
+          <td><span class="style7">Ralph Kelly and ANFA</span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">New Flag Book - <em>Caught in the Breeze </em></td>
+          <td><span class="style7">Blemish Books </span></td>
+          <td class="style7">Flag publications</td>
+        </tr>
+        
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 93</span></div></td>
+          <td class="style7">What Price a Bit of Bunting? </td>
+          <td><span class="style12">The Times </span></td>
+          <td class="style7">United Kingdom </td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux 93 small.jpg" alt="Crux 93" width="81" height="125" /></td>
+          <td height="27" class="style7">Britannia Rues the Sale </td>
+          <td><span class="style12">The Times </span></td>
+          <td class="style7">United Kingdom </td>
+        </tr>
+        <tr>
+          <td height="22" class="style7">Afghanistan: Two Flags or One? </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Afghanistan</td>
+        </tr>
+        <tr>
+          <td class="style7">Enduring Emblem: A Cross-cultural Pespective  </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Afghanistan, Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td class="style7">In the Name of the (Founding) Fathers </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Flag Design Elements - Southern Cross </td>
+        </tr>
+        
+        
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="22" class="style7">Tattoos and the Southern Cross </td>
+          <td><span class="style7">various media </span></td>
+          <td class="style7">Australian Flag - Usage</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="24" class="style7">Tracking the Australian Flag </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - Usage</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">A Flag of a Different Stripe  </td>
+          <td><span class="style7">Micahel Iacuone and Tony Burton </span></td>
+          <td class="style7">Australia - New Flag Designs</td>
+        </tr>
+        <tr>
+          <td height="20" valign="top">&nbsp;</td>
+          <td class="style7"><p>Flags for a Food Fest </p>          </td>
+          <td><span class="style12">Sydney Morning Herald </span></td>
+          <td class="style7">Flag Usage</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Flags of Seychelles </td>
+          <td><span class="style7">Ron Strachan and Tony Burton </span></td>
+          <td class="style7">Seychelles</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">FSA AGM 2009 </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - Australia </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">ICV26 Sydney Logo and Flag </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - ICV</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Symbols of Australia </td>
+          <td><span class="style7">UNSW Press </span></td>
+          <td class="style7">Flag publications, Australia - National symbols </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Holy Cow, What's the Beef? Essay for Australia Day </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Volume 22 </span></div></td>
+          <td valign="top"><span class="style8"><span class="style10">2009</span></span></td>
+          <td>&nbsp;</td>
+          <td><span class="style8"></span></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 92 </span></div></td>
+          <td class="style7">23rd ICV Yokohama </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - ICV</td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 92 small.jpg" alt="crux 92 small" width="84" height="125" /></td>
+          <td height="27" class="style7">Australian National Flag Day </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - Australia </td>
+        </tr>
+        <tr>
+          <td height="22" class="style7">Premier Calls for New National Flag </td>
+          <td><span class="style7">Press Reports</span></td>
+          <td class="style7">Australia - New Flag Debate</td>
+        </tr>
+        <tr>
+          <td class="style7">Seoul Searching at the DMZ </td>
+          <td><span class="style7">Ralph Bartlett </span></td>
+          <td class="style7">Korea</td>
+        </tr>
+        <tr>
+          <td height="23" class="style7">O Waratah, Wherefore Art Thou Lotus? </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australia - State Flags, NSW </td>
+        </tr>
+        <tr>
+          <td height="22" class="style7">150 years of the Queen's Land </td>
+          <td><span class="style7">Ralph Bartlett </span></td>
+          <td class="style7">Australia - State Flags, Queensland </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td height="24" class="style7">Australians Identified </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - History</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Origins of the Korean Flag </td>
+          <td><span class="style7">Ralph Kelly </span></td>
+          <td class="style7">Korea</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Seoul Searching at the DMZ </td>
+          <td><span class="style7">Ralph Bartlett </span></td>
+          <td class="style7">Korea</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Wonders of the Whirlygig </td>
+          <td><span class="style7">Jonathan Dixon </span></td>
+          <td class="style7">Korea</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Uyghurstan: An Inconvenient Flag </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Uyghurstan, China </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Tokelau Flag Formally Approved </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Tokelau</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Greenland</td>
+          <td><span class="style7">Press Report and Tony Burton</span></td>
+          <td class="style7">Greenland</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Last Word on Wales </td>
+          <td><span class="style12">Wikipedia</span></td>
+          <td class="style7">Wales</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 91 </span></div></td>
+          <td class="style7">Australia Day and Identity - Part 2 </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - History, Usage, Indigenous </td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 91 small.jpg" alt="Crux 91 small" width="86" height="125" /></td>
+          <td class="style7">Flags Australia AGM </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - Australia </td>
+        </tr>
+        <tr>
+          <td class="style7">How Now, Lord Howe </td>
+          <td><span class="style7">Ralph Bartlett</span></td>
+          <td class="style7">Australia - Territory Flags, Lord Howe Island </td>
+        </tr>
+        <tr>
+          <td class="style7">Swan River Flag  </td>
+          <td><span class="style7">Pennant House </span></td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td class="style7">A New Advance for the Young, the Free and the Girt by Sea </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australia - National symbols </td>
+        </tr>
+        <tr>
+          <td class="style7">Vexinotes - various newspaper articles&nbsp; and news items </td>
+          <td><span class="style7">various</span></td>
+          <td class="style7">Flag Usage, Canada, Fiji, South Africa, United Kingdom </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 90 </span></div></td>
+          <td class="style7">Australian Flags - Whose Identity?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Part 1 </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - History, Usage, Indigenous </td>
+        </tr>
+        <tr>
+          <td rowspan="6" valign="top"><img src="images/Crux 90 small.jpg" alt="crux 90" width="86" height="127" /></td>
+          <td height="21" class="style7">Lord, Howe Did You Get That Flag? </td>
+          <td><span class="style7">Ralph Bartlett</span></td>
+          <td class="style7">Australia - Territory Flags, Lord Howe Island </td>
+        </tr>
+        <tr>
+          <td height="23" class="style7">A Shimmering Flag </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australia - Territory Flags, Lord Howe Island </td>
+        </tr>
+        <tr>
+          <td height="19" class="style7">Honour Certificates From World War I </td>
+          <td><span class="style7">Elizabeth Willis  </span></td>
+          <td class="style7">Australian Flag - History</td>
+        </tr>
+        <tr>
+          <td height="19" class="style7">Hanging Out More Flags </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - History</td>
+        </tr>
+        <tr>
+          <td height="33" class="style7">Australian Defence Force Ensign (Joint Services Flag) </td>
+          <td><span class="style7">Ralph Kelly </span></td>
+          <td class="style7">Australia - military flags </td>
+        </tr>
+        <tr>
+          <td class="style7">Seeing Red  </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flag - History</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="style7">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 89</span></div></td>
+          <td class="style7">Flags of the Australian South Sea Islanders </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Australian Flags - Other </td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 89 small.jpg" alt="Crux 89" width="86" height="125" /></td>
+          <td class="style7">Flag on the Yarra - Arms and Flag of Melbourne </td>
+          <td><span class="style7">Ralph Bartlett</span></td>
+          <td class="style7">Australian Flag - Cities </td>
+        </tr>
+        <tr>
+          <td class="style7">Flags Australia 25 Years  1983-2008 </td>
+          <td><span class="style7">Ralph Bartlett</span></td>
+          <td class="style7">Vexillology - Australia </td>
+        </tr>
+        <tr>
+          <td class="style7">Vexillology in Australia - The Future? </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Vexillology - Australia </td>
+        </tr>
+        <tr>
+          <td class="style7">A Conversation with Harold Thomas </td>
+          <td><span class="style7">Ralph Kelly</span></td>
+          <td class="style7">Australian Flags - Indigenous </td>
+        </tr>
+        <tr>
+          <td class="style7">Dragon With No Puff </td>
+          <td><span class="style7">BBC News and Harold Scruby</span></td>
+          <td class="style7">Wales</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Saving Wales <em>(editor's comment)</em></td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Wales</td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td class="style7">Bamar by the Bay - Some Flags </td>
+          <td><span class="style7">Tony Burton </span></td>
+          <td class="style7">Myanmar [Burma] </td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Volume 21 </span></div></td>
+          <td valign="top"><span class="style8"><span class="style10">2008</span></span></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="22" valign="top"><div align="center"><span class="style10">Issue 88</span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Marching Through Georgia : Flags of Sovereignty and Secession in the Caucasus </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Georgia</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td rowspan="5" valign="top"><img src="images/Crux 88 small.jpg" alt="Crux 88" width="82" height="125" /></td>
+          <td height="22" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Tokelau - New Standard for the Pacific </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Ralph Bartlett  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Tokelau </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Where the Rivers Run: A Tale of Two Flags </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">Iraq, Chaldeans, Assyrians </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top" class="style7">New Flag for Iraq?  </td>
+          <td valign="top"><span class="style7">AAP News </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Iraq </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Highest Standards: Flags of the Himalayas </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Tibet, Bhutan, Nepal, Sikkim </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Construction of the Union Jack </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Ralph Kelly  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">United Kingdom  </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">In Praise of the Union Jack </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Flag Design Elements - Union Jack </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Union Flag and Australia's Symbols  </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tommy Culshaw  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - New Flag Debate</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Legacy of the Union Jack in a New Australian Flag </td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - New Flag Debate</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Showing the Flag - White Fleet Anniversary </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7"><em> Sydney Morning Herald</em> and State Library of NSW </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Flag Usage</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flags A Victory for History - Signals on the Hill </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">John Vaughan and Katrina Adamski, <em>North Shore Times</em> </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Flag Usage</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">&nbsp;</td>
+              </tr>
+          </table></td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">&nbsp;</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="22" valign="top"><div align="center"><span class="style10">Issue 87</span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Tokelau Transition </td>
+              </tr>
+
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Tokelau</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux 87 -small.jpg" alt="crux 87" width="84" height="125" /></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Messing About in Boats </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Flag Design Elements - Boats </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flagging an Issue: The Torch and Tibet </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">Tibet</div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">John Bingle's Notebooks and Australia's Original Ensign - Correction </td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flags of  Australian Territories - Correction </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Jonathan Dixon </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - Territory Flags, Papua New Guinea </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Australian Flag at War as Incentive to Recruitment </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The &quot;Coo-ees&quot; - The Story of the Gilgandra March of 1915 </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">John Meredith </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Snowy River March </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Dianne Rutherford </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top" class="style7">Red Ensign for a Royal Occasion </td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7"><em>Vexilla Regis</em> - World Youth Day 2008 Pageant of Flags </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton and Ralph Kelly </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Flag Usage</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">ICV22 Berlin 31 July- 5 Aug 2007 </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Rob Raeside </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Vexillology - ICV</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">ICV 22 Berlin - A Critique: My Impressions of the Conference </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Dov Gutterman </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Vexillology - ICV</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 86</span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Balkan Cauldron: Crunch time in Kosovo </td>
+              </tr>
+              <tr>
+                <td height="16" class="style7">&nbsp;</td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Kosovo</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><img src="images/Crux-86 small.gif" alt="Crux 86" width="86" height="125" /></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flag Evolution - Iraq </td>
+              </tr>
+
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Iraq</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Mini-Crisis in Iraq: Which Iraqi Flag? </td>
+              </tr>
+
+          </table></td>
+          <td valign="top"><span class="style7">Nimrod Raphaeli </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">Iraq</div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top" class="style7">John Bingle's Notebooks and Australia's Original Ensign </td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Australian Flag: Its Use and Promotion from 1954 </td>
+              </tr>
+
+          </table></td>
+          <td valign="top"><span class="style7">Elizabeth Kwan </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australian Flag - History </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">An Echo of History : A Stately Ensign - Victoria </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - State Flags, Victoria </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flags of Australian Territories </td>
+              </tr>
+
+          </table></td>
+          <td valign="top"><span class="style7">Jonathan Dixon </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - Territory Flags, Papua New Guinea, Northern Territory, ACT, Norfolk Island, Christmas Island, Cocos (Keeling) Island </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">The Friendship of Flags: Elaine's Story </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Elaine Peters  </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Vexillologists - Profile</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 85 </span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Has the Australian Flag Debate Ended? </td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Ralph Kelly </span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="194">Australia - New Flag Debate</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="images/Crux-85 small.jpg" alt="Crux 85" width="86" height="125" /></td>
+          <td height="16" valign="top"><span class="style7">Stars in the South - Australia's Forgotten Flag Revisited </span></td>
+          <td valign="top"><span class="style7">Tony Burton</span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="16" width="195">Australian Flag - History, Australia - New Flag Debate</td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top">&nbsp;</td>
+          <td valign="top">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Volume 20 </span></div></td>
+          <td valign="top"><span class="style8"><span class="style10">2007</span></span></td>
+          <td>&nbsp;</td>
+          <td><span class="style8"></span></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 84 </span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Venezuela Flag Change - Back to Bolivarian Basics</td>
+            </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton </span></td>
+          <td valign="top">
+            <div align="center" class="style7">
+              
+              <div align="left">
+                <table width="197" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="16" width="117"><table cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="16" width="85">Venezuela</td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+
+        <tr>
+          <td rowspan="4" valign="top"><div align="center"><img src="images/Crux-84-small.jpg" alt="Crux 84" width="82" height="125" /></div></td>
+          <td height="51" valign="top"><span class="style7">Caudillos, Coups, Constitutions and Changes: An   Analysis of Flag Changes in Latin America</span></td>
+          <td valign="top"><span class="style7">Ralph Kelly</span></td>
+          <td valign="top"><div align="center" class="style7">
+            <div align="left">
+              <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="195" height="16">Latin America</td>
+                  </tr>
+                </table>
+            </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><span class="style7">Revolutionary Origins of Flag Designs</span></td>
+          <td><span class="style7">Tony Burton</span></td>
+          <td><div align="center" class="style7">
+            
+              <div align="left">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="16" width="191">Latin America</td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="18" valign="top"><span class="style7">21st ICV Buenos Aires August 2005</span></td>
+          <td><span class="style7">Tony Burton</span></td>
+          <td><div align="center" class="style7">
+            
+              <div align="left">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="16" width="191">Vexillology - ICV</td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="16" valign="top"><span class="style7">Mexican Flag Dance</span></td>
+          <td valign="top"><span class="style7">Tony Burton</span></td>
+          <td valign="top"><div align="center" class="style7">
+            
+              <div align="left">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="16" width="195">Australia - New Flag Debate</td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></div></td>
+          <td valign="top">&nbsp;</td>
+          <td><span class="style8"></span></td>
+          <td><div align="left"><span class="style5"><span class="style8"><span class="style8"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center" class="style7"><strong>Issue 83</strong></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">National Parliament, National Symbols: From British   to Australian Identity</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Elizabeth Kwan</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">Australian Flag - History</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><div align="center" class="style7"><img src="images/Crux-83-small.jpg" alt="Crux 83" width="84" height="125" /></div>            <div align="center" class="style7"></div>            <div align="center" class="style7"></div>            <div align="center" class="style7"></div></td>
+          <td height="31" valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Europa's Garland and Crowning Glory</td>
+            </tr>
+          </table></td>
+          <td><span class="style7">Tony Burton</span></td>
+          <td><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">European Union</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="26" valign="top" class="style7">The European Union Flag</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Tony McCarthy &amp; FOTW</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">European Union</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Mulier Amicta Sole: A Sign of Gold in the Blue</td>
+            </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton</span></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">European Union</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="25" valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Kosovo</td>
+            </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton</span></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">Kosovo</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></div></td>
+          <td valign="top"><span class="style8"></span></td>
+          <td><span class="style8"></span></td>
+          <td><span class="style8"></span></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style10">Issue 82</span></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">The Eagle Has Landed: The Ambiguous Emblems of South   Australia</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Tony Burton</td>
+            </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Australia - State Flags, South Australia </td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td rowspan="8" valign="top"><div align="center"><img src="images/Crux-82-small.jpg" alt="Crux 82" width="83" height="125" /></div>            
+          <div align="center"></div>            <div align="center"></div>            <div align="center"></div>            <div align="center"></div>            <div align="center"></div>            <div align="center"></div></td>
+          <td height="20" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Swan Lake: Western Australia's Wings of Change </td>
+              </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Ralph Bartlett </td>
+            </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">
+              <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="16" width="311">Australia - State Flags, Western Australia </td>
+                </tr>
+              </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Beyond the Beach: Flag War in Australia</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Tony Burton</td>
+            </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Australian Flag - Usage</td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Flag of Convenience</td>
+            </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">David Rutledge</td>
+            </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Australian Flag - Usage</td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">For Whose Convenience?: Ambiguities of the Australian   Flag</td>
+            </tr>
+          </table></td>
+          <td valign="top"><span class="style7">Tony Burton</span></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="311" height="16" class="style7">Australian Flag - Usage</td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" valign="top" class="style7">Flags of Separation</td>
+            </tr>
+          </table></td>
+          <td><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Edward Cattoni, Daniel Lewis &amp; Tony Burton</td>
+            </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">Australia - State Flags, New State Proposals </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Blue, Green and Gold in National Flag Design</td>
+            </tr>
+          </table></td>
+          <td><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Tony Burton</td>
+            </tr>
+          </table></td>
+          <td><div align="center" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Flag Design Elements - Colours</td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Flag, Sash and Latin Dash</td>
+            </tr>
+          </table></td>
+          <td><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Miles Li</td>
+            </tr>
+          </table></td>
+          <td><div align="center" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Latin America</td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7">Flags for Dancing and the Victoria League for   Commonwealth Friendship</td>
+            </tr>
+          </table></td>
+          <td><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="248" height="16" class="style7">Colin Randall</td>
+            </tr>
+          </table></td>
+          <td><div align="center" class="style7">
+            <table cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="16" width="311">Australian Flag - History</td>
+              </tr>
+            </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></div></td>
+          <td valign="top">&nbsp;</td>
+          <td valign="top"><span class="style8"></span></td>
+          <td valign="top"><div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span></div></td>
+        </tr>
+        <tr>
+          <td valign="top"><div align="center" class="style7"><strong>Issue 81</strong></div></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="355" height="16" class="style7"><table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="16" width="355">State Flags and Federation: Australia Day Newcastle</td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>            </td>
+          <td valign="top"><table width="101" height="35" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="248" height="16" class="style7">Tony Burton</td>
+            </tr>
+          </table>            </td>
+          <td class="style7"><p>Vexillology - Australia </p>          </td>
+        </tr>
+        <tr>
+          <td rowspan="4" valign="top"><div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span><img src="images/Crux-81-small.jpg" alt="Crux 81" width="83" height="125" /></div>            
+          <div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span></div>            <div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span></div>            <div align="center"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"><span class="style5"><span class="style5"><span class="style5"><span class="style8"><span class="style8"></span></span></span></span></span></span></span></span></span></span></div></td>
+          <td height="20" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">State Badges and Flags Revisited</td>
+              </tr>
+          </table></td>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="248" height="16" class="style7">Ralph Kelly </td>
+              </tr>
+          </table></td>
+          <td valign="top"><div align="left" class="style7">
+              <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="16" width="311"><div align="left" class="style7">Australia - State Flags, Australia - Territories, NSW, Victoria, Queensland, South Australia, Tasmania, Western Australia, Northern Territory, ACT </div></td>
+                </tr>
+              </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Tjuringa Dreaming: Revolutionary Flags of the   Australian Aboriginals: Heralds of Change 1971-1997</td>
+              </tr>
+          </table></td>
+          <td valign="top" class="style5"><span class="style8"><span class="style7">Tony Burton</span></span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">Australia - Indigenous</div>
+          </div></td>
+        </tr>
+        <tr>
+          <td valign="top"><span class="style7">Our &quot;True Colours&quot;: Or Herd Mentality?</span></td>
+          <td class="style5"><span class="style8"><span class="style7">Tony Burton</span></span></td>
+          <td><div align="left" class="style7">
+              <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="16" width="311">Australian Flag - Usage</td>
+                </tr>
+              </table>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="23" valign="top"><table cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="355" height="16" class="style7">Flag Branded Symbol of Racism</td>
+              </tr>
+          </table></td>
+          <td valign="top"><span class="style12">Daily Telegraph</span></td>
+          <td valign="top"><div align="center" class="style7">
+              <div align="left">
+                <table cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="16" width="311">Australian Flag - Usage</td>
+                  </tr>
+                </table>
+              </div>
+          </div></td>
+        </tr>
+      </table>
+      <p><span class="style15">Index compiled by Ralph Kelly.</span></p>
+      <table width="400" border="0">
+        <tr>
+          <td><span class="style15">For earlier issues see: </span></td>
+          <td><span class="style15"><a href="CruxIndex1.html">Crux Index vol 16-19 </a></span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td class="style15"><a href="CruxIndex2.html">Crux Index vol 11-15 </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><span class="style15"><a href="CruxIndex3.html">Crux Index vol 6-10 </a></span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><span class="style15"><a href="CruxIndex4.html">Crux Index vol 1-5</a> </span></td>
+        </tr>
+        <tr>
+          <td><p class="style15">&nbsp;</p>
+              <p class="style15">ICV13 Report </p></td>
+          <td><p class="style15">&nbsp;</p>
+              <p class="style15"><a href="ICV13.html">ICV13 Report </a></p></td>
+        </tr>
+      </table>
+      <p>update 21.12.11  </p>
+    <!-- InstanceEndEditable --></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="style4"><span class="style5">&copy; 2008 Material Copyright to the Flag Society of Australia Inc and Pennant Advisory Services Pty Limited. Text and illustrations by Ralph Kelly. Web Design by Elizabeth Kelly of ELK Prints</span>. </td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>

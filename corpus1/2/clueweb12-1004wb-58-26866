@@ -1,0 +1,920 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-17T09:45:19Z
+WARC-TREC-ID: clueweb12-1004wb-58-26866
+WARC-Target-URI: http://ipv6.navy.mil/view_photos.asp
+WARC-Payload-Digest: sha1:F36SNIMOH6QNSUGR6Z5KCORRETD3VZRI
+WARC-IP-Address: 23.15.7.64
+WARC-Record-ID: <urn:uuid:8eaed02c-0dfb-45a2-9ed8-6d04b37d8e4b>
+Content-Type: application/http; msgtype=response
+Content-Length: 40544
+
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+Header: US Navy
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Cache-Control: private, max-age=1183831
+Date: Sat, 17 Mar 2012 09:45:19 GMT
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html lang="en">
+<head>
+<title>Navy News Service - Eye on the Fleet&nbsp;Current Collection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="newsstand.css" rel="stylesheet" type="text/css">
+<SCRIPT type="text/javascript">
+<!--
+
+// Test for Microsoft Internet Explorer
+//-----------------------------------------------------------------------
+function isMSIE() 
+//-----------------------------------------------------------------------
+{
+	return (navigator.appVersion.indexOf("MSIE") != -1)
+}
+
+
+// Netscape CSS Bug Fix
+if (document.layers){
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	}
+	
+//-----------------------------------------------------------------------
+function reloadPage() 
+//-----------------------------------------------------------------------
+{
+	if (innerWidth != origWidth || innerHeight != origHeight)
+		location.reload();
+}
+	
+if (document.layers) onresize = reloadPage;	
+
+
+// Email Link Protection Functions
+var user;
+var domain;
+var suffix;
+var linktitle;
+
+// Show and Hide Functions
+//-----------------------------------------------------------------------
+function hide_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id;
+	
+	menu_id = document.getElementById(div_id);
+	
+	/* Hide the specified menu */
+	if (menu_id == null)
+	{
+		return;
+	}
+	else 
+	{
+		menu_id.className = 'hide';
+	}
+}
+
+//-----------------------------------------------------------------------
+function toggle_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id, old_value;
+	
+	menu_id = document.getElementById(div_id);
+	if (menu_id == null)
+		return;
+		
+	/* Retrive current class value */
+	old_value = menu_id.className;
+	
+	/* First hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+
+	/* set new class value */
+	if (old_value == 'hide')
+	{
+		menu_id.className = 'show';
+	}
+	else
+	{
+		menu_id.className = 'hide';	
+	}
+}	
+
+//-----------------------------------------------------------------------
+function show_all_menus()
+//-----------------------------------------------------------------------
+{
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'show';
+			}
+	}
+}	
+
+//-----------------------------------------------------------------------
+function toggle_display(div_id)
+//-----------------------------------------------------------------------
+{
+	var child;
+
+	/* Hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+	
+/*	child = document.all(window.event.srcElement.child);*/
+	child = document.getElementById(div_id);
+	
+	if (child == null)
+		return;
+	else
+	{
+		if (child.className == 'hide')
+		{
+			child.className = 'show';
+		}
+		else
+		{
+			child.className = 'hide';
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+		
+
+</head>
+
+<body bgcolor="#CEE7FF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000033" link="#0066CC" vlink="#666666" alink="#666666" background="/images/body-tile.png">
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+function clearText(theBox) {
+  theBox.value = "";
+}
+//-->
+</SCRIPT>
+<script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+<style type="text/css">
+@import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #cccccc;
+}
+-->
+</style>
+<script language="JavaScript">
+function openwincno(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/cnopd.html', 'cno', properties);
+}
+</script>
+<script language="JavaScript">
+function openwin(){ 
+properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150'
+win_1 = window.open ('/swf/radio.html', 'ahradio', properties);
+}
+</script>
+<table width=1000 height="50" border=0 align="center" cellpadding=0 cellspacing=0 bgcolor="#000033" style="background-image: url('/graphics/Navymil.png');background-position: right;background-repeat: no-repeat;">
+<form name=srchForm method=get action="http://search.dma.mil/search">
+  <tr>
+    <td width=725 height=50><a href="http://www.navy.mil"><img src="/images/bblank.gif" border=0 width=725 height=50 alt="Home Page"></a></td>
+        <td align=right>
+          <table border=0 cellpadding=0 cellspacing=1 width=265>
+            <tr>
+                  <td>&nbsp;<a href="http://www.navy.com" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Careers</strong></a></td>
+                  <td>&nbsp;<a href="/navydata/infoIndex.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Info&nbsp;Index</strong></a></td>
+                  <td>&nbsp;<a href="/about.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>About&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/submit/contacts.asp" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Contact&nbsp;Us</strong></a></td>
+                  <td>&nbsp;<a href="/" style="text-decoration: none; font-family:sans-serif; font-weight: bold; font-size: 7pt; color: #FFFFFF;"><strong>Home</strong></a>&nbsp;</td>
+            </tr>
+                <tr>
+                  <td align=center colspan=5><input maxlength=255 type=text name=q id=q value="Search Navy.mil" title="Search Navy.mil" style="height: 18px; width: 200px; font-size: 9px; font-weight: bold;" onFocus="clearText(this);">&nbsp;&nbsp;<input type=image src="/images/go_darkgray.gif" border=0 name=btnG alt="Submit"></td>
+                </tr>
+                <tr>
+                  <td align=center colspan=5><a href="/search/advanced_search.asp" style="font-size:11px; font-family:sans-serif; font-weight:regular; text-decoration:none; color:#FFFFFF"> >>> Advanced Search </a></td>
+                </tr>
+          </table>
+			<input type="hidden" name="client" value="navy_search">
+			<input type="hidden" name="proxystylesheet" value="navy_search">
+			<input type="hidden" name="output" value="xml_no_dtd">
+			<input type="hidden" name="site" id="site" value="navy_all">
+        </td>
+  </tr>
+</form>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <!-- Begin Standard USN Header Bar -->
+
+<style>
+        @import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var menu_ids = new Array('column2_menu','column3_menu','column4_menu','column5_menu','column6_menu');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CFDBE7">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td width="3%"></td>
+<td width="11%"><a href=""></a></td>
+<td width="11%"><a title="US Navy Today - for 508 viewers please click here then tab into the menu for this area"
+tabindex=200
+class="header_menu_item"
+href="javascript:void(0);"
+name="column2_menu_link"
+id="column2_menu_link"
+child="column2_menu"
+onclick="toggle_main_menu('column2_menu');">&nbsp;US Navy Today</a></td>
+
+<td width="11%"><a title="About the Navy - for 508 viewers please click here then tab into the menu for this area"
+tabindex=300
+class="header_menu_item"
+href="javascript:void(0);"
+name="column3_menu_link"
+id="column3_menu_link"
+child="column3_menu"
+onclick="toggle_main_menu('column3_menu');">&nbsp;About the Navy</a></td>
+
+<td width="11%"><a title="Navy Leadership - for 508 viewers please click here then tab into the menu for this area"
+tabindex=400
+class="header_menu_item"
+href="javascript:void(0);"
+name="column4_menu_link"
+id="column4_menu_link"
+child="column4_menu"
+onclick="toggle_main_menu('column4_menu');">&nbsp;Navy Leadership</a></td>
+
+<td width="11%"><a title="Media Resources - for 508 viewers please click here then tab into the menu for this area"
+tabindex=500
+class="header_menu_item"
+href="javascript:void(0);"
+name="column5_menu_link"
+id="column5_menu_link"
+child="column5_menu"
+onclick="toggle_main_menu('column5_menu');">&nbsp;Media Resources</a></td>
+
+<td width="11%"><a title="Links of Interest - for 508 viewers please click here then tab into the menu for this area"
+tabindex=600
+class="header_menu_item"
+href="javascript:void(0);"
+name="column6_menu_link"
+id="column6_menu_link"
+child="column6_menu"
+onclick="toggle_main_menu('column6_menu');">&nbsp;Links of Interest</a></td>
+
+<td width="17%"><a tabindex=700 class="header_menu_item" href="/navydata/infoIndex.asp">&nbsp;Information Index </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Column2 Menu Popup Items --->
+<div id="column2_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">US Navy Today:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=221 class="header_submenu_item" href="/navydata/navy_legacy_hr.asp?id=146">Status of the Navy </a></div>
+</td>
+<td width="330">
+<div><a tabindex=241 class="header_submenu_item" href="/links/alpha.asp">Navy Web Sites </a></div>
+</td>
+<td width="330">
+<div><a tabindex=261 class="header_submenu_item" href="/search/history_today.asp">Today in Naval History </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=290 href="javascript:void(0);" onclick="hide_main_menu('column2_menu');">Hide US Navy Today Menu</a></div>
+</div>
+</div>
+
+<!-- Column3 Menu Popup Items --->
+<div id="column3_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">About the Navy:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=321 class="header_submenu_item" href="/navydata/organization/org-top.asp">Navy Organization </a></div>
+</td>
+<td width="330">
+<div><a tabindex=341 class="header_submenu_item" href="/navydata/our_ships.asp">Our Ships </a></div>
+</td>
+<td width="330">
+<div><a tabindex=361 class="header_submenu_item" href="/navydata/fact.asp">Fact File </a></div>
+<div><a tabindex=362 class="header_submenu_item" href="/navydata/faq.asp">FAQ (Got a Question?) </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=390 href="javascript:void(0);" onclick="hide_main_menu('column3_menu');">Hide About the Navy Menu</a></div>
+</div>
+</div>
+
+<!-- Column4 Menu Popup Items --->
+<div id="column4_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Navy Leadership:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=421 class="header_submenu_item" href="/secnav/index.asp">Secretary of the Navy </a></div>
+<div><a tabindex=422 class="header_submenu_item" href="/navydata/bios/bio_list.asp">Biographies </a></div>
+</td>
+<td width="330">
+<div><a tabindex=441 class="header_submenu_item" href="/cno/index.asp">Chief of Naval Operations </a></div>
+<div><a tabindex=442 class="header_submenu_item" href="/navydata/ccklist.asp">Leadership Tools </a></div>
+</td>
+<td width="330">
+<div><a tabindex=461 class="header_submenu_item" href="/cnp/index.asp">Chief of Naval Personnel </a></div>
+<div><a tabindex=462 class="header_submenu_item" href="/mcpon/index.asp">Master Chief Petty Officer of the Navy </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=490 href="javascript:void(0);" onclick="hide_main_menu('column4_menu');">Hide Navy Leadership Menu</a></div>
+</div>
+</div>
+
+<!-- Column5 Menu Popup Items --->
+<div id="column5_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Media Resources:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=521 class="header_submenu_item" href="/view_photos_top.asp">Photo Gallery </a></div>
+<div><a tabindex=522 class="header_submenu_item" href="/view_galleries.asp">Eye on the Fleet Featured Gallery </a></div>
+<div><a tabindex=523 class="header_submenu_item" href="/view_videos.asp?vtype=5">All Hands Television Archive </a></div>
+<div><a tabindex=524 class="header_submenu_item" href="/podcast/podcast.asp">Podcasts and RSS Feeds </a></div>
+<div><a tabindex=525 class="header_submenu_item" href="/view_videos.asp">Video Gallery </a></div>
+<div><a tabindex=526 class="header_submenu_item" href="/view_flash_gallery.asp">Everyday in the Navy Archive </a></div>
+</td>
+<td width="330">
+<div><a tabindex=541 class="header_submenu_item" href="/navydata/cnopList.asp">CNO Podcast </a></div>
+<div><a tabindex=542 class="header_submenu_item" href="/navydata/mcponplist.asp">MCPON Podcast </a></div>
+<div><a tabindex=543 class="header_submenu_item" href="/view_videos.asp?vtype=6">All Hands Update Archive </a></div>
+<div><a tabindex=544 class="header_submenu_item" href="/view_webads.asp">Web Ad Gallery </a></div>
+<div><a tabindex=545 class="header_submenu_item" href="/view_printads.asp">Print Ad Gallery </a></div>
+</td>
+<td width="330">
+<div><a tabindex=561 class="header_submenu_item" href="/navydata/radioList.asp">All Hands Radio Archive </a></div>
+<div><a tabindex=562 class="header_submenu_item" href="/allhands.asp">All Hands Magazine </a></div>
+<div><a tabindex=563 class="header_submenu_item" href="/view_ggphotos.asp">Graphics Gallery </a></div>
+<div><a tabindex=564 class="header_submenu_item" href="/view_ahhphotos.asp">All Hands Photo Gallery </a></div>
+<div><a tabindex=565 class="header_submenu_item" href="https://service.govdelivery.com/service/multi_subscribe.html?code=USNAVYDMA" target=new>Subscribe/Unsubscribe to Navy News </a></div>
+<div><a tabindex=566 class="header_submenu_item" href="/photo_submit.asp">How to Submit a Photo to Navy Visual News </a></div>
+<div><a tabindex=567 class="header_submenu_item" href="/submit/index.asp">How to Submit a Story to Navy.mil </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=590 href="javascript:void(0);" onclick="hide_main_menu('column5_menu');">Hide Media Resources Menu</a></div>
+</div>
+</div>
+
+<!-- Column6 Menu Popup Items --->
+<div id="column6_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Links of Interest:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="9"></td>
+<td width="330">
+<div><a tabindex=621 class="header_submenu_item" href="http://www.npc.navy.mil/ReferenceLibrary/Publications/ShiftColors/" target=new>Shift Colors-Navy Retiree Newsletter </a></div>
+<div><a tabindex=622 class="header_submenu_item" href="/navco/">Navy Office of Community Outreach </a></div>
+<div><a tabindex=623 class="header_submenu_item" href="https://navyfamily.navy.mil/cas/login?service=https%3A%2F%2Fnavyfamily.navy.mil%2F" target=new>Affected Navy Family Assistance </a></div>
+<div><a tabindex=624 class="header_submenu_item" href="http://www.nmcrs.org/" target=new>Navy / Marine Corps Relief </a></div>
+<div><a tabindex=625 class="header_submenu_item" href="http://www.militaryonesource.com/skins/MOS/home.aspx" target=new>Military One Source </a></div>
+</td>
+<td width="330">
+<div><a tabindex=641 class="header_submenu_item" href="http://www.history.navy.mil/ " target=new>Naval History & Heritage Command </a></div>
+<div><a tabindex=642 class="header_submenu_item" href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx" target=new>Navy Personnel Command </a></div>
+<div><a tabindex=643 class="header_submenu_item" href="https://www.nko.navy.mil" target=new>Navy Knowledge Online </a></div>
+<div><a tabindex=644 class="header_submenu_item" href="http://www.pentagonchannel.mil/" target=new>Pentagon Channel </a></div>
+<div><a tabindex=645 class="header_submenu_item" href="/navyenterprise/">Navy Enterprise </a></div>
+</td>
+<td width="330">
+<div><a tabindex=661 class="header_submenu_item" href="https://www.navyreserve.navy.mil" target=new>Navy Reserve </a></div>
+<div><a tabindex=662 class="header_submenu_item" href="http://www.usmc.mil/" target=new>US Marine Corps </a></div>
+<div><a tabindex=663 class="header_submenu_item" href="http://www.uscg.mil/" target=new>US Coast Guard </a></div>
+<div><a tabindex=664 class="header_submenu_item" href="http://www.af.mil/" target=new>Air Force </a></div>
+<div><a tabindex=665 class="header_submenu_item" href="http://www.army.mil/" target=new>Army </a></div>
+<div><a tabindex=666 class="header_submenu_item" href="http://www.defense.gov" target=new>Defense.gov </a></div>
+<div><a tabindex=667 class="header_submenu_item" href="http://www.jcs.mil" target=new>Joint Chiefs of Staff </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=690 href="javascript:void(0);" onclick="hide_main_menu('column6_menu');">Hide Links of Interest Menu</a></div>
+</div>
+</div>
+
+<!-- End of Standard US Navy Header Bar -->
+
+
+<table width="1000" border=0 cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#FFFFFF" rowspan="4" width=10></td>
+    <td bgcolor="#FFFFFF" width=630></td>
+    <td bgcolor="#FFFFFF" rowspan="4" width=10></td>
+    <td rowspan="4" bgcolor="#FFFFFF" width=2></td>
+    <td rowspan="5" width=40 background="/images/bg_cccccc.gif"></td>
+    <td width="260" height=15 background="/images/bg_cccccc.gif" align="center"></td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF" valign="top" rowspan="2"> 
+ 
+	<p><h1 style="font-family: Verdana, Helvetica, Arial, sans-serif; font-size:16px; font-weight: bold; margin-bottom:0px">&nbsp;Current Collection</h1></p>
+      <table width=100% cellpadding=0 cellspacing=0>
+        <tr height="20"> 
+          <td colspan="4" height="20">
+		  
+		  <a href="/view_photos.asp?page=11460&sort_type=0&sort_row=1"><img src="/images/navy_mil/viewRecent.gif" border=0 alt="View most recently added photos"></a>
+		  
+		  &nbsp;&nbsp;<a href="/view_galleries.asp"><img src="/images/navy_mil/featuredGall.gif" border=0 alt="View our featured photo galleries"></a>
+		  
+		  &nbsp;&nbsp;<a href="/view_photos.asp?page=1&sort_type=0&sort_row=4"><img src="/images/navy_mil/4up.gif" border=0 alt="View photo gallery 4 images to a line"></a>
+		  &nbsp;&nbsp;<a href="/view_photos.asp?page=1&sort_type=0&sort_row=8"><img src="/images/navy_mil/8up.gif" border=0 alt="View photo gallery 8 images to a line"></a>
+		  
+		  </td>
+          <td align=right nowrap height="20"> 
+            <p>Total Images:&nbsp;&nbsp;<strong>114599&nbsp;</strong></p>
+          </td>
+        </tr>
+        <tr height="20" bgcolor="#cccccc"> 
+        
+          <td height="20"><p>&nbsp;Thumbnail</p></td>
+          <td height="20">&nbsp;</td>
+          <td height="20"><p>Description</p></td>
+          <td height="20">&nbsp;</td>
+          <td height="20" align=right><p>Options&nbsp;</p></td>
+        
+        </tr>
+        </table>
+         
+        
+		<p style="text-align:center; margin:0px">
+		<table width="90%" class="text" border=0 cellpadding=0 cellspacing=0>
+		<tr>
+		  <td valign=top class=menudark width=50%>
+
+			  <td align=right valign=top class=menudark width=50%>
+
+			  <a href="/view_photos.asp?page=11459&sort_type=0&sort_row=1"><img src="/images/navy_mil/nextPg.gif" border=0 alt="Go to next page"></a>&nbsp;&nbsp;<a href="/view_photos.asp?page=1&sort_type=0&sort_row=1"><img src="/images/navy_mil/lastPg.gif" border=0 alt="Go to last gallery page"></a>
+
+		  </td>
+		</tr>
+		</table>
+		</p>
+        <table width="100%" cellpadding=0 cellspacing=0>
+        <tr><td>&nbsp;</td></tr>
+        </table>
+        
+        <table width=100% cellpadding=0 cellspacing=0>
+         
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117510"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-330.jpg" alt="A Sailor races to the finish line after donning a firefighting ensemble while competing in the damage control Olympics on the fight deck aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70)."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-330
+ARABIAN SEA (March 16, 2012) A Sailor races to the finish line after donning a firefighting ensemble while competing in the damage control Olympics on the fight deck aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)
+</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117510" title="View 120316-N-DR144-330">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-330.jpg" title="Download 120316-N-DR144-330.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117510"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117511"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-512.jpg" alt="Sailors use a fire hose to push a bucket while competing in the damage control Olympics on the fight deck aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70)."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-512
+ARABIAN SEA (March 16, 2012) Sailors use a fire hose to push a bucket while competing in the damage control Olympics on the fight deck aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117511" title="View 120316-N-DR144-512">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-512.jpg" title="Download 120316-N-DR144-512.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117511"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117512"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-789.jpg" alt="A Sailor drains barrels of water while competing in the de-watering portion of the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70)."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-789
+ARABIAN SEA (March 16, 2012) A Sailor drains barrels of water while competing in the de-watering portion of the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117512" title="View 120316-N-DR144-789">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-789.jpg" title="Download 120316-N-DR144-789.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117512"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117508"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-047.jpg" alt="Sailors compete in the pipe patching competition during the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70)."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-047
+ARABIAN SEA (March 16, 2012) Sailors compete in the pipe patching competition during the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117508" title="View 120316-N-DR144-047">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-047.jpg" title="Download 120316-N-DR144-047.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117508"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117509"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-122.jpg" alt="Sailors wait to find out their score after competing in the de-watering competition during the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70)."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-122
+ARABIAN SEA (March 16, 2012) Sailors wait to find out their score after competing in the de-watering competition during the damage control Olympics on the fantail aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117509" title="View 120316-N-DR144-122">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-122.jpg" title="Download 120316-N-DR144-122.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117509"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117507"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-DR144-039.jpg" alt="Aviation Structural Mechanic Airman Jacob Smithkelly, left, and Aviation Machinist's Mate Airman Rashad Wright, right, use a fire hose to push a bucket while competing in the damage control Olympics."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-DR144-039
+ARABIAN SEA (March 16, 2012) Aviation Structural Mechanic Airman Jacob Smithkelly, left, and Aviation Machinist's Mate Airman Rashad Wright, right, use a fire hose to push a bucket while competing in the damage control Olympics on the fight deck aboard the Nimitz-class aircraft carrier USS Carl Vinson (CVN 70). Carl Vinson and Carrier Air Wing (CVW) 17 are deployed to the U.S. 5th Fleet area of responsibility.  (U.S. Navy photo by Mass Communication Specialist 2nd Class James R. Evans/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117507" title="View 120316-N-DR144-039">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-DR144-039.jpg" title="Download 120316-N-DR144-039.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117507"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117504"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-AC254-021.jpg" alt="Senior Chief Intelligence Specialist James Williams, a damage control training team leader aboard the aircraft carrier USS Nimitz (CVN 68), instructs Sailors during a general quarters drill."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-AC254-021
+EVERETT, Wash. (March 16, 2012) Senior Chief Intelligence Specialist James Williams, a damage control training team leader aboard the aircraft carrier USS Nimitz (CVN 68), instructs Sailors during a general quarters drill. Nimitz recently arrived to its new homeport of Everett, Wash. (U.S. Navy photo by Mass Communication Seaman Alexander Ventura II/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117504" title="View 120316-N-AC254-021">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-AC254-021.jpg" title="Download 120316-N-AC254-021.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117504"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117505"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-AC254-024.jpg" alt="Hose team members aboard the aircraft carrier USS Nimitz (CVN 68) stand by for orders during a general quarters drill."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-AC254-024
+EVERETT, Wash. (March 16, 2012) Hose team members aboard the aircraft carrier USS Nimitz (CVN 68) stand by for orders during a general quarters drill. Nimitz recently arrived to its new homeport of Everett, Wash. (U.S. Navy photo by Mass Communication Seaman Alexander Ventura II/Released)
+</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117505" title="View 120316-N-AC254-024">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-AC254-024.jpg" title="Download 120316-N-AC254-024.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117505"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+	
+			<tr valign="top"> 
+			  <td><a href="view_single.asp?id=117506"><img border=0 width="200" src="management/photodb/thumbnails/thumb_120316-N-CZ945-136.jpg" alt="Vice Adm. Scott Swift, commander of U.S. 7th Fleet, center right, and Sr. Col. Han Peng, chief of staff of the People's Liberation Army Hong Kong Garrison, center left, cut a cake."></a></td>
+			  <td>&nbsp;</td>
+			  <td> 
+			    <p>120316-N-CZ945-136
+HONG KONG (March 16, 2012) Vice Adm. Scott Swift, commander of U.S. 7th Fleet, center right, and Sr. Col. Han Peng, chief of staff of the People's Liberation Army Hong Kong Garrison, center left, cut a cake, as Matt Mathews, deputy consul general at the Consulate General Hong Kong, far right, and Capt. Daniel Grieco, commanding officer of the U.S. 7th Fleet flagship USS Blue Ridge (LCC 19), far left, look on during a reception a board Blue Ridge. (U.S. Navy photo by Mass Communication Specialist 2nd Class Kenneth R. Hendrix/Released)</p>
+			  </td>
+			  <td>&nbsp;</td>
+			  <td align="right"> 
+			    <p>  <a href="view_single.asp?id=117506" title="View 120316-N-CZ945-136">View</a><BR>
+			      <BR>
+			      <a href="/management/photodb/photos/120316-N-CZ945-136.jpg" title="Download 120316-N-CZ945-136.jpg">Download</a><br><br>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" addthis:url="http://www.navy.mil/view_single.asp?id=117506"></a>
+<script type="text/javascript">
+var addthis_config = {
+data_use_flash: false,
+data_use_cookies: false,
+ui_508_compliant: true
+}
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=usnavy"></script> 
+<!-- AddThis Button END -->
+				  </p>
+			  </td>
+			</tr>
+			<tr> 
+			  <td colspan=8 bgcolor=#fffffff height="1"> 
+			    <hr width="100%" size=1>
+			  </td>
+			</tr>
+			 
+        <tr height="20"> 
+          <td colspan=8 bgcolor=#cccccc align=right height="20"> 
+            <p>Page No: <strong>11460&nbsp;</strong></p>
+          </td>
+        </tr>
+      </table>
+		<p style="text-align:center; margin:0px">
+		<table width="90%" class="text" border=0 cellpadding=0 cellspacing=0>
+		<tr>
+		  <td valign=top class=menudark width=50%>
+
+			  <td align=right valign=top class=menudark width=50%>
+
+			  <a href="/view_photos.asp?page=11459&sort_type=0&sort_row=1"><img src="/images/navy_mil/nextPg.gif" border=0 alt="Go to next page"></a>&nbsp;&nbsp;<a href="/view_photos.asp?page=1&sort_type=0&sort_row=1"><img src="/images/navy_mil/lastPg.gif" border=0 alt="Go to last gallery page"></a>
+
+		  </td>
+		</tr>
+		</table>
+		</p>
+ <br>
+	</td>
+     <td width="220" colspan=2 background="/images/bg_cccccc.gif" valign="top"> 
+        <table border="0" cellspacing="0" cellpadding="0">
+      <tr> <form method=post name="searchform" action="/search/photolist.asp" onSubmit="return chkSrch();">
+        <td colspan="2"> 
+          <p class="groupheadlinesmall" style="padding-bottom:4px;"><strong><label for=select1>Search:</label></strong></p>
+        </td>
+      </tr>
+      <tr> 
+        <td colspan="2"> <span style="font-size:13px"> 
+          <select id=select1 name=select1 onChange="this.form.action=this.options[this.selectedIndex].value;" style="background-color:#000033; color:#FFFFFF; border-style:none; font-size:10px;">
+            <option title="Photos" value="/search/photolist.asp">Photos</option>
+            <option title="Stories" value="/search/search.asp">Stories</option>
+            <option title="Videos" value="/search/videolist.asp">Videos</option>
+          </select>
+          </span> </td>
+      </tr>
+      <tr> 
+        <td> 
+            <input title="Search www.navy.mil" type=text id=terms maxlength=25 name=terms style="width:200px;" size="10">
+        </td>
+        <td> 
+          <input type="image" border="0" src="/images/go_gray.gif" width="18" height="12" alt="Go" value="Search" id="submit1" name="submit1" vspace="10">
+        </td>
+      </tr>
+      <tr> 
+        <td class="menudark" colspan="2" valign="bottom"> <strong> 
+          <input title="All" type=radio id=st1 name=search_type value="All" checked>
+          <label for=st1>All</label> <br>
+          <input title="Any" type=radio id=st2 name=search_type value="Any">
+          <label for=st2>Any</label> <br>
+          <input title="Exact" type=radio id=st3 name=search_type value="Exact">
+          <label for=st3>Exact</label> </strong></td>
+      </tr></form>
+		</table>
+        <br>
+        <p><a href="photo_submit.asp" class="menudark">Submit Photo</a></p>
+		
+        <p><a href="mailto:navyvisualnews@navy.mil" class="menudark">Contact 
+          Us</a></p>
+        <p><a href="privacy.asp" class="menudark">Privacy &amp; Security</a></p>
+        <p><a href="about.asp" class="menudark">About This Site</a></p>
+		<p><a href="tools/" class="menudark">Tools Menu</a></p>
+        <p><a href="/" class="menudark">Home</a></p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<SCRIPT LANGUAGE="JAVASCRIPT1.1">
+<!--
+var viewWindow = new Object();
+
+function viewPhoto(id)
+{
+	var tempItem = id;
+	viewWindow = window.open('/view_single.asp?id=' +tempItem,'VIEW_WIN');
+	viewWindow.focus();
+}
+
+function chkSrch() {
+  if (document.searchform.terms.value == '') {
+    alert('You must enter a search parameter.');
+	return false;
+  }
+  return true;
+}
+
+function viewByDate()
+{
+	document.frmPhoto.action = "/view_photos.asp?page=" + 11460 + "&sort_type=1&sort_row=" + 1;
+	document.frmPhoto.submit();
+}
+
+function viewRecent()
+{
+	document.frmPhoto.action = "/view_photos.asp?page=" + 11460 + "&sort_type=0&sort_row=" + 1;
+	document.frmPhoto.submit();
+}
+
+function featuredGall()
+{
+	document.frmPhoto.action = "../view_galleries.asp";
+	document.frmPhoto.submit();
+}
+
+function viewUp(numSort)
+{
+	var intSort = numSort;
+	document.frmPhoto.action = "/view_photos.asp?page=" + 11460 + "&sort_type=" + 0 + "&sort_row=" + intSort;
+	document.frmPhoto.submit();
+}
+//-->
+</SCRIPT>

@@ -1,0 +1,951 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-05-09T17:20:35Z
+WARC-TREC-ID: clueweb12-1913wb-04-15103
+WARC-Target-URI: http://www.keystonebusinessadvisors.com/show_helpful_article.php?title=Federal%20Capital%20Gains%20Tax%20Rates%20-%20Where%20Are%20They%20Headed?&article=MjY=
+WARC-Payload-Digest: sha1:7UUICEYWORWNYNJOYUGDKZLB7H2SHHUN
+WARC-IP-Address: 72.167.131.224
+WARC-Record-ID: <urn:uuid:b5ce4a4e-decc-4108-92af-fff13f7dfb90>
+Content-Type: application/http; msgtype=response
+Content-Length: 44264
+
+HTTP/1.1 200 OK
+Date: Wed, 09 May 2012 17:20:35 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Federal Capital Gains Tax Rates - Where Are They Headed?</title>
+<meta name="description" content="capital gains for selling a business, what are the capital gains taxes for selling a businessHelful Articles for Buying or Selling a Business, busines valuation articles, selling a business in todays economy articles" />
+<meta name="keywords" content="capital gains for selling a business, what are the capital gains taxes for selling a businessbusiness valuation articles, how to sell my business articles, sell my business articles san fernando valley, selling a business articles ventura" />
+
+<link href="common.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="javascript/functions/functions.js" ></script>
+<script language="javascript" type="text/javascript">
+<!--
+function make_blank()
+{
+	//alert("hi");
+	document.frmMailingList.MailingListEmail.value = "";
+	document.frmMailingList.MailingListEmail.focus();
+}
+
+function validate_mailingemail(form)
+{
+	if(form.MailingListEmail.value.search(/\S/)==-1)
+	{
+		alert("Please enter your Email ID.");
+		form.MailingListEmail.focus();
+		return false;
+	}
+	if (echeck(form.MailingListEmail.value)==false)
+	{
+		form.MailingListEmail.focus();
+		return false;
+	}
+	return true;
+}
+function sendToSellerRegistration()
+{
+	document.frmManagingTheSale.method = "post";
+	document.frmManagingTheSale.action = "seller_registration.php";
+	document.frmManagingTheSale.submit();
+}
+function sendToFindProbable()
+{
+	document.frmFreeOpinionOfValue.method = "post";
+	document.frmFreeOpinionOfValue.action = "seller_registration.php";
+	document.frmFreeOpinionOfValue.submit();
+}
+-->
+</script>
+</head>
+<body>
+<form name="frmManagingTheSale" id="frmManagingTheSale" method="post" action="">
+<input name="hdn_receive_brochure" type="hidden" value="Yes" />
+<input name="hdn_mail_subject" type="hidden" value="Please mail me the Keystone Managing the Sale of Your Business Brochure" />
+</form>
+<form name="frmFreeOpinionOfValue" id="frmFreeOpinionOfValue" method="post" action="">
+<input name="hdn_find_probable" type="hidden" value="Yes" />
+<input name="hdn_mail_subject_fp" type="hidden" value="Please contact me to provide a Complimentary Opinion of Value" />
+</form><center> <!--header starts here -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="header">
+    <tbody>
+        <tr>
+            <td valign="top">
+            <script language="javascript" type="text/javascript">
+<!--
+	function validation_check_mailing_list(form)
+	{
+		if(form.mail_list.value.search(/\S/)==-1)
+		{
+			alert("Please choose the type (Seller or Buyer).");
+			form.mail_list.focus();
+			return false;
+		}
+		return true;
+	}
+//-->
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="header-top-bac">
+          <tr>
+            <td width="55%" height="65" align="left"><img src="images/logo.jpg" width="414" height="65" /></td>
+            <td width="42%" align="right" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="22" align="right" valign="bottom"><a href="index.php"><span style="color:#FFFFFF;">Home</span>&nbsp;&nbsp;<img src="images/home.gif" width="15" height="15" border="0" /></a><img src="images/divider.gif" width="2" height="14" hspace="10" /><a href="contact_us.php"><span style="color:#FFFFFF;">Contact Us</span>&nbsp;&nbsp;<img src="images/contact_us.gif" width="17" height="15" hspace="5" border="0" /></a></td>
+              </tr>
+			  <tr>
+			    <td height="23">&nbsp;</td>
+			  </tr>
+              <tr>
+                <td height="28" align="right">
+					<form id="frmMailingList" name="frmMailingList" method="post" action="det_mailing_list.php" onsubmit="return validation_check_mailing_list(this);" style="margin:auto;">
+                    	<table width="68%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="blue">Join Our Mailing List</td>
+                        <td>&nbsp;</td>
+                        <td>
+						<select name="mail_list" id="mail_list" style="width:100px;;">
+							<option value="">--JOIN--</option>
+							<option value="seller">Seller List</option>
+							<option value="buyer">Buyer List</option>
+						</select></td>
+                        <td>&nbsp;</td>
+                        <td><input type="image" src="images/go_button.gif" name="Submit" /></td>
+                      </tr>
+                    </table>                            
+                    </form>
+				</td>
+              </tr>
+            </table></td>
+            <td width="3%" valign="top">&nbsp;</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td valign="top" align="left">	<style type="text/css">
+	/* 
+	General styles for this example page */
+	html{
+		height:100%;
+	}
+	body{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.8em;
+		margin:0px;
+		padding:0px;
+		text-align:center;
+		background-color:#E2EBED;
+		height:100%;
+	}
+	
+	p{
+		margin-top:5px;
+		margin-bottom:10px;
+	}
+	
+	#mainContainer{
+		width:760px;
+		margin:0 auto;
+		text-align:left;
+		background-color: #FFF;
+		padding-left:16px;
+		padding-right:16px;
+		padding-bottom:20px;	
+	}
+	
+	#dhtmlgoodies_menu img{
+		border:0px;
+	}
+
+	/* End general styles for this example page */
+	/* General configuration CSS */
+	
+	#dhtmlgoodies_menu ul li ul{
+		display:none;	/* Needed to display ok in Opera */
+	}
+		
+	#dhtmlgoodies_menu{
+		visibility:hidden;	
+	}
+	#dhtmlgoodies_menu ul{
+		margin:0px;	/* No indent */
+		padding:0px;	/* No indent */
+	}
+	#dhtmlgoodies_menu li{
+		list-style-type:none;	/* No bullets */
+	}	
+	#dhtmlgoodies_menu a{
+
+		margin:0px;
+		padding:0px;
+	}
+	/* End general configuration CSS */
+	
+	
+	/* Cosmetic */
+	
+	/***********************************************************************
+		CSS - MENU BLOCKS
+	 	General rules for all menu blocks (group of sub items) 
+	***********************************************************************/
+	#dhtmlgoodies_menu ul{
+		border:1px solid #000;
+		background-color: #FFFFFF;
+
+		padding:1px;
+	}
+		
+	#dhtmlgoodies_menu ul.menuBlock1{	/* Menu bar - main menu items */
+		border:0px;
+		padding:3px;
+		border:1px solid #317082;
+		background-image:url(images/bg-topnav.gif);
+		overflow:visible;
+	}
+	#dhtmlgoodies_menu ul.menuBlock2{	/* Menu bar - main menu items */
+		border:0px;
+		padding:1px;
+		border:1px solid #555;
+	}
+	
+	/***********************************************************************
+		CSS - MENU ITEMS
+	 	Here, you could assign rules to the menu items at different depths.
+	***********************************************************************/
+	/* General rules for all menu items */
+	#dhtmlgoodies_menu a{
+		color: #486286;
+		text-decoration:none;
+		padding-left:2px;
+		padding-right:2px;
+	
+	}
+	
+	/*
+	Main menu items 
+	*/
+	
+	#dhtmlgoodies_menu .currentDepth1{
+		padding-left:20px;
+		padding-right:20px;
+	/*	background-color: #009933; */   /*  change here for main menu background color*/
+		border:0px solid #E2EBED;
+	}
+	#dhtmlgoodies_menu .currentDepth1over{
+		padding-left:20px;
+		padding-right:20px;
+		/* background-color:#317082;*/
+		background-color:#5386AE;
+		border:0px solid #000;
+		
+		
+	}
+	#dhtmlgoodies_menu .currentDepth1 a{
+		color:#FFF;
+		font-weight:bold;
+	}
+	#dhtmlgoodies_menu .currentDepth1over a{	/* Text rules */
+		color:#FFF;
+		font-weight:bold;
+	}
+	
+	/* Sub menu depth 1 */
+	#dhtmlgoodies_menu .currentDepth2{
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-right:2px;
+		border:1px solid #FFF;
+		background-color:#CCCCCC;
+	}
+	#dhtmlgoodies_menu .currentDepth2over{
+		padding-top:3px;
+		padding-bottom:3px;
+		padding-right:2px;
+		background-color:#486286;
+		border:1px solid #000;
+	}	
+	#dhtmlgoodies_menu .currentDepth2over a{	/* Text rules */
+		color:#FFF;
+	}	
+	
+	
+	
+	
+	/* Sub menu depth 2 */
+	#dhtmlgoodies_menu .currentDepth3{
+		padding-right:2px;
+		border:1px solid #FFF;
+	}
+	#dhtmlgoodies_menu .currentDepth3over{
+		padding-right:2px;
+		background-color:#EDE3EB;
+		border:1px solid #000;
+	}
+	/* Sub menu depth 3 */
+	#dhtmlgoodies_menu .currentDepth4{
+		padding-right:2px;
+		border:1px solid #FFF;
+	}
+	#dhtmlgoodies_menu .currentDepth4over{
+		padding-right:2px;
+		background-color:#EBEDE3;
+		border:1px solid #000;
+	}	
+	
+	
+	
+
+
+	</style>
+	<script type="text/javascript">
+   /************************************************************************************************************ 
+   (C) www.dhtmlgoodies.com, October 2005 
+    
+   This is a script from www.dhtmlgoodies.com. You will find this and a lot of other scripts at our website.    
+    
+   Terms of use: 
+   You are free to use this script as long as the copyright message is kept intact. However, you may not 
+   redistribute, sell or repost it without our permission. 
+    
+   Thank you! 
+    
+   www.dhtmlgoodies.com 
+   Alf Magne Kalleland 
+    
+   ************************************************************************************************************/    
+        
+   var dhtmlgoodies_menuObj;   // Reference to the menu div 
+   var currentZIndex = 1000; 
+   var liIndex = 0; 
+   var visibleMenus = new Array(); 
+   var activeMenuItem = false; 
+   var timeBeforeAutoHide = 1200; // Microseconds from mouse leaves menu to auto hide. 
+   var dhtmlgoodies_menu_arrow = 'http://www.dhtmlgoodies.com/scripts/dhtmlgoodies-menu2/images/arrow.gif'; 
+    
+   var MSIE = navigator.userAgent.indexOf('MSIE')>=0?true:false; 
+   var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox')>=0?true:false; 
+   var navigatorVersion = navigator.appVersion.replace(/.*?MSIE ([0-9]\.[0-9]).*/g,'$1')/1; 
+   var menuBlockArray = new Array(); 
+   var menuParentOffsetLeft = false;    
+
+
+    // {{{ getStyle() 
+   /** 
+   * Return specific style attribute for an element 
+   * 
+   * @param Object el = Reference to HTML element 
+   * @param String property = Css property 
+   * @private 
+   */        
+   function getStyle(el,property) 
+   {        
+
+      if (document.defaultView && document.defaultView.getComputedStyle) { 
+
+         var retVal = null;              
+         var comp = document.defaultView.getComputedStyle(el, ''); 
+         if (comp){ 
+            retVal = comp[property]; 
+              
+            if(!retVal){ 
+               var comp = document.defaultView.getComputedStyle(el, null); 
+               retVal = comp.getPropertyCSSValue(property); 
+            }          
+         }    
+
+         if(retVal==null)retVal=''; 
+          
+         return el.style[property] || retVal; 
+      } 
+      if (document.documentElement.currentStyle && MSIE){    
+         var value = el.currentStyle ? el.currentStyle[property] : null; 
+         return ( el.style[property] || value ); 
+                                              
+      } 
+      return el.style[property];              
+   } 
+      
+   function getTopPos(inputObj) 
+   { 
+   	var origInputObj = inputObj;
+ 
+     var returnValue = inputObj.offsetTop; 
+     if(inputObj.tagName=='LI' && inputObj.parentNode.className=='menuBlock1'){    
+        var aTag = inputObj.getElementsByTagName('A')[0]; 
+        if(aTag)returnValue += aTag.parentNode.offsetHeight; 
+     } 
+     var topOfMenuReached = false; 
+     while((inputObj = inputObj.offsetParent) != null){ 
+        if(inputObj.parentNode.id=='dhtmlgoodies_menu')topOfMenuReached=true; 
+        if(topOfMenuReached && !inputObj.className.match(/menuBlock/gi) || (!MSIE && origInputObj.parentNode.className=='menuBlock1')){ 
+           var style = getStyle(inputObj,'position'); 
+           if(style=='absolute' || style=='relative'){                
+              return returnValue;            
+           } 
+        } 
+          
+        returnValue += inputObj.offsetTop;          
+     } 
+
+     return returnValue; 
+   } 
+    
+   function getLeftPos(inputObj) 
+   { 
+     var returnValue = inputObj.offsetLeft; 
+      
+     var topOfMenuReached = false; 
+     while((inputObj = inputObj.offsetParent) != null){ 
+       if(inputObj.parentNode.id=='dhtmlgoodies_menu')topOfMenuReached=true; 
+        if(topOfMenuReached && !inputObj.className.match(/menuBlock/gi)){ 
+           var style = getStyle(inputObj,'position'); 
+           if(style=='absolute' || style=='relative')return returnValue; 
+        } 
+      
+        returnValue += inputObj.offsetLeft; 
+     } 
+     return returnValue; 
+   } 
+
+
+    
+   function showHideSub() 
+   { 
+
+      var attr = this.parentNode.getAttribute('currentDepth'); 
+      if(navigator.userAgent.indexOf('Opera')>=0){ 
+         attr = this.parentNode.currentDepth; 
+      } 
+        
+      this.className = 'currentDepth' + attr + 'over'; 
+        
+      if(activeMenuItem && activeMenuItem!=this){ 
+         activeMenuItem.className=activeMenuItem.className.replace(/over/,''); 
+      } 
+      activeMenuItem = this; 
+    
+      var numericIdThis = this.id.replace(/[^0-9]/g,''); 
+      var exceptionArray = new Array(); 
+      // Showing sub item of this LI 
+      var sub = document.getElementById('subOf' + numericIdThis); 
+      if(sub){ 
+         visibleMenus.push(sub); 
+         sub.style.display=''; 
+         sub.parentNode.className = sub.parentNode.className + 'over'; 
+         exceptionArray[sub.id] = true; 
+      }    
+        
+      // Showing parent items of this one 
+        
+      var parent = this.parentNode; 
+      while(parent && parent.id && parent.tagName=='UL'){ 
+         visibleMenus.push(parent); 
+         exceptionArray[parent.id] = true; 
+         parent.style.display=''; 
+          
+         var li = document.getElementById('dhtmlgoodies_listItem' + parent.id.replace(/[^0-9]/g,'')); 
+         if(li.className.indexOf('over')<0)li.className = li.className + 'over'; 
+         parent = li.parentNode; 
+          
+      } 
+
+          
+      hideMenuItems(exceptionArray); 
+
+
+
+   } 
+
+   function hideMenuItems(exceptionArray) 
+   { 
+      /* 
+      Hiding visible menu items 
+      */ 
+      var newVisibleMenuArray = new Array(); 
+      for(var no=0;no<visibleMenus.length;no++){ 
+         if(visibleMenus[no].className!='menuBlock1' && visibleMenus[no].id){ 
+            if(!exceptionArray[visibleMenus[no].id]){ 
+               var el = visibleMenus[no].getElementsByTagName('A')[0]; 
+               visibleMenus[no].style.display = 'none'; 
+               var li = document.getElementById('dhtmlgoodies_listItem' + visibleMenus[no].id.replace(/[^0-9]/g,'')); 
+               if(li.className.indexOf('over')>0)li.className = li.className.replace(/over/,''); 
+            }else{              
+               newVisibleMenuArray.push(visibleMenus[no]); 
+            } 
+         } 
+      }        
+      visibleMenus = newVisibleMenuArray;        
+   } 
+    
+    
+    
+   var menuActive = true; 
+   var hideTimer = 0; 
+   function mouseOverMenu() 
+   { 
+      menuActive = true;        
+   } 
+    
+   function mouseOutMenu() 
+   { 
+      menuActive = false; 
+      timerAutoHide();    
+   } 
+    
+   function timerAutoHide() 
+   { 
+      if(menuActive){ 
+         hideTimer = 0; 
+         return; 
+      } 
+        
+      if(hideTimer<timeBeforeAutoHide){ 
+         hideTimer+=100; 
+         setTimeout('timerAutoHide()',99); 
+      }else{ 
+         hideTimer = 0; 
+         autohideMenuItems();    
+      } 
+   } 
+    
+   function autohideMenuItems() 
+   { 
+      if(!menuActive){ 
+         hideMenuItems(new Array());    
+         if(activeMenuItem)activeMenuItem.className=activeMenuItem.className.replace(/over/,'');        
+      } 
+   } 
+    
+    
+   function initSubMenus(inputObj,initOffsetLeft,currentDepth) 
+   {    
+      var subUl = inputObj.getElementsByTagName('UL'); 
+      if(subUl.length>0){ 
+         var ul = subUl[0]; 
+          
+         ul.id = 'subOf' + inputObj.id.replace(/[^0-9]/g,''); 
+         ul.setAttribute('currentDepth' ,currentDepth); 
+         ul.currentDepth = currentDepth; 
+         ul.className='menuBlock' + currentDepth; 
+         ul.onmouseover = mouseOverMenu; 
+         ul.onmouseout = mouseOutMenu; 
+         currentZIndex+=1; 
+         ul.style.zIndex = currentZIndex; 
+         menuBlockArray.push(ul); 
+         ul = dhtmlgoodies_menuObj.appendChild(ul); 
+         var topPos = getTopPos(inputObj); 
+         var leftPos = getLeftPos(inputObj)/1 + initOffsetLeft/1;          
+         
+         ul.style.position = 'absolute'; 
+         ul.style.left = leftPos + 'px'; 
+         ul.style.top = topPos + 'px'; 
+         var li = ul.getElementsByTagName('LI')[0]; 
+         while(li){ 
+            if(li.tagName=='LI'){    
+               li.className='currentDepth' + currentDepth;                
+               li.id = 'dhtmlgoodies_listItem' + liIndex; 
+               liIndex++;              
+               var uls = li.getElementsByTagName('UL'); 
+               li.onmouseover = showHideSub; 
+
+               if(uls.length>0){ 
+                  var offsetToFunction = li.getElementsByTagName('A')[0].offsetWidth+2; 
+                  if(navigatorVersion<6 && MSIE)offsetToFunction+=15;   // MSIE 5.x fix 
+                  initSubMenus(li,offsetToFunction,(currentDepth+1)); 
+               }    
+               if(MSIE){ 
+                  var a = li.getElementsByTagName('A')[0]; 
+                  a.style.width=li.offsetWidth+'px'; 
+                  a.style.display='block'; 
+               }                
+            } 
+            li = li.nextSibling; 
+         } 
+         ul.style.display = 'none';    
+         if(!document.all){ 
+            //dhtmlgoodies_menuObj.appendChild(ul); 
+         } 
+      }    
+   } 
+
+
+   function resizeMenu() 
+   { 
+      var offsetParent = getLeftPos(dhtmlgoodies_menuObj); 
+        
+      for(var no=0;no<menuBlockArray.length;no++){ 
+         var leftPos = menuBlockArray[no].style.left.replace('px','')/1; 
+         menuBlockArray[no].style.left = leftPos + offsetParent - menuParentOffsetLeft + 'px'; 
+      } 
+      menuParentOffsetLeft = offsetParent; 
+   } 
+    
+   /* 
+   Initializing menu 
+   */ 
+   function initDhtmlGoodiesMenu() 
+   { 
+      dhtmlgoodies_menuObj = document.getElementById('dhtmlgoodies_menu'); 
+        
+        
+      var aTags = dhtmlgoodies_menuObj.getElementsByTagName('A'); 
+      for(var no=0;no<aTags.length;no++){          
+
+         var subUl = aTags[no].parentNode.getElementsByTagName('UL'); 
+         if(subUl.length>0 && aTags[no].parentNode.parentNode.parentNode.id != 'dhtmlgoodies_menu'){ 
+            var img = document.createElement('IMG'); 
+            img.src = dhtmlgoodies_menu_arrow; 
+            aTags[no].appendChild(img);              
+
+         } 
+
+      } 
+              
+      var mainMenu = dhtmlgoodies_menuObj.getElementsByTagName('UL')[0]; 
+      mainMenu.className='menuBlock1'; 
+      mainMenu.style.zIndex = currentZIndex; 
+      mainMenu.setAttribute('currentDepth' ,1); 
+      mainMenu.currentDepth = '1'; 
+      mainMenu.onmouseover = mouseOverMenu; 
+      mainMenu.onmouseout = mouseOutMenu;        
+
+      var mainMenuItemsArray = new Array(); 
+      var mainMenuItem = mainMenu.getElementsByTagName('LI')[0]; 
+      mainMenu.style.height = mainMenuItem.offsetHeight + 2 + 'px'; 
+      while(mainMenuItem){ 
+          
+         mainMenuItem.className='currentDepth1'; 
+         mainMenuItem.id = 'dhtmlgoodies_listItem' + liIndex; 
+         mainMenuItem.onmouseover = showHideSub; 
+         liIndex++;              
+         if(mainMenuItem.tagName=='LI'){ 
+            mainMenuItem.style.cssText = 'float:left;';    
+            mainMenuItem.style.styleFloat = 'left'; 
+            mainMenuItemsArray[mainMenuItemsArray.length] = mainMenuItem; 
+            initSubMenus(mainMenuItem,0,2); 
+         }          
+          
+         mainMenuItem = mainMenuItem.nextSibling; 
+          
+      } 
+
+      for(var no=0;no<mainMenuItemsArray.length;no++){ 
+         initSubMenus(mainMenuItemsArray[no],0,2);          
+      } 
+        
+      menuParentOffsetLeft = getLeftPos(dhtmlgoodies_menuObj);    
+      window.onresize = resizeMenu;    
+      dhtmlgoodies_menuObj.style.visibility = 'visible';    
+   } 
+	window.onload = initDhtmlGoodiesMenu;
+	</script>
+
+	
+
+<div id="dhtmlgoodies_menu">
+	<UL>
+  <LI><A href="#">About Us</A>
+  <UL>
+  	<LI><A href="services.php">Services</A></LI>
+    <LI><A href="ourteam.php">Our Team</A></LI>
+	<LI><A href="contact_us.php">Contact Us</A></LI>
+	  </UL>
+  </LI>	
+  
+  <LI><A href="#">Selling A Business</A>
+  <UL>
+  	
+    <LI><A href="service_seller.php">Seller Services<!--Our Services For Sellers--></A></LI>
+    <LI><A href="selling_process.php">How We Do It<!--The Keystone Way--></A></LI>
+	 <LI><A href="preparing_to_sell.php">Preparing To Sell</A></LI>
+    <LI><A href="faq.php">Frequently Asked Questions</A> </LI>
+    <LI><A href="testimonials.php">Testimonials</A> </LI>
+	   </UL>
+   </LI>
+   
+  <LI><A href="#">Buying A Business</A>
+  <UL>
+    <LI><A href="service_buyer.php">Buyer Services<!--Our Services For Buyers--></A></LI>
+    <LI><A href="buying_process.php">The Buying Process</A></LI>
+	<LI><A href="business_for_sale.php">Available Businesses</A></LI>
+    <LI><A href="buyer_form.php">Buyer Forms</A> </LI>
+    <LI><A href="buyer_resources.php">Buyer Resources</A> </LI>
+	  </UL>
+  </LI>	
+  
+  <!--<LI><A href="business_for_sale.php">Available Businesses</A>
+  <UL>
+  	<LI><A href="show_submenu.php?selected_submenu="></A></LI>
+	  </UL>
+  </LI>-->
+  
+  <LI><A href="completed_transaction_user.php">Completed Transactions</A>
+  <UL>
+    </UL>
+  </LI>
+  
+  <LI><A href="helpful_articles.php">Helpful Articles</A>
+  <UL>
+    </UL>
+  </LI>
+</UL>
+	</div></td>
+      </tr>
+    </table>            </td>
+        </tr>
+    </tbody>
+</table>
+<!--header ends here --> <!--content starts here -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="content">
+    <tbody>
+        <tr>
+            <td valign="top"><img width="970" height="13" src="images/content_top.gif" alt="" /></td>
+        </tr>
+        <tr>
+            <td valign="top" height="794">
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                    <tr>
+                        <td width="9">&nbsp;</td>
+						<td width="717" align="left" valign="top">
+						<div class="hd2" style="font-size:20px;">Federal Capital Gains Tax Rates - Where Are They Headed?</div><br/>
+						 <table border="0" cellspacing="0" cellpadding="0" width="420" style="width: 315pt">
+    <tbody>
+        <tr>
+            <td width="100%" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 0in; background-color: transparent; padding-left: 0in; width: 100%; padding-right: 0in; border-top: #ece9d8; border-right: #ece9d8; padding-top: 0in">
+            <table border="0" cellspacing="0" cellpadding="0" width="576" style="width: 6in">
+                <tbody>
+                    <tr style="height: 1pt">
+                        <td width="100%" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; width: 100%; padding-right: 3.75pt; height: 1pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="page-break-after: avoid; line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">Since 2003, the top tax rate on most capital gains has been 15% for people in the 25% or higher tax bracket. Although a lower level tax rate has also been in place since 2003 for people in the 15% or lower tax bracket, this rate is only applicable until a person has enough income to cause him / her to enter the 25% tax bracket. As a result, for people incurring a capital gain from selling a business, most of them are in at least the 25% tax bracket so the top 15% rate is generally the rate they experience.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">The current capital gain rates are scheduled to expire effective December 31, 2010 due to a time lapse built into the regulations associated with the 2003 gain reductions. This time phase-in is known as a sunset provision. Thus, starting in 2011, the top 15% rate is scheduled to revert to its former pre-May 6, 2003 level of 20%.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">President Obama made a pledge to the American people that he and his administration would not raise taxes. Well, he was able to make this pledge with confidence regarding the tax on capital gains because the sunset provision was already going to cause the rate to increase.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">The big question now is; Will the top rate only rise to 20% or will congress raise it higher?</span></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 198.75pt">
+                        <td style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 0.75pt; background-color: transparent; padding-left: 0.75pt; padding-right: 0.75pt; height: 198.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 0.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><strong><span style="color: #9b6a07; font-size: 10pt">Background:</span></strong><strong>&nbsp;</strong></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">For the past 30 years, the top tax rate on long-term capital gains has been below 30%.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">&nbsp;The top tax rate on most long-term capital gains was reduced from around 35 percent to 28 percent in 1978 and was further reduced to 20 percent in 1981. It was raised to 28 percent in 1987, reduced to 20 percent again in 1997, and further reduced to 15 percent in 2003.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">&nbsp;The Tax Increase Prevention and Reconciliation Act of 2005 (TIPRA) extended the 15% rate through 2010. But, in 2011, the top long-term capital gain rate for most long-term capital gains is scheduled to revert back to the 20% rate that applied prior to the Jobs and Growth Tax Relief Reconciliation Act of 2003 (2003 Tax Act).</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">&nbsp;The pending tax change is well within the range of changes experienced in the last 30 years.</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 0in; background-color: transparent; padding-left: 0in; width: 100%; padding-right: 0in; border-top: #ece9d8; border-right: #ece9d8; padding-top: 0in">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
+                <tbody>
+                    <tr>
+                        <td style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><strong><span style="color: #9b6a07; font-size: 10pt">What to Expect&nbsp;&nbsp;</span></strong></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">On September 25, 2009, in a letter to Representative Brian P. Bilbray (R-CA), the Congressional Budget Office (CBO) stated that when assessing the impact of the increased tax rates on economic growth, it is important to keep in mind that taxable capital gains account for a small portion of all capital income. Much capital income is paid as dividends, interest, rent, and proprietors' profits. In addition, most capital gains are not taxable because they are held in tax-exempt accounts or are held until death. As a result, CBO does not anticipate that the pending increase in the capital gains tax rate alone will have a large enough impact on the rate of return to capital overall to change significantly the magnitude of saving and capital investment.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">But the CBO did further state that higher capital gains taxes could have an additional effect by discouraging innovation and risk-taking, but there is insufficient evidence on which to base a quantitative estimate.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Congress depends on the CBO to help corroborate the financial and tax results of congressional decisions. In this case the CBO is uncertain as to the full impact to be realized by an increase in capital gain rates. This indecisiveness is exactly what Congress wants in order to support that an increase in capital gain rates will not be harmful.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Also it is important to keep in mind that with the pending Health Care Reform, people classified as wealthy will experience an additional tax levy or surtax. In the House Bill, the surtax will apply to families earning more than $350,000 a year and individuals earning more than $280,000. The surtax will start at 1 percent and rise to 5.4 percent on income exceeding $1 million. In the Senate Bill, families of more modest wealth - over $250,000 - will experience a payroll tax hike of 0.5 percent.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Take notice that the surtax in the House's Bill of 5.4%, when combined with the Year 2011 expiration of tax cuts enacted during the Bush administration, the surtax will drive the top federal tax rate to 45%, the highest level since lawmakers rewrote the tax code in 1986. That's right, in Year 2011, along with an increase in capital gain rates, the top federal tax rate returns to 39.6%. </span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">As previously stated, the sunset provision on capital gains will cause the top capital gain rate to increase to 20% on January 1, 2011. When considering the financial impact resulting from the War on Terrorism and the overall increase in congressional spending, it is very likely that the issue of raising capital gain rates even higher will be introduced by some member of Congress.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Assuming a final Health Care Reform bill is submitted to the President, which it certainly appears will be happening, and likely before the end of January 2010, a person with a capital gain which causes his / her total income to be above $280,000 will already pay more that 20% because of the surtax.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><strong><span style="font-size: 9pt">So, should a person trigger a capital gain in Year 2010, such as selling a business, if at all possible?</span></strong></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Since most business sales include a blend of capital gain and ordinary income, when considering the known capital gain rate increase, the potential for additional capital gain increases, the pending surtax and the fact that the top federal tax rate returns to 39.6% in Year 2011, a clear answer certainly emerges.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">If an entrepreneur wants to experience the lowest tax impact possible from selling his / her business, selling before the tax rates increase is the way to go.</span></div>
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="font-size: 9pt">Based on current regulations, 2011 capital gain tax rates will be at least 20% with the health care surtax likely causing some people to exceed a 25% aggregate rate. If congress decides to implement further increases, anyone who waited until 2011 to sell a business will wish they could go back in time to 2010.&nbsp;&nbsp;&nbsp; </span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in">&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr style="height: 0.75pt">
+                        <td style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; height: 0.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in">&nbsp;</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in"><span style="color: black; font-size: 9pt">&nbsp;</span><span style="font-size: smaller"><span style="color: #c0c0c0">Written by: Monty W. Walker, CPA, CBI, BCB of Walker Business Advisory Services &nbsp;813 8th Street, Suite # 550, Wichita Falls, TX &nbsp;76301-3318</span></span></div>
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%; background: white">
+                <tbody>
+                    <tr>
+                        <td valign="top" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in">&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in">&nbsp;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: #ece9d8; border-left: #ece9d8; padding-bottom: 3.75pt; background-color: transparent; padding-left: 3.75pt; padding-right: 3.75pt; border-top: #ece9d8; border-right: #ece9d8; padding-top: 3.75pt">
+                        <div style="line-height: 15.6pt; margin: 6pt 0in 0pt 0.25in">&nbsp;</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>						
+					</td>
+                        <td width="18">&nbsp;</td>
+                      <td width="226" valign="top">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+          <tbody>
+			<tr>
+              <td valign="middle" class="manage">Seller Registration Form</td>
+            </tr>
+            <tr>
+              <td align="center">&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="center"><a href="seller_registration.php"><img src="images/seller_registration.gif" alt="Seller Registration Form" width="206" height="125" border="0" /></a></td>
+            </tr>
+			<tr>
+              <td align="left" valign="top" style="padding-left:12px;"><span class="rightpanel_text" ><strong>If you would like to have someone contact you to discuss the sale of your business or if you would like access to our other Seller services, please register above.</strong></span></td>
+            </tr>
+            <tr>
+              <td valign="top" class="blue3">&nbsp;</td>
+            </tr>           
+			<tr>
+              <td align="left" valign="middle" class="manage">Receive Informational Brochure</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" class="right_box"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="blue2">If you would like us to mail you our informational brochure which describes:</td>
+                  </tr>
+				  <tr>
+						<td>&nbsp;</td>
+					</tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          
+                          <tr>
+                            <td width="90%" align="left" valign="top" class="blue3"><img src="images/1.gif" alt="" width="14" height="14" align="absmiddle" /> The step by step process we use to manage the sale of your business.<a href="#" onclick="sendToSellerRegistration();"><img src="images/book.gif" alt="Managing The Sale of Your Business" width="96" height="171" align="right" border="0" /></a><br />
+                              <br/>
+                              <img src="images/2.gif" alt="" width="14" height="14" align="absmiddle" /> Includes answers to frequently asked questions<br />
+                              <br/>
+                              <img src="images/3.gif" alt="" width="14" height="14" align="absmiddle" /> Describes who we are and how we can add value to help maximize the selling price, <a class="red" href="#" onclick="sendToFindProbable();">please click here</a>.</td>
+                          </tr>
+                        </tbody>
+                    </table></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+            </tr>
+            <tr>
+              <td valign="middle" class="manage">Free Business Valuation</td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" class="right_box"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td valign="top"><a class="red" href="#" onclick="sendToFindProbable();"><img width="206" height="136" src="images/image.gif" title="" alt="Free Business Valuation" border="0" /></a></td>
+                    </tr>
+                    <tr>
+                      <td valign="top">
+                          <span class="blue3">To receive a complementary Opinion of Value of the Most Probable Selling Price for your business.<br />
+                          <a class="red" href="#" onclick="sendToFindProbable();">please click here                          </a></span>                          </td>
+                    </tr>
+                  </tbody>
+              </table></td>
+            </tr>
+            <tr>
+              <td valign="top" class="blue3">&nbsp;</td>
+            </tr>
+            <tr>
+              <td valign="middle" height="22" class="manage">Our Associations</td>
+            </tr>
+            <tr>
+              <td height="5">&nbsp;</td>
+            </tr>
+            <tr>
+              <td valign="top" class="right_box"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="57%" align="center">
+					  <p style="padding-bottom:10px;"><img width="192" height="43" src="images/ibba.gif" alt="" /></p>
+                      <p style="padding-bottom:10px;"><img width="100" height="99" src="images/cabb.gif" alt="" /></p>
+                      <p style="padding-bottom:10px;"><img src="images/pro_visors.gif" alt="" width="192" height="42" /></p></td>
+                    </tr>
+                  </tbody>
+              </table>                     </td>
+            </tr>
+          </tbody>
+        </table>                      </td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td align="left" valign="top" class="footertext">
+					  <strong>Please Note:</strong>  The articles posted include those written by Keystone Business Advisors as well as useful articles written by third parties.  Keystone Business Advisors makes no representations or warranties as to the accuracy of the information presented in any of the third party articles posted on this website.
+					  </td>
+                      <td>&nbsp;</td>
+                      <td valign="top">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!--content ends here --> <!--footer starts here -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="footer">
+    <tbody>
+        <tr>
+            <td><a href="index.php" class="footertext">Home</a>  |
+	  <a href="about.php" class="footertext">About Us</a>  |  
+	  <a href="selling_process.php" class="footertext">Selling A Business</a>  |  
+	  <a href="buying_process.php" class="footertext">Buying A Business</a>  |  
+	  <!--<a href="business_for_sale.php" class="footertext">Businesses For Sale</a>  |-->
+	  <a href="completed_transaction_user.php" class="footertext">Completed Transactions</a>  |
+	  <a href="helpful_articles.php" class="footertext">Helpful Articles</a>  |
+	  <a href="disclaimer.php" class="footertext">Disclaimer</a>  |
+	  <a href="contact_us.php" class="footertext">Contact Us<br />
+	  <br /></a>
+      <span class="footertext">&copy; 2008 Keystone Business Advisors. All rights reserved.</span></td>
+        </tr>
+    </tbody>
+</table>
+<!--footer ends here --> </center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7682912-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

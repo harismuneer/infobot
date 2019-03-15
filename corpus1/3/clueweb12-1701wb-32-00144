@@ -1,0 +1,708 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-23T17:59:36Z
+WARC-TREC-ID: clueweb12-1701wb-32-00144
+WARC-IP-Address: 23.15.9.162
+WARC-Payload-Digest: sha1:5KUGRWE6IKX7OGT5KBNTQNDIKU5FCAUK
+WARC-Target-URI: http://www.navy.mil/local/cvn70/
+WARC-Record-ID: <urn:uuid:eeb971c3-46aa-4cf0-8a2a-78761af92a85>
+Content-Type: application/http; msgtype=response
+Content-Length: 27941
+
+HTTP/1.0 200 OK
+Server: Microsoft-IIS/6.0
+Header: US Navy
+X-Powered-By: ASP.NET
+Content-Type: text/html
+Cache-Control: private, max-age=536
+Date: Mon, 23 Apr 2012 17:59:36 GMT
+Content-Length: 27714
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<SCRIPT type="text/javascript">
+<!--
+
+// Test for Microsoft Internet Explorer
+//-----------------------------------------------------------------------
+function isMSIE() 
+//-----------------------------------------------------------------------
+{
+	return (navigator.appVersion.indexOf("MSIE") != -1)
+}
+
+
+// Netscape CSS Bug Fix
+if (document.layers){
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	}
+	
+//-----------------------------------------------------------------------
+function reloadPage() 
+//-----------------------------------------------------------------------
+{
+	if (innerWidth != origWidth || innerHeight != origHeight)
+		location.reload();
+}
+	
+if (document.layers) onresize = reloadPage;	
+
+
+// Email Link Protection Functions
+var user;
+var domain;
+var suffix;
+var linktitle;
+
+// Show and Hide Functions
+//-----------------------------------------------------------------------
+function hide_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id;
+	
+	menu_id = document.getElementById(div_id);
+	
+	/* Hide the specified menu */
+	if (menu_id == null)
+	{
+		return;
+	}
+	else 
+	{
+		menu_id.className = 'hide';
+	}
+}
+
+//-----------------------------------------------------------------------
+function toggle_main_menu(div_id)
+//-----------------------------------------------------------------------
+{
+	var menu_id, old_value;
+	
+	menu_id = document.getElementById(div_id);
+	if (menu_id == null)
+		return;
+		
+	/* Retrive current class value */
+	old_value = menu_id.className;
+	
+	/* First hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+
+	/* set new class value */
+	if (old_value == 'hide')
+	{
+		menu_id.className = 'show';
+	}
+	else
+	{
+		menu_id.className = 'hide';	
+	}
+}	
+
+//-----------------------------------------------------------------------
+function show_all_menus()
+//-----------------------------------------------------------------------
+{
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'show';
+			}
+	}
+}	
+
+//-----------------------------------------------------------------------
+function toggle_display(div_id)
+//-----------------------------------------------------------------------
+{
+	var child;
+
+	/* Hide all menus */
+	if (menu_ids) {
+		for(i=0; i<menu_ids.length; i++) {
+			document.getElementById(menu_ids[i]).className = 'hide';
+			}
+	}
+	
+/*	child = document.all(window.event.srcElement.child);*/
+	child = document.getElementById(div_id);
+	
+	if (child == null)
+		return;
+	else
+	{
+		if (child.className == 'hide')
+		{
+			child.className = 'show';
+		}
+		else
+		{
+			child.className = 'hide';
+		}
+	}
+}
+
+//-->
+</SCRIPT>
+		
+
+<script src="/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<title>USS Carl Vinson (CVN 70)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="/local/sitemap.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+var state = 'none';
+
+function showhide(layer_ref) {
+
+	if (state == 'block') {
+		state = 'none';
+	}
+	else {
+		state = 'block';
+	}
+	if (document.all) { //IS IE 4 or 5 (or 6 beta)
+		eval( "document.all." + layer_ref + ".style.display = state");
+	}
+	if (document.layers) { //IS NETSCAPE 4 or below
+		document.layers[layer_ref].display = state;
+	}
+	if (document.getElementById &&!document.all) {
+		hza = document.getElementById(layer_ref);
+		hza.style.display = state;
+	}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.local_menu {
+	background-image: url(/local/images/menu_seg.jpg); 
+	background-repeat: repeat-x;
+}
+
+.leadin {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+}
+
+.leadinR {
+	font-family: Times, serif;
+	font-size: 9px;
+	font-style: normal;
+	color: #404040;
+}
+
+.breaking_heads {
+	font-size: 11px;
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 7x;
+	text-decoration: none;
+	text-align: left;
+	padding-top: 4px;
+} 
+
+.top_heads {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 7x;
+	text-decoration: none;
+	text-align: left;
+	padding-top: 4px;
+} 
+
+.main_header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(/local/images/body-tile.png);
+}
+
+a:link {
+	color: #000033;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000033;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0066CC;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.localAd {
+	height: 75px;
+	width: 125px;
+	display: block;
+	vertical-align: baseline;
+}
+
+.socmed {
+	
+	font-weight: bold;
+	text-decoration: none;
+	color: #e8e8e8;
+}
+
+-->
+</style>
+<script src="/library/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/library/jquery/jquery.cycle.lite.min.js"></script>
+<style type="text/css">
+.slideshow { width: 125px; margin: auto }
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade', 
+		timeout: 15000
+	});
+});
+</script>
+</head>
+
+<!-- main header, logo, search form and main menu --->
+<span class="style22"></span>
+<!-- <script type="text/javascript" src="/foresee/foresee-trigger.js"></script> -->
+<style type="text/css">
+@import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #000033;
+}
+</style>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+        <!-- Begin Standard USN Header Bar -->
+
+<style>
+        @import url(/css/intra_bar_style.css);
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var menu_ids = new Array('column2_menu','column3_menu','column4_menu','column5_menu','column6_menu');
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td bgcolor="#CFDBE7">
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr>
+<td colspan=2 width="11%"><a href="/"><img src="/local/images/navy_local2.jpg" border=0 alt="Return to www.navy.mil homepage"></a></td>
+<td width="11%"><a title="US Navy Today - for 508 viewers please click here then tab into the menu for this area"
+tabindex=200
+class="header_menu_item"
+href="javascript:void(0);"
+name="column2_menu_link"
+id="column2_menu_link"
+child="column2_menu"
+onclick="toggle_main_menu('column2_menu');">&nbsp;US Navy Today</a></td>
+
+<td width="11%"><a title="About the Navy - for 508 viewers please click here then tab into the menu for this area"
+tabindex=300
+class="header_menu_item"
+href="javascript:void(0);"
+name="column3_menu_link"
+id="column3_menu_link"
+child="column3_menu"
+onclick="toggle_main_menu('column3_menu');">&nbsp;About the Navy</a></td>
+
+<td width="11%"><a title="Navy Leadership - for 508 viewers please click here then tab into the menu for this area"
+tabindex=400
+class="header_menu_item"
+href="javascript:void(0);"
+name="column4_menu_link"
+id="column4_menu_link"
+child="column4_menu"
+onclick="toggle_main_menu('column4_menu');">&nbsp;Navy Leadership</a></td>
+
+<td width="11%"><a title="Media Resources - for 508 viewers please click here then tab into the menu for this area"
+tabindex=500
+class="header_menu_item"
+href="javascript:void(0);"
+name="column5_menu_link"
+id="column5_menu_link"
+child="column5_menu"
+onclick="toggle_main_menu('column5_menu');">&nbsp;Media Resources</a></td>
+
+<td width="11%"><a title="Links of Interest - for 508 viewers please click here then tab into the menu for this area"
+tabindex=600
+class="header_menu_item"
+href="javascript:void(0);"
+name="column6_menu_link"
+id="column6_menu_link"
+child="column6_menu"
+onclick="toggle_main_menu('column6_menu');">&nbsp;Links of Interest</a></td>
+
+<td width="17%"><a tabindex=700 class="header_menu_item" href="/navydata/infoIndex.asp">&nbsp;Information Index </a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Column2 Menu Popup Items --->
+<div id="column2_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">US Navy Today:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="8"></td>
+<td width="330">
+<div><a tabindex=221 class="header_submenu_item" href="/navydata/navy_legacy_hr.asp?id=146">Status of the Navy </a></div>
+</td>
+<td width="330">
+<div><a tabindex=241 class="header_submenu_item" href="/links/alpha.asp">Navy Web Sites </a></div>
+</td>
+<td width="330">
+<div><a tabindex=261 class="header_submenu_item" href="/search/history_today.asp">Today in Naval History </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=290 href="javascript:void(0);" onclick="hide_main_menu('column2_menu');">Hide US Navy Today Menu</a></div>
+</div>
+</div>
+
+<!-- Column3 Menu Popup Items --->
+<div id="column3_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">About the Navy:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="8"></td>
+<td width="330">
+<div><a tabindex=321 class="header_submenu_item" href="/navydata/organization/org-top.asp">Navy Organization </a></div>
+</td>
+<td width="330">
+<div><a tabindex=341 class="header_submenu_item" href="/navydata/our_ships.asp">Our Ships </a></div>
+</td>
+<td width="330">
+<div><a tabindex=361 class="header_submenu_item" href="/navydata/fact.asp">Fact File </a></div>
+<div><a tabindex=362 class="header_submenu_item" href="/navydata/faq.asp">FAQ (Got a Question?) </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=390 href="javascript:void(0);" onclick="hide_main_menu('column3_menu');">Hide About the Navy Menu</a></div>
+</div>
+</div>
+
+<!-- Column4 Menu Popup Items --->
+<div id="column4_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Navy Leadership:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="8"></td>
+<td width="330">
+<div><a tabindex=421 class="header_submenu_item" href="/secnav/index.asp">Secretary of the Navy </a></div>
+<div><a tabindex=422 class="header_submenu_item" href="/navydata/bios/bio_list.asp">Biographies </a></div>
+</td>
+<td width="330">
+<div><a tabindex=441 class="header_submenu_item" href="/cno/index.asp">Chief of Naval Operations </a></div>
+<div><a tabindex=442 class="header_submenu_item" href="/navydata/ccklist.asp">Leadership Tools </a></div>
+</td>
+<td width="330">
+<div><a tabindex=461 class="header_submenu_item" href="/cnp/index.asp">Chief of Naval Personnel </a></div>
+<div><a tabindex=462 class="header_submenu_item" href="/mcpon/index.asp">Master Chief Petty Officer of the Navy </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=490 href="javascript:void(0);" onclick="hide_main_menu('column4_menu');">Hide Navy Leadership Menu</a></div>
+</div>
+</div>
+
+<!-- Column5 Menu Popup Items --->
+<div id="column5_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Media Resources:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="8"></td>
+<td width="330">
+<div><a tabindex=521 class="header_submenu_item" href="/view_photos_top.asp">Photo Gallery </a></div>
+<div><a tabindex=522 class="header_submenu_item" href="/view_galleries.asp">Eye on the Fleet Featured Gallery </a></div>
+<div><a tabindex=523 class="header_submenu_item" href="/view_videos.asp?vtype=5">All Hands Television Archive </a></div>
+<div><a tabindex=524 class="header_submenu_item" href="/podcast/podcast.asp">Podcasts and RSS Feeds </a></div>
+<div><a tabindex=525 class="header_submenu_item" href="/view_videos.asp">Video Gallery </a></div>
+<div><a tabindex=526 class="header_submenu_item" href="/view_flash_gallery.asp">Everyday in the Navy Archive </a></div>
+</td>
+<td width="330">
+<div><a tabindex=541 class="header_submenu_item" href="/navydata/cnopList.asp">CNO Podcast </a></div>
+<div><a tabindex=542 class="header_submenu_item" href="/navydata/mcponplist.asp">MCPON Podcast </a></div>
+<div><a tabindex=543 class="header_submenu_item" href="/view_videos.asp?vtype=6">All Hands Update Archive </a></div>
+<div><a tabindex=544 class="header_submenu_item" href="/view_webads.asp">Web Ad Gallery </a></div>
+<div><a tabindex=545 class="header_submenu_item" href="/view_printads.asp">Print Ad Gallery </a></div>
+</td>
+<td width="330">
+<div><a tabindex=561 class="header_submenu_item" href="/navydata/radioList.asp">All Hands Radio Archive </a></div>
+<div><a tabindex=562 class="header_submenu_item" href="/allhands.asp">All Hands Magazine </a></div>
+<div><a tabindex=563 class="header_submenu_item" href="/view_ggphotos.asp">Graphics Gallery </a></div>
+<div><a tabindex=564 class="header_submenu_item" href="/view_ahhphotos.asp">All Hands Photo Gallery </a></div>
+<div><a tabindex=565 class="header_submenu_item" href="/tools/subscribe_navnews.asp">Subscribe/Unsubscribe to Navy News </a></div>
+<div><a tabindex=566 class="header_submenu_item" href="/photo_submit.asp">How to Submit a Photo to Navy Visual News </a></div>
+<div><a tabindex=567 class="header_submenu_item" href="/submit/index.asp">How to Submit a Story to Navy.mil </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=590 href="javascript:void(0);" onclick="hide_main_menu('column5_menu');">Hide Media Resources Menu</a></div>
+</div>
+</div>
+
+<!-- Column6 Menu Popup Items --->
+<div id="column6_menu" class="hide">
+<div class="header_submenu">
+<div class="header_submenu_title">Links of Interest:</div>
+<table border="0" cellpadding="5" cellspacing="0" width="1000">
+<tr valign="top">
+<td width="8"></td>
+<td width="330">
+<div><a tabindex=621 class="header_submenu_item" href="/navco/">Navy Office of Community Outreach </a></div>
+<div><a tabindex=622 class="header_submenu_item" href="/navyenterprise/">Navy Enterprise </a></div>
+<div><a tabindex=623 class="header_submenu_item" href="http://www.npc.navy.mil/Channels/" target=new>Navy Personnel Command </a></div>
+<div><a tabindex=624 class="header_submenu_item" href="https://www.navyreserve.navy.mil" target=new>Navy Reserve </a></div>
+<div><a tabindex=625 class="header_submenu_item" href="https://www.nko.navy.mil" target=new>Navy Knowledge Online </a></div>
+<div><a tabindex=626 class="header_submenu_item" href="http://www.jcs.mil" target=new>Joint Chiefs of Staff </a></div>
+</td>
+<td width="330">
+<div><a tabindex=641 class="header_submenu_item" href="http://www.cnic.navy.mil/cnic_hq_site/ANFA/index.htm" target=new>Affected Navy Family Assistance </a></div>
+<div><a tabindex=642 class="header_submenu_item" href="http://www.militaryonesource.com/skins/MOS/home.aspx" target=new>Military One Source </a></div>
+<div><a tabindex=644 class="header_submenu_item" href="http://www.nmcrs.org/" target=new>Navy / Marine Corps Relief </a></div>
+<div><a tabindex=645 class="header_submenu_item" href="http://www.history.navy.mil/ " target=new>Naval History & Heritage Command </a></div>
+</td>
+<td width="330">
+<div><a tabindex=661 class="header_submenu_item" href="http://www.defense.gov" target=new>Defense.gov </a></div>
+<div><a tabindex=662 class="header_submenu_item" href="http://www.usmc.mil/" target=new>US Marine Corps </a></div>
+<div><a tabindex=663 class="header_submenu_item" href="http://www.army.mil/" target=new>Army </a></div>
+<div><a tabindex=664 class="header_submenu_item" href="http://www.af.mil/" target=new>Air Force </a></div>
+<div><a tabindex=665 class="header_submenu_item" href="http://www.uscg.mil/" target=new>US Coast Guard </a></div>
+<div><a tabindex=666 class="header_submenu_item" href="http://www.pentagonchannel.mil/" target=new>Pentagon Channel </a></div>
+</td>
+</tr>
+</table>
+<div class="header_submenu_hide_link_area"><a class="header_submenu_hide_link" tabindex=690 href="javascript:void(0);" onclick="hide_main_menu('column6_menu');">Hide Links of Interest Menu</a></div>
+</div>
+</div>
+
+<!-- End of Standard US Navy Header Bar -->
+<div align="center" style="background-color:#001686; width:1002">
+  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" name="localHdr" width="1000" height="95" align="middle" id="localHdr">
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="movie" value="/local/includes/header.swf?names=USS Carl Vinson (CVN 70)&amp;add=/local/cvn70/" />
+    <param name="quality" value="high" />
+    <param name="bgcolor" value="#000000" />
+    <param name="SCALE" value="exactfit" />
+    
+    <embed src="/local/includes/header.swf?names=USS Carl Vinson (CVN 70)&amp;add=http:/local/cvn70/" width="1000" height="95" align="middle" quality="high" bgcolor="#000000" name="localHdr" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" scale="exactfit" />
+  </object>
+</div>
+	<table width="1000" border="0" cellspacing="0" cellpadding="0">
+
+	  <tr>
+	    <td width="75" height="3" class="local_menu"></td>
+	  	<td align="center" height="18" class="local_menu"><a href="" class="header_menu_item"><strong></strong></a></td>
+	  	<td align="center" height="18" class="local_menu"><a href="" class="header_menu_item"><strong></strong></a></td>
+	  	<td align="center" height="18" class="local_menu""><a href="" class="header_menu_item"><strong></strong></a></td>
+	  	<td align="center" height="18" class="local_menu"><a href="" class="header_menu_item"><strong></strong></a></td>
+	  	<td align="center" height="18" class="local_menu""><a href="" class="header_menu_item"><strong></strong></a></td>
+	    <td width="75" height="3" class="local_menu"></td>
+	  </tr>
+	  <tr bgcolor="#000000">
+	    <td width="75" height="3"></td>
+	    <td width="170" height="3"></td>
+	    <td width="170" height="3"></td>
+	    <td width="170" height="3"></td>
+	    <td width="170" height="3"></td>
+	    <td width="170" height="3"></td>
+	    <td width="76" height="3"></td>
+	  </tr>
+	</table>
+
+<body bgcolor="#ffffff" >
+	<table width="1001" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+	  <tr>
+<!-- START column 1 -->		
+	    <td rowspan=2 width=414 valign=top bgcolor="#000022">
+			<div align="center">
+			  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,18,0" name="fullscreen" width="419"  height="575" align="middle" id="fullscreen">
+			    <param name="allowFullScreen" value="true" />
+			    <param name="movie" value="/local/local_main.swf?vid=/local/localVid.asp?id=13&amp;iotd=/local/localIOTD.asp?id=13&amp;group_id=13&amp;pod=/local/ad.swf&amp;podxml=/local/localPodcast.asp?id=13" />
+			    <param name="bgcolor" value="#FFFFFF" /><param name="SCALE" value="exactfit" />
+			    <embed src="/local/local_main.swf?vid=/local/localVid.asp?id=13&amp;iotd=/local/localIOTD.asp?id=13&amp;group_id=13&amp;pod=/local/ad.swf&amp;podxml=/local/localPodcast.asp?id=13" width="419" height="575" align="middle" allowFullScreen="true" bgcolor="#FFFFFF" name="fullscreen" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" scale="exactfit" />
+			  </object>
+			</div>
+		</td>
+<!-- START column 2 -->		
+	    <td width="446" valign="top">
+	    	<div style="height:25; background-image:url(/local/images/header_bar.jpg); background-repeat:repeat-x">
+			  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+			    <tr><td colspan="3" width=300 height=5><h1 style="margin:0px; font-size:2px; color:#eeeeee;">USS Carl Vinson (CVN 70)</h1></td></tr>
+				<tr>
+				  <td width="55%" align="right" class="main_header">Navy News Service - Top Three Stories</td>
+				  <td width="4%" align="center"><a href="/xml/tops.xml" target="_blank"><img src="/swf/images/btn_rss.gif" width="10" border="0" alt="Navy Top Stories RSS Feed" /></a></td>
+				  <td align="right" width="41%" class="leadinR">NAVY NEWS SERVICE&nbsp;&nbsp;</td>
+				</tr>
+			  </table>
+			</div>
+	
+	    	<div class="top_heads"><a target="_blank" href="/search/display.asp?story_id=66676" title="#SAAM: Makin Island Sailors, Marines Participate in Sexual Assault Awareness Month">#SAAM: Makin Island Sailors, Marines Participate in Sexual Assault Awareness Mon...</a></div>
+	
+	    	<div class="top_heads"><a target="_blank" href="/search/display.asp?story_id=66663" >VP-1 Assists in Taiwanese Fishing Vessel Rescue</a></div>
+	
+	    	<div class="top_heads"><a target="_blank" href="/search/display.asp?story_id=66653" >#SAAM: Expedited Transfer Option Available to Sexual Assault Victims</a></div>
+		
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		  <tr><td bgcolor="#FFFFFF" width="441" height="20"></td></tr>
+		  <tr><td bgcolor="#000000" width="441" height="2"></td></tr>
+		</table>
+	    	<div style="height:25; background-image:url(/local/images/header_bar.jpg); background-repeat:repeat-x; vertical-align: middle">
+			  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+			    <tr><td colspan="3" width=300 height=5></td></tr>
+			    <tr>
+				  <td width="28%" align="right" class="main_header">Your Local Stories</td>
+				  <td width="4%" align="center"><a href="/local/localStoryRSS.asp?id=13" target="_blank"><img src="/swf/images/btn_rss.gif" width="10" border="0" alt="Local Stories RSS Feed" /></a></td>
+				  <td align="right" width="78%" class="leadin"><a href="/local/local_story_archive.asp?id=13" style="font-weight:bold;">Search Stories</a>&nbsp;&nbsp;</td>
+				</tr>
+			  </table>
+			</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+			<tr><tdwidth=250 height=3></td></tr>
+			<tr><td>
+ 				<iframe title="Local Stories" src="/local/localStories.asp?id=13" width="100%" height="358px" frameborder="0"></iframe>
+			</td></tr>
+			</table>
+		</td>
+<!-- START column 3 -->		
+	    <td width="141" valign="top" align="center" style="background-image: url(/local/images/ads_bkgnd.jpg)">
+                  <div style="width:141; font-size:7px;">&nbsp;</div>
+
+            <div class="localAd"><a href="http://www.donsapro.navy.mil/survey.html" target="_blank"><img src="/media/adsMM/SAPR_Survey.jpg" width=125 border=0 alt="Department of the Navy Sexual Assault Prevention and Response Survey"></a></div>
+
+                  <div class="localAd" style="display:none; width:125; font-size:1px">&nbsp;</div>
+
+                  <div class="localAd" style="display:none; width:125; font-size:1px">&nbsp;</div>
+
+                  <div class="localAd" style="display:none; width:125; font-size:1px">&nbsp;</div>
+
+                  <div style="width:141; font-size:8px">&nbsp;</div>
+				  <div class="slideshow">
+
+					  <a href="http://www.navy.mil/media/allhands/acrobat/ah201110.pdf" target="_blank"><img src="/artwork/ahc_1110.jpg" width=125 border=0 alt="All Hands Magazine October&nbsp;2011"></a>
+				  </div>
+				  <div style="position:relative; top:6px; left:0px;"><a href="/allhands.asp" style="font-size:11px; font-weight:bold; color:#000033; text-decoration: none;"><em>All Hands</em> Archive</a></div>
+		</td>
+	  </tr>
+	  <tr>
+		<td colspan=2 style="background-color:#d6d6d6; background-image:url(/local/images/social_bottom.png); background-repeat:no-repeat; width:575px; height:72px; vertical-align: top;">
+		  <table width=570 cellpadding=0 cellspacing=0 border=0>
+		    <tr>
+			  <td width=15 height=17></td>
+			  <td width=100 height=17></td>
+			  <td width=100 height=17></td>
+			  <td width=100 height=17></td>
+			  <td width=100 height=17></td>
+			  <td width=100 height=17></td>
+			</tr>
+			<tr>
+			  <td width=15 height=2></td>
+<td><a href='http://cvn70blogspot.tumblr.com/' target='_blank' onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('facebookbw','','/images/navy_mil/socmed_images/medium/facebook.gif',1);" onblur="MM_swapImgRestore()" onfocus="MM_swapImage('facebookbw','','/images/navy_mil/socmed_images/medium/facebook.gif',1);" style='color:#b0b0b0; font-family:arial; font-size:12px; font-weight:bold'><img src='/images/navy_mil/socmed_images/medium/facebook_bw.gif' border=0 name='facebookbw' id='facebookbw' alt='Facebook Page for USS Carl Vinson (CVN 70)'>&nbsp;&nbsp;Facebook</a></td><td style='width:100; font-size:9px'>&nbsp;</td><td style='width:100; font-size:9px'>&nbsp;</td><td style='width:100; font-size:9px'>&nbsp;</td><td style='width:100; font-size:9px'>&nbsp;</td>		 
+			  </td>
+			</tr>
+		  </table>
+		</td>
+	  </tr>
+ 	</table>
+<br>
+
+</body>
+</html>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function openwin()
+{ 
+	properties='menubar=0,toolbar=0,location=0,directories=0,status=0,scrollbars=no,resizable=0,width=700,height=300,top=150,left=150';
+	win_1 = window.open ('/swf/radio.html', 'ahradio', properties); 
+} 
+
+//-->
+</script>

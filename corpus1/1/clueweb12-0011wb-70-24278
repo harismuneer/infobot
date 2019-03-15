@@ -1,0 +1,2443 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-11T23:16:12Z
+WARC-TREC-ID: clueweb12-0011wb-70-24278
+WARC-Target-URI: http://newnebraska.net/tag/electoral%20college
+WARC-Payload-Digest: sha1:6MAL56LRQ5GUTAVS6SJKNEXYY7QQTXP6
+WARC-IP-Address: 107.21.224.80
+WARC-Record-ID: <urn:uuid:a3fe08be-b98b-4dc7-8467-f8b40b3974f2>
+Content-Type: application/http; msgtype=response
+Content-Length: 127741
+
+HTTP/1.1 200 OK
+Cache-control: no-cache="set-cookie"
+Content-Type: text/html;charset=utf-8
+Date: Sat, 11 Feb 2012 23:16:14 GMT
+Server: nginx
+Set-Cookie: AWSELB=F7A31B530A204BA30F3F36CDDFD82C4C072C2E23FE904DC1D923A8E6561DAD54B413AFFB95607E3A756F9DCDD5B74F93CB957D7D04969023DD27F045A44D8A27A69A089BDA;PATH=/;MAX-AGE=60
+Vary: Accept-Encoding
+Connection: Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        
+            
+        
+
+
+
+
+
+
+
+
+
+    <link rel="shortcut icon" href="http://newnebraska.net/upload/NNNflag2.JPG" type="image/x-icon" />
+
+<link rel="stylesheet" href="/stylesheets/soapblox.css" type="text/css">
+<link rel="stylesheet" href="/stylesheets/comments.css" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="New Nebraska Network"
+    href="http://www.newnebraska.net/rss/rss2.xml" />
+<title>
+    New Nebraska Network
+    
+        Where change begins...
+    
+</title>
+
+
+
+
+
+
+
+
+
+
+<script src="/javascript/prototype.js" type="text/javascript"></script>
+
+
+<script>
+//-- SoapBlox JavaScript
+//-- 7/30/2007 (C)
+
+var baseUrl = '/';
+//-- SoapBlox JavaScript
+//-- 7/30/2007 (C)
+
+	var req;
+	var which;
+	var debug = false;
+	var commentId = "";
+	var diaryId = "";
+	var previewTitle = "";
+	var previewText = "";
+	var postingComment = false;
+	var canPost = false;
+	var previewingComment = false;
+	var hasError = false;
+	var buttonState;
+	
+	function hover(id, imageLoc) {
+		// alert(imageLoc);
+		document.images[id].src = imageLoc;
+	}
+
+	// makes a comment appear when someone clicks "post a comment" or "reply"
+	// id - the commentId (0 if "root"), dId - diaryId
+	function makeCommentAppear(id, dId) {
+
+		var tempTitle = "";
+		var tempText = "";
+	
+		// if this isn't empty, we were trying to perviously post a comment
+		// therefore, we need to clean out all the html in the previous spot
+		// so we don't create "nodeLists" for postCommentTextArea and Title
+		if (commentId != "") {
+			// get the current "postcommenter" element
+			var oldElem = document.getElementById('postcomment' + commentId);
+	
+			if (oldElem) {
+				// this will store whatever we might have had before
+				if (document.forms['rateForm'].elements['postCommentTitle']) {
+					tempTitle = document.forms['rateForm'].elements['postCommentTitle'].value;
+				}	
+				if (document.forms['rateForm'].elements['postCommentTextArea']) {
+					tempText = document.forms['rateForm'].elements['postCommentTextArea'].value;
+				}
+			
+				// clear out the old HTML, so we don't create nodeLists
+				oldElem.innerHTML = "";
+			}
+		}
+	
+		hideArea("post");
+
+		// store the values globally for what we're currently looking at
+	    commentId = id;
+	    diaryId = dId;
+	    
+	    var elementName = 'postcomment' + id;
+	    
+	    // make sure the element is hidden
+		Element.hide(elementName);
+
+		// set the data in it		
+	    document.getElementById(elementName).innerHTML = document.getElementById("contentHolder").innerHTML;
+		document.forms['rateForm'].elements['postCommentTitle'].value = tempTitle;
+		document.forms['rateForm'].elements['postCommentTextArea'].value = tempText;
+	
+		// make it slide down, take half a second, scaleFrom 3 to avoid "stutter" in IE
+		Effect.SlideDown(elementName, { duration: 0.5, scaleFrom: 3});
+		window.setTimeout("document.forms['rateForm'].elements['postCommentTitle'].focus()", 501);
+		
+	    postingComment = true;
+	    // since we're starting a new preview cycle, we're going to need
+	    // to use the slide down effect.  This ensures that
+	    previewingComment = false;
+
+	    var objDiv = document.getElementById(elementName);
+		objDiv.scrollTop = objDiv.scrollHeight;
+	}
+
+	// what we do when someone hits cancel
+	function cancelPost() {
+
+		var cTextElem = document.forms['rateForm'].elements['postCommentTextArea'];
+		var cTitleElem = document.forms['rateForm'].elements['postCommentTitle'];
+		
+		if ((cTextElem && cTextElem.value != "")
+				|| (cTitleElem && cTitleElem.value != ""))
+		{
+			// if the don't want to cancel--stop.
+			if (!confirm("Cancel this comment?")) {
+				return;
+			}
+		}
+
+		hideArea("cancel");
+		// we no longer clear this out so in makeCommentAppear we can see if we have to clean
+		// out some hidden HTML
+		//commentId = "";
+		diaryId = "";
+		previewText = "";
+		previewTitle = "";
+		cTextElem.value = "";
+		cTitleElem.value = "";
+		previewingComment = false;	
+		postingComment = false;
+	}
+	
+	// this is the safari default button hack, where we use onfocus to determine what mode we're in
+	function setButtonState(theValue) {
+		buttonState = theValue;
+	}
+
+	// it's how we post a comment!
+	function submitForm(theForm) {
+	
+		// alert(buttonState + " " + previewingComment);
+	
+		// stop the "enter in the subject" bug
+		if (buttonState == "post" && !previewingComment
+		 		|| buttonState == "post" && previewingComment && !canPost) {
+			previewComment(theForm);
+			return false;
+		}
+		
+
+		var theForm = document.forms['rateForm'];	
+		theForm.action = baseUrl + "postComment.do";
+		theForm.elements['replyParentCommentId'].value = commentId;
+
+		if (commentId == 0) {
+			theForm.elements['diaryId'].value = diaryId;	
+		}
+		else {
+			theForm.elements['commentId'].value = commentId;	
+
+		}
+		
+		theForm.elements['replyDiaryId'].value = diaryId;	
+		theForm.elements['submitType'].value = "post";	
+		
+		// alert("yo" + theForm.elements['submitType']);
+		theForm.method = "POST";
+		theForm.submit();
+	}
+
+	// trims a string
+	function trim(str) {     
+		if(!str || typeof str != 'string') {
+			return null;     
+		}
+			
+		return str.replace(/^[\s]+/,'').replace(/[\s]+$/,'').replace(/[\s]{2,}/,' '); 
+		
+	}
+
+	function previewComment(theForm) {
+	
+		// if (tinyMCE) {
+			// tinyMCE.triggerSave();
+		// }
+		
+		// alert(baseUrl);
+
+		var url = baseUrl + "ajaxPreviewComment.do";
+		var errorDiv = "errorcomment" + commentId;
+		
+		// hide any error we might have
+		if (hasError) {
+			Element.hide(errorDiv);
+		}
+			
+		var cTitleElem = document.forms['rateForm'].elements["postCommentTitle"];
+		var cTextElem =  document.forms['rateForm'].elements["postCommentTextArea"];
+	
+		
+		previewTitle = cTitleElem.value;
+		previewText = cTextElem.value;
+	
+	    // trim it so we remove the white sapces
+	    previewTitle = trim(previewTitle);
+
+	    // if we have nothing, set the error
+	    if (previewTitle == null || previewTitle == "") {
+			Effect.Appear(errorDiv, { duration: 0.5 });
+			disallowPost();
+			hasError = true;
+	    	return;
+	    }
+
+	    // if we get this far we don't have an error!
+	    hasError = false;
+	    
+	    // apparently using "escape" funcation messes with utf-8 so we just explicity
+	    // replace newlines with their url-encoding equavilent.
+	    previewText = escape(previewText); 
+	    
+	    previewText = previewText.replace(/\%u201C/ig, "%22");
+	    previewText = previewText.replace(/\%u201D/ig, "%22");
+  	    previewText = previewText.replace(/\%u2018/ig, "%27");
+  	    previewText = previewText.replace(/\%u2019/ig, "%27");  	    
+  	    previewText = previewText.replace(/\%u2013/ig, "-");  
+  	    previewText = previewText.replace(/\%u2014/ig, "-");    	      	    
+  	    previewText = previewText.replace(/\%u2026/ig, "...");    	
+  	    previewText = previewText.replace(/\+/g, "%2B");
+	    
+	    //previewText.replace(/\n/g, "%0a");
+//	    previewText = previewText.replace(/\+/g, "%2b");
+  // 	    previewText = previewText.replace(/\%/g, "%25");
+//   	    alert(previewText);
+	    
+		// add the previewText to the URL querystring    
+		// have to URL encode it for it to work correctly
+	    var params = "t=" + previewText;
+	
+		// do the fun ajax!    
+	    retrieveURL(url, "PREVIEW", commentId, params);
+	}
+
+	function hideArea(theType) {
+		var elementName = 'postcomment' + commentId;
+		var previewName = 'previewcomment' + commentId;
+	
+		// always hide the error div		
+		if (hasError) {
+			var errorDiv = "errorcomment" + commentId;
+			Element.hide(errorDiv);
+			hasError = false;
+		}
+		
+	    if (postingComment) {	
+	        // we must hide the current stored commentId
+	        // if we are canceling, we do it pretty
+	        if (theType == "cancel") {
+				Element.hide(previewName);        
+		        Effect.SlideUp(elementName, { duration: 0.5 });
+		    }
+		    else {
+		    	// otherwise we are posting another comment
+		    	// so do it REAL quick
+				Element.hide(previewName);	    	
+				document.getElementById(elementName).innerHTML = "";
+			}
+	    }
+	}
+
+	function figureOut(theForm) {
+// 		alert(buttonState);
+		
+		if (buttonState == 'preview') {
+			previewComment(theForm);
+		}
+		else if (buttonState == 'cancel') {
+			cancelPost();
+		}
+		else if (buttonState == 'post') {
+			submitForm(theForm);
+		}
+	}
+
+	// this checks the comments for when someone types, and if it's different than what's being preview we
+	// turn off the post button
+	function checkComment() {
+
+		var tTitle = "";
+		var tText = "";
+		
+		if (document.forms['rateForm'].elements['postCommentTitle']) {
+			tTitle = document.forms['rateForm'].elements['postCommentTitle'].value;
+		}
+		
+		if (document.forms['rateForm'].elements['postCommentTextArea']) {
+			tText = document.forms['rateForm'].elements['postCommentTextArea'].value;
+		}
+	    
+	   
+ //    		alert(tTitle + " " + previewTitle + " : " + tText + " " + previewText);
+	    if (canPost && (tText != previewText || tTitle != previewTitle)) {
+	    	disallowPost();
+	   	}
+	}
+
+	function disallowPost() {
+	    canPost = false;
+	    document.getElementById("postbutton" + commentId).disabled = true;
+	}
+
+	function allowPost() {
+	    canPost = true;
+	    var elem = document.getElementById("postbutton" + commentId);
+	    
+	    elem.disabled = false;
+	    
+	    // alert(previewingComment);
+	    
+	    if (!previewingComment) {
+			window.setTimeout("document.getElementById('postbutton' + commentId).focus()", 501);
+	    }
+	    else {
+		    try {
+		    	 document.getElementById('postbutton' + commentId).focus();
+		   	} catch (e) {
+		   		alert(e);
+		   	}
+	    }
+		
+//		alert(elem);
+//	    document.getElementById("postbutton" + commentId).focus();
+	//    alert(document.getElementById("postbutton" + commentId).focus);
+	}
+
+  function retrieveURL(url, type, id, params) {
+    which = id;
+    if (window.XMLHttpRequest) { // Non-IE browsers
+        req = new XMLHttpRequest();
+
+      
+        // pretty sure this adds a listener, which handles communication
+        // listeners apparently don't like parameters, either
+        if ("RATE" == type) {
+            req.onreadystatechange = processRateStateChange;          
+        }
+        else if ("RECOMMEND" == type) {
+            req.onreadystatechange = processRecommendStateChange;          
+        } 
+        else if ("PREVIEW" == type) {
+			req.onreadystatechange = processPreviewComment;                  
+        }      
+        else {
+            req.onreadystatechange = processStateChange;
+        }
+
+        try {
+            req.open("POST", url, true);
+	   		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			req.setRequestHeader("Content-length", params.length);
+			req.setRequestHeader("Connection", "close");            	    	
+            req.send(params);
+        } catch (e) {
+            alert(e);
+        }
+    } 
+    else if (window.ActiveXObject) { // IE
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+		
+        if (req) {
+            if ("RATE" == type) {
+                req.onreadystatechange = processRateStateChange;          
+            }
+            else if ("RECOMMEND" == type) {
+                req.onreadystatechange = processRecommendStateChange;          
+            }       
+            else if ("PREVIEW" == type) {
+				req.onreadystatechange = processPreviewComment;                  
+	   		}   
+            else {
+                req.onreadystatechange = processStateChange;
+            }
+        
+            req.open("POST", url, true);
+	   		req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			req.setRequestHeader("Content-length", params.length);
+			//req.setRequestHeader("Connection", "close");            	    	
+            req.send(params);
+        }
+    }
+  }
+  
+
+  // listener
+  function processStateChange() {
+    
+    if (req.readyState == 4) { // Complete
+      if (req.status == 200) { // OK response
+        document.getElementById("theTable").innerHTML = req.responseText;
+
+      } else {
+
+        alert("Problem: " + req.statusText);
+
+      }
+
+    }
+  }
+  
+  
+  
+	function processPreviewComment() {
+
+		if (req.readyState == 4) { // Complete
+			if (req.status == 200) { // OK response
+				var postCommentDiv = document.getElementById("postcomment" + commentId);
+				var previewCommentDiv = document.getElementById("previewcomment" + commentId);
+				
+			  	// make it visible
+			    // document.getElementById("previewComment").style.display = "block";
+			    
+				previewText = req.responseText;
+				
+				var commentError = false;
+				
+				if (previewText.indexOf("@@@ERROR@@@") != -1) {
+					previewText = "<div class='soapbloxError'>" + previewText.substring(11, previewText.length) + "</div>";						
+					commentError = true;
+				}
+    
+		        // set values in the preview area
+			    document.getElementById("previewTitle" + commentId).innerHTML = previewTitle;
+			    document.getElementById("previewCommentText" + commentId).innerHTML = previewText;
+			    
+			    // alert(previewingComment); 
+    
+    			// if we're not already previewing a comment we slide down
+    			if (!previewingComment) {
+					Effect.SlideDown("previewcomment" + commentId, { duration: 0.5, scaleFrom: 3});
+					//window.setTimeout("postButton.focus()", 501);
+				}
+				// otherwise, we just update the text
+				else {
+					Element.show("previewcomment" + commentId);
+				}
+			
+				if (commentError) {
+					disallowPost();
+				}					
+				else {
+					allowPost();
+				}
+				
+				previewingComment = true;
+			}
+			else {
+				alert("Problem: " + req.statusText);
+			}
+		}	
+	}
+  
+    function processRateStateChange() {
+        //alert(loadName);
+        //alert(document.getElementById(loadName));
+
+        if (req.readyState == 4) { // Complete
+        
+            var loadName = "rateLoad" + which; 
+            // alert("elem: " + document.getElementById(loadName));
+            var elem = document.getElementById(loadName);
+           
+
+            if (req.status == 200) { // OK response
+                elem.innerHTML = "<i>Complete!</i>";
+                if (debug) {
+                    alert(document.getElementById("rating" + which));
+                    alert(req.responseText);
+                }
+
+				// alert(req.responseText);
+
+        		var xmlDoc = req.responseXML;
+        		var theWholeThing = "";
+        		
+        		var rateType = xmlDoc.getElementsByTagName("rateType")[0].childNodes[0].nodeValue;
+        		var scoreType = xmlDoc.getElementsByTagName("scoreType")[0].childNodes[0].nodeValue;
+				var average = xmlDoc.getElementsByTagName("averageScore")[0].childNodes[0].nodeValue;
+				var viewRatingLink = xmlDoc.getElementsByTagName("viewRatingLink")[0].childNodes[0].nodeValue;
+        			        		
+        		//alert(rateType);
+        		
+        		if (rateType == "THUMBS" || rateType == "STARS") {
+				//	if (average == "false") {
+					// loop through the ratings   
+					
+						     		
+	        			for (i = 0; i < xmlDoc.getElementsByTagName("rating").length; i++) {
+	        			
+	        				var theString = "";
+	        			
+		        			var theRating = xmlDoc.getElementsByTagName("rating")[i];
+		        			var commentId = theRating.getElementsByTagName("commentId")[0].childNodes[0].nodeValue;
+							var ratingName = theRating.getElementsByTagName("ratingName")[0].childNodes[0].nodeValue;
+							// var viewRatingLink = theRating.getElementsByTagName("viewRatingLink")[0].childNodes[0].nodeValue;
+		        			var ratingValueId = theRating.getElementsByTagName("ratingValueId")[0].childNodes[0].nodeValue;
+		        			var loc = theRating.getElementsByTagName("image-src")[0].childNodes[0].nodeValue;
+		        			var mouseover = theRating.getElementsByTagName("image-mouseover")[0].childNodes[0].nodeValue;
+		        			var mouseout = theRating.getElementsByTagName("image-mouseout")[0].childNodes[0].nodeValue;
+		        			var count = theRating.getElementsByTagName("count")[0].childNodes[0].nodeValue;
+		        			var theId = "rv" + commentId + "-" + ratingValueId;
+		        			
+		        			if (rateType == "THUMBS") {
+		        			
+//		        				if (average == "false") {
+		        					theString = "<a href='javascript:void(0)' onclick='rateThumb(\"" + commentId + "\", \"" + ratingValueId + "\")'>";
+		        				
+		        					if ("RATING_NAME" == scoreType) {
+		    	    					theString += ratingName;
+			        				}
+			        				else {
+		 
+										theString += "<img border='0' name='" + theId + "' src='" + loc + "' onmouseover='hover(\"" +theId + "\", \"" + mouseover + "\")'  onmouseout='hover(\"" +theId + "\", \"" + mouseout + "\")'>";		        				
+		        					}
+		        					theString += "</a>";
+		        					
+		        					if (average == "false") {
+		        						 theString += " - " + count;
+									}
+		        			//	}
+		        			//	else {
+		        			//		theString = "(" + xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue + ")";
+		        			//	}
+		        			}
+		        			else { // STARS
+		        				theString = "<a href='javascript:void(0)' onclick='rateThumb(\"" + commentId + "\", \"" + ratingValueId + "\")'><img border='0' name='star" + commentId + "-" + i + "' src='" + loc + "' onmouseover='starHover(\"" + mouseover + "\", \"" + commentId + "\", \"" + i + "\")'  onmouseout='starHover(\"" + mouseout + "\", \"" + commentId + "\", \"" + i + "\")'></a> ";
+		        			}
+		        			
+		        			/*
+		        			var theImage = document.images[theId]; 
+		        			theImage.src = loc;
+		        			
+							theImage.onmouseout= (function (a, b) {
+		      					return function () {
+		      						document.images[a].src = b;
+								};
+		    				})(theId, mouseout);
+								// hover(theId, mouseout); 
+								//alert(e);
+		        				//alert("mout-src: " + loc + "\nId: " + theId + "\nmouseover: " + mouseover + "\n:mouseout: " + mouseout);
+		        				//document.images[theId].src = mouseout;
+		        			
+		        			
+							theImage.onmouseover= (function (a, b) {
+		      					return function () {
+		      						document.images[a].src = b;
+								};
+		    				})(theId, mouseover); */
+		    				
+		    				if (i < xmlDoc.getElementsByTagName("rating").length - 1) {
+		    					theString = theString + "&nbsp;";
+//		    					alert("Your mom");
+		    				}
+		    				
+		    				theWholeThing += theString;
+		        		}
+	        	//	}
+	        	//	else {
+	        	//		alert(xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue);
+	        	//		v
+	        	//		theWholeThing = xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue;
+	        	//	}
+	        	
+	        		if (average == "true") {
+	        			theWholeThing = "(<a href=\"" + viewRatingLink+ "\">" + xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue + "</a>) " + theWholeThing;
+	        		}
+	        		
+	        	} // End thumbs and stars
+	        	else if ("RADIO" == rateType || "DROP_DOWN" == rateType) {
+	        		var score = "";
+	        		
+	        	//	alert("bob!");
+
+					if (scoreType == "IMAGE") {
+						if (average == "false") {
+							var scoreNode = xmlDoc.getElementsByTagName("score")[0];
+							for (i = 0; i < scoreNode.getElementsByTagName("oneScore").length; i++) {
+								score += "<img border='0' src='" + scoreNode.getElementsByTagName("path")[i].childNodes[0].nodeValue + "'> - " +  scoreNode.getElementsByTagName("count")[i].childNodes[0].nodeValue + " ";
+							}
+						}
+						else {
+							score = "(<a href=\"" + viewRatingLink + "\">" + xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue + "</a>)";						
+	//						score = xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue;
+							//alert("score: " + score);						
+						}
+					}
+					else {
+						score = "(<a href=\"" + viewRatingLink + "\">" + xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue + "</a>)";
+						// alert("score: " + score);
+					} 
+					
+					theWholeThing = score;
+	        	}
+	        	/*
+	        	var score = "";
+
+				if (scoreType == "IMAGE") {
+					var scoreNode = xmlDoc.getElementsByTagName("score")[0];
+					for (i = 0; i < scoreNode.getElementsByTagName("oneScore").length; i++) {
+						score += "<img border='0' src='" + scoreNode.getElementsByTagName("path")[i].childNodes[0].nodeValue + "'> - " +  scoreNode.getElementsByTagName("count")[i].childNodes[0].nodeValue + " ";
+					}
+				}
+				else {
+					score = xmlDoc.getElementsByTagName("score")[0].childNodes[0].nodeValue;
+				} */
+        		        		
+        		document.getElementById("rating" + which).innerHTML = theWholeThing;
+            } 
+            else 
+            {
+                elem.innerHTML = "<b>Error!</b>";            
+            }
+            
+            Effect.Fade(loadName);
+        }
+    } 
+    
+    function starHover(fileLoc, commentId, theIndex) {
+    	for (var i = 0; i <= theIndex; i++) {
+    		var theStar = "star" + commentId + "-" + i;
+    		document.images[theStar].src = fileLoc;
+    	}
+    }
+    
+    function thumbHover(fileLoc, commentId, theIndex) {
+   		var theStar = "star" + commentId + "-" + theIndex;
+		document.images[theStar].src = fileLoc;
+
+    }    
+  
+    function processRecommendStateChange() {
+        // alert("elem: " + document.getElementById(loadName));
+        var elem = document.getElementById("recommendLoad");
+        var recommender = document.getElementById("recommender");
+    
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                elem.innerHTML = "<i>Complete!</i>";            
+                recommender.innerHTML = req.responseText;                
+            }
+            else {
+                elem.innerHTML = "<b>Error!</b>";  
+            }
+            
+            recommender.disabled = false;
+        }
+        
+        Effect.Fade("recommendLoad");        
+    }
+    
+	function rateThumb(theCommentId, ratingValueId) {
+
+        var url = baseUrl + "ajaxRate.do";
+        var params = "id=" + theCommentId + "&value=" + ratingValueId;
+        if (debug) {
+            alert("commentId" + commentId + ", value: " + ratingValueId  + "\nurl: " + url);
+        }
+        
+        var loadName = "rateLoad" + theCommentId;            
+        // alert("loadName: " + loadName);
+        var elem = document.getElementById(loadName);
+        // alert("elem: " + elem);
+        Element.show(elem);
+        elem.innerHTML = "<I>Processing...</i>";
+        
+        retrieveURL(url, "RATE", theCommentId, params);
+    }
+     
+
+    function rate(theCommentId) {
+        var selectName = "select" + theCommentId;
+        var selector = document.rateForm.elements[selectName];
+        var rateValue = selector.options[selector.selectedIndex].value;
+        var url = baseUrl + "ajaxRate.do";
+        var params = "id=" + theCommentId + "&value=" + rateValue;
+        if (debug) {
+            alert("commentId" + commentId + ", value: " + rateValue  + "\nurl: " + url);
+        }
+        
+        var loadName = "rateLoad" + theCommentId;            
+        // alert("loadName: " + loadName);
+        var elem = document.getElementById(loadName);
+        // alert("elem: " + elem);
+        Element.show(elem);
+        elem.innerHTML = "<I>Processing...</i>";
+        
+        retrieveURL(url, "RATE", theCommentId, params);
+    }
+    
+    function radioRate(theCommentId) {
+        var selectName = "select" + theCommentId;
+        var selector = document.rateForm.elements[selectName];
+        var rateValue = "";
+        
+        for (var i = 0; i < selector.length; i++) {
+        	if (selector[i].checked) {
+        		rateValue = selector[i].value;
+        		break;
+        	}
+        }
+        
+        var url = baseUrl + "ajaxRate.do";
+        var params = "id=" + theCommentId + "&value=" + rateValue + "&type=radio";
+        if (debug) {
+            alert("commentId" + commentId + ", value: " + rateValue  + "\nurl: " + url);
+        }
+        
+        var loadName = "rateLoad" + theCommentId;            
+        // alert("loadName: " + loadName);
+        var elem = document.getElementById(loadName);
+        // alert("elem: " + elem);
+        Element.show(elem);
+        elem.innerHTML = "<I>Processing...</i>";
+        
+        retrieveURL(url, "RATE", theCommentId, params);
+    }    
+    
+    function recommend(diaryId) {
+
+        var url = baseUrl + "ajaxRecommend.do";
+        var params = "id=" + diaryId;
+        
+        if (debug) {
+            alert("diaryId: " + diaryId);        
+            alert("url: " + url);        
+        }
+        
+        var recommender = document.getElementById("recommender");
+        recommender.disabled = true;
+        
+        var elem = document.getElementById("recommendLoad");
+        Element.show(elem);
+        elem.innerHTML = "<br /><i>Processing...</i>";
+        
+        retrieveURL(url, "RECOMMEND", diaryId, params);        
+    }
+    
+	function toggleEditor(id) {
+		var elm = document.getElementById(id);
+
+		if (tinyMCE.getInstanceById(id) == null)
+			tinyMCE.execCommand('mceAddControl', false, id);
+		else
+			tinyMCE.execCommand('mceRemoveControl', false, id);
+	} 
+	
+	function turnOnEditor(id) {
+		if (tinyMCE.getInstanceById(id) == null)
+			tinyMCE.execCommand('mceAddControl', false, id);	
+	}
+	
+	function turnOffEditor(id) {
+		if (id == "postCommentTextArea" && !tinyMCE.getInstanceById(id)) {
+			id = "commentText";		
+		}
+		
+		// alert(id);
+
+		if (tinyMCE.getInstanceById(id) != null)
+			tinyMCE.execCommand('mceRemoveControl', false, id);
+	}	
+	
+	function setDiaryButtons(id) {
+		var selectedValue = id.options[id.selectedIndex].value;	
+		
+		if (selectedValue == "WYSIWYG") { // which is WYSIWYG
+			disableDiaryButtons(true);
+		}
+		else {		
+			disableDiaryButtons(false);		
+		}
+	}
+	
+	
+	function disableDiaryButtons(theValue) {
+		document.getElementById("bold1").disabled = theValue;
+		document.getElementById("italic1").disabled = theValue;
+		document.getElementById("quote1").disabled = theValue;
+		document.getElementById("bold2").disabled = theValue;
+		document.getElementById("italic2").disabled = theValue;
+		document.getElementById("quote2").disabled = theValue;	
+	}	
+	
+	function setCommentButtons(id) {
+		var selectedValue = id.options[id.selectedIndex].value;	
+		
+		if (selectedValue == "WYSIWYG") { // which is WYSIWYG
+			disableCommentButtons(true);
+		}
+		else {		
+			disableCommentButtons(false);		
+		}
+	}	
+	
+	function disableCommentButtons(theValue) {
+		document.getElementById("bold1").disabled = theValue;
+		document.getElementById("italic1").disabled = theValue;
+		document.getElementById("quote1").disabled = theValue;
+	}	
+
+	
+	function toggleDiaryEditor(id) {
+		var selectedValue = id.options[id.selectedIndex].value;
+		// alert(selectedValue);		
+		
+		setDiaryButtons(id);
+		
+		if (selectedValue == "WYSIWYG") { // which is WYSIWYG
+			turnOnEditor("editMainText");
+			turnOnEditor("editExtendedText");	
+		}
+		else {
+			turnOffEditor("editMainText");
+			turnOffEditor("editExtendedText");			
+
+		}
+	}   
+	
+	function toggleCommentEditor(id) {
+		var selectedValue = id.options[id.selectedIndex].value;
+		
+		setCommentButtons(id);	
+		
+		// alert(selectedValue);
+		
+		if (selectedValue == "WYSIWYG") { // which is WYSIWYG
+			turnOnEditor("postCommentTextArea");
+		}
+		else {
+		    // alert("before turn off");
+			turnOffEditor("postCommentTextArea");
+		}
+	} 
+	
+	function toggleQuickHitEditor(id) {
+		var selectedValue = id.options[id.selectedIndex].value;
+		
+		if (selectedValue == "WYSIWYG") { // which is WYSIWYG
+			turnOnEditor("quickHitText");
+		}
+		else {
+			turnOffEditor("quickHitText");
+		}
+	} 		
+
+	function addTags(textAreaId, startTag, endTag, content) {
+		
+		var textArea;
+		
+		if (document.forms['rateForm']) {
+			textArea = document.forms['rateForm'].elements[textAreaId];
+		}
+		else {
+			textArea = document.getElementById(textAreaId);
+		}
+		
+		if (typeof textArea.selectionStart != "undefined") {
+			textArea.focus();
+			var selStart = textArea.selectionStart;
+			var selEnd = textArea.selectionEnd;
+			var selText = textArea.value.substring(selStart, selEnd);
+			var scrlTop = textArea.scrollTop;
+			var scrlDown = textArea.value.length <= selStart;
+			if (selText.indexOf(startTag) === 0 && endTag == selText.substring(selText.length - endTag.length, selText.length)) {
+				textArea.value = textArea.value.substring(0, selStart) + selText.substring(startTag.length, selText.length - endTag.length) 
+					+ textArea.value.substring(selEnd, textArea.value.length);
+				textArea.selectionStart = selStart;
+				textArea.selectionEnd = selEnd - (startTag.length + endTag.length);
+				textArea.scrollTop = scrlTop;
+			} else {		
+				textArea.value = textArea.value.substring(0, selStart) + startTag + (content ? content : selText)
+					+ endTag + textArea.value.substring(selEnd, textArea.value.length);
+				textArea.selectionStart = selStart;
+				textArea.selectionEnd = selStart + startTag.length + (content ? content.length : selText.length) + endTag.length;
+				textArea.scrollTop = (scrlDown ? 10000000 : scrlTop);
+			}
+		} else if (document.selection) {
+			var range = document.selection.createRange();
+			if (range.parentElement() != textArea) {
+				var textRange = textArea.createTextRange();
+				textRange.moveStart('character', textArea.value.length);
+				textRange.collapse();
+				textRange.select();
+				range = document.selection.createRange();
+			}
+			textArea.focus();
+			if (range.text.indexOf(startTag) === 0 && endTag == range.text.substring(range.text.length - endTag.length, range.text.length)) {
+				range.text = range.text.substring(startTag.length, range.text.length - endTag.length);
+			} else {
+				range.text = startTag + (content ? content : range.text) + endTag;
+			}
+		} else {
+			textArea.focus();
+			textArea.value = startTag + (content ? content : "") + endTag;
+			if (typeof textArea.scrollTop != "undefined") {
+				textArea.scrollTop = 10000000;
+			}
+		}
+	}
+	
+	
+	function addBoldTags(textAreaId) {
+		addTags(textAreaId, "<b>", "</b>");
+		return false;
+	}
+	
+	function addItalicTags(textAreaId) {
+		addTags(textAreaId, "<i>", "</i>");
+		return false;
+	}
+	
+	function addQuoteTags(textAreaId) {
+		addTags(textAreaId, "<blockquote>", "</blockquote>");
+		return false;
+	}
+		
+
+</script>
+
+   
+<script language="javascript" type="text/javascript" src="/javascript/effects.js"></script> 
+
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            
+            _gaq.push(['_setAccount', 'UA-24612334-1']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+            
+            
+            _gaq.push(['t2._setAccount', 'UA-24079896-14']);
+            _gaq.push(['t2._trackPageview']);
+            
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script src="/javascript/modules/qhcomments/qhcomments.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <center>
+        <div class="mainLayout">
+
+            
+
+            <table class="mainTable">
+                <tr>
+                    
+                        
+
+                            
+                            
+                                <td valign="top" class="LEFT_SIDE">
+                                    
+                                        
+                                            <table width="100%" class="objectTable">
+	<tr>
+		<td class="objectHeading">About NNN</td>
+	</tr>
+	<tr>
+		<td class="objectContent">
+		Since March 2005, <b>New Nebraska Network</b> has been Nebraska's online voice for progressive political change.  Thank you for being part of the NNN community!<br></br>
+
+<p>Managing Editor:<br><i>Kyle Michaelis</i>,<br><a href="mailto:kyle@newnebraska.net">kyle@newnebraska.net</a></p>
+
+<p><i>NNN is a meritocracy.  Contribute and you will be rewarded.</i></p>
+
+</td>
+	</tr>
+</table>
+<br />
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Join the Network</td>
+</tr>
+<tr>
+	<td class="objectContent">
+<p><a href="http://feeds.feedburner.com/NewNebraska" title="Subscribe to Frontpage" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0"/></a><a href="http://feeds.feedburner.com/NewNebraska" title="Subscribe to Frontpage" rel="alternate" type="application/rss+xml">Subscribe: RSS Front</a></p>
+
+<p><a href="http://newnebraska.net/diaries.do?feed=rss" title="Subscribe to Diaries" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="border:0"/></a><a href="http://newnebraska.net/diaries.do?feed=rss" title="Subscribe to Diaries" rel="alternate" type="application/rss+xml">Subscribe: RSS Diaries</a></p>
+
+<p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=79526"><img src="http://www.newnebraska.net/images/email-icon.GIF" title="Subscribe To E-mail" style="border:0"/></a><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=79526" title="Subscribe here" rel="alternate" type="application/rss+xml">Subscribe: By E-mail</a></p>
+
+<p><a href="http://www.facebook.com/pages/New-Nebraska-Network/16890067084"><img src="http://www.newnebraska.net/upload/facebook.png" title="Join here" style="border:0"/></a><a href="http://www.facebook.com/pages/New-Nebraska-Network/16890067084" title="Join here">NNN on Facebook</a></p>
+
+<p><a href="http://twitter.com/NewNebraska"><img src="http://www.newnebraska.net/upload/twitter.png" title="Follow here" style="border:0"/></a><a href="http://twitter.com/NewNebraska" title="Follow here">NNN on Twitter</a></p>
+
+<p><a href="http://www.newnebraska.blogspot.com">Read NNN Archives<br>(pre-August 2007)</a></p>
+</table>
+<p>
+
+                                        
+                                            
+
+
+
+
+
+    
+
+    
+        
+            
+            
+        
+
+
+
+
+
+
+
+
+    <table class="objectTable">
+        <tr>
+            <td class="objectHeading">Poll</td>
+        </tr>
+        <tr>
+            <td class="objectContent"><b>Initially, who do you believe stands the best chance of beating Lee Terry in 2012?</b></td>
+        </tr>
+        <tr>
+            <td class="objectContent"><!-- VOTE --> 
+                <form name="voteForm" method="post" action="/vote.do">
+                    
+                        
+                        
+                            <input type="radio" name="pollResponseId"
+                                value="908">
+                            Douglas County Treasurer John Ewing (D)
+                            </input>
+                            
+                                
+                            
+                        
+
+                        
+                        
+
+                        <br />
+                    
+                        
+                        
+                            <input type="radio" name="pollResponseId"
+                                value="909">
+                            Omaha State Senator Gwen Howard (D)
+                            </input>
+                            
+                                
+                            
+                        
+
+                        
+                        
+
+                        <br />
+                    
+                        
+                        
+                            <input type="radio" name="pollResponseId"
+                                value="910">
+                            One of many candidates in GOP primary
+                            </input>
+                            
+                                
+                            
+                        
+
+                        
+                        
+
+                        <br />
+                    
+                        
+                        
+                            <input type="radio" name="pollResponseId"
+                                value="911">
+                            Undecided
+                            </input>
+                            
+                                
+                            
+                        
+
+                        
+                        
+
+                        <br />
+                    
+
+                    <input type="hidden" name="pollTypeId" value="1">
+
+                    <input type="hidden" name="diaryId" value="0">
+                    <input type="hidden" name="pollId" value="179" />
+
+                    <br />
+                    
+                        
+                        
+                            
+                        
+                    
+
+                    <input type="submit" name="submit" value="Vote!">
+                </form>
+                <!-- END YOU HAVE VOTED --></td>
+        </tr>
+        <tr>
+            <td>
+            <center><a href="/pollResults.do?pollId=179">Results</a> 
+                
+            </center>
+            </td>
+        </tr>
+    </table>
+
+
+<br />
+    
+    
+
+
+                                        
+                                            
+
+
+<!-- search.jsp -->
+<form name="searchForm" method="post" action="/search.do">
+<table class="objectTable" width="100%">
+	<tr>
+		<td class="objectHeading">Search</td>
+	</tr>
+	<tr>
+		<td class="objectContent"><select name="searchTypeId">
+                <option value="2">Diaries</option>                      
+				<option value="1">Comments</option>
+			</select><br />
+			<input type="text" name="searchWords" size="18" /> <br />
+			<input type="submit" value="Search" /><br />
+			<br />
+			<center><a href="/search.do">Advanced Search</a></center>
+			<br />
+		</td>
+	</tr>
+</table>
+<br />
+</form>
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Local Blog Roll</td>
+</tr>
+<tr>
+	<td class="objectContent">
+   <li><a href="http://www.flagontheplay.org/">Flag On The Play</a></li> 
+   <li><a href="http://progressiveoasis.wordpress.com/">Progressive Oasis</a></li>
+   <li><a href="http://www.boldnebraska.org/category/news">Bold Nebraska - News</a></li>
+   <li><a href="http://aksarbent.blogspot.com">Aksarbent</a></li>
+   <li><a href="http://neappleseed.org/blog/">NE Appleseed Blog</a></li>
+   <li><a href="http://www.cfra.org/blog">Blog for Rural America</a></li>
+   <li><a href="http://www.nealo.com/">Neal Obermeyer 'Toons</a></li>
+   <li><a href="http://www.paulfellcartoons.com/recentdailyfelltoons.html">Paul Fell Cartoons</a></li>
+   <li><a href="http://www.grandislandblogs.com/billdunn/">Bill Dunn Cartoons</a></li>
+   <li><a href="http://legislature.omaha.com/">The State Line (OWH)</a></li>
+   <li><a href="http://thehall.omaha.com/">The Hall (OWH)</a></li>
+   <li><a href="http://nebraska.watchdog.org">Nebraska Watchdog</a></li>
+   <li><a href="http://nebraskagreensprouts.blogspot.com/">NE Greensprouts</a></li>
+   <li><a href="http://revolution-21.blogspot.com">Revolution-21</a></li>
+   <li><a href="http://leavenworthstreet.com/">Leavenworth Street</a></li>
+   <li><a href="http://objectiveconservative.blogspot.com/">Objective Conservative</a></li>
+   <li><a href="http://grassrootsne.com/">Grassroots In NE</a></li>
+   <li><a href="http://winterized.org/">Winterized</a></li>
+   <li><a href="http://www.haroldandersen.com/">Harold W. Andersen</a></li>
+   <li><a href="http://www.redstatereport.com/">Red State Report</a></li>
+   <li><a href="http://homepage.mac.com/gerardharbison/blog/RWP_blog.html">Right-Wing Professor</a></li>
+   <li><a href="http://www.examiner.com/liberal-in-omaha/jim-celer">Omaha Liberal Examiner</a></li>	 
+   <li><a href="http://todayonthelege.wordpress.com/">Today On The Lege</a></li>
+   <li><a href="http://dangerousintersection.org/author/bjnebraska/">BJ Nebraska</a></li>
+   <li><a href="http://lincolnite.com/blogs/">Lincolnite</a></li>
+   <li><a href="http://riseofthecenter.com/">Rise of the Center</a></li>
+   <li><a href="http://www.markthatdown.blogspot.com/">Mark Fahleson</a>
+   <li><a href="http://redstateeclectic.typepad.com/">Red State Eclectic</a></li>
+   <li><a href="http://heartlandnotebook.wordpress.com/">Heartland Notebook</a></li>
+   <li><a href="http://www.examiner.com/independent-in-omaha/marshall-true">Conservative Examiner</a>
+   <li><a href="http://www.examiner.com/republican-in-omaha/sean-riley">Republican Examiner</a></li>
+   <li><a href="http://outbacknebraska.com/">Nebraska Outback</a></li>
+   <li><a href="http://economictrends.blogspot.com/">Economic Trends</a></li>   
+   <li><a href="http://www.artdiamondblog.com/">Art Diamond Blog</a></li>
+   <li><a href="http://vitalsignsblog.blogspot.com/">Vital Signs</a></li>
+   <li><a href="http://www.domesticdivapalooza.com/">Domestic Divapalooza</a></li>
+   <li><a href="http://omanews.blogspot.com/">Omaha TV News</a></li>
+
+</td>
+</tr>
+</table>	
+<br />
+
+                                        
+                                            <table width="100%" class="objectTable">
+	<tr>
+		<td class="objectHeading">
+            50 State Blog Network
+		</td>
+	</tr>
+	<tr>
+		<td class="objectContent">
+			    <li><a href="http://www.leftinalabama.com/">Alabama</a></li>
+    <li><a href="http://www.aznetroots.com/">Arizona</a></li>
+    <li><a href="http://www.calitics.com/">California</a></li>
+    <li><a href="http://www.squarestate.net/">Colorado</a></li>
+    <li><a href="http://www.myleftnutmeg.com/">Connecticut</a></li>
+    <li><a href="http://www.dailykos.com/">DailyKos</a></li>
+    <li><a href="http://www.firedoglake.com/">Firedoglake</a></li>
+    <li><a href="http://www.flapolitics.com/">Florida</a></li>
+    <li><a href="http://www.tondeestavern.com/">Georgia</a></li>
+    <li><a href="http://www.43rdstateblues.com/">Idaho</a></li>
+    <li><a href="http://www.prairiestateblue.com/">Illinois</a></li>
+    <li><a href="http://www.blueindiana.net/">Indiana</a></li>
+    <li><a href="http://www.bleedingheartland.com/">Iowa</a></li>
+    <li><a href="http://www.dailykingfish.com/">Louisiana</a></li>
+    <li><a href="http://www.turnmaineblue.com/">Maine</a></li>
+    <li><a href="http://www.freestatepolitics.us/">Maryland</a></li>
+    <li><a href="http://www.bluemassgroup.com/">Massachusetts</a></li>
+    <li><a href="http://www.michiganliberal.com/">Michigan</a></li>
+    <li><a href="http://www.mncampaignreport.com/">Minnesota</a></li>
+    <li><a href="http://www.firedupmissouri.com/">Missouri</a></li>
+    <li><a href="http://www.leftinthewest.com/">Montana</a></li>
+    <li><a href="http://www.mydd.com/">MyDD</a></li>
+    <li><a href="http://www.newnebraska.net">Nebraska</a></li>
+    <li><a href="http://mysilverstate.com/">Nevada</a></li>
+    <li><a href="http://www.bluehampshire.com/">New Hampshire</a></li>
+    <li><a href="http://www.bluejersey.com/">New Jersey</a></li>
+    <li><a href="http://nmfbihop.com/">New Mexico</a></li>
+    <li><a href="http://www.thealbanyproject.com/">New York (a)</a></li>
+    <li><a href="http://www.dailygotham.com/">New York (b)</a></li>
+    <li><a href="http://www.bluenc.com/">North Carolina</a></li>
+    <li><a href="http://www.northdecoder.com/">North Dakota</a></li>
+    <li><a href="http://www.buckeyestateblog.com/">Ohio (a)</a></li>
+    <li><a href="http://www.asohiogoes.com/">Ohio (b)</a></li>
+    <li><a href="http://www.blueoklahoma.org/">Oklahoma</a></li>
+    <li><a href="http://www.openleft.com/">Open Left</a></li>
+    <li><a href="http://www.loadedorygun.net/">Oregon</a></li>
+    <li><a href="http://www.keystonepolitics.com/">Pennsylvania</a></li>
+    <li><a href="http://www.rifuture.org/">Rhode Island</a></li>
+    <li><a href="http://www.swingstateproject.com/">Swing State Project</a></li>
+    <li><a href="http://www.knoxviews.com/">Tennessee</a></li>
+    <li><a href="http://www.burntorangereport.com/">Texas (a)</a></li>
+    <li><a href="http://www.texaskaos.com/">Texas (b)</a></li>
+    <li><a href="http://www.wasatchwatcher.com/">Utah</a></li>
+    <li><a href="http://www.greenmountaindaily.com/">Vermont</a></li>
+    <li><a href="http://www.raisingkaine.com/">Virginia</a></li>
+    <li><a href="http://www.washblog.com/">Washington</a></li>
+    <li><a href="http://www.wvablue.com/">West Virginia</a></li>
+    <li><a href="http://www.uppitywis.org/">Wisconsin</a></li>
+
+		</td>
+	</tr>
+</table>
+<br />
+
+                                        
+                                    
+                                </td>
+                            
+
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+                            
+                                <td class="MAIN_BODY" valign="top">
+                                    
+                                    
+                                        
+                                    
+                                    
+
+
+
+
+
+
+
+<table width="100%">
+    
+</table>
+
+
+
+    <b>electoral college</b> <a
+                   href='/tag/electoral college?feed=rss'> <img 
+                   src="/images/feed-icon.jpg" border="0"/> </a>
+
+
+
+
+    
+
+
+
+
+             
+
+
+
+
+
+        
+
+
+        
+            
+                
+                
+                
+                
+                
+                
+                
+            
+
+
+
+
+
+<table class="DIARY_LIST" width="100%">
+    
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/3197/gop-electoral-college-threat-less-dangerous-than-state-senators-silence">GOP Electoral College Threat Less Dangerous Than State Senators&#39; Silence</a>
+            
+            <a href="/showDiary.do?diaryId=3197" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Tue Sep 27, 2011 at 03:18:28 AM CDT</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	A couple of weeks ago, NNN reported on the Nebraska Republican Party's <a href="http://www.newnebraska.net/diary/3157/nebraska-gop-could-excommunicate-state-senators-who-oppose-electoral-college-takeover">proposed resolution</a> threatening to withhold any future support from State Senators who oppose changing our state's electoral college vote to winner-take-all. After <a href="http://www.omaha.com/article/20110918/NEWS01/709189896#gop-backing-oppose-split-vote
+">some debate</a> by the NEGOP's State Central Committee, the resolution was passed on a <a href="http://journalstar.com/news/local/govt-and-politics/article_13d22338-718e-5b46-b34c-2096304a9be6.html">voice vote</a>.<p>This unprecedented display of partisan strong-arming in our state's nonpartisan legislature has <a href="http://www.slate.com/blogs/weigel/2011/09/16/new_frontiers_in_the_nebraska_pennsylvania_electoral_vote_wars.html">attracted</a> <i><a href="http://www.dailykos.com/story/2011/09/14/1016949/-NE-Republicans-looking-to-move-state-to-winner-take-all-distribution-of-electoral-votes
+">national</a></i> <a href="http://thinkprogress.org/justice/2011/09/19/322560/nebraska-gop-backs-mini-electorial-college-rigging-plan/
+">attention</a> because of its directly contradicting a controversial effort by Pennsylvania Republicans to divide that state's electoral college votes by district - as Maine and Nebraska currently do. &nbsp;While the PA and NE Republicans might seem completely at-odds, their efforts are - at heart - one and the same. &nbsp;For each, this is all about power and doing whatever it takes to defeat President Barack Obama in the 2012 election.<p>To his credit, the man most directly targeted by the NEGOP's resolution - State Senator Paul Schumacher of Columbus - has refused to buckle to partisan pressure. &nbsp;Before the resolution was even debated, he told <a href="http://nebraska.watchdog.org/16796/its-round-2-in-gops-fight-for-winner-take-all/">Nebraska Watchdog</a>:<br /><blockquote>State Sen. Paul Schumacher: <i><b>"A small group of partisans is simply testing its power to dictate to the Legislature. This year it is winner take all, and what next year and the year after that?</b> <p>"The Legislature is nonpartisan. It belongs to the people not the parties. Polling indicates the people do not want a change."</i></blockquote><br />When asked if he would change his position, Schumacher proudly stated, <i><b>"A representative of the people is duty bound to just say 'no' to threats."</b></i><p>Schumacher has remained just as courageous and defiant since the resolution's adoption. &nbsp;He warned the <a href="http://www.omaha.com/article/20110918/NEWS01/709189896#gop-backing-oppose-split-vote
+">Omaha World-Herald</a> that the resolution was a "litmus test" that could come back to haunt his party. &nbsp;He has since told the <a href="http://www.1011now.com/news/headlines/Nebraska_GOP_Threatens_Own_Party_For_Winner-Take-All_130443013.html">10/11 News</a>:<br /><blockquote>Schumacher: <i>"Threats are not the way to run a government....I think what we have now is what the people want and it's my job to represent what the people want....Now that a threat level has been raised to anyone who disagrees with the Republican hierarchy, it's a responsibility to say no to threats.....<p><b>"The legislature is nonpartisan. And a legislator has an obligation to follow the Constitution of Nebraska which says the legislature will be nonpartisan. It is not our job to load the dice. To favor one political party over the other....<p>"I see no reason why I would change my position."</b></i></blockquote><br />What bothers me more than anything else about this resolution is the apparent silence of Schumacher's Republican colleagues in the Legislature. &nbsp;No matter their feelings on the underlying legislation, they should have rallied against this strong arm tactic and sent the message to party leaders that this resolution was inappropriate and destructive, breaking faith with the state's constitution and with the people of Nebraska.<p>By standing up for Schumacher, they would have been standing up for themselves. &nbsp;They would have been standing up for their own independence, their own principles, their own constituents. &nbsp;Most importantly, they would have been standing up for future legislatures - facing challenges unknown - which are now likely to see further encroachment by partisan forces thanks to their predecessors' failure to stand up on the body's behalf.<p>34 State Senators are registered Republicans - more than 2/3rds of the body. &nbsp;Some of these Senators agree with Schumacher. &nbsp;Others do not. &nbsp;Regardless, they should have been publicly challenging their party's misguided tactics. &nbsp;<p>Paul Schumacher may be at odds with GOP leaders for opposing their Electoral College power-grab, but that's because he's showing the courage and independence Nebraskans expect of their State Senators. &nbsp;It's a very scary thought that he might be standing alone.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/3197/gop-electoral-college-threat-less-dangerous-than-state-senators-silence">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (2 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/3157/nebraska-gop-could-excommunicate-state-senators-who-oppose-electoral-college-takeover">Nebraska GOP Could Excommunicate State Senators Who Oppose Electoral College Takeover</a>
+            
+            <a href="/showDiary.do?diaryId=3157" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Wed Sep 07, 2011 at 20:56:12 PM CDT</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	The Nebraska Republican Party is showing a startling new level of desperation in its efforts to force the Nebraska Legislature to change the state's electoral college vote during the 2012 legislative session. &nbsp;At the September meeting of its State Central Committee, a resolution is being proposed that would block any support for State Senators who vote against changing the casting of Nebraska's electoral college votes to "winner-take-all."<p><a href="http://objectiveconservative.blogspot.com/2011/08/how-important-is-nebraskas-electoral.html">Objective Conservative</a> recently published the language of this resolution:<br /><blockquote><i>Whereas Nebraska is one of only two states that award electoral votes based on the presidential winner of congressional districts,....<p>Whereas it is of the highest priority and interest to the Nebraska Republican Party and the citizens of Nebraska that the state returns to a "winner-takes-all" electoral vote plan,<p>Whereas the Nebraska Republican Party supports legislation that returns the state to the "winner-takes-all" basis,<p>And, whereas the Nebraska Republican Party believes that the "winner-takes-all" issue is a litmus test for those who would claim to be Republicans and seek the support of the Nebraska Republican Party,<p><b>Be it resolved that the Nebraska Republican Party will not support in any manner, financial or otherwise, any state senator who opposes the return of the state to the "winner-takes-all" electoral vote plan either by failing to vote for such in committee or on the floor of the legislature.</b></i></blockquote><br />Earlier this year, the "winner-take-all" bill <a href="http://nebraska.watchdog.org/13100/nebraskas-presidential-vote-still-a-split-decision
+">failed to advance</a> from the Legislature's Government, Veterans and Military Affairs Committee after its members deadlocked on a 4-4 vote. &nbsp;This resolution is clearly a message to State Senator Paul Schumacher of Columbus - the lone Republican on that committee to oppose the legislation. &nbsp;Schumacher is also a member of the NEGOP's State Central Committee. That could certainly add an element of drama to their next meeting.<p>But, the real story here is whether the Nebraska Republican Party will really go to such extreme lengths injecting raw partisanship into the Legislature. &nbsp;This resolution is intended to squelch any show of independence. &nbsp;It demands that State Senators sacrifice their personal principles and the best interests of the state as a demonstration of loyalty to party before all else. &nbsp;That's a very extreme position and a dangerous proposition - one that threatens the promise of our state constitution to the people of Nebraska and the foundation on which our state government is built.<p>Of course, as NNN <a href="http://www.newnebraska.net/diary/2857/paul-schumacher-not-alone-knowing-winnertakeall-is-wrong-for-nebraska">noted</a> earlier this year, Schumacher isn't alone among Republican State Senators who've said "winner-take-all" is wrong for Nebraska. &nbsp;He's just the only one who's had to cast that vote. &nbsp;But, others are being threatened by this strong-arm tactic and could suffer the consequences if they dared to stand up to their party in the 2012 legislative session.<p>Ultimately, this resolution is not just a threat to the political careers of a few State Senators but to every citizen of our state. &nbsp;There's no denying that the Republican Party exerts incredible power and influence over our state government. &nbsp;This resolution might allow the NEGOP to flex its muscles and abuse that power. But, this would be a show of weakness - not of strength - and a betrayal of an independence held dear by Nebraskans of every political stripe.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/3157/nebraska-gop-could-excommunicate-state-senators-who-oppose-electoral-college-takeover">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (48 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/2857/paul-schumacher-not-alone-knowing-winnertakeall-is-wrong-for-nebraska">Paul Schumacher Not Alone Knowing &#39;Winner-Take-All&#39; Is Wrong For Nebraska</a>
+            
+            <a href="/showDiary.do?diaryId=2857" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Mon Feb 28, 2011 at 04:27:43 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	Last week, the <a href="http://www.omaha.com/article/20110224/NEWS01/702249840/1009#electoral-bill-hits-opposition">Omaha World-Herald</a> offered a glimmer of hope that Nebraska may not give up our people's voice in the next presidential election:<br /><blockquote><i>Republicans could be frustrated once again in their push to go back to a winner-take-all method of awarding Nebraska's electoral votes. &nbsp;<b>A key lawmaker said Wednesday that he doesn't think the idea has enough votes to get out of the Government, Military and Veterans Affairs Committee.</b><p>State Sen. Bill Avery of Lincoln, a Democrat, said he believes Legislative Bill 21 could get four votes. &nbsp;It needs five to advance from the eight-member committee.<p>The bill would have those votes if all five Republican lawmakers on the committee heed the call of the Nebraska Republican Party, which has made the electoral vote change a priority. &nbsp;But during a public hearing on the bill, <b>Sen. Paul Schumacher of Columbus sounded skeptical about the need for change.</b><p>At one point, he described the state's split-vote system as "intellectually pleasing." &nbsp;He said <b>returning to a winner-take-all system would move the state further away from a one person, one vote standard</b>.....<p>Avery said he expects to bring up the bill next week for consideration by the committee.</i></blockquote><br />After the Nebraska Republican Party named <a href="http://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=11810">LB21</a> their <a href="http://newnebraska.net/diary/2841/lb21-all-of-nebraska-will-lose-if-we-change-to-winnertakesall">highest priority</a> for the 2011 session, it's a definite show of courage that State Senator Paul Schumacher might refuse to do their bidding. &nbsp;In a <a href="http://twitter.com/NewNebraska/status/15088341171048448">December tweet</a>, I described Schumacher as an <i>"independent-minded populist"</i> who may be <i>"the wild card in the next Unicameral."</i> &nbsp;He'd certainly be earning that reputation by standing up to these partisan pied pipers who are trying to lead our state down the path of complete irrelevance in national politics.<p>Speaking to <a href="http://nebraska.watchdog.org/12416/presidential-politics-in-lincoln/">Nebraska Watchdog</a>, it was encouraging to see Schumacher directly challenge the Nebraska GOP's threat against any elected officials who might oppose their partisan power play:<br /><blockquote><i> State Senator Paul Schumacher of Columbus - the possible swing vote in the so-called 'winner take all' debate over Nebraska's five electoral ballots - tells Nebraska Watchdog, <b>"The idea of a political party having a litmus test on a vote bothers me."</b></i></blockquote><br />In that interview, Schumacher described himself as "undecided" on his committee vote. &nbsp;Don Walton's column in this morning's <a href="http://journalstar.com/news/local/govt-and-politics/article_ecad332c-3215-59e0-bf19-983f1f851107.html">Lincoln Journal-Star</a> gives no more indication of what Schumacher will ultimately decide but again shows a State Senator who takes his role as a representative seriously in the nonpartisan Unicameral:<br /><blockquote><i><b>"We are accountable to the people in our (legislative) district, not to the parties,"</b> Schumacher said during a brief telephone interview.</i></blockquote><br />Because of his immediate role as the potential deciding vote on the Government, Military and Veterans Affairs Committee, Schumacher's certain to have come under a lot of pressure. &nbsp;But, Nebraskans need to realize that he's by no means alone in questioning LB21. &nbsp;In fact, a December 2008 survey by the <a href="http://journalstar.com/articles/2008/12/26/news/local/doc495421fe210e7014455561.txt">Associated Press</a> showed that many Republican State Senators shared Schumacher's concerns. &nbsp;That survey asked:<br /><blockquote><i>The presidential campaign highlighted Nebraska's unique method of splitting electoral votes...Should that law be changed so that all five of the state's electoral votes go to the candidate who wins the statewide vote?</i></blockquote><br /><b>Among those State Senators answering "NO" and opposing a change in Nebraska's law were Brad Ashford, Kathy Campbell, Galen Hadley, and John Harms - all of them Republicans who are still serving in the Legislature.</b> &nbsp;Also answering "NO" to that question was former State Senator <b>Arnie Stuthman</b>, a Republican who was term-limited in the 2010 election. Stuthman is Schumacher's predecessor in Legislative District 22, speaking to a tradition of independent-minded representation that should make every Columbus-area voter proud.<p>That same survey showed that even more State Senators were "UNSURE" about a change to winner-take-all. &nbsp;<b>Eight sitting Republican State Senators expressed doubt about the plan, including Greg Adams, Colby Coash, Tony Fulton, Thomas Hansen, Leroy Louden, Dave Pankonin, Scott Price, and Dennis Utter.</b> &nbsp;Being targeted by their own political party is sure to have broken down the resolve of at least a few of these State Senators. However, it says a lot that - in the direct aftermath of the 2008 election - all of them were hesitant to change the system that had just made the Presidential campaigns come to Nebraska and actually compete for our votes for the first time in decades. &nbsp;<p>The partisan stakes have always been clear in this debate. &nbsp;Still, all these Republican State Senators saw something they liked in Nebraska's current system. &nbsp;That's why it's taken the sort of hard ball tactics we're seeing from the Nebraska Republican Party in their efforts to shove this bill down our throats.<p><b>When allowed to think for themselves, our State Senators know that LB21 isn't right for the people of Nebraska.</b> &nbsp;By changing to winner-take-all, all of Nebraska will lose. &nbsp;State Senator Paul Schumacher can send that message loud and clear by standing strong against partisan political pressure and opposing this bill in committee. &nbsp;Although his may be the deciding vote, his voice would be one of many and he won't be standing alone.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/2857/paul-schumacher-not-alone-knowing-winnertakeall-is-wrong-for-nebraska">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (1 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/2852/heineman-defends-gops-partisan-power-play-in-unicameral">Heineman Defends GOP&#39;s Partisan Power Play In Unicameral</a>
+            
+            <a href="/showDiary.do?diaryId=2852" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Tue Feb 22, 2011 at 02:36:32 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	For years, Gov. Dave Heineman has gotten away with dismissing State Senators for injecting partisanship into the Nebraska Legislature whenever there's been even the faintest hint of criticism towards his administration. &nbsp;I hope all those State Senators who've been accused of partisanship - and the Nebraska media that's allowed Heineman to hide behind such accusations - will remember the following interview Heineman conducted last week with <a href="http://nebraska.watchdog.org/12438/governor-and-lb-21/">Nebraska Watchdog</a>:<br /><center><object width="560" height="349"><param name="movie" value="http://www.youtube.com/v/fQbMw2J3THw?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/fQbMw2J3THw?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="349"></embed></object></center><br />When the Nebraska Republican Party threatens to go after Republican State Senators who oppose efforts to change our state's electoral college system, Dave Heineman says, <i><b>"That's what democracy is all about."</b></i><p>Heineman doesn't give a damn about the nonpartisan tradition in the Nebraska Legislature except when he can twist it to his own advantage. &nbsp;Although I haven't personally given up hope that the Legislature can survive as a nonpartisan body, it's time that we all acknowledge what dangerous and destructive precedents have been set by Heineman in his hunger for total and complete power over Nebraska state government - without serious challenge and with no real debate.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/2852/heineman-defends-gops-partisan-power-play-in-unicameral">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (0 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/2841/lb21-all-of-nebraska-will-lose-if-we-change-to-winnertakesall">LB21: All Of Nebraska Will Lose If We Change To Winner-Take-All</a>
+            
+            <a href="/showDiary.do?diaryId=2841" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Mon Feb 14, 2011 at 01:03:47 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	It's a shocking testament to the guiding philosophy of the Nebraska Republican Party that their <a href="http://journalstar.com/news/state-and-regional/govt-and-politics/article_0a5a6e08-6b63-5c99-b75a-760e35c9f099.html">highest priority</a> for 2011 is ensuring that their next Presidential nominee won't have to campaign in Nebraska.<p>They don't want Nebraska's voice to be relevant on the national stage. &nbsp;They don't want to have to win our vote. &nbsp;They own the Governor's Mansion. &nbsp;Clearly, they think they can control the nonpartisan Legislature. &nbsp;Hence, they believe they're entitled to our state's votes in the Electoral College - each and every one. &nbsp;And, they don't think they should have to earn them.<p>That's what State Senator Beau McCoy's <a href="http://www.nebraskalegislature.gov/bills/view_bill.php?DocumentID=11810">LB21</a> is all about. &nbsp;After an election in which Nebraska made history by splitting its Electoral College votes, we'd go back to the winner-take-all system used by 48 other states. <p>Ironically, McCoy represents part of the 2nd Congressional District, which experienced so much excitement and enthusiasm in the 2008 presidential election. &nbsp;Not only did President Barack Obama invest real resources into a Nebraska campaign, but Vice-Presidential nominee Sarah Palin also visited the district in the waning weeks of the election to ask Nebraskans for our support. &nbsp;McCoy wants to make sure that doesn't happen again. &nbsp;He wants to make his own constituents less relevant and will need support from other State Senators in the 2nd Congressional District to succeed.<p>But, this isn't about geography. &nbsp;I don't live or vote in the 2nd Congressional District, but my own voice and that of every Nebraskan absolutely mattered a little bit more because these candidates had a reason to come to the Cornhusker state.<p>Of course, I can understand why the Republican Party wants LB21 to pass. &nbsp;For them, it's an easy way to lock up one more Electoral College vote for their presidential nominee. &nbsp;But, that has nothing at all to do with what's actually best for Nebraska. &nbsp;In a state with such a proud nonpartisan tradition, that is the only question with which our State Senators should be concerned.<p>The following video was released this weekend to open people's eyes and rally opposition to LB21:<br /><center><object width="560" height="349"><param name="movie" value="http://www.youtube.com/v/Oy3TO0KEAGg?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Oy3TO0KEAGg?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="349"></embed></object></center><br />Two weeks ago, <a href="http://www.publicpolicypolling.com/pdf/PPP_Release_NE_0203.pdf">Public Policy Polling</a> released a survey of 519 likely voters in Nebraska's 2012 Republican primary. &nbsp;That survey asked who they would support as their presidential nominee even though Nebraska Republicans haven't had any say in their nominating contest in decades. &nbsp;Their party could follow Nebraska Democrats in taking steps to make their voice heard (i.e. presidential caucus). &nbsp;Instead, they are putting all of their power behind an effort to ensure we are all so irrelevant - in both the primary and general elections, all across the state.<p>LB21 <i>may</i> be what's best for the Republican Party, but it's not what's best for the people of Nebraska. &nbsp;The Legislature must prove its independence by once-and-for-all rejecting this partisan power-play.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/2841/lb21-all-of-nebraska-will-lose-if-we-change-to-winnertakesall">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (8 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/2829/president-obama-still-polling-strong-in-nebraskas-2nd-congressional-district">President Obama Still Polling Strong In Nebraska&#39;s 2nd Congressional District</a>
+            
+            <a href="/showDiary.do?diaryId=2829" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Tue Feb 01, 2011 at 01:50:12 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	On Monday, <a href="http://www.publicpolicypolling.com">Public Policy Polling</a> released new <a href="http://www.publicpolicypolling.com/pdf/PPP_Release_NE_0131.pdf">poll results</a> that demonstrate why the Nebraska Republican Party is <a href="http://journalstar.com/news/state-and-regional/govt-and-politics/article_0a5a6e08-6b63-5c99-b75a-760e35c9f099.html">so desperate</a> to change our state's method of awarding its electoral college votes before the next presidential election.<p>After President Barack Obama's historic 2008 victory in Nebraska's 2nd Congressional District - winning Nebraska's first electoral college vote for a Democrat in 44 years - this new polling shows that Obama is in a strong position to win the district again during his 2012 reelection campaign. &nbsp;In fact, Obama's actually polling significantly stronger against the most talked-about Republican challengers than that 1% margin of victory he managed over Senator John McCain. <p>PPP's survey of 977 Nebraska voters was conducted January 26th-27th and has a margin of error of +/-3.1%. Its results for Nebraska's 2nd CD appear to be a pretty accurate reflection of the county at-large, giving Obama a 51% approval rating (with 45% disapproval). &nbsp;That contrasts sharply with the 38% approval-56% disapproval Obama receives statewide. &nbsp;<p>Differences are even more pronounced in how Obama stacks up against his hypothetical Republican challengers. &nbsp;In the 2nd Congressional District, the President would defeat Sarah Palin with a whopping 57-33%. &nbsp;However, statewide, that translates to a 1 point victory for Palin, with Obama losing 44-45%.<p>You'll see a similar pattern when Obama is paired up against Newt Gingrich, Mike Huckabee, and Mitt Romney. &nbsp;While defeating Gingrich 55-36% in the 2nd CD, Obama would lose 40-48% statewide. &nbsp;Against Huckabee, Obama would win 52-41% in the 2nd CD while losing the state 38-51%. &nbsp;Finally, Obama would beat Romney 50-41% in the 2nd CD but only manage a 37-49% loss across the entire state.<p>It is somewhat encouraging that Obama is currently within striking distance of beating Palin in Nebraska. &nbsp;At the same time, there's not much to celebrate when Palin's probably the Republicans' weakest potential nominee, and polling suggests she might still be expected to win the state.<p>Regardless of everything else, these numbers do illustrate what an opportunity exists for Nebraska to continue having a voice on the national stage in the 2012 election under its current system of splitting three electoral college votes among its congressional districts. &nbsp;Without that system in place, the entire state loses out - relegated to flyover country and political irrelevance . . . unless Sarah Palin is the Republican nominee, in which case we have much bigger problems to worry about.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/2829/president-obama-still-polling-strong-in-nebraskas-2nd-congressional-district">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (4 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1757/ ">Only 13% Of Nebraskans Prefer Winner-Take-All Electoral Votes</a>
+            
+            <a href="/showDiary.do?diaryId=1757" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Tue Mar 24, 2009 at 23:55:32 PM CDT</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	Below are some very interesting statewide polling results on how Nebraskans believe the electoral college system should be reformed. &nbsp;The polling has been done <a href="http://www.nationalpopularvote.com/pages/polls.php">across the country</a> to gauge support for electing the President by a national popular vote. &nbsp;Thankfully, though, the polling in <a href="http://www.nationalpopularvote.com/pages/polls.php#NE_2008DEC">Nebraska</a> and in <a href="http://www.nationalpopularvote.com/pages/polls.php#ME_2009JAN">Maine</a> also gauged support for those states' two-of-a-kind system for splitting their electoral votes by Congressional district.<p>We're all familiar with Gov. Dave Heineman's <a href="http://newnebraska.net/showDiary.do?diaryId=1578">politically-motivated attack</a> on our state's current system - which provided President Barack Obama a historic vote from Nebraska's 2nd Congressional District in 2008. &nbsp;However, despite the governor's pledge to sign such legislation, no bill to adopt a statewide winner-take-all system was introduced in the 2009 session of the Nebraska Unicameral. &nbsp;The numbers we see below may suggest why.<p>74% of Nebraskans support electing the president by a national popular vote - consistent with the support seen in other states. &nbsp;Beyond this wide support for the national popular vote, however, what's most interesting is that <b>Nebraskans prefer our current split by Congressional district to a simple statewide winner-take-all system by more than a 2-to-1 margin.</b><p>Read for yourself, and please discuss freely.<br /><blockquote><p class="ptitle" id="NE_2008DEC">74% OF NEBRASKA VOTERS SUPPORT A NATIONAL POPULAR VOTE IN DECEMBER 2008 POLL AND PREFER IT TO DISTRICT SYSTEM OR WINNER-TAKE-ALL</p> &nbsp;<p>A survey of 800 Nebraska voters conducted on December 22-23, 2008 showed 74% overall support for a national popular vote for President. </p> &nbsp;<p>In a follow-up question presenting a three-way choice among various methods of awarding Nebraska's electoral votes, </p> &nbsp;<ul><li>60% favored a national popular vote;</li><li>28% favored Nebraska's current system of awarding its electoral votes by congressional district; and</li><li>13% favored the statewide winner-take-all system (i.e., awarding all of Nebraska's electoral votes to the candidate who receives the most votes statewide).</li></ul> &nbsp;<p>When presented with the basic question of a national popular vote, support for a national popular vote was, by political affiliation, 79% among Democrats, 70% among Republicans, and 75% among Others. </p> &nbsp;<p>By congressional district, support for a national popular vote was 77% in the First congressional district, 68% in the Second district; and 77% in the Third District. As you know, the Second district voted for Obama in November 2008, and Obama received one electoral vote by virtue of carrying the Second district. </p> &nbsp;<p>By age, support for a national popular vote was 64% among 18-29 year olds, 72% among 30-45 year olds, 73% among 46-65 year olds, and 79% for those older than 65. </p> &nbsp;<p>By gender, support for a national popular vote was 82% among women and 66% among men.</p> &nbsp;<p>By race, support for a national popular vote was 75% among whites (representing 88% of respondents), 56% among African Americans (representing 4% of respondents), 75% among Hispanics (representing 1% of respondents), and 67% among Others (representing 7% of respondents). </p> &nbsp;<p>The survey has a margin of error of plus or minus 3 1/2%. </p> &nbsp;<p>In the three-way question involving a choice among various methods of awarding Nebraska's electoral votes, support by party was as follows: </p> &nbsp;<table class="data"> <tr><th></th><th class="data"></th><th class="data"></th><th class="data"></th></tr> <tr><td class="datalabel"></td><td class="data"></td><td class="data"></td><td class="data"></td></tr> <tr><td class="datalabel"></td><td class="data"></td><td class="data"></td><td class="data"></td></tr> <tr><td class="datalabel"></td><td class="data"></td><td class="data"></td><td class="data"></td></tr> </table> --> &nbsp;<div class="datatable"> <table class="data" cellspacing="2"> <tbody><tr><th>
+</th><th class="data">Democrat</th><th class="data">Republican</th><th class="data">Other</th></tr> <tr><td class="datalabel">Candidate who gets the most votes in all 50 states</td><td class="data">61%</td><td class="data">58%</td><td class="data">63%</td></tr> <tr><td class="datalabel">Nebraska's current district system</td><td class="data">32%</td><td class="data">24%</td><td class="data">27%</td></tr> <tr><td class="datalabel">Statewide winner-take-all system</td><td class="data">7%</td><td class="data">18%</td><td class="data">10%</td></tr> </tbody></table> </div> &nbsp;<p>In the three-way question, support by congressional district was as follows: </p> &nbsp;<div class="datatable"> <table class="data"> <tbody><tr><th>
+</th><th class="data">First district</th><th class="data">Second district</th><th class="data">Third District</th></tr> <tr><td class="datalabel">Candidate who gets the most votes in all 50 states</td><td class="data">62%</td><td class="data">56%</td><td class="data">61%</td></tr> <tr><td class="datalabel">Nebraska's current district system</td><td class="data">27%</td><td class="data">30%</td><td class="data">25%</td></tr> <tr><td class="datalabel">Statewide winner-take-all system</td><td class="data">11%</td><td class="data">14%</td><td class="data">14%</td></tr> </tbody></table> </div> &nbsp;<p>In the three-way question, support by age was as follows: </p> &nbsp;<div class="datatable"> <table class="data"> <tbody><tr><th>
+</th><th class="data">18-29</th><th class="data">30-45</th><th class="data">46-65</th><th class="data">65 and older</th></tr> <tr><td class="datalabel">Candidate who gets the most votes in all 50 states</td><td class="data">49%</td><td class="data">59%</td><td class="data">60%</td><td class="data">63%</td></tr> <tr><td class="datalabel">Nebraska's current district system</td><td class="data">37%</td><td class="data">35%</td><td class="data">26%</td><td class="data">23%</td></tr> <tr><td class="datalabel">Statewide winner-take-all system</td><td class="data">14%</td><td class="data">7%</td><td class="data">14%</td><td class="data">13%</td></tr> </tbody></table> </div> &nbsp;<p>In the three-way question, support by gender was as follows: </p> &nbsp;<div class="datatable"> <table class="data"> <tbody><tr><th>
+</th><th class="data">Women</th><th class="data">Men</th></tr> <tr><td class="datalabel">Candidate who gets the most votes in all 50 states</td><td class="data">65%</td><td class="data">54%</td></tr> <tr><td class="datalabel">Nebraska's current district system</td><td class="data">25%</td><td class="data">30%</td></tr> <tr><td class="datalabel">Statewide winner-take-all system</td><td class="data">10%</td><td class="data">16%</td></tr> </tbody></table> </div> &nbsp;<p>In the three-way question, support by race was as follows: </p> &nbsp;<div class="datatable"> <table class="data"> <tbody><tr><th>
+</th><th class="data">White (88% of sample)</th><th class="data">African-American (4% of sample)</th><th class="data">Hispanic (1% of sample)</th><th class="data">Other (7% of sample)</th></tr> <tr><td class="datalabel">Candidate who gets the most votes in all 50 states</td><td class="data">60%</td><td class="data">52%</td><td class="data">63%</td><td class="data">57%</td></tr> <tr><td class="datalabel">Nebraska's current district system</td><td class="data">27%</td><td class="data">37%</td><td class="data">25%</td><td class="data">35%</td></tr> <tr><td class="datalabel">Statewide winner-take-all system</td><td class="data">13%</td><td class="data">11%</td><td class="data">13%</td><td class="data">8%</td></tr> </tbody></table> </div> &nbsp; <p><a href="http://www.nationalpopularvote.com/resources/NEB-PP-Poll-Results-Dec-2008.pdf" class="more">Report with selected cross-tabs</a></p> &nbsp;<p><a href="http://www.nationalpopularvote.com/resources/NEB-PP-Poll-EXTENDED-Results-Dec-2008.pdf" class="more">Report with all cross-tabs</a></p></blockquote><br />Although I share the people of Nebraska's support for electing the president by a national popular vote, I want it to be clear that this does not mean I support the interstate compact adopted by several states that would attempt to fabricate this result by circumventing the U.S. Constitution.<p>This year, State Ken Haar introduced LB623 proposing that Nebraska enter into that compact, to which I wrote <a href="http://newnebraska.net/showDiary.do?diaryId=1646">the following</a>:<br /><blockquote><b><u>LB623 - The Rube Goldberg Approach To Electing A President</u></b><br />With all due respect for Senator Ken Haar - who's quickly proven himself a rising star for Nebraska progressives - this interstate compact is a bad idea all around. &nbsp;There are a lot of people out there who think it's awfully clever for states to pledge their electoral college votes to the winner of the national popular vote - taking effect as soon as enough states have joined the compact to decide a presidential election. &nbsp;But, I'm personally appalled that so many would embrace forsaking the voice of their constituents with such faithlessness and contempt for the U.S. Constitution.<p>I feel confident that the U.S. Supreme Court would never uphold state legislators' pledging away their constituents' votes in a presidential election. &nbsp;But, what's most disturbing is that we would ever find ourselves so desperate to think this mockery of our constitution - and democracy itself - might be necessary. &nbsp;<p>The U.S. Constitution is quite clear in its amendment process. &nbsp;If it's the peoples' will that the presidency should be decided by the national popular vote, I'm all for changing the electoral college - or even abolishing it completely - that the Constitution might adopt that principle. &nbsp;Whether such change would benefit the people of Nebraska and those of other small states is debatable, but I think a strong argument can be made that it would be right for the country as a whole. &nbsp;<b>What definitely would not be right for our country would be a complicated scheme that attempts to correct our democratic process by subverting the framework on which it is built.</b></blockquote><br />LB623 was indefinitely postponed by the Government, Military and Veterans Affairs Committee earlier this week, but I suspect the real debate over amending Nebraska's system for awarding its electoral college votes has only just begun. &nbsp;Hopefully, the above polling numbers will guide that debate in a positive direction - demonstrating the hunger for a system that reflects the will of the people rather than the workings of an elaborate scheme.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1757/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (13 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1591/ ">&quot;No Benefit&quot; In Heineman&#39;s Partisan Electoral College Proposal</a>
+            
+            <a href="/showDiary.do?diaryId=1591" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Mon Dec 22, 2008 at 20:25:29 PM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	If there's anywhere in the state where you might expect to see deep dissatisfaction with the way Nebraska divides its votes in the electoral college, it would be in the state's heavily Republican Third Congressional District. &nbsp;After all, it's their traditionally overwhelming support for Republican Presidential nominees that is generally thought to take Nebraska off the map as a potential battleground state.<p>However, early indications in two of the district's most prominent newspapers suggest that most Nebraskans don't share the partisan blinders of Republican Party leaders and recognize it's best for the entire state that presidential candidates can't forget about us completely as they seek the highest office in the country.<p>A recent editorial in the <a href="http://newnebraska.net/showDiary.do?diaryId=1587">McCook Gazette</a> celebrated "the positive spotlight" put on our state in the 2008 election because of our system for awarding electoral college votes. &nbsp; And, George Ayoub, the senior writer at the <a href="http://www.theindependent.com/opinions/x1435864748/George-Ayoub-Results-wrong-reason-to-change-Nebraska-law">Grand Island Independent</a>, has now added his voice in the current system's defense:<br /><blockquote><i>Earlier this week Nebraska made presidential history. &nbsp;Shortly afterward, plans were afoot to cut that sort of thing out.<p><b>Timing is everything</b>....Gov. Dave Heineman, who presided over the casting of Nebraska's five [electoral college] votes, said he would sign legislation to do away with our split vote because Nebraska should be like every other state. &nbsp;Really?<p>Former Gov. Charles Thone said the splitter reduced away our influence, <b>ignoring the national attention the state has received</b> as a result of the 2nd District rowing upstream and winning. And we still get five seats in Washington's legislative branch....<p>As others have said about Heineman's call for national unity among electors, <b>does this mean we should start dismantling our unique (and stunningly effective) public power system? What about our one and only unicameral?</b><p>Being like everyone else may have worked for the safe-haven law, but <b>I see no benefit in changing our electoral process.</b> &nbsp;Nor could I track Thone's point about losing our influence. On the contrary, I think what has happened <b>has infused a new relevance into the state's presidential politics</b>....<p>Our divided structure differentiates us from other, winner-take-all states, where a possible 49.99 percent of voters might view their civic duty as an exercise in irrelevance. &nbsp;We Nebraskans normally embrace a well-constructed independence. &nbsp;That leaves <b>bad timing and sour grapes</b>....<p>The history of [the 2nd Congressional District's] vote was in line with the huge historic moment we witnessed in November, when voters gave form and function to the promise and dream that is America. &nbsp;Whether we should split our five votes in a presidential election is reasonable to debate -- as long as the question is called for something other than the results.</i></blockquote><br />Heineman has declared that our electoral college vote is all about <a href="http://newnebraska.net/showDiary.do?diaryId=1578">"partisan politics,"</a> but that only reveals his own petty and twisted perspective. &nbsp;<b>The people of Nebraska see things quite differently and want what is best for the state rather what is best for the Republican Party or any particular region.</b><p>Yes, that's even true - perhaps, especially true - of the conservative but independent-minded voters of the Third Congressional District.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1591/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (0 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1587/ ">McCook Gazette Rebukes Partisan Efforts To Change Electoral Vote</a>
+            
+            <a href="/showDiary.do?diaryId=1587" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Wed Dec 17, 2008 at 02:43:57 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	The Monday meeting of Nebraska's five presidential electors to certify their votes in the electoral college provided yet another opportunity for Republican leaders to denounce Nebraska's system for awarding three of its votes by Congressional district.<p>Just minutes after history was made as Nebraska cast its first electoral vote for a Democratic presidential nominee in over 40 years, Gov. Dave Heineman was again criticizing the system that made that vote possible while putting Nebraska's 2nd Congressional District in the national spotlight. &nbsp;This time, Heineman was joined in his criticism by a former mentor - former Republican Gov. Charley Thone - himself one of Nebraska's four electors pledged to John McCain in the 2008 presidential election.<p>As one of the cornerstones of our democracy, it's sad to see the process by which the electoral college operates repeatedly manipulated for such cheap partisan purposes by our local politicians. &nbsp;But, it's heartening to see that some unexpected voices are already emerging to support the current system while opposing Heineman and Company's purely partisan maneuverings that would only make Nebraska more of an afterthought in national politics.<p>A great editorial from yesterday's <a href="http://www.mccookgazette.com/story/1486121.html">McCook Gazette</a> reads:<br /><blockquote><b><u>Split Electoral Vote System Good For State</u></b><p><i>Gov. Dave Heineman and former Gov. Charley Thone say they'd like to trash the law that divides Nebraska's five electoral votes in presidential elections. &nbsp;We don't blame them. As Republican stalwarts, it's their job to get their party as many votes as possible....<p><b>Gov. Heineman didn't have to remind the president elect that Obama had, indeed, won an electoral vote from the Cornhusker state.</b><p>"I was very well aware of that," Obama told the governor at a meeting two weeks ago. Obama devoted much effort into winning that vote, organizing and opening several campaign offices in the 2nd District.<p>Thone argued that the system "dilutes whatever punch Nebraska has in the electoral college."<p>We disagree -- <b>the current systems brought national attention to Nebraska that it never would have received otherwise. With only five electoral votes and fewer than 2 million people, anything that throws a positive spotlight on our state is a good thing.</b></i></blockquote><br />The one point on which I must disagree with the Gazette is their readiness to accept and dismiss Heineman and Thone's politically-motivated maneuvering. &nbsp;As a current and former governor, we should expect them to be more concerned with what serves the interests of the people of Nebraska rather than what assures the easiest possible victory for their political party.<p>By this former measure, there really is no question. &nbsp;The current system gives Nebraskans an actual voice in the presidential election and gives candidates a reason to send a little bit of attention in our direction. &nbsp;Heineman and Thone want to take that voice away from us. &nbsp;By working to do so, they might be doing their job as <i>Republican stalwarts</i>, but they are completely neglecting the trust placed in them as stewards of Nebraska's future.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1587/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (6 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1581/ ">The Electoral College: Another Disingenuous Argument For &quot;Winner-Takes-All&quot;</a>
+            
+            <a href="/showDiary.do?diaryId=1581" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Wed Dec 10, 2008 at 00:22:31 AM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	On Monday, we took a look at the <a href="http://newnebraska.net/showDiary.do?diaryId=1578">politically-motivated leaps in logic</a> at the heart of Gov. Dave Heineman's argument against Nebraska's second-of-its-kind system for awarding presidential electors by congressional district. &nbsp;<p>What I'd failed to note was that Heineman already had some stiff competition for the silliest such argument after the following ran in the Omaha World-Herald on Election Day:<br /><blockquote><i>For the first time in a long time, Nebraska wasn't ignored during the presidential election. In fact, the state managed to grab a sliver of the presidential limelight in large part because of an unusual state law that allows its electoral votes to be split.<p>The law, however, is not without its critics. &nbsp;Nebraska Republicans have tried repeatedly to repeal the 1991 law, and several said the excitement generated by this year's election hasn't changed their minds....<p>One factor that could come into play is that Obama centered his efforts in Omaha. The presidential candidates and their surrogates all visited the city or neighboring communities.<p>State Sen. Chris Langemeier, a Republican from Schuyler, said he believes <b>the current system favors Omaha to the exclusion of other parts of the state.</b><p>Langemeier, who introduced a repeal effort in 2006, said <b>the winner-take-all system would give the entire state a chance to capture presidential interest.</b><p>"I would like to see candidates come to Nebraska and campaign throughout the entire state," he said.</i></blockquote><br />Democratic President-elect Barack Obama set up three campaign offices in the 2nd District. &nbsp;Republican Vice Presidential nominee Sarah Palin personally campaigned in Omaha. &nbsp;And, somehow we're supposed to think <i>that's a bad thing</i>? &nbsp;Get serious.<p>In 2008, Nebraska attracted more attention from the presidential campaigns than it had in decades. &nbsp;Admittedly, it wasn't equally distributed all across the state. &nbsp;That's unfortunate but not nearly so unfortunate as the alternative - no attention whatsoever...just like we'd seen in the previous 30 - 40 years.<p>Langemeier <i>says</i> he'd like to see candidates campaigning "throughout the entire state." &nbsp;But, <b>what he actually proposes is a return to the status quo in which those running for president turn <i>a blind eye</i> to the entire state.</b><p>That's what's so offensive about this whole debate - Langemeier (like Heineman) knows precisely how preposterous an argument he's making. &nbsp;He knows that the minimal impact upon our state from this change would be a negative one. &nbsp;Yet, for purely partisan reasons, &nbsp;he'll disgregard the best interests of the people of Nebraska, so Republican presidential nominees are assured one more vote in the electoral college they won't have to earn - or even show up for.<p>Considering that Langemeier pushed changing Nebraska's system for apportioning electors back in 2006, there's a good chance he'll be one of the Republican ringleaders leading the way on this issue in the Unicameral's 2009 session. &nbsp;So far, the reasons for such a change presented by Langemeier and Heineman are not only weak but utterly disingenuous as well. &nbsp;You can bet the people of Nebraska will see right through this partisan posturing and won't appreciate their poisoning the atmosphere and perverting the tradition of our nonpartisan legislature.<p>Eventually, enough voters will even see through these tactics to the point that we won't be fighting over a single presidential elector and the entire state will be considered a political battleground.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1581/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (2 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1578/ ">Dave Heineman&#39;s Presidential Power Play</a>
+            
+            <a href="/showDiary.do?diaryId=1578" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Mon Dec 08, 2008 at 21:57:12 PM CST</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	Let's make one final congratulations to President-elect Barack Obama on his winning one of Nebraska's five electoral college votes. &nbsp;The vote by the 2nd Congressional District's Democratic elector, <a href="http://omaha.com/index.php?u_page=2798&u_sid=10501430">Bill Forsee</a>, was certified this morning - and it was only a matter of moments before Republican Gov. Dave Heineman turned the event into an act of partisan warfare, re-declaring his obnoxious intent that it should never happen again.<p>The <a href="http://www.journalstar.com/articles/2008/12/08/news/politics/doc493d414e8950c860662384.txt">Associated Press</a> reports:<br /><blockquote><i>President-elect Barack Obama's historic win in Nebraska's 2nd Congressional District was made official Monday when the State Board of Canvassers certified the results of the November general election.<p>Moments later, Gov. Dave Heineman, a member of the board, criticized the unique system in Nebraska that allowed the Democrat to slice an electoral vote out of the mostly Republican state....<p>"Forty-eight other states do winner-take-all - we're out of sync. Either they ought to be like us, or <b>we ought to be like the system was set up.</b>"</i></blockquote><br />"Like the system was set up"? &nbsp;To what system might Heineman be referring to? &nbsp;Certainly not the one set up by the <a href="http://www.archives.gov/federal-register/electoral-college/provisions.html">U.S. Constitution</a>, which reads:<br /><blockquote><i>Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress...</i></blockquote><br />Nebraska's current system for apportioning electors is perfectly in line with the principles on which this county was founded. &nbsp;In fact, an argument can be made that it actually captures the founders' intent better than the standard used in 48 states because it mirrors the balancing of the democratic and republican ideals at the heart of the U.S. Congress. &nbsp;Still, the operative principle at work <i>is</i> one of states' rights - fulfilled not by any particular system but by the state legislature's choice of a system.<p>The <a href="http://www.omaha.com/index.php?u_page=2798&u_sid=10508625">Omaha World-Herald</a> gives Heineman another shot to explain himself, and he fails once again:<br /><blockquote><i>Gov. Heineman said he would prefer that Nebraska return to a winner-take-all system of awarding presidential electoral votes.<p>Heineman, a Republican, said a winner-take-all system was set up to give small states like Nebraska more clout. He said he believes that such a system, if adopted nationally, would be fairer than the one now used in the Cornhusker State.</i></blockquote><br />Heineman really should pick one argument and stick with it. &nbsp;His interest in protecting the <i>clout</i> of small states like Nebraska is a valid one, but it has nothing at all to do with <i>fairness</i> in a country where the principle of "one person, one vote" is supposedly held sacred. &nbsp;And, no one should concede to Heineman that a "winner-take-all" system gives Nebraska more clout when we only received any attention whatsoever in the 2008 election precisely because of our state's alternative method.<p>And, what's really going on here? &nbsp;Well, we all know that:<br /><blockquote><i>Nebraska Republican Party leaders have said they'll urge a state senator to introduce a bill to repeal the unusual arrangement next year. Heineman said on Monday that <b>he won't push for a bill to be introduced, but if one is passed by the Legislature, "I'll sign it"</b>....<p>Heineman said anyone who thinks the split-vote system is about anything more than partisan politics "is fooling themselves."</i></blockquote><br />Heineman's claim that he "won't push" for a change to the current system is clearly preposterous on its face considering his very public barrage of criticism on the same day that system first had any real affect on an election. &nbsp;Not willing to leave the debate to the legislature, Heineman had to put in his two cents, revealing his total lack of class and his totally partisan agenda all at the same time.
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1578/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (6 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="DIARY_LIST_ENTRY">
+                
+                    
+                
+
+
+
+
+
+
+
+
+
+    <table width="100%">
+        <tr>
+            <td>
+            <h1 class="diaryTitle">            
+            <a class="diaryTitle" href="/diary/1365/ ">Heineman and GOP Targeting Nebraska&#39;s Electoral College System</a>
+            
+            <a href="/showDiary.do?diaryId=1365" class="diaryTitle"></a> <!-- Hotlist crap --> </h1>
+            <h2 class="author">by: 
+	        	<a href='/user/Kyle Michaelis'>
+	        		Kyle Michaelis
+	        	</a>
+            </h2>
+            <h3 class="diaryTimestamp">Sun Sep 21, 2008 at 11:30:57 AM CDT</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            	 
+            	With it appearing that Nebraska's 2nd Congressional District is actually in play in the presidential election, Gov. Dave Heineman and the Nebraska Republican Party are already preparing to make sure this never happens again. &nbsp;<p>The <a href="http://www.journalstar.com/articles/2008/09/21/news/local/doc48d58d6081cac622274477.txt">Lincoln Journal-Star</a> reports:<br /><blockquote><i>[DiAnna} Schimek, the Lincoln state senator who authored the 1991 legislation that spawned a presidential electoral vote battleground in Nebraska this year, believes an effort will be mounted to scrap it. And she is correct.<p>Republican State Chairman Mark Quandahl of Omaha says his party is coming after it. <p>"Yes, <b>we will urge someone to introduce a bill to repeal it</b>," Quandahl says. "I didn't like the idea when I was in the Legislature and I still don't buy it. We should go back to a winner-take-all system in Nebraska"...<p>Republican Gov. Dave Heineman also opposes the system of allocating one electoral vote to the winner of each of the state's three congressional districts while handing only two of Nebraska's votes to the statewide winner....<p>Only Nebraska and Maine allocate some of their electoral votes by congressional districts. Although Heineman declined to talk about "how this might play out in the Legislature," it seems obvious he would sign a bill repealing the law....<p>Democratic State Chairman Steve Achelpohl of Omaha says the district vote allocation has stimulated political activity in both parties. &nbsp;<b>"This year's experience in Nebraska has brought new people into the process,"</b> he says. <b>"And that is a good thing.</b><p>"Republicans always seem to be quick to change the law when they see it may operate to their disadvantage," Achelpohl says.</i></blockquote><br />The article also contains some very interesting historical notes behind our system, demonstrating the principled foresight of Sen. Ben Nelson:<br /><blockquote><i>It took a veto from Democratic Gov. Ben Nelson to save the district electoral vote plan in 1995 and 1997....In a quirk of fate, Nelson today is a Democratic senator supporting Obama and working to help him win an electoral vote that his gubernatorial veto 11 years ago made possible....<p>Here's what Nelson said in his 1995 veto message:<p><b>"I feel strongly that providing proper representation is essential to allowing the people's voice in presidential elections...It is my opinion that by allowing the recognition of the individual districts' diversity, as current law allows, this can best be accomplished."</b><p>Without the prospect of a gubernatorial veto raising the required threshold of legislative votes from 25 to 30, repeal would be easier now. That might add a little more urgency to Democratic efforts this year to raise their numbers in the Legislature to a cloture-proof minority of 17 senators. If they all voted in unison - a rarity in the non-partisan Unicameral - they could block repeal.</i></blockquote><br />As Republican presidential nominee John McCain turns a blind eye to our state and Republican Congressman Lee Terry is again left <a href="http://www.journalstar.com/articles/2008/09/21/news/local/doc48d5677666bb0723560497.txt">begging</a> for some national assistance, <b>it says everything you need to know about Heineman's priorities that he's putting his party first, so the voices of Nebraskans can remain irrelevant in national politics.</b>
+			</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="/diary/1365/ ">
+            
+                
+                                    Discuss
+            	
+                
+            </a>
+            
+                :: (4 
+                   Comments) 
+            </td>
+        </tr>
+    </table>
+
+
+            </td>
+        </tr>
+    
+    
+    <tr>
+        <td>
+        <table width="100%">
+            <tr>
+                <td align="left">
+                	
+				</td>
+                <td align="right">
+                	
+						<a href="/tag
+							/electoral college
+							/1"> Next &gt;&gt;</a>
+	                
+				</td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+
+         
+        
+        
+ 
+ 
+ 
+        
+         
+        
+         
+        
+ 
+        
+
+
+                                    
+                                </td>
+                            
+                        
+
+                            
+                            
+                                <td valign="top" class="RIGHT_SIDE">
+                                    
+                                        
+                                            
+<table width="100%">
+<tr>
+	<td align="center">
+		<a href="/frontPage.do"><img src="http://newnebraska.net/upload/NNN-cubed.JPG"></a>
+                <font size="+2">New Nebraska Network</font><br />	
+		<i>Not Just Red to Blue - More than One Label for Another</i>
+		<br/>
+		<br/>		
+	</td>
+</tr>
+</table>
+<br />
+
+                                        
+                                            
+
+
+
+<table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Active Users</td>
+</tr>
+<tr>
+	<td class="objectContent">
+	Currently <a href="/activeUsers.do">1 user(s)</a> logged on.		
+	</td>
+</tr>
+</table>	
+<br />
+
+                                        
+                                            
+
+
+
+
+
+<table width="100%" class="objectTable">
+	<tr>
+		<td class="objectHeading">
+			Menu
+		</td>
+	</tr>
+	<tr>
+		<td class="objectContent">
+ 
+					
+			
+
+			
+			
+				<br />
+				<center><a href="/join.do">Make a New Account</a></center>
+				<br />
+				<form name="logonForm" method="post" action="/logonSubmit.do">	
+                    
+					Username: <br />
+					<input type="text" name="username" value=""><br />
+					Password: <br />
+					<input type="password" name="password" value=""><br />
+					<input type="submit" value="Submit"><br />
+				</form>
+				<br />
+				<center><a href="/emailPassword.do">Forget your username or password?</a></center>
+				<br />	
+			
+
+		</td>
+	</tr>
+</table>
+<br />
+
+                                        
+                                            
+
+
+
+
+
+
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">NNN on Twitter</td>
+</tr>
+<tr>
+	<td class="objectContent">
+		
+      <center><script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 12,
+  interval: 6000,
+  width: 200,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#ab0232',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#3507eb'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('NewNebraska').start();
+</script></center>
+  </tr>
+
+</table>	
+<br />
+
+                                        
+                                            <table width="100%">
+<tr>
+	<td class="objectHeading">102nd Legislature</td>
+</tr>
+<tr>
+	<td class="objectContent">
+		
+      <center><a href="http://newnebraska.net/diary/2808/2011-2012-nebraska-unicameral"><img src="http://newnebraska.net/upload/NNN-Map2012.jpg"WIDTH="210"HEIGHT="120"></a></a></center>
+  </tr>
+
+</table>	
+<br />
+
+                                        
+                                            
+
+
+
+
+
+<!-- recentCommentsList.jsp -->
+
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Progressive Partners</td>
+</tr>
+<tr>
+	<td class="objectContent">
+   <li><a href="http://nereform.org">Nebraskans For Civic Reform</a></li>    
+   <li><a href="http://nebraskacures.com/">Coalition For Lifesaving Cures</a></li>
+   <li><a href="http://nebraska.barackobama.com">Nebraskans For Obama</a></li>
+   <li><a href="http://www.boldnebraska.org">Bold Nebraska</a></li>
+   <li><a href="http://www.nebraskademocrats.org">Nebraska Democratic Party</a></li>
+   <li><a href="http://www.nebraskayoungdemocrats.org">Nebraska Young Democrats</a></li>
+   <li><a href="http://www.nebraskansforpeace.org">Nebraskans for Peace</a></li>
+   <li><a href="http://www.cfra.org/">Center for Rural Affairs</a></li>
+   <li><a href="http://www.neappleseed.org/">Nebraska Appleseed Center</a></li>
+   <li><a href="http://www.centerforpeopleinneed.org/">Center for People in Need</a></li>
+   <li><a href="http://www.aclunebraska.org/">ACLU Nebraska</a></li>
+   <li><a href="http://sierranebraska.org/">Sierra Club Nebraska</a></li>
+   <li><a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=1736199">Common Cause Nebraska</a></li>
+   <li><a href="http://www.voicesforchildren.com/">Voices For Children</a></li>
+   <li><a href="http://www.opportunityatwork.org/">Opportunity@Work</a></li>
+   <li><a href="http://www.powerupnebraska.org/">Power Up Nebraska</a></li>
+</tr>
+</table>	
+<br />
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Politicians & Candidates</td>
+</tr>
+<tr>
+	<td class="objectContent">
+   <li><a href="http://nelson2012.com/">Ben Nelson for Senate (D)</a></li>
+   <li><a href="http://ewingfornebraska.com/">John Ewing for Congress (D-02)</a></li>
+   <li><a href="http://www.howard2012.com/">Gwen Howard for Congress (D-02)</a></li>
+   <li><a href="http://jonbruning.com/">Jon Bruning for Senate (R)</a></li>
+   <li><a href="http://www.debfischer2012.com/">Deb Fischer for Senate(R)</a></li> 
+   <li><a href="http://www.stenbergforsenate.com/">Don Stenberg for Senate (R)</a></li>
+   <li><a href="http://www.leeterry.com/">Lee Terry for Congress (R-02)</a></li>
+   <li><a href="http://www.lindstromforcongress.com/">Brett Lindstrom for Cong. (R-02)</a></li>
+   <li><a href="http://jackheidel.com/">Jack Heidel for Congress (R-02)</a></li>
+   <li><a href="http://www.bennelson.senate.gov">Sen. Ben Nelson (D)</a></li>
+   <li><a href="http://www.johanns.senate.gov">Sen. Mike Johanns (R)</a></li>
+   <li><a href="http://fortenberry.house.gov">Rep. Jeff Fortenberry (R-01)</a></li>   
+   <li><a href="http://leeterry.house.gov">Rep. Lee Terry (R-02)</a></li>
+   <li><a href="http://adriansmith.house.gov">Rep. Adrian Smith (R-03)</a></li>
+   <li><a href="http://www.gov.state.ne.us/">Governor's Office</a></li>
+   <li><a href="http://www.ago.ne.gov/">Atty General's Office</a></li>
+   <li><a href="http://www.sos.state.ne.us/dyindex.html">Sec. of State's Office</a></li>
+   <li><a href="http://www.nebraskalegislature.gov/senators/senator_list.php">Unicameral Directory</a></li>
+   <li><a href="http://www.ci.omaha.ne.us/departments/mayor/default.htm">Mayor Jim Suttle (D, Omaha)</a></li>
+   <li><a href="http://www.lincoln.ne.gov/city/mayor/index.htm">Mayor Chris Beutler (D, Lincoln)</a></li>
+   <li><a href="http://www.nebraskademocrats.org">Nebraska Democratic Party</a></li>
+   <li><a href="http://www.nebraska.greens.org">Nebraska Green Party</a></li>
+   <li><a href="http://www.negop.org">Nebraska Republican Party</a></li>
+	</td>
+</tr>
+</table>	
+<br />
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Local Media</td>
+</tr>
+<tr>
+	<td class="objectContent">
+         <li><a href="http://www.statepaper.com">Nebraska State Paper</a></li>
+   <li><a href="http://www.prairiefirenewspaper.com">Prairie Fire</a></li>
+   <li><a href="http://www.thereader.com/index.php">The Reader</a></li>
+   <li><a href="http://www.northplattebulletin.com">North Platte Bulletin</a></li>
+   <li><a href="http://www.sandhillsexpress.com">Sandhills Express</a></li>
+   <li><a href="http://www.swnebr.net">Southwest Nebraska News</a></li>
+   <li><a href="http://www.netnebraska.org/radio">NET Nebraska Public Radio</a></li>
+   <li><a href="http://www.kfab.com/">KFAB Talk Radio (Omaha)</a></li>
+   <li><a href="http://www.klin.com/">KLIN Talk Radio (Lincoln)</a></li>   
+   <li><a href="http://action3news.com/">Channel 3 - CBS (Omaha)</a></li>
+   <li><a href="http://www.nebraska.tv/">Channel 4 - ABC (Kearney)</a></li>
+   <li><a href="http://www.khastv.com">Channel 5 - NBC (Hastings)</a></li>
+   <li><a href="http://www.wowt.com">Channel 6 - NBC (Omaha)</a></li>
+   <li><a href="http://www.theomahachannel.com">Channel 7 - ABC (Omaha)</a></li>
+   <li><a href="http://www.klkntv.com">Channel 8 - ABC (Lincoln)</a></li>
+   <li><a href="http://www.kolnkgin.com">Channel 10 - CBS (Lincoln)</a></li>
+   <li><a href="http://www.kptm.com">Channel 42 - Fox (Omaha)</a></li> 
+	</td>
+</tr>
+</table>	
+<br />
+
+                                        
+                                            <table width="100%" class="objectTable">
+<tr>
+	<td class="objectHeading">Submit a Letter to the Editor</td>
+</tr>
+<tr>
+	<td class="objectContent">
+   <li><a href="mailto:pulse@owh.com">Omaha World-Herald</a></li>
+<li><a href="mailto:oped@journalstar.com">Lincoln Journal-Star</a></li> 
+<li><a href="http://www.dailynebraskan.com/home/lettertotheeditor">Daily Nebraskan (UNL)</a></li>
+<li><a href="http://www.theindependent.com/aboutus/letters.shtml">Grand Island Independent</a></li>
+<li><a href="http://hub.kearneyhub.com/forms/letter_editor.htm">Kearney Hub</a></li>
+<li><a href="http://www.nptelegraph.com/site/news.cfm?newsid=17830411&BRD=377&PAG=461&dept_id=602453&rfi=6">North Platte Telegraph</a></li>
+<li><a href="mailto:feedback@norfolkdailynews.com">Norfolk Daily News</a></li>
+<li><a href="mailto:tribnews@ftrib.com">Fremont Tribune</a></li>
+<li><a href="mailto:jdean@columbustelegram.com">Columbus Telegram</a></li>
+<li><a href="mailto:editor@mccookgazette.com">McCook Daily Gazette</a></li>
+<li><a href="mailto:steve.frederick@starherald.com">Scottsbluff Star-Herald</a></li>
+<li><a href="mailto:tribune@hastingstribune.com">Hastings Tribune</a></li>
+
+	</td>
+</tr>
+</table>	
+<br />
+
+                                        
+                                    
+                                </td>
+                            
+
+                            
+                            
+                        
+
+                            
+                            
+                                <td valign="top" class="BLOG_ADS">
+                                    
+                                </td>
+                            
+
+                            
+                            
+                        
+                    
+                </tr>
+            </table>
+
+            
+                <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1514607-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+            
+
+
+            
+<table width="100%">
+<tr>
+    <td align="right">
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1767529; 
+var sc_invisible=1; 
+var sc_partition=16; 
+var sc_security="859e170d"; 
+</script>
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c17.statcounter.com/counter.php?sc_project=1767529&java=0&security=859e170d&invisible=1" alt="free hit counter javascript" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+Powered by: <a href="http://www.soapblox.net">SoapBlox</a>
+    </td>
+</tr>
+</table>    
+        </div>
+    </center>
+    </body>
+    </html>
+</html>

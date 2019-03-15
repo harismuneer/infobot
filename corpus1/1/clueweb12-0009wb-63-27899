@@ -1,0 +1,42 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-11T15:22:14Z
+WARC-TREC-ID: clueweb12-0009wb-63-27899
+WARC-Target-URI: http://uselectionatlas.org/RESULTS/
+WARC-Payload-Digest: sha1:LEHNYMTBOUS3RRWHI3J323JJM6EXWAMT
+WARC-IP-Address: 66.39.118.182
+WARC-Record-ID: <urn:uuid:bd18e22e-b340-4e32-9208-3a41baf5df3e>
+Content-Type: application/http; msgtype=response
+Content-Length: 976
+
+HTTP/1.1 200 OK
+Date: Sat, 11 Feb 2012 15:22:14 GMT
+Server: Apache/2.2.14
+Last-Modified: Fri, 12 Nov 2010 15:34:59 GMT
+ETag: "29d-494dcd54aaec0"
+Accept-Ranges: bytes
+Content-Length: 669
+Cache-Control: max-age=300
+Expires: Sat, 11 Feb 2012 15:27:14 GMT
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+
+<head>
+<title>Dave Leip's Atlas of U.S. Presidential Elections</title>
+
+<meta name="author" content = "David Leip">
+<meta http-equiv="Content-Type" content="text/html; charset=macintosh">
+</head>
+
+<frameset rows="105,*" border="1" bordercolor="#888">
+  <frame marginheight = "2" src="menu_pres.html" name="menu" scrolling="no">
+  <frameset cols = "85,*">
+    <frame src="leftmenu.php?type=national&off=0" name = "year" marginwidth="4" marginheight="4">
+    <frame src="national.php?f=1&year=2008&off=0&elect=0" name="main">
+  </frameset>
+</frameset>
+
+</html>

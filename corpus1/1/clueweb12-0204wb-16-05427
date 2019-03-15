@@ -1,0 +1,693 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-16T11:02:52Z
+WARC-TREC-ID: clueweb12-0204wb-16-05427
+WARC-Target-URI: http://www.fairvote.org/npv-crs-electoral-college
+WARC-Payload-Digest: sha1:2M7OGEGSPCTJKMC4RYPTWU7XXO7EDTAT
+WARC-IP-Address: 205.186.128.106
+WARC-Record-ID: <urn:uuid:77fa9694-cb54-45c3-868f-1114ac352801>
+Content-Type: application/http; msgtype=response
+Content-Length: 31400
+
+HTTP/1.0 200 OK
+Date: Thu, 16 Feb 2012 11:02:55 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.2.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html>
+<html id="org.fairvote" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<head>
+	<!-- Date: 2009 -->
+	<base href="http://www.fairvote.org/" />
+	<meta charset="utf-8" >
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="google-site-verification" content="LhItT3RK9-pzDkW1U7_D8Quuder_yTxY0qrqqZZNdUU" />
+	<meta name="author" content="Wellfire Interactive">
+	
+	
+	<title>FairVote.org | NPV Critic Response Series: The Electoral College</title>
+	
+	<meta property="og:title" content="FairVote"/>
+    <meta property="og:type" content="non_profit"/>
+    <meta property="og:url" content="http://fairvote.org"/>
+    <meta property="og:image" content="http://www.fairvote.org/site/images/logo-fairvote.gif"/>
+    <meta property="og:site_name" content="FairVote"/>
+    <meta property="og:description" content="FairVote acts to transform our elections to achieve secure access to participation for all, a full spectrum of meaningful ballot choices and majority rule with fair representation. As a catalyst for change, we build support for innovative strategies to win a constitutionally protected right to vote, universal voter registration, a national popular vote for president, instant runoff voting and proportional voting."/>
+	
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<link rel="stylesheet" href="/site/styles/init.css" type="text/css">
+	<link rel="stylesheet" href="/site/styles/fvo-2009.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/site/styles/fvo-print.css" type="text/css" media="print">
+	
+	 <script type="text/javascript">document.getElementById("org.fairvote").className += " jsActive ";</script>
+	 <!--[if IE]>
+		<link rel="stylesheet" href="/site/styles/fvo-2009.ie.css" type="text/css" media="screen">
+		<script type="text/javascript">document.getElementById("org.fairvote").className += "ie ";</script> 
+	 <![endif]-->
+	 <!--[if lte IE 7]>
+	 	<link rel="stylesheet" href="/site/styles/fvo-2009.ie7.css" type="text/css" media="screen">
+		<script type="text/javascript">document.getElementById("org.fairvote").className += "ie7 ";</script> 
+	 <![endif]-->
+	 <!--[if lte IE 6]>
+		<link rel="stylesheet" href="/site/styles/fvo-2009.ie6.css" type="text/css" media="screen">
+		<script type="text/javascript">document.getElementById("org.fairvote").className += "ie6 ";</script> 		
+	 <![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.fairvote.org/blog/css/blog.css?m=1260990936" />
+</head>
+<body id="tmpl-content"><script type="text/javascript" src="http://www.fairvote.org/jsparty/behaviour.js?m=1260991237"></script><script type="text/javascript" src="http://www.fairvote.org/jsparty/prototype.js?m=1260991560"></script><script type="text/javascript" src="http://www.fairvote.org/jsparty/scriptaculous/effects.js?m=1260991562"></script><script type="text/javascript" src="http://www.fairvote.org/cms/javascript/PageCommentInterface.js?m=1260991062"></script><script type="text/javascript" src="http://www.fairvote.org/jsparty/prototype_improvements.js?m=1260991561"></script><script type="text/javascript" src="http://www.fairvote.org/sapphire/javascript/i18n.js?m=1260372077"></script><script type="text/javascript" src="http://www.fairvote.org/sapphire/javascript/lang/en_US.js?m=1260372078"></script><script type="text/javascript" src="http://www.fairvote.org/sapphire/javascript/Validator.js?m=1260372076"></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	'#PageCommentInterface_Form_PostCommentForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			
+			
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#PageCommentInterface_Form_PostCommentForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				// Don't perform instant validation for CalendarDateField fields; it creates usability wierdness.
+				if(this.parentNode.className.indexOf('calendardate') == -1 || this.value) {
+					return $('PageCommentInterface_Form_PostCommentForm').validate(this);
+				} else {
+					return true;
+				}
+			}
+		}
+	},
+	'#PageCommentInterface_Form_PostCommentForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('PageCommentInterface_Form_PostCommentForm').validate(this); 
+			}
+		}
+	}
+});
+
+//]]></script>
+  <div id="container">
+    <div id="header">
+      <h1 class="branding"><a href="/"><img src="/site/images/logo-fairvote.gif" alt="FairVote: The Center for Voting and Democracy"/></a></h1>
+      
+      <div id="nav-main">
+        <ul class="nav">
+          
+            <li id="link-who"><a href="/who-we-are/">Who We Are</a>
+          
+						
+							<ul>
+							
+								<li><a href="overview">Overview</a></li>
+							
+								<li><a href="staff-and-leadership">Staff and Leadership</a></li>
+							
+								<li><a href="for-press">For Press</a></li>
+							
+								<li><a href="internships-and-employment">Internships and Employment</a></li>
+							
+								<li><a href="contact">Contact FairVote</a></li>
+							
+								<li><a href="donations-to-fairvote">Donate to FairVote</a></li>
+							
+								<li><a href="get-involved">Get Involved</a></li>
+							
+							</ul>
+						
+						</li>
+        
+          <li id="link-reform"><a href="/reforms/">Reforms</a>
+        
+					
+						<ul>
+						
+							<li><a href="instant-runoff-voting">Instant Runoff Voting</a></li>
+						
+							<li><a href="national-popular-vote">National Popular Vote</a></li>
+						
+							<li><a href="choice-voting-proportional-representation">Choice Voting/Proportional Representation</a></li>
+						
+							<li><a href="right-to-vote-amendment">Right to Vote Amendment</a></li>
+						
+							<li><a href="universal-voter-registration">Universal Voter Registration</a></li>
+						
+						</ul>
+					
+					</li>
+        
+          <li id="link-research" class="on"><a href="/research-and-analysis/">Research &amp; Analysis</a>
+        
+					
+						<ul>
+						
+							<li><a href="presidential-elections">Presidential Elections</a></li>
+						
+							<li><a href="congressional-elections">Congressional Elections</a></li>
+						
+							<li><a href="redistricting">Redistricting</a></li>
+						
+							<li><a href="voting-rights">Voting Rights</a></li>
+						
+							<li><a href="voter-turnout">Voter Turnout</a></li>
+						
+							<li><a href="womens-representation">Women's Representation</a></li>
+						
+							<li><a href="ra-reports">All Reports</a></li>
+						
+							<li><a href="blog">FairVote Blog</a></li>
+						
+						</ul>
+					
+					</li>
+        
+          <li id="link-learn"><a href="/learning-democracy/">Learning Democracy</a>
+        
+					
+						<ul>
+						
+							<li><a href="lesson-plans">Lesson Plans</a></li>
+						
+							<li><a href="model-legislation">Model Legislation</a></li>
+						
+							<li><a href="partners-and-advisors">Partners and Advisors</a></li>
+						
+						</ul>
+					
+					</li>
+        </ul>
+        
+        <dl id="util-text">
+          <dt>Text Size:</dt>
+          <dd>
+            <ul class="util">
+              <li id="ctrl-textReg"><a href="?text=regular">A</a></li>
+              <li id="ctrl-textLg"><a href="?text=large">A</a></li>
+              <li id="ctrl-textXLg"><a href="?text=largest">A</a></li>
+            </ul>
+          </dd>
+        </dl>
+        
+      </div>
+
+      <div id="nav-global" class="nav">
+        <ul>
+					
+						<li><a href="/contact">Contact Us</a></li>
+					
+						<li><a href="get-involved">Get Involved</a></li>
+					
+						<li><a href="/Blog">Blog</a></li>
+					
+						<li><a href="newsletters-our-media">Newsletters/Media</a></li>
+					
+						<li><a href="/fvo-glossary">Glossary</a></li>
+					
+						<li><a href="support-fairvote">Support FairVote</a></li>
+					
+        </ul>
+      </div>
+      
+      <div id="nav-breadcrumbs" class="nav">
+        
+          
+            <a href="home">Home</a> / 
+          
+            <a href="research-and-analysis">Research &amp; Analysis</a> / 
+          
+            <a href="blog">FairVote Blog</a> / 
+          
+            <span>NPV Critic Response Series: The Electoral College</span>
+            
+      </div>
+  
+  
+    <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+    <!-- The terms of service are available at http://www.google.com/cse/docs/tos.html -->
+    <div id="form-miniSearch"></div>
+    	
+    </div>
+
+    <div id="content" class="section col">
+  
+  <div class="article">
+    <h2>NPV Critic Response Series: The Electoral College</h2>
+    
+      <div class="attributed">
+        
+          by 
+          
+           <a href="list/author/Rob_Richie">Rob Richie</a>, 
+          
+           <a href="list/author/Katie_P. Kelly">Katie P. Kelly</a>
+          
+        
+        
+         // Published October 6, 2011
+         
+        
+        
+      </div>
+    
+    
+    
+    <div class="figure">
+      <img src="/assets/Uploads/_resampled/SetWidth195-states-rights.png" alt="" />
+    </div>
+    
+		<div class="user-gen">
+    	<p><em><span>Critics of the National Popular Vote (NPV) plan often make misleading or misinformed remarks and judgments.<span>&nbsp; </span>For those with questions about these claims, we urge you to read FairVote&rsquo;s responses to <a href="http://www.fairvote.org/what-is-the-national-popular-vote-plan">frequently asked questions</a>&nbsp;about the Electoral College and the National Popular Vote plan and to the&nbsp;<a href="http://www.nationalpopularvote.com/pages/answers.php">&ldquo;answering myths&rdquo; </a>chapter of Every Vote Equal (available for download at </span></em><a href="http://www.everyvoteequal.com/"><em><span>www.everyvoteequal.com</span></em></a><em><span> and&nbsp;<a href="http://www.nationalpopularvote.com/">www.nationalpopularvote.com</a>).</span></em></p>
+<div style="mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.5pt; padding:0in 0in 1.0pt 0in">
+<p  style="border:none;mso-border-bottom-alt:solid windowtext 1.5pt; padding:0in;mso-padding-alt:0in 0in 1.0pt 0in"><em><span>To supplement these resources, we are launching a new blog series designed to address the latest arguments from opponents. We start today by first reviewing some important features of the current Electoral College system and how those features influence our critique of current state laws governing modern elections. Subsequent posts will address arguments specifically and directly respond to new criticisms. </span></em></p>
+</div>
+<p><br />Unlike in other <a href=" http://www.fairvote.org/majority-rule-in-international-presidential-elections">democracies</a>&nbsp;that hold an election for president, American voters do not directly elect their national leader. Instead, the United States has an intermediary body that selects the president on behalf of the American citizens. This intermediary institution is called the Electoral College.</p>
+<blockquote>
+<h4>The Electoral College is<strong> </strong>the official body of chosen &ldquo;electors,&rdquo; whose role to elect the president and vice president of the United States is established under the U.S. Constitution; meanwhile, states are charged with establishing how those electors are chosen.</h4>
+</blockquote>
+<p>The Constitution establishes that presidential elections take place every four years, with the timing of the meeting of the Electoral College established by statute. Each state has the same number of electoral votes as Members of Congress (its U.S. House members and U.S. Senators) with Washington, D.C. slated to have three electors. Currently there are a total of 538 electoral votes. A candidate must receive an absolute 50% plus one majority, or at least 270 of those votes, to win the presidency outright.</p>
+<p><span><span style="mso-bidi-font-family: Arial;background:white">In other words, the Electoral College directly elects the president and vice president. As Americans, when we go to the polls on Election Day, we may see candidates&rsquo; names, but we are in fact only voting for the "electors" who will then cast votes on behalf of us and our state.<span>&nbsp; </span>Although some states seek to bind electors to vote in a certain way, &ldquo;faithless&rdquo; electors could vote for a different candidate. We have seen a handful of such &ldquo;faithless&rdquo; votes, but they are rare since the electors are chosen by the candidate who has earned them.</span></span></p>
+<p><span><em>In reading our blog series, it is a critical point to keep in mind</em> that the rules governing the Electoral College are a mixture of Constitutional law and federal and state implementation laws. Federal implementation statutes establish such features as when states must report their official vote totals, when the Electoral College meets and how federal elections in general must be conducted, while state laws have authority to determine how to allocate their electors and how to conduct elections. </span></p>
+<p><strong>Under our Constitution, the states &ndash; and states alone &ndash; have the critical power over how to allocate electoral votes. </strong></p>
+<p><span>Every state has passed a law establishing how to allocate its electoral votes. Although not the norm in early presidential elections, nearly every state today awards all of its electoral votes to the winner of the statewide popular vote. This is known as the &ldquo;winner-take-all&rdquo; or &ldquo;unit rule&rdquo;. </span><span><span style="mso-bidi-font-family:Arial;background:white">These state laws used to frequently change, but today, 48 states and the District of Columbia award all of their electors to the slate of people selected by the candidate who wins that state&rsquo;s popular vote.</span></span></p>
+<p><span>The winner-take-all rule means that candidates only have an incentive to campaign in states where they are not comfortably ahead or hopelessly behind. Today, that means only a third of states have a chance to be battlegrounds &ndash; and it will be down to less than ten states in the final months of the election<br /> <br /><em> In our opinion, the winner-take-all rule is not a fair way to elect a president.</em></span><span><span style="mso-bidi-font-family:Arial;background:white"> We see the purpose of presidential elections as primarily about establishing a fair way to elect one person &ndash; the president - rather than primarily about selecting a group of 538 electors. The Electoral College doesn&rsquo;t need to be broadly representative in the way we believe legislative elections should be. Rather, it needs to be an effective instrument for a fair way to elect one winner: the president. <span>&nbsp;</span></span></span></p>
+<p><span>The impact of the winner-take-all rule is critically important for understanding our critique of the status quo. The winner-take-all rule does not lead to <em>less </em>campaigning in states that are not considered battleground states. It results in <em>no </em>meaningful campaigning: no focus groups or polls of voters living in these states, no get-out-the-vote activities, no persuasion advertising or outreach. Once a state is outside of the &ldquo;swing&rdquo; band of competitiveness, it effectively disappears for campaigns &ndash; it is only useful as a source of campaign funds and potential volunteers to target the states that matter. </span></p>
+<p><span>The current state rules that govern the Electoral College are not set in stone and can be changed based on state preferences of how to allocate their electoral votes. Our blog series is grounded in FairVote&rsquo;s belief that states should change their rules to enter into the National Popular Vote interstate compact to guarantee election of the candidate who wins the most popular votes in all 50 states and Washington, D.C. </span></p>
+<p><span>We believe that the arguments in favor of the status quo do not stand up to scrutiny. Grounded in the basics of the system as laid out in this post, we seek to provide a reality check of claims made about the impact of our current system, potential reforms and a national popular vote for president.</span></p>
+<p><em><span>For more information on the Electoral College, visit our&nbsp;<a href="http://www.fairvote.org/what-is-the-national-popular-vote-plan">Electoral College FAQs </a>page and read more about <a href="http://www.fairvote.org/the-electoral-college">how it works today</a>.</span></em></p>
+<p><em><span>&nbsp;</span></em></p>
+<p>&nbsp;</p>
+		</div>
+    
+    
+    <div class="share">
+<!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        <a class="addthis_button_twitter"></a>
+        <a class="addthis_button_facebook"></a>
+        <a class="addthis_button_delicious"></a>
+        <a class="addthis_button_digg"></a>
+        <a class="addthis_button_print"></a>
+        <a class="addthis_button_email"></a>
+        <a class="addthis_button_compact"></a>
+    </div>
+</div>
+<!-- AddThis Button END -->
+
+  </div>
+  
+  
+  <div class="article">
+  	  <h3>Comment on NPV Critic Response Series: The Electoral College</h3>
+     
+      
+	
+<form id="PageCommentInterface_Form_PostCommentForm" action="/npv-crs-electoral-college/PageComments/PostCommentForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="PageCommentInterface_Form_PostCommentForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		<legend></legend>
+		
+			<input class="hidden" type="hidden" id="PageCommentInterface_Form_PostCommentForm_ParentID" name="ParentID" value="3884" />
+		
+			<div id="Name" class="field text "><label class="left" for="PageCommentInterface_Form_PostCommentForm_Name">Your name</label><div class="middleColumn"><input type="text" class="text" id="PageCommentInterface_Form_PostCommentForm_Name" name="Name" value="" /></div></div>
+		
+			<div id="CommenterURL" class="field text "><label class="left" for="PageCommentInterface_Form_PostCommentForm_CommenterURL">Your website URL</label><div class="middleColumn"><input type="text" class="text" id="PageCommentInterface_Form_PostCommentForm_CommenterURL" name="CommenterURL" value="" /></div></div>
+		
+			<div id="Math" class="field text "><label class="left" for="PageCommentInterface_Form_PostCommentForm_Math">Spam protection question: What is nine plus three?</label><div class="middleColumn"><input type="text" class="text" id="PageCommentInterface_Form_PostCommentForm_Math" name="Math" value="" /></div></div>
+		
+			<div id="Comment" class="field textarea "><label class="left" for="PageCommentInterface_Form_PostCommentForm_Comment">Comments</label><div class="middleColumn"><textarea id="PageCommentInterface_Form_PostCommentForm_Comment" name="Comment"></textarea></div></div>
+		
+			<input class="hidden" type="hidden" id="PageCommentInterface_Form_PostCommentForm_SecurityID" name="SecurityID" value="1250515039" />
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			<input class="action" id="PageCommentInterface_Form_PostCommentForm_action_postcomment" type="submit" name="action_postcomment" value="Post" title="Post" />
+		
+	</div>
+	
+
+</form>
+
+
+
+
+     
+      <h3>Current Discussion</h3>
+
+    		
+    			<ul id="PageComments">
+    				
+							
+    					<li class="odd first  notspam">
+     						<div class="comment" id="PageComment_12886">
+                	The EC Reform proposal on my website has many similarities to the goals of Fairvote.
+                </div>
+                <div class="info">
+                 	
+                 		<span>Posted by <a href="http://makeeveryvotecount.com">David M. Gilliam</a>, 2011-11-27 08:35:41 (3  months ago)</span>
+                 	
+                 </div>
+    					</li>
+							
+    				
+							
+    					<li class="even last  notspam">
+     						<div class="comment" id="PageComment_12885">
+                	My web site promotes Electoral College Reform with many similarities to the goals of Fairvote.  
+In particular, the concerns about the unit rule and the use of ranked choice voting to eliminate the problem of spoilers are very similar.  Note well that the NPV approach does not include ranked choice voting. 
+                </div>
+                <div class="info">
+                 	
+                 		<span>Posted by <a href="http://makeeveryvotecount.com">David M. Gilliam</a>, 2011-11-27 08:23:45 (3  months ago)</span>
+                 	
+                 </div>
+    					</li>
+							
+    				
+    			</ul>
+       
+
+       
+  </div>
+  
+
+</div> 
+ 
+    
+    
+<div id="sidebar" class="section col">
+	
+	<div id="ctrl-issues" class="module menu">
+    <h4>View Our Proposals</h4>
+    <form method="post" action="npv-crs-electoral-college/issues/">
+      <div>
+        <fieldset>
+            <select name="issue" id="issue">
+							<option selected value="">Choose an issue</option>
+							
+							<option value="choice-voting-proportional-representation">Choice Voting/Proportional Representation</option>
+							
+							<option value="congressional-elections">Congressional Elections</option>
+							
+							<option value="dubious-democracy">Dubious Democracy</option>
+							
+							<option value="elections-for-u-s-senate-vacancies">Elections for U.S. Senate Vacancies</option>
+							
+							<option value="blog">FairVote Blog</option>
+							
+							<option value="instant-runoff-voting">Instant Runoff Voting</option>
+							
+							<option value="learning-democracy">Learning Democracy</option>
+							
+							<option value="national-popular-vote">National Popular Vote</option>
+							
+							<option value="presidential-elections">Presidential Elections</option>
+							
+							<option value="presidential-tracker">Presidential Tracker</option>
+							
+							<option value="redistricting">Redistricting</option>
+							
+							<option value="right-to-vote-amendment">Right to Vote Amendment</option>
+							
+							<option value="universal-voter-registration">Universal Voter Registration</option>
+							
+							<option value="voter-pre-registration-at-1">Voter Pre-Registration at 16</option>
+							
+							<option value="voter-turnout">Voter Turnout</option>
+							
+							<option value="voting-rights">Voting Rights</option>
+							
+							<option value="voting-rights-act">Voting Rights Act</option>
+							
+							<option value="womens-representation">Women's Representation</option>
+							
+							<option value="youth-preregistration-fact-sheet">Youth Pre-Registration</option>
+							
+            </select>
+        </fieldset>
+      </div>
+      <div class="ctrl-action">
+        <button id="btn-menu_submit" name="btn_submit" type="submit"><span>Investigate</span></button>
+      </div> 
+    </form>
+  </div>
+	
+	
+  
+
+  
+	
+  <div id="nav-secondary" class="module nav">
+      
+        <ul>
+<li><a href="/research-and-analysis">Research & Analysis</a>
+<ul>
+	<li><a href="/presidential-elections">Presidential Elections</a>
+<ul>
+	<li><a href="/congressional-and-presidential-primaries-open-closed-semi-closed-and-top-two">Open and Closed Primaries</a>
+</li>
+	<li><a href="/delegate-allocation-rules-in-2012-gop">Delegate Allocation Rules in 2012 GOP</a>
+</li>
+	<li><a href="/presidential-elections-state-by-state-hardening-partisanship">Presidential Elections State-by-State: Hardening Partisanship</a>
+</li>
+	<li><a href="/report-presidential-election-inequalities">Report: Presidential Election Inequalities</a>
+</li>
+	<li><a href="/executive-director-rob-richie-on-the-history-of-caucuses-and-primaries">Executive Director Rob Richie on the History of Caucuses and Primaries</a>
+</li>
+	<li><a href="/presidential-tracker">Presidential Tracker</a>
+</li>
+</ul>
+</li>
+	<li><a href="/congressional-elections">Congressional Elections</a>
+<ul>
+	<li><a href="/house-seat-apportionment-media-gets-it-wrong-on-partisan-impact">House Seat Apportionment: Media Gets It Wrong on Partisan Impact</a>
+</li>
+	<li><a href="/non-majority-winners-and-spoilers-in-election-2010">Non-Majority Winners and "Spoilers" in Election 2010</a>
+</li>
+	<li><a href="/elections-for-u-s-senate-vacancies">Senate Vacancies</a>
+</li>
+	<li><a href="/dubious-democracy">Dubious Democracy</a>
+</li>
+</ul>
+</li>
+	<li><a href="/redistricting">Redistricting</a>
+<ul>
+	<li><a href="/the-redistricting-problem">The Redistricting Problem</a>
+</li>
+	<li><a href="/redistricting-reform">Redistricting Reform</a>
+</li>
+	<li><a href="/redistricting-litigation">Litigation</a>
+</li>
+	<li><a href="/redistricting-resources">Resources</a>
+</li>
+	<li><a href="/redistricting-glossary">Glossary</a>
+</li>
+	<li><a href="/redistricting-2011-12-news-archive">2011 Redistricting News Archive</a>
+</li>
+	<li><a href="/redistricting-roulette">Redistricting Roulette</a>
+</li>
+</ul>
+</li>
+	<li><a href="/voting-rights">Voting Rights</a>
+<ul>
+	<li><a href="/voting-rights-act">Voting Rights Act</a>
+</li>
+	<li><a href="/election-administration">Election Administration</a>
+</li>
+	<li><a href="/d-c-voting-rights">D.C. Voting Rights</a>
+</li>
+	<li><a href="/felon-disenfranchisement">Felon Disenfranchisement</a>
+</li>
+</ul>
+</li>
+	<li><a href="/voter-turnout">Voter Turnout</a>
+<ul>
+</ul>
+</li>
+	<li><a href="/womens-representation">Women's Representation</a>
+<ul>
+	<li><a href="/women-s-representation-data-in-201">Women's Representation Data</a>
+</li>
+</ul>
+</li>
+	<li><a href="/ra-reports">All Reports</a>
+<ul>
+	<li><a href="/rural-population-analysis-limited-attention-under-the-status-quo">Rural Population Analysis: Limited Attention Under the Status Quo</a>
+</li>
+	<li><a href="/following-the-money-campaign-donations-and-spending-in-the-2008-presidential-race">Following the Money – Campaign Donations and Spending in the 2008 Presidential Race</a>
+</li>
+</ul>
+</li>
+	<li class="on"><a href="/blog">FairVote Blog</a>
+<ul>
+</ul>
+</li>
+</li></ul></ul>
+
+    
+	</div>	
+  
+	
+	
+		
+	
+		
+	
+		
+		<div class="module nav nav-blog">
+			<ul>
+				<li><span>Top Categories</span>
+					<ul>
+					
+						<li><a href="/npv-crs-electoral-college/category/ra-reports">All Reports</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/choice-voting-proportional-representation">Choice Voting/Proportional Representation</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/claim-democracy">Claim Democracy</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/cumulative-voting">Cumulative Voting</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/d-c-voting-rights">D.C. Voting Rights</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/election-services-group">Election Services Group</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/elections-for-u-s-senate-vacancies">Elections for U.S. Senate Vacancies</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/fairvote">FairVote</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/fairvote-in-the-media">FairVote in the Media</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/category/felon-disenfranchisement">Felon Disenfranchisement</a></li>
+					
+					</ul>
+				</li>
+				</ul>
+			</div>
+		
+	
+		
+		<div class="module nav nav-blog">
+			<ul>
+				<li><span>Archives</span>
+					<ul>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2012-2">February 2012</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2012-1">January 2012</a></li>
+					
+					
+						<li><a href="/npv-crs-electoral-college/archive/2011">2011</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2010">2010</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2009">2009</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2008">2008</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2007">2007</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2006">2006</a></li>
+					
+						<li><a href="/npv-crs-electoral-college/archive/2005">2005</a></li>
+					
+					</ul>
+				</li>
+			</ul>
+		</div>				
+		
+
+	
+
+	
+		
+			
+		
+	
+	
+  <div class="util"><a href="/npv-crs-electoral-college#header">Return to Top</a></div>
+</div>
+
+    
+    <div id="footer">
+  <ul class="nav">
+		
+			<li><a href="/sitemap">Sitemap</a></li>
+		
+			<li><a href="/privacy-policy">Privacy Policy</a></li>
+		
+			<li><a href="/terms-of-service">Terms of Service</a></li>
+		
+			<li><a href="/Internships-and-Employment">Jobs &amp; Internships</a></li>
+		
+			<li><a href="https://salsa.democracyinaction.org/o/2495/t/10345/shop/shop.jsp?storefront_KEY=477">Store</a></li>
+		
+			<li><a href="http://archive.fairvote.org">Archive</a></li>
+		
+			<li><a href="newsletters-our-media">Newsletters/Media</a></li>
+		
+			<li><a href="/contact">Contact Us</a></li>
+		
+			<li><a href="list/rss">RSS Feeds</a></li>
+		
+  </ul>
+	<p>6930 Carroll Avenue, Suite 610, Takoma Park, Maryland 20912</p>
+  <p>&copy; 2000 &ndash; 2011 FairVote. All Rights Reserved.</p>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="/site/scripts/framework.js"></script>
+<script type="text/javascript" src="/site/scripts/fvo-2009.js"></script>
+<!-- <script type="text/javascript" src="http://www.google.com/cse/tools/onthefly?form=form-miniSearch&lang="></script> -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('013398337295769464444:40sncne1zxa');
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly("http://google.com/cse?cx=013398337295769464444:40sncne1zxa");    
+    customSearchControl.draw('form-miniSearch', options);
+  }, true);
+</script>
+<!-- AddThis scripts -->
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ee70e7c5ad00956"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-12096378-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+</body>
+</html>

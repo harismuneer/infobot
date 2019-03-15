@@ -1,0 +1,582 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-17T00:09:57Z
+WARC-TREC-ID: clueweb12-1508wb-36-32004
+WARC-IP-Address: 75.119.221.16
+WARC-Payload-Digest: sha1:QVAWA5EHOEQ4Q4ISBWEU77TJ5GKR472B
+WARC-Target-URI: http://presidentelect.org/art.html
+WARC-Record-ID: <urn:uuid:89bfb1d4-1468-4144-b3db-ccbe9df4b6d1>
+Content-Type: application/http; msgtype=response
+Content-Length: 43224
+
+HTTP/1.1 200 OK
+Date: Tue, 17 Apr 2012 00:09:58 GMT
+Server: Apache
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Length: 43040
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD>
+<TITLE>President Elect - Articles</TITLE>
+<LINK rel=stylesheet href="http://presidentelect.org/inc/pe_2010.css" type="text/css"><SCRIPT src="http://presidentelect.org//mint/?js" type="text/javascript"></script>
+
+<SCRIPT type="text/javascript">
+function electionYearTabs(what)
+{
+	document.getElementById('tab-one').style.display='none';
+	document.getElementById('tab-two').style.display='none';
+	document.getElementById('tab-three').style.display='none';
+	document.getElementById(what).style.display='block';
+	scroll(0,0);
+	return;
+}
+</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+<!--
+/*
+	Dynamic News
+	Written by Jerry Aman, Optima System, Aug 31, 1996. 
+	Part of the PageSpinner distribution.
+	Modified September 14, 2000.
+	We will not be held responsible for any unwanted 
+	effects due to the usage of this script or any derivative.  
+	No warrantees for usability for any specific application are 
+	given or implied.
+	You are free to use and modify this script,
+	if the credits above are given in the source code
+*/
+
+function newUntil (year, month, day)
+{
+	now = new Date();
+	expire = new Date (year, month-1, day, 
+		now.getHours(), now.getMinutes(), now.getSeconds()+1 );
+
+	if ( expire.getTime()  >=  now.getTime())
+		document.write(	
+	'<IMG ALIGN=Bottom SRC="images/msc_new.gif" WIDTH="28" HEIGHT="11" HSPACE="10" ALT="NEW!">' );
+
+}
+
+// -->
+</SCRIPT>
+
+</HEAD>
+<BODY bgcolor="#CCCCCC"><A name="top"></A>
+<A name="top"></A>
+<!-- ##### START CONTAINER ##### -->
+<DIV id="container">
+<TABLE width="1000" border="0" cellspacing="0" cellpadding="0"><TR>
+<!-- ##### START LEFT SIDE ##### -->
+<TD width="180" valign="top"><DIV style="width: 180px;" ><BR><CENTER><SPAN class=small><SCRIPT language="JavaScript"><!-- Original:  Alan Palmer --><!-- Web Site:  http://www.jsr.communitech.net --><!-- This script and many more are available free online at --><!-- The JavaScript Source!! http://javascript.internet.com --><!-- Beginvar date = new Date("November 6, 2012");var description = "President Elect 2012";var now = new Date();var diff = date.getTime() - now.getTime();var days = Math.floor(diff / (1000 * 60 * 60 * 24));if (days > 1) {document.write(days+1 + " days until<BR>" + description);}else if (days == 1) {document.write("Two days until<BR>" + description);}else if (days == 0) {document.write("One day until<BR>" + description);}else {document.write("Today is<BR>" + description + "!");}// End --></SCRIPT></SPAN><P><HR width="75%" align="center"><A href="http://presidentelect.org/index.html">HOME</A><P><A href="http://presidentelect.org/faq.html">FAQ</A><P><A href="http://presidentelect.org/art.html">ARTICLES</A><P><A href="http://presidentelect.org/law.html">LAW</A><P><HR width="75%" align="center"><SPAN class="content" >ELECTION RESULTS:</SPAN></CENTER><P><CENTER><FORM name="form1"><SELECT name="select1" size="6" onChange="displaydesc(document.form1.select1, thetext1, 'textcontainer1')"><OPTION selected value="">Select year...</OPTION><OPTION value="http://presidentelect.org/2012">2012</OPTION><OPTION value="http://presidentelect.org/e2008.html">2008</OPTION><OPTION value="http://presidentelect.org/e2004.html">2004</OPTION><OPTION value="http://presidentelect.org/e2000.html">2000</OPTION><OPTION value="http://presidentelect.org/e1996.html">1996</OPTION><OPTION value="http://presidentelect.org/e1992.html">1992</OPTION><OPTION value="http://presidentelect.org/e1988.html">1988</OPTION><OPTION value="http://presidentelect.org/e1984.html">1984</OPTION><OPTION value="http://presidentelect.org/e1980.html">1980</OPTION><OPTION value="http://presidentelect.org/e1976.html">1976</OPTION><OPTION value="http://presidentelect.org/e1972.html">1972</OPTION><OPTION value="http://presidentelect.org/e1968.html">1968</OPTION><OPTION value="http://presidentelect.org/e1964.html">1964</OPTION><OPTION value="http://presidentelect.org/e1960.html">1960</OPTION><OPTION value="http://presidentelect.org/e1956.html">1956</OPTION><OPTION value="http://presidentelect.org/e1952.html">1952</OPTION><OPTION value="http://presidentelect.org/e1948.html">1948</OPTION><OPTION value="http://presidentelect.org/e1944.html">1944</OPTION><OPTION value="http://presidentelect.org/e1940.html">1940</OPTION><OPTION value="http://presidentelect.org/e1936.html">1936</OPTION><OPTION value="http://presidentelect.org/e1932.html">1932</OPTION><OPTION value="http://presidentelect.org/e1928.html">1928</OPTION><OPTION value="http://presidentelect.org/e1924.html">1924</OPTION><OPTION value="http://presidentelect.org/e1920.html">1920</OPTION><OPTION value="http://presidentelect.org/e1916.html">1916</OPTION><OPTION value="http://presidentelect.org/e1912.html">1912</OPTION><OPTION value="http://presidentelect.org/e1908.html">1908</OPTION><OPTION value="http://presidentelect.org/e1904.html">1904</OPTION><OPTION value="http://presidentelect.org/e1900.html">1900</OPTION><OPTION value="http://presidentelect.org/e1896.html">1896</OPTION><OPTION value="http://presidentelect.org/e1892.html">1892</OPTION><OPTION value="http://presidentelect.org/e1888.html">1888</OPTION><OPTION value="http://presidentelect.org/e1884.html">1884</OPTION><OPTION value="http://presidentelect.org/e1880.html">1880</OPTION><OPTION value="http://presidentelect.org/e1876.html">1876</OPTION><OPTION value="http://presidentelect.org/e1872.html">1872</OPTION><OPTION value="http://presidentelect.org/e1868.html">1868</OPTION><OPTION value="http://presidentelect.org/e1864.html">1864</OPTION><OPTION value="http://presidentelect.org/e1860.html">1860</OPTION><OPTION value="http://presidentelect.org/e1856.html">1856</OPTION><OPTION value="http://presidentelect.org/e1852.html">1852</OPTION><OPTION value="http://presidentelect.org/e1848.html">1848</OPTION><OPTION value="http://presidentelect.org/e1844.html">1844</OPTION><OPTION value="http://presidentelect.org/e1840.html">1840</OPTION><OPTION value="http://presidentelect.org/e1836.html">1836</OPTION><OPTION value="http://presidentelect.org/e1832.html">1832</OPTION><OPTION value="http://presidentelect.org/e1828.html">1828</OPTION><OPTION value="http://presidentelect.org/e1824.html">1824</OPTION><OPTION value="http://presidentelect.org/e1820.html">1820</OPTION><OPTION value="http://presidentelect.org/e1816.html">1816</OPTION><OPTION value="http://presidentelect.org/e1812.html">1812</OPTION><OPTION value="http://presidentelect.org/e1808.html">1808</OPTION><OPTION value="http://presidentelect.org/e1804.html">1804</OPTION><OPTION value="http://presidentelect.org/e1800.html">1800</OPTION><OPTION value="http://presidentelect.org/e1796.html">1796</OPTION><OPTION value="http://presidentelect.org/e1792.html">1792</OPTION><OPTION value="http://presidentelect.org/e1789.html">1789</OPTION></SELECT><INPUT type="button" value="Go" onClick="jumptolink(document.form1.select1)"><P><SPAN id="textcontainer1" align="center" style="font:italic 12px Arial"></SPAN></FORM></CENTER><HR width="75%" align="center"><CENTER><A href="http://presidentelect.org/about.html">ABOUT THE SITE</A></CENTER><BR><CENTER><A href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#109;&#97;&#105;&#108;&#64;&#112;&#114;&#101;&#115;&#105;&#100;&#101;&#110;&#116;&#101;&#108;&#101;&#99;&#116;&#46;&#111;&#114;&#103;">CONTACT</A></CENTER><BR><CENTER><A href="http://twitter.com/Elector"><IMG src="http://presidentelect.org/images/twitter.png" border="0"></A></CENTER><P><IMG src="http://presidentelect.org/images/msc_navfiller.gif" width="176" height="41" border="0"></DIV></TD>
+<!-- ##### END LEFT SIDE ##### -->
+<!-- ##### START RIGHT SIDE ##### -->
+<TD width="820" valign="top">
+
+<TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR><TD align="right" valign="top">
+<IMG src="http://presidentelect.org/images/hdr_btn_left_pe.png" width="213" height="214" border="0">
+</TD><TD align="left" valign="top">
+<IMG src="http://presidentelect.org/images/hdr_pe_right.png" width="607" height="214" border="0">
+</TD></TR></TABLE>
+<BR>
+
+<TABLE border="0" cellspacing="0" cellpadding="8" width="820"><TR><TD align="center" valign="middle"><A href="javascript:void(0)" class="menutitle" onmouseover="this.className='menutitle_over'" onmouseout="this.className='menutitle'" onmousedown="this.className='menutitle_down'" onclick="electionYearTabs('tab-one')">LAW, PROCEDURE</A> | <A href="javascript:void(0)" class="menutitle" onmouseover="this.className='menutitle_over'" onmouseout="this.className='menutitle'" onmousedown="this.className='menutitle_down'" onmouseover="this.className='menutitle_over'" onmouseout="this.className='menutitle'" onmousedown="this.className='menutitle_down'" onclick="electionYearTabs('tab-two')">HISTORY, BIOGRAPHY, ANALYSIS</A> | <A href="javascript:void(0)" class="menutitle" onmouseover="this.className='menutitle_over'" onmouseout="this.className='menutitle'" onmousedown="this.className='menutitle_down'" onclick="electionYearTabs('tab-three')">MISC.</A></TD></TR></TABLE>
+
+<BR>
+<DIV id="tab-one" style="display:none;">
+
+<TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_up_left.gif" width="25" height="24" border="0"></TD>
+<TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_up_right.gif" width="25" height="24" border="0"></TD></TR><TR align="left" valign="top"><TD bgcolor="#FFFFFF"><BR></TD>	<TD bgcolor="#FFFFFF">
+	
+<CENTER><TABLE border="0" width="75%" cellspacing=0" cellpadding="10" style=" border-width: 1px; border-style: solid; border-color: #000000; " >
+<TR align="left" valign="top">
+	<TD bgcolor="#CCCCCC" width="30"><BR></TD>
+	<TD><B id="red">LAW, PROCEDURE</B>
+	<P>This section is for articles about the Electoral College, election law, procedure, reform, etc.
+</TD></TR></TABLE></CENTER>	
+<BR><P>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_electors_2008.html">2008 Electors</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 11, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 4, 2008</FONT><BR>
+
+<DD><FONT id="medium">Here's where you find a list of the electors for each candidate in your state -- assuming your state is one of the 21 that posted the information online</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_ectie_pr_2008.html">What if the Electoral College is tied at 269 in 2008?</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 11, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 3, 2008</FONT><BR>
+
+<DD><FONT id="medium">What would happen if Obama and McCain were to tie in the electoral college?</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_deathpresidentelect.html">Death of a President (Elect)</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 09, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">September 4, 2008</FONT><BR>
+
+<DD><FONT id="medium">You asked (and asked, and asked, and asked!), and now we'll take a look at what could happen if a winning presidential candidate died after election day but before inauguration.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_west_upgrade.html">Upgrading The College</A></B><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 9, 19 );
+// -->
+</SCRIPT><BR>
+<FONT class=medium id="red">by Mark West</FONT><BR>
+<FONT class=medium id="red">9/5/2004</FONT><BR>
+
+<DD><FONT id="medium">Mark West argues that rather than replace the Electoral College with a direct popular vote, changing the winner-take-all system to a congressional district method would give us the best of both worlds.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_mythical.html">The Mythical Electoral College Extremist</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">8/4/2004</FONT><BR>
+
+<DD><FONT id="medium">An anti-Electoral College website tries to paint President Elect's webmaster as  "extreme" for using "mythical" reasoning to support the current system. Does he make a compelling argument?</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_ecreform2002.html">Electoral College Reform - 2002 Update</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 8/19/2002</FONT><BR>
+
+<DD><FONT id="medium">Six months after the 2000 election, President Elect posted a report on various Electoral College reforms being proposed in legislatures throughout the United States. With nearly two years since the election, it's time to take another look.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_depangher_unaccept.html">The Electoral College: An Unacceptable Way to Elect Our President</A></B><BR>
+<FONT class=medium id="red">by Everett De Pangher</FONT><BR>
+<FONT class=medium id="red">posted 6/25/2001</FONT>
+
+<DD><FONT id="medium">Everett De Pangher takes an in-depth look at our current electoral system and uncovers the flaws in it.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_fed68.html">Federalist #68</A></B><BR>
+<FONT class="medium" id="red">by Alexander Hamilton</FONT><BR>
+<FONT class="medium" id="red">originally published 3/14/1788; posted here 3/18/2001</FONT>
+<DD><FONT id="medium">As a whole, the Federalist Papers were written to defend the revolutionary Constitution, and to explain its complexities and principles. Specifically, number 68 explains the mode of electing the President.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_ecreform2001.html">Electoral Reform in the 2000 Election Aftermath</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 6/17/2001</FONT>
+<DD><FONT id="medium">A look at what Electoral College reforms state legislatures around the country have proposed in the months since the 2000 election.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_bound.html">Which electors are bound?</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 11/30/2000</FONT>
+<DD><FONT id="medium">Finally! The answer to the most frequently asked question I've been asked since Election Day 2000.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_faithless.html">Faithless</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 11/30/2000; updated 12/31/2000</FONT>
+<DD><FONT id="medium">Since 1789, 21,358 people have voted in the Electoral College. Meet the ten electors who cast their ballots contrary to expectations.</FONT>
+</DL>
+<DL>
+<DT><B>Dangers of Direct Election - <A href="art_hyp1.html">1</A> & <A href="art_hyp2.html">2</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 11/10/2000 & 11/14/2000</FONT>
+<DD><FONT id="medium">Pair of articles that use hypothetical examples to show that there are dangers to direct elections.</FONT>
+</DL>
+<!-- <DL>
+<DT><B><A href="letter.html" target="_blank">An Open Letter To All Americans Concerned About The Electoral College</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 11/8/2000</FONT>
+<DD><FONT id="medium">Before you have a knee-jerk reaction to the possible results of the current election, please read this letter.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_ecemail.html">A quick argument for the Electoral College over direct elections</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 11/3/2000</FONT>
+<DD><FONT id="medium">Until I can get something more in-depth written, here's my response to an email about the Electoral College and direct elections.</FONT>
+</DL> -->
+<DL>
+<DT><B><A href="art_before12.html">The electoral process before the 12th Amendment</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 5/2000</FONT>
+<DD><FONT id="medium">Briefly explains the differences between the election process of today and the process as originally defined in the Constitution.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_preztoveep.html">Can a two-term president be vice president?</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 8/19/2000</FONT>
+<DD><FONT id="medium">Why a CNN article saying Clinton could be Gore's VP is mistaken.</FONT>
+</DL>
+
+
+</TD><TD bgcolor="#FFFFFF"><BR></TD></TR><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_down_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_down_right.gif" width="25" height="24" border="0"></TD></TR></TABLE>
+
+<BR><CENTER><A href="#top" class="menutitle">BACK TO THE TOP</A></CENTER><BR></SPAN>
+
+</DIV>
+
+<DIV id="tab-two" style="display:none;">
+
+<TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_up_left.gif" width="25" height="24" border="0"></TD>
+<TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_up_right.gif" width="25" height="24" border="0"></TD></TR><TR align="left" valign="top"><TD bgcolor="#FFFFFF"><BR></TD>	<TD bgcolor="#FFFFFF">
+	
+<CENTER><TABLE border="0" width="75%" cellspacing=0" cellpadding="10" style=" border-width: 1px; border-style: solid; border-color: #000000; " >
+<TR align="left" valign="top">
+	<TD bgcolor="#CCCCCC" width="30"><BR></TD>
+	<TD><B id="red">HISTORY, BIOGRAPHY, ANALYSIS</B>
+	<P>This section is for articles about past and current elections, candidates, and other historical people and events.
+</TD></TR></TABLE></CENTER>	
+<BR><P>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_bloomfield_1912progressive.html">The Progressive Party and the 1912 Presidential Election</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2009, 2, 28 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by Kevin Bloomfield</FONT><BR>
+<FONT class="medium" id="red">January 26, 2009</FONT><BR>
+
+<DD><FONT id="medium">Kevin Bloomfield looks at the fascinating 1912 election, an all-star event that featured a former president running in a third party, a sitting president who would come in third place, and a future president who would make the most of the situation. Bloomfield hypothesizes on what the electoral landscape might look like today if the Progressives could have healed the split in the Republican party and won the election.</FONT>
+</DL>
+
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_whyec.html">Why the Electoral College is better for America than direct elections</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 11, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 4, 2008</FONT><BR>
+
+<DD><FONT id="medium">Maybe one of the hardest questions to answer - "Why not do away with the Electoral College and use the popular vote?". Not only is it difficult to explain, it is difficult for some people to accept! As we head to the polls again today I'll take another stab at reaching the hearts and minds of the electorate.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_2008projection.html">The 2008 President Elect Projection</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 11, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 3, 2008</FONT><BR>
+
+<DD><FONT id="medium">The official President Elect projection of the 2008 race.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_novick_2004_postmortem.html">Post-Mortem on Post-Election Post-Mortems, 2004</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 11, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by Michael Novick</FONT><BR>
+<FONT class="medium" id="red">October 31, 2008</FONT><BR>
+
+<DD><FONT id="medium">Michael Novick puts the microscope to the 2004 election to see what part institutionalized racism and white supremacy of the electoral system may have played.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="http://presidentelect.org/art_fowler_diploma.html">No Matter How Much They Study, the Electoral College Won't Give a Democrat a Diploma in 2008</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2008, 09, 24 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by Philip Fowler</FONT><BR>
+<FONT class="medium" id="red">September 4, 2008</FONT><BR>
+
+<DD><FONT id="medium">Philip Fowler does the math and says things look good for the Republicans in 2008.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_sheppard_2004tie.html">The 10th Inning: How a Presidential Election Tie Could Elect a Wildcard Candidate</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 7 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by Simon Sheppard</FONT><BR>
+<FONT class="medium" id="red">October 24, 2004</FONT><BR>
+
+<DD><FONT id="medium">Simon Sheppard looks at some of the wildcard scenarios that could develop in the case of a tie in the Electoral College - including a possible McCain Administration!</FONT>
+</DL>
+
+<DL>
+<DT><B>In the Spotlight: <A href="art_fowler_spot_ar.html">Arkansas</A> and <A href="art_fowler_spot_pairings.html">Strange Political Pairings</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 7 );
+// -->
+</SCRIPT><BR>
+Bush v. Kerry 2004 Electoral College Analysis</B><BR>
+<FONT class="medium" id="red">by Philip Fowler</FONT><BR>
+<FONT class="medium" id="red">October 24, 2004</FONT><BR>
+
+<DD><FONT id="medium">Philip Fowler examines Arkansas and some political pairings throughout history</FONT>
+</DL>
+
+<DL>
+<DT><B>In the Spotlight: <A href="art_fowler_spot_oh.html">Ohio</A> and <A href="art_fowler_spot_gpr.html">The Great Plains and Rockies</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 10, 10 );
+// -->
+</SCRIPT><BR>
+Bush v. Kerry 2004 Electoral College Analysis</B><BR>
+<FONT class="medium" id="red">by Philip Fowler</FONT><BR>
+<FONT class="medium" id="red">September 26, 2004</FONT><BR>
+
+<DD><FONT id="medium">Philip Fowler takes a closer look at the swing state of Ohio and the Republican strongholds in the Plains and Rockies.</FONT>
+</DL>
+
+<DL>
+<DT><B>In the Spotlight: <A href="art_fowler_spot_nc.html">North Carolina</A> and <A href="art_fowler_spot_wi.html">Wisconsin</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 9, 19 );
+// -->
+</SCRIPT><BR>
+Bush v. Kerry 2004 Electoral College Analysis</B><BR>
+<FONT class="medium" id="red">by Philip Fowler</FONT><BR>
+<FONT class="medium" id="red">September 5, 2004</FONT><BR>
+
+<DD><FONT id="medium">Philip Fowler takes a closer look at two states that could figure prominently in the 2004 election. Who will Wisconsin swing to? And will Edwards be of any help in North Carolina?</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_notfavson.html"><A href="art_sheppard_e2004dems.html">Democratic Line-up For 2004</A></B><BR>
+<FONT class="medium" id="red">by Simon Sheppard</FONT><BR>
+<FONT class="medium" id="red">posted 12/30/2002</FONT><BR>
+
+<DD><FONT id="medium">With Gore officially out, Simon Sheppard analyizes the field of Democratic candidates for the 2004 presidential election including some you know (Lieberman), some you may not know (Clark), and some wildcards (Dean).</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_notfavson.html">Not So Favorite Sons</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 10/1/2002</FONT><BR>
+
+<DD><FONT id="medium">You may be surprised to discover that, contrary to what you usually hear, a presidential candidate losing their home state is actually a fairly common event.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_cooper_e1972an.html">An Interpretation of the 1972 Presidential Election Landslide</A></B><BR>
+<FONT class="medium" id="red">by Craig W. Cooper</FONT><BR>
+<FONT class="medium" id="red">posted 9/29/2001</FONT><BR>
+
+<DD><FONT id="medium">Craig W. Cooper dissects the 1972 election and hypothesizes that fear and anxiety contributed to the Nixon landslide.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_everythingold.html">Everything Old Is New Again</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 9/29/2001</FONT><BR>
+
+<DD><FONT id="medium">A look at the most disputed presidential election in history - and we're not talking about Bush vs Gore!</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_hunt_aintbroke.html">If It Ain't Broke...Don't Fix It!</A></B><BR>
+<FONT class="medium" id="red">by Dell Hunt</FONT><BR>
+<FONT class="medium" id="red">posted 6/25/2001</FONT>
+<DD><FONT id="medium">Dell Hunt looks at the past to explain how the Electoral College worked as it was supposed to in the recent election.</FONT>
+</DL>
+<DL>
+
+<DL>
+<DT><B><A href="art_sheppard_e2000an.html">An analysis of the U.S. Presidential Election of 2000</A></B><BR>
+<FONT class="medium" id="red">by Simon Sheppard</FONT><BR>
+<FONT class="medium" id="red">posted 3/23/2001</FONT>
+<DD><FONT id="medium">Simon Sheppard delves into the Electoral College numbers from the 2000 election, the 13 elections before it, and the new census numbers, and concludes that the current system may be unfairly biased toward the Republican Party.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_venable_e2000an.html">The Founding Fathers' View of the 2000 Controversy</A></B><BR>
+<FONT class="medium" id="red">by Steve Venable</FONT><BR>
+<FONT class="medium" id="red">posted 3/22/2001</FONT>
+<DD><FONT id="medium">Steve Venable explains how the "crisis" during the 2000 election was overblown by exploring some of the motivations of the founding fathers in creating the Electoral College.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_2000score.html">The 2000 Electoral College predictions scoreboard</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 3/21/2001</FONT>
+<DD><FONT id="medium">The press had some trouble counting the electoral votes on election night. Did they do any better predicting it before hand? For some of those who tried to predict the outcome of the Electoral College in 2000, it's time to see how you did!</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_fed68.html">Federalist #68</A></B><BR>
+<FONT class="medium" id="red">by Alexander Hamilton</FONT><BR>
+<FONT class="medium" id="red">originally published 3/14/1788; posted here 3/18/2001</FONT>
+<DD><FONT id="medium">As a whole, the Federalist Papers were written to defend the revolutionary Constitution, and to explain its complexities and principles. Specifically, number 68 explains the mode of electing the President.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_postprez.html">No place to go but down!</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 1/10/2001; updated 1/12/2001</FONT>
+<DD><FONT id="medium">When you've held the world's top political job, everything else in a demotion! However, several presidents have continued in government service after their time at the White House.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_newev.html">New electoral vote totals for 2004-2008</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 12/29/2000</FONT>
+<DD><FONT id="medium">Using the new 2000 Census data recently released, see how the electoral votes will be distributed for the next two elections, and how the tight 2000 vote would have turned out using the new numbers.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_sonofprez.html">Sons of Fortune</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 12/21/2000; updated 12/31/2000</FONT>
+<DD><FONT id="medium">If your dad was President, what's in your political future? Find out how far the sons of former presidents went in politics.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_veeptoprez.html">The slippery Vice Presidential stepping stone</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 12/14/2000</FONT>
+<DD><FONT id="medium">History shows that being veep isn't the most successful route to being elected President.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_evpvdisagree.html">The Electoral College vs the popular vote in 1824, 1876, and 1888</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 12/13/2000</FONT>
+<DD><FONT id="medium">You've seen the elections of 1824, 1876, and 1888 profiled in the news as years the Electoral College failed. It's time to set them straight!</FONT>
+</DL>
+
+<P>
+
+</TD><TD bgcolor="#FFFFFF"><BR></TD></TR><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_down_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_down_right.gif" width="25" height="24" border="0"></TD></TR></TABLE>
+
+<BR><CENTER><A href="#top" class="menutitle">BACK TO THE TOP</A></CENTER><BR></SPAN>
+
+</DIV>
+
+<DIV id="tab-three" style="display:none;">
+
+<TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_up_left.gif" width="25" height="24" border="0"></TD>
+<TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_up_right.gif" width="25" height="24" border="0"></TD></TR><TR align="left" valign="top"><TD bgcolor="#FFFFFF"><BR></TD>	<TD bgcolor="#FFFFFF">
+	
+<CENTER><TABLE border="0" width="75%" cellspacing="0" cellpadding="10" style=" border-width: 1px; border-style: solid; border-color: #000000; " >
+<TR align="left" valign="top">
+	<TD bgcolor="#CCCCCC" width="30"><BR></TD>
+	<TD><B id="red">MISC ARTICLES</B>
+	<P>This section is for articles about anything else. It also includes archived articles.
+</TD></TR></TABLE></CENTER>	
+<BR><P>
+
+
+<DL>
+<DT><B><A href="art_ectie_an_2004.html">What if the Electoral College is tied at 269 in 2004? Part 2 - Analysis</A></B><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 16 );
+// -->
+</SCRIPT><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">11/2/2004</FONT><BR>
+
+<DD><FONT id="medium">With the 2004 race still so close as we near election day, what would happen if Bush and Kerry were to tie in the electoral college? Part 2 analyizes who might win in a tie.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_2004projection.html">President Elect's 2004 Electoral Projection</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 21 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 1, 2004</FONT><BR>
+
+<DD><FONT id="medium">The official President Elect projection of the 2004 race.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_2004computer.html">President Elect's 2004 Computer Analysis</A><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 21 );
+// -->
+</SCRIPT></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">November 1, 2004</FONT><BR>
+
+<DD><FONT id="medium">Using current poll data, past elections, and state voting tendencies, the President Elect computer tries to predict the 2004 Electoral College outcome. This is the final update.</FONT>
+</DL>
+
+
+<DL>
+<DT><B><A href="art_ectie_pr_2004.html">What if the Electoral College is tied at 269 in 2004? Part 1 - Procedure</A></B><SCRIPT language="JavaScript" type="text/javascript">
+<!--
+newUntil ( 2004, 11, 8 );
+// -->
+</SCRIPT><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">10/25/2004</FONT><BR>
+
+<DD><FONT id="medium">With the 2004 race still so close as we near election day, what would happen if Bush and Kerry were to tie in the electoral college? Part 1 discusses the procedure that would choose the president.</FONT>
+</DL>
+
+<DL>
+<DT><B><A href="art_schimler_singing.html">Singing to the Oval Office: A Written History of the Political Campaign Song</A></B><BR>
+<FONT class="medium" id="red">by Stuart Schimler</FONT><BR>
+<FONT class="medium" id="red">posted 2/13/2002</FONT><BR>
+
+<DD><FONT id="medium">Stuart Schimler looks back at the rich history and tradition of what used to be an important part of a presidential campaign - the campaign song.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_projection2000.html">PE 2000 Election Projection</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 11/3/2000</FONT>
+<DD><FONT id="medium">The "official" President Elect projection of the 2000 race. Includes state-by-state predictions.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_pe2000.html">PE 2000 Electoral College computer analysis</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">updated 11/3/2000</FONT>
+<DD><FONT id="medium">Using current poll data, past elections, and state voting tendencies, the President Elect computer tries to predict the electoral college outcome. This is the final update.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_ectie_an.html">What if the Electoral College is tied at 269? Part 2 - Analysis</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 10/12/2000</FONT>
+<DD><FONT id="medium">With the 2000 race still so close as we near election day, what would happen if Bush and Gore were to tie in the electoral college? Part 2 analyizes what the outcome might be.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_ectie_pr.html">What if the Electoral College is tied at 269? Part 1 - Procedure</A></B><BR>
+<FONT class=medium id="red">by James R Whitson</FONT><BR>
+<FONT class=medium id="red">posted 10/6/2000</FONT>
+<DD><FONT id="medium">With the 2000 race still so close as we near election day, what would happen if Bush and Gore were to tie in the electoral college? Part 1 discusses the procedure that would choose the president.</FONT>
+</DL>
+<DL>
+<DT><B><A href="art_pe2000note.html">More about the Electoral College computer analysis</A></B><BR>
+<FONT class="medium" id="red">by James R Whitson</FONT><BR>
+<FONT class="medium" id="red">posted 9/25/2000</FONT>
+<DD><FONT id="medium">After several inquiring emails, here's everything you wanted know about the analysis and weren't afraid to ask!</FONT>
+</DL>
+
+<P>
+
+</TD><TD bgcolor="#FFFFFF"><BR></TD></TR><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_down_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_down_right.gif" width="25" height="24" border="0"></TD></TR></TABLE>
+
+<BR><CENTER><A href="#top" class="menutitle">BACK TO THE TOP</A></CENTER><BR></SPAN>
+</DIV>
+
+<TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_up_left.gif" width="25" height="24" border="0"></TD>
+<TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_up_right.gif" width="25" height="24" border="0"></TD></TR><TR align="left" valign="top"><TD bgcolor="#FFFFFF"><BR></TD>	<TD bgcolor="#FFFFFF">
+	
+<CENTER><B>Choose one of the categories above to view those articles</B><P>Articles not written by the webmaster do not necessarily reflect the views of President Elect.<P>We are always accepting article submissions. Articles should be related to presidential elections, analysis, the Electoral College, relevant Constitution issues, election law, winning and losing presidential/vice presidential candidates, etc. We will not accept articles that are overtly  biased or are deemed not relevant. For more info, check out the <A href="sub.html">submission guidelines</A>. If you find an interesting article elsewhere on the web and think it should be added here, make sure it conforms with the <A href="sub.html">submission guidelines</A> and email us the link. </CENTER>
+
+</TD><TD bgcolor="#FFFFFF"><BR></TD></TR><TR align="left" valign="top"><TD width="25"><IMG src="images/bdr_down_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="images/bdr_down_right.gif" width="25" height="24" border="0"></TD></TR></TABLE>
+
+<BR><TABLE width="820" border="0" cellspacing="0" cellpadding="0"><TR align="left" valign="top"><TD width="25"><IMG src="http://presidentelect.org/images/bdr_up_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="http://presidentelect.org/images/bdr_up_right.gif" width="25" height="24" border="0"></TD></TR><TR align="left" valign="top"><TD bgcolor="#FFFFFF"><BR></TD><TD bgcolor="#FFFFFF"><CENTER><FONT class="content" id="small">If you have any questions, comments, gripes, error reports, corrections, etc.,<BR>feel free to send them to <A href="mailto:email@presidentelect.org">email@presidentelect.org</A>.</FONT><P><FONT class="content" id="small">original content and graphics unless otherwise noted<BR>&copy; 1999-2012 James R Whitson</FONT></CENTER></TD><TD bgcolor="#FFFFFF"><BR></TD></TR><TR align="left" valign="top"><TD width="25"><IMG src="http://presidentelect.org/images/bdr_down_left.gif" width="25" height="24" border="0"></TD><TD bgcolor="#FFFFFF"><BR></TD><TD width="25"><IMG src="http://presidentelect.org/images/bdr_down_right.gif" width="25" height="24" border="0"></TD></TR></TABLE><!-- Woopra Code Start --><script type="text/javascript" src="http://static.woopra.com/js/woopra.js"></script><!-- Woopra Code End -->
+<P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P><BR><P>
+</TD>
+<!-- ##### END RIGHT SIDE ##### -->
+</TR></TABLE>
+</DIV>
+<!-- ##### END CONTAINER ##### -->
+
+</BODY>
+</HTML><SCRIPT type="text/javascript">/************************************************ Drop down menu w/ description- © Dynamic Drive (www.dynamicdrive.com)* This notice must stay intact for use* Visit http://www.dynamicdrive.com/ for full source code***********************************************///1) CUSTOMIZE TEXT DESCRIPTIONS FOR LINKS ABOVEvar thetext1=new Array()thetext1[0]="Select an election <BR>above to go to<BR>that year's results"thetext1[1]="Obama (DEM)<BR>vs<BR>Republican"thetext1[2]="Obama (DEM)<BR>vs<BR>McCain (REP)"thetext1[3]="Bush (REP)<BR>vs<BR>Kerry (DEM)"thetext1[4]="Bush (REP) vs<BR>Gore (DEM) vs<BR>Nader (GRN)"thetext1[5]="Clinton (DEM) vs<BR>Dole (REP) vs<BR>Perot (REF)"thetext1[6]="Clinton (DEM) vs<BR>Bush (REP) vs<BR>Perot (Ind)"thetext1[7]="Bush (REP)<BR>vs<BR>Dukakis (DEM)"thetext1[8]="Reagan (REP)<BR>vs<BR>Mondale (DEM)"thetext1[9]="Reagan (REP) vs<BR>Carter (DEM) vs<BR>Anderson (Ind)"thetext1[10]="Carter (DEM)<BR>vs<BR>Ford (REP)"thetext1[11]="Nixon (REP)<BR>vs<BR>McGovern (DEM)"thetext1[12]="Nixon (REP) vs<BR>Humphrey (DEM) vs<BR>Wallace (AI)"thetext1[13]="Johnson (DEM)<BR>vs<BR>Goldwater (REP)"thetext1[14]="Kennedy (DEM) vs<BR>Nixon (REP) vs<BR>Byrd (DEM)"thetext1[15]="Eisenhower (REP)<BR>vs<BR>Stevenson (DEM)"thetext1[16]="Eisenhower (REP)<BR>vs<BR>Stevenson (DEM)"thetext1[17]="Truman (DEM) vs<BR>Dewey (REP) vs<BR>Thurmond (SRD)"thetext1[18]="Roosevelt (DEM)<BR>vs<BR>Dewey (REP)"thetext1[19]="Roosevelt (DEM)<BR>vs<BR>Willkie (REP)"thetext1[20]="Roosevelt (DEM) vs<BR>Landon (REP) vs<BR>Lemke (UNI)"thetext1[21]="Roosevelt (DEM) vs<BR>Hoover (REP) vs<BR>Thomas (SOC)"thetext1[22]="Hoover (REP)<BR>vs<BR>Smith (DEM)"thetext1[23]="Coolidge (REP) vs<BR>Davis (DEM) vs<BR>LaFollette (PRG)"thetext1[24]="Harding (REP) vs<BR>Cox (DEM) vs<BR>Debs (SOC)"thetext1[25]="Wilson (DEM) vs<BR>Hughes (REP) vs<BR>Benson (SOC)"thetext1[26]="Wilson (DEM) vs<BR>Roosevelt (PRO) vs<BR>Taft (REP)"thetext1[27]="Taft (REP) vs<BR>Bryan (DEM) vs<BR>Debs (SOC)"thetext1[28]="Roosevelt (REP) vs<BR>Parker (DEM)vs<BR>Debs (SOC)"thetext1[29]="McKinley (REP) vs<BR>Bryan (DEM) vs<BR>Woolley (PRB)"thetext1[30]="McKinley (REP)<BR>vs<BR>Bryan (DEM)"thetext1[31]="Cleveland (DEM) vs<BR>Harrison (REP) vs<BR>Weaver (POP)"thetext1[32]="Harrison (REP) vs<BR>Cleveland (DEM) vs<BR>Fisk (PRB)"thetext1[33]="Cleveland (DEM) vs<BR>Blaine (REP) vs<BR>Butler (GB)"thetext1[34]="Garfield (REP) vs<BR>Hancock (DEM) vs<BR>Weaver (GB)"thetext1[35]="Hayes (REP)<BR>vs<BR>Tilden (DEM)"thetext1[36]="Grant (REP)<BR>vs<BR>Greeley/Hendricks (DLR)"thetext1[37]="Grant (REP)<BR>vs<BR>Seymour (DEM)"thetext1[38]="Lincoln (REP)<BR>vs<BR>McClellan (DEM)"thetext1[39]="Lincoln (REP) vs<BR>Breckinridge (SD) vs<BR>Bell (CU)"thetext1[40]="Buchanan (DEM) vs<BR>Fremont (REP) vs<BR>Fillmore (AKN)"thetext1[41]="Pierce (DEM) vs<BR>Scott (WHG) vs<BR>Hale (FS)"thetext1[42]="Taylor (WHG) vs<BR>Cass (DEM) vs<BR>Van Buren (FS)"thetext1[43]="Polk (DEM) vs<BR>Clay (WHG) vs<BR>Birney (LBY)"thetext1[44]="Harrison (WHG)<BR>vs<BR>Van Buren (DEM)"thetext1[45]="Van Buren (DEM) vs<BR>Harrison (WHG) vs<BR>White (WHG)"thetext1[46]="Jackson (DEM) vs<BR>Clay (NR) vs<BR>Floyd (IND)"thetext1[47]="Jackson (DR)<BR>vs<BR>Adams (FED)"thetext1[48]="Adams (DR) vs<BR>Jackson (DR) vs<BR>Crawford (DR)"thetext1[49]="Monroe (DR)<BR>vs<BR>Adams (DR)"thetext1[50]="Monroe (DR)<BR>vs<BR>King (FED)"thetext1[51]="Madison (DR)<BR>vs<BR>Clinton (FED)"thetext1[52]="Madison (DR) vs<BR>Pinckney (FED) vs<BR>Clinton (DR)"thetext1[53]="Jefferson (DR)<BR>vs<BR>Pinckney (FED)"thetext1[54]="Jefferson (DR) vs<BR>Burr (DR) vs<BR>Adams (FED)"thetext1[55]="Adams (FED) vs<BR>Jefferson (DR) vs<BR>Pinckney (FED)"thetext1[56]="Washington (FED) vs<BR>Adams (FED) vs<BR>Clinton (DR)"thetext1[57]="Washington (FED) vs<BR>Adams (FED) vs<BR>Jay (FED)"// Now, see 2) below for final customization stepfunction displaydesc(which, descriptionarray, container){if (document.getElementById)document.getElementById(container).innerHTML=descriptionarray[which.selectedIndex]}function jumptolink(what){var selectedopt=what.options[what.selectedIndex]if (document.getElementById && selectedopt.getAttribute("target")=="newwin")window.open(selectedopt.value)elsewindow.location=selectedopt.value}//2) Call function displaydesc() for each drop down menu you have on the page//   This function displays the initial description for the selected menu item//   displaydesc(name of select menu, name of corresponding text array, ID of SPAN container tag)://   Important: Remove the calls not in use (ie: 2nd line below if there's only 1 menu on your page)displaydesc(document.form1.select1, thetext1, 'textcontainer1')</SCRIPT>

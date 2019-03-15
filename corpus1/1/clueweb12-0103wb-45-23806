@@ -1,0 +1,450 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T23:57:14Z
+WARC-TREC-ID: clueweb12-0103wb-45-23806
+WARC-Target-URI: http://www.aspfree.com/c/a/Code-Examples/Connectivity-in-Graphs/
+WARC-Payload-Digest: sha1:7CSQW4BLHE5MVVW7P4Q6VH365DOJUJNK
+WARC-IP-Address: 209.35.17.17
+WARC-Record-ID: <urn:uuid:d13b9417-252e-4473-b431-37abf8df647e>
+Content-Type: application/http; msgtype=response
+Content-Length: 81157
+
+HTTP/1.1 200 OK
+Date: Sun, 12 Feb 2012 23:57:14 GMT
+Server: Apache
+X-Powered-By: PHP/5.1.6
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Last-Modified: Sun, 12 Feb 2012 23:57:14 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>Connectivity in Graphs - ASP Free</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta name="description" content="Think outside the box. This is the motto for today. Today, using graphs, we will find out how much of a threat just the elimination of a military base poses to us. For a precise calculation of this, we will use the Ford-Fulkerson algorithm and modify it for our needs by using the motto of the day. This article is the twelfth part of a thirteen-part series that shows how to use graphs and algorithms to solve everyday problems." /><meta name="keywords" content="Connectivity, in, Graphs, how-to, tutorial" /><base href="http://www.aspfree.com/" /><script language="JavaScript1.2" src="http://www.aspfree.com/includes/js/rollover.js" type="text/javascript"></script>
+<script language="JavaScript1.2" src="http://www.aspfree.com/includes/js/mambojavascript.js" type="text/javascript"></script>
+<style type="text/css" >
+.smalltitlenew, a.smalltitlenew:link, a.smalltitlenew:visited, a.smalltitlenew:active {
+font-family:  "Trebuchet MS", "Impact", Helvetica,Arial, Verdana, sans-serif  ;
+font-size: 40px;
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+padding:0px;
+margin:0px;
+line-height:42px;
+}
+</style>
+<link rel="canonical" href="http://www.aspfree.com/c/a/Code-Examples/Connectivity-in-Graphs/" /><meta name="robots" content="index,follow"> <link rel="alternate" type="application/rss+xml" title="ASP.Net Free Tutorials and Advice" href="http://www.aspfree.com/rss.xml" /> <link rel="alternate" type="application/rss+xml" title="C# Tutorials" href="http://www.aspfree.com/rss-feeds-46.xml" /> <link rel="alternate" type="application/rss+xml" title="VB.Net Tutorials" href="http://www.aspfree.com/rss-feeds-47.xml" /> <link rel="alternate" type="application/rss+xml" title="MSSQL Server Tutorials" href="http://www.aspfree.com/rss-feeds-51.xml" /> <link rel="alternate" type="application/rss+xml" title="ASP Free Forum Q and A" href="http://forums.aspfree.com/external.php" /><link rel="stylesheet" type="text/css" href="http://www.devshed.com/developershed_navbar/css/reset.css" /><script type='text/javascript' src='http://otto.developershed.com/www/delivery/spcjs.php?id=8&amp;target=_blank'></script>
+<script type="text/javascript" src="http://www.devshed.com/js/unminified.js"></script>
+<script type="text/javascript" src="http://www.devshed.com/developershed_navbar/js/background-position.js"></script>
+<script type="text/javascript" src="http://www.devshed.com/developershed_navbar/js/flyouts.js"></script>
+<link href="/templates/devshed/css/fpstyles3.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="/developershed_navbar/css/styles_2.css" /><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher:'8b40f7a5-b438-43ba-9616-6052d54aeed6'});</script>
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);  
+})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-290307-6']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<META http-equiv="Refresh" CONTENT="600"></head><body bgcolor="#FFF" link="#000000" vlink="#000000" alink="#000000" leftmargin="0" topmargin="0"><script language="text/javascript">
+window.google_analytics_uacct = "UA-290307-6";
+</script>
+<div id="wrapper"> <div id="navigation"> <ul id="main-nav"> <li id="aspfree-current" class="current"> <a href="http://www.aspfree.com">ASP.Net Tutorials</a> <ul> <li id="topics-aspfree"> <a href="/">Topics</a> <div class="submenu"> <p class="loader">Loading ASP Free Topics...</p> </div> </li> <li id="forums-aspfree"> <a href="http://forums.aspfree.com">Forums</a> <div class="submenu"> <p class="loader">Loading Forum Links...</p> </div>  </li> </ul> </li> <li id="devshed" class="tab-left"> <a href="http://www.devshed.com" title="Open Source Web Development">Dev Shed</a> <div class="submenu-tab-left"> <p class="loader">Loading Dev Shed Topics...</p> </div>  </li> <li id="devarticles" class="tab-middle">  <a href="http://www.devarticles.com" title="Web Development Help">Dev Articles</a> <div class="submenu-tab-middle"> <p class="loader">Loading Dev Articles Topics...</p> </div> </li> <li id="seochat" class="tab-right">  <a href="http://www.seochat.com" title="SEO Help">SEO Chat</a> <div class="submenu-tab-right"> <p class="loader">Loading SEO Topics...</p> </div> </li> <li id="devshed-network"> <a href="javascript:void(0);">The Devshed Network</a> <ul> <li id="devhardware"> <a href="http://www.devhardware.com" title="Hardware Reviews & OverClocking How-To">Dev Hardware</a> <div class="submenu"> <p class="loader">...</p> </div> </li> <li id="scripts"> <a href="http://www.scripts.com" title="Script Directory of PHP, ASP.NET, Java Examples">Scripts</a> <div class="submenu"> <p class="loader">...</p> </div> </li> <li id="tutorialized"> <a href="http://www.tutorialized.com" title="Photoshop and Flash Tutorials">Tutorialized</a> <div class="submenu"> <p class="loader">...</p> </div> </li> <li id="webhosters"><a href="http://webhosting.devshed.com" title="Web Hosting Help">Web Hosters</a></li> <li id="codewalkers"><a href="http://www.codewalkers.com" title="PHP and LAMP Development">Codewalkers</a></li> <li id="devmechanic"><a href="http://tools.devshed.com" title="Webmaster and Developer Tools">Dev Shed Tools</a></li> </ul> </li><script type="text/javascript">
+$(document).ready(function() {
+var jsonUrl = "/index.php?option=login&task=login&ajax=1";
+$("#ajaxlogin").click(function(){
+var u = $("#username_1").val();
+var p = $("#password_1").val();
+var l = 'english';
+var o = 'login';
+var jqxhr = $.post(jsonUrl, { username: u, passwd: p, oc2: o, lang: l }, function() {
+})
+//        .success(function() { alert("second success"); })
+//        .error(function() { alert("error"); })
+//        .complete(function() { alert("complete"); });
+// perform other work here ...
+// Set another completion function for the request above
+jqxhr.success(function(){ document.location.href="/"; });
+});
+});  
+</script>
+ <li id="login-registration"> <a href="#">Login/Sign-up</a> <div id="login-submenu"> <form name="login" id="loginForm"> <fieldset> <ul> <li> <label for="username_1">username</label> <input type="text" name="username" id="username_1" class="text" /> </li> <li> <label for="password_1">password</label>  <input type="password" name="password" id="password_1" class="text" /> <input type="hidden" name="op2" value="login" />  <input type="hidden" name="lang" value="english" /> </li> <li> <input type="button" id="ajaxlogin" name="submit" value="Login" class="submit" /> </li> <li id="sign-up"> <a href="/index.php?option=com_registration&amp;task=register">sign up!</a> </li> <li id="lost-password"> <a href="/index.php?option=com_registration&amp;task=lostPassword">Lost Password?</a> </li> </ul> </fieldset> </form> </div> </li> </ul> <h4 id="aspfree-logo"><a href="http://www.aspfree.com">ASP Free</a></h4> <div style="background-color:#fff;width:500px;margin-left:80px;display:block;"><h2>Code Examples</h2><span><strong>Programming Tutorials &amp; News</strong></span></div> <table width="100%" border="0" cellpadding="0" cellspacing="0"> <tr> <td height="26" style="padding-left:100px;" width="100%" bgcolor="#517CA9"><nobr><span class="pathwaybg"><a href="http://www.aspfree.com/" class="pathwaybg"><span class=pathwaybg><u>Home</u></span></a> <img src="images/M_images/arrow_black.png" border="0" alt="arrow" /> <a title="Code Examples Category Index" href="http://www.aspfree.com/c/b/Code-Examples/" class="pathwaybg"><span class=pathwaybg><u>Code Examples</u></span></a> <img src="images/M_images/arrow_black.png" border="0" alt="arrow" /> Connectivity in Graphs </span></nobr></td> </td> </tr> </table> </div> <script type="text/javascript">
+$('.submenu, .submenu-tab-left, .submenu-tab-middle, .submenu-tab-right').css('display', 'none');
+</script>
+<table align=center width="1003" border="0" cellspacing="0" cellpadding="0"> <tr valign="middle"><td align=center height="115" background="http://images.devshed.com/common/bckg-topbanner.gif"><script type='text/javascript'><!--// <![CDATA[
+OA_show(49);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=2129584'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=49&amp;n=2129584' /></a></noscript>
+</td></tr></table><div align=center> <div id=resultframe> <div id=resultcontent> <table width=100% cellpadding=0 cellspacing=0> <tr><td valign=top><table align="center" width="98%" bgcolor="#FFFFFF" cellpadding="0" cellspacing="0"><TR><TD class="whitebg"><style type="text/css">
+#TOC {
+font-size:22px !important;
+font-weight:bold !important;
+font-family:Arial;
+}
+.story-intro {
+font-size:18px;
+font-weight:bold;
+margin-left:10px;
+width:560px;
+float:right;
+display:block;
+margin-top:0px;
+padding-top:0px;
+}
+.ad2 {             
+color:#003366;
+text-align:right;
+font-family:Arial,Helvetica,sans-serif;
+font-size:8px; 
+line-height:12px;
+margin-bottom:0px;
+margin-top:2px;   
+margin-right:5px;
+padding-top:0px;
+text-decoration:none;
+}               
+.abblue2 {
+color:#003366;
+font-family:Arial,Helvetica,sans-serif;
+font-size:.8em;
+text-decoration:none;
+font-weight:bold;
+}               
+.abblue2 p{     
+margin-top:2px; 
+margin-left:15px;
+margin-bottom:2px;
+margin-right:15px; 
+}               
+.toc2 {
+float:left;   
+width:160px;
+clear:left;
+display:block;
+}
+</style> 
+<style type="text/css">
+#infosocialbox {
+min-width:800px;max-width:725px;display:block;width:800px;_width:820px;padding:10px;padding-top:0px;
+}
+#topinfobox {
+min-width:760px;_width:810px;width:760px;display:block;margin-right:5px;padding:5px;background-color:#81AAD4;padding:5px 20px 0px 20px;margin-bottom:10px;border-radius:10px;margin-left:20px;
+}
+#rightinfoad {
+min-width:336px;height:auto;_width:340px;width:336px;display:block;float:right;clear:right;padding-left:10px;
+}
+#rightsearchbox {
+min-width:325px;_width:300px;width:300px;display:block;float:right;clear:right;margin-top:25px;padding-left:10px;
+}
+#rightsearch{
+float:left;
+margin-bottom:20px;
+width:336px;
+}
+#searchmodule{
+margin-bottom:10px;
+text-align:center;
+display:block;
+margin-left:0px;
+padding-left:0px;
+}
+#searchmodule #searchinput {
+float:left;
+font-size:0.825em;
+margin-left:9px;
+margin-right:5px;
+padding:3px;
+width:205px;
+}
+#aboutbox {
+float:left;
+width:150px;
+display:block;
+}
+.fullcol {
+width:100%;
+}
+.onecol, .twocol-leader, .twocol-mpu, .twocol-split, .threecol {
+width:990px;
+margin:0 auto;
+} 
+.clearfloat { 
+clear:both;
+height:0;
+font-size: 0px;
+line-height: 0px;
+}
+</style>
+<div id="infosocialbox"><!-- removed in favor of po.st 12/20 - keith<div id="share-holder"> <ul id="sharebar"><li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-counter="top"></script></li>
+ <li><span class='st_twitter_vcount' displayText='Tweet'></span></li> <li><span class='st_facebook_vcount' displayText='Facebook'></span></li> <li style="padding-top:3px !important; margin-left:5px;"><g:plusone size="tall"></g:plusone></li> <li><span class='st_sharethis_vcount' displayText='Share'></span></li> <br class="clearfloat"> </ul> </div>--> <div id="topinfobox"> <div><h1 class="site-tit3">Connectivity in Graphs</h1></div> <p class="story-intro"><strong>Think outside the box. This is the motto for today. Today, using graphs, we will find out how much of a threat just the elimination of a military base poses to us. For a precise calculation of this, we will use the Ford-Fulkerson algorithm and modify it for our needs by using the motto of the day. This article is the twelfth part of a thirteen-part series that shows how to use graphs and algorithms to solve everyday problems.</strong></p> <div id="aboutbox"> <span class="subtitblack"> Contributed by <a href="http://www.aspfree.com/cp/bio/Gabor-Bernat/" rel="me author"><span rel="author">Gabor Bernat</span></a></span><br/> <span class="subtitblack"> Rating: <img src="http://images.devshed.com/af/M_images/newstar.gif" width="11" height="10" border="0" alt="5 stars" valign="middle" /><img src="http://images.devshed.com/af/M_images/newstar.gif" width="11" height="10" border="0" alt="5 stars" valign="middle" /><img src="http://images.devshed.com/af/M_images/newstar.gif" width="11" height="10" border="0" alt="5 stars" valign="middle" /><img src="http://images.devshed.com/af/M_images/newstar.gif" width="11" height="10" border="0" alt="5 stars" valign="middle" /><img src="http://images.devshed.com/af/M_images/newstar.gif" width="11" height="10" border="0" alt="5 stars" valign="middle" />&nbsp;/&nbsp;3 </span><br/> <span class="subtitblack"> June 03, 2009</span> </div> <table> <form method="post" action="http://www.aspfree.com/"> <tr><td class=newrater>Rate this Article:<br/>MEH <input type="radio" name="user_rating" value="1" /><input type="radio" name="user_rating" value="2"/><input type="radio" name="user_rating" value="3"/><input type="radio" name="user_rating" value="4"/><input type="radio" name="user_rating" value="5" checked /> MEH++<input type="submit" class=footerblack name="submit_vote" value="Rate" /><input type="hidden" name="task" value="vote" /> <input type="hidden" name="pop" value="0" /><input type="hidden" name="option" value="content" /><input type="hidden" name="Itemid" value="29" /><input type="hidden" name="cid" value="3193" /><input type="hidden" name="url" value="/index.php?option=content&task=view&id=3193&Itemid=29&limit=&limitstart=" /> </td></tr> </form> </table><br/><div class="pw_widget pw_copypaste_true pw_size_16"> <a class="pw_share"></a></div><script type="text/javascript" src="http://i.po.st/share/script/post-widget.js#publisherKey=www.devshed.com-591"></script>
+<br class="clearfloat" /><!-- Removed in favor of po.st - 12/20 -keith<ul id="sharebarx"><li style="margin-top:1px!important"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-counter="right"></script></li>
+ <li><span class='st_twitter_hcount' displayText='Tweet'></span></li> <li><span class='st_facebook_hcount' displayText='Facebook'></span></li> <li style="margin-right:0!important; margin-top:1px!important"><g:plusone size="medium"></g:plusone></li> <li><span class='st_sharethis_hcount' displayText='ShareThis'></span></li> <br class="clearfloat"></ul>--> </div> <div id="rightinfoad" align="right"><script type='text/javascript'><!--// <![CDATA[
+OA_show(51);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=96ba31c'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=51&amp;n=96ba31c' /></a></noscript><!-- End Article Box -->
+</div> <div id="rightsearchbox"> <div class="site-bckgtit2" style="margin-top:10px;width:95%;height:30px;vertical-align:middle;"><div style="float:left; width:100%;display:block;height:20px;padding-top:10px;">SEARCH ASP FREE</div></div><div id="rightsearch"><ul id="searchmodule"><form id="cse-search-box" action="/googlecse.html"><input type="hidden" value="partner-pub-6422417422167576:7pliuphhje3" name="cx" /><input type="hidden" value="FORID:11" name="cof" /><input type="hidden" value="ISO-8859-1" name="ie" /><input type="text" size="30" name="q" id="searchinput" style="background: url("http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif") no-repeat scroll left center rgb(255, 255, 255);" /><input border="0" type="image" name="sa" src="/images/st_search_submit.png" alt="SEARCH" /></div> </form></ul></div>  <div id="rightsearchbox">  <div><h3>See Also:</h3> <ol style="visibility: visible;" id="articles_579"> <li style="height:auto;min-height:35px;margin-left:10px;padding:0 auto;font-size:14px;"><a rel="self bookmark" title="Permanent Link To Bipartite Graphs" href="http://www.aspfree.com/c/a/Code-Examples/Bipartite-Graphs/"><img align="absmiddle" title="ASP Free Tutorial: Bipartite Graphs" src="http://images.devshed.com/cmn/aspfree_2.png" height="20" border="0" /> Bipartite Graphs</a></li> <li style="height:auto;min-height:35px;margin-left:10px;padding:0 auto;font-size:14px;"><a rel="self bookmark" title="Permanent Link To The Ford-Fulkerson Algorithm" href="http://www.aspfree.com/c/a/Code-Examples/The-FordFulkerson-Algorithm/"><img align="absmiddle" title="ASP Free Tutorial: The Ford-Fulkerson Algorithm" src="http://images.devshed.com/cmn/aspfree_2.png" height="20" border="0" /> The Ford-Fulkerson Algorithm</a></li> <li style="height:auto;min-height:35px;margin-left:10px;padding:0 auto;font-size:14px;"><a rel="self bookmark" title="Permanent Link To Shortest Path Algorithms in Graphs" href="http://www.aspfree.com/c/a/Code-Examples/Shortest-Path-Algorithms-in-Graphs/"><img align="absmiddle" title="ASP Free Tutorial: Shortest Path Algorithms in Graphs" src="http://images.devshed.com/cmn/aspfree_2.png" height="20" border="0" /> Shortest Path Algorithms in Graphs</a></li> <li style="height:auto;min-height:35px;margin-left:10px;padding:0 auto;font-size:14px;"><a rel="self bookmark" title="Permanent Link To Critical Paths" href="http://www.aspfree.com/c/a/Code-Examples/Critical-Paths/"><img align="absmiddle" title="ASP Free Tutorial: Critical Paths" src="http://images.devshed.com/cmn/aspfree_2.png" height="20" border="0" /> Critical Paths</a></li> </ol></div></div>  <div id="rightsearchbox"> </div><div><div>  <table cellpadding=0 cellspacing=0 border=0><tr> <td height="24" class="footerblack" style="background-color:#ccc;font-weight:bold;padding:2px;"><span style="margin-left:5px;">TOOLS YOU CAN USE</span></td></tr> <tr> <td> <table width="100%" border="0" cellspacing="5" cellpadding="3"> <tr> <td> <div class="abblue2"><p><script type='text/javascript'><!--// <![CDATA[
+OA_show(75);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=7857478'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=75&amp;n=7857478' /></a></noscript></p></div>
+ <div class="ad2">advertisement</div> </td> </tr> </table></td> </tr> </td>  </tr> </table> </div> </div> <div class="intel" id='intelliTxt'> <p>Did I just mention the Ford-Fulkerson algorithm? If you arrived here to learn that, you are just a little late. In the previous article,&nbsp;I presented everything you should know about the algorithm itself. </p><p>In case you missed it, you absolutely have to dig it up and become familiar with the algorithm if you wish to understand this article. I mean that seriously;&nbsp;do not read on if you do not know the algorithm. </p><p>Take a break and come back later once you comprehend it. You are in danger of&nbsp;not understanding a word of mine if you ignore this. </p><p>Now that we have that straight, you can begin to see how we'll use the lesson from the previous article. First,&nbsp;I am going to present how to bypass small obstacles, such as if we have many sources or many terminals, or what if the node itself has a given capacity? </p><p>I will follow up this presentation closely with the idea of solving the issue of k connectivity (related to edges) or&nbsp;k vertex connectivity, and illustrate this lesson with the scenario I alluded to in the introduction.&nbsp; </p><p><a name="1"><h3 id="TOC">Back to the Basics</h3></a></p><p>When we work with flow networks, sometimes the requirements for the Ford-Fulkerson algorithm are simply not satisfied. To work with the algorithm, we need a single source and a single terminal. The vertexes are just connection points, and they cannot have capacities. Also, remember that we used directed edges. </p><p>However, if we make a little modification to our input graph, we can transform it into graphs that have all the upper traits. We can get rid of the issue with multiple sources and multiple drains if we add a new source and connect&nbsp;all the current sources to it. The capacity of the edges connected from the new point to the sources is infinity. </p><p>You can apply the same rule to the terminals also,&nbsp;but the direction of the edges is from the terminals to the new point. This way, we will have a single source and a single terminal. Run the algorithm on this graph and it will solve the problem for the multiple sources/terminals graph at the same time. Here is a picture to illustrate it: </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_2c156d45.jpg" complete="complete" /></p><p style="margin-bottom: 0in;" align="center" class="western">&nbsp;</p><p>Once we have a graph with edges that are not directed, the problem is easily solved by adding directed edges in both direction. However, once&nbsp;the equation includes nodes with capacity, this gets a little more complicated. Obviously we cannot call the algorithm with this input data, so we will first transform our graph into something that maintains the traits enumerated at the start of this page. </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_620d4cd3.jpg" complete="complete" /></p><p>Consider that we have a graph with n vertexes. If every vertex has a capacity of c (v), all we need to do is extract the node out of an edge. To achieve this, add a new node to the graph. Connect an edge from the vertex in context to the newly-added one and let the capacity be equal to c (v).</p><p>It is a good idea to name&nbsp;the new vertex n+i, where <i>"i" </i>is the number of the node we just tried to extract. All of the incoming edges will maintain their connection to&nbsp;node I, while the outgoing edges will come from,&nbsp;instead of node "i,"&nbsp;vertex n+i. Here is a picture that shows how to handle this example, to make everything clear: </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_730bcf8c.jpg" complete="complete" /></p><p>Apply this to all the edges and you are done. Now we will look into connectivity of the graphs and the war in Vietnam. For this, we will use&nbsp;what we just figured out on this page. </p><p><a name="2"><h3 id="TOC">K Connectivity</h3></a></p><p>There are two types of connectivity in graphs, connectivity&nbsp;of the edges and connectivity of the vertexes. Whenever we talk about connectivity, we first refer to it as of the edges. When we want to talk about vertexes, we need to talk about&nbsp;K Vertex Connectivity. What is covered under this name?</p><p>Connectivity refers to the fact that there exists a road between any two nodes. K Connectivity says that, if we eliminate any number less than k of&nbsp;that type of component (any one) from the graph, we will still get a connected graph. Of course, if we eliminate vertexes we also delete the edges related to them. </p><p>So how does this tie in with a war in&nbsp;Vietnam? Let there be n military bases. Each one of them can communicate with a specific number of other bases. The connections build up a graph with directed edges inside it. The connections can be mutual;&nbsp;if this is the case, we can just add an edge in both directions. </p><p>The information arrives at headquarters that the enemy has eliminated k military bases. The question is, can we remain calm, considering the way that our bases&nbsp;can connect with the other remaining bases? This is&nbsp;node connectivity. We can imagine a case when the edges are relevant. For instance, we talk about roads, and if k instances of them got bombed, could we still reach all the cities? </p><p>From the definition you can already see that the connectivity of nodes is a much more serious trait than of vertexes,&nbsp;and we will see immediately why this is true. From the definition of&nbsp;connectivity, we can sense that we are talking about individual roads. In order for us to still be able to reach a point when an edge or vertex is eliminated, we must have an alternative road we can use to get there.&nbsp; </p><p>Connectivity in fact hides the number of individual roads between a point and all the rest inside the graph. In the case of&nbsp;edge connectivity we are talking about different edges, while in the case of node connectivity, the vertexes through which the road passes have to be different. </p><p>So the source will be the vertex itself, which we are observing, while the terminal handles&nbsp;all the ends. The algorithm is simple. Consider the graph and iterate through every different vertex pair. Let&nbsp;every edge have a capacity of one. Call the Ford-Fulkerson algorithm for each pair&nbsp;to calculate the number of different (alternative) roads. </p><p>If the capacity is the maximum flow that can travel through, the graph will be just like this. All that we have to do is to pick the smallest number from this, and that will tell us how many edges we can delete and still be able to contact any military base. Note&nbsp;that we can pick for removal any one of the edges, not just a collection of them, as long as we choose k number of them. </p><p>Here it is all this implemented in C code. We need to reset the current flow number to zero before each call. </p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">int kConnectedEdge(Vertex**&amp; neighborMatrix, Node*&amp; list, const int&amp; n)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int i = 0, j = 0, curKCon = 0;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int k = INFINITY;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( i=1; i &lt;= n-1; ++i)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( j=i+1; j&lt;= n; ++j) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int a =0, b = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (a = 1; a &lt;= n; ++a)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (b = 1; b &lt;= n ; ++b)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">neighborMatrix[a][b].flowValue = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">curKCon = Ford_Fulkelson(neighborMatrix, list, i , j, n); </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff">&nbsp;</font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if (curKCon &lt; k)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">k = curKCon;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff">&nbsp;</font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">return k; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p>Here&nbsp;is an example graph: </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_4fe70d95.jpg" complete="complete" /></p><p>With our algorithm, all this will look as&nbsp;follows, as we need to double every edge and add the direction to them: </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_13fa4764.jpg" complete="complete" /></p><p style="margin-bottom: 0in;" align="center" class="western">&nbsp;</p><p>The result in the output file is correct:</p><p style="margin-bottom: 0in; background: #faebd7;"><font style="font-size: 9pt;" size="2">The input graphs edge connectivity is 3</font></p><p style="margin-bottom: 0in;" class="western">&nbsp;<a name="3"><h3 id="TOC">The k Node Connectivity</h3></a>&nbsp;</p><p>When we talk about edge connectivity, we can no longer pass through the same vertex in the roads. We search for roads between two points that are built from a very different node sequence. Therefore, we cannot allow more than one road to pass through a vertex.&nbsp;This sounds like a vertex that has one capacity, and indeed, this is what it is. </p><p>Everything remains the same, but now we add a capacity of one to the vertexes. In the next step, we extract each node's vertex capacity to edge capacity, as explained in the previous pages. We need to make the same iteration&nbsp;only on the basic edge pairs, as those newly-introduced through the extraction are irrelevant. </p><p>With this method we will transform our graph with n vertexes and m edges to one with 2 * n nodes and 2*m + n edges. To travel only through the different vertex pairs, we will only take the points above the main diagonal in the neighbor matrix. Here "i" is always smaller than j, so we will start our second iteration from "i" + 1. Look at the code snippet. </p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">void extractByPointGraph( Vertex**&amp; neighborMatrix , int&amp;n,Vertex**&amp; toNeighborMatrix , Node*&amp; toList )</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int i =0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int j =0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">// First allocate space for the items</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">toNeighborMatrix = (Vertex**) calloc(2*n+1, sizeof(Vertex*));</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff">&nbsp;</font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">for( i = 1; i &lt;= 2*n; ++i)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">toNeighborMatrix[i] = (Vertex*) calloc(2*n+1, sizeof(Vertex)); </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff">&nbsp;</font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( i =1; i &lt;= 2*n; ++i)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( j =1; j &lt;= 2*n; ++j)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">toNeighborMatrix[i][j].capacity = -1; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">toList = (Node*) calloc(2*n+1, sizeof(Node)); </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">// fill the matrix and the list</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (i = 1; i &lt;= n ; ++i) // divide</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">toNeighborMatrix[i][n+i].capacity = 1; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if( add(toList[n+i].neighbors, i ) ) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">++toList[n+i].vertexNr; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if( add(toList[i].neighbors, n+i ) ) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">++toList[i].vertexNr;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (i = 1; i &lt;= n ; ++i) // reconnect edges</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (j = 1; j &lt;= n; ++j)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if (neighborMatrix[i][j].capacity != -1)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{ </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">toNeighborMatrix[n+i][j].capacity = 1; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if( add(toList[n+i].neighbors, j ) ) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">++toList[n+i].vertexNr; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff">&nbsp;</font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if( add(toList[j].neighbors, n+i ) ) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">++toList[j].vertexNr;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in;" class="western">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">int kConnectedVertex( Vertex**&amp; neighborMatrix , int&amp;n )</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">Vertex** extendedNeighborMatrix = NULL; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">Node* extendedList = NULL;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">extractByPointGraph(neighborMatrix, n,extendedNeighborMatrix, extendedList);</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int k = INFINITY, curKCon = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int i= 0, j = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( i=1; i &lt;= n-1; ++i)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for( j=i+1; j&lt;= n; ++j) </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">int a =0, b = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (a = 1; a &lt;= 2*n; ++a)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">for (b = 1; b &lt;= 2*n ; ++b)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">extendedNeighborMatrix[a][b].flowValue = 0; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">extendedNeighborMatrix[i][n+i].capacity = INFINITY; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">curKCon = Ford_Fulkelson(extendedNeighborMatrix, extendedList, i , j, 2*n); </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">extendedNeighborMatrix[i][n+i].capacity = 1; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">if (curKCon &lt; k)</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">{</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">k = curKCon;</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;">&nbsp;</p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font face="Courier New, monospace"><font size="2">return k; </font></font></font></font></font></font></p><p style="margin-bottom: 0in; background: #fff8dc;"><font color="#0000ff"><font face="Courier New, monospace"><font style="font-size: 9pt;" size="2"><font color="#0000ff"><font face="Courier New, monospace"><font size="2">}</font></font></font></font></font></font></p><p style="margin-bottom: 0in;" class="western">What remains is to mention is that, before we call the Ford-Fulkerson algorithm, we need to set the capacity of the current node to infinity. Otherwise, we could only take a single road&nbsp;to the vertex we introduced for the capacity extraction. However, the two nodes are the same, so between them countless roads can be possible.&nbsp;&nbsp;</p><p style="margin-bottom: 0in;" class="western">The graph looks quite intriguing once we make the extraction: </p><p style="margin-bottom: 0in;" align="center" class="western"><img title="" alt="" src="http://images.devshed.com/af/stories/12_Connectivity_in_Graphs_html_m21ce89a5.jpg" complete="complete" /></p><p style="margin-bottom: 0in;" class="western">&nbsp;</p><p style="margin-bottom: 0in;" class="western">Still the answer given by our algorithm is flawless:&nbsp;&nbsp;</p><p style="margin-bottom: 0in; background: #faebd7;"><font style="font-size: 9pt;" size="2">The input graphs node connectivity is 1</font></p><p style="margin-bottom: 0in;" class="western">The complexity of this algorithm, because of the many embedded loops, is quite high; it's O( n^3 * m^2). Still, the problem is solved in polynomial time. For the proof, you can search up the book&nbsp;<em>Introduction to Algorithms</em>&nbsp;from Cormen, Leiserson, and Rivest, as mentioned in the previous article. </p><p style="margin-bottom: 0in;" class="western">&nbsp;</p>Thank you for patience and for reading this article until the end. Please take the effort to rate it. Post your questions on the blog, or even better, join the <u><a href="http://www.devhardware.com/forums" target="_blank"><font color="#0000ff">DevHardware</font></a></u> community and ask your questions of our experts. Look&nbsp;for other articles related to the field of graphs, as we are coming to the end of this series. Until we meet again, <i>Live With Passion!</i>&nbsp; <div id="disqus_thread"></div><script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'aspfree'; // required: replace example with your forum shortname
+// The following are highly recommended additional parameters. Remove the slashes in front to use.
+var disqus_identifier = '3193';
+var disqus_url = 'http://www.aspfree.com/c/a/Code-Examples/Connectivity-in-Graphs/';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a rel="external" href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a rel="external" href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a><br class="clearfix" /></div></div><table width="750" border="0" cellspacing="0" cellpadding="0"> <tr>  <td width="334" height="1" valign="top" bgcolor="#FFFFFF"></td> <td height="1" bgcolor="#FFFFFF"></td> <td width="333" height="1" valign="top" bgcolor="#FFFFFF"></td> </tr> <tr height="2">  <td width="334" valign="top"></td> <td bgcolor="#FFFFFF"></td> <td width="333" valign="top"></td> </tr> <tr>  <td width="334" valign="top"> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table width="99%" cellspacing="3" cellpadding="0" bordercolor="#edf0f7" border="0" align="center" class="site-moreart"><tr><td height="24" class="site-bckgtit">CODE EXAMPLES ARTICLES</a></td></tr><tr><td bgcolor="#ffffff" class="txtplain1"><br/><table width="99%" border="0" align="center"><td><a rel="self bookmark" title="Permalink to Bipartite Graphs" href='http://www.aspfree.com/c/a/Code-Examples/Bipartite-Graphs/' class='linkscolor'>- Bipartite Graphs</a><BR><a rel="self bookmark" title="Permalink to Connectivity in Graphs" href='http://www.aspfree.com/c/a/Code-Examples/Connectivity-in-Graphs/' class='linkscolor'>- Connectivity in Graphs</a><BR><a rel="self bookmark" title="Permalink to The Ford-Fulkerson Algorithm" href='http://www.aspfree.com/c/a/Code-Examples/The-FordFulkerson-Algorithm/' class='linkscolor'>- The Ford-Fulkerson Algorithm</a><BR><a rel="self bookmark" title="Permalink to Critical Paths" href='http://www.aspfree.com/c/a/Code-Examples/Critical-Paths/' class='linkscolor'>- Critical Paths</a><BR><a rel="self bookmark" title="Permalink to The Bellman-Ford and Roy-Floyd Algorithms" href='http://www.aspfree.com/c/a/Code-Examples/The-BellmanFord-and-RoyFloyd-Algorithms/' class='linkscolor'>- The Bellman-Ford and Roy-Floyd Algorithms</a><BR><a rel="self bookmark" title="Permalink to Shortest Path Algorithms in Graphs" href='http://www.aspfree.com/c/a/Code-Examples/Shortest-Path-Algorithms-in-Graphs/' class='linkscolor'>- Shortest Path Algorithms in Graphs</a><BR><a rel="self bookmark" title="Permalink to Minimum Spanning Tree" href='http://www.aspfree.com/c/a/Code-Examples/Minimum-Spanning-Tree/' class='linkscolor'>- Minimum Spanning Tree</a><BR><a rel="self bookmark" title="Permalink to Articulation Edges and Vertexes" href='http://www.aspfree.com/c/a/Code-Examples/Articulation-Edges-and-Vertexes/' class='linkscolor'>- Articulation Edges and Vertexes</a><BR><a rel="self bookmark" title="Permalink to Circles and Connectivity in Graphs" href='http://www.aspfree.com/c/a/Code-Examples/Circles-and-Connectivity-in-Graphs/' class='linkscolor'>- Circles and Connectivity in Graphs</a><BR><a rel="self bookmark" title="Permalink to Depth-First Search in Graphs" href='http://www.aspfree.com/c/a/Code-Examples/DepthFirst-Search-in-Graphs/' class='linkscolor'>- Depth-First Search in Graphs</a><BR><a rel="self bookmark" title="Permalink to Breadth-First Search in Graphs" href='http://www.aspfree.com/c/a/Code-Examples/BreadthFirst-Search-in-Graphs/' class='linkscolor'>- Breadth-First Search in Graphs</a><BR><a rel="self bookmark" title="Permalink to The Prufer Code and the Floyd-Warshall Algor..." href='http://www.aspfree.com/c/a/Code-Examples/The-Prufer-Code-and-the-FloydWarshall-Algorithm/' class='linkscolor'>- The Prufer Code and the Floyd-Warshall Algor...</a><BR><a rel="self bookmark" title="Permalink to An Insight into Graphs" href='http://www.aspfree.com/c/a/Code-Examples/An-Insight-into-Graphs/' class='linkscolor'>- An Insight into Graphs</a><BR><a rel="self bookmark" title="Permalink to Coding a Custom Object with WSC" href='http://www.aspfree.com/c/a/Code-Examples/Coding-a-Custom-Object-with-WSC/' class='linkscolor'>- Coding a Custom Object with WSC</a><BR><a rel="self bookmark" title="Permalink to Creating a Custom Object with WSC" href='http://www.aspfree.com/c/a/Code-Examples/Creating-a-Custom-Object-with-WSC/' class='linkscolor'>- Creating a Custom Object with WSC</a><BR></tr></table><div class="moreart_span"><a href='http://www.aspfree.com/c/b/Code-Examples/' rel="tag">Find More Code Examples Tutorials</a></div></td></tr></table> </td> </tr> </table> </td> <td width="1" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="10"></td> <td width="333" valign="top"> <div align="right">  <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td><div align="center"><script type='text/javascript'><!--// <![CDATA[
+OA_show(740);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=59924f1'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=740&amp;n=59924f1' /></a></noscript> </div>     </td>
+ </tr> </table> </td> </tr> </table></td></tr></table> </td></tr> </table> </div> <div id=resultright> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td><script type="text/javascript">
+var myBackgrounds=new Array("http://images.devshed.com/scr/scripts-bckgsidenav.gif","http://images.devshed.com/dh/devhardware-bckgsidenav.gif","http://images.devshed.com/dm/devmechanic-bckgsidenav.gif","http://images.devshed.com/af/aspfree-bckgsidenav.gif");
+var bgnumber=Math.floor(Math.random() * (4));
+</script>
+<br /><table width="150" cellspacing="0" cellpadding="0" border="0" class="shrink_td"><tbody><tr><script type="text/javascript">
+document.write('<td style="background-image: url(' + myBackgrounds[bgnumber] + ');" class="site-sidenavbckg">');
+</script> 
+<a href="/asp/freeasphost.asp" class="devhardware-bckgsidenav">ASP Web Hosting </a></td><td width="8">&nbsp;</td></tr><tr><script type="text/javascript">
+document.write('<td style="background-image: url(' + myBackgrounds[bgnumber] + ');" class="site-sidenavbckg">');
+</script> 
+<a href="/asp.net-web-hosting">ASP.Net Web Hosting </a></td><td>&nbsp;</td></tr><tr><script type="text/javascript">
+document.write('<td style="background-image: url(' + myBackgrounds[bgnumber] + ');" class="site-sidenavbckg">');
+</script> 
+<a href="/windows-web-hosting.asp">Windows Web Hosting </a></td><td>&nbsp;</td></tr></tbody></table><br /> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td><script type='text/javascript'><!--// <![CDATA[
+OA_show(851);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=a3211753'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=851&amp;n=a3211753' /></a></noscript>     </td>
+ </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table class="shrink_td" cellspacing="0" cellpadding="0" width="150" border="0"><tr><td class="sidenavgray"><a class="sidenavtxtgray" href="http://forums.aspfree.com/">ASP Free Forums</a></td><td width="8">&nbsp;</td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td><script type='text/javascript'><!--// <![CDATA[
+OA_show(427);
+// ]]> --></script><noscript><a rel='nofollow' target='_blank' href='http://otto.developershed.com/www/delivery/ck.php?n=eab168c'><img border='0' alt='' src='http://otto.developershed.com/www/delivery/avw.php?zoneid=427&amp;n=eab168c' /></a></noscript>     </td>
+ </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table cellspacing="0" cellpadding="0" width="150" border="0"><tbody><tr valign="middle"><td class="sidenavgray2"><table cellspacing="0" cellpadding="0" width="150" border="0"><tr valign="middle"><td align="left">&nbsp;<a class="sidenavtxtgray" href="/rss.xml" rel="self bookmark"><img width="15" height="14" border="0" alt="RSS" src="http://images.devshed.com/common/rss.gif" /></a>&nbsp;&nbsp;<a class="sidenavtxtgray" href="/rss.xml" rel="self bookmark">Tutorials RSS</a></td></tr></table></td></tr><tr valign="middle"><td class="sidenavgray2"><table cellspacing="0" cellpadding="0" width="150" border="0"><tr valign="middle"><td align="left">&nbsp;<a class="sidenavtxtgray" href="http://forums.aspfree.com/rss/feed-all.xml" rel="self nofollow"><img width="15" height="14" border="0" alt="RSS" src="http://images.devshed.com/common/rss.gif" /></a>&nbsp;&nbsp;<a class="sidenavtxtgray" href="http://forums.aspfree.com/rss/feed-all.xml" rel="self nofollow">Forums RSS</a></td></tr></table></td></tr><tr valign="middle"><td class="sidenavgray"><table cellspacing="0" cellpadding="0" width="150" border="0"><tr valign="middle"><td align="left">&nbsp;<a class="sidenavtxtgray" href="/rss-reader.html" rel="nofollow"><img width="15" height="14" border="0" alt="RSS" src="http://images.devshed.com/common/rss.gif" /></a>&nbsp;&nbsp;<a class="sidenavtxtgray" href="/rss-reader.html" rel="nofollow">All Feeds</a></td></tr></table></td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <span class="shrink_td"><div class=sidenavgray><a class="sidenavtxtgray" href="http://www.aspfree.com/rad/">.Net RAD</a></div></span><span class="shrink_td"><div class=sidenavgray><a class="sidenavtxtgray" href="http://www.developershed.com/contact.php" rel="nofollow">Contact Us</a></div></span><span class="shrink_td"><div class=sidenavgray><a class="sidenavtxtgray" href="http://www.devshed.com/solarwinds/" rel="nofollow">Free Virtualization Tools</a></div></span> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table class="shrink_td" cellspacing="0" cellpadding="0" width="150" border="0"><tr><td class=sidenavgray><a class="sidenavtxtgray" href="/sitemap.html">Site Map</a></td><td width="8">&nbsp;</td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table class="shrink_td" cellspacing="0" cellpadding="0" width="150" border="0"><tr><td class=sidenavgray><a class="sidenavtxtgray" href="http://www.developershed.com/advertise.php" rel="nofollow">Request Media Kit</a></a /></td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table class="shrink_td" cellspacing="0" cellpadding="0" width="150"><tr><td class=sidenavgray><a class="sidenavtxtgray" href="http://www.developershed.com/writers.php" rel="nofollow">Write For Us Get Paid</a></td><td width="8">&nbsp;</td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table cellspacing="0" cellpadding="0" border="0" width="150" class="shrink_td"><tbody><form method="post" action="http://newsletter.developershed.com/sendstudio/users/form.php?FormID=4" onsubmit="return CheckwSS()" name="wfrmSS"><tr><td height="36" valign="top" class="sidenavgray"><strong><a rel="nofollow" href="http://www.developershed.com/newsletter.php" class="sidenavtxtgray">Weekly Newsletter</a></strong> <br /><input style="background-color: rgb(255, 255, 160);" type="text" autocomplete="OFF" name="Email" value="Your E-mail" size="16" onfocus="if ((this.value=='') || (this.value=='Your E-mail')) {this.value='';};" title="Your Google Toolbar can fill this in for you. Select AutoFill" onblur="if (this.value=='') {this.value='Your E-mail';}" class="form" /><input type="hidden" name="SelectLists[16]" value="YES" /><input type="hidden" name="Format" value="2" /><input type="hidden" name="FormCode" value="ed2d31d9cdcac5a40f6ff626f4acefa3" /><input type="submit" name="Submit" value="GO" class="form" /></td><td width="8">&nbsp;</td></tr></form><tr><td class="sidenavgray"><a rel="nofollow" href="http://www.developershed.com/devalert.php" class="sidenavtxtgray">Developer Updates</a> </td><td width="8">&nbsp;</td></tr><tr><td class="sidenavgray"><a rel="nofollow" href="http://www.developershed.com/devtext.php" class="sidenavtxtgray">Free Website Content</a></td><td width="8">&nbsp;</td></tr></tbody></table><script language="JavaScript">
+function CheckwSS()
+{
+theFrm = document.wfrmSS;
+hasDot = theFrm.Email.value.indexOf(".");
+hasAt = theFrm.Email.value.indexOf("@");
+if (hasDot == -1 || hasAt == -1)
+{
+alert("Please enter a valid email address.");
+theFrm.Email.focus();
+theFrm.Email.select();
+return false;
+}
+return true;
+}
+</script>     </td>
+ </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table class="shrink_td" cellspacing="0" cellpadding="0" width="150" border="0"><tr><td class=sidenavgray><a class="sidenavtxtgray" href="http://www.developershed.com/privacy.php" rel="nofollow">Privacy Policy</a></td><td width="8">&nbsp;</td></tr><tr><td class=sidenavgray><a class="sidenavtxtgray" href="http://www.developershed.com/esupport/" rel="nofollow">Support</a></td><td width="8">&nbsp;</td></tr></table> </td> </tr> </table> <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <div id="mixedspons" style="width:150px;height:300px;min-height:300px;padding:0px;overflow:hidden;"><script type="text/javascript" src="http://jlinks.industrybrains.com/jsct?sid=360&ct=DEVSHED_HP_ROS&num=4&layt=DSNetSkyTXTROS&fmt=simp"></script></div>     </td>
+ </tr> </table> </div> </div></div><div id=clear></div> <table width="100%" border="0" cellspacing="0" cellpadding="0"> <tr>  <td bgcolor="#517CA9"><BR></td> </tr> </table></div><script type="text/javascript">
+_qevents.push( { qacct:"p-5c0XF2TvTNfd2"} );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-5c0XF2TvTNfd2.gif" height="1" width="1" alt="Quantcast"/></div></noscript><br/><div id="botfooter" align=center><span class="bottxt">&copy; 2003-2012 by <a rel="nofollow" href="http://www.developershed.com">Developer Shed</a>. All rights reserved. DS Cluster 1 - Follow our <a href="/sitemap.html">Sitemap</a></span> </div></div><script type="text/javascript" language="JavaScript">
+function ttgo(url) {
+if (url.length > 1) {
+document.location.href = "http://" + url + "/";
+}
+}
+</script>
+<div style="width:400px;margin:0 auto;"><div id="first-category" style="display:block;float:left;"> <h6>Most Popular Topics</h6> <ul> <li><a title=".Net Programming Tutorials" href="/c/b/.NET/">.NET</a></li> <li><a title="ASP.Net Help" href="/c/b/ASP.NET/">ASP.NET</a></li> <li><a title="C# Tutorials and Examples" href="/c/b/C-Sharp/">C#</a></li> <li><a title="Micorosft SQL Server How-To" href="/c/b/MS-SQL-Server/">MS SQL Server</a></li> <li><a title="Windows Scripting Help" href="/c/b/Windows-Scripting/">Windows Scripting</a></li>  </ul> <ul> <li><a title="ASP Classic" href="/c/b/ASP/">ASP</a></li> <li><a title="ASP Code Samples" href="/c/b/ASP-Code/">ASP Code</a></li> <li><a title="ASP.Net Code Samples" href="/c/b/ASP.NET-Code/">ASP.NET Code</a></li> <li><a title="Misc Microsoft .Net Help Topics" href="/c/b/Braindump/">Braindump</a></li> </ul></div><div id="second-category" style="display:block;float:right;"> <h6>All ASP.Net Tutorials</h6> <ul> <li><a title="MSFT Code Examples" href="/c/b/Code-Examples/">Code Examples</a></li> <li><a title="ASP.Net Database Tutorials" href="/c/b/Database/">Database</a></li> <li><a title="MSSQL Code Samples" href="/c/b/Database-Code/">Database Code</a></li> <li><a title="IIS Resources" href="/c/b/IIS/">IIS</a></li> </ul> <ul> <li><a title="Microsoft Access Tutorials" href="/c/b/Microsoft-Access/">Microsoft Access</a></li> <li><a title="Silverlight Tutorials" href="/c/b/Silverlight/">Silverlight</a></li> <li><a title="VB.Net Tutorials" href="/c/b/VB.NET/">Visual Basic.NET</a></li> <li><a title="Windows Security Advice" href="/c/b/Windows-Security/">Windows Security</a></li> </ul></div></div><script type="text/javascript">
+/*
+* lowerThird
+*/
+function lowerThirdAd(id,params) {
+var adObject = $('#'+id);
+var speed = 500;
+var cookieName = 'poppers123';
+var cookieValue = 'dontshow';
+var minutes = 0;
+var close = 0;
+var openheight = 105;
+var closeheight = 0;
+var timehandle = null;
+if (params.minutes) {
+minutes = params.minutes;
+}
+if (params.close) {
+close = params.close;
+}
+if (params.openheight) {
+openheight = params.openheight;
+}
+if (params.closeheight) {
+closeheight = params.closeheight;
+}
+$(adObject).css('overflow','hidden');
+$(adObject).css('position','fixed');
+$(adObject).css('bottom','0px');
+var adInner = $(adObject);
+var adcookie = readCookie();
+if (! adcookie) {
+// find the hidden stuff
+$(adInner).bind('mouseover',function() { 
+$(adObject).css('height',openheight+'px');
+clearTimeout(timehandle); // dont close when the mouse is in there
+});
+$(adInner).bind('mouseout',function() { 
+$(adObject).css('height',closeheight+'px');
+if (close) {
+timehandle = setTimeout( function() {
+$(adInner).hide('slide', {direction:'down'} ,speed); // restart the autoclose
+},close);
+}
+});
+if (params.speed) speed = params.speed;
+$(adInner).show('slide',{direction:'down'},speed);
+var adAreaClick = $('#ad')[0];
+$(adAreaClick).css('cursor','pointer');
+$(adAreaClick).bind('click',function() {
+createCookie(720);
+window.open('http://www.aspfree.com/rad/contest.php');
+return false;
+//            document.location.href='http://www.aspfree.com/rad/contest.php';
+});
+var closeHandle = $('#' + params.closeHandle)[0];
+$(closeHandle).css('cursor','pointer');
+$(closeHandle).bind('click',function() {
+if (minutes) createCookie(minutes);
+$(adInner).unbind('mouseover');
+$(adInner).unbind('mouseout');
+$(adInner).hide('slide', {direction:'down'} ,speed);
+return false;
+});
+if (close) {
+timehandle = setTimeout( function() {
+$(adInner).hide('slide', {direction:'down'} ,speed); // start the autoclose
+},close);
+}
+} else {
+$(adObject).css('display','none');
+}
+function createCookie(minutes) {
+if (minutes) {
+var date = new Date();
+date.setTime(date.getTime()+(minutes*60*1000));
+var expires = "; expires="+date.toGMTString();
+}
+else var expires = "";
+document.cookie = cookieName+"="+cookieValue+expires+"; path=/";
+}
+function readCookie() {
+var nameEQ = cookieName + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+return {
+createCookie: function(minutes) {
+createCookie(minutes);
+},
+readCookie: function() {
+readCookie();
+},
+eraseCookie: function() {
+createCookie(-1);
+}
+}
+}
+</script>
+<style type="text/css">
+#ad {
+width:425px;
+height:67px;
+font-family:Verdana,Helevetica,Tahoma,Arial;
+/*background: url('http://www.devshed.com/images/poppers/ironspeed2.png');*/
+background: url('http://www.devshed.com/images/poppers/ironspeed2.png');
+opacity:0.9;filter:alpha(opacity=90);
+}
+#ad-inner {
+margin-left:90px !important;
+width:290px;
+height:58px;
+display:block;
+margin-left:50px;
+}
+#introlabel {
+width:310px;
+margin:0px !important;
+padding:0px !important;
+padding-top:42px !important;
+display:block;
+color:#000;
+font-size:18px;
+min-height:30px;
+height:30px;
+vertical-align:bottom;
+font-weight:600;
+text-decoration:underline;
+margin-bottom:0px;
+padding-bottom:0px;
+}
+#ad img {
+display:inline;
+float:left;
+padding-left:15px;
+padding-top:15px;
+}
+#longtext {
+margin-top:-4px;
+width:320px;
+font-size:14px;
+font-weight:bold;
+color:#382f5a;
+}
+#close-ad-new {
+color:#aaa;
+color:#FFF !important;
+background-color:#F00;
+}
+#closer-new {
+display:inline;
+min-width:40px;
+min-height:30px;
+width:40px;
+height:30px;
+right:0px;
+top:20px;
+position:absolute;
+font-size:12px;
+float:right;
+vertical-align:middle;
+z-index:1000;
+background-color:#F00;
+text-align:center;
+padding-top:9px;
+}
+#ad { position:fixed; bottom:0;}
+</style>
+<div id="ad"> <div id="ad-inner"> <div id="introlabel"></div><a id="close-ad-new"><div id="closer-new">[-X-]</div></a> <div id="longtext">Download a FREE trial and enter to win FREE software licenses.</div> </div></div><img src="http://images.devshed.com/pt/pixeltrack.php?trackid=popperIS2&char1=popperIS2&ran=1329091034" height="1" width="1" border="0" /><script>
+var ad = lowerThirdAd('ad',{closeHandle:'close-ad-new',openheight:120,closeheight:67,speed:1500,minutes:2880,close:0});
+</script>
+<script type="text/javascript" src="http://devshed.us.intellitxt.com/intellitxt/front.asp?ipid=31048"></script>
+</body></html>
+
+
+<!-- Generated by new in 0.149007 sec. --> 
+
+
+
+

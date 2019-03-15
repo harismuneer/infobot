@@ -1,0 +1,34 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-28T02:17:30Z
+WARC-TREC-ID: clueweb12-1203wb-61-14650
+WARC-IP-Address: 174.121.43.67
+WARC-Payload-Digest: sha1:XMEEHYTPH3O7CPT6SSM42LOCM7MV6O67
+WARC-Target-URI: http://btlonline.org/cgi/nw.php?n=3717
+WARC-Record-ID: <urn:uuid:a0e737d5-c7a0-48bc-b55a-f0063f240543>
+Content-Type: application/http; msgtype=response
+Content-Length: 789
+
+HTTP/1.1 200 OK
+Date: Wed, 28 Mar 2012 02:17:28 GMT
+Server: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.8e-fips-rhel5 mod_jk/1.2.30 FrontPage/5.0.2.2635
+X-Powered-By: PHP/5.2.17
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+ "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- $Id: nw.php,v 1.4 2011/03/06 08:43:51 gst Exp gst $ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Between the Lines - Newswire</title>
+</head>
+<frameset cols="*,250">
+	<frame name="article" src="/cgi/newswire.php?n=3717" />
+	<frameset rows="50,*,30">
+		<frame name="logo"	   src="/logo.html" />
+		<frame name="index"	   src="/newswire/nw-frame.html" />
+		<frame name="return"   src="/return.html" />
+	</frameset>
+</frameset>
+</html>

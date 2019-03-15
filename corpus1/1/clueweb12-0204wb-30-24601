@@ -1,0 +1,382 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-16T12:10:28Z
+WARC-TREC-ID: clueweb12-0204wb-30-24601
+WARC-Target-URI: http://www-personal.umich.edu/~mejn/election/2008/
+WARC-Payload-Digest: sha1:SBRTNT2TN3PH7SJPMI2QVZHCJFVBPEZR
+WARC-IP-Address: 141.211.144.183
+WARC-Record-ID: <urn:uuid:794dbc5c-baa7-4f14-9362-05ef56207462>
+Content-Type: application/http; msgtype=response
+Content-Length: 12630
+
+HTTP/1.1 200 OK
+Date: Thu, 16 Feb 2012 12:10:37 GMT
+Server: Apache
+Accept-Ranges: bytes
+Content-Length: 12454
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<html>
+
+<head>
+<title>Election maps</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+<style type='text/css'>
+<!--BODY {color: #000000; background: #ffffff;
+          margin: 5%}
+--></style>
+</head>
+
+<font size=-1>
+<p>
+<b>Email:</b> Thanks to everyone who wrote in about the maps.  This page
+has had nearly a million hits since the election and I've received so much
+email that I may not be able to reply to everyone, but I much appreciate
+all your comments and suggestions.  Many of the things people have been
+asking about are answered in <a href="faq.html">this list</a> of frequently
+asked questions.
+</p>
+
+<p>
+<b>Book of cartograms:</b> I have a new book of world cartograms entitled
+<a
+href="http://www.amazon.com/Atlas-Real-World-Daniel-Dorling/dp/0500514259"><i>The
+Atlas of the Real World</i></a>, coauthored with Daniel Dorling and Anna
+Barford.  It's nothing to do with elections, but it contains more than 300
+cartograms showing everything from who emits the most greenhouse gases to
+who imports the most fish.  You can see a preview of some of the maps <a
+href="http://www.telegraph.co.uk/travel/picturegalleries/3109042/The-Atlas-of-the-Real-World.html">here</a>.
+The book is supposed to be fun but also informative &ndash; the maps are a
+great way to learn many things about the world that you probably never
+knew.  If you're interested in this stuff check it out.
+</p>
+</font>
+
+<hr>
+
+<center>
+<h2>Maps of the 2008 US presidential election results</h2>
+</center>
+
+<font size=+1>
+<p>
+<center>
+(My colleague Michael Gastner has created cartograms of the results of the
+2010 midterm elections.  You can find them <a
+href="http://www2.imperial.ac.uk/~mgastner/cartogram/election10/election10.html">here</a>.)
+</center>
+</p>
+</font>
+
+<hr>
+
+<h3>Election results by state</h3>
+
+<p>
+Most of us are, by now, familiar with the maps the TV channels and web
+sites use to show the results of the presidential election:
+</p>
+
+<p>
+<center>
+<a href="statemapredbluer1024.png"><img src="statemapredbluer512.png"
+width=512 height=313 border=0></a><br>
+<font size=-1>
+<i>Click on any of the maps for a larger picture</i>
+</font>
+</center>
+</p>
+
+
+<p>
+The states are colored <a
+href="http://en.wikipedia.org/wiki/Red_states_and_blue_states">red or
+blue</a> to indicate whether a majority of their voters voted for the
+Republican candidate, John McCain, or the Democratic candidate, Barack
+Obama, respectively.  Looking at this map it gives the impression that the
+Republicans won the election handily, since there is rather more red on the
+map than there is blue.  In fact, however, the reverse is true &ndash; the
+Democrats won by a substantial margin.  The explanation for this apparent
+paradox, as pointed out by many people, is that the map fails to take
+account of the population distribution.  It fails to allow for the fact
+that the population of the red states is on average significantly lower
+than that of the blue ones.  The blue may be small in area, but they
+represent a large number of voters, which is what matters in an election.
+</p>
+
+<p>
+We can correct for this by making use of a <i>cartogram</i>, a map in which
+the sizes of states are rescaled according to their population.  That is,
+states are drawn with size proportional not to their acreage but to the
+number of their inhabitants, states with more people appearing larger than
+states with fewer, regardless of their actual area on the ground.  On such
+a map, for example, the state of Rhode Island, with its 1.1 million
+inhabitants, would appear about twice the size of Wyoming, which has half a
+million, even though Wyoming has 60 times the acreage of Rhode Island.
+</p>
+
+<p>
+Here are the 2008 presidential election results on a population cartogram
+of this type:
+</p>
+
+<p>
+<center>
+<a href="statepopredblue1024.png"><img src="statepopredblue512.png"
+width=512 height=365 border=0></a>
+</center>
+</p>
+
+<p>
+As you can see, the states have been stretched and squashed, some of them
+substantially, to give them the appropriate sizes, though it's done in such
+a way as to preserve the general appearance of the map, so far as that's
+possible.  On this map there is now clearly more blue than red.
+</p>
+
+<p>
+The presidential election, however, is not actually decided on the basis of
+the number of people who vote for each candidate but on the basis of the <a
+href="http://en.wikipedia.org/wiki/U.S._Electoral_College">electoral
+college</a>.  Under the US electoral system, each state in the union
+contributes a certain number of electors to the electoral college, who vote
+according to the majority in their state.  The candidate receiving a
+majority of the votes in the electoral college wins the election.  The
+electors are apportioned roughly according to states' populations, as
+measured by the census, but with a <a
+href="http://www.nytimes.com/interactive/2008/11/02/opinion/20081102_OPCHART.html">small
+but deliberate bias</a> in favor of smaller states.
+</p>
+
+<p>
+We can represent the effects of the electoral college by scaling the sizes
+of states to be proportional to their number of electoral votes, which
+gives a map that looks like this:
+</p>
+
+<p>
+<center>
+<a href="stateelecredblue1024.png"><img src="stateelecredblue512.png"
+width=512 height=361 border=0></a>
+</center>
+</p>
+
+<p>
+This cartogram looks similar to the one above it, but it's not identical.
+Wyoming, for instance, has approximately doubled in size, precisely because
+of the bias in favor of small states.
+</p>
+
+<p>
+The areas of red and blue on the cartogram are now proportional to the
+actual numbers of electoral votes won by each candidate.  Thus this map
+shows at a glance both which states went to which candidate and which
+candidate won more electoral college votes &ndash; something that you
+cannot tell easily from the normal election-night red and blue map.
+</p>
+
+
+
+<h3>Election results by county</h3>
+
+<p>
+But we can go further.  We can do the same thing also with the county-level
+election results and the images are even more striking.  Here is a
+map of US counties, again colored red and blue to indicate Republican and
+Democratic majorities respectively:
+</p>
+
+<p>
+<center>
+<a href="countymapredbluer1024.png"><img src="countymapredbluer512.png"
+width=512 height=313 border=0></a>
+</center>
+</p>
+
+<p>
+Now the effects we saw at the state level are even more pronounced: the red
+areas appear overwhelmingly in the majority, an appearance again at odds
+with the actual results of the election.  Again, we can make a more helpful
+respresentation by using a cartogram.  Here is what the cartogram looks
+like for the county-level election returns:
+</p>
+
+<p>
+<center>
+<a href="countycartredblue1024.png"><img src="countycartredblue512.png"
+width=512 height=346 border=0></a>
+</center>
+</p>
+
+<p>
+However, this map is still somewhat misleading because we have colored
+every county either red or blue, as if every voter voted the same way.
+This is of course not realistic: all counties contain both Republican and
+Democratic supporters and in using just the two colors on our map we lose
+any information about the balance between them.  There is no way to tell
+whether a particular county went strongly for one candidate or the other or
+whether it was relatively evenly split.
+</p>
+
+<p>
+One way to improve the map and reveal more nuance in the vote is to use not
+just two colors, red and blue, but to use red, blue, and shades of purple
+in between to indicate percentages of votes.  Here is what the normal map
+looks like if you do this:
+</p>
+
+<p>
+<center>
+<a href="countymappurpler1024.png"><img src="countymappurpler512.png"
+width=512 height=313 border=0></a>
+</center>
+</p>
+
+<p>
+And here's what the cartogram looks like:
+</p>
+
+<p>
+<center>
+<a href="countycartpurple1024.png"><img src="countycartpurple512.png"
+width=512 height=346 border=0></a>
+</center>
+</p>
+
+<p>
+As this map makes clear, large portions of the country are quite evenly
+divided, appearing in various shades of purple, although a number of
+strongly Democratic (blue) areas are visible too, mostly in the larger
+cities.  There are also some strongly Republican areas, but most of them
+have relatively small populations and hence appear quite small on this map.
+</p>
+
+<p>
+A slight variation on the same idea is to use a nonlinear color scale like
+this:
+</p>
+
+<p>
+<center>
+<a href="countymapnonlinr1024.png"><img src="countymapnonlinr384.png"
+width=384 height=234 border=0></a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="countycartnonlin1024.png"><img src="countycartnonlin384.png"
+width=384 height=260 border=0></a>
+</center>
+</p>
+
+<p>
+These maps use a color scale that ranges from red for 70% Republican or
+more, to blue for 70% Democrat or more.  This is sort of practical, since
+there aren't many counties outside that range anyway, but to some extent it
+also obscures the true balance of red and blue.
+</p>
+
+<hr>
+
+<font size=-1>
+<h3>Notes:</h3>
+
+<p>
+<b>Frequently asked questions (FAQs):</b> A list of frequently asked
+questions concerning these maps, along with answers, can be found <a
+href="faq.html">here</a>.
+</p>
+
+<p>
+<b>County results:</b> The county-level data I used came from <a
+href="http://www.usatoday.com/news/politics/election2008/president.htm">here</a>.
+For those who want to do their own analysis, here are spreadsheets of the
+complete county results in <a
+href="http://www-personal.umich.edu/~mejn/election/2008/counties.ods">OpenDocument</a>
+and <a
+href="http://www-personal.umich.edu/~mejn/election/2008/counties.xls">Microsoft</a>
+format.  They are up-to-date as of November 16, 2008, but a small number of
+precincts still had not reported by that date, so a few results are
+missing.
+</p>
+
+<p>
+<b>Correction:</b> Vote tallies for Richmond and Kings counties in New York
+were mistakenly interchanged on the original maps.  This has now been
+corrected on all maps.  Many thanks to C. Moore for pointing out the error.
+</p>
+
+<p>
+<b>Poster:</b> A wall poster of these maps, made by the University of
+Minnesota, can be downloaded <a
+href="https://netfiles.umn.edu/ul/Divisions/AcaProg/SocSciProfProg/MapLibrary/www/2008ElectionMaps.pdf">here</a>.
+</p>
+
+<p>
+<b>Software:</b> My computer software for producing cartograms is freely
+available <a href="http://www.umich.edu/~mejn/cart/">here</a>.
+</p>
+
+</font>
+
+<hr>
+
+<p>
+&copy 2008 M. E. J. Newman
+</p>
+
+<!-- Creative Commons License -->
+<a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img src="http://creativecommons.org/images/public/somerights20.gif" alt="Creative Commons License" border="0" /></a><br />
+This work is licensed under a <a rel="license"
+      href="http://creativecommons.org/licenses/by/2.0/">Creative Commons
+      License</a>.  Text and images may be freely distributed.  I'd
+      appreciate hearing from you if you make use of them.
+<!-- /Creative Commons License -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+<p>
+The views expressed are personal and are not necessarily shared by the
+University of Michigan.
+</p>
+
+<p>
+<address>
+<a href="http://www-personal.umich.edu/~mejn/">Mark Newman</a>, Department
+of Physics and Center for the Study of Complex Systems, University of
+Michigan<br>
+Email: mejn@umich.edu<br>
+Updated: November 4, 2010
+</address>
+</p>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=530116; 
+var sc_partition=3; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c4.statcounter.com/counter.php?sc_project=530116&amp;amp;java=0" alt="hit counter code" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

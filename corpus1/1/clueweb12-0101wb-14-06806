@@ -1,0 +1,1194 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T14:05:33Z
+WARC-TREC-ID: clueweb12-0101wb-14-06806
+WARC-Target-URI: http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/
+WARC-Payload-Digest: sha1:XVZDGFBZM5MRPPKNU6SUXBN7H3AKZHXX
+WARC-IP-Address: 208.77.248.174
+WARC-Record-ID: <urn:uuid:ba69bfbe-94a0-4716-ad25-dd4a20d121d5>
+Content-Type: application/http; msgtype=response
+Content-Length: 36563
+
+HTTP/1.0 200 OK
+Date: Sun, 12 Feb 2012 14:05:36 GMT
+Server: Apache
+ETag: "1323ab7bb382f19038781299e57daf7c"
+Expires: Sun, 12 Feb 2012 14:10:37 GMT
+Cache-Control: max-age=300
+Last-Modified: Sun, 12 Feb 2012 14:05:37 GMT
+Vary: Accept-Encoding
+Content-Length: 36132
+Content-Type: text/html; charset=utf-8
+X-Cache: MISS from localhost
+X-Cache-Lookup: MISS from localhost:80
+Via: 1.0 localhost (squid)
+Connection: close
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	
+	
+	<head>
+		 
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+		<!-- Used to verify webmaster tools -->
+		<meta name="verify-v1" content="P+G8uxo9s17ps+E2UEXOnJq/3f/XZ7YlokhyOPTrS2o=" />
+		<meta name="google-site-verification" content="_1cgFdB0a4CKV3i2uZ23L-DFRZjfqgeQ8Nbv0hBBdR4" />
+		<meta name="msvalidate.01" content="D9A1078FD2738539A86F85435761EBC9" />
+		<meta name="y_key" content="c8440d8af56defe4" />
+		
+		<link rel="canonical" href="http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/"/>
+		
+		
+		
+		<meta name="keywords" content="2008 Ford Edge, 2008 Ford Edge Review, 2008 Ford Edge Pictures, 2008 Ford Edge for sale" />
+		<meta name="description" content="Find 2008 Ford Edge reviews, specs, and pictures on U.S. News." />
+		
+
+		
+		<title>2008 Ford Edge Reviews, Pictures and Prices | U.S. News Best Cars </title>
+
+		<link type="text/css" rel="stylesheet" media="all" href="http://static.usnews.rankingsandreviews.com/css/yahoo-reset-font-min.rr1.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="http://static.usnews.rankingsandreviews.com/css/base.rr15.css" />
+
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="/scripts/cars-trucks/used_vast.rr5.js"></script>
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/global_v2.rr2.js"></script>
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/jquery.cookie.js"></script>
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/jquery.leanModal.min.js"></script>
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/jquery.textbox-hinter.min.js"></script>
+		<script type="text/javascript" src="http://static.usnews.rankingsandreviews.com/scripts/cars-trucks/doubleClick.rr13.js"></script>
+
+		<script type="text/javascript">
+			var template = 3;
+			// Double Click variables - TODO - These need to be set properly
+			ord = Math.random() * 10000000000000000;
+			product_details = '';
+			adParameters = 'type=suv;mak=ford;mod=edge;yr=2008;';
+			var rsTags = get_RS_tags();
+		</script>
+		<script src="http://js.revsci.net/gateway/gw.js?csid=H05525&auto=t"></script>
+		
+		
+				
+	<link type="text/css" rel="stylesheet" media="all" href="http://static.usnews.rankingsandreviews.com/css/cars-trucks/_cars-new.rr33.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="http://static.usnews.rankingsandreviews.com/css/cars-trucks/_shared-content.rr2.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="http://static.usnews.rankingsandreviews.com/css/cars-trucks/_cars-used.rr9.css" />
+	
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+		
+			if($('#zipcode').val() && $('#zipcode').val().length == 5){
+				$('.dq_btn').removeAttr('disabled');
+			}
+
+			//only allow the user to input numbers for the zip			
+			$('#zipcode').keypress( function(evt){
+				var charCd = (evt.which) ? evt.which : evt.keyCode;
+				if (charCd > 31 && (charCd < 48 || charCd > 57))
+		    		return false;
+		 		return true;
+			});
+			
+		    $('#zipcode').keyup( function(evt){
+		    	enableQuote();
+            });		
+
+		    $('#zipcode').blur( function(evt){
+            	enableQuote();				
+            });	
+        	   
+        
+        	$("a[rel*=leanModal]").leanModal({top: 200, overlay: 0.5});
+	    	 
+			$('#zag-learn-more-text h4 span').click(function(){
+				$('#lean_overlay').hide();
+				$('#zag-learn-more-text').hide();
+			});     			
+		});
+					
+		function enableQuote(){
+			var passed = true;
+			var zipRE=/^\d{5}$/;
+			if($('#zipcode').val().search(zipRE)==-1){
+				passed = false;
+			}
+			if(passed){
+				$('.dq_btn').removeAttr('disabled');
+			} else {
+				$('.dq_btn').attr('disabled', 'true');
+			}
+		}			
+
+	</script>
+			
+
+		
+		
+		
+		
+		
+		
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+  var ga_accounts = [
+	
+	['_trackPageview', 'UA-1727688-8'] ,
+	
+	['b._trackPageview', 'UA-11570513-1'] 
+	                 
+	]; 
+  
+  function wt_track_pageview(f_tracking_url) {
+	  for(var i in ga_accounts) {
+		  var gacct = ga_accounts[i];
+		  if (f_tracking_url != "") {
+			_gaq.push([ gacct[0] , f_tracking_url ]);
+		  }
+		  else {
+			_gaq.push([ gacct[0] ]);
+		  }
+	  }  
+  }
+  
+  
+  _gaq.push(['_setAccount', 'UA-1727688-8']);
+  _gaq.push(['_setDomainName', '.rankingsandreviews.com']);
+  
+	  
+		_gaq.push(['_trackPageview', '/cars-trucks/used-cars/reviews/2008-Ford-Edge/']);
+	  
+	  
+	  _gaq.push(['_trackPageLoadTime']);
+	  
+	  _gaq.push(['_setCampaignCookieTimeout', 86400000]);
+  
+  _gaq.push(['b._setAccount', 'UA-11570513-1']);
+  _gaq.push(['b._setDomainName', '.rankingsandreviews.com']);
+  
+	  
+		_gaq.push(['b._trackPageview', '/cars-trucks/used-cars/reviews/2008-Ford-Edge/']);
+	  
+	  
+	  _gaq.push(['b._trackPageLoadTime']);
+	  
+	  _gaq.push(['_setCampaignCookieTimeout', 86400000]);
+  
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+			
+	</head>
+
+<body>
+
+	<div id="header">
+		<div id="header2">
+			 <a href="http://www.usnews.com" id="logo">
+			 	<span>US News &amp; World Report</span>
+			 </a>
+			 <div id='auto-logo' onclick="location.href='/cars-trucks/'">
+			&nbsp;			 
+			 </div>
+			 <div class="nav">
+				<ul>
+					<li class="first">
+						<a class="home" href="/cars-trucks/">Home</a>
+						<ul>
+							<li id="sn-cars" class=""><a href="/cars-trucks/">Cars</a></li>
+							<li class="list-divider">Other sections:</li>
+							<li id="sn-politics" class=""><a href="http://www.usnews.com/news">Politics &amp; Policy</a></li>
+							<li id="sn-health" class=""><a href="http://www.usnews.com/health">Health</a></li> 
+							<li id="sn-money" class=""><a href="http://www.usnews.com/money">Money</a></li>      
+							<li id="sn-education" class=""><a href="http://www.usnews.com/education">Education</a></li>
+							<li id="sn-science" class=""><a href="http://www.usnews.com/science">Science</a></li>
+							<li id="sn-travel" class=""><a href="http://travel.usnews.com">Travel</a></li>
+							<li id="sn-home" class="last"><a href="http://www.usnews.com">U.S. News Home</a></li>
+						</ul>
+					</li>
+					<li><a href="/cars-trucks/rankings/">Car Rankings</a></li>
+					<li><a href="/cars-trucks/browse/">New Cars</a></li>
+					<li><a href="/cars-trucks/used-cars/">Used Cars</a></li>
+					<li class="last"><a href="/cars-trucks/best-cars-blog/">News</a></li>
+				</ul>
+				<div id="banner-share">
+					<a href="/cars-trucks/feeds/daily-news-rss/best-cars-blog/" target="_blank"><img src="/images/social/rss-sm-gray.png" alt="RSS Feed"></a>
+					<a href="http://www.facebook.com/usnewsbestcars" target="_blank"><img src="/images/social/facebook-sm-gray.png" alt="Facebook"></a>
+					<a href="http://twitter.com/#!/USNewsCars" target="_blank"><img src="/images/social/twitter-sm-gray.png" alt="Twitter"></a>
+		        </div>
+				
+					
+<script type="text/javascript" src="/cars-trucks/dynamic_scripts/auto_finder.js"></script>
+
+
+
+<form method="post" action="" id="auto-finder">
+
+	<fieldset>
+		<label>Find a Car:</label>
+	
+		<select name="auto_make" class="car_make" id="af_make"  style="width: 108px;">
+			<option value="ALL BRANDS">-- All Makes --</option>
+			
+				<option value="acura">Acura</option>
+			
+				<option value="aston-martin">Aston Martin</option>
+			
+				<option value="audi">Audi</option>
+			
+				<option value="bmw">BMW</option>
+			
+				<option value="buick">Buick</option>
+			
+				<option value="cadillac">Cadillac</option>
+			
+				<option value="chevrolet">Chevrolet</option>
+			
+				<option value="chrysler">Chrysler</option>
+			
+				<option value="dodge">Dodge</option>
+			
+				<option value="ferrari">Ferrari</option>
+			
+				<option value="fiat">FIAT</option>
+			
+				<option value="fisker">Fisker</option>
+			
+				<option value="ford">Ford</option>
+			
+				<option value="gmc">GMC</option>
+			
+				<option value="honda">Honda</option>
+			
+				<option value="hummer">Hummer</option>
+			
+				<option value="hyundai">Hyundai</option>
+			
+				<option value="infiniti">Infiniti</option>
+			
+				<option value="isuzu">Isuzu</option>
+			
+				<option value="jaguar">Jaguar</option>
+			
+				<option value="jeep">Jeep</option>
+			
+				<option value="kia">Kia</option>
+			
+				<option value="lamborghini">Lamborghini</option>
+			
+				<option value="land-rover">Land Rover</option>
+			
+				<option value="lexus">Lexus</option>
+			
+				<option value="lincoln">Lincoln</option>
+			
+				<option value="lotus">Lotus</option>
+			
+				<option value="maserati">Maserati</option>
+			
+				<option value="maybach">Maybach</option>
+			
+				<option value="mazda">Mazda</option>
+			
+				<option value="mercedes-benz">Mercedes-Benz</option>
+			
+				<option value="mercury">Mercury</option>
+			
+				<option value="mini">MINI</option>
+			
+				<option value="mitsubishi">Mitsubishi</option>
+			
+				<option value="nissan">Nissan</option>
+			
+				<option value="pontiac">Pontiac</option>
+			
+				<option value="porsche">Porsche</option>
+			
+				<option value="ram">Ram</option>
+			
+				<option value="rolls-royce">Rolls-Royce</option>
+			
+				<option value="saab">Saab</option>
+			
+				<option value="saturn">Saturn</option>
+			
+				<option value="scion">Scion</option>
+			
+				<option value="smart">Smart</option>
+			
+				<option value="subaru">Subaru</option>
+			
+				<option value="suzuki">Suzuki</option>
+			
+				<option value="tesla">Tesla</option>
+			
+				<option value="toyota">Toyota</option>
+			
+				<option value="volkswagen">Volkswagen</option>
+			
+				<option value="volvo">Volvo</option>
+			
+		</select>
+	
+		<select name="auto_model" class="car_model" id="af_model"  disabled="disabled" style="width: 115px;">
+			 <option value="-1">-- Model --</option>
+		</select>
+	
+		<select name="finder_year" class="car_year" id="af_year" disabled="disabled" style="width: 57px;">
+			<option value="-1">----</option>
+		</select>
+	
+		<img id="finder-submit" class="car_submit" alt="submit" src="/images/go-btn.png" />
+	</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function disableOptionsIE7Fix() {
+	if ($.browser.msie && parseFloat($.browser.version) < 8) {
+		$("#af_price").find("[disabled]").css({'color': '#cccccc'});
+        $("#af_price").change(function(){
+            var selected = $(this).val();
+            var disabled = $(this).find("[value="+selected+"]").attr("disabled");
+            if (disabled != undefined) {
+                $('#af_price option[value|="Review"]').attr('selected','selected');
+            }
+        });
+    }
+}
+
+function checkPrices() {
+	var year = $('#af_year option:selected').html();
+	var make = $('#af_make').val();
+	var model = $('#af_model option:selected').html();
+	
+	var avg = getAveragePrice(year,make,model);
+	
+	//remove from ie7 fixe function
+	$("#af_price option").css({'color':''});
+	
+	if (avg != null) {
+		$('#af_price option[value|="Prices"]').removeAttr('disabled');
+		$('#af_price option[value|="Prices"]').attr('selected','selected');
+		return;				
+	}
+	$('#af_price option[value|="Review"]').attr('selected','selected');
+	$('#af_price option[value|="Prices"]').attr('disabled','disabled');
+	
+	disableOptionsIE7Fix();
+}
+
+$(document).ready(function(){
+	
+		var year=document.getElementById("af_year");
+		var make=document.getElementById("af_make");
+		var model=document.getElementById("af_model");
+		
+		$("#af_make").change(function(){
+			populateModelDropdown(year,make,model);		
+			$('#af_price option[value|="Prices"]').attr('selected','selected');
+		});
+	
+		$("#af_model").change(function(){
+			populateYearDropdown(year,make,model);
+			checkPrices();
+		});	
+		
+		$("#af_year").change(function(){
+			checkPrices();
+		});	
+		
+		$("#finder-submit").click(function(){
+			if ($('#af_price').val() == 'Prices') {
+				var chromeId = getChromeID($('#af_year option:selected').html(),
+						$('#af_make').val(), $('#af_model option:selected').html());
+				if (chromeId == null) return;
+				
+				
+					
+					var url = "http://bestprice.rankingsandreviews.com";
+					
+				
+				url += "/redirect-link.html?chromeTrimId=" + chromeId + "&referrer_id=ZUSNA0025";
+				
+				top.location=url;
+				return;
+			}
+			
+			submitJumpACarForm(year,make,model);		
+		});
+		
+		if ($("#af_make").val() != "ALL BRANDS") {
+			populateModelDropdown(year,make,model);		
+		}
+	
+	
+
+});
+
+</script>
+				
+			 </div><!--/#nav-->
+		</div><!--/#header2-->
+	 </div>
+ 	<script type="text/javascript">
+		$('.nav ul li.first').hover(
+			function(){ $('.nav ul ul').css('left','auto'); },
+			function(){ $('.nav ul ul').css('left','-999em'); }
+		);
+	</script>
+	
+	<div id="body" class="lg-gutter">
+	<ul id="breadcrumbs">
+		<li><a href='/cars-trucks/'>Best Cars &amp; Trucks Home</a> / </li><li><a href="/cars-trucks/used-cars/">Used Cars</a> / </li><li><a href="/cars-trucks/used-cars/ford/">Used Ford</a> / </li><li>2008 Ford Edge</li>
+	</ul>
+
+	<div id="top-banner">
+			
+	
+	<div class="banner topbanner" id="bannerId1" style="display:none;">
+		<script type="text/javascript">		
+			renderDoubleClickDynamic(1, adParameters);
+		</script>
+		<script type="text/javascript">
+			adValidator("bannerId1");
+		</script>
+	</div>
+
+
+
+
+
+
+
+	</div>
+
+	
+
+
+
+
+		<div id="content" class="product-page ">
+			
+			
+	<div id="tabbed-box">	
+	
+		<div id="tabs">
+			<ul>		
+										
+					
+						<li class="tab unselected"><a href="/cars-trucks/Ford_Edge/">2012</a></li>					
+					
+				
+
+										
+					
+						<li class="tab selected"><h1>2008 Ford Edge</h1></li>
+					
+				
+	
+											
+					<li class="tab unselected"><a href="/cars-trucks/used-cars/for-sale/Ford_Edge/">Used <span>Ford Edge</span></a></li>				
+				
+
+											
+					<li class="tab unselected"><a href="/cars-trucks/Ford_Edge/Owners/">Repairs<span>Ford Edge</span></a></li>				
+								
+
+				
+			</ul>
+		</div>
+		
+		<div id="tab-body">
+			<div id="product-image" >
+				
+				
+				<a class="vehicle_image" href="/cars-trucks/Ford_Edge/2008/photos-exterior/" >
+				
+				<img src="http://static.usnews.rankingsandreviews.com/images/Auto/chrome/292973/292973_280x140.jpg"  width="280" height="140" alt="2008 Ford Edge"/>
+				
+				<img src="/images/cars-trucks/product/photo-gallery.gif" alt="photo gallery" id="gallery-icon"/>
+				</a>
+				
+			</div>
+			<div id="product-summary">
+			
+				
+				
+				
+				<div class="specs sunsetted-specs">
+					<div><span>Original MSRP:</span> $25,735 - $32,845</div>
+					<div><span>MPG:</span>  16 City / 24 Hwy </div>
+				</div>
+				
+				
+				
+
+
+
+	
+		
+			<form  id="get-quote" class='used-entry' action="/cars-trucks/used-cars/for-sale/Ford_Edge/" method="get">
+				<span>Used Ford Edge for sale: </span>
+				<ul>
+					<li>13,295 listings</li>
+					<li class='lower-entry'>Find listings in your area:
+					<input type="text" name="zip" class="zipCode zip-field" id="zipcode" value="Zip Code" onclick="document.getElementById('zipcode').value='';$('#zipcode').attr('maxlength', '5');$('#dq_btn').attr('disabled', 'true');"/>
+					<input type="submit" class='dq_btn' id="dq_btn" value="" disabled="disabled"/>
+					</li>
+				</ul>	
+			</form>
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+			</div>
+			<br class="clearleft" />
+		</div>
+		
+	</div>
+
+
+<div id="product-nav">
+	<ul>
+		
+			
+				<li class="selected first"><div>Review</div></li>
+			
+			
+			
+				
+				<li><a href="/cars-trucks/Ford_Edge/2008/specs/">Specs</a></li>
+			
+			
+			
+				
+					
+						<li ><a href="/cars-trucks/Ford_Edge/2008/Performance/">Performance</a></li>
+					
+				
+					
+						<li ><a href="/cars-trucks/Ford_Edge/2008/Interior/">Interior</a></li>
+					
+				
+					
+						<li ><a href="/cars-trucks/Ford_Edge/2008/Safety/">Safety</a></li>
+					
+				
+					
+						<li ><a href="/cars-trucks/Ford_Edge/2008/Reliability/">Reliability</a></li>
+					
+				
+			
+				
+			
+				<li class="last"><a href="/cars-trucks/Ford_Edge/2008/photos-exterior/">Photos & Videos</a></li>
+			
+		
+	</ul>
+</div>
+
+<div id="product-content">
+	
+	<div style="float: right; width: 215px;">
+	
+		<div style="overflow: hidden; margin-bottom:6px;">
+			
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+<style type="text/css">
+	a.share-link {
+		float:right;
+		width:52px;
+		height:22px;
+		text-align:right;
+		margin-right:5px;
+		text-decoration:none;
+	}
+	
+	a.share-link:hover {
+		color:#ffffff
+	}
+	.fb-button {
+		background: url(/images/social/facebook.png) no-repeat;
+		color: #ffffff;	
+	}
+		
+	a.email-share {
+		background: url(/images/social/email.png) no-repeat;
+		width:67px;
+		margin-right:3px;
+	}
+	
+	a.twitter-share {
+		background: url(/images/social/twitter.png) no-repeat;
+		color: #3b9bc1;
+	}
+	a.twitter-share:hover {
+		color: #3b9bc1;
+	}
+	
+	span.share-count {
+		display:block;
+		font-weight:bold;
+		height: 22px;
+		margin-right:7px;
+		padding-top:3px;
+	}
+	
+	
+</style>		
+<script type="text/javascript">
+	var url=encodeURIComponent("http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/");
+	var title=encodeURIComponent("2008 Ford Edge Review");
+	var description=encodeURIComponent("2008 Ford Edge Review -- U.S. News Best Cars");
+	
+	function get_facebook_count() {
+		FB.api(
+		  {
+		    method: 'fql.query',
+		    query: 'SELECT share_count FROM link_stat WHERE url = "' + url + '"'
+		  },
+		  function(response) {
+		    $('a.fb-button span').html(response[0].share_count);
+		  }
+		);
+	}
+	
+	function get_twitter_count() {
+		jQuery.getJSON(
+		    'ht'+'tp://urls.api.twitter.com/1/urls/count.json?url=' + url + '&callback=?', 
+		    function (data) {
+		    	if (data != null) 
+		    		$('a.twitter-share span').html(data.count);
+		    }
+		);
+	}
+
+	function fbs_click() {
+		window.open('http://www.facebook.com/sharer.php?u='+url+'&t='+description,'sharer','toolbar=0,status=0,width=485,height=450');
+		return false;
+	}
+		
+	function es_click() {
+		window.open('/cars-trucks/aj/emailshare/?url=' + url + '&title='+ title,'email_share', 'width=485, height=480, menubar=0, status=0,toolbar=0, scrollbars=0'); 
+		return false;
+	}
+	
+	function ts_click() {
+		window.open('http://twitter.com/share?url=' + url + '&related=USNewsCars&text=' + description,'share','toolbar=0,status=0,width=485,height=450'); 
+		return false;
+	}
+</script>
+
+<a class="share-link email-share" href="/cars-trucks/aj/emailshare/?url=encodeURIComponent('http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/')&title=2008%20Ford%20Edge%20Review" onclick='return es_click()' target="_blank">&nbsp;</a>
+<a class="share-link fb-button" href="http://www.facebook.com/share.php?u=encodeURIComponent('http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/')" onclick='return fbs_click()' target="_blank" title="Share on Facebook..."><span class='share-count'></span></a>
+<a target="_blank" href="http://twitter.com/share?url=encodeURIComponent('http://usnews.rankingsandreviews.com/cars-trucks/Ford_Edge/2008/')" onclick="return ts_click()" class="share-link twitter-share"><span class='share-count'></span></a>
+
+<script type="text/javascript">
+	get_twitter_count();
+	get_facebook_count();
+</script>
+		</div>
+		<div id="product-sidebar">
+			
+				<div class="scores">
+					<h4>U.S.News Scores</h4>
+					<table class="score-card">
+						<tr class="overall"><td>Overall:</td><td class="score">8.2</td></tr>
+						
+						<tr><td >
+						<a href="
+								/cars-trucks/Ford_Edge/2008/Performance/
+								">
+						Performance</a>:</td><td class="score">7.6</td></tr>
+						
+						<tr><td >
+						<a href="
+								
+								/cars-trucks/Ford_Edge/2008/photos-exterior/
+								
+								">
+						Exterior</a>:</td><td class="score">8.5</td></tr>
+						
+						<tr><td >
+						<a href="
+								/cars-trucks/Ford_Edge/2008/Interior/
+								">
+						Interior</a>:</td><td class="score">7.6</td></tr>
+						
+						<tr><td >
+						<a href="
+								/cars-trucks/Ford_Edge/2008/Safety/
+								">
+						Safety</a>:</td><td class="score">9.7</td></tr>
+						
+						<tr><td  class='last' >
+						<a href="
+								/cars-trucks/Ford_Edge/2008/Reliability/
+								">
+						Reliability</a>:</td><td class="score">8.0</td></tr>
+						
+					</table>
+				</div>
+				<div class="link-note"><a  href="/methodology/">How we calculate scores</a></div>
+				<div class="link-note"><a  href="/cars-trucks/Ford_Edge/2008/sources/">Research we analyzed for this review</a></div>
+			
+			
+				
+					
+
+			
+				
+	
+	<h4 class="border-top">Pros and Cons</h4>
+	
+	<div class="pros">
+		<ul>
+<li>Quick acceleration with a smooth, quiet ride</li>
+<li>Comfortable, roomy seating areas</li>
+<li>Intuitive, easy-to-use controls</li>
+</ul>
+	</div>
+	<div class="cons">
+		<ul>
+<li>Options can inflate price considerably</li>
+<li>No third-row seat option</li>
+</ul>
+	</div>
+
+			
+
+			
+			
+			
+			<div class="other-years">
+				<h4 class="border-top">Research Other Years</h4>
+				<ul>
+				
+					<li><a href="/cars-trucks/Ford_Edge/">2012 Ford Edge</a></li>
+				
+					<li><a href="/cars-trucks/Ford_Edge/2011/">2011 Ford Edge</a></li>
+				
+					<li><a href="/cars-trucks/Ford_Edge/2010/">2010 Ford Edge</a></li>
+				
+					<li><a href="/cars-trucks/Ford_Edge/2009/">2009 Ford Edge</a></li>
+				
+					<li><a href="/cars-trucks/Ford_Edge/2007/">2007 Ford Edge</a></li>
+				
+				</ul>
+			</div>
+			
+		</div>
+
+
+		<div style="width: 205px; margin-left: 10px; margin-bottom: 10px;">
+				
+
+
+
+
+	<div id="doubleclickTile4" style="display:none;" class="ad_shoppinglinks ad">
+		<p id="doubleclickTileLabel4Label" class="ad-label">advertisement</p>
+		<script type="text/javascript">
+			renderDoubleClickDynamic(4, adParameters);
+		</script>
+		<script type="text/javascript">
+			adValidator("doubleclickTile4");
+		</script>
+	</div>
+
+	
+		</div>
+	</div>
+
+	
+
+	
+	<h2>2008 Ford Edge  Review - What the Auto Press Says</h2>
+	
+	
+		<div class="last-update old-car">Review Last Updated: 2/18/09 </div>
+	
+
+	
+	
+	
+	
+	
+		<p>The Edge's ranking is based on its solid performance, comfortable seating and stylish looks. However, some find its interior quality lacking compared to rivals, and several complain that the alluring base price can quickly skyrocket with options.</p>
+	
+
+	
+	<p>The 2008 Ford Edge is applauded for its safety ratings, nifty styling, comfortable cabin and solid performance. According to the <a href="http://info.detnews.com/autosconsumer/autoreviews/index.cfm?id=23920" target="_blank" rel="nofollow">Detroit News</a>, "From just about any angle, the Edge looks like a winner -- rock-solid, utterly capable and almost universally appealing." The 2007 model was named as one of AAA and <em>Parents</em> magazine's <a href="http://www.fordvehicles.com/features/news/detail/index.asp?id=1632" target="_blank" rel="nofollow">"Best Cars for Families"</a> and received the <a href="http://media.ford.com/newsroom/feature_display.cfm?release=24570" target="_blank" rel="nofollow">"Urban Truck of the Year"</a> award from On Wheels, Inc. It was also a top-ten finisher in Motor Trend's <a href="http://www.trucktrend.com/oftheyear/suv/163_0612_2007_suv_of_the_year/2007_ford_edge.html" target="_blank" rel="nofollow">"Sport/Utility of the Year"</a> testing. Though the 2008 Edge ranks in the top half of its class, it ranks in the bottom half when compared only to other <a href="/cars-trucks/rankings/Affordable-Crossover-SUVs/">affordable crossovers</a>. As a new model last year, few changes have been made to the 2008 Edge. This year's model offers new features, including a power liftgate and Ford's Sync hands-free infotainment system.</p>
+<p>The Edge is available in three trims: last year's SE and SEL plus the new-for-2008 Limited, which replaces last year's SEL Plus. It's available in front-wheel drive or all-wheel drive.</p>
+<ul>
+<li class="quote quote-pos">"If you want a pleasing, well-rounded tall station wagon -- which is what a crossover SUV actually is -- then the Edge makes a good case for itself." -- <a href="http://www.caranddriver.com/previews/11872/2007-ford-edge.html" target="_blank" rel="nofollow">Car and Driver</a></li>
+<li class="quote quote-pos">"Sporty, safe, and fun to drive perfectly describes the new Ford Edge." -- <a href="http://en.epochtimes.com/news/8-2-16/66046.html" target="_blank" rel="nofollow">Epoch Times</a> </li>
+<li class="quote quote-pos">"This car was a joy to drive for more than 1,200 miles of highway, local trips, holiday gift shopping, and commuting in traffic." -- <a href="http://research.cars.com/go/crp/research.jsp?revid=50795&amp;indcriteria=ASSET_TYPE-Affiliate+Review%2CBuying+Guide%2CVehicle+Profile%7CM-_14_%7CD-_8311_%7CY-_2007_%7CresultStructure-combined&amp;makeid=14&amp;modelid=8311&amp;year=2007&amp;myid=&amp;revlogtype=19&amp;section=reviews&amp;mode=&amp;aff=chitrib" target="_blank" rel="nofollow">Boston Globe</a></li>
+</ul>	
+	
+	
+		
+		<h3 class="component">
+			<a href="/cars-trucks/Ford_Edge/2008/Performance/">Edge Performance</a> - 7.6 (Good)
+		</h3>
+		<p>
+		
+		The Edge ranks in the middle of its class for performance, which features a comfortable ride with good acceleration. A drawback, however, is that it isn't quite sporty enough for most reviewers. "As for driving dynamics, the Edge is reasonably cooperative and agile at moderate speeds but with little appetite for aggressive driving," says the <a href="http://research.cars.com/go/crp/research.jsp?revid=50557&amp;indcriteria=ASSET_TYPE-Affiliate+Review%2CBuying+Guide%2CVehicle+Profile%7CM-_14_%7CD-_8311_%7CY-_2007_%7CresultStructure-combined&amp;revlogtype=19&amp;makeid=14&amp;modelid=8311&amp;year=2007&amp;myid=&amp;revlogtype=19&amp;section=reviews&amp;mode=&amp;aff=chitrib" target="_blank" rel="nofollow">Los Angeles Times</a>. Some test drivers also find the Edge's brakes disappointing. 
+		
+			<a class="read-more" href="/cars-trucks/Ford_Edge/2008/Performance/" rel="nofollow">Read More</a>
+		
+		</p>
+		
+	
+		
+		<h3 class="component">
+			<a href="/cars-trucks/Ford_Edge/2008/Exterior/">Edge Exterior</a> - 8.5 (Very Good)
+		</h3>
+		<p>
+		
+		The 2008 Ford Edge ranks in the top half of its class for its sharp exterior styling, with most reviews describing it as a true head-turner, especially for an SUV. "In supermarket parking lots, at street corners, on freeways, people can't help but stare at Ford's flashy new midsize crossover vehicle," says the <a href="http://info.detnews.com/autosconsumer/autoreviews/index.cfm?id=23920" target="_blank" rel="nofollow">Detroit News</a>. 
+		
+			
+			<a class="read-more" href="/cars-trucks/Ford_Edge/2008/photos-exterior/" rel="nofollow">View Photos</a>
+			
+		
+		</p>
+		
+	
+		
+		<h3 class="component">
+			<a href="/cars-trucks/Ford_Edge/2008/Interior/">Edge Interior</a> - 7.6 (Good)
+		</h3>
+		<p>
+		
+		The 2008 Ford Edge ranks in the top half of its class for its five-seat interior, which combines comfort and style in family-friendly accommodations. <a href="http://www.usnews.com/usnews/biztech/auto/review/ford_edge.htm" target="_blank" rel="nofollow">U.S. News</a> reviewer Rick Newman calls the modern cabin "a high point, with electronic climate and audio controls, a helpful information screen, and lots of handy trays, nooks, and pockets for storage." He also praises the kid-friendly factor, noting that the back seat has plenty of room and includes cupholders and a reading light. One of the few complaints about the interior, however, is that some materials are lacking in quality. Optional gadgets include a DVD navigation system and the new Sync infotainment system. 
+		
+			<a class="read-more" href="/cars-trucks/Ford_Edge/2008/Interior/" rel="nofollow">Read More</a>
+		
+		</p>
+		
+	
+		
+		<h3 class="component">
+			<a href="/cars-trucks/Ford_Edge/2008/Safety/">Edge Safety</a> - 9.7 (Excellent)
+		</h3>
+		<p>
+		
+		The <a href="http://www.safercar.gov/Index2.cfm?myClass=SUV&amp;myYear=2008&amp;myMake=Ford&amp;myModel=Edge&amp;GoButton=View+specific+vehicle" target="_blank" rel="nofollow">federal government</a> gives the 2008 Ford Edge good scores in both frontal-crash and side-crash tests, and the <a href="http://www.iihs.org/ratings/ratingsbyseries.aspx?id=599" target="_blank" rel="nofollow">Insurance Institute for Highway Safety</a> names it a "Top Safety Pick." Ford's AdvanceTrac system with Roll Stability Control keeps the Edge glued safely to the pavement. 
+		
+			<a class="read-more" href="/cars-trucks/Ford_Edge/2008/Safety/" rel="nofollow">Read More</a>
+		
+		</p>
+		
+	
+		
+		<h3 class="component">
+			<a href="/cars-trucks/Ford_Edge/2008/Reliability/">Edge Reliability</a> - 8.0 (Very Good)
+		</h3>
+		<p>
+		
+			
+				
+					The 2008 Ford Edge reliability score shown 
+					is the Predicted Reliability rating provided by <a href="http://www.jdpower.com/">J.D. Power and Associates</a>.  
+					This score is based on trending the past three years of historical initial 
+					quality and dependability data from J.D. Power's automotive studies, specifically 
+					the Vehicle Dependability Study (VDS) and the Initial Quality Study (IQS).
+									
+			
+		
+		The 2008 Ford Edge comes with a basic <a href="http://www.fordvehicles.com/crossovers/edge/warranty/08/" target="_blank" rel="nofollow">warranty</a> for the first three years or 36,000 miles. 
+		
+			<a class="read-more" href="/cars-trucks/Ford_Edge/2008/Reliability/" rel="nofollow">Read More</a>
+		
+		</p>
+		
+	
+
+	
+
+	
+
+
+<div id="next-steps">
+	<h2><span id="left">Next Steps - </span><span id="right">Ford Edge</span></h2>
+	<ul>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+
+			
+
+									
+			<li class="used"><a href="/cars-trucks/used-cars/for-sale/Ford_Edge/">Search used Ford Edge for sale (13,295 listings)</a></li>				
+		
+
+		
+
+		
+			<li class="photos"><a href="/cars-trucks/Ford_Edge/2008/photos-exterior/" rel="nofollow">View Ford Edge Photos</a></li>		
+		
+			
+		<li class="rankings"><a href="/cars-trucks/rankings/Affordable-Midsize-SUVs/">See Affordable Midsize SUVs rankings</a></li>
+
+		<li class="insurance"><a href="/cars-trucks/car-insurance/">Find the best available insurance rates for the Ford Edge</a></li>
+	</ul>	
+	<div style="clear:left"></div>
+</div>
+
+
+	
+
+</div>
+
+
+		</div>
+
+		<div id="sidebar">
+			
+				
+		
+		
+
+
+
+	<div class="widget used-deals-promo">
+		<h4>Best Used Car Deals: February 2012</h4>
+		<div class="widget-body">
+			<img src="/images/cars-trucks/used/car_deals.png" alt="Used Car Deals" />
+			<p>We've compiled a list of the best used car deals available in the U.S. for this month.</p>
+			<a class="see-all" href="/cars-trucks/Best-Car-Deals/Used-Car-Sales-and-Deals/">See all used car deals<span>&raquo;</span></a>
+		</div>
+	</div>	
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+	<div id="doubleclickTile2" style="display:none;" class="ad_right ad">
+		<p id="doubleclickTileLabel2Label" class="ad-label">advertisement</p>
+		<script type="text/javascript">
+			renderDoubleClickDynamic(2, adParameters);
+		</script>
+		<script type="text/javascript">
+			adValidator("doubleclickTile2");
+		</script>
+	</div>
+
+	
+		
+
+
+
+
+	<div id="doubleclickTile3" style="display:none;" class="ad_right ad">
+		<p id="doubleclickTileLabel3Label" class="ad-label">advertisement</p>
+		<script type="text/javascript">
+			renderDoubleClickDynamic(3, adParameters);
+		</script>
+		<script type="text/javascript">
+			adValidator("doubleclickTile3");
+		</script>
+	</div>
+
+	
+		
+
+
+
+
+
+
+
+	<div class="widget used-buying-guides-promo">
+		<h4>Tips on Buying Used Cars</h4>
+		<div class="widget-body">
+			<img src="/images/cars-trucks/used/used_car_buying_101.png"/>
+			<ul>
+				
+					<li><a href="/cars-trucks/used-cars/Avoiding_Used_Car_Scams/">Avoiding Used Car Scams</a></li>
+				
+					<li><a href="/cars-trucks/used-cars/How_to_Test_Drive_a_Used_Car/">How to Test Drive a Used Car</a></li>
+				
+					<li><a href="/cars-trucks/used-cars/Financing_a_Used_Car/">Financing a Used Car</a></li>
+				
+					<li><a href="/cars-trucks/used-cars/Used_Car_Buying_Guide/">Used Car Buying Guide</a></li>
+				
+			</ul>
+		</div>
+	</div>	
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+	<div class="widget similar-used-cars-promo">
+		<h4>Other Used Cars Like This</h4>
+		<div class="widget-body">
+			
+			<p>People looking for Ford Edge also shopped for these brands:</p>
+			<ul>
+				
+					<li><a href="/cars-trucks/used-cars/for-sale/Buick_Enclave/">Used Buick Enclave</a> <span>(5,402 Available)</span></li>
+				
+					<li><a href="/cars-trucks/used-cars/for-sale/Mazda_CX-9/">Used Mazda CX-9</a> <span>(3,100 Available)</span></li>
+				
+					<li><a href="/cars-trucks/used-cars/for-sale/Chevrolet_Traverse/">Used Chevrolet Traverse</a> <span>(6,864 Available)</span></li>
+				
+			</ul>
+			
+			
+		</div>
+	</div>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+		</div>
+
+		<div style="clear:both;"></div>
+		<div id="foot-content">
+			
+	
+
+		</div>
+
+	</div>
+
+	<div id="footer">
+
+
+		<ul id="foot-nav">
+			<li class="first"><a href="/aboutUs/">About Us</a></li>
+			<li><a href="/methodology/">How We Do Our Rankings</a></li>
+			<li><a rel="nofollow" href="/contactUs/">Contact Us</a></li>
+			<li><a href="/siteMap/">Site Map</a></li>
+			<li><a href="http://www.usnews.com/">U.S. News Home</a></li>
+			<li><a href="http://travel.usnews.com/">U.S. News Travel Guides + Rankings</a></li>
+		</ul>
+		<div id="copy-legal">Use of this Web site constitutes acceptance of our <a rel="nofollow" href="/termsAndConditions/">Terms and Conditions of Use and Privacy Policy</a>. Copyright 2007-2012 &copy; U.S. News Rankings &amp; Reviews</div>
+	</div>
+
+
+
+	
+
+	<!-- Begin comScore Tag -->
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));</script>
+<script type="text/javascript">COMSCORE.beacon({    c1:2,    c2:"11307981",    c3:"",    c4:escape(window.location),    c5:"",    c6:"autos",    c15:""  });</script><noscript>  <div><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=11307981&amp;c3=&amp;c4=&amp;c5=&amp;c6=autos&amp;c15=&amp;cj=1" alt="comScore"/></div></noscript>
+<!-- End comScore Tag -->
+
+
+	
+		
+	<!-- Start Quantcast tag -->
+	<script type="text/javascript">
+	_qoptions={
+	qacct:"p-efoP1AkkGV9EU"
+	};
+	</script>
+	<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+	<noscript>
+	<img src="http://pixel.quantserve.com/pixel/p-efoP1AkkGV9EU.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+	</noscript>
+	<!-- End Quantcast tag -->
+	
+	<!-- crazyegg -->
+	<script type="text/javascript">document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/9297.js"%3E%3C%2Fscript%3E'))</script>
+	<!-- end crazy egg -->
+	
+</body>
+
+</html>
+

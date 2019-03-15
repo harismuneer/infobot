@@ -1,0 +1,654 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-16T05:38:29Z
+WARC-TREC-ID: clueweb12-0203wb-46-25351
+WARC-IP-Address: 168.144.247.240
+WARC-Payload-Digest: sha1:MCYPZU6PJO6ZJDTE2UKJAXUW36EZKRRC
+WARC-Target-URI: http://www.laborheritage.org/?p=502
+WARC-Record-ID: <urn:uuid:88598859-8b33-48d7-9334-8bffe803bf78>
+Content-Type: application/http; msgtype=response
+Content-Length: 34607
+
+HTTP/1.0 200 OK
+Date: Thu, 16 Feb 2012 05:38:34 GMT
+Server: Apache/2.0
+X-Pingback: http://www.laborheritage.org/xmlrpc.php
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Labor Heritage Foundation  &raquo; Blog Archive   &raquo; Labor Song Parodies</title>
+
+<meta name="generator" content="WordPress 2.7" />
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.laborheritage.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.laborheritage.org/wp-includes/wlwmanifest.xml" /> 
+<script type='text/javascript' src='http://www.laborheritage.org/wp-includes/js/comment-reply.js?ver=20081210'></script>
+<meta name="generator" content="WordPress 2.7" />
+
+<script type='text/javascript' src='http://www.laborheritage.org/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+		<script type='text/javascript' src='http://www.laborheritage.org/wp-content/plugins/business-directory/main.js'></script>
+		<script>
+			function bizdir_add_listing(name,email,cName,description,keywords,website,cEmail,phone) { //Add Form Ajax Call
+				//Deactivate submit button and display processing message
+				document.getElementById('bizdir_submit').disabled = true;
+				var submit_message = document.getElementById('bizdir_submit_message');
+				submit_message.className = "bizdir_message";
+				submit_message.innerHTML = "Submitting Form, Please Wait...";
+				//Clear inputs with Auto Text
+				var all_inputs = document.getElementsByTagName('input');
+				for(var i=0;i<all_inputs.length;i++)
+					bizdir_clearAutofill(all_inputs[i].id,all_inputs[i].getAttribute('bizdir_autofill'));
+				var all_textareas = document.getElementsByTagName('textarea');
+				for(var i=0;i<all_textareas.length;i++)
+					bizdir_clearAutofill(all_textareas[i].id,all_textareas[i].getAttribute('bizdir_autofill'));
+				//Build SACK Call
+				var mysack = new sack("http://www.laborheritage.org/wp-content/plugins/business-directory/requests.php");
+				mysack.execute = 1;
+				mysack.method = 'POST';
+				mysack.setVar("action","AddListing");
+				mysack.setVar("name",document.getElementById("bizdir_name").value);
+				mysack.setVar("email",document.getElementById("bizdir_email").value);
+				mysack.setVar("cName",document.getElementById("bizdir_cName").value);
+				mysack.setVar("description",document.getElementById("bizdir_description").value);
+				mysack.setVar("keywords",document.getElementById("bizdir_keywords").value);
+				mysack.setVar("website",document.getElementById("bizdir_website").value);
+				mysack.setVar("cEmail",document.getElementById("bizdir_cEmail").value);
+				mysack.setVar("phone",document.getElementById("bizdir_phone").value);
+				mysack.setVar("street1",document.getElementById("bizdir_street1").value);
+				mysack.setVar("street2",document.getElementById("bizdir_street2").value);
+				mysack.setVar("city",document.getElementById("bizdir_city").value);
+				mysack.setVar("state",document.getElementById("bizdir_state").value);
+				mysack.setVar("zip",document.getElementById("bizdir_zip").value);
+				mysack.setVar("country",document.getElementById("bizdir_country").value);
+				mysack.onError = function() { alert('An ajax error occured while adding your listing. Please reload the page and try again.') };
+				mysack.runAJAX();//excecute
+				return true;
+			}
+			
+			function bizdir_search_listings() { //Search Ajax Call
+				var search_term = document.getElementById('bizdir_search_term');
+				if(search_term.value == "" || search_term.value == null)
+					return;
+				//Deactivate submit button and display processing message
+				document.getElementById('bizdir_search').disabled = true;
+				var submit_message = document.getElementById('bizdir_messages');
+				submit_message.className = "bizdir_message";
+				submit_message.innerHTML = "Searching Listings, Please Wait...";
+				//Build SACK Call
+				var mysack = new sack("http://www.laborheritage.org/wp-content/plugins/business-directory/requests.php");
+				mysack.execute = 1;
+				mysack.method = 'POST';
+				mysack.setVar("action","SearchListings");
+				mysack.setVar("searchTerms",search_term.value);
+				mysack.onError = function() { alert('An ajax error occured while searching. Please reload the page and try again.') };
+				mysack.runAJAX();//excecute
+				return true;
+			}
+			
+			function bizdir_change_listings_page(offset) { //Jump to the appropriate page in the directory Ajax Call
+				//Build SACK Call
+				var mysack = new sack("http://www.laborheritage.org/wp-content/plugins/business-directory/requests.php");
+				mysack.execute = 1;
+				mysack.method = 'POST';
+				mysack.setVar("action","ChangePage");
+				mysack.setVar("offset",offset);
+				mysack.onError = function() { alert('An ajax error occured. Please reload the page and try again.') };
+				mysack.runAJAX();//excecute
+				return true;
+			}
+		</script>
+	
+<!-- Start Of Script Generated By cforms v10.2 [Oliver Seidel | www.deliciousdays.com] -->
+<link rel="stylesheet" type="text/css" href="http://shop.laborheritage.org/wp-content/plugins/cforms/styling/wide_form.css" />
+<script type="text/javascript" src="http://shop.laborheritage.org/wp-content/plugins/cforms/js/cforms.js"></script>
+<!-- End Of Script Generated By cforms -->
+
+
+	<!-- Added By Highslide Plugin. Version 1.28  -->
+	<link href='/wp-content/plugins/highslide/highslide.css' rel='stylesheet' type='text/css' />
+				<script type='text/javascript' src='/wp-content/plugins/highslide/highslide.js'></script>
+				<script type='text/javascript'>
+				hs.showCredits = false;
+	 			hs.graphicsDir = '/wp-content/plugins/highslide/graphics/';
+
+
+
+
+
+	    		hs.outlineType = 'rounded-white';
+
+
+
+			</script>
+<!-- Start Of Script Generated By WP-PageNavi 2.31 -->
+<link rel="stylesheet" href="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/pagenavi-css.css" type="text/css" media="screen" />
+<!-- End Of Script Generated By WP-PageNavi 2.31 -->
+
+	<link rel='archives' title='February 2012' href='http://www.laborheritage.org/?m=201202' />
+	<link rel='archives' title='January 2012' href='http://www.laborheritage.org/?m=201201' />
+	<link rel='archives' title='December 2011' href='http://www.laborheritage.org/?m=201112' />
+	<link rel='archives' title='November 2011' href='http://www.laborheritage.org/?m=201111' />
+	<link rel='archives' title='October 2011' href='http://www.laborheritage.org/?m=201110' />
+	<link rel='archives' title='September 2011' href='http://www.laborheritage.org/?m=201109' />
+	<link rel='archives' title='August 2011' href='http://www.laborheritage.org/?m=201108' />
+	<link rel='archives' title='April 2011' href='http://www.laborheritage.org/?m=201104' />
+	<link rel='archives' title='March 2011' href='http://www.laborheritage.org/?m=201103' />
+	<link rel='archives' title='November 2010' href='http://www.laborheritage.org/?m=201011' />
+	<link rel='archives' title='August 2010' href='http://www.laborheritage.org/?m=201008' />
+	<link rel='archives' title='June 2010' href='http://www.laborheritage.org/?m=201006' />
+	<link rel='archives' title='May 2010' href='http://www.laborheritage.org/?m=201005' />
+	<link rel='archives' title='March 2010' href='http://www.laborheritage.org/?m=201003' />
+	<link rel='archives' title='February 2010' href='http://www.laborheritage.org/?m=201002' />
+	<link rel='archives' title='January 2010' href='http://www.laborheritage.org/?m=201001' />
+	<link rel='archives' title='December 2009' href='http://www.laborheritage.org/?m=200912' />
+	<link rel='archives' title='November 2009' href='http://www.laborheritage.org/?m=200911' />
+	<link rel='archives' title='October 2009' href='http://www.laborheritage.org/?m=200910' />
+	<link rel='archives' title='September 2009' href='http://www.laborheritage.org/?m=200909' />
+	<link rel='archives' title='August 2009' href='http://www.laborheritage.org/?m=200908' />
+	<link rel='archives' title='May 2009' href='http://www.laborheritage.org/?m=200905' />
+	<link rel='archives' title='April 2009' href='http://www.laborheritage.org/?m=200904' />
+	<link rel='archives' title='March 2009' href='http://www.laborheritage.org/?m=200903' />
+	<link rel='archives' title='February 2009' href='http://www.laborheritage.org/?m=200902' />
+	<link rel='archives' title='January 2009' href='http://www.laborheritage.org/?m=200901' />
+
+<link rel="stylesheet" href="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/style-Rust.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.laborheritage.org/?feed=rss2" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.laborheritage.org/?feed=rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.laborheritage.org/?feed=atom" />
+<link rel="pingback" href="http://www.laborheritage.org/xmlrpc.php" />
+<!--[if IE 7]>	
+<link rel="stylesheet" type="text/css" media="all" href="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/iestyle.css" />
+<![endif]-->	
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/ie6style.css" />
+<script defer type="text/javascript" src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/js/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/js/jquery.js?ver=1.2.6"></script>
+<script type="text/javascript" src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/js/superfish.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+jQuery('ul.superfish').superfish();
+});
+</script>
+
+
+
+
+</head>
+
+<body>
+<div id="wrapper2">
+﻿<!--Begin 468x60 Ad-->
+<div id="wrapper3">
+<div style="position: relative; width: 940px; margin: 0px auto 0px auto;"><a href="http://store.laborheritage.org/" title=""><img src="/wp-content/uploads/2009/04/lhf_486x60_03312009.gif" alt="" style="margin-top: 60px; border: none; position: absolute; left: 472px;" /></a>
+</div>
+</div><!--End 468x60 Ad--><div id="wrapper">
+<!--This controls pages navigation bar-->
+<div id="pages">
+<ul class="nav superfish" id="nav2">
+<li class="page_item"><a href="http://www.laborheritage.org" class="title" title="">Home</a></li>
+<li class="page_item page-item-1748"><a href="http://www.laborheritage.org/?page_id=1748" title=""></a></li>
+<li class="page_item page-item-2"><a href="http://www.laborheritage.org/?page_id=2" title="About Us">About Us</a>
+<ul>
+	<li class="page_item page-item-111"><a href="http://www.laborheritage.org/?page_id=111" title="Founders">Founders</a></li>
+	<li class="page_item page-item-113"><a href="http://www.laborheritage.org/?page_id=113" title="The Board of Directors">The Board of Directors</a></li>
+	<li class="page_item page-item-116"><a href="http://www.laborheritage.org/?page_id=116" title="Staff">Staff</a></li>
+	<li class="page_item page-item-118"><a href="http://www.laborheritage.org/?page_id=118" title="Mission Statement">Mission Statement</a></li>
+</ul>
+</li>
+<li class="page_item page-item-102"><a href="http://www.laborheritage.org/?page_id=102" title="Contact Us">Contact Us</a></li>
+<li class="page_item page-item-510"><a href="http://www.laborheritage.org/?page_id=510" title="Donate">Donate</a></li>
+<li class="page_item page-item-303"><a href="http://www.laborheritage.org/?page_id=303" title="Links">Links</a></li>
+<li class="page_item page-item-804"><a href="http://www.laborheritage.org/?page_id=804" title="Mailing List Subscription">Mailing List Subscription</a></li>
+<li class="page_item"><a href="http://store.laborheritage.org/" class="title" title="">Store</a></li>
+</ul>
+
+<img src="http://www.aflcio.org/images/misc_transparent.gif" alt="" border="0" style="float: right; " />
+
+
+
+<!--Begin Search Form-->
+<div class="search_bg">
+<div id="search">
+<form method="get" action="http://www.laborheritage.org" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px">
+
+
+<input type="text"  name="s"  name="search" type="text" id="search"
+onFocus="if(this.value==this.defaultValue)this.value=''"
+onBlur="if(this.value=='')this.value=this.defaultValue" value="Word Search"/> 
+
+<!-- original code:
+<input type="text"  name="s"  value=""/>
+-->
+
+ <input type="image" class="input" src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/images/search-button-Rust.gif" value="submit"/>
+</form>
+</div>
+</div>
+<!--Begin Search Form-->
+</div>
+<!--End pages navigation-->
+
+<!--This controls the categories navigation bar-->
+<div id="categories">
+<ul class="nav superfish">	<li class="cat-item cat-item-18"><a href="http://www.laborheritage.org/?cat=18" title="View all posts filed under buy union">buy union</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.laborheritage.org/?cat=8" title="View all posts filed under Events">Events</a>
+<ul class='children'>
+	<li class="cat-item cat-item-20"><a href="http://www.laborheritage.org/?cat=20" title="View all posts filed under Archive">Archive</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.laborheritage.org/?cat=12" title="View all posts filed under Featured Artists/Activists">Featured Artists/Activists</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.laborheritage.org/?cat=15" title="View all posts filed under Labor History">Labor History</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.laborheritage.org/?cat=13" title="View all posts filed under Music">Music</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.laborheritage.org/?cat=14" title="View all posts filed under News">News</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.laborheritage.org/?cat=5" title="View all posts filed under Programs &amp; Affiliates">Programs &amp; Affiliates</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.laborheritage.org/?cat=21" title="View all posts filed under Union Solidarity Sightings">Union Solidarity Sightings</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.laborheritage.org/?cat=3" title="View all posts filed under Videos">Videos</a>
+</li>
+</ul>
+</div>
+<!--End category navigation-->
+
+	
+<div id="container">
+	
+<div id="left-div">
+		
+
+
+<!--
+<span class="single-entry-titles" style="margin-top: 18px;">Posted by admin on  February 22, 2009</span>
+-->
+
+<div class="post-wrapper">
+<!-- <div style="clear: both;"></div> -->
+
+<!--
+﻿		<a href="http://www.laborheritage.org/?p=502" title="Labor Song Parodies"><img src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/timthumb.php?src=/wp-content/uploads/2009/02/song.jpg&amp;h=250&amp;w=250&amp;zc=1" alt="Labor Song Parodies"  style="border: 10px solid #333E3C; float: left; display: inline; margin-right: 10px;" /></a>
+-->
+
+
+<h3 class="post-title"><a href="http://www.laborheritage.org/?p=502" rel="bookmark" title="Labor Song Parodies">Labor Song Parodies</a></h3>
+
+
+<!--
+<div class="post-info">Categories:  <a href="http://www.laborheritage.org/?cat=4" title="View all posts in Featured Articles" rel="category">Featured Articles</a>,  <a href="http://www.laborheritage.org/?cat=13" title="View all posts in Music" rel="category">Music</a>  
+| <a href="#postcomment" title="Leave a comment">no responses</a></div>
+-->
+
+
+
+
+<h2>Lean on Me</h2>
+<p>(Original by Bill Withers) New words by Julie McCall, Washington, DC</p>
+<p><strong>Verse:</strong> Sometimes, on our jobs, we feel alone</p>
+<p>We just can&#8217;t take it</p>
+<p>But if we organize, history has shown</p>
+<p>That we can make it!</p>
+<p><strong>Chorus: </strong> UNION – we can be strong</p>
+<p>We can have friends</p>
+<p>To help us carry on</p>
+<p>Yes we can hang on</p>
+<p>As long as we have a Union to lean on</p>
+<p><strong>Verse:</strong> When– the boss get you down, we&#8217;ll pick you up</p>
+<p>Help you to fight it</p>
+<p>Hard times come around, but if you are wronged</p>
+<p>We&#8217;ll try to right it!</p>
+<p><strong>Bridge: </strong>Just call on your Union, when you need a hand</p>
+<p>We all need somebody to lean on</p>
+<p>You just might have a problem that we&#8217;ll understand</p>
+<p>We all need a Union to lean on</p>
+<p><strong>Chorus:</strong> UNION – we can be strong</p>
+<p>We can have friends</p>
+<p>To help us carry on</p>
+<p>Yes we can hang on</p>
+<p>As long as we have a Union to lean on<br />
+<strong>Chorus<br />
+</strong></p>
+<p><strong>Chorus</strong></p>
+<h2>Marching in the Street</h2>
+<p>Tune: Dancing in the Street<br />
+Lyrics: Elise Bryant, Lisa Marie Smith, Betty Coleman</p>
+<p>Calling out around the town,<br />
+Get up on your feet!<br />
+The struggle is here and the time is right<br />
+For marching in the street<br />
+Down on Larned, and at Lafayette, here in Detroit City&#8230;<br />
+All we need is unions, Strong Unions. There&#8217;ll be Unions everywhere.<br />
+There&#8217;ll be swinging, swaying, and pepper spraying<br />
+While we&#8217;re marching in the street.</p>
+<p>Oh, it doesn&#8217;t matter who they are, they can&#8217;t push us back too far<br />
+So come on everybody, grab a sign, and don&#8217;t you cross that picket line!<br />
+We be marching, we&#8217;re marching in the streets.</p>
+<p>We want negotiation, not confrontation, a chance for all to meet<br />
+There&#8217;ll be swinging, swaying, and pepper spraying<br />
+While we&#8217;re marching in the street.<br />
+Down on Larned, and at Lafayette, here in Detroit City&#8230;.<br />
+All we need is Unions, Strong Unions. There&#8217;ll be Unions everywhere.<br />
+There&#8217;ll be swinging, swaying and pepper spraying<br />
+While we&#8217;re marching in the street.</p>
+<p>Oh, it doesn&#8217;t matter who they are, they can&#8217;t push us back too far.<br />
+So come on everybody, grab a sign, and don&#8217;t you cross that picket line!<br />
+We&#8217;re marching, we&#8217;re marching in the street.<br />
+Down on Larned, and at Lafayette, don&#8217;t forget the Motor City<br />
+Don&#8217;t forget the Motor City, don&#8217;t forget the Motor City<br />
+Don&#8217;t!</p>
+<h2>My Union</h2>
+<p>Tune: My Guy<br />
+Lyrics: Julie McCall</p>
+<p>Nothing you could say could take me away from My Union<br />
+Nothing you could do, cause my point of view is Union<br />
+I know my rights, I&#8217;m standin&#8217; tall<br />
+My Union contract says it all<br />
+I&#8217;m sayin&#8217; it from the heart<br />
+I can&#8217;t be torn apart from My Union</p>
+<p>Nothing you could find gives me peace of mind like My Union<br />
+Nothing you could get gives me self- respect like My Union<br />
+We&#8217;ve all fought hard for what we&#8217;ve got<br />
+And when it comes to organizing&#8211;we&#8217;re hot!<br />
+You&#8217;d best be believin&#8217;<br />
+that I&#8217;m really needin&#8217; My Union</p>
+<p>As a matter of opinion, I think we&#8217;re tops<br />
+Union members are the cream of the crop<br />
+As a matter of fact, we all agree<br />
+That Street Heat is the place to be!</p>
+<p>No company lie could make me say good-bye to My Union<br />
+No dirty tricks, cause I&#8217;m gonna stick with My Union<br />
+I&#8217;ll stand by you, you&#8217;ll stand by me<br />
+Cause we&#8217;ve got solidarity<br />
+There&#8217;s not a boss today who could scare me away from My Union</p>
+<h2>My Union Stands By Me</h2>
+<p>Tune: Stand By Me<br />
+Lyrics: Julie McCall</p>
+<p>When the boss calls me in<br />
+And the axe is about to fall<br />
+And the pink slip is all that I can see<br />
+I&#8217;m not afraid, no I&#8217;m not afraid<br />
+Cause I know the union stands by me</p>
+<p>CHORUS<br />
+Oh, brothers , sisters, stand by me<br />
+Oh, stand by me<br />
+I know my union stands by me</p>
+<p>When I&#8217;m pulled off my job<br />
+And they want to conference me<br />
+And a grievance form is what I really need<br />
+I&#8217;m not uptight at all<br />
+Cause I&#8217;ll just give my steward a call<br />
+And I know that my Union stands by me</p>
+<p>CHORUS</p>
+<p>Well, the time has come<br />
+When we all must organize<br />
+Cause a Union is our only remedy<br />
+So I&#8217;ll go spread the word<br />
+And let my voice be heard<br />
+Cause I know that my Union stands by me.</p>
+<h2>We Are UNION!</h2>
+<p>Tune: We Will Rock You</p>
+<p>Thump, thump, CLAP<br />
+Thump, thump, CLAP<br />
+Thump, thump, CLAP<br />
+Thump, thump, CLAP</p>
+<p>WE ARE, WE ARE UNION!<br />
+WE ARE, WE ARE UNION!</p>
+<p>We&#8217;re demanding fairness<br />
+Bosses* couldn&#8217;t care less<br />
+We&#8217;re gonna fight for our rights today<br />
+It&#8217;s a big disgrace, a slap in the face<br />
+They&#8217;re tryin&#8217; to cut back* all over the place</p>
+<p>WE ARE, WE ARE UNION!<br />
+WE ARE, WE ARE UNION!</p>
+<p>No more Union-busting<br />
+It is so disgusting<br />
+We&#8217;re organized and we&#8217;re here to stay<br />
+Put on the heat, out in the street<br />
+Union power can never be beat</p>
+<p>WE ARE, WE ARE UNION!<br />
+WE ARE, WE ARE UNION!</p>
+<p>*Put in the name or your boss or company</p>
+<p>**Put in your own issue</p>
+<h2>Punch It In Is All We Do</h2>
+<p>Tune: Breaking Up Is Hard To Do<br />
+Lyrics: Julie McCall</p>
+<p>Down, dooby, doo, down, down<br />
+My computer&#8217;s down, dooby, doo, down, down<br />
+My computer&#8217;s down, dooby, doo, down, down<br />
+Punch it in is all we do</p>
+<p>Right from the day we got those VDTs<br />
+My life has been so full of misery<br />
+No one knows what we&#8217;ve been through<br />
+And punch it in is all we do.</p>
+<p>Remember when you held that pencil tight<br />
+And all you needed to know was how to write<br />
+Now there&#8217;s fifty different screens to view<br />
+And punch it in is all we do.</p>
+<p>They say that using software&#8217;s hard to do<br />
+Now I know, I know that it&#8217;s true<br />
+This program&#8217;s blowing my mind<br />
+I tried to enter EKG, it came up under valentine!</p>
+<p>I wish I knew which switch to pull<br />
+I think the situation&#8217;s terminal<br />
+The system&#8217;s down and I am too<br />
+Cause punch it in is all we do</p>
+<h2>Hospital Workers</h2>
+<p>Tune: Stars and Stripes Forever<br />
+Lyrics: Paul McKenna</p>
+<p>We&#8217;re hospital workers out on strike<br />
+Struggling to make a decent living<br />
+Fighting the bosses and the scabs<br />
+And we are not about to give in.<br />
+We&#8217;re demanding living wages,<br />
+We gotta get a raise!<br />
+We gotta get a raise!<br />
+Our wages are outrageous<br />
+We gotta get a raise NOW!</p>
+<p>Oh, we&#8217;re out walking on the picket line<br />
+And we&#8217;re ready to keep on walking.<br />
+And to carry around our picket signs<br />
+Til the management sits down to do some talking</p>
+<p>When they hear us singing Solidarity Forever<br />
+(Yes, the union makes us strong.)<br />
+With our voices proudly raised in harmony together.<br />
+(Come and sing our union song.)</p>
+<p>We shall overcome the opposition<br />
+Of the hospital employers.<br />
+We shall not be moved by their injunctions<br />
+And their high-priced downtown lawyers.<br />
+Our enthusiasm won&#8217;t diminish<br />
+We are in the battle &#8217;til we finish.<br />
+Til the bosses hear what we are saying<br />
+Realize that we&#8217;re not playing</p>
+<p>We&#8217;ll stay out in the heat and the cold<br />
+Through the wind and the rain and the weather.<br />
+Our union is going to prevail.<br />
+Stick together and we won&#8217;t fail.<br />
+We&#8217;ll stand hand in hand unified<br />
+And we won&#8217;t let the scabs and bosses bust us.<br />
+With courage and spirit and pride<br />
+We will unite to wage the fight<br />
+For Bread and Justice. Hey!</p>
+<h2>I Can&#8217;t Survive</h2>
+<p>Tune: I Will Survive<br />
+Lyrics: Lynn Marie Smith and Lisa Canada</p>
+<p>First I was afraid, I was petrified<br />
+Kept thinking I could never live on six twenty-five.<br />
+I thought I&#8217;d earn a living wage when the stock began to rise<br />
+But I was wrong and then I tried to get along</p>
+<p>I broke my back, picked up the pace<br />
+I go to work, do as I&#8217;m told, without a say about my fate.<br />
+I should have asked the CEO with all the guards around the door<br />
+To share the millions that he makes while the rest of us stay poor.</p>
+<p>Oh, let&#8217;s go, let&#8217;s turn the page<br />
+I joined the union so I could make a living wage<br />
+You corporate bosses tell the workers they are great<br />
+We agree, now we want more but we can&#8217;t wait.</p>
+<p>Oh, no, not I, I can&#8217;t survive<br />
+Oh, without a living wage I don&#8217;t know how I will get by.<br />
+I&#8217;ve got all these bills to pay even though I work all day<br />
+And I can&#8217;t survive, I can&#8217;t survive.</p>
+<p>At first I was afraid, I was petrified<br />
+Kept thinking I could never live on six twenty-five.<br />
+I thought I&#8217;d earn a living wage when the stock began to rise<br />
+But I was wrong and then I tried to get along</p>
+<p>I broke my back, picked up the pace<br />
+I go to work, do as I&#8217;m told, without a say about my fate.<br />
+I should have asked the CEO with all the guards around the door<br />
+To share the millions that he makes more than the CEO of Ford.</p>
+<p>I&#8217;m standing tall, I will not fall<br />
+Cause an injury to one of us is an injury to all.<br />
+I deserve my equal share, make the playing field fair<br />
+I can&#8217;t survive, I can&#8217;t survive.</p>
+<h2>Into a Union</h2>
+<p>Tune: Making Whoopee<br />
+Lyrics: Glenn Plummer</p>
+<p>Another night, another day<br />
+Of living tight from pay to pay<br />
+But here&#8217;s the reason my life ain&#8217;t easin&#8217;<br />
+Ain&#8217;t got a Union</p>
+<p>I go to work when work is there<br />
+I never shirk, I do my share<br />
+It doesn&#8217;t matter, my wallet&#8217;s flatter<br />
+Without a Union.</p>
+<p>Sometimes I sit and daydream<br />
+Wondering how things could be<br />
+Silly to some it may seem<br />
+But I&#8217;d like seniority</p>
+<p>Grievance procedure when things ain&#8217;t fair<br />
+Vacation leisure, without a care.<br />
+Benefit fringes, I know it hinges<br />
+On being Union.</p>
+<p>We need each other, hear what I say<br />
+Sisters and brothers, there&#8217;s just one way<br />
+We&#8217;ve got to realize, we&#8217;ve got to organize<br />
+Into a Union.</p>
+</div>
+
+
+
+<!--
+<span class="single-entry-titles" style="margin-top: 18px;">Post a Comment</span>
+<div class="post-wrapper">
+
+<div style="clear: both;"></div>
+
+
+
+
+
+</div>
+-->
+
+
+			
+	
+</div>
+
+<!--Begin Sidebar-->
+&nbsp;<BR>
+<div id="sidebar">
+
+
+<!--
+<a href="http://www.laborheritage.org"><img src="http://www.laborheritage.org/wp-content/themes/Laborheritage_2/images/logo.jpg" alt="logo" class="logo" /></a> 
+-->
+
+
+
+<div class="sidebar-box"><h2>Navigation</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="/?p=1713" title="Concert and fundraiser featuring Anne Feeney and Guests">Labor Day &#8220;Bread &#38; Roses&#8221; Concert</a></li>
+
+	</ul>
+</div>
+<div class="sidebar-box"><h2>Quick Links</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.laborheritage.org/?p=856">Camp Solidarity</a></li>
+<li><a href="http://www.laborheritage.org/?p=277">Conference on Creative Organizing</a></li>
+<li><a href="http://www.laborheritage.org/?p=1309">Great Labor Arts Exchange</a></li>
+<li><a href="/?p=249">Hall of Fame</a></li>
+<li><a href="/?p=247">Inventory of American Labor Landmarks</a></li>
+<li><a href="http://www.laborheritage.org/?p=561" title="Apply for John Handcox Scholarship for June 2011">John Handcox Scholarship</a></li>
+<li><a href="/?p=677">Labor Chants</a></li>
+<li><a href="/?p=1713" title="Concert and fundraiser featuring Anne Feeney and Guests">Labor Day &#8220;Bread &#38; Roses&#8221; Concert</a></li>
+<li><a href="/?p=502">Labor Song Parodies</a></li>
+
+	</ul>
+</div>
+		<div class="sidebar-box">						<div class="textwidget"><h2><a href="/?cat=8">Events</a></h2>
+<UL>
+
+<LI><a href="http://www.laborheritage.org/?p=1864">January 13-15, 2012 Western Workers Labor Heritage Festival
+</a></LI>
+
+
+
+
+
+</UL></div>
+		</div>		<div class="sidebar-box">						<div class="textwidget"><h2><a href="http://store.laborheritage.org/">IN THE STORE</a></h2>
+<SCRIPT LANGUAGE="JavaScript">
+var maxAdNo=5; 
+var adNo;
+var myAd=new Array();
+
+myAd[0]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/b99_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/goingdownjerichoroad-1.aspx" target="_parent">Going Down Jericho Road, book</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$35</DIV><a href="http://store.laborheritage.org/goingdownjerichoroad-1.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+myAd[1]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/c224_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/bevgrant-weweretherecd.aspx" target="_parent">Bev Grant, We Were There, CD</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$15</DIV><a href="http://store.laborheritage.org/bevgrant-weweretherecd.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+myAd[2]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/n3_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/fasanella-citylifenotecards.aspx" target="_parent">Fasanella - City Life notecards</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$7.5</DIV><a href="http://store.laborheritage.org/fasanella-citylifenotecards.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+myAd[3]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/p1_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/cesarchavez.aspx" target="_parent">Cesar Chavez poster</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$20</DIV><a href="http://store.laborheritage.org/cesarchavez.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+myAd[4]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/p14_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/ralphfasanellaslawrence1912workingthenightshiftsigned.aspx" target="_parent">Fasanella, Working the Night Shift poster</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$50</DIV><a href="http://store.laborheritage.org/ralphfasanellaslawrence1912workingthenightshiftsigned.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+myAd[5]='<DIV align="center" style="margin-top:5px;"><TABLE class="storeitem" border="0" cellpadding="0" cellspacing="0" style="background-image:url(/wp-content/uploads/2009/04/v58_t.jpg); margin:0; padding:0; background-repeat: no-repeat; background-position: bottom left;"><TH><a href="http://store.laborheritage.org/10000blackmennamedgeorge-dvd.aspx" target="_parent">10,000 Black Men Named George, DVD</a></TH><TR><TD class="itemimage" ><DIV id="storeitem_text">$15</DIV><a href="http://store.laborheritage.org/10000blackmennamedgeorge-dvd.aspx" target="_parent"><IMG src="/wp-content/themes/Laborheritage_2/images/but_buynow2.gif" border="0"></a></TD></TR></TABLE></DIV>';
+
+</script>
+<SCRIPT LANGUAGE="JavaScript"> adNo = Math.round(Math.random() * maxAdNo); document.write(myAd[adNo]);</script>
+</div>
+		</div>		<div class="sidebar-box">						<div class="textwidget"><h2><a href="/?p=375">LHF Catalog</a></h2>
+<DIV align="center" style="margin-top:5px;"><a href="/?p=375"><IMG src="/wp-content/themes/Laborheritage_2/images/catalog.gif" border="0"></a></DIV></div>
+		</div>		<div class="sidebar-box">			<h2>Facebook</h2>			<div class="textwidget"><script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US"></script><script type="text/javascript">FB.init("5c65eb2cb5f48e4d7610e0f9ec68fc03");</script><fb:fan profile_id="100235955861" stream="" connections="7" width="250"></fb:fan><div style="font-size:8px; padding-left:10px"><a href="http://www.facebook.com/pages/Washington-DC/Labor-Heritage-Foundation/100235955861">Labor Heritage Foundation on Facebook</a> </div></div>
+		</div>		<div class="sidebar-box">			<h2>Union Strong!</h2>			<div class="textwidget"><DIV align="center" style="margin-top:5px;"><IMG src="http://www.laborheritage.org/wp-content/uploads/2011/10/iww_button_reverse.gif" border="0"><br />
+this site maintained by Union Labor</DIV></div>
+		</div>
+<!--Begin 125x125 Ad Block-->
+<div style="margin-top: 0px;">
+
+</div>
+<!--End 125x125 Ad Block-->
+                
+</div>      
+</div> 
+<!--End Sidebar-->
+
+<!--Begin Footer-->
+<div style="clear: both;"></div>
+</div>
+</div>
+<div id="footer">
+<div style="width: 915px; padding-left: 25px; margin-left: auto; margin-right: auto; display: block;">
+ Copyright &copy; <SCRIPT language=JavaScript>RightNow = new Date();var TheYear = RightNow.getYear();if (TheYear >= 100 && TheYear <= 1999){TheYear=TheYear + 1900}else{TheYear=TheYear}document.write(TheYear);</SCRIPT>
+ Labor Heritage Foundation  
+</div>
+</div>
+
+<!--End Footer-->
+	
+</body>
+</html>

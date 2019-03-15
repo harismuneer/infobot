@@ -1,0 +1,447 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-11T06:39:17Z
+WARC-TREC-ID: clueweb12-0006wb-40-03235
+WARC-IP-Address: 88.190.16.105
+WARC-Payload-Digest: sha1:DVOYYL6DLID7LFDGZPV652U7FPY27W26
+WARC-Target-URI: http://en.celebrity-people.com/news-celebrity-Nicolas-Cage-info-star-0002477.html
+WARC-Record-ID: <urn:uuid:c927d92c-e5c3-4e36-ab44-91f9b5605c1c>
+Content-Type: application/http; msgtype=response
+Content-Length: 74184
+
+HTTP/1.1 200 OK
+Date: Sat, 11 Feb 2012 06:39:17 GMT
+Server: Apache
+Set-Cookie: lang=english; expires=Sun, 10-Feb-2013 06:39:17 GMT
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<title>Nicolas Cage News by Celebrity-People, Stars News and Celebrities Fans Club</title>
+<META HTTP-EQUIV="Content-Language" CONTENT="en">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<META NAME="RESOURCE-TYPE" CONTENT="DOCUMENT">
+<META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+<META NAME="AUTHOR" CONTENT="Celebrity-People">
+<META NAME="COPYRIGHT" CONTENT="Copyright (c) by Celebrity-People">
+<META NAME="KEYWORDS" CONTENT="Nicolas Cage, celebrites, celebrity people, celebrities, star, people, star people,celebrity-people,showbiz,showbizness,celebre,personnalite,personnalites,gens celebre,celebres,fan,fans,fan club,fans club,miss,celebrities,celebrity,people,producer,actress,actor,musician,movie maker,singer,dj,artist,artists">
+<META NAME="DESCRIPTION" CONTENT="Nicolas Cage News - Stars News and Celebrities Fans Club + photos + photos">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW, ALL">
+<META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+<META NAME="RATING" CONTENT="GENERAL">
+<META NAME="GENERATOR" CONTENT="PHP-Nuke Copyright (c) 2004 by Francisco Burzi.">
+<script type="text/javascript">
+	var ajaxBox_offsetX = 0;
+	var ajaxBox_offsetY = 0;
+	var ajax_list_externalFile = 'ajax-list-countries.php';	// Path to external file
+	var minimumLettersBeforeLookup = 1;	// Number of letters entered before a lookup is performed.
+	
+	var ajax_list_objects = new Array();
+	var ajax_list_cachedLists = new Array();
+	var ajax_list_activeInput = false;
+	var ajax_list_activeItem;
+	var ajax_list_optionDivFirstItem = false;
+	var ajax_list_currentLetters = new Array();
+	var ajax_optionDiv = false;
+	var ajax_optionDiv_iframe = false;
+
+	var ajax_list_MSIE = false;
+	if(navigator.userAgent.indexOf('MSIE')>=0 && navigator.userAgent.indexOf('Opera')<0)ajax_list_MSIE=true;
+	
+	function ajax_getTopPos(inputObj)
+	{
+		
+	  var returnValue = inputObj.offsetTop;
+	  while((inputObj = inputObj.offsetParent) != null){
+	  	returnValue += inputObj.offsetTop;
+	  }
+	  return returnValue;
+	}
+	function ajax_list_cancelEvent()
+	{
+		return false;
+	}
+	
+	function ajax_getLeftPos(inputObj)
+	{
+	  var returnValue = inputObj.offsetLeft;
+	  while((inputObj = inputObj.offsetParent) != null)returnValue += inputObj.offsetLeft;
+	  
+	  return returnValue;
+	}
+	
+	function ajax_option_setValue(e,inputObj)
+	{
+		if(!inputObj)inputObj=this;
+		var tmpValue = inputObj.innerHTML;
+		if(ajax_list_MSIE)tmpValue = inputObj.innerText;else tmpValue = inputObj.textContent;
+		if(!tmpValue)tmpValue = inputObj.innerHTML;
+		ajax_list_activeInput.value = tmpValue;
+		if(document.getElementById(ajax_list_activeInput.name + '_hidden'))document.getElementById(ajax_list_activeInput.name + '_hidden').value = inputObj.id; 
+		ajax_options_hide();
+	}
+	
+	function ajax_options_hide()
+	{
+		if(!ajax_optionDiv)return;
+		ajax_optionDiv.style.display='none';	
+		if(ajax_optionDiv_iframe)ajax_optionDiv_iframe.style.display='none';
+	}
+
+	function ajax_options_rollOverActiveItem(item,fromKeyBoard)
+	{
+		if(ajax_list_activeItem)ajax_list_activeItem.className='optionDiv';
+		item.className='optionDivSelected';
+		ajax_list_activeItem = item;
+		
+		if(fromKeyBoard){
+			if(ajax_list_activeItem.offsetTop>ajax_optionDiv.offsetHeight){
+				ajax_optionDiv.scrollTop = ajax_list_activeItem.offsetTop - ajax_optionDiv.offsetHeight + ajax_list_activeItem.offsetHeight + 2 ;
+			}
+			if(ajax_list_activeItem.offsetTop<ajax_optionDiv.scrollTop)
+			{
+				ajax_optionDiv.scrollTop = 0;	
+			}
+		}
+	}
+	
+	function ajax_option_list_buildList(letters,paramToExternalFile)
+	{
+		
+		ajax_optionDiv.innerHTML = '';
+		ajax_list_activeItem = false;
+		if(ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()].length<=1){
+			ajax_options_hide();
+			return;			
+		}
+		
+		
+		
+		ajax_list_optionDivFirstItem = false;
+		var optionsAdded = false;
+		for(var no=0;no<ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()].length;no++){
+			if(ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()][no].length==0)continue;
+			optionsAdded = true;
+			var div = document.createElement('DIV');
+			var items = ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()][no].split(/###/gi);
+			
+			if(ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()].length==1 && ajax_list_activeInput.value == items[0]){
+				ajax_options_hide();
+				return;						
+			}
+			
+			
+			div.innerHTML = items[items.length-1];
+			div.id = items[0];
+			div.className='optionDiv';
+			div.onmouseover = function(){ ajax_options_rollOverActiveItem(this,false) }
+			div.onclick = ajax_option_setValue;
+			if(!ajax_list_optionDivFirstItem)ajax_list_optionDivFirstItem = div;
+			ajax_optionDiv.appendChild(div);
+		}	
+		if(optionsAdded){
+			ajax_optionDiv.style.display='block';
+			if(ajax_optionDiv_iframe)ajax_optionDiv_iframe.style.display='';
+		}
+					
+	}
+	
+	function ajax_option_list_showContent(ajaxIndex,inputObj,paramToExternalFile)
+	{
+		var letters = inputObj.value;
+		var content = ajax_list_objects[ajaxIndex].response;
+		var elements = content.split('|');
+		ajax_list_cachedLists[paramToExternalFile][letters.toLowerCase()] = elements;
+		ajax_option_list_buildList(letters,paramToExternalFile);
+		
+	}
+	
+	function ajax_option_resize(inputObj)
+	{
+		ajax_optionDiv.style.top = (ajax_getTopPos(inputObj) + inputObj.offsetHeight + ajaxBox_offsetY) + 'px';
+		ajax_optionDiv.style.left = (ajax_getLeftPos(inputObj) + ajaxBox_offsetX) + 'px';
+		if(ajax_optionDiv_iframe){
+			ajax_optionDiv_iframe.style.left = ajax_optionDiv.style.left;
+			ajax_optionDiv_iframe.style.top = ajax_optionDiv.style.top;			
+		}		
+		
+	}
+	
+	function ajax_showOptions(inputObj,paramToExternalFile,e)
+	{
+		if(e.keyCode==13 || e.keyCode==9)return;
+		if(ajax_list_currentLetters[inputObj.name]==inputObj.value)return;
+		if(!ajax_list_cachedLists[paramToExternalFile])ajax_list_cachedLists[paramToExternalFile] = new Array();
+		ajax_list_currentLetters[inputObj.name] = inputObj.value;
+		if(!ajax_optionDiv){
+			ajax_optionDiv = document.createElement('DIV');
+			ajax_optionDiv.id = 'ajax_listOfOptions';	
+			document.body.appendChild(ajax_optionDiv);
+			
+			if(ajax_list_MSIE){
+				ajax_optionDiv_iframe = document.createElement('IFRAME');
+				ajax_optionDiv_iframe.border='0';
+				ajax_optionDiv_iframe.style.width = ajax_optionDiv.clientWidth + 'px';
+				ajax_optionDiv_iframe.style.height = ajax_optionDiv.clientHeight + 'px';
+				ajax_optionDiv_iframe.id = 'ajax_listOfOptions_iframe';
+				
+				document.body.appendChild(ajax_optionDiv_iframe);
+			}
+			
+			var allInputs = document.getElementsByTagName('INPUT');
+			for(var no=0;no<allInputs.length;no++){
+				if(!allInputs[no].onkeyup)allInputs[no].onfocus = ajax_options_hide;
+			}			
+			var allSelects = document.getElementsByTagName('SELECT');
+			for(var no=0;no<allSelects.length;no++){
+				allSelects[no].onfocus = ajax_options_hide;
+			}
+
+			var oldonkeydown=document.body.onkeydown;
+			if(typeof oldonkeydown!='function'){
+				document.body.onkeydown=ajax_option_keyNavigation;
+			}else{
+				document.body.onkeydown=function(){
+					oldonkeydown();
+				ajax_option_keyNavigation() ;}
+			}
+			var oldonresize=document.body.onresize;
+			if(typeof oldonresize!='function'){
+				document.body.onresize=function() {ajax_option_resize(inputObj); };
+			}else{
+				document.body.onresize=function(){oldonresize();
+				ajax_option_resize(inputObj) ;}
+			}
+				
+		}
+		
+		if(inputObj.value.length<minimumLettersBeforeLookup){
+			ajax_options_hide();
+			return;
+		}
+				
+
+		ajax_optionDiv.style.top = (ajax_getTopPos(inputObj) + inputObj.offsetHeight + ajaxBox_offsetY) + 'px';
+		ajax_optionDiv.style.left = (ajax_getLeftPos(inputObj) + ajaxBox_offsetX) + 'px';
+		if(ajax_optionDiv_iframe){
+			ajax_optionDiv_iframe.style.left = ajax_optionDiv.style.left;
+			ajax_optionDiv_iframe.style.top = ajax_optionDiv.style.top;			
+		}
+		
+		ajax_list_activeInput = inputObj;
+		ajax_optionDiv.onselectstart =  ajax_list_cancelEvent;
+		
+		if(ajax_list_cachedLists[paramToExternalFile][inputObj.value.toLowerCase()]){
+			ajax_option_list_buildList(inputObj.value,paramToExternalFile);			
+		}else{
+			ajax_optionDiv.innerHTML = '';
+			var ajaxIndex = ajax_list_objects.length;
+			ajax_list_objects[ajaxIndex] = new sack();
+			var url = ajax_list_externalFile + '?' + paramToExternalFile + '=1&letters=' + inputObj.value.replace(" ","+");
+			ajax_list_objects[ajaxIndex].requestFile = url;	// Specifying which file to get
+			ajax_list_objects[ajaxIndex].onCompletion = function(){ ajax_option_list_showContent(ajaxIndex,inputObj,paramToExternalFile); };	// Specify function that will be executed after file has been found
+			ajax_list_objects[ajaxIndex].runAJAX();		// Execute AJAX function		
+		}
+		
+			
+	}
+	
+	function ajax_option_keyNavigation(e)
+	{
+		if(document.all)e = event;
+		
+		if(!ajax_optionDiv)return;
+		if(ajax_optionDiv.style.display=='none')return;
+		
+		if(e.keyCode==38){	// Up arrow
+			if(!ajax_list_activeItem)return;
+			if(ajax_list_activeItem && !ajax_list_activeItem.previousSibling)return;
+			ajax_options_rollOverActiveItem(ajax_list_activeItem.previousSibling,true);
+		}
+		
+		if(e.keyCode==40){	// Down arrow
+			if(!ajax_list_activeItem){
+				ajax_options_rollOverActiveItem(ajax_list_optionDivFirstItem,true);
+			}else{
+				if(!ajax_list_activeItem.nextSibling)return;
+				ajax_options_rollOverActiveItem(ajax_list_activeItem.nextSibling,true);
+			}
+		}
+		
+		if(e.keyCode==13 || e.keyCode==9){	// Enter key or tab key
+			if(ajax_list_activeItem && ajax_list_activeItem.className=='optionDivSelected')ajax_option_setValue(false,ajax_list_activeItem);
+			if(e.keyCode==13)return false; else return true;
+		}
+		if(e.keyCode==27){	// Escape key
+			ajax_options_hide();			
+		}
+	}
+	
+	
+		
+	document.documentElement.onclick = autoHideList;
+	
+	function autoHideList(e)
+	{
+		if(document.all)e = event;
+		
+		if (e.target) source = e.target;
+			else if (e.srcElement) source = e.srcElement;
+			if (source.nodeType == 3) // defeat Safari bug
+				source = source.parentNode;		
+		if(source.tagName.toLowerCase()!='input' && source.tagName.toLowerCase()!='textarea')ajax_options_hide();
+		
+	}
+
+	</script><LINK REL="StyleSheet" HREF="themes/Celebrites-Stars/style/style.css" TYPE="text/css">
+
+
+<script type="text/javascript" src="js/ajax.js"></script>
+
+
+
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >    <script type="text/javascript">
+window.google_analytics_uacct = "UA-3409139-10";
+</script>
+    <TABLE WIDTH=930 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center" style="margin-top:0px; background-image:url(themes/Celebrites-Stars/images/px.jpg) ">
+	<TR>
+		<TD WIDTH=930 HEIGHT=269 valign="top" style="background:url(themes/Celebrites-Stars/images/top_english.jpg) left top; padding-top:10px ">
+<img alt="" src="themes/Celebrites-Stars/images/logo.gif" hspace="86" /><br>
+<a href="http://www.fans-clubs.com" title="fans clubs"><img alt="fans clubs" src="themes/Celebrites-Stars/images/top_txt_english.jpg" hspace="33" border="0" style="margin-top:52px; margin-bottom:27px " /></a><div style="margin-left:20px "><a href="index.php" title="accueil"><img alt="" src="themes/Celebrites-Stars/images/m1_english.jpg" border="0" style="margin-right:6px " /></a><a href="modules.php?name=Celebrites"><img alt="" src="themes/Celebrites-Stars/images/m2_english.jpg" border="0" style="margin-right:5px " /></a><a href="modules.php?name=Your_Account"><img alt="" src="themes/Celebrites-Stars/images/m3.jpg" border="0" style="margin-right:4px " /></a><a href="modules.php?name=Web_Links"><img alt="" src="themes/Celebrites-Stars/images/m4_english.jpg" border="0" style="margin-right:4px " /></a><a href="modules.php?name=Affiliation"><img alt="" src="themes/Celebrites-Stars/images/m5.jpg" border="0" style="margin-right:4px " /></a><a href="modules.php?name=Feedback"><img alt="" src="themes/Celebrites-Stars/images/m6.jpg" border="0" style="margin-right:4px " /></a>
+
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=930 valign="top" align="center">
+<table WIDTH=894 border="0" cellspacing="0" cellpadding="7" align="center" style="background:#F0EEEF ">
+  <tr>
+          <td align="center" valign="top">	<a href="http://fr.celebrity-people.com"><img src="images/language/flag-french.png" border="0" alt="" style="margin-left:25px " /></a> <a href="http://en.celebrity-people.com"><img src="images/language/flag-english.png"  alt="" border="0" /></a>
+		<font style="margin-left:15px " color="#FF6600"><b>Celebrity-People is in beta version. <a href="modules.php?name=Your_Account&op=new_user">Register now for free!</a></b></font>
+		<script type="text/javascript"><!--
+google_ad_client = "pub-2938057304575092";
+google_ad_width = 468;
+google_ad_height = 15;
+google_ad_format = "468x15_0ads_al_s";
+google_ad_channel ="5374083317";
+google_color_border = "F0EEEF";
+google_color_bg = "F0EEEF";
+google_color_link = "A14508";
+google_color_url = "A14508";
+google_color_text = "0D5696";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td valign="top" bgcolor="white"><img src="images/star.jpg" align="middle" alt=""><img src="images/star.gif" alt="" align="absmiddle"><img src="images/star.gif" alt="" align="absmiddle"><img src="images/star.gif" alt="" align="absmiddle"><img src="images/star.gif" alt="" align="absmiddle"><img src="images/star.gif" alt="" align="absmiddle"><font  color="#A14508"><h1>Nicolas Cage</h1></font><i><h2>&nbsp;&nbsp;&nbsp;Cinema - Acteur</h2></i><BLOCKQUOTE><p align=justify><hr color="#A14508"><div style="text-align:left;">&nbsp;<a href="http://fr.celebrity-people.com/actualites-celebrites-Nicolas-Cage-actualite-des-stars-0002477.html" title="actualité de Nicolas Cage"><img src="images/site/flag-french.gif" width="14" height="10" align="absmiddle" border =0 alt="Voir les actualités de Nicolas Cage en français" vspace="3" hspace="3"/></a></b>
+ <a href="fans-club-directory-Nicolas-Cage-web-site-0002477.html" title="See Fans clubs for Nicolas Cage"><img src="images/site/weblinks.jpg" width="20" height="20" align="absmiddle" border =0 alt="See Fans clubs for Nicolas Cage" vspace="3" hspace="3"/></a> <a href="http://en.wikipedia.org/wiki/Nicolas_Cage" target="_blank" title="Search Nicolas Cage on Wikipedia"><img src="images/site/wikipedia.gif" border="0" align="absmiddle" vspace="3" alt="Search Nicolas Cage on Wikipedia" hspace="3"></a> &nbsp;<a href="photos-Nicolas-Cage-page-1.html" title="Look at the Photos album of Nicolas Cage"><img src="images/site/camera.gif" border="0" align="absmiddle" vspace="3" hspace="3" alt="Look at the Photos album of Nicolas Cage"></a> &nbsp;<a href="videos-Nicolas-Cage.html" title="Look at videos of Nicolas Cage"><img src="images/site/icon_video.gif" border="0" align="absmiddle" vspace="3" hspace="3" alt="Look at videos of Nicolas Cage"></a></div><hr color="#A14508"><br /><img src="images/site/casque.jpg" align="absmiddle" border =0 alt="" vspace="3" hspace="3"/> <h3 class="title" style="text-decoration:underline">News Nicolas Cage</h3><br />
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG_hO3TJh-oZFg0ZuM6VkjrXdbhlA&amp;url=http://www.aceshowbiz.com/news/view/00047754.html"><img src="//nt2.ggpht.com/news/tbn/wuySOMNyE8qA7M/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">AceShowbiz</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG_hO3TJh-oZFg0ZuM6VkjrXdbhlA&amp;url=http://www.aceshowbiz.com/news/view/00047754.html"><b><b>Nicolas Cage</b> Puts Vampire Rumor to Rest: I Have a Reflection in the Mirror</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">AceShowbiz</font></b></font><br /><font size="-1"><b>Nicolas Cage</b> is breaking his silence over Internet rumor suggesting that he is a vampire. The 48-year-old actor addresses the bizarre speculation that was sparked by a Civil War-era photo when stopping by &quot;Late Show with David Letterman&quot; on Thursday, <b>...</b></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGQcaVYzCbC1rTFr0axPIHtIXNMFQ&amp;url=http://latimesblogs.latimes.com/gossip/2012/02/nicolas-cage-not-a-vampire-time-traveling-vampire.html"><b>Nicolas Cage</b> vampire story travels in time, ages not one bit</a></b><font size="-1" color="#6f6f6f"><nobr>Los Angeles Times (blog)</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGiVPeVCA7rbupu3SrhCEfOzbNB_g&amp;url=http://www.dailymail.co.uk/tvshowbiz/article-2099581/Nicolas-Cage-confirms-David-Letterman-vampire-following-bizarre-internet-claims.html?ito=feeds-newsxml"><b>Nicolas Cage</b> confirms to David Letterman he is not a vampire following bizarre <b>...</b></a></b><font size="-1" color="#6f6f6f"><nobr>Daily Mail</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFtgdDNkbdNZyULg26JnYhEt_DG2g&amp;url=http://perezhilton.com/2012-02-10-nicolas-cage-assures-the-world-that-he-is-not-a-vampire-on-late-show-with-david-letterman"><b>Nicolas Cage</b> Assures The World That He Is NOT A Vampire!</a></b><font size="-1" color="#6f6f6f"><nobr>PerezHilton.com</nobr></font></font><br /><font size="-1" class="p"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGCgyClDhJEmHGBnERTbj8qXUOF7A&amp;url=http://www.washingtonpost.com/blogs/celebritology/post/nicolas-cage-denies-hes-a-time-traveling-vampire-on-letterman/2012/02/10/gIQA6pJ53Q_blog.html"><nobr>Washington Post (blog)</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEndFkla3aczQsSa6lXbHwbpalFew&amp;url=http://www.hollywoodreporter.com/live-feed/nicolas-cage-vampire-letterman-ghost-rider-289323"><nobr>Hollywood Reporter</nobr></a></b></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dt7in6pDwX0zfbMzZ8xAlnBgVckiM"><nobr><b>all 124 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>AceShowbizNicolas Cage Puts Vampire Rumor to Rest: I Have a Reflection in the MirrorAceShowbizNicolas Cage is breaking his silence over Internet rumor suggesting that he is a vampire. The 48-year-old actor addresses the bizarre speculation that was sparked by a Civil War-era photo when stopping by "Late Show with David Letterman" on Thursday, ...Nicolas Cage vampire story travels in time, ages not one bitLos Angeles Times (blog)Nicolas Cage confirms to David Letterman he is not a vampire following bizarre ...Daily MailNicolas Cage Assures The World That He Is NOT A Vampire!PerezHilton.comWashington Post (blog) -Hollywood Reporterall 124 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEk1J4Rtpnm7wwjmPtNn1h6n2mCEw&amp;url=http://www.miamiherald.com/2012/02/11/2635276/nicolas-cage-likes-his-cuban-coffee.html"><img src="//nt1.ggpht.com/news/tbn/Jd3s0rMrJNhefM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">MiamiHerald.com</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEk1J4Rtpnm7wwjmPtNn1h6n2mCEw&amp;url=http://www.miamiherald.com/2012/02/11/2635276/nicolas-cage-likes-his-cuban-coffee.html"><b><b>Nicolas Cage</b> likes his Cuban coffee</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">MiamiHerald.com</font></b></font><br /><font size="-1">By Lesley Abravanel <b>Nicolas Cage</b> was in town promoting his new movie, Ghost Rider. On Wednesday, he was on Univision&#39;s Despierta America, on which he was schooled on the true power of Cuban coffee when he sucked down an entire regular-size cup, <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dmvZ6XcflcudVKM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>MiamiHerald.comNicolas Cage likes his Cuban coffeeMiamiHerald.comBy Lesley Abravanel Nicolas Cage was in town promoting his new movie, Ghost Rider. On Wednesday, he was on Univision's Despierta America, on which he was schooled on the true power of Cuban coffee when he sucked down an entire regular-size cup, ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEpVLOzK5EN8ExFxugZqJ0uEqJUAw&amp;url=http://www.contactmusic.com/news/nicolas-cages-in-flight-hoax-caused-trouble-for-charlie-sheen_1293629"><img src="//nt2.ggpht.com/news/tbn/4ntI_-gKsiTwKM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Contactmusic.com</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEpVLOzK5EN8ExFxugZqJ0uEqJUAw&amp;url=http://www.contactmusic.com/news/nicolas-cages-in-flight-hoax-caused-trouble-for-charlie-sheen_1293629"><b><b>Nicolas Cage</b> - <b>Nicolas Cage&#39;s</b> In-flight Hoax Caused Trouble For Charlie Sheen</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Contactmusic.com</font></b></font><br /><font size="-1"><b>Nicolas Cage</b> almost landed his one-time travel companion Charlie Sheen in big trouble with the law after impersonating an airline pilot during a flight - unaware the Wall Street star was secretly carrying cocaine. The two actors were flying to San <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=d_PQAB4B0wru-vM"><nobr><b>and more&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Contactmusic.comNicolas Cage - Nicolas Cage's In-flight Hoax Caused Trouble For Charlie SheenContactmusic.comNicolas Cage almost landed his one-time travel companion Charlie Sheen in big trouble with the law after impersonating an airline pilot during a flight - unaware the Wall Street star was secretly carrying cocaine. The two actors were flying to San ...and more &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFS2cxrqpG_fh4rutKGfOApfTq3BA&amp;url=http://www.forbes.com/sites/danielnyegriffiths/2012/02/10/ghost-rider-watchmen-lawsuit/"><img src="//nt3.ggpht.com/news/tbn/3wPjEHNmYKUvUM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Forbes</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNE5tM_YRJmL59eCtF12Quoq5KOUAQ&amp;url=http://www.bleedingcool.com/2012/02/09/appeal-nicolas-cage-on-behalf-of-gary-friedrich/"><b>An Appeal To <b>Nicolas Cage</b> On Behalf Of Gary Friedrich</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Bleeding Cool News</font></b></font><br /><font size="-1">Recently, Marvel triumphed in court against Gary Friedrich, the creator of Ghost Rider, as to whether any moneys or rights were owed to him from the use of the characters in movies, with the second movie starring <b>Nicolas Cage</b> on its way.</font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNE_5b3OoaiqGwXMIhEuexBxAmbB_g&amp;url=http://www.avclub.com/articles/marvel-forces-ghost-rider-creator-to-stop-saying-h,69202/">Marvel forces Ghost Rider creator to stop saying he&#39;s Ghost Rider creator</a></b><font size="-1" color="#6f6f6f"><nobr>A.V. Club</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGQpFcIJmS1MU4K-YSBwMOoVvGgIQ&amp;url=http://robot6.comicbookresources.com/2012/02/people-hate-when-rich-companies-sue-poor-creators/">People hate when rich companies sue poor creators</a></b><font size="-1" color="#6f6f6f"><nobr>Comic Book Resources</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEASVatWVSnx5bAyk66pr5KFfXYzQ&amp;url=http://www.comicsalliance.com/2012/02/09/ghost-rider-creator-lawsuit/">Ghost Rider Creator Ordered to Stop Being Ghost Rider Creator, Pay Marvel $17000</a></b><font size="-1" color="#6f6f6f"><nobr>ComicsAlliance</nobr></font></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dmCEudMYsFSdl3MEauCIsZQRtMTiM"><nobr><b>all 20 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>ForbesAn Appeal To Nicolas Cage On Behalf Of Gary FriedrichBleeding Cool NewsRecently, Marvel triumphed in court against Gary Friedrich, the creator of Ghost Rider, as to whether any moneys or rights were owed to him from the use of the characters in movies, with the second movie starring Nicolas Cage on its way.Marvel forces Ghost Rider creator to stop saying he's Ghost Rider creatorA.V. ClubPeople hate when rich companies sue poor creatorsComic Book ResourcesGhost Rider Creator Ordered to Stop Being Ghost Rider Creator, Pay Marvel $17000ComicsAllianceall 20 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFgBEBknbPhZ9fzWGN4k2lsqOYrvg&amp;url=http://www.hollywoodreporter.com/news/vincent-gallo-nicolas-cage-house-la-287551"><img src="//nt3.ggpht.com/news/tbn/W8YYPT3uFnlo7M/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Hollywood Reporter</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFgBEBknbPhZ9fzWGN4k2lsqOYrvg&amp;url=http://www.hollywoodreporter.com/news/vincent-gallo-nicolas-cage-house-la-287551"><b>Vincent Gallo Flips <b>Nicolas Cage&#39;s</b> Old Downtown L.A. Penthouse for $2.599 Million</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Hollywood Reporter</font></b></font><br /><font size="-1">The 4300-square-foot apartment was rented by actor <b>Nicolas Cage</b> in 2008 (the same year he starred in the Lionsgate release, Bangkok Dangerous). Cage is said to have been the only resident to live there, according to Curbed LA.</font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dVKMYMKzDxg4m3M"><nobr><b>and more&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Hollywood ReporterVincent Gallo Flips Nicolas Cage's Old Downtown L.A. Penthouse for $2.599 MillionHollywood ReporterThe 4300-square-foot apartment was rented by actor Nicolas Cage in 2008 (the same year he starred in the Lionsgate release, Bangkok Dangerous). Cage is said to have been the only resident to live there, according to Curbed LA.and more &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHhc3oX2J-3bcUJGANpV6G799XUaQ&amp;url=http://www.miamiherald.com/2012/02/10/2634763/whats-opening-in-theaters-next.html"><b>What&#39;s opening in theaters next week</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">MiamiHerald.com</font></b></font><br /><font size="-1">By RENE RODRIGUEZ GHOST RIDER: SPIRIT OF VENGEANCE (PG-13): <b>Nicolas Cage</b> reprises his role as the Marvel Comics superhero with a flaming skull and an insatiable appetite for raining pain down on evildoers. The wild-and-crazy duo of Neveldine / Taylor <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dNrehEhEL_1l5dM"><nobr><b>and more&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>What's opening in theaters next weekMiamiHerald.comBy RENE RODRIGUEZ GHOST RIDER: SPIRIT OF VENGEANCE (PG-13): Nicolas Cage reprises his role as the Marvel Comics superhero with a flaming skull and an insatiable appetite for raining pain down on evildoers. The wild-and-crazy duo of Neveldine / Taylor ...and more &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGLyzgOrkzby1Luwig9Qq8P9l8jBA&amp;url=http://www.gossipcop.com/nicolas-cage-vampire-photo-civil-war-letterman-video/"><b><b>Nicolas Cage</b>: I&#39;m Not A Vampire (VIDEO)</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">GossipCop</font></b></font><br /><font size="-1">The actor visited ?The Late Show with David Letterman? on Thursday, and the host brought up the infamous Civil War-era photo of a man who (kind of) looks like Cage ? which has prompted many on the Internet to speculate that Cage is, in fact, <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dmDThuF85RqNglM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Nicolas Cage: I'm Not A Vampire (VIDEO)GossipCopThe actor visited ?The Late Show with David Letterman? on Thursday, and the host brought up the infamous Civil War-era photo of a man who (kind of) looks like Cage ? which has prompted many on the Internet to speculate that Cage is, in fact, ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHdVofq1WCYPBlxZERvLoQiK8yBmQ&amp;url=http://blog.seattlepi.com/people/2012/02/10/nicolas-cage-%E2%80%98couldn%E2%80%99t-speak%E2%80%99-after-action-scene-injury/"><b><b>Nicolas Cage</b> &#39;couldn&#39;t speak&#39; after action scene injury</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Seattle Post Intelligencer (blog)</font></b></font><br /><font size="-1">Actor <b>Nicolas Cage</b> ?couldn&#39;t speak? properly for several days after bashing his head when a film stunt went wrong. The ?Face/Off? star has always enjoyed completing his own high-action scenes, but he was left regretting one recently when a co-star got <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dXuUSGw2D-oW7eM"><nobr><b>and more&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Nicolas Cage 'couldn't speak' after action scene injurySeattle Post Intelligencer (blog)Actor Nicolas Cage ?couldn't speak? properly for several days after bashing his head when a film stunt went wrong. The ?Face/Off? star has always enjoyed completing his own high-action scenes, but he was left regretting one recently when a co-star got ...and more &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGvj6e18Qxbkqccn3S-MuJW07p50A&amp;url=http://www.thetowerlight.com/2012/02/reel-to-real-nicolas-cages-golden-movies/"><b>Reel to Real: <b>Nicolas Cage&#39;s</b> golden movies</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Towerlight</font></b></font><br /><font size="-1">But one actor continues to elude me, and that actor is <b>Nicolas Cage</b>. Next month brings us ?Ghost Rider 2,? which I guess was inevitable, but seriously? Once upon a time, <b>Nicolas Cage</b> was an Academy-Award-winning actor. The only award associated with <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=d6P4z01nsELqS-M"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Reel to Real: Nicolas Cage's golden moviesTowerlightBut one actor continues to elude me, and that actor is Nicolas Cage. Next month brings us ?Ghost Rider 2,? which I guess was inevitable, but seriously? Once upon a time, Nicolas Cage was an Academy-Award-winning actor. The only award associated with ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFTYt5nMrR-frIY9xGgs2Sy1802cw&amp;url=http://www.empireonline.com/news/story.asp?NID=32985"><img src="//nt2.ggpht.com/news/tbn/kl7fUap8JwfA9M/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Empire Online</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFTYt5nMrR-frIY9xGgs2Sy1802cw&amp;url=http://www.empireonline.com/news/story.asp?NID=32985"><b><b>Nicolas Cage</b> Wants To Do Wicker Man 2</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Empire Online</font></b></font><br /><font size="-1">In case you weren&#39;t one of the throng squeezed sardine-like onto the internet for the great man&#39;s webchat, <b>Nicolas Cage</b> was here to field all manner of questions, from the wise to the plain wacky, and all things in between. When he wasn&#39;t elucidating <b>...</b></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNF8vNa-4zlqc6JyS-TyhYBPvdB_8g&amp;url=http://www.firstshowing.net/2012/nicolas-cage-wants-to-do-a-sequel-to-the-wicker-man-set-in-japan/"><b>Nicolas Cage</b> Wants to Do a Sequel to &#39;The Wicker Man&#39; Set in Japan</a></b><font size="-1" color="#6f6f6f"><nobr>First Showing</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGF-IPE28mh3DnSJgfTMMvQ9OfLng&amp;url=http://www.cinemablend.com/new/Nicolas-Cage-Wants-Play-Ghost-Japan-Set-Wicker-Man-Sequel-29075.html"><b>Nicolas Cage</b> Wants To Play A Ghost In A Japan-Set Wicker Man Sequel</a></b><font size="-1" color="#6f6f6f"><nobr>Cinema Blend</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHVwsXFhGzRbh7bEj7aQVNK3mCB6g&amp;url=http://sciencefiction.com/2012/01/27/nicolas-cage-channeled-spirits-for-ghost-rider-spirit-of-vengeance/"><b>Nicolas Cage</b> Channeled Spirits For &#39;Ghost Rider: Spirit Of Vengeance&#39;</a></b><font size="-1" color="#6f6f6f"><nobr>Science Fiction</nobr></font></font><br /><font size="-1" class="p"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFNvJIuwz4mNDAZQ75sJQCFm4zl8g&amp;url=http://collider.com/nicolas-cage-wicker-man-sequel-julie-delpy-before-sunset-2/140974/"><nobr>Collider.com</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNH6p5qNj-bY9dSdxexCDK6vLOlByw&amp;url=http://www.craveonline.com/film/articles/182069-nicolas-cage-actually-wants-a-wicker-man-2"><nobr>Crave Online</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHIZQjcaLuJguxkspeNpn9YLilyag&amp;url=http://www.dailyblam.com/news/2012/01/28/nicolas-cage-wants-to-play-a-ghost-in-the-wicker-man-sequel"><nobr>The Daily BLAM</nobr></a></b></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dlpTkTNBJle43_MGRKrs2R5hG5SNM"><nobr><b>all 42 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Empire OnlineNicolas Cage Wants To Do Wicker Man 2Empire OnlineIn case you weren't one of the throng squeezed sardine-like onto the internet for the great man's webchat, Nicolas Cage was here to field all manner of questions, from the wise to the plain wacky, and all things in between. When he wasn't elucidating ...Nicolas Cage Wants to Do a Sequel to 'The Wicker Man' Set in JapanFirst ShowingNicolas Cage Wants To Play A Ghost In A Japan-Set Wicker Man SequelCinema BlendNicolas Cage Channeled Spirits For 'Ghost Rider: Spirit Of Vengeance'Science FictionCollider.com -Crave Online -The Daily BLAMall 42 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNF6VqwH7M9s3lIUyWIuJHYSecBJcA&amp;url=http://www.avclub.com/toronto/articles/wild-at-heart-1990,68887/"><img src="//nt1.ggpht.com/news/tbn/wRNSjhD4Pra9UM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">A.V. Club</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNF6VqwH7M9s3lIUyWIuJHYSecBJcA&amp;url=http://www.avclub.com/toronto/articles/wild-at-heart-1990,68887/"><b>Wild At Heart (1990)</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">A.V. Club</font></b></font><br /><font size="-1">??<b>Nicolas Cage</b>, as Sailor Ripley, in Wild At Heart More than any of David Lynch&#39;s films, 1990&#39;s Wild At Heart is an exercise in tropes. It&#39;s a brightly woven tapestry of signs and symbols, irony and metaphor. Its synthetic-noir Wizard Of Oz riffing is <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dvsvuFrQcqEhMCM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>A.V. ClubWild At Heart (1990)A.V. Club??Nicolas Cage, as Sailor Ripley, in Wild At Heart More than any of David Lynch's films, 1990's Wild At Heart is an exercise in tropes. It's a brightly woven tapestry of signs and symbols, irony and metaphor. Its synthetic-noir Wizard Of Oz riffing is ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHDFIw0NMepTFyMxrkP9YSm0kxQdA&amp;url=http://www.empireonline.com/news/story.asp?NID=32967"><img src="//nt3.ggpht.com/news/tbn/zytNsHE7qRBaMM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Empire Online</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGxVRDJLrwfPxdrwRy7wPJ3-r8Kcw&amp;url=http://www.cinemablend.com/new/Nicolas-Cage-Wants-Revenge-Trailer-Seeking-Justice-29041.html"><b><b>Nicolas Cage</b> Wants Revenge In New Trailer For Seeking Justice</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Cinema Blend</font></b></font><br /><font size="-1">In the story, <b>Nicolas Cage</b> plays a distraught man whose wife (January Jones) has been attacked by a criminal. When a mysterious man (Guy Pearce) approaches him and tells him that he and his people can amend the situation, Cage&#39;s character agrees, <b>...</b></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHDwO5Dg5eHINjT2--B-RZ5V1UPoQ&amp;url=http://www.blackbookmag.com/movies/nicolas-cage-seeks-justice-in-seeking-justice-1.44339"><b>Nicolas Cage</b> Seeks Justice in &#39;Seeking Justice&#39;</a></b><font size="-1" color="#6f6f6f"><nobr>BlackBook Magazine</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHDFIw0NMepTFyMxrkP9YSm0kxQdA&amp;url=http://www.empireonline.com/news/story.asp?NID=32967"><b>Nicolas Cage</b> Is Seeking Justice</a></b><font size="-1" color="#6f6f6f"><nobr>Empire Online</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFHyianL38s_UFYh_okSPLvVHb1nw&amp;url=http://www.firstshowing.net/2012/another-trailer-for-seeking-justice-thriller-starring-nicolas-cage/">Another New Official Trailer for &#39;Seeking Justice&#39; Starring <b>Nicolas Cage</b></a></b><font size="-1" color="#6f6f6f"><nobr>First Showing</nobr></font></font><br /><font size="-1" class="p"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFai8UqclxNj5Tn662a3oLsV73BLQ&amp;url=http://www.worstpreviews.com/headline.php?id=23887&count=0"><nobr>WorstPreviews.com</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG-ntAbrsO5OoWn5c8YlpkortBJQw&amp;url=http://www.sowetanlive.co.za/entertainment/2012/01/27/is-cage-seeking-to-end-his-career"><nobr>Sowetan</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGT_AjWCUEvoQyjPntzFdTnRhTAUg&amp;url=http://www.comingsoon.net/news/movienews.php?id=86294"><nobr>ComingSoon.net</nobr></a></b></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dADHfjnruny46_MR2vxdcPpxOCxlM"><nobr><b>all 27 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Empire OnlineNicolas Cage Wants Revenge In New Trailer For Seeking JusticeCinema BlendIn the story, Nicolas Cage plays a distraught man whose wife (January Jones) has been attacked by a criminal. When a mysterious man (Guy Pearce) approaches him and tells him that he and his people can amend the situation, Cage's character agrees, ...Nicolas Cage Seeks Justice in 'Seeking Justice'BlackBook MagazineNicolas Cage Is Seeking JusticeEmpire OnlineAnother New Official Trailer for 'Seeking Justice' Starring Nicolas CageFirst ShowingWorstPreviews.com -Sowetan -ComingSoon.netall 27 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGL6BEjJMoPM-YrJ7JaTqB4EOUCew&amp;url=http://blog.sfgate.com/dailydish/2012/02/10/nicolas-cage-%E2%80%98couldn%E2%80%99t-speak%E2%80%99-after-action-scene-injury/?gta=commentlistpos"><img src="//nt3.ggpht.com/news/tbn/-yfka-GFzTIzeM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">SFGate.com (blog)</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGL6BEjJMoPM-YrJ7JaTqB4EOUCew&amp;url=http://blog.sfgate.com/dailydish/2012/02/10/nicolas-cage-%E2%80%98couldn%E2%80%99t-speak%E2%80%99-after-action-scene-injury/?gta=commentlistpos"><b><b>Nicolas Cage</b> &#39;couldn&#39;t speak&#39; after action scene injury</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">SFGate.com (blog)</font></b></font><br /><font size="-1">Actor <b>Nicolas Cage</b> ?couldn&#39;t speak? properly for several days after bashing his head when a film stunt went wrong. The ?Face/Off? star has always enjoyed completing his own high-action scenes, but he was left regretting one recently when a co-star got <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dcEim_MW4OZIqHM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>SFGate.com (blog)Nicolas Cage 'couldn't speak' after action scene injurySFGate.com (blog)Actor Nicolas Cage ?couldn't speak? properly for several days after bashing his head when a film stunt went wrong. The ?Face/Off? star has always enjoyed completing his own high-action scenes, but he was left regretting one recently when a co-star got ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEShdOV7QM2JfN91JHWVcHdzEgeBA&amp;url=http://www.accidentalsexiness.com/2012/02/08/nicolas-cage-chugs-cuban-coffee-live-tv/"><b><b>Nicolas Cage</b> chugs Cuban coffee on live tv!</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Accidental Sexiness</font></b></font><br /><font size="-1">Poor <b>Nicolas Cage</b> had no idea what was coming at him when he agreed to be on Despierta America this morning! The hosts of Univision&#39;s version of the Today Show chatted with the Academy Award winning actor about his upcoming film, Ghost Rider: Spirit of <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dEAuLJnB7zCQn8M"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Nicolas Cage chugs Cuban coffee on live tv!Accidental SexinessPoor Nicolas Cage had no idea what was coming at him when he agreed to be on Despierta America this morning! The hosts of Univision's version of the Today Show chatted with the Academy Award winning actor about his upcoming film, Ghost Rider: Spirit of ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGllSl6XceIjruIrXx8khetIkvMSA&amp;url=http://www.opposingviews.com/i/entertainment/official-trailer-seeking-justice-opening-march-16-2012"><b>Video: Movie Trailer for &#39;Seeking Justice&#39; Starring <b>Nicolas Cage</b></b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Opposing Views</font></b></font><br /><font size="-1">This action-packed thriller stars <b>Nicolas Cage</b> as Will Gerard, a happily married family man whose quiet life is turned upside-down when his wife, Laura (January Jones), is brutally attacked one night while leaving work. At the hospital, waiting for <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=d5BfRTFQNSjkr7M"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Video: Movie Trailer for 'Seeking Justice' Starring Nicolas CageOpposing ViewsThis action-packed thriller stars Nicolas Cage as Will Gerard, a happily married family man whose quiet life is turned upside-down when his wife, Laura (January Jones), is brutally attacked one night while leaving work. At the hospital, waiting for ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEGMAdYUCRurdH4GhQenJ0mQBd3Sw&amp;url=http://www.dreadcentral.com/news/52140/two-more-clips-ghost-rider-spirit-vengeance-get-you-hot-and-bothered"><img src="//nt1.ggpht.com/news/tbn/9XpfrxoXZtPWkM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Dread Central</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHhh9MBCxb6FQj9L9gfWZy9FWvMVQ&amp;url=http://news.moviefone.com/2012/01/30/nicolas-cages-ridiculous-quotes_n_1241419.html?ref=moviefone"><b><b>Nicolas Cage</b> Empire Interview: 7 Ridiculous Quotes From The Oscar-Winning Actor</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Moviefone</font></b></font><br /><font size="-1">Actor/castle-collector <b>Nicolas Cage</b> has the tendency to say and do some unbelievably outlandish things. For instance, at a Romanian nightclub last year, he screamed at random strangers, telling them he would &quot;fucking die because of honor.</font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG1Kx4_av7bZ0HBNEx5yCacDIA7Cg&amp;url=http://www.fangoria.com/index.php?option=com_content&view=article&id=6540:contest-party-with-fango-and-nicolas-cage-in-nyc&catid=60:announcements-contests&Itemid=168">CONTEST: Party with Fango and <b>Nicolas Cage</b> in NYC!</a></b><font size="-1" color="#6f6f6f"><nobr>FANGORIA</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGbOGtc--fY4UIA0PI_cyH4zG5KUQ&amp;url=http://www.nextmovie.com/blog/nicolas-cage-lmfao-radio-show/"><b>Nicolas Cage</b> Is Sexy and He Knows It</a></b><font size="-1" color="#6f6f6f"><nobr>NextMovie (blog)</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHAke5YGfBQnHOCYufX_t-uEQQm1A&amp;url=http://www.digitalspy.com/movies/news/a363569/ghost-rider-spirit-of-vengeance-helmers-rollerblade-in-featurette.html">&#39;Ghost Rider: Spirit of Vengeance&#39; helmers rollerblade in featurette</a></b><font size="-1" color="#6f6f6f"><nobr>Digital Spy</nobr></font></font><br /><font size="-1" class="p"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGXXk5Q3sOagnP8FGG7ShR6ezsj8A&amp;url=http://www.movieswithbutter.com/trailer_hoppings/ghost-rider-shouldnt-have-ridden-206490"><nobr>Movies With Butter (blog)</nobr></a></b>&nbsp;-<b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHW9TbTSg4DEw_u_XuFYHEcD8fPUw&amp;url=http://www.examiner.com/comic-book-movies-in-national/nicolas-cage-references-magic-to-prepare-for-ghost-rider-sequel-sings-for-fan"><nobr>Examiner.com</nobr></a></b></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dalqHdgn6Jg3CWMdhVI4yuqEjYH6M"><nobr><b>all 9 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Dread CentralNicolas Cage Empire Interview: 7 Ridiculous Quotes From The Oscar-Winning ActorMoviefoneActor/castle-collector Nicolas Cage has the tendency to say and do some unbelievably outlandish things. For instance, at a Romanian nightclub last year, he screamed at random strangers, telling them he would "fucking die because of honor.CONTEST: Party with Fango and Nicolas Cage in NYC!FANGORIANicolas Cage Is Sexy and He Knows ItNextMovie (blog)'Ghost Rider: Spirit of Vengeance' helmers rollerblade in featuretteDigital SpyMovies With Butter (blog) -Examiner.comall 9 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEb4xdkIYy6oG6uGzb4u3yfQJeKJg&amp;url=http://www.starpulse.com/news/Noelle_Talmon/2012/01/30/nicolas_cages_wax_figure_is_creepy_loo"><img src="//nt3.ggpht.com/news/tbn/o9zcGf5NyHxJdM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Starpulse.com (blog)</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEb4xdkIYy6oG6uGzb4u3yfQJeKJg&amp;url=http://www.starpulse.com/news/Noelle_Talmon/2012/01/30/nicolas_cages_wax_figure_is_creepy_loo"><b><b>Nicolas Cage&#39;s</b> Wax Figure Is Creepy Looking</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Starpulse.com (blog)</font></b></font><br /><font size="-1"><b>Nicolas Cage</b> is a little creepy. If it&#39;s possible, his wax figure is creepier than he is. The actor unveiled his lookalike at Musee Grevin in Paris on Sunday. Cage stars in the upcoming film &quot;Ghost Rider: Spirit of Vengeance.</font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG3Ksks6yHiZOIPGtRoKI9hNQfySw&amp;url=http://www.holymoly.com/film-dvd/news/nicolas-cage-talks-about-preparing-ghost-rider-even-more-insane61463"><b>Nicolas Cage</b> talks about preparing for Ghost Rider, is even more insane than <b>...</b></a></b><font size="-1" color="#6f6f6f"><nobr>Holy Moly!</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGsyuwQw20Z80tPgL8qDJ_VTscukQ&amp;url=http://www.contactmusic.com/news.nsf/story/nicolas-cage-has-a-faceoff-with-waxwork-figure_1289164"><b>Nicolas Cage</b> - <b>Nicolas Cage</b> Has A Face/off With Waxwork Figure</a></b><font size="-1" color="#6f6f6f"><nobr>Contactmusic.com</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEBjCHME2YaPdB3TBLbQ1pqrxHjMA&amp;url=http://www.timeslive.co.za/incoming/2012/02/01/nicolas-cage-knows-he-is-sexy-audio"><b>Nicolas Cage</b> knows he is sexy: AUDIO</a></b><font size="-1" color="#6f6f6f"><nobr>Times LIVE</nobr></font></font><br /><font size="-1" class="p"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEYux-HZVxMG5pql_7wPIaJJQ93pQ&amp;url=http://www.huffingtonpost.co.uk/2012/01/31/nic-cage-meets-nic-cage-waxwork-in-paris_n_1243422.html?ref=uk"><nobr>Huffington Post UK</nobr></a></b></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dWP8FqALGEP1P7MhTNPU6Di0Me6xM"><nobr><b>all 18 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Starpulse.com (blog)Nicolas Cage's Wax Figure Is Creepy LookingStarpulse.com (blog)Nicolas Cage is a little creepy. If it's possible, his wax figure is creepier than he is. The actor unveiled his lookalike at Musee Grevin in Paris on Sunday. Cage stars in the upcoming film "Ghost Rider: Spirit of Vengeance.Nicolas Cage talks about preparing for Ghost Rider, is even more insane than ...Holy Moly!Nicolas Cage - Nicolas Cage Has A Face/off With Waxwork FigureContactmusic.comNicolas Cage knows he is sexy: AUDIOTimes LIVEHuffington Post UKall 18 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNH3ruYPMh-oXdS9bITQpaCdtzmmsw&amp;url=http://collider.com/ghost-rider-2-spirit-of-vengeance-movie-clips/142797/"><img src="//nt1.ggpht.com/news/tbn/IYrG_08q_TBV7M/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">Collider.com</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNH3ruYPMh-oXdS9bITQpaCdtzmmsw&amp;url=http://collider.com/ghost-rider-2-spirit-of-vengeance-movie-clips/142797/"><b>GHOST RIDER: SPIRIT OF VENGEANCE Movie Clips</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">Collider.com</font></b></font><br /><font size="-1"><b>Nicolas Cage</b> returns at the titular Ghost Rider, and Crank directors Mark Neveldine and Brian Taylor bring their signature visual style to the comic book franchise. Cage finds himself tasked with rescuing a young boy from the grip of the Devil. ghost <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=d8q_mut7X6CsiaM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>Collider.comGHOST RIDER: SPIRIT OF VENGEANCE Movie ClipsCollider.comNicolas Cage returns at the titular Ghost Rider, and Crank directors Mark Neveldine and Brian Taylor bring their signature visual style to the comic book franchise. Cage finds himself tasked with rescuing a young boy from the grip of the Devil. ghost ...</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFxpF6CJpLIWmz4IOf_5SjpgdXYsw&amp;url=http://www.nypost.com/p/blogs/movies/lucas_binks_original_blinks_reviews_nqAOE79qeOH1o28bZNej1O"><img src="//nt2.ggpht.com/news/tbn/Bi-oEZVbqYeSYM/6.jpg" alt="" border="1" width="80" height="80" /><br /><font size="-2">New York Post (blog)</font></a></b></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFxpF6CJpLIWmz4IOf_5SjpgdXYsw&amp;url=http://www.nypost.com/p/blogs/movies/lucas_binks_original_blinks_reviews_nqAOE79qeOH1o28bZNej1O"><b>Lucas Binks, er, blinks -- so no &#39;Phantom Menace&#39; screenings, but here are our <b>...</b></b></a></b><br /><font size="-1"><b><font color="#6f6f6f">New York Post (blog)</font></b></font><br /><font size="-1"><b>...</b> indicating there will be no advance screenings (at least not for mainstream press in NYC) for next week&#39;s &quot;Ghost Rider: Spirit of Vengeance,&#39;&#39; a sequel to a film that inspired serious critical bloodshed (and vicious attacks on star <b>Nicolas Cage</b>).</font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFqsRVDdIHPNKkpuCNqT36hHDa7nw&amp;url=http://www.nasdaq.com/article/star-wars-episode-i-may-top-box-office-once-again-with-3d-re-release-20120209-01422">&quot;Star Wars: Episode I&quot; May Top Box Office Once Again With 3D Re-Release</a></b><font size="-1" color="#6f6f6f"><nobr>NASDAQ</nobr></font></font><br /><font size="-1"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHhVfhTq3khfMC0mTVIGfVQCpeoSA&amp;url=http://www.comingsoon.net/news/weekendwarriornews.php?id=86645">Box Office: Big Name Superstars Face 3D Star Wars</a></b><font size="-1" color="#6f6f6f"><nobr>ComingSoon.net</nobr></font></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=daUJOfQpY4Q3M6MF8p2omhrRXlM-M"><nobr><b>all 509 news articles&nbsp;&raquo;</b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>New York Post (blog)Lucas Binks, er, blinks -- so no 'Phantom Menace' screenings, but here are our ...New York Post (blog)... indicating there will be no advance screenings (at least not for mainstream press in NYC) for next week's "Ghost Rider: Spirit of Vengeance,'' a sequel to a film that inspired serious critical bloodshed (and vicious attacks on star Nicolas Cage)."Star Wars: Episode I" May Top Box Office Once Again With 3D Re-ReleaseNASDAQBox Office: Big Name Superstars Face 3D Star WarsComingSoon.netall 509 news articles &raquo;</noscript>
+<table border="0" cellpadding="2" cellspacing="7" style="vertical-align:top;"><tr><td width="80" align="center" valign="top"><font style="font-size:85%;font-family:arial,sans-serif"></font></td><td valign="top" class="j"><font style="font-size:85%;font-family:arial,sans-serif"><br /><div style="padding-top:0.8em;"><img alt="" height="1" width="1" /></div><div class="lh"><b><a target="_blank" href="http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNE6o6KAFRRwFj56glt_yP9KBJtUIQ&amp;url=http://www.goerie.com/article/20120211/ENTERTAINMENT0702/302119983/This-week-in-movies-TV-and-music"><b>This week in movies, TV and music</b></a></b><br /><font size="-1"><b><font color="#6f6f6f">GoErie.com</font></b></font><br /><font size="-1">Johnny Blaze (<b>Nicolas Cage</b>) is trying to come to grips with his supernatural alter ego, Ghost Rider, when he&#39;s asked to help save a young boy from the devil. CIA operatives Tuck (Tom Hardy) and Foster (Chris Pine) turn against one another when they <b>...</b></font><br /><font size="-1" class="p"></font><br /><font class="p" size="-1"><b><a class="p" href="http://news.google.com/news/more?pz=1&amp;ned=us&amp;num=100&amp;ncl=dUOn7Pj934Zl1uM"><nobr><b></b></nobr></a></b></font></div></font></td></tr></table>
+<noscript>This week in movies, TV and musicGoErie.comJohnny Blaze (Nicolas Cage) is trying to come to grips with his supernatural alter ego, Ghost Rider, when he's asked to help save a young boy from the devil. CIA operatives Tuck (Tom Hardy) and Foster (Chris Pine) turn against one another when they ...</noscript>
+    </BLOCKQUOTE><p><br /><b>Page:</b> 1/5<br /></font></CENTER><center> &nbsp;&nbsp; <a href="celebrity-Nicolas-Cage-info-star-0002477-page2.html"><font class="red_l">Next Page (2/5)</font></a> &nbsp;<a href="celebrity-Nicolas-Cage-info-star-0002477-page2.html"><img src="images/right.gif" border="0" alt="Next Page" ></a><br /><br /><hr color="A14508" /><img src="images/site/sonneries.jpg" alt="sonnerie gsm" vspace="3" hspace="3" align="absmiddle"/> <font class="title" style="text-align:center; text-decoration:underline">Sonneries Gsm Ringtones</font><br /><center>
+<IFRAME SRC="http://diomede.homere.jmsp.net/label_v4/external/DrtTop/newsGen/ContentLyrics.php?a=123mob&la=FR&c=FR&vc=1&vl=5&t=music&hot=1&Typerech=SEARCH&search=Nicolas%2BCage&p=1&f_c=FFFFFF&t_c=A14508" WIDTH="300" HEIGHT="125" BORDER="0" MARGINWIDTH="0" MARGINHEIGHT="0" HSPACE="0" VSPACE="0" FRAMEBORDER="0" SCROLLING="no"></IFRAME></center>
+[ <a href="modules.php?name=Celebrites">Back to Celebrities Index</a> | <a href="actualites-celebrites-lettre-postcomment&amp;id=2477&amp;title=Nicolas+Cage">Post Comment</a> ]</td>
+  </tr>
+</table>
+<div style="height:6px; background-image:url(themes/Celebrites-Stars/images/px2.jpg)"><img alt="" src="themes/Celebrites-Stars/images/spacer.gif"></div><br />         <script language="javascript"><!--
+         writeCookie();
+         function writeCookie() 
+         {
+            var today = new Date();
+            var the_date = new Date();
+            var the_cookie_date = (the_date.getTime() + (1000 * 60 * 60 * 24 * 31));
+            var the_cookie = "msa_resolution="+ screen.width +"x"+ screen.height +"x"+ screen.colorDepth;
+            var the_cookie = the_cookie + ";expires=" + the_cookie_date;
+            document.cookie=the_cookie;
+         }
+         //--></script>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td valign="top" bgcolor="white">	<center><b><a href="index.php" title="celebrities people">HOME</a> | <a href="modules.php?name=Celebrites">CELEBRITIES</a> | <a href="modules.php?name=Your_Account">FANS CLUB</a> | <a href="modules.php?name=Web_Links">FANS WEBSITES</a> | <a href="modules.php?name=Affiliation">AFFILIATION</a> | <a href="modules.php?name=Feedback">FEEDBACK</a></b></center>
+	</td>
+  </tr>
+</table>
+<div style="height:6px; background-image:url(themes/Celebrites-Stars/images/px2.jpg)"><img alt="" src="themes/Celebrites-Stars/images/spacer.gif"></div><center>
+	</center>
+</td>
+  </tr>
+</table>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=930 HEIGHT=54 valign="top" style="background:url(themes/Celebrites-Stars/images/bottom.jpg) left top; padding-top:24px ">
+		<div style="margin-right:26px " align="right" class="copy">Moteur <a href="http://www.nukequery.com" class="copy u" >NukeQuery</a>		  Celebrity-People (beta 2.0) &copy; 2006 - 2012 par <a href="http://www.amba.fr" class="copy u" title="web agency Marseille" target="_blank">AMBA</a></div>
+		</TD>
+	</TR>
+</TABLE>
+<div id="amba" align="center"><table style="font-size:1.2em" border="0" cellpadding="1" cellspacing="0" class="bg_amba">
+  <tr>
+    <td style="text-align:center;" class="reseau_amba">Ce site fait partie du R&eacute;seau <a href="http://www.amba.fr" class="reseau_amba" title="web agency marseille"><b><abbr title="web agency marseille - agence de communication - création de site internet">AMBA</abbr></b></a> : <a href="http://www.web-agency-marseille.com" class="reseau_amba" title="AMBA">Web Agency Marseille</a> : 
+    <table width="100%" border="0" cellpadding="0" cellspacing="1">
+      <tr><td style="text-align:center; background:#FFFFFF">
+        <div style="width:95%; text-align:center;">&nbsp; <strong><strong><strong><a href="http://www.123news.org" class="lien_amba" style="font-size:1.2em" title="actualité">ACTUALITES</a></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><a href="http://www.1tag1site.com" class="lien_amba" style="font-size:1.3em" title="Annuaire de recherche web 2.0">ANNUAIRE&nbsp;WEB&nbsp;2.0</a></strong></strong></strong></strong> &nbsp;&nbsp; <strong><a href="http://www.nomadsland.net" class="lien_amba" style="font-size:1.0em" title="actualité artistes">ARTISTES</a></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><a href="http://www.123reduc.org" class="lien_amba" style="font-size:1.4em" title="Codes promo">BONS&nbsp;REDUCTION</a></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><a href="http://www.123boutique.com" class="lien_amba" style="font-size:1.0em" title="boutique en ligne - annuaire de produits">BOUTIQUE</a></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><strong><strong><a href="http://www.celebrity-people.com" class="lien_amba" style="font-size:1.7em" title="célébrités">CELEBRITES</a></strong></strong></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><a href="http://www.hollyweb.org" class="lien_amba" style="font-size:1.5em" title="actualité films">CINEMA</a></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><strong><strong><a href="http://www.pourlaterre.com" class="lien_amba" style="font-size:1.7em" title="protection environnement">ENVIRONNEMENT</a></strong></strong></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><a href="http://www.snaparazzi.tv" class="lien_amba" style="font-size:1.5em" title="Exprimez votre vision de l'actualité">JOURNALISME&nbsp;CITOYEN</a></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><a href="http://www.theme-template.eu" class="lien_amba" style="font-size:1.2em" title="template">KIT&nbsp;GRAPHIQUE</a></strong></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><a href="http://www.monoculture.com" class="lien_amba" style="font-size:1.5em" title="actualité des marques">MARQUES</a></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><a href="http://www.123mobile.org" class="lien_amba" style="font-size:1.0em" title="accessoires gsm">MOBILE</a></strong> &nbsp;&nbsp; <strong><a href="http://www.atlantyd.org" class="lien_amba" style="font-size:1.0em" title="atlantide">MYSTERES</a></strong> &nbsp;&nbsp; <strong><strong><a href="http://www.123annonces.org" class="lien_amba" style="font-size:1.1em" title="annonces">PETITES&nbsp;ANNONCES</a></strong></strong> &nbsp;&nbsp; <strong><a href="http://snaparazzi.eu" class="lien_amba" style="font-size:1.0em" title="photos libre de droit">PHOTOS</a></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><a href="http://rift.roleplanner.com" class="lien_amba" style="font-size:1.5em" title="MMORPG">RIFT</a></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><a href="http://123mob.sonnerie.net" class="lien_amba" style="font-size:1.1em" title="sonneries gsm">SONNERIES</a></strong></strong> &nbsp;&nbsp; <strong><strong><strong><strong><strong><strong><strong><strong><a href="http://123gsm.magikmobile.com" class="lien_amba" style="font-size:1.7em" title="sonnerie mobile">TELEPHONE</a></strong></strong></strong></strong></strong></strong></strong></strong> &nbsp;&nbsp; <strong><strong><a href="http://www.vins-et-spiritueux.com" class="lien_amba" style="font-size:1.1em" title="vins et spiritueux">VINS</a></strong></strong> &nbsp;&nbsp; <strong><strong><strong><a href="http://www.world-travellers.eu" class="lien_amba" style="font-size:1.2em" title="séjour">VOYAGES</a></strong></strong></strong> &nbsp;</div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></div><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3409139-10']);
+  _gaq.push(['_setDomainName', '.celebrity-people.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

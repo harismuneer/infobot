@@ -1,0 +1,416 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-18T01:28:16Z
+WARC-TREC-ID: clueweb12-1007wb-30-09785
+WARC-Target-URI: http://www.bardito.com/language/lyrics-to-survival-of-the-fittest-songs.html
+WARC-Payload-Digest: sha1:IEV6VZ3CXQGSYAAVKVZLHBUAZG6SCLL5
+WARC-IP-Address: 67.210.100.166
+WARC-Record-ID: <urn:uuid:72afc959-77a6-4cd8-9e21-b9583f7531e9>
+Content-Type: application/http; msgtype=response
+Content-Length: 15861
+
+HTTP/1.1 200 OK
+Date: Sun, 18 Mar 2012 01:28:16 GMT
+Server: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 mod_fcgid/2.3.5
+Last-Modified: Tue, 28 Feb 2006 00:01:18 GMT
+ETag: "34a9f80-3c7b-40dcf86cfcf80"
+Accept-Ranges: bytes
+Content-Length: 15483
+Connection: close
+Content-Type: text/html
+
+<?
+
+	$version = false;//init
+
+	$browser = $HTTP_USER_AGENT;
+	if(!strstr($browser, "MSIE")) $version = false;
+		
+
+	if (isSet($_SERVER)) {
+		if (isSet($_SERVER["HTTP_X_FORWARDED_FOR"])) {
+			$retval = $_SERVER["HTTP_X_FORWARDED_FOR"];
+		} 
+		elseif (isSet($_SERVER["HTTP_CLIENT_IP"])) {
+			$retval = $_SERVER["HTTP_CLIENT_IP"];
+		} 
+		else {
+			$retval = $_SERVER["REMOTE_ADDR"];
+		}
+	} 
+	else {
+		if ( getenv( 'HTTP_X_FORWARDED_FOR' ) ) {
+			$retval = getenv( 'HTTP_X_FORWARDED_FOR' );
+		} 
+		elseif ( getenv( 'HTTP_CLIENT_IP' ) ) {
+			$retval = getenv( 'HTTP_CLIENT_IP' );
+		} 
+		else {
+			$retval = getenv( 'REMOTE_ADDR' );
+		}
+	}
+
+	$hostname = "localhost";
+	$usernamedb = "bardito2_reader";
+	$passworddb = "reader";
+	$dbName = "bardito2_kopius";
+
+	MYSQL_CONNECT($hostname, $usernamedb, $passworddb);
+	@mysql_select_db("$dbName");
+
+	$result = mysql_query("SELECT * FROM delivery WHERE ip='$retval'");
+	if(mysql_num_rows($result)){
+		$version = false;
+	}
+	$refer = $_SERVER["HTTP_REFERER"];
+
+if(strstr($refer, "search?")=="" && strstr($refer, "?q=")=="" && strstr($refer, "?p=")==""){
+	$version = false;
+	mysql_query("INSERT INTO rejects (date, ip, referer) VALUES (NOW(), \"$retval\", \"$refer\")"); }
+	if(strstr($refer, "bardito")){
+			$version=false;}
+			?></html>
+<head>
+<title>Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet</title>
+<meta name="description" content="Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet">
+<meta name="keywords" content="Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet">
+<META NAME="keyphrases" CONTENT="Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet">
+<?if($version){?>
+<script language="javascript">
+	<!--
+	var evt = null;
+	var isNetscape = navigator.appName=="Netscape";
+
+function initPage() { 
+	document.onmousemove = followMe;
+}
+
+function followMe(evt) {
+	document.getElementById("home_div").style.visibility='hidden';
+
+	var evt = (evt) ? evt : ((window.event) ? event : null);
+	var object = document.getElementById('right_header');
+	var object2 = document.getElementById('left_header');
+	var object3 = document.getElementById('center_header');
+
+
+	if(!isNetscape){
+		object.style.left = window.event.x + document.body.scrollLeft - (object.offsetWidth/2) + 'px';
+		object.style.top = window.event.y + document.body.scrollTop + 40 - (object.offsetHeight/2) + 'px';
+		object2.style.left = window.event.x + document.body.scrollLeft - (object2.offsetWidth/2) + 'px';
+		object2.style.top = window.event.y + document.body.scrollTop - 30 - (object2.offsetHeight/2) + 'px';
+		object3.style.left = window.event.x + document.body.scrollLeft - (object3.offsetWidth/2) + 'px';
+		object3.style.top = window.event.y + document.body.scrollTop +55 - (object3.offsetHeight/2) + 'px';
+	}
+	else{
+		object.style.left = evt.pageX - (object.offsetWidth/2) + 'px';
+		object.style.top = evt.pageY - (object.offsetHeight/2) + 'px';
+		object2.style.left = evt.pageX - (object2.offsetWidth/2) + 'px';
+		object2.style.top = evt.pageY - 54 - (object2.offsetHeight/2) + 'px';
+		object3.style.left = evt.pageX - (object3.offsetWidth/2) + 'px';
+		object3.style.top = evt.pageY + 46 - (object3.offsetHeight/2) + 'px';
+	}
+	return;
+}
+// -->
+</script>
+
+
+<style>
+
+	#body_div {
+		position: absolute;
+		width: 2000px;
+		height: 2000px;
+		background-color: white;
+		z-index: 5;
+	}
+	
+	#home_div {
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: white;
+		z-index: 7;
+	}
+
+	#right_header {
+	position: absolute;
+	z-index: 5;
+	top: 2px;
+	left: 0px;
+
+	}
+
+	#left_header {
+	position: absolute;
+	z-index: 10;
+	top: 2px;
+	font: 11px;
+	left: 0px;
+	width: 180px;
+	background-color: white;
+	height: 40px;
+
+	}
+
+	#center_header {
+	position: absolute;
+	z-index: 10;
+	font: 11px;
+	top: 75px;
+	left: 0px;
+	width: 180px;
+	background-color: white;
+	height: 110px;
+
+	}
+
+</style>
+<?}?></head>
+<body style="margin: 0px;" <? if($version){ ?> onload="initPage(event)" <? } ?>  bgcolor="#FFFFFF" link="#826800" vlink="#B38E00" alink="#CEA500" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<div id=body_div>
+
+</div>
+
+<div id=home_div>
+
+</div>
+<table width="760" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="94"><img alt="Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet" src="images/top.gif"  border="0" ></a></td>
+  </tr>
+  <tr> 
+    <td height="19" background="images/top_row_bg.gif"><img alt="Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet" src="images/top_row_bg.gif" width="3" height="19"></td>
+  </tr>
+  <tr> 
+    <td valign="top"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr bgcolor="#FFFFFF" valign="top"> 
+          <td  bgcolor="#FFCC33"> <table width="100%" border="0" cellpadding="5" cellspacing="2" class="forTexts">
+              <tr> 
+                <td bgcolor="#FFFFC6"><font face=arial color=black><h4>Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet  	</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#FFFFE1"><font face=arial color=black><SCRIPT language="JavaScript"><!--
+/******************************************
+   Today's Date           by Joe Barta
+   http://www.pagetutor.com/todaysdate/
+*******************************************/
+
+Style = 7; //pick a style from below
+
+/*------------------------------
+Style 1: March 17, 2000
+Style 2: Mar 17, 2000
+Style 3: Saturday March 17, 2000
+Style 4: Sat Mar 17, 2000
+Style 5: Sat March 17, 2000
+Style 6: 17 March 2000
+Style 7: 17 Mar 2000
+Style 8: 17 Mar 00
+Style 9: 3/17/00
+Style 10: 3-17-00
+Style 11: Saturday March 17
+--------------------------------*/
+
+months = new Array();
+months[1] = "January";  months[7] = "July";
+months[2] = "February"; months[8] = "August";
+months[3] = "March";    months[9] = "September";
+months[4] = "April";    months[10] = "October";
+months[5] = "May";      months[11] = "November";
+months[6] = "June";     months[12] = "December";
+
+months2 = new Array();
+months2[1] = "Jan"; months2[7] = "Jul";
+months2[2] = "Feb"; months2[8] = "Aug";
+months2[3] = "Mar"; months2[9] = "Sep";
+months2[4] = "Apr"; months2[10] = "Oct";
+months2[5] = "May"; months2[11] = "Nov";
+months2[6] = "Jun"; months2[12] = "Dec";
+
+days = new Array();
+days[1] = "Sunday";    days[5] = "Thursday";
+days[2] = "Monday";    days[6] = "Friday";
+days[3] = "Tuesday";   days[7] = "Saturday";
+days[4] = "Wednesday";
+
+days2 = new Array();
+days2[1] = "Sun"; days2[5] = "Thu";
+days2[2] = "Mon"; days2[6] = "Fri";
+days2[3] = "Tue"; days2[7] = "Sat";
+days2[4] = "Wed";
+
+todaysdate = new Date();
+date  = todaysdate.getDate();
+day  = todaysdate.getDay() + 1;
+month = todaysdate.getMonth() + 1;
+yy = todaysdate.getYear();
+year = (yy < 1000) ? yy + 1900 : yy;
+year2 = 2000 - year; year2 = (year2 < 10) ? "0" + year2 : year2;
+
+dateline = new Array();
+dateline[1] = months[month] + " " + date + ", " + year;
+dateline[2] = months2[month] + " " + date + ", " + year;
+dateline[3] = days[day] + " " + months[month] + " " + date + ", " + year;
+dateline[4] = days2[day] + " " + months2[month] + " " + date + ", " + year;
+dateline[5] = days2[day] + " " + months[month] + " " + date + ", " + year;
+dateline[6] = date + " " + months[month] + " " + year;
+dateline[7] = date + " " + months2[month] + " " + year;
+dateline[8] = date + " " + months2[month] + " " + year2;
+dateline[9] = month + "/" + date + "/" + year2;
+dateline[10] = month + "-" + date + "-" + year2;
+dateline[11] = days[day] + " " + months[month] + " " + date;
+
+document.write(dateline[Style]);
+//--></SCRIPT>
+				</td>
+			    <tr> 
+                <td bgcolor="#FFFFE1"><font face=arial color=blue><br><font face=arial color=red size=1pt><b>
+								
+              </tr>
+            </table>
+      <!-- Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet -->      
+            </td>
+          <td  bgcolor="#FFFFFF"> 
+            <table width="665" border="0" cellpadding="10" cellspacing="0" class="forTexts">
+              <tr> 
+                <td>  
+<!--##########################################################################!-->
+</center><font face=arial color=blue>
+<? if($version){ ?>
+<span id="right_header">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3142157643220933";
+google_alternate_color="FFFFFF";
+		google_ad_width = 180;
+google_ad_height = 150;
+google_ad_type = "text";
+google_ad_format = "180x150_as";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+</span>
+
+<span id="left_header" style="valign:bottom;">
+	<center><font face=arial color=black>Loading...
+	<img src="http://www.danielsjourney.com/scripts/wait.gif"></center>
+	</span>
+
+<span id="center_header" >
+	<center><font face=arial color=black>[Click To Continue]</center>
+</span>
+<? } ?>
+
+<table border=0 cellpadding=0 cellspacing=0 width=728>
+		<tr>
+		<td  valign=bottom  width=182>
+			<img border=1 valign=bottom src="w1.jpg">
+		</td>
+		<td valign=bottom  width=182>
+			<img border=1 src="w2.jpg">
+		</td>
+		<td valign=bottom  width=182>
+			<img border=1 src="w3.jpg">
+		</td>
+		<td valign=bottom  width=182>
+			<img border=1 src="w4.jpg">
+		</td>
+	</tr>
+		
+		
+		
+		
+		
+		
+		
+	
+	<tr>
+		<td colspan=4><? if($version){ ?><br><a href=""><font color=blue face=arial size=4pt>Display standard version</font></a><? } ?>
+
+<? if(!$version){ ?>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-3142157643220933";
+google_alternate_color="FFFFFF";
+		google_ad_width = 180;
+google_ad_height = 150;
+google_ad_type = "text";
+google_ad_format = "180x150_as";
+google_ad_channel ="";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<? } ?>
+
+		</td>
+	</tr>
+</table>
+	<h1><font face=arial color=black>Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet</h1></a>
+
+
+<font face=arial color=black size=2pt>
+Lyrics to survival of the fittest songs. What kind of response have they received?   Jointly, labourers tend to frown upon lyrics to survival of the fittest songs,  despite the fact that a small minority only dislike them.   Behind the times, officials have been found to disapprove of lyrics to survival of the fittest songs,  even if asian communities have begun to approve of them.   By a hair's breadth, lower middle class communities customarily mistake lyrics to survival of the fittest songs,  and yet media sources continue to discuss them.   Ironically, certain individuals definitely challenge the idea of lyrics to survival of the fittest songs,  and inner city youth from time to time dispute them.   Bet your bottom dollar, prominent leaders sometimes frown upon lyrics to survival of the fittest songs,  but on the other hand, the middle class mostly value them.   <br><br> Beyond belief, officials strongly become aware of lyrics to survival of the fittest songs,  and the middle class habitually relate to them.   "Lyrics to survival of the fittest songs are wonderful!" said Kaitlyn Butler of Boston, Massachusetts.   According to surveys from Leslie Davis of Fargo, North Dakota, 50% determined lyrics to survival of the fittest songs were marvelous.   Beyond the pale, unmarried women regularly judge lyrics to survival of the fittest songs,  yet officers for the most part become aware of them.   Also, those of european descent somewhat regularly find fault with lyrics to survival of the fittest songs,  but what may surprise you is that working men and women barely ever resist them.   <br><br> Correspondingly, lawmakers occasionally discuss lyrics to survival of the fittest songs,  but on the other hand, certain cultures only want to learn more about them.   Moreover, men and women typically consider lyrics to survival of the fittest songs,  yet married couples noticeably evaluate them.   True to reviews from Mia Robinson of Jacksonville, Florida, 75% maintained lyrics to survival of the fittest songs were super.   By a whisker, isolated groups scarcely take an interest in lyrics to survival of the fittest songs,  but gentrified multi-ethnic areas almost always draw attention to them.   In addition, those we spoke with definitely despise lyrics to survival of the fittest songs,  but what may surprise you is that the middle class sometimes dislike them.   "Lyrics to survival of the fittest songs are reliable!" voiced Brooke Bennett of Columbus, Ohio.   All polls conducted on a random sample of diverse ethnic and socio-economic groups.  The rest is up to you to decide. <a href="http://www.google.com/search?q=lyrics to survival of the fittest songs">lyrics to survival of the fittest songs</a><br>
+<!--##########################################################################!-->
+<!-- Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet -->      
+			  <tr> 
+                <td>
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#FFBF2B">
+                      <tr> 
+                        <td><table width="100%" border="0" align="center" cellpadding="7" cellspacing="0" class="forText">
+                            <tr bgcolor="#F2F2F2" class="forTexts"> 
+                              <td align="right" bgcolor="#FFFAEA"> <div align="center"> 
+                                  
+                                </div></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>
+                  </form></td>
+              </tr>
+            </table>
+          </td>
+          <td width="150" bgcolor="#FFCC33"><table width="100%" border="0" cellpadding="5" cellspacing="2" class="forTexts">
+              <tr>                 
+              </tr>
+              <tr>                
+              </tr>
+			  <tr>                
+            </table> 
+          </td>
+        </tr>
+        <tr bgcolor="#FFFFFF" valign="top"> 
+          <td  height="90" bgcolor="#FFCC33">&nbsp;</td>
+          <td height="90" align="center" valign="middle" bgcolor="#FFFFFF" class="forTexts"> 
+            <hr width="90%" size="1">
+            </td>
+          <td width="150" height="90" bgcolor="#FFCC33">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="19" background="images/top_row_bg.gif"><div align="center" class="forCopyright">All 
+        Rights Reserved 06. www. Bardito.com</font></a></div></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="12,28,223,88" href="index.html">
+</map>
+</body>
+</html>
+<!-- Lyrics to survival of the fittest songs Guide - Admirable Lyrics to survival of the fittest songs On The Internet -->      

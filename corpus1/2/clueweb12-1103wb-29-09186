@@ -1,0 +1,805 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-21T11:35:23Z
+WARC-TREC-ID: clueweb12-1103wb-29-09186
+WARC-Target-URI: http://www.multnomah.lib.or.us/ref/election.html
+WARC-Payload-Digest: sha1:WLTLP7ALWI5MGB54NBUJWDG27YMMQXEJ
+WARC-IP-Address: 192.220.128.96
+WARC-Record-ID: <urn:uuid:a8115869-1a87-4a76-9e75-c4dea4c44b02>
+Content-Type: application/http; msgtype=response
+Content-Length: 57502
+
+HTTP/1.1 200 OK
+Server: Apache/2.2.15 (Scientific Linux)
+Content-Type: text/html
+Content-Length: 57288
+Date: Wed, 21 Mar 2012 11:35:23 GMT
+X-Varnish: 2008428039
+Age: 0
+Via: 1.1 varnish
+Connection: close
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="vacant" />
+<title>Elections - Research - Multnomah County Library</title> 
+<style type="text/css">
+<!--
+@import url(/_css/base.css);
+/* global navigation link */
+#gnresearch {background-color:#433625;color:#ffffff;}
+/* subnav background */
+#subnav {background-image:url(/ref/images/sub-research2.jpg)}
+/* subnav active link */
+a#topics {font-weight:bold;text-decoration:none;}
+/* subnav menus */
+ul#snhomework{display:none;}
+/* document css */
+
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript" src="/_scripts/base.js"></script>
+<script language="javascript" type"text/javascript">
+
+// convert IP dot-decimal format to long int
+function ip2long(ip) {
+      var octets = ip.split('.');
+      var iplong = 0;
+      with (Math) {
+            iplong = (parseInt(octets[0]) * pow(256,3)) + (parseInt(octets[1]) * pow(256,2)) + (parseInt(octets[2]) * 256) + parseInt(octets[3]);
+      }
+      return iplong;
+}
+
+// bitshift left
+function lshift(num, bits) {
+      return num * Math.pow(2,bits);
+}
+
+// bitshift right
+function rshift(num, bits) {
+      return num / Math.pow(2,bits);
+}
+
+// check if dot-decimal IP falls within CIDR network
+function network_contains_ip(ip, network) {
+      var longIP = ip2long(ip);
+      var cidr = network.split('/');
+
+      var subnet = ip2long(cidr[0]);
+      var bits   = parseInt(cidr[1]);
+      var mask   = lshift(-1, (32 - bits));
+
+      subnet &= mask;
+
+      return (longIP & mask) == subnet;
+}
+      
+var ip_blocks = {
+      onnetwork:[
+                // STAFF SYSTEMS (192.220.128.0 ... 192.220.135.255)
+                '192.220.128.0/21',
+                // PUBLIC MACHINES (192.220.136.0 ... 192.220.143.255)
+                '192.220.136.0/21',
+                // REGIONAL WIFI (198.107.160.128 ... 198.107.160.255)
+                '198.107.160.128/25',
+                // NEIGHBORHOOD WIFI (198.107.161.0 ... 198.107.161.255)
+                '198.107.161.0/24',
+               ],
+
+      central:  [
+                 // CENTRAL STAFF (192.220.128.x, 192.220.128.x, 192.220.131.x, 192.220.136.x)
+                '192.220.128.0/24', '192.220.129.0/24', '192.220.131.0/24', '192.220.136.0/24',
+               // CENTRAL PUBLIC WIFI A (192.220.142.128 ... 192.220.142.255)
+                '192.220.142.128/25',
+                // CENTRAL PUBLIC WIFI B (198.107.160.0 ... 198.107.160.127)
+                '198.107.160.0/25',
+               ],
+
+      alldata:  [
+                // CENTRAL STAFF (192.220.128.x, 192.220.128.x, 192.220.131.x, 192.220.136.x)
+                '192.220.128.0/24', '192.220.129.0/24', '192.220.131.0/24', '192.220.136.0/24',
+                // CENTRAL LAB (192.220.141.225 ... 192.220.141.255)
+                '192.220.141.225/32','192.220.142.226/31','192.220.141.228/30','192.220.141.232/29','192.220.141.240/29','192.220.141.248/30','192.220.141.252/31','192.220.141.254/32',
+                // STAFF WIFI (192.220.131.128 ... 192.220.131.255)
+                '192.220.131.128/25',
+                // GRESHAM PUBLIC (192.220.139.129 ... 192.220.139.190)
+                '192.220.139.129/32','192.220.139.130/31','192.220.139.132/30','192.220.139.136/29','192.220.139.144/28','192.220.139.160/28','192.220.139.176/29','192.220.139.184/30','192.220.139.188/31','192.220.139.190/32',
+                // GRESHAM STAFF      (192.220.132.129 ... 192.220.132.158)
+                '192.220.132.129/32','192.220.132.130/31','192.220.132.132/30','192.220.132.136/29','192.220.132.144/29','192.220.132.152/30','192.220.132.156/31','192.220.132.158/32',
+                // GRESHAM PUBLIC LAB (192.220.141.1 ... 192.220.141.30)
+                '192.220.141.1/32','192.220.141.2/31','192.220.141.4/30','192.220.141.8/29','192.220.141.16/29','192.220.141.24/30','192.220.141.28/31','192.220.141.30/32',
+                // MIDLAND PUBLIC (192.220.139.193 ... 192.220.139.255)
+                '192.220.139.193/32','192.220.139.194/31','192.220.139.196/30','192.220.139.200/29','192.220.139.208/28','192.220.139.224/27',
+                // MIDLAND STAFF (192.220.133.193 ... 192.220.133.222)
+                '192.220.133.193/32','192.220.133.194/31','192.220.133.196/30','192.220.133.200/29','192.220.133.208/29','192.220.133.216/30','192.220.133.220/31','192.220.133.222/32',
+
+                // MIDLAND PUBLIC LAB (192.220.140.193 ... 192.220.140.222)
+                '192.220.140.193/32','192.220.140.194/31','192.220.140.196/30','192.220.140.200/29','192.220.140.208/29','192.220.140.216/30','192.220.140.220/31','192.220.140.222/32',
+               ]
+}
+
+function check_network_blocks() {
+
+      var onnetwork = false;
+      var central   = false;
+      var alldata   = false;
+
+      // Get the IP address using SSI
+      
+      var ip = '128.2.207.79';
+      ip = ip.split(",")[0]
+      
+
+      for (i in ip_blocks.onnetwork) {
+            if (network_contains_ip(ip, ip_blocks.onnetwork[i])) {
+                  onnetwork = true;
+            }
+      }
+
+      for (i in ip_blocks.central) {
+            if (network_contains_ip(ip, ip_blocks.central[i])) {
+                  central = true;
+            }
+      }
+
+      for (i in ip_blocks.alldata) {
+            if (network_contains_ip(ip, ip_blocks.alldata[i])) {
+                  alldata = true;
+            }
+      }
+
+// test
+// alert ("For IP: " + ip + "\r\n\r\nonnetwork: " + onnetwork + "\r\ncentral: " + central + "\r\nalldata: " + alldata);
+
+
+      if (onnetwork)
+            {document.write('<style type="text/css">.inhouselink {display:inline;} .remotetext {display:none;}</style>');}
+      else
+            {document.write('<style type="text/css">.inhouselink {display:none;} .remotetext {display:inline;}</style>');}
+ 
+      if (central)
+            {document.write('<style type="text/css">.ceninhouselink {display:inline;} .cenremotetext {display:none;}</style>');}
+      else
+            {document.write('<style type="text/css">.ceninhouselink {display:none;} .cenremotetext {display:inline;}</style>');}
+                   
+      if (alldata)
+            {document.write('<style type="text/css">.alldatainhouselink {display:inline;} .alldataremotetext {display:none;}</style>');}
+      else
+            {document.write('<style type="text/css">.alldatainhouselink {display:none;} .alldataremotetext {display:inline;}</style>');}
+
+}
+
+check_network_blocks();
+
+</script>
+
+</head>
+
+
+<body>
+<div id="frame">
+
+<!-- Header -->
+<a name="top" id="top"></a><a href="#content" id="skipnav">skip navigation links</a>
+<!-- global navigation begin -->
+<div id="globalnav">
+<div id="logo"><a href="/"><img src="/images/logo-blue.gif" alt="Multnomah County Library home" width="112" height="50"  class="main"/><img src="/kids/images/mcl-logo-white.png" alt="Multnomah County Library home" width="112" height="50" class="kids" /></a></div>
+<div id="globalactions">
+<div id="search">
+<form action="http://catalog.multcolib.org/search/a?" name="search">
+<input type="hidden" name="searchtype" value="Y" />
+<input type="text" size="25" maxlength="75" name="searcharg" class="terms" />
+<input type="hidden" name="SORT" value="R" />
+<input type="hidden" name="searchscope" value="1" />
+<input type="submit" value="Search catalog" name="submit" class="searchbutton" /> 
+</form>
+</div>
+<ul class="col">
+<li class="gna1"><a href="http://catalog.multcolib.org/patroninfo" id="gnaccount">My account</a></li>
+<li><a href="http://search.multcolib.org" id="gnsearch">Search this site</a></li>
+<li><a href="/libros/" id="gnlibros">Espa&ntilde;ol</a></li>
+</ul>
+<ul class="col">
+<li class="gna1"><a href="/hours/" id="gnhours">Hours &amp; locations</a></li>
+<li><a href="/about/" id="gnabout">About the library</a></li>
+<li><a href="/contact/" id="gncontact">Contact us</a></li>
+</ul>
+</div>
+<div class="mainnav">
+<ul>
+<li><a href="http://catalog.multcolib.org" id="gncatalog"> CATALOG </a></li>
+<li><a href="/ref/" id="gnresearch"> RESEARCH </a></li>
+<li><a href="/services/" id="gnservices"> SERVICES </a></li>
+<li><a href="/books/" id="gnreaders"> READERS </a></li>
+<li><a href="/kids/" id="gnkids"> KIDS </a></li>
+<li><a href="/teens/" id="gnteens"> TEENS </a></li>
+<li class="nobg"><a href="http://events.multcolib.org" id="gnevents"> EVENTS &amp; CLASSES </a></li>
+</ul>
+</div>
+</div>
+<!-- global navigation end -->
+<a name="content"></a>
+<div id="content">
+
+<p class="locator"><a href="/ref/">Research</a> &gt; <a href="/ref/topics.html">Topics</a> &gt; Elections</p>
+
+<h1>Elections</h1>
+
+<p>For in-depth analysis of <a href="#localnews">local</a>, <a href="#news">national and international</a> election news, as well as voting and election facts, <a href="#hist">historical information</a>, and information about <a href="#intl">elections overseas</a>, take a look at some of the great websites we've gathered below!</p>
+
+<ul>
+<li><a  href="#oregon">Oregon Elections Information</a></li>
+<li><a href="#localnews">Local News</a></li>
+<!-- <li><a href="#news">National News</a></li>-->
+<li><a href="#voter">Resources for Voters</a></li>
+<li><a href="#ballotmeasures">Ballot Measures</a></li>
+<li><a href="#electoral">Miscellaneous Elections Resources</a></li>
+<li><a href="#intl">International Elections Resources</a></li>
+<li><a href="#hist">Election History</a></li>
+</ul>
+
+<ul>
+</ul>
+
+
+<h2>Databases</h2>
+
+<!-- Key -->
+<table border="0" width="100%" cellpadding="4">
+<tr>
+	<td width="8%" valign="middle"><img border="0" src="/ref/gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></td>
+	<td valign="middle">More information about this resource</td>
+</tr>
+<tr>
+	<td width="8%" valign="middle"><img border="0" src="/ref/gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+	<td valign="middle">Remote access is available on this resource</td>
+</tr>
+<tr>
+	<td width="8%" valign="middle"><img border="0" src="/ref/gifs/iconcen.gif" width="24" height="22" align="absmiddle" alt="Access limited" /></td>
+	<td valign="middle">Access limited to some library locations</td>
+</tr>
+</table>
+
+<table width="90%" border="0">
+
+<!-- ALTERNATIVE PRESS -->
+<tr>
+<td width="100%"><span class="inhouselink"><a href="http://newfirstsearch.oclc.org/autho=100164317;dbname=AltPressIndex;done=referer;FSIP">Alternative Press Index (1991-present)</a></span><span class="remotetext">Alternative Press Index (1991-present)</span> &nbsp; <a href="dbs/dbaltpress.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a>
+</td>
+</tr>
+
+<!-- ALTERNATIVE PRESS ARCHIVE -->
+<tr>
+<td width="100%"><span class="inhouselink"><a href="http://newfirstsearch.oclc.org/autho=100164317;dbname=AltPressIndexArchive;done=referer;FSIP">Alternative Press Index Archive (1969-1990)</a></span><span class="remotetext">Alternative Press Index Archive (1969-1990)</span> &nbsp; <a href="dbs/dbaltpress.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a> &nbsp;
+</td>
+</tr>
+
+<!-- RESEARCHER-->
+<tr>
+<td width="100%"><a href="http://0-library.cqpress.com.catalog.multcolib.org/cqresearcher/">CQ Researcher</a> &nbsp; <a href="dbs/dbcqresearch.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+<!--ELECTRIC LIBRARY-->
+<tr>
+<td width="100%"><a href="http://0-elibrary.bigchalk.com.catalog.multcolib.org">Electric Library</a> &nbsp; <a href="dbs/dbelectriclib.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+<!-- ETHNIC NEWSWATCH -->
+<tr>
+<td width="100%"><a href="http://0-proquest.umi.com.catalog.multcolib.org/login?COPT=REJTPTM4M2UmU01EPTQmSU5UPTAmVkVSPTI=&amp;clientId=11892">Ethnic NewsWatch</a> &nbsp; <a href="dbs/dbethnicnw.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" alt="Additional information" /></a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+
+<!--NEWSBANK ONLINE PORTAL (everything from NB + hot topics) -->
+<tr>
+<td width="100%"><a href="http://0-infoweb.newsbank.com.catalog.multcolib.org/cgi-bin/remote/">NewsBank Online Portal</a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+<!-- OPPOSING VIEWPOINTS RESOURCE CENTER -->
+<tr>
+<td width="100%"><a href="http://0-infotrac.galegroup.com.catalog.multcolib.org/itweb/multnomah_main?db=OVRC">Opposing Viewpoints Resource Center</a> &nbsp; <a href="dbs/dbovrc.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+<!-- WORLD NEWS DIGEST -->
+<!-- WORLD NEWS DIGEST -->
+<tr> 
+<td width="100%"><a href="http://0-www.2facts.com.catalog.multcolib.org/Direct2.aspx?ItemID=WE56&ID=97194">World News Digest</a> &nbsp; <a href="dbs/dbfactscom.html"><img border="0" src="gifs/iconinfo.gif" width="16" height="16" align="absmiddle" alt="Additional information" /></a> &nbsp; <img border="0" src="gifs/iconremote.gif" width="23" height="16" align="absmiddle" alt="Remote access" /></td>
+</tr>
+
+</table>
+
+<!-- websites BEGIN - COLLECTORS, YOUR CONTENT BEGINS HERE -->
+
+
+<a name="oregon"></a><h2>Oregon Elections Information</h2>
+<p>Do you need information for the current or upcoming elections?  Are you looking for your elected officials, campaign headquarters, or county elections divisions?   Are you interested in historical information from past elections?  The following resources help you find information at the state, city and county levels in Oregon.</p>
+
+<dl>
+
+<dt><a href="http://www.lwvor.org/">League of Women Voters of Oregon</a></dt>
+<dd>
+<div class="url">http://www.lwvor.org/</div>
+<div class="description">The Oregon chapter of the <a href="http://www.lwv.org/">League of Women Voters</a> publishes non-partisan <a href="http://www.lwvor.org/votersguide.htm">voters' guides<a/> for each election.  
+The League never takes stands on candidates or parties, but they do takestands on issues supported by member agreement and in-depth research.  The League also </a><a href="http://www.lwvor.org/studiesnpublications.htm">reports</a> on many electoral and political issues of interest to Oregonians. </div>
+</dd>
+
+<dt><a href="http://www.co.multnomah.or.us/elect/">Multnomah County Elections Division</a></dt>
+<dd>
+<div class="url">http://www.co.multnomah.or.us/elect/</div>
+<div class="description">Locate your <a href="http://www.co.multnomah.or.us/dbcs/elections/index_info.shtml#eo">elected officials</a> and find information about <a href="http://www.co.multnomah.or.us/dbcs/elections/index_ue.shtml"> 
+current and upcoming elections</a> including the <a href="http://www.co.multnomah.or.us/dbcs/elections/2010-11/multnomah_vp_final.pdf">Multnomah County Voters' Pamphlet for the November 2, 2010 election</a>.  The <a href="http://www.co.multnomah.or.us/dbcs/elections/index_info.shtml">voter resources page<a/> incudes voter registration forms in </a><a href="http://www.sos.state.or.us/elections/forms/sel500.pdf">English</a> and <a href="http://www.sos.state.or.us/elections/forms/sel500a.pdf">Spanish</a>, <a href="http://www.co.multnomah.or.us/dbcs/elections/election_information/voter_registration_info.shtml">frequently asked questions</a>, ballot drop site locations, and much more.  Find historical <a href="http://www.co.multnomah.or.us/dbcs/elections/index_results.shtml">election results</a> and links to <a href="http://www.co.multnomah.or.us/dbcs/elections/index_links.shtml">other Oregon election agencies</a> too.  
+</div>
+</dd>
+
+<dt><a href="http://www.sos.state.or.us/elections/elechp.htm">Oregon Elections Division</a></dt>
+<dd>
+<div class="url">http://www.sos.state.or.us/elections/elechp.htm</div>
+<div class="description">Find <a href="http://www.oregonvotes.org/voterresources.html">voter resources</a> including the <a href="http://www.sos.state.or.us/elections/nov22010/guide/pdf/book13.pdf"> Voters Pamplet for the November 2, 2010 election </a>, a guide to voting in Oregon (in <a href="http://www.sos.state.or.us/elections/HAVA/votingguide/">English</a> and <a href="http://www.sos.state.or.us/elections/HAVA/guiaparavotar/">Spanish</a>, or in an <a href="http://www.sos.state.or.us/elections/may202008/guide/audio/cover.html">English audio version<a/>).  Or, </a><a href="https://secure.sos.state.or.us/eim/vr/showVoterSearch.do">check to see if you're already registered to vote</a>.  Track the status of initiatives, find detailed information about candidates and committees, learn about the <a href="http://www.sos.state.or.us/elections/other.info/stelec.htm">history</a> of Oregon elections and locate <a href="http://www.sos.state.or.us/elections/other.info/clerk.htm">county election offices</a> around the state
+</div>
+</dd>
+
+<dt><a href="http://www.oregonfollowthemoney.org/">Oregon Follow the Money</a></dt>
+<dd>
+<div class="url">http://www.oregonfollowthemoney.org/</div>
+<div class="description">Find out who gave money to various political candidates and ballot measure campaigns in Oregon, and see how much money each donor contributed.</div>
+</dd>
+
+<dt><a href="http://thevoterguide.oregonlive.com/">Oregonian: Voter Guide</a></dt>
+<dd>
+<div class="url">http://thevoterguide.oregonlive.com/</div>
+<div class="description">Are you wondering how the candidates in a city, county, or statewide race compare?  OregonLive asked candidates from around the state to provide information about themselves and their positions on the issues, and you can compare their answers here.  You'll also find articles about Portland's mayoral race, and the 2008 presidential election.</div>
+</dd>
+
+<dt><a href="http://www.portlandonline.com/auditor/index.cfm?c=26642">Portland Elections Division</a></dt>
+<dd>
+<div class="url">http://www.portlandonline.com/auditor/index.cfm?c=26642</div> 
+<div class="description">Find current and <a href="http://www.portlandonline.com/auditor/index.cfm?c=27119">historical</a> city election results back to 1905, a list of elected officials from 1913 to the present, and mayors from 1851 to the present.  Find out how to <a href="http://www.portlandonline.com/auditor/index.cfm?&a=42145&c=27114"?>become a city candidate</a>, how to file an <a href="http://www.portlandonline.com/auditor/index.cfm?c=27129&">initiative</a> or <a href="http://www.portlandonline.com/auditor/index.cfm?c=chbda">referendum</a> petition, or test your knowledge of Portland elections on the <a href="http://www.portlandonline.com/auditor/index.cfm?c=27119&a=41903">trivia<a/> page!</a></div>
+</dd><dt>
+
+
+
+<a href="http://www.portlandonline.com/auditor/index.cfm?c=27119&a=41903"></a><a href="http://www.secstate.wa.gov/elections/">Washington Elections Division</a></dt>
+<dd>
+<div class="url">http://www.secstate.wa.gov/elections/</div>
+<div class="description">Find information about elections, voting, caucuses, candidates and political parties in the state of Washington.</div>
+</dd>
+
+</dl>
+
+
+<a name="localnews"></a><h2>Local News</h2>
+
+<p>If you want news and opinions about local races, state ballot measures, and the local perspective on national election stories, these sites should help get you started.</p>
+
+<dl>
+
+<dt><a href="http://news.opb.org/elections">OPB News: Election 2010</a></dt>
+<dd>
+<div class="url">http://news.opb.org/elections/</div>
+<div class="description">Read news and views on local, state and national elections, from the public radio network serving northern Oregon and southwest Washington.</div>
+</dd>
+
+<dt><a href="http://www.oregonlive.com/politics/">Oregonian: Politics &amp; Elections</a> | <a href="http://blog.oregonlive.com/politics_impact/atom.xml">rss/xml feed</a><br />
+</dt><dd>
+<div class="url">http://www.oregonlive.com/politics/</div>
+<div class="description">Find information about the national elections from a local perspective, with an <a href="http://blog.oregonlive.com/elections/">election news blog</a>, articles about the election and the candidates from the <em>Oregonian</em>, profiles of the candidates, and links to political parties, local resources for voters, and other elections and politics related resources.</div>
+</dd>
+
+<dt><a href="http://wweek.com/politics">Willamette Week</a></dt>
+<dd>
+<div class="url">http://wweek.com/politics</div>
+<div class="description">Read local and national political news, and election <a href="http://wweek.com/editorial/2008/10/15/ww-voters-guide-november-2008/">endorsements</a> from the editorial staff at <em>Willamette Week</em>.</div>
+</dd>
+
+</dl>
+
+<!--
+<a name="news"></a><h2>National &amp; International News</h2>
+
+<p>If you're eager to see how the presidential race is going, keep track of primary election results, and read recent news stories or editorial opinions, these sites should help get you started.</p>
+
+<dl>
+
+<dt><a href="http://www.topix.net/news/2008-presidential-election">Topix: 2008 Presidential Election News</a> | <a href="http://www.topix.net/rss/news/2008-presidential-election">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://www.topix.net/news/2008-presidential-election</div>
+<div class="description">Find news, opinions, and information about the 2008 presidential elections from thousands of newspapers, blogs, television station websites, and wire services.</div>
+</dd>
+
+<dt><a href="http://english.aljazeera.net/focus/uselections2008/">Al Jazeera English: US Elections 2008</a> | <a href="http://english.aljazeera.net/Services/Rss/?PostingId=200861013562692365">rss/xml feed</a><br />
+<a href="http://english.aljazeera.net/focus/uselections2008/2008/10/200810710451507275.html">2008 general election results</a></dt>
+<dd>
+<div class="url">http://english.aljazeera.net/focus/uselections2008/</div>
+<div class="description">Find news and views about the presidential election from an international perspective.  Al Jazeera, the largest Arabic language news channel in the world, provides a wide range of articles, opinions, editorials and features on the United States 2008 presidential election&#151;in English.</div>
+</dd>
+
+<dt><a href="http://www.alternet.org/election08/">Alternet: Election 2008</a> | <a href="http://alternet.org/module/feed/rss/coverage/election08">rss/xml feed</a><br />
+<a href="http://www.alternet.org/election08/106032/election_day%3A_presidential_results/">2008 general election minute-by-minute returns</a></dt>
+<dd>
+<div class="url">http://www.alternet.org/election08/</div>
+<div class="description">Read presidential election news and opinion from a variety of magazines, blogs, and newspapers, all with a progressive perspective.</div>
+</dd>
+
+<dt><a href="http://origin.www.cbc.ca/news/background/usvotes/">CBC: U.S. Votes 2008</a></dt>
+<dd>
+<div class="url">http://origin.www.cbc.ca/news/background/usvotes/</div>
+<div class="description">Are you curious about what Canadians think about the American elections?  Read stories about the US presidential race on the Canadian Broadcasting Corporation's website.</div>
+</dd>
+
+<dt><a href="http://www.cnn.com/ELECTION/2008/">CNN: ElectionCenter 2008</a> | <a href="http://rss.cnn.com/services/podcasting/raceto08/rss.xml">podcast</a><br />
+2008 general election results: <a href="http://www.cnn.com/ELECTION/2008/results/president/">president</a>, <a href="http://www.cnn.com/ELECTION/2008/results/main.results/#S">senate</a>, <a href="http://www.cnn.com/ELECTION/2008/results/main.results/#val=H">house</a>, <a href="http://www.cnn.com/ELECTION/2008/results/main.results/#val=G">governors</a>, <a href="http://www.cnn.com/ELECTION/2008/results/ballot.measures/">ballot measures</a><br />
+2008 primary results: <a href="http://www.cnn.com/ELECTION/2008/primaries/results/scorecard/#D">Democrats</a>, <a href="http://www.cnn.com/ELECTION/2008/primaries/results/scorecard/#R">Republicans</a></dt>
+<dd>
+<div class="url">http://www.cnn.com/ELECTION/2008/</div>
+<div class="description">Here you can find news and views about the presidential election, including topics like campaign financing and the presidential <a href="http://www.cnn.com/ELECTION/2008/debates/">debates</a>.  A special section gives a brief introduction to <a href="http://www.cnn.com/ELECTION/2008/path.presidency/">how the presidential election works</a>, and another explains facts about the <a href="http://www.cnn.com/2008/POLITICS/01/02/delegate.explainer/index.html">delegates</a> to party conventions.</div>
+</dd>
+
+<dt><a href="http://election.nationalreview.com/">National Review Online: Campaign 08 Total Coverage</a></dt>
+<dd>
+<div class="url">http://election.nationalreview.com/</div>
+<div class="description">Read opinion and viewpoints on the 2008 presidential elections from a conservative perspective.</div>
+</dd>
+
+<dt><a href="http://topics.nytimes.com/top/reference/timestopics/subjects/p/presidential_election_of_2008/">New York Times: Presidential Election of 2008</a> | <a href="http://topics.nytimes.com/top/reference/timestopics/subjects/p/presidential_election_of_2008/?rss=1">rss/xml feed</a><br />
+2008 general election results: <a href="http://elections.nytimes.com/2008/results/president/votes.html">president</a>, <a href="http://elections.nytimes.com/2008/results/senate/votes.html">senate</a>, <a href="http://elections.nytimes.com/2008/results/house/votes.html">house</a>, <a href="http://elections.nytimes.com/2008/results/governor/votes.html">governors</a><br />
+<a href="http://politics.nytimes.com/election-guide/2008/results/votes/index.html">2008 primary results</a></dt>
+<dd>
+<div class="url">http://topics.nytimes.com/top/reference/timestopics/subjects/p/presidential_election_of_2008/</div>
+<div class="description">Find news stories and op-ed columns on the 2008 presidential elections, including details about each campaign's <a href="http://politics.nytimes.com/election-guide/2008/finances/index.html">finances</a>, the <em>Times</em>'s <a href="http://www.nytimes.com/ref/us/polls_index.html">public opinion polls</a>, a schedule of candidate's <a href="http://elections.nytimes.com/2008/president/schedules/past.html">public appearances</a> throughout the campaign, and <a href="http://elections.nytimes.com/2008/results/governor/votes.html">videos and photos</a>.  Plus, the <a href="http://tvdecoder.blogs.nytimes.com/">TV Decoder</a> blog critiques and reports on news coverage of the election.</div>
+</dd>
+
+<dt><a href="http://www.npr.org/templates/topics/topic.php?topicId=1102">NPR: Election 2008</a> | <a href="http://www.npr.org/rss/rss.php?id=1102">rss/xml feed</a> | <a href="http://www.npr.org/templates/topics/topic.php?topicId=1014">podcast</a><br />
+2008 general election results: <a href="http://www.npr.org/news/specials/election2008/2008-election-map.html#/president?view=race08">president</a>, <a href="http://www.npr.org/news/specials/election2008/2008-election-map.html#/senate?view=race08">senate</a>, <a href="http://www.npr.org/news/specials/election2008/2008-election-map.html#/house?view=race08">house</a>, <a href="http://www.npr.org/news/specials/election2008/2008-election-map.html#/governor?view=race08">governors</a></dt>
+<dd>
+<div class="url">http://www.npr.org/templates/topics/topic.php?topicId=1102</div>
+<div class="description">Read and listen to news coverage of the 2008 presidential elections, including stories about campaigns in specific states, issues and debates, campaign spending, voting, and related topics.  <a href="http://www.npr.org/getmyvote/">Get My Vote<a/> presents thoughtful commentaries from readers, and a special section features articles about <a href="http://www.npr.org/templates/story/story.php?storyId=18575055">different political constituencies</a> and their views on the election.</div>
+</dd>
+
+<dt><a href="http://www.electionunspun.org/">Pacifica/Free Speech Radio News: electionunspun</a> | <a href="http://www.electionunspun.org/issues?format=feed&type=rss">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://www.electionunspun.org/</div>
+<div class="description">Listen to and read election news and analysis from progressive journalists across the U.S.</div>
+</dd>
+
+<dt><a href="http://www.pri.org/politics-society/Election-2008/index.1.html">Public Radio International: Election 2008</a></dt>
+<dd>
+<div class="url">http://www.pri.org/politics-society/Election-2008/index.1.html</div>
+<div class="description">Read and listen to elections news from <em>The World</em>, <em>Capitol News Connection</em>, <em>This American Life</em>, and other PRI shows.</div>
+</dd>
+
+<dt><a href="http://www.usatoday.com/news/politics/">USA Today: 2008 Election Coverage</a> | <a href="http://asp.usatoday.com/marketing/rss/rsstrans.aspx?feedId=news26">rss/xml feed</a><br />
+<a href="http://content.usatoday.com/news/politics/election2008/results-all.aspx">2008 general election results</a></dt>
+<dd>
+<div class="url">http://www.usatoday.com/news/politics/</div>
+<div class="description">News about the presidential election, with special sections on the candidates, the <a href="http://content.usatoday.com/news/politics/election2008/issues.aspx">issues</a>, current <a href="http://www.usatoday.com/news/politics/election2008/poll-tracker.htm">opinion polls</a>, videos & photos, <a href="http://www.usatoday.com/news/politics/election2008/delegate-tracker.htm">the delegates</a>, and <a href="http://content.usatoday.com/news/politics/election2008/results-all.aspx">election results</a>.</div>
+</dd>
+
+<dt><a href="http://www.youtube.com/youchoose">You Tube: You Choose '08</a></dt>
+<dd>
+<div class="url">http://www.youtube.com/youchoose</div>
+<div class="description">Watch videos about the candidates and their views on <a href="http://www.youtube.com/youchoose_issue?i=education">education</a>, <a href="http://www.youtube.com/youchoose_issue?i=energy">energy</a>, <a href="http://www.youtube.com/youchoose_issue?i=healthcare">healthcare</a>, <a href="http://www.youtube.com/youchoose_issue?i=immigration">immigration</a>, <a href="http://www.youtube.com/youchoose_issue?i=iraq">Iraq</a>, and the <a href="http://www.youtube.com/youchoose_issue?i=economy">economy</a>, as well as videos from and about the YouTube-sponsored <a href="http://www.youtube.com/debates">debates</a> and <a href="http://www.youtube.com/supertuesday">Super Tuesday</a>.  Some videos are provided by the candidates and their campaigns, but many are by regular people from around the nation and the world.</div>
+</dd>
+
+</dl>
+-->
+
+
+
+
+<a name="voter"></a><h2>Resources for Voters</h2>
+
+<p>Whether you're a first-time voter or an old hand, these sites can help you with the practical side of voting.</p>
+
+<dl>
+
+<dt><a href="http://www.declareyourself.com/">Declare Yourself</a></dt>
+<dd>
+<div class="url">http://www.declareyourself.com/</div>
+<div class="description">Are you eager to learn about voting, register to vote, and get yourself ready for the election? This nonpartisan site is designed just for you!  Find state by state voting and eligibility requirements, a <a href="http://www.declareyourself.com/voting_faq/voting_faq.html">voting FAQ</a> as well as information about primaries, caucuses, conventions and the electoral process.</div>
+</dd>
+
+<dt><a href="http://www.sentencingproject.org/IssueAreaHome.aspx?IssueID=4">Felony Disenfranchisement</a></dt>
+<dd>
+<div class="url">http://www.sentencingproject.org/IssueAreaHome.aspx?IssueID=4</div>
+<div class="description">Find information about the voting rights of people with previous felony convictions, including which states bar ex-felons from voting altogether, and the steps ex-felons have to take to restore their voting rights in states that do allow them to vote.</div>
+</dd>
+
+<dt><a href="http://www.newvotersproject.org/">New Voters Project</a></dt>
+<dd>
+<div class="url">http://www.newvotersproject.org/</div>
+<div class="description">This project  is dedicated to encouraging newly eligible voters to get involved in the election process and to vote.  Locate <a href="http://www.newvotersproject.org/research">research</a> on how many young people have turned out for the caucuses and primaries, register to vote, find your polling place, and learn how to become involved.</div>
+</dd>
+
+<dt><a href="http://www.vote411.org/">Vote411</a></dt>
+<dd>
+<div class="url">http://www.vote411.org/</div>
+<div class="description">If you are looking for basic information about how voting works, who is <a href="http://www.vote411.org/bytopic.php?topicID=15">eligible</a> to vote, what kind of <a href="http://www.vote411.org/bytopic.php?topicID=16">identification</a> is required to vote or to register to vote, and what kind of <a href="http://www.vote411.org/bytopic.php?topicID=22">voting machines</a> the different states use, this nonpartisan site from the League of Women Voters can help.</div>
+</dd>
+
+<dt><a href="http://www.aclu.org/votingrights/index.html">Voting Rights</a></dt>
+<dd>
+<div class="url">http://www.aclu.org/votingrights/index.html</div>
+<div class="description">Learn about current controversies related to voting rights from this website sponsored by the American Civil Liberties Association.  You'll find information about voters' rights in the states and information about the voting rights of military personnel, prisoners and ex-convicts, and rural residents.  If you're looking for local information, you can also check out the <a href="http://www.aclu-or.org/site/PageServer?pagename=Iss_vote">Oregon</a> and <a href="http://www.aclu-wa.org/issues/index.cfm?issue_id=12">Washington</a> ACLU websites.</div>
+
+</dd></dl>
+
+
+<a name="ballotmeasures"></a><h2>Ballot Measures</h2>
+
+<p>In Oregon and many other states, laws can be made directly by the popular vote of citizens.  There are two kinds of ballot measures: referendums which are referred from the state legislature to the voters; and initiatives, which are put on the ballot as a result of signature petitions signed by registered voters.  These websites can help you learn about the history and future of ballot measures and other methods of direct democracy.</p>
+
+<dl>
+
+<dt><a href="http://www.ballot.org">Ballot Initiative Strategy Center</a></dt>
+<dd>
+<div class="url">http://www.ballot.org</div>
+<div class="description">This organization advocates for ballot initiative reform from a progressive perspective, and provides information about ballot measure campaigns nationwide.  Find information about <a href="http://www.ballot.org/pages/on_the_ballot/">current measures on the ballot</a> across the nation, read overviews of <a href="http://www.ballot.org/pages/election_results/">election results</a>, find out <a href="http://www.ballot.org/pages/initiative_process/">which states allow voter initiatives</a>, and learn about the rules for <a href="http://www.ballot.org/pages/how_to_qualify/">how to get an intitiative on the ballot</a> in each state.</div>
+</dd>
+
+<dt><a href="http://www.ncsl.org/programs/legismgt/elect/dbintro.htm">Ballot Measures Database</a></dt>
+<dd>
+<div class="url">http://www.ncsl.org/programs/legismgt/elect/dbintro.htm</div>
+<div class="description">Find information about statewide ballot measures from across the U.S., back to Oregon's first referendum authorizing the initiative process in 1902.  This database, from the <a href="http://www.ncsl.org/index.htm">National Conference of State Legislatures</a>, is part of a larger site rich with information about <a href="http://www.ncsl.org/programs/legismgt/elect/initiat.htm">initiatives, referendums, and recal elections</a>, as well as other <a href="http://www.ncsl.org/programs/legismgt/elect/elect.htm">information about state elections</a> in the U.S.</div>
+</dd>
+
+<dt><a href="http://www.osbar.org/public/vote/InitiativeProcess.htm">Direct Democracy: Initiatives and Referendums</a></dt>
+<dd>
+<div class="url">http://www.osbar.org/public/vote/InitiativeProcess.htm</div>
+<div class="description">Find answers to your questions about how ballot measures work, and their history in Oregon.</div>
+</dd>
+
+<dt><a href="http://www.iandrinstitute.org/">Initiative & Referendum Institute</a></dt>
+<dd>
+<div class="url">http://www.iandrinstitute.org/</div>
+<div class="description">Are you curious about ballot measures across the US?  Find reports about ballot measure results and trends, quick facts about initiatives and referendums, and information about <a href="http://www.iandrinstitute.org/statewide_i&r.htm">how ballot measures work in the different states</a>.</div>
+</dd>
+
+</dl>
+
+
+<a name="electoral"></a><h2>Miscellaneous Elections Resources</h2>
+
+<p>Are you curious about the history of presidential elections in the United States?  Do you need to know how the electoral college works, what qualifications a person needs to be eligible to run for president, or how the candidates are paying for their campaigns?  Turn to these sites for answers!</p>
+
+<dl>
+
+<dt><a href="http://www.cfr.org/campaign2008/">Campaign 2008</a> | <a href="http://blogs.cfr.org/campaign2008/">blog</a> | <a href="http://www.cfr.org/about/rss/feeds.html">rss/xml feeds</a> | <a href="http://www.cfr.org/campaign2008/podcasts.html">podcasts</a></dt>
+<dd>
+<div class="url">http://www.cfr.org/campaign2008</div>
+<div class="description">Find opinions and information about how the presidential election impacts world politics.  You can read interviews with foreign policy experts from other countries, background reports on campaign issues, debates and speeches, and more.</div>
+
+</dd><dt><a href="http://www.cfinst.org/">Campaign Finance Institute</a></dt>
+<dd>
+<div class="url">http://www.cfinst.org/</div>
+<div class="description">This think tank website offers nonpartisan discussion of many issues related to campaign finance in <a href="http://www.cfinst.org/congress/">congressional</a> and <a href="http://www.cfinst.org/president/">presidential</a> election campaigns.  You'll find reports on developments in <a href="http://www.cfinst.org/bcra/">federal campaign finance law</a>, <a href="http://www.cfinst.org/parties/">political parties</a> and <a href="http://www.cfinst.org/interest_groups/">interest groups and "soft money"</a> and how they affect the funding of political campaigns, and information about current issues in the news.</div>
+</dd>
+
+<dt><a href="http://www.cqpolitics.com/">CQ Politics</a> | <a href="http://blogs.cqpolitics.com/polltracker/">Polltracker blog</a></dt>
+<dd>
+<div class="url">http://innovation.cq.com/primaries</div>
+<div class="description">Find political news, information on current campaigns, analysis, data about campaign funding.  Use the <a href="http://www.cqpolitics.com/wmspage.cfm?parm1=2">state map</a> find information about house, senate, and gubernatorial elections around the country.  Or, use the <a href="http://innovation.cq.com/prezMap08/">presidential election map</a> to see how CQ rates the competetiveness of the presidential race in each state, to build your own election day scenarios, or to see the outcomes of previous presidential elections.  The <a href="http://blogs.cqpolitics.com/polltracker/">Polltracker</a> blog tracks key national and state polls, key Senate, House and Governor races, and public opinion polls you should know about to stay informed.</div>
+</dd>
+
+<dt><a href="http://pewresearch.org/topics/election'08/">Election '08</a> | <a href="http://feeds.feedburner.com/pewresearch/election08">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://pewresearch.org/topics/election'08/</div>
+<div class="description">Are you curious about what Americans think about election issues?  The Pew Research Centers survey people across the U.S. about their attitudes, habits, and opinions &#151; read their reports on elections and the media, religion in politics, the interenet's role in politics, and more!</div>
+</dd>
+
+<dt><a href="http://www.factcheck.org/">FactCheck.org</a> | <a href="http://www.factcheck.org/factfeed.rss">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://www.factcheck.org/</div>
+<div class="description">Sometimes when campaign ads make a claim, or when a politician says something important in a speech, it is difficult to find out the background on the issue.  This site brings together information that can help you check the factual claims that candidates, political campaigns, and elected officials make.</div>
+</dd>
+
+<dt><a href="http://www.fairvote.org/">Fairvote.org</a> | <a href="http://www.fairvote.org/blog/">blog</a> | <a href="http://www.fairvote.org/blog/index.php/feed/atom">rss/xml feed</a> | <a href="http://www.fairvote.org/?page=1690">podcast</a></dt>
+<dd>
+<div class="url">http://www.fairvote.org/</div>
+<div class="description">Find the latest <a href="http://www.fairvote.org/?page=200">news</a> about election reform and the move to increase voter participation, and read <a href="http://www.fairvote.org/?page=884">reports<a/> on a wide array of election issues, from the Center for Voting and Democracy.  The </a><a href="http://www.fairvote.org/?page=2083">Innovative Analysis</a> series discusses a new election-related issue every few weeks.</div>
+</dd>
+
+<dt><a href="http://www.politifact.com/truth-o-meter/">Politifact.com</a> | <a href="http://www.politifact.com/truth-o-meter/rss/">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://www.politifact.com/truth-o-meter/</div>
+<div class="description">PolitiFact vets statements made by the campaigns in ads, speeches and debates, and provides articles and facts supporting or refuting the statements.
+Use the <a href="http://www.politifact.com/truth-o-meter/statements/">truth-o-meter</a> to view the latest statements reviewed, the <a href="http://www.politifact.com/truth-o-meter/flip-o-meter/">flip-o-meter</a> to read about contradicting statements by the candidates, or read recent news <a href="http://www.politifact.com/truth-o-meter/article/">articles</a> on the 2008 presidential election by staff of <em>Congressional Quarterly</em> and the <em>St. Petersburg Times</em>.  An <a href="http://www.politifact.com/truth-o-meter/attacks/">attack file</a> examines the facts behind statements made by candidates about each other.</div>
+</dd>
+
+<dt><a href="http://www.opensecrets.org/pres08/index.asp">Race for the White House: Banking on Becoming President</a></dt>
+<dd>
+<div class="url">http://www.opensecrets.org/pres08/index.asp</div>
+<div class="description">This site shows data on campaign contributions and spending for the 2008 presidential election, with information for each major Republican and Democratic candidate.  Do you want to know if <a href="http://www.opensecrets.org/pres08/donordemCID_compare.asp?cycle=2008&cand1=N00000019&cand2=N00009638">men are donating to the same or different candidates than women</a>?  Are you wondering <a href="http://www.opensecrets.org/pres08/states.asp?cycle=2008">how much money is raised by the political parties</a>?  Do you need to know <a href="http://www.opensecrets.org/pres08/toprecipQ3_2007/toprecip.asp?cycle=2008">how much money has been donated from each state</a>?  This website can help!</div>
+</dd>
+
+<dt><a href="http://www.learner.org/interactives/statistics/activity0/frontpoll.phtml">Statistics: Polls: What do the Numbers Tell Us?</a></dt>
+<dd>
+<div class="url">http://www.learner.org/interactives/statistics/activity0/frontpoll.phtml</div>
+<div class="description">We often hear the results of opinion polls in election-related news stories, but what do these poll results really mean?  This guide explains how polls work, and defines terms like "random sample" and "margin of error."</div>
+</dd>
+
+<dt><a href="http://www.archives.gov/federal-register/electoral-college/index.html">U.S. Electoral College</a></dt>
+<dd>
+<div class="url">http://www.archives.gov/federal-register/electoral-college/</div>
+<div class="description">The official site of the Electoral College has <a href="http://www.archives.gov/federal-register/electoral-college/historical.html">historical election results</a>, answers to <A href="http://www.archives.gov/federal-register/electoral-college/faq.html">frequently asked questions</a>, and a section devoted to the <a href="http://www.archives.gov/federal-register/electoral-college/2008/">Electoral College and the 2008 presidential election</a>.</div>
+</dd>
+
+<dt><a href="http://www.watchblog.com/">WatchBlog: Political News, Opinions & Commentary</a> | rss/xml feeds: <a href="http://www.watchblog.com/democrats/index.xml">Democrats</a>, <a href="http://www.watchblog.com/thirdparty/index.xml">Independents</a>, <a href="http://www.watchblog.com/republicans/index.xml">Republicans</a></dt>
+<dd>
+<div class="url">http://www.watchblog.com/</div>
+<div class="description">A multiple-editor weblog divided into three major political affiliations, each with its own blog:  the <a href="http://www.watchblog.com/democrats/">Democrats & liberals</a>, <a href="http://www.watchblog.com/thirdparty/">third party & independents</a>, and <a href="http://www.watchblog.com/republicans/">Republicans & conservatives</a>.  The purpose of this blog is to help you decide among a variety of opinions.  Posting by editors representing each major party is done on a regular basis.
+</div>
+</dd>
+
+</dl>
+
+
+<a name="intl"></a><h2>International Elections Resources</h2>
+<p>Use these sites to compare election systems around the world, find election results from other countries, and learn about elections monitoring.</p>
+
+<dl>
+
+<dt><a href="http://www.aceproject.org/">ACE Electoral Knowledge Network</a></dt>
+<dd>
+<div class="url">http://www.aceproject.org/</div>
+<div class="description">Get answers to questions about election registration, vote counting, and ballot characteristics around the world using <a href="http://aceproject.org/epic-en">comparative data</a>, or take a look at a <a href="http://aceproject.org/today/election-calendar">calendar of upcoming elections around the world</a>.</div>
+</dd>
+
+<dt><a href="http://www.c2d.ch/index.php">Center for Research on Direct Democracy</a></dt>
+<dd>
+<div class="url">http://www.c2d.ch/index.php</div>
+<div class="description">If you're curious about ballot measures in countries outside the U.S., this research organization in Switzerland can be a good place to start.  Find out about direct democracy laws in their <a href="http://www.c2d.ch/inner.php?table=dd_db">Direct Democracy Databases</a>, read recent <a href="http://www.c2d.ch/inner.php?lname=News&table=About_General&link_id=3&parent_id=3">news</a>, or browse the Center's <a href="http://www.c2d.ch/inner.php?lname=Publications&table=Working_Papers&parent_id=49&link_id=46&sublinkname=C2D%20Research%20Reports">research reports</a> and online <a href="http://www.c2d.ch/inner.php?lname=Library&table=About_General&link_id=44&parent_id=44">library</a>.</div>
+</dd>
+
+<dt><a href="http://eguide.dd.ifes.org/index.php">Election Guide</a> | <a href="http://eguide.dd.ifes.org/rss/news.xml">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://eguide.dd.ifes.org/index.php</div>
+<div class="description">This resource helps you locate information about presidential, parliamentary, legislative and referendum elections by country from 1998 forward.  Find explanations and descriptions of government structure and electoral systems around the world, dates of elections past and present, and numbers of registered voters in each country.  Use the map to see all the upcoming elections in a specific region.</div>
+</dd>
+
+<dt><a href="http://www.electoralgeography.com/new/en/">Electoral Geography 2.0</a></dt>
+<dd>
+<div class="url">http://www.electoralgeography.com/new/en/</div>
+<div class="description">Find maps and graphs showing election results from recent and historical elections around the world.</div>
+</dd>
+
+<dt><a href="http://www.electionresources.org/">Electoral Resources on the Internet</a> | <a href="http://www.electionresources.org/panorama/">blog</a> | <a href="http://electionresources.org/panorama/rss.xml">rss/xml feed</a></dt>
+<dd>
+<div class="url">http://www.electionresources.org/</div>
+<div class="description">Research news and results from elections around the globe, together with an impressive collection of links to other <a href="http://www.electionresources.org/#LINKS">websites providing international election history, results, and information</a>.</div>
+</dd>
+
+</dl>
+
+
+<a name="hist"></a><h2>Election History</h2>
+<p>Democracy in the United States has a fascinating and complex history! Use these sites to find election results from the past, learn how the electoral process has evolved and learn more about significant election issues through time.</p>
+
+<dl>
+
+<dt><a href="http://www.sos.state.or.us/archives/exhibits/1857/after/evolve.htm">Forging the Oregon Constitutional Process</a></dt>
+<dd>
+<div class="url"></div>
+<div class="description">Have you ever wondered how Oregon developed its system for revising the state Constitution?  This article from a longer <a href="http://www.sos.state.or.us/archives/exhibits/1857/intro.htm">history of the Oregon Constitution</a> explains how William U'Ren sparked a movement that eventually resulted in the "Oregon System" &#151; today's referendum and initiative process.</div>
+</dd>
+
+<dt><a href="http://www.museum.tv/debateweb/html/index.htm">The History of Televised Presidential Debates</a></dt>
+<dd>
+<div class="url">http://www.museum.tv/debateweb/html/index.htm</div>
+<div class="description">This exhibit from Chicago's <a href="http://www.museum.tv/">Museum of Broadcast Communications</a> explores televised presidential debates from 1960 to 2000 with videos, photographs, and other documentary evidence of the debates, their public reception, and their impact on the voters.  A special section provides <a href="http://www.museum.tv/debateweb/html/curriculum/index.htm">curriculum resources</a> for teachers. The museum also has <a href="http://www.museum.tv/exhibitionssection.php?page=19">other resources</a> about televised presidential debate history.</div>
+</dd>
+
+<dt><a href="http://livingroomcandidate.movingimage.us">The Living Room Candidate: Presidential Campaign Commercials 1952-2004</a></dt>
+<dd>
+<div class="url">http://livingroomcandidate.movingimage.us</div>
+<div class="description">Political campaign advertisements are an important way for candidates to deliver their messages to voters&#151;at this exhibit you can watch dozens of television and web campaign ads from the last fifty years.</div>
+</dd>
+
+<dt><a href="http://www.nytimes.com/interactive/2008/10/23/opinion/20081024-endorse.html">New York Times Endorsements Through the Ages</a></dt>
+<dd>
+<div class="url">http://www.nytimes.com/interactive/2008/10/23/opinion/20081024-endorse.html</div>
+<div class="description">Have you ever wondered what effect endorsements have on election outcomes?  The <em>New York Times</em> shares an archive of their endorsements of presidential candidates from 1860 to the present.  Each endorsement is accompanied by a photograph of the candidate, the <em>Times</em>'s editorial endorsing the candidate, and a note about who won the election that year.</div>
+</dd>
+
+<dt><a href="http://pollingplaces.nytimes.com/">Polling Place Photo Project</a></dt>
+<dd>
+<div class="url">http://pollingplaces.nytimes.com/</div>
+<div class="description">Are you curious what democracy looks like around the country?  View <a href="http://pollingplaces.nytimes.com/content.cfm/browse_photographs">photographs of polling places</a> used in the 2006 and 2008 elections across the U.S. (inlcuding <a href="http://pollingplaces.nytimes.com/content.cfm/browse_photographs?paramText=&ParamState=38&action=1&submit.x=30&submit.y=7&paramCaption=&paramKeywords=&paramCity=&paramTitle=&ParamPoll=&ParamBallot=&ParamQOS=&ParamHowLong=&ParamTime=&ParamPollWorkers=&ParamPollLine=&ParamWhyVote=&ParamElectionId=">Oregon</a>!), and by Americans voting abroad.  Or, <a href="http://pollingplaces.nytimes.com/content.cfm/post_photographs">submit your own pictures</a>!</div>
+</dd>
+
+<dt><a href="http://www.museum.tv/archives/etv/P/htmlP/presidential/presidential.htm">Presidential Nominating Conventions and Television</a></dt>
+<dd>
+<div class="url">http://www.museum.tv/archives/etv/P/htmlP/presidential/presidential.htm</div>
+<div class="description">This brief article from the <a href="http://www.museum.tv/">Museum of Broadcast Communications</a>'s Encyclopedia of Television discusses the history of televised political conventions starting in 1948, the first year a convention was partially televised.</div>
+</dd>
+
+<dt><a href="http://americanhistory.si.edu/vote/">Vote: The Machinery of Democracy</a></dt>
+<dd>
+<div class="url">http://americanhistory.si.edu/vote/</div>
+<div class="description">Explore the history of voting machines in the United States at this exhibit from the Smithsonian. Find out how ballots and voting systems have evolved over the years as a response to political, social and technological change. Examine samples of voting technology from paper ballots to punch cards, and voting systems of today and the future.</div>
+</dd>
+
+<dt><a href="http://en.wikipedia.org/wiki/Voting_system">Voting System</a></dt>
+<dd>
+<div class="url">http://en.wikipedia.org/wiki/Voting_system</div>
+<div class="description">How do different voting systems work?  This article from Wikipedia explains decision-making processes that don't usually get considered when discussing elections in the U.S., explains technical terms, discusses the history of different decision-making methods, and provides a bibliography of sources for more information.</div>
+</dd>
+
+</dl>
+
+
+<p>Send <a href="/ref/fmpinsert.html">comments and suggestions</a> about this collection.</p>
+
+
+</div>
+
+<!--Begin Subnav-->
+<div id="subnav">
+<h2><a href="/ref/" id="around">Research</a></h2>
+<ul>
+<li><a href="/ref/articles.html" id="articles">Articles</a></li>
+<li><a href="/ref/a2z.html" id="databases">Databases A-Z</a></li>
+<li><a href="/ref/ebooks.html" id="digital">E-books &amp; more</a></li>
+<li><a href="/contact/" id="questions">Get Help</a></li>
+<li><a href="/guides/" id="guides">Guides</a></li>
+<li><a href="/homework/" id="homework">Homework Center</a></li>
+<li><a href="/ref/topics.html" id="topics">Topics</a></li>
+</ul>
+</div> <!--End Subnav-->
+
+
+<!-- Footer -->
+<div id="footer">
+<div id="footer_icons">
+<a href="http://www.facebook.com/multcolib"><img src="/images/icons/facebook_52.png" alt="Multnomah County Library on Facebook" width="52" height="52" border="0" /></a>
+<a href="http://twitter.com/multcolib"><img src="/images/icons/twitter_52.png" alt="Multnomah County Library on Twitter" width="52" height="52" border="0" /></a>
+</div>
+
+
+
+<ul class="inline">
+<li><a href="/">Home</a> <span>|</span> </li>
+<li><a href="http://catalog.multcolib.org/patroninfo">My account</a> <span>|</span></li>
+<li><a href="http://search.multcolib.org/">Search this site</a> <span>|</span> </li>
+<li><a href="/contact/">Contact us</a></li>
+</ul>
+<ul class="inline">
+<li><a href="/about/pol-privacy.html">Privacy policy</a> <span>|</span> </li>
+<li><a href="http://www.co.multnomah.or.us/">Multnomah County</a>, OR <span>|</span> </li>
+<span class="last_updated"><li>Last updated: January  5, 2012 </li></span>
+<span class="home_last_updated"><li>Last updated: March 19, 2012  </li></span>
+
+</ul>
+<ul class="inline">
+<li>&copy;2012 Multnomah County Library</li>
+</ul>  
+</div>
+
+</div>
+<!-- The following Server Side Include is the code for google analytics -->
+<!-- CRAZY EGG -->
+
+<script type="text/javascript" src="http://s3.amazonaws.com/new.cetrk.com/pages/scripts/0006/6467.js"> </script>
+
+
+<!-- Google Analytics -->
+
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2693827-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+      
+      
+
+</body>
+
+</html>
+

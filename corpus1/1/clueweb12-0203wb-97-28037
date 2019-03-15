@@ -1,0 +1,2068 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-16T09:14:39Z
+WARC-TREC-ID: clueweb12-0203wb-97-28037
+WARC-Target-URI: http://www.macon.com/2012/02/13/1902361/go-dark-for-health-benefits-when.html
+WARC-Payload-Digest: sha1:6IQUBFTMY5O2ID3UWUHDSJ63273VSHAC
+WARC-IP-Address: 96.7.40.19
+WARC-Record-ID: <urn:uuid:58f709d9-2fb2-4b57-a0b9-9ce50f8d714a>
+Content-Type: application/http; msgtype=response
+Content-Length: 91106
+
+HTTP/1.0 200 OK
+Server: Apache/1.3.41
+Content-Type: text/html
+Cache-Control: max-age=0
+Date: Thu, 16 Feb 2012 09:14:42 GMT
+Connection: close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<html>
+ <head>
+ 
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+var gomez={ 
+	gs: new Date().getTime(), 
+	acctId:'D3FD89', 
+	pgId:'story-detail', 
+	grpId:'Macon' 
+};
+
+
+/*Gomez tag version: 7.0*/var gomez=gomez?gomez:{};gomez.h3=function(d, s){for(var p in s){d[p]=s[p];}return d;};gomez.h3(gomez,{b3:function(r){if(r<=0)return false;return Math.random()<=r&&r;},b0:function(n){var c=document.cookie;var v=c.match(new RegExp(';[ ]*'+n+'=([^;]*)'));if(!v)v=c.match(new RegExp('^'+n+'=([^;]*)'));if(v)return unescape(v[1]);return '';},c2:function(n,v,e,p,d,s){try{var t=this,a=t.domain?t.domain:location.hostname;var c=n+'='+escape(v)+(e?';expires='+e.toGMTString():'')+(p?';path='+p:';path=/')+(d?';domain='+d:';domain='+a)+(s?';secure':'');document.cookie=c;}catch(e){}},z0:function(n){var t=this;if(n){var s =t.b0("__g_c");if(!s)return '';var v=s.match(new RegExp(n+':([^\|]*)'));if(v)return unescape(v[1]);return '';}else return '';},z1:function(n,m){var t=this;if(n){var s=t.b0("__g_c");if(s){if(s.indexOf(n+':')!=-1)s=s.replace(new RegExp('('+n+':[^\|]*)'),n+':'+m);else s=s==' '?n+':'+m:s+'|'+n+':'+m;t.c2("__g_c",s);}else t.c2("__g_c",n+':'+m);};},b2:function(v,s){var t=this,f=new Date(t.gt()+946080000000),g=''+v+'_'+s;t.c2('__g_u',g,f);t.gc.c=v;t.gc.d=s;t.z1('c',v);t.z1('d',s);},gt:function(){return new Date().getTime()},b5:function(){return new Date().getTime()-gomez.gs},j1:function(h){if(h){if(h.indexOf('<')!=-1||h.indexOf('%3C')!=-1||h.indexOf('%3c')!=-1)return null;if(window.decodeURIComponent)return decodeURIComponent(h);else return unescape(h);}return null;},f1:function(u,t){try{if(u){if(!/(^http|^https)/.test(u)){if(t==1)return gomez.j1(location.hostname);else return u;}var p=new RegExp('(^http|^https|):\/{2}([^\?#;]*)');if(t==1)p=new RegExp('(^http|^https|):\/{2}([^\/\?]*)');var r=u.match(p);if(r&&t==1)return gomez.j1(r[2]);else if(r)return r[0];}return null;}catch(e){return null;}},j3:function(n){try{var t =this,key=escape((window.location+n).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}if(window.localStorage){window.localStorage.setItem(key, t.gt());}else{t.z1('r',key+'___'+t.gt());}}catch(e){return ;}}, j2:function(){try{var m,t =this,key=escape((document.referrer+window.location).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}if(window.localStorage){m=window.localStorage.getItem(key);}if(!m){var c=t.z0("r");if(c){var r=c.split('___');if(r &&r[0]==key){m=r[1];}};};t.j4();return m;}catch(e){return ;}}, j4:function(){try{var t =this;if(window.localStorage){var key=escape((document.referrer+window.location).replace(new RegExp("([:\/\.])","gm"),""));if(key&&key.length>100){key=key.substring(0,100);}window.localStorage.removeItem(key);}else{t.z1('r', '');}}catch(e){return ;}}, j5:function(){var ret='';for(var i=0;i<3;i++){ret =ret +(((1+Math.random())*0x10000)|0).toString(16).substring(1);}ret =parseInt(ret, 16);return ret;},j6:function(){var t =this;var g=t.b0("__g_u");if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r =g.split("_");if(r.length>5){if(parseInt(r[5])<new Date().getTime()){return undefined;}else{return parseFloat(r[2]);}}}return undefined;},nameEvent:function(){},startInterval:function(){},endInterval:function(){},customValue:function(){}});gomez.P=function(){};gomez.P.prototype={hash:function(o){if(!o)return '';var t=this,s='{n:'+t.f9(o['n'])+'|';for(var i in o){if(i=='n')continue;if(typeof(o[i])=='string'||typeof(o[i])=='number')s +=i+':'+t.f9(o[i])+'|';};s=s.substring(0,s.length-1);return s+'}';},f9:function(s){s=''+s;s=s.replace('|','#$#').replace(':','$*$').replace('{','@#@').replace('}','*@*').replace('&','!*!');return s;},g0:function(){var t=this,z=gomez;if(z.grpIds)z.h3(z.gc,z.grpIds);if(z.wrate)z.gc.r=z.wrate;z.gc.e=z.grpId;for(var i=1;i<5;i++){if(z["grpId"+i]!=undefined){z.gc["e"+i]=z["grpId"+i];}}z.gc.b=z.pgId;z.gc.l=z.f1(z.m,2);if(self.screen){z.gc.m=screen.width;z.gc.o=screen.height;}else if(self.java){var j=java.awt.Toolkit.getDefaultToolkit();var s=j.getScreenSize();z.gc.m=s.width;z.gc.o=s.height;};z.gc.p=navigator.platform;if(navigator.cpuClass)z.gc.q=navigator.cpuClass;if(!z.gc.f&&!z.gc.g){try{var a=new Array("MSIE","Firefox","Opera","Safari","Chrome"),b=document.createElement('div');if(b.addBehavior&&document.body){b.addBehavior('#default#clientCaps');z.gc.k=b.connectionType;}}catch(e){};for(var i=0;i<a.length;i++){if(navigator.userAgent.indexOf(a[i])!=-1){z.gc.g=a[i];z.gc.f=(new String(navigator.userAgent.substring(navigator.userAgent.indexOf(a[i])).match(/[\d.]+/))).substring(0);}}if(!z.gc.f&&!z.gc.g){z.gc.g=navigator.vendor||navigator.appName;z.gc.f=(new String(navigator.appVersion.match(/[\d.]+/))).substring(0);}}return t.hash(z.gc);}};try{gomez.gc={'n':'c'};var iU=gomez.b0('__g_u');if(iU==undefined||iU==''){gomez.b2(gomez.j5(), 0);}var sR=gomez.j6();if(sR==undefined){sR=1;gomez.isFirstVi=true;}else{gomez.isFirstVi=false;}var wR=gomez.wrate?parseFloat(gomez.wrate):(gomez.wrate==0?0:1);wR=wR<0?0:(wR>1?1:wR);gomez.inSample=gomez.z0('a');if(!gomez.inSample||gomez.inSample==''){if(gomez.b3(wR*sR)){gomez.inSample=1;}else{gomez.inSample=0;}gomez.z1('a', gomez.inSample);}else{gomez.inSample=parseInt(gomez.inSample);}gomez.runFlg=gomez.inSample>0;if(gomez.runFlg){gomez.clickT=gomez.j2();gomez.h1=function(v,d){return v?v:d};gomez.gs=gomez.h1(gomez.gs,new Date().getTime());gomez.acctId=gomez.h1(gomez.acctId,'');gomez.pgId=gomez.h1(gomez.pgId,'');gomez.grpId=gomez.h1(gomez.grpId, '');gomez.E=function(c){this.s=c;};gomez.E.prototype={g1:function(e){var t=gomez,i=t.g6(e);if(i)i.e=t.b5();}};gomez.L=function(m){this.a=m;};gomez.L.prototype={g2:function(m){var t=gomez,n=t.b5();var s=document.getElementsByTagName(m);var e=t.k;if(m=='script')e=t.j;if(m=='iframe')e=t.l;if(s){var l=s.length;for(var i=0;i<l;i++){var u=s[i].src||s[i].href;if(u &&!e[u]){var r =new gomez.E(e);t.grm[u]=r;e[u]=new t.c7(u, n);if(t.gIE&&m=='script')t.e2(s[i],'readystatechange',t.d2,false);else t.e2(s[i],'load',r.g1,false);}}}}};gomez.L.m=new Object;gomez.S=function(){var t=this,h=gomez.acctId+".r.axf8.net";t.x=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/b.gif?';t.pvHttpUrl=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/e.gif?';t.abHttpUrl=('https:'==location.protocol?'https:':'http:')+'//'+h+'/mr/f.gif?';};gomez.h2=function(){var t=this;t.gIE=false;t.f=new Object;t._h=0;t.j=new Object;t.k=new Object;t.l=new Object;t.m=location.href;t.p=-1;t.q=-1;t.u=new Array;t._w=false;t.gSfr=/KHTML|WebKit/i.test(navigator.userAgent);t.grm=new Object;t.b;t.d=false;t.x=false;t.s=new gomez.S;t._a=false;t.h6=false;t.n1=0;t.c=false;};gomez.h3(gomez,{h5:function(u){try{var s=document.createElement('script');s.async=true;if(navigator.userAgent.indexOf('Firefox/3.5')!=-1){s.defer=true;}s.src=u;s.type='text/javascript';if(document.body)document.body.appendChild(s);else if(document.documentElement.getElementsByTagName('head')[0])document.documentElement.getElementsByTagName('head')[0].appendChild(s);}catch(e){var t=gomez;if(t.gSfr)document.write("<scr"+"ipt src='"+u+"'"+"><\/scr"+"ipt>");}},a9:function(){var t=gomez,i=t.z0('a'),g=t.b0('__g_u'),h=t.z0('h'), b=t.z0('b');t.gc.h=b;if(h)t.n1=parseInt(h);if(!t.gc.h)t.gc.h=1;t.z1('b',parseInt(t.gc.h)+1);if(i){t.a=parseInt(i);if(t.a==1){t._w=true;}else if(t.a==3){t.x=true;t._w=true;};t.d=true;}if(!t.gc.a)return;if(b){t.gc.c=t.z0('c');t.gc.i=t.z0('e');t.gc.j=t.z0('f');t.iFS=false;}else {var s='v=1';t.c2('__g_u','1',new Date(t.gt()+1000));t.iFS=true;if(t.b0('__g_u')&&g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){s='v=0';var r=g.split('_');t.b2(parseInt(r[0]),parseInt(r[1])+1);if(r[4]&&r[4]!='0'&&t.gt()<parseInt(r[5])&&r[2]&&r[2]!='0'){t.b1(parseFloat(r[2]),parseFloat(r[3]),parseFloat(r[4]),parseInt(r[5]));if(r[6])t.n0(parseInt(r[6]));};};t.h6=true;};t.gc.d=t.z0('d');if(!t.gc.d||(t.gc.d&&t.gc.d==0)){t.z1('d',1);t.gc.d=1;}t.b=t.z0('g');t.j8();if(i &&!t.isFirstVi&&t._w&&!t._a){t.h7();t._a=true;};},h7:function(){var t=gomez,u=t.tloc?t.tloc:('https:'==location.protocol?'https:':'http:')+'//'+t.acctId+'.t.axf8.net/js/gtag7.0.js';t.h5(u);},n0:function(h){var t=gomez,f=new Date(t.gt()+946080000000),g=t.b0('__g_u');t.n1=h;t.z1('h',h);if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r=g.split('_');g=''+r[0]+'_'+r[1]+'_'+r[2]+'_'+r[3]+'_'+r[4]+'_'+r[5]+'_'+h;t.c2('__g_u',g,f);};},b1:function(v,s,q,f){var t=this;if(s ==undefined)s =1;t.d=true;t.z1('e',v);t.z1('f',s);t.gc.i=v;t.gc.j=s;t.h4(v,s,q,f);},b3:function(i, v, s){var t =this;t.d=true;if(s ==undefined)s =1;if(i==0||i==1){t.a=i;if(i==1){t._w=true;if(!t._a){t.h7();t._a=true;};}else{t.d=false;}t.z1('a',t.a);if(v !=undefined){t.b1(v, s);}}else if(i==2){t.h4(v, s);}},h4:function(o,p,q,d){var t=this,f=new Date(t.gt()+946080000000),g=t.b0('__g_u');if(g&&g!='1'&&g.indexOf('NaN')==-1&&g.indexOf('undefined')==-1){var r=g.split('_'),s;if(d)s=d;else if(q&&q>=0)s=new Date(t.gt()+parseInt(q*86400000)).getTime();else{q=5;s=new Date(t.gt()+432000000).getTime();};g=''+r[0]+'_'+r[1]+'_'+o+'_'+p+'_'+q+'_'+s;t.c2('__g_u',g,f);};},b6:function(){var t=gomez;t.p=t.b5();},f8:function(){var t=this;if(t.pollId1)clearInterval(t.pollId1);},b7:function(){var t =gomez;t.f8();t.q=t.b5();},c7:function(u, s){var t=this;t.m=u;t.s=s;},c8:function(){var t=gomez,n=t.b5(),l=document.images.length;if(l>t._h){for(var i=t._h;i<l;++i){var u=document.images[i].src;if(u){var r =new gomez.E(t.f);t.grm[u]=r;t.f[u]=new t.c7(u, n);t.e2(document.images[i],'load',t.c4,false);t.e2(document.images[i],'error',t.c5,false);t.e2(document.images[i],'abort',t.c6,false);}}}t._h=l;},c4:function(e){var t=gomez,i=t.g6(e);if(i)i.e=t.b5();},c5:function(e){var t=gomez,i=t.g6(e);if(i){i.e=t.b5();i.b=1;}},c6:function(e){var t=gomez,i=t.g6(e);if(i)i.a=t.b5();},g6:function(e){var t=gomez,e=window.event?window.event:e,a=t.d8(e),i;if(t.grm[a.src||a.href]&&t.grm[a.src||a.href].s)i=t.grm[a.src||a.href].s[a.src||a.href];return i;},d2:function(){var t=gomez;var e=window.event?window.event:e,s=t.d8(e);if(s.readyState=='loaded'||s.readyState=='complete'){var o=t.j[s.src];if(o)o.e=t.b5();}},nameEvent:function(n){var t=this;t.f6(n,1);},startInterval:function(n){var t=this;t.f6(n,2,1);},endInterval:function(n){var t=this;t.f6(n,2,2);},f6:function(n,p,b){if(n&&n.length>20)n=n.substring(0,20);var t=this,f=t.u;if(p==3){f[f.length]={'n':'a','a':n,'b':b,'e':p,'f':undefined};}else{f[f.length]={'n':'a','a':n,'b':t.b5(),'e':p,'f':b};}},customValue:function(n,v){var t=this;if(typeof(v)!='number'){return;}t.f6(n,3,v);},d8:function(e){if(gomez.gIE)return e.srcElement||{};else return e.currentTarget||e.target||{};},e2:function(e,p,f,c){var n='on'+p;if(e.addEventListener)e.addEventListener(p,f,c);else if(e.attachEvent)e.attachEvent(n, f);else{var x=e[n];if(typeof e[n]!='function')e[n]=f;else e[n]=function(a){x(a);f(a);};}},i1:function(){var d =window.document, done=false,i2=function (){if(!done){done=true;gomez.b6();gomez.a9();}};(function (){try{d.documentElement.doScroll('left');}catch(e){setTimeout(arguments.callee, 50);return;}i2();})();d.onreadystatechange=function(){if(d.readyState=='complete'){d.onreadystatechange=null;i2();}};},j7:function(s, toUrl){try{var t=this,z=gomez;if(!s)return;s+="{n:u|e:1}";var p ='';if(t.isFirstVi){p='&a='+z.acctId+'&r=1&s=1';}else if(t.iFS){p='&a='+z.acctId+'&r='+t.j6();}if(window.encodeURIComponent)s=encodeURIComponent(s);else s=escape(s);z.h5(z.e(toUrl)+'info='+s+p);}catch(err){}return;},e:function(u){if(!/\?|&/.test(u))if(!/\?/.test(u))u +='?';else u +='&';return u;},j8:function(){var t=gomez, p=new gomez.P();var s=p.g0();t.j7(s, t.s.pvHttpUrl);},g7:function(){try{var t=gomez;t.gc.a=t.acctId;t.gIE=!-[1,];if(t.gIE){t.i1();window.attachEvent('onload', t.b7);}else if(window.addEventListener){window.addEventListener('DOMContentLoaded', t.b6, false);window.addEventListener('load', t.b7, false);}else if(t.gSfr){var m=setInterval(function(){if(/loaded|complete/.test(document.readyState)){clearInterval(m);delete m;t.b6();t.b7();}}, 10);}else return;if(!t.jbo){t.c8();t.pollId1=setInterval(t.c8, 10);}if(!t.gIE)t.a9();}catch(e){return;}}});gomez.h2();gomez.g7();}}catch(e){};
+//--> 
+</SCRIPT> 
+ 
+	 
+		 <title>Baggarly: Go dark for health benefits when choosing chocolate - Health - Macon.com</title>
+
+<meta
+    name="description"
+    content="We love chocolate! We even say &amp;#x93;I love you&amp;#x94; with chocolate, especially on special occasions such as Valentine&amp;#x92;s Day." />
+<meta
+    name="keywords"
+    content="Baggarly: Go dark for health benefits when choosing chocolate" />
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Health feed"
+    href="/health/index.rss">
+
+ 
+ 
+	
+	<script type="text/javascript">var insitecookie = 'thetelegraph_user_auth'</script>
+	 <script
+    type="text/javascript"
+    src="http://www.google.com/jsapi?key=ABQIAAAAS-t6zQmuDoGdeTT7Mh-g9BTW63pHA4s3MN2GeS0K9fJcCTlKgRQhehbNQhI-EZ_VVyyJFIvn995kJQ"></script>
+<script
+    type="text/javascript">google.load("jquery", "1.2.6");</script>
+<script src="http://media.macon.com/static/scripts/superfish.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://media.macon.com/static/scripts/head.agg.js"></script>
+<script type="text/javascript" src="http://media.macon.com/static/scripts/search_site.js"></script>
+
+<script type="text/javascript">
+	/**
+	 * miAppControler contains master settings that can be used to quickly disable
+	 * javascript applications. For each supported app there is an attribute containing
+	 * an integer value. The meaning of the value is application specific, except 
+	 * for 0 and 1.
+	 * 0 = disable the entire app
+	 * 1 = enable the entire app
+	 * Any additional values should be noted in this file.
+	 *
+	 * The controller is instantiated in the MI object and should be interfaced with
+	 * there. 
+	 */
+
+	var miAppControler = function() {};
+
+	/* Commenting
+	 2 = disable comment submission & display
+	 3 = enable comment submission & display only
+	 4 = disable popular threads widget
+	*/
+	miAppControler.prototype.commenting = 1;
+
+	/*
+	 2 = display static coupon ad
+	*/
+	miAppControler.prototype.findnsave = 0;
+  miAppControler.prototype.dealsaver = 1;
+
+var pageInfo = {'version':1.0};
+pageInfo.section = {};
+pageInfo.section.id = 142;
+pageInfo.asset = {};
+pageInfo.asset.id = 1902361;
+pageInfo.asset.title = "Baggarly: Go dark for health benefits when choosing chocolate";
+
+
+</script>
+
+ 
+ 
+
+
+
+
+
+
+
+    
+
+
+        
+            
+        
+
+
+<script>
+// set a javascript variable to be used in an external script for overrides
+var miCommentingEnabled = 1;
+</script>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script  type="text/javascript" src="http://media.macon.com/static/scripts/siteresources-min.js"></script>
+
+<script type="text/javascript">
+mi.search = new mi.Search();
+</script>
+
+<script type="text/javascript">
+var rscriptloaded = 0;
+function displayEmailForm() {
+	if(rscriptloaded){
+		mi_story_tool.storyTool("email", "/2012/02/13/v-emailform/1902361/go-dark-for-health-benefits-when.html");
+	} else {
+		$.getScript("http://api.recaptcha.net/js/recaptcha_ajax.js", function() {
+			mi_story_tool.storyTool("email", "/2012/02/13/v-emailform/1902361/go-dark-for-health-benefits-when.html");
+			rscriptloaded = 1;
+		});
+	}
+}
+
+</script>
+<script type="text/javascript">
+      function toggleDiv()
+      {
+        if (document.getElementById("hideshow").style.display == "block")
+        {
+          document.getElementById("hideshow").style.display = "none";
+        }
+        else
+        {
+          document.getElementById("hideshow").style.display = "block";
+        }
+      }
+</script>
+
+<script type="text/javascript" >
+//<[CDATA[
+$(document).ready(function() {
+	$.getJSON("http://findnsave.macon.com/api/groupon.json?callback=?", function(json) {GrouponMain(json)});
+    });
+	
+	function GrouponMain(data) {
+    
+		//alert('JSON Data: ' + data.result.deal.id);
+   	 	//console.log(data);
+    	$('.fns_td_wrap .groupon_deal_title').html(data.result.deal.announcementTitle);
+    	$('.fns_td_wrap .bestPrice').html(data.result.deal.bestPrice);
+    	$('.fns_td_wrap .bestValue').html(data.result.deal.offerValue+' Value<br>Save '+ data.result.deal.offerDiscountPercent);
+    	$('.fns_td_wrap .sidebarimage').attr('src',data.result.deal.sidebarImageUrl);
+	};
+
+//]]>
+</script>
+
+ 
+
+	
+		
+
+		
+
+		
+			
+
+
+    <script src="http://media.macon.com/static/js/insite_conf.js" type="text/javascript"></script>
+<script src="http://www.macon.com/reg_js/verify_access.js" type="text/javascript"></script>
+
+
+		
+	
+
+
+
+<link href="http://media.macon.com/static/styles/sitestyles-min.css" rel="stylesheet" type="text/css">
+		
+		
+			<link href="http://media.macon.com/static/styles/layout2.css" rel="stylesheet" type="text/css">
+		
+
+		
+		
+			<link href="http://media.macon.com/static/styles/story1.css" rel="stylesheet" type="text/css">
+		
+
+                <link type="text/css" media="screen" rel="stylesheet" href="http://static.mcclatchyinteractive.com/creative/fns/widgets/coupons.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/thickbox.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/theme3.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/tabs3.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/masthead2.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/nav3.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/widgets.css">
+		<link type="text/css" rel="stylesheet" href="http://media.macon.com/static/styles/mi/third_party/jcarousel/jquery.jcarousel.css">
+
+	<style type="text/css">
+#ZventsQuickSearch {
+	width:100%;
+	background-color:#fff;
+	border-bottom:2px solid #d0d9de;
+	padding: 4px 0;
+	font:11px Arial,Helvetica,sans-serif;
+    overflow:hidden;
+	/* display:block;overflow:hidden; */
+	/* width: 208px; */
+}
+.ZventsDayButtons {width:100%;overflow:hidden;}
+
+#ZventsQuickSearch * {font-family:Arial,Helvetica,sans-serif; font-size:11px;}
+#ZventsQuickSearch a {text-decoration:none;}
+#ZventsQuickSearch .ZventsDayButton, .ZventsDayButton * {display:block; text-align:center;}
+#ZventsQuickSearch .ZventsDayButton {
+	color:#333;
+	background-color:#fff;
+	border:0;
+	border-top:1px solid #eef1f3;
+	border-left:1px solid #eef1f3;
+	border-right:1px solid #b22222;
+	border-bottom:1px solid #b22222;
+	text-decoration:none;
+	cursor:pointer;
+	line-height:120%;
+	font-weight:normal;
+	margin-right:1px;
+	padding:2px 2px 0 1px;
+}
+#ZventsQuickSearch .ZventsDayButton:hover {
+	background-color:#d4d4d4;
+	color:#000000;
+	border:1px solid #999;
+}
+#ZventsQuickSearch .ZventsDayButtonDate {
+	font-family:arial;
+	font-size:14px;
+}
+#ZventsQuickSearch .ZventsDayButtonDay {
+	font-family:arial;
+	font-size:11px;
+	font-variant:small-caps;
+}
+#ZventsQuickSearch .ZventsDayButtonAll {
+	margin-right:0;
+	background-color:#eee;
+	color:#b22222;
+}
+#ZventsQuickSearch .ZventsDayButtonToday {
+	color:#930;
+}
+#ZventsQuickSearch .ZventsDayButtonWeekend {
+	background-color:#fff; /* #ededd8; */
+}
+</style>
+
+	<!-- START /pubsys/production/ad_dart_init.comp -->
+
+<script type="text/javascript" language="javascript1.1">
+ 
+		var krd_site = "macon";
+		var krd_site_display_name = "Macon.com";
+		var krd_publication = "macon";
+		var krd_topix_property = "5020";
+		var _krdDartOrd = new Date().getTime();
+		var _krdDartInc = 0;
+		var section_name = "Health";
+		var section=section_name.toLowerCase();
+		var breadcrumb = 'Living/Health';
+		var path = breadcrumb.toLowerCase();
+  
+</script>
+
+<!-- END /pubsys/production/ad_dart_init.comp -->
+	
+
+<script type="text/javascript">
+<!--
+    mi_is_live = 1;
+
+    miyahoo = {};
+    miyahoo.tax = "Lifestyles|Health_Med_Fit|";
+    miyahoo.tax_id = 20430501;
+    miyahoo.content_type = "fn_news";
+    miyahoo.cstm_sctn_list = "story";
+    miyahoo.cstm_content_cat = "Health";
+
+    miyahoo.slots = {};
+
+    miyahoo.slots.slot_1 = {};
+    miyahoo.slots.slot_1.ad_size_list = ["728x90"];
+    miyahoo.slots.slot_1.ad_delivery_mode = "ipatf";
+    miyahoo.slots.slot_1.ad_marker = "";
+    miyahoo.slots.slot_2 = {};
+    miyahoo.slots.slot_2.ad_size_list = ["160x90"];
+    miyahoo.slots.slot_2.ad_delivery_mode = "ipatf";
+    miyahoo.slots.slot_2.ad_marker = "";
+    miyahoo.slots.slot_3 = {};
+    miyahoo.slots.slot_3.ad_size_list = ["300x250"];
+    miyahoo.slots.slot_3.ad_delivery_mode = "ipatf";
+    miyahoo.slots.slot_3.ad_marker = "";
+    miyahoo.slots.slot_4 = {};
+    miyahoo.slots.slot_4.ad_size_list = ["300x100"];
+    miyahoo.slots.slot_4.ad_delivery_mode = "ipstf";
+    miyahoo.slots.slot_4.ad_marker = "";
+    miyahoo.slots.slot_5 = {};
+    miyahoo.slots.slot_5.ad_size_list = ["285x70"];
+    miyahoo.slots.slot_5.ad_delivery_mode = "ipatf";
+    miyahoo.slots.slot_5.ad_marker = "";
+
+
+-->
+</script>
+<script type="text/javascript" src="http://media.macon.com/misites/defaults.js"></script>
+<script type="text/javascript" src="http://media.macon.com/misites/mac/macon.js"></script>
+<script type="text/javascript" src="http://media.macon.com/miads/yahoo.js"></script>
+<script type="text/javascript">
+<!--
+ if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){ // 'live' or 'preview' is set during page build
+        document.write('<'+'script type="text/javascript" src="http://e.yieldmanager.net/script.js"></script'+'>');
+    }
+-->
+</script>
+
+<!--[if lt IE 7]>
+<link href="http://media.macon.com/static/includes/browserupgrade/browserupgrade.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://media.macon.com/static/includes/browserupgrade/jquery.cookie.js"></script>
+
+<![endif]-->
+ 
+ <!-- start: templates/hnews/apregistry_init.ett  --><!-- end: templates/hnews/apregistry_init.ett  -->
+ 
+
+
+</head>
+
+ 
+
+ 
+
+
+
+
+<body
+    class="story1"
+    
+    >
+ 
+<div id="pubSys" editUser="566" editSection="142"></div>
+
+<!--[if lt IE 7]>
+
+
+<div id="miub_container">    
+    <div id="miub_close">
+        <a href="#">
+            <img src="http://media.macon.com/static/includes/browserupgrade/cornerx.jpg" alt="Close this notice" />
+        </a>
+    </div>
+    <div id="miub_info">
+        <div id="miub_alert">
+            <img src="http://media.macon.com/static/includes/browserupgrade/warning.jpg" alt="Warning!" />
+        </div>
+        <div id="miub_info_box">        
+            <h2>You are using an outdated browser</h2>
+            <p>For a better experience using this site, please upgrade to a modern web browser.</p>
+        </div>
+        <div class="miub_alt_browser">
+            
+            <a href="http://www.firefox.com" target="_blank">
+            
+                <img src="http://media.macon.com/static/includes/browserupgrade/firefox.jpg" style="border: none;" alt="Get Firefox 3.5"/>
+            </a>
+        </div>
+        <div class="miub_alt_browser">
+            
+            <a href="http://www.browserforthebetter.com/download.html" target="_blank">
+            
+                <img src="http://media.macon.com/static/includes/browserupgrade/ie8.jpg" style="border: none;" alt="Get Internet Explorer 8"/>
+            </a>
+        </div>
+        <div class="miub_alt_browser">
+            
+            <a href="http://www.apple.com/safari/download/" target="_blank">
+            
+            <img src="http://media.macon.com/static/includes/browserupgrade/safari.jpg" style="border: none;" alt="Get Safari 4"/>
+            </a>
+        </div>
+        <div class="miub_alt_browser">
+            
+            <a href="http://www.google.com/chrome" target="_blank">
+            
+            <img src="http://media.macon.com/static/includes/browserupgrade/chrome.jpg" style="border: none;" alt="Get Google Chrome"/>
+            </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+      $("#miub_close a").click(function() {
+          $(this).parent().parent().hide();
+      });
+      if(!$.cookie("miub_timer")) { // no cookie, show the warning
+          $("#miub_container").show();
+
+          $.cookie("miub_timer","You need to upgrade your browser", { expires: 30});
+
+      }
+  });
+</script>
+<![endif]-->
+
+
+<div id="mi_page_container">
+    <div id="mi_masthead">
+        
+              
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_top">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=top;group=728x90;sz=728x90;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=top;group=728x90;sz=728x90;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=top;group=728x90;sz=728x90;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+<div class="topYahoo950"></div>
+
+ 
+
+
+        <div class="advertisement" id="yahoo_728x90_ipatf_1">
+            
+<script><!--
+if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){yld_mgr.place_ad_here("slot_1");}
+--></script>
+        </div>
+    
+  
+         
+<div id="masthead_wf2" class="full_width">
+
+	<div class="full_width" id="headerbar">
+
+		<div id="headerlinks">
+			<a href="/jobs/">Jobs</a> | 
+			<a href="/cars/">Cars</a> |
+			<a href="/classifieds/real_estate/">Real Estate</a> | 
+			<a href="/classifieds/real_estate/rentals/">Apartments</a> | 
+			<a href="/classifieds/">Classifieds</a> | 
+<a href="http://www.legacy.com/obituaries/macon/">Obituaries</a> | 
+			<a href="http://www.legacy.com/macon/celebrations.asp">Weddings</a> | 
+			<a href="http://newspaperads.macon.com">Newspaper ads</a> | 
+			<a href="http://www.macon.com/placead">Place an ad</a>
+		</div>
+
+		<div id="insite">
+			<!-- Start registration_links.comp -->
+<!-- Start cookies.comp -->
+
+<script type="text/javascript">
+// GENERIC COOKIE FUNCTIONS
+function getCookieVal(offset) {
+ var endstr=document.cookie.indexOf(";",offset);
+ if (endstr==-1)
+ endstr=document.cookie.length;
+ return unescape(document.cookie.substring(offset,endstr));
+}
+
+function GetCookie(cname) {
+ var arg=cname+"="; var alen=arg.length;
+ var clen=document.cookie.length; var i=0;
+ while (i<clen) {
+        var j=i+alen;
+        if (document.cookie.substring(i,j)==arg) return getCookieVal (j); i=document.cookie.indexOf("",i)+ 1;
+        if (i==0) break;
+ } return null;
+}
+
+function SaveCookie(cname,cvalue,cdays,cpath) {
+        ex = new Date; ex.setTime(ex.getTime() + (cdays*86400000));
+        if (cpath == null) { cpath = "/" } else { cpath = "; path=" + cpath }
+        sitedom=location.hostname.replace(/www\./,"");
+        document.cookie=cname + '=' + cvalue + '; expires=' + ex.toGMTString() + cpath + "; domain="+sitedom;
+}
+
+//SHOW HIDE CSS
+var insitecookie=document.cookie.match('thetelegraph_user_auth');
+var icname = GetCookie(insitecookie);
+if (icname && icname.indexOf('.threshold') == -1) { 
+    document.write("<style>#nonmember{display:none;}</style>");
+ } else {
+    document.write("<style>#member{display:none;}</style>");
+ }
+
+var user_run_mode = '';
+
+</script>
+
+<!-- End cookies.comp -->
+  
+<script language="JavaScript">
+var rurl_qs = '';
+var loc = ''+document.location;
+if (loc.match('/reg-bin/') )
+{
+    rurl_qs = ";goto=/";
+}
+else 
+{ 
+    rurl_qs = ";goto="+loc 
+}
+document.write('<span id="nonmember"><strong><a href="/static/insite/login.html?' + rurl_qs + '">Login</a></strong> | <strong><a href="/reg-bin/int.cgi?mode=register">Register</a></strong></span>')
+</script>
+<span id="member">
+    <strong><a href="/reg-bin/tint.cgi?mode=logout">Logout</a></strong> | <strong><a href="/reg-bin/tint.cgi?mode=edit">Member Center</a></strong>
+</span>
+<!-- End registration_links.comp -->
+
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="mastLogo" class="block">
+		<div id="logo">
+			
+			
+			<a href="/"><img src="http://media.macon.com/static/images/macon_logo3.jpg" alt="Macon.com"></a>
+			
+		</div>
+	</div>
+
+	<div id="sitesearch" class="block">
+		<div id="search_box_wrapper">
+			<form action="/search_results" method="GET" name="miSearchForm">
+				<div id="web_search">
+					<input name="aff" type="radio" value="1100" id="search_site" class="radio" checked="true">
+					<label for="search_site" class="search_label_news">News</label>
+
+					<input name="aff" type="radio" id="search_archives" value="archives" class="radio">
+					<label for="search_archives" class="search_label_archives">Archives</label>
+
+
+					<input name="aff" type="radio" value="web_search" id="search_web" class="radio">
+<span id="mi_yahoo_preamble">Web Search powered by </span><span class="yahoo">YAHOO!</span> <span id="mi_yahoo_post">SEARCH</span>
+
+				</div>
+
+				<div class="search_box_input">
+                                   <div id="searchInputContainer">
+					<input type="text" size="60" name="q" class="search_input">
+                                       <input class="button" type="submit" value="Search"/>
+                                   </div>
+				</div>
+			</form>
+     <script type="text/javascript">
+          mi.search.searchParamConfig();
+          mi.search.checkOption();
+          document.miSearchForm.onsubmit = function () {
+          return mi.search.submitForm();
+          }
+     </script>
+
+		</div>
+
+	</div>
+
+	<div id="mastAd">  
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_cube01">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;dcopt=ist;pos=cube01;group=160x90;sz=160x90;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;dcopt=ist;pos=cube01;group=160x90;sz=160x90;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;dcopt=ist;pos=cube01;group=160x90;sz=160x90;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+  
+
+
+        <div class="advertisement" id="yahoo_160x90_ipatf_1">
+            
+<script><!--
+if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){yld_mgr.place_ad_here("slot_2");}
+--></script>
+        </div>
+    
+ </div>
+	<div class="clear"></div>
+</div>
+
+ 
+         
+
+
+       	 
+<div id="mi_navigation">
+	 
+
+
+
+
+<ul class="nav">
+	<li class="current"><a href="#navlink=navbar">Most visited</a>
+		<ul>
+			<li><a href="http://findnsave.macon.com#navlink=navdrop"><img src="http://media.macon.com/static/findnsave/fns5.jpg"></a></li>
+			<!-- <li><a href="http://www.macon.com/best">Best of the Best 2011</a></li> -->
+			<li><a href="http://www.macon.com/contact_us#navlink=navdrop">Contact us</a></li>
+			<li><a href="/classified-ads/#navlink=navdrop">Classifieds</a></li>
+			<li><a href="http://events.macon.com/#navlink=navdrop">Calendar</a></li>
+			<li><a href="/jobs/#navlink=navdrop">Jobs</a></li>
+			<!-- <li><a href="/local/">Local news</a></li> -->
+			<li><a href="http://www.macon.com/mobilesite#navlink=navdrop">Mobile</a></li>
+			<li><a href="/popular/#navlink=navdrop">Popular</a></li>
+			<li><a href="http://www.legacy.com/obituaries/macon/#navlink=navdrop">Obituaries</a></li>
+			<li><a href="/photos/#navlink=navdrop">Photos</a></li>
+			<!-- <li><a href="/thesunnews/">The Sun News</a></li> -->
+			<li><a href="https://subscribetelegraph.com/standard/#navlink=navdrop">Subscribe</a></li>
+			<li><a href="/weather/#navlink=navdrop">Weather</a></li>
+		</ul>
+	</li>
+	<li><a href="/news/#navlink=navbar">News</a>
+		<ul>
+			<li><a href="/local/#navlink=navdrop">Local &amp; State</a></li>
+			<li><a href="/breaking/#navlink=navdrop">Breaking News</a></li>
+			<li><a href="/business/#navlink=navdrop">Business</a></li>
+			<li><a href="/crime/#navlink=navdrop">Crime &amp; Courts</a></li>
+			<li><a href="/education/#navlink=navdrop">Education</a></li>
+			<li><a href="/thesun/#navlink=navdrop">Houston/Peach</a></li>
+			<li><a href="/opinion/#navlink=navdrop">Opinion</a></li>
+			<li><a href="/politics/#navlink=navdrop">Politics</a></li>
+			<li><a href="/photos/#navlink=navdrop">Photos</a></li>
+			<li><a href="/nation/#navlink=navdrop">Nation</a></li>
+			<li><a href="/weird/#navlink=navdrop">Weird</a></li>
+			<li><a href="/world/#navlink=navdrop">World</a></li>
+			<li><a href="/wires/#navlink=navdrop">Wires</a></li>
+		</ul>
+	</li>
+	<li><a href="/sports/#navlink=navbar">Sports</a>
+		<ul>
+			<li><a href="/sports/columnists/#navlink=navdrop">Columnists</a></li>
+			<li><a href="/highschool/#navlink=navdrop">High Schools</a></li>
+			<li><a href="/uga/#navlink=navdrop">UGA</a></li>
+			<li><a href="/tech/#navlink=navdrop">Georgia Tech</a></li>
+			<li><a href="/mercer/#navlink=navdrop">Mercer</a></li>
+			<li><a href="/colleges/#navlink=navdrop">Colleges</a></li>
+			<li><a href="/braves/#navlink=navdrop">Braves</a></li>
+			<li><a href="/falcons/#navlink=navdrop">Falcons</a></li>
+			<li><a href="/286/#navlink=navdrop">Auto Racing</a></li>
+			<li><a href="/outdoors/#navlink=navdrop">Outdoors</a></li>
+			<li><a href="/baseball/#navlink=navdrop">MLB</a></li>
+			<li><a href="/basketball/#navlink=navdrop">NBA</a></li>
+			<li><a href="/football/#navlink=navdrop">NFL</a></li>
+			<li><a href="/nhl/#navlink=navdrop">NHL</a></li>
+			<li><a href="/golf/#navlink=navdrop">Golf</a></li>
+		</ul>
+	</li>
+	<li><a href="/opinion/#navlink=navbar">Opinion</a>
+		<ul>
+			<li><a href="/blogs/#navlink=navdrop">Blogs</a></li>
+			<li><a href="/forums/#navlink=navdrop">Discussion Boards</a></li>
+			<li><a href="/grisamore/#navlink=navdrop">Ed Grisamore</a></li>
+			<li><a href="/opinion/#navlink=navdrop">Editorials</a></li>
+			<li><a href="/letters/#navlink=navdrop">Letters</a></li>
+			<!--<li><a href="http://moms.macon.com#navlink=navdrop">Moms</a></li>-->
+			<li><a href="/columnists/#navlink=navdrop">News columnists</a></li>
+			<li><a href="/newstalkcentral/#navlink=navdrop">NewsTalk Central</a></li>
+			<li><a href="/sports/columnists/#navlink=navdrop">Sports columnists</a></li>
+			<li><a href="/wires/#navlink=navdrop">Wires</a></li>
+		</ul>
+	</li>
+	<li><a href="/entertainment/#navlink=navbar">Entertainment</a>
+		<ul>
+			<li><a href="/celebrities/#navlink=navdrop">Celebrities</a></li>
+			<li><a href="/comics/#navlink=navdrop">Comics &amp; Games</a></li>
+			<li><a href="/horoscopes/#navlink=navdrop">Horoscopes</a></li>
+			<li><a href="/ballard/#navlink=navdrop">Mark Ballard</a></li>
+			<li><a href="/movies/front/index.html#navlink=navdrop">Movies</a></li>
+			<li><a href="/music/#navlink=navdrop">Music</a></li>
+			<li><a href="/entertainment/#navlink=navdrop">Out &amp; About</a></li>
+			<li><a href="/restaurants/#navlink=navdrop">Restaurant Reviews</a></li>
+			<li><a href="/television/#navlink=navdrop">Television</a></li>
+			<li><a href="/movies/theater/index.html#navlink=navdrop">Theaters &amp; Showtimes</a></li>
+		</ul>
+	</li>
+
+<!--	<li><a href="/living/">Life</a>
+		<ul>
+			<li><a href="http://www.legacy.com/macon/celebrations.asp">Anniversaries</a></li>
+			<li><a href="/family/">Family</a></li>
+			<li><a href="/food/">Food</a></li>
+			<li><a href="/homegarden/">Home &amp; Garden</a></li>
+			<li><a href="/ballard/">Mark Ballard</a></li>
+			<li><a href="http://moms.macon.com">Moms</a></li>
+			<li><a href="/neighbors/">Neighbors</a></li>
+			<li><a href="/entertainment/">Out &amp; About</a></li>
+			<li><a href="http://www.gadzoo.com/macon/pets.aspx">Pets</a></li>
+			<li><a href="/living/religion/">Religion</a></li>
+			<li><a href="/teens/">Teens</a></li>
+			<li><a href="http://www.legacy.com/macon/celebrations.asp">Weddings</a></li>
+		</ul>
+	</li>
+
+	<li><a href="#">Share</a>
+		<ul>
+			<li><a href="/blogs/">Blogs</a></li>
+			<li><a href="/contact_us/">Contact us</a></li>
+			<li><a href="/forums/">Discussion Boards</a></li>
+			<li><a href="http://moms.macon.com/">Moms.macon.com</a></li>
+			<li><a href="http://videos.macon.com/vmix_hosted_apps/p/grid?all=1&class_id=2">Your Photos</a></li>
+			<li><a href="http://videos.macon.com/vmix_hosted_apps/p/grid?class_id=1&genre=1931">Your Video</a></li>
+			<li><a href="http://videos.macon.com/vmix_hosted_apps/p/upload/">Upload photos/video</a></li>
+			<li><a href="/feedback/">Website feedback</a></li>
+		</ul>
+	</li>
+-->
+
+	<li><a href="/classified-ads/#navlink=navbar">Classifieds</a>
+		<ul>
+			<li><a href="/classifieds/real_estate/rentals/#navlink=navdrop">Apartments</a></li>
+			<li><a href="/cars/#navlink=navdrop">Cars</a></li>
+			<li><a href="http://www.legacy.com/macon/celebrations.asp#navlink=navdrop">Weddings</a></li>
+			<li><a href="/classifieds/real_estate/#navlink=navdrop">Real Estate</a></li>
+			<li><a href="/jobs/#navlink=navdrop">Jobs</a></li>
+			<li><a href="http://buyit.macon.com#navlink=navdrop">Legals/Notices</a></li>
+			<li><a href="http://newspaperads.macon.com#navlink=navdrop">Newspaper ads</a></li>
+			<li><a href="http://www.macon.com/placead#navlink=navdrop">Place an ad</a></li>
+			<li><a href="http://www.legacy.com/obituaries/macon/#navlink=navdrop">Obituaries</a></li>
+			<li><a href="http://www.macon.com/adperfect/category/Pets#navlink=navdrop">Pets</a></li>
+		</ul>
+	</li>
+	<li><a href="/contact_us/#navlink=navbar">The Telegraph</a>
+		<ul>
+			<li><a href="/archives/#navlink=navdrop">Archives</a></li>
+			<li><a href="/contact_us/#navlink=navdrop">Contact us</a></li>
+			<li><a href="http://etelegraph.macon.com/#navlink=navdrop">e-Telegraph</a></li>
+			<li><a href="http://www.macon.com/mobilesite#navlink=navdrop">Mobile</a></li>
+			<li><a href="http://enie.macon.com/#navlink=navdrop">NIE</a></li>
+			<!-- <li><a href="http://pictopia.com/perl/galproc/macon/">Photo reprints</a></li>-->
+			<li><a href="http://www.macon.com/placead#navlink=navdrop">Place an ad</a></li>
+			<li><a href="http://newspaperads.macon.com/SS/Tiles.aspx#navlink=navdrop">Special sections</a></li>
+			<li><a href="https://subscribetelegraph.com/standard/#navlink=navdrop">Subscribe</a></li>
+			<li><a href="http://www.macon.com/ss/#navlink=navdrop">Subscriber services</a></li>
+			<li><a href="/thesun/#navlink=navdrop">The Sun News</a></li>
+		</ul>
+	</li>
+
+        <li id="nav_ad_wrap" class="classNav">
+
+<!-- START /shared/ads/nav_ad.comp -->
+
+<script type="text/javascript" language="JavaScript1.1">
+if(typeof(miyahoo) == "undefined" || miyahoo.ads[mi_live_or_preview].dart.enabled){
+_krdDartInc++;
+document.write('<script type="text/javascript" language="JavaScript1.1" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;template=article;!category=health;pos=1;group=cube;sz=100x25;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+}
+</script>
+
+<noscript>
+<a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;template=article;!category=health;pos=1;group=cube;sz=100x25;ord='+_krdDartOrd+'?" target="_blank">
+<img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;template=article;!category=health;pos=1;group=cube;sz=100x25;ord='+_krdDartOrd+'?" width="71" height="26" border="0" ></a>
+</noscript>
+
+
+<!-- END /shared/ads/nav_ad.comp -->
+
+
+</li>
+	<li class="classNav"><a href="http://findnsave.macon.com#navlink=navbar"><img src="http://media.macon.com/static/findnsave/fns4.png"></a></li>
+	<li class="classNav"><a href="http://www.macon.com/placead#navlink=navbar">Place an ad</a></li>
+	<li class="classNav"><a href="/rss/#navlink=navbar">RSS feeds</a></li>
+	<li class="classNav"><a href="https://subscribetelegraph.com/standard/#navlink=navbar">Subscribe</a></li>
+
+
+</ul>
+
+<style> .sf-sub-indicator { display: none; } </style>
+<script>
+/* Navigation */
+	$("ul.nav").superfish({
+		pathClass : 'current',
+		animation : {opacity:'show'},
+                autoArrows: false,
+		delay : 500
+	});
+</script>
+
+ 
+</div>
+
+ 
+       <div class="clear"></div>
+    </div> 
+    
+
+    
+
+    <div id="mi_content_container">
+        <div id="mi_content">
+            
+             
+<script src="http://media.macon.com/static/scripts/story_detail.js" type="text/javascript"></script>
+<script src="http://media.macon.com/static/scripts/mi/third_party/jquery/jquery.cycle.all.pack-2.22.js" type="text/javascript"></script>
+<script src="http://media.macon.com/static/scripts/mi/third_party/jquery/media.js" type="text/javascript"></script>
+ 
+<div class="hnews hentry item">
+
+<div id="mi_story_detail_top">
+   
+<div id="story_header">
+
+	<div id="story_section_breadcrumb">
+		Living - Health	</div>
+ 
+
+  
+   
+<a id="commentCount" href="http://www.macon.com/2012/02/13/1902361/go-dark-for-health-benefits-when.html">0 comments</a>
+
+<script>mi.commenting.displayCommentCount();</script>
+
+   
+
+
+
+	<span class="published" title="2012-02-12T20:08:34Z" ><h4 class="date">Monday, Feb. 13, 2012</h4></span>
+<span class="updated" title="2012-02-13T03:43:16Z" style="display:none;">Modified <h4 class="date">Sunday, Feb. 12, 2012</h4></span>
+
+<!-- Facebook Like Button BEGIN -->
+<SCRIPT LANGUAGE="JavaScript">
+      <!--
+      document.write('<div id="fb_like_button" style="text-align:left; padding-top:3px;"><iframe src="http://www.facebook.com/plugins/like.php?href=' + location.href +'&amp;layout=standard&amp;show_faces=false&amp;width=270&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:270px; height:30px;" allowTransparency="true"></iframe></div>');
+      // -->
+</SCRIPT>
+<!-- Facebook Like Button END -->
+
+
+	<h1 id="story_headline" class="entry-title">Baggarly: Go dark for health benefits when choosing chocolate<a href="/2012/02/13/1902361/go-dark-for-health-benefits-when.html" name="story" storyid="1902361"></a></h1>
+	<h2 id="story_subheadline"></h2>
+
+	
+	
+	
+	<div id="story_bycredit">
+		
+			<span class="byline">By JAN BAGGARLY</span> - <span class="creditline">Telegraph correspondent</span>
+		
+	</div>
+	
+</div>
+<div id="hnews-vcard" style="display:none;">      <span class="byline author vcard"><span class="fn">By JAN BAGGARLY      </span></span> <span class="creditline source-org vcard"><span class="org fn">      </span></span></div>
+
+ 
+   
+ 
+
+<script type="text/javascript">
+$javascriptRequire = new miScriptScheduler();
+$javascriptRequire.scriptCheck = window.mi_story_tool;
+$javascriptRequire.scriptPath = "";
+$javascriptRequire.scheduleScript();
+</script>
+ 
+<div id="mi_story_tools">
+
+<img src="http://media.macon.com/static/images/icons/mini_macon_logo.jpg" style="float:left; margin-right:4px;"><a href="http://www.macon.com/reg-bin/tint.cgi?mode=edit#newsletters"><b>Sign up for daily e-mail news alerts</b></a><br clear="all" />
+<hr style="border:solid 1px #ccc; background-color: #ccc; margin:8px 0;">
+
+<!--
+<script showbranding="0" src=http://d.yimg.com/ds/badge.js badgetype="small">the_telegraph448:http://www.macon.com/2012/02/13/1902361/go-dark-for-health-benefits-when.html</script>
+-->
+
+  <div id="addthis">
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+    var addthis_title = document.title.replace(/\'/g,'\\\'').replace(/"/g,"\"");
+    var addthis_url = location.href+'?storylink=addthis';
+</script>
+<a class="addthis_button" href="http://addthis.com/bookmark.php?v=250&amp;pub=mianalytics">
+<img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16"
+alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=mianalytics"></script>
+<!-- AddThis Button END -->
+
+  </div><!-- CLOSE: #addthis -->
+
+   
+
+
+
+
+<a class="myYahooButton" href="http://us.rd.yahoo.com/my/atm/Macon.com/Health/*http://add.my.yahoo.com/rss?url=http://www.macon.com/health/index.rss">
+    <img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" width="91" height="17" border="0" align="middle" alt="Add to My Yahoo!">
+</a>
+
+ 
+  <a id="story_link_email" href="javascript:displayEmailForm();" rel="nofollow">
+    <img src="http://media.macon.com/static/images/icons/email.jpg" height="17" alt="email this story to a friend" /> E-Mail
+  </a>
+
+  <a id="story_link_print" href="/2012/02/13/v-print/1902361/go-dark-for-health-benefits-when.html" target = '_blank' rel="nofollow">
+        <img src="http://media.macon.com/static/images/icons/print.jpg" height="17" alt="print story" /> Print
+  </a>
+
+<a id="reprintStoryLink" href="http://reprints.ygsgroup.com/m/mcclatchy"><img src="http://media.macon.com/static/images/icons/reprint.jpg" height="17" alt="print story" /> Reprint|license</a>
+  <div id="txtResizeTool">
+    <span class="txtResizeToolHeading">Text Size:</span>
+    <a id="txtResizeMinus" title="Reduce font size">
+      <img class="txtResize" id="txtResizeMinus" src="http://media.macon.com/static/images/mi/story_detail/text_resize/txt_minus.gif" />
+      <img class="txtResize" id="txtResizeMinusFade" src="http://media.macon.com/static/images/mi/story_detail/text_resize/txt_minus_fade.gif" />
+    </a>
+    <a id="txtResizePlus" title="Increase font size">
+      <img class="txtResize" id="txtResizePlus" src="http://media.macon.com/static/images/mi/story_detail/text_resize/txt_plus.gif" />
+      <img class="txtResize" id="txtResizePlusFade" src="http://media.macon.com/static/images/mi/story_detail/text_resize/txt_plus_fade.gif" />
+    </a>
+  </div><!-- CLOSE: #txtResizeTool -->
+</div><!-- CLOSE: story_tools --> 
+
+<div id="toolbox">
+  <div id="toolbar">
+    <h3 id="toolname">tool name</h3>
+    <a href="javascript:mi_story_tool.closeTool();">close</a>
+  </div><!-- CLOSE: #toolbar -->
+  <div id="tool">
+    tool goes here
+  </div><!-- CLOSE: #tool -->
+</div><!-- CLOSE: #toolbox -->
+
+ 
+</div><!-- CLOSE: #mi_story_detail_top -->
+    
+  
+
+
+<div id="story_body" >
+
+  
+
+    <div id="story_text_top" class="entry-content">
+      <p>
+        We love chocolate! We even say &#x93;I love you&#x94; with chocolate, especially on special occasions such as Valentine&#x92;s Day.</p><p>Chocolate is the ultimate comfort food. It melts in your mouth and gives you a warm, cozy sensation.      </p>
+    </div><!-- CLOSE: #story_body_top -->
+
+    
+	<div id="mi_story_embedded">
+				 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_center6a">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6a;group=300x250;sz=300x250;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6a;group=300x250;sz=300x250;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6a;group=300x250;sz=300x250;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+	</div>
+
+    <div id="story_text_remaining" class="entry-content">
+      <p>
+      This love affair with chocolate comes with a price. Chocolate is made with lots of sugar and fat, both of which we know are not good for our health.</p><p>Now, on the other side of the page we know that dark chocolate also has some health benefits. Dark chocolate is naturally rich in flavanols, a type of antioxidant found in plant foods. These flavanols may reduce arterial damage caused by oxidative reactions in the body. In other words, it may help prevent heart disease.</p><p>One side effect of eating chocolate is the &#x93;good feeling&#x94; it produces. Chocolate contains more than 300 known chemicals. One or more of these combined chemicals may be responsible for the &#x93;lift&#x94; that comes after eating chocolate.</p><p>It doesn&#x92;t take much chocolate to receive the great health benefits. A small amount, about half an ounce, once a day or one ounce a few times of week may be enough to increase antioxidant intake. The dark chocolate should be one with high cocoa solids of at least 60 percent cocoa.</p><p>Let&#x92;s put that amount in perspective. A typical chocolate bar weighs in at 3.5 ounces and contains about 500-600 calories. Rather than eating the whole candy bar, eat one or two squares a day. One to two squares typically contains 60 calories and 2-3 grams of saturated fat. By reading the food label you can determine how much you should eat to keep the calorie load down to 60 and maintain the health benefits. This type of chocolate can be purchased as individually wrapped squares. The single wrapped portions will help with portion control.</p><p>Chocolate is an experience, one to savor and enjoy for the moment. It&#x92;s not necessary to sit down and analyze chocolate for what it is. If you enjoy it, enjoy it in moderation. So, if your sweetheart professes their love to you with chocolate on Valentine&#x92;s Day, enjoy it a little at a time so that you can enjoy that love for days.</p><p>Chocolate products are classified according to the proportion of cocoa they contain. There are four classifications of chocolate in the United States: milk chocolate, unsweetened chocolate, bittersweet or dark chocolate and white chocolate.</p><p>The most common type of chocolate is milk chocolate. This sweet and creamy chocolate is made with milk solids, which give it its light color. According to Food and Drug Administration standards, milk chocolate must contain 10 percent chocolate liquor (cocoa solids and cocoa butter). Most range from 15 percent to 25 percent. Milk chocolate must also contain at least 12 percent milk solids.</p><p>Unsweetened chocolate is made with about 50 percent cocoa butter. It is pure unadulterated chocolate. It is not intended to eat, but to be used in cooking and baking.</p><p>Dark chocolate contains a high amount of cocoa solids and very little milk. It has a dark rich taste. It is also used in baking. Bittersweet chocolate, or extra-dark chocolate, is chocolate liquor with added sugar and more cocoa butter than milk chocolate. Good quality bittersweet chocolate may contain 60 percent to 85 percent cocoa solids.</p><p>White chocolate contains fat (either cocoa butter or vegetable oils), sugar, milk and vanilla or other flavorings, but no cocoa solids. Because it doesn&#x92;t contain cocoa solids, some people do not consider it to be chocolate. It is not a good source of antioxidants because it lacks cocoa solids. White chocolate does not taste like chocolate, however it does have a sweet and mild flavor.</p><p>For the best tasting chocolate, purchase the highest-quality chocolate and cocoa you can buy. Good chocolate should have a shiny, even gloss on its surface. Chocolate should be eaten at room temperature, as this allows the chocolate to begin to melt the moment it hits your mouth. Cold chocolate doesn&#x92;t release its flavors and aromas as quickly, altering the tasting experience.</p><p>Chocolate can develop a hazy finish called &#x93;bloom&#x94; due to high storage temperatures or age. The chocolate should still be good as well as safe to eat. The bloom will disappear when it is cooked in a product.</p><p>Chocolate should be wrapped tightly and kept in a cool, dry place with a temperature ranging from 60-75 degrees.</p><p>Choosing dark chocolate over other chocolate varieties and limiting the amount eaten can help you reap the health benefits and keep the calorie intake down. So, take a few moments to enjoy that rich, complex piece of chocolate.</p><p>Jan Baggarly is Bibb County Extension Coordinator with the University of Georgia Cooperative Extension working in the field of Family and Consumer Sciences. She may be reached at 751-6338.      </p>
+      <!-- hnews: license --><!-- start: templates/hnews/itemlicense.ett  --><div id="item-license" style="display:none;" >
+    <a rel="item-license" href="http://www.macon.com/terms-of-service">
+    Copyright 2012 . All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a>
+</div><!-- end: templates/hnews/itemlicense.ett  -->
+<!-- start: templates/hnews/usage_tag.ett  -->
+
+<!-- no hnews usage tag beacon: apregistry.story.owner ==  -->
+<!-- end: templates/hnews/usage_tag.ett -->
+
+    </div><!-- CLOSE: #story_body_remaining -->
+
+  
+
+    <img src="http://media.macon.com/static/images/spacer.gif" height="6" /><br />
+  <!-- <script showbranding="0" src=http://d.yimg.com/ds/badge.js badgetype="small">the_telegraph448:http://www.macon.com/2012/02/13/1902361/go-dark-for-health-benefits-when.html</script> -->
+
+<div style="clear: both;"></div>
+</div><!-- CLOSE: #story_body -->
+
+ 
+</div><!-- end hnews hentry item tag -->
+
+ 
+
+ 
+
+<!-- BEGIN HIDESHOW -->
+<br /><br />
+<input type="button" value="Show/Hide comments" onClick="toggleDiv()">
+<div id="hideshow" style="display:none;">
+
+
+  
+   
+<div id="commentingStage"></div><script>mi.commenting.display();</script>
+
+   
+
+</div>
+<!-- END HIDESHOW -->
+
+ 
+            <div id="content_match">
+                  <script type="text/javascript">
+<!--
+
+
+//Required Parameters
+    ctxt_ad_config = '1001507650';     //unique numeric partner id
+    ctxt_ad_source = 'npc_mcclatchy_thetelegraph_t2_ctxt';     //provided by Account Manager
+    ctxt_ad_interface = 'http://cm.npc-mcclatchy.overture.com/js_1_0/';     
+    ctxt_ad_width = 420;     //width of the displayed ad block
+    ctxt_ad_height = 150;     //height of the displayed ad block
+
+    
+//Context Parameters
+    ctxt_ad_url = window.location.href.split('?')[0].split('#')[0];     //context URL
+    ctxt_ad_url_cat = 'news';     //fallback category name
+    ctxt_ad_id = 'news';     //context ID name
+    ctxt_ad_keywords = '';     //keywords (URL safe values only)
+    ctxt_ad_oe = 'latin1';     //output character encoding
+                  
+//Type Tag
+    ctxt_ad_type = 'news';     //tag for reports--can be ctxt_ad_section
+//Click Wrapper
+    ctxt_ad_cw = '';     //click wrapper URL
+//Display Parameters
+    //ctxt_ad_bc = '000000';     //cell border color
+    //ctxt_ad_cc = 'ffffff';     //cell background color
+    //ctxt_ad_lc = '000000';     //ad text-title color
+    //ctxt_ad_tc = 'a3a3a3';     //ad text-description color
+    //ctxt_ad_uc = 'a3a3a3';    //ad text-sitehost color
+    ctxt_ad_css = 'http://media.macon.com/static/styles/mi/third_party/yahoo/yahoo.css';     //stylesheet URL--can be ctxt_url_css
+    ctxt_ad_newwin = '1';     //new window for results
+-->
+</script>
+
+ <script type="text/javascript">
+<!--
+//Required Parameters
+	ctxt_ad_config = '1001507650';     //unique numeric partner id
+    ctxt_ad_source = 'npc_mcclatchy_thetelegraph_t1_ctxt';     //provided by Account Manager
+
+//Context Parameters
+    ctxt_ad_url_cat = 'health';     //fallback chategory name
+    ctxt_ad_id = 'health';     //contect ID name
+                  
+//Type Tag
+    ctxt_ad_type = 'health';     //tag for reports--can be ctxt_ad_section
+-->
+</script>
+<script type="text/javascript" src="http://cm.npc-mcclatchy.overture.com/partner/js/ypn.js"></script>
+             </div>         </div>         <div id="mi_sidebar">
+             
+  <div id="PluckLogin">
+<div id="userTemplate" class="currentUser" style="display:none;width:240px;padding-top:25px;">
+  <div id="pluckAvatarControls-R1">
+    <script type="text/javascript">
+      document.write(' <a id="pluckWelcomeMsg" href="/reg-bin/tint.cgi?mode=edit">Welcome <strong>' + account_user_name + '</strong><\/a>');
+    </script>
+    <a id="pluckLogOut" href="/reg-bin/tint.cgi?mode=logout">Sign Out</a>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div id="anonTemplate" class="currentUser" style="display: none;width:240px;padding-top:10px;">
+  <a id="pluckSignIn" href="/static/insite/login.html" style="font-weight:bold;">SIGN IN</a> <a id="pluckBecomeMember" href="/reg-bin/int.cgi?mode=register" style="font-weight:bold;">BECOME A MEMBER</a>
+  <div style="clear: both;"></div>
+</div>
+
+<script type="text/javascript">
+$(document).ready( function(){
+  $("#anonTemplate").hide();
+  $("#userTemplate").hide();
+   if( 'Guest' == account_user_name ){
+      $("#anonTemplate").show();
+   } else {
+      $("#userTemplate").show();
+   }
+});
+</script>
+</div>
+
+
+
+<div id="mi_sidebar_ads">
+	 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_center7">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center7;group=rectangle;sz=300x250,160x600;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center7;group=rectangle;sz=300x250,160x600;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center7;group=rectangle;sz=300x250,160x600;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+	 
+
+
+        <div class="advertisement" id="yahoo_300x250_ipatf_1">
+            
+<script><!--
+if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){yld_mgr.place_ad_here("slot_3");}
+--></script>
+        </div>
+    
+ 	<div id="mi_badges">
+		 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_ntl1">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=ntl1;group=146x60;sz=146x60;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=ntl1;group=146x60;sz=146x60;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=ntl1;group=146x60;sz=146x60;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+		 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_bdge02">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=bdge02;group=146x60;sz=146x60;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=bdge02;group=146x60;sz=146x60;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=bdge02;group=146x60;sz=146x60;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+		<div class="clear"></div>
+	</div>
+
+	 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_rulr01">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=rulr01;group=300x100;sz=300x100;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=rulr01;group=300x100;sz=300x100;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=rulr01;group=300x100;sz=300x100;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+	  
+
+
+        <div class="advertisement" id="yahoo_300x100_ipstf_1">
+            
+<script><!--
+if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){yld_mgr.place_ad_here("slot_4");}
+--></script>
+        </div>
+    
+  	 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_center6">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6;group=rectangle;sz=300x250;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6;group=rectangle;sz=300x250;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=center6;group=rectangle;sz=300x250;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+
+	
+</div>
+
+<div id="careerbuilder_v2">
+<img src="/static/images/logos/logo-careerbuilder.gif" alt="CareerBuilder">
+
+<!-- /shared/widgets/careerbuilder/top_jobs_plink.comp -->
+<!-- not currently showing top jobs -->
+
+<h4>QUICK JOB SEARCH</h4>
+
+<form class="main_box" action="http://www.careerbuilder.com/JobSeeker/Jobs/JobResults.aspx" method="get">               
+	<input type="hidden" name="lr" value="cbcb_mt">
+	<input type="hidden" name="siteid" value="cbcb_mt1001">                
+	<input type="hidden" name="use" value="all">
+
+
+	<table class="void">
+	<tr>
+		<td class="pr">
+			<label for="mxjobsrchcriteria_rawwords">Enter Keyword(s):</label>
+			<input type="text" maxlength="256" name="mxjobsrchcriteria_rawwords" id="mxjobsrchcriteria_rawwords" value="" tabindex="1">
+		</td>
+		<td>
+			<label for="mxjobsrchcriteria_city">Enter a City:</label>
+			<input type="text" name="mxjobsrchcriteria_city" id="mxjobsrchcriteria_city" value="" tabindex="2">
+		</td>
+	</tr>
+	<tr>
+		<td class="pr">
+			<label for="mxjobsrchcriteria_state">Select a State:</label>
+			<select name="mxjobsrchcriteria_state" id="mxjobsrchcriteria_state" size="1" tabindex="3">
+			<option value="ALL, US" selected="selected">All United States</option>
+			<option value="AL, US">Alabama</option>
+			<option value="AK, US">Alaska</option>
+
+			<option value="AZ, US">Arizona</option>
+			<option value="AR, US">Arkansas</option>
+			<option value="CA, US">California</option>
+			<option value="CO, US">Colorado</option>
+			<option value="CT, US">Connecticut</option>
+			<option value="DE, US">Delaware</option>
+
+			<option value="DC, US">District of Columbia</option>
+			<option value="FL, US">Florida</option>
+			<option value="GA, US">Georgia</option>
+			<option value="HI, US">Hawaii</option>
+			<option value="ID, US">Idaho</option>
+			<option value="IL, US">Illinois</option>
+
+			<option value="IN, US">Indiana</option>
+			<option value="IA, US">Iowa</option>
+			<option value="KS, US">Kansas</option>
+			<option value="KY, US">Kentucky</option>
+			<option value="LA, US">Louisiana</option>
+			<option value="ME, US">Maine</option>
+
+			<option value="MD, US">Maryland</option>
+			<option value="MA, US">Massachusetts</option>
+			<option value="MI, US">Michigan</option>
+			<option value="MN, US">Minnesota</option>
+			<option value="MS, US">Mississippi</option>
+			<option value="MO, US">Missouri</option>
+
+			<option value="MT, US">Montana</option>
+			<option value="NE, US">Nebraska</option>
+			<option value="NV, US">Nevada</option>
+			<option value="NH, US">New Hampshire</option>
+			<option value="NJ, US">New Jersey</option>
+			<option value="NM, US">New Mexico</option>
+
+			<option value="NY, US">New York</option>
+			<option value="NC, US">North Carolina</option>
+			<option value="ND, US">North Dakota</option>
+			<option value="OH, US">Ohio</option>
+			<option value="OK, US">Oklahoma</option>
+			<option value="OR, US">Oregon</option>
+
+			<option value="PA, US">Pennsylvania</option>
+			<option value="RI, US">Rhode Island</option>
+			<option value="SC, US">South Carolina</option>
+			<option value="SD, US">South Dakota</option>
+			<option value="TN, US">Tennessee</option>
+			<option value="TX, US">Texas</option>
+
+			<option value="UT, US">Utah</option>
+			<option value="VT, US">Vermont</option>
+			<option value="VA, US">Virginia</option>
+			<option value="WA, US">Washington</option>
+			<option value="WV, US">West Virginia</option>
+			<option value="WI, US">Wisconsin</option>
+
+			<option value="WY, US">Wyoming</option>
+			</select>
+		</td>
+		<td>
+			<label for="MXJOBSRCHCRITERIA_JobTypes">Select a Category:</label>
+			<select name="MXJOBSRCHCRITERIA_JobTypes" id="MXJOBSRCHCRITERIA_JobTypes" size="1" tabindex="4">
+			<option value=All selected="selected">All Job Categories</option>
+			<option value=JN001>Accounting</option>
+
+			<option value=JN002>Admin & Clerical</option>
+			<option value=JN054>Automotive1</option>
+			<option value=JN038>Banking1</option>
+			<option value=JN053>Biotech1</option>
+			<option value=JN047>Broadcast - Journalism1</option>
+			<option value=JN019>Business Development</option>
+
+			<option value=JN043>Construction</option>
+			<option value=JN020>Consultant</option>
+			<option value=JN003>Customer Service</option>
+			<option value=JN021>Design</option>
+			<option value=JN027>Distribution  - Shipping</option>
+			<option value=JN031>Education</option>
+
+			<option value=JN004>Engineering</option>
+			<option value=JN022>Entry Level</option>
+			<option value=JN018>Executive</option>
+			<option value=JN017>Facilities</option>
+			<option value=JN005>Finance</option>
+			<option value=JN006>General Business</option>
+
+			<option value=JN051>General Labor</option>
+			<option value=JN046>Government</option>
+			<option value=JN023>Health Care</option>
+			<option value=JN040>Hotel - Hospitality</option>
+			<option value=JN007>Human Resources</option>
+			<option value=JN008>Information Technology</option>
+
+			<option value=JN034>Insurance</option>
+			<option value=JN015>Inventory</option>
+			<option value=JN030>Legal</option>
+			<option value=JN041>Legal Admin</option>
+			<option value=JN037>Management</option>
+			<option value=JN029>Manufacturing</option>
+
+			<option value=JN009>Marketing</option>
+			<option value=JN050>Nurse</option>
+			<option value=JN010>Other</option>
+			<option value=JN049>Pharmaceutical</option>
+			<option value=JN024>Professional Services</option>
+			<option value=JN016>Purchasing -  Procurement</option>
+
+			<option value=JN025>QA - Quality Control</option>
+			<option value=JN026>Research</option>
+			<option value=JN035>Restaurant - Food Service</option>
+			<option value=JN033>Retail - Grocery</option>
+			<option value=JN011>Sales</option>
+			<option value=JN012>Science</option>
+
+			<option value=JN013>Skilled Labor - Trades</option>
+			<option value=JN028>Strategy - Planning</option>
+			<option value=JN014>Supply Chain</option>
+			<option value=JN048>Telecommunications</option>
+			<option value=JN032>Training</option>
+			<option value=JN044>Transportation</option>
+
+			<option value=JN045>Warehouse</option>
+			</select>
+		</td>
+	</tr>
+	</table>
+<div style="margin-top:10px;display:block;"></div>
+	<div class="button"><input type="submit" value="Search" tabindex="5" id="submit" name="submit" /></div>
+		<div class="othersearches">
+			<a href="http://www.careerbuilder.com/jobseeker/jobs/jobfindadv.aspx?lr=cbcb_mt&siteid=cbcb_mt1001">Advanced Job Search</a>&nbsp;|&nbsp;	<a href="http://www.careerbuilder.com/jobseeker/companies/companysearch.aspx?lr=cbcb_mt&siteid=cbcb_mt1001">Search by Category</a>
+		</div>
+	<br clear="all">
+	</form>
+
+
+</div><!-- #careerbuilder_v2 -->
+
+ <div style="display: none;">
+   
+
+<div class="mi_widget">
+	<div class="mi_tabs">
+		<ul class="ui-tabs-nav">
+			<li>
+				<a href="#mi_tabs_pop_Popular">
+					<span> Most Viewed </span>
+				</a>
+			</li>                                    
+
+			<li>
+				<a href="#mi_tabs_pop_Commented">
+					<span>Most Commented</span>
+				</a>
+			</li>   
+
+
+			<li>
+				<a href="#mi_tabs_pop_Recommended">
+					<span>Recommended</span>
+				</a>
+			</li>
+			        
+		</ul>
+
+		<div style="display: block;" id="mi_tabs_pop_Popular" class="tabBody ui-tabs-panel">
+			<ul class="stack">
+			
+<li><a href="http://www.macon.com/2012/02/15/1906707/macon-police-officer-charged-with.html#storylink=omni_popular">UPDATE: Macon police officer to be fired after accusations of having sex with accused shoplifter</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907149/3-macon-police-officers-face-firing.html#storylink=omni_popular">Three Macon police officers face firings</a></li>
+
+<li><a href="http://www.macon.com/2012/02/15/1906838/macon-bomb-squad-detonates-package.html#storylink=omni_popular">Macon bomb squad detonates package containing marijuana</a></li>
+
+<li><a href="http://www.macon.com/2012/02/15/1906649/accused-shoplifters-lead-macon.html#storylink=omni_popular">Accused shoplifters lead Macon police on chase</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907050/two-new-restaurants-coming-to.html#storylink=omni_popular">Two new restaurants coming to north Bibb</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907137/eastwood-movie-may-film-in-macon.html#storylink=omni_popular">Eastwood movie may film in Macon</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907047/former-officers-indicted-in-houston.html#storylink=omni_popular">Former officers indicted in Houston for tractor thefts</a></li>
+
+<li><a href="http://www.macon.com/2012/02/15/1906305/man-dies-in-houston-county-crash.html#storylink=omni_popular">Man dies in Houston County crash</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907145/bibb-county-parents-say-not-enough.html#storylink=omni_popular">Bibb County parents say not enough time to give plan feedback</a></li>
+
+<li><a href="http://www.macon.com/2012/02/16/1907081/man-dies-in-houston-crash.html#storylink=omni_popular">Man dies in Houston crash</a></li>
+
+
+			</ul>
+		</div>
+
+		<div id="mi_tabs_pop_Commented" class="tabBody ui-tabs-panel ui-tabs-hide">
+			 
+<div id="ComDiscTemplate" style="display: none;">
+	<li class="discoArticle">
+	    <a href="@Nyx.PageUrl@"  class="pluckDiscoCount">(@Nyx.NumberOfComments@)</a> 
+            <a href="@Nyx.PageUrl@" class="pluckDiscoTitle">@Nyx.PageTitle@</a>
+	</li>
+</div>
+<ul id="ComDiscOutput_dynamicContent" class="discResults pluckMostCommentedList"></ul>
+
+
+ 
+		</div>
+
+		<div id="mi_tabs_pop_Recommended" class="tabBody ui-tabs-panel ui-tabs-hide">
+			 
+<ul id="RecDiscTemplate" style="display:none;">
+	<li class="discoArticle">
+	    <a href="@Nyx.PageUrl@"  class="pluckDiscoCount">(@Nyx.NumberOfRecommendations@)</a> 
+            <a href="@Nyx.PageUrl@" class="pluckDiscoTitle">@Nyx.PageTitle@</a>
+	</li>
+</ul>
+
+<ul id="RecDiscOutput_dynamicContent" class="discResults zebra_box pluckMostRecommendedList"></ul>
+
+ 
+		</div>
+
+		        
+
+	</div>
+</div>
+
+ 
+ </div>
+
+ 
+        </div> 
+	<div class="clear"></div>
+
+    </div> 
+    <div id="mi_footer">
+         
+
+
+
+       	<div id="sitemap">
+	<div class="title">SITE MAP</div>
+	<div class="column">
+		<div class="column_title"><a href="/news/">News</a></div>
+		<ul class="column_list_square">
+			<li class="column_list_item"><a href="/breaking/">Breaking News</a></li>
+			<li class="column_list_item"><a href="/business/">Business</a></li>
+			<li class="column_list_item"><a href="/crime/">Crime & Courts</a></li>
+			<li class="column_list_item"><a href="/news/columnists/">Columnists</a></li>
+			<li class="column_list_item"><a href="/education/">Education</a></li>
+			<li class="column_list_item"><a href="/local/">Local</a></li>
+			<li class="column_list_item"><a href="/gas/">Gas tracker</a></li>
+			<li class="column_list_item"><a href="/thesun/">Houston/Peach</a></li>
+			<li class="column_list_item"><a href="/nation/">Nation</a></li>
+			<li class="column_list_item"><a href="http://www.legacy.com/obituaries/macon/">Obituaries</a></li>
+			<li class="column_list_item"><a href="/photos">Photos</a></li>
+			<li class="column_list_item"><a href="/politics/">Politics</a></li>
+			<li class="column_list_item"><a href="/education/">Schools</a></li>
+			<li class="column_list_item"><a href="/business/technology/">Technology</a></li>
+			<li class="column_list_item"><a href="http://videos.macon.com">Video</a></li>
+			<li class="column_list_item"><a href="/weird/">Weird News</a></li>
+			<li class="column_list_item"><a href="/world/">World</a></li>
+			<li class="column_list_item"><a href="/wires">Wires</a></li>
+		</ul>
+	</div>
+
+	<div class="column">
+		<div class="column_title"><a href="/sports/">Sports</a></div>
+		<ul class="column_list_square">		
+			<li class="column_list_item"><a href="/sports/baseball/">Baseball</a></li>
+			<li class="column_list_item"><a href="/sports/baseball/mlb/atlanta_braves/">Atlanta Braves</a></li>
+			<li class="column_list_item"><a href="/sports/basketball/">Basketball</a></li>
+			<li class="column_list_item"><a href="/sports/colleges/">Colleges</a></li>
+			<li class="column_list_item"><a href="/fvsu/">Fort Valley State</a></li>
+			<li class="column_list_item"><a href="/gsu">Georgia Southern</a></li>
+			<li class="column_list_item"><a href="/tech">Georgia Tech</a></li>
+			<li class="column_list_item"><a href="/uga">Univ. of Georgia</a></li>
+			<li class="column_list_item"><a href="/mercer">Mercer</a></li>
+			<li class="column_list_item"><a href="/sports/columnists/">Columnists</a></li>
+			<li class="column_list_item"><a href="/sports/football/">Football</a></li>
+			<li class="column_list_item"><a href="/sports/football/nfl/atlanta_falcons/">Atlanta Falcons</a></li>
+			<li class="column_list_item"><a href="/sports/golf/">Golf</a></li>
+			<li class="column_list_item"><a href="/sports/high_school/">High School</a></li>
+			<li class="column_list_item"><a href="/sports/hockey/">Hockey</a></li>
+			<li class="column_list_item"><a href="/sports/horse_racing/">Horse Racing</a></li>
+			<li class="column_list_item"><a href="/littleleague">Little League</a></li>
+			<li class="column_list_item"><a href="/sports/motorsports/">Motorsports</a></li>
+			<li class="column_list_item"><a href="/nascar">NASCAR</a></li>
+			<li class="column_list_item"><a href="/nascar/atlanta">Atlanta</a></li>
+			<li class="column_list_item"><a href="/sports/other_sports/">Other Sports</a></li>
+			<li class="column_list_item"><a href="/outdoors/">Outdoors</a></li>    
+			<li class="column_list_item"><a href="/wires">Wires</a></li>
+		</ul>
+	</div>
+
+	<div class="column">
+		<div class="column_title"><a href="/entertainment/">Entertainment</a></div>
+		<ul class="column_list_square">		
+			<li class="column_list_item"><a href="/celebrities/">Celebrities</a></li>
+			<li class="column_list_item"><a href="/comics/">Comics & Games</a></li>
+
+			<li class="column_list_item"><a href="/dvd/">DVDs/Videos</a></li>
+			<li class="column_list_item"><a href="/238/">Horoscopes</a></li>
+			<li class="column_list_item"><a href="http://www.macon.com/movies/theater/index.html">Local theaters</a></li>
+			<li class="column_list_item"><a href="http://www.macon.com/movies/front/index.html">Movies</a></li>
+			<li class="column_list_item"><a href="/music/">Music</a></li>
+			<li class="column_list_item"><a href="/dining/">Restaurants</a></li>
+
+			<li class="column_list_item"><a href="/television/">Television</a></li>
+			<li class="column_list_item"><a href="/217">Wires</a></li>
+		</ul>
+	</div>
+
+	<div class="column">
+		<div class="column_title"><a href="/living/">Living</a></div>
+		<ul class="column_list_square">
+			<li class="column_list_item"><a href="http://www.uexpress.com/dearabby/">Dear Abby</a></li>
+			<li class="column_list_item"><a href="/news/education/">Education</a></li>
+			<li class="column_list_item"><a href="/living/people/family/">Family</a></li>
+			<li class="column_list_item"><a href="/living/food/">Food</a></li>
+			<li class="column_list_item"><a href="/living/health/">Health</a></li>
+			<li class="column_list_item"><a href="/homegarden/">Home & Garden</a></li>
+			<li class="column_list_item"><a href="/ballard">Mark Ballard</a></li>
+			<li class="column_list_item"><a href="/neighbors">Neighbors</a></li>
+			<li class="column_list_item"><a href="/recipes/">Recipes</a></li>
+			<li class="column_list_item"><a href="/living/religion/">Religion</a></li>
+			<li class="column_list_item"><a href="/living/people/teens/">Teens</a></li>
+			<li class="column_list_item"><a href="/living/travel/">Travel</a></li>
+			<li class="column_list_item"><a href="/wires">Wires</a></li>
+		</ul>
+	</div>
+	<div class="column">
+		<div class="column_title"><a href="/classifieds/">Classifieds</a></div>
+		<ul class="column_list_square">
+			<li class="column_list_item"><a href="/classifieds/real_estate/rentals/">Apartments</a></li>
+			<li class="column_list_item"><a href="/cars/">Cars</a></li>
+			<li class="column_list_item"><a href="http://www.legacy.com/macon/celebrations.asp/">Celebrations</a></li>
+			<li class="column_list_item"><a href="/classifieds/real_estate/">Homes</a></li>
+			<li class="column_list_item"><a href="/jobs/">Jobs</a></li>
+			<li class="column_list_item"><a href="http://buyit.macon.com">Legals/Notices</a></li>
+			<li class="column_list_item"><a href="http://newspaperads.macon.com">Newspaper ads</a></li>
+			<li class="column_list_item"><a href="http://www.legacy.com/obituaries/macon/">Obituaries</a></li>
+			<li class="column_list_item"><a href="http://www.legacy.com/macon/celebrations.asp">Weddings &amp; Engagements</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+ 
+	<div id="nyxAbuseRptForm" class="ReportAbuse_Container" style="display: none;">
+		<div class="ReportAbuse_SectionHead">
+			<span style="float: left;">Report comment as: (required)</span>
+			<a href="javascript: void(0)" onclick="document.getElementById('nyxAbuseRptForm').reporter.hideForm()">X</a>
+		</div>
+		<div class="ReportAbuse_Interior">
+			<select id="nyxAbuseRptForm_reason">
+				<option value="Obscenity/vulgarity">Obscenity/vulgarity</option>
+				<option value="Hate speech">Hate speech</option>
+				<option value="Personal attack">Personal attack</option>
+				<option value="Advertising/Spam" selected="selected">Advertising/Spam</option>
+				<option value="Copyright/Plagiarism">Copyright/Plagiarism</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
+		<div class="ReportAbuse_SectionHead">
+			Remarks: (optional)
+		</div>
+		<div class="ReportAbuse_Comment">
+			<textarea id="nyxAbuseRptForm_comment" onkeyup="return LimitLength(this, 500);"></textarea>
+			<input onclick="document.getElementById('nyxAbuseRptForm').reporter.report()" value="Report" type="button" />
+		</div>
+	</div>
+
+ 
+
+
+
+<div id="mi_legal">
+  <img src="http://media.macon.com/static/images/maconLogo_small.gif" alt="The Macon Telegraph" />
+  <ul>
+    <li><a href="/terms_of_service">Terms of Service</a></li>
+    <li><a href="/privacy_policy">Privacy Policy</a></li>
+      <li><a href="/privacy_policy#behavioral_targeting">About our ads</a></li>
+    <li><a href="/copyright">Copyright</a></li>
+    <li><a href="/about">About Macon.com</a></li>
+    <li><a href="http://www.mcclatchy.com/">About the McClatchy Company</a></li>
+  </ul>
+</div>
+
+ <a name="footanchor"></a><!-- /shared/footer.comp -->
+
+
+
+
+    
+    <a name="floorboard_anchor"></a><!-- /shared/ads/floorboard.comp -->
+
+    <!-- start: floor board ad -->
+     
+
+ <!-- /health --> 
+<div class="advertisement floorboard shared-footer_test dart3" id="dart_285x70_ats_1">				 
+
+
+
+	
+	
+	
+		
+	
+
+
+
+<div class="advertisement" id="ad_1">
+
+<script type="text/javascript">
+if( typeof( miyahoo ) != "undefined"){
+    if( miyahoo.ads[ mi_live_or_preview ].dart.enabled ){
+		_krdDartInc++;
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=1;group=floorboard;sz=285x70;tile='+_krdDartInc+';ord='+_krdDartOrd+'?"><\/script>');
+    }
+}
+</script>
+
+<noscript><a href="http://ad.doubleclick.net/jump/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=1;group=floorboard;sz=285x70;ord='+_krdDartOrd+'?" target="_blank"><img src="http://ad.doubleclick.net/ad/macon.living/health;c2=health;c3=health_homepage;!category=health;template=article;pos=1;group=floorboard;sz=285x70;ord='+_krdDartOrd+'?" border="0" ></a></noscript>
+</div>
+ 
+</div><!-- /.advertisement floorboard shared-footer_test -->                                               <div class="advertisement floorboard shared-footer_test yahoo" id="yahoo_285x70_ipatf_1">
+	
+<script><!--
+if(miyahoo.ads[mi_live_or_preview].yahoo.enabled){yld_mgr.place_ad_here("slot_5");}
+--></script>
+
+</div><!-- /.advertisement floorboard shared-footer_test -->
+ 
+    <script language="JavaScript" type="text/javascript">
+
+        /* floor board ad script to control whitespace  */
+
+        // $('div[name^=adx_ldo0_]').ready(function() {
+            $(document).ready(function() {
+                // executes when HTML-Document is loaded and DOM is ready
+
+                // don't animate because focus of browser window changes
+                $('div[name^=adx_ldo0_]').ready(function() {
+                    $('body').css('margin-bottom', '110px');
+                });
+        });
+
+        // IMPORTANT: executes when complete page is fully loaded, including all frames, objects and images
+        // meaning, we can't bind click for the ad until after the window.load
+        $(window).load(function() {
+            $('div[name=adx_al]').bind('click', function() {
+                /* keep this scoped inside of he click */
+                var $curMarg = $('body').css('margin-bottom').replace("px", "");
+                $curMarg = ($curMarg == 30) ? 110 : 30;
+                $('body').css('margin-bottom', $curMarg + 'px');
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        var mi = (!mi) ? {'media_domain':''} : mi;
+
+        mi.floorAd = function( container ) {
+
+            //get needed objects
+            this.container = $(container).length ? $(container) : '';
+            this.wrapper = $(container + ' #floorboard-wrapper');  //wrapper div for centering
+
+            this.mainImg = $(container + ' img:eq(0)');  //main image
+            this.mainWidth = this.mainImg.width();  //main image width
+            this.mainHeight = this.mainImg.height();  //main image height
+
+            this.leaveImg = $(container + ' img:eq(1)');  //leave behind image
+            this.leaveHeight = this.leaveImg.height();  //leave behind height
+
+            this.closeLink = $(container + ' map[name="floorclosemap"]  area');  //get area link(s?) for close button
+            this.openLink = $(container + ' map[name="flooropenmap"] area');  //get area link(s?) for open button
+
+            if (this.container !== ''){
+
+              this.container.css({'position' : 'fixed',
+                                             'text-align' : 'left',
+                                             'bottom' : '0',
+                                             'right' : '0',
+                                             'left' : '0'});
+
+// stick the footer at the bottom of the page if we're on an iPad/iPhone due to viewport/page bugs in mobile webkit
+// alert( "navigator.platform = " + navigator.platform);
+// ** REMOVE **** iPhone references once iOS 5 releases with a fix for this issue (check Chrome mobile webkit)
+if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Linux armv7l') {
+    this.container.css("position", "static");
+};
+
+              this.wrapper.css({'width' : this.mainWidth + 'px',
+                                             'text-align' : 'left',
+                                            'margin' : '0 auto'})
+
+               if (this.mainImg !== ''){
+
+                this.mainImg.css({'position' : 'absolute',
+                                              'border' : '0',
+                                              'bottom' : (-1 * this.mainHeight),
+                                              'z-index' : '2147483647'});
+
+                   //set up close button if leave behind exists
+                   if(this.leaveImg !== '' && this.closeLink !== ''){
+
+                       this.leaveImg.css({'visibility' : 'hidden',
+                                                      'border' : '0',
+                                                      'position' : 'absolute',
+                                                      'bottom' : (-1 * this.leaveHeight),
+                                                      'z-index' : '2147483647'});
+
+                       this.closeLink.click(function() {
+                                                           //dostuff
+                                                          $(container + ' img:eq(1)').css({'visibility' : 'visible',
+                                                                                                             'bottom' : (-1 * $(container + ' img:eq(0)').height())});
+                                                          $(container + ' img:eq(0)').animate({'bottom' : (-1 * $(container + ' img:eq(0)').height())});
+                                                          $('body').animate({'margin-bottom' : $(container + ' img:eq(1)').height()});
+                                                          $(container + ' img:eq(1)').animate({'bottom' : '0'});
+                                                       });
+
+                       //set up open button if it exists
+                       if(this.openLink != ''){
+                           this.openLink.click(function() {
+                                                               //dostuff
+                                                              $(container + ' img:eq(1)').animate({'bottom' : (-1 * $(container + ' img:eq(1)').height())});
+                                                              $(container + ' img:eq(0)').animate({'bottom' : '0'});
+                                                              $('body').animate({'margin-bottom' : $(container + ' img:eq(0)').height()});
+                                                            });
+                       }
+                   }
+
+                   //animate main image into view
+                  $(document).ready(function() {
+                      $(container + ' img:eq(1)').css({'bottom' : (-1 * $(container + ' img:eq(1)').height())});;
+                      $(container + ' img:eq(0)').animate({'bottom' : '0'});
+                      $('body').css({'margin-bottom' : $(container + ' img:eq(0)').height()});
+                  });
+               }
+               else{
+                  console.warn("No floor ad images to display");
+               }               
+            }
+            else{
+               console.warn( "Slide ad cannot be instantiated. "+container+" does not exist." );
+            }
+        };
+</script>
+
+<script type="text/javascript"> var floorAd = new mi.floorAd('#floorboard-ad');</script>
+    <!-- end: floor board ad -->
+
+
+
+
+
+
+
+
+    </div> </div> 
+ 
+<!-- script src="http://media.macon.com/static/scripts/footer.agg.js" type="text/javascript"></script -->
+<script src="/static/scripts/footer.agg.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".mi_tabs > ul").tabs({
+		show: function (ui) {
+			$(ui.panel).find(".top_galleries").jcarousel().resize();
+			$(ui.panel).find(".top_photos").jcarousel().resize();
+		}
+	});
+
+	$('img[@src$=.png]').ifixpng('http://media.macon.com/static/images/pixel.gif');
+
+	if( document.getElementById('weather_traffic_calendar' )){
+            $('#weather_traffic_calendar').show ();
+        }
+});
+</script>
+
+<script type="text/javascript" src="/static/insite/do_not_akamaize.js"></script>
+ 
+ 
+<div id="mistatstag" style="display:none;">        
+<!-- SiteCatalyst: McClatchy WorkBench Stats Tag v.1.0 -->
+
+<!-- site specific file already loaded -->
+<script language="JavaScript" type="text/javascript" src="http://media.macon.com/mistats/products/pubsys_s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+measure_popularity=true;
+mistats.msr = 'mac|ma';
+mistats.cmsid='GUID: 713290773141100859 | Story: 1902361';
+mistats.pagelevel='Story';
+mistats.pagename='Story: 1902361|Baggarly&#58; Go dark for health benefits when choosing chocolate';
+mistats.version='1.0|';
+mistats.taxonomy='Lifestyle|HealthMedFit|HealthMedFit||';
+mistats.channel='Health';
+
+
+mistats.popular='142|1902361|http://www.macon.com/2012/02/13/1902361_go-dark-for-health-benefits-when.html';
+mistats.popstoryurl='http://www.macon.com/2012/02/13/1902361_go-dark-for-health-benefits-when.html';
+mistats.popstoryheadline='1902361|Baggarly: Go dark for health benefits when choosing chocolate';
+mistats.contentsource='macon|Saxotech|Telegraph correspondent|By JAN BAGGARLY';
+mistats.pubdate='2012/02/13';
+mistats.moddate='2012/02/12 H22';
+
+
+
+
+
+-->
+</script>
+<script language="JavaScript" type="text/javascript" src="http://media.macon.com/mistats/products/pubsys.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://media.macon.com/mistats/finalizestats.js"></script>
+
+<noscript><img src="http://mcclatchy.112.2O7.net/b/ss/nmmacon%2F1%2FH.10--NS%2F0%3FpageName%3DStory%3A%201902361%7CBaggarly%26%2358%3B%20Go%20dark%20for%20health%20benefits%20when%20choosing%20chocolate&server%3Dwww.macon.com&channel%3DHealth&c1%3Dhttp%26%2358%3B%26%2347%3B%26%2347%3Bwww.macon.com%26%2347%3B2012%26%2347%3B02%26%2347%3B13%26%2347%3B1902361_go-dark-for-health-benefits-when.html&c3%3DStory&c4%3Dmacon%7CSaxotech%7CTelegraph%20correspondent%7CBy%20JAN%20BAGGARLY&c6%3Dmac%7Cma&c28%3D&h1%3DMAC%7CMACON%7CLifestyle%7CHealthMedFit%7CHealthMedFit%7C%7C%7CHealth" height="1" width="1" border="0" alt="" /></noscript>
+<!-- End SiteCatalyst: McClatchy WorkBench Stats Tag v.1.0 -->
+</div>
+ 
+<div id="MI_post_load" style="display:none;">
+
+
+
+</div>
+</body>
+</html>

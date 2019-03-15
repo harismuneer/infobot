@@ -1,0 +1,479 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-02-12T19:52:57Z
+WARC-TREC-ID: clueweb12-0102wb-51-04777
+WARC-Target-URI: http://www.270towin.com/2012-straw-poll/
+WARC-Payload-Digest: sha1:WXJUR2NE5Y7TQUVMNYWSQZBKPGVHS4M4
+WARC-IP-Address: 208.52.173.22
+WARC-Record-ID: <urn:uuid:3e4a1c15-6e0c-493d-9c65-f1a4ccd6012d>
+Content-Type: application/http; msgtype=response
+Content-Length: 23652
+
+HTTP/1.1 200 OK
+Date: Sun, 12 Feb 2012 19:52:59 GMT
+Server: Apache/2.2.14 (Ubuntu)
+X-Powered-By: PHP/5.3.2-1ubuntu4.13
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+        <title>2012 Presidential Election Straw Poll</title>
+
+    <META NAME="Description" CONTENT="Cast your vote in the 270toWin Straw Poll. Choose your preferred candidate in three possible general election match-ups.">
+    <META NAME="Keywords" CONTENT="2012 vote, 2012 election">
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-0717685415214823");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-0717685415214823", "270toWin_160x600_StateTrends");
+GA_googleAddSlot("ca-pub-0717685415214823", "270toWin_728x90_StateTrends");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script></HEAD>
+<style>
+/* Add a margin - for this demo only - and a relative position with a high z-index to make it appear over any element below */
+#menu_container {margin:0px 0px 0px 0px; padding-right:10px; position:relative; height:25px; z-index:2200;}
+
+/* Get rid of the margin, padding and bullets in the unordered lists */
+#pmenu, #pmenu ul {ppadding-left:50px; margin:0; list-style-type: none; width:100%; z-index:1000}
+
+/* Set up the link size, color and borders */
+#pmenu a, #pmenu a:visited {display:block; wwidth:80px; font-size:11px; font-family:verdana; color:#6E6865; height:26px; line-height:24px; text-decoration:none; text-indent:5px; border: 0px solid #ACAA98; bborder:1px solid #6E6865; border-width:0px 0 0px 0px; padding-right:45px;}
+
+/* Set up the sub level borders */
+#pmenu li ul li a, #pmenu li ul li a:visited {font-family:verdana; color:#6E6865; border-width:0px;}
+#pmenu li a.sub, #pmenu li a.sub:visited {border-width:0px; background:#E2E1D3; background-image:none}
+
+/* Set up the list items */
+#pmenu li {float:left; bbackground:#E2E1D3; background-image: url(/imgs/menu-l.jpg); background-position: center;}
+
+/* For Non-IE browsers and IE7 */
+#pmenu li:hover {position:relative;}
+/* Make the hovered list color persist */
+#pmenu li:hover > a {color:#000;}
+/* Set up the sublevel lists with a position absolute for flyouts and overrun padding. The transparent gif is for IE to work */
+#pmenu li ul {display:none;}
+/* For Non-IE and IE7 make the sublevels visible on list hover. This is all it needs */
+#pmenu li:hover > ul {display:block; position:absolute; top:-11px; left:80px; padding:10px 30px 30px 30px; background:transparent url(transparent.gif); width:120px;}
+/* Position the first sub level beneath the top level liinks */
+#pmenu > li:hover > ul {left:-30px; top:16px;}
+
+/* get rid of the table */
+#pmenu table {position:absolute; border-collapse:collapse; top:0; left:0; z-index:200; font-size:1em;}
+
+/* For IE5.5 and IE6 give the hovered links a position relative and a change of background and foreground color. This is needed to trigger IE to show the sub levels */
+* html #pmenu li a:hover {position:relative; background:#ffffff; color:#000;}
+
+/* For accessibility of the top level menu when tabbing */
+#pmenu li a:active, #pmenu li a:focus {color:#000;}
+#pmenu li a.sub:active, #pmenu li a.sub:focus {background:#E2E1D3; color:#000;}
+#pmenu li ul li a.sub:hover {color: #000; }
+
+/* Set up the pointers for the sub level indication */
+#pmenu li.fly {background:#7484ad url(http://www.cssplay.co.uk/menus/fly.gif) no-repeat right center;}
+#pmenu li.drop {background:#E2E1D3 url(http://www.cssplay.co.uk/menus/drop.gif) no-repeat right center;}
+
+
+/* This lot is for IE5.5 and IE6 ONLY and is necessary to make the sublevels appear */
+
+/* change 2the drop down levels from display:none; to visibility:hidden; */
+* html #pmenu li ul {visibility:hidden; display:block; position:absolute; top:-11px; left:80px; padding:10px 30px 30px 30px; background:transparent url(transparent.gif);}
+
+/* keep the third level+ hidden when you hover on first level link */
+#pmenu li a:hover ul ul{
+visibility:hidden;
+}
+/* keep the fourth level+ hidden when you hover on second level link */
+#pmenu li a:hover ul a:hover ul ul{
+visibility:hidden;
+}
+/* keep the fifth level hidden when you hover on third level link */
+#pmenu li a:hover ul a:hover ul a:hover ul ul{
+visibility:hidden;
+}
+/* keep the sixth level hidden when you hover on fourth level link */
+#pmenu li a:hover ul a:hover ul a:hover ul a:hover ul ul {
+visibility:hidden;
+}
+
+/* make the second level visible when hover on first level link and position it */
+#pmenu li a:hover ul {
+visibility:visible; left:-30px; top:14px; left:-31px; top:15px;
+}
+
+/* make the third level visible when you hover over second level link and position it and all further levels */
+#pmenu li a:hover ul a:hover ul{
+visibility:visible; top:-11px; left:80px;
+}
+/* make the fourth level visible when you hover over third level link */
+#pmenu li a:hover ul a:hover ul a:hover ul {
+visibility:visible;
+}
+/* make the fifth level visible when you hover over fourth level link */
+#pmenu li a:hover ul a:hover ul a:hover ul a:hover ul {
+visibility:visible;
+}
+/* make the sixth level visible when you hover over fifth level link */
+#pmenu li a:hover ul a:hover ul a:hover ul a:hover ul a:hover ul {
+visibility:visible;
+}
+/* If you can see the pattern in the above IE5.5 and IE6 style then you can add as many sub levels as you like */
+</style>
+<BODY BGCOLOR=#FFFFFF MARGINHEIGHT=0 MARGINWIDTH=0 LEFTMARGIN=0 TOPMARGIN=0 RIGHTMARGIN=0>
+ <TABLE style="padding-left:0px;" CELLSPACING=0 CELLPADDING=0 border=0>
+ <TR>
+   <TD colspan="2" style='padding-left: 0px; text-align: right; width: 960px; height: 90px; background-image: url(http://www.270towin.com/imgs/270_header.jpg)' valign="bottom" align="left">
+    <table border="0" cellspacing="0" cellpadding="0" width="960">
+        <tr>
+            <td width="600" rowspan="2"><a href="/"><img src="/imgs/spec.gif" width="600" height="90" alt="270toWin.com" border="0"></a></td>
+            <td align="right" valign="bottom" width="360" height="84">
+               <form action="http://www.270towin.com/search_results.php" id="cse-search-box">
+                <div style="padding-right:25px; padding-bottom:15px;">
+                 <input type="hidden" name="cx" value="002823845232686450197:7ahaxjpv-hu" />
+                 <input type="hidden" name="cof" value="FORID:10" />
+                 <input type="hidden" name="ie" value="UTF-8" />
+                 <input type="text" name="q" size="31" id="search_input_style" />
+                 <input type="submit" name="sa" value="Search" id="search_btn_style" />
+                </div>
+               </form>
+               <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en&sitesearch=true"></script>
+            </td>
+        </tr>
+        <tr>
+            <td height="6"><img src="/imgs/spec.gif" width="1" height="1"></td>
+        </tr>
+    </table>
+   </TD>
+ </TR>
+ </table>
+ <div style="margin-left: 120px;">
+    <script type='text/javascript'>
+GA_googleFillSlot("270toWin_728x90_StateTrends");
+</script> </div>
+
+<div style="width:755px; padding-left:15px">
+    <div style="padding-left:0px; text-align:left;" id="menu_container">
+        <img src="/imgs/spec.gif" width="650px" height="1"/>
+        <ul id="pmenu" style='border: solid 0px black; text-align: left; padding-left: 0px'>
+            <li style="border-left: 0px;padding-left:0px;background-position:left;"><a href="/" style="border: 0px;">Home</a></li>
+            <li style="padding-left:0px;background-position:center;"><a href="/whats_new/">What's New</a></li>
+            <li style="padding-left:0px;" ><a href="javascript:;">Maps <img src="/imgs/down.gif" border=0></a>
+                <ul>
+                    <li style="padding-left:0px;"><a style="width:230px;" href="/" class="sub">2012 Electoral College (and Historical)</a></li>
+                    <li style="padding-left:0px;"><a style="width:230px;" href="/2012_senate_election" class="sub">2012 Senate Election</a></li>
+                    <li style="padding-left:0px;"><a style="width:230px;" href="/2010_house_election/" class="sub">2010 House Election</a></li>
+                    <li style="padding-left:0px;"><a style="width:230px;" href="/2010_house_election/results/" class="sub">2010 House Election Results</a></li>
+                </ul>
+            </li>
+            <li style="padding-left:0px;"><a href="javascript:;">Polls <img src="/imgs/down.gif" border=0></a>
+                <ul>
+                    <li style="padding-left:0px;"><a style="width:170px;" href="/2008_polls/mccain_obama/" class="sub" class="enclose">2008 Election Polling Map</a></li>
+                    <li style="padding-left:0px;"><a style="width:170px;" href="/2012-polls/" class="sub" class="enclose">2012 General Election Polls</a></li>
+                </ul>
+            </li>
+            <li style="padding-left:0px;"><a href="javascript:;" class="drop">States <img src="/imgs/down.gif" border=0></a>
+                <ul>
+                    <li style="padding-left:0px;"><a style="width:200px;" href="/states/"  class="sub" class="enclose">Voting History &amp; Trends by State</a></li>
+                </ul>
+            </li>
+            <li style="padding-left:0px;"><a href="javascript:;">Simulation <img src="/imgs/down.gif" border=0></a>
+                <ul>
+                    <li style="padding-left:0px;"><a style="width:190px;" href="/simulation/" class="sub">2008 Election Simulation</a></li>
+                    <li style="padding-left:0px;"><a style="width:190px;" href="/simulation/visualizer.php" class="sub">2008 Election Simulation Results</a></li>
+                </ul>
+            </li>
+            <li style="padding-left:0px;"><a href="/blog">Blog</a></li>
+            <li style="padding-left:0px;background-position:right;"><a style="padding-right:10px;" href="javascript:;" class="drop">More <img src="/imgs/down.gif" border=0></a>
+                <ul>
+                    <li style="padding-left:0px;"><a style="width:215px;" href="/answers/" class="sub">270toWin Answers</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" href="/election_icons/widget/" class="sub">Electoral College Poll Widget</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" href="/quiz.php" class="sub">Electoral College Quiz</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" onclick="window.open('/tie.php','miniwin','WIDTH=500,HEIGHT=260')" href="javascript:;" class="sub">What Happens: Electoral College Tie</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" onclick="window.open('/split_me_ne.php','miniwin','resizable=1,WIDTH=580,HEIGHT=310')" href="javascript:;" class="sub">Nebraska &amp; Maine Split</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" onclick="window.open('/tie5050.php','miniwin','WIDTH=500,HEIGHT=330')" href="javascript:;" class="sub">What Happens: 50-50 Senate</a></li>
+                    <li style="padding-left:0px;"><a style="width:215px;" href="/closing.php" class="sub">Poll Closing Times</a></li>
+                  
+                    <li style="padding-left:0px;"><a style="width:215px;" href="/site_map.php" class="sub">Site Map</a></li>
+                </ul>
+            </li>
+            <div style='clear: both;'></div>
+        </ul>
+ 
+<div style='float:left; width: 42%; padding: 5px; margin-top: 8px; margin-bottom: 4px; color: #555; background-color: #ffffaa; border: solid 1px #eeee88;font-weight:bold'>
+	<span style="color:red">New!</span> <a href="http://click.linksynergy.com/fs-bin/stat?id=mfhY6sb8ofQ&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252F270towin%252Fid483161617%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30" target="itunes_store">270toWin for iPad:</a> The Election is in Your Hands
+</div>
+
+         <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style"  style="float:right; margin-top:10px; margin-right:10px; z-index:-100">
+            <a class="addthis_button_google_plusone" g:plusone:size='medium'></a>
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet" tw:via="270toWin"></a>
+            <a class="addthis_counter addthis_pill_style" ></a>
+        </div>
+        <script type="text/javascript">
+            var addthis_config = {
+                services_exclude:'facebook,twitter',
+                data_track_clickback:true
+            };
+        </script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=akeiter"></script>
+        <!-- AddThis Button END -->
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!--[if lte IE 7]><br><br><br><br><![endif]-->
+<style type="text/css">
+	#main{width: 750px;padding-left:17px;font-size:12pt;float:left;margin-right:20px}
+	#frm_poll{
+		opacity : 0.5;
+	    filter: alpha(opacity=20); 
+	    background-color: #CCC;
+	}
+	#right {width: 200px;float:left;margin:30px 0px 0 0px}
+	h1{margin:0}
+	
+	.question_num {width:20px;font-weight:bold}
+	#err_msg{color:red}
+	#recap_err{padding-bottom:10px;color:red}
+	td {font-size:12pt}
+	#recaptcha_area{float:left;width:350px;margin-right:60px}
+</style>
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABCDEFG"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("#recaptcha_response_field").attr('disabled', true);
+		//document.getElementById("surroundingarea").style.backgroundColor = "#CCCCCC";
+		/*
+		var ip = '128.2.207.79';		document.getElementById('user_ip').value = ip;
+	
+		function validateZipCode(elementValue){
+		  var zipCodePattern = /^\d{5}$|^\d{5}-\d{4}$/;
+		  return zipCodePattern.test(elementValue);
+		}
+		
+		$('form').submit(function() { 
+			if( validateZipCode($('input[name=entered_zip]').val()) == false) {
+				$('#err_msg').html("Please enter a 5 digit Zip Code.");
+				return false;
+			}
+			if($('input[name=scenario1]:checked').val() == undefined || $('input[name=scenario2]:checked').val() == undefined || $('input[name=scenario3]:checked').val() == undefined || $('input[name=scenario4]:checked').val() == undefined || $('input[name=scenario5]:checked').val() == undefined || $('input[name=entered_zip]').val() == '' || $('select[name=vote_politics]').val() == 0 || $('select[name=vote_age]').val() == 0) {
+			$('#err_msg').html('Please make sure all questions have been answered.');
+		  		return false;
+			}
+		});
+		*/
+	});
+</script>
+
+<div id="main">
+	<p>
+	<h1>The Polls are Now Closed</h1>
+	<a href="http://www.270towin.com/blog/2012-election/obama-leads-likely-republican-challengers">Straw poll results</a> are now available
+	<p>
+	For ongoing updates on the 2012 election, <a href="http://twitter.com/#!/270toWin">follow us on Twitter</a>.
+</p>
+	<!--<span>To be notified when results are published, <a href="http://twitter.com/#!/270toWin">follow us on Twitter</a></span>-->
+	<p>
+		Most presidential polls return popular vote percentages for an individual state, or for the nation as a whole.   This is directionally interesting, but of limited value in our system where the election is actually comprised of 51 popular vote contests, each (almost always) yielding an all-or-none distribution of electoral votes.
+	</p>
+	<p>
+	We're going to try something a little different. Vote in our straw poll between now and November 4th at 5PM Pacific Time.   We'll compile the votes into an electoral map (for each match-up) and publish the results on November 7th. For this straw poll, we've included Republicans that showed 5% or greater support among Republican primary voters in the 10/25 CBS/NYT poll.
+</p>
+<p>To make this as accurate as possible, please vote only once.  Thanks for your cooperation. </p>
+<hr/>
+	<form action="" method="post" name="frm_poll" id="frm_poll">
+	<input type="hidden" id="user_ip" name="user_ip" value="" />
+	<input type="hidden" id="user_city" name="user_city" value="" />
+	<input type="hidden" id="user_state" name="user_state" value="" />
+	<input type="hidden" id="user_country" name="user_country" value="" />
+	
+	<div id="err_msg"></div>
+	<table border="0" cellspacing="0" cellpadding="5" width="100%" style="font-size:12pt">
+		<tr>
+			<td class="question_num" valign="top">1.</td>
+			<td colspan="2">If the 2012 presidential election were held today, whom would you support if the candidates<br /> are the following:</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2">
+				<table border="1" cellspacing="0" cellpadding="5" width="83%" style="margin-top:5px">
+				<tr>
+					<td style="background-color:#F5F5DC" >
+						<input disabled type="radio" name="scenario1" value = "1" /> Barack Obama (D)
+						<br/>
+						<input disabled type="radio" name="scenario1" value = "2" /> Mitt Romney  (R)
+						<br/>
+						<input disabled type="radio" name="scenario1" value = "3" /> Undecided
+					</td>
+					<td>
+						<input disabled type="radio" name="scenario2" value = "1" /> Barack Obama (D)
+						<br/>
+						<input disabled type="radio" name="scenario2" value = "2" /> Rick Perry (R)
+						<br/>
+						<input disabled type="radio" name="scenario2" value = "3" /> Undecided
+					</td>
+					<td style="background-color:#F5F5DC">
+						<input disabled type="radio" name="scenario3" value = "1" /> Barack Obama (D)
+						<br/>
+						<input disabled type="radio" name="scenario3" value = "2" /> Herman Cain (R)
+						<br/>
+						<input disabled type="radio" name="scenario3" value = "3" /> Undecided
+					</td>
+				</tr>
+				<tr>
+					<td style="width:33%">
+							<input disabled type="radio" name="scenario4" value = "1" /> Barack Obama (D)
+							<br/>
+							<input disabled type="radio" name="scenario4" value = "2" /> Ron Paul  (R)
+							<br/>
+							<input disabled type="radio" name="scenario4" value = "3" /> Undecided
+						</td>
+						<td style="background-color:#F5F5DC;width:33%">
+							<input disabled type="radio" name="scenario5" value = "1" /> Barack Obama (D)
+							<br/>
+							<input disabled type="radio" name="scenario5" value = "2" /> Newt Gingrich (R)
+							<br/>
+							<input disabled type="radio" name="scenario5" value = "3" /> Undecided
+					</td>
+					<td style="font-style:italic;width:33%" align="center">Please vote once for <br />each scenario.</td>
+				</tr>
+				<!--<tr>
+					<td colspan="3" style="font-style:italic; font-size:10pt">Please vote once for each scenario.</td>
+				</tr>
+				-->
+			</table></td>
+		</tr>
+		<tr>
+			<td class="question_num">2.</td>
+			<td width="350px">What is your 5 digit U.S. Zip Code?</td>
+			<td><input type="text" size="8" name="entered_zip" value="" maxlength="5" disabled /></td>
+		</tr>
+		<tr>
+			<td class="question_num">3.</td>
+			<td>How would you classify yourself politically?</td>
+			<td><select name="vote_politics" disabled><option value="0">--- Choose One ---</option><option value="1" >Very Liberal</option><option value="2" >Liberal</option><option value="3" >Moderate<option value="4" >Conservative</option><option value="5" >Very Conservative</option></select></td>
+		</tr>
+			<tr>
+				<td class="question_num">4.</td>
+				<td>What is your age?</td>
+				<td><select name="vote_age" disabled><option value="0">--- Choose One ---</option><option value="1" >Under 18</option><option value="2" >18-29</option><option value="3" >30-44</option><option value="4" >45-59</option><option value="5" >60 or over</option></select></td>
+			</tr>
+		</table>
+	<p>Please type the requested words below and then click "Cast My Vote".</p>
+	<p>
+		<div id="recap_err"></div>
+		<script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LdXfgMAAAAAAF0IoIMW248OpGTM7JXHO9bK31Hv"></script>
+
+	<noscript>
+  		<iframe src="http://api.recaptcha.net/noscript?k=6LdXfgMAAAAAAF0IoIMW248OpGTM7JXHO9bK31Hv" height="300" width="500" frameborder="0"></iframe><br/>
+  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+	</noscript>	<input disabled style="float:left;margin-top:40px" TYPE="image" SRC="castmyvote.png" 
+		               WIDTH="250"  HEIGHT="50" 
+		              BORDER="0" ALT="SUBMIT!" />
+	</p>
+</form>
+</div>
+<div id="right">
+  <script type='text/javascript'>
+      GA_googleFillSlot("270toWin_160x600_StateTrends");
+  </script>
+
+
+</div>
+<div style="clear:both"></div>
+ <div id="phone_box" style="display:none; position:relative; text-align: center; z-index: 900;"> </div>
+
+<TABLE CELLPADDING=9 WIDTH=800><TR><TD>
+<BR>
+
+<B>Contact Us</B>: &nbsp;
+
+<SCRIPT type="text/javascript">
+<!--
+function bookmark () {
+    if ((navigator.appName == "Microsoft Internet Explorer") &&
+        (parseInt(navigator.appVersion) >= 4)) {
+        // What is the URL of the current page?
+        var url= 'http://www.270towin.com/';
+
+        // What is the title of the current page?
+        var title="270toWin -  Interactive Electoral College Map & History";
+
+        window.external.AddFavorite(url,title);
+    } else {
+        var msg = "Netscape users please press CTRL-D to bookmark this site";
+        alert(msg);
+    }
+}
+// End -->
+</script>
+
+<TABLE WIDTH=100%>
+<TR>
+<TD>
+<FONT STYLE='font-size: 8pt;'>
+   <A HREF='mailto: sponsorships@270towin.com'>Sponsorships</A>
+    &nbsp; | &nbsp;
+   <A HREF='mailto: Licensing@270towin.com'>Licensing</A>
+    &nbsp; | &nbsp;
+   <A  HREF='mailto: feedback@270towin.com'>Feedback</A>
+    &nbsp; | &nbsp;
+   <A  HREF='mailto: media@270towin.com&subject=Media Inquiry: 270towin.com'>Media Inquiries</A>
+   &nbsp; | &nbsp;
+   <A  HREF='/site_map.php'>Site Map</A>
+</TD>
+<TD ALIGN=RIGHT>
+<FONT STYLE='font-size: 8pt;'>
+   <a href="/blog/">Blog</a></B>
+    &nbsp; | &nbsp;
+   <A HREF='javascript:;' ONCLICK='window.open("/email_site.php","miniwin","WIDTH=400,HEIGHT=600")'>Tell Others About This Site</A>
+
+   
+</TD>
+</TR>
+</TABLE>
+
+<BR>
+
+Copyright &copy; 2004-2012   270towin.com All Rights Reserved &nbsp; &nbsp; <font style='color: #999;'>&nbsp;</font><font style='color: #999;'>&nbsp;</font>
+
+   <!-- Start Quantcast tag -->
+   <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+   <script type="text/javascript">_qacct="p-3cEGJEZTW9-Jk";quantserve();</script>
+   <noscript>
+    <a href="http://www.quantcast.com/p-3cEGJEZTW9-Jk" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-3cEGJEZTW9-Jk.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+   </noscript>
+   <!-- End Quantcast tag -->
+
+  
+
+  <script type="text/javascript">
+       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+       var pageTracker = _gat._getTracker("UA-3666101-1");
+       pageTracker._initData();
+       pageTracker._trackPageview();
+  </script>
+
+</TD></TR></TABLE>

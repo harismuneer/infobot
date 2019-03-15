@@ -1,0 +1,428 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-04-14T13:18:46Z
+WARC-TREC-ID: clueweb12-1501wb-22-16210
+WARC-Target-URI: http://www.isthmusparents.com/mamamadison/detail.php?entryID=120
+WARC-Payload-Digest: sha1:DVWCSV22AZICSFTOBEIKC6KS5A3ARRIV
+WARC-IP-Address: 208.66.133.78
+WARC-Record-ID: <urn:uuid:a86aac37-a8b3-4218-85a6-4c84f4e81157>
+Content-Type: application/http; msgtype=response
+Content-Length: 23617
+
+HTTP/1.1 200 OK
+Date: Sat, 14 Apr 2012 13:18:48 GMT
+Server: Apache/2.2.22 (EL)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>To be or not to be... - Mama Madison: An IsthmusParents.com blog</title><meta name="description" content="Is an identity as the cool mom worth it?" />
+<meta name="keywords" content="Isthmus, Isthmus Parents, alternative, newspaper, Madison, Wisconsin, WI, blog" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<link href="/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/css/commentstyle.css" rel="stylesheet" type="text/css">
+<script src="/js/global.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/superfish.css" media="screen">
+<link rel="stylesheet" href="/css/nyroModal.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script src="/js/jquery.nyroModal-1.6.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/hoverIntent.js"></script>
+<script type="text/javascript" src="/js/superfish.js"></script>
+<script type="text/javascript">
+	$(function() {
+	  $.nyroModalSettings({
+	    addImageDivTitle: true
+	    processHandler: function(settings) {
+	      var from = settings.from;
+	      if (from && from.href && from.href.indexOf('http://www.youtube.com/watch?v=') == 0) {
+	        $.nyroModalSettings({
+	          type: 'swf',
+	          height: 355,
+	          width: 425,
+	          url: from.href.replace(new RegExp("watch\\?v=", "i"), 'v/')
+	        });
+	      }
+	    }
+	  });
+	});
+</script>
+<script type="text/javascript">
+// initialise plugins
+jQuery(function(){
+	jQuery('ul.sf-menu').superfish();
+});
+</script>
+
+<script language="JavaScript"
+         type="text/javascript" src="/js/ahahLib.js"></script> 
+<script language="JavaScript"
+         type="text/javascript">
+function makeactive(tab) { 
+document.getElementById("tab1").className = ""; 
+document.getElementById("tab2").className = ""; 
+document.getElementById("tab3").className = "";
+document.getElementById("tab"+tab).className = "active";
+
+callAHAH('/inc/content.php?content= '+tab, 'content',
+     '<center><span style="line-height:1.6em; font-weight:800;font-size:1.4em;">Retrieving results...</span><br /><br /><img src="/images/ajax-loader.gif" /></center>', 'Error'); 
+} 
+</script>
+
+
+
+<link rel="stylesheet" href="/css/jquery.accessible-news-slider.css" type="text/css" media="screen" />
+
+<script language="javascript">
+
+var gAutoPrint = true;
+
+function processPrint(printMe){
+	if (document.getElementById != null){
+		var html = '<HTML>\n<HEAD>\n';
+		if (document.getElementsByTagName != null){
+			var headTags = document.getElementsByTagName("head");
+			if (headTags.length > 0) html += headTags[0].innerHTML;
+		}
+		html += '\n</HE' + 'AD>\n<BODY>\n';
+		var printReadyElem = document.getElementById(printMe);
+		if (printReadyElem != null) html += printReadyElem.innerHTML;
+		else{
+			alert("Error, no contents.");
+			return;
+		}
+		html += '\n</BO' + 'DY>\n</HT' + 'ML>';
+		var printWin = window.open("","processPrint");
+		printWin.document.open();
+		printWin.document.write(html);
+		printWin.document.close();
+		if (gAutoPrint) printWin.print();
+	} else alert("Browser not supported.");
+}
+</script>
+
+<SCRIPT language="JavaScript">
+function openLikeWindow()      {
+        OpenWindow=window.open('/inc/articleRecommendations.php?Article_ID=', 'articleRec', 'height=200, width=272, toolbar=0, scrollbars=0, status=0, location=0, menubar=0, screenX=200, screenY=200, left=200, top=200');
+}
+</SCRIPT>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18276366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Start VisualLightBox.com HEAD section -->
+<!-- <link rel="stylesheet" href="http://www.isthmusparents.com/photos/engine/css/vlightbox1.css" type="text/css" />
+<link rel="stylesheet" href="http://www.isthmusparents.com/photos/engine/css/visuallightbox.css" type="text/css" media="screen" />
+<script src="http://www.isthmusparents.com/photos/engine/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://www.isthmusparents.com/photos/engine/js/visuallightbox.js" type="text/javascript"></script>
+<script src="http://www.isthmusparents.com/photos/engine/js/vlbdata.js" type="text/javascript"></script> -->
+<!-- End VisualLightBox.com HEAD section -->
+
+
+
+</head>
+
+<body onload="makeactive(3);">
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '200172673340647', status: true, cookie: true,
+             xfbml: true, oauth: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+<div class="globalContainer">
+<div class="topContainer">
+	
+	<div class="hdrContainer">
+	
+		
+<div class="leftLogoContainer"> 
+	<!-- <a href="/index.php"><img src="/images/Isthmus_Parents_logo_home.gif" style="padding:10px;" alt="Isthmus Parents Logo" /></a> -->
+	<a href="/index.php"><img src="/images/IsthmusParents_logo_sum.gif" alt="Isthmus Parents Logo" border="0" style="margin: 0; padding: 0;"/></a>
+</div>
+		
+		<div class="rightAdContainer">
+			<div  style='text-align:left; ' class='advertisement'><script type='text/javascript'><!--//<![CDATA[
+		var m3_u = (location.protocol=='https:'?'https://www.thedailypage.com/adServer/www/delivery/ajs.php':'http://www.thedailypage.com/adServer/www/delivery/ajs.php');
+		var m3_r = Math.floor(Math.random()*99999999999);
+		if (!document.MAX_used) document.MAX_used = ',';
+		document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+		document.write ("?zoneid=738");
+		document.write ('&amp;cb=' + m3_r);
+		if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+		document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+		document.write ("&amp;loc=" + escape(window.location));
+		if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+		if (document.context) document.write ("&context=" + escape(document.context));
+		if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+		document.write ("'><\/scr"+"ipt>");
+		//]]>--></script><noscript><a href='http://www.thedailypage.com/adServer/www/delivery/ck.php?n=a11f3ebb&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img  src='http://www.thedailypage.com/adServer/www/delivery/avw.php?zoneid=738&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a11f3ebb' border='0' alt=''  /></a></noscript></div></div>		
+		<div style="clear:right;"></div>
+		
+		
+		
+<div class="rightHeaderContainer" >
+	<!-- <div style="padding-bottom:10px;">
+			<div>
+		<fb:login-button></fb:login-button>
+		</div>
+				</div> -->
+	<div class="loginLink" style="float:left;">
+			<img src="/images/blueBox.gif" style="padding-right:4px; padding-top: 6px;" border="0" alt="blue box" /><span class="blueBasicLeft">You are not logged in. <a href="/portal/login.php">Log in now</a> or <a href="/portal/signup.php">Sign up</a>.</span> 
+		</div><div style="clear:left;"></div>
+
+	<div style="padding-bottom:5px; padding-top: 10px;"><span class="redLargeLeft">Search Isthmus Parents for events, activities and more, in and around Madison, Wisconsin</span></div>
+	<!--<div> -->
+		<div>
+						<form style="padding:0; margin:0;" action="/search/search.php" method="get">
+						<div style="float:left;">
+			<!-- <span class="blueEventText">Keywords: </span><br /> -->
+			<input type="text" class="searchInput" value="Search by Keywords" style="width:400px;" name="keywords" />
+			</div>
+			
+			<div style="float:left;">
+			<input type="image" src="/images/btn/btn.red.go.gif" alt="Go!" />
+			</div>
+			
+			<div style="clear:left;"></div>
+			
+			</form>
+		</div>
+	<!-- </div> -->
+		<div class="paddingBottom10"></div>
+		
+	<div class="rightHeaderMenuContainer">
+		 
+<ul class="sf-menu">
+		
+	<li><a href="/calendar/index.php">CALENDAR</a></li>
+	
+	<li><a href="/mamamadison/index.php">MAMA MADISON</a></li>
+	
+	<li><a href="/directory/index.php">RESOURCES</a></li>
+	
+	<li><a href="/marketplace/index.php?tag=kids">MARKETPLACE</a></li>
+
+</ul>
+
+	</div>
+	<div style="clear:right;"></div>
+</div>
+		</div>
+		<div style="clear:both;"></div>
+		<div class="paddingBottom5"></div>
+				<!-- <div style="clear:both;"></div> -->
+	</div>
+	<div class="paddingBottom5"></div>
+	
+	<div class="bodyContainer">
+	
+
+	
+<link rel="image_src" href="http://www.isthmusparents.com/images/MamaMadison_logo_480x180.gif" />
+<meta property="og:title" content="To be or not to be... - Mama Madison: An IsthmusParents.com blog" /> 
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://www.isthmusparents.com/images/MamaMadison_logo_480x180.gif" />
+<meta property="og:url" content="http://www.isthmusparents.com/mamamadison/detail.php?entryID=120" />
+<meta property="og:site_name" content="TheDailyPage" />
+<meta property="fb:app_id" content="151344254928909" />
+<meta property="og:description" content="Is an identity as the cool mom worth it?" />
+
+<script type="text/javascript" src="/js/prototype.js"></script>
+
+	<div class="rightMainCol">
+		<div>
+	<div class="contentWidgetTop">
+				<img src="/images/mostpop.gif" alt="Most Popular" />
+	</div>
+	<div>
+		<ul id="tabmenu" style="background:#cc0000;" > 
+		<li onclick="makeactive(1)"><a style="font-family: Verdana, sans-serif; font-weight: 800; font-size: .8em;" id="tab1">ACTIVITY</a></li> 
+		<li onclick="makeactive(2)"><a style="font-family: Verdana, sans-serif; font-weight: 800; font-size: .8em;" id="tab2">STORIES</a></li> 
+		<li onclick="makeactive(3)"><a style="font-family: Verdana, sans-serif; font-weight: 800; font-size: .8em;" id="tab3">RECOMMENDED</a></li> 
+		</ul> 
+	</div>
+	<div id="content"></div>
+</div>
+		<div class="paddingBottom10"></div>
+		<div class="skyscraperdiv">
+			<div class="rightskyscraper">
+				<div  style='text-align:center; ' class='advertisement'><script type='text/javascript'><!--//<![CDATA[
+		var m3_u = (location.protocol=='https:'?'https://www.thedailypage.com/adServer/www/delivery/ajs.php':'http://www.thedailypage.com/adServer/www/delivery/ajs.php');
+		var m3_r = Math.floor(Math.random()*99999999999);
+		if (!document.MAX_used) document.MAX_used = ',';
+		document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+		document.write ("?zoneid=595");
+		document.write ('&amp;cb=' + m3_r);
+		if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+		document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+		document.write ("&amp;loc=" + escape(window.location));
+		if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+		if (document.context) document.write ("&context=" + escape(document.context));
+		if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+		document.write ("'><\/scr"+"ipt>");
+		//]]>--></script><noscript><a href='http://www.thedailypage.com/adServer/www/delivery/ck.php?n=a73589a1&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img  src='http://www.thedailypage.com/adServer/www/delivery/avw.php?zoneid=595&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a73589a1' border='0' alt=''  /></a></noscript></div>			</div>
+			<div class="leftskyscraper">
+				<div  style='text-align:center; ' class='advertisement'><script type='text/javascript'><!--//<![CDATA[
+		var m3_u = (location.protocol=='https:'?'https://www.thedailypage.com/adServer/www/delivery/ajs.php':'http://www.thedailypage.com/adServer/www/delivery/ajs.php');
+		var m3_r = Math.floor(Math.random()*99999999999);
+		if (!document.MAX_used) document.MAX_used = ',';
+		document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+		document.write ("?zoneid=740");
+		document.write ('&amp;cb=' + m3_r);
+		if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+		document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+		document.write ("&amp;loc=" + escape(window.location));
+		if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+		if (document.context) document.write ("&context=" + escape(document.context));
+		if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+		document.write ("'><\/scr"+"ipt>");
+		//]]>--></script><noscript><a href='http://www.thedailypage.com/adServer/www/delivery/ck.php?n=a73589a1&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img  src='http://www.thedailypage.com/adServer/www/delivery/avw.php?zoneid=740&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a73589a1' border='0' alt=''  /></a></noscript></div>			</div>
+			<div style="clear:both;" class="paddingBottom10"></div>
+		</div>
+		<div  style='text-align:center; ' class='advertisement'><script type='text/javascript'><!--//<![CDATA[
+		var m3_u = (location.protocol=='https:'?'https://www.thedailypage.com/adServer/www/delivery/ajs.php':'http://www.thedailypage.com/adServer/www/delivery/ajs.php');
+		var m3_r = Math.floor(Math.random()*99999999999);
+		if (!document.MAX_used) document.MAX_used = ',';
+		document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+		document.write ("?zoneid=742");
+		document.write ('&amp;cb=' + m3_r);
+		if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+		document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+		document.write ("&amp;loc=" + escape(window.location));
+		if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+		if (document.context) document.write ("&context=" + escape(document.context));
+		if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+		document.write ("'><\/scr"+"ipt>");
+		//]]>--></script><noscript><a href='http://www.thedailypage.com/adServer/www/delivery/ck.php?n=a73589a1&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img  src='http://www.thedailypage.com/adServer/www/delivery/avw.php?zoneid=742&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a73589a1' border='0' alt=''  /></a></noscript></div>		
+	</div>
+
+	<div class="mamaMadisonDiv">
+		<div style="padding:10px 10px 10px 20px">
+			<img src="/images/MamaMadison_logo_480x180.gif" alt="Mama Madison Logo" />
+		</div>
+		<a href=''></a><div class='9col'' style='margin:10px;'><div id='topDiv'></div><div id='theArticle'><div id='contentDiv'><div id='showImage'><a href='http://www.isthmusparents.com/media/2012/03/29/480mamamadison032912.jpg' id='imgFiche' class='nyroModal' rel='gal' title=''><img border='0' src='http://www.isthmusparents.com/media/2012/03/29/480mamamadison032912.jpg' width='480' alt='' /></a><span class='photoCredit'></span><div style='display:none;'><a href='http://www.isthmusparents.com/media/2012/03/29/480mamamadison032912.jpg' id='imgFiche' class='nyroModal' rel='gal' title=''></a><a href='http://www.isthmusparents.com/media/2012/03/29/480mamamadison032912.jpg' id='imgFiche' class='nyroModal' rel='gal' title=''></a><a href='http://www.isthmusparents.com/media/2012/03/29/480mamamadison032912.jpg' id='imgFiche' class='nyroModal' rel='gal' title=''></a></div></div><div style='clear:both;'></div><div name='showText' id='showText'><a href='detail.php?entryID=120'><span class='articleTitle'>To be or not to be...</span></a><br /><span class='articleSubTitle'>Is an identity as the cool mom worth it?</span><p><span class='byline'>by: <a href='/profile/index.php?member=57' target='_blank'>Sari Judge</a> on Thursday 03/29/2012</span></p><p><span class='articleText'> <p>I'm not really sure what it takes to be considered a "cool" mom. Not so much by other moms in a middle school clique or sorority kind of way, but cool in my kids' eyes -- especially my middle son's. I certainly wasn't winning any prizes when he was in pre-school. I never bought the fancy, themed cupcakes in for snack time, even on birthdays. I didn't even bring the fun flavored goldfish crackers. I once bought string cheese, though. Not for health reasons as you might expect, but because it was the only thing I could find in the refrigerator. And I'd inevitably forgotten until seven minutes before we had to leave the house that my son was "Child of the Week." </p>
+
+<p>In some ways, peel-apart-low-moisture mozzarella is very festive -- like a dairy form of streamers. And fortunately none of the kids in the Wolf Room were particularly judgmental. </p>
+
+<p>I didn't get a whole lot cooler during his elementary school years. I didn't bake like his friends' moms. Stale rice cakes with graying baby carrots were more my speed. And, while other parents may have been introducing their kids to alternative bands and the Top 40, I had little on my iPod recorded after 1988 . One could argue it was cool that I was able to teach my now 12-year-old son all the lyrics to the dance floor classic "I Will Survive.? But I am not sure he'd be the one arguing it. </p>
+
+<p>Through his childhood I've driven either a non-descript grey minivan or black mom-style SUV----I couldn't even muster up the courage to go red in my maternal need to seat at least seven. And I can't even pull off hip footwear. According to my children, the hot pink Chuck Taylors I purchased a few years back in order to up my cool quotient are not my style. I'm not sure what, beyond clogs and snow boots, might be. </p>
+
+<p>But last week my son made it perfectly clear what I could do to immediately be seen as the most cutting-edge mom in the entire world. </p>
+
+<p>And it involved taking him to the midnight premier of <i>The Hunger Games</i>. </p>
+
+<p>Hmm, I'd been down this road before. Back on January 3, 2007, I actually slept out in front of the West Towne Best Buy with my then nine-year-old eldest son. We were dead set on snagging a first-generation Nintendo Wii. I wanted, just for that moment, to be the type of mom who would sacrifice the warmth of my own bed, and potentially a few toes to frostbite, in order to make my son feel like a prince. </p>
+
+<p>We landed the console -- third in line, baby. But my cool mom glory was short-lived. Within the days, any halo or aura of "with it" I may have sported was absorbed back into the universe. In the blink of an eye I returned to preparing loser snacks and listening to musical classics from the late '70s -- sometimes, embarrassingly, in front of his friends. Cool, I learned, is never eternal. It is fleeting, capricious, and never worth sacrificing a good night's sleep for. </p>
+
+<p>So while I toyed for a moment with the idea of schlepping a carful of sixth-grade boys to opening night, I thought better of it. </p>
+
+<p>Because although I like a good kids-killing-kids movie as much as the next mom, District 12 and Panem would still be there the next day, in daylight. And besides, I'm sure my son would have told me I looked ridiculous in the <a href="http://www.refinery29.com/hunger-games-katniss-braid">Katniss braid</a> I was planning to wear. </p>
+
+
+<p>So in the immortal words of Ms. Gloria Gaynor, "I will survive" once again not being the cool mom. </p>
+
+<p>And he will survive not having one. </p><p><span style='font-style:italic;'>Last edited on 2012-03-29 14:15:59</p> <p><span style='font-style:italic;'>Last edited on 2012-03-29 14:18:02</p></span></p></div><div style='clear:both;'></div></div>
+		
+	<div class="articleWidgetColumn" style=" margin-top: 10px; width:475px">
+		<div style="padding:10px 5px 10px 5px; width:100%;">
+			<div style="float:left; padding-left:5px;">
+								<fb:like href="" layout="standard" width="400" colorscheme="light"></fb:like>
+			</div>
+			<div style="clear:both;" class="paddingBottom10"></div>
+			<div style="float:left; padding-left:5px;">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+		
+			<div style="float:right; padding-left:5px;padding-right: 10px;">
+				<a href="javascript:void(processPrint('theArticle'));" class="blueLink"><img src="/images/btn.red.printthis.gif" width="80px" alt="Print this post" class="articleUtilityItem" /></a>
+			</div>
+		
+			<div style="clear:both;" class="paddingBottom20"></div>
+			<div class="paddingBottom20"></div>
+			
+			<fb:comments href="http://www.isthmusparents.com/mamamadison/detail.php?entryID=120" width="450px" height="700px" simple="1" css="http://www.isthmusparents.com/css/facebookstyle.css"></fb:comments>
+		</div>
+	</div>
+</div>
+			<div class="paddingBottom10"></div> 
+				
+
+		</div> 	</div> 
+	
+</div>	
+<div class="bodyContainer">	
+			<div class="paddingBottom10"></div>
+		<div class="16Col">
+			<table width="900" align="center">
+			<tr>
+			<td><a href="/index.php"><span class="footerText">ISTHMUS PARENTS HOME</span></a></td>
+			<td align="center"><a href="/advertise"><span class="footerText"> Advertise</span></a></td>
+			<td align="center">|</td>
+			<td align="center"><a href="/rssFeeds.php"><span class="footerText">Subscribe to Feeds</span></a></td>
+			<td align="center">|</td>
+			<td align="center"><a href="/signup"><span class="footerText">Email Newsletters</span></a></td>
+			<td align="center">|</td>
+			<td align="center"><a href="/contactUs.php"><span class="footerText">Contact Us</span></a></td>
+			<td align="center">|</td>
+			<td align="center"><a href="/sitemap.php"><span class="footerText">About This Site</span></a></td>
+			<td align="center">|</td>
+			<td align="center"><a href="http://www.thedailypage.com"><span class="footerText">Isthmus</span></a></td>
+			</tr></table>
+		</div>
+	</div>
+</div>
+<!-- </div>
+</div> -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-393990-1";
+urchinTracker();
+</script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'isthmusparents'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
+	

@@ -1,0 +1,1353 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-29T15:44:59Z
+WARC-TREC-ID: clueweb12-1200tw-67-11139
+WARC-IP-Address: 23.15.7.81
+WARC-Payload-Digest: sha1:ARC7HFS5CR7IIZ7KUDN6XR2FLBQK5SNG
+WARC-Target-URI: http://www.womenshealthmag.com/health/benefits-of-chocolate?cm_mmc=Twitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate
+WARC-Record-ID: <urn:uuid:b58a864b-a99e-4660-8eda-4f6a44de88bc>
+Content-Type: application/http; msgtype=response
+Content-Length: 66937
+
+HTTP/1.0 200 OK
+Server: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.7a PHP/5.3.8
+X-Powered-By: PHP/5.3.8
+X-Drupal-Cache: MISS
+Last-Modified: Thu, 29 Mar 2012 12:22:32 +0000
+ETag: "1333023752-1"
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=74254
+Expires: Fri, 30 Mar 2012 12:22:33 GMT
+Date: Thu, 29 Mar 2012 15:44:59 GMT
+Connection: close
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/"
+  xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Healthy Chocolate: 9 Health Benefits of Chocolate | Women's Health Magazine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+    // <![CDATA[
+    var ord = Math.random() * 10000000000000000;
+    var dfpdomain = 'http://ad.doubleclick.net';
+    var dfpcalltype = 'adj';
+    var dfpsite = 'womenshealth';
+    var dfpzone = 'health';
+    var dfpkw = 'chocolate';
+    var dfpcontextual = 'empty';
+    var dfparticle = '9_health_benefits_of_chocolate';
+    var dfptopic = '';
+    var dfpsubtopic = 'healthbenefitsofchocolate';
+    var dfpcat = '';
+    var dfptile=1;
+    var dfpdcopt='';  
+    var tmpdfpkw='';
+    // ]]>
+  </script>
+
+
+  <!--Interstitial / Pop-under Page View Targeting Code -->
+  <script type="text/javascript">
+    // <![CDATA[
+    function Set_Cookie( name, value, expires, path, domain, secure ) {
+      // set time, it's in milliseconds
+      var today = new Date();
+      today.setTime( today.getTime() );
+
+      /*
+      if the expires variable is set, make the correct
+      expires time, the current script below will set
+      it for x number of days, to make it for hours,
+      delete * 24, for minutes, delete * 60 * 24
+      */
+      if ( expires ) {
+        expires = expires * 1000 * 60 * 60 * 24;
+      }
+      var expires_date = new Date( today.getTime() + (expires) );
+
+      document.cookie = name + "=" +escape( value ) +
+      ( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+      ( ( path ) ? ";path=" + path : "" ) +
+      ( ( domain ) ? ";domain=" + domain : "" ) +
+      ( ( secure ) ? ";secure" : "" );
+    }
+
+    function Get_Cookie( check_name ) {
+      // first we'll split this cookie up into name/value pairs
+      // note: document.cookie only returns name=value, not the other components
+      var a_all_cookies = document.cookie.split( ';' );
+      var a_temp_cookie = '';
+      var cookie_name = '';
+      var cookie_value = '';
+      var b_cookie_found = false; // set boolean t/f default f
+
+      for ( i = 0; i < a_all_cookies.length; i++ ) {
+        // now we'll split apart each name=value pair
+        a_temp_cookie = a_all_cookies[i].split( '=' );
+
+        // and trim left/right whitespace while we're at it
+        cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+
+        // if the extracted name matches passed check_name
+        if ( cookie_name == check_name ) {
+          b_cookie_found = true;
+          // we need to handle case where cookie has no value but exists (no = sign, that is):
+          if ( a_temp_cookie.length > 1 ) {
+            cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+          }
+          // note that in cases where cookie is initialized but no value, null is returned
+          return cookie_value;
+          break;
+        }
+        a_temp_cookie = null;
+        cookie_name = '';
+      }
+      if ( !b_cookie_found ) {
+        return null;
+      }
+    }
+
+    // remember, these are the possible parameters for Set_Cookie:
+    // name, value, expires, path, domain, secure
+    var page_no;
+    if ( Get_Cookie( 'wh_dfp_load' )) {
+      page_no = parseInt(Get_Cookie( 'wh_dfp_load' )) + 1;
+      Set_Cookie( 'wh_dfp_load', page_no, '', '/', '.womenshealthmag.com', '' );
+    }
+    else {
+      page_no = 0;
+      Set_Cookie( 'wh_dfp_load', page_no, '', '/', '.womenshealthmag.com', '' );
+    }
+    // ]]>
+  </script>
+  <!--Interstitial / Pop-under Page View Targeting Code -->
+
+<script type="text/javascript" src="http://libs.coremetrics.com/eluminate.js"></script>
+<link rel="shortcut icon" href="/files/favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="http://www.womenshealthmag.com/health/benefits-of-chocolate" />
+<meta name="copyright" content="©2012 Rodale Inc. All Rights Reserved" />
+<meta name="google-site-verification" content="J2lHqAL3FJuebPyTAky_waAx-kfQ3Env67pnJXxcYEc" />  <link type="text/css" rel="stylesheet" media="all" href="/files/wh6_uploads/advagg_css/css_ca6e7f3a63fcc6ad4f18768181f4f6e0_4.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/wh6_uploads/advagg_css/css_6aa9a8cec7ccb61eb76e7a3650585818_5.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/wh6_uploads/advagg_css/css_f08ea2f55e43be0071030389f477ccc2_6.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/files/wh6_uploads/advagg_css/css_db7c08f3d6b9719b587e18b62a84f154_15.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/files/wh6_uploads/advagg_css/css_472541cca1d70720db1ff9b3e4727c59_9.css" />
+
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/ie.css?m" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/whtheme/css/ie.css?m" />
+<![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="/files/wh6_uploads/advagg_js/js_c69c7aa4f52796097a962656bdf7beca_6.js"></script>
+<script type="text/javascript" src="/files/wh6_uploads/advagg_js/js_3a04a278b4ffe61a41cbf959c74e7633_4.js"></script>
+<script type="text/javascript" src="/files/wh6_uploads/advagg_js/js_2cdb59ec1de6e1615bccb8af7dba3b6d_4.js"></script>
+<script type="text/javascript" src="/files/wh6_uploads/advagg_js/js_00e8d92d7b14364623abf02d032c322c_13.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving your vote...","feedbackVoteSaved":"Your vote has been saved.","feedbackDeletingVote":"Deleting your vote...","feedbackVoteDeleted":"Your vote has been deleted."},"cas":{"cas_server":"https:\/\/member.rodale.com","cas_url_register":"\/cas","cas_url_edit":"https:\/\/member.rodale.com\/membercenter\/mvc\/member\/editUser?site=womenshealth","cas_url_callback":"%2Fhealth%2Fbenefits-of-chocolate","cas_url_callback_full":"http:\/\/www.womenshealthmag.com\/health\/benefits-of-chocolate","cas_debug":false},"googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)files\/wh6_uploads","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false},"ajaxblocks":"blocks=rodalecomments-0\u0026path=node\/31240"});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs)}}(document,"script","twitter-wjs")
+//--><!]]>
+</script>
+</head>
+
+<body class="not-front not-logged-in node-type-slideshow no-sidebars page-health-benefits-of-chocolate section-health">
+  <div class="interstitial-ad">
+        <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=550x480;tile=' + dfptile + ';' + dfpdcopt + 'sz=550x480;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=550x480;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=550x480;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>  </div>  
+  <div class="container">
+    <script type="text/javascript">
+      if($('#float-inbetween-ad').css('display')=='block') {
+        $('.container').css('display','none');
+      }
+    </script>
+  <div id="mast">
+  <div class="ad">
+        <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = 'dcopt=ist;';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=728x90.1;tile=' + dfptile + ';' + dfpdcopt + 'sz=728x90;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=728x90;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=728x90;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>	</div>
+	<div id="nav-top">
+		<div id="subscribe">
+			<!-- START Temp AD Call -->
+          <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=170x215;tile=' + dfptile + ';' + dfpdcopt + 'sz=170x215;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=170x215;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=170x215;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>  
+			<!-- END Temp AD Call -->
+		</div> <!-- END subscribe -->
+		<div id="mast-block">
+			<div id="mast-block-top">
+				<div id="social-media">
+				  <div class="social-widget">
+				    <div class="fb-like" data-href="http://www.facebook.com/womenshealthmagazine" data-send="false" data-layout="button_count" data-width="48" data-show-faces="false"></div>
+				  </div>
+				  <div class="social-widget">
+				    <a href="https://twitter.com/WomensHealthMag" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @WomensHealthMag</a>
+				  </div>
+				  <div class="social-widget">
+            <a href="http://pinterest.com/womenshealthmag/" target="_blank"><img src="/sites/all/themes/whtheme/images/btn_pinfollow.png" /></a>
+          </div>
+				</div>
+				<div id="signup"  style="float: none;padding:0;">
+					<form  action="http://search.womenshealthmag.com/vignette/wh/search.jsp"  method="Get">
+						<input class="email-field" onblur="if (this.value == '') this.value = 'Search Women\'s Health';" onfocus="if (this.value == 'Search Women\'s Health') this.value = '';" name="q" value="Search Women's Health" type="text"/>
+						<input class="search-btn" type="submit" value="" />
+					</form>
+				</div>
+				<div id="member">
+					<div class="log-in-block" id="log-in-block" >
+                              <span id="register"><a href="https://member.rodale.com/membercenter/mvc/createUser?site=womenshealth&amp;returnUrl=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate">Register for free</a> and win prizes!</span> 
+                  <span id="login"> | <a href="/cas?login=1&amp;callback=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate">Log In</a></span>
+                	
+					</div><!-- END log-in-block -->
+		 
+					<!-- START Member Logged In Block -->
+					<div class="logged-in-block" id="logged-in-block">
+                              <span id="whHello">Hi, <span style="font-weight: bold;" class="welcome"></span> | </span>
+                  <span id="whMemberCenter"><a href="/user">Member Center</a> | </span>
+                  <span id="whLogout"><a href="/caslogout?callback=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate">Log Out</a></span>
+                  <div></div> <!--/ FOR node create and edit links -->
+                					</div> 
+					<!-- END Member Log In Block -->
+				</div>
+				<div class="clearfix"></div>
+			</div><!-- END mast-block-top -->
+			
+			<div id="logo-container">
+				<div id="logo"><a href="/"><img alt="Women's Health" src="http://www.womenshealthmag.com/sites/all/themes/whtheme/images/header/logo_wh.png"
+				    width="511" height="105" /></a>
+				</div> <!-- /logo -->
+				
+				<!-- advertiser End Flyout-->
+        <div class="view view-flyout-promo-areaheader view-id-flyout_promo_areaheader view-display-id-default view-dom-id-1">
+  
+  
+  
+  
+      <div class="view-content">
+      <div id="whAdvertiser">
+  <a href="http://www.whbigbookofabs.com/bndl?cm_mmc=wh.com-_-flyout-_-homepage-_-wh_bbo_abs&amp;keycode=207904" >
+    <img src="http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_fly.jpg" />
+  </a>
+</div>
+ 
+<!-- Nav Flyout Div -->
+<script type="text/javascript">
+  // <![CDATA[
+  
+  // setTimeout("showFlyOut1('navFlyOut')",1000);
+	showFlyOut1('navFlyOut');
+  function showFlyOut1(linkParameter) {
+ 
+    // This is for Nav FlyOut http://cdn.womenshealthmag.com/themes/womenshealth/images/header/wh-flyout-arrow-right.gif
+    if (linkParameter == "navFlyOut") {
+      document.writeln([
+		"<div id='flyoutPromoArea' style='z-index: 9999999;'>",
+    
+			"<div class='promoFlyoutArrowDiv'><img src='http://www.womenshealthmag.com/files/wh6_uploads/wh-flyout-arrow-right_0.gif' height='8' width='4' /><br/></div>",
+			"<div class='flyoutPromo'>",
+				"<div style='position: absolute;'>",
+					"<div class='promo1'>",
+						"<a href='http://www.whbigbookofabs.com/bndl?cm_mmc=wh.com-_-flyout-_-homepage-_-wh_bbo_abs&amp;keycode=207904' ><img src='http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_1.jpg' width='168px' 	height='146px;' ></a>",
+					"</div>",
+					"<div class='promo2'>",
+						"<a href='http://www.whbigbookofabs.com/bndl?cm_mmc=wh.com-_-flyout-_-homepage-_-wh_bbo_abs&amp;keycode=207904' ><img src='http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_2.jpg' width='168px'  	height ='98px'></a>",
+					"</div>",
+					"<div class='promo3'>",
+						"<a href='http://www.whbigbookofabs.com/bndl?cm_mmc=wh.com-_-flyout-_-homepage-_-wh_bbo_abs&amp;keycode=207904' ><img src='http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_3.jpg' width='168px'  	height='83px' ></a>",
+					"</div>",					
+				"</div>", 
+			"</div>",
+		"</div>"
+	  ].join("\n"));
+	
+
+  	//ie 7 and below css
+  	document.writeln([
+		"<!--[if LTE IE 7]>",
+		"<style type=\"text\/css\">",
+			"#flyoutPromoArea {",
+				"margin:-18px 0 0 -384px;",
+				"z-index: 10;",
+			"}",
+			"img.promoFlyoutArrow {",
+				"position:absolute;", 
+				"margin-top: 32px;",
+				"margin-left: -4px;",
+			"}",
+		"<\/style>",
+		"<![endif]-->"
+  	].join("\n"));
+	
+  	var hover = jQuery('#flyoutPromoArea');
+  	$('#whAdvertiser').hover(function() { 
+    		hover.show();
+    	}, function() {
+    		hover.hide();
+    	});
+	
+    	$('#whAdvertiser').append(hover);
+    	//Below if is for 'Subscribe Nav Flyout'
+    }
+  }
+
+  var wh_subscribe_dropdown_callstate = 0;
+	
+  function displaysubscribe(e) {
+  	//hideMenuImmed();
+  	var gmnuObj = this;
+  	jQuery(this).attr('ON','1');
+  	jQuery(this).removeAttr('OFF');
+  	setTimeout(function() {
+  		var mnuObj = gmnuObj;
+  		if (jQuery(mnuObj).attr('ON') == '1') {
+  			jQuery('#subscribePromoArea').css('display','block');
+  			jQuery(mnuObj).removeAttr('ON');
+  		}
+  	}, 500);
+  }
+
+  function hidesubscribe(e) {
+  	wh_subscribe_dropdown_callstate = 0;
+  	var gmnuObj = this;
+  	jQuery(this).attr('OFF','1');
+  	jQuery(this).removeAttr('ON');
+  	setTimeout(function() {
+  		var mnuObj = gmnuObj;
+  		if((wh_subscribe_dropdown_callstate == 0) && (jQuery(mnuObj).attr('OFF') == '1')) {
+  			jQuery('#subscribePromoArea').css('display','none');
+  			jQuery(mnuObj).removeAttr('OFF');
+  		}
+  	}, 0);
+  }
+	
+  function setCallOnState(e) {
+    wh_subscribe_dropdown_callstate = 1;
+  }
+
+  function setCalloffState(e) {
+  	wh_subscribe_dropdown_callstate = 0;
+  	var mnuId = "#subscribePromoArea";
+  	jQuery(mnuId).trigger("mouseout");
+  }
+
+  // ]]>
+</script>
+
+<style type="text/css">
+  #whAdvertiser a {
+  	z-index: 100 !important;
+  }
+
+  #whAdvertiser {
+    float: right;
+    margin-top: 31px;  
+  }
+
+  #flyoutPromoArea {
+  	display:none;
+  	position: absolute;
+  	margin:-55px 0 0 -171px;
+  	width: 171px;
+  	padding: 0;
+  	z-index: 100;
+  }
+
+  #flyoutPromoArea div {
+  	display:block;
+  }
+
+  .flyoutPromo	{
+  	width: 167px;
+  	height: 280px;
+	
+  }
+
+  .promoFlyoutArrowDiv {
+  	float: right;
+  	margin: 0;
+  	padding: 0; 
+  	margin-top: 32px;
+  	width: 4px; 
+  }
+
+  #flyoutPromoArea div.promo1 a, 
+  #flyoutPromoArea div.promo2 a, 
+  #flyoutPromoArea div.promo3 a,
+  #flyoutPromoArea div.promo4 a {
+  	display: block;
+  	width: 167px;
+  	margin: 0;
+  	padding: 0;
+  	border-left: 0px;
+  	z-index:200 !important;
+  }
+
+  #flyoutPromoArea div.promo1 a:hover, 
+  #flyoutPromoArea div.promo2 a:hover, 
+  #flyoutPromoArea div.promo3 a:hover,
+  #flyoutPromoArea div.promo4 a:hover {
+  	display: block;
+  	width: 167px;
+  	margin: 0;
+  	padding: 0;
+  	border-left: 0px;
+  	z-index: 200 !important;
+  }
+
+  #topNav li a.promo:hover {
+  	border-left: 1px solid #692779;
+  }
+
+  #flyoutPromoArea div.promo1 a { height:98px; z-index:200 !important; }
+  #flyoutPromoArea div.promo2 a { /*height:98px;*/ z-index:200 !important; }
+  #flyoutPromoArea div.promo3 a { /*height:83px;*/ z-index:200 !important; }
+  #flyoutPromoArea div.promo4 a { /*height:54px;*/ z-index:200 !important; }
+
+  #flyoutPromoArea div.promo1	{
+  	width: 168px;
+  	height: 146px;
+  	background: url('http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_1.jpg') top left no-repeat;
+  }
+
+  #flyoutPromoArea div.promo2	{
+  	width: 168px;
+  	height: 98px;
+  	background: url('http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_2.jpg') top left no-repeat;
+  }
+	
+  #flyoutPromoArea div.promo3	{
+  	width: 168px;
+  	height: 83px;
+  	background: url('http://www.womenshealthmag.com/files/wh6_uploads/2019973_whbboabs_3.jpg') top left no-repeat;
+  }
+
+  #flyoutPromoArea div.promo4	{
+    width: 167px;
+  	height: 81px;
+  	background: url('../images/header/flyout_may_promo_04.jpg') top left no-repeat;
+  }
+</style>
+    </div>
+  
+  
+  
+  
+  
+  
+</div><!-- /.view -->
+		 
+			  <div class="cl" id="main-nav">  
+          <ul id="nav">
+          <li class="menu-75 first"><a href="/fitness" title="Fitness" style="background-color: #; color: #; ">Fitness</a></li>
+<li class="menu-5672"><a href="/sex-and-relationships" title="sex &amp; love" style="background-color: #; color: #; ">Sex &amp; Love</a></li>
+<li class="menu-5673"><a href="/nutrition" title="Food" style="background-color: #; color: #; ">Food</a></li>
+<li class="menu-5674"><a href="/weight-loss" title="Weight Loss" style="background-color: #; color: #; ">Weight Loss</a></li>
+<li class="menu-86140"><a href="http://www.eatthisnotthatbook.com/sm?cm_mmc=wh.com-_-website-_-splash_page-_-ETNT_Supermarket_HC&amp;amp;keycode=201868" title="Buy the book" style="background-color: #; color: #; ">Eat This!</a></li>
+<li class="menu-79"><a href="/health" title="Health" class="active" style="background-color: #; color: #; ">Health</a></li>
+<li class="menu-5676"><a href="/beauty" title="Beauty" style="background-color: #; color: #; ">Beauty</a></li>
+<li class="menu-10639"><a href="/style" title="Style" style="background-color: #; color: #; ">Style</a></li>
+<li class="menu-86139 last"><a href="http://www.womenshealthmag.com/video#/video/all" title="Videos" style="background-color: #; color: #; ">Video</a></li>
+          </ul>
+          <div class="cl"></div> 
+				</div><!-- END main-nav-->
+<div class="view view-home-page-subscribe-content view-id-home_page_subscribe_content view-display-id-default view-dom-id-2">
+  
+  
+  
+  
+      <div class="view-content">
+      <div class="subscribe">
+					<a href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&amp;oae&amp;mktOfferId=WMH49201&amp;keycode=I1LWA001&amp;cm_mmc=womenshealthmag.com-_-Top%20Nav%20Bar%20-_-WH%20TopNav%20SubLink%20Mag-_-OfferId_WMH49201_keycode_I1LWA001" class="subscribe-img"><img src="http://www.womenshealthmag.com/files/wh6_uploads/right-sub-april.png" width="130" height="92" /></a>
+					<a href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&amp;oae&amp;mktOfferId=WMH49201&amp;keycode=I1LWA001&amp;cm_mmc=womenshealthmag.com-_-Top%20Nav%20Bar%20-_-WH%20TopNav%20SubLink%20Mag-_-OfferId_WMH49201_keycode_I1LWA001">Subscribe for 99¢ an issue</a> 
+				</div>    </div>
+  
+  
+  
+  
+  
+  
+</div><!-- /.view -->
+				<div id="sub-nav">
+					<ul>
+<li class="menu-25107 first"><a href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&amp;oae&amp;mktOfferId=WMH47820&amp;keycode=I2BWA020&amp;cm_mmc=womenshealthmag.com-_-Subscribe%20Link%20-_-WH%20TopNav%20SubcrbeMar-_-OfferId_WMH47820_keycode_I2BWA020 " title="" style="background-color: #; color: #; ">Subscribe</a></li>
+<li class="menu-61164"><a href="http://www.womenshealthmag.com/newsletter" title="" style="background-color: #; color: #; ">Newsletters</a></li>
+<li class="menu-5706"><a href="https://www.rodalestore.com/womenshealth.html/?keycode=177828" title="" style="background-color: #; color: #; ">WH Store</a></li>
+<li class="menu-5707"><a href="http://www.womenshealthmag.com/WHNavPT" title="" style="background-color: #; color: #; ">Personal Trainer</a></li>
+<li class="menu-91805"><a href="http://www.womenshealthmag.com/look-better-naked/" title="Look Better Naked" style="background-color: #; color: #; ">Look Better Naked</a></li>
+<li class="menu-74756"><a href="http://www.womenshealthmag.com/blogs" title="Blogs" style="background-color: #; color: #; ">Blogs</a></li>
+<li class="menu-10530"><a href="/rss-feeds" title="WH RSS Feeds" style="background-color: #; color: #; ">RSS</a></li>
+<li class="menu-5704"><a href="http://www.womenshealthmag.com/faqs" title="" style="background-color: #; color: #; ">Help</a></li>
+<li class="menu-93599 last"><a href="http://www.whplanofaction.com " title="" style="background-color: #; color: #; ">Promotions</a></li>
+            <div id="subscribePromoArea" style="display: none;">
+              <div class="subscribePromo">
+                <div>
+                  <div class="subpromo1">
+                  <a title="Try 2 Risk-Free Trial Issues" href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&oae&mktOfferId=WMH47820&keycode=I2CWA018&cm_mmc=womenshealthmag.com-_-TopNavDropDown-_-WHTopNavDropdwnApr-_-OfferId_WMH47820_keycode_I2CWA018">&nbsp;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style type="text/css">
+              #subscribePromoArea div.subpromo1	{
+                width: 220px;
+                height: 198px;
+                background: url('/files/wh6_uploads/2019631_wh_dropdown.jpg') top left no-repeat;
+              }
+            </style>
+            
+            <script type="text/javascript">
+              // <![CDATA[
+              var menuid = "li.menu-25107";
+              $(document).ready(function(){
+                $(menuid).mouseover(
+                  function () {
+                  $("#subscribePromoArea").css('display', 'block');
+                  }
+                );
+                $(menuid).mouseout( 
+                  function () {
+                  $("#subscribePromoArea").css('display', 'none');
+                  }
+                );
+              
+                $("#subscribePromoArea").mouseover(
+                  function () {
+                  $("#subscribePromoArea").css('display', 'block');
+                  }
+                );
+              
+                $("#subscribePromoArea").click(
+                  function () {
+                    window.location = "https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&oae&mktOfferId=WMH47820&keycode=I2CWA018&cm_mmc=womenshealthmag.com-_-TopNavDropDown-_-WHTopNavDropdwnApr-_-OfferId_WMH47820_keycode_I2CWA018";
+                  }
+                );              
+              
+                $("#subscribePromoArea").mouseout( 
+                  function () {
+                  $("#subscribePromoArea").css('display', 'none');
+                  }
+                );
+              
+              });
+              // ]]>
+            </script>
+            
+				  </ul>
+			  </div><!-- sub-nav-->
+			</div>
+		</div>
+	</div>
+</div><!--End mast-->  
+  <div id="main-wrapper">
+     <div id="content-area">
+    <!--START Main Content-->
+    <div class="grid-666 left-column">
+      <!--START Content Area-->
+	    <div style = margin-top:-10px;>
+		 <link rel="stylesheet" href="http://www.womenshealthmag.com/files/chocolate/wh-choc.css" />
+<div id="CHOC_dropdown">
+<ul id="CHOCnav">
+	<li><a href="http://www.womenshealthmag.com/nutrition/chocolate"><img src="http://www.womenshealthmag.com/files/chocolate/images/chocolate-dropdown.jpg" border="0" height="140" width="666" /></a>
+		<ul>
+			<a href="http://www.womenshealthmag.com/health/benefits-of-chocolate"><li>health benefits of chocolate</li></a>
+			<a href="http://www.womenshealthmag.com/nutrition/easy-chocolate-recipes"><li>sweet and savory recipes</li></a>
+			<a href="http://www.womenshealthmag.com/sex-and-relationships/chocolate-for-better-sex"><li>chocolate = better sex</li></a>
+			<a target="_blank" href="http://blog.womenshealthmag.com/food/healthy-chocolate-cocktails"><li>chocolate cocktails</li></a>
+			<a target="_blank" href="http://eatthis.womenshealthmag.com/slide/worst-chocolate-candies?slideshow=105864"><li>worst chocolate candies</li></a>
+			<a href="http://www.womenshealthmag.com/nutrition/healthiest-chocolate"><li>healthiest types of chocolate</li></a>
+			<a href="http://www.womenshealthmag.com/nutrition/chocolate-facts"><li>5 things you didn't know about chocolate</li></a>
+			<a href="http://www.womenshealthdietbook.com/?keycode=154654&cm_mmc=whcom-_-edit-_-womenshealthdiet"><li>the wh diet // life's best superfoods</li></a>
+			<a href="http://www.womenshealthmag.com/newsletter"><li>the dish newsletter // free weekly recipes</li></a>
+		</ul>
+	</li>
+</ul>
+</div>        </div>
+      <div class="mid-content-mod" style = margin-top:-25px;>
+        <div style="margin-top: 25px;"></div>
+        <div style="width: 55px; float:right">
+          <div style="float:left;"><div id="block-block-158" class="">
+  <div class="content">
+    <div class="logo-feature">
+    <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=115x25;tile=' + dfptile + ';' + dfpdcopt + 'sz=115x25;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=115x25;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=115x25;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript></div>  </div>
+
+  </div><!-- /block-block-158 -->
+</div>
+          <div class="fb-like-vertical-displaynew"  style="float: right; margin-right:0px; width: 55px">
+            <fb:like href="http://www.womenshealthmag.com/health/benefits-of-chocolate?cm_mmc=Twitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate" send="true" layout="box_count" width="450" show_faces="true" font=""> </fb:like>            <div>
+              </br>
+              <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+              <a href="https://twitter.com/share?url=http://www.womenshealthmag.com/health/benefits-of-chocolate?cm_mmc=Twitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate" class="twitter-share-button"
+              data-url="http://www.womenshealthmag.com/"
+              data-related="wintodaysweeps"
+              data-via="womenshealthmag"
+              data-count="vertical">Tweet</a>
+            </div>
+          </div>
+        </div>
+        <p class="content-category" style="padding-bottom: 6px;">BENEFITS OF CHOCOLATE</p>
+        <h2>9 Health Benefits of Chocolate</h2>
+
+        <p class="tagline">Chocolate isn't junk food anymore! Here, the health perks of your new favorite superfood</p>
+        <p class="author"></p>
+
+        <div class="video-slide-mod">
+                      <a class="slide-prevnone" href="/health/benefits-of-chocolate"><img src="/sites/all/themes/whtheme/images/social/slide-arrow-prev-off.gif" /></a>
+            
+          
+                      <a class="slide-next" href="/health/benefits-of-chocolate?page=1"></a>
+          
+                        <div class="slider-mainold">
+                <div class="image-container">
+                  <img src="http://www.womenshealthmag.com/files/wh6_uploads/images/eat-choc-01.jpg" />
+                  <div class="slider-photo-byline">Photograph By iStockphoto/Thinkstock</div>
+                </div>
+              </div>
+                    </div>   
+        <div class="detail">
+          <div style ="color:#666666;font:12px arial,sans-serif;" >
+          1 of 10          </div>
+                    <h3 style="font-size: 16px;">Why You Should Eat Chocolate</h3>
+                    <p>Superfoods don't just come from your supermarket's produce aisle. In fact those chocolate candy bars next to the gummy bears now qualify. Study after study proves that dark chocolate—sweet, rich, and delicious—is good for more than curing a broken heart. 
+
+<p>The secret behind its powerful punch is cacao, also the source of the sweet's distinct taste. Packed with healthy chemicals like flavonoids and theobromine, this little bean is a disease-killing bullet. The only problem? Cacao on its own is bitter, chalky, nasty stuff. 
+</p>
+Enter milk, sugar, and butter—good for your taste buds, not always good for your health. Besides adding calories, these can dilute the benefits of cacao. So snack smart: Stick to healthy chocolate with at least 70 percent cacao (or cocoa, which is cacao in its roasted, ground form). As long as the content is that high, says Mary Engler, Ph.D., a professor of physiological nursing at the University of California at San Francisco, you can reap the benefits from eating only small amounts. Because of its high fat and sugar content, limit yourself to 7 ounces, or about four dark chocolate bars, a week. 
+</p>
+<p><b>Here, 9 sweet health benefits of chocolate.</b></p></p>
+        </div> <!-- /detail -->
+
+        <div class="share-btns">
+           
+        <div id="sharetools">
+          <table width="100%">
+            <tr>
+              <td class="share-cell share-print">
+                              <a href="/printwhlist?nid=31240" title="Print list" target="_blank">
+                  <img src="/sites/all/themes/whtheme/images/social_icons/print.png" border="0"/>
+                </a>
+                            </td>
+              <td class="share-separator">
+               <img alt="" src="/sites/all/themes/whtheme/images/social_icons/separator.png" width="1" height="21" />
+              </td>
+              <td class="share-cell share-email">
+                <a href="mailto:?subject=9 Health Benefits of Chocolate&amp;body=http://www.womenshealthmag.com/health/benefits-of-chocolate?cm_mmc=Twitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate"   title="Email"  >
+                  <img src="/sites/all/themes/whtheme/images/social_icons/email.png" alt="Email" width="40" height="30" /></a>
+              </td>
+              <td class="share-separator">
+                <img alt="" src="/sites/all/themes/whtheme/images/social_icons/separator.png" width="1" height="21" />
+              </td>
+              <td class="share-cell share-facebook">
+                <a id="button_facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate&amp;t=9+Health+Benefits+of+Chocolate"  title="Send to Facebook"    target="_blank" >
+                  <img src="/sites/all/themes/whtheme/images/social_icons/facebook.png" alt="Send to Facebook" width="34" height="30" /></a>
+              </td>
+              <td class="share-separator">
+                <img alt="" src="/sites/all/themes/whtheme/images/social_icons/separator.png" width="1" height="21" />
+              </td>
+              <td class="share-cell share-twitter">
+                <a href="#"  title="Tweet This"  onClick="javascript:popload('http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate', 'Healthy Chocolate: 9 Health Benefits of Chocolate | Women\'s Health Magazine');"><img src="http://pre-drupal.womenshealthmag.com/sites/all/themes/whtheme/images/social_icons/twitter.png" alt="Tweet This"
+               width="38" height="30" /></a>
+              </td>
+              <td class="share-separator">
+                <img alt="" src="/sites/all/themes/whtheme/images/social_icons/separator.png" width="1" height="21" />
+              </td>
+               <td class="share-cell share-stumbleupon">
+                <a id="button_stumbleupon"  title="Send to StumbleUpon"  target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate%3Fcm_mmc%3DTwitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate&amp;title=9+Health+Benefits+of+Chocolate" >
+                  <img src="/sites/all/themes/whtheme/images/social_icons/stumbleupon.png" alt="Send to StumbleUpon" width="35" height="30" /></a>
+              </td>
+              <td class="share-separator">  
+                <img alt="" src="/sites/all/themes/whtheme/images/social_icons/separator.png" width="1" height="21" />
+              </td>
+              <td class="share-cell share-googleplus">
+                <a id="button_gplus" target="_blank" href="#"  title="Share with Google+">
+                  <div class="googleplus">
+                    <div class="googlehider">
+                      <g:plusone annotation="none"></g:plusone>
+              
+                      <!-- Place this render call where appropriate -->
+                      <script type="text/javascript">
+                        // <![CDATA[
+                        window.___gcfg = {lang: 'en-GB'};  
+
+                        (function() {  
+                          var po = document.createElement('script');
+                          po.type = 'text/javascript';
+                          po.async = true;
+                          po.src = 'https://apis.google.com/js/plusone.js';
+                          var s = document.getElementsByTagName('script')[0];
+                          s.parentNode.insertBefore(po, s);
+                        })();
+                        // ]]>
+                      </script>
+                    </div>
+                    <img src="/sites/all/themes/whtheme/images/social_icons/googleplus.png" alt="Share with Google+" class="mygoogle" width="35" height="30" />
+                  </div></a>
+              </td>
+            </tr>
+          </table>
+  
+          <div class="cl"></div>
+        </div> <!-- /sharetools -->
+
+        <!-- For Twitter -->
+		<script type="text/javascript">
+		   // <![CDATA[
+			function popload(url, title)
+			{
+			url1 = escape(url) ;
+			title1 = escape(title);
+			mywindow = window.open("https://twitter.com/share?url=" + url + "&via=womenshealthmag" + "&related=wintodaysweeps" + "&text=" + title1, "mywindow", "location=1,status=1,scrollbars=1,  width=500,height=700");
+			}
+			 // ]]>
+		</script>
+        </div>
+       </div> <!-- /mid-content-mod -->
+        <div id="slideshow-bottom-region">
+          <div class="dfp-ad-block">
+            <div class="ad-label">ADVERTISEMENT</div>       
+                <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=300x250.2;tile=' + dfptile + ';' + dfpdcopt + 'sz=300x250;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=300x250;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=300x250;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>          </div>
+          <div class="dfp-ad-block">
+            <div class="ad-label">ADVERTISEMENT</div>
+            <div class="content-mod-right1">
+                  <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'adsense';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=adsense;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=300x250.3;tile=' + dfptile + ';' + dfpdcopt + 'sz=300x251;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=300x251;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=300x251;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>            </div>
+          </div>
+
+        </div>
+          <div style="clear:both"></div>
+                    <!-- Comments -->
+          <div id="comments-region">
+           <div id="block-rodalecomments-0" class="">
+  <div class="content">
+    <div id="block-rodalecomments-0-ajax-content"><div id="block-rodalecomments-0-original-content" style="display:none"><div class="rodale-block-comments">
+      <div class="comments-header">
+
+<p class="login-register loggedin"><a href="/cas?login=1&amp;callback=health%2Fbenefits-of-chocolate">Log in</a> or <a href="https://member.rodale.com/membercenter/mvc/createUser?site=womenshealth&amp;returnUrl=http%3A%2F%2Fwww.womenshealthmag.com%2Fhealth%2Fbenefits-of-chocolate">Register</a> to comment</p>
+      </div><!-- /comments-header -->
+
+<!-- Don't index comments -->
+<!--googleoff: all-->
+<div id="comments" class="">
+  
+  
+  <a id="comment-39259"></a>
+<div class="comment-item">
+  <p class="by-line">
+    By SamJ274  </p> <!-- /by-line -->
+  <p>
+    <!--paging_filter--><p>I read this article few months ago, I followed the advice but it totally didn't work for me.</p>
+<p>I thought, I was gonna live all my life with this problems in my dating life until I found FREE  <a href="http://attracttruelovebook.com/" target="_blank">Attract True Love Blog</a> </p>
+<p>After I read a book and followed the advice, a miracle happened! :)  </p>
+<p>I met a man of my dreams and got married right after I finished reading the book. (and he's great!)</p>
+<p>I'm so happy now! I finally realized what it takes to have a happy relationship and how easy it is.</p>
+<p>I advise everyone  to read these<br />
+ <a href="http://attracttruelovebook.com/" target="_blank">How To Use Your Inner Power to Get A Man Of Your Dreams</a></p>
+<p>Highly Recommended!!</p>
+  </p>
+  <p class="foot-note">
+    Feb 19 2012 - 12:10am  </p> <!-- /foot-note -->
+</div> <!-- /comment-item -->
+
+  
+	
+</div> <!-- /comments -->
+<!--googleon: all-->
+
+
+      <script type="text/javascript">
+        // <![CDATA[
+        
+        var intJRSet;
+        var initJR = 0;
+        var intJRChecker = function() {
+        	if ($(".rpxnow_lightbox").css("display") == "none") {
+        		if (initJR > 3) {
+        			initJR = 0;
+        			clearInterval(intJRSet);
+        			janrainCommentFinished();
+        		}
+        	}
+        	initJR++;
+        };
+        
+        // ]]>
+      </script>
+
+</div> <!-- /rodale-block-comments -->
+        <script type="text/javascript">
+          // <![CDATA[
+					try {
+
+
+
+					  $("#comment-form").submit(function() {
+				  		var commentVal = $("#edit-comment").val();
+				  		if ($.trim(commentVal) != "") {	  
+								if ($("#socialPublishCBox").attr("checked") &&
+									  ($("#socialPublishCBox").attr("woj") != "OFF")) {
+
+									doShareCommentJanrain(commentVal);
+									intJRSet = setInterval(intJRChecker, 1000);
+								} else {
+									return true;
+								}
+				  		} else {
+  							alert("Please enter a valid comment.");
+								return false;
+			  			}
+				  		return false;
+						});
+					}
+				  catch (e) {}	
+					// ]]>
+				</script>
+
+</div></div>  </div>
+
+  </div><!-- /block-rodalecomments-0 -->
+          </div> <!-- /comments-region -->
+                   <div style="clear:both"></div>
+        <!--END Content Area-->
+    </div> <!-- /grid-666 left-column -->
+    
+    <div class="grid-330 right-column">
+			<div class="panel-display panel-1col clear-block" id="mini-panel-right_rail">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-wh-1" >
+  
+  
+  
+  <div class="pane-content">
+    <script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+        <div class="content-mod-right">
+          <h2>
+            <img alt="" src="/sites/all/themes/whtheme/images/hd_todaysVideo.png" style="width: 314px; height: 21px;" />
+          </h2>
+          <div class="video-detail-section">
+            
+            
+    
+    <!-- whtheme_get_bc_player_html -->
+    <div style="display:none"></div>
+    <object id="myExperience776517776001" class="BrightcoveExperience">
+      <param name="bgcolor" value="#FFFFFF" />
+      <param name="width" value="310" />
+      <param name="height" value="285" />
+      <param name="playerID" value="1137768650001" />
+      <param name="playerKey" value="AQ~~,AAAAAB_Ky8s~,__yqrtk63OQyXWuLEWFGoAFk7xdj6n_5"/>
+      <param name="isVid" value="true" />
+      <param name="isUI" value="true" />
+      <param name="dynamicStreaming" value="true" />
+      <param name="@videoPlayer" value="776517776001" />
+      <param name="wmode" value="transparent" />
+    </object>
+    <script type="text/javascript">$(document).ready(function() { brightcove.createExperiences(); });</script>
+    <!-- End of Brightcove Player -->
+
+
+            
+            <div class="seemorevideos">
+              <a href="/video">See More Videos</a>
+            </div> <!-- /seemorevideos -->
+          </div> <!-- /video-detail-section -->
+        </div> <!-- /content-mod-right -->
+  </div>
+
+  
+  </div>
+<div class="panel-region-separator"></div><div class="panel-pane pane-block pane-block-142" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="ad300-hp-top">
+<div class="ad-label">ADVERTISEMENT</div>
+	    <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'chocolate';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=chocolate;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=300x250.1;tile=' + dfptile + ';' + dfpdcopt + 'sz=300x250;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=300x250;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=300x250;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript></div>
+  </div>
+
+  
+  </div>
+<div class="panel-region-separator"></div><div class="panel-pane pane-views pane-win-today-homepage-block" >
+  
+  
+  
+  <div class="pane-content">
+    <div class="view view-win-today-homepage-block view-id-win_today_homepage_block view-display-id-block_1 view-dom-id-1">
+  
+  
+  
+  
+      <div class="view-content">
+      <div class="content-mod-right mod-right-height-m1">
+  <h2><a href="http://www.womenshealthmag.com/win-today" title="Enter the Win Today sweepstakes"><img height="21" width="314" alt="Sweepstakes" src="/sites/all/themes/whtheme/images/hd_sweepstakes.png" /></a></h2>
+  <div class="wt-block-inner">
+    <a href="http://www.womenshealthmag.com/win-today"><img src="http://cdn.womenshealthmag.com/files/wintoday/20120329-150.jpg" 
+      width="150" height="150" class="feature-img" 
+      alt="Shoes from Ballasox" /></a>
+    <div class="detail">
+      <div class="detail-inner" style="margin-bottom:-8px;">
+        <h3><a href="http://www.womenshealthmag.com/win-today" title="Enter the Win Today sweepstakes"><img height="17" width="147" alt="Win Today" src="/sites/all/themes/whtheme/images/hd_winToday_s.png" /></a></h3>
+        <a href="http://www.womenshealthmag.com/win-today"><h4>Shoes from Ballasox</h4></a>
+        <p><a href="http://www.womenshealthmag.com/win-today">We&#039;re giving away handy foldable shoes from Ballasox worth $60!</a></p>
+      </div> <!-- /detail-inner -->
+      <a class="link-win-today" href="http://www.womenshealthmag.com/win-today"><img height="19" width="150" alt="Enter Sweepstakes" src="/sites/all/themes/whtheme/images/btn_enterSweepstakes_s.png" /></a>
+    </div> <!-- /detail -->
+    <div class="cl"></div>
+  </div> <!-- /wt-block-inner -->
+</div> <!-- /content-mod-right -->
+    </div>
+  
+  
+  
+  
+  
+  
+</div><!-- /.view -->
+  </div>
+
+  
+  </div>
+<div class="panel-region-separator"></div><div class="panel-pane pane-block pane-wh-2" >
+  
+  
+  
+  <div class="pane-content">
+    <div class='content-mod-right mod-right-height-s1'>
+                  <h2><img height='21' width='314' alt='More Fun Stuff' src='http://www.womenshealthmag.com/sites/all/themes/whtheme/images/hd_morefunstuff.png'></h2>                  
+                  <ul id='mod-right-fun-stuff'>
+                    <li class='mobile'><a href='http://www.womenshealthmag.com/fitness/wh-workouts-for-iphone' target='_blank'></a></li>
+                    <li class='guides'><a href='http://www.womenshealthmag.com/life/womens-health-pdf-downloads' target='_blank'></a></li>
+                    <li class='newsletters'><a href='http://www.womenshealthmag.com/newsletter' target='_blank'></a></li>
+                    <li class='video'><a href='http://www.womenshealthmag.com/video' target='_blank'></a></li>
+                    <li class='tumblr'><a href='http://womenshealthmag.tumblr.com/' target='_blank'></a></li>
+                  </ul>
+                </div>  </div>
+
+  
+  </div>
+<div class="panel-region-separator"></div><div class="panel-pane pane-block pane-block-147" >
+  
+  
+  
+  <div class="pane-content">
+    <img src='/sites/all/themes/whtheme/images/newoutbrain.gif' alt='Related Stories'  style='padding-left :15px;'><div class="OUTBRAIN" data-src="http://www.womenshealthmag.com/health/benefits-of-chocolate?cm_mmc=Twitter-_-womenshealth-_-content-food-_-healthbenefitsofchocolate" data-widget-id="SB_1" data-ob-template="WomensHealth" ></div>
+<script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+    <div class="cl"></div>
+    <!--END Main Content-->
+   </div>
+  </div>
+
+    <div id="block-block-160" class="">
+  <div class="content">
+    <script type="text/javascript" src="http://content.dl-rms.com/rms/mother/17504/nodetag.js"></script>
+<!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:6034733,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/b?c1=2&c2=6034733&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="display:none" width="0" height="0" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-eejb91b8MVhDI"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-eejb91b8MVhDI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603648h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603648h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+
+<!-- Legolas Marketplace tag for Rodale-->
+<script type="text/javascript" src="http://rt.legolas-media.com/lgrt?ci=2&ti=14320&pbi=10901"></script>
+
+<!-- END Legolas Marketplace tag for Rodale -->  </div>
+
+  </div><!-- /block-block-160 -->
+
+<div id="footer">
+  <div class="2FreeTrialDiv">
+        <script type="text/javascript">
+
+      // <![CDATA[
+      tmpdfpkw = dfpkw;
+      dfpkw = 'bottom_banner';
+      dfpdcopt = '';
+      document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/womenshealth/health;kw=bottom_banner;article=9_health_benefits_of_chocolate;topic=;sbtpc=healthbenefitsofchocolate;slot=970x140;tile=' + dfptile + ';' + dfpdcopt + 'sz=970x140;page=' + page_no +';ord=' + ord + '?"><\/script>');
+      dfptile++;
+      dfpkw = tmpdfpkw;
+      // ]]>
+    </script>
+    <noscript>
+      <a href="http://ad.doubleclick.net/jump/womenshealth/noscript;kw=noscript;sz=970x140;ord=123456789?" target="_blank" >
+        <img src="http://ad.doubleclick.net/ad/womenshealth/noscript;kw=noscript;sz=970x140;ord=123456789?" border="0" alt="" />
+      </a>
+    </noscript>  </div>
+  <div class="footer-content">
+    <div id="footer-top"><a href="#"><img src="/sites/all/themes/whtheme/images/footer/wh-back-to-top-2011.png" /></a></div>
+    <div id="footer-col-set">
+      <div class="footer-col" id="footer-col-01">
+        <!-- Categories -->
+        <h4>Categories:</h4>
+        <ul class="sections">
+          <li class="menu-75 first"><a href="/fitness" title="Fitness">Fitness</a></li>
+<li class="menu-5672"><a href="/sex-and-relationships" title="sex &amp; love">Sex &amp; Love</a></li>
+<li class="menu-5673"><a href="/nutrition" title="Food">Food</a></li>
+<li class="menu-5674"><a href="/weight-loss" title="Weight Loss">Weight Loss</a></li>
+<li class="menu-86140"><a href="http://www.eatthisnotthatbook.com/sm?cm_mmc=wh.com-_-website-_-splash_page-_-ETNT_Supermarket_HC&amp;amp;keycode=201868" title="Buy the book">Eat This!</a></li>
+<li class="menu-79"><a href="/health" title="Health">Health</a></li>
+<li class="menu-5676"><a href="/beauty" title="Beauty">Beauty</a></li>
+<li class="menu-10639"><a href="/style" title="Style">Style</a></li>
+<li class="menu-86139 last"><a href="http://www.womenshealthmag.com/video#/video/all" title="Videos">Video</a></li>
+        </ul>
+        <!-- Categories [End] -->
+    
+        <!-- Help -->
+        <h4>Help:</h4>
+        <ul class="sections">
+          <li class="menu-61362 first"><a href="http://www.womenshealthmag.com/about-us" title="" style="background-color: #; color: #; ">About Women&#039;s Health</a></li>
+<li class="menu-61364"><a href="http://www.womenshealthmag.com/faqs" title="" style="background-color: #; color: #; ">FAQ&#039;s</a></li>
+<li class="menu-61363"><a href="https://customerservice.womenshealthmag.com/servlet/CSGateway?cds_mag_code=WMH" title="" style="background-color: #; color: #; ">Customer Service</a></li>
+<li class="menu-61365 last"><a href="http://www.womenshealthmag.com/contact-us" title="" style="background-color: #; color: #; ">Contact Us</a></li>
+        </ul>
+         <!-- Help [End] -->
+      </div>
+
+      <div class="footer-col" id="footer-col-02">
+        <h4>Services:</h4>
+        <!-- Services -->
+        <ul class="sections">
+          <li class="menu-4981 first"><a href="https://customerservice.womenshealthmag.com/servlet/CSGateway?cds_mag_code=WMH" title="" style="background-color: #; color: #; ">Manage Your Subscription</a></li>
+<li class="menu-120"><a href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&amp;mktOfferId=WMH27076&amp;keycode=I9LWA004&amp;cm_mmc=womenshealthmag.com-_-Footer-_-Footer%2027076-_-OfferId_WMH27076_keycode_I9LWA004" style="background-color: #; color: #; ">Magazine Subscriptions</a></li>
+<li class="menu-121 last"><a href="https://secure.rodale.com/webapp/wcs/stores/servlet/OaeEntryPage?storeId=10057&amp;mktOfferId=WMH31706&amp;keycode=G0AW0050&amp;cm_mmc=womenshealthmag.com-_-Footer-_-Footer%20Gift%2031706-_-OfferId_WMH31706_keycode_G0AW0050" style="background-color: #; color: #; ">Gift Subscriptions</a></li>
+        </ul>
+        <!-- Services [End] -->
+      </div>
+
+      <div id="footer-col-middle">
+        <div id="wh-twheet-bubble" class="cl">
+          <div class="tweetdata">
+                      
+                        <div id="twtr-widget-1" class="twtr-widget twtr-widget-profile">
+              <div class="twtr-doc" style="width: 235px;">
+                <div class="twtr-hd"></div>
+                <div class="twtr-bd">
+                
+                  <div class="twtr-timeline" style="height: auto;">
+                    <div class="twtr-tweets">
+                      <div class="twtr-reference-tweet"></div>
+                    
+                      <div id="tweet-id-1" class="twtr-tweet">
+                        <div class="twtr-tweet-wrap">
+                          <div class="twtr-avatar"></div>
+                          <div class="twtr-tweet-text">
+                            <p>
+                              The healthiest and safest fish to eat? Wild Alaskan salmon and wild-caught Pacific sardines. (via @RodaleNews) <a href="http://t.co/Fy73Jnki" title="http://t.co/Fy73Jnki">http://t.co/Fy73Jnki</a>                              <em><a href="http://twitter.com/WomensHealthMag/status/185263836717260802">5 hours ago</a>                                ·
+                                <a class="twtr-reply" href="http://twitter.com/intent/tweet?in_reply_to=185263836717260802" target="_blank">reply</a>
+                                ·
+                                <a class="twtr-rt" href="http://twitter.com/intent/retweet?tweet_id=185263836717260802" target="_blank">retweet</a>
+                                ·
+                                <a class="twtr-fav" href="http://twitter.com/intent/favorite?tweet_id=185263836717260802" target="_blank">favorite</a>
+                              </em>
+                              
+                              <div class="wrapper-topsy" style="float:right; text-align:right; right:10px; bottom:0px; position:absolute; z-index:10;">
+                                <script src="http://cdn.topsy.com/topsy.js?init=topsyWidgetCreator" type="text/javascript"></script>
+                                <div class="topsy_widget_data topsy_theme_jade">
+                                  <!--{"url":"http://t.co/Fy73Jnki", "title":"The healthiest and safest fish to eat? Wild Alaskan salmon and wildcaught Pacific sardines. (via @RodaleNews) "}-->                                </div> <!-- /topsy_widget_data -->
+                              </div> <!-- /wrapper-topsy -->
+                              
+                            </p>
+                          </div> <!-- /twtr-tweet-text -->
+                        </div> <!-- /twtr-tweet-wrap -->
+                      </div> <!-- /tweet-id-1 -->
+                    </div> <!-- /twtr-tweets -->
+                  </div><!-- /twtr-timeline -->
+                
+                  <div class="twtr-ft"></div>
+                </div> <!-- /twtr-bd -->
+              </div> <!-- /twtr-doc -->
+            </div> <!-- /twtr-widget-1 -->
+            
+          </div> <!-- /tweetdata -->
+          <div class="cl"></div>
+        </div> <!-- /wh-twheet-bubble -->
+
+        <div id="wh-twheet-bubble-bottom">
+          <img src="/sites/all/themes/whtheme/images/footer/wh-twheet-bubble-bottom.gif" 
+            alt="Twheet!" width="255" height="63" />
+        </div>
+
+        <div id="wh-twheet-follow" style="margin-bottom:10px; color: #666;">
+          <p>Follow <a href="http://www.twitter.com/WomensHealthMag" target="_blank">@WomensHealthMag</a></p>
+          <p>Follow <a href="http://www.twitter.com/WinTodaySweeps" target="_blank">@WinTodaySweeps</a></p>
+        </div>
+        <div id="wh-twheet-cover">
+          <img src="/sites/all/themes/whtheme/images/footer/wh-twheet-cover.gif" 
+            alt="Women's Health Cover thumbnail" width="40" height="40"
+            style="float: left; margin-right: 15px;" />
+          <p style="color:#3b599a; font-size: 120%; font-weight: bold;">Women's Health</p>
+          <div>
+            <fb:like href="http://www.facebook.com/womenshealthmagazine" send="true" layout="button_count" width="450" show_faces="true" font=""> </fb:like> 
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col" id="footer-col-03">
+        <h4>WH International:</h4>
+        <ul class="sections">
+          <li class="menu-25880 first"><a href="http://www.womenshealth.com.ar" title="" style="background-color: #; color: #; ">Argentina</a></li>
+<li class="menu-25881"><a href="http://au.lifestyle.yahoo.com/womens-health" title="" style="background-color: #; color: #; ">Australia</a></li>
+<li class="menu-25882"><a href="http://revistawomenshealth.abril.com.br/" title="" style="background-color: #; color: #; ">Brazil</a></li>
+<li class="menu-25883"><a href="http://www.womenshealth.de" title="" style="background-color: #; color: #; ">Germany</a></li>
+<li class="menu-25884"><a href="http://www.womenshealthsa.co.za/" title="" style="background-color: #; color: #; ">South Africa</a></li>
+<li class="menu-25885"><a href="http://www.womenshealththailand.com/" title="" style="background-color: #; color: #; ">Thailand</a></li>
+<li class="menu-25886 last"><a href="http://womenshealth.com.tr/" title="" style="background-color: #; color: #; ">Turkey</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" id="footer-col-04">
+        <h4>Other Rodale Sites:</h4>
+        <!-- Other Rodale Sites -->
+        <ul class="sections">
+          <li class="menu-93 first"><a href="http://www.rodale.com" style="background-color: #; color: #; ">Rodale</a></li>
+<li class="menu-101"><a href="http://www.RunnersWorld.com" style="background-color: #; color: #; ">Runner&#039;s World</a></li>
+<li class="menu-102"><a href="http://www.RunningTimes.com" style="background-color: #; color: #; ">Running Times</a></li>
+<li class="menu-103"><a href="http://www.bicycling.com" style="background-color: #; color: #; ">Bicycling</a></li>
+<li class="menu-104"><a href="http://www.mountainbike.com" style="background-color: #; color: #; ">Mountain Bike</a></li>
+<li class="menu-105"><a href="http://www.prevention.com" style="background-color: #; color: #; ">Prevention</a></li>
+<li class="menu-106"><a href="http://www.menshealth.com" style="background-color: #; color: #; ">Men&#039;s Health</a></li>
+<li class="menu-107 last"><a href="http://www.organicgardening.com" style="background-color: #; color: #; ">Organic Gardening</a></li>
+        </ul>
+        <!-- Other Rodale Sites [End] -->
+    
+    
+        <h4>Corporate</h4>
+        <!-- Corporate -->
+        <ul class="sections">
+          <li class="menu-113 first"><a href="http://www.womenshealthmag.com/mediakit" style="background-color: #; color: #; ">Media Kit</a></li>
+<li class="menu-115 last"><a href="http://www.rodaleinc.com/your-privacy-rights" style="background-color: #; color: #; ">Your Privacy Rights</a></li>
+        </ul>
+        <!-- Corporate [End] -->
+      </div>
+      <div class="cl"></div>
+    </div>
+
+  </div> <!-- /footer-content -->
+</div> <!-- /footer -->
+<!--END Footer Area-->
+
+<div class="privacy">
+  <div id="copyright">&copy; 2012 Rodale Inc. All Rights Reserved.</div>
+  <div id="privacy-rights"><a href="http://www.rodaleinc.com/your-privacy-rights">Your Privacy Rights</a></div>
+  <div class="cl"></div>
+</div> <!-- /privacy -->
+
+<!-- Facebook loader -->
+<div id="fb-root"></div>
+<script>
+  // <![CDATA[
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '240975792599718',
+      status: true,
+      cookie: true,
+      xfbml: true,
+      channelURL: 'http://www.womenshealthmag.com/channel.html'  // custom channel
+    });
+  };
+  
+  // Load the SDK Asynchronously.
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+  // ]]>
+</script>
+
+<!-- Chartbeat pixel -->
+<script type="text/javascript">
+var _sf_async_config={uid:15891,domain:"womenshealthmag.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+      (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+      "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+ loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<!-- Chartbeat pixel -->
+
+<!-- CrazyEgg heat map -->
+<script type="text/javascript" src="http://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/2387.js"> </script>
+
+    <script type="text/javascript">
+      // <![CDATA[
+      var node = new Array("slideshow", "31240");
+      if ("undefined" != typeof(registration_header)) {
+        registration_header();
+      }
+      // ]]>
+    </script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-3177994-1"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.type="text/javascript";ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})()
+//--><!]]>
+</script>
+</body>
+</html>

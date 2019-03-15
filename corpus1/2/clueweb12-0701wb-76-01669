@@ -1,0 +1,776 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-05T23:53:29Z
+WARC-TREC-ID: clueweb12-0701wb-76-01669
+WARC-Target-URI: http://www.teenanalyst.com/taxes/currentcapitalgainstax.html
+WARC-Payload-Digest: sha1:RYQ4NQD3MQAPHOGTYEWIG2BBNY4UQZ5R
+WARC-IP-Address: 174.129.193.91
+WARC-Record-ID: <urn:uuid:1405cba4-bb20-4915-aae0-b899fc433912>
+Content-Type: application/http; msgtype=response
+Content-Length: 45856
+
+HTTP/1.1 200 OK
+Date: Mon, 05 Mar 2012 23:53:30 GMT
+Server: Apache/2.2.9 (Fedora)
+X-Powered-By: PHP/5.2.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="keywords" content="Current Capital Gains Tax Allowance, Current Capital Gains Tax Rate, Current Capital Gains Tax, Income Tax, Capital Gains Tax, Capital Gains, Capital Gains Tax Rate, Capital Gain Tax">
+<meta name="description" content="Current Long Term Capital Gains Tax Rate, Current Short Term Capital Gains Tax, Current Capital Gains Tax Allowance">
+<script>
+function showhide(link, num) {
+	var list = document.getElementById("hidelist" + num);
+	if (!list.getElementsByClassName) {
+		list.getElementsByClassName = function(cl) {
+			var retnode = [];
+			var myclass = new RegExp('\\b'+cl+'\\b');
+			var elem = list.getElementsByTagName('*');
+			for (var i = 0; i < elem.length; i++) {
+				var classes = elem[i].className;
+				if (myclass.test(classes)) retnode.push(elem[i]);
+			}
+			return retnode;
+		}
+	}
+	var items = list.getElementsByClassName("list_more");
+	if (items[0].style.display=='none') {
+		nd = '';
+	} else {
+		nd = 'none';
+	}
+	for (var i=0; i < items.length;  i++) {
+		items[i].style.display = nd;
+	}
+	if (link != null) {
+		if (nd=='none') {
+			link.innerHTML = 'More';
+		} else {
+			link.innerHTML = 'Less';
+		}
+	}
+	return false;
+}
+</script>
+<title>
+Current Capital Gains Tax - Current Capital Gains Tax Rate - Current Capital Gains Tax Allowance - Your TeenAnalyst.com</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(/inc/images/bg.jpg);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script type="text/javascript">
+function toggleComment() {
+	d = document.getElementById("commentform").style;
+	if (d.display=="none") {
+		d.display="";
+	} else {
+		d.display="none";
+	}
+	return false;
+}
+</script>
+<link href="/inc/styles.css" rel="stylesheet" type="text/css"></head>
+
+<body>
+<center>
+<table width="968" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td width="349" background="/inc/images/header_bg.gif"><a href="http://www.teenanalyst.com/"><img height="113" width="345" src="/inc/images/logo.jpg"/></a></td>
+    <td width="551" valign="top" background="/inc/images/header_bg.gif" align="left"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+        <td height="14" valign="middle" align="left" class="greenbarmenutext"><table height="14" width="539" cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr>
+	  <td valign="middle" align="right"><a class="greenbarmenutext" href="http://www.teenanalyst.com">Home</a>     <a class="greenbarmenutext" href="http://www.teenanalyst.com/about/">About Us</a>    <a class="greenbarmenutext" href="http://www.teenanalyst.com/contact/">Contact Us</a>     <a class="greenbarmenutext" href="http://www.teenanalyst.com/contribute/">Contribute</a> </td>
+          </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td height="35" valign="middle" align="left"><table width="539" cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr>
+	    <td valign="middle" align="right"><form method="get" action="http://www.teenanalyst.com/search.php">
+			<img style="vertical-align: middle" height="35" width="101" src="/inc/images/search_text.gif"/>
+			<input name="q">
+			<input style="vertical-align: middle" type="image" height="35" width="23" src="/inc/images/search_button.gif"/>
+		</form></td>
+            </tr>
+        </tbody></table></td>
+      </tr>
+      <tr>
+        <td height="25" align="right" style="padding-right: 45px"><table cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/investing/">Investing</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/stocks/">Stocks</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/bonds/">Bonds</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/funds/">Mutual Funds</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/business/">Biz</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/credit/">Credit</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/careers/">Career</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/college/">College</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/economics/">Economics</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/taxes/">Tax</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+<td><table cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+		<td width="5"><img height="25" width="5" src="/inc/images/tab_left.gif"/></td>
+		<td valign="middle" background="/inc/images/tab_bg.gif" align="center" class="tabtext" nowrap><a class="tabtext" href="http://www.teenanalyst.com/more/">More</a></td>
+		<td width="6"><img height="25" width="6" src="/inc/images/tab_right.gif"/></td>
+	</tr></tbody>
+</table></td>
+            </tr>
+          </tbody></table></td>
+      </tr>
+      <tr>
+        <td height="39" align="right"><img height="39" width="35" src="/inc/images/right_c.gif"/></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+<table width="968" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="34" background="/inc/images/bg_left.png">&nbsp;</td>
+    <td width="900" align="left" valign="top" bgcolor="#FFFFFF">
+      <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+
+	  <td align="center"><script type="text/javascript"><!--
+	  google_ad_client = "pub-3431743524996604";
+/* TeenAnalyst - Top Links */
+google_ad_slot = "6669688104";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></td>
+        </tr>
+      </table>
+
+<table width="900" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td width="10"> </td>
+          <td width="200" valign="top" align="left">
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Marketplace</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><script type="text/javascript"><!--
+	google_ad_client = "pub-3431743524996604";
+/* TeenAnalyst - LHS 160x90, created 8/27/09 */
+google_ad_slot = "7280539517";
+google_ad_width = 160;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Related Articles</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist2"><li class="linktext"><a href="http://www.teenanalyst.com/taxes/federalsalestaxdeduction.html">Federal Sales Tax Deduction</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/capitalgainstaxstocks.html">Capital Gains Tax Stocks</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/taxquestionscapitalgains.html">Tax Questions Capital Gains</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/incometaxtable.html">Income Tax Table</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/avoidcapitalgainstax.html">Avoid Capital Gains Tax</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/capitalgainstaxhouse.html">Capital Gains Tax House</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/businessincometaxdeductions.html">Business Income Tax Deductions</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/pa40taxform.html">Pa 40 Tax Form</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/federalgifttax.html">Federal Gift Tax</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/taxes/homecapitalgainstax.html">Home Capital Gains Tax</a></li>
+<li class="linktext list_more"><a href="http://www.teenanalyst.com/stocks/incometaxonlinecalculator.html">Income Tax Online Calculator</a></li>
+<li class="linktext list_more"><a href="http://www.teenanalyst.com/funds/mutualfundstax.html">Mutual Funds Tax</a></li>
+<li class="linktext list_more"><a href="http://www.teenanalyst.com/stocks/taxoninheritance.html">Tax On Inheritance</a></li>
+</ul><a href="#" onclick="return showhide(this, 2)">More</a><script>showhide(null, 2);</script></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Related Definitions</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist3"><li class="linktext"><a href="http://www.teenanalyst.com/glossary/w/withholding.html">Payrol Withholding</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/r/reinvestmentprivilege.html">Reinvestment Privilege</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/n/non-residentialalientax.html">Non-Residential Alien Tax</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/p/proceedssale.html">Proceeds Sale</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/i/incomedividend.html">Income Dividend</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/c/capitalgains.html">Capital Gains</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/c/capitalgainsdistribution.html">Capital Gains Distribution</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/k/kidtax.html">Kid Tax</a></li>
+</ul></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Related Categories</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist4"><li><a href="http://www.teenanalyst.com/askus/business plan/">Business Plan</a></li>
+<li><a href="http://www.teenanalyst.com/askus/home business/">Home Business</a></li>
+<li><a href="http://www.teenanalyst.com/askus/online business/">Online Business</a></li>
+<li><a href="http://www.teenanalyst.com/askus/small business/">Small Business</a></li>
+<li><a href="http://www.teenanalyst.com/business/">Business</a></li>
+<li><a href="http://www.teenanalyst.com/debt/">Debt</a></li>
+<li><a href="http://www.teenanalyst.com/finance/">Finance</a></li>
+<li><a href="http://www.teenanalyst.com/glossary/">Glossary</a></li>
+<li><a href="http://www.teenanalyst.com/mortgage/">Mortgage</a></li>
+<li><a href="http://www.teenanalyst.com/taxes/">Taxes</a></li>
+</ul><p>Buy china wholesale products from DHgate.com, which is the leading B2B <a href="http://www.dhgate.com">Online Trading</a> marketplace.</p></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Tip of the Day</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><p><img style="float: left" src="/inc/images/tipoftheday.jpg" alt="Tip of the Day"/> <b>Protect Yourself From Identity Theft</b></p><p>Protect Yourself From Identity 
+Theft - You should run your credit report at least once a year 
+to ensure that no one else has been using your information to obtain...</p><p><a href="http://www.teenanalyst.com/tips/protectyourselffromidentitytheft.html">read entire tip</a></p></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Related Podcasts</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist5"><li class="linktext"><a href="http://podcasts.teenanalyst.com/Bankruptcy/HowtoSaveOnTaxes.html">How to Save On Taxes</a></li>
+<li class="linktext"><a href="http://podcasts.teenanalyst.com/Financial Planning/HowtoAdjustYourWithholding.html">How to Adjust Your Withholding</a></li>
+<li class="linktext"><a href="http://podcasts.teenanalyst.com/Investing/UsingTaxestoBettertheWorld.html">Using Taxes to Better the World</a></li>
+<li class="linktext"><a href="http://podcasts.teenanalyst.com/Student Finances/TaxesonLoansUpdates.html">Taxes on Loans Updates</a></li>
+<li class="linktext"><a href="http://podcasts.teenanalyst.com/Debt/WhattheNewTaxBillMeans.html">What the New Tax Bill Means</a></li>
+</ul></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Recently Added</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist6"><li class="linktext"><a href="http://www.teenanalyst.com/investing/weighingthedecisiontorentorbuy.html">rent</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/allocationoffunds.html">Allocation Of Funds</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/pensionfundsinvestments.html">Pension Funds Investments</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/capitalcompassionfund.html">Capital Compassion Fund</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/commodityindexfunds.html">Commodity Index Funds</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/womenbusinessfunding.html">Women Business Funding</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/specialequityfund.html">Special Equity Fund</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/businessfundinguk.html">Business Funding Uk</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/pensionfundproperty.html">Pension Fund Property</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/funding/japanequityfund.html">Japan Equity Fund</a></li>
+</ul></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">You Recently Visited</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist" id="hidelist7"><li><a href="/taxes/2008capitalgainstax.html">2008 Capital Gains Tax</a></li>
+<li><a href="/taxes/inheritancetaxinformation.html">Inheritance Tax Information</a></li>
+<li><a href="/taxes/taxcutcapitalgains.html">Tax Cut Capital Gains</a></li>
+<li><a href="/taxes/businessincometaxdeductions.html">Business Income Tax Deductions</a></li>
+<li><a href="/taxes/taxexemptionform.html">Tax Exemption Form</a></li>
+</ul></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Other Great Sites</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><ul class="lhslist"><li><a href="http://www.roughneckchronicles.com/oilmarket/index.html">The Oil Market</a></li></ul></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+          </td>
+          <td width="10"> </td>
+          <td width="670" valign="top" align="left">
+<table width="670" cellspacing="0" cellpadding="0" border="0">
+              <tbody><tr>
+                <td height="31" valign="middle" background="/inc/images/content_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                    <tbody><tr>
+                      <td><h1 class="contentheader">Current Capital Gains Tax</h1></td>
+                    </tr>
+                </tbody></table></td>
+              </tr>
+              <tr>
+                <td background="/inc/images/content_bg.gif"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                    <tbody><tr>
+		      <td class="contenttext">
+<div>
+<script type="text/javascript"><!--
+google_ad_client = "pub-3431743524996604";
+/* TeenAnalyst top banner 468x60, created 8/31/09 */
+google_ad_slot = "2190069400";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<p>All kinds of incomes are taxable and in case of income from capital gain, it comes under the purview of the current <a href="http://www.teenanalyst.com/taxes/">Capital Gains</a> Tax policies and rates in the United States. The policy behind the structure of current <a href="http://podcasts.teenanalyst.com/Bankruptcy/HowtoSaveOnTaxes.html">capital gains tax rate</a> is to provide incentive to long term investors by charging them a lesser tax rate. Long term investment is the investment held for at least one year before its sale. Capital gains from short term investments are clubbed together with the other income of an individual or corporation and charged the <a href="http://podcasts.teenanalyst.com/Investing/UsingTaxestoBettertheWorld.html">income tax</a> rate which is applicable to that income bracket, and hence will work out higher than a flat rate for long term investments. </p>
+
+<div style="width: 336px; height: 280px; float: left; margin-right: 5px; margin-top: 5px;"><script type="text/javascript"><!--
+		      google_ad_client = "pub-3431743524996604";
+/* TeenAnalyst - content 250x250, created 8/27/09 */
+/*google_ad_slot = "4306558703";
+google_ad_width = 250;
+google_ad_height = 250;
+ */
+	      /* TeenAnalyst - content 336x280, created 8/28/09 */
+	      google_ad_slot = "8832417940";
+	      google_ad_width = 336;
+	      google_ad_height = 280;
+
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div><div style="width: 336px; height: 280px; float: left; margin-right: 5px; margin-top: 5px;"><script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=146417&u=adherents&width=300&height=250"></script></div><p>The current <a href="http://www.teenanalyst.com/taxes/capitalgainstaxlongterm.html">Capital Gains Tax rules</a> have a specific way of calculating the gain from the sale of an asset. In calculating taxable gain, the cost of the asset is arrived at, rather than taking the actual purchase price of the asset. This cost will include the purchase price plus any taxes or fees which are paid to acquire the asset. Fees can be for brokerage, selling, or legal expenses to name a few. Taxes can be excise, sales tax, tax on real estate and so on. Also depreciation of the asset is also taken into account while arriving at its cost during a sale. </p>
+
+<p>As per current <a href="http://www.teenanalyst.com/taxes/introtaxes.html">capital gains tax rates</a>, the capital gains tax on long term investment is 15% for all individual <a href="http://www.teenanalyst.com/taxes/federaltaxbrackets.html">income tax brackets</a> except the lowest two. People coming under the lower income brackets of 10% and 15% need not pay any capital gains tax on long term investments. All the other income brackets are charged a standard 15%. This rate has been applicable since 2003 and is going to remain the same till 2010. From 2011 onwards the capital gains tax on the profit from long term investments is going to be 15% for the lowest income bracket of 10% and for all other brackets it will be 20%. </p>
+
+<p>On collectibles that are held for more than a year, the current capital gains tax rate on the profit from their sale is 28%, and if held for a year or less the rates can go up to 35% as per STCG. In case of <a href="http://www.teenanalyst.com/business/findcapital.html">small business</a>, current capital gains tax rate on sale of stock which has been held for more than five years is 28%.</p></td>
+                    </tr>
+                </tbody></table></td>
+              </tr>
+              <tr>
+                <td><img height="18" width="670" src="/inc/images/content_bottom.gif"/></td>
+              </tr>
+          </tbody>
+</table>
+
+      <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><img src="/inc/images/spacer.gif" width="20" height="10" /></td>
+        </tr>
+      </table>
+<table width="670" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="31" align="left" valign="middle" background="/inc/images/content_header.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td class="contentheader">Discuss It!</td>
+
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" background="/inc/images/content_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="6">
+                  <tr>
+		    <td class="contenttext">
+<script type="text/javascript">
+document.write("\x3c\x64\x69\x76\x20\x69\x64\x3d\x22\x6c\x65\x61\x76\x65\x63\x6f\x6d\x6d\x65\x6e\x74\x22\x3e\x3c\x61\x20\x68\x72\x65\x66\x3d\x22\x23\x22\x20\x6f\x6e\x63\x6c\x69\x63\x6b\x3d\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x6f\x67\x67\x6c\x65\x43\x6f\x6d\x6d\x65\x6e\x74\x28\x29\x22\x3e\x4c\x65\x61\x76\x65\x20\x61\x20\x43\x6f\x6d\x6d\x65\x6e\x74\x20\x3c\x69\x6d\x67\x20\x73\x72\x63\x3d\x22\x2f\x69\x6e\x63\x2f\x69\x6d\x61\x67\x65\x73\x2f\x64\x6f\x77\x6e\x2d\x61\x72\x72\x6f\x77\x2e\x6a\x70\x67\x22\x20\x2f\x3e\x3c\x2f\x61\x3e\x3c\x2f\x64\x69\x76\x3e\x0a\x3c\x64\x69\x76\x20\x69\x64\x3d\x22\x63\x6f\x6d\x6d\x65\x6e\x74\x66\x6f\x72\x6d\x22\x20\x73\x74\x79\x6c\x65\x3d\x22\x64\x69\x73\x70\x6c\x61\x79\x3a\x6e\x6f\x6e\x65\x22\x3e\x0a\x3c\x66\x6f\x72\x6d\x20\x6d\x65\x74\x68\x6f\x64\x3d\x22\x70\x6f\x73\x74\x22\x3e\x0a\x3c\x74\x61\x62\x6c\x65\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x4e\x61\x6d\x65\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6e\x70\x75\x74\x20\x6e\x61\x6d\x65\x3d\x22\x6e\x61\x6d\x65\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x43\x6f\x6d\x6d\x65\x6e\x74\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x74\x65\x78\x74\x61\x72\x65\x61\x20\x6e\x61\x6d\x65\x3d\x22\x63\x6f\x6d\x6d\x65\x6e\x74\x22\x3e\x3c\x2f\x74\x65\x78\x74\x61\x72\x65\x61\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6d\x67\x20\x69\x64\x3d\x22\x63\x61\x70\x74\x63\x68\x61\x22\x20\x73\x72\x63\x3d\x22\x2f\x69\x6e\x63\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x5f\x73\x68\x6f\x77\x2e\x70\x68\x70\x22\x20\x61\x6c\x74\x3d\x22\x43\x41\x50\x54\x43\x48\x41\x20\x49\x6d\x61\x67\x65\x22\x20\x2f\x3e\x0a\x3c\x61\x20\x68\x72\x65\x66\x3d\x22\x23\x22\x20\x6f\x6e\x63\x6c\x69\x63\x6b\x3d\x22\x64\x6f\x63\x75\x6d\x65\x6e\x74\x2e\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64\x28\x27\x63\x61\x70\x74\x63\x68\x61\x27\x29\x2e\x73\x72\x63\x20\x3d\x20\x27\x2f\x69\x6e\x63\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x2f\x73\x65\x63\x75\x72\x69\x6d\x61\x67\x65\x5f\x73\x68\x6f\x77\x2e\x70\x68\x70\x3f\x27\x20\x2b\x20\x4d\x61\x74\x68\x2e\x72\x61\x6e\x64\x6f\x6d\x28\x29\x3b\x20\x72\x65\x74\x75\x72\x6e\x20\x66\x61\x6c\x73\x65\x22\x3e\x52\x65\x6c\x6f\x61\x64\x20\x49\x6d\x61\x67\x65\x3c\x2f\x61\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x3e\x53\x65\x63\x75\x72\x69\x74\x79\x3a\x3c\x2f\x74\x64\x3e\x3c\x74\x64\x3e\x3c\x69\x6e\x70\x75\x74\x20\x6e\x61\x6d\x65\x3d\x22\x63\x61\x70\x74\x63\x68\x61\x5f\x63\x6f\x64\x65\x22\x20\x73\x69\x7a\x65\x3d\x22\x31\x30\x22\x20\x6d\x61\x78\x6c\x65\x6e\x67\x74\x68\x3d\x22\x36\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x72\x3e\x0a\x3c\x74\x72\x3e\x0a\x3c\x74\x64\x20\x63\x6f\x6c\x73\x70\x61\x6e\x3d\x22\x32\x22\x3e\x3c\x69\x6e\x70\x75\x74\x20\x74\x79\x70\x65\x3d\x22\x73\x75\x62\x6d\x69\x74\x22\x20\x76\x61\x6c\x75\x65\x3d\x22\x44\x69\x73\x63\x75\x73\x73\x20\x49\x74\x21\x22\x3e\x3c\x2f\x74\x64\x3e\x0a\x3c\x2f\x74\x61\x62\x6c\x65\x3e\x0a\x3c\x2f\x66\x6f\x72\x6d\x3e\x0a\x3c\x2f\x64\x69\x76\x3e\x0a");
+</script>
+		    </td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="/inc/images/discussit_bottom.gif" width="670" height="22" /></td>
+            </tr>
+
+          </table>
+      <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><img src="/inc/images/spacer.gif" width="20" height="10" /></td>
+        </tr>
+      </table>
+<table width="670" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="440" align="left" valign="top">
+	<table width="40" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="31" align="left" valign="middle" background="/inc/images/440_header.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+                  <tr>
+		  <td class="contentheader">Most Popular Articles</td>
+                  </tr>
+              </table></td>
+
+            </tr>
+            <tr>
+              <td background="/inc/images/440_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="6">
+                  <tr>
+                    <td class="contenttext">
+<ul class="lhslist" id="hidelist0"><li class="linktext"><a href="http://www.teenanalyst.com/credit/validcreditcardnumber.html">Valid Credit Card Number</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/investing/compadvantages.html">Competitive Advantages </a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/bonds/canadasavingsbondsredemption.html">Canada Savings Bonds Redemption</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/askus/cannibalization.html">What is Cannibalization?</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/stocks/">Investing In Stocks </a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/business/nflteams.html">Most And Least Profitable NFL Teams</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/finance/nuvellautofinance.html">Nuvell Auto Finance</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/askus/delaware.html">Why Do So Many Companies Incorporate in Delaware?</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/bonds/">Bonds</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/economics/">Economics In Business</a></li>
+</ul>		    </td>
+                  </tr>
+              </table></td>
+
+            </tr>
+            <tr>
+              <td><img src="/inc/images/440_bottom.gif" width="440" height="22" /></td>
+            </tr>
+	  </table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+
+	<table width="40" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="31" align="left" valign="middle" background="/inc/images/440_header.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+                  <tr>
+		  <td class="contentheader">Most Popular Definitions</td>
+                  </tr>
+              </table></td>
+
+            </tr>
+            <tr>
+              <td background="/inc/images/440_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="6">
+                  <tr>
+                    <td class="contenttext">
+<ul class="lhslist" id="hidelist1"><li class="linktext"><a href="http://www.teenanalyst.com/glossary/i/inactivepost.html">Inactive Post </a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/l/littleboard.html">Little Board </a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/n/nav.html">Net Asset Value</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/t/tradingpost.html">Trading Post</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/b/boardofdirectors.html">Board of Directors</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/b/bulletinboard.html">Bulletin Board</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/e/ear.html">Effective Annual Rate (EAR)</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/h/hotcall.html">Hot Call</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/c/chairmanoftheboard.html">Chairman of the Board</a></li>
+<li class="linktext"><a href="http://www.teenanalyst.com/glossary/d/daysrange.html">Day's Range</a></li>
+</ul>		    </td>
+                  </tr>
+              </table></td>
+
+            </tr>
+            <tr>
+              <td><img src="/inc/images/440_bottom.gif" width="440" height="22" /></td>
+            </tr>
+	  </table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+
+</td>
+          <td width="10" align="left" valign="top">&nbsp;</td>
+	  <td width="220" valign="top" class="contenttext">            <table width="200" cellspacing="0" cellpadding="0" border="0">
+            <tbody><tr>
+              <td height="31" valign="middle" background="/inc/images/lhs_header.jpg" align="left"><table width="100%" cellspacing="0" cellpadding="5" border="0">
+                  <tbody><tr>
+                    <td class="lhsheader">Daily Definition</td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#f4f4f4" align="left"><table width="100%" cellspacing="0" cellpadding="6" border="0">
+                  <tbody><tr>
+                    <td class="lhstext"><p><img style="float: left; width: 60px; margin-right: 5px;" src="/inc/images/defoftheday.jpg" alt="Definition of the Day"/> <b>Tuition</b></p><p>Definition: Tuition is a fee that students pay to gain a higher education.  This fee pays for such things as instructors and facilities.Advice: Tuition figures vary widely by schools because it depends on a variety of things, including how much government support they receive, donation levels, and overall expenditures.  Private...</p><p><a href="http://www.teenanalyst.com/glossary/t/tuition.html">read entire definition</a></p></td>
+                  </tr>
+              </tbody></table></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left"><img height="23" width="200" src="/inc/images/lhs_bottom.jpg"/></td>
+            </tr>
+          </tbody></table>
+</td>
+          <td width="10">&nbsp;</td>
+
+        </tr>
+      </table>
+
+      <table width="100%" height="5" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><img src="/inc/images/spacer.gif" width="20" height="10" /></td>
+        </tr>
+      </table>
+</td>
+          <td width="10"> </td>
+        </tr>
+      </tbody></table>
+<table height="5" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+          <td><img height="10" width="20" src="/inc/images/spacer.gif"/></td>
+        </tr>
+      </tbody></table>
+      <p>&nbsp;</p>
+    </td>
+    <td width="34" background="/inc/images/bg_right.png">&nbsp;</td>
+  </tr>
+</table>
+<table width="959" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td><img height="50" width="968" src="/inc/images/footer.png"/></td>
+  </tr>
+  <tr>
+  <td valign="middle" align="center"><p class="footertext"><a href="http://www.teenanalyst.com">Home</a>     <a href="http://www.teenanalyst.com/about/index.html">About Us</a>    <a href="http://www.teenanalyst.com/contact/index.html">Contact Us</a>     <a href="http://www.teenanalyst.com/contribute/index.html">Contribute</a>     <a href="http://www.teenanalyst.com/more/index.html">Sitemap</a></p>
+<p class="footertext">
+	<a href="http://www.teenanalyst.com/glossary/a/index.html">A</a>
+	<a href="http://www.teenanalyst.com/glossary/b/index.html">B</a>
+	<a href="http://www.teenanalyst.com/glossary/c/index.html">C</a>
+	<a href="http://www.teenanalyst.com/glossary/d/index.html">D</a>
+	<a href="http://www.teenanalyst.com/glossary/e/index.html">E</a>
+	<a href="http://www.teenanalyst.com/glossary/f/index.html">F</a>
+	<a href="http://www.teenanalyst.com/glossary/g/index.html">G</a>
+	<a href="http://www.teenanalyst.com/glossary/h/index.html">H</a>
+	<a href="http://www.teenanalyst.com/glossary/i/index.html">I</a>
+	<a href="http://www.teenanalyst.com/glossary/j/index.html">J</a>
+	<a href="http://www.teenanalyst.com/glossary/k/index.html">K</a>
+	<a href="http://www.teenanalyst.com/glossary/l/index.html">L</a>
+	<a href="http://www.teenanalyst.com/glossary/m/index.html">M</a>
+	<a href="http://www.teenanalyst.com/glossary/n/index.html">N</a>
+	<a href="http://www.teenanalyst.com/glossary/o/index.html">O</a>
+	<a href="http://www.teenanalyst.com/glossary/p/index.html">P</a>
+	<a href="http://www.teenanalyst.com/glossary/q/index.html">Q</a>
+	<a href="http://www.teenanalyst.com/glossary/r/index.html">R</a>
+	<a href="http://www.teenanalyst.com/glossary/s/index.html">S</a>
+	<a href="http://www.teenanalyst.com/glossary/t/index.html">T</a>
+	<a href="http://www.teenanalyst.com/glossary/u/index.html">U</a>
+	<a href="http://www.teenanalyst.com/glossary/v/index.html">V</a>
+	<a href="http://www.teenanalyst.com/glossary/w/index.html">W</a>
+	<a href="http://www.teenanalyst.com/glossary/x/index.html">X</a>
+	<a href="http://www.teenanalyst.com/glossary/y/index.html">Y</a>
+	<a href="http://www.teenanalyst.com/glossary/z/index.html">Z</a>
+    <p class="footertext">Copyright © 2009 <a href="http://www.teenanalyst.com">TeenAnalyst.com</a></p></td>
+  </tr>
+</tbody></table>
+</center>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-208475-26");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
+

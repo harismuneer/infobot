@@ -1,0 +1,453 @@
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2012-03-02T22:50:57Z
+WARC-TREC-ID: clueweb12-0511wb-46-22481
+WARC-Target-URI: http://www.military.com/NewsContent/0,13319,usn1_070505.00.html
+WARC-Payload-Digest: sha1:4IIWIMEUU5GHDOZZABJDTGALKUYVDDN2
+WARC-IP-Address: 64.147.183.40
+WARC-Record-ID: <urn:uuid:f8bd38a9-074d-4b2f-9f12-13c93c460ec9>
+Content-Type: application/http; msgtype=response
+Content-Length: 30052
+
+HTTP/1.1 200 OK
+Date: Fri, 02 Mar 2012 22:39:35 GMT
+Server: Apache
+Cache-Control: max-age=6000
+Expires: Sat, 03 Mar 2012 00:19:35 GMT
+Last-Modified: Fri, 02 Mar 2012 22:39:35 GMT
+ETag: W/"9f3592-7427-4f514c27;4f514c10"
+Accept-Ranges: bytes
+Content-Length: 29735
+Content-Type: text/html
+Connection: close
+
+<!-- Vignette V/5 Fri Mar 02 22:39:35 2012 -->
+
+<html>
+<head>
+<title>Military.com</title>
+<!--/NewsContent|| usn1_070505 || ||  usn1_070505 || /ContentFiles/usn1_070505.htm-->
+<link rel="alternate" type="application/rss+xml" title="Top Stories" href="http://www.military.com/rss/News/0,,topstories,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Army News" href="http://www.military.com/rss/News/0,,armynews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Navy News" href="http://www.military.com/rss/News/0,,navynews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Air Force News" href="http://www.military.com/rss/News/0,,airforcenews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Marine Corps News" href="http://www.military.com/rss/News/0,,marinenews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Coast Guard News" href="http://www.military.com/rss/News/0,,coastgnews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="DoD News" href="http://www.military.com/rss/News/0,,dodnews,,00.html" />
+<link rel="alternate" type="application/rss+xml" title="Iraq News & Analysis" href="http://www.military.com/rss/News/0,,iraq,,00.html" />
+<script type="text/javascript" src="http://www.military.com/hp/homepage.js"></script>
+<META NAME="Description" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+
+</head>
+<body bgcolor="#FFFFFF" topmargin=4>
+<!--  -->
+
+	<!-- new --->
+	<script language = "javascript" src ="http://images.military.com/CoreMetrics/core.js"></script>
+	<style type="text/css"> 
+<!--
+ @import url(http://images.military.com/Style/style.css);
+ @import url(http://images.military.com/css/nstyle.css);
+-->
+</style>
+
+<center>
+	<div onMouseOver="HideAll();" id=container style="padding-bottom:2px;height:18px;"///LOGIN&OUT + MONSTER LOGO///>
+
+<script type="text/javascript">
+  <!--
+   var myname = GetCookie("LoginLoginName");
+  /** define common used elements **/
+  
+  var monsterLogo = "";
+  var blockA = "<span class=content2 style='width:540px;float:left;text-align:left;padding-top:2px;vertical-align:bottom;color:#666666'>";
+  if ( myname == null) {
+  	mychip = GetCookie("LoginInfo");
+	if (mychip != null) {
+		mycookielist = mychip.split("|");
+		myname = mycookielist[2];
+	} // check mychip value
+  } // grant myname from LoginInfo
+  if ( myname != null) {
+  	if ( myname.match(/[a-z]|[A-Z]/g)) {
+		document.write(blockA + "Welcome, " + myname + "! <a href='/Membership/Membership_Index/'>My Account</a>&nbsp;|&nbsp;<a href='http://myfriends.military.com/friendnetwork/invite-friends.do'>Invite Friends</a>&nbsp;|&nbsp;<a href='/Logout/'>Logout</a></span>" + monsterLogo);
+	} else {
+		document.write(blockA + "Welcome! <a href='/Membership/Membership_Index/'>My Account</a>&nbsp;|&nbsp;<a href='http://myfriends.military.com/friendnetwork/invite-friends.do'>Invite Friends</a>&nbsp;|&nbsp;<a href='/Logout/'>Logout</a></span>" + monsterLogo);
+	}
+  } else { //there no username 
+  	document.write(blockA + "<a href='/Registration/Login/?strGotoURL=/NewsContent/0,13319,usn1_070505,00.00.html'>Login</a>.&nbsp;");
+ 	document.write("Not a member? <a href='/Registration/Universal_Registration_Page?strGotoURL=/NewsContent/0,13319,usn1_070505,00.00.html'>Join now</a></span>" + monsterLogo);  
+  }  
+  //-->
+</script>
+<noscript>
+	<span class=content2 style='width:370px;float:left;text-align:left;padding-top:2px;vertical-align:bottom;color:#666666'>Welcome! <a href='/Membership/Membership_Index/'>My Account</a>&nbsp;|&nbsp;<a href='http://myfriends.military.com/friendnetwork/invite-friends.do'>Invite Friends</a>&nbsp;|&nbsp;<a href='/Registration/Login/'>Login</a>&nbsp;|&nbsp;<a href='/Logout/'>Logout</a></span>
+	<span style='width:186px;float:right;clear:right;padding-top:4px;vertical-align:bottom'><img src='http://images.military.com/pics/Monster_Footer2.gif' width=186 height=11 alt='A Monster Company' ><br /></span>
+</noscript>
+</div>
+</center>
+
+<style type="text/css">
+	<!--
+	.t2 ul {margin:0px; padding-top:10px;list-style:none;padding-left:0px;}
+	.t2 ul li {font:normal 11px Verdana, Arial;color:#333333;text-decoration:none;line-height:15px;}
+	.t2 ul li b {font:bold 10px Verdana, Arial;color:#333333;text-decoration:none;}
+	.t2 a:link{color:#333333;text-decoration:none;}
+	.t2 a:active{color:#333333;text-decoration:none;}
+	.t2 a:visited{color:#333333;text-decoration:none;}
+	.t2 a:hover{color:#cc3300;text-decoration:underline;}
+	-->
+</style>
+<script language="javascript" src="http://images.military.com/Scripts/dhtml.js"></script>
+<table width="760" height="20" align="center" cellpadding="0" cellspacing="0">
+<tr><td height="20"><a href="http://www.military.com"><img id="tab1" src="http://images.military.com/pics/nav/tab1.gif" width="66" height="20" border="0"  onmouseover="ShowDropdown('1', 'na');" onmouseout="SwapBG('1', 'r');" alt="Home" /><br /></a></td><td height="20"><a href="/benefits"><img id="tab2" src="http://images.military.com/pics/nav/tab2n.gif" width="72" height="20" border="0"  onmouseover="ShowDropdown('2', 'na');" onmouseout="SwapBG('2', 'r');" alt="Benefits" /><br /></a></td><td height="20"><a href="/News/Home/0,13324,,00.htm"><img id="tab3" src="http://images.military.com/pics/nav/tab3nh.gif" width="54" height="20" border="0"  onmouseover="ShowDropdown('3', 'na');" onmouseout="SwapBG('3', 'h');" alt="News" /><br /></a></td><td height="20"><a href="/Entertainment"><img id="tab4" src="http://images.military.com/pics/nav/tab4n.gif" width="108" height="20" border="0"  onmouseover="ShowDropdown('4', 'na');" onmouseout="SwapBG('4', 'r');" alt="entertainment" /><br /></a></td><td height="20"><a href="/Deals/Home/0,13401,,00.htm"><img id="tab5" src="http://images.military.com/pics/nav/tab5n.gif" width="51" height="20" border="0"  onmouseover="ShowDropdown('5', 'na');" onmouseout="SwapBG('5', 'r');" alt="shop" /><br /></a></td><td height="20"><a href="/Finance"><img id="tab6" src="http://images.military.com/pics/nav/tab6n.gif" width="67" height="20" border="0"  onmouseover="ShowDropdown('6', 'na');" onmouseout="SwapBG('6', 'r');" alt="finance" /><br /></a></td><td height="20"><a href="/Careers/Home/0,13373,,00.htm"><img id="tab7" src="http://images.military.com/pics/nav/tab7n.gif" width="68" height="20" border="0"  onmouseover="ShowDropdown('7', 'na');" onmouseout="SwapBG('7', 'r');" alt="careers" /><br /></a></td><td height="20"><a href="/education"><img id="tab8" src="http://images.military.com/pics/nav/tab8n.gif" width="79" height="20" border="0"  onmouseover="ShowDropdown('8', 'na');" onmouseout="SwapBG('8', 'r');" alt="education" /><br /></a></td><td height="20"><a href="/Recruiting/Home/0,13387,,00.htm"><img id="tab9" src="http://images.military.com/pics/nav/tab9n.gif" width="114" height="20" border="0"  onmouseover="ShowDropdown('9', 'na');" onmouseout="SwapBG('9', 'r');" alt="join military" /><br /></a></td><td height="20"><a href="/Military/ReDirectCommunity"><img id="tab10" src="http://images.military.com/pics/nav/tab10n.gif" width="81" height="20" border="0"  onmouseover="ShowDropdown('10', 'na');" onmouseout="SwapBG('10', 'r');" alt="community" /><br /></a></td></tr>
+</table>
+
+<!--SUB MENU START-->
+<script language=javascript
+src="http://www.military.com/nav/Submenu/1,15293,336699|na.htm"></script>
+<!--SUB MENU END--><table width="761" border="0" cellspacing="0" cellpadding="0" align="center">
+   <tr>
+    <td width="421" background="http://images.military.com/pics/Header_News_FD1.gif" height="60" border="0" align="right" class="nstext2">&nbsp;</td>
+    <td width="341" bgcolor="#839EB9" height="60" border="0" align="right" class="nstext2">
+	<div style="margin-right:10px;margin-top:10px;width:300px;">
+		<form method=get name=sb action="http://search.military.com/search/news.html">Search for Military News: <input type=text class=nstext2 name=words size=12 value="" maxlength=50 onFocus="this.value=''">
+		<span style="padding-top:3px;padding-left:4px;">&nbsp;<input NAME=submit type=image VALUE=Go src="http://images.military.com/pics/News05_Go.gif"></span>
+		</form>
+	</div>
+	</td>
+  </tr>
+</table><!--- Quick Links Box --->	
+	
+
+<table style="padding-bottom:14px;padding-top:14px;"" width="761" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="nhead" width="120">Headlines</td>
+	<td align="right" class="nstext"><a href="http://www.military.com/News/Home/0,13324,,00.html" class=news>News Home</a> | <a href="http://www.military.com/news/video" class=news>Video News</a> | <a href="http://www.military.com/earlybrief" class=news>Early Brief</a> | <a href="http://www.military.com/warfighters" class=news>Forum</a> | <a href="http://www.military.com/Military/NewDesign/Commentary" class=news>Passdown</a> | <a href="http://forums.military.com/eve/ubb.x" class=news>Discussions</a> | <a href="http://www.military.com/military-report" class=news>Benefit Updates</a> | <a href="http://www.defensetech.org/" target="_blank" class=news>Defense Tech</a></td>
+  </tr>
+</table>
+
+<!--- End Quick Links Box --->	
+
+<!--- Main News Box --->
+
+<!--- End Main News Box --->
+<!--- Segmented News Table --->
+<table width="761" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="451" valign="top" class="nbody">
+<div style="width:451px;border-top:1px solid #CCCCCC;margin-bottom:14px;"><img src="http://images.military.com/pixel.gif" width=1 height=1></div>
+
+<!--- Begin Article Title/Source/Date --->
+
+<div class="nhtext" style="padding-bottom:13px;"></div>
+<div class="nstext" style="padding-bottom:13px;"></div>
+
+<!--- End Article Title/Source/Date --->
+
+<!--- Start Article Content --->
+
+<!-- BEGIN ARTICLE AREA -->
+<table width='100%' border='0' cellspacing='0' cellpadding='0' valign='TOP'>
+<tr>
+<td class='newsbody' valign='top' style='padding:7px;'>
+<!-- BEGIN RIGHT-BOX COMPONENT -->
+<table width='235' border='0' cellspacing='0' cellpadding='3' align='right'>
+<!-- BEGIN MAIN PIC -->
+<tr>
+<td><img src="http://images.military.com/pics/usn1_070505.jpg" vspace="10" border="0" align="left" alt=""><br><img src="/pixel.gif" width="1" height="1"></td></tr>
+<!-- END MAIN PIC -->
+<!-- BEGIN LINKS JAVASCRIPT -->
+<script language=javascript src=http://images.military.com/libTopPicksnRelatedLinks/1,,usn,,00.html></script>
+<!-- END LINKS JAVASCRIPT -->
+</table>
+<!-- END RIGHT-BOX COMPONENT -->
+<!-- BEGIN CONTENT -->
+<span class="newshead"><!-- headline -->Carl Vinson Strike Group Concludes Persian Gulf Operations</span><br>By Journalist 3rd Class (SW) William Lopez<br>
+Navy News Service<br>
+<!-- date -->July 05, 2005
+<br><br>
+<!-- article start -->
+ABOARD USS CARL VINSON - The USS Carl Vinson (CVN 70) Carrier Strike Group concluded operations in support of Operation Iraqi Freedom (OIF) and maritime security operations (MSO) in the Persian Gulf June 30. The USS Nimitz (CVN 68) Carrier Strike Group is scheduled to replace the Vinson Strike Group.<br>
+<br>
+Carl Vinson and Carrier Air Wing (CVW) 9 launched more than 6,500 sorties, totaling more than 20,000 flight hours, in support of OIF and MSO since relieving USS Harry S. Truman (CVN 75) March 19. <br>
+<br>
+"I couldn't be more pleased with the performance of the Carl Vinson Strike Group during our time here in the Arabian Gulf," said Rear Adm. Bruce Clingan, Commander of the Carl Vinson Strike Group. <br>
+<br>
+"Our Sailors and Marines played a vital role in supporting the Iraqi and multinational troops that are working together to set the security and stability conditions that will provide the Iraqi people an opportunity for self determination. <br>
+<br>
+"They've also helped make the Arabian Gulf a safer place for trade and commerce and a more difficult place for international terrorists to operate," continued Clingan. <table align="right" border="0" cellpadding="0" cellspacing="0"><tr> <!-- Start of advertisement tag --> <td style="padding:0px 10px 10px 10px"><center><img src=/pics/Ad_Tab.gif width=160 height=7 border=0><br><img src=http://images.military.com/pics/spacer.gif width=1 height=2 border=0><br></center><!-- End of advertisement tag --> <script language=javascript src=http://www.military.com/javascripts/GenericrichMediaBannerAd/1,,350|250|content|more_content||1.htm></script></td></tr></table><br>
+<br>
+"The broad spectrum of effects the Carl Vinson Strike group has achieved in concert with those of other coalition and U.S. forces have contributed to the progress being made in the region," he said.<br>
+<br>
+Shortly after arriving in the Gulf, Carl Vinson Sailors learned they had earned the right to wear the Battle "E" ribbon for their work leading up to this deployment. The Battle "E" recognizes a command's sustained superior performance in an operational environment through the previous calendar year.<br>
+<br>
+Operating in the Gulf, the crew faced long, continuous days of flight operations, general quarters training, underway replenishments, and myriad other daily tasks. <br>
+<br>
+The ship and air wing team met each challenge with their utmost attention and determination.<br>
+<br>
+"The Vinson and Carrier Air Wing 9 team has simply done a superb job during our time in the Gulf," said Carl Vinson Commanding Officer Capt. Kevin Donegan. "In the stifling heat of the Gulf in the summer they have performed flawlessly while working 13-and-a-half-hour fly days.<br>
+<br>
+"This global-combat deployment has required us to do the full spectrum of operational missions, and each and every time, the crew has risen to the challenge," he said.<br>
+<br>
+Vinson also saw more than a year of inspirational leadership, dedication and hard work pay off when the ship earned the honor of flying both the Enlisted Air Warfare Specialist and Enlisted Surface Warfare Specialist Pennants. <br>
+<br>
+The pennants signify that all Sailors E5-and-below with more than 18 months on board have earned their warfare qualification, a significant achievement that is rarely earned by an aircraft carrier.<br>
+<br>
+"I couldn't be more proud of the crew and what they have accomplished," said Vinson's Command Master Chief (AW/SW) Renall Evans. "In my twenty-five years of service, I have never heard of an aircraft carrier earning the right to fly both enlisted warfare pennants. It really says a lot, especially out here in the Gulf."<br>
+<br>
+The Sailors and Marines on board Carl Vinson made port visits to Manama, Bahrain, and two visits to Dubai, United Arab Emirates. Despite having worked long hours while underway, many lent a hand to the local communities by participating in various community relations events while in port. During their time in the Gulf, the crew participated in 13 events that helped schools, shelters, and churches by refurbishing buildings, repairing equipment, and spending quality time with disadvantaged children.<table align="right" border="0" cellpadding="0" cellspacing="0"><tr> <!-- Start of advertisement tag --> <td style="padding:0px 10px 10px 10px"><center><img src=/pics/Ad_Tab.gif width=160 height=7 border=0><br><img src=http://images.military.com/pics/spacer.gif width=1 height=2 border=0><br></center><!-- End of advertisement tag --> <script language=javascript src=http://www.military.com/javascripts/GenericrichMediaBannerAd/1,,300|250|content|more_content||2.htm></script></td></tr></table><br>
+<br>
+"Although 'Gold Eagle' Sailors donate huge amounts of their time, talent, and labor in foreign ports, they always receive back much more than they give," said Carl Vinson Chaplain, Lt. Dan Berteau.<br>
+<br>
+After Carl Vinson's departure from the Gulf, the ship will transit to its new homeport in Norfolk, Va. Vinson's home port change is in support of its refuel and complex overhaul (RCOH) shipyard period, scheduled to begin this fall in Newport News, Va.<br>
+<br>
+The Carl Vinson Carrier Strike Group includes Carrier Strike Group 3, Carrier Air Wing 9, Destroyer Squadron 31, the guided-missile cruiser USS Antietam (CG 54), the guided-missile destroyers USS O'Kane (DDG 77) and USS Mustin (DDG 89), and the fast combat support ship USS Camden (AOE 2).<br>
+<br>
+The squadrons of Carrier Air Wing 9 include the Blue Diamonds of Strike Fighter Squadron (VFA) 146, the Argonauts of VFA-147, the Black Knights of VFA-154, the Death Rattlers of Marine Strike Fighter Squadron 323, the Screwbirds of Sea Control Squadron 33, the Golden Hawks of Airborne Early Warning Squadron 112, the Yellow Jackets of Electronic Attack Squadron 138, the Providers of Carrier Logistics Support Squadron 30, and the Eightballers of Helicopter Anti-Submarine Squadron 8.<br>
+<br>
+MSO is aimed at setting the conditions for security and stability in the maritime environment. Illicit activity at sea has a global impact. MSO pressurizes the maritime environment and is the single most significant component of the conventional maritime effort against terrorism.<br>
+<br>
+<!-- END CONTENT -->
+</td>
+</tr>
+</table>
+<!-- END AREA ARTICLE -->
+<br><br>
+<!--- End Article Content --->
+
+<!--- Begin Additional Article Features --->
+
+<p>Sound Off...What do you think? <a href="http://forums.military.com/1/OpenTopic?a=dl&f=672198221&s=78919038&x_id=&x_subject=&x_dpp=Y&x_link=http://www.military.com/NewsContent/0,13319,usn1_070505,00.00.html">Join the discussion.</a></p>
+
+<p class="nasmall">Copyright 2012 . All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</p>
+
+<!--- related links --->
+
+<div align="left" style="border:1px solid #CCCCCC;padding:10px;padding-top:15px;padding-bottom:15px;" class="nstext"><span class="nshead"><a href="/News" class="slink">More Military Headlines</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7">
+<div align="left"><ul style="list-style-image: url(http://www.military.com/pics/graysqur.gif);line-height:18px;">
+</ul></div>
+</div><br>
+
+<!---- related links ---->
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-2378779822749052";
+google_ad_width = 234;
+google_ad_height = 60;
+google_ad_format = "234x60_as";
+google_ad_type = "text_image";
+//2007-02-26: News Content Pages
+google_ad_channel = "7252853958";
+google_color_border = " FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = " 839eb9 ";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><!--- End Additional Article Features --->
+
+</td>
+	<td width="8">&nbsp;</td>
+    <td width="302" valign="top" align="center">
+	
+	
+<!--- 300 x 250 Advertisement --->
+
+<img src="http://images.military.com/pics/News05_ad.gif" width=107 height=12 style="margin-top:0px;">
+<div style="margin-bottom:10px;border:solid 0px #efefef;">
+<script language=javascript src="http://images.military.com/javascripts/GenericrichMediaBannerAd/1,,300|250|news|content||1,00.htm"></script>
+</div>
+
+<!--- End 300 x 250 Advertisement --->
+
+<!--- News Links Box --->
+
+ <br>
+<div style="text-align:left; border:1px solid #CCCCCC;padding:10px;padding-top:10px;padding-bottom:1px;" class="nstext"><span class="nshead">What's Hot</span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7">
+
+<ul class="links" style="list-style-image: url(http://www.military.com/pics/graysqur.gif);line-height:18px;">
+	<li><a href="http://defensetech.org/2012/03/01/usaf-providing-options-for-dealing-with-iran/?wh=wh">AF Providing 'Options' for Dealing With...</a></li><li><a href="http://www.lineofdeparture.com/2012/03/01/medevac-momentum-senate-armed-services-committee-to-raise-the-issue/?wh=wh">SASC Joins MEDEVAC Fight</a></li><li><a href="http://spousebuzz.com/blog/2012/03/3-tips-for-dealing-with-loss-in-the-military.html?wh=wh">Tips for Dealing With Military Loss</a></li><li><a href="http://kitup.military.com/2012/03/war-sport-war-bungee-accessory.html?wh=wh">'War Bungee' Accessory Management System</a></li><li><a href="http://www.dodbuzz.com/2012/03/01/the-armys-nie-challenge-striking-the-right-balance/?wh=wh">The Army's NIE Tightrope</a></li><li>SecDef's Nightmare:<a href="http://www.dodbuzz.com/2012/02/29/secdefs-nightmare-cyber-attack?wh=wh"> Cyber-attack</a></li><li>Kit Up! Video:<a href="http://kitup.military.com/2012/02/kit-battlefield-close-air-support.html?wh=wh"> Boom in the Night</a></li><li>Def Tech:<a href="http://defensetech.org/2012/02/29/were-still-worrying-about-emps?wh=wh"> Still Worried about EMPs</a></li></ul>
+</div><br><!-- end .links -->
+<!--- End News Links Box --->
+
+
+
+
+
+<table border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<!---<td width=140>--->
+
+<!--- Money Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Finance/Home/0,13397,,00.html" class="slink">Money</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="/Finance/HomeBuying/0,13397,66,00.html" class=news>VA Loans</a><br>
+<a href="/Finance/Insurance/0,13397,81,00.html" class=news>Insurance</a><br>
+<a href="/Finance/CreditandDebt/0,13397,67,00.html" class=news>Credit & Debt
+</a></div>--->
+
+<!--- End Money Box --->
+		
+<!--- Careers Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Careers/Home/0,13373,,00.html" class="slink">Careers</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="http://military.monster.com/resume.asp" class=news>Resume Builder</a><br>
+<a href="/clearance/0,14752,,00.html" class=news>Security Clearance</a><br>
+<a href="/Careers/JobHuntingTips/0,13373,7,00.html" class=news>Job Hunting Tips</a></div>-->
+
+<!--- End Careers Box --->
+
+<!--- Education Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Careers/Education/0,13289,,00.html" class="slink">Education</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="/SchoolFinder/Search/1,14302,,00.html" class=news>School Finder</a><br>
+<a href="http://www.military.com/Resources/ResourcesContent/0,13964,32674,00.html" class=news>GI Bill</a><br>
+<a href="http://benefits.military.com/education/scholarship/ScholarshipSearch.jsp" class=news>Scholarships</a></div>--->
+
+<!--- End Education Box --->
+
+<!--- Travel Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Travel/Home/0,13396,,00.html" class="slink">Travel</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="/Travel/TravelDiscount/0,13396,,00.html" class=news>Discount Travel</a><br>
+<a href="/Travel/TravelResources/0,13396,,00.html" class=news>Travel Resources</a><br>
+<a href="/Travel/TravelPrivileges/0,13396,,00.html" class=news>Military Lodging</a></div>--->
+
+<!--- End Travel Box --->
+
+<!--- Recruiting Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Recruiting/Home/0,13387,,00.html" class="slink">Recruiting</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="/Recruiting/Content/0,13898,rec_splash,,00.html" class=news>10 Steps to Joining</a><br>
+<a href="/ASVAB" class=news>ASVAB Practice Test</a><br>
+<a href="http://forums.military.com/1/OpenTopic?a=cfrm&s=78919038&f=6801982206" class=news>Discussions</a></div>--->
+
+<!--- End Recruiting Box --->
+
+<!--- Shopping Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="/Deals/Home/0,13401,,00.htm" class="slink">Shopping</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="http://tracking.military.com/cgi-bin/outlog.cgi?url=http%3A//military.usptgear.com/Page.asp%3FnWebpage%3DPCat%26Branch%3DCustomized%2520Clothing%26Prod%3D&code=SHOP_NEWS1" class=news>Customized Clothing</a><br>
+<a href="http://tracking.military.com/cgi-bin/outlog.cgi?url=http%3A//www.actiongear.com/cgi-bin/tame.exe/military/index.tam&code=SHOP_NEWS2" class=news>Military Gear</a><br>
+<a href="http://tracking.military.com/cgi-bin/outlog.cgi?url=http%3A//military.usmedals.com/store.php3%3Fref%3D73104%26id_medals%3D0525MI439746&code=SHOP_NEWS3" class=news>Medals & Ribbons</a></div>--->
+
+<!--- End Shopping Box --->
+
+<!--- Discount Box --->
+
+<!---<div style="padding:10px;line-height:18px;" class="nasmall" align="left"><span class="nsbhead"><a href="http://img.military.com/misc/DC/DealIndex.jsp" class="slink">Discount Center</a></span><img src="http://images.military.com/pics/News05_Arrows.gif" width="12" height="7"><br>
+<a href="http://benefits.military.com/misc/DC/DealCategories.jsp?cat_id=300" class=news>Clothing & Apparel</a><br>
+<a href="http://benefits.military.com/misc/DC/DealCategories.jsp?cat_id=206" class=news>Auto & Motorcycle</a><br>
+<a href="http://benefits.military.com/misc/DC/DealCategories.jsp?cat_id=304" class=news>Computers/Electronics</a></div>--->
+
+<!--- End Discount Box --->
+	
+		<!---</td>--->
+		<td width=300 align=left>
+<!--- 160 x 600 --->
+
+<img src="http://images.military.com/pics/News_Ad_Text-2.gif" width=160 height=12 style="margin-top:4px;">
+<div style="margin-bottom:10px;">
+<script language=javascript src="http://images.military.com/javascripts/GenericrichMediaBannerAd/1,,160|600|news|content||2,00.htm"></script>
+</div>
+
+<!--- End 160 x 600 --->
+		</td>
+	</tr>
+</table>
+
+<!--- 300 x 250 Advertisement --->
+
+<!--<img src="http://images.military.com/pics/News05_ad.gif" width=107 height=12 style="margin-top:15px;">
+<div style="margin-bottom:10px;border:solid 0px #efefef;">
+<script language=javascript src="http://images.military.com/javascripts/GenericrichMediaBannerAd/1,,300|250|news|content||3,00.htm"></script>
+</div>-->
+
+<!--- End 300 x 250 Advertisement --->
+ </td>
+  </tr>
+</table>
+
+
+<!--- End Segmented News Table --->
+<!--- Search Box --->
+<table cellpadding="0" cellspacing="0" border="0" width="761" align="center" style="margin-top:34px;">
+	<tr>
+		<td bgcolor="#C3D2E1" class="nstext2" align=center>
+
+			<div style="margin-right:10px;margin-top:10px;width:750px;">
+				<form method=POST name=sb action="http://search.military.com/search/news.html">Search for Military News: <input type=text class=nstext2 name=words size=50 value="" maxlength=100 onFocus="this.value=''">
+				<span style="padding-top:3px;padding-left:4px;">&nbsp;<input NAME=submit type=image VALUE=Go src="http://images.military.com/pics/News05_Go.gif"></span>
+				</form>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="http://images.military.com/pixel.gif" height="20"><br>
+		</td>
+	</tr>
+
+</table>
+<!--- End Search Box --->
+
+<!--START FOOTER-->
+
+<table width="760" cellpadding="0" cellpadding="0" border="0" align="center">
+<tr><td>
+<!-- #footer -->
+<link rel="stylesheet" href="http://images.military.com/lib/styles/footer.css" type="text/css" media="screen" />
+<div id="footer" style='border-top:none;'>
+	<p><a href="http://www.military.com">Military.com</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/aboutus/aboutushome.htm">About Us</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/PressCenter/1,,pressCenter-Main.htm,00.html">Press</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/aboutus/twocolumn/0,15929,Business-Opportunities,00.html">Advertising</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/Content/MoreContent1/0,,affiliate,00.html">Affiliate Program</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/network.html">Monster Network</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/Content/MoreContent1/0,,FAQ,00.html">Help &amp; Feedback</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/AboutUs/More/1,14822,Privacy_Policy,00.html">Privacy Policy</a> &nbsp;|&nbsp;
+	<a href="http://www.military.com/AboutUs/More/1,14822,User_Agreement,00.html">User Agreement</a></p>
+	<p><a href="http://www.military.com/sitemap/">Site Map</a> &nbsp;|&nbsp;
+	<a href="http://www.spousebuzz.com">Spouse Buzz</a> &nbsp;|&nbsp;	
+	<a href="http://www.fredsplace.org/">Fred&#146;s Place</a> &nbsp;|&nbsp;
+	<a href="http://www.milblogging.com">MilBlogging</a> &nbsp;|&nbsp;
+	<a href="http://www.gibillexpress.com/">GI Bill Express</a> &nbsp;|&nbsp;	
+	<a href="http://kitup.military.com/">Kit Up!</a> &nbsp;|&nbsp;
+	<a href="http://shock.military.com/Shock/">Military Videos</a> &nbsp;|&nbsp;	
+	&copy; 2012 Military Advantage</p>
+	<p class="logoMonsterHolder"><img src="http://images.military.com/lib/images/Monster_Footer.png" id="footer-logoMonster" class="logoMonster" alt="A Monster Company" /></p>
+	<!--[if lt IE 7]>
+	<style type="text/css">#footer img.logoMonster {width:186px; height:11px;}</style>
+	<script type="text/javascript">
+	document.getElementById("footer-logoMonster").src="http://images.military.com/pixel.gif";
+	document.getElementById("footer-logoMonster").style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.military.com/lib/images/Monster_Footer.png', sizingMethod='scale')";
+	</script>
+	<![endif]-->
+</div><!-- end #footer. updated 2/15/2007 --> 
+</td></tr>
+</table>
+
+
+
+
+<script language="javascript">
+<!--
+document.write(Display);
+//-->
+</script>
+<script language="javascript" src="http://images.military.com/Scripts/mnfooter.js"></script>
+<noscript>
+<img border="0" name="DCSIMG" width="1" height="1" src="http://cookie.monster.com/DCS000041_4B2O/njs.gif?dcsuri=/nojavascript" alt="" />
+<img src="http://tracking.military.com/cgi-bin/redlog2.cgi?url=1&ploc=NOSCRIPT&isrc=NOSCRIPT&esrc=NOSCRIPT&step=1&vsid=-1&memb=0&nvis=1&actf=0&fvis=0&stat=UNKNWN&serv=UNKNWN&vage=0" alt="" />
+</noscript>
+
+</body>
+</html>
+
+
+
