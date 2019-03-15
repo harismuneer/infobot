@@ -1,6 +1,17 @@
 import os
 from bs4 import BeautifulSoup, NavigableString, Tag
+import nltk
+from nltk.stem import PorterStemmer
 import re
+
+
+def create_folder(des):
+    try:
+        os.mkdir(des)
+    except OSError:
+        print("Creation of the directory %s failed" % des)
+    else:
+        print("Successfully created the directory %s " % des)
 
 
 def parse_html(html):
@@ -56,22 +67,15 @@ def parse_html(html):
 
 
 def pre_processing(folder):
+    ps = PorterStemmer()
     original_path = os.getcwd()
-    new_folder = original_path + "\parsed"
-    try:
-        os.mkdir(new_folder)
-    except OSError:
-        print("Creation of the directory %s failed" % new_folder)
-    else:
-        print("Successfully created the directory %s " % new_folder)
+    stop_words = original_path+"\stoplist.txt"
+    stops = [line.rstrip('\n') for line in open(stop_words)]
 
-    new_folder = new_folder + "/"+folder
-    try:
-        os.mkdir(new_folder)
-    except OSError:
-        print("Creation of the directory %s failed" % new_folder)
-    else:
-        print("Successfully created the directory %s " % new_folder)
+    pre_process_folder = original_path + "\pre_process"
+    create_folder(pre_process_folder)
+    pre_process_folder = pre_process_folder + "/"+folder
+    create_folder(pre_process_folder)
     data_set = "\corpus1/" + folder
     path = original_path + data_set
     for files in os.listdir(path):
@@ -80,11 +84,26 @@ def pre_processing(folder):
                 new_path = path + file_name
                 text = parse_html(new_path)
                 if text is not None and len(text) is not 0:
-                    parsed_file = new_folder+file_name
-                    file = open(parsed_file, "w+", encoding="iso-8859-1", errors='ignore')
-                    file.write(text)
-                else:
-                    print(files + "has no text")
+                    tokens = nltk.word_tokenize(text)
+                    for i in range(0, len(tokens)):
+                        tokens[i] = tokens[i].lower()
+                    tokens = [token.rstrip('\n') for token in tokens]
+                    for token in tokens:
+                        if token in stops:
+                            tokens.remove(token)
+                    if tokens is not None:
+                        for i in range(0, len(tokens)):
+                            tokens[i] = ps.stem(tokens[i])
+                        for token in tokens:
+                            if token in stops:
+                                tokens.remove(token)
+                        if tokens is not None:
+                            pre_process_file = pre_process_folder+file_name
+                            file = open(pre_process_file, "w+", encoding='latin-1', errors='ignore')
+                            for token in tokens:
+                                regex = re.compile('[@_!#$%^&*()<>?/\|}{~:.,;]')
+                                if regex.search(token) is None:
+                                    file.write(token+"\n")
 
 
 allow = True
