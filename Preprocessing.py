@@ -3,9 +3,10 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 import nltk
 from nltk.stem import PorterStemmer
 import re
+from collections import defaultdict
 
 
-def create_folder(des):
+def create_folder(des):    # create any folder
     try:
         os.mkdir(des)
     except OSError:
@@ -14,7 +15,7 @@ def create_folder(des):
         print("Successfully created the directory %s " % des)
 
 
-def parse_html(html):
+def parse_html(html):       # ignoring headers and HTML Tag to extract document text
     f = open(html, "r", encoding='iso-8859-1', errors='ignore')
     soup = BeautifulSoup(f, 'html.parser')
     # Ignore anything in head
@@ -62,40 +63,46 @@ def parse_html(html):
         doc = '\n'.join(text)
         doc = re.sub(r'^https?:\/\/.*[\r\n]*', '', doc, flags=re.MULTILINE)
         return doc
-
-    return None
+    return
 
 
 def pre_processing(folder):
-    ps = PorterStemmer()
-    original_path = os.getcwd()
-    stop_words = original_path+"\stoplist.txt"
-    stops = [line.rstrip('\n') for line in open(stop_words)]
-
-    pre_process_folder = original_path + "\pre_process"
-    create_folder(pre_process_folder)
-    pre_process_folder = pre_process_folder + "/"+folder
-    create_folder(pre_process_folder)
+    ps = PorterStemmer()                                            # initialize stemmer
+    original_path = os.getcwd()                                     # receive working directory path
+    stop_words = original_path+"\stoplist.txt"                      # reading stoplist path
+    stops = [line.rstrip('\n') for line in open(stop_words)]        # adding all stop words in list after reading stoplist file
+    text_folder = original_path + "/text"                           # creating a new path to keep textual data
+    create_folder(text_folder)                                      # create that new folder(pre_process)
+    text_folder = text_folder + "/"+folder                          # creating path with name user enters(1/2/3) in text_folder
+    create_folder(text_folder)                                      # creating that folder in text_folder
+    pre_process_folder = original_path + "\pre_process"             # creating a new path to keep preprocessed data
+    create_folder(pre_process_folder)                               # create that new folder(pre_process)
+    pre_process_folder = pre_process_folder + "/"+folder            # creating path with name user enters(1/2/3) in pre_process folder
+    create_folder(pre_process_folder)                               # creating that folder in pre_process folder
     data_set = "\corpus1/" + folder
-    path = original_path + data_set
-    for files in os.listdir(path):
-            if '.txt' not in files:
+    path = original_path + data_set                                 # opening folder(1/2/3) from corpus folder
+    for files in os.listdir(path):                                  # picking all files in the folder one by one
+            if '.txt' not in files:                                 # ignoring redundant files
                 file_name = "/" + files
                 new_path = path + file_name
-                text = parse_html(new_path)
-                if text is not None and len(text) is not 0:
-                    tokens = nltk.word_tokenize(text)
+                text = parse_html(new_path)                         # parse HTML file
+                if text is not None and len(text) is not 0:         # if text obtained, then proceed
+                    text_file = text_folder+file_name               # creating file path to write text
+                    file = open(text_file, "w+", encoding='latin-1', errors='ignore')
+                    file.write(text)                                # writing file
+                    file.close()
+                    tokens = nltk.word_tokenize(text)               # Split text to tokens
                     for i in range(0, len(tokens)):
-                        tokens[i] = tokens[i].lower()
+                        tokens[i] = tokens[i].lower()               # converting all tokens' case to lower case
                     tokens = [token.rstrip('\n') for token in tokens]
                     for token in tokens:
-                        if token in stops:
-                            tokens.remove(token)
+                        if token in stops:                          # checking for words present in stop_list
+                            tokens.remove(token)                    # removing if found any
                     if tokens is not None:
-                        for i in range(0, len(tokens)):
+                        for i in range(0, len(tokens)):             # stemming token
                             tokens[i] = ps.stem(tokens[i])
                         for token in tokens:
-                            if token in stops:
+                            if token in stops:                      # rechecking again for stop_words
                                 tokens.remove(token)
                         if tokens is not None:
                             pre_process_file = pre_process_folder+file_name
@@ -103,12 +110,15 @@ def pre_processing(folder):
                             for token in tokens:
                                 regex = re.compile('[@_!#$%^&*()<>?/\|}{~:.,;]')
                                 if regex.search(token) is None:
-                                    file.write(token+"\n")
+                                    if not re.match(r'^[_\W]+$', token):
+                                        file.write(token+"\n")      # writing tokens in pre_process/(1/2/3)/file
 
 
+''' Takes input for folder 1, 2 or 3 to begin with pre-processing'''
 allow = True
-while allow:
+while allow:    # if wrong input given
     directory = input("Select a directory out of 1, 2 or 3\n")
     if directory is "1" or directory is "2" or directory is "3":
         allow = False
-        pre_processing(directory)
+        pre_processing(directory)       # begin with pre_processing'''
+
