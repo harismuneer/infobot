@@ -96,7 +96,7 @@ def pre_processing(folder):
             tt = []
             if '.txt' not in files:                                 # ignoring redundant files
                 file_name = "/" + files
-                doc_id.append(files[17:])
+                doc_id.append(files)
                 new_path = path + file_name
                 text = parse_html(new_path)                         # parse HTML file
                 if text is not None and len(text) is not 0:         # if text obtained, then proceed
@@ -104,22 +104,22 @@ def pre_processing(folder):
                     tokens = nltk.word_tokenize(text)               # Split text to tokens
                     for i in range(0, len(tokens)):
                         tokens[i] = tokens[i].lower()               # converting all tokens' case to lower case
-                    tokens = list(set(tokens))
+                        tokens[i] = re.sub(r"[^a-zA-Z]+", "", tokens[i])
                     tokens = [token.rstrip('\n') for token in tokens]
+                    tokens = list(set(tokens))
                     for token in tokens:
-                        if token in stops:                          # checking for words present in stop_list
-                            tokens.remove(token)                    # removing if found any
+                        if token.isalpha() is False:
+                            tokens.remove(token)
+                    tokens = [token for token in tokens if token not in stops]
                     if tokens is not None:
                         for token in tokens:
-                            regex = re.compile('[@_!#$%^&*()<>?/\|}{~:.,;]')
-                            if regex.search(token) is None:
-                                if not re.match(r'^[_\W]+$', token):
-                                    arr = find_all(text, ps.stem(token))        # recording positions
+                            if len(token) > 0:
+                                st = ps.stem(token)
+                                if st not in stops:
+                                    arr = find_all(text, st)        # recording positions
                                     if len(arr) is not 0:
-                                        st = ps.stem(token)
-                                        if st not in stops:
-                                            tokenize[st] = arr
-                                            tt.append(st)
+                                        tokenize[st] = arr
+                                        tt.append(st)
                         final_tokens.append(tokenize)
                         file_token.append(tt)
 
@@ -133,13 +133,12 @@ def create_index(data):                 # create index using dict from tokens ob
 
 
 def create_inverted_index(folder):      # create inverted index
-    tokens_sub_directory = []                                               # list to take all tokens in 1/2/3 folder
     original_path = os.getcwd()                                             # get present working directory path
-    file_path = original_path + "/index_" + folder + ".txt"                     # name a text file after folder (1/2/3)
-    inv_index = create_index(file_token)                          # call to create index using dict after obtaining tokens
+    file_path = original_path + "/index_" + folder + ".txt"                 # name a text file after folder (1/2/3)
+    inv_index = create_index(file_token)                                    # call to create index using dict after obtaining tokens                                        # sorting key alphabetically
     file = open(file_path, "w+", encoding='latin-1', errors='ignore')       # writing posting list in file acc. to format
 
-    for key in inv_index.keys():
+    for key in sorted(inv_index.keys()):
         file.write(key)                                                     # write term
         file.write(",")
         file.write(str(len(inv_index[key])))                                # write total number doc. in which it occurs
