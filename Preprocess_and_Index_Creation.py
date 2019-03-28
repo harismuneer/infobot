@@ -91,12 +91,18 @@ def pre_processing(folder):
     stops = [line.rstrip('\n') for line in open(stop_words)]        # adding all stop words in list after reading stoplist file
     data_set = "\corpus1/" + folder
     path = original_path + data_set                                 # opening folder(1/2/3) from corpus folder
+    docpath = original_path +"\doc_id"+folder+".txt"
+    with open(docpath, 'r') as docfile:
+        holder1 = docfile.read()
+    id = holder1.split("\n")
+    id = id[0:len(id)-1]
+    for ids in id:
+        doc_id.append(ids.split(":")[1])
     for files in os.listdir(path):                                  # picking all files in the folder one by one
             tokenize = {}
             tt = []
             if '.txt' not in files:                                 # ignoring redundant files
                 file_name = "/" + files
-                doc_id.append(files)
                 new_path = path + file_name
                 text = parse_html(new_path)                         # parse HTML file
                 if text is not None and len(text) is not 0:         # if text obtained, then proceed
@@ -137,7 +143,6 @@ def create_inverted_index(folder):      # create inverted index
     file_path = original_path + "/index_" + folder + ".txt"                 # name a text file after folder (1/2/3)
     inv_index = create_index(file_token)                                    # call to create index using dict after obtaining tokens                                        # sorting key alphabetically
     file = open(file_path, "w+", encoding='latin-1', errors='ignore')       # writing posting list in file acc. to format
-
     for key in sorted(inv_index.keys()):
         file.write(key)                                                     # write term
         file.write(",")
