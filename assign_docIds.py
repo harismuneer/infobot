@@ -30,5 +30,5 @@ for files in os.listdir(path):
     if '.txt' not in files:
         file3.write(files+":"+str(file))
         file3.write("\n")
-        file +=1
+        file += 1
 
