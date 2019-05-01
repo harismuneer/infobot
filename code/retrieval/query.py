@@ -78,7 +78,7 @@ def write_scores(scores, run_id):
         doc_scores = sorted(doc_scores.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
 
         for i in range(len(doc_scores)):
-            r_file.write(str(query) + " 0 " + doc_scores[i][0] + " " + str(doc_scores[i][1]) + " " + str(
+            r_file.write(str(query) + " 0 " + doc_scores[i][0].split('/')[-1] + " " + str(doc_scores[i][1]) + " " + str(
                 i + 1) + " " + "run" + str(run_id) + "\n")
 
     r_file.close()
@@ -258,6 +258,7 @@ def main():
         print("Invalid Scoring Function!")
         print("Exiting...")
 
+    print("Scores calculated successfully!")
     ################################################################
     ################################################################
 
