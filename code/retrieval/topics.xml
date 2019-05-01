@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE webtrack2013 [
+  <!ELEMENT webtrack2013 (topic)*>
+  <!ELEMENT topic (query, description)>
+  <!ATTLIST topic 
+              number CDATA #REQUIRED
+              type (ambiguous|faceted|single|other) "ambiguous">
+  <!ELEMENT query (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+]>
+<webtrack2013>
+
+<!-- Please note that topic and subtopic types (faceted/ambiguous,
+     inf/nav are meant as a general indicator and should not be taken
+     as definitive aspects of the query intent. -->
+
+<!-- Note that the first subtopic is always identical to the description
+     sentence.  This is to ensure that adhoc-task results are also relevant
+     to the subtopic task. -->
+
+<topic number="202" type="faceted">
+  <query>uss carl vinson</query>
+  <description>
+     Find the home page of the USS Carl Vinson (CVN70) carrier.
+  </description>
+</topic>
+
+<topic number="214" type="single">
+  <query>capital gains tax rate</query>
+  <description>
+     What does the US capital tax rate consist of and how is it broken down? 
+  </description>
+</topic>
+
+<topic number="216" type="faceted">
+  <query>nicolas cage movies</query>
+  <description>
+    What movies has Nicolas Cage appeared in?
+  </description>
+</topic>
+
+<topic number="221" type="single">
+  <query>electoral college 2008 results</query>
+  <description>
+    What were the results of the electoral college for the 2008 US presidential race?
+  </description>
+</topic>
+
+<topic number="227" type="single">
+  <query>i will survive lyrics</query>
+  <description>
+    Find the lyrics to the song "I Will Survive".
+  </description>
+</topic>
+
+<topic number="230" type="single">
+  <query>world's biggest dog</query>
+  <description>
+    What is the world's biggest dog?   
+  </description>
+</topic>
+
+<topic number="234" type="single">
+  <query>dark chocolate health benefits</query>
+  <description>
+     What are the health benefits associated with eating dark chocolate? 
+  </description>
+</topic>
+
+<topic number="243" type="faceted">
+  <query>afghanistan flag</query>
+  <description>
+     Find pictures of the Afghanistan flag.
+  </description>
+</topic>
+
+<topic number="246" type="single">
+  <query>civil war battles in South Carolina</query>
+  <description>
+    Which civil war battles were fought in South Carolina?
+  </description>
+</topic>
+
+<topic number="250" type="single">
+  <query>ford edge problems</query>
+  <description>
+    What problems have afflicted the Ford Edge car model?
+  </description> 
+</topic>
+
+</webtrack2013>

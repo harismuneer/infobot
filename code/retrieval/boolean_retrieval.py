@@ -2,7 +2,7 @@
 import sys
 import time
 
-sys.path.append('./')
+sys.path.append('../index/')
 
 from preprocess_and_index import preprocess_text
 from encoding_utilities import make_posting_dic
@@ -20,7 +20,7 @@ from collections import OrderedDict
 def create_uncompressed_index():
     # reading the index_file and making an in_memory index from in order to answer queries faster
     # (we can also read the index_file line by line and save the posting lists with matching terms but this isn't efficient)
-    index_file = open("./index_files/uncompressed/inverted_index.txt", "r", encoding="utf-8")
+    index_file = open("../index/index_files/uncompressed/inverted_index.txt", "r", encoding="utf-8")
 
     index_data = index_file.readlines()
     index_file.close()
@@ -41,7 +41,7 @@ def create_uncompressed_index():
 ##################################################################
 
 def create_compressed_index_vocab():
-    index_vocab = open("./index_files/compressed/inverted_index_vocab.txt", "r", encoding="utf-8")
+    index_vocab = open("../index/index_files/compressed/inverted_index_vocab.txt", "r", encoding="utf-8")
 
     # read complete vocab and then using the offsets read only relevant posting lists
     vocab_data = index_vocab.readlines()
@@ -64,7 +64,7 @@ def create_compressed_index_vocab():
 def load_complete_compressed_index(vocab):
     vocab_indexes = [x for x in vocab.keys()]
 
-    index_postings = open("./index_files/compressed/inverted_index_postings.txt", "rb")
+    index_postings = open("../index/index_files/compressed/inverted_index_postings.txt", "rb")
 
     inverted_index = dict()
 
@@ -103,6 +103,7 @@ def boolean_retrieval(query, inverted_index, compressed):
         for k in range(len(query)):
 
             if query[k] not in inverted_index:
+                relevant_documents = None
                 break
 
             if k == 0:
@@ -120,7 +121,7 @@ def boolean_retrieval(query, inverted_index, compressed):
         vocab = inverted_index
         vocab_indexes = [x for x in vocab.keys()]
 
-        index_postings = open("./index_files/compressed/inverted_index_postings.txt", "rb")
+        index_postings = open("../index/index_files/compressed/inverted_index_postings.txt", "rb")
 
         relevant_documents = set()
 
@@ -165,7 +166,7 @@ def main():
     ################################################################
     ################################################################
 
-    doc_ids_data = open("doc_info.txt", "r").readlines()
+    doc_ids_data = open("../index/doc_info.txt", "r").readlines()
 
     doc_ids = dict()
 
@@ -180,7 +181,7 @@ def main():
     query = input("Enter Query: ")
 
     # read stop words
-    with open("./stop_list.txt", "r") as file:
+    with open("../index/stop_list.txt", "r") as file:
         stop_words = file.readlines()
         stop_words = [x.strip() for x in stop_words]
 
