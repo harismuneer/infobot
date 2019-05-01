@@ -236,17 +236,17 @@ def main():
     ################################################################
     ################################################################
 
-    # if score == "okapi-tf":
-    if True:
+    if score == "okapi-tf":
+    # if True:
         # calculate Okapi-TF Score
         query_doc_scores = okapi_tf(queries, doc_ids)
 
         # write scores to file
         write_scores(query_doc_scores, run_id)
 
-    # elif score == "vector-space":
-    if True:
-        run_id = "2"
+    elif score == "vector-space":
+    # if True:
+    #     run_id = "2"
         # calculate Vector-Space Score
         query_doc_scores = vector_space(queries, doc_ids)
 
@@ -259,8 +259,9 @@ def main():
         print("Exiting...")
 
     print("Scores calculated successfully!")
-    ################################################################
-    ################################################################
+
+################################################################
+################################################################
 
 
 if __name__ == '__main__':
