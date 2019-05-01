@@ -4,14 +4,38 @@ from xml.dom import minidom
 from nltk.stem import PorterStemmer
 
 sys.path.append('../index/')
+sys.path.append('./')
 
 from preprocess_and_index import preprocess_text
+from boolean_retrieval import create_compressed_index_vocab
+from boolean_retrieval import decompress_posting_list
 
 import math
 
 
 ##################################################################
 ##################################################################
+
+def get_encoded_posting_list(vocab, vocab_indexes, index_postings, term):
+    # get posting list for this term and decompress it
+    index1, offset1 = vocab[term]
+
+    # for quick access to the required posting list
+    index_postings.seek(int(offset1), 0)
+
+    # read required posting list
+    try:
+        offset2 = vocab[vocab_indexes[index1 + 1]][1]
+        encoded_posting = index_postings.read(int(offset2) - int(offset1))
+    except:
+        encoded_posting = index_postings.read(int(offset1))
+
+    return encoded_posting
+
+
+##################################################################
+##################################################################
+
 
 # Function to fetch the queries from topics.xml and pre process them
 def fetch_queries():
@@ -43,47 +67,21 @@ def fetch_queries():
 ##################################################################
 
 
-# Function to calculate document frequency for a term, documents having that term and frequency of the term in every document
+# Write Scores to File
+def write_scores(scores, run_id):
+    r_file = open("run" + run_id + ".txt", "w")
 
-def calculate_dft(query):
-    # Initialization
-    dft = 0  # Document Frequency for a term( no of documents, having a term)
-    doc = []  # contains documents' ID having a term
-    freq = []  # contains frequency of term for all documents stored in doc[] list
+    for query in scores.keys():
 
-    # Reading MERGED UNCOMPRESSED INDEX
-    f = open("inverted_index.txt", "r", encoding="utf-8")
-    lines = f.readlines()
+        doc_scores = scores[query]
 
-    # Performing calculations
-    for line in lines:
-        line = line.split(',')
-        if query == line[0]:
-            dft += int(line[1])
-            doc.append(line[2])
-            freq.append(line[3])
-            j = 2
-            j = j + 1 + int(freq[len(freq) - 1]) + 1
-            while j < len(line):
-                doc.append(line[j])
-                freq.append(line[j + 1])
-                j = j + 1 + int(freq[len(freq) - 1]) + 1
+        doc_scores = sorted(doc_scores.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
 
-    return dft, doc, freq
+        for i in range(len(doc_scores)):
+            r_file.write(str(query) + " 0 " + doc_scores[i][0] + " " + str(doc_scores[i][1]) + " " + str(
+                i + 1) + " " + "run" + str(run_id) + "\n")
 
-
-##################################################################
-##################################################################
-
-
-# Calculating value of ct for Okapi-TF computation
-
-def calculate_ct(dft, n):
-    # n is number of total documents and dft is number of documents having a term
-    ct = (n - dft) + 0.5
-    ct = ct / (dft + 0.5)
-    ct = math.log(ct)
-    return ct
+    r_file.close()
 
 
 ##################################################################
@@ -92,212 +90,123 @@ def calculate_ct(dft, n):
 
 # Calculating score for Okapi-TF
 
-def okapi_tf(q, ids):
-    # constant values
+def okapi_tf(queries, doc_info):
+    vocab = create_compressed_index_vocab()
+    vocab_indexes = [x for x in vocab.keys()]
+
+    index_postings = open("../index/index_files/compressed/inverted_index_postings.txt", "rb")
+
+    # total number of docs
+    total_docs = len(doc_info.keys())
+
+    # calculate average length
+    length_sum = 0
+    for l in doc_info.values():
+        length_sum += int(l[1])
+
+    l_ave = length_sum/total_docs
+
     k1 = 1
     b = 1.5
 
-    # Initialization
-    ld = []  # contains length for every document
-    lave = 0  # average length of all documents
+    query_doc_scores = dict()
 
-    # Reading document_information file for fetching req. information
-    f = open("doc_info.txt", "r")
-    information = f.readlines()
+    for query_id in queries.keys():
 
-    # Finding length of every document
-    for info in information:
-        info = info.split(",")
-        ld.append(int(info[2].replace('\n', '')))
+        query = queries[query_id]
 
-    # Calculating average length of documents
-    for length in ld:
-        lave += length
-    lave = lave / len(ld)
+        doc_scores = dict()
 
-    # Open run.txt file for storing scoring results
-    file = open("run.txt", "w+")
+        for k in range(len(query)):
+            encoded_posting = get_encoded_posting_list(vocab, vocab_indexes, index_postings, query[k])
+            original_posting_list = decompress_posting_list(encoded_posting)
 
-    # Loop to run for all Queries
-    for i in range(0, len(q)):
+            df = original_posting_list[0]
+            ct = math.log((total_docs - df + 0.5)/(df + 0.5))
 
-        # Initialization for every Query
-        query = q[i]
-        topic = ids[i]
-        dft_of_terms_in_query = []  # contains document frequency for all terms in a query
-        ct_of_terms_in_query = []  # contains ct for all terms in a query
-        doc_having_terms = []  # contains blocks of documents having terms in a query
-        frequency_of_terms_in_docs = []  # contains blocks of freq. of doc_having_terms
-        document_scores = []  # contains score of every document for a query
-        rank = []  # contains rank of every document for a query
+            for doc in original_posting_list[1].keys():
+                tf = original_posting_list[1][doc][0]
+                weight_d_q = ((k1 + 1)*tf)/(k1*((1-b)+b*(float(doc_info[doc][1])/l_ave))+tf)
 
-        add = 0
-        while add < len(ld):
-            document_scores.append(0)
-            rank.append(0)
-            add += 1
+                doc_scores[doc] = doc_scores.get(doc, 0) + (ct * weight_d_q)
 
-        # Getting Values for Calculation
-        for qu in query:
-            x, y, z = calculate_dft(qu)
-            dft_of_terms_in_query.append(x)
-            doc_having_terms.append(y)
-            frequency_of_terms_in_docs.append(z)
-            ct_of_terms_in_query.append(calculate_ct(dft_of_terms_in_query[len(dft_of_terms_in_query) - 1], len(ld)))
+        ##################################################################
 
-        # Applying Okapi-TF Formulae
-        for index in range(0, len(query)):
-            document = doc_having_terms[index]
-            frequency = frequency_of_terms_in_docs[index]
-            for d in range(0, len(document)):
-                numerator = (k1 + 1) / int(frequency[d])
-                denominator = (k1 * ((k1 + 1) + b * (ld[d] / lave))) + int(frequency[d])
-                result = numerator / denominator
-                document_scores[int(document[d]) - 1] += round(ct_of_terms_in_query[index] * result, ndigits=2)
+        # map document ids back to their original names and skip docs with zero score
+        doc_name_scores = dict()
 
-        # Ordering scores in descending order to keep track of documents with highest to lowest score(0)
-        score = list(dict.fromkeys(document_scores))
-        score = sorted(score, reverse=True)
+        for d in doc_scores.keys():
+            d_score = round(doc_scores[d], ndigits=2)
 
-        # Assigning Rank to a score
-        for d in range(0, len(document_scores)):
-            rank[d] = score.index(document_scores[d]) + 1
+            if d_score != 0:
+                doc_name_scores[doc_info[d][0]] = d_score
 
-        # Finding Lowest Rank
-        limit = max(rank)
+        ##################################################################
 
-        # Writing run.txt- document with highest rank(1) appears first and then so on
-        for r in range(1, limit + 1):
+        query_doc_scores[query_id] = doc_name_scores
 
-            # finding documents with same rank
-            dc = [m for m, val in enumerate(rank) if val == r]
+    index_postings.close()
 
-            # fetching info about that document from doc_info.txt read above
-            for l in range(0, len(dc)):
-                for info in information:
-                    info = info.split(",")
-                    info1 = info[1]
-                    info1 = info1.split("/")
-                    if info[0] == str(dc[l] + 1):
-                        file.write(
-                            str(topic) + " 0 " + info1[3] + " " + str(r) + " " + str(document_scores[dc[l]]) + "\n")
-
-    return
-
+    return query_doc_scores
 
 ##################################################################
 ##################################################################
-
-
-# Function to calculate Inverse Document Frequency
-
-def calculate_idf(dft, n):
-    # n is total number of doc. and dft is no. of documents containing term
-    idf = math.log(n / dft)
-    return idf
-
-
-##################################################################
-##################################################################
-
 
 # Function to calculate Vector-Space Score
+def vector_space(queries, doc_info):
+    vocab = create_compressed_index_vocab()
+    vocab_indexes = [x for x in vocab.keys()]
 
-def vector_space(q, ids):
-    # Open run.txt file for storing scoring results
-    file = open("run.txt", "w")
+    index_postings = open("../index/index_files/compressed/inverted_index_postings.txt", "rb")
 
-    # Reading document_information file for fetching required information
-    f = open("doc_info.txt", "r")
-    information = f.readlines()
+    total_docs = len(doc_info.keys())
 
-    # Initialization
-    length = []
+    query_doc_scores = dict()
 
-    # Finding length of every document
-    for info in information:
-        info = info.split(",")
-        length.append(int(info[2].replace('\n', '')))
+    for query_id in queries.keys():
 
-    # Loop to run for all queries
-    for i in range(0, len(q)):
+        query = queries[query_id]
 
-        # Initialization
-        query = q[i]
-        topic = ids[i]
-        tfidf_for_every_document = []  # contains block of tf-idf for every document
-        doc_having_terms = []  # contains blocks of documents having terms present in a query
-        tfidf_of_doc_having_terms = []  # contains blocks of tf-idf of documents present in doc_having_terms
-        tfiqf_for_query = []  # contains tf-iqf of terms present in a query
-        document_scores = []  # contains score of all documents for a query
-        rank = []  # contains rank of all documents for a query
+        doc_scores = dict()
 
-        add = 0
-        while add < len(length):
-            document_scores.append(0)
-            rank.append(0)
-            add += 1
+        for k in range(len(query)):
+            encoded_posting = get_encoded_posting_list(vocab, vocab_indexes, index_postings, query[k])
+            original_posting_list = decompress_posting_list(encoded_posting)
 
-        for term in range(0, len(query)):
-            x, y, z = calculate_dft(query[term])
-            idf_of_terms_in_query = (calculate_idf(x, len(length)))
-            doc_having_terms.append(y)
-            for j in range(0, len(z)):
-                z[j] = int(z[j]) * idf_of_terms_in_query
-            tfidf_of_doc_having_terms.append(z)
-            temp = []
-            add = 0
-            while add < len(length):
-                temp.append(0)
-                add += 1
-            doc = doc_having_terms[len(doc_having_terms) - 1]
-            weight = tfidf_of_doc_having_terms[len(tfidf_of_doc_having_terms) - 1]
-            for j in range(0, len(doc)):
-                temp[int(doc[j]) - 1] += weight[j]
-            tfidf_for_every_document.append(temp)
+            # calculate weight (term count) of a query term
+            weight_t_q = query.count(query[k])
 
-            # Calculating weights of terms in Query!
-            idfq = math.log(len(query) / query.count(query[term]))
-            tfiqf = (query.count(query[term]) / len(query)) * idfq
-            tfiqf_for_query.append(tfiqf)
+            df = original_posting_list[0]
+            idf = math.log(total_docs / df)
 
-            for index in range(0, len(document_scores)):
-                document_scores[index] += round((tfiqf_for_query[len(tfiqf_for_query) - 1] * temp[index]), ndigits=2)
+            for doc in original_posting_list[1].keys():
+                tf = original_posting_list[1][doc][0]
+                weight_d_q = tf * idf
+
+                doc_scores[doc] = doc_scores.get(doc, 0) + (weight_t_q * weight_d_q)
+
+        ##################################################################
 
         # Divide score of document with length to find real score
-        for index in range(0, len(document_scores)):
-            if length[index] is not 0:
-                document_scores[index] = round(document_scores[index] / length[index], ndigits=2)
+        for d in doc_scores.keys():
+            doc_scores[d] = round(doc_scores[d] / float(doc_info[d][1]), ndigits=2)
 
-        # Ordering scores in descending order to keep track of documents with highest to lowest score(0)
-        score = list(dict.fromkeys(document_scores))
-        score = sorted(score, reverse=True)
+        ##################################################################
 
-        # Assigning Rank to a score
-        for d in range(0, len(document_scores)):
-            rank[d] = score.index(document_scores[d]) + 1
+        # map document ids back to their original names and skip docs with zero score
+        doc_name_scores = dict()
 
-        # Finding Lowest Rank
-        limit = max(rank)
+        for d in doc_scores.keys():
+            if doc_scores[d] != 0:
+                doc_name_scores[doc_info[d][0]] = doc_scores[d]
 
-        # Writing run.txt- document with highest rank(1) appears first and then so on
-        for r in range(1, limit + 1):
+        ##################################################################
 
-            # finding documents with same rank
+        query_doc_scores[query_id] = doc_name_scores
 
-            dc = [m for m, val in enumerate(rank) if val == r]
-            for l in range(0, len(dc)):
+    index_postings.close()
 
-                # fetching info about that document from doc_info.txt read above
-                for info in information:
-                    info = info.split(",")
-                    info1 = info[1]
-                    info1 = info1.split("/")
-                    if info[0] == str(dc[l] + 1):
-                        file.write(
-                            str(topic) + " 0 " + info1[3] + " " + str(r) + " " + str(document_scores[dc[l]]) + "\n")
-
-    return
+    return query_doc_scores
 
 
 ##################################################################
@@ -305,26 +214,52 @@ def vector_space(q, ids):
 
 
 def main():
-
     score = sys.argv[1]
     run_id = sys.argv[2]
 
+    # get queries
     queries = fetch_queries()
 
-    if score == "okapi-tf":
-        # calculate Okapi-TF Score
-        okapi_tf(queries, run_id)
+    ################################################################
+    ################################################################
 
-    elif score == "vector-space":
+    # get document ids
+    doc_ids_data = open("../index/doc_info.txt", "r").readlines()
+
+    doc_ids = dict()
+
+    for x in doc_ids_data:
+        x = x.rstrip().split(",")
+
+        doc_ids[int(x[0])] = (x[1], x[2])
+
+    ################################################################
+    ################################################################
+
+    # if score == "okapi-tf":
+    if True:
+        # calculate Okapi-TF Score
+        query_doc_scores = okapi_tf(queries, doc_ids)
+
+        # write scores to file
+        write_scores(query_doc_scores, run_id)
+
+    # elif score == "vector-space":
+    if True:
+        run_id = "2"
         # calculate Vector-Space Score
-        vector_space(queries, run_id)
+        query_doc_scores = vector_space(queries, doc_ids)
+
+        # write scores to file
+        write_scores(query_doc_scores, run_id)
 
     else:
         # Wrong scoring method
         print("Invalid Scoring Function!")
         print("Exiting...")
 
-    return
+    ################################################################
+    ################################################################
 
 
 if __name__ == '__main__':
