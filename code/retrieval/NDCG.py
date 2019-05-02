@@ -1,6 +1,8 @@
 import math
 import sys
 
+import matplotlib.pyplot as plt
+
 
 ##################################################################
 ##################################################################
@@ -40,22 +42,39 @@ def read_ranks(ranks_file, is_baseline, base_ranks=None):
         query_id = r[0]
         doc_name = r[2]
 
+        if query_id not in ranks:
+            ranks[query_id] = dict()
+            i = 1
+
+        # for IDCG
         if is_baseline == True:
             relevance = int(r[3])
+            position = 0
+
+        # for DCG
         else:
             if doc_name not in base_ranks[query_id]:
                 relevance = 0
             else:
                 relevance = base_ranks[query_id][doc_name][0]
 
-        if query_id not in ranks:
-            ranks[query_id] = dict()
-            i = 1
+            position = i
 
-        position = i
-        ranks[query_id][doc_name] = (relevance, position)
+        ranks[query_id][doc_name] = [relevance, position]
 
         i += 1
+
+    # for IDCG
+    if is_baseline == True:
+        for query_id in ranks.keys():
+            # sort on basis of relevance
+            doc_scores = sorted(ranks[query_id].items(), key=lambda kv: (kv[1][0], kv[0]), reverse=True)
+
+            for j in range(len(doc_scores)):
+                doc_name = doc_scores[j][0]
+
+                ranks[query_id][doc_name][1] = j + 1
+
 
     ranks_file.close()
 
@@ -70,6 +89,7 @@ def main():
     corpus_file = sys.argv[1]
     run_file = sys.argv[2]
     p = int(sys.argv[3])
+    # p = 300
 
     ##################################################################
     ##################################################################
@@ -121,13 +141,41 @@ def main():
 
         print("Query:", query_id, "DCG:", DCG[query_id], "IDCG:", IDCG[query_id], "NDCG:", NDCG[query_id])
 
+    avg_ndcg = round(sum / len(NDCG), ndigits=2)
     print("\n----------------------------------------------------------")
-    print("Average NDCG:", round(sum / len(NDCG), ndigits=2))
+    print("Average NDCG:", avg_ndcg)
     print("----------------------------------------------------------")
 
     ##################################################################
     ##################################################################
 
+    p_file = open("./p_file.txt", "a")
+    p_file.write(str(p) + "," + str(avg_ndcg) + "\n")
+    p_file.close()
+
+    # p vs NDCG plot
+    p_file = open("./p_file.txt")
+    p_file = [t.rstrip() for t in p_file]
+
+    x = []  # p values
+    y = []  # ndcg values
+
+    for t in p_file:
+        r = t.split(",")
+        x.append(r[0])
+        y.append(r[1])
+
+    fig = plt.figure()
+    axes = fig.add_axes([0.1, 0.1, 0.8, 0.8])  # left, bottom, width, height (range 0 to 1)
+    axes.plot(x, y, 'r')
+
+    axes.set_xlabel('p')
+    axes.set_ylabel('NDCG')
+    axes.set_title('p vs NDCG')
+    fig.savefig("p vs NDCG.png")
+
+##################################################################
+##################################################################
 
 if __name__ == '__main__':
     # get things rolling
