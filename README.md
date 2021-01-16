@@ -53,7 +53,7 @@ For donations, you can follow these simple steps:
 
 <b>2)</b> Select the amount e.g (15$) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
 
-<b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.
+<b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email haris.muneer5@gmail.com in recipients.
 
 <b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'
  
