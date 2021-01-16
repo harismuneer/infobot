@@ -58,4 +58,5 @@ For donations, you can follow these simple steps:
 <b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'
  
 If you face any issue in sending donation then feel free to get in touch with me at haris.muneer5@gmail.com 
+
 Thank you for your contribution!
