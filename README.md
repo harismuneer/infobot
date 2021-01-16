@@ -49,7 +49,7 @@ If you or your company use any of my projects, like what I’m doing or have ben
 
 For donations, you can follow these simple steps:
 <ul>
- <li>1) Free signup at <b>(TransferWise)[https://transferwise.com/invite/u/harism95]</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation.)
+ <li>1) Free signup at [TransferWise](https://transferwise.com/invite/u/harism95) using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation.)
  <li>2) Select the amount e.g (20$) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)</li>
  <li>3) Then it will show my info as the recipient, select it. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.</li>
  <li>4) Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'</li>
