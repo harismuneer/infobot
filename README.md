@@ -54,4 +54,3 @@ For donations, you can follow these simple steps:
 - 4) Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'
  
 Thank you for your contribution!
-</ul>
