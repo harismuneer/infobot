@@ -1,7 +1,5 @@
 # infobot
 
-
-<br>
 <hr>
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
 
@@ -46,10 +44,13 @@ You can also follow my GitHub Profile to stay updated about my latest projects: 
 
 If you liked the repo then kindly support it by giving it a star ⭐ and share in your circles so more people can benefit from the effort.
 
-## Sponsor
-If you or your company use any of my projects or like what I’m doing then consider backing me.
+## ❤️ Support / Donations
+If you or your company use any of my projects, like what I’m doing or have benefited from my projects in any way then kindly consider backing my efforts.
 
-- 🌟  **$9.99/month (recommended)** ❯ [Two cups of Caffè latte (coffee) every month](https://tinyurl.com/Haris-OSS-Coffee)
-- 🚀  **$99.99 (one-time sponsor)** ❯ [Support an hour of open-source work](https://tinyurl.com/Haris-OSS-Platinum)
-- 🔰  **$49.99 (one-time sponsor)** ❯ [Support an hour of maintenance](https://tinyurl.com/Haris-OSS-Gold)
-- ☕️  **$9.99 (one-time sponsor)** ❯ [Lunch/coffee](https://tinyurl.com/Haris-OSS-Silver)
+For donations, you can follow these simple steps:
+<ul>
+ <li>Free signup at TransferWise using this website: https://transferwise.com/invite/u/harism95</li>
+ <li>Select the amount (99$) and choose the receiving/recipient's currency to be PKR. It supports multiple options (credit card, debit card, etc)</li>
+ <li>Then it will show my info as the recipient, select it then. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.</li>
+ <li>Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'</li>
+</ul>
