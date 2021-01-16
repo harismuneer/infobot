@@ -48,9 +48,9 @@ If you liked the repo then kindly support it by giving it a star ⭐ and share i
 If you or your company use any of my projects, like what I’m doing or have benefited from my projects in any way then kindly consider backing my efforts.
 
 For donations, you can follow these simple steps:
-- 1) Free signup at [TransferWise](https://transferwise.com/invite/u/harism95) using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation)
-- 2) Select the amount e.g (20$) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
-- 3) Then it will show my info as the recipient, select it. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.
-- 4) Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'
+<b>1)</b> Free signup at [TransferWise](https://transferwise.com/invite/u/harism95) using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation)
+<b>2)</b> Select the amount e.g (20$) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)
+<b>3)</b> Then it will show my info as the recipient, select it. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.
+<b>4)</b> Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'
  
 Thank you for your contribution!
