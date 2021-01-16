@@ -1,7 +1,7 @@
 # infobot
 
-<hr>
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
+<hr>
 
 <h1 align="left">Hey there, I'm <a href="https://www.linkedin.com/in/harismuneer/">Haris </a><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> 
  <a href="https://github.com/harismuneer/Ultimate-Facebook-Scraper"><img align="right" src="https://user-images.githubusercontent.com/30947706/79588950-17515780-80ee-11ea-8f66-e26da49fa052.png" alt="Ultimate Facebook Scraper (UFS)" width="200"/></a> - Maker of Things</h1> 
@@ -49,8 +49,10 @@ If you or your company use any of my projects, like what I’m doing or have ben
 
 For donations, you can follow these simple steps:
 <ul>
- <li>1) Free signup at TransferWise using this website: https://transferwise.com/invite/u/harism95</li>
- <li>2) Select the amount (99$) and choose the receiving/recipient's currency to be PKR. It supports multiple options (credit card, debit card, etc)</li>
- <li>3) Then it will show my info as the recipient, select it then. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.</li>
+ <li>1) Free signup at <b>[TransferWise](https://transferwise.com/invite/u/harism95)</b> using this link: https://transferwise.com/invite/u/harism95</li>. (Signing up through this link will save you from any transcation fee on the donation.)
+ <li>2) Select the amount e.g (20$) and choose the receiving/recipient's currency to be PKR. It supports multiple payment options (credit card, debit card, wire transfer etc)</li>
+ <li>3) Then it will show my info as the recipient, select it. If my name isn't shown, then type my email 'haris.muneer5@gmail.com' in recipients.</li>
  <li>4) Choose the reason for transfer to the one that suits you the most (in this case it could be 'General expenses') and in the reference section, you can mention 'Support'</li>
+ 
+Thank you for your contribution!
 </ul>
