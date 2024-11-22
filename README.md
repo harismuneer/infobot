@@ -1,6 +1,25 @@
-# infobot
+# Infobot
+
 
 <a href="https://github.com/harismuneer"><img alt="views" title="Github views" src="https://komarev.com/ghpvc/?username=harismuneer&style=flat-square" width="125"/></a>
+
+Infobot is an open-source information retrieval search engine. It enables users to efficiently search and retrieve information from a collection of documents. The project is implemented in Python and includes components for web crawling, indexing, and querying.
+
+## Key Features:
+
+- Web Crawler: Gathers data from various web sources to build a comprehensive document corpus.
+- Indexing Module: Processes and indexes the collected documents to facilitate quick and accurate search results.
+- Query Processor: Allows users to input search queries and retrieves relevant documents based on the indexed data.
+
+## Usage:
+
+- Setup: Clone the repository and install the required dependencies listed in requirements.txt.
+- Crawling: Use the web crawler to collect data from specified web sources.
+- Indexing: Process the collected data to create an index for efficient searching.
+- Searching: Input queries to retrieve relevant information from the indexed data.
+
+Infobot serves as a practical tool for those interested in understanding and implementing information retrieval systems. It provides a hands-on approach to learning about web crawling, data indexing, and search algorithms.
+
 <hr>
 
 ## Contact
